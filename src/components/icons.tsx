@@ -262,3 +262,15 @@ export const IconPushpin = (p: P) => (
     <path d="M12 13.5v7" />
   </Svg>
 )
+export const IconShield = ({ filled, ...p }: P & { filled?: boolean }) => (
+  <Svg {...p}>
+    <path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6z" fill={filled ? 'currentColor' : 'none'} />
+    <path d="m9 12 2.2 2.2L15.5 10" stroke={filled ? 'var(--on-ink, #fff)' : 'currentColor'} />
+  </Svg>
+)
+export const IconFlag = (p: P) => (
+  <Svg {...p}>
+    <path d="M5 21V4" />
+    <path d="M5 4.5h11l-2 4 2 4H5" />
+  </Svg>
+)

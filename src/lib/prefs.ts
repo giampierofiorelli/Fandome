@@ -1,19 +1,40 @@
-// Per-device preferences (not part of the shared demo state).
-const AUTO_EMBEDS = 'fandome:autoEmbeds'
+// Per-device privacy choices (GDPR / ePrivacy). Nothing from other companies
+// (YouTube, Spotify, Instagram, X, TikTok…) loads until the person agrees.
+import { useEffect, useState } from 'react'
 
-// On by default: videos and posts from other socials show already expanded.
-// Readers can switch it off in Settings (faster feed, less tracking).
-export function autoEmbeds(): boolean {
+const KEY = 'fandome:consent'
+export const CONSENT_VERSION = 1
+export interface Consent {
+  media: boolean // embedded players and posts from other platforms
+  at: number
+  v: number
+}
+
+export function getConsent(): Consent | null {
   try {
-    return localStorage.getItem(AUTO_EMBEDS) !== '0'
+    const c = JSON.parse(localStorage.getItem(KEY) ?? 'null') as Consent | null
+    return c && c.v === CONSENT_VERSION ? c : null
   } catch {
-    return true
+    return null
   }
 }
-export function setAutoEmbeds(on: boolean) {
+export function setConsent(media: boolean) {
   try {
-    localStorage.setItem(AUTO_EMBEDS, on ? '1' : '0')
+    localStorage.setItem(KEY, JSON.stringify({ media, at: Date.now(), v: CONSENT_VERSION }))
   } catch {
-    // ignore
+    // private mode: the choice lasts for this visit only
   }
+  window.dispatchEvent(new Event('fandome:consent'))
 }
+export function useConsent(): Consent | null {
+  const [c, setC] = useState(getConsent)
+  useEffect(() => {
+    const on = () => setC(getConsent())
+    window.addEventListener('fandome:consent', on)
+    return () => window.removeEventListener('fandome:consent', on)
+  }, [])
+  return c
+}
+
+// Embeds open expanded only with consent; otherwise each one waits for a tap.
+export const autoEmbeds = () => getConsent()?.media === true

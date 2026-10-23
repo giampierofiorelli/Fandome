@@ -5,7 +5,7 @@
    ========================================================================== */
 
 :root {
-  --font: 'Geist', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font: 'Geist Variable', 'Geist', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
   --dot: 'Doto', 'Geist Mono', ui-monospace, monospace;
 
   --bg: #e4e8ec;
@@ -928,3 +928,51 @@ main.app { overflow-x: clip; }
 .story-canvas .sv-post { width: 86%; max-height: 74%; transform: translate(-50%, -54%); }
 .sv-post-open { position: sticky; bottom: 0; box-shadow: 0 -10px 20px 4px var(--bg); align-self: stretch; height: 40px; border-radius: 999px; border: 0; background: var(--ink); color: var(--on-ink); font: inherit; font-size: 14px; font-weight: 600; flex-shrink: 0; }
 .sv:has(.sv-post) .sv-caption { bottom: 84px; }
+.ob-agree { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-size: 14px; line-height: 1.4; text-align: left; }
+.ob-agree input { width: 20px; height: 20px; flex-shrink: 0; margin-top: 1px; accent-color: currentColor; }
+.ob-agree a { text-decoration: underline; text-underline-offset: 2px; color: inherit; }
+
+/* ---------- Moderation ---------- */
+body:has(.sv-root) .modal-root { z-index: 100; }
+.sv-head .sv-x { margin-left: 0; }
+.sv-head .sv-time { margin-right: auto; }
+.mod-badge { display: inline-flex; align-items: center; color: #2f8f6a; flex-shrink: 0; }
+.mod-badge.labeled { gap: 6px; margin: 8px auto 0; height: 30px; padding: 0 12px 0 9px; border-radius: 999px; font-size: 13px; font-weight: 600; background: color-mix(in srgb, #2f8f6a 13%, var(--glass-strong)); border: 1px solid color-mix(in srgb, #2f8f6a 30%, transparent); }
+.become-mod { margin: 14px 0; }
+.become-mod-title { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: #2f8f6a; }
+.become-mod .row-between { gap: 12px; }
+.report-form { display: flex; flex-direction: column; gap: 12px; }
+.report-reasons { display: flex; flex-direction: column; gap: 6px; max-height: 44vh; overflow-y: auto; }
+.report-reason { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 10px 14px; border-radius: 16px; border: 1px solid var(--glass-line); background: var(--glass); color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.report-reason strong { font-weight: 600; font-size: 14.5px; }
+.report-reason.on { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.report-reason.on .muted { color: inherit; opacity: 0.7; }
+.artist-picker.wrap { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; overflow: visible; }
+.removed-banner { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin: -2px 0 12px; padding: 12px 14px; border-radius: 16px; background: color-mix(in srgb, #d2334f 10%, var(--glass-strong)); border: 1px solid color-mix(in srgb, #d2334f 30%, transparent); }
+.removed-banner strong { color: #d2334f; font-weight: 600; font-size: 14px; }
+.removed-banner .pill-btn { margin-top: 6px; }
+.post.is-removed .post-main { opacity: 0.55; }
+.tombstone { padding: 16px 18px; text-align: center; }
+.report-item { display: flex; flex-direction: column; gap: 10px; }
+.report-tag { display: inline-flex; align-self: flex-start; height: 26px; align-items: center; padding: 0 10px; border-radius: 999px; font-size: 12.5px; font-weight: 600; background: color-mix(in srgb, #d2334f 12%, var(--glass-strong)); color: #b52a43; }
+.report-note { margin: 0; padding: 10px 12px; border-radius: 14px; background: var(--glass); font-size: 14px; line-height: 1.4; }
+.report-decide { display: flex; gap: 8px; flex-wrap: wrap; }
+.report-decide select { flex: 0 0 auto; width: auto; height: 40px; border-radius: 999px; padding: 0 12px; font-size: 13px; }
+.report-decide input { flex: 1 1 160px; height: 40px; border-radius: 999px; padding: 0 14px; font-size: 13px; }
+.report-actions { gap: 8px; }
+.admin-row { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--glass-line); gap: 12px; }
+.dm-report { margin-left: auto; width: 40px; height: 40px; }
+.removed-notice { text-decoration: none; color: inherit; }
+
+/* ---------- Consent & legal ---------- */
+.consent { position: fixed; left: 12px; right: 12px; bottom: calc(96px + env(safe-area-inset-bottom)); z-index: 85; max-width: 520px; margin: 0 auto; padding: 18px 18px 14px; border-radius: 26px; background: var(--glass-strong); backdrop-filter: blur(30px) saturate(180%); -webkit-backdrop-filter: blur(30px) saturate(180%); border: 1px solid var(--glass-edge); box-shadow: var(--shadow-lg); }
+.consent strong { font-weight: 600; font-size: 16px; }
+.consent p { margin: 6px 0 12px; font-size: 13.5px; line-height: 1.45; color: var(--text-2); padding-right: 18px; }
+.consent-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.consent-actions .pill-btn { justify-content: center; }
+.consent-x { position: absolute; top: 10px; right: 12px; width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--glass); color: var(--text); font-size: 20px; line-height: 1; }
+.consent-link { display: block; text-align: center; margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+.legal-page { padding-top: 10px; }
+.legal-page h2 { font-size: 18px; font-weight: 600; margin: 24px 0 6px; letter-spacing: -0.02em; }
+.legal-page p, .legal-page li { font-size: 14.5px; line-height: 1.55; color: var(--text-2); }
+.legal-links a { text-decoration: underline; text-underline-offset: 2px; }

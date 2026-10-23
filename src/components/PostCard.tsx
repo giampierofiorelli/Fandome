@@ -3,17 +3,18 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Embed, Post } from '../data/types'
 import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
-import { autoEmbeds } from '../lib/prefs'
+import { useConsent } from '../lib/prefs'
 import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
-import { canManagePage, MAX_PINS } from '../store/reducer'
+import { canManagePage, isAdmin, MAX_PINS } from '../store/reducer'
+import { ModBadge, RemovedBanner, ReportModal } from './Moderation'
 import { albumById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconFlag, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
 
@@ -36,6 +37,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   const [moreMenu, setMoreMenu] = useState(false)
   const [pinFull, setPinFull] = useState(false)
   const [justFollowed, setJustFollowed] = useState(false)
+  const [reporting, setReporting] = useState(false)
 
   const author = userById(post.authorId)
   const concert = concertById(post.concertId)
@@ -48,6 +50,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   const reposted = me ? post.reposts.some((r) => r.userId === me.id) : false
   const myVote = me && post.poll ? post.poll.options.findIndex((o) => o.votes.includes(me.id)) : -1
   const totalVotes = post.poll?.options.reduce((n, o) => n + o.votes.length, 0) ?? 0
+  const owner = Boolean(me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)))
   const pinnedIds = (author?.pinned ?? []).filter((id) => state.posts.some((p) => p.id === id))
   const isPinned = pinnedIds.includes(post.id)
   const canDetach = quoted && me && quoted.authorId === me.id && !post.quoteDetached
@@ -62,8 +65,14 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
     }
   }
 
+  const canSeeRemoved = me && (me.id === post.authorId || isAdmin(state) || (me.mod && postArtists(post).some((a) => me.mod!.artistIds.includes(a))))
+  if (post.removed && !canSeeRemoved) {
+    return <div className="post tombstone muted small">This post was removed for breaking the community rules.</div>
+  }
+
   return (
-    <article className={embedded ? 'post embedded' : 'post'} onClick={() => !embedded && nav(`/p/${post.id}`)}>
+    <article className={`${embedded ? 'post embedded' : 'post'}${post.removed ? ' is-removed' : ''}`} onClick={() => !embedded && nav(`/p/${post.id}`)}>
+      {post.removed && !embedded && <RemovedBanner post={post} />}
       {pinned && (
         <div className="repost-head pinned-head">
           <IconPushpin size={14} /> Pinned
@@ -81,6 +90,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
           <header className="post-head">
             <UserLink user={author} />
             {author?.kind === 'page' && <PageBadge verified={author.page?.verification === 'verified'} />}
+            <ModBadge user={author} />
             <span className="muted">· {timeAgo(post.createdAt)}</span>
             {!embedded && me && author && author.id !== me.id && author.id !== 'u-mod' && (!me.following.includes(author.id) || justFollowed) && (
               <motion.button
@@ -244,13 +254,13 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
               <button className="act" aria-label="Copy link" onClick={share}>
                 <IconShare size={18} />
               </button>
-              {me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)) && (
+              {me && (
                 <div className="act-wrap">
                   <button className="act" aria-label="More" aria-expanded={moreMenu} onClick={() => setMoreMenu(!moreMenu)}>
                     <IconMore size={18} />
                   </button>
                   <Popover open={moreMenu} onClose={() => setMoreMenu(false)} align="right">
-                    {!post.replyTo && (
+                    {owner && !post.replyTo && !post.removed && (
                       <button
                         onClick={() => {
                           setMoreMenu(false)
@@ -266,6 +276,17 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
                         <IconPushpin size={16} /> {isPinned ? 'Unpin from profile' : 'Pin to profile'}
                       </button>
                     )}
+                    {!owner && (
+                      <button
+                        onClick={() => {
+                          setMoreMenu(false)
+                          setReporting(true)
+                        }}
+                      >
+                        <IconFlag size={16} /> Report post
+                      </button>
+                    )}
+                    {owner && (
                     <button
                       className="danger"
                       onClick={() => {
@@ -276,6 +297,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
                     >
                       <IconTrash size={16} /> Delete
                     </button>
+                    )}
                   </Popover>
                 </div>
               )}
@@ -284,6 +306,11 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
         </div>
       </div>
       {tagModal && <RepostTagsModal postId={post.id} onClose={() => setTagModal(false)} />}
+      {reporting && (
+        <div onClick={(e) => e.stopPropagation()}>
+          <ReportModal target={{ kind: 'post', id: post.id }} what="post" onClose={() => setReporting(false)} />
+        </div>
+      )}
       {pinFull && (
         <div onClick={(e) => e.stopPropagation()}>
           <PinReplaceModal post={post} pinnedIds={pinnedIds} onClose={() => setPinFull(false)} />
@@ -463,23 +490,24 @@ function RepostTagsForm({ postId }: { postId: string }) {
   )
 }
 
-// Click-to-load YouTube player: shows the thumbnail first (fast, no tracking),
-// then swaps in the privacy-enhanced embed. The video stays on YouTube.
+// YouTube: with the reader's consent the player shows right away; without it we
+// show a neutral poster (not even the thumbnail, which comes from Google) until they tap.
 function YouTubeEmbed({ id }: { id: string }) {
-  const [play, setPlay] = useState(autoEmbeds)
+  const consent = useConsent()
+  const auto = consent?.media === true
   const [tapped, setTapped] = useState(false)
   return (
     <div className="yt" onClick={(e) => e.stopPropagation()}>
       {tapped ? (
         <YouTubePlayer id={id} />
-      ) : play ? (
+      ) : auto ? (
         <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`} title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen />
       ) : (
-        <button className="yt-poster" onClick={() => (setTapped(true), setPlay(true))} aria-label="Play YouTube video">
-          <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" />
+        <button className="yt-poster blank" onClick={() => setTapped(true)} aria-label="Play YouTube video">
           <span className="yt-play">
             <IconPlay size={22} />
           </span>
+          <span className="embed-consent">YouTube video · playing it shares data with YouTube</span>
         </button>
       )}
     </div>
@@ -551,19 +579,21 @@ function YouTubePlayer({ id }: { id: string }) {
 // Posts from X / Instagram / TikTok, shown with each platform's own embed.
 // Click-to-load: nothing from the platform loads until the reader asks for it.
 function SocialEmbed({ embed }: { embed: Embed }) {
-  // Music players are always shown ready to play; social posts load on tap unless the reader opted in.
-  const [load, setLoad] = useState(() => isAudioEmbed(embed.kind) || autoEmbeds())
+  // Ready to play with the reader's consent; otherwise it loads only when they tap.
+  const consent = useConsent()
+  const [tapped, setTapped] = useState(false)
+  const load = tapped || consent?.media === true
   const label = EMBED_LABEL[embed.kind]
   return (
     <div className={`social ${embed.kind}${isAudioEmbed(embed.kind) ? ' audio' : ''}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>
       {load ? (
         <iframe src={embedSrc(embed)} title={`${label} post`} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen loading="lazy" />
       ) : (
-        <button className="social-poster" onClick={() => setLoad(true)} aria-label={`Show ${label} post`}>
+        <button className="social-poster" onClick={() => setTapped(true)} aria-label={`Show ${label} post`}>
           <span className="embed-logo">{label.slice(0, 2)}</span>
           <span className="grow">
             <strong>{isAudioEmbed(embed.kind) ? `Listen on ${label}` : `${label} post`}</strong>
-            <span className="muted small block">{prettyUrl(embed.url).short}</span>
+            <span className="muted small block">Opening it shares data with {label}</span>
           </span>
           <span className="pill-btn glass small">{isAudioEmbed(embed.kind) ? 'Play' : 'Show'}</span>
         </button>

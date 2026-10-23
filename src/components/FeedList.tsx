@@ -1,3 +1,4 @@
+import { useStore } from '../store/store'
 import { AnimatePresence, motion } from 'motion/react'
 import type { FeedItem } from '../lib/feed'
 import { spring } from '../lib/motion'
@@ -6,7 +7,10 @@ import { PostCard } from './PostCard'
 // Finite feed: once you pass the posts that are new since your last visit,
 // a "You're all caught up" marker tells you that you can stop scrolling.
 // New posts slide in; existing ones glide (layout spring); deleted ones fade out.
-export function FeedList({ items, caughtUpAfter, empty }: { items: FeedItem[]; caughtUpAfter?: number; empty?: string }) {
+export function FeedList({ items: all, caughtUpAfter, empty }: { items: FeedItem[]; caughtUpAfter?: number; empty?: string }) {
+  const { me } = useStore()
+  // Removed posts disappear from feeds; only their author still sees them (with the reason).
+  const items = all.filter((i) => !i.post.removed || i.post.authorId === me?.id)
   if (!items.length) return <p className="empty">{empty ?? 'Nothing here yet.'}</p>
   const newCount = caughtUpAfter === undefined ? -1 : items.filter((i) => i.at > caughtUpAfter).length
   return (

@@ -6,6 +6,7 @@ import { useStore } from '../store/store'
 import { invitesFor } from '../store/reducer'
 import { StoriesBar } from '../components/Stories'
 import { MessagingNotice } from './Messages'
+import { RemovedNotice } from '../components/Moderation'
 import { FeedList } from '../components/FeedList'
 import { ArtistDisc, Avatar, Tabs } from '../components/ui'
 import { IconArrowUpRight, IconPlay, IconX } from '../components/icons'
@@ -46,6 +47,7 @@ export default function Home() {
     <>
       <StoriesBar />
       <MessagingNotice compact />
+      <RemovedNotice />
       <NewShows />
       <header className="hello compact">
         <div className="eyebrow">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>

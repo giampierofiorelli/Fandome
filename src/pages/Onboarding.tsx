@@ -17,6 +17,8 @@ export default function Onboarding() {
   const { state, dispatch, userById } = useStore()
   const nav = useNavigate()
   const [step, setStep] = useState(0)
+  // GDPR (Italy): consent to data processing from age 14; terms accepted before joining.
+  const [agreed, setAgreed] = useState(false)
   const [dir, setDir] = useState(1)
   const [name, setName] = useState('')
   const [handle, setHandle] = useState('')
@@ -31,7 +33,7 @@ export default function Onboarding() {
     setDir(n > step ? 1 : -1)
     setStep(n)
   }
-  const canNext = step === 0 ? name.trim().length > 0 && cleanHandle.length >= 3 : step === 1 ? picked.length > 0 : true
+  const canNext = step === 0 ? name.trim().length > 0 && cleanHandle.length >= 3 && agreed : step === 1 ? picked.length > 0 : true
   const finish = () => {
     dispatch({ type: 'onboard', name: name.trim(), handle: cleanHandle, location: location.trim(), artistIds: picked, followIds: following })
     // Came from an invite link? Go back to it so they can accept.
@@ -87,6 +89,20 @@ export default function Onboarding() {
                 <input value={handle} onChange={(e) => setHandle(e.target.value)} placeholder="@handle" aria-label="Handle" />
                 <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="City (for local meetups)" aria-label="City" />
               </div>
+              <label className="ob-agree">
+                <input type="checkbox" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} />
+                <span>
+                  I’m 14 or older and I accept the{' '}
+                  <a href="#/terms" target="_blank" rel="noopener">
+                    terms
+                  </a>{' '}
+                  and the{' '}
+                  <a href="#/privacy" target="_blank" rel="noopener">
+                    privacy policy
+                  </a>
+                  .
+                </span>
+              </label>
               <p className="ob-note">Independent fan community — not affiliated with any artist.</p>
             </>
           )}

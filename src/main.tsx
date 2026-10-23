@@ -8,6 +8,12 @@ import { ComposerProvider } from './components/Composer'
 import { ToastProvider } from './components/Toast'
 import { handleRedirect } from './lib/spotify'
 import { loadLiveConcerts } from './lib/liveConcerts'
+// Fonts are served from this site (no requests to Google: GDPR).
+import '@fontsource-variable/geist/wght.css'
+import '@fontsource/doto/latin-500.css'
+import '@fontsource/doto/latin-700.css'
+import '@fontsource/doto/latin-800.css'
+import '@fontsource/doto/latin-900.css'
 import './styles.css'
 
 const render = (spotifyMessage: string | null) =>

@@ -6,7 +6,8 @@ import { canMessage, conversations, DAY, dmExpiresIn, messagingLeft, messagingPa
 import { AudioPlayer } from '../components/AudioPlayer'
 import { useToast } from '../components/Toast'
 import { Avatar } from '../components/ui'
-import { IconArrowLeft, IconMic, IconSend, IconX } from '../components/icons'
+import { IconArrowLeft, IconFlag, IconMic, IconSend, IconX } from '../components/icons'
+import { ReportModal } from '../components/Moderation'
 import { createRecorder, MAX_VOICE_SECONDS } from '../lib/audio'
 import { springSnappy } from '../lib/motion'
 import { timeAgo } from '../lib/util'
@@ -137,6 +138,7 @@ export function Conversation() {
   const other = state.users.find((u) => u.handle === handle)
   const [text, setText] = useState('')
   const [rec, setRec] = useState<number | null>(null)
+  const [reporting, setReporting] = useState(false)
   const recorder = useRef<ReturnType<typeof createRecorder> | null>(null)
   const listRef = useRef<HTMLDivElement>(null)
   const replyTimers = useRef<ReturnType<typeof setTimeout>[]>([])
@@ -230,6 +232,10 @@ export function Conversation() {
             <span className="muted small block">@{other.handle}</span>
           </span>
         </Link>
+        <button className="glass-circle dm-report" aria-label={`Report ${other.name}`} onClick={() => setReporting(true)}>
+          <IconFlag size={16} />
+        </button>
+        {reporting && <ReportModal target={{ kind: 'dm', id: other.id }} what={`${other.name} (private chat)`} onClose={() => setReporting(false)} />}
       </header>
       <p className="dm-rule center muted small">Messages disappear 24h after they’re seen</p>
       {otherAway && !paused && <p className="dm-away center small">{other.name} hasn’t been active for a month, so they can read your message but can’t reply until they’re back.</p>}

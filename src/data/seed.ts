@@ -1,6 +1,6 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
-import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User } from './types'
+import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User, Report } from './types'
 
 export const artists: Artist[] = [
   {
@@ -168,11 +168,11 @@ export const concerts: Concert[] = [
 const blank = { attended: [], going: [], ratings: {}, top4: [], fanSince: {}, following: [] }
 
 export const seedUsers: User[] = [
-  { ...blank, id: 'u-giulia', handle: 'giulia_vogue', name: 'Giulia', color: '#e8457c', bio: 'Turin ’87 changed my life. Collector of 12" remixes.', location: 'Turin, IT', fanSince: { madonna: 1984 }, top4: ['m-trueblue', 'm-prayer', 'm-ray', 'm-confessions'], attended: ['m-turin-1987', 'm-rio-2024'], going: ['m-milan-2027'], ratings: { 'm-ray': 5, 'm-prayer': 5, 'm-music': 4 } },
+  { ...blank, id: 'u-giulia', handle: 'giulia_vogue', name: 'Giulia', color: '#e8457c', bio: 'Turin ’87 changed my life. Collector of 12" remixes.', location: 'Turin, IT', fanSince: { madonna: 1984 }, mod: { artistIds: ['madonna'], since: 1767225600000 }, top4: ['m-trueblue', 'm-prayer', 'm-ray', 'm-confessions'], attended: ['m-turin-1987', 'm-rio-2024'], going: ['m-milan-2027'], ratings: { 'm-ray': 5, 'm-prayer': 5, 'm-music': 4 } },
   { ...blank, id: 'u-rafa', handle: 'rafa.celebration', name: 'Rafael', color: '#5fd38d', bio: 'Copacabana, 1.6M of us. I was there.', location: 'Rio de Janeiro, BR', fanSince: { madonna: 2005, gaga: 2008 }, top4: ['m-confessions', 'm-music', 'g-btw', 'g-chromatica'], attended: ['m-rio-2024'], ratings: { 'm-confessions': 5, 'g-btw': 4.5 } },
   { ...blank, id: 'u-sam', handle: 'samdevotee', name: 'Sam', color: '#9b7cf0', bio: 'Rose Bowl ’88 kid. Synths > everything.', location: 'Los Angeles, US', fanSince: { depeche: 1986, psb: 1987 }, top4: ['d-violator', 'd-masses', 'p-actually', 'p-very'], attended: ['d-rosebowl-1988'], going: ['p-london-2027'], ratings: { 'd-violator': 5, 'p-very': 4.5 } },
   { ...blank, id: 'u-emma', handle: 'emmaspinning', name: 'Emma', color: '#f0a43a', bio: 'Kylie at Glasto, crying in a field.', location: 'Manchester, UK', fanSince: { kylie: 2001, madonna: 2005 }, top4: ['k-fever', 'k-disco', 'k-lightyears', 'm-confessions'], attended: ['k-glasto-2019'], ratings: { 'k-fever': 5, 'k-tension': 4 } },
-  { ...blank, id: 'u-kenji', handle: 'kenji_ray', name: 'Kenji', color: '#3ab5f0', bio: 'Ray of Light is a perfect album. Tokyo.', location: 'Tokyo, JP', fanSince: { madonna: 1998 }, top4: ['m-ray', 'm-music', 'm-confessions', 'm-prayer'], ratings: { 'm-ray': 5 } },
+  { ...blank, id: 'u-kenji', handle: 'kenji_ray', name: 'Kenji', color: '#3ab5f0', bio: 'Ray of Light is a perfect album. Tokyo.', location: 'Tokyo, JP', fanSince: { madonna: 1998 }, modRequest: { artistIds: ['madonna'], reason: 'I answer new fans every day and know the community well.', at: 1792700000000, status: 'pending' }, top4: ['m-ray', 'm-music', 'm-confessions', 'm-prayer'], ratings: { 'm-ray': 5 } },
   { ...blank, id: 'u-lucia', handle: 'lucia.monster', name: 'Lucía', color: '#5fd38d', bio: 'Little monster from Madrid. Mayhem era.', location: 'Madrid, ES', fanSince: { gaga: 2009, madonna: 2012 }, top4: ['g-mayhem', 'g-btw', 'g-fame', 'm-ray'], ratings: { 'g-mayhem': 4.5 } },
   { ...blank, id: 'u-claire', handle: 'claire_vinyl', name: 'Claire', color: '#e8457c', bio: 'Vinyl, picture discs, promo CDs. Paris.', location: 'Paris, FR', fanSince: { madonna: 1986, psb: 1990 }, top4: ['m-trueblue', 'p-behaviour', 'm-virgin', 'm-prayer'], ratings: { 'm-trueblue': 4.5 } },
   { ...blank, id: 'u-jonas', handle: 'jonas101', name: 'Jonas', color: '#9b7cf0', bio: 'Berlin. Every DM tour since 1990.', location: 'Berlin, DE', fanSince: { depeche: 1990 }, top4: ['d-sofad', 'd-violator', 'd-memento', 'd-masses'], ratings: { 'd-sofad': 5 } },
@@ -196,6 +196,7 @@ export const seedUsers: User[] = [
       invites: [{ id: 'inv-demo', code: 'demo-invite-ray', role: 'admin', toUserId: 'me', invitedBy: 'u-giulia', createdAt: 0, status: 'pending' }],
     },
   },
+  { ...blank, id: 'u-promo', handle: 'tix_deals_247', name: 'Ticket Deals', color: '#888888', bio: 'Best prices!!!', location: '', fanSince: { madonna: 2026 } },
   { ...blank, id: 'u-mod', handle: 'fandome', name: 'Fandome Team', color: '#ffffff', bio: 'Independent fan platform. Not affiliated with any artist.', location: 'Everywhere' },
 ]
 
@@ -214,6 +215,7 @@ export function seedPosts(now: number): Post[] {
     p({ id: 'p1', authorId: 'u-giulia', artistId: 'madonna', concertId: 'm-turin-1987', text: 'Ancora oggi ricordo il caldo di Torino, 4 settembre 1987. Il mio primo concerto in assoluto. #live #turin87', lang: 'it', translation: 'I still remember the heat in Turin, 4 September 1987. My very first concert ever. #live #turin87', likes: ['u-rafa', 'u-claire', 'u-kenji'], image: 'linear-gradient(135deg,#ff6a88,#ff99ac 40%,#2a1a3a)' }, 25),
     p({ id: 'p2', authorId: 'u-rafa', artistId: 'madonna', text: 'Hot take: Confessions is the best pop album of the 2000s and it’s not close. #confessions #eras', likes: ['u-emma', 'u-lucia'], reposts: [{ userId: 'u-emma', at: now - 20 * MIN, tags: ['correct', 'disco never died'] }] }, 50),
     p({ id: 'p-collab', authorId: 'u-emma', artistId: 'kylie', artistIds: ['kylie', 'madonna', 'gaga'], text: 'Dream collab nobody asked for but everyone needs: Kylie, Madonna and Gaga on one disco track. Who produces it? #collab', likes: ['u-rafa', 'u-lucia', 'u-giulia'] }, 35),
+    p({ id: 'p-spam', authorId: 'u-promo', artistId: 'madonna', text: 'CHEAP Madonna tickets 💸💸 DM me now, pay by gift card only!!! #madonna', likes: [] }, 15),
     p({ id: 'p3', authorId: 'u-ana', artistId: 'madonna', text: 'Okay I’m new. Where do I start after Hung Up? Be nice 🙏 #newfan', likes: ['u-giulia'] }, 70),
     p({ id: 'p4', authorId: 'u-giulia', replyTo: 'p3', artistId: 'madonna', text: 'Welcome! Ray of Light front to back, then Like a Prayer. Then come tell us everything 💗', likes: ['u-ana', 'u-kenji'] }, 65),
     p({ id: 'p5', authorId: 'u-kenji', replyTo: 'p3', artistId: 'madonna', text: 'Ray of Light. Headphones. Night time. Trust me.', likes: ['u-ana'] }, 60),
@@ -295,4 +297,9 @@ export function seedDms(now: number): DirectMessage[] {
     { id: 'd2', from: 'u-giulia', to: 'me', at: m(39), text: 'Are you thinking about Milan 2027? We’re organising a meetup.' },
     { id: 'd3', from: 'u-kenji', to: 'me', at: m(300), text: 'Welcome! If you need a Ray of Light listening order, ask me 😄' },
   ]
+}
+
+// Demo: a report waiting in the moderation queue.
+export function seedReports(now: number): Report[] {
+  return [{ id: 'r1', at: now - 10 * 60_000, by: 'u-rafa', target: { kind: 'post', id: 'p-spam' }, reason: 'spam', note: 'Asks for gift-card payments: classic ticket scam.', status: 'open' }]
 }

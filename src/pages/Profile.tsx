@@ -8,7 +8,8 @@ import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
-import { IconDisc, IconPin, IconTicket } from '../components/icons'
+import { IconDisc, IconFlag, IconPin, IconTicket } from '../components/icons'
+import { BecomeModCard, ModBadge, ReportModal } from '../components/Moderation'
 import PageProfile from './PageProfile'
 import { canMessage } from '../store/reducer'
 
@@ -19,6 +20,7 @@ export default function Profile() {
   const { handle } = useParams()
   const { state, dispatch, me } = useStore()
   const [tab, setTab] = useState<Tab>('posts')
+  const [reporting, setReporting] = useState(false)
   const user = state.users.find((u) => u.handle === handle)
   if (!user || !me) return <Navigate to="/" replace />
   if (user.kind === 'page') return <PageProfile user={user} />
@@ -57,6 +59,7 @@ export default function Profile() {
             @{user.handle}
             {user.location && <> · <IconPin size={13} /> {user.location}</>}
           </div>
+          <ModBadge user={user} label />
           {user.bio && <p className="prof-bio">{user.bio}</p>}
           <div className="hero-actions center">
             {isMe ? (
@@ -72,6 +75,11 @@ export default function Profile() {
                   <Link to={`/messages/${user.handle}`} className="pill-btn glass">
                     Message
                   </Link>
+                )}
+                {user.id !== 'u-mod' && (
+                  <button className="glass-circle" aria-label={`Report ${user.name}`} onClick={() => setReporting(true)}>
+                    <IconFlag size={16} />
+                  </button>
                 )}
               </>
             )}
@@ -135,6 +143,8 @@ export default function Profile() {
           )}
         </div>
       </header>
+      {isMe && <BecomeModCard />}
+      {reporting && <ReportModal target={{ kind: 'user', id: user.id }} what={user.name} onClose={() => setReporting(false)} />}
       <div className="section-head center">
         <Tabs<Tab>
           tabs={[

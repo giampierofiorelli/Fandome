@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { useState } from 'react'
-import { exportMyData, pagesManagedBy } from '../store/reducer'
+import { exportMyData, isAdmin, isModerator, pagesManagedBy, reportsFor } from '../store/reducer'
 import { Link } from 'react-router-dom'
 import { Avatar } from '../components/ui'
 import * as spotify from '../lib/spotify'
 import { useToast } from '../components/Toast'
-import { autoEmbeds, setAutoEmbeds } from '../lib/prefs'
+import { setConsent, useConsent } from '../lib/prefs'
 
 export default function Settings() {
   const { state, dispatch } = useStore()
@@ -30,7 +30,8 @@ export default function Settings() {
         <h1 className="display">Your <span className="display-strong">space</span></h1>
       </header>
       <PagesCard />
-      <EmbedsCard />
+      <PrivacyCard />
+      <ModerationCard />
       <SpotifyCard />
       <section className="card">
         <h3>Your data</h3>
@@ -179,21 +180,59 @@ function PagesCard() {
 }
 
 // Embedded posts (YouTube, X, Instagram, TikTok, music players): tap to load, or load right away.
-function EmbedsCard() {
-  const [on, setOn] = useState(autoEmbeds())
+function PrivacyCard() {
+  const consent = useConsent()
+  const on = consent?.media === true
   return (
     <section className="card">
       <div className="row-between">
-        <h3>Embedded posts</h3>
-        <button className={on ? 'switch on' : 'switch'} role="switch" aria-checked={on} aria-label="Load embedded posts automatically" onClick={() => (setAutoEmbeds(!on), setOn(!on))}>
+        <h3>Privacy & embedded media</h3>
+        <button className={on ? 'switch on' : 'switch'} role="switch" aria-checked={on} aria-label="Load videos and posts from other platforms automatically" onClick={() => setConsent(!on)}>
           <i />
         </button>
       </div>
       <p className="muted small">
         {on
-          ? 'Videos and posts from other socials open already expanded in the feed. Music players are always ready to play.'
-          : 'Videos and posts from other socials stay closed until you tap them: the feed loads faster and other platforms can’t track you just for scrolling. Music players (Spotify, Apple Music, SoundCloud…) are always ready to play.'}
+          ? 'Videos, music players and posts from YouTube, Spotify, Instagram and other platforms open already expanded. Those companies may set cookies and see your IP address.'
+          : 'Videos, music players and posts from other platforms stay closed until you tap them, so those companies learn nothing about you just for scrolling.'}
+        {consent && ` Choice saved on ${new Date(consent.at).toLocaleDateString('en-GB')}.`}
       </p>
+      <p className="small legal-links">
+        <Link to="/privacy">Privacy policy</Link> · <Link to="/terms">Terms & community rules</Link>
+      </p>
+    </section>
+  )
+}
+
+// Moderation: queue for moderators and the site admin; the admin role is never shown publicly.
+function ModerationCard() {
+  const { state, dispatch, me } = useStore()
+  if (!me || me.handle === 'guest') return null
+  const admin = isAdmin(state)
+  const mod = isModerator(me)
+  const open = reportsFor(state, me.id).length
+  return (
+    <section className="card">
+      <h3>Moderation</h3>
+      {admin || mod ? (
+        <div className="row-between">
+          <span className="muted small">{open ? `${open} open ${open === 1 ? 'report' : 'reports'} waiting` : 'Nothing waiting right now.'}</span>
+          <Link to="/mod" className="pill-btn ink small">
+            Open queue
+          </Link>
+        </div>
+      ) : (
+        <p className="muted small">Moderators are fans who help keep a fandom safe. You can apply from your profile.</p>
+      )}
+      <div className="row-between admin-row">
+        <span className="small">
+          <strong>Admin tools on this device</strong>
+          <span className="muted block">Prototype only: lets whoever runs the site review requests and appeals. Never shown to other people.</span>
+        </span>
+        <button className={admin ? 'switch on' : 'switch'} role="switch" aria-checked={admin} aria-label="Admin tools" onClick={() => dispatch({ type: 'setAdmin', on: !admin })}>
+          <i />
+        </button>
+      </div>
     </section>
   )
 }

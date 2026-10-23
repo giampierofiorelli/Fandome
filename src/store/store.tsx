@@ -21,7 +21,14 @@ function load(): State {
           if (u.activeAt !== undefined) return u
           return { ...u, activeAt: fresh.users.find((f) => f.id === u.id)?.activeAt ?? now }
         })
-        return reducer({ ...parsed, users, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms }, { type: 'prune', now })
+        // Saves from before moderation: add the demo report, its spam post and moderators.
+        let posts = parsed.posts
+        let allUsers = users
+        if (!parsed.reports) {
+          allUsers = [...users.map((u) => (u.id === 'u-giulia' || u.id === 'u-kenji' ? { ...u, mod: fresh.users.find((f) => f.id === u.id)?.mod, modRequest: fresh.users.find((f) => f.id === u.id)?.modRequest } : u)), ...fresh.users.filter((f) => !users.some((u) => u.id === f.id))]
+          posts = [...fresh.posts.filter((p) => p.id === 'p-spam'), ...posts]
+        }
+        return reducer({ ...parsed, users: allUsers, posts, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms, reports: parsed.reports ?? fresh.reports }, { type: 'prune', now })
       }
     }
   } catch {

@@ -23,6 +23,8 @@ import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
 import Invite from './pages/Invite'
 import { Conversation, Inbox } from './pages/Messages'
+import { ConsentBanner, Privacy, Terms } from './pages/Legal'
+import { ModQueue } from './components/Moderation'
 
 export const GUEST_HANDLE = 'guest'
 const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
@@ -155,12 +157,16 @@ export default function App() {
             <Route path="/invite/:code" element={<Invite />} />
             <Route path="/messages" element={<Inbox />} />
             <Route path="/messages/:handle" element={<Conversation />} />
+            <Route path="/mod" element={<ModQueue />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </motion.div>
         <p className="legal">Fandome prototype · demo data · independent fan community, not affiliated with any artist</p>
       </main>
 
+      <ConsentBanner />
       <nav className="tabbar" aria-label="Main">
         <Tab to="/" end icon={<IconHome size={22} />} label="Home" />
         <Tab to="/explore" icon={<IconSearch size={22} />} label="Explore" />

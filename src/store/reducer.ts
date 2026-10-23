@@ -1,5 +1,6 @@
-import { seedChats, seedDms, seedPosts, seedStories, seedUsers } from '../data/seed'
-import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Story, User } from '../data/types'
+import { seedChats, seedDms, seedPosts, seedReports, seedStories, seedUsers } from '../data/seed'
+import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, User } from '../data/types'
+import { postArtists } from '../lib/postArtists'
 
 export interface State {
   version: 1
@@ -10,6 +11,8 @@ export interface State {
   stories: Story[]
   dms: DirectMessage[]
   lastSeen: number // for the "You're all caught up" finite feed
+  reports: Report[]
+  adminId?: Id // runs the site; never shown publicly
 }
 
 export type Action =
@@ -52,6 +55,15 @@ export type Action =
   | { type: 'declineInvite'; code: string }
   | { type: 'removePageMember'; pageId: Id; userId: Id }
   | { type: 'requestVerification'; pageId: Id }
+  | { type: 'report'; id: Id; at: number; target: Report['target']; reason: ReportReason; note?: string }
+  | { type: 'resolveReport'; reportId: Id; action: 'remove' | 'dismiss'; reason?: ReportReason; note?: string; at: number }
+  | { type: 'appeal'; postId: Id; text: string; at: number }
+  | { type: 'decideAppeal'; postId: Id; restore: boolean }
+  | { type: 'requestMod'; artistIds: Id[]; reason: string; at: number }
+  | { type: 'cancelModRequest' }
+  | { type: 'decideModRequest'; userId: Id; approve: boolean; at: number }
+  | { type: 'removeMod'; userId: Id }
+  | { type: 'setAdmin'; on: boolean }
   | { type: 'reset'; now: number }
 
 export function initialState(now: number): State {
@@ -64,6 +76,7 @@ export function initialState(now: number): State {
     chats: seedChats(now),
     stories: seedStories(now),
     dms: seedDms(now),
+    reports: seedReports(now),
     lastSeen: now - 12 * 60 * 60_000,
   }
 }
@@ -341,6 +354,54 @@ function apply(state: State, action: Action): State {
         stories: state.stories.filter((s) => action.now - s.createdAt < DAY),
         dms: state.dms.filter((m) => dmVisible(m, action.now)),
       }
+    case 'report': {
+      if (!me || isGuest(state)) return state
+      // One open report per person per thing.
+      if (state.reports.some((r) => r.by === me && r.status === 'open' && r.target.kind === action.target.kind && r.target.id === action.target.id)) return state
+      const r: Report = { id: action.id, at: action.at, by: me, target: action.target, reason: action.reason, note: action.note?.trim() || undefined, status: 'open' }
+      return { ...state, reports: [r, ...state.reports] }
+    }
+    case 'resolveReport': {
+      const r = state.reports.find((x) => x.id === action.reportId)
+      if (!me || !r || r.status !== 'open' || !canHandleReport(state, me, r)) return state
+      const status: Report['status'] = action.action === 'remove' ? 'removed' : 'dismissed'
+      // Settles every open report about the same thing.
+      let next: State = { ...state, reports: state.reports.map((x) => (x.status === 'open' && x.target.kind === r.target.kind && x.target.id === r.target.id ? { ...x, status, handledAt: action.at } : x)) }
+      if (action.action === 'remove' && r.target.kind === 'post') next = updatePost(next, r.target.id, (p) => ({ ...p, removed: { at: action.at, reason: action.reason ?? r.reason, note: action.note?.trim() || undefined } }))
+      if (action.action === 'remove' && r.target.kind === 'story') next = { ...next, stories: next.stories.filter((s) => s.id !== r.target.id) }
+      return next
+    }
+    case 'appeal':
+      return updatePost(state, action.postId, (p) => (p.authorId === me && p.removed && !p.removed.appeal && action.text.trim() ? { ...p, removed: { ...p.removed, appeal: { at: action.at, text: action.text.trim(), status: 'pending' } } } : p))
+    case 'decideAppeal':
+      if (!isAdmin(state)) return state
+      return updatePost(state, action.postId, (p) => (!p.removed?.appeal ? p : action.restore ? { ...p, removed: undefined } : { ...p, removed: { ...p.removed, appeal: { ...p.removed.appeal, status: 'upheld' } } }))
+    case 'requestMod': {
+      const u = state.users.find((x) => x.id === me)
+      const ids = action.artistIds.filter((a) => u?.fanSince[a] !== undefined)
+      if (!me || !u || isGuest(state) || !ids.length || !recentlyActive(state, me, action.at) || u.modRequest?.status === 'pending') return state
+      return updateMe(state, (x) => ({ ...x, modRequest: { artistIds: ids, reason: action.reason.trim(), at: action.at, status: 'pending' } }))
+    }
+    case 'cancelModRequest':
+      return updateMe(state, (x) => ({ ...x, modRequest: undefined }))
+    case 'decideModRequest':
+      if (!isAdmin(state)) return state
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id !== action.userId || u.modRequest?.status !== 'pending') return u
+          if (!action.approve) return { ...u, modRequest: { ...u.modRequest, status: 'declined' } }
+          const artistIds = Array.from(new Set([...(u.mod?.artistIds ?? []), ...u.modRequest.artistIds]))
+          return { ...u, mod: { artistIds, since: u.mod?.since ?? action.at }, modRequest: undefined }
+        }),
+      }
+    case 'removeMod':
+      if (!isAdmin(state)) return state
+      return { ...state, users: state.users.map((u) => (u.id === action.userId ? { ...u, mod: undefined } : u)) }
+    case 'setAdmin':
+      // Prototype only: whoever runs this copy of the site. With a real backend this is a server-side role.
+      if (!me || isGuest(state)) return state
+      return { ...state, adminId: action.on ? me : undefined }
     case 'reset':
       return initialState(action.now)
   }
@@ -411,6 +472,18 @@ export function findInvite(state: State, code: string) {
 export function invitesFor(state: State, userId: Id) {
   return state.users.flatMap((page) => (page.page?.invites ?? []).filter((i) => i.toUserId === userId && i.status === 'pending').map((invite) => ({ page, invite })))
 }
+export const isAdmin = (state: State) => Boolean(state.meId && state.adminId === state.meId)
+// Moderators handle reports about posts in their fandoms (never their own posts or reports);
+// the admin handles everything, and alone sees reports about people, stories and messages.
+export function canHandleReport(state: State, userId: Id, r: Report): boolean {
+  if (state.adminId === userId) return true
+  const mod = state.users.find((u) => u.id === userId)?.mod
+  if (!mod || r.target.kind !== 'post' || r.by === userId) return false
+  const post = state.posts.find((p) => p.id === r.target.id)
+  return Boolean(post && post.authorId !== userId && postArtists(post).some((a) => mod.artistIds.includes(a)))
+}
+export const reportsFor = (state: State, userId: Id) => state.reports.filter((r) => r.status === 'open' && canHandleReport(state, userId, r))
+export const isModerator = (u?: User) => Boolean(u?.mod?.artistIds.length)
 const isGuest = (state: State) => state.users.find((u) => u.id === state.meId)?.handle === 'guest'
 function updatePage(state: State, pageId: Id, fn: (u: User) => User): State {
   return { ...state, users: state.users.map((u) => (u.id === pageId && u.page ? fn(u) : u)) }

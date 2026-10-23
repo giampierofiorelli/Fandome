@@ -12,7 +12,8 @@ import { timeAgo } from '../lib/util'
 import { useToast } from './Toast'
 import { Avatar, Modal, useModalClose } from './ui'
 import { PostCard } from './PostCard'
-import { IconCamera, IconImage, IconMute, IconPlay, IconPlus, IconRepost, IconSend, IconTrash, IconVideo, IconVolume, IconX } from './icons'
+import { ReportModal } from './Moderation'
+import { IconCamera, IconFlag, IconImage, IconMute, IconPlay, IconPlus, IconRepost, IconSend, IconTrash, IconVideo, IconVolume, IconX } from './icons'
 
 const STORY_MS = 5000
 const POST_STORY_MS = 10000 // a shared post has more to read
@@ -337,6 +338,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
   const [muted, setMuted] = useState(false)
   const [blocked, setBlocked] = useState(false)
   const [missingVideo, setMissingVideo] = useState<string | null>(null)
+  const [reportStory, setReportStory] = useState<string | null>(null)
   const isVideo = content?.kind === 'video' && Boolean(content.video) && missingVideo !== story?.id
 
   // Start on the first unseen story of this author.
@@ -468,6 +470,18 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
               {muted ? <IconMute size={20} /> : <IconVolume size={20} />}
             </button>
           )}
+          {!isMine && me?.handle !== 'guest' && (
+            <button
+              className="sv-x flag"
+              aria-label="Report story"
+              onClick={() => {
+                setPaused(true)
+                setReportStory(story.id)
+              }}
+            >
+              <IconFlag size={18} />
+            </button>
+          )}
           <button className="sv-x" onClick={onClose} aria-label="Close">
             <IconX size={20} />
           </button>
@@ -546,6 +560,16 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
           ) : null}
         </div>
       </motion.div>
+      {reportStory && (
+        <ReportModal
+          target={{ kind: 'story', id: reportStory }}
+          what="story"
+          onClose={() => {
+            setReportStory(null)
+            setPaused(false)
+          }}
+        />
+      )}
     </motion.div>,
     document.body,
   )

@@ -68,6 +68,8 @@ export interface User {
   following: Id[]
   joinedAt?: number
   pinned?: Id[] // up to 3 posts shown first on the profile, newest pin first
+  mod?: { artistIds: Id[]; since: number } // volunteer moderator for these fandoms (shown on the profile)
+  modRequest?: { artistIds: Id[]; reason: string; at: number; status: 'pending' | 'declined' }
   activeAt?: number // last public action (like, vote, rating…); posts and stories count on their own
 }
 
@@ -103,6 +105,20 @@ export interface Post {
   youtube?: string // YouTube video id, embedded (video stays on YouTube)
   audio?: { src: string; duration: number; peaks: number[] } // voice note / audio clip
   embed?: Embed // post from another social, embedded via the platform's own player
+  // Taken down by moderation. The author sees why (EU DSA "statement of reasons") and can appeal.
+  removed?: { at: number; reason: ReportReason; note?: string; appeal?: { at: number; text: string; status: 'pending' | 'upheld' } }
+}
+
+export type ReportReason = 'spam' | 'harassment' | 'hate' | 'violence' | 'sexual' | 'privacy' | 'copyright' | 'impersonation' | 'misinformation' | 'other'
+export interface Report {
+  id: Id
+  at: number
+  by: Id
+  target: { kind: 'post' | 'user' | 'story' | 'dm'; id: Id }
+  reason: ReportReason
+  note?: string
+  status: 'open' | 'removed' | 'dismissed'
+  handledAt?: number
 }
 
 export interface Embed {
