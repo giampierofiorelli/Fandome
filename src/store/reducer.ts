@@ -12,7 +12,7 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[] }
-  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number } }
+  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; youtube?: string }
   | { type: 'delete'; postId: Id }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
@@ -89,6 +89,8 @@ export function reducer(state: State, action: Action): State {
         replyTo: action.replyTo,
         poll: action.poll,
         review: action.review,
+        photo: action.photo,
+        youtube: action.youtube,
         lang: 'en',
         likes: [],
         reposts: [],

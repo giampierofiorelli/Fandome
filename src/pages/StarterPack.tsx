@@ -33,8 +33,19 @@ export default function StarterPackPage() {
         <div className="eyebrow"><IconPackage size={14} /> Starter pack</div>
         <h1 className="hero-name">{pack.title}</h1>
         <p className="hero-tagline">
-          Curated by @{userById(pack.curatorId)?.handle} · {pack.userIds.length} fans · <Link to={`/a/${artist.id}`}>{artist.name} room</Link>
+          {pack.userIds.length} {artist.name} fans worth following, hand-picked by @{userById(pack.curatorId)?.handle}.
         </p>
+        <ol className="explain-steps">
+          <li>
+            <span className="num">01</span> <span><b>What it is.</b> A short list of active fans, chosen by someone who knows the fandom well.</span>
+          </li>
+          <li>
+            <span className="num">02</span> <span><b>Why follow.</b> Their posts fill your feed straight away, so you’re never staring at an empty app.</span>
+          </li>
+          <li>
+            <span className="num">03</span> <span><b>Share it.</b> Send the link to a friend who just discovered {artist.name}: one tap and they’re in.</span>
+          </li>
+        </ol>
         <div className="hero-actions">
           {me ? (
             <button className="pill-btn ink" disabled={allFollowed} onClick={() => dispatch({ type: 'followMany', userIds: pack.userIds })}>
@@ -50,6 +61,12 @@ export default function StarterPackPage() {
           </button>
         </div>
       </header>
+      <div className="section-head">
+        <h2>In this pack</h2>
+        <Link to={`/a/${artist.id}`} className="muted small">
+          {artist.name} room
+        </Link>
+      </div>
       <div className="glass-card list">
       {pack.userIds.map((id) => {
         const u = userById(id)

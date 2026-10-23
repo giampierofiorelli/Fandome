@@ -11,6 +11,11 @@ export function ToastProvider({ children, initial }: { children: ReactNode; init
   const [toast, setToast] = useState<{ id: number; msg: string } | null>(initial ? { id: 1, msg: initial } : null)
   const timer = useRef<ReturnType<typeof setTimeout>>()
   useEffect(() => {
+    const onFull = () => show('Storage full: this demo keeps photos in your browser. Delete a few photo posts.')
+    window.addEventListener('fandome:storage-full', onFull)
+    return () => window.removeEventListener('fandome:storage-full', onFull)
+  })
+  useEffect(() => {
     if (initial) timer.current = setTimeout(() => setToast(null), 2600)
   }, [initial])
   const show = useCallback((msg: string) => {

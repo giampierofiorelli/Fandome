@@ -192,3 +192,10 @@ export const IconSpotify = (p: P) => (
     <path d="M7.5 9.5c3-1 6.5-.7 9 .8M8 12.6c2.5-.7 5.2-.4 7.3.8M8.7 15.5c1.9-.5 3.8-.3 5.4.6" />
   </Svg>
 )
+export const IconImage = (p: P) => (
+  <Svg {...p}>
+    <rect x="3.5" y="4.5" width="17" height="15" rx="3" />
+    <circle cx="9" cy="10" r="1.8" />
+    <path d="m4 17 5-4.5 4 3.5 2.5-2 4.5 4" />
+  </Svg>
+)

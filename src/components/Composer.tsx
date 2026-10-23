@@ -1,9 +1,10 @@
-import { createContext, useCallback, useContext, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react'
 import { albums, artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
 import { AlbumCover, Avatar, Modal, Stars, useModalClose } from './ui'
-import { IconPin, IconPoll } from './icons'
+import { IconImage, IconPin, IconPlay, IconPoll, IconX } from './icons'
+import { compressImage, stripYoutubeLink, youtubeId } from '../lib/media'
 import { useToast } from './Toast'
 
 export interface ComposeOpts {
@@ -50,6 +51,9 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const [artistId, setArtistId] = useState(opts.artistId ?? parent?.artistId ?? quoted?.artistId ?? myArtists[0] ?? '')
   const [pollOn, setPollOn] = useState(false)
   const [pollOpts, setPollOpts] = useState(['', ''])
+  const [photo, setPhoto] = useState<string | null>(null)
+  const [photoBusy, setPhotoBusy] = useState(false)
+  const fileRef = useRef<HTMLInputElement>(null)
   const reviewMode = Boolean(opts.reviewAlbumId)
   const [albumId, setAlbumId] = useState(opts.reviewAlbumId ?? '')
   const [rating, setRating] = useState(opts.reviewAlbumId && me ? me.ratings[opts.reviewAlbumId] ?? 0 : 0)
@@ -57,7 +61,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   if (!me) return null
   const concert = concertById(opts.concertId)
   const validPoll = pollOpts.filter((o) => o.trim()).length >= 2
-  const canPost = text.trim().length > 0 && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
+  const yt = youtubeId(text)
+  const canPost = (text.trim().length > 0 || Boolean(photo) || Boolean(yt)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
 
   const submit = () => {
     if (!canPost) return
@@ -65,7 +70,9 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       type: 'post',
       id: newId(),
       at: Date.now(),
-      text: text.trim(),
+      text: yt ? stripYoutubeLink(text) : text.trim(),
+      photo: photo ?? undefined,
+      youtube: yt,
       artistId: artistId || undefined,
       concertId: opts.concertId,
       quoteOf: opts.quoteOf,
@@ -112,7 +119,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           autoFocus
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder={reviewMode ? 'Write a short review… (jokes allowed)' : parent ? 'Post your reply' : 'What’s happening in your fandom? Use #tags'}
+          placeholder={reviewMode ? 'Write a short review… (jokes allowed)' : parent ? 'Post your reply' : 'What’s happening in your fandom? Paste a YouTube link or add a photo'}
           rows={4}
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
@@ -121,6 +128,22 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
         <div className="quote-preview">
           <strong>{userById(quoted.authorId)?.name}</strong> <span className="muted">@{userById(quoted.authorId)?.handle}</span>
           <p>{quoted.text}</p>
+        </div>
+      )}
+      {photo && (
+        <div className="media-preview">
+          <img src={photo} alt="Your photo" />
+          <button className="media-remove" onClick={() => setPhoto(null)} aria-label="Remove photo">
+            <IconX size={14} />
+          </button>
+        </div>
+      )}
+      {yt && (
+        <div className="media-preview">
+          <img src={`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`} alt="YouTube video" />
+          <span className="yt-badge">
+            <IconPlay size={14} /> YouTube video will be embedded
+          </span>
         </div>
       )}
       {pollOn && (
@@ -149,6 +172,32 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
             </option>
           ))}
         </select>
+        {!reviewMode && (
+          <>
+            <input
+              ref={fileRef}
+              type="file"
+              accept="image/*"
+              hidden
+              onChange={async (e) => {
+                const f = e.target.files?.[0]
+                e.target.value = ''
+                if (!f) return
+                setPhotoBusy(true)
+                try {
+                  setPhoto(await compressImage(f))
+                } catch {
+                  toast('That file isn’t an image')
+                } finally {
+                  setPhotoBusy(false)
+                }
+              }}
+            />
+            <button className={photo ? 'pill active' : 'pill'} onClick={() => fileRef.current?.click()} aria-label="Add photo" disabled={photoBusy}>
+              <IconImage size={14} /> {photoBusy ? '…' : 'Photo'}
+            </button>
+          </>
+        )}
         {!reviewMode && !parent && (
           <button className={pollOn ? 'pill active' : 'pill'} onClick={() => setPollOn(!pollOn)}>
             <IconPoll size={14} /> Poll

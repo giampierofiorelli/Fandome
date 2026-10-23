@@ -113,8 +113,9 @@ export default function Onboarding() {
           )}
           {step === 2 && (
             <>
-              <div className="ob-kicker">Starter pack</div>
-              <h1 className="ob-q">Fans worth following</h1>
+              <div className="ob-kicker">Starter pack · picked by long-time fans</div>
+              <h1 className="ob-q">Follow these fans so your feed isn’t empty</h1>
+              <p className="ob-note ob-explain">A starter pack is a short list of active fans chosen by the community. Following them fills your feed from day one. You can unfollow anyone, anytime.</p>
               <div className="ob-people">
                 {packUsers.map((id) => {
                   const u = userById(id)

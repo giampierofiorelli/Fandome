@@ -67,7 +67,9 @@ export interface Post {
   replyTo?: Id
   review?: { albumId: Id; rating: number }
   poll?: Poll
-  image?: string // CSS gradient placeholder for user photos
+  image?: string // CSS gradient placeholder for demo photos
+  photo?: string // uploaded photo (compressed data URL)
+  youtube?: string // YouTube video id, embedded (video stays on YouTube)
 }
 
 export interface ChatMessage {

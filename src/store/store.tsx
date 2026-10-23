@@ -33,7 +33,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(KEY, JSON.stringify(state))
     } catch {
-      // ignore quota / private mode errors
+      // Quota full (usually photos) or private mode: tell the user instead of failing silently.
+      window.dispatchEvent(new CustomEvent('fandome:storage-full'))
     }
   }, [state])
 

@@ -8,7 +8,7 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, Stars, UserLink, useModalClose } from './ui'
-import { IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
+import { IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
 
 interface Props {
   post: Post
@@ -113,6 +113,8 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
           )}
 
           {post.image && <div className="post-image" style={{ background: post.image }} role="img" aria-label="Fan photo" />}
+          {post.photo && <img className="post-photo" src={post.photo} alt="Photo shared by a fan" loading="lazy" />}
+          {post.youtube && <YouTubeEmbed id={post.youtube} />}
 
           {post.poll && (
             <div className="poll" onClick={(e) => e.stopPropagation()}>
@@ -335,5 +337,30 @@ function RepostTagsForm({ postId }: { postId: string }) {
         </button>
       </div>
     </>
+  )
+}
+
+// Click-to-load YouTube player: shows the thumbnail first (fast, no tracking),
+// then swaps in the privacy-enhanced embed. The video stays on YouTube.
+function YouTubeEmbed({ id }: { id: string }) {
+  const [play, setPlay] = useState(false)
+  return (
+    <div className="yt" onClick={(e) => e.stopPropagation()}>
+      {play ? (
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+          title="YouTube video"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allowFullScreen
+        />
+      ) : (
+        <button className="yt-poster" onClick={() => setPlay(true)} aria-label="Play YouTube video">
+          <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" />
+          <span className="yt-play">
+            <IconPlay size={22} />
+          </span>
+        </button>
+      )}
+    </div>
   )
 }

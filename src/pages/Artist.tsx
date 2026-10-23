@@ -63,8 +63,8 @@ export default function ArtistPage() {
             <IconPen size={17} />
           </button>
           {pack && (
-            <Link to={`/starter/${pack.id}`} className="glass-circle" aria-label="Starter pack">
-              <IconPackage size={17} />
+            <Link to={`/starter/${pack.id}`} className="pill-btn glass small">
+              <IconPackage size={15} /> New here? Follow {pack.userIds.length} fans
             </Link>
           )}
           {party && (

@@ -52,6 +52,11 @@ export default function App() {
   const compose = useComposer()
   const loc = useLocation()
 
+  // New page starts at the top (keep position only for back/forward).
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [loc.pathname])
+
   // No login wall: first-time visitors land straight in the app as a guest.
   const needsGuest = !me && !loc.pathname.startsWith('/welcome')
   useEffect(() => {
