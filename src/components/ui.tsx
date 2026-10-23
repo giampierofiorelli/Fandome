@@ -213,4 +213,15 @@ export function RollingCount({ value }: { value: number }) {
   )
 }
 
+// Score out of 10 (ratings are stored 0–5).
+export function ScoreBadge({ rating, size = 'md' }: { rating: number; size?: 'sm' | 'md' | 'lg' }) {
+  const s = Math.round(rating * 4) / 2
+  return (
+    <span className={`score-badge ${size}`} aria-label={`${s} out of 10`}>
+      {Number.isInteger(s) ? s : s.toFixed(1)}
+      <small>/10</small>
+    </span>
+  )
+}
+
 export const LANG_NAMES: Record<string, string> = { it: 'Italian', es: 'Spanish', fr: 'French', de: 'German', pt: 'Portuguese', ja: 'Japanese' }

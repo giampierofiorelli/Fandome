@@ -11,6 +11,8 @@ import { autoEmbeds, setAutoEmbeds } from '../lib/prefs'
 export default function Settings() {
   const { state, dispatch } = useStore()
   const nav = useNavigate()
+  // Two taps instead of confirm(): iOS home-screen apps can block native dialogs.
+  const [armed, setArmed] = useState(false)
 
   const download = () => {
     const blob = new Blob([JSON.stringify(exportMyData(state), null, 2)], { type: 'application/json' })
@@ -54,16 +56,20 @@ export default function Settings() {
           this prototype is demo data stored only in your browser. Future concert dates are fictional.
         </p>
         <button
-          className="pill-btn glass danger"
+          className={armed ? 'pill-btn danger-solid' : 'pill-btn glass danger'}
           onClick={() => {
-            if (confirm('Reset the demo? This deletes your profile and posts from this browser and starts again as a guest.')) {
-              dispatch({ type: 'reset', now: Date.now() })
-              nav('/')
+            if (!armed) {
+              setArmed(true)
+              setTimeout(() => setArmed(false), 4000)
+              return
             }
+            dispatch({ type: 'reset', now: Date.now() })
+            nav('/')
           }}
         >
-          Reset demo
+          {armed ? 'Tap again to reset everything' : 'Reset demo'}
         </button>
+        {armed && <p className="muted small">This deletes your profile and posts from this browser and starts again as a guest.</p>}
       </section>
     </>
   )

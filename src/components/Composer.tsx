@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
-import { albums, artists } from '../data/seed'
+import { artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
-import { AlbumCover, Avatar, Modal, Stars, useModalClose } from './ui'
+import { AlbumCover, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
 import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconX } from './icons'
 import { AudioPlayer } from './AudioPlayer'
 import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
@@ -94,8 +94,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
     recorder.current = null
   }
   const reviewMode = Boolean(opts.reviewAlbumId)
-  const [albumId, setAlbumId] = useState(opts.reviewAlbumId ?? '')
-  const [rating, setRating] = useState(opts.reviewAlbumId && me ? me.ratings[opts.reviewAlbumId] ?? 0 : 0)
+  const albumId = opts.reviewAlbumId ?? ''
+  const rating = opts.reviewAlbumId && me ? me.ratings[opts.reviewAlbumId] ?? 0 : 0
 
   if (!me) return null
   const concert = concertById(opts.concertId)
@@ -152,18 +152,13 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       {reviewMode && (
         <div className="review-picker">
           <AlbumCover album={albumById(albumId)} size={72} />
-          <div>
-            <select value={albumId} onChange={(e) => setAlbumId(e.target.value)} aria-label="Album">
-              {albums.map((a) => (
-                <option key={a.id} value={a.id}>
-                  {artistById(a.artistId)?.name} — {a.title} ({a.year})
-                </option>
-              ))}
-            </select>
-            <div style={{ marginTop: 8 }}>
-              <Stars value={rating} onChange={setRating} size={28} />
-            </div>
+          <div className="grow">
+            <strong>{albumById(albumId)?.title}</strong>
+            <span className="muted small block">
+              {artistById(albumById(albumId)?.artistId)?.name} · {albumById(albumId)?.year}
+            </span>
           </div>
+          {rating > 0 && <ScoreBadge rating={rating} size="lg" />}
         </div>
       )}
       <div className="composer-row">
@@ -245,15 +240,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           )}
         </div>
       )}
-      <div className="composer-foot">
-        <select value={artistId} onChange={(e) => setArtistId(e.target.value)} aria-label="Fandom">
-          <option value="">No fandom</option>
-          {artists.map((a) => (
-            <option key={a.id} value={a.id}>
-              {a.name}
-            </option>
-          ))}
-        </select>
+      <div className="composer-tools">
         {!reviewMode && (
           <>
             <input
@@ -312,7 +299,17 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           </button>
         )}
         <CharRing used={text.length} max={MAX} />
-        <button className="btn primary" disabled={!canPost} onClick={submit}>
+      </div>
+      <div className="composer-foot">
+        <select className="fandom-select" value={artistId} onChange={(e) => setArtistId(e.target.value)} aria-label="Fandom">
+          <option value="">No fandom</option>
+          {artists.map((a) => (
+            <option key={a.id} value={a.id}>
+              {a.name}
+            </option>
+          ))}
+        </select>
+        <button className="btn primary post-btn" disabled={!canPost} onClick={submit}>
           {parent ? 'Reply' : 'Post'}
         </button>
       </div>

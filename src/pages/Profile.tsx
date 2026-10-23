@@ -4,7 +4,7 @@ import { concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
 import { ShareCardButton } from '../components/ShareCard'
-import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
+import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
 import { IconDisc, IconPin, IconTicket } from '../components/icons'
 import PageProfile from './PageProfile'
@@ -35,7 +35,13 @@ export default function Profile() {
   const diary = [
     ...shows.map((c) => ({ key: c.id, at: new Date(c.date).getTime(), kind: 'show' as const, concert: c })),
     ...reviews.map((p) => ({ key: p.id, at: p.createdAt, kind: 'review' as const, post: p })),
+    ...(user.tours ?? []).map((key) => {
+      const [artistId, tour] = key.split('::')
+      const first = concerts.filter((c) => c.artistId === artistId && c.tour === tour).sort((a, b) => a.date.localeCompare(b.date))[0]
+      return { key, at: first ? new Date(first.date).getTime() : 0, kind: 'tour' as const, artistId, tour, year: first?.date.slice(0, 4) ?? '' }
+    }),
   ].sort((a, b) => b.at - a.at)
+  const showCount = user.attended.length + (user.tours?.length ?? 0)
 
   return (
     <>
@@ -73,7 +79,7 @@ export default function Profile() {
                 title={`${user.name}’s Fan Passport`}
                 lines={[
                   ...Object.entries(user.fanSince).slice(0, 3).map(([id, y]) => `${artistById(id)?.name} fan since ${y}`),
-                  `${user.attended.length} shows · ${rated.length} albums rated`,
+                  `${showCount} shows · ${rated.length} albums rated`,
                   `@${user.handle}`,
                 ]}
               />
@@ -83,7 +89,7 @@ export default function Profile() {
 
         <div className="stat-row">
           <div>
-            <div className="bignum">{user.attended.length}</div>
+            <div className="bignum">{showCount}</div>
             <div className="hero-label">shows</div>
           </div>
           <div>
@@ -144,7 +150,14 @@ export default function Profile() {
         <div className="glass-card list">
           {!diary.length && <p className="empty">{isMe ? 'Mark shows with “I was there” and review albums to build your diary.' : 'Empty diary.'}</p>}
           {diary.map((d) =>
-            d.kind === 'show' ? (
+            d.kind === 'tour' ? (
+              <Link key={d.key} to={`/a/${d.artistId}`} className="row-item">
+                <span className="diary-date">{d.year}</span>
+                <span>
+                  <IconTicket size={16} /> <strong>{artistById(d.artistId)?.name}</strong> · {d.tour}
+                </span>
+              </Link>
+            ) : d.kind === 'show' ? (
               <Link key={d.key} to={`/c/${d.concert.id}`} className="row-item">
                 <span className="diary-date">{formatDate(d.concert.date)}</span>
                 <span><IconTicket size={16} /> <strong>{artistById(d.concert.artistId)?.name}</strong> · {d.concert.city} · <span className="muted">{d.concert.venue}</span></span>
@@ -153,7 +166,7 @@ export default function Profile() {
               <Link key={d.key} to={`/p/${d.post.id}`} className="row-item">
                 <span className="diary-date">{new Date(d.post.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                 <span>
-                  <IconDisc size={16} /> <strong>{albumById(d.post.review!.albumId)?.title}</strong> <Stars value={d.post.review!.rating} size={14} />
+                  <IconDisc size={16} /> <strong>{albumById(d.post.review!.albumId)?.title}</strong> <ScoreBadge rating={d.post.review!.rating} size="sm" />
                 </span>
               </Link>
             ),
@@ -171,7 +184,7 @@ export default function Profile() {
                 <div className="grow">
                   <strong>{al?.title}</strong> <span className="muted">{artistById(al?.artistId)?.name} · {al?.year}</span>
                 </div>
-                <Stars value={r} size={16} />
+                <ScoreBadge rating={r} />
               </div>
             )
           })}

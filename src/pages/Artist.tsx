@@ -5,9 +5,12 @@ import { starterPack } from '../lib/packs'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
-import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
+import { AlbumCover, Avatar, Tabs } from '../components/ui'
+import { AnimatePresence, motion } from 'motion/react'
+import { useToast } from '../components/Toast'
+import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
-import { artistById, avgRating, isUpcoming } from '../lib/util'
+import { artistById, isUpcoming } from '../lib/util'
 import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen } from '../components/icons'
 
 // Weverse-style artist space: one room per artist, with topic feeds
@@ -18,6 +21,7 @@ export default function ArtistPage() {
   const { state, dispatch, me } = useStore()
   const compose = useComposer()
   const [tab, setTab] = useState('all')
+  const [rating, setRating] = useState<string | null>(null)
   if (!artist) return <Navigate to="/explore" replace />
 
   const joined = Boolean(me?.fanSince[artist.id])
@@ -82,41 +86,36 @@ export default function ArtistPage() {
       {(tab === 'all' || feed) && <FeedList items={topicFeed(state.posts, artist.id, feed?.tags)} empty="No posts in this feed yet. Be the first!" />}
 
       {tab === 'albums' && (
-        <div className="glass-card list">
-          {myAlbums.map((al) => {
-            const ratings = state.users.map((u) => u.ratings[al.id]).filter((r): r is number => typeof r === 'number')
-            const mine = me?.ratings[al.id] ?? 0
-            const fav = me?.top4.includes(al.id)
-            return (
-              <div key={al.id} className="row-item">
-                <AlbumCover album={al} size={64} />
-                <div className="grow">
-                  <strong>{al.title}</strong> <span className="muted">{al.year}</span>
-                  <div className="small muted">
-                    ★ {avgRating(ratings) || '–'} avg · {ratings.length} ratings
-                  </div>
-                  <div className="small">
-                    You: <Stars value={mine} onChange={(v) => dispatch({ type: 'rate', albumId: al.id, rating: v })} size={16} />
-                  </div>
-                </div>
-                <div className="col-actions">
-                  <button className="pill-btn glass small" onClick={() => compose({ reviewAlbumId: al.id, artistId: artist.id })}>
-                    Review
-                  </button>
-                  <button
-                    className={fav ? 'pill-btn ink small' : 'pill-btn glass small'}
-                    title="Add to your Top 4 favourites"
-                    onClick={() => dispatch({ type: 'toggleTop4', albumId: al.id })}
-                    disabled={!fav && (me?.top4.length ?? 0) >= 4}
-                  >
-                    <IconHeart size={14} filled={fav} /> Top 4
-                  </button>
-                </div>
-              </div>
-            )
-          })}
-        </div>
+        <>
+          <p className="muted small center tab-hint">Tap an album to score it out of 10</p>
+          <div className="album-grid">
+            {myAlbums.map((al) => {
+              const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))
+              const avg = others.length ? others.reduce((x, y) => x + y, 0) / others.length : 0
+              const mine = me?.ratings[al.id]
+              const fav = me?.top4.includes(al.id)
+              return (
+                <button key={al.id} className="album-tile" onClick={() => setRating(al.id)}>
+                  <span className="album-art">
+                    <AlbumCover album={al} size={150} />
+                    {fav && (
+                      <span className="album-fav" aria-label="Favourite">
+                        <IconHeart size={13} filled />
+                      </span>
+                    )}
+                    <span className={mine ? 'album-score mine' : 'album-score'}>{mine ? fmtScore(toScore(mine)) : 'Rate'}</span>
+                  </span>
+                  <span className="album-title">{al.title}</span>
+                  <span className="muted small">
+                    {al.year} · {avg ? `fans ${fmtScore(Math.round(avg * 10) / 10)}` : 'no ratings yet'}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+        </>
       )}
+      <AnimatePresence>{rating && <AlbumRater key={rating} albumId={rating} onClose={() => setRating(null)} />}</AnimatePresence>
 
       {tab === 'shows' && <ShowsTab artistId={artist.id} />}
 
@@ -144,7 +143,8 @@ export default function ArtistPage() {
 // Upcoming: every show (that's what fans plan around). Past: just the tours,
 // which is how fans remember them (no per-date list for now).
 function ShowsTab({ artistId }: { artistId: string }) {
-  const { state } = useStore()
+  const { state, dispatch, me } = useStore()
+  const toast = useToast()
   const all = concerts.filter((c) => c.artistId === artistId)
   const upcoming = all.filter((c) => isUpcoming(c.date)).sort((a, b) => a.date.localeCompare(b.date))
   const tours = groupTours(all.filter((c) => !isUpcoming(c.date)))
@@ -179,7 +179,10 @@ function ShowsTab({ artistId }: { artistId: string }) {
       </div>
       <div className="glass-card list">
         {tours.map((t) => {
-          const n = count(t.shows.map((c) => c.id), 'attended')
+          const key = tourKey(artistId, t.tour)
+          const ids = t.shows.map((c) => c.id)
+          const n = state.users.filter((u) => u.tours?.includes(key) || ids.some((id) => u.attended.includes(id))).length
+          const mine = Boolean(me && (me.tours?.includes(key) || ids.some((id) => me.attended.includes(id))))
           return (
             <div key={t.tour} className="row-item tour-row">
               <span className="tour-years">{t.years}</span>
@@ -187,6 +190,24 @@ function ShowsTab({ artistId }: { artistId: string }) {
                 <strong>{t.tour}</strong>
                 <span className="muted small block">{n ? `${n} ${n === 1 ? 'fan was' : 'fans were'} there` : 'Were you there?'}</span>
               </span>
+              <motion.button
+                className={mine ? 'pill-btn ink small' : 'pill-btn glass small'}
+                whileTap={{ scale: 0.92 }}
+                aria-pressed={mine}
+                onClick={() => {
+                  if (me && !me.tours?.includes(key) && ids.some((id) => me.attended.includes(id))) return toast('You marked a show of this tour')
+                  dispatch({ type: 'toggleTour', key })
+                  if (!mine) toast(`Added to your diary: ${t.tour}`)
+                }}
+              >
+                {mine ? (
+                  <>
+                    <IconCheck size={14} /> I was there
+                  </>
+                ) : (
+                  'I was there'
+                )}
+              </motion.button>
             </div>
           )
         })}
@@ -195,6 +216,8 @@ function ShowsTab({ artistId }: { artistId: string }) {
     </>
   )
 }
+
+export const tourKey = (artistId: string, tour: string) => `${artistId}::${tour}`
 
 export function groupTours(past: typeof concerts) {
   const map = new Map<string, typeof concerts>()

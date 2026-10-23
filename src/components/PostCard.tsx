@@ -6,11 +6,12 @@ import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib
 import { autoEmbeds } from '../lib/prefs'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
+import { canManagePage } from '../store/reducer'
 import { albumById, artistById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
-import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, Stars, UserLink, useModalClose } from './ui'
+import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
 import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
 
 interface Props {
@@ -86,7 +87,7 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
                 <div className="review-title">
                   {album.title} <span className="muted">{album.year}</span>
                 </div>
-                <Stars value={post.review!.rating} size={15} />
+                <ScoreBadge rating={post.review!.rating} />
               </div>
             </div>
           )}
@@ -212,8 +213,11 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
               <button className="act" aria-label="Share" onClick={share}>
                 <IconShare size={18} />
               </button>
-              {me && post.authorId === me.id && (
-                <button className="act" aria-label="Delete" onClick={() => confirm('Delete this post?') && dispatch({ type: 'delete', postId: post.id })}>
+              {me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)) && (
+                <button className="act" aria-label="Delete" onClick={() => {
+                    dispatch({ type: 'delete', postId: post.id })
+                    toast('Post deleted', { label: 'Undo', onClick: () => dispatch({ type: 'restorePost', post }) })
+                  }}>
                   <IconTrash size={17} />
                 </button>
               )}

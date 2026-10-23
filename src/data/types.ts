@@ -60,6 +60,7 @@ export interface User {
   top4: Id[] // album ids (Letterboxd-style favourites)
   attended: Id[] // concert ids ("I was there")
   going: Id[] // upcoming concert ids
+  tours?: string[] // past tours you saw, as `${artistId}::${tour}` (no specific date needed)
   ratings: Record<Id, number> // albumId -> 0.5..5
   following: Id[]
 }

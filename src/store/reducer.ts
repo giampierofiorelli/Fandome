@@ -16,6 +16,7 @@ export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[] }
   | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
+  | { type: 'restorePost'; post: Post }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
   | { type: 'unrepost'; postId: Id }
@@ -26,6 +27,7 @@ export type Action =
   | { type: 'followArtist'; artistId: Id }
   | { type: 'toggleAttended'; concertId: Id }
   | { type: 'toggleGoing'; concertId: Id }
+  | { type: 'toggleTour'; key: string }
   | { type: 'rate'; albumId: Id; rating: number }
   | { type: 'toggleTop4'; albumId: Id }
   | { type: 'chat'; room: string; id: Id; userId?: Id; text: string; at: number }
@@ -125,6 +127,10 @@ export function reducer(state: State, action: Action): State {
     }
     case 'delete':
       return { ...state, posts: state.posts.filter((p) => !(p.id === action.postId && me && (p.authorId === me || canManagePage(state, p.authorId, me)))) }
+    case 'restorePost':
+      // Undo of a delete: put the post back (only your own, only if it's gone).
+      if (!me || state.posts.some((p) => p.id === action.post.id) || !(action.post.authorId === me || canManagePage(state, action.post.authorId, me))) return state
+      return { ...state, posts: [action.post, ...state.posts].sort((a, b) => b.createdAt - a.createdAt) }
     case 'like':
       if (!me) return state
       return updatePost(state, action.postId, (p) => ({ ...p, likes: toggle(p.likes, me) }))
@@ -165,6 +171,8 @@ export function reducer(state: State, action: Action): State {
       })
     case 'toggleAttended':
       return updateMe(state, (u) => ({ ...u, attended: toggle(u.attended, action.concertId) }))
+    case 'toggleTour':
+      return updateMe(state, (u) => ({ ...u, tours: toggle(u.tours ?? [], action.key) }))
     case 'toggleGoing':
       return updateMe(state, (u) => ({ ...u, going: toggle(u.going, action.concertId) }))
     case 'rate':

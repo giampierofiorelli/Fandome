@@ -4,11 +4,12 @@ import { springSnappy } from '../lib/motion'
 import { IconCheck } from './icons'
 
 // Lightweight completion feedback ("Link copied", "Reposted").
-const Ctx = createContext<(msg: string) => void>(() => {})
+type ToastAction = { label: string; onClick: () => void }
+const Ctx = createContext<(msg: string, action?: ToastAction) => void>(() => {})
 export const useToast = () => useContext(Ctx)
 
 export function ToastProvider({ children, initial }: { children: ReactNode; initial?: string | null }) {
-  const [toast, setToast] = useState<{ id: number; msg: string } | null>(initial ? { id: 1, msg: initial } : null)
+  const [toast, setToast] = useState<{ id: number; msg: string; action?: ToastAction } | null>(initial ? { id: 1, msg: initial } : null)
   const timer = useRef<ReturnType<typeof setTimeout>>()
   useEffect(() => {
     const onFull = () => show('Storage full: this demo keeps photos in your browser. Delete a few photo posts.')
@@ -18,10 +19,10 @@ export function ToastProvider({ children, initial }: { children: ReactNode; init
   useEffect(() => {
     if (initial) timer.current = setTimeout(() => setToast(null), 2600)
   }, [initial])
-  const show = useCallback((msg: string) => {
+  const show = useCallback((msg: string, action?: ToastAction) => {
     clearTimeout(timer.current)
-    setToast({ id: Date.now(), msg })
-    timer.current = setTimeout(() => setToast(null), 1800)
+    setToast({ id: Date.now(), msg, action })
+    timer.current = setTimeout(() => setToast(null), action ? 5000 : 1800)
   }, [])
   return (
     <Ctx.Provider value={show}>
@@ -38,6 +39,17 @@ export function ToastProvider({ children, initial }: { children: ReactNode; init
               transition={springSnappy}
             >
               <IconCheck size={16} /> {toast.msg}
+              {toast.action && (
+                <button
+                  className="toast-action"
+                  onClick={() => {
+                    toast.action!.onClick()
+                    setToast(null)
+                  }}
+                >
+                  {toast.action.label}
+                </button>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
