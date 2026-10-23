@@ -7,6 +7,7 @@ import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
 import { IconDisc, IconPin, IconTicket } from '../components/icons'
+import PageProfile from './PageProfile'
 
 type Tab = 'posts' | 'diary' | 'ratings' | 'likes'
 
@@ -17,6 +18,7 @@ export default function Profile() {
   const [tab, setTab] = useState<Tab>('posts')
   const user = state.users.find((u) => u.handle === handle)
   if (!user || !me) return <Navigate to="/" replace />
+  if (user.kind === 'page') return <PageProfile user={user} />
 
   const isMe = user.id === me.id
   const follows = me.following.includes(user.id)

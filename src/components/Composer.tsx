@@ -4,7 +4,8 @@ import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
 import { AlbumCover, Avatar, Modal, Stars, useModalClose } from './ui'
 import { IconImage, IconPin, IconPlay, IconPoll, IconX } from './icons'
-import { compressImage, stripYoutubeLink, youtubeId } from '../lib/media'
+import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
+import { pagesManagedBy } from '../store/reducer'
 import { useToast } from './Toast'
 
 export interface ComposeOpts {
@@ -13,6 +14,7 @@ export interface ComposeOpts {
   artistId?: string
   concertId?: string
   reviewAlbumId?: string // opens in "log album" mode (Letterboxd-style)
+  as?: string // post as a page the user manages
 }
 
 const Ctx = createContext<(o?: ComposeOpts) => void>(() => {})
@@ -52,6 +54,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const [pollOn, setPollOn] = useState(false)
   const [pollOpts, setPollOpts] = useState(['', ''])
   const [photo, setPhoto] = useState<string | null>(null)
+  const myPages = me ? pagesManagedBy(state, me.id) : []
+  const [asId, setAsId] = useState(opts.as ?? '')
   const [photoBusy, setPhotoBusy] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
   const reviewMode = Boolean(opts.reviewAlbumId)
@@ -61,8 +65,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   if (!me) return null
   const concert = concertById(opts.concertId)
   const validPoll = pollOpts.filter((o) => o.trim()).length >= 2
-  const yt = youtubeId(text)
-  const canPost = (text.trim().length > 0 || Boolean(photo) || Boolean(yt)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
+  const embed = detectEmbed(text)
+  const canPost = (text.trim().length > 0 || Boolean(photo) || Boolean(embed)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
 
   const submit = () => {
     if (!canPost) return
@@ -70,9 +74,10 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       type: 'post',
       id: newId(),
       at: Date.now(),
-      text: yt ? stripYoutubeLink(text) : text.trim(),
+      text: embed ? stripUrl(text, embed.url) : text.trim(),
       photo: photo ?? undefined,
-      youtube: yt,
+      embed,
+      as: asId || undefined,
       artistId: artistId || undefined,
       concertId: opts.concertId,
       quoteOf: opts.quoteOf,
@@ -86,6 +91,18 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
 
   return (
     <>
+      {myPages.length > 0 && !reviewMode && (
+        <div className="post-as">
+          <span className="muted small">Post as</span>
+          <div className="seg small">
+            {[{ id: '', name: me?.name ?? 'Me' }, ...myPages.map((p) => ({ id: p.id, name: p.name }))].map((o) => (
+              <button key={o.id || 'me'} className={asId === o.id ? 'seg-btn active solid' : 'seg-btn'} onClick={() => setAsId(o.id)}>
+                <span className="seg-label">{o.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
       {parent && (
         <p className="muted small">
           Replying to <strong>@{userById(parent.authorId)?.handle}</strong>
@@ -114,12 +131,12 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
         </div>
       )}
       <div className="composer-row">
-        <Avatar user={me} />
+        <Avatar user={myPages.find((p) => p.id === asId) ?? me} />
         <textarea
           autoFocus
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder={reviewMode ? 'Write a short review… (jokes allowed)' : parent ? 'Post your reply' : 'What’s happening in your fandom? Paste a YouTube link or add a photo'}
+          placeholder={reviewMode ? 'Write a short review… (jokes allowed)' : parent ? 'Post your reply' : 'What’s happening? Paste a link from YouTube, X, Instagram or TikTok'}
           rows={4}
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
@@ -138,11 +155,20 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           </button>
         </div>
       )}
-      {yt && (
+      {embed?.kind === 'youtube' && (
         <div className="media-preview">
-          <img src={`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`} alt="YouTube video" />
+          <img src={`https://i.ytimg.com/vi/${embed.id}/hqdefault.jpg`} alt="YouTube video" />
           <span className="yt-badge">
             <IconPlay size={14} /> YouTube video will be embedded
+          </span>
+        </div>
+      )}
+      {embed && embed.kind !== 'youtube' && (
+        <div className={`embed-chip ${embed.kind}`}>
+          <span className="embed-logo">{EMBED_LABEL[embed.kind].slice(0, 2)}</span>
+          <span className="grow">
+            <strong>{EMBED_LABEL[embed.kind]} post will be embedded</strong>
+            <span className="muted small block">{prettyUrl(embed.url).short}</span>
           </span>
         </div>
       )}

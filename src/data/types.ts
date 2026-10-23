@@ -26,8 +26,31 @@ export interface Concert {
   setlist: string[]
 }
 
+// A Page is an account for a website / fan club / podcast. It is owned and run
+// by personal accounts (members); it never has its own login.
+export type PageRole = 'owner' | 'admin'
+export interface PageInvite {
+  id: Id
+  code: string // secret part of the invite link
+  role: 'admin'
+  toUserId?: Id // set when inviting someone already on Fandome; empty = open link
+  invitedBy: Id
+  createdAt: number
+  status: 'pending' | 'accepted' | 'revoked'
+}
+export interface PageInfo {
+  website: string
+  category: string
+  verification: 'unverified' | 'pending' | 'verified'
+  verifyCode: string
+  members: { userId: Id; role: PageRole; since: number }[]
+  invites: PageInvite[]
+}
+
 export interface User {
   id: Id
+  kind?: 'person' | 'page'
+  page?: PageInfo
   handle: string
   name: string
   color: string
@@ -70,6 +93,14 @@ export interface Post {
   image?: string // CSS gradient placeholder for demo photos
   photo?: string // uploaded photo (compressed data URL)
   youtube?: string // YouTube video id, embedded (video stays on YouTube)
+  embed?: Embed // post from another social, embedded via the platform's own player
+}
+
+export interface Embed {
+  kind: 'youtube' | 'x' | 'instagram' | 'tiktok'
+  id: string
+  url: string
+  path?: string // instagram: 'p' | 'reel' | 'tv'
 }
 
 export interface ChatMessage {
@@ -77,14 +108,6 @@ export interface ChatMessage {
   userId: Id
   text: string
   at: number
-}
-
-export interface StarterPack {
-  id: Id
-  artistId: Id
-  title: string
-  curatorId: Id
-  userIds: Id[]
 }
 
 export interface Party {

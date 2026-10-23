@@ -1,6 +1,6 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
-import type { Album, Artist, ChatMessage, Concert, Party, Post, StarterPack, User } from './types'
+import type { Album, Artist, ChatMessage, Concert, Party, Post, User } from './types'
 
 export const artists: Artist[] = [
   {
@@ -103,6 +103,26 @@ export const concerts: Concert[] = [
     setlist: ['Nothing Really Matters', 'Everybody', 'Into the Groove', 'Burning Up', 'Open Your Heart', 'Holiday', 'Live to Tell', 'Like a Prayer', 'Erotica', 'Hung Up', 'Bitch I’m Madonna', 'Celebration'],
   },
   {
+    id: 'm-florence-1987',
+    artistId: 'madonna',
+    tour: "Who's That Girl World Tour",
+    venue: 'Stadio Comunale',
+    city: 'Florence',
+    country: 'Italy',
+    date: '1987-09-06',
+    setlist: [],
+  },
+  {
+    id: 'm-london-2023',
+    artistId: 'madonna',
+    tour: 'The Celebration Tour',
+    venue: 'O2 Arena',
+    city: 'London',
+    country: 'UK',
+    date: '2023-10-14',
+    setlist: [],
+  },
+  {
     id: 'm-milan-2027',
     artistId: 'madonna',
     tour: 'Demo Tour 2027',
@@ -156,6 +176,25 @@ export const seedUsers: User[] = [
   { ...blank, id: 'u-claire', handle: 'claire_vinyl', name: 'Claire', color: '#e8457c', bio: 'Vinyl, picture discs, promo CDs. Paris.', location: 'Paris, FR', fanSince: { madonna: 1986, psb: 1990 }, top4: ['m-trueblue', 'p-behaviour', 'm-virgin', 'm-prayer'], ratings: { 'm-trueblue': 4.5 } },
   { ...blank, id: 'u-jonas', handle: 'jonas101', name: 'Jonas', color: '#9b7cf0', bio: 'Berlin. Every DM tour since 1990.', location: 'Berlin, DE', fanSince: { depeche: 1990 }, top4: ['d-sofad', 'd-violator', 'd-memento', 'd-masses'], ratings: { 'd-sofad': 5 } },
   { ...blank, id: 'u-ana', handle: 'ana_newfan', name: 'Ana', color: '#f0a43a', bio: 'New here! Found Madonna through TikTok. Where do I start?', location: 'Lisbon, PT', fanSince: { madonna: 2026 } },
+  // Demo Page: a fictional fan website run by Giulia. It has a pending invite for you ("me").
+  {
+    ...blank,
+    id: 'pg-archive',
+    kind: 'page',
+    handle: 'rayoflightarchive',
+    name: 'Ray of Light Archive',
+    color: '#7a8cff',
+    bio: 'Fan-run archive of the Ray of Light era: tour dates, press scans, remix credits.',
+    location: '',
+    page: {
+      website: 'https://rayoflight-archive.example',
+      category: 'Fan website',
+      verification: 'verified',
+      verifyCode: 'fdm-demo-archive',
+      members: [{ userId: 'u-giulia', role: 'owner', since: 0 }, { userId: 'u-kenji', role: 'admin', since: 0 }],
+      invites: [{ id: 'inv-demo', code: 'demo-invite-ray', role: 'admin', toUserId: 'me', invitedBy: 'u-giulia', createdAt: 0, status: 'pending' }],
+    },
+  },
   { ...blank, id: 'u-mod', handle: 'fandome', name: 'Fandome Team', color: '#ffffff', bio: 'Independent fan platform. Not affiliated with any artist.', location: 'Everywhere' },
 ]
 
@@ -188,17 +227,10 @@ export function seedPosts(now: number): Post[] {
     p({ id: 'p15', authorId: 'u-rafa', quoteOf: 'p1', artistId: 'madonna', text: 'From Turin ’87 to Copacabana ’24 — this fandom spans generations and I love it.', likes: ['u-giulia', 'u-ana'] }, 18 * 60),
     p({ id: 'p16', authorId: 'u-mod', text: 'Welcome to Fandome (prototype). Independent fan community — not affiliated with, authorised or sponsored by any artist. Be kind, credit creators, post only what you have the right to share.', likes: [] }, 30 * 60),
     p({ id: 'p17', authorId: 'u-giulia', artistId: 'madonna', concertId: 'm-milan-2027', text: 'Milan 2027 crew forming 🇮🇹 who’s in? #tour', likes: ['u-claire', 'u-kenji'] }, 26 * 60),
+    p({ id: 'p19', authorId: 'pg-archive', artistId: 'madonna', text: 'New in the archive: every Drowned World Tour date with venue notes, sourced from fan reports. Corrections welcome! https://rayoflight-archive.example/drowned-world #rayoflight', likes: ['u-giulia', 'u-kenji', 'u-claire'] }, 7 * 60),
     p({ id: 'p18', authorId: 'u-claire', artistId: 'psb', review: { albumId: 'p-behaviour', rating: 4.5 }, text: 'Their most melancholic and beautiful record. "Being Boring" still wrecks me. #eras', likes: ['u-sam'] }, 28 * 60),
   ]
 }
-
-export const starterPacks: StarterPack[] = [
-  { id: 'sp-madonna', artistId: 'madonna', title: 'Madonna Starter Pack', curatorId: 'u-giulia', userIds: ['u-giulia', 'u-rafa', 'u-kenji', 'u-claire', 'u-ana'] },
-  { id: 'sp-kylie', artistId: 'kylie', title: 'Kylie Starter Pack', curatorId: 'u-emma', userIds: ['u-emma', 'u-rafa'] },
-  { id: 'sp-psb', artistId: 'psb', title: 'Pet Shop Boys Starter Pack', curatorId: 'u-sam', userIds: ['u-sam', 'u-claire'] },
-  { id: 'sp-depeche', artistId: 'depeche', title: 'Devotees Starter Pack', curatorId: 'u-jonas', userIds: ['u-jonas', 'u-sam'] },
-  { id: 'sp-gaga', artistId: 'gaga', title: 'Little Monsters Starter Pack', curatorId: 'u-lucia', userIds: ['u-lucia', 'u-rafa'] },
-]
 
 export const parties: Party[] = [
   {

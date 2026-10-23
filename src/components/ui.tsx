@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import type { Album, User } from '../data/types'
 import { artistById } from '../lib/util'
 import { project, spring, springSheet } from '../lib/motion'
+import { prettyUrl } from '../lib/media'
 import { IconX } from './icons'
 
 export function useMediaQuery(q: string) {
@@ -41,12 +42,18 @@ export function UserLink({ user }: { user?: User }) {
   )
 }
 
-// Renders #tags and @mentions as links.
+// Renders web links, #tags and @mentions as links.
 export function RichText({ text }: { text: string }) {
-  const parts = text.split(/([#@][\p{L}\p{N}_.]+)/gu)
+  const parts = text.split(/(https?:\/\/[^\s<>"]+[^\s<>".,!?;:)\]'’]|[#@][\p{L}\p{N}_.]+)/gu)
   return (
     <>
       {parts.map((part, i) => {
+        if (/^https?:\/\//.test(part))
+          return (
+            <a key={i} href={part} target="_blank" rel="noopener noreferrer nofollow ugc" className="tag link" onClick={(e) => e.stopPropagation()}>
+              {prettyUrl(part).short}
+            </a>
+          )
         if (part.startsWith('#') && part.length > 1)
           return (
             <Link key={i} to={`/explore?tag=${encodeURIComponent(part.slice(1).toLowerCase())}`} className="tag" onClick={(e) => e.stopPropagation()}>

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { concerts, parties } from '../data/seed'
 import { useStore } from '../store/store'
+import { invitesFor } from '../store/reducer'
 import { FeedList } from '../components/FeedList'
 import { Avatar, Tabs } from '../components/ui'
 import { IconArrowUpRight, IconPlay } from '../components/icons'
@@ -19,7 +20,7 @@ function greeting(h = new Date().getHours()) {
 const tile = (i: number) => ({ initial: { opacity: 0, y: 14, scale: 0.98 }, animate: { opacity: 1, y: 0, scale: 1 }, transition: { ...spring, delay: 0.04 * i } })
 
 export default function Home() {
-  const { state, dispatch, me } = useStore()
+  const { state, dispatch, me, userById } = useStore()
   const [mode, setMode] = useState<Mode>('following')
   const [seenAt] = useState(state.lastSeen)
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function Home() {
   const trends = trending(state.posts, { limit: 3 })
   const listeners = state.users.filter((u) => u.fanSince[party.artistId]).slice(0, 4)
   const guest = me.handle === 'guest'
+  const invites = invitesFor(state, me.id)
 
   return (
     <>
@@ -47,6 +49,18 @@ export default function Home() {
         </h1>
       </header>
 
+      {invites.map(({ page, invite }) => (
+        <div key={invite.id} className="invite-banner">
+          <Avatar user={page} size={40} />
+          <span className="grow">
+            <strong>{userById(invite.invitedBy)?.name ?? 'Someone'} invited you to run {page.name}</strong>
+            <span className="muted small block">Become an admin of this {page.page?.category.toLowerCase()} page</span>
+          </span>
+          <Link to={`/invite/${invite.code}`} className="pill-btn ink small">
+            View
+          </Link>
+        </div>
+      ))}
       <section className="bento">
         <motion.div {...tile(0)} className="tile tile-live span-2">
           <Link to={`/party/${party.id}`} className="tile-link">

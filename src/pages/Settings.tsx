@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { useState } from 'react'
-import { exportMyData } from '../store/reducer'
+import { exportMyData, pagesManagedBy } from '../store/reducer'
+import { Link } from 'react-router-dom'
+import { Avatar } from '../components/ui'
 import * as spotify from '../lib/spotify'
 import { useToast } from '../components/Toast'
 
@@ -24,6 +26,7 @@ export default function Settings() {
         <div className="eyebrow">Settings</div>
         <h1 className="display">Your <span className="display-strong">space</span></h1>
       </header>
+      <PagesCard />
       <SpotifyCard />
       <section className="card">
         <h3>Your data</h3>
@@ -128,6 +131,40 @@ function SpotifyCard() {
             Connect Spotify
           </button>
         )}
+      </div>
+    </section>
+  )
+}
+
+// Pages (websites, fan clubs…) the user runs from their personal account.
+function PagesCard() {
+  const { state, me } = useStore()
+  if (!me) return null
+  const pages = pagesManagedBy(state, me.id)
+  return (
+    <section className="card">
+      <h3>Your pages</h3>
+      <p className="muted small">Run a fan website, club or podcast as its own account. You manage it from this personal profile and can invite other admins.</p>
+      {pages.length > 0 && (
+        <div className="list">
+          {pages.map((p) => (
+            <Link key={p.id} to={`/pages/${p.handle}/manage`} className="row-item">
+              <Avatar user={p} size={36} />
+              <span className="grow">
+                <strong>{p.name}</strong>
+                <span className="muted small block">
+                  @{p.handle} · {p.page?.members.find((m) => m.userId === me.id)?.role}
+                </span>
+              </span>
+              <span className="muted small">Manage</span>
+            </Link>
+          ))}
+        </div>
+      )}
+      <div className="row-end">
+        <Link to="/pages/new" className="pill-btn ink">
+          Create a page
+        </Link>
       </div>
     </section>
   )

@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { artists, starterPacks } from '../data/seed'
+import { artists } from '../data/seed'
+import { starterPack } from '../lib/packs'
+import { PENDING_INVITE_KEY } from './Invite'
 import { useStore } from '../store/store'
 import { Avatar } from '../components/ui'
 import { IconCheck, IconChevronLeft } from '../components/icons'
@@ -12,7 +14,7 @@ const STEPS = 3
 // Immersive onboarding: one question per screen, pill choices, Skip / Next.
 // Step 3 is a Bluesky-style starter pack so the feed is alive on day one.
 export default function Onboarding() {
-  const { dispatch, userById } = useStore()
+  const { state, dispatch, userById } = useStore()
   const nav = useNavigate()
   const [step, setStep] = useState(0)
   const [dir, setDir] = useState(1)
@@ -21,7 +23,7 @@ export default function Onboarding() {
   const [location, setLocation] = useState('')
   const [picked, setPicked] = useState<string[]>([])
   const [follow, setFollow] = useState<string[] | null>(null)
-  const packUsers = Array.from(new Set(starterPacks.filter((p) => picked.includes(p.artistId)).flatMap((p) => p.userIds)))
+  const packUsers = Array.from(new Set(picked.flatMap((a) => starterPack(state.posts, state.users, a).map((m) => m.userId))))
   const following = follow ?? packUsers
   const cleanHandle = handle.toLowerCase().replace(/[^a-z0-9_.]/g, '')
 
@@ -32,7 +34,15 @@ export default function Onboarding() {
   const canNext = step === 0 ? name.trim().length > 0 && cleanHandle.length >= 3 : step === 1 ? picked.length > 0 : true
   const finish = () => {
     dispatch({ type: 'onboard', name: name.trim(), handle: cleanHandle, location: location.trim(), artistIds: picked, followIds: following })
-    nav('/')
+    // Came from an invite link? Go back to it so they can accept.
+    let invite: string | null = null
+    try {
+      invite = localStorage.getItem(PENDING_INVITE_KEY)
+      localStorage.removeItem(PENDING_INVITE_KEY)
+    } catch {
+      invite = null
+    }
+    nav(invite ? `/invite/${invite}` : '/')
   }
 
   return (
@@ -113,9 +123,9 @@ export default function Onboarding() {
           )}
           {step === 2 && (
             <>
-              <div className="ob-kicker">Starter pack · picked by long-time fans</div>
+              <div className="ob-kicker">Starter pack · this month’s most active fans</div>
               <h1 className="ob-q">Follow these fans so your feed isn’t empty</h1>
-              <p className="ob-note ob-explain">A starter pack is a short list of active fans chosen by the community. Following them fills your feed from day one. You can unfollow anyone, anytime.</p>
+              <p className="ob-note ob-explain">Picked automatically: the fans whose posts about your artists got the most likes, replies and reposts in the last 30 days. Not the most followed, the most engaging. Unfollow anyone, anytime.</p>
               <div className="ob-people">
                 {packUsers.map((id) => {
                   const u = userById(id)

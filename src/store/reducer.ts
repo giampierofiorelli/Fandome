@@ -1,5 +1,5 @@
 import { seedChats, seedPosts, seedUsers } from '../data/seed'
-import type { ChatMessage, Id, Poll, Post, User } from '../data/types'
+import type { ChatMessage, Embed, Id, Poll, Post, User } from '../data/types'
 
 export interface State {
   version: 1
@@ -12,7 +12,7 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[] }
-  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; youtube?: string }
+  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
@@ -28,6 +28,14 @@ export type Action =
   | { type: 'toggleTop4'; albumId: Id }
   | { type: 'chat'; room: string; id: Id; userId?: Id; text: string; at: number }
   | { type: 'markSeen'; at: number }
+  | { type: 'createPage'; id: Id; handle: string; name: string; website: string; category: string; bio: string; color: string; verifyCode: string; at: number }
+  | { type: 'updatePage'; pageId: Id; name: string; bio: string; website: string; category: string }
+  | { type: 'invitePageAdmin'; pageId: Id; inviteId: Id; code: string; toUserId?: Id; at: number }
+  | { type: 'revokeInvite'; pageId: Id; inviteId: Id }
+  | { type: 'acceptInvite'; code: string; at: number }
+  | { type: 'declineInvite'; code: string }
+  | { type: 'removePageMember'; pageId: Id; userId: Id }
+  | { type: 'requestVerification'; pageId: Id }
   | { type: 'reset'; now: number }
 
 export function initialState(now: number): State {
@@ -78,9 +86,11 @@ export function reducer(state: State, action: Action): State {
     }
     case 'post': {
       if (!me) return state
+      // "Post as": a page, but only if the signed-in person manages it.
+      const authorId = action.as && canManagePage(state, action.as, me) ? action.as : me
       const post: Post = {
         id: action.id,
-        authorId: me,
+        authorId,
         text: action.text,
         createdAt: action.at,
         artistId: action.artistId,
@@ -91,6 +101,7 @@ export function reducer(state: State, action: Action): State {
         review: action.review,
         photo: action.photo,
         youtube: action.youtube,
+        embed: action.embed,
         lang: 'en',
         likes: [],
         reposts: [],
@@ -100,7 +111,7 @@ export function reducer(state: State, action: Action): State {
       return next
     }
     case 'delete':
-      return { ...state, posts: state.posts.filter((p) => !(p.id === action.postId && p.authorId === me)) }
+      return { ...state, posts: state.posts.filter((p) => !(p.id === action.postId && me && (p.authorId === me || canManagePage(state, p.authorId, me)))) }
     case 'like':
       if (!me) return state
       return updatePost(state, action.postId, (p) => ({ ...p, likes: toggle(p.likes, me) }))
@@ -159,9 +170,98 @@ export function reducer(state: State, action: Action): State {
     }
     case 'markSeen':
       return { ...state, lastSeen: action.at }
+    case 'createPage': {
+      // Only real (non-guest) personal accounts can create pages; handles are unique.
+      if (!me || isGuest(state) || state.users.some((u) => u.handle === action.handle)) return state
+      const page: User = {
+        id: action.id,
+        kind: 'page',
+        handle: action.handle,
+        name: action.name,
+        color: action.color,
+        bio: action.bio,
+        location: '',
+        fanSince: {},
+        top4: [],
+        attended: [],
+        going: [],
+        ratings: {},
+        following: [],
+        page: { website: action.website, category: action.category, verification: 'unverified', verifyCode: action.verifyCode, members: [{ userId: me, role: 'owner', since: action.at }], invites: [] },
+      }
+      return { ...state, users: [...state.users, page] }
+    }
+    case 'updatePage':
+      if (!me || !canManagePage(state, action.pageId, me)) return state
+      return updatePage(state, action.pageId, (u) => ({
+        ...u,
+        name: action.name,
+        bio: action.bio,
+        page: { ...u.page!, website: action.website, category: action.category, verification: action.website !== u.page!.website ? 'unverified' : u.page!.verification },
+      }))
+    case 'invitePageAdmin': {
+      if (!me || !canManagePage(state, action.pageId, me)) return state
+      const page = state.users.find((u) => u.id === action.pageId)!
+      if (action.toUserId && (page.page!.members.some((m) => m.userId === action.toUserId) || page.page!.invites.some((i) => i.toUserId === action.toUserId && i.status === 'pending'))) return state
+      const invite = { id: action.inviteId, code: action.code, role: 'admin' as const, toUserId: action.toUserId, invitedBy: me, createdAt: action.at, status: 'pending' as const }
+      return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, invites: [...u.page!.invites, invite] } }))
+    }
+    case 'revokeInvite':
+      if (!me || !canManagePage(state, action.pageId, me)) return state
+      return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, invites: u.page!.invites.map((i) => (i.id === action.inviteId ? { ...i, status: 'revoked' } : i)) } }))
+    case 'acceptInvite': {
+      const found = findInvite(state, action.code)
+      if (!me || isGuest(state) || !found || found.invite.status !== 'pending') return state
+      if (found.invite.toUserId && found.invite.toUserId !== me) return state
+      return updatePage(state, found.page.id, (u) => ({
+        ...u,
+        page: {
+          ...u.page!,
+          members: u.page!.members.some((m) => m.userId === me) ? u.page!.members : [...u.page!.members, { userId: me, role: found.invite.role, since: action.at }],
+          invites: u.page!.invites.map((i) => (i.code === action.code ? { ...i, status: 'accepted', toUserId: me } : i)),
+        },
+      }))
+    }
+    case 'declineInvite': {
+      const found = findInvite(state, action.code)
+      if (!me || !found || found.invite.toUserId !== me) return state
+      return updatePage(state, found.page.id, (u) => ({ ...u, page: { ...u.page!, invites: u.page!.invites.map((i) => (i.code === action.code ? { ...i, status: 'revoked' } : i)) } }))
+    }
+    case 'removePageMember': {
+      // Owners can remove admins; anyone can leave; the owner can't be removed.
+      const page = state.users.find((u) => u.id === action.pageId)
+      const role = page?.page?.members.find((m) => m.userId === me)?.role
+      const target = page?.page?.members.find((m) => m.userId === action.userId)
+      if (!me || !page || !role || !target || target.role === 'owner' || (role !== 'owner' && action.userId !== me)) return state
+      return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, members: u.page!.members.filter((m) => m.userId !== action.userId) } }))
+    }
+    case 'requestVerification':
+      if (!me || !canManagePage(state, action.pageId, me)) return state
+      return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, verification: 'pending' } }))
     case 'reset':
       return initialState(action.now)
   }
+}
+
+export function canManagePage(state: State, pageId: Id, userId: Id) {
+  return Boolean(state.users.find((u) => u.id === pageId)?.page?.members.some((m) => m.userId === userId))
+}
+export function pagesManagedBy(state: State, userId: Id) {
+  return state.users.filter((u) => u.page?.members.some((m) => m.userId === userId))
+}
+export function findInvite(state: State, code: string) {
+  for (const page of state.users) {
+    const invite = page.page?.invites.find((i) => i.code === code)
+    if (invite) return { page, invite }
+  }
+  return null
+}
+export function invitesFor(state: State, userId: Id) {
+  return state.users.flatMap((page) => (page.page?.invites ?? []).filter((i) => i.toUserId === userId && i.status === 'pending').map((invite) => ({ page, invite })))
+}
+const isGuest = (state: State) => state.users.find((u) => u.id === state.meId)?.handle === 'guest'
+function updatePage(state: State, pageId: Id, fn: (u: User) => User): State {
+  return { ...state, users: state.users.map((u) => (u.id === pageId && u.page ? fn(u) : u)) }
 }
 
 // Data export (lesson from Amino: users must be able to take their data with them).

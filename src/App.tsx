@@ -4,7 +4,8 @@ import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useStore } from './store/store'
 import { useComposer } from './components/Composer'
 import { IconHeadphones, IconHome, IconPlus, IconSearch, IconUser } from './components/icons'
-import { starterPacks } from './data/seed'
+import { seedPosts, seedUsers } from './data/seed'
+import { starterPack } from './lib/packs'
 import { spring } from './lib/motion'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
@@ -16,10 +17,17 @@ import Party from './pages/Party'
 import StarterPackPage from './pages/StarterPack'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
+import PageNew from './pages/PageNew'
+import PageManage from './pages/PageManage'
+import Invite from './pages/Invite'
 
 export const GUEST_HANDLE = 'guest'
 const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
-const GUEST_FOLLOWS = Array.from(new Set(starterPacks.filter((p) => GUEST_ARTISTS.includes(p.artistId)).flatMap((p) => p.userIds)))
+const guestFollows = () => {
+  const now = Date.now()
+  const posts = seedPosts(now)
+  return Array.from(new Set(GUEST_ARTISTS.flatMap((a) => starterPack(posts, seedUsers, a, now).map((m) => m.userId))))
+}
 
 // Tab with a shared glass pill that glides to the active item.
 function Tab({ to, end, icon, label }: { to: string; end?: boolean; icon: ReactNode; label: string }) {
@@ -60,7 +68,7 @@ export default function App() {
   // No login wall: first-time visitors land straight in the app as a guest.
   const needsGuest = !me && !loc.pathname.startsWith('/welcome')
   useEffect(() => {
-    if (needsGuest) dispatch({ type: 'onboard', name: 'Guest', handle: GUEST_HANDLE, location: '', artistIds: GUEST_ARTISTS, followIds: GUEST_FOLLOWS })
+    if (needsGuest) dispatch({ type: 'onboard', name: 'Guest', handle: GUEST_HANDLE, location: '', artistIds: GUEST_ARTISTS, followIds: guestFollows() })
   }, [needsGuest, dispatch])
   if (needsGuest) return <Backdrop />
   if (loc.pathname.startsWith('/welcome')) return <Onboarding />
@@ -80,6 +88,9 @@ export default function App() {
             <Route path="/party/:partyId" element={<Party />} />
             <Route path="/starter/:packId" element={<StarterPackPage />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/pages/new" element={<PageNew />} />
+            <Route path="/pages/:handle/manage" element={<PageManage />} />
+            <Route path="/invite/:code" element={<Invite />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </motion.div>

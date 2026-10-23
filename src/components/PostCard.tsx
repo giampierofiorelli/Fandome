@@ -1,14 +1,15 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import type { Post } from '../data/types'
+import type { Embed, Post } from '../data/types'
+import { EMBED_LABEL, embedSrc, findUrls, prettyUrl } from '../lib/media'
 import { useStore } from '../store/store'
 import { albumById, artistById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, Stars, UserLink, useModalClose } from './ui'
-import { IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
 
 interface Props {
   post: Post
@@ -62,6 +63,7 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
         <div className="post-body">
           <header className="post-head">
             <UserLink user={author} />
+            {author?.kind === 'page' && <PageBadge verified={author.page?.verification === 'verified'} />}
             <span className="muted">· {timeAgo(post.createdAt)}</span>
             {artist && (
               <Link to={`/a/${artist.id}`} className="chip artist-chip" style={{ ['--c' as string]: artist.color }} onClick={(e) => e.stopPropagation()}>
@@ -114,7 +116,10 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
 
           {post.image && <div className="post-image" style={{ background: post.image }} role="img" aria-label="Fan photo" />}
           {post.photo && <img className="post-photo" src={post.photo} alt="Photo shared by a fan" loading="lazy" />}
-          {post.youtube && <YouTubeEmbed id={post.youtube} />}
+          {post.youtube && !post.embed && <YouTubeEmbed id={post.youtube} />}
+          {post.embed?.kind === 'youtube' && <YouTubeEmbed id={post.embed.id} />}
+          {post.embed && post.embed.kind !== 'youtube' && <SocialEmbed embed={post.embed} />}
+          {!post.embed && <LinkCard text={post.text} />}
 
           {post.poll && (
             <div className="poll" onClick={(e) => e.stopPropagation()}>
@@ -362,5 +367,58 @@ function YouTubeEmbed({ id }: { id: string }) {
         </button>
       )}
     </div>
+  )
+}
+
+// Posts from X / Instagram / TikTok, shown with each platform's own embed.
+// Click-to-load: nothing from the platform loads until the reader asks for it.
+function SocialEmbed({ embed }: { embed: Embed }) {
+  const [load, setLoad] = useState(false)
+  const label = EMBED_LABEL[embed.kind]
+  return (
+    <div className={`social ${embed.kind}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>
+      {load ? (
+        <iframe src={embedSrc(embed)} title={`${label} post`} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen loading="lazy" />
+      ) : (
+        <button className="social-poster" onClick={() => setLoad(true)} aria-label={`Show ${label} post`}>
+          <span className="embed-logo">{label.slice(0, 2)}</span>
+          <span className="grow">
+            <strong>{label} post</strong>
+            <span className="muted small block">{prettyUrl(embed.url).short}</span>
+          </span>
+          <span className="pill-btn glass small">Show</span>
+        </button>
+      )}
+      <a className="social-open muted small" href={embed.url} target="_blank" rel="noopener noreferrer nofollow ugc">
+        Open on {label} ↗
+      </a>
+    </div>
+  )
+}
+
+// Plain web link: a tidy card for the first link in the post.
+function LinkCard({ text }: { text: string }) {
+  const url = findUrls(text)[0]
+  if (!url) return null
+  const { host, short } = prettyUrl(url)
+  return (
+    <a className="link-card" href={url} target="_blank" rel="noopener noreferrer nofollow ugc" onClick={(e) => e.stopPropagation()}>
+      <span className="icon-bubble">
+        <IconLink size={16} />
+      </span>
+      <span className="grow">
+        <strong>{host}</strong>
+        <span className="muted small block">{short}</span>
+      </span>
+      <IconArrowUpRight size={16} />
+    </a>
+  )
+}
+
+function PageBadge({ verified }: { verified: boolean }) {
+  return (
+    <span className={verified ? 'page-badge verified' : 'page-badge'} title={verified ? 'Website verified' : 'Website not verified yet'}>
+      <IconGlobe size={11} /> Site{verified && <IconCheck size={11} />}
+    </span>
   )
 }

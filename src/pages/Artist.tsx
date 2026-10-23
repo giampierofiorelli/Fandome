@@ -1,6 +1,9 @@
+import { AnimatePresence, motion } from 'motion/react'
+import { spring } from '../lib/motion'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { albums, concerts, parties, starterPacks } from '../data/seed'
+import { albums, concerts, parties } from '../data/seed'
+import { starterPack } from '../lib/packs'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
@@ -23,7 +26,7 @@ export default function ArtistPage() {
   const fans = state.users.filter((u) => u.fanSince[artist.id])
   const myAlbums = albums.filter((a) => a.artistId === artist.id)
   const shows = concerts.filter((c) => c.artistId === artist.id).sort((a, b) => b.date.localeCompare(a.date))
-  const pack = starterPacks.find((p) => p.artistId === artist.id)
+  const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
   const feed = artist.feeds.find((f) => f.id === tab)
 
@@ -31,7 +34,7 @@ export default function ArtistPage() {
     { id: 'all', label: 'All' },
     ...artist.feeds.map((f) => ({ id: f.id, label: f.label })),
     { id: 'albums', label: 'Albums' },
-    { id: 'shows', label: 'Shows' },
+    { id: 'shows', label: 'Tours & shows' },
     { id: 'fans', label: 'Fans' },
   ]
 
@@ -62,9 +65,9 @@ export default function ArtistPage() {
           <button className="glass-circle" onClick={() => compose({ artistId: artist.id })} aria-label="Post here">
             <IconPen size={17} />
           </button>
-          {pack && (
-            <Link to={`/starter/${pack.id}`} className="pill-btn glass small">
-              <IconPackage size={15} /> New here? Follow {pack.userIds.length} fans
+          {pack.length > 0 && (
+            <Link to={`/starter/${artist.id}`} className="pill-btn glass small">
+              <IconPackage size={15} /> New here? Follow the {pack.length} most active fans
             </Link>
           )}
           {party && (
@@ -117,29 +120,7 @@ export default function ArtistPage() {
         </div>
       )}
 
-      {tab === 'shows' && (
-        <div className="glass-card list">
-          {shows.map((c) => {
-            const going = state.users.filter((u) => u.attended.includes(c.id) || u.going.includes(c.id)).length
-            return (
-              <Link key={c.id} to={`/c/${c.id}`} className="row-item">
-                <div className="date-badge">
-                  <span>{new Date(c.date).getFullYear()}</span>
-                </div>
-                <div className="grow">
-                  <strong>
-                    {c.city}, {c.country}
-                  </strong>
-                  <div className="muted small">
-                    {c.venue} · {c.tour} · {formatDate(c.date)}
-                  </div>
-                </div>
-                <span className="soft-chip">{isUpcoming(c.date) ? `${going} going` : `${going} were there`}</span>
-              </Link>
-            )
-          })}
-        </div>
-      )}
+      {tab === 'shows' && <ShowsTab artistId={artist.id} />}
 
       {tab === 'fans' && (
         <div className="glass-card list">
@@ -160,4 +141,91 @@ export default function ArtistPage() {
       )}
     </>
   )
+}
+
+// Upcoming: every show (that's what fans plan around). Past: grouped by tour,
+// which is how fans remember them; expand a tour to see its dates.
+function ShowsTab({ artistId }: { artistId: string }) {
+  const { state } = useStore()
+  const [open, setOpen] = useState<string | null>(null)
+  const all = concerts.filter((c) => c.artistId === artistId)
+  const upcoming = all.filter((c) => isUpcoming(c.date)).sort((a, b) => a.date.localeCompare(b.date))
+  const tours = groupTours(all.filter((c) => !isUpcoming(c.date)))
+  const count = (ids: string[], key: 'attended' | 'going') => state.users.filter((u) => ids.some((id) => u[key].includes(id))).length
+
+  return (
+    <>
+      <div className="section-head">
+        <h2>Upcoming shows</h2>
+      </div>
+      {upcoming.length ? (
+        <div className="show-grid">
+          {upcoming.map((c) => {
+            const d = new Date(c.date + 'T12:00:00')
+            return (
+              <Link key={c.id} to={`/c/${c.id}`} className="show-tile">
+                <span className="show-day">{d.getDate()}</span>
+                <span className="show-month">{d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}</span>
+                <span className="show-city">{c.city}</span>
+                <span className="muted small">{c.venue}</span>
+                <span className="soft-chip">{count([c.id], 'going')} going</span>
+              </Link>
+            )
+          })}
+        </div>
+      ) : (
+        <p className="empty">No shows announced yet.</p>
+      )}
+
+      <div className="section-head">
+        <h2>Past tours</h2>
+      </div>
+      <div className="glass-card list">
+        {tours.map((t) => {
+          const isOpen = open === t.tour
+          return (
+            <div key={t.tour}>
+              <button className="row-item tour-row" onClick={() => setOpen(isOpen ? null : t.tour)} aria-expanded={isOpen}>
+                <span className="tour-years">{t.years}</span>
+                <span className="grow">
+                  <strong>{t.tour}</strong>
+                  <span className="muted small block">
+                    {t.shows.length} {t.shows.length === 1 ? 'show' : 'shows'} · {(() => { const n = count(t.shows.map((c) => c.id), 'attended'); return `${n} ${n === 1 ? 'fan was' : 'fans were'} there` })()}
+                  </span>
+                </span>
+                <span className={isOpen ? 'chev open' : 'chev'}>›</span>
+              </button>
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div className="tour-dates" initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={spring}>
+                    {t.shows.map((c) => (
+                      <Link key={c.id} to={`/c/${c.id}`} className="tour-date">
+                        <span className="muted small">{formatDate(c.date)}</span>
+                        <span className="grow">{c.city}</span>
+                        <span className="muted small">{c.venue}</span>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )
+        })}
+        {!tours.length && <p className="empty">No past tours yet.</p>}
+      </div>
+    </>
+  )
+}
+
+export function groupTours(past: typeof concerts) {
+  const map = new Map<string, typeof concerts>()
+  for (const c of past) map.set(c.tour, [...(map.get(c.tour) ?? []), c])
+  return [...map.entries()]
+    .map(([tour, shows]) => {
+      const sorted = [...shows].sort((a, b) => a.date.localeCompare(b.date))
+      const y0 = sorted[0].date.slice(0, 4)
+      const y1 = sorted[sorted.length - 1].date.slice(0, 4)
+      return { tour, shows: sorted, years: y0 === y1 ? y0 : `${y0}–${y1.slice(2)}`, first: sorted[0].date }
+    })
+    .sort((a, b) => b.first.localeCompare(a.first))
 }
