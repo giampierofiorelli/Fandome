@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { artists, starterPacks } from '../data/seed'
 import { useStore } from '../store/store'
 import { Avatar } from '../components/ui'
+import { IconSparkle } from '../components/icons'
 
 // Onboarding: pick your fandoms, then follow a Bluesky-style starter pack
 // so the feed is never empty on day one.
@@ -24,7 +25,7 @@ export default function Onboarding() {
   if (me && step === 0) {
     return (
       <div className="onboard">
-        <h1>✦ Fandome</h1>
+        <h1 className="brand"><IconSparkle size={34} /> Fandome</h1>
         <p>You’re already in, @{me.handle}.</p>
         <button className="btn primary" onClick={() => nav('/')}>
           Go to your feed
@@ -38,7 +39,7 @@ export default function Onboarding() {
       <div className="steps">{[0, 1, 2].map((i) => <span key={i} className={i <= step ? 'on' : ''} />)}</div>
       {step === 0 && (
         <>
-          <h1>✦ Fandome</h1>
+          <h1 className="brand"><IconSparkle size={34} /> Fandome</h1>
           <p className="lead">The social network for music fans. Your fan story, your people, every show.</p>
           <p className="muted small">Independent fan community — not affiliated with any artist.</p>
           <label>

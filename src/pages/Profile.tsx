@@ -6,6 +6,7 @@ import { FeedList } from '../components/FeedList'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
+import { IconDisc, IconPin, IconTicket } from '../components/icons'
 
 type Tab = 'posts' | 'diary' | 'ratings' | 'likes'
 
@@ -50,7 +51,7 @@ export default function Profile() {
           )}
         </div>
         <h2>{user.name}</h2>
-        <div className="muted">@{user.handle}{user.location && ` · 📍 ${user.location}`}</div>
+        <div className="muted">@{user.handle}{user.location && <> · <IconPin size={13} /> {user.location}</>}</div>
         {user.bio && <p>{user.bio}</p>}
         <div className="stats">
           <span><strong>{user.following.length}</strong> following</span>
@@ -112,13 +113,13 @@ export default function Profile() {
             d.kind === 'show' ? (
               <Link key={d.key} to={`/c/${d.concert.id}`} className="diary-row">
                 <span className="diary-date">{formatDate(d.concert.date)}</span>
-                <span>🎟️ <strong>{artistById(d.concert.artistId)?.name}</strong> · {d.concert.city} · <span className="muted">{d.concert.venue}</span></span>
+                <span><IconTicket size={16} /> <strong>{artistById(d.concert.artistId)?.name}</strong> · {d.concert.city} · <span className="muted">{d.concert.venue}</span></span>
               </Link>
             ) : (
               <Link key={d.key} to={`/p/${d.post.id}`} className="diary-row">
                 <span className="diary-date">{new Date(d.post.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                 <span>
-                  💿 <strong>{albumById(d.post.review!.albumId)?.title}</strong> <Stars value={d.post.review!.rating} size={14} />
+                  <IconDisc size={16} /> <strong>{albumById(d.post.review!.albumId)?.title}</strong> <Stars value={d.post.review!.rating} size={14} />
                 </span>
               </Link>
             ),

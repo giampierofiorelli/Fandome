@@ -5,6 +5,7 @@ import { FeedList } from '../components/FeedList'
 import { Trending } from '../components/Sidebar'
 import { Avatar } from '../components/ui'
 import { tagFeed } from '../lib/feed'
+import { IconPin, IconSearch } from '../components/icons'
 import { artistById, formatDate } from '../lib/util'
 
 export default function Explore() {
@@ -21,13 +22,16 @@ export default function Explore() {
   return (
     <>
       <header className="page-head sticky">
-        <input
+        <div className="search-wrap">
+          <IconSearch size={18} />
+          <input
           className="search"
           type="search"
           placeholder="Search fans, fandoms, shows, posts… try “Turin” or “vinyl”"
           value={params.get('q') ?? ''}
           onChange={(e) => setParams(e.target.value ? { q: e.target.value } : {})}
-        />
+          />
+        </div>
       </header>
 
       {tag && (
@@ -54,7 +58,7 @@ export default function Explore() {
           {shows.length > 0 && <h3 className="section-title">Shows</h3>}
           {shows.map((c) => (
             <Link key={c.id} to={`/c/${c.id}`} className="list-row">
-              📍 <strong>{artistById(c.artistId)?.name}</strong> · {c.city} · <span className="muted">{formatDate(c.date)}</span>
+              <IconPin size={15} /> <strong>{artistById(c.artistId)?.name}</strong> · {c.city} · <span className="muted">{formatDate(c.date)}</span>
             </Link>
           ))}
           {posts.length > 0 && <h3 className="section-title">Posts</h3>}

@@ -7,6 +7,7 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
 import { topicFeed } from '../lib/feed'
 import { artistById, avgRating, formatDate, isUpcoming } from '../lib/util'
+import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen } from '../components/icons'
 
 // Weverse-style artist space: one room per artist, with topic feeds
 // (Bluesky custom feeds), albums to rate (Letterboxd) and shows.
@@ -46,21 +47,21 @@ export default function ArtistPage() {
             </p>
           </div>
           <button className={joined ? 'btn' : 'btn primary'} onClick={() => dispatch({ type: 'followArtist', artistId: artist.id })}>
-            {joined ? 'Joined ✓' : 'Join'}
+            {joined ? <><IconCheck size={16} /> Joined</> : 'Join'}
           </button>
         </div>
         <div className="hero-actions">
           <button className="btn primary small" onClick={() => compose({ artistId: artist.id })}>
-            ✎ Post here
+            <IconPen size={15} /> Post here
           </button>
           {pack && (
             <Link to={`/starter/${pack.id}`} className="btn small">
-              📦 Starter pack
+              <IconPackage size={15} /> Starter pack
             </Link>
           )}
           {party && (
             <Link to={`/party/${party.id}`} className="btn small">
-              🎧 Listening party
+              <IconHeadphones size={15} /> Listening party
             </Link>
           )}
         </div>
@@ -99,7 +100,7 @@ export default function ArtistPage() {
                     onClick={() => dispatch({ type: 'toggleTop4', albumId: al.id })}
                     disabled={!fav && (me?.top4.length ?? 0) >= 4}
                   >
-                    {fav ? '♥ Top 4' : '♡ Top 4'}
+                    <IconHeart size={14} filled={fav} /> Top 4
                   </button>
                 </div>
               </div>

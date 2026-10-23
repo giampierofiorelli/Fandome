@@ -5,6 +5,7 @@ import { useStore } from '../store/store'
 import { Chat } from '../components/Chat'
 import { Avatar } from '../components/ui'
 import { artistById } from '../lib/util'
+import { IconChevronLeft } from '../components/icons'
 
 const PARTY_LINES = ['THIS SONG 😭', 'Volume up!!', 'The bridge on this one…', 'Who’s listening from Brazil? 🇧🇷', 'Italia presente 🇮🇹', 'Dancing in my kitchen rn', 'Underrated track alert', 'Skip? Never.']
 
@@ -40,9 +41,9 @@ export default function Party() {
     <>
       <header className="artist-hero" style={{ background: `linear-gradient(160deg, ${artist.color}66, transparent 75%)` }}>
         <Link to={`/a/${artist.id}`} className="muted small">
-          ← {artist.name}
+          <IconChevronLeft size={14} /> {artist.name}
         </Link>
-        <div className="live-pill">● LIVE</div>
+        <div className="live-pill"><i /> LIVE</div>
         <h2>{party.title}</h2>
         <p className="muted small">
           Hosted by @{userById(party.hostId)?.handle} · {listeners.length + 1} listening

@@ -1,4 +1,6 @@
+import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
+import { springSnappy } from '../lib/motion'
 import { newId, useStore } from '../store/store'
 import { timeAgo } from '../lib/util'
 import { Avatar } from './ui'
@@ -26,7 +28,7 @@ export function Chat({ room, crowd, lines }: { room: string; crowd: string[]; li
   }, [room, dispatch])
 
   useEffect(() => {
-    listRef.current?.scrollTo({ top: listRef.current.scrollHeight })
+    listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: 'smooth' })
   }, [messages.length])
 
   const send = () => {
@@ -38,10 +40,19 @@ export function Chat({ room, crowd, lines }: { room: string; crowd: string[]; li
   return (
     <div className="chat">
       <div className="chat-list" ref={listRef}>
+        <AnimatePresence initial={false}>
         {messages.map((m) => {
           const u = userById(m.userId)
+          const mine = m.userId === me?.id
           return (
-            <div key={m.id} className={m.userId === me?.id ? 'msg mine' : 'msg'}>
+            <motion.div
+              key={m.id}
+              className={mine ? 'msg mine' : 'msg'}
+              initial={{ opacity: 0, y: 10, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={springSnappy}
+              style={{ transformOrigin: mine ? 'bottom right' : 'bottom left' }}
+            >
               <Avatar user={u} size={26} />
               <div>
                 <span className="small">
@@ -49,9 +60,10 @@ export function Chat({ room, crowd, lines }: { room: string; crowd: string[]; li
                 </span>
                 <p>{m.text}</p>
               </div>
-            </div>
+            </motion.div>
           )
         })}
+        </AnimatePresence>
       </div>
       <form
         className="chat-form"

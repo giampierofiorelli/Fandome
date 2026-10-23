@@ -4,6 +4,7 @@ import { starterPacks } from '../data/seed'
 import { useStore } from '../store/store'
 import { Avatar } from '../components/ui'
 import { artistById } from '../lib/util'
+import { IconCheck, IconLink, IconPackage } from '../components/icons'
 
 // Shareable Bluesky-style starter pack: a link that onboards new fans
 // straight into a group of people worth following.
@@ -29,7 +30,7 @@ export default function StarterPackPage() {
   return (
     <>
       <header className="artist-hero" style={{ background: `linear-gradient(160deg, ${artist.color}55, transparent 70%)` }}>
-        <div className="muted small">📦 STARTER PACK</div>
+        <div className="eyebrow"><IconPackage size={14} /> Starter pack</div>
         <h1>{pack.title}</h1>
         <p className="muted">
           Curated by @{userById(pack.curatorId)?.handle} · {pack.userIds.length} fans · <Link to={`/a/${artist.id}`}>{artist.name} room</Link>
@@ -37,7 +38,7 @@ export default function StarterPackPage() {
         <div className="hero-actions">
           {me ? (
             <button className="btn primary" disabled={allFollowed} onClick={() => dispatch({ type: 'followMany', userIds: pack.userIds })}>
-              {allFollowed ? '✓ Following all' : 'Follow all'}
+              {allFollowed ? <><IconCheck size={16} /> Following all</> : 'Follow all'}
             </button>
           ) : (
             <Link to="/welcome" className="btn primary">
@@ -45,7 +46,7 @@ export default function StarterPackPage() {
             </Link>
           )}
           <button className="btn" onClick={copy}>
-            {copied ? '✓ Link copied' : 'Share pack'}
+            <IconLink size={15} /> {copied ? 'Link copied' : 'Share pack'}
           </button>
         </div>
       </header>

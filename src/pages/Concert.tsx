@@ -8,6 +8,7 @@ import { FeedList } from '../components/FeedList'
 import { ShareCardButton } from '../components/ShareCard'
 import { Avatar, Tabs } from '../components/ui'
 import { artistById, formatDate, isUpcoming } from '../lib/util'
+import { IconCheck, IconChevronLeft, IconPen } from '../components/icons'
 
 const CROWD_LINES = ['Who’s near the front?', 'Meeting at the usual spot!', 'This setlist 😭', 'Anyone selling a spare? (official resale only pls)', 'Flying in tomorrow ✈️', 'Best night of my life', 'Did you see the outfit change?!']
 
@@ -34,7 +35,7 @@ export default function ConcertPage() {
     <>
       <header className="artist-hero" style={{ background: `linear-gradient(160deg, ${artist.color}55, transparent 70%)` }}>
         <Link to={`/a/${artist.id}`} className="muted small">
-          ← {artist.name}
+          <IconChevronLeft size={14} /> {artist.name}
         </Link>
         <h1>
           {concert.city} {upcoming ? '' : `’${concert.date.slice(2, 4)}`}
@@ -57,10 +58,11 @@ export default function ConcertPage() {
             className={mine ? 'btn active' : 'btn primary'}
             onClick={() => dispatch({ type: upcoming ? 'toggleGoing' : 'toggleAttended', concertId: concert.id })}
           >
-            {upcoming ? (mine ? '✓ Going' : 'I’m going') : mine ? '✓ I was there' : 'I was there'}
+            {mine && <IconCheck size={16} />}
+            {upcoming ? (mine ? 'Going' : 'I’m going') : 'I was there'}
           </button>
           <button className="btn" onClick={() => compose({ concertId: concert.id, artistId: artist.id })}>
-            {upcoming ? 'Propose a meetup' : 'Share a memory'}
+            <IconPen size={15} /> {upcoming ? 'Propose a meetup' : 'Share a memory'}
           </button>
           {mine && (
             <ShareCardButton

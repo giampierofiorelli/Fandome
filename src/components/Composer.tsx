@@ -2,7 +2,9 @@ import { createContext, useCallback, useContext, useState, type ReactNode } from
 import { albums, artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
-import { AlbumCover, Avatar, Modal, Stars } from './ui'
+import { AlbumCover, Avatar, Modal, Stars, useModalClose } from './ui'
+import { IconPin, IconPoll } from './icons'
+import { useToast } from './Toast'
 
 export interface ComposeOpts {
   quoteOf?: string
@@ -29,6 +31,17 @@ export function ComposerProvider({ children }: { children: ReactNode }) {
 }
 
 function ComposerModal({ opts, onClose }: { opts: ComposeOpts; onClose: () => void }) {
+  const title = opts.reviewAlbumId ? 'Log an album' : opts.replyTo ? 'Reply' : opts.quoteOf ? 'Quote post' : 'New post'
+  return (
+    <Modal title={title} onClose={onClose}>
+      <ComposerForm opts={opts} />
+    </Modal>
+  )
+}
+
+function ComposerForm({ opts }: { opts: ComposeOpts }) {
+  const onClose = useModalClose()
+  const toast = useToast()
   const { state, dispatch, me, userById } = useStore()
   const quoted = opts.quoteOf ? state.posts.find((p) => p.id === opts.quoteOf) : undefined
   const parent = opts.replyTo ? state.posts.find((p) => p.id === opts.replyTo) : undefined
@@ -45,7 +58,6 @@ function ComposerModal({ opts, onClose }: { opts: ComposeOpts; onClose: () => vo
   const concert = concertById(opts.concertId)
   const validPoll = pollOpts.filter((o) => o.trim()).length >= 2
   const canPost = text.trim().length > 0 && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
-  const title = reviewMode ? 'Log an album' : parent ? 'Reply' : quoted ? 'Quote post' : 'New post'
 
   const submit = () => {
     if (!canPost) return
@@ -61,17 +73,22 @@ function ComposerModal({ opts, onClose }: { opts: ComposeOpts; onClose: () => vo
       poll: pollOn ? { options: pollOpts.filter((o) => o.trim()).map((label) => ({ label: label.trim(), votes: [] })) } : undefined,
       review: reviewMode && albumId ? { albumId, rating } : undefined,
     })
+    toast(reviewMode ? 'Logged to your diary' : parent ? 'Reply posted' : 'Posted')
     onClose()
   }
 
   return (
-    <Modal title={title} onClose={onClose}>
+    <>
       {parent && (
         <p className="muted small">
           Replying to <strong>@{userById(parent.authorId)?.handle}</strong>
         </p>
       )}
-      {concert && <p className="chip">📍 {concert.city} · {concert.tour}</p>}
+      {concert && (
+        <p className="chip inline-icon">
+          <IconPin size={13} /> {concert.city} · {concert.tour}
+        </p>
+      )}
       {reviewMode && (
         <div className="review-picker">
           <AlbumCover album={albumById(albumId)} size={72} />
@@ -134,14 +151,32 @@ function ComposerModal({ opts, onClose }: { opts: ComposeOpts; onClose: () => vo
         </select>
         {!reviewMode && !parent && (
           <button className={pollOn ? 'pill active' : 'pill'} onClick={() => setPollOn(!pollOn)}>
-            📊 Poll
+            <IconPoll size={14} /> Poll
           </button>
         )}
-        <span className={text.length > MAX ? 'counter over' : 'counter'}>{MAX - text.length}</span>
+        <CharRing used={text.length} max={MAX} />
         <button className="btn primary" disabled={!canPost} onClick={submit}>
           {parent ? 'Reply' : 'Post'}
         </button>
       </div>
-    </Modal>
+    </>
+  )
+}
+
+// Twitter-style progress ring for the character limit.
+function CharRing({ used, max }: { used: number; max: number }) {
+  const r = 9
+  const c = 2 * Math.PI * r
+  const pct = Math.min(1, used / max)
+  const left = max - used
+  const warn = left <= 20
+  return (
+    <span className={`char-ring ${left < 0 ? 'over' : warn ? 'warn' : ''}`} aria-label={`${left} characters left`}>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r={r} className="track" />
+        <circle cx="12" cy="12" r={r} className="fill" strokeDasharray={c} strokeDashoffset={c * (1 - pct)} transform="rotate(-90 12 12)" />
+      </svg>
+      {warn && <span>{left}</span>}
+    </span>
   )
 }
