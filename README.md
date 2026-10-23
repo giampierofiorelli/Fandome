@@ -20,6 +20,20 @@
 | **Finite feed**: "You're all caught up" | Instagram |
 | **Export my data** | lesson from Amino's shutdown |
 
+## Listening parties with Spotify
+
+Like Stationhead, Fandome never streams audio: it remote-controls **your own Spotify app**
+(Spotify Connect) so everyone hears the same song at the same second.
+
+1. Create a free app at https://developer.spotify.com/dashboard (tick **Web API**).
+2. Add the Redirect URI shown in **Settings → Spotify** (e.g. `https://<user>.github.io/Fandome/`).
+3. Paste the Client ID in Settings, tap **Connect Spotify**, then **Sync my Spotify** in a party.
+
+Notes: playback control requires Spotify **Premium** and an open Spotify app on any device.
+New Spotify apps start in development mode (only allow-listed users, max 25).
+Login uses OAuth PKCE, so no server or secret is needed. Apple Music needs a paid
+Apple Developer account (MusicKit), so it currently opens Apple Music instead.
+
 ## Run locally
 
 ```bash

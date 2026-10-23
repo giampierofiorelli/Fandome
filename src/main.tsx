@@ -6,16 +6,18 @@ import App from './App'
 import { StoreProvider } from './store/store'
 import { ComposerProvider } from './components/Composer'
 import { ToastProvider } from './components/Toast'
+import { handleRedirect } from './lib/spotify'
 import './styles.css'
 
-createRoot(document.getElementById('root')!).render(
+const render = (spotifyMessage: string | null) =>
+  createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* Respect the OS "reduce motion" setting: springs become simple fades. */}
     <MotionConfig reducedMotion="user">
       {/* HashRouter: GitHub Pages has no server-side routing */}
       <HashRouter>
         <StoreProvider>
-          <ToastProvider>
+          <ToastProvider initial={spotifyMessage}>
             <ComposerProvider>
               <App />
             </ComposerProvider>
@@ -24,4 +26,9 @@ createRoot(document.getElementById('root')!).render(
       </HashRouter>
     </MotionConfig>
   </StrictMode>,
-)
+  )
+
+// Finish a Spotify login round-trip (if any) before the router reads the URL.
+handleRedirect()
+  .catch(() => null)
+  .then(render)

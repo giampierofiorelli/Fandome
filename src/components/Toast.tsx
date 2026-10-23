@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react'
-import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { springSnappy } from '../lib/motion'
 import { IconCheck } from './icons'
 
@@ -7,9 +7,12 @@ import { IconCheck } from './icons'
 const Ctx = createContext<(msg: string) => void>(() => {})
 export const useToast = () => useContext(Ctx)
 
-export function ToastProvider({ children }: { children: ReactNode }) {
-  const [toast, setToast] = useState<{ id: number; msg: string } | null>(null)
+export function ToastProvider({ children, initial }: { children: ReactNode; initial?: string | null }) {
+  const [toast, setToast] = useState<{ id: number; msg: string } | null>(initial ? { id: 1, msg: initial } : null)
   const timer = useRef<ReturnType<typeof setTimeout>>()
+  useEffect(() => {
+    if (initial) timer.current = setTimeout(() => setToast(null), 2600)
+  }, [initial])
   const show = useCallback((msg: string) => {
     clearTimeout(timer.current)
     setToast({ id: Date.now(), msg })

@@ -1,14 +1,18 @@
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { parties } from '../data/seed'
 import { useStore } from '../store/store'
 import { Chat } from '../components/Chat'
 import { Avatar } from '../components/ui'
-import { IconArrowLeft, IconHeart } from '../components/icons'
+import { IconArrowLeft, IconHeart, IconSpotify } from '../components/icons'
 import { artistById } from '../lib/util'
+import { partyPosition, type PartyTrack } from '../lib/party'
+import { useSpotifySync } from '../lib/useSpotifySync'
 
 const PARTY_LINES = ['THIS SONG 😭', 'Volume up!!', 'The bridge on this one…', 'Who’s listening from Brazil? 🇧🇷', 'Italia presente 🇮🇹', 'Dancing in my kitchen rn', 'Underrated track alert', 'Skip? Never.']
+
+const NO_TRACKS: PartyTrack[] = []
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`
 
@@ -54,6 +58,7 @@ export default function Party() {
   const nav = useNavigate()
   const [now, setNow] = useState(Date.now())
   const [hearts, setHearts] = useState<number[]>([])
+  const sync = useSpotifySync(artistById(party?.artistId)?.name ?? '', party?.tracks ?? NO_TRACKS)
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(t)
@@ -61,13 +66,8 @@ export default function Party() {
   if (!party || !me) return <Navigate to="/" replace />
 
   const artist = artistById(party.artistId)!
-  const total = party.tracks.reduce((n, t) => n + t.seconds, 0)
-  let pos = Math.floor(now / 1000) % total
-  let idx = 0
-  while (pos >= party.tracks[idx].seconds) {
-    pos -= party.tracks[idx].seconds
-    idx++
-  }
+  const { idx, ms } = partyPosition(party.tracks, now)
+  const pos = Math.floor(ms / 1000)
   const track = party.tracks[idx]
   const listeners = state.users.filter((u) => u.fanSince[party.artistId] && u.id !== me.id)
   const query = encodeURIComponent(`${artist.name} ${track.title}`)
@@ -119,15 +119,7 @@ export default function Party() {
           </div>
         </div>
 
-        <div className="hero-actions center">
-          <a className="pill-btn ink" href={`https://open.spotify.com/search/${query}`} target="_blank" rel="noreferrer">
-            Play on Spotify
-          </a>
-          <a className="pill-btn glass" href={`https://music.apple.com/search?term=${query}`} target="_blank" rel="noreferrer">
-            Apple Music
-          </a>
-        </div>
-        <p className="hero-note center">Press play in your own app and seek to {fmt(pos)}. The music stays on the streaming service.</p>
+        <SyncControls sync={sync} pos={pos} appleUrl={`https://music.apple.com/search?term=${query}`} onSetup={() => nav('/settings')} />
         <div className="stack center">
           {listeners.map((u) => (
             <Avatar key={u.id} user={u} size={28} />
@@ -147,6 +139,61 @@ export default function Party() {
           </li>
         ))}
       </ol>
+    </>
+  )
+}
+
+// Stationhead-style controls: Fandome drives the listener's own Spotify app.
+function SyncControls({ sync, pos, appleUrl, onSetup }: { sync: ReturnType<typeof useSpotifySync>; pos: number; appleUrl: string; onSetup: () => void }) {
+  const { connected, status, message, playback, drift } = sync
+  const device = playback?.deviceName
+  const driftText = drift === null ? '' : Math.abs(drift) < 1000 ? 'perfectly in sync' : `${(Math.abs(drift) / 1000).toFixed(1)}s ${drift > 0 ? 'ahead' : 'behind'}`
+
+  let primary
+  if (!connected) {
+    primary = (
+      <button className="pill-btn ink" onClick={() => (sync.hasClientId ? sync.connect() : onSetup())}>
+        <IconSpotify size={18} /> Connect Spotify
+      </button>
+    )
+  } else if (status === 'synced') {
+    primary = (
+      <button className="pill-btn glass" onClick={sync.leave}>
+        <span className="sync-dot" /> In sync
+      </button>
+    )
+  } else {
+    primary = (
+      <button className="pill-btn ink" disabled={status === 'starting'} onClick={sync.join}>
+        <IconSpotify size={18} /> {status === 'starting' ? 'Syncing…' : status === 'off-track' ? 'Rejoin the party' : 'Sync my Spotify'}
+      </button>
+    )
+  }
+
+  const note =
+    status === 'error'
+      ? message
+      : status === 'synced'
+        ? `Playing on ${device ?? 'your Spotify app'}${driftText ? ` · ${driftText}` : ''}. Tap “In sync” to leave.`
+        : status === 'off-track'
+          ? 'You switched song in Spotify. Rejoin to jump back to the room.'
+          : connected
+            ? `Tap Sync: your Spotify jumps to ${fmt(pos)} and follows the room, song after song.`
+            : 'Connect Spotify Premium: each song plays in your own Spotify app, right on time with everyone.'
+
+  return (
+    <>
+      <div className="hero-actions center">
+        {primary}
+        <a className="pill-btn glass" href={appleUrl} target="_blank" rel="noreferrer">
+          Apple Music
+        </a>
+      </div>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.p key={note} className="hero-note center" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }} transition={{ duration: 0.18 }}>
+          {note}
+        </motion.p>
+      </AnimatePresence>
     </>
   )
 }

@@ -185,3 +185,10 @@ export const IconPlay = (p: P) => (
     <path d="M8 5.5v13l10.5-6.5z" fill="currentColor" />
   </Svg>
 )
+// Generic "sound waves in a circle" mark (not the Spotify logo).
+export const IconSpotify = (p: P) => (
+  <Svg {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M7.5 9.5c3-1 6.5-.7 9 .8M8 12.6c2.5-.7 5.2-.4 7.3.8M8.7 15.5c1.9-.5 3.8-.3 5.4.6" />
+  </Svg>
+)

@@ -1,6 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/store'
+import { useState } from 'react'
 import { exportMyData } from '../store/reducer'
+import * as spotify from '../lib/spotify'
+import { useToast } from '../components/Toast'
 
 export default function Settings() {
   const { state, dispatch } = useStore()
@@ -21,6 +24,7 @@ export default function Settings() {
         <div className="eyebrow">Settings</div>
         <h1 className="display">Your <span className="display-strong">space</span></h1>
       </header>
+      <SpotifyCard />
       <section className="card">
         <h3>Your data</h3>
         <p className="muted small">Your posts, profile and likes belong to you. Download them any time.</p>
@@ -57,5 +61,68 @@ export default function Settings() {
         </button>
       </section>
     </>
+  )
+}
+
+// Spotify connection for listening parties (Stationhead-style remote control).
+function SpotifyCard() {
+  const toast = useToast()
+  const [clientId, setClientIdState] = useState(spotify.getClientId())
+  const [connected, setConnected] = useState(spotify.isConnected())
+  const redirect = spotify.redirectUri()
+  const save = () => {
+    spotify.setClientId(clientId)
+    toast(clientId.trim() ? 'Client ID saved' : 'Client ID removed')
+  }
+  return (
+    <section className="card">
+      <div className="row-between">
+        <h3>Spotify</h3>
+        <span className="soft-chip">{connected ? 'Connected' : 'Not connected'}</span>
+      </div>
+      <p className="muted small">
+        Listening parties play each song in your own Spotify app, in sync with the room. Fandome never streams audio. Requires Spotify Premium.
+      </p>
+      <ol className="rules small">
+        <li>
+          Open <a className="tag" href="https://developer.spotify.com/dashboard" target="_blank" rel="noreferrer">developer.spotify.com/dashboard</a> and create an app (free).
+        </li>
+        <li>
+          Add this Redirect URI: <code className="code">{redirect}</code>
+        </li>
+        <li>Tick “Web API”, save, then paste the app’s Client ID below.</li>
+      </ol>
+      <div className="row-field">
+        <input value={clientId} onChange={(e) => setClientIdState(e.target.value)} placeholder="Spotify Client ID" aria-label="Spotify Client ID" />
+        <button className="pill-btn glass" onClick={save}>
+          Save
+        </button>
+      </div>
+      <div className="row-end">
+        {connected ? (
+          <button
+            className="pill-btn glass"
+            onClick={() => {
+              spotify.disconnect()
+              setConnected(false)
+              toast('Spotify disconnected')
+            }}
+          >
+            Disconnect
+          </button>
+        ) : (
+          <button
+            className="pill-btn ink"
+            disabled={!clientId.trim()}
+            onClick={() => {
+              spotify.setClientId(clientId)
+              void spotify.login('#/party/party-confessions')
+            }}
+          >
+            Connect Spotify
+          </button>
+        )}
+      </div>
+    </section>
   )
 }
