@@ -849,14 +849,11 @@ main.app { overflow-x: clip; }
 .share-person strong { font-weight: 600; }
 
 /* A post inside a story */
-.sv-post { position: absolute; left: 50%; top: 50%; z-index: 3; width: 76%; transform: translate(-50%, -54%) rotate(-1.5deg); display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 22px; border: 0; text-align: left; font: inherit; color: #0d1015; background: rgba(255, 255, 255, 0.94); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); cursor: pointer; }
-.story-canvas .sv-post { width: 78%; cursor: default; }
 .sv-post-head { display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .sv-post-head strong { display: block; font-weight: 600; line-height: 1.1; }
 .sv-post-handle { display: block; font-size: 12px; opacity: 0.55; }
 .sv-post-pic { display: block; aspect-ratio: 4 / 3; border-radius: 14px; background-size: cover; background-position: center; }
 .sv-post-text { font-size: 15px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
-.sv-post-open { font-size: 12px; opacity: 0.5; }
 .dm-post { display: flex; flex-direction: column; gap: 8px; width: min(260px, 72vw); padding: 12px; border-radius: 20px; background: var(--glass-strong); border: 1px solid var(--glass-edge); color: inherit; text-decoration: none; }
 .bubble-row.mine .dm-post { border-bottom-right-radius: 6px; }
 .dm-post-head { display: flex; align-items: center; gap: 6px; font-size: 13.5px; }
@@ -922,3 +919,12 @@ main.app { overflow-x: clip; }
 .feed > div:has(.menu) { position: relative; z-index: 6; }
 .post-head .user-link { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 0 1 auto; }
 .post-head > .muted, .post-head .page-badge { flex-shrink: 0; white-space: nowrap; }
+
+/* Post in a story: straight, centred, the real content */
+.sv-post { touch-action: pan-y; position: absolute; left: 50%; top: 50%; z-index: 3; transform: translate(-50%, -50%); width: 88%; max-height: 68%; overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 24px; text-align: left; color: var(--text); background: var(--bg); box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08); scrollbar-width: none; }
+.sv-post::-webkit-scrollbar { display: none; }
+.sv-post .post.embedded { margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
+.sv-post .yt, .sv-post .social, .sv-post .post-photo { margin-bottom: 0; }
+.story-canvas .sv-post { width: 86%; max-height: 74%; transform: translate(-50%, -54%); }
+.sv-post-open { position: sticky; bottom: 0; box-shadow: 0 -10px 20px 4px var(--bg); align-self: stretch; height: 40px; border-radius: 999px; border: 0; background: var(--ink); color: var(--on-ink); font: inherit; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+.sv:has(.sv-post) .sv-caption { bottom: 84px; }

@@ -11,9 +11,11 @@ import { spring } from '../lib/motion'
 import { timeAgo } from '../lib/util'
 import { useToast } from './Toast'
 import { Avatar, Modal, useModalClose } from './ui'
+import { PostCard } from './PostCard'
 import { IconCamera, IconImage, IconMute, IconPlay, IconPlus, IconRepost, IconSend, IconTrash, IconVideo, IconVolume, IconX } from './icons'
 
 const STORY_MS = 5000
+const POST_STORY_MS = 10000 // a shared post has more to read
 export const STORY_BGS = [
   'linear-gradient(160deg,#ff6a88,#7a2a6a)',
   'linear-gradient(140deg,#6fc3cf,#e9b48c 50%,#b99be6)',
@@ -244,31 +246,43 @@ function SharedCard({ c, still, videoEl }: { c: StoryContent & { authorId: strin
   )
 }
 
-// A feed post inside a story: author, text and picture. Tap to open the post.
-function PostSticker({ p, onOpen }: { p: SharedPost; onOpen?: () => void }) {
-  const { userById } = useStore()
+// A feed post inside a story: the real post (text, photos, videos, embeds, polls),
+// straight and centred. Falls back to the saved snapshot if the post was deleted.
+function PostSticker({ p, onOpen, onInteract }: { p: SharedPost; onOpen?: () => void; onInteract?: () => void }) {
+  const { state, userById } = useStore()
+  const live = state.posts.find((x) => x.id === p.id)
   const author = userById(p.authorId)
   const pic = p.photo ? `url(${p.photo})` : p.image
-  const body = (
-    <>
-      <span className="sv-post-head">
-        <Avatar user={author} size={26} />
-        <span>
-          <strong>{author?.name}</strong>
-          <span className="sv-post-handle">@{author?.handle}</span>
-        </span>
-      </span>
-      {pic && <span className="sv-post-pic" style={{ backgroundImage: p.photo ? pic : undefined, background: p.photo ? undefined : pic }} />}
-      <span className="sv-post-text">{p.text}</span>
-      {onOpen && <span className="sv-post-open">Tap to open the post</span>}
-    </>
-  )
-  return onOpen ? (
-    <button className="sv-post" onClick={onOpen}>
-      {body}
-    </button>
-  ) : (
-    <div className="sv-post">{body}</div>
+  return (
+    <div
+      className="sv-post"
+      onPointerDown={(e) => {
+        e.stopPropagation() // scroll the card without swiping the story away
+        onInteract?.()
+      }}
+      onClick={(e) => e.stopPropagation()}
+    >
+      {live ? (
+        <PostCard post={live} embedded />
+      ) : (
+        <>
+          <span className="sv-post-head">
+            <Avatar user={author} size={26} />
+            <span>
+              <strong>{author?.name}</strong>
+              <span className="sv-post-handle">@{author?.handle}</span>
+            </span>
+          </span>
+          {pic && <span className="sv-post-pic" style={{ backgroundImage: p.photo ? pic : undefined, background: p.photo ? undefined : pic }} />}
+          <span className="sv-post-text">{p.text}</span>
+        </>
+      )}
+      {onOpen && (
+        <button className="sv-post-open" onClick={onOpen}>
+          {live ? 'Open post' : 'Post no longer available'}
+        </button>
+      )}
+    </div>
   )
 }
 
@@ -365,7 +379,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
         if (v?.ended) return next()
         const d = v && Number.isFinite(v.duration) && v.duration > 0 ? v.duration : content?.video?.duration || 1
         pRef.current = v ? v.currentTime / d : 0
-      } else pRef.current += dt / STORY_MS
+      } else pRef.current += dt / (story?.kind === 'post' ? POST_STORY_MS : STORY_MS)
       if (pRef.current >= 1) {
         next()
         return
@@ -463,6 +477,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
         {story.post && (
           <PostSticker
             p={story.post}
+            onInteract={() => setPaused(true)}
             onOpen={() => {
               onClose()
               nav(`/p/${story.post!.id}`)
