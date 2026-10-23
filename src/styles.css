@@ -213,6 +213,9 @@ p { margin: 6px 0; }
 .search-wrap svg { position: absolute; left: 16px; pointer-events: none; }
 .search { border-radius: 999px; padding: 12px 18px 12px 44px; background: var(--surface-2); }
 
+/* ---------- Guest ---------- */
+.guest-banner { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 16px; padding: 14px 16px; border-radius: var(--radius); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); background: linear-gradient(120deg, var(--accent-soft), color-mix(in srgb, var(--accent-2) 12%, transparent)); }
+
 /* ---------- Posts ---------- */
 .compose-inline { display: flex; align-items: center; gap: 12px; width: 100%; background: none; border: 0; border-bottom: 1px solid var(--hairline); padding: 14px 16px; text-align: left; font-size: 16px; transition: background 0.15s; }
 .compose-inline:hover { background: color-mix(in srgb, var(--surface-2) 50%, transparent); }

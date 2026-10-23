@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useStore } from './store/store'
 import { useComposer } from './components/Composer'
@@ -7,6 +7,11 @@ import { Avatar } from './components/ui'
 import { Sidebar } from './components/Sidebar'
 import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSettings, IconSparkle, IconUser } from './components/icons'
 import { artistById } from './lib/util'
+import { starterPacks } from './data/seed'
+
+export const GUEST_HANDLE = 'guest'
+const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
+const GUEST_FOLLOWS = Array.from(new Set(starterPacks.filter((p) => GUEST_ARTISTS.includes(p.artistId)).flatMap((p) => p.userIds)))
 import { spring } from './lib/motion'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
@@ -39,9 +44,14 @@ export default function App() {
   const compose = useComposer()
   const loc = useLocation()
 
-  if (!me && !loc.pathname.startsWith('/welcome') && !loc.pathname.startsWith('/starter')) {
-    return <Navigate to="/welcome" replace />
-  }
+  const { dispatch } = useStore()
+  const needsGuest = !me && !loc.pathname.startsWith('/welcome')
+  // No login wall: first-time visitors land straight in the app as a guest
+  // following the Madonna starter pack. Creating a profile is optional.
+  useEffect(() => {
+    if (needsGuest) dispatch({ type: 'onboard', name: 'Guest', handle: GUEST_HANDLE, location: '', artistIds: GUEST_ARTISTS, followIds: GUEST_FOLLOWS })
+  }, [needsGuest, dispatch])
+  if (needsGuest) return null
   if (loc.pathname.startsWith('/welcome')) return <Onboarding />
 
   return (

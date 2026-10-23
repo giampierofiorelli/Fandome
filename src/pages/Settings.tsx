@@ -46,9 +46,9 @@ export default function Settings() {
         <button
           className="btn danger"
           onClick={() => {
-            if (confirm('Reset the demo? This deletes your profile and posts from this browser.')) {
+            if (confirm('Reset the demo? This deletes your profile and posts from this browser and starts again as a guest.')) {
               dispatch({ type: 'reset', now: Date.now() })
-              nav('/welcome')
+              nav('/')
             }
           }}
         >

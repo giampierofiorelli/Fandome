@@ -22,7 +22,7 @@ export default function Onboarding() {
 
   const cleanHandle = handle.toLowerCase().replace(/[^a-z0-9_.]/g, '')
 
-  if (me && step === 0) {
+  if (me && me.handle !== 'guest' && step === 0) {
     return (
       <div className="onboard">
         <h1 className="brand"><IconSparkle size={34} /> Fandome</h1>
@@ -57,6 +57,11 @@ export default function Onboarding() {
           <button className="btn primary wide" disabled={!name.trim() || cleanHandle.length < 3} onClick={() => setStep(1)}>
             Continue
           </button>
+          {me && (
+            <button className="link-btn" onClick={() => nav('/')}>
+              Not now — keep exploring as a guest
+            </button>
+          )}
         </>
       )}
       {step === 1 && (
