@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { concerts, parties } from '../data/seed'
 import { useStore } from '../store/store'
-import { conversations, invitesFor } from '../store/reducer'
+import { invitesFor } from '../store/reducer'
 import { StoriesBar } from '../components/Stories'
 import { MessagingNotice } from './Messages'
 import { FeedList } from '../components/FeedList'
 import { Avatar, Tabs } from '../components/ui'
-import { IconArrowUpRight, IconPlay, IconSend } from '../components/icons'
+import { IconArrowUpRight, IconPlay } from '../components/icons'
 import { discoverFeed, followingFeed } from '../lib/feed'
 import { artistById, isUpcoming, trending } from '../lib/util'
 import { spring } from '../lib/motion'
@@ -40,21 +40,9 @@ export default function Home() {
   const listeners = state.users.filter((u) => u.fanSince[party.artistId]).slice(0, 4)
   const guest = me.handle === 'guest'
   const invites = invitesFor(state, me.id)
-  const unreadDms = conversations(state, Date.now()).reduce((n, c) => n + c.unread, 0)
 
   return (
     <>
-      <div className="home-top">
-        <span className="dotmatrix brand-mini">FANDOME</span>
-        <Link to="/messages" className="glass-circle dm-btn" aria-label={unreadDms ? `Messages, ${unreadDms} unread` : 'Messages'}>
-          <IconSend size={18} />
-          {unreadDms > 0 && (
-            <motion.span className="dm-badge" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', bounce: 0.5, visualDuration: 0.3 }}>
-              {unreadDms}
-            </motion.span>
-          )}
-        </Link>
-      </div>
       <StoriesBar />
       <MessagingNotice compact />
       <header className="hello compact">

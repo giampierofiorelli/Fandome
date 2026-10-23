@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useCallback, useEffect, useRef, useState, type RefObject } from 'react'
 import { createPortal } from 'react-dom'
-import type { Story, StoryContent, User } from '../data/types'
+import type { Post, SharedPost, Story, StoryContent, User } from '../data/types'
+import { useNavigate } from 'react-router-dom'
 import { newId, useStore } from '../store/store'
-import { activeStories, canMessage } from '../store/reducer'
+import { activeStories, canMessage, messagingPaused } from '../store/reducer'
 import { compressImage } from '../lib/media'
 import { fmtDuration, MAX_VIDEO_SECONDS, newVideoKey, putBlob, readVideo, useBlobUrl } from '../lib/mediaStore'
 import { spring } from '../lib/motion'
@@ -94,7 +95,7 @@ export function StoriesBar() {
 
 type Picked = { file: Blob; url: string; duration: number; poster?: string }
 
-function StoryComposer({ sharing }: { sharing?: Story }) {
+export function StoryComposer({ sharing, post }: { sharing?: Story; post?: Post }) {
   const { dispatch } = useStore()
   const toast = useToast()
   const close = useModalClose()
@@ -107,7 +108,7 @@ function StoryComposer({ sharing }: { sharing?: Story }) {
   const recorder = useRef<HTMLInputElement>(null)
   const gallery = useRef<HTMLInputElement>(null)
   const shared = sharing ? contentOf(sharing) : undefined
-  const can = !busy && Boolean(shared || photo || video || text.trim())
+  const can = !busy && Boolean(post || shared || photo || video || text.trim())
   useEffect(
     () => () => {
       if (video) URL.revokeObjectURL(video.url)
@@ -146,7 +147,9 @@ function StoryComposer({ sharing }: { sharing?: Story }) {
 
   const share = async () => {
     const at = Date.now()
-    if (sharing) {
+    if (post) {
+      dispatch({ type: 'sharePostToStory', id: newId(), at, postId: post.id, text })
+    } else if (sharing) {
       dispatch({ type: 'shareStory', id: newId(), at, storyId: sharing.id, text })
     } else if (video) {
       setBusy(true)
@@ -161,17 +164,18 @@ function StoryComposer({ sharing }: { sharing?: Story }) {
     } else {
       dispatch({ type: 'addStory', id: newId(), at, kind: photo ? 'photo' : 'text', text: text.trim() || undefined, bg: photo ? undefined : bg, photo: photo ?? undefined })
     }
-    toast(sharing ? 'Shared to your story · 24h' : 'Added to your story · 24h')
+    toast(sharing || post ? 'Shared to your story · 24h' : 'Added to your story · 24h')
     close()
   }
 
-  const media = Boolean(photo || video || shared)
+  const media = Boolean(photo || video || shared || post)
   return (
     <>
-      <div className={media ? 'story-canvas media' : 'story-canvas'} style={photo ? { backgroundImage: `url(${photo})` } : shared ? { background: 'linear-gradient(160deg,#2a2d3a,#0d1015)' } : video ? { background: '#000' } : { background: bg }}>
+      <div className={media ? 'story-canvas media' : 'story-canvas'} style={photo ? { backgroundImage: `url(${photo})` } : shared || post ? { background: 'linear-gradient(160deg,#2a2d3a,#0d1015)' } : video ? { background: '#000' } : { background: bg }}>
         {video && <video className="canvas-video" src={video.url} poster={video.poster} autoPlay muted loop playsInline />}
         {video && <span className="canvas-badge">{fmtDuration(video.duration)}</span>}
         {shared && <SharedCard c={shared} still />}
+        {post && <PostSticker p={{ id: post.id, authorId: post.authorId, text: post.text, photo: post.photo, image: post.image }} />}
         <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={media ? 'Add a caption…' : 'Type something…'} maxLength={140} rows={media ? 2 : 3} autoFocus={!media} />
       </div>
       {!media && (
@@ -186,7 +190,7 @@ function StoryComposer({ sharing }: { sharing?: Story }) {
       <input ref={recorder} type="file" accept="video/*" capture="environment" hidden onChange={onFile} />
       <input ref={gallery} type="file" accept="image/*,video/*" hidden onChange={onFile} />
       <div className="story-tools">
-        {!sharing &&
+        {!sharing && !post &&
           (photo || video ? (
             <button
               className="pill"
@@ -214,7 +218,7 @@ function StoryComposer({ sharing }: { sharing?: Story }) {
           {busy ? 'Saving…' : 'Share'}
         </button>
       </div>
-      <p className="muted small center story-hint">{sharing ? 'It stays in your story for 24 hours, with their name on it.' : 'Stories last 24 hours · videos up to 3 minutes'}</p>
+      <p className="muted small center story-hint">{sharing || post ? 'It stays in your story for 24 hours, with their name on it.' : 'Stories last 24 hours · videos up to 3 minutes'}</p>
     </>
   )
 }
@@ -237,6 +241,34 @@ function SharedCard({ c, still, videoEl }: { c: StoryContent & { authorId: strin
         <Avatar user={author} size={20} /> @{author?.handle}
       </span>
     </div>
+  )
+}
+
+// A feed post inside a story: author, text and picture. Tap to open the post.
+function PostSticker({ p, onOpen }: { p: SharedPost; onOpen?: () => void }) {
+  const { userById } = useStore()
+  const author = userById(p.authorId)
+  const pic = p.photo ? `url(${p.photo})` : p.image
+  const body = (
+    <>
+      <span className="sv-post-head">
+        <Avatar user={author} size={26} />
+        <span>
+          <strong>{author?.name}</strong>
+          <span className="sv-post-handle">@{author?.handle}</span>
+        </span>
+      </span>
+      {pic && <span className="sv-post-pic" style={{ backgroundImage: p.photo ? pic : undefined, background: p.photo ? undefined : pic }} />}
+      <span className="sv-post-text">{p.text}</span>
+      {onOpen && <span className="sv-post-open">Tap to open the post</span>}
+    </>
+  )
+  return onOpen ? (
+    <button className="sv-post" onClick={onOpen}>
+      {body}
+    </button>
+  ) : (
+    <div className="sv-post">{body}</div>
   )
 }
 
@@ -267,6 +299,7 @@ function StoryVideoLayer({ vkey, poster, paused, muted, vref, onBlocked, onMissi
 // Full-screen viewer: progress bars, tap left/right, hold to pause, swipe down to close.
 function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]; startAuthor: string; onClose: () => void; onShare: (s: Story) => void }) {
   const { state, dispatch, me, userById } = useStore()
+  const nav = useNavigate()
   const toast = useToast()
   const [authorIdx, setAuthorIdx] = useState(Math.max(0, order.indexOf(startAuthor)))
   const [idx, setIdx] = useState(0)
@@ -356,7 +389,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
 
   if (!story || !author || !content) return null
   const sharedBy = story.kind === 'share' ? story.shared : undefined
-  const canShare = me && !isMine && (sharedBy?.authorId ?? authorId) !== me.id
+  const canShare = me && !isMine && story.kind !== 'post' && (sharedBy?.authorId ?? authorId) !== me.id
   const videoLayer = isVideo && content.video && (
     <StoryVideoLayer
       key={story.id}
@@ -373,7 +406,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
       onMissing={() => setMissingVideo(story.id)}
     />
   )
-  const canReply = me && !isMine && me.handle !== 'guest' && canMessage(state, me.id, authorId)
+  const canReply = me && !isMine && me.handle !== 'guest' && canMessage(state, me.id, authorId) && !messagingPaused(state, me.id, Date.now())
 
   return createPortal(
     <motion.div className="sv-root" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
@@ -389,7 +422,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
         onDragStart={() => setPaused(true)}
         onDragEnd={(_, info) => (info.offset.y > 120 || info.velocity.y > 600 ? onClose() : setPaused(false))}
         style={
-          sharedBy
+          sharedBy || story.post
             ? { background: `linear-gradient(160deg, color-mix(in srgb, ${author.color} 70%, #1b1d26), #0d1015)` }
             : story.photo
               ? { backgroundImage: `url(${story.photo})` }
@@ -427,6 +460,15 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
         </div>
         {!sharedBy && videoLayer}
         {sharedBy && <SharedCard c={sharedBy} videoEl={videoLayer} />}
+        {story.post && (
+          <PostSticker
+            p={story.post}
+            onOpen={() => {
+              onClose()
+              nav(`/p/${story.post!.id}`)
+            }}
+          />
+        )}
         {/* tap zones; press & hold pauses */}
         <button className="sv-tap left" aria-label="Previous" onClick={prev} onPointerDown={() => setPaused(true)} onPointerUp={() => setPaused(false)} onPointerLeave={() => setPaused(false)} />
         <button className="sv-tap right" aria-label="Next" onClick={next} onPointerDown={() => setPaused(true)} onPointerUp={() => setPaused(false)} onPointerLeave={() => setPaused(false)} />

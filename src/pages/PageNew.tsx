@@ -1,3 +1,4 @@
+import { canCreatePage, recentlyActive, WEBSITE_CATEGORY } from '../store/reducer'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { newId, useStore } from '../store/store'
@@ -47,7 +48,9 @@ export default function PageNew() {
   } catch {
     url = ''
   }
-  const can = name.trim().length > 1 && cleanHandle.length >= 3 && !taken && Boolean(url)
+  const active = recentlyActive(state, me.id, Date.now())
+  const allowed = canCreatePage(state, me.id, category, Date.now())
+  const can = name.trim().length > 1 && cleanHandle.length >= 3 && !taken && Boolean(url) && allowed
 
   const create = () => {
     if (!can) return
@@ -101,10 +104,18 @@ export default function PageNew() {
           <span>Type</span>
           <select value={category} onChange={(e) => setCategory(e.target.value)}>
             {PAGE_CATEGORIES.map((c) => (
-              <option key={c}>{c}</option>
+              <option key={c} disabled={!active && c !== WEBSITE_CATEGORY}>
+                {c}
+                {!active && c !== WEBSITE_CATEGORY ? ' · needs recent activity' : ''}
+              </option>
             ))}
           </select>
         </label>
+        {!active && (
+          <p className="page-rule small">
+            <strong>Website pages can be created right away.</strong> Fan clubs, podcasts, magazines and shops need you to have been active on Fandome in the last 30 days: post, like, vote or share a story first.
+          </p>
+        )}
         <label>
           <span>About</span>
           <textarea value={bio} onChange={(e) => setBio(e.target.value)} rows={3} placeholder="What the site is about" />

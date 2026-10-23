@@ -36,7 +36,8 @@ export type Action =
   | { type: 'shareStory'; id: Id; at: number; storyId: Id; text?: string }
   | { type: 'viewStory'; storyId: Id }
   | { type: 'deleteStory'; storyId: Id }
-  | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio'] }
+  | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio']; postId?: Id }
+  | { type: 'sharePostToStory'; id: Id; at: number; postId: Id; text?: string }
   | { type: 'receiveDm'; id: Id; from: Id; at: number; text: string }
   | { type: 'openConversation'; withUserId: Id; at: number }
   | { type: 'partnerSeen'; partnerId: Id; at: number }
@@ -81,7 +82,7 @@ function updatePost(state: State, postId: Id, fn: (p: Post) => Post): State {
 }
 
 // Public actions that count as "being active" (posts, reposts and stories count by their own dates).
-const ACTIVE_ACTIONS = new Set<Action['type']>(['like', 'vote', 'rate', 'toggleTop4', 'chat', 'toggleAttended', 'toggleGoing', 'toggleTour', 'post', 'repost', 'addStory', 'shareStory'])
+const ACTIVE_ACTIONS = new Set<Action['type']>(['like', 'vote', 'rate', 'toggleTop4', 'chat', 'toggleAttended', 'toggleGoing', 'toggleTour', 'post', 'repost', 'addStory', 'shareStory', 'sharePostToStory'])
 
 export function reducer(state: State, action: Action): State {
   const next = apply(state, action)
@@ -206,7 +207,7 @@ function apply(state: State, action: Action): State {
       return { ...state, lastSeen: action.at }
     case 'createPage': {
       // Only real (non-guest) personal accounts can create pages; handles are unique.
-      if (!me || isGuest(state) || state.users.some((u) => u.handle === action.handle)) return state
+      if (!me || isGuest(state) || state.users.some((u) => u.handle === action.handle) || !canCreatePage(state, me, action.category, action.at)) return state
       const page: User = {
         id: action.id,
         kind: 'page',
@@ -231,7 +232,8 @@ function apply(state: State, action: Action): State {
         ...u,
         name: action.name,
         bio: action.bio,
-        page: { ...u.page!, website: action.website, category: action.category, verification: action.website !== u.page!.website ? 'unverified' : u.page!.verification },
+        // Turning a website page into a community page needs the same activity as creating one.
+        page: { ...u.page!, website: action.website, category: action.category === u.page!.category || canCreatePage(state, me, action.category, Date.now()) ? action.category : u.page!.category, verification: action.website !== u.page!.website ? 'unverified' : u.page!.verification },
       }))
     case 'invitePageAdmin': {
       if (!me || !canManagePage(state, action.pageId, me)) return state
@@ -278,10 +280,16 @@ function apply(state: State, action: Action): State {
       const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: action.kind, text: action.text, bg: action.bg, photo: action.photo, video: action.video, viewers: [] }
       return { ...state, stories: [...state.stories, story] }
     }
+    case 'sharePostToStory': {
+      const p = state.posts.find((x) => x.id === action.postId)
+      if (!me || !p) return state
+      const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: 'post', text: action.text?.trim() || undefined, post: { id: p.id, authorId: p.authorId, text: p.text, photo: p.photo, image: p.image }, viewers: [] }
+      return { ...state, stories: [...state.stories, story] }
+    }
     case 'shareStory': {
       // Reshare someone's live story inside your own. A reshare of a reshare points at the original.
       const src = state.stories.find((s) => s.id === action.storyId && action.at - s.createdAt < DAY)
-      if (!me || !src || src.authorId === me) return state
+      if (!me || !src || src.authorId === me || src.kind === 'post') return state
       const inner = src.shared ?? { storyId: src.id, authorId: src.authorId, kind: src.kind as 'text' | 'photo' | 'video', text: src.text, bg: src.bg, photo: src.photo, video: src.video }
       if (inner.authorId === me) return state
       const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: 'share', text: action.text?.trim() || undefined, shared: inner, viewers: [] }
@@ -293,8 +301,9 @@ function apply(state: State, action: Action): State {
     case 'deleteStory':
       return { ...state, stories: state.stories.filter((s) => !(s.id === action.storyId && s.authorId === me)) }
     case 'sendDm': {
-      if (!me || isGuest(state) || !(action.text?.trim() || action.audio) || !canMessage(state, me, action.to) || messagingPaused(state, me, action.at)) return state
-      const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio }
+      const sharedPost = action.postId && state.posts.some((p) => p.id === action.postId) ? action.postId : undefined
+      if (!me || isGuest(state) || !(action.text?.trim() || action.audio || sharedPost) || !canMessage(state, me, action.to) || messagingPaused(state, me, action.at)) return state
+      const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio, postId: sharedPost }
       return { ...state, dms: [...state.dms, dm] }
     }
     case 'receiveDm':
@@ -302,7 +311,8 @@ function apply(state: State, action: Action): State {
       return { ...state, dms: [...state.dms, { id: action.id, from: action.from, to: me, at: action.at, text: action.text }] }
     case 'openConversation':
       // Opening a chat marks incoming messages as seen: their 24h clock starts now.
-      if (!me) return state
+      // While messaging is paused they stay unread (and kept) until the person is active again.
+      if (!me || messagingPaused(state, me, action.at)) return state
       return { ...state, dms: state.dms.map((m) => (m.to === me && m.from === action.withUserId && !m.seenAt ? { ...m, seenAt: action.at } : m)) }
     case 'partnerSeen':
       if (!me) return state
@@ -333,9 +343,9 @@ export function canMessage(state: State, a: Id, b: Id) {
 // Messaging rewards taking part: anyone with no public activity for 30 days
 // can still read messages but can't send until they do something again.
 export const ACTIVE_WINDOW = 30 * DAY
-export function lastActivity(state: State, id: Id): number {
+export function lastActivity(state: State, id: Id, countJoin = true): number {
   const u = state.users.find((x) => x.id === id)
-  let t = Math.max(u?.activeAt ?? 0, u?.joinedAt ?? 0)
+  let t = Math.max(u?.activeAt ?? 0, countJoin ? u?.joinedAt ?? 0 : 0)
   for (const p of state.posts) {
     if (p.authorId === id && p.createdAt > t) t = p.createdAt
     for (const r of p.reposts) if (r.userId === id && r.at > t) t = r.at
@@ -345,6 +355,11 @@ export function lastActivity(state: State, id: Id): number {
 }
 // Milliseconds left before messaging pauses (0 or less = paused).
 export const messagingLeft = (state: State, id: Id, now: number) => ACTIVE_WINDOW - (now - lastActivity(state, id))
+// Real activity in the last 30 days (joining alone doesn't count). Needed to create
+// community pages (fan clubs, podcasts…); website pages can be created right away.
+export const recentlyActive = (state: State, id: Id, now: number) => now - lastActivity(state, id, false) <= ACTIVE_WINDOW
+export const WEBSITE_CATEGORY = 'Fan website'
+export const canCreatePage = (state: State, id: Id, category: string, now: number) => category === WEBSITE_CATEGORY || recentlyActive(state, id, now)
 export const messagingPaused = (state: State, id: Id, now: number) => messagingLeft(state, id, now) <= 0
 export function conversations(state: State, now: number) {
   const me = state.meId

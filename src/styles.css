@@ -295,7 +295,7 @@ a.row-item:hover { background: var(--glass-strong); }
 .act:active > :first-child { transform: scale(0.82); }
 .act.on-pink { color: var(--accent); }
 .act.on-green { color: var(--green); }
-.actions > .act[aria-label='Share'] { margin-left: auto; }
+.actions > .act[aria-label='Copy link'] { margin-left: auto; }
 .act-wrap { position: relative; }
 .roll { display: inline-flex; min-width: 1ch; overflow: hidden; height: 1.3em; align-items: center; }
 .roll > span { display: inline-block; }
@@ -826,3 +826,42 @@ main.app { overflow-x: clip; }
 .yt-host { position: absolute; inset: 0; }
 .yt-host iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .yt-sound { position: absolute; left: 12px; bottom: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px; border-radius: 999px; border: 0; color: #fff; font-weight: 600; font-size: 13.5px; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.page-rule { margin: 0; padding: 12px 14px; border-radius: 16px; background: color-mix(in srgb, #f0a43a 14%, var(--glass-strong)); border: 1px solid color-mix(in srgb, #f0a43a 35%, transparent); line-height: 1.4; }
+.page-rule strong { display: block; font-weight: 600; }
+
+/* ---------- Share sheet (story or private message) ---------- */
+.share-sheet { display: flex; flex-direction: column; gap: 12px; }
+.share-post { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 18px; background: var(--glass); border: 1px solid var(--glass-line); }
+.share-post-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.share-post .grow { min-width: 0; }
+.share-story { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px; border-radius: 22px; border: 1px solid var(--glass-edge); background: var(--glass-strong); color: inherit; font: inherit; text-align: left; cursor: pointer; transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.share-story:active { transform: scale(0.98); }
+.share-story strong { font-weight: 600; }
+.share-story-ring { position: relative; padding: 3px; border-radius: 50%; background: conic-gradient(from 200deg, #ff6a88, #f0a43a, #b99be6, #3ab5f0, #ff6a88); }
+.story-plus.static { top: auto; right: -2px; bottom: -2px; pointer-events: none; }
+.share-sheet .section-head { margin: 6px 0 0; }
+.share-search { display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px; border-radius: 999px; background: var(--glass); border: 1px solid var(--glass-line); color: var(--muted); }
+.share-search input { border: 0; background: none; height: 100%; padding: 0; box-shadow: none; color: var(--text); }
+.share-search input:focus { box-shadow: none; background: none; }
+.share-note { height: 44px; border-radius: 999px; padding: 0 16px; }
+.share-people { display: flex; flex-direction: column; gap: 4px; max-height: 38vh; overflow-y: auto; margin: 0 -4px; padding: 0 4px; }
+.share-person { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+.share-person strong { font-weight: 600; }
+
+/* A post inside a story */
+.sv-post { position: absolute; left: 50%; top: 50%; z-index: 3; width: 76%; transform: translate(-50%, -54%) rotate(-1.5deg); display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 22px; border: 0; text-align: left; font: inherit; color: #0d1015; background: rgba(255, 255, 255, 0.94); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6); cursor: pointer; }
+.story-canvas .sv-post { width: 78%; cursor: default; }
+.sv-post-head { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.sv-post-head strong { display: block; font-weight: 600; line-height: 1.1; }
+.sv-post-handle { display: block; font-size: 12px; opacity: 0.55; }
+.sv-post-pic { display: block; aspect-ratio: 4 / 3; border-radius: 14px; background-size: cover; background-position: center; }
+.sv-post-text { font-size: 15px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.sv-post-open { font-size: 12px; opacity: 0.5; }
+.dm-post { display: flex; flex-direction: column; gap: 8px; width: min(260px, 72vw); padding: 12px; border-radius: 20px; background: var(--glass-strong); border: 1px solid var(--glass-edge); color: inherit; text-decoration: none; }
+.bubble-row.mine .dm-post { border-bottom-right-radius: 6px; }
+.dm-post-head { display: flex; align-items: center; gap: 6px; font-size: 13.5px; }
+.dm-post-head strong { font-weight: 600; }
+.dm-post-pic { display: block; aspect-ratio: 16 / 10; border-radius: 12px; background-size: cover; background-position: center; }
+.dm-post-text { font-size: 14px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.dm-locked-box { margin: auto; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 28px 20px; max-width: 300px; }
+.dm-lock-count { font-size: 64px; font-weight: 200; letter-spacing: -0.04em; line-height: 1; }

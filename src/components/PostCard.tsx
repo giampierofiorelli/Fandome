@@ -13,7 +13,8 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { ShareSheet } from './ShareSheet'
 
 interface Props {
   post: Post
@@ -29,6 +30,7 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
   const [translated, setTranslated] = useState(false)
   const [repostMenu, setRepostMenu] = useState(false)
   const [tagModal, setTagModal] = useState(false)
+  const [sendSheet, setSendSheet] = useState(false)
 
   const author = userById(post.authorId)
   const artist = artistById(post.artistId)
@@ -211,7 +213,10 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
                 </Popover>
               </div>
               <LikeButton liked={liked} count={post.likes.length} onToggle={() => dispatch({ type: 'like', postId: post.id })} />
-              <button className="act" aria-label="Share" onClick={share}>
+              <button className="act" aria-label="Send to your story or a friend" onClick={() => setSendSheet(true)}>
+                <IconSend size={18} />
+              </button>
+              <button className="act" aria-label="Copy link" onClick={share}>
                 <IconShare size={18} />
               </button>
               {me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)) && (
@@ -227,6 +232,11 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
         </div>
       </div>
       {tagModal && <RepostTagsModal postId={post.id} onClose={() => setTagModal(false)} />}
+      {sendSheet && (
+        <div onClick={(e) => e.stopPropagation()}>
+          <ShareSheet post={post} onClose={() => setSendSheet(false)} />
+        </div>
+      )}
     </article>
   )
 }

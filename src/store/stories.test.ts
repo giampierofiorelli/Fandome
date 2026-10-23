@@ -57,3 +57,33 @@ describe('messaging needs activity', () => {
     expect(messagingPaused(me(), 'u-giulia', NOW)).toBe(false)
   })
 })
+
+describe('post sharing, page rules, locked inbox', () => {
+  it('puts a post in a story and sends it in a message', () => {
+    let s = me()
+    s = reducer(s, { type: 'sharePostToStory', id: 'ps', at: NOW, postId: 'p1', text: 'look' })
+    const st = s.stories.find((x) => x.id === 'ps')!
+    expect(st.kind).toBe('post')
+    expect(st.post).toMatchObject({ id: 'p1', authorId: 'u-giulia' })
+    s = reducer(s, { type: 'sendDm', id: 'dp', to: 'u-giulia', at: NOW, postId: 'p1' })
+    expect(s.dms.find((m) => m.id === 'dp')!.postId).toBe('p1')
+    expect(reducer(s, { type: 'sendDm', id: 'bad', to: 'u-giulia', at: NOW, postId: 'nope' }).dms.some((m) => m.id === 'bad')).toBe(false)
+  })
+  it('website pages right away, community pages need recent activity', () => {
+    const page = (category: string, id: string) => ({ type: 'createPage' as const, id, handle: id, name: 'X', website: 'https://x.com', category, bio: '', color: '#fff', verifyCode: 'c', at: NOW })
+    let s = me()
+    expect(reducer(s, page('Fan club', 'club1')).users.some((u) => u.id === 'club1')).toBe(false)
+    expect(reducer(s, page('Fan website', 'site1')).users.some((u) => u.id === 'site1')).toBe(true)
+    s = reducer(s, { type: 'post', id: 'hi', at: NOW, text: 'hello' })
+    expect(reducer(s, page('Fan club', 'club2')).users.some((u) => u.id === 'club2')).toBe(true)
+  })
+  it('while paused, messages arrive but opening the chat leaves them unread', () => {
+    let s = me()
+    const later = NOW + 40 * DAY
+    s = reducer(s, { type: 'receiveDm', id: 'in', from: 'u-giulia', at: later, text: 'hey' })
+    s = reducer(s, { type: 'openConversation', withUserId: 'u-giulia', at: later })
+    expect(s.dms.find((m) => m.id === 'in')!.seenAt).toBeUndefined()
+    s = reducer(s, { type: 'prune', now: later + 10 * DAY })
+    expect(s.dms.some((m) => m.id === 'in')).toBe(true)
+  })
+})

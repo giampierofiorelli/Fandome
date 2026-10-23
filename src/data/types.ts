@@ -122,12 +122,21 @@ export interface StoryContent {
   photo?: string // data URL
   video?: StoryVideo
 }
+// Snapshot of a post put in a story (so it still shows if the post changes).
+export interface SharedPost {
+  id: Id
+  authorId: Id
+  text: string
+  photo?: string
+  image?: string // gradient "photo" of seed posts
+}
 export interface Story extends Omit<StoryContent, 'kind'> {
   id: Id
   authorId: Id
   createdAt: number
-  kind: StoryContent['kind'] | 'share'
+  kind: StoryContent['kind'] | 'share' | 'post'
   shared?: StoryContent & { storyId: Id; authorId: Id }
+  post?: SharedPost // a feed post added to a story
   viewers: Id[]
 }
 
@@ -140,6 +149,7 @@ export interface DirectMessage {
   at: number
   text?: string
   audio?: { src: string; duration: number; peaks: number[] }
+  postId?: Id // a post shared in the chat
   seenAt?: number
 }
 

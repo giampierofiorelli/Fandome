@@ -38,7 +38,7 @@ export function MessagingNotice({ compact }: { compact?: boolean }) {
         <strong>{paused ? 'Your messages are paused' : `Messages pause in ${daysLeft} ${daysLeft === 1 ? 'day' : 'days'}`}</strong>
         <span className="small block">
           {paused
-            ? 'You haven’t posted, liked, voted or shared anything for 30 days. Do any of these and messaging switches back on right away. You can still read what people send you.'
+            ? 'You haven’t posted, liked, voted or shared anything for 30 days. Messages sent to you are kept safe and unread: do any of these to read them and write again.'
             : 'Messaging is for active fans. Post, like, vote or share a story to keep it on.'}
         </span>
       </span>
@@ -55,6 +55,7 @@ export function Inbox() {
   const { state, me, userById } = useStore()
   if (!me) return null
   const now = Date.now()
+  const locked = messagingPaused(state, me.id, now)
   const convos = conversations(state, now)
   const startable = state.users.filter((u) => u.id !== me.id && u.kind !== 'page' && u.handle !== 'guest' && canMessage(state, me.id, u.id) && !convos.some((c) => c.userId === u.id)).slice(0, 8)
 
@@ -89,8 +90,14 @@ export function Inbox() {
               <span className="grow">
                 <strong>{u?.name}</strong>
                 <span className={c.unread ? 'small block dm-preview unread' : 'muted small block dm-preview'}>
-                  {lastMsg.from === me.id ? 'You: ' : ''}
-                  {lastMsg.audio ? 'Voice message' : lastMsg.text}
+                  {locked && c.unread ? (
+                    `${c.unread} new ${c.unread === 1 ? 'message' : 'messages'} · locked until you’re active`
+                  ) : (
+                    <>
+                      {lastMsg.from === me.id ? 'You: ' : ''}
+                      {lastMsg.audio ? 'Voice message' : lastMsg.postId ? 'Shared a post' : lastMsg.text}
+                    </>
+                  )}
                 </span>
               </span>
               <span className="dm-meta">
@@ -226,6 +233,15 @@ export function Conversation() {
       </header>
       <p className="dm-rule center muted small">Messages disappear 24h after they’re seen</p>
       {otherAway && !paused && <p className="dm-away center small">{other.name} hasn’t been active for a month, so they can read your message but can’t reply until they’re back.</p>}
+      {paused && me.handle !== 'guest' ? (
+        <div className="dm-list">
+          <div className="dm-locked-box">
+            <span className="dm-lock-count">{unread || msgs.length}</span>
+            <strong>{unread ? `${unread === 1 ? 'message is' : 'messages are'} waiting for you` : 'messages in this chat'}</strong>
+            <span className="muted small">They’re kept safe and stay unread. Be active again to read them.</span>
+          </div>
+        </div>
+      ) : (
       <div className="dm-list" ref={listRef}>
         <AnimatePresence initial={false}>
           {msgs.map((m, i) => {
@@ -243,7 +259,11 @@ export function Conversation() {
                 transition={springSnappy}
                 style={{ transformOrigin: mine ? 'bottom right' : 'bottom left' }}
               >
-                <div className={m.audio ? 'bubble audio' : 'bubble'}>{m.audio ? <AudioPlayer src={m.audio.src} duration={m.audio.duration} peaks={m.audio.peaks} /> : m.text}</div>
+                {m.postId ? (
+                  <SharedPostBubble postId={m.postId} />
+                ) : (
+                  <div className={m.audio ? 'bubble audio' : 'bubble'}>{m.audio ? <AudioPlayer src={m.audio.src} duration={m.audio.duration} peaks={m.audio.peaks} /> : m.text}</div>
+                )}
                 {(left !== null || lastMine) && (
                   <span className="bubble-meta">
                     {mine && lastMine && (m.seenAt ? 'Seen' : 'Sent')}
@@ -256,6 +276,7 @@ export function Conversation() {
         </AnimatePresence>
         {!msgs.length && <p className="empty">Say hi to {other.name}.</p>}
       </div>
+      )}
       {allowed ? (
         rec !== null ? (
           <div className="dm-input rec">
@@ -313,6 +334,25 @@ export function Conversation() {
         </p>
       )}
     </div>
+  )
+}
+
+// A post sent in a chat: a small card that opens the post.
+function SharedPostBubble({ postId }: { postId: string }) {
+  const { state, userById } = useStore()
+  const p = state.posts.find((x) => x.id === postId)
+  if (!p) return <div className="bubble muted">Post no longer available</div>
+  const author = userById(p.authorId)
+  return (
+    <Link to={`/p/${p.id}`} className="dm-post">
+      <span className="dm-post-head">
+        <Avatar user={author} size={24} />
+        <strong>{author?.name}</strong>
+        <span className="muted small">@{author?.handle}</span>
+      </span>
+      {(p.photo || p.image) && <span className="dm-post-pic" style={p.photo ? { backgroundImage: `url(${p.photo})` } : { background: p.image }} />}
+      <span className="dm-post-text">{p.text}</span>
+    </Link>
   )
 }
 

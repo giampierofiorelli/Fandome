@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { newId, useStore } from '../store/store'
-import { canManagePage } from '../store/reducer'
+import { canCreatePage, canManagePage } from '../store/reducer'
 import { useToast } from '../components/Toast'
 import { Avatar } from '../components/ui'
 import { IconArrowLeft, IconCheck, IconLink, IconX } from '../components/icons'
@@ -191,9 +191,15 @@ export default function PageManage() {
         <label>
           <span>Type</span>
           <select value={category} onChange={(e) => setCategory(e.target.value)}>
-            {PAGE_CATEGORIES.map((c) => (
-              <option key={c}>{c}</option>
-            ))}
+            {PAGE_CATEGORIES.map((c) => {
+              const ok = c === page?.page?.category || (me ? canCreatePage(state, me.id, c, Date.now()) : false)
+              return (
+                <option key={c} disabled={!ok}>
+                  {c}
+                  {ok ? '' : ' · needs recent activity'}
+                </option>
+              )
+            })}
           </select>
         </label>
         <label>

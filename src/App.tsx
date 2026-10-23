@@ -1,9 +1,10 @@
 import { motion } from 'motion/react'
 import { useEffect, type ReactNode } from 'react'
-import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useStore } from './store/store'
+import { conversations } from './store/reducer'
 import { useComposer } from './components/Composer'
-import { IconHeadphones, IconHome, IconPlus, IconSearch, IconUser } from './components/icons'
+import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
 import { starterPack } from './lib/packs'
 import { spring } from './lib/motion'
@@ -56,6 +57,31 @@ export function Backdrop() {
   )
 }
 
+// Logo + messages on every page. The logo always leads home.
+function TopBar() {
+  const { state } = useStore()
+  const loc = useLocation()
+  const unread = conversations(state, Date.now()).reduce((n, c) => n + c.unread, 0)
+  const inMessages = loc.pathname.startsWith('/messages')
+  return (
+    <div className="home-top">
+      <Link to="/" className="dotmatrix brand-mini" aria-label="Fandome home">
+        FANDOME
+      </Link>
+      {!inMessages && (
+        <Link to="/messages" className="glass-circle dm-btn" aria-label={unread ? `Messages, ${unread} unread` : 'Messages'}>
+          <IconSend size={18} />
+          {unread > 0 && (
+            <motion.span className="dm-badge" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', bounce: 0.5, visualDuration: 0.3 }}>
+              {unread}
+            </motion.span>
+          )}
+        </Link>
+      )}
+    </div>
+  )
+}
+
 export default function App() {
   const { me, dispatch } = useStore()
   const compose = useComposer()
@@ -78,6 +104,7 @@ export default function App() {
     <>
       <Backdrop />
       <main className="app">
+        <TopBar />
         <motion.div key={loc.pathname} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={spring}>
           <Routes location={loc}>
             <Route path="/" element={<Home />} />
