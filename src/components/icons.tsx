@@ -199,3 +199,27 @@ export const IconImage = (p: P) => (
     <path d="m4 17 5-4.5 4 3.5 2.5-2 4.5 4" />
   </Svg>
 )
+export const IconPause = (p: P) => (
+  <Svg {...p}>
+    <rect x="6.5" y="5" width="3.6" height="14" rx="1.2" fill="currentColor" stroke="none" />
+    <rect x="13.9" y="5" width="3.6" height="14" rx="1.2" fill="currentColor" stroke="none" />
+  </Svg>
+)
+export const IconMic = (p: P) => (
+  <Svg {...p}>
+    <rect x="9" y="3.5" width="6" height="11" rx="3" />
+    <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" />
+  </Svg>
+)
+export const IconSend = (p: P) => (
+  <Svg {...p}>
+    <path d="M21 3 10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z" />
+  </Svg>
+)
+export const IconMusic = (p: P) => (
+  <Svg {...p}>
+    <path d="M9 18V5.5l11-2V16" />
+    <circle cx="6.5" cy="18" r="2.5" />
+    <circle cx="17.5" cy="16" r="2.5" />
+  </Svg>
+)

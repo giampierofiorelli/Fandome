@@ -1,5 +1,3 @@
-import { AnimatePresence, motion } from 'motion/react'
-import { spring } from '../lib/motion'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { albums, concerts, parties } from '../data/seed'
@@ -9,7 +7,7 @@ import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
 import { topicFeed } from '../lib/feed'
-import { artistById, avgRating, formatDate, isUpcoming } from '../lib/util'
+import { artistById, avgRating, isUpcoming } from '../lib/util'
 import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen } from '../components/icons'
 
 // Weverse-style artist space: one room per artist, with topic feeds
@@ -143,11 +141,10 @@ export default function ArtistPage() {
   )
 }
 
-// Upcoming: every show (that's what fans plan around). Past: grouped by tour,
-// which is how fans remember them; expand a tour to see its dates.
+// Upcoming: every show (that's what fans plan around). Past: just the tours,
+// which is how fans remember them (no per-date list for now).
 function ShowsTab({ artistId }: { artistId: string }) {
   const { state } = useStore()
-  const [open, setOpen] = useState<string | null>(null)
   const all = concerts.filter((c) => c.artistId === artistId)
   const upcoming = all.filter((c) => isUpcoming(c.date)).sort((a, b) => a.date.localeCompare(b.date))
   const tours = groupTours(all.filter((c) => !isUpcoming(c.date)))
@@ -182,32 +179,14 @@ function ShowsTab({ artistId }: { artistId: string }) {
       </div>
       <div className="glass-card list">
         {tours.map((t) => {
-          const isOpen = open === t.tour
+          const n = count(t.shows.map((c) => c.id), 'attended')
           return (
-            <div key={t.tour}>
-              <button className="row-item tour-row" onClick={() => setOpen(isOpen ? null : t.tour)} aria-expanded={isOpen}>
-                <span className="tour-years">{t.years}</span>
-                <span className="grow">
-                  <strong>{t.tour}</strong>
-                  <span className="muted small block">
-                    {t.shows.length} {t.shows.length === 1 ? 'show' : 'shows'} · {(() => { const n = count(t.shows.map((c) => c.id), 'attended'); return `${n} ${n === 1 ? 'fan was' : 'fans were'} there` })()}
-                  </span>
-                </span>
-                <span className={isOpen ? 'chev open' : 'chev'}>›</span>
-              </button>
-              <AnimatePresence initial={false}>
-                {isOpen && (
-                  <motion.div className="tour-dates" initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={spring}>
-                    {t.shows.map((c) => (
-                      <Link key={c.id} to={`/c/${c.id}`} className="tour-date">
-                        <span className="muted small">{formatDate(c.date)}</span>
-                        <span className="grow">{c.city}</span>
-                        <span className="muted small">{c.venue}</span>
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+            <div key={t.tour} className="row-item tour-row">
+              <span className="tour-years">{t.years}</span>
+              <span className="grow">
+                <strong>{t.tour}</strong>
+                <span className="muted small block">{n ? `${n} ${n === 1 ? 'fan was' : 'fans were'} there` : 'Were you there?'}</span>
+              </span>
             </div>
           )
         })}

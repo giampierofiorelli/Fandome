@@ -93,14 +93,39 @@ export interface Post {
   image?: string // CSS gradient placeholder for demo photos
   photo?: string // uploaded photo (compressed data URL)
   youtube?: string // YouTube video id, embedded (video stays on YouTube)
+  audio?: { src: string; duration: number; peaks: number[] } // voice note / audio clip
   embed?: Embed // post from another social, embedded via the platform's own player
 }
 
 export interface Embed {
-  kind: 'youtube' | 'x' | 'instagram' | 'tiktok'
+  kind: 'youtube' | 'x' | 'instagram' | 'tiktok' | 'soundcloud' | 'spotify' | 'apple' | 'deezer' | 'tidal' | 'mixcloud' | 'audiomack' | 'vimeo'
   id: string
   url: string
-  path?: string // instagram: 'p' | 'reel' | 'tv'
+  path?: string // instagram 'p'|'reel'|'tv'; spotify/deezer/tidal resource type; apple path
+}
+
+// Stories last 24 hours.
+export interface Story {
+  id: Id
+  authorId: Id
+  createdAt: number
+  kind: 'text' | 'photo'
+  text?: string
+  bg?: string // CSS gradient for text stories
+  photo?: string // data URL
+  viewers: Id[]
+}
+
+// Private messages. Default rule: a message disappears 24h after the
+// recipient has SEEN it; unseen messages wait for them.
+export interface DirectMessage {
+  id: Id
+  from: Id
+  to: Id
+  at: number
+  text?: string
+  audio?: { src: string; duration: number; peaks: number[] }
+  seenAt?: number
 }
 
 export interface ChatMessage {

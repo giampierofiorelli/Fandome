@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { Avatar } from '../components/ui'
 import * as spotify from '../lib/spotify'
 import { useToast } from '../components/Toast'
+import { autoEmbeds, setAutoEmbeds } from '../lib/prefs'
 
 export default function Settings() {
   const { state, dispatch } = useStore()
@@ -27,6 +28,7 @@ export default function Settings() {
         <h1 className="display">Your <span className="display-strong">space</span></h1>
       </header>
       <PagesCard />
+      <EmbedsCard />
       <SpotifyCard />
       <section className="card">
         <h3>Your data</h3>
@@ -166,6 +168,26 @@ function PagesCard() {
           Create a page
         </Link>
       </div>
+    </section>
+  )
+}
+
+// Embedded posts (YouTube, X, Instagram, TikTok, music players): tap to load, or load right away.
+function EmbedsCard() {
+  const [on, setOn] = useState(autoEmbeds())
+  return (
+    <section className="card">
+      <div className="row-between">
+        <h3>Embedded posts</h3>
+        <button className={on ? 'switch on' : 'switch'} role="switch" aria-checked={on} aria-label="Load embedded posts automatically" onClick={() => (setAutoEmbeds(!on), setOn(!on))}>
+          <i />
+        </button>
+      </div>
+      <p className="muted small">
+        {on
+          ? 'Videos, music players and posts from other socials open already expanded in the feed.'
+          : 'Embedded posts stay closed until you tap them: the feed loads faster and other platforms can’t track you just for scrolling.'}
+      </p>
     </section>
   )
 }

@@ -1,9 +1,11 @@
-import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { albums, artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
 import { AlbumCover, Avatar, Modal, Stars, useModalClose } from './ui'
-import { IconImage, IconPin, IconPlay, IconPoll, IconX } from './icons'
+import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconX } from './icons'
+import { AudioPlayer } from './AudioPlayer'
+import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
 import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
 import { pagesManagedBy } from '../store/reducer'
 import { useToast } from './Toast'
@@ -58,6 +60,39 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const [asId, setAsId] = useState(opts.as ?? '')
   const [photoBusy, setPhotoBusy] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
+  const audioFileRef = useRef<HTMLInputElement>(null)
+  const [audio, setAudio] = useState<VoiceNote | null>(null)
+  const recorder = useRef<ReturnType<typeof createRecorder> | null>(null)
+  const [recSecs, setRecSecs] = useState<number | null>(null) // null = not recording
+  useEffect(() => {
+    if (recSecs === null) return
+    const t = setInterval(() => {
+      const s = recorder.current?.elapsed() ?? 0
+      setRecSecs(s)
+      if (s >= MAX_VOICE_SECONDS) void stopRec()
+    }, 200)
+    return () => clearInterval(t)
+  })
+  useEffect(() => () => recorder.current?.cancel(), [])
+  const startRec = async () => {
+    try {
+      recorder.current = createRecorder()
+      await recorder.current.start()
+      setRecSecs(0)
+    } catch {
+      toast('Microphone not available. Check your browser permissions.')
+    }
+  }
+  const stopRec = async () => {
+    if (!recorder.current) return
+    setRecSecs(null)
+    try {
+      setAudio(await recorder.current.stop())
+    } catch {
+      toast('Recording failed')
+    }
+    recorder.current = null
+  }
   const reviewMode = Boolean(opts.reviewAlbumId)
   const [albumId, setAlbumId] = useState(opts.reviewAlbumId ?? '')
   const [rating, setRating] = useState(opts.reviewAlbumId && me ? me.ratings[opts.reviewAlbumId] ?? 0 : 0)
@@ -66,7 +101,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const concert = concertById(opts.concertId)
   const validPoll = pollOpts.filter((o) => o.trim()).length >= 2
   const embed = detectEmbed(text)
-  const canPost = (text.trim().length > 0 || Boolean(photo) || Boolean(embed)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
+  const canPost = recSecs === null && (text.trim().length > 0 || Boolean(photo) || Boolean(embed) || Boolean(audio)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
 
   const submit = () => {
     if (!canPost) return
@@ -76,6 +111,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       at: Date.now(),
       text: embed ? stripUrl(text, embed.url) : text.trim(),
       photo: photo ?? undefined,
+      audio: audio ?? undefined,
       embed,
       as: asId || undefined,
       artistId: artistId || undefined,
@@ -145,6 +181,26 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
         <div className="quote-preview">
           <strong>{userById(quoted.authorId)?.name}</strong> <span className="muted">@{userById(quoted.authorId)?.handle}</span>
           <p>{quoted.text}</p>
+        </div>
+      )}
+      {recSecs !== null && (
+        <div className="rec-bar">
+          <span className="rec-dot" />
+          <span className="grow">Recording… {Math.floor(recSecs)}s / {MAX_VOICE_SECONDS}s</span>
+          <button className="pill-btn glass small" onClick={() => (recorder.current?.cancel(), (recorder.current = null), setRecSecs(null))}>
+            Cancel
+          </button>
+          <button className="pill-btn ink small" onClick={() => void stopRec()}>
+            Done
+          </button>
+        </div>
+      )}
+      {audio && (
+        <div className="media-preview audio-preview">
+          <AudioPlayer src={audio.src} duration={audio.duration} peaks={audio.peaks} />
+          <button className="media-remove" onClick={() => setAudio(null)} aria-label="Remove audio">
+            <IconX size={14} />
+          </button>
         </div>
       )}
       {photo && (
@@ -221,6 +277,32 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
             />
             <button className={photo ? 'pill active' : 'pill'} onClick={() => fileRef.current?.click()} aria-label="Add photo" disabled={photoBusy}>
               <IconImage size={14} /> {photoBusy ? '…' : 'Photo'}
+            </button>
+            <input
+              ref={audioFileRef}
+              type="file"
+              accept="audio/*"
+              hidden
+              onChange={async (e) => {
+                const f = e.target.files?.[0]
+                e.target.value = ''
+                if (!f) return
+                try {
+                  setAudio(await fileToVoiceNote(f))
+                } catch (err) {
+                  toast((err as Error).message)
+                }
+              }}
+            />
+            <button
+              className={audio || recSecs !== null ? 'pill active' : 'pill'}
+              aria-label="Record a voice note"
+              onClick={() => (recSecs !== null ? void stopRec() : void startRec())}
+            >
+              <IconMic size={14} /> Voice
+            </button>
+            <button className="pill" aria-label="Upload an audio file" onClick={() => audioFileRef.current?.click()}>
+              <IconMusic size={14} /> Audio
             </button>
           </>
         )}

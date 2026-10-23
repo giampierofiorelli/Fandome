@@ -33,3 +33,34 @@ describe('embeds and links', () => {
     expect(stripUrl('Look https://x.com/a/status/12345 #live', 'https://x.com/a/status/12345')).toBe('Look #live')
   })
 })
+
+describe('music platforms', () => {
+  it('detects SoundCloud, Spotify, Apple Music, Deezer, TIDAL, Mixcloud, Audiomack, Vimeo', () => {
+    const k = (u: string) => detectEmbed(u)
+    expect(k('https://soundcloud.com/madonna/hung-up-remix?si=1')).toMatchObject({ kind: 'soundcloud', id: 'https://soundcloud.com/madonna/hung-up-remix' })
+    expect(k('https://open.spotify.com/intl-it/track/4iV5W9uYEdYUVa79Axb7Rh?si=x')).toMatchObject({ kind: 'spotify', path: 'track', id: '4iV5W9uYEdYUVa79Axb7Rh' })
+    expect(k('https://music.apple.com/us/album/ray-of-light/1452864428?i=1452864429')).toMatchObject({ kind: 'apple', id: 'us/album/ray-of-light/1452864428?i=1452864429' })
+    expect(k('https://www.deezer.com/it/album/302127')).toMatchObject({ kind: 'deezer', path: 'album', id: '302127' })
+    expect(k('https://tidal.com/browse/track/77646169')).toMatchObject({ kind: 'tidal', path: 'track', id: '77646169' })
+    expect(k('https://www.mixcloud.com/someone/80s-pop-mix/')).toMatchObject({ kind: 'mixcloud', id: 'someone/80s-pop-mix' })
+    expect(k('https://audiomack.com/artist/song/track-name')).toMatchObject({ kind: 'audiomack', path: 'song', id: 'artist/track-name' })
+    expect(k('https://vimeo.com/123456789')).toMatchObject({ kind: 'vimeo', id: '123456789' })
+  })
+  it('builds player URLs', () => {
+    expect(embedSrc({ kind: 'spotify', id: 'abc1234567', path: 'album', url: '' })).toBe('https://open.spotify.com/embed/album/abc1234567')
+    expect(embedSrc({ kind: 'tidal', id: '1', path: 'track', url: '' })).toBe('https://embed.tidal.com/tracks/1')
+    expect(embedSrc({ kind: 'soundcloud', id: 'https://soundcloud.com/a/b', url: '' })).toContain('url=https%3A%2F%2Fsoundcloud.com%2Fa%2Fb')
+  })
+})
+
+import { peaksFrom } from './audio'
+describe('voice note waveform', () => {
+  it('normalises loudness into bars', () => {
+    const s = new Float32Array(400)
+    for (let i = 200; i < 400; i++) s[i] = 0.5
+    const p = peaksFrom(s, 4)
+    expect(p).toHaveLength(4)
+    expect(p[3]).toBe(1)
+    expect(p[0]).toBeCloseTo(0.08)
+  })
+})

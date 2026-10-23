@@ -1,5 +1,5 @@
-import { seedChats, seedPosts, seedUsers } from '../data/seed'
-import type { ChatMessage, Embed, Id, Poll, Post, User } from '../data/types'
+import { seedChats, seedDms, seedPosts, seedStories, seedUsers } from '../data/seed'
+import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Story, User } from '../data/types'
 
 export interface State {
   version: 1
@@ -7,12 +7,14 @@ export interface State {
   users: User[]
   posts: Post[]
   chats: Record<string, ChatMessage[]>
+  stories: Story[]
+  dms: DirectMessage[]
   lastSeen: number // for the "You're all caught up" finite feed
 }
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[] }
-  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; youtube?: string; embed?: Embed; as?: Id }
+  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
@@ -28,6 +30,14 @@ export type Action =
   | { type: 'toggleTop4'; albumId: Id }
   | { type: 'chat'; room: string; id: Id; userId?: Id; text: string; at: number }
   | { type: 'markSeen'; at: number }
+  | { type: 'addStory'; id: Id; at: number; kind: 'text' | 'photo'; text?: string; bg?: string; photo?: string }
+  | { type: 'viewStory'; storyId: Id }
+  | { type: 'deleteStory'; storyId: Id }
+  | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio'] }
+  | { type: 'receiveDm'; id: Id; from: Id; at: number; text: string }
+  | { type: 'openConversation'; withUserId: Id; at: number }
+  | { type: 'partnerSeen'; partnerId: Id; at: number }
+  | { type: 'prune'; now: number }
   | { type: 'createPage'; id: Id; handle: string; name: string; website: string; category: string; bio: string; color: string; verifyCode: string; at: number }
   | { type: 'updatePage'; pageId: Id; name: string; bio: string; website: string; category: string }
   | { type: 'invitePageAdmin'; pageId: Id; inviteId: Id; code: string; toUserId?: Id; at: number }
@@ -45,6 +55,8 @@ export function initialState(now: number): State {
     users: seedUsers.map((u) => ({ ...u })),
     posts: seedPosts(now),
     chats: seedChats(now),
+    stories: seedStories(now),
+    dms: seedDms(now),
     lastSeen: now - 12 * 60 * 60_000,
   }
 }
@@ -102,6 +114,7 @@ export function reducer(state: State, action: Action): State {
         photo: action.photo,
         youtube: action.youtube,
         embed: action.embed,
+        audio: action.audio,
         lang: 'en',
         likes: [],
         reposts: [],
@@ -238,9 +251,66 @@ export function reducer(state: State, action: Action): State {
     case 'requestVerification':
       if (!me || !canManagePage(state, action.pageId, me)) return state
       return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, verification: 'pending' } }))
+    case 'addStory': {
+      if (!me) return state
+      const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: action.kind, text: action.text, bg: action.bg, photo: action.photo, viewers: [] }
+      return { ...state, stories: [...state.stories, story] }
+    }
+    case 'viewStory':
+      if (!me) return state
+      return { ...state, stories: state.stories.map((s) => (s.id === action.storyId && s.authorId !== me && !s.viewers.includes(me) ? { ...s, viewers: [...s.viewers, me] } : s)) }
+    case 'deleteStory':
+      return { ...state, stories: state.stories.filter((s) => !(s.id === action.storyId && s.authorId === me)) }
+    case 'sendDm': {
+      if (!me || isGuest(state) || !(action.text?.trim() || action.audio) || !canMessage(state, me, action.to)) return state
+      const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio }
+      return { ...state, dms: [...state.dms, dm] }
+    }
+    case 'receiveDm':
+      if (!me) return state
+      return { ...state, dms: [...state.dms, { id: action.id, from: action.from, to: me, at: action.at, text: action.text }] }
+    case 'openConversation':
+      // Opening a chat marks incoming messages as seen: their 24h clock starts now.
+      if (!me) return state
+      return { ...state, dms: state.dms.map((m) => (m.to === me && m.from === action.withUserId && !m.seenAt ? { ...m, seenAt: action.at } : m)) }
+    case 'partnerSeen':
+      if (!me) return state
+      return { ...state, dms: state.dms.map((m) => (m.from === me && m.to === action.partnerId && !m.seenAt ? { ...m, seenAt: action.at } : m)) }
+    case 'prune':
+      return {
+        ...state,
+        stories: state.stories.filter((s) => action.now - s.createdAt < DAY),
+        dms: state.dms.filter((m) => dmVisible(m, action.now)),
+      }
     case 'reset':
       return initialState(action.now)
   }
+}
+
+export const DAY = 24 * 60 * 60_000
+// A DM stays until seen, then for 24h after being seen.
+export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
+export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)
+export const activeStories = (state: State, now: number) => state.stories.filter((s) => now - s.createdAt < DAY)
+// Messaging is allowed between people when at least one follows the other (no pages yet).
+export function canMessage(state: State, a: Id, b: Id) {
+  const ua = state.users.find((u) => u.id === a)
+  const ub = state.users.find((u) => u.id === b)
+  if (!ua || !ub || a === b || ua.kind === 'page' || ub.kind === 'page' || ub.id === 'u-mod') return false
+  return ua.following.includes(b) || ub.following.includes(a)
+}
+export function conversations(state: State, now: number) {
+  const me = state.meId
+  if (!me) return []
+  const map = new Map<Id, DirectMessage[]>()
+  for (const m of state.dms) {
+    if (!dmVisible(m, now) || (m.from !== me && m.to !== me)) continue
+    const other = m.from === me ? m.to : m.from
+    map.set(other, [...(map.get(other) ?? []), m])
+  }
+  return [...map.entries()]
+    .map(([userId, msgs]) => ({ userId, msgs: msgs.sort((x, y) => x.at - y.at), unread: msgs.filter((m) => m.to === me && !m.seenAt).length }))
+    .sort((x, y) => y.msgs[y.msgs.length - 1].at - x.msgs[x.msgs.length - 1].at)
 }
 
 export function canManagePage(state: State, pageId: Id, userId: Id) {

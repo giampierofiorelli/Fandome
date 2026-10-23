@@ -9,7 +9,13 @@ function load(): State {
     const raw = localStorage.getItem(KEY)
     if (raw) {
       const parsed = JSON.parse(raw) as State
-      if (parsed.version === 1) return parsed
+      if (parsed.version === 1) {
+        // Older saves predate stories / DMs / pages: fill in what's missing.
+        const now = Date.now()
+        const fresh = initialState(now)
+        const users = parsed.users.some((u) => u.id === 'pg-archive') ? parsed.users : [...parsed.users, ...fresh.users.filter((u) => u.kind === 'page')]
+        return reducer({ ...parsed, users, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms }, { type: 'prune', now })
+      }
     }
   } catch {
     // storage unavailable or corrupted: start fresh
@@ -37,6 +43,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       window.dispatchEvent(new CustomEvent('fandome:storage-full'))
     }
   }, [state])
+
+  // Expire stories and seen messages while the app is open.
+  useEffect(() => {
+    const t = setInterval(() => dispatch({ type: 'prune', now: Date.now() }), 30_000)
+    return () => clearInterval(t)
+  }, [])
 
   const value = useMemo<Store>(() => {
     const map = new Map(state.users.map((u) => [u.id, u]))

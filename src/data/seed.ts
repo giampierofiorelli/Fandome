@@ -1,6 +1,6 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
-import type { Album, Artist, ChatMessage, Concert, Party, Post, User } from './types'
+import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User } from './types'
 
 export const artists: Artist[] = [
   {
@@ -271,4 +271,26 @@ export function seedChats(now: number): Record<string, ChatMessage[]> {
       m('c6', 'u-emma', 'HUNG UP INTRO 😭', 12),
     ],
   }
+}
+
+export function seedStories(now: number): Story[] {
+  const h = (n: number) => now - n * 3_600_000
+  const t = (id: string, authorId: string, at: number, text: string, bg: string): Story => ({ id, authorId, createdAt: at, kind: 'text', text, bg, viewers: [] })
+  return [
+    t('s1', 'u-giulia', h(2), 'Turin, 4 Sept 1987. 39 years ago this week. Still not over it.', 'linear-gradient(160deg,#ff6a88,#7a2a6a)'),
+    t('s2', 'u-giulia', h(1), 'Found my ticket stub in a book 🎟️', 'linear-gradient(160deg,#f3c8dc,#a9c0d8)'),
+    t('s3', 'u-rafa', h(5), 'Confessions listening party tonight. Who’s in?', 'linear-gradient(140deg,#6fc3cf,#e9b48c 50%,#b99be6)'),
+    t('s4', 'u-kenji', h(9), 'Ray of Light at 2am. Headphones on.', 'linear-gradient(160deg,#1e3048,#3ab5f0)'),
+    t('s5', 'u-emma', h(14), 'Kylie on the radio in a taxi in Manchester. Sign from the universe?', 'linear-gradient(160deg,#f0a43a,#e8457c)'),
+    t('s6', 'u-sam', h(20), 'Rose Bowl ’88 VHS digitised. Crying.', 'linear-gradient(160deg,#1b1b2f,#9b7cf0)'),
+  ]
+}
+
+export function seedDms(now: number): DirectMessage[] {
+  const m = (n: number) => now - n * 60_000
+  return [
+    { id: 'd1', from: 'u-giulia', to: 'me', at: m(40), text: 'Ciao! Saw you joined the Madonna room 💗' },
+    { id: 'd2', from: 'u-giulia', to: 'me', at: m(39), text: 'Are you thinking about Milan 2027? We’re organising a meetup.' },
+    { id: 'd3', from: 'u-kenji', to: 'me', at: m(300), text: 'Welcome! If you need a Ray of Light listening order, ask me 😄' },
+  ]
 }

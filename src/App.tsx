@@ -20,6 +20,7 @@ import Onboarding from './pages/Onboarding'
 import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
 import Invite from './pages/Invite'
+import { Conversation, Inbox } from './pages/Messages'
 
 export const GUEST_HANDLE = 'guest'
 const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
@@ -91,6 +92,8 @@ export default function App() {
             <Route path="/pages/new" element={<PageNew />} />
             <Route path="/pages/:handle/manage" element={<PageManage />} />
             <Route path="/invite/:code" element={<Invite />} />
+            <Route path="/messages" element={<Inbox />} />
+            <Route path="/messages/:handle" element={<Conversation />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </motion.div>

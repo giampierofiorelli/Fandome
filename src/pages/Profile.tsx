@@ -8,6 +8,7 @@ import { AlbumCover, Avatar, Stars, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
 import { IconDisc, IconPin, IconTicket } from '../components/icons'
 import PageProfile from './PageProfile'
+import { canMessage } from '../store/reducer'
 
 type Tab = 'posts' | 'diary' | 'ratings' | 'likes'
 
@@ -54,9 +55,16 @@ export default function Profile() {
                 Settings
               </Link>
             ) : (
-              <button className={follows ? 'pill-btn glass' : 'pill-btn ink'} onClick={() => dispatch({ type: 'follow', userId: user.id })}>
-                {follows ? 'Following' : 'Follow'}
-              </button>
+              <>
+                <button className={follows ? 'pill-btn glass' : 'pill-btn ink'} onClick={() => dispatch({ type: 'follow', userId: user.id })}>
+                  {follows ? 'Following' : 'Follow'}
+                </button>
+                {canMessage(state, me.id, user.id) && (
+                  <Link to={`/messages/${user.handle}`} className="pill-btn glass">
+                    Message
+                  </Link>
+                )}
+              </>
             )}
             {isMe && firstArtist && (
               <ShareCardButton

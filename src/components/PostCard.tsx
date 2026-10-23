@@ -2,7 +2,9 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Embed, Post } from '../data/types'
-import { EMBED_LABEL, embedSrc, findUrls, prettyUrl } from '../lib/media'
+import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
+import { autoEmbeds } from '../lib/prefs'
+import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
 import { albumById, artistById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
@@ -115,6 +117,7 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
           )}
 
           {post.image && <div className="post-image" style={{ background: post.image }} role="img" aria-label="Fan photo" />}
+          {post.audio && <AudioPlayer src={post.audio.src} duration={post.audio.duration} peaks={post.audio.peaks} />}
           {post.photo && <img className="post-photo" src={post.photo} alt="Photo shared by a fan" loading="lazy" />}
           {post.youtube && !post.embed && <YouTubeEmbed id={post.youtube} />}
           {post.embed?.kind === 'youtube' && <YouTubeEmbed id={post.embed.id} />}
@@ -348,18 +351,19 @@ function RepostTagsForm({ postId }: { postId: string }) {
 // Click-to-load YouTube player: shows the thumbnail first (fast, no tracking),
 // then swaps in the privacy-enhanced embed. The video stays on YouTube.
 function YouTubeEmbed({ id }: { id: string }) {
-  const [play, setPlay] = useState(false)
+  const [play, setPlay] = useState(autoEmbeds)
+  const [tapped, setTapped] = useState(false)
   return (
     <div className="yt" onClick={(e) => e.stopPropagation()}>
       {play ? (
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0${tapped ? '&autoplay=1' : ''}`}
           title="YouTube video"
           allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
           allowFullScreen
         />
       ) : (
-        <button className="yt-poster" onClick={() => setPlay(true)} aria-label="Play YouTube video">
+        <button className="yt-poster" onClick={() => (setTapped(true), setPlay(true))} aria-label="Play YouTube video">
           <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" />
           <span className="yt-play">
             <IconPlay size={22} />
@@ -373,20 +377,20 @@ function YouTubeEmbed({ id }: { id: string }) {
 // Posts from X / Instagram / TikTok, shown with each platform's own embed.
 // Click-to-load: nothing from the platform loads until the reader asks for it.
 function SocialEmbed({ embed }: { embed: Embed }) {
-  const [load, setLoad] = useState(false)
+  const [load, setLoad] = useState(autoEmbeds)
   const label = EMBED_LABEL[embed.kind]
   return (
-    <div className={`social ${embed.kind}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>
+    <div className={`social ${embed.kind}${isAudioEmbed(embed.kind) ? ' audio' : ''}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>
       {load ? (
         <iframe src={embedSrc(embed)} title={`${label} post`} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen loading="lazy" />
       ) : (
         <button className="social-poster" onClick={() => setLoad(true)} aria-label={`Show ${label} post`}>
           <span className="embed-logo">{label.slice(0, 2)}</span>
           <span className="grow">
-            <strong>{label} post</strong>
+            <strong>{isAudioEmbed(embed.kind) ? `Listen on ${label}` : `${label} post`}</strong>
             <span className="muted small block">{prettyUrl(embed.url).short}</span>
           </span>
-          <span className="pill-btn glass small">Show</span>
+          <span className="pill-btn glass small">{isAudioEmbed(embed.kind) ? 'Play' : 'Show'}</span>
         </button>
       )}
       <a className="social-open muted small" href={embed.url} target="_blank" rel="noopener noreferrer nofollow ugc">
