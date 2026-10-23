@@ -67,6 +67,7 @@ export interface User {
   ratings: Record<Id, number> // albumId -> 0.5..5
   following: Id[]
   joinedAt?: number
+  pinned?: Id[] // up to 3 posts shown first on the profile, newest pin first
   activeAt?: number // last public action (like, vote, rating…); posts and stories count on their own
 }
 

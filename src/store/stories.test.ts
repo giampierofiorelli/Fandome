@@ -87,3 +87,19 @@ describe('post sharing, page rules, locked inbox', () => {
     expect(s.dms.some((m) => m.id === 'in')).toBe(true)
   })
 })
+
+describe('pinned posts', () => {
+  it('pins up to 3 of your own posts and replaces on request', () => {
+    let s = me()
+    for (const id of ['a', 'b', 'c', 'd']) s = reducer(s, { type: 'post', id, at: NOW, text: id })
+    for (const id of ['a', 'b', 'c']) s = reducer(s, { type: 'pinPost', postId: id })
+    const pins = () => s.users.find((u) => u.id === 'me')!.pinned
+    expect(pins()).toEqual(['c', 'b', 'a'])
+    expect(reducer(s, { type: 'pinPost', postId: 'd' })).toBe(s) // full
+    s = reducer(s, { type: 'pinPost', postId: 'd', replace: 'b' })
+    expect(pins()).toEqual(['d', 'c', 'a'])
+    s = reducer(s, { type: 'unpinPost', postId: 'c' })
+    expect(pins()).toEqual(['d', 'a'])
+    expect(reducer(s, { type: 'pinPost', postId: 'p1' })).toBe(s) // not yours
+  })
+})

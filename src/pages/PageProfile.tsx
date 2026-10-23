@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import type { User } from '../data/types'
+import type { Post, User } from '../data/types'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
+import { PostCard } from '../components/PostCard'
 import { Avatar } from '../components/ui'
 import { IconCheck, IconGlobe, IconPen, IconSettings } from '../components/icons'
 import { prettyUrl } from '../lib/media'
@@ -18,6 +19,7 @@ export default function PageProfile({ user }: { user: User }) {
   const follows = me.following.includes(user.id)
   const followers = state.users.filter((u) => u.following.includes(user.id)).length
   const posts = state.posts.filter((p) => p.authorId === user.id).sort((a, b) => b.createdAt - a.createdAt)
+  const pinnedPosts = (user.pinned ?? []).map((id) => posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p))
   const verified = page.verification === 'verified'
 
   return (
@@ -97,7 +99,14 @@ export default function PageProfile({ user }: { user: User }) {
       <div className="section-head">
         <h2>Posts</h2>
       </div>
-      <FeedList items={posts.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />
+      {pinnedPosts.length > 0 && (
+        <div className="feed pinned-feed">
+          {pinnedPosts.map((p) => (
+            <PostCard key={p.id} post={p} pinned />
+          ))}
+        </div>
+      )}
+      {(!pinnedPosts.length || posts.length > pinnedPosts.length) && <FeedList items={posts.filter((p) => !pinnedPosts.includes(p)).map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
     </>
   )
 }

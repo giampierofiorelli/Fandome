@@ -123,7 +123,7 @@ export function AlbumRater({ albumId, onClose }: { albumId: string; onClose: () 
         >
           <Dial progress={score / 10} color={artist.color} />
           <motion.div className="rater-cover" animate={{ scale: dragging ? 0.94 : 1 }} transition={spring}>
-            <AlbumCover album={album} size={132} />
+            <AlbumCover album={album} size={112} />
           </motion.div>
         </div>
         <p className="hero-note center">{score ? (dragging ? 'Release to save' : 'Saved · drag the ring to change') : 'Drag around the ring to score it'}</p>

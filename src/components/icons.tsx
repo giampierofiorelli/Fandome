@@ -249,3 +249,16 @@ export const IconMute = (p: P) => (
     <path d="m21 9.5-5 5" />
   </Svg>
 )
+export const IconMore = (p: P) => (
+  <Svg {...p}>
+    <circle cx="5.5" cy="12" r="1.3" fill="currentColor" stroke="none" />
+    <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none" />
+    <circle cx="18.5" cy="12" r="1.3" fill="currentColor" stroke="none" />
+  </Svg>
+)
+export const IconPushpin = (p: P) => (
+  <Svg {...p}>
+    <path d="M9 3.5h6l-1 5 3.5 3.5v1.5h-11V12L10 8.5z" />
+    <path d="M12 13.5v7" />
+  </Svg>
+)

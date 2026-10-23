@@ -3,6 +3,8 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
+import { PostCard } from '../components/PostCard'
+import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
@@ -26,6 +28,7 @@ export default function Profile() {
   const followers = state.users.filter((u) => u.following.includes(user.id)).length
   const posts = state.posts.filter((p) => p.authorId === user.id).sort((a, b) => b.createdAt - a.createdAt)
   const reviews = posts.filter((p) => p.review)
+  const pinnedPosts = (user.pinned ?? []).map((id) => posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p))
   const shows = concerts.filter((c) => user.attended.includes(c.id)).sort((a, b) => a.date.localeCompare(b.date))
   const rated = Object.entries(user.ratings).sort((a, b) => b[1] - a[1])
   const liked = state.posts.filter((p) => p.likes.includes(user.id))
@@ -144,7 +147,18 @@ export default function Profile() {
           onChange={setTab}
         />
       </div>
-      {tab === 'posts' && <FeedList items={posts.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
+      {tab === 'posts' && (
+        <>
+          {pinnedPosts.length > 0 && (
+            <div className="feed pinned-feed">
+              {pinnedPosts.map((p) => (
+                <PostCard key={p.id} post={p} pinned />
+              ))}
+            </div>
+          )}
+          {(!pinnedPosts.length || posts.length > pinnedPosts.length) && <FeedList items={posts.filter((p) => !pinnedPosts.includes(p)).map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
+        </>
+      )}
       {tab === 'likes' && <FeedList items={liked.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No likes yet." />}
       {tab === 'diary' && (
         <div className="glass-card list">

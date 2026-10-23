@@ -17,6 +17,8 @@ export type Action =
   | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
+  | { type: 'pinPost'; postId: Id; replace?: Id }
+  | { type: 'unpinPost'; postId: Id }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
   | { type: 'unrepost'; postId: Id }
@@ -146,6 +148,21 @@ function apply(state: State, action: Action): State {
       // Undo of a delete: put the post back (only your own, only if it's gone).
       if (!me || state.posts.some((p) => p.id === action.post.id) || !(action.post.authorId === me || canManagePage(state, action.post.authorId, me))) return state
       return { ...state, posts: [action.post, ...state.posts].sort((a, b) => b.createdAt - a.createdAt) }
+    case 'pinPost':
+    case 'unpinPost': {
+      // Pins live on the author's profile: your own posts, or a page you manage.
+      const p = state.posts.find((x) => x.id === action.postId)
+      if (!me || !p || p.replyTo || !(p.authorId === me || canManagePage(state, p.authorId, me))) return state
+      const owner = state.users.find((u) => u.id === p.authorId)!
+      const live = (owner.pinned ?? []).filter((id) => id !== p.id && state.posts.some((x) => x.id === id))
+      let pinned = live
+      if (action.type === 'pinPost') {
+        const kept = action.replace ? live.filter((id) => id !== action.replace) : live
+        if (kept.length >= MAX_PINS) return state // full: the UI asks which one to replace
+        pinned = [p.id, ...kept]
+      }
+      return { ...state, users: state.users.map((u) => (u.id === owner.id ? { ...u, pinned } : u)) }
+    }
     case 'like':
       if (!me) return state
       return updatePost(state, action.postId, (p) => ({ ...p, likes: toggle(p.likes, me) }))
@@ -331,6 +348,7 @@ function apply(state: State, action: Action): State {
 
 export const DAY = 24 * 60 * 60_000
 export const MAX_POST_ARTISTS = 4
+export const MAX_PINS = 3
 // A DM stays until seen, then for 24h after being seen.
 export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
 export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)

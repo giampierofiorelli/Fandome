@@ -7,13 +7,13 @@ import { autoEmbeds } from '../lib/prefs'
 import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
-import { canManagePage } from '../store/reducer'
+import { canManagePage, MAX_PINS } from '../store/reducer'
 import { albumById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
 
@@ -21,9 +21,10 @@ interface Props {
   post: Post
   repostedBy?: { userId: string; tags: string[] }
   embedded?: boolean
+  pinned?: boolean // shown in the profile's pinned section
 }
 
-export function PostCard({ post, repostedBy, embedded }: Props) {
+export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   const { state, dispatch, me, userById } = useStore()
   const compose = useComposer()
   const toast = useToast()
@@ -32,6 +33,9 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
   const [repostMenu, setRepostMenu] = useState(false)
   const [tagModal, setTagModal] = useState(false)
   const [sendSheet, setSendSheet] = useState(false)
+  const [moreMenu, setMoreMenu] = useState(false)
+  const [pinFull, setPinFull] = useState(false)
+  const [justFollowed, setJustFollowed] = useState(false)
 
   const author = userById(post.authorId)
   const concert = concertById(post.concertId)
@@ -44,6 +48,8 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
   const reposted = me ? post.reposts.some((r) => r.userId === me.id) : false
   const myVote = me && post.poll ? post.poll.options.findIndex((o) => o.votes.includes(me.id)) : -1
   const totalVotes = post.poll?.options.reduce((n, o) => n + o.votes.length, 0) ?? 0
+  const pinnedIds = (author?.pinned ?? []).filter((id) => state.posts.some((p) => p.id === id))
+  const isPinned = pinnedIds.includes(post.id)
   const canDetach = quoted && me && quoted.authorId === me.id && !post.quoteDetached
 
   const share = async () => {
@@ -58,6 +64,11 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
 
   return (
     <article className={embedded ? 'post embedded' : 'post'} onClick={() => !embedded && nav(`/p/${post.id}`)}>
+      {pinned && (
+        <div className="repost-head pinned-head">
+          <IconPushpin size={14} /> Pinned
+        </div>
+      )}
       {repostedBy && (
         <div className="repost-head">
           <IconRepost size={14} /> {userById(repostedBy.userId)?.name ?? 'Someone'} reposted
@@ -71,6 +82,24 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
             <UserLink user={author} />
             {author?.kind === 'page' && <PageBadge verified={author.page?.verification === 'verified'} />}
             <span className="muted">· {timeAgo(post.createdAt)}</span>
+            {!embedded && me && author && author.id !== me.id && author.id !== 'u-mod' && (!me.following.includes(author.id) || justFollowed) && (
+              <motion.button
+                className={justFollowed ? 'follow-pill done' : 'follow-pill'}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  if (justFollowed) return
+                  dispatch({ type: 'follow', userId: author.id })
+                  setJustFollowed(true)
+                  setTimeout(() => setJustFollowed(false), 1600)
+                }}
+                whileTap={{ scale: 0.9 }}
+                transition={springSnappy}
+                aria-label={justFollowed ? `Following ${author.name}` : `Follow ${author.name}`}
+              >
+                {justFollowed ? <IconCheck size={13} /> : <IconPlus size={13} />}
+                {justFollowed ? 'Following' : 'Follow'}
+              </motion.button>
+            )}
           </header>
           <ArtistLine ids={postArtists(post)} compact={embedded} />
           {parent && !embedded && (
@@ -216,18 +245,50 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
                 <IconShare size={18} />
               </button>
               {me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)) && (
-                <button className="act" aria-label="Delete" onClick={() => {
-                    dispatch({ type: 'delete', postId: post.id })
-                    toast('Post deleted', { label: 'Undo', onClick: () => dispatch({ type: 'restorePost', post }) })
-                  }}>
-                  <IconTrash size={17} />
-                </button>
+                <div className="act-wrap">
+                  <button className="act" aria-label="More" aria-expanded={moreMenu} onClick={() => setMoreMenu(!moreMenu)}>
+                    <IconMore size={18} />
+                  </button>
+                  <Popover open={moreMenu} onClose={() => setMoreMenu(false)} align="right">
+                    {!post.replyTo && (
+                      <button
+                        onClick={() => {
+                          setMoreMenu(false)
+                          if (isPinned) {
+                            dispatch({ type: 'unpinPost', postId: post.id })
+                            return toast('Unpinned from your profile')
+                          }
+                          if (pinnedIds.length >= MAX_PINS) return setPinFull(true)
+                          dispatch({ type: 'pinPost', postId: post.id })
+                          toast('Pinned to your profile')
+                        }}
+                      >
+                        <IconPushpin size={16} /> {isPinned ? 'Unpin from profile' : 'Pin to profile'}
+                      </button>
+                    )}
+                    <button
+                      className="danger"
+                      onClick={() => {
+                        setMoreMenu(false)
+                        dispatch({ type: 'delete', postId: post.id })
+                        toast('Post deleted', { label: 'Undo', onClick: () => dispatch({ type: 'restorePost', post }) })
+                      }}
+                    >
+                      <IconTrash size={16} /> Delete
+                    </button>
+                  </Popover>
+                </div>
               )}
             </footer>
           )}
         </div>
       </div>
       {tagModal && <RepostTagsModal postId={post.id} onClose={() => setTagModal(false)} />}
+      {pinFull && (
+        <div onClick={(e) => e.stopPropagation()}>
+          <PinReplaceModal post={post} pinnedIds={pinnedIds} onClose={() => setPinFull(false)} />
+        </div>
+      )}
       {sendSheet && (
         <div onClick={(e) => e.stopPropagation()}>
           <ShareSheet post={post} onClose={() => setSendSheet(false)} />
@@ -274,7 +335,7 @@ function LikeButton({ liked, count, onToggle }: { liked: boolean; count: number;
 }
 
 // Popover anchored to its trigger (transform-origin top-left), closes on outside press.
-function Popover({ open, onClose, children }: { open: boolean; onClose: () => void; children: React.ReactNode }) {
+function Popover({ open, onClose, children, align = 'left' }: { open: boolean; onClose: () => void; children: React.ReactNode; align?: 'left' | 'right' }) {
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
     if (!open) return
@@ -294,9 +355,9 @@ function Popover({ open, onClose, children }: { open: boolean; onClose: () => vo
       {open && (
         <motion.div
           ref={ref}
-          className="menu"
+          className={align === 'right' ? 'menu right' : 'menu'}
           role="menu"
-          style={{ transformOrigin: 'top left' }}
+          style={{ transformOrigin: align === 'right' ? 'bottom right' : 'top left' }}
           initial={{ opacity: 0, scale: 0.92, y: -4, filter: 'blur(6px)' }}
           animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
           exit={{ opacity: 0, scale: 0.96, y: -2, filter: 'blur(4px)' }}
@@ -306,6 +367,49 @@ function Popover({ open, onClose, children }: { open: boolean; onClose: () => vo
         </motion.div>
       )}
     </AnimatePresence>
+  )
+}
+
+// Profile already has 3 pins: pick which one the new post replaces.
+function PinReplaceModal({ post, pinnedIds, onClose }: { post: Post; pinnedIds: string[]; onClose: () => void }) {
+  const { state, dispatch } = useStore()
+  const toast = useToast()
+  return (
+    <Modal title="You can pin up to 3 posts" onClose={onClose}>
+      <PinReplaceList
+        pinned={pinnedIds.map((id) => state.posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p))}
+        onPick={(old) => {
+          dispatch({ type: 'pinPost', postId: post.id, replace: old })
+          toast('Pinned to your profile')
+        }}
+      />
+    </Modal>
+  )
+}
+function PinReplaceList({ pinned, onPick }: { pinned: Post[]; onPick: (id: string) => void }) {
+  const close = useModalClose()
+  return (
+    <>
+      <p className="muted small" style={{ marginTop: 0 }}>
+        Choose the pinned post to replace with this one.
+      </p>
+      <div className="pin-list">
+        {pinned.map((p) => (
+          <div key={p.id} className="pin-row">
+            <span className="pin-text">{p.text || 'Post'}</span>
+            <button
+              className="pill-btn ink small"
+              onClick={() => {
+                onPick(p.id)
+                close()
+              }}
+            >
+              Replace
+            </button>
+          </div>
+        ))}
+      </div>
+    </>
   )
 }
 
