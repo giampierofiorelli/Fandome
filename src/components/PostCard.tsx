@@ -8,13 +8,14 @@ import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
 import { canManagePage } from '../store/reducer'
-import { albumById, artistById, concertById, formatDate, timeAgo } from '../lib/util'
+import { albumById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
-import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
+import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
 import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
+import { postArtists } from '../lib/postArtists'
 
 interface Props {
   post: Post
@@ -33,7 +34,6 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
   const [sendSheet, setSendSheet] = useState(false)
 
   const author = userById(post.authorId)
-  const artist = artistById(post.artistId)
   const concert = concertById(post.concertId)
   const album = albumById(post.review?.albumId)
   const parent = post.replyTo ? state.posts.find((p) => p.id === post.replyTo) : undefined
@@ -71,12 +71,8 @@ export function PostCard({ post, repostedBy, embedded }: Props) {
             <UserLink user={author} />
             {author?.kind === 'page' && <PageBadge verified={author.page?.verification === 'verified'} />}
             <span className="muted">· {timeAgo(post.createdAt)}</span>
-            {artist && (
-              <Link to={`/a/${artist.id}`} className="chip artist-chip" style={{ ['--c' as string]: artist.color }} onClick={(e) => e.stopPropagation()}>
-                {artist.name}
-              </Link>
-            )}
           </header>
+          <ArtistLine ids={postArtists(post)} compact={embedded} />
           {parent && !embedded && (
             <p className="muted small">
               Replying to <Link to={`/p/${parent.id}`} onClick={(e) => e.stopPropagation()} className="tag">@{userById(parent.authorId)?.handle}</Link>

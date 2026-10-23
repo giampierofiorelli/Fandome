@@ -2,12 +2,13 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
-import { AlbumCover, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
+import { AlbumCover, ArtistDisc, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
 import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconX } from './icons'
 import { AudioPlayer } from './AudioPlayer'
 import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
 import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
-import { pagesManagedBy } from '../store/reducer'
+import { MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
+import { postArtists } from '../lib/postArtists'
 import { useToast } from './Toast'
 
 export interface ComposeOpts {
@@ -52,7 +53,14 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const parent = opts.replyTo ? state.posts.find((p) => p.id === opts.replyTo) : undefined
   const myArtists = me ? Object.keys(me.fanSince) : []
   const [text, setText] = useState('')
-  const [artistId, setArtistId] = useState(opts.artistId ?? parent?.artistId ?? quoted?.artistId ?? myArtists[0] ?? '')
+  const [artistIds, setArtistIds] = useState<string[]>(() => {
+    if (opts.artistId) return [opts.artistId]
+    const from = parent ?? quoted
+    if (from) return postArtists(from)
+    return myArtists.slice(0, 1)
+  })
+  const toggleArtist = (id: string) =>
+    setArtistIds((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : cur.length >= MAX_POST_ARTISTS ? cur : [...cur, id]))
   const [pollOn, setPollOn] = useState(false)
   const [pollOpts, setPollOpts] = useState(['', ''])
   const [photo, setPhoto] = useState<string | null>(null)
@@ -114,7 +122,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       audio: audio ?? undefined,
       embed,
       as: asId || undefined,
-      artistId: artistId || undefined,
+      artistId: artistIds[0],
+      artistIds,
       concertId: opts.concertId,
       quoteOf: opts.quoteOf,
       replyTo: opts.replyTo,
@@ -301,14 +310,17 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
         <CharRing used={text.length} max={MAX} />
       </div>
       <div className="composer-foot">
-        <select className="fandom-select" value={artistId} onChange={(e) => setArtistId(e.target.value)} aria-label="Fandom">
-          <option value="">No fandom</option>
-          {artists.map((a) => (
-            <option key={a.id} value={a.id}>
-              {a.name}
-            </option>
-          ))}
-        </select>
+        <div className="artist-picker" role="group" aria-label="Artists this post is about">
+          {[...artists].sort((x, y) => Number(myArtists.includes(y.id)) - Number(myArtists.includes(x.id))).map((a) => {
+            const on = artistIds.includes(a.id)
+            return (
+              <button key={a.id} type="button" className={on ? 'pick on' : 'pick'} style={{ ['--c' as string]: a.color }} aria-pressed={on} onClick={() => toggleArtist(a.id)}>
+                <ArtistDisc id={a.id} size={20} />
+                {a.name}
+              </button>
+            )
+          })}
+        </div>
         <button className="btn primary post-btn" disabled={!canPost} onClick={submit}>
           {parent ? 'Reply' : 'Post'}
         </button>

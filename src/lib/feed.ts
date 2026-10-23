@@ -1,5 +1,6 @@
 import type { Post, User } from '../data/types'
 import { extractTags } from '../store/reducer'
+import { isAbout, postArtists } from './postArtists'
 
 export interface FeedItem {
   key: string
@@ -30,7 +31,7 @@ export function followingFeed(posts: Post[], me: User): FeedItem[] {
 // "Discover": popular posts from your fandoms (Bluesky-style alternative feed).
 export function discoverFeed(posts: Post[], artistIds: string[], now = Date.now()): FeedItem[] {
   return posts
-    .filter((p) => !p.replyTo && (!p.artistId || artistIds.includes(p.artistId)))
+    .filter((p) => !p.replyTo && (!postArtists(p).length || postArtists(p).some((a) => artistIds.includes(a))))
     .sort((a, b) => score(b, now) - score(a, now))
     .map((p) => ({ key: p.id, post: p, at: p.createdAt }))
 }
@@ -38,7 +39,7 @@ export function discoverFeed(posts: Post[], artistIds: string[], now = Date.now(
 // Custom topic feed inside an artist space, matched by hashtags.
 export function topicFeed(posts: Post[], artistId: string, tags?: string[]): FeedItem[] {
   return posts
-    .filter((p) => !p.replyTo && p.artistId === artistId)
+    .filter((p) => !p.replyTo && isAbout(p, artistId))
     .filter((p) => !tags || extractTags(p.text).some((t) => tags.includes(t)) || (tags.includes('live') && Boolean(p.concertId)))
     .sort((a, b) => b.createdAt - a.createdAt)
     .map((p) => ({ key: p.id, post: p, at: p.createdAt }))

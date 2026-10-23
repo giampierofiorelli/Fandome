@@ -1,3 +1,4 @@
+import { isAbout } from '../lib/postArtists'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { albums, concerts, parties } from '../data/seed'
@@ -52,7 +53,7 @@ export default function ArtistPage() {
             <div className="hero-label">fans</div>
           </div>
           <div>
-            <div className="bignum">{state.posts.filter((p) => p.artistId === artist.id).length}</div>
+            <div className="bignum">{state.posts.filter((p) => isAbout(p, artist.id)).length}</div>
             <div className="hero-label">posts</div>
           </div>
           <div>

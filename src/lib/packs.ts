@@ -1,4 +1,5 @@
 import type { Id, Post, User } from '../data/types'
+import { isAbout } from './postArtists'
 
 // Starter packs are generated, not hand-picked: the fans who created the most
 // engagement around an artist in the last 30 days. Follower counts don't matter,
@@ -25,7 +26,7 @@ export function engagementByFan(posts: Post[], users: User[], artistId: Id, now 
     score.set(userId, cur)
   }
   for (const p of posts) {
-    if (p.artistId !== artistId || p.createdAt < since) continue
+    if (!isAbout(p, artistId) || p.createdAt < since) continue
     bump(p.authorId, 0, true)
     bump(p.authorId, p.likes.filter((id) => id !== p.authorId).length * 1)
     bump(p.authorId, p.reposts.filter((r) => r.userId !== p.authorId).length * 2)
@@ -33,7 +34,7 @@ export function engagementByFan(posts: Post[], users: User[], artistId: Id, now 
   // Replies and quotes count for the author they respond to.
   for (const p of posts) {
     const target = byPost.get(p.replyTo ?? p.quoteOf ?? '')
-    if (!target || target.artistId !== artistId || p.createdAt < since || p.authorId === target.authorId) continue
+    if (!target || !isAbout(target, artistId) || p.createdAt < since || p.authorId === target.authorId) continue
     bump(target.authorId, 3)
   }
   return [...score.values()].filter((m) => m.score > 0).sort((a, b) => b.score - a.score || b.posts - a.posts)

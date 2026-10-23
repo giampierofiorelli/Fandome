@@ -63,7 +63,7 @@ export default function ConcertPage() {
             <div className="hero-label">{upcoming ? `${attendees.length} going` : 'were there'}</div>
           </div>
         </div>
-        {upcoming && <div className="hero-note">Demo date · meetups in public places only · tickets from official sellers, never via DMs</div>}
+        {upcoming && <div className="hero-note">{concert.source === 'ticketmaster' ? 'Date from Ticketmaster' : 'Demo date'} · meetups in public places only · tickets from official sellers, never via DMs</div>}
         <div className="hero-actions">
           <button className={mine ? 'pill-btn glass' : 'pill-btn light'} onClick={() => dispatch({ type: upcoming ? 'toggleGoing' : 'toggleAttended', concertId: concert.id })}>
             {mine && <IconCheck size={16} />}
@@ -72,6 +72,11 @@ export default function ConcertPage() {
           <button className="pill-btn glass" onClick={() => compose({ concertId: concert.id, artistId: artist.id })}>
             <IconPen size={15} /> {upcoming ? 'Meetup' : 'Memory'}
           </button>
+          {upcoming && concert.url && (
+            <a className="pill-btn glass" href={concert.url} target="_blank" rel="noopener noreferrer">
+              Tickets ↗
+            </a>
+          )}
           {mine && (
             <ShareCardButton
               label="Share"

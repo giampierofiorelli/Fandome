@@ -131,6 +131,7 @@ export const concerts: Concert[] = [
     country: 'Italy',
     date: '2027-06-14',
     setlist: [],
+    announcedAt: Date.now() - 2 * 86_400_000, // demo: shows the "New date announced" card
   },
   {
     id: 'k-glasto-2019',
@@ -212,6 +213,7 @@ export function seedPosts(now: number): Post[] {
   return [
     p({ id: 'p1', authorId: 'u-giulia', artistId: 'madonna', concertId: 'm-turin-1987', text: 'Ancora oggi ricordo il caldo di Torino, 4 settembre 1987. Il mio primo concerto in assoluto. #live #turin87', lang: 'it', translation: 'I still remember the heat in Turin, 4 September 1987. My very first concert ever. #live #turin87', likes: ['u-rafa', 'u-claire', 'u-kenji'], image: 'linear-gradient(135deg,#ff6a88,#ff99ac 40%,#2a1a3a)' }, 25),
     p({ id: 'p2', authorId: 'u-rafa', artistId: 'madonna', text: 'Hot take: Confessions is the best pop album of the 2000s and it’s not close. #confessions #eras', likes: ['u-emma', 'u-lucia'], reposts: [{ userId: 'u-emma', at: now - 20 * MIN, tags: ['correct', 'disco never died'] }] }, 50),
+    p({ id: 'p-collab', authorId: 'u-emma', artistId: 'kylie', artistIds: ['kylie', 'madonna', 'gaga'], text: 'Dream collab nobody asked for but everyone needs: Kylie, Madonna and Gaga on one disco track. Who produces it? #collab', likes: ['u-rafa', 'u-lucia', 'u-giulia'] }, 35),
     p({ id: 'p3', authorId: 'u-ana', artistId: 'madonna', text: 'Okay I’m new. Where do I start after Hung Up? Be nice 🙏 #newfan', likes: ['u-giulia'] }, 70),
     p({ id: 'p4', authorId: 'u-giulia', replyTo: 'p3', artistId: 'madonna', text: 'Welcome! Ray of Light front to back, then Like a Prayer. Then come tell us everything 💗', likes: ['u-ana', 'u-kenji'] }, 65),
     p({ id: 'p5', authorId: 'u-kenji', replyTo: 'p3', artistId: 'madonna', text: 'Ray of Light. Headphones. Night time. Trust me.', likes: ['u-ana'] }, 60),

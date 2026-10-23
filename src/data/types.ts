@@ -24,6 +24,9 @@ export interface Concert {
   country: string
   date: string // ISO date
   setlist: string[]
+  url?: string // where to buy tickets (official seller)
+  source?: 'ticketmaster' // live data imported every night
+  announcedAt?: number // when we first saw this date: drives "New date announced"
 }
 
 // A Page is an account for a website / fan club / podcast. It is owned and run
@@ -82,7 +85,8 @@ export interface Post {
   authorId: Id
   text: string
   createdAt: number
-  artistId?: Id
+  artistId?: Id // first (main) artist, kept for older code and saves
+  artistIds?: Id[] // every artist the post is about (collabs, duets…)
   concertId?: Id
   lang: string
   translation?: string // mock auto-translation (Weverse-style)

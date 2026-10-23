@@ -1,3 +1,4 @@
+import { isAbout } from './postArtists'
 import { albums, artists, concerts } from '../data/seed'
 import type { Post } from '../data/types'
 import { extractTags } from '../store/reducer'
@@ -37,7 +38,7 @@ export function trending(posts: Post[], opts: { artistId?: string; now?: number;
     scores.set(tag, { score: cur.score + weight, posts: cur.posts + 1 })
   }
   for (const p of posts) {
-    if (opts.artistId && p.artistId !== opts.artistId) continue
+    if (opts.artistId && !isAbout(p, opts.artistId)) continue
     for (const t of extractTags(p.text)) bump(t, p.createdAt)
     for (const r of p.reposts) for (const t of r.tags) bump(t.toLowerCase().replace(/\s+/g, ''), r.at)
   }

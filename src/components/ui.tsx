@@ -1,5 +1,5 @@
 import { AnimatePresence, motion, useDragControls } from 'motion/react'
-import { createContext, useContext, useEffect, useId, useState, type ReactNode } from 'react'
+import { createContext, useContext, useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import type { Album, User } from '../data/types'
@@ -225,3 +225,67 @@ export function ScoreBadge({ rating, size = 'md' }: { rating: number; size?: 'sm
 }
 
 export const LANG_NAMES: Record<string, string> = { it: 'Italian', es: 'Spanish', fr: 'French', de: 'German', pt: 'Portuguese', ja: 'Japanese' }
+
+// Artist disc: the artist's colour with their initial in the dot-matrix face.
+export function ArtistDisc({ id, size = 22 }: { id: string; size?: number }) {
+  const a = artistById(id)
+  if (!a) return null
+  return (
+    <span className="artist-disc" style={{ ['--c' as string]: a.color, width: size, height: size, fontSize: Math.round(size * 0.52) }} aria-hidden>
+      {a.name[0]}
+    </span>
+  )
+}
+
+// The artists a post is about. One or two: tokens joined by "×". Three or more:
+// a stack of discs ("Kylie × Madonna +1") that opens into a row you can slide.
+export function ArtistLine({ ids, compact }: { ids: string[]; compact?: boolean }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [overflow, setOverflow] = useState(false)
+  const [open, setOpen] = useState(false)
+  const list = ids.map((id) => artistById(id)).filter((a): a is NonNullable<typeof a> => Boolean(a))
+  const stacked = list.length > 2 && !open
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const check = () => setOverflow(el.scrollWidth - el.scrollLeft - el.clientWidth > 2)
+    check()
+    el.addEventListener('scroll', check, { passive: true })
+    const ro = new ResizeObserver(check)
+    ro.observe(el)
+    return () => {
+      el.removeEventListener('scroll', check)
+      ro.disconnect()
+    }
+  }, [ids.join(), stacked])
+  if (!list.length) return null
+  if (stacked)
+    return (
+      <div className={`artist-line${compact ? ' compact' : ''}`} onClick={(e) => e.stopPropagation()}>
+        <motion.button className="artist-stack" onClick={() => setOpen(true)} whileTap={{ scale: 0.95 }} transition={spring} aria-label={`About ${list.map((a) => a.name).join(', ')}. Show all`}>
+          <span className="artist-stack-discs">
+            {list.slice(0, 3).map((a) => (
+              <ArtistDisc key={a.id} id={a.id} size={compact ? 18 : 22} />
+            ))}
+          </span>
+          <span className="artist-stack-names">
+            {list[0].name} <span className="artist-x">×</span> {list[1].name}
+          </span>
+          <span className="artist-more">+{list.length - 2}</span>
+        </motion.button>
+      </div>
+    )
+  return (
+    <div ref={ref} className={`artist-line${overflow ? ' fade' : ''}${compact ? ' compact' : ''}`} onClick={(e) => e.stopPropagation()}>
+      {list.map((a, i) => (
+        <motion.span key={a.id} className="artist-seg" initial={open ? { opacity: 0, x: -8 } : false} animate={{ opacity: 1, x: 0 }} transition={{ ...spring, delay: open ? i * 0.04 : 0 }}>
+          {i > 0 && <span className="artist-x">×</span>}
+          <Link to={`/a/${a.id}`} className="artist-token" style={{ ['--c' as string]: a.color }}>
+            <ArtistDisc id={a.id} size={compact ? 18 : 22} />
+            <span>{a.name}</span>
+          </Link>
+        </motion.span>
+      ))}
+    </div>
+  )
+}

@@ -1,13 +1,13 @@
 // Per-device preferences (not part of the shared demo state).
 const AUTO_EMBEDS = 'fandome:autoEmbeds'
 
-// Off by default: nothing loads from YouTube/X/Instagram… until you tap,
-// which is faster and keeps those platforms from tracking readers.
+// On by default: videos and posts from other socials show already expanded.
+// Readers can switch it off in Settings (faster feed, less tracking).
 export function autoEmbeds(): boolean {
   try {
-    return localStorage.getItem(AUTO_EMBEDS) === '1'
+    return localStorage.getItem(AUTO_EMBEDS) !== '0'
   } catch {
-    return false
+    return true
   }
 }
 export function setAutoEmbeds(on: boolean) {

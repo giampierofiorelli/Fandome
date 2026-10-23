@@ -865,3 +865,42 @@ main.app { overflow-x: clip; }
 .dm-post-text { font-size: 14px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 .dm-locked-box { margin: auto; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 28px 20px; max-width: 300px; }
 .dm-lock-count { font-size: 64px; font-weight: 200; letter-spacing: -0.04em; line-height: 1; }
+
+/* ---------- Artist line on posts ---------- */
+.artist-disc { --c: var(--accent); flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; font-family: var(--dot); font-weight: 800; line-height: 1; background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--c) 45%, #fff), var(--c) 55%, color-mix(in srgb, var(--c) 55%, #000)); box-shadow: 0 2px 8px -2px color-mix(in srgb, var(--c) 70%, transparent), inset 0 0 0 1px rgba(255, 255, 255, 0.25); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+.artist-line { display: flex; align-items: center; gap: 0; margin: 6px 0 2px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.artist-line::-webkit-scrollbar { display: none; }
+.artist-line.fade { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); }
+.artist-seg { display: inline-flex; align-items: center; flex-shrink: 0; scroll-snap-align: start; }
+.artist-token { --c: var(--accent); display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 12px 0 4px; border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; color: color-mix(in srgb, var(--c) 70%, var(--text)); background: color-mix(in srgb, var(--c) 11%, var(--glass-strong)); border: 1px solid color-mix(in srgb, var(--c) 26%, transparent); text-decoration: none; transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s; }
+.artist-token:active { transform: scale(0.95); }
+.artist-x { margin: 0 6px; font-family: var(--dot); font-weight: 800; font-size: 14px; color: var(--muted); }
+.artist-line.compact .artist-token { height: 24px; font-size: 12px; padding-right: 9px; gap: 5px; }
+.artist-line.compact { margin-top: 2px; }
+.artist-picker { flex: 1; min-width: 0; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; padding: 2px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
+.artist-picker::-webkit-scrollbar { display: none; }
+.pick { --c: var(--accent); flex-shrink: 0; scroll-snap-align: start; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 13px 0 6px; border-radius: 999px; border: 1px solid var(--glass-line); background: var(--glass); color: var(--text-2); font: inherit; font-size: 13px; font-weight: 500; white-space: nowrap; transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s; }
+.pick .artist-disc { filter: grayscale(0.6) opacity(0.7); transition: filter 0.2s; }
+.pick:active { transform: scale(0.95); }
+.pick.on { color: color-mix(in srgb, var(--c) 70%, var(--text)); background: color-mix(in srgb, var(--c) 14%, var(--glass-strong)); border-color: color-mix(in srgb, var(--c) 40%, transparent); font-weight: 600; }
+.pick.on .artist-disc { filter: none; }
+
+/* ---------- New dates announced ---------- */
+.new-shows { margin: 12px 0; padding: 14px 16px 10px; border-radius: 24px; background: var(--glass-strong); border: 1px solid var(--glass-edge); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); box-shadow: var(--shadow); }
+.new-shows-kicker { font-size: 12px; color: var(--accent); }
+.new-show { display: flex; align-items: center; gap: 10px; padding: 10px 0 6px; flex-wrap: wrap; }
+.new-show + .new-show { border-top: 1px solid var(--glass-line); }
+.new-show-main { display: flex; align-items: center; gap: 12px; flex: 1 1 200px; min-width: 0; color: inherit; text-decoration: none; }
+.new-show-main strong { font-weight: 600; }
+.new-show-actions { display: flex; gap: 6px; margin-left: auto; }
+.artist-stack { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 5px 0 4px; border-radius: 999px; border: 1px solid var(--glass-line); background: var(--glass-strong); color: var(--text); font: inherit; font-size: 13px; font-weight: 600; white-space: nowrap; max-width: 100%; cursor: pointer; }
+.artist-stack-discs { display: inline-flex; }
+.artist-stack-discs .artist-disc + .artist-disc { margin-left: -8px; box-shadow: 0 0 0 2px var(--glass-edge), 0 2px 8px -2px rgba(0, 0, 0, 0.2); }
+.artist-stack-names { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.artist-stack-names .artist-x { margin: 0 3px; }
+.artist-more { flex-shrink: 0; height: 22px; min-width: 26px; padding: 0 7px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-size: 11.5px; font-weight: 700; background: var(--ink); color: var(--on-ink); }
+.artist-line.compact .artist-stack { height: 24px; font-size: 12px; }
+.artist-line.fade { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); }
+.pick { color: var(--muted); }
+.pick.on { background: color-mix(in srgb, var(--c) 24%, var(--glass-strong)); border-color: color-mix(in srgb, var(--c) 60%, transparent); box-shadow: 0 0 0 1px color-mix(in srgb, var(--c) 35%, transparent) inset; color: color-mix(in srgb, var(--c) 55%, var(--text)); }
+.pick.on::after { content: '✓'; font-size: 12px; font-weight: 700; margin-left: 2px; }

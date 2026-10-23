@@ -7,6 +7,7 @@ import { StoreProvider } from './store/store'
 import { ComposerProvider } from './components/Composer'
 import { ToastProvider } from './components/Toast'
 import { handleRedirect } from './lib/spotify'
+import { loadLiveConcerts } from './lib/liveConcerts'
 import './styles.css'
 
 const render = (spotifyMessage: string | null) =>
@@ -28,7 +29,6 @@ const render = (spotifyMessage: string | null) =>
   </StrictMode>,
   )
 
-// Finish a Spotify login round-trip (if any) before the router reads the URL.
-handleRedirect()
-  .catch(() => null)
-  .then(render)
+// Finish a Spotify login round-trip (if any) before the router reads the URL,
+// and pull tonight's concert dates (max 2.5s, then the app starts anyway).
+Promise.all([handleRedirect().catch(() => null), loadLiveConcerts()]).then(([msg]) => render(msg))

@@ -14,7 +14,7 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[]; at?: number }
-  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
+  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
   | { type: 'like'; postId: Id }
@@ -121,7 +121,8 @@ function apply(state: State, action: Action): State {
         authorId,
         text: action.text,
         createdAt: action.at,
-        artistId: action.artistId,
+        artistId: action.artistIds?.[0] ?? action.artistId,
+        artistIds: action.artistIds?.length ? [...new Set(action.artistIds)].slice(0, MAX_POST_ARTISTS) : undefined,
         concertId: action.concertId,
         quoteOf: action.quoteOf,
         replyTo: action.replyTo,
@@ -329,6 +330,7 @@ function apply(state: State, action: Action): State {
 }
 
 export const DAY = 24 * 60 * 60_000
+export const MAX_POST_ARTISTS = 4
 // A DM stays until seen, then for 24h after being seen.
 export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
 export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)

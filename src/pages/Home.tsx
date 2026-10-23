@@ -7,11 +7,12 @@ import { invitesFor } from '../store/reducer'
 import { StoriesBar } from '../components/Stories'
 import { MessagingNotice } from './Messages'
 import { FeedList } from '../components/FeedList'
-import { Avatar, Tabs } from '../components/ui'
-import { IconArrowUpRight, IconPlay } from '../components/icons'
+import { ArtistDisc, Avatar, Tabs } from '../components/ui'
+import { IconArrowUpRight, IconPlay, IconX } from '../components/icons'
 import { discoverFeed, followingFeed } from '../lib/feed'
-import { artistById, isUpcoming, trending } from '../lib/util'
+import { artistById, formatDate, isUpcoming, trending } from '../lib/util'
 import { spring } from '../lib/motion'
+import { dismissShows, newShowsFor } from '../lib/liveConcerts'
 
 type Mode = 'following' | 'discover'
 
@@ -45,6 +46,7 @@ export default function Home() {
     <>
       <StoriesBar />
       <MessagingNotice compact />
+      <NewShows />
       <header className="hello compact">
         <div className="eyebrow">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>
         <h1 className="display">
@@ -160,5 +162,61 @@ export default function Home() {
       </div>
       <FeedList items={items} caughtUpAfter={mode === 'following' ? seenAt : undefined} empty="Follow some fans or join a fandom to fill your feed." />
     </>
+  )
+}
+
+// "New date announced": fresh dates for artists you follow, shown as soon as you open the app.
+function NewShows() {
+  const { me, dispatch } = useStore()
+  const [, refresh] = useState(0)
+  if (!me) return null
+  const list = newShowsFor(Object.keys(me.fanSince)).slice(0, 3)
+  if (!list.length) return null
+  return (
+    <motion.section className="new-shows" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={spring} aria-label="New dates announced">
+      <div className="row-between">
+        <span className="dotmatrix new-shows-kicker">{list.length > 1 ? 'NEW DATES' : 'NEW DATE'}</span>
+        <button
+          className="icon-btn"
+          aria-label="Dismiss"
+          onClick={() => {
+            dismissShows(list.map((c) => c.id))
+            refresh((n) => n + 1)
+          }}
+        >
+          <IconX size={16} />
+        </button>
+      </div>
+      {list.map((c) => {
+        const going = me.going.includes(c.id)
+        return (
+          <div key={c.id} className="new-show">
+            <Link to={`/c/${c.id}`} className="new-show-main">
+              <ArtistDisc id={c.artistId} size={40} />
+              <span className="grow">
+                <strong>
+                  {artistById(c.artistId)?.name} · {c.city}
+                </strong>
+                <span className="muted small block">
+                  {formatDate(c.date)} · {c.venue || c.tour}
+                </span>
+              </span>
+            </Link>
+            <span className="new-show-actions">
+              {me.handle !== 'guest' && (
+                <button className={going ? 'pill-btn glass small' : 'pill-btn ink small'} onClick={() => dispatch({ type: 'toggleGoing', concertId: c.id })}>
+                  {going ? 'Going ✓' : 'I’m going'}
+                </button>
+              )}
+              {c.url && (
+                <a className="pill-btn glass small" href={c.url} target="_blank" rel="noopener noreferrer">
+                  Tickets ↗
+                </a>
+              )}
+            </span>
+          </div>
+        )
+      })}
+    </motion.section>
   )
 }

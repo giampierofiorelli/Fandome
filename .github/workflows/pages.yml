@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Every night: refresh concert dates (needs the TICKETMASTER_API_KEY secret).
+  schedule:
+    - cron: '17 4 * * *'
 
 permissions:
   contents: read
@@ -25,6 +28,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      - name: Fetch live concert dates
+        run: npx vite-node scripts/fetch-concerts.ts
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
