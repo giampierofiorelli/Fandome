@@ -70,6 +70,7 @@ function SpotifyCard() {
   const [clientId, setClientIdState] = useState(spotify.getClientId())
   const [connected, setConnected] = useState(spotify.isConnected())
   const redirect = spotify.redirectUri()
+  const builtIn = Boolean(spotify.builtInClientId())
   const save = () => {
     spotify.setClientId(clientId)
     toast(clientId.trim() ? 'Client ID saved' : 'Client ID removed')
@@ -83,6 +84,9 @@ function SpotifyCard() {
       <p className="muted small">
         Listening parties play each song in your own Spotify app, in sync with the room. Fandome never streams audio. Requires Spotify Premium.
       </p>
+      {!builtIn && (
+        <>
+      <p className="small"><strong>One-time setup for the site owner</strong> (visitors never see this once the Client ID is built in):</p>
       <ol className="rules small">
         <li>
           Open <a className="tag" href="https://developer.spotify.com/dashboard" target="_blank" rel="noreferrer">developer.spotify.com/dashboard</a> and create an app (free).
@@ -98,6 +102,8 @@ function SpotifyCard() {
           Save
         </button>
       </div>
+        </>
+      )}
       <div className="row-end">
         {connected ? (
           <button

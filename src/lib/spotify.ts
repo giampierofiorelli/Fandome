@@ -3,6 +3,8 @@
 // keeps it in sync. Works from a static site using OAuth "Authorization Code
 // with PKCE" (no server, no client secret). Playback control needs Premium.
 
+import { SPOTIFY_CLIENT_ID } from '../config'
+
 const KEYS = {
   clientId: 'fandome:spotify:clientId',
   tokens: 'fandome:spotify:tokens',
@@ -53,7 +55,9 @@ const store = {
   },
 }
 
-export const getClientId = () => store.get(KEYS.clientId) || (import.meta.env.VITE_SPOTIFY_CLIENT_ID as string | undefined) || ''
+// Built-in ID (set once by the site owner) wins; the Settings field is only a fallback for testing.
+export const builtInClientId = () => SPOTIFY_CLIENT_ID || ((import.meta.env.VITE_SPOTIFY_CLIENT_ID as string | undefined) ?? '')
+export const getClientId = () => builtInClientId() || store.get(KEYS.clientId) || ''
 export const setClientId = (id: string) => (id.trim() ? store.set(KEYS.clientId, id.trim()) : store.del(KEYS.clientId))
 // Must match a Redirect URI registered in the Spotify app, e.g. https://<user>.github.io/Fandome/
 export const redirectUri = () => `${location.origin}${location.pathname}`
