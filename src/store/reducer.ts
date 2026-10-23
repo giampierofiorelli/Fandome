@@ -13,7 +13,7 @@ export interface State {
 }
 
 export type Action =
-  | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[] }
+  | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[]; at?: number }
   | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
@@ -32,7 +32,8 @@ export type Action =
   | { type: 'toggleTop4'; albumId: Id }
   | { type: 'chat'; room: string; id: Id; userId?: Id; text: string; at: number }
   | { type: 'markSeen'; at: number }
-  | { type: 'addStory'; id: Id; at: number; kind: 'text' | 'photo'; text?: string; bg?: string; photo?: string }
+  | { type: 'addStory'; id: Id; at: number; kind: 'text' | 'photo' | 'video'; text?: string; bg?: string; photo?: string; video?: Story['video'] }
+  | { type: 'shareStory'; id: Id; at: number; storyId: Id; text?: string }
   | { type: 'viewStory'; storyId: Id }
   | { type: 'deleteStory'; storyId: Id }
   | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio'] }
@@ -54,7 +55,8 @@ export function initialState(now: number): State {
   return {
     version: 1,
     meId: null,
-    users: seedUsers.map((u) => ({ ...u })),
+    // Seed fans were active recently, except Jonas: he shows what an inactive account looks like.
+    users: seedUsers.map((u) => ({ ...u, activeAt: u.id === 'u-jonas' ? now - 45 * DAY : now - 3 * 3_600_000 })),
     posts: seedPosts(now),
     chats: seedChats(now),
     stories: seedStories(now),
@@ -78,7 +80,17 @@ function updatePost(state: State, postId: Id, fn: (p: Post) => Post): State {
   return { ...state, posts: state.posts.map((p) => (p.id === postId ? fn(p) : p)) }
 }
 
+// Public actions that count as "being active" (posts, reposts and stories count by their own dates).
+const ACTIVE_ACTIONS = new Set<Action['type']>(['like', 'vote', 'rate', 'toggleTop4', 'chat', 'toggleAttended', 'toggleGoing', 'toggleTour', 'post', 'repost', 'addStory', 'shareStory'])
+
 export function reducer(state: State, action: Action): State {
+  const next = apply(state, action)
+  if (next === state || !next.meId || !ACTIVE_ACTIONS.has(action.type)) return next
+  const at = 'at' in action && typeof action.at === 'number' ? action.at : Date.now()
+  return updateMe(next, (u) => ({ ...u, activeAt: Math.max(u.activeAt ?? 0, at) }))
+}
+
+function apply(state: State, action: Action): State {
   const me = state.meId
   switch (action.type) {
     case 'onboard': {
@@ -95,6 +107,7 @@ export function reducer(state: State, action: Action): State {
         going: [],
         ratings: {},
         following: action.followIds,
+        joinedAt: action.at ?? Date.now(),
       }
       return { ...state, meId: 'me', users: [...state.users.filter((u) => u.id !== 'me'), user] }
     }
@@ -261,7 +274,17 @@ export function reducer(state: State, action: Action): State {
       return updatePage(state, action.pageId, (u) => ({ ...u, page: { ...u.page!, verification: 'pending' } }))
     case 'addStory': {
       if (!me) return state
-      const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: action.kind, text: action.text, bg: action.bg, photo: action.photo, viewers: [] }
+      if (action.kind === 'video' && (!action.video || action.video.duration > 180.5)) return state
+      const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: action.kind, text: action.text, bg: action.bg, photo: action.photo, video: action.video, viewers: [] }
+      return { ...state, stories: [...state.stories, story] }
+    }
+    case 'shareStory': {
+      // Reshare someone's live story inside your own. A reshare of a reshare points at the original.
+      const src = state.stories.find((s) => s.id === action.storyId && action.at - s.createdAt < DAY)
+      if (!me || !src || src.authorId === me) return state
+      const inner = src.shared ?? { storyId: src.id, authorId: src.authorId, kind: src.kind as 'text' | 'photo' | 'video', text: src.text, bg: src.bg, photo: src.photo, video: src.video }
+      if (inner.authorId === me) return state
+      const story: Story = { id: action.id, authorId: me, createdAt: action.at, kind: 'share', text: action.text?.trim() || undefined, shared: inner, viewers: [] }
       return { ...state, stories: [...state.stories, story] }
     }
     case 'viewStory':
@@ -270,7 +293,7 @@ export function reducer(state: State, action: Action): State {
     case 'deleteStory':
       return { ...state, stories: state.stories.filter((s) => !(s.id === action.storyId && s.authorId === me)) }
     case 'sendDm': {
-      if (!me || isGuest(state) || !(action.text?.trim() || action.audio) || !canMessage(state, me, action.to)) return state
+      if (!me || isGuest(state) || !(action.text?.trim() || action.audio) || !canMessage(state, me, action.to) || messagingPaused(state, me, action.at)) return state
       const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio }
       return { ...state, dms: [...state.dms, dm] }
     }
@@ -307,6 +330,22 @@ export function canMessage(state: State, a: Id, b: Id) {
   if (!ua || !ub || a === b || ua.kind === 'page' || ub.kind === 'page' || ub.id === 'u-mod') return false
   return ua.following.includes(b) || ub.following.includes(a)
 }
+// Messaging rewards taking part: anyone with no public activity for 30 days
+// can still read messages but can't send until they do something again.
+export const ACTIVE_WINDOW = 30 * DAY
+export function lastActivity(state: State, id: Id): number {
+  const u = state.users.find((x) => x.id === id)
+  let t = Math.max(u?.activeAt ?? 0, u?.joinedAt ?? 0)
+  for (const p of state.posts) {
+    if (p.authorId === id && p.createdAt > t) t = p.createdAt
+    for (const r of p.reposts) if (r.userId === id && r.at > t) t = r.at
+  }
+  for (const s of state.stories) if (s.authorId === id && s.createdAt > t) t = s.createdAt
+  return t
+}
+// Milliseconds left before messaging pauses (0 or less = paused).
+export const messagingLeft = (state: State, id: Id, now: number) => ACTIVE_WINDOW - (now - lastActivity(state, id))
+export const messagingPaused = (state: State, id: Id, now: number) => messagingLeft(state, id, now) <= 0
 export function conversations(state: State, now: number) {
   const me = state.meId
   if (!me) return []

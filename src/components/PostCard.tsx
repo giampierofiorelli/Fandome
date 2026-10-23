@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import type { Embed, Post } from '../data/types'
 import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
 import { autoEmbeds } from '../lib/prefs'
+import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
 import { canManagePage } from '../store/reducer'
@@ -12,7 +13,7 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconTag, IconTrash, IconVolume } from './icons'
 
 interface Props {
   post: Post
@@ -359,13 +360,10 @@ function YouTubeEmbed({ id }: { id: string }) {
   const [tapped, setTapped] = useState(false)
   return (
     <div className="yt" onClick={(e) => e.stopPropagation()}>
-      {play ? (
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0${tapped ? '&autoplay=1' : ''}`}
-          title="YouTube video"
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-          allowFullScreen
-        />
+      {tapped ? (
+        <YouTubePlayer id={id} />
+      ) : play ? (
+        <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`} title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen />
       ) : (
         <button className="yt-poster" onClick={() => (setTapped(true), setPlay(true))} aria-label="Play YouTube video">
           <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" />
@@ -378,10 +376,73 @@ function YouTubeEmbed({ id }: { id: string }) {
   )
 }
 
+// One tap = the video plays. Uses YouTube's player API so we can start it ourselves;
+// where the browser blocks sound (iPhone), it starts muted with a "Tap for sound" button.
+function YouTubePlayer({ id }: { id: string }) {
+  const host = useRef<HTMLDivElement>(null)
+  const player = useRef<YTPlayer | null>(null)
+  const [needsSound, setNeedsSound] = useState(false)
+  const [fallback, setFallback] = useState(false)
+  useEffect(() => {
+    let alive = true
+    let timer: ReturnType<typeof setTimeout> | undefined
+    loadYouTubeApi()
+      .then((YT) => {
+        if (!alive || !host.current) return
+        const el = document.createElement('div')
+        host.current.appendChild(el)
+        player.current = new YT.Player(el, {
+          host: 'https://www.youtube-nocookie.com',
+          videoId: id,
+          playerVars: { autoplay: 1, playsinline: 1, rel: 0 },
+          events: {
+            onReady: (e) => {
+              e.target.playVideo()
+              timer = setTimeout(() => {
+                const st = e.target.getPlayerState()
+                if (st !== 1 && st !== 3) {
+                  e.target.mute()
+                  e.target.playVideo()
+                  setNeedsSound(true)
+                }
+              }, 1200)
+            },
+          },
+        })
+      })
+      .catch(() => alive && setFallback(true))
+    return () => {
+      alive = false
+      if (timer) clearTimeout(timer)
+      player.current?.destroy()
+      player.current = null
+    }
+  }, [id])
+  if (fallback) return <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1&playsinline=1`} title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen />
+  return (
+    <>
+      <div className="yt-host" ref={host} />
+      {needsSound && (
+        <button
+          className="yt-sound"
+          onClick={() => {
+            player.current?.unMute()
+            player.current?.playVideo()
+            setNeedsSound(false)
+          }}
+        >
+          <IconVolume size={16} /> Tap for sound
+        </button>
+      )}
+    </>
+  )
+}
+
 // Posts from X / Instagram / TikTok, shown with each platform's own embed.
 // Click-to-load: nothing from the platform loads until the reader asks for it.
 function SocialEmbed({ embed }: { embed: Embed }) {
-  const [load, setLoad] = useState(autoEmbeds)
+  // Music players are always shown ready to play; social posts load on tap unless the reader opted in.
+  const [load, setLoad] = useState(() => isAudioEmbed(embed.kind) || autoEmbeds())
   const label = EMBED_LABEL[embed.kind]
   return (
     <div className={`social ${embed.kind}${isAudioEmbed(embed.kind) ? ' audio' : ''}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>

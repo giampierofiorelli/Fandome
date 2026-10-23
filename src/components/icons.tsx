@@ -223,3 +223,29 @@ export const IconMusic = (p: P) => (
     <circle cx="17.5" cy="16" r="2.5" />
   </Svg>
 )
+export const IconCamera = (p: P) => (
+  <Svg {...p}>
+    <path d="M3.5 8.5a2 2 0 0 1 2-2h2l1.5-2h6l1.5 2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z" />
+    <circle cx="12" cy="13" r="3.5" />
+  </Svg>
+)
+export const IconVideo = (p: P) => (
+  <Svg {...p}>
+    <rect x="3" y="6" width="12.5" height="12" rx="2.5" />
+    <path d="m15.5 10.5 5-3v9l-5-3" />
+  </Svg>
+)
+export const IconVolume = (p: P) => (
+  <Svg {...p}>
+    <path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" />
+    <path d="M15.5 9a4.5 4.5 0 0 1 0 6" />
+    <path d="M18 6.5a8 8 0 0 1 0 11" />
+  </Svg>
+)
+export const IconMute = (p: P) => (
+  <Svg {...p}>
+    <path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" />
+    <path d="m16 9.5 5 5" />
+    <path d="m21 9.5-5 5" />
+  </Svg>
+)

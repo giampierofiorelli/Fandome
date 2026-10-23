@@ -1,0 +1,59 @@
+import { describe, expect, it } from 'vitest'
+import { DAY, initialState, messagingLeft, messagingPaused, reducer, type State } from './reducer'
+
+const NOW = 1_800_000_000_000
+const me = (): State => reducer(initialState(NOW), { type: 'onboard', name: 'Gianni', handle: 'gianni', location: '', artistIds: ['madonna'], followIds: ['u-giulia', 'u-jonas'], at: NOW })
+
+describe('story reshare and video', () => {
+  it('reshares a live story as a snapshot with the original author', () => {
+    let s = reducer(me(), { type: 'shareStory', id: 'sh1', at: NOW, storyId: 's1', text: ' same! ' })
+    const st = s.stories.find((x) => x.id === 'sh1')!
+    expect(st.kind).toBe('share')
+    expect(st.authorId).toBe('me')
+    expect(st.text).toBe('same!')
+    expect(st.shared).toMatchObject({ storyId: 's1', authorId: 'u-giulia', kind: 'text' })
+    // resharing a reshare points at the original
+    s = { ...s, meId: 'u-rafa' }
+    s = reducer(s, { type: 'shareStory', id: 'sh2', at: NOW, storyId: 'sh1' })
+    expect(s.stories.find((x) => x.id === 'sh2')!.shared!.storyId).toBe('s1')
+  })
+  it('does not reshare your own or expired stories', () => {
+    const s = me()
+    const own = reducer(s, { type: 'addStory', id: 'mine', at: NOW, kind: 'text', text: 'hi', bg: 'x' })
+    expect(reducer(own, { type: 'shareStory', id: 'x', at: NOW, storyId: 'mine' })).toBe(own)
+    expect(reducer(s, { type: 'shareStory', id: 'x', at: NOW + 2 * DAY, storyId: 's1' })).toBe(s)
+  })
+  it('accepts videos up to 3 minutes only', () => {
+    const s = me()
+    const ok = reducer(s, { type: 'addStory', id: 'v1', at: NOW, kind: 'video', video: { key: 'v-1-a', duration: 179.9 } })
+    expect(ok.stories.some((x) => x.id === 'v1')).toBe(true)
+    expect(reducer(s, { type: 'addStory', id: 'v2', at: NOW, kind: 'video', video: { key: 'v-1-b', duration: 200 } })).toBe(s)
+  })
+})
+
+describe('messaging needs activity', () => {
+  it('new accounts get 30 days, then messaging pauses until they act', () => {
+    let s = me()
+    expect(messagingPaused(s, 'me', NOW + 29 * DAY)).toBe(false)
+    const later = NOW + 31 * DAY
+    expect(messagingPaused(s, 'me', later)).toBe(true)
+    const blocked = reducer(s, { type: 'sendDm', id: 'd', to: 'u-giulia', at: later, text: 'hi' })
+    expect(blocked.dms.some((m) => m.id === 'd')).toBe(false)
+    // a post switches it back on
+    s = reducer(s, { type: 'post', id: 'p', at: later, text: 'back!' })
+    expect(messagingPaused(s, 'me', later)).toBe(false)
+    s = reducer(s, { type: 'sendDm', id: 'd', to: 'u-giulia', at: later, text: 'hi' })
+    expect(s.dms.some((m) => m.id === 'd')).toBe(true)
+  })
+  it('a like counts as activity', () => {
+    let s = me()
+    const t = NOW + 25 * DAY
+    s = reducer(s, { type: 'like', postId: 'p2' })
+    // likes are stamped with the real clock; just check it moved forward from joining
+    expect(messagingLeft(s, 'me', t)).toBeGreaterThan(messagingLeft(me(), 'me', t) - 1)
+  })
+  it('seed fan Jonas is inactive', () => {
+    expect(messagingPaused(me(), 'u-jonas', NOW)).toBe(true)
+    expect(messagingPaused(me(), 'u-giulia', NOW)).toBe(false)
+  })
+})

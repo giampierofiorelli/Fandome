@@ -191,8 +191,8 @@ function EmbedsCard() {
       </div>
       <p className="muted small">
         {on
-          ? 'Videos, music players and posts from other socials open already expanded in the feed.'
-          : 'Embedded posts stay closed until you tap them: the feed loads faster and other platforms can’t track you just for scrolling.'}
+          ? 'Videos and posts from other socials open already expanded in the feed. Music players are always ready to play.'
+          : 'Videos and posts from other socials stay closed until you tap them: the feed loads faster and other platforms can’t track you just for scrolling. Music players (Spotify, Apple Music, SoundCloud…) are always ready to play.'}
       </p>
     </section>
   )

@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { newId, useStore } from '../store/store'
-import { canMessage, conversations, dmExpiresIn } from '../store/reducer'
+import { canMessage, conversations, DAY, dmExpiresIn, messagingLeft, messagingPaused } from '../store/reducer'
 import { AudioPlayer } from '../components/AudioPlayer'
 import { useToast } from '../components/Toast'
 import { Avatar } from '../components/ui'
@@ -20,6 +20,37 @@ const REPLIES: Record<string, string[]> = {
 }
 const fallback = ['Haha love it', 'Totally agree!', 'See you in the party tonight 🎧']
 
+// Messaging pauses after 30 days without any public activity.
+export function useMessagingStatus() {
+  const { state, me } = useStore()
+  if (!me || me.handle === 'guest' || me.kind === 'page') return { paused: false, daysLeft: Infinity }
+  const left = messagingLeft(state, me.id, Date.now())
+  return { paused: left <= 0, daysLeft: Math.max(0, Math.ceil(left / DAY)) }
+}
+
+// The notice shown in the inbox, in a chat and on Home.
+export function MessagingNotice({ compact }: { compact?: boolean }) {
+  const { paused, daysLeft } = useMessagingStatus()
+  if (!paused && daysLeft > 5) return null
+  return (
+    <div className={paused ? 'dm-pause paused' : 'dm-pause'} role="status">
+      <span className="grow">
+        <strong>{paused ? 'Your messages are paused' : `Messages pause in ${daysLeft} ${daysLeft === 1 ? 'day' : 'days'}`}</strong>
+        <span className="small block">
+          {paused
+            ? 'You haven’t posted, liked, voted or shared anything for 30 days. Do any of these and messaging switches back on right away. You can still read what people send you.'
+            : 'Messaging is for active fans. Post, like, vote or share a story to keep it on.'}
+        </span>
+      </span>
+      {!compact && (
+        <Link to="/" className="pill-btn ink small">
+          {paused ? 'Get active' : 'Go to feed'}
+        </Link>
+      )}
+    </div>
+  )
+}
+
 export function Inbox() {
   const { state, me, userById } = useStore()
   if (!me) return null
@@ -34,8 +65,9 @@ export function Inbox() {
         <h1 className="display">
           Private <span className="display-strong">chats</span>
         </h1>
-        <p className="muted small dm-rule">Messages disappear 24 hours after they’re seen. Unread ones wait for you.</p>
+        <p className="muted small dm-rule">Messages disappear 24 hours after they’re seen. Unread ones wait for you. Messaging pauses for accounts with no activity in the last 30 days.</p>
       </header>
+      <MessagingNotice />
       {me.handle === 'guest' && (
         <div className="invite-banner">
           <span className="grow">
@@ -136,10 +168,12 @@ export function Conversation() {
   )
 
   if (!me || !other) return <Navigate to="/messages" replace />
-  const allowed = canMessage(state, me.id, other.id) && me.handle !== 'guest'
+  const paused = messagingPaused(state, me.id, now)
+  const otherAway = messagingPaused(state, other.id, now)
+  const allowed = canMessage(state, me.id, other.id) && me.handle !== 'guest' && !paused
 
   const simulateReply = () => {
-    if (!other.id.startsWith('u-')) return
+    if (!other.id.startsWith('u-') || otherAway) return
     const pool = REPLIES[other.id] ?? fallback
     // One reply per burst of messages.
     replyTimers.current.forEach(clearTimeout)
@@ -191,6 +225,7 @@ export function Conversation() {
         </Link>
       </header>
       <p className="dm-rule center muted small">Messages disappear 24h after they’re seen</p>
+      {otherAway && !paused && <p className="dm-away center small">{other.name} hasn’t been active for a month, so they can read your message but can’t reply until they’re back.</p>}
       <div className="dm-list" ref={listRef}>
         <AnimatePresence initial={false}>
           {msgs.map((m, i) => {
@@ -261,6 +296,8 @@ export function Conversation() {
             )}
           </form>
         )
+      ) : paused && me.handle !== 'guest' ? (
+        <MessagingNotice />
       ) : (
         <p className="muted small center dm-locked">
           {me.handle === 'guest' ? (

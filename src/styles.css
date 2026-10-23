@@ -796,3 +796,33 @@ a.row-item:hover { background: var(--glass-strong); }
 .pill-btn.danger-solid { background: #d2334f; color: #fff; border-color: #d2334f; }
 /* Soft hero glows bleed past the edges; clip them so the page never scrolls sideways. */
 main.app { overflow-x: clip; }
+
+/* ---------- Story media: camera, video, reshare ---------- */
+.story-canvas { overflow: hidden; }
+.story-canvas.media { align-items: flex-end; }
+.story-canvas.media textarea { position: relative; z-index: 2; font-size: 18px; }
+.canvas-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.canvas-badge { position: absolute; top: 12px; right: 12px; z-index: 2; height: 26px; padding: 0 10px; border-radius: 999px; display: inline-flex; align-items: center; font-size: 12.5px; font-weight: 600; color: #fff; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px); font-variant-numeric: tabular-nums; }
+.story-canvas .sv-shared { position: absolute; top: 50%; left: 50%; width: 58%; transform: translate(-50%, -58%) rotate(-2deg); }
+.story-tools { display: flex; align-items: center; gap: 8px; margin-top: 14px; }
+.story-tools .story-share { margin-left: auto; }
+.story-hint { margin: 10px 0 0; }
+.sv-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.sv-shared { position: absolute; left: 50%; top: 50%; z-index: 1; width: 66%; aspect-ratio: 9 / 16; transform: translate(-50%, -54%) rotate(-2deg); border-radius: 20px; overflow: hidden; background-size: cover; background-position: center; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.12); color: #fff; }
+.sv-shared-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.sv-shared-text { position: absolute; inset: 0; margin: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 18px; font-size: 19px; line-height: 1.2; font-weight: 500; letter-spacing: -0.03em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); }
+.sv-shared-cap { position: absolute; left: 10px; right: 10px; bottom: 40px; margin: 0; text-align: center; font-size: 13px; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+.sv-shared-by { position: absolute; left: 10px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px 0 4px; border-radius: 999px; font-size: 12px; font-weight: 600; background: rgba(0, 0, 0, 0.35); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.sv-shared-play { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px); }
+.sv-x.sound + .sv-x { margin-left: 0; }
+.sv-sound { position: absolute; left: 0; right: 0; top: 46%; margin: 0 auto; width: max-content; z-index: 4; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; border: 0; color: #fff; font-weight: 600; font-size: 14px; background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.sv-icon.share { margin-left: 0; }
+.dm-pause { display: flex; align-items: center; gap: 12px; margin: 12px 0; padding: 14px 16px; border-radius: 22px; background: var(--glass-strong); border: 1px solid var(--glass-edge); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.dm-pause strong { display: block; font-weight: 600; }
+.dm-pause .small { opacity: 0.75; margin-top: 2px; line-height: 1.35; }
+.dm-pause.paused { background: color-mix(in srgb, #f0a43a 18%, var(--glass-strong)); border-color: color-mix(in srgb, #f0a43a 40%, transparent); }
+.dm .dm-pause { margin: 8px 12px calc(12px + env(safe-area-inset-bottom)); }
+.dm-away { margin: 6px 16px; padding: 10px 14px; border-radius: 16px; background: var(--glass); opacity: 0.85; }
+.yt-host { position: absolute; inset: 0; }
+.yt-host iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.yt-sound { position: absolute; left: 12px; bottom: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px; border-radius: 999px; border: 0; color: #fff; font-weight: 600; font-size: 13.5px; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }

@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react'
 import type { User } from '../data/types'
+import { gcBlobs } from '../lib/mediaStore'
 import { initialState, reducer, type Action, type State } from './reducer'
 
 const KEY = 'fandome:v1'
@@ -13,7 +14,13 @@ function load(): State {
         // Older saves predate stories / DMs / pages: fill in what's missing.
         const now = Date.now()
         const fresh = initialState(now)
-        const users = parsed.users.some((u) => u.id === 'pg-archive') ? parsed.users : [...parsed.users, ...fresh.users.filter((u) => u.kind === 'page')]
+        const withPages = parsed.users.some((u) => u.id === 'pg-archive') ? parsed.users : [...parsed.users, ...fresh.users.filter((u) => u.kind === 'page')]
+        // Saves from before the activity rule: nobody starts out paused.
+        const users = withPages.map((u) => {
+          if (u.id === parsed.meId) return u.joinedAt ? u : { ...u, joinedAt: now }
+          if (u.activeAt !== undefined) return u
+          return { ...u, activeAt: fresh.users.find((f) => f.id === u.id)?.activeAt ?? now }
+        })
         return reducer({ ...parsed, users, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms }, { type: 'prune', now })
       }
     }
@@ -49,6 +56,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const t = setInterval(() => dispatch({ type: 'prune', now: Date.now() }), 30_000)
     return () => clearInterval(t)
   }, [])
+
+  // Drop stored videos that no live story uses any more.
+  const videoKeys = state.stories.map((s) => (s.video ?? s.shared?.video)?.key).filter(Boolean).sort().join(',')
+  useEffect(() => {
+    void gcBlobs(videoKeys ? videoKeys.split(',') : [])
+  }, [videoKeys])
 
   const value = useMemo<Store>(() => {
     const map = new Map(state.users.map((u) => [u.id, u]))

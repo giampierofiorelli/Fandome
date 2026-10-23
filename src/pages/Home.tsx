@@ -5,6 +5,7 @@ import { concerts, parties } from '../data/seed'
 import { useStore } from '../store/store'
 import { conversations, invitesFor } from '../store/reducer'
 import { StoriesBar } from '../components/Stories'
+import { MessagingNotice } from './Messages'
 import { FeedList } from '../components/FeedList'
 import { Avatar, Tabs } from '../components/ui'
 import { IconArrowUpRight, IconPlay, IconSend } from '../components/icons'
@@ -55,6 +56,7 @@ export default function Home() {
         </Link>
       </div>
       <StoriesBar />
+      <MessagingNotice compact />
       <header className="hello compact">
         <div className="eyebrow">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</div>
         <h1 className="display">

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { activeStories, canMessage, conversations, DAY, dmExpiresIn, initialState, reducer, type State } from './reducer'
 
 const NOW = 1_800_000_000_000
-const me = (): State => reducer(initialState(NOW), { type: 'onboard', name: 'Gianni', handle: 'gianni', location: '', artistIds: ['madonna'], followIds: ['u-giulia', 'u-kenji'] })
+const me = (): State => reducer(initialState(NOW), { type: 'onboard', name: 'Gianni', handle: 'gianni', location: '', artistIds: ['madonna'], followIds: ['u-giulia', 'u-kenji'], at: NOW })
 
 describe('stories', () => {
   it('lasts 24 hours and records who viewed it', () => {

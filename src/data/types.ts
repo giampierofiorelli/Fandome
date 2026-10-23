@@ -63,6 +63,8 @@ export interface User {
   tours?: string[] // past tours you saw, as `${artistId}::${tour}` (no specific date needed)
   ratings: Record<Id, number> // albumId -> 0.5..5
   following: Id[]
+  joinedAt?: number
+  activeAt?: number // last public action (like, vote, rating…); posts and stories count on their own
 }
 
 export interface Poll {
@@ -106,14 +108,26 @@ export interface Embed {
 }
 
 // Stories last 24 hours.
-export interface Story {
-  id: Id
-  authorId: Id
-  createdAt: number
-  kind: 'text' | 'photo'
+// Video bytes live in IndexedDB (too big for localStorage); the story keeps the key.
+export interface StoryVideo {
+  key: string
+  duration: number // seconds, max 180
+  poster?: string // small JPEG data URL
+}
+// What a story shows. A shared story is a snapshot of someone else's.
+export interface StoryContent {
+  kind: 'text' | 'photo' | 'video'
   text?: string
   bg?: string // CSS gradient for text stories
   photo?: string // data URL
+  video?: StoryVideo
+}
+export interface Story extends Omit<StoryContent, 'kind'> {
+  id: Id
+  authorId: Id
+  createdAt: number
+  kind: StoryContent['kind'] | 'share'
+  shared?: StoryContent & { storyId: Id; authorId: Id }
   viewers: Id[]
 }
 
