@@ -165,3 +165,23 @@ export const IconTag = (p: P) => (
     <circle cx="8" cy="8" r="1.3" />
   </Svg>
 )
+export const IconArrowUpRight = (p: P) => (
+  <Svg {...p}>
+    <path d="M7 17 17 7M8 7h9v9" />
+  </Svg>
+)
+export const IconArrowLeft = (p: P) => (
+  <Svg {...p}>
+    <path d="M19 12H5M11 6l-6 6 6 6" />
+  </Svg>
+)
+export const IconArrowRight = (p: P) => (
+  <Svg {...p}>
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </Svg>
+)
+export const IconPlay = (p: P) => (
+  <Svg {...p}>
+    <path d="M8 5.5v13l10.5-6.5z" fill="currentColor" />
+  </Svg>
+)

@@ -1,17 +1,10 @@
 import { motion } from 'motion/react'
 import { useEffect, type ReactNode } from 'react'
-import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useStore } from './store/store'
 import { useComposer } from './components/Composer'
-import { Avatar } from './components/ui'
-import { Sidebar } from './components/Sidebar'
-import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSettings, IconSparkle, IconUser } from './components/icons'
-import { artistById } from './lib/util'
+import { IconHeadphones, IconHome, IconPlus, IconSearch, IconUser } from './components/icons'
 import { starterPacks } from './data/seed'
-
-export const GUEST_HANDLE = 'guest'
-const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
-const GUEST_FOLLOWS = Array.from(new Set(starterPacks.filter((p) => GUEST_ARTISTS.includes(p.artistId)).flatMap((p) => p.userIds)))
 import { spring } from './lib/motion'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
@@ -24,74 +17,54 @@ import StarterPackPage from './pages/StarterPack'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
 
-// Nav link with a shared "pill" that glides to the active item.
-function NavItem({ to, end, icon, label, pill }: { to: string; end?: boolean; icon: ReactNode; label: ReactNode; pill: string }) {
+export const GUEST_HANDLE = 'guest'
+const GUEST_ARTISTS = ['madonna', 'kylie', 'psb']
+const GUEST_FOLLOWS = Array.from(new Set(starterPacks.filter((p) => GUEST_ARTISTS.includes(p.artistId)).flatMap((p) => p.userIds)))
+
+// Tab with a shared glass pill that glides to the active item.
+function Tab({ to, end, icon, label }: { to: string; end?: boolean; icon: ReactNode; label: string }) {
   return (
-    <NavLink to={to} end={end} aria-label={typeof label === 'string' ? label : undefined}>
+    <NavLink to={to} end={end} aria-label={label} className="tabbar-item">
       {({ isActive }) => (
         <>
-          {isActive && <motion.span layoutId={pill} className="nav-pill" transition={spring} />}
-          <span className="nav-icon">{icon}</span>
-          <span className="nav-label">{label}</span>
+          {isActive && <motion.span layoutId="tabbar-pill" className="tabbar-pill" transition={spring} />}
+          <span className="tabbar-icon">{icon}</span>
         </>
       )}
     </NavLink>
   )
 }
 
+// Soft blurred colour field behind everything (the "aurora"), plus film grain.
+export function Backdrop() {
+  return (
+    <div className="backdrop" aria-hidden>
+      <span className="blob b1" />
+      <span className="blob b2" />
+      <span className="blob b3" />
+      <span className="grain" />
+    </div>
+  )
+}
+
 export default function App() {
-  const { me } = useStore()
+  const { me, dispatch } = useStore()
   const compose = useComposer()
   const loc = useLocation()
 
-  const { dispatch } = useStore()
+  // No login wall: first-time visitors land straight in the app as a guest.
   const needsGuest = !me && !loc.pathname.startsWith('/welcome')
-  // No login wall: first-time visitors land straight in the app as a guest
-  // following the Madonna starter pack. Creating a profile is optional.
   useEffect(() => {
     if (needsGuest) dispatch({ type: 'onboard', name: 'Guest', handle: GUEST_HANDLE, location: '', artistIds: GUEST_ARTISTS, followIds: GUEST_FOLLOWS })
   }, [needsGuest, dispatch])
-  if (needsGuest) return null
+  if (needsGuest) return <Backdrop />
   if (loc.pathname.startsWith('/welcome')) return <Onboarding />
 
   return (
-    <div className="shell">
-      <nav className="leftnav" aria-label="Main">
-        <Link to="/" className="logo">
-          <IconSparkle size={22} /> <span>Fandome</span>
-        </Link>
-        <NavItem to="/" end icon={<IconHome size={22} />} label="Home" pill="nav" />
-        <NavItem to="/explore" icon={<IconSearch size={22} />} label="Explore" pill="nav" />
-        <NavItem to="/party/party-confessions" icon={<IconHeadphones size={22} />} label="Listening party" pill="nav" />
-        {me && <NavItem to={`/u/${me.handle}`} icon={<IconUser size={22} />} label="Profile" pill="nav" />}
-        <NavItem to="/settings" icon={<IconSettings size={22} />} label="Settings" pill="nav" />
-        <div className="nav-fandoms">
-          <div className="nav-caption">Your fandoms</div>
-          {me &&
-            Object.keys(me.fanSince).map((id) => {
-              const a = artistById(id)
-              return a ? <NavItem key={id} to={`/a/${id}`} icon={<span className="dot" style={{ background: a.color }} />} label={a.name} pill="nav" /> : null
-            })}
-        </div>
-        <button className="btn primary wide" onClick={() => compose()}>
-          <IconPlus size={18} /> <span>Post</span>
-        </button>
-        {me && (
-          <Link to={`/u/${me.handle}`} className="nav-me">
-            <Avatar user={me} size={32} />
-            <span>
-              <strong>{me.name}</strong>
-              <br />
-              <span className="muted small">@{me.handle}</span>
-            </span>
-          </Link>
-        )}
-      </nav>
-
-      <main className="center">
-        <div className="proto-banner">Prototype · demo data · independent fan platform, not affiliated with any artist</div>
-        {/* Keyed by path: each page fades up into place. No exit, so navigation never waits. */}
-        <motion.div key={loc.pathname} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={spring}>
+    <>
+      <Backdrop />
+      <main className="app">
+        <motion.div key={loc.pathname} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={spring}>
           <Routes location={loc}>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
@@ -105,21 +78,18 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </motion.div>
+        <p className="legal">Fandome prototype · demo data · independent fan community, not affiliated with any artist</p>
       </main>
 
-      <aside className="rightcol">
-        <Sidebar />
-      </aside>
-
-      <nav className="bottomnav" aria-label="Mobile">
-        <NavItem to="/" end icon={<IconHome size={24} />} label="Home" pill="tabbar" />
-        <NavItem to="/explore" icon={<IconSearch size={24} />} label="Explore" pill="tabbar" />
-        <motion.button className="fab" onClick={() => compose()} aria-label="New post" whileTap={{ scale: 0.9 }} transition={spring}>
-          <IconPlus size={24} />
+      <nav className="tabbar" aria-label="Main">
+        <Tab to="/" end icon={<IconHome size={22} />} label="Home" />
+        <Tab to="/explore" icon={<IconSearch size={22} />} label="Explore" />
+        <motion.button className="tabbar-plus" onClick={() => compose()} aria-label="New post" whileTap={{ scale: 0.88 }} transition={spring}>
+          <IconPlus size={22} />
         </motion.button>
-        <NavItem to="/party/party-confessions" icon={<IconHeadphones size={24} />} label="Party" pill="tabbar" />
-        {me && <NavItem to={`/u/${me.handle}`} icon={<IconUser size={24} />} label="Profile" pill="tabbar" />}
+        <Tab to="/party/party-confessions" icon={<IconHeadphones size={22} />} label="Listening party" />
+        {me && <Tab to={`/u/${me.handle}`} icon={<IconUser size={22} />} label="Profile" />}
       </nav>
-    </div>
+    </>
   )
 }

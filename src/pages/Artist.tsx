@@ -37,49 +37,57 @@ export default function ArtistPage() {
 
   return (
     <>
-      <header className="artist-hero" style={{ background: `linear-gradient(160deg, ${artist.color}55, transparent 70%)` }}>
-        <div className="row-between">
+      <header className="hero-soft" style={{ ['--tint' as string]: artist.color }}>
+        <div className="hero-kicker">Fan room · independent</div>
+        <h1 className="hero-name">{artist.name}</h1>
+        <p className="hero-tagline">{artist.tagline}</p>
+        <div className="hero-stats">
           <div>
-            <h1>{artist.name}</h1>
-            <p className="muted">{artist.tagline}</p>
-            <p className="small">
-              <strong>{fans.length}</strong> <span className="muted">fans here · independent fan room, not affiliated with the artist</span>
-            </p>
+            <div className="bignum">{fans.length}</div>
+            <div className="hero-label">fans</div>
           </div>
-          <button className={joined ? 'btn' : 'btn primary'} onClick={() => dispatch({ type: 'followArtist', artistId: artist.id })}>
-            {joined ? <><IconCheck size={16} /> Joined</> : 'Join'}
-          </button>
+          <div>
+            <div className="bignum">{state.posts.filter((p) => p.artistId === artist.id).length}</div>
+            <div className="hero-label">posts</div>
+          </div>
+          <div>
+            <div className="bignum">{shows.length}</div>
+            <div className="hero-label">shows</div>
+          </div>
         </div>
         <div className="hero-actions">
-          <button className="btn primary small" onClick={() => compose({ artistId: artist.id })}>
-            <IconPen size={15} /> Post here
+          <button className={joined ? 'pill-btn glass' : 'pill-btn ink'} onClick={() => dispatch({ type: 'followArtist', artistId: artist.id })}>
+            {joined ? <><IconCheck size={16} /> Joined</> : 'Join room'}
+          </button>
+          <button className="glass-circle" onClick={() => compose({ artistId: artist.id })} aria-label="Post here">
+            <IconPen size={17} />
           </button>
           {pack && (
-            <Link to={`/starter/${pack.id}`} className="btn small">
-              <IconPackage size={15} /> Starter pack
+            <Link to={`/starter/${pack.id}`} className="glass-circle" aria-label="Starter pack">
+              <IconPackage size={17} />
             </Link>
           )}
           {party && (
-            <Link to={`/party/${party.id}`} className="btn small">
-              <IconHeadphones size={15} /> Listening party
+            <Link to={`/party/${party.id}`} className="glass-circle" aria-label="Listening party">
+              <IconHeadphones size={17} />
             </Link>
           )}
         </div>
       </header>
-      <div className="sticky">
+      <div className="section-head center">
         <Tabs tabs={tabs} value={tab} onChange={setTab} />
       </div>
 
       {(tab === 'all' || feed) && <FeedList items={topicFeed(state.posts, artist.id, feed?.tags)} empty="No posts in this feed yet. Be the first!" />}
 
       {tab === 'albums' && (
-        <div className="album-list">
+        <div className="glass-card list">
           {myAlbums.map((al) => {
             const ratings = state.users.map((u) => u.ratings[al.id]).filter((r): r is number => typeof r === 'number')
             const mine = me?.ratings[al.id] ?? 0
             const fav = me?.top4.includes(al.id)
             return (
-              <div key={al.id} className="album-row">
+              <div key={al.id} className="row-item">
                 <AlbumCover album={al} size={64} />
                 <div className="grow">
                   <strong>{al.title}</strong> <span className="muted">{al.year}</span>
@@ -91,11 +99,11 @@ export default function ArtistPage() {
                   </div>
                 </div>
                 <div className="col-actions">
-                  <button className="btn small" onClick={() => compose({ reviewAlbumId: al.id, artistId: artist.id })}>
+                  <button className="pill-btn glass small" onClick={() => compose({ reviewAlbumId: al.id, artistId: artist.id })}>
                     Review
                   </button>
                   <button
-                    className={fav ? 'btn small active' : 'btn small'}
+                    className={fav ? 'pill-btn ink small' : 'pill-btn glass small'}
                     title="Add to your Top 4 favourites"
                     onClick={() => dispatch({ type: 'toggleTop4', albumId: al.id })}
                     disabled={!fav && (me?.top4.length ?? 0) >= 4}
@@ -110,11 +118,11 @@ export default function ArtistPage() {
       )}
 
       {tab === 'shows' && (
-        <div>
+        <div className="glass-card list">
           {shows.map((c) => {
             const going = state.users.filter((u) => u.attended.includes(c.id) || u.going.includes(c.id)).length
             return (
-              <Link key={c.id} to={`/c/${c.id}`} className="list-row show-row">
+              <Link key={c.id} to={`/c/${c.id}`} className="row-item">
                 <div className="date-badge">
                   <span>{new Date(c.date).getFullYear()}</span>
                 </div>
@@ -126,7 +134,7 @@ export default function ArtistPage() {
                     {c.venue} · {c.tour} · {formatDate(c.date)}
                   </div>
                 </div>
-                <span className="chip">{isUpcoming(c.date) ? `${going} going` : `${going} were there`}</span>
+                <span className="soft-chip">{isUpcoming(c.date) ? `${going} going` : `${going} were there`}</span>
               </Link>
             )
           })}
@@ -134,11 +142,11 @@ export default function ArtistPage() {
       )}
 
       {tab === 'fans' && (
-        <div>
+        <div className="glass-card list">
           {fans
             .sort((a, b) => a.fanSince[artist.id] - b.fanSince[artist.id])
             .map((u) => (
-              <Link key={u.id} to={`/u/${u.handle}`} className="list-row">
+              <Link key={u.id} to={`/u/${u.handle}`} className="row-item">
                 <Avatar user={u} size={36} />
                 <div className="grow">
                   <strong>{u.name}</strong> <span className="muted">@{u.handle}</span>

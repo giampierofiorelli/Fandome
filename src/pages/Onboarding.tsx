@@ -1,142 +1,149 @@
+import { AnimatePresence, motion } from 'motion/react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { artists, starterPacks } from '../data/seed'
 import { useStore } from '../store/store'
 import { Avatar } from '../components/ui'
-import { IconSparkle } from '../components/icons'
+import { IconCheck, IconChevronLeft } from '../components/icons'
+import { spring, springSnappy } from '../lib/motion'
 
-// Onboarding: pick your fandoms, then follow a Bluesky-style starter pack
-// so the feed is never empty on day one.
+const STEPS = 3
+
+// Immersive onboarding: one question per screen, pill choices, Skip / Next.
+// Step 3 is a Bluesky-style starter pack so the feed is alive on day one.
 export default function Onboarding() {
-  const { dispatch, userById, me } = useStore()
+  const { dispatch, userById } = useStore()
   const nav = useNavigate()
   const [step, setStep] = useState(0)
+  const [dir, setDir] = useState(1)
   const [name, setName] = useState('')
   const [handle, setHandle] = useState('')
   const [location, setLocation] = useState('')
   const [picked, setPicked] = useState<string[]>([])
-  const packs = starterPacks.filter((p) => picked.includes(p.artistId))
-  const packUsers = Array.from(new Set(packs.flatMap((p) => p.userIds)))
   const [follow, setFollow] = useState<string[] | null>(null)
+  const packUsers = Array.from(new Set(starterPacks.filter((p) => picked.includes(p.artistId)).flatMap((p) => p.userIds)))
   const following = follow ?? packUsers
-
   const cleanHandle = handle.toLowerCase().replace(/[^a-z0-9_.]/g, '')
 
-  if (me && me.handle !== 'guest' && step === 0) {
-    return (
-      <div className="onboard">
-        <h1 className="brand"><IconSparkle size={34} /> Fandome</h1>
-        <p>You’re already in, @{me.handle}.</p>
-        <button className="btn primary" onClick={() => nav('/')}>
-          Go to your feed
-        </button>
-      </div>
-    )
+  const go = (n: number) => {
+    setDir(n > step ? 1 : -1)
+    setStep(n)
+  }
+  const canNext = step === 0 ? name.trim().length > 0 && cleanHandle.length >= 3 : step === 1 ? picked.length > 0 : true
+  const finish = () => {
+    dispatch({ type: 'onboard', name: name.trim(), handle: cleanHandle, location: location.trim(), artistIds: picked, followIds: following })
+    nav('/')
   }
 
   return (
-    <div className="onboard">
-      <div className="steps">{[0, 1, 2].map((i) => <span key={i} className={i <= step ? 'on' : ''} />)}</div>
-      {step === 0 && (
-        <>
-          <h1 className="brand"><IconSparkle size={34} /> Fandome</h1>
-          <p className="lead">The social network for music fans. Your fan story, your people, every show.</p>
-          <p className="muted small">Independent fan community — not affiliated with any artist.</p>
-          <label>
-            Display name
-            <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Giulia" />
-          </label>
-          <label>
-            Handle
-            <input value={handle} onChange={(e) => setHandle(e.target.value)} placeholder="giulia_vogue" />
-          </label>
-          <label>
-            City (approximate, for local meetups)
-            <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="Milan, IT" />
-          </label>
-          <button className="btn primary wide" disabled={!name.trim() || cleanHandle.length < 3} onClick={() => setStep(1)}>
-            Continue
+    <div className="ob">
+      <div className="ob-top">
+        {step > 0 ? (
+          <button className="glass-circle" onClick={() => go(step - 1)} aria-label="Back">
+            <IconChevronLeft size={18} />
           </button>
-          {me && (
-            <button className="link-btn" onClick={() => nav('/')}>
-              Not now — keep exploring as a guest
-            </button>
-          )}
-        </>
-      )}
-      {step === 1 && (
-        <>
-          <h2>Who are you a fan of?</h2>
-          <p className="muted">Pick at least one. You can join more rooms later.</p>
-          <div className="artist-grid">
-            {artists.map((a) => {
-              const on = picked.includes(a.id)
-              return (
-                <button
-                  key={a.id}
-                  className={on ? 'artist-tile on' : 'artist-tile'}
-                  style={{ borderColor: on ? a.color : undefined, background: on ? `${a.color}22` : undefined }}
-                  onClick={() => setPicked(on ? picked.filter((x) => x !== a.id) : [...picked, a.id])}
-                >
-                  <span className="dot big" style={{ background: a.color }} />
-                  <strong>{a.name}</strong>
-                  <span className="muted small">{a.tagline}</span>
-                </button>
-              )
-            })}
-          </div>
-          <div className="row-between">
-            <button className="btn" onClick={() => setStep(0)}>
-              Back
-            </button>
-            <button className="btn primary" disabled={!picked.length} onClick={() => setStep(2)}>
-              Continue
-            </button>
-          </div>
-        </>
-      )}
-      {step === 2 && (
-        <>
-          <h2>Your starter pack</h2>
-          <p className="muted">Fans curated by the community. Follow them so your feed starts alive.</p>
-          {packs.map((p) => (
-            <div key={p.id} className="card">
-              <h3>{p.title}</h3>
-              <p className="muted small">Curated by @{userById(p.curatorId)?.handle}</p>
-              {p.userIds.map((id) => {
-                const u = userById(id)
-                const on = following.includes(id)
-                return (
-                  <div key={id} className="person-row">
-                    <Avatar user={u} size={36} />
-                    <div className="grow">
-                      <strong>{u?.name}</strong> <span className="muted">@{u?.handle}</span>
-                      <div className="muted small">{u?.bio}</div>
-                    </div>
-                    <button className={on ? 'btn small' : 'btn primary small'} onClick={() => setFollow(on ? following.filter((x) => x !== id) : [...following, id])}>
-                      {on ? 'Following' : 'Follow'}
-                    </button>
-                  </div>
-                )
-              })}
-            </div>
+        ) : (
+          <span className="ob-brand dotmatrix">FANDOME</span>
+        )}
+        <div className="ob-progress">
+          {Array.from({ length: STEPS }, (_, i) => (
+            <span key={i}>
+              <motion.i initial={false} animate={{ scaleX: i <= step ? 1 : 0 }} transition={spring} />
+            </span>
           ))}
-          <div className="row-between">
-            <button className="btn" onClick={() => setStep(1)}>
-              Back
-            </button>
-            <button
-              className="btn primary"
-              onClick={() => {
-                dispatch({ type: 'onboard', name: name.trim(), handle: cleanHandle, location: location.trim(), artistIds: picked, followIds: following })
-                nav('/')
-              }}
-            >
-              Start ({following.length} following)
-            </button>
-          </div>
-        </>
-      )}
+        </div>
+      </div>
+
+      <AnimatePresence mode="wait" custom={dir} initial={false}>
+        <motion.section
+          key={step}
+          className="ob-body"
+          custom={dir}
+          initial={{ opacity: 0, x: dir * 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: dir * -40 }}
+          transition={spring}
+        >
+          {step === 0 && (
+            <>
+              <div className="ob-kicker">Step 1 · You</div>
+              <h1 className="ob-q">
+                Your fandom.
+                <br />
+                <span className="soft">All in one place.</span>
+              </h1>
+              <div className="ob-fields">
+                <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" aria-label="Display name" />
+                <input value={handle} onChange={(e) => setHandle(e.target.value)} placeholder="@handle" aria-label="Handle" />
+                <input value={location} onChange={(e) => setLocation(e.target.value)} placeholder="City (for local meetups)" aria-label="City" />
+              </div>
+              <p className="ob-note">Independent fan community — not affiliated with any artist.</p>
+            </>
+          )}
+          {step === 1 && (
+            <>
+              <div className="ob-kicker">Select all that apply</div>
+              <h1 className="ob-q">Who are you a fan of?</h1>
+              <div className="ob-pills">
+                {artists.map((a, i) => {
+                  const on = picked.includes(a.id)
+                  return (
+                    <motion.button
+                      key={a.id}
+                      className={on ? 'ob-pill on' : 'ob-pill'}
+                      style={{ ['--tint' as string]: a.color }}
+                      onClick={() => setPicked(on ? picked.filter((x) => x !== a.id) : [...picked, a.id])}
+                      whileTap={{ scale: 0.95 }}
+                      transition={springSnappy}
+                    >
+                      <span className="ob-num">{String(i + 1).padStart(2, '0')}</span>
+                      <span className="ob-name">{a.name}</span>
+                      <AnimatePresence>
+                        {on && (
+                          <motion.span className="ob-check" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }} transition={{ type: 'spring', bounce: 0.5, visualDuration: 0.3 }}>
+                            <IconCheck size={14} />
+                          </motion.span>
+                        )}
+                      </AnimatePresence>
+                    </motion.button>
+                  )
+                })}
+              </div>
+            </>
+          )}
+          {step === 2 && (
+            <>
+              <div className="ob-kicker">Starter pack</div>
+              <h1 className="ob-q">Fans worth following</h1>
+              <div className="ob-people">
+                {packUsers.map((id) => {
+                  const u = userById(id)
+                  const on = following.includes(id)
+                  return (
+                    <button key={id} className={on ? 'ob-person on' : 'ob-person'} onClick={() => setFollow(on ? following.filter((x) => x !== id) : [...following, id])}>
+                      <Avatar user={u} size={40} />
+                      <span className="grow">
+                        <strong>{u?.name}</strong>
+                        <span className="ob-bio">{u?.bio}</span>
+                      </span>
+                      <span className="ob-toggle">{on ? <IconCheck size={14} /> : '+'}</span>
+                    </button>
+                  )
+                })}
+              </div>
+            </>
+          )}
+        </motion.section>
+      </AnimatePresence>
+
+      <div className="ob-bar">
+        <button className="ob-skip" onClick={() => nav('/')}>
+          Skip
+        </button>
+        <button className="pill-btn light big" disabled={!canNext} onClick={() => (step < STEPS - 1 ? go(step + 1) : finish())}>
+          {step < STEPS - 1 ? 'Next' : `Start · ${following.length} following`} <span aria-hidden>›</span>
+        </button>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
@@ -7,8 +7,8 @@ import { Chat } from '../components/Chat'
 import { FeedList } from '../components/FeedList'
 import { ShareCardButton } from '../components/ShareCard'
 import { Avatar, Tabs } from '../components/ui'
-import { artistById, formatDate, isUpcoming } from '../lib/util'
-import { IconCheck, IconChevronLeft, IconPen } from '../components/icons'
+import { IconArrowLeft, IconCheck, IconPen } from '../components/icons'
+import { artistById, isUpcoming } from '../lib/util'
 
 const CROWD_LINES = ['Who’s near the front?', 'Meeting at the usual spot!', 'This setlist 😭', 'Anyone selling a spare? (official resale only pls)', 'Flying in tomorrow ✈️', 'Best night of my life', 'Did you see the outfit change?!']
 
@@ -21,6 +21,7 @@ export default function ConcertPage() {
   const concert = concerts.find((c) => c.id === concertId)
   const { state, dispatch, me } = useStore()
   const compose = useComposer()
+  const nav = useNavigate()
   const [tab, setTab] = useState<Tab>('posts')
   if (!concert || !me) return <Navigate to="/" replace />
 
@@ -30,80 +31,98 @@ export default function ConcertPage() {
   const mine = upcoming ? me.going.includes(concert.id) : me.attended.includes(concert.id)
   const posts = state.posts.filter((p) => p.concertId === concert.id && !p.replyTo).sort((a, b) => b.createdAt - a.createdAt)
   const crowd = attendees.filter((u) => u.id !== me.id).map((u) => u.id)
+  const d = new Date(concert.date + 'T12:00:00')
+  const days = Math.ceil((d.getTime() - Date.now()) / 86_400_000)
 
   return (
     <>
-      <header className="artist-hero" style={{ background: `linear-gradient(160deg, ${artist.color}55, transparent 70%)` }}>
-        <Link to={`/a/${artist.id}`} className="muted small">
-          <IconChevronLeft size={14} /> {artist.name}
-        </Link>
-        <h1>
-          {concert.city} {upcoming ? '' : `’${concert.date.slice(2, 4)}`}
-        </h1>
-        <p>
-          {concert.venue}, {concert.country} · {formatDate(concert.date)}
-          {upcoming && <span className="chip warn">demo date</span>}
-        </p>
-        <p className="muted small">{concert.tour}</p>
-        <div className="avatars-row">
-          {attendees.slice(0, 8).map((u) => (
-            <Avatar key={u.id} user={u} size={28} />
-          ))}
-          <span className="small">
-            <strong>{attendees.length}</strong> {upcoming ? 'going' : 'were there'}
-          </span>
+      <header className="hero-solid" style={{ ['--tint' as string]: artist.color }}>
+        <div className="hero-nav">
+          <button className="glass-circle" onClick={() => nav(-1)} aria-label="Back">
+            <IconArrowLeft size={18} />
+          </button>
+          <Link to={`/a/${artist.id}`} className="hero-tag">
+            {artist.name}
+          </Link>
         </div>
+        <div className="hero-kicker">{concert.tour}</div>
+        <h1 className="hero-city">{concert.city}</h1>
+        <div className="hero-meta">
+          <div>
+            <div className="bignum light">
+              {d.getDate()}
+              <small>{d.toLocaleDateString('en-GB', { month: 'short' })}</small>
+            </div>
+            <div className="hero-label">{d.getFullYear()} · {concert.venue}</div>
+          </div>
+          <div className="right">
+            <div className="bignum light">
+              {upcoming ? days : attendees.length}
+              <small>{upcoming ? 'days' : 'fans'}</small>
+            </div>
+            <div className="hero-label">{upcoming ? `${attendees.length} going` : 'were there'}</div>
+          </div>
+        </div>
+        {upcoming && <div className="hero-note">Demo date · meetups in public places only · tickets from official sellers, never via DMs</div>}
         <div className="hero-actions">
-          <button
-            className={mine ? 'btn active' : 'btn primary'}
-            onClick={() => dispatch({ type: upcoming ? 'toggleGoing' : 'toggleAttended', concertId: concert.id })}
-          >
+          <button className={mine ? 'pill-btn glass' : 'pill-btn light'} onClick={() => dispatch({ type: upcoming ? 'toggleGoing' : 'toggleAttended', concertId: concert.id })}>
             {mine && <IconCheck size={16} />}
             {upcoming ? (mine ? 'Going' : 'I’m going') : 'I was there'}
           </button>
-          <button className="btn" onClick={() => compose({ concertId: concert.id, artistId: artist.id })}>
-            <IconPen size={15} /> {upcoming ? 'Propose a meetup' : 'Share a memory'}
+          <button className="pill-btn glass" onClick={() => compose({ concertId: concert.id, artistId: artist.id })}>
+            <IconPen size={15} /> {upcoming ? 'Meetup' : 'Memory'}
           </button>
           {mine && (
             <ShareCardButton
-              label="Share card"
+              label="Share"
               color={artist.color}
               title={upcoming ? `I’m going to ${artist.name} in ${concert.city}` : `I was there: ${artist.name}, ${concert.city}`}
-              lines={[concert.venue, formatDate(concert.date), concert.tour, `@${me.handle}`]}
+              lines={[concert.venue, d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }), concert.tour, `@${me.handle}`]}
             />
           )}
         </div>
-        {upcoming && <p className="muted small">Meetups: public places only. Tickets: buy from official sellers — never via DMs.</p>}
       </header>
-      <div className="sticky">
+
+      <div className="section-head center">
         <Tabs<Tab>
           tabs={[
             { id: 'posts', label: upcoming ? 'Plans' : 'Memories' },
-            { id: 'chat', label: upcoming ? 'Group chat' : 'Live chat' },
+            { id: 'chat', label: 'Chat' },
             { id: 'setlist', label: 'Setlist' },
-            { id: 'people', label: upcoming ? 'Going' : 'Were there' },
+            { id: 'people', label: 'Fans' },
           ]}
           value={tab}
           onChange={setTab}
         />
       </div>
-      {tab === 'posts' && <FeedList items={posts.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet. Share the first one!" />}
-      {tab === 'chat' && <Chat room={`concert:${concert.id}`} crowd={crowd} lines={CROWD_LINES} />}
+      {tab === 'posts' && <FeedList items={posts.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet. Share the first one." />}
+      {tab === 'chat' && (
+        <div className="glass-card flush">
+          <Chat room={`concert:${concert.id}`} crowd={crowd} lines={CROWD_LINES} />
+        </div>
+      )}
       {tab === 'setlist' &&
         (concert.setlist.length ? (
-          <ol className="setlist">
-            {concert.setlist.map((s) => (
-              <li key={s}>{s}</li>
+          <ol className="glass-card numbered big">
+            {concert.setlist.map((s, i) => (
+              <li key={s}>
+                <span className="num">{String(i + 1).padStart(2, '0')}</span>
+                {s}
+              </li>
             ))}
           </ol>
         ) : (
-          <p className="empty">Setlist will appear after the show (sourced from fans, with links to the original source).</p>
+          <p className="empty">The setlist appears after the show, sourced by fans.</p>
         ))}
       {tab === 'people' && (
-        <div>
+        <div className="glass-card list">
           {attendees.map((u) => (
-            <Link key={u.id} to={`/u/${u.handle}`} className="list-row">
-              <Avatar user={u} size={36} /> <strong>{u.name}</strong> <span className="muted">@{u.handle} · {u.location}</span>
+            <Link key={u.id} to={`/u/${u.handle}`} className="row-item">
+              <Avatar user={u} size={40} />
+              <span className="grow">
+                <strong>{u.name}</strong>
+                <span className="muted small block">@{u.handle} · {u.location}</span>
+              </span>
             </Link>
           ))}
           {!attendees.length && <p className="empty">Nobody yet.</p>}

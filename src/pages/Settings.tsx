@@ -17,13 +17,14 @@ export default function Settings() {
 
   return (
     <>
-      <header className="page-head">
-        <h2>Settings</h2>
+      <header className="hello">
+        <div className="eyebrow">Settings</div>
+        <h1 className="display">Your <span className="display-strong">space</span></h1>
       </header>
       <section className="card">
         <h3>Your data</h3>
         <p className="muted small">Your posts, profile and likes belong to you. Download them any time.</p>
-        <button className="btn" onClick={download}>
+        <button className="pill-btn glass" onClick={download}>
           Export my data (JSON)
         </button>
       </section>
@@ -44,7 +45,7 @@ export default function Settings() {
           this prototype is demo data stored only in your browser. Future concert dates are fictional.
         </p>
         <button
-          className="btn danger"
+          className="pill-btn glass danger"
           onClick={() => {
             if (confirm('Reset the demo? This deletes your profile and posts from this browser and starts again as a guest.')) {
               dispatch({ type: 'reset', now: Date.now() })

@@ -36,63 +36,87 @@ export default function Profile() {
 
   return (
     <>
-      <header className="profile-head">
-        <div className="profile-banner" style={{ background: `linear-gradient(120deg, ${user.color}, #191926)` }} />
-        <div className="profile-top">
-          <Avatar user={user} size={88} />
-          {isMe ? (
-            <Link to="/settings" className="btn small">
-              Settings
-            </Link>
-          ) : (
-            <button className={follows ? 'btn' : 'btn primary'} onClick={() => dispatch({ type: 'follow', userId: user.id })}>
-              {follows ? 'Following' : 'Follow'}
-            </button>
-          )}
-        </div>
-        <h2>{user.name}</h2>
-        <div className="muted">@{user.handle}{user.location && <> · <IconPin size={13} /> {user.location}</>}</div>
-        {user.bio && <p>{user.bio}</p>}
-        <div className="stats">
-          <span><strong>{user.following.length}</strong> following</span>
-          <span><strong>{followers}</strong> followers</span>
-          <span><strong>{user.attended.length}</strong> shows</span>
-          <span><strong>{rated.length}</strong> albums rated</span>
-        </div>
-        <div className="fan-since">
-          {Object.entries(user.fanSince).map(([id, year]) => {
-            const a = artistById(id)
-            return a ? (
-              <Link key={id} to={`/a/${id}`} className="chip" style={{ borderColor: a.color }}>
-                <span className="dot" style={{ background: a.color }} /> {a.name} fan since {year}
+      <header className="prof">
+        <div className="prof-aura" style={{ ['--tint' as string]: user.color }} />
+        <div className="prof-top">
+          <Avatar user={user} size={96} />
+          <h1 className="prof-name">{user.name}</h1>
+          <div className="muted">
+            @{user.handle}
+            {user.location && <> · <IconPin size={13} /> {user.location}</>}
+          </div>
+          {user.bio && <p className="prof-bio">{user.bio}</p>}
+          <div className="hero-actions center">
+            {isMe ? (
+              <Link to="/settings" className="pill-btn glass">
+                Settings
               </Link>
-            ) : null
-          })}
+            ) : (
+              <button className={follows ? 'pill-btn glass' : 'pill-btn ink'} onClick={() => dispatch({ type: 'follow', userId: user.id })}>
+                {follows ? 'Following' : 'Follow'}
+              </button>
+            )}
+            {isMe && firstArtist && (
+              <ShareCardButton
+                label="Share passport"
+                color={user.color}
+                title={`${user.name}’s Fan Passport`}
+                lines={[
+                  ...Object.entries(user.fanSince).slice(0, 3).map(([id, y]) => `${artistById(id)?.name} fan since ${y}`),
+                  `${user.attended.length} shows · ${rated.length} albums rated`,
+                  `@${user.handle}`,
+                ]}
+              />
+            )}
+          </div>
         </div>
-        {user.top4.length > 0 && (
-          <div className="top4">
-            <div className="muted small">FAVOURITE ALBUMS</div>
+
+        <div className="stat-row">
+          <div>
+            <div className="bignum">{user.attended.length}</div>
+            <div className="hero-label">shows</div>
+          </div>
+          <div>
+            <div className="bignum">{rated.length}</div>
+            <div className="hero-label">ratings</div>
+          </div>
+          <div>
+            <div className="bignum">{followers}</div>
+            <div className="hero-label">followers</div>
+          </div>
+          <div>
+            <div className="bignum">{user.following.length}</div>
+            <div className="hero-label">following</div>
+          </div>
+        </div>
+
+        <div className="passport">
+          <div className="row-between">
+            <span className="dotmatrix">FAN PASSPORT</span>
+            <span className="muted small">No. {user.id.slice(-4).toUpperCase()}</span>
+          </div>
+          <div className="passport-rows">
+            {Object.entries(user.fanSince).map(([id, year]) => {
+              const a = artistById(id)
+              return a ? (
+                <Link key={id} to={`/a/${id}`} className="passport-row">
+                  <span className="dot" style={{ background: a.color }} />
+                  <span className="grow">{a.name}</span>
+                  <span className="muted">since</span> <b>{year}</b>
+                </Link>
+              ) : null
+            })}
+          </div>
+          {user.top4.length > 0 && (
             <div className="top4-row">
               {user.top4.map((id) => (
-                <AlbumCover key={id} album={albumById(id)} size={76} />
+                <AlbumCover key={id} album={albumById(id)} size={68} />
               ))}
             </div>
-          </div>
-        )}
-        {isMe && firstArtist && (
-          <ShareCardButton
-            label="Share my Fan Passport"
-            color={user.color}
-            title={`${user.name}’s Fan Passport`}
-            lines={[
-              ...Object.entries(user.fanSince).slice(0, 3).map(([id, y]) => `${artistById(id)?.name} fan since ${y}`),
-              `${user.attended.length} shows · ${rated.length} albums rated`,
-              `@${user.handle}`,
-            ]}
-          />
-        )}
+          )}
+        </div>
       </header>
-      <div className="sticky">
+      <div className="section-head center">
         <Tabs<Tab>
           tabs={[
             { id: 'posts', label: 'Posts' },
@@ -107,16 +131,16 @@ export default function Profile() {
       {tab === 'posts' && <FeedList items={posts.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
       {tab === 'likes' && <FeedList items={liked.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No likes yet." />}
       {tab === 'diary' && (
-        <div className="diary">
+        <div className="glass-card list">
           {!diary.length && <p className="empty">{isMe ? 'Mark shows with “I was there” and review albums to build your diary.' : 'Empty diary.'}</p>}
           {diary.map((d) =>
             d.kind === 'show' ? (
-              <Link key={d.key} to={`/c/${d.concert.id}`} className="diary-row">
+              <Link key={d.key} to={`/c/${d.concert.id}`} className="row-item">
                 <span className="diary-date">{formatDate(d.concert.date)}</span>
                 <span><IconTicket size={16} /> <strong>{artistById(d.concert.artistId)?.name}</strong> · {d.concert.city} · <span className="muted">{d.concert.venue}</span></span>
               </Link>
             ) : (
-              <Link key={d.key} to={`/p/${d.post.id}`} className="diary-row">
+              <Link key={d.key} to={`/p/${d.post.id}`} className="row-item">
                 <span className="diary-date">{new Date(d.post.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                 <span>
                   <IconDisc size={16} /> <strong>{albumById(d.post.review!.albumId)?.title}</strong> <Stars value={d.post.review!.rating} size={14} />
@@ -127,12 +151,12 @@ export default function Profile() {
         </div>
       )}
       {tab === 'ratings' && (
-        <div className="album-list">
+        <div className="glass-card list">
           {!rated.length && <p className="empty">No ratings yet.</p>}
           {rated.map(([id, r]) => {
             const al = albumById(id)
             return (
-              <div key={id} className="album-row">
+              <div key={id} className="row-item">
                 <AlbumCover album={al} size={48} />
                 <div className="grow">
                   <strong>{al?.title}</strong> <span className="muted">{artistById(al?.artistId)?.name} · {al?.year}</span>

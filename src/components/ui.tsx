@@ -166,17 +166,19 @@ export function Modal({ onClose, children, title }: { onClose: () => void; child
   )
 }
 
-// Segmented tabs with a sliding, spring-driven indicator.
+// Segmented control: a glass track with a solid pill that glides to the active option.
 export function Tabs<T extends string>({ tabs, value, onChange }: { tabs: { id: T; label: string }[]; value: T; onChange: (v: T) => void }) {
   const id = useId()
   return (
-    <div className="tabs" role="tablist">
-      {tabs.map((t) => (
-        <button key={t.id} role="tab" aria-selected={value === t.id} className={value === t.id ? 'tab active' : 'tab'} onClick={() => onChange(t.id)}>
-          <span className="tab-label">{t.label}</span>
-          {value === t.id && <motion.span layoutId={`tab-${id}`} className="tab-ind" transition={spring} />}
-        </button>
-      ))}
+    <div className="seg-wrap">
+      <div className="seg" role="tablist">
+        {tabs.map((t) => (
+          <button key={t.id} role="tab" aria-selected={value === t.id} className={value === t.id ? 'seg-btn active' : 'seg-btn'} onClick={() => onChange(t.id)}>
+            {value === t.id && <motion.span layoutId={`seg-${id}`} className="seg-pill" transition={spring} />}
+            <span className="seg-label">{t.label}</span>
+          </button>
+        ))}
+      </div>
     </div>
   )
 }
