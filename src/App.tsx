@@ -4,6 +4,7 @@ import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-route
 import { useStore } from './store/store'
 import { conversations } from './store/reducer'
 import { useComposer } from './components/Composer'
+import { useToast } from './components/Toast'
 import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
 import { starterPack } from './lib/packs'
@@ -82,10 +83,43 @@ function TopBar() {
   )
 }
 
+// Keep phones on the latest version: the app is a single page that is rarely
+// reloaded, so check for a newer build when you come back to it and every few minutes.
+function useAutoUpdate() {
+  const toast = useToast()
+  useEffect(() => {
+    const current = document.querySelector<HTMLScriptElement>('script[src*="/assets/index-"]')?.src.match(/index-[\w-]+\.js/)?.[0]
+    if (!current) return // dev server
+    let offered = false
+    const check = async (reloadNow: boolean) => {
+      try {
+        const html = await (await fetch(`${import.meta.env.BASE_URL}index.html?v=${Date.now()}`, { cache: 'no-store' })).text()
+        const latest = html.match(/index-[\w-]+\.js/)?.[0]
+        if (!latest || latest === current) return
+        if (reloadNow) return location.reload()
+        if (offered) return
+        offered = true
+        toast('A new version of Fandome is ready', { label: 'Refresh', onClick: () => location.reload() })
+      } catch {
+        // offline: try again later
+      }
+    }
+    const onVisible = () => document.visibilityState === 'visible' && check(true)
+    document.addEventListener('visibilitychange', onVisible)
+    const t = setInterval(() => document.visibilityState === 'visible' && check(false), 5 * 60_000)
+    void check(true)
+    return () => {
+      document.removeEventListener('visibilitychange', onVisible)
+      clearInterval(t)
+    }
+  }, [toast])
+}
+
 export default function App() {
   const { me, dispatch } = useStore()
   const compose = useComposer()
   const loc = useLocation()
+  useAutoUpdate()
 
   // New page starts at the top (keep position only for back/forward).
   useEffect(() => {
