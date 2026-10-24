@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { artists, concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
-import { AlbumCover, artistPhoto, Avatar, photoPos } from '../components/ui'
+import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
 import { discussedAlbums, tagFeed } from '../lib/feed'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
 import { albumById, artistById, formatDate, trending } from '../lib/util'
@@ -66,7 +66,7 @@ export default function Explore() {
             <div className="glass-card list">
               {rooms.map((a) => (
                 <Link key={a.id} to={`/a/${a.id}`} className="row-item">
-                  <span className="dot big" style={{ background: a.color }} />
+                  <ArtistDisc id={a.id} size={44} />
                   <span className="grow">
                     <strong>{a.name}</strong>
                     <span className="muted small block">Fan room · {a.tagline}</span>
@@ -112,7 +112,7 @@ export default function Explore() {
                 {suggestions.map(({ artist: a, reason }) => (
                   <div key={a.id} className="row-item">
                     <Link to={`/a/${a.id}`} className="suggest-link">
-                      <span className="dot big" style={{ background: a.color }} />
+                      <ArtistDisc id={a.id} size={44} />
                       <span className="grow">
                         <strong>{a.name}</strong>
                         <span className="muted small block">{reason}</span>
@@ -138,20 +138,37 @@ export default function Explore() {
                 <h2>Most discussed albums</h2>
                 <span className="muted small">{discussedWindow}</span>
               </div>
-              <div className="glass-card list discussed-list">
+              <div className="album-chart">
                 {discussed.map((d, i) => {
                   const al = albumById(d.albumId)
                   if (!al) return null
+                  const artist = artistById(al.artistId)
+                  const talking = `${d.people} ${d.people === 1 ? 'fan' : 'fans'} talking`
+                  if (i === 0)
+                    return (
+                      <Link key={al.id} to={`/album/${al.id}`} className="chart-top" style={{ ['--tint' as string]: artist?.color }}>
+                        <AlbumCover album={al} size={112} />
+                        <span className="chart-top-info">
+                          <span className="dotmatrix chart-rank">01</span>
+                          <strong className="chart-top-title">{al.title}</strong>
+                          <span className="chart-artist">
+                            <ArtistDisc id={al.artistId} size={20} /> {artist?.name}
+                          </span>
+                          <span className="chart-talk">{talking}</span>
+                        </span>
+                      </Link>
+                    )
                   return (
-                    <Link key={al.id} to={`/album/${al.id}`} className="row-item">
-                      <span className="num muted small">{String(i + 1).padStart(2, '0')}</span>
-                      <AlbumCover album={al} size={44} />
-                      <span className="grow">
+                    <Link key={al.id} to={`/album/${al.id}`} className="chart-row">
+                      <span className="chart-num">{i + 1}</span>
+                      <AlbumCover album={al} size={52} />
+                      <span className="grow chart-row-info">
                         <strong>{al.title}</strong>
                         <span className="muted small block">
-                          {artistById(al.artistId)?.name} · {d.people} {d.people === 1 ? 'fan' : 'fans'} talking
+                          {artist?.name} · {talking}
                         </span>
                       </span>
+                      <IconArrowUpRight size={16} />
                     </Link>
                   )
                 })}

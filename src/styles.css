@@ -151,7 +151,10 @@ textarea { resize: none; }
 .glass-circle:active { transform: scale(0.92); }
 .row-item { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 18px; transition: background 0.2s; }
 a.row-item:hover { background: var(--glass-strong); }
-.row-item + .row-item { box-shadow: 0 -1px 0 var(--glass-line); }
+/* Straight hairline between rows (a shadow on rounded rows drew boxes inside the card). */
+.row-item { position: relative; }
+.row-item + .row-item::before { content: ''; position: absolute; top: 0; left: 14px; right: 14px; height: 1px; background: var(--glass-line); }
+a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .icon-bubble { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--glass-strong); flex-shrink: 0; }
 .soft-chip { font-size: 12.5px; padding: 4px 10px; border-radius: 999px; background: var(--glass-strong); color: var(--text-2); white-space: nowrap; }
 .stack { display: flex; align-items: center; }
@@ -1250,7 +1253,25 @@ body.story-open .modal-root { z-index: 100; }
 .album-hero-artist { display: inline-flex; align-items: center; gap: 8px; margin: 6px 0 4px; color: var(--text); font-weight: 500; text-decoration: none; }
 
 /* Explore: most discussed albums */
-.discussed-list .row-item .cover span { display: none; }
-.discussed-list .row-item .cover { border-radius: 10px; flex-shrink: 0; }
 .artist-picked .pick.on::after { content: none; }
 .site-footer .manifesto p + p { margin-top: 8px; }
+
+/* Most discussed albums: a chart, #1 featured */
+.album-chart { display: flex; flex-direction: column; margin: 4px 0 8px; }
+.chart-top { --tint: var(--accent); position: relative; overflow: hidden; display: flex; align-items: center; gap: 18px; padding: 18px; border-radius: var(--r); color: var(--text); text-decoration: none; background: linear-gradient(135deg, color-mix(in srgb, var(--tint) 22%, var(--glass-strong)), var(--glass)); border: 1px solid var(--glass-edge); box-shadow: var(--shadow); margin-bottom: 6px; transition: transform 0.15s ease-out; }
+.chart-top:active { transform: scale(0.985); }
+.chart-top .cover { border-radius: 16px; flex-shrink: 0; box-shadow: 0 16px 30px -14px color-mix(in srgb, var(--tint) 80%, transparent); }
+.chart-top .cover span { display: none; }
+.chart-top-info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.chart-rank { font-size: 13px; color: var(--tint); filter: saturate(1.2) brightness(0.85); }
+.chart-top-title { font-size: 22px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; }
+.chart-artist { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; color: var(--text-2); }
+.chart-talk { font-size: 12.5px; color: var(--muted); }
+.chart-row { position: relative; display: flex; align-items: center; gap: 14px; padding: 12px 4px; color: var(--text); text-decoration: none; }
+.chart-row + .chart-row::before { content: ''; position: absolute; top: 0; left: 52px; right: 4px; height: 1px; background: var(--glass-line); }
+.chart-num { width: 34px; flex-shrink: 0; text-align: center; font-size: 34px; font-weight: 200; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }
+.chart-row .cover { border-radius: 10px; flex-shrink: 0; box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
+.chart-row .cover span { display: none; }
+.chart-row-info { min-width: 0; }
+.chart-row-info strong { display: block; font-weight: 500; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chart-row > svg { color: var(--muted); flex-shrink: 0; }
