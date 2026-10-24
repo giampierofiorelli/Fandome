@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { artists, concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
-import { artistPhoto, Avatar } from '../components/ui'
+import { artistPhoto, Avatar, photoPos } from '../components/ui'
 import { tagFeed } from '../lib/feed'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
 import { artistById, formatDate, trending } from '../lib/util'
@@ -146,7 +146,7 @@ export default function Explore() {
           <div className="room-grid">
             {shownRooms.map((a) => (
               <Link key={a.id} to={`/a/${a.id}`} className="room-tile" style={{ ['--tint' as string]: a.color }}>
-                {artistPhoto(a.id) && <img className="room-photo" src={artistPhoto(a.id)!.url} alt="" loading="lazy" decoding="async" />}
+                {artistPhoto(a.id) && <img className="room-photo" src={artistPhoto(a.id)!.url} alt="" loading="lazy" decoding="async" style={{ objectPosition: photoPos(artistPhoto(a.id)) }} />}
                 <span className="room-name">{a.name}</span>
                 <span className="room-sub">{a.tagline}</span>
                 <span className="room-go">

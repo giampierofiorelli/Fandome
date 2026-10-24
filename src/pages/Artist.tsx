@@ -7,7 +7,7 @@ import { starterPack } from '../lib/packs'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
-import { AlbumCover, artistPhoto, Avatar, PhotoCredit, Tabs } from '../components/ui'
+import { AlbumCover, artistPhoto, Avatar, PhotoCredit, photoPos, Tabs } from '../components/ui'
 import { AnimatePresence, motion } from 'motion/react'
 import { useToast } from '../components/Toast'
 import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
@@ -46,7 +46,7 @@ export default function ArtistPage() {
   return (
     <>
       <header className="hero-soft" style={{ ['--tint' as string]: artist.color }}>
-        {artistPhoto(artist.id) && <img className="hero-artist-photo" src={artistPhoto(artist.id)!.url} alt={artist.name} />}
+        {artistPhoto(artist.id) && <img className="hero-artist-photo" src={artistPhoto(artist.id)!.url} alt={artist.name} style={{ objectPosition: photoPos(artistPhoto(artist.id)) }} />}
         <div className="hero-kicker">Fan room · independent</div>
         <h1 className="hero-name">{artist.name}</h1>
         <p className="hero-tagline">{artist.tagline}</p>

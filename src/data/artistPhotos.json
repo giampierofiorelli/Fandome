@@ -1,10 +1,8 @@
 {
  "madonna": {
   "src": "artists/madonna.jpg",
-  "author": "Raph_PH",
-  "license": "CC BY 2.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:MadonnaO2171023_(97_of_133)_(53269593787)_(cropped).jpg"
+  "position": "top",
+  "provided": true
  },
  "kylie": {
   "src": "artists/kylie.jpg",

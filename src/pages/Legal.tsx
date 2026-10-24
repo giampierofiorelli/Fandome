@@ -147,7 +147,7 @@ export function LegalNotice() {
       </p>
       <ul className="photo-credits">
         {artists
-          .filter((a) => artistPhoto(a.id))
+          .filter((a) => artistPhoto(a.id) && !artistPhoto(a.id)!.provided)
           .map((a) => (
             <li key={a.id}>
               <strong>{a.name}</strong> <PhotoCredit id={a.id} />

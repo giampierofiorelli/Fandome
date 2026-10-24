@@ -240,11 +240,15 @@ export const LANG_NAMES: Record<string, string> = { it: 'Italian', es: 'Spanish'
 // Freely licensed artist photos (Wikimedia Commons), stored with the site: no third-party request.
 export interface ArtistPhotoInfo {
   src: string
-  author: string
-  license: string
+  author?: string // Commons photos only
+  license?: string
   licenseUrl?: string
-  sourceUrl: string
+  sourceUrl?: string
+  position?: 'top' // crop from the top (face high in the picture)
+  provided?: boolean // chosen by the site owner (official image, no Commons credit)
 }
+// object-position for a photo shown with object-fit: cover
+export const photoPos = (p: ArtistPhotoInfo | null) => (p?.position === 'top' ? 'center top' : undefined)
 export function artistPhoto(id: string): (ArtistPhotoInfo & { url: string }) | null {
   const p = (photos as Record<string, ArtistPhotoInfo>)[id]
   return p ? { ...p, url: `${import.meta.env.BASE_URL}${p.src}` } : null
@@ -253,7 +257,7 @@ export function artistPhoto(id: string): (ArtistPhotoInfo & { url: string }) | n
 // "Photo: author · CC BY-SA 4.0" with links to the file page and the licence (required by CC licences).
 export function PhotoCredit({ id, className }: { id: string; className?: string }) {
   const p = artistPhoto(id)
-  if (!p) return null
+  if (!p || p.provided || !p.author || !p.sourceUrl) return null
   return (
     <p className={className ? `photo-credit ${className}` : 'photo-credit'}>
       Photo:{' '}
@@ -280,7 +284,7 @@ export function ArtistDisc({ id, size = 22 }: { id: string; size?: number }) {
   if (photo)
     return (
       <span className="artist-disc photo" style={{ ['--c' as string]: a.color, width: size, height: size }} aria-hidden>
-        <img src={photo.url} alt="" loading="lazy" decoding="async" />
+        <img src={photo.url} alt="" loading="lazy" decoding="async" style={{ objectPosition: photoPos(photo) }} />
       </span>
     )
   return (
