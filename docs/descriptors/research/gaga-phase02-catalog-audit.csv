@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+gaga-cheektocheek,Lady Gaga,Cheek to Cheek,2014,not_in_catalog,gaga-cheektocheek,"Add a catalogue album; jointly credited to Tony Bennett and Lady Gaga, Lady Gaga room owner","Original 2014 standard album, not 16-track deluxe"
+gaga-joanne,Lady Gaga,Joanne,2016,not_in_catalog,gaga-joanne,Add a catalogue album for 2016 11-track standard version,Exclude deluxe bonus song Angel Down (Work Tape); RedOne works there
+gaga-astarisborn,Lady Gaga,A Star Is Born,2018,not_in_catalog,gaga-astarisborn,Add 2018 soundtrack; actual album has Bradley Cooper co-artist and film dialogue,Original 34-track release with dialogue; avoid assigning authors as producers
+g-chromatica,Lady Gaga,Chromatica,2020,already_in_seed,g-chromatica,Preserve exact existing seed.ts ID rather than regenerate,"Original 2020 16-track studio album, 3 orchestral interludes"

@@ -43,4 +43,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   altcountry: ['country', 'alt'], electrogaze: ['electronic', 'shoegaze'], electropunk: ['electronic', 'punk'], gothicamericana: ['rock', 'folk'], indieelectronic: ['indie', 'electronic'], krautrock: ['rock', 'experimental'], neoambient: ['ambient'], postgoth: ['postpunk', 'darkwave'], slowcore: ['indie', 'rock'],
   indiedance: ['dance', 'indie'], noiserock: ['rock'], spacerock: ['rock'], psychedelicrock: ['rock'],
   electrodisco: ['disco', 'electronic'], glamrock: ['rock'], hinrg: ['dance', 'disco'], technopop: ['electronic', 'pop'], eurodisco: ['disco'], postindustrial: ['industrial'], complextro: ['electrohouse', 'electronic'], melodicdubstep: ['dubstep'],
+  americana: ['country', 'folk', 'rock'], bigband: ['jazz'], bluesrock: ['blues', 'rock'], countryrock: ['country', 'rock'], eurohouse: ['house', 'eurodance'], pianorock: ['rock', 'pop'], swing: ['jazz'], traditionalpop: ['pop', 'jazz'], vocaljazz: ['jazz'],
 }

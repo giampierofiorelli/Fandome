@@ -1,0 +1,50 @@
+album_id,genre,scope,source_keys,evidence,strength
+gaga-cheektocheek,jazz,whole album,C_GAGA|C_GUARD|C_PBS,The complete repertoire consists of jazz readings of American standards,high
+gaga-cheektocheek,vocaljazz,whole album,C_APPLE|C_AOTY,Apple Music classifies the release Vocal Jazz; album centred on two vocalists,high
+gaga-cheektocheek,swing,substantial,C_GUARD|C_HARP,Multiple upbeat swinging arrangements are balanced by slower ballads,high
+gaga-cheektocheek,bigband,substantial,C_AOTY|C_QOBUZ,Big Band explicit taxonomy; arranged brass and rhythm-band accompaniment,medium
+gaga-cheektocheek,traditionalpop,whole album,C_MET|C_GAGA,Metacritic traditional pop; American songbook classics dominate,medium
+gaga-cheektocheek,pop,album-level taxonomy,C_MET|C_AOTY,Pop here refers to historical vocal-pop/standards rather than synth-driven contemporary pop,medium
+gaga-joanne,poprock,whole album,J_AOTY|J_GUARD|J_GRAMMY,Pop melodies with predominantly rock-band and piano arrangements,high
+gaga-joanne,pop,whole album,J_GAGA|J_AM,Gaga’s songwriting remains pop-focused in the stripped-back production,high
+gaga-joanne,country,substantial,J_GAGA|J_PF|J_GUARD,"Country inflections and ballads, not a uniform country album",high
+gaga-joanne,folk,substantial,J_GAGA|J_APPLE|J_PF,Acoustic folk arrangements notably on the title song,high
+gaga-joanne,rock,substantial,J_GAGA|J_PF|J_APPLE,Guitar-driven tracks including Diamond Heart and Perfect Illusion,high
+gaga-joanne,countrypop,substantial,J_AOTY|J_GUARD,"Country-pop and country-ballad descriptions, especially Million Reasons",medium
+gaga-joanne,dancepop,substantial,J_AM|J_AOTY,AllMusic stresses residual club/dance-pop core despite acoustic transition,high
+gaga-joanne,softrock,substantial,J_GRAMMY|J_APPLE,Soft-rock guitar-based arrangements in introspective ballads,medium
+gaga-joanne,blues,track subset,J_GUARD,A-Yo explicitly described as chugging blues,high
+gaga-joanne,soul,substantial,J_AM|J_GUARD2|J_NMEREV,Guardian directly describes soul roots; NME calls Hey Girl soul-funk,high
+gaga-joanne,indierock,track subset,J_PF,Pitchfork identifies indie-rock collaboration moments,medium
+gaga-joanne,pianorock,track subset,J_AOTY|J_PF,"Piano-led power ballad and rock-pop approach, taxonomy label",medium
+gaga-joanne,alt,album-level taxonomy,J_PLUG,"Alternative is one independent review category, weakly precise",low
+gaga-joanne,americana,album-context,J_GRAMMY,Recording Academy describes Americana-style production and country narratives,medium
+gaga-joanne,funk,track subset,J_NMEREV,NME describes Hey Girl explicitly as soul-funk,high
+gaga-joanne,latin,track subset,J_NMEREV,NME describes Dancin in Circles as a Latin-number track,high
+gaga-astarisborn,soundtrack,whole album,S_UMG|S_PF,Official music and dialogue album tied to the 2018 feature film,high
+gaga-astarisborn,rock,substantial,S_PF|S_AM,Bradley Cooper band performances anchor the first act,high
+gaga-astarisborn,pop,substantial,S_PF|S_AM,Gaga later adopts straight pop arrangements to trace Ally’s rise,high
+gaga-astarisborn,countryrock,substantial,S_PF|S_APPLE|S_AM,Cooper/Nelson-led country-rock and guitar duets,high
+gaga-astarisborn,bluesrock,track subset,S_PF|S_AM,Pitchfork specifically describes blues-rock performances,high
+gaga-astarisborn,folk,substantial,S_PF|S_TIME,Acoustic songwriter-led ballads across narrative,medium
+gaga-astarisborn,americana,substantial,S_AM|S_APPLE,AllMusic explicitly classifies Americana and roots-rock passages,high
+gaga-astarisborn,poprock,substantial,S_AM|S_PF,Contemporary pop-rock and guitar-led pop drama,medium
+gaga-astarisborn,country,substantial,S_PF|S_APPLE,Country influences in Jackson’s material and duets,medium
+gaga-astarisborn,blues,track subset,S_PF|S_AM,Blues idioms in Cooper’s rougher rock songs,medium
+gaga-astarisborn,electropop,track subset,S_PF,Later Ally performances are explicitly electro-pop,high
+gaga-astarisborn,dancepop,track subset,S_AM,AllMusic classifies dance-pop as part of the soundtrack,medium
+gaga-astarisborn,disco,track subset,S_AM,Why Did You Do That? is described as retro-disco,high
+gaga-astarisborn,soul,track subset,S_AM,Heal Me is described as soulful,medium
+gaga-astarisborn,synthpop,track subset,S_TIME,TIME identifies synth-pop material on soundtrack,medium
+g-chromatica,dancepop,whole album,H_PF|H_NME,Dance-pop song structure across nearly all non-interlude tracks,high
+g-chromatica,house,whole album,H_PF|H_GUARD|H_DK,"Strong, sustained 1990s house revival is dominant dance vocabulary",high
+g-chromatica,pop,whole album,H_PF|H_GUARD,Memorable pop songwriting and featured pop vocalists,high
+g-chromatica,electronic,whole album,H_UMG|H_PF,Majority electronic synth and programmed-drum productions,high
+g-chromatica,dance,whole album,H_GUARD|H_DK,Repeated club-tempo tracks and explicit dance-album descriptions,high
+g-chromatica,electropop,substantial,H_NME|H_SLANT,NME explicitly labels Stupid Love electro-pop and reviews electro-pop base,high
+g-chromatica,eurodance,substantial,H_DK,Soundvenue review locates most songs in 1990s eurodance vocabulary,medium
+g-chromatica,eurohouse,track subset,H_SLANT,Free Woman explicitly labelled Eurohouse,high
+g-chromatica,synthpop,track subset,H_NME,Rain on Me is described using synth-pop instrumentation,high
+g-chromatica,disco,track subset,H_NME|H_SLANT,NME identifies disco beat accents; Slant draws disco parallels,medium
+g-chromatica,edm,stylistic subset,H_DK,Information discusses 2010s EDM alongside 1990s dance influences,medium
+g-chromatica,drumandbass,track subset,H_PF|H_SLANT,Sine From Above closes with a drum-and-bass coda,high
