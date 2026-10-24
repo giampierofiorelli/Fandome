@@ -15,6 +15,7 @@ export type Genre =
   | 'footwork' | 'garage' | 'neorave' | 'gothtrap' | 'avantpop' | 'bubblegumbass'
   | 'clubpop' | 'wonkypop' | 'leftfieldpop' | 'popfunk' | 'electrofunk' | 'dreampop' | 'nudisco' | 'futurepop' | 'indiepop'
   | 'electroclash' | 'bloghouse' | 'pianohouse' | 'trance'
+  | 'indierock' | 'slackerrock' | 'indietronica' | 'postpunkrevival' | 'alternativedance'
 
 export interface ArtistScene {
   country: string
@@ -152,6 +153,7 @@ export const GENRE_LABELS: Record<Genre, string> = {
   industrial: 'Industrial', eurotrance: 'Eurotrance', grime: 'Grime', footwork: 'Footwork', garage: 'Garage', neorave: 'Neo-rave', gothtrap: 'Goth trap', avantpop: 'Avant-pop', bubblegumbass: 'Bubblegum bass',
   clubpop: 'Club pop', wonkypop: 'Wonky pop', leftfieldpop: 'Left-field pop', popfunk: 'Pop-funk', electrofunk: 'Electro-funk', dreampop: 'Dream pop',
   nudisco: 'Nu-disco', futurepop: 'Futurepop', indiepop: 'Indie pop', electroclash: 'Electroclash', bloghouse: 'Bloghouse', pianohouse: 'Piano house', trance: 'Trance',
+  indierock: 'Indie rock', slackerrock: 'Slacker rock', indietronica: 'Indietronica', postpunkrevival: 'Post-punk revival', alternativedance: 'Alternative dance',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
