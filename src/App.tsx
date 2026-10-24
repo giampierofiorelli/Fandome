@@ -6,7 +6,7 @@ import { conversations } from './store/reducer'
 import { useComposer } from './components/Composer'
 import { useToast } from './components/Toast'
 import { DiscoLogo } from './components/DiscoLogo'
-import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
+import { IconGlobe, IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
 import { starterPack } from './lib/packs'
 import { spring } from './lib/motion'
@@ -21,6 +21,8 @@ import AlbumPage from './pages/Album'
 import StarterPackPage from './pages/StarterPack'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
+import ScenesPage from './pages/Scenes'
+import ScenePage from './pages/Scene'
 import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
 import Invite from './pages/Invite'
@@ -193,6 +195,8 @@ export default function App() {
           <Routes location={loc}>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/scenes" element={<ScenesPage />} />
+            <Route path="/scenes/:sceneId" element={<ScenePage />} />
             <Route path="/a/:artistId" element={<ArtistPage />} />
             <Route path="/c/:concertId" element={<ConcertPage />} />
             <Route path="/u/:handle" element={<Profile />} />
@@ -224,6 +228,7 @@ export default function App() {
         <motion.button className="tabbar-plus" onClick={() => compose()} aria-label="New post" whileTap={{ scale: 0.88 }} transition={spring}>
           <IconPlus size={22} />
         </motion.button>
+        <Tab to="/scenes" icon={<IconGlobe size={22} />} label="Scenes" />
         <Tab to="/party/party-confessions" icon={<IconHeadphones size={22} />} label="Listening party" />
         {me && <Tab to={`/u/${me.handle}`} icon={<IconUser size={22} />} label="Profile" />}
       </nav>

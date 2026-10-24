@@ -1,0 +1,256 @@
+// Scenes section (docs/scenes-design.md): a Duolingo-like path through a country's scene and a
+// knowledge level. Everything is computed on the device from what you did: follows, album ratings,
+// "New to me", "I listened" and posts. No streaks, no points for time, progress never goes down.
+import type { Album, Artist, Post, User } from '../data/types'
+import { GENRE_LABELS, SCENES, isLocalArtist, type Genre } from '../data/scenes'
+import { GENRE_PARENTS } from '../data/genreFamilies'
+import { genreListSimilarity, similarArtists } from './similar'
+import { DESCRIPTORS } from './descriptors'
+import { postArtists } from './postArtists'
+
+export interface SceneDef {
+  id: string
+  name: string
+  countries: string[]
+  language: string
+  ready: boolean // enough artists and eras to build a good path
+  intro: string
+}
+
+// The owner's plan: these scenes first (others, "Surprise me" and genres later).
+export const SCENE_DEFS: SceneDef[] = [
+  { id: 'italy', name: 'Italy', countries: ['IT'], language: 'Italian', ready: true, intro: 'From Sanremo and the cantautori to Italo disco, rap and today’s pop.' },
+  { id: 'brazil', name: 'Brazil', countries: ['BR'], language: 'Portuguese', ready: false, intro: 'Sertanejo, Brazilian funk, pagode, forró and MPB.' },
+  { id: 'latin', name: 'Spain and Latin America', countries: ['ES', 'MX', 'CO', 'AR', 'PR', 'CL', 'PE', 'VE', 'CU', 'DO', 'UY', 'EC', 'PA', 'GT'], language: 'Spanish', ready: false, intro: 'Reggaeton, Latin pop and new Spanish pop.' },
+  { id: 'france', name: 'France', countries: ['FR', 'BE', 'CH'], language: 'French', ready: false, intro: 'Chanson, French touch and one of Europe’s biggest rap scenes.' },
+  { id: 'afro', name: 'Afro', countries: ['NG', 'ZA', 'GH'], language: 'English, Pidgin, Yoruba, Zulu…', ready: false, intro: 'Afrobeats and the sounds of West and South Africa.' },
+  { id: 'korea', name: 'Korea', countries: ['KR'], language: 'Korean', ready: false, intro: 'K-pop and beyond: Korean R&B, indie and hip-hop.' },
+]
+export const sceneDef = (id?: string) => SCENE_DEFS.find((s) => s.id === id)
+
+// Sub-scenes: an artist belongs to the first group its main genre (or a parent of it) falls in.
+const GROUPS: { id: string; label: string; roots: string[] }[] = [
+  { id: 'songwriter', label: 'Singer-songwriters', roots: ['songwriter'] },
+  { id: 'rock', label: 'Rock and alternative', roots: ['rock'] },
+  { id: 'urban', label: 'Rap, R&B and urban', roots: ['hiphop', 'rnb'] },
+  { id: 'dance', label: 'Dance and electronic', roots: ['dance', 'electronic'] },
+  { id: 'classical', label: 'Opera and classical', roots: ['classical'] },
+  { id: 'roots', label: 'Folk and roots', roots: ['folk', 'latin', 'afro', 'country', 'reggae', 'jazz'] },
+  { id: 'pop', label: 'Pop', roots: ['pop', 'kpop'] }, // not a unit of its own: pop is everywhere
+]
+function withParents(g: string) {
+  const out = new Set([g])
+  let level = [g]
+  for (let i = 0; i < 3; i++) {
+    level = level.flatMap((x) => GENRE_PARENTS[x as Genre] ?? [])
+    level.forEach((x) => out.add(x))
+  }
+  return out
+}
+export function groupOf(artistId: string) {
+  const main = SCENES[artistId]?.genres[0]
+  if (!main) return undefined
+  const fam = withParents(main)
+  return GROUPS.find((g) => g.roots.some((r) => fam.has(r)))?.id
+}
+
+const label = (g: string) => GENRE_LABELS[g as Genre]?.toLowerCase() ?? g
+const and = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`)
+
+export interface Step {
+  artistId: string
+  reason: string
+  done: boolean
+}
+export interface Unit {
+  id: string
+  kicker: string
+  title: string
+  steps: Step[]
+}
+export interface Level {
+  n: number
+  name: string
+  text: string
+  next?: string // what is missing for the next level
+}
+export interface Skill {
+  label: string
+  value: number
+  total: number
+}
+export interface ScenePath {
+  def: SceneDef
+  artistIds: string[]
+  decades: number[]
+  units: Unit[]
+  level: Level
+  skills: Skill[]
+}
+
+export const LEVEL_NAMES = ['Curious', 'Listener', 'Explorer', 'Connoisseur', 'Insider', 'Ambassador']
+
+export interface SceneContext {
+  me?: User | null
+  users: User[]
+  posts: Post[]
+  artists: Artist[]
+  albums: Album[]
+}
+
+// Artists of a scene you have already explored: followed, an album rated, "New to me" or "I listened".
+export function exploredArtists(me: User | null | undefined, albums: Album[]): Set<string> {
+  const out = new Set<string>()
+  if (!me) return out
+  Object.keys(me.fanSince).forEach((id) => out.add(id))
+  ;(me.listened ?? []).forEach((id) => out.add(id))
+  const artistOfAlbum = new Map(albums.map((a) => [a.id, a.artistId]))
+  for (const id of me.discovered ?? []) out.add(artistOfAlbum.get(id) ?? id)
+  for (const id of Object.keys(me.ratings ?? {})) {
+    const a = artistOfAlbum.get(id)
+    if (a) out.add(a)
+  }
+  return out
+}
+
+export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null {
+  const def = sceneDef(sceneId)
+  if (!def) return null
+  const { me, users, posts, albums } = ctx
+  const ids = ctx.artists.map((a) => a.id).filter((id) => SCENES[id] && def.countries.includes(SCENES[id].country) && isLocalArtist(id))
+  const name = (id: string) => ctx.artists.find((a) => a.id === id)?.name ?? id
+  const fans = (id: string) => users.filter((u) => u.fanSince[id]).length
+  const explored = exploredArtists(me, albums)
+
+  // Closeness to you: the closest artist you follow (any country), by scene genres with families.
+  const mine = me ? Object.keys(me.fanSince).filter((id) => SCENES[id]) : []
+  const closeness = new Map<string, { score: number; to?: string }>()
+  for (const id of ids) {
+    let best = { score: 0, to: undefined as string | undefined }
+    for (const f of mine) {
+      if (f === id) continue
+      const s = genreListSimilarity(SCENES[f].genres, SCENES[id].genres)
+      if (s > best.score) best = { score: s, to: f }
+    }
+    closeness.set(id, best)
+  }
+
+  // Richer reasons where album descriptors exist on both sides (same producer, influences…).
+  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+  const described = (id: string) => albumIdsOf(id).some((x) => DESCRIPTORS[x])
+  const rich = new Map<string, { reason: string; score: number }>()
+  for (const f of mine.filter(described)) {
+    for (const s of similarArtists(f, albumIdsOf, ids.filter(described), { limit: 20 })) if (!rich.has(s.artistId) || rich.get(s.artistId)!.score < s.score) rich.set(s.artistId, { reason: s.reason, score: s.score })
+  }
+  // Album-level resemblance is stronger evidence than sharing a broad genre like pop.
+  for (const [id, r] of rich) closeness.set(id, { ...closeness.get(id)!, score: Math.max(closeness.get(id)!.score, r.score + 0.3) })
+  const own = (id: string) => `${SCENES[id].since}s · ${and(SCENES[id].genres.map(label))}`
+  const reasonClose = (id: string) => {
+    if (rich.has(id)) return rich.get(id)!.reason
+    const c = closeness.get(id)!
+    if (!c.to) return own(id)
+    // Sharing only "pop" says nothing: then describe the artist instead.
+    const common = SCENES[id].genres.filter((g) => SCENES[c.to!].genres.includes(g) && g !== 'pop')
+    return common.length ? `Close to ${name(c.to)}: ${and(common.map(label))}` : own(id)
+  }
+  const reasonStretch = (id: string) => `A step further: ${and(SCENES[id].genres.map(label))}`
+
+  // Inside a unit: two close to your taste, then one a step further (familiar enough to like,
+  // new enough to be interesting), and so on.
+  const order = (pool: string[], n: number): Step[] => {
+    const sorted = [...pool].sort((a, b) => closeness.get(b)!.score - closeness.get(a)!.score || fans(b) - fans(a) || name(a).localeCompare(name(b)))
+    if (!mine.length) return sorted.slice(0, n).map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id) }))
+    const half = Math.ceil(sorted.length / 2)
+    const close = sorted.slice(0, half)
+    const further = sorted.slice(half)
+    const out: Step[] = []
+    while (out.length < n && (close.length || further.length)) {
+      const stretch = out.length % 3 === 2
+      const id = (stretch ? further.shift() : close.shift()) ?? (stretch ? close.shift() : further.shift())
+      if (!id) break
+      out.push({ artistId: id, reason: stretch ? reasonStretch(id) : reasonClose(id), done: explored.has(id) })
+    }
+    return out
+  }
+
+  const units: Unit[] = []
+  // 1. Start here: the closest artists you don't follow yet (or the most followed, if you follow nobody).
+  const notMine = ids.filter((id) => !me?.fanSince[id])
+  const start = mine.length
+    ? [...notMine].sort((a, b) => closeness.get(b)!.score - closeness.get(a)!.score).slice(0, 3)
+    : [...notMine].sort((a, b) => fans(b) - fans(a) || name(a).localeCompare(name(b))).slice(0, 3)
+  units.push({ id: 'start', kicker: 'Unit 1', title: 'Start here', steps: start.map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id) })) })
+  // 2. Now: artists who started in the 2010s or later.
+  const now = ids.filter((id) => SCENES[id].since >= 2010)
+  if (now.length >= 3) units.push({ id: 'now', kicker: `Unit ${units.length + 1}`, title: 'Now', steps: order(now, 6) })
+  // 3. Eras: one unit per decade before 2010.
+  const decades = [...new Set(ids.map((id) => SCENES[id].since))].sort((a, b) => a - b)
+  for (const d of decades.filter((d) => d < 2010)) {
+    const pool = ids.filter((id) => SCENES[id].since === d)
+    if (pool.length >= 2) units.push({ id: `era-${d}`, kicker: `Unit ${units.length + 1} · Eras`, title: `The ${d}s`, steps: order(pool, 6) })
+  }
+  // 4. Sub-scenes.
+  const groupsHere = GROUPS.filter((g) => g.id !== 'pop' && ids.filter((id) => groupOf(id) === g.id).length >= 3)
+  for (const g of groupsHere) units.push({ id: `group-${g.id}`, kicker: `Unit ${units.length + 1} · Sub-scenes`, title: g.label, steps: order(ids.filter((id) => groupOf(id) === g.id), 6) })
+  // 5. Deep cuts: the least known artists of the scene (the long tail). Until we have real popularity
+  //    data, "known" = fans on Fandome, then albums in the catalogue and album descriptions.
+  const fame = (id: string) => fans(id) * 10 + albumIdsOf(id).length + (described(id) ? 5 : 0)
+  const deepSet = [...ids].sort((a, b) => fame(a) - fame(b) || name(a).localeCompare(name(b))).slice(0, Math.max(5, Math.floor(ids.length / 5)))
+  units.push({ id: 'deep', kicker: `Unit ${units.length + 1}`, title: 'Deep cuts', steps: order(deepSet, 5).map((s) => ({ ...s, reason: `Less known · ${s.reason}` })) })
+
+  // Level: what you explored in this scene (every scene artist counts, not only the ones shown).
+  const done = ids.filter((id) => explored.has(id))
+  const eras = new Set(done.map((id) => SCENES[id].since))
+  const groups = new Set(done.map(groupOf).filter(Boolean))
+  const sceneAlbums = new Set(albums.filter((a) => ids.includes(a.artistId)).map((a) => a.id))
+  const rated = Object.keys(me?.ratings ?? {}).filter((id) => sceneAlbums.has(id)).length
+  const deep = done.some((id) => deepSet.includes(id))
+  const myPosts = me ? posts.filter((p) => p.authorId === me.id && !p.removed && postArtists(p).some((a) => ids.includes(a))) : []
+  const liked = myPosts.filter((p) => p.likes.some((u) => u !== me?.id)).length
+  const allEras = Math.min(decades.length, 5)
+  const req = [
+    { artists: 3, eras: 0, groups: 0, rated: 0, deep: false, posts: 0, liked: 0 },
+    { artists: 8, eras: 2, groups: 2, rated: 0, deep: false, posts: 0, liked: 0 },
+    { artists: 15, eras: 3, groups: 3, rated: 5, deep: true, posts: 0, liked: 0 },
+    { artists: 25, eras: allEras, groups: 3, rated: 10, deep: true, posts: 1, liked: 0 },
+    { artists: 25, eras: allEras, groups: 3, rated: 10, deep: true, posts: 3, liked: 3 },
+  ]
+  const meets = (r: (typeof req)[number]) => done.length >= r.artists && eras.size >= r.eras && groups.size >= r.groups && rated >= r.rated && (!r.deep || deep) && myPosts.length >= r.posts && liked >= r.liked
+  let n = 0
+  while (n < req.length && meets(req[n])) n++
+  const oldest = done.length ? Math.min(...done.map((id) => SCENES[id].since)) : undefined
+  const texts = [
+    'Start here: three artists picked for you.',
+    'You’ve met the scene.',
+    'You know today’s scene and more than one era.',
+    `You can find your way from the ${oldest}s to today.`,
+    'You know the scene inside out.',
+    'You bring others into the scene.',
+  ]
+  let next: string | undefined
+  if (n < req.length) {
+    const r = req[n]
+    const miss: string[] = []
+    if (done.length < r.artists) miss.push(`${r.artists - done.length} more ${r.artists - done.length === 1 ? 'artist' : 'artists'}`)
+    if (eras.size < r.eras) miss.push(`${r.eras - eras.size} more ${r.eras - eras.size === 1 ? 'era' : 'eras'}`)
+    if (groups.size < r.groups) miss.push(`${r.groups - groups.size} more ${r.groups - groups.size === 1 ? 'sub-scene' : 'sub-scenes'}`)
+    if (rated < r.rated) miss.push(`rate ${r.rated - rated} more ${r.rated - rated === 1 ? 'album' : 'albums'}`)
+    if (r.deep && !deep) miss.push('one deep cut')
+    if (myPosts.length < r.posts) miss.push(r.posts === 1 ? 'a post about the scene' : `${r.posts - myPosts.length} more posts about it`)
+    if (liked < r.liked) miss.push('posts other fans like')
+    next = `Next: ${LEVEL_NAMES[n + 1]} · ${and(miss)}`
+  }
+  return {
+    def,
+    artistIds: ids,
+    decades,
+    units,
+    level: { n, name: LEVEL_NAMES[n], text: texts[n], next },
+    skills: [
+      { label: 'Artists', value: Math.min(done.length, 25), total: 25 },
+      { label: 'Eras', value: eras.size, total: decades.length },
+      { label: 'Sub-scenes', value: groups.size, total: groupsHere.length },
+      { label: 'Albums rated', value: Math.min(rated, 10), total: 10 },
+    ],
+  }
+}

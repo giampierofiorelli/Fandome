@@ -73,6 +73,7 @@ export interface User {
   saved?: Id[] // posts you bookmarked; private, newest first
   notForMe?: Id[] // suggestions you hid (artist or album ids); private
   discovered?: Id[] // artists or albums you marked "New to me" from a suggestion; private, newest first
+  listened?: Id[] // artists you marked "I listened" in a scene path; private
   pinned?: Id[] // up to 3 posts shown first on the profile, newest pin first
   mod?: { artistIds: Id[]; since: number } // volunteer moderator for these fandoms (shown on the profile)
   modRequest?: { artistIds: Id[]; reason: string; at: number; status: 'pending' | 'declined' }

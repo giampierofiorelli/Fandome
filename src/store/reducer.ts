@@ -25,6 +25,7 @@ export type Action =
   | { type: 'toggleSave'; postId: Id }
   | { type: 'notForMe'; id: Id }
   | { type: 'newToMe'; id: Id }
+  | { type: 'markListened'; artistId: Id }
   | { type: 'respondCollab'; postId: Id; accept: boolean }
   | { type: 'leaveCollab'; postId: Id }
   | { type: 'unpinPost'; postId: Id }
@@ -224,6 +225,17 @@ function apply(state: State, action: Action): State {
           if (u.id !== me) return u
           const list = u.discovered ?? []
           return { ...u, discovered: list.includes(action.id) ? list.filter((x) => x !== action.id) : [action.id, ...list] }
+        }),
+      }
+    case 'markListened':
+      // Scene paths: "I listened" on a step; private, only on this device.
+      if (!me) return state
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id !== me) return u
+          const list = u.listened ?? []
+          return { ...u, listened: list.includes(action.artistId) ? list.filter((x) => x !== action.artistId) : [...list, action.artistId] }
         }),
       }
     case 'pinPost':
