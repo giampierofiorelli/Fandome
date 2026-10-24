@@ -3,7 +3,10 @@ import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { albums, artists } from '../data/seed'
-import { buildScene, listenFor, LEVEL_NAMES, startWith, type ScenePath } from '../lib/scenePath'
+import { buildScene, compareFor, didYouKnow, exploredArtists, listenFor, LEVEL_NAMES, startWith, type ScenePath } from '../lib/scenePath'
+import { isAbout } from '../lib/postArtists'
+import { useComposer } from '../components/Composer'
+import { ShareCardButton } from '../components/ShareCard'
 import { rootsAndHeirs } from '../lib/connections'
 import { albumById } from '../lib/util'
 import { artistById } from '../lib/util'
@@ -24,6 +27,13 @@ export default function ScenePage() {
   if (!path || !path.def.ready) return <Navigate to="/scenes" replace />
   const openId = open ?? current ?? path.units[0].id
   const { level } = path
+  // Your latest discoveries in this scene (newest first), for the share card.
+  const explored = exploredArtists(me, albums)
+  const discoveries = [...(me?.discovered ?? []), ...[...(me?.listened ?? [])].reverse()]
+    .map((id) => albums.find((a) => a.id === id)?.artistId ?? id)
+    .filter((id, i, all) => all.indexOf(id) === i && path.artistIds.includes(id) && explored.has(id) && !me?.fanSince[id])
+    .slice(0, 3)
+    .map((id) => artistById(id)?.name ?? id)
 
   return (
     <>
@@ -49,6 +59,24 @@ export default function ScenePage() {
             {me && level.next && <span className="muted small block scene-next">{level.next}</span>}
           </span>
         </div>
+        {me && level.n > 0 && (
+          <div className="scene-share">
+            <ShareCardButton
+              label="Share your level"
+              color="#e3307f"
+              kicker={`SCENES · ${path.def.name.toUpperCase()}`}
+              title={level.name}
+              subtitle={`Exploring ${path.def.language} music on Fandome`}
+              handle={me.handle}
+              stats={[
+                { n: level.n, label: 'level' },
+                { n: path.skills[0].value, label: path.skills[0].value === 1 ? 'artist' : 'artists' },
+                { n: path.skills[1].value, label: path.skills[1].value === 1 ? 'era' : 'eras' },
+              ]}
+              rows={discoveries.length ? [`Discovered: ${discoveries.join(', ')}`] : []}
+            />
+          </div>
+        )}
         <div className="scene-skills">
           {path.skills.map((s) => (
             <div key={s.label} className="scene-skill">
@@ -128,7 +156,8 @@ export default function ScenePage() {
 
 // One step, explained: who it is, why it's here, and what you can do (each action completes it).
 function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePath; onOpen: (s: Step) => void; onClose: () => void }) {
-  const { me, dispatch } = useStore()
+  const { me, dispatch, state } = useStore()
+  const compose = useComposer()
   const a = artistById(step.artistId)
   if (!a) return null
   const sceneId = path.def.id
@@ -139,6 +168,10 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
   const begin = startWith(a.id, albums)
   const beginAlbum = begin ? albumById(begin.albumId) : undefined
   const cues = begin ? listenFor(begin.albumId) : undefined
+  const yours = new Set([...Object.keys(me?.fanSince ?? {}), ...Object.keys(me?.ratings ?? {}).map((x) => albums.find((al) => al.id === x)?.artistId ?? '')])
+  const compare = compareFor(a.id, yours, artists, albums)
+  const facts = didYouKnow(a.id, albums, [step.connection ?? ''])
+  const fanPosts = state.posts.filter((p) => isAbout(p, a.id) && !p.removed && !p.replyTo && p.text.trim()).sort((x, y) => y.createdAt - x.createdAt).slice(0, 2)
   const theirs = albums.filter((al) => al.artistId === a.id).sort((x, y) => x.year - y.year)
   const listened = Boolean(me?.listened?.includes(a.id))
   const following = Boolean(me?.fanSince[a.id])
@@ -185,6 +218,25 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
             )}
           </div>
         )}
+        {compare && (
+          <div className="step-todo">
+            <span className="scene-card-lang">Compare</span>
+            <div className="album-chips">
+              {[compare.first, compare.second].map((id, i) => {
+                const al = albumById(id)!
+                return (
+                  <Link key={id} to={`/album/${id}?from=${sceneId}`} className="album-chip" onClick={onClose}>
+                    <AlbumCover album={al} size={28} />
+                    <span>
+                      {i + 1}. {al.title} · {artistById(al.artistId)?.name}
+                    </span>
+                  </Link>
+                )
+              })}
+            </div>
+            <span className="muted small block">Listen to them in this order. {compare.text}</span>
+          </div>
+        )}
         <div className="step-todo">
           <span className="scene-card-lang">1 · Listen</span>
           <div className="step-links">
@@ -213,6 +265,40 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
             </div>
           ) : (
             <span className="muted small block">Join Fandome to keep your progress.</span>
+          )}
+        </div>
+        {facts.length > 0 && (
+          <div className="step-todo">
+            <span className="scene-card-lang">Did you know?</span>
+            <ul className="step-facts">
+              {facts.map((f) => (
+                <li key={f}>{f}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="step-todo">
+          <span className="scene-card-lang">From the fans</span>
+          {fanPosts.length > 0 ? (
+            fanPosts.map((p) => (
+              <Link key={p.id} to={`/p/${p.id}`} className="step-post" onClick={onClose}>
+                <span className="small">“{p.text.length > 140 ? `${p.text.slice(0, 137)}…` : p.text}”</span>
+                <span className="muted small block">{state.users.find((u) => u.id === p.authorId)?.name ?? 'A fan'}</span>
+              </Link>
+            ))
+          ) : (
+            <span className="muted small block">No posts about {a.name} yet.</span>
+          )}
+          {me && (
+            <button
+              className="pill-btn glass small step-ask"
+              onClick={() => {
+                onClose()
+                compose({ artistId: a.id, text: `New to ${a.name}: where should I start? ` })
+              }}
+            >
+              Ask the fans where to start
+            </button>
           )}
         </div>
         {(family.roots.length > 0 || family.heirs.length > 0) && (

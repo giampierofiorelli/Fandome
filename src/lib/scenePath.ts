@@ -6,7 +6,7 @@ import { GENRE_LABELS, SCENES, isLocalArtist, type Genre } from '../data/scenes'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { genreListSimilarity, similarArtists } from './similar'
 import { DESCRIPTORS, genreLabel, type Descriptor } from './descriptors'
-import { describe as describeConnection, yourConnections } from './connections'
+import { allConnections, describe as describeConnection, yourConnections, type Connection } from './connections'
 import { postArtists } from './postArtists'
 
 export interface SceneDef {
@@ -298,4 +298,33 @@ export function listenFor(albumId: string): { notes?: string; cues: string[] } |
   const genres = d.genres.slice(0, 3).map((g) => genreLabel(g).toLowerCase())
   if (genres.length) cues.push(and(genres))
   return { notes: d.notes || undefined, cues }
+}
+
+// "Compare": listen to the influence first, then the work that picks it up, and hear the link.
+export function compareFor(artistId: string, yours: Set<string>, artists: Artist[], albums: Album[]): { first: string; second: string; text: string } | undefined {
+  const name = (id: string) => artists.find((a) => a.id === id)?.name ?? id
+  const albumOf = (artist: string, title?: string) => (title ? albums.find((a) => a.artistId === artist && a.title.toLowerCase() === title.toLowerCase())?.id : undefined)
+  const involved = allConnections(artists).filter((c: Connection) => (c.from === artistId || c.to === artistId) && c.work && c.type !== 'produced')
+  const pick = involved.find((c) => yours.has(c.from) || yours.has(c.to)) ?? involved[0]
+  if (!pick) return undefined
+  const second = albumOf(pick.from, pick.work)
+  const first = startWith(pick.to, albums)?.albumId
+  if (!first || !second || first === second) return undefined
+  const text = pick.type === 'soundslike' ? `Hear what ${name(pick.from)} and ${name(pick.to)} share.` : `Hear how ${name(pick.from)} picks up ${name(pick.to)}.`
+  return { first, second, text }
+}
+
+// "Did you know?": facts from the descriptions of the album to start with (producers, influences, scene).
+export function didYouKnow(artistId: string, albums: Album[], skip: string[] = []): string[] {
+  const begin = startWith(artistId, albums)
+  const d = begin ? DESCRIPTORS[begin.albumId] : undefined
+  if (!d) return []
+  const others = (xs: string[]) => xs.filter((x) => x.toLowerCase() !== d.artist.toLowerCase())
+  const facts: string[] = []
+  const prod = others(d.producers)
+  if (prod.length) facts.push(`${d.title} was produced by ${and(prod.slice(0, 4))}${prod.length > 4 ? ' and others' : ''}.`)
+  if (d.influencedBy.length) facts.push(`${d.title} draws on ${and(d.influencedBy.slice(0, 4))}.`)
+  if (d.soundsLike.length) facts.push(`Critics hear ${and(d.soundsLike.slice(0, 3))} in ${d.title}.`)
+  if (d.scene) facts.push(`Scene: ${d.scene}.`)
+  return facts.filter((f) => !skip.some((s) => s && f.includes(s))).slice(0, 3)
 }

@@ -40,3 +40,20 @@ group('connections', () => {
     expect(listenFor('k-fever')).toBeUndefined()
   })
 })
+
+group('scene step extras', () => {
+  it('suggests a comparison: the influence first, then the album that picks it up', async () => {
+    const { compareFor } = await import('./scenePath')
+    const c = compareFor('moroder', new Set(['madonna']), artists, albums)!
+    expect(c.second).toBe('m-confessions')
+    expect(c.first.startsWith('moroder-')).toBe(true)
+    expect(c.text).toBe('Hear how Madonna picks up Giorgio Moroder.')
+  })
+
+  it('gives facts from the descriptions, without repeating your connection', async () => {
+    const { didYouKnow } = await import('./scenePath')
+    const facts = didYouKnow('annalisa', albums)
+    expect(facts[0]).toMatch(/^E poi siamo finiti nel vortice was produced by Davide Simonetta/)
+    expect(didYouKnow('mina', albums)).toEqual([])
+  })
+})

@@ -20,6 +20,7 @@ export interface ComposeOpts {
   reviewAlbumId?: string // opens in "log album" mode (Letterboxd-style)
   albumId?: string // start with this album linked ("Talk about it" on an album page)
   as?: string // post as a page the user manages
+  text?: string // start with this text (e.g. "Ask the room" from a scene)
 }
 
 const Ctx = createContext<(o?: ComposeOpts) => void>(() => {})
@@ -55,7 +56,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const parent = opts.replyTo ? state.posts.find((p) => p.id === opts.replyTo) : undefined
   const myArtists = me ? Object.keys(me.fanSince) : []
   const startAlbum = albumById(opts.albumId)
-  const [text, setText] = useState(startAlbum ? `${startAlbum.title} ` : '')
+  const [text, setText] = useState(opts.text ?? (startAlbum ? `${startAlbum.title} ` : ''))
   const [albumIds, setAlbumIds] = useState<string[]>(startAlbum ? [startAlbum.id] : [])
   const [panel, setPanel] = useState<'artists' | 'albums' | null>(null)
   const textRef = useRef<HTMLTextAreaElement>(null)

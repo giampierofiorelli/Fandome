@@ -1381,3 +1381,8 @@ a.rooms-more { display: block; text-align: center; text-decoration: none; }
 .step-listen { margin: 4px 0 0; font-size: 14px; line-height: 1.45; }
 .step-family { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .step-family-chip { border: 1px solid var(--glass-line); cursor: pointer; font: inherit; font-size: 13px; }
+
+.scene-share { margin-top: 14px; }
+.step-facts { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.5; }
+.step-post { display: block; padding: 10px 12px; border-radius: 14px; background: var(--glass); border: 1px solid var(--glass-line); color: var(--text); text-decoration: none; }
+.step-ask { align-self: flex-start; }
