@@ -9,7 +9,8 @@ One row per album, in CSV (comma-separated, one line per album, text with commas
 | `album_id` | Fandome id (given in the list we send) | as given, e.g. `m-ray` |
 | `artist` | artist name | as given |
 | `title` | album title | as given |
-| `year` | release year | as given |
+| `year` | original release year | as given |
+| `type` | kind of release | one of: `studio`, `soundtrack`, `compilation`, `live`, `remix`, `ep` |
 | `genres` | 1–3 genres, main first, separated by `|` | from the genre list below |
 | `energy` | how intense / driving | 0 very calm … 5 very intense |
 | `electronic` | sound sources | 0 fully acoustic … 5 fully electronic |
@@ -23,9 +24,12 @@ One row per album, in CSV (comma-separated, one line per album, text with commas
 | `lyrics` | 1–2 main themes, `|` separated | from: `love`, `heartbreak`, `introspection`, `social`, `political`, `storytelling`, `party`, `irony`, `spiritual`, `sensuality`, `identity`, `nostalgia` |
 | `language` | main singing language(s), `|` separated | ISO codes: `en`, `it`, `fr`, `es`, `pt`, `ko`… |
 | `scene` | movement or scene, short | free text, max 4 words (e.g. `Italo disco`, `Britpop`, `cantautori`, `funk carioca`) |
-| `sounds_like` | up to 3 artists (any country) this album sounds close to | names, `|` separated |
-| `influenced_by` | up to 3 artists that clearly shaped this album | names, `|` separated |
+| `producers` | main producers, documented (credits) | names, `|` separated; never listed as influences |
+| `sounds_like` | up to 3 artists (any country) this album sounds close to (sonic similarity, an editorial judgment) | names, `|` separated |
+| `influenced_by` | up to 3 artists that **documentably** shaped this album (stated by the artist, producer or qualified critics; reference in the sources file) | names, `|` separated; not collaborators, not producers |
 | `landmark` | is it one of the artist's defining albums? | `1` or `0` |
+| `confidence` | how solid the evidence is, for the whole row | `high` (several qualified sources agree), `medium`, `low` |
+| `status` | review state | `draft` (proposal) or `reviewed` (checked by a second person) |
 | `notes` | why it matters / what it sounds like, own words | max 15 words |
 
 **Genres** (same list as `src/data/scenes.ts`): `pop`, `dance`, `electronic`, `synthpop`, `disco`, `rock`, `indie`, `alt`, `metal`, `punk`, `prog`, `hiphop`, `trap`, `rnb`, `soul`, `funk`, `jazz`, `folk`, `songwriter`, `country`, `latin`, `reggaeton`, `afro`, `kpop`, `sertanejo`, `funkbr`, `pagode`, `forro`, `classical`, `soundtrack`, `reggae`, `opera`.
@@ -42,16 +46,24 @@ One row per album, in CSV (comma-separated, one line per album, text with commas
 
 Use whole numbers 0–5. When unsure between two values, pick the one closer to the album's best-known songs.
 
+**Leave a cell empty when the sources aren't enough.** An empty value means "unknown", and the algorithm ignores it instead of guessing. Never fill a value only from the album's genre or the artist's usual style: it has to come from evidence about *this* album (critics, musicologists, producers' and engineers' accounts, official credits).
+
+## Sources and reasoning
+
+Next to each CSV, a sources file per artist: `docs/descriptors/<artist-id>.sources.md`. For each album: the sources used (title, author, outlet, date, link) and, for each value that isn't obvious, one line on why (e.g. "electronic 3: engineer Jason Corsaro describes live players over drum machines"). Disagreements between critics are noted, not hidden.
+
 ## Example (Madonna)
 
+Illustrative only: these rows were written before the sources rule and are `draft`; the researched versions will replace them. `influenced_by` is left empty because no documented influence was checked: that's how an unknown value looks.
+
 ```csv
-album_id,artist,title,year,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,sounds_like,influenced_by,landmark,notes
-m-virgin,Madonna,Like a Virgin,1984,pop|dance,4,3,5,3,1,4,4,4,clear,love|sensuality,en,New York dance-pop,Cyndi Lauper|Whitney Houston,Chic|Donna Summer,1,"Bright Nile Rodgers dance-pop that made her a global star."
-m-trueblue,Madonna,True Blue,1986,pop|dance,3,3,4,3,1,4,3,3,clear,love|identity,en,80s pop,Cyndi Lauper|Janet Jackson,The Supremes|Motown,1,"Polished pop with Latin touches and girl-group nods."
-m-prayer,Madonna,Like a Prayer,1989,pop|rock,3,2,3,4,2,4,3,3,powerful,spiritual|identity,en,80s pop,Prince|Janet Jackson,Prince|Sly Stone,1,"Personal, gospel-tinged pop about faith, family and freedom."
-m-ray,Madonna,Ray of Light,1998,electronic|pop,3,4,3,3,3,4,3,3,clear,spiritual|introspection,en,electronica,Björk|Massive Attack,William Orbit|trip-hop,1,"Atmospheric electronica and trance; spiritual and mature."
-m-music,Madonna,Music,2000,electronic|pop,4,5,4,3,3,4,4,4,clear,party|love,en,French touch,Daft Punk|Goldfrapp,Mirwais|Daft Punk,1,"Glitchy French-touch electro mixed with acoustic folk moments."
-m-confessions,Madonna,Confessions on a Dance Floor,2005,dance|disco,5,5,5,3,1,5,4,5,clear,party|identity,en,nu-disco,Kylie Minogue|Daft Punk,ABBA|Donna Summer,1,"Non-stop disco mix, seamless tracks built for the club."
+album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes
+m-virgin,Madonna,Like a Virgin,1984,studio,pop|dance,4,3,5,3,1,4,4,4,clear,love|sensuality,en,New York dance-pop,Nile Rodgers,Cyndi Lauper|Whitney Houston,,1,medium,draft,"Bright Nile Rodgers dance-pop that made her a global star."
+m-trueblue,Madonna,True Blue,1986,studio,pop|dance,3,3,4,3,1,4,3,3,clear,love|identity,en,80s pop,Madonna|Patrick Leonard|Stephen Bray,Cyndi Lauper|Janet Jackson,,1,medium,draft,"Polished pop with Latin touches and girl-group nods."
+m-prayer,Madonna,Like a Prayer,1989,studio,pop|rock,3,2,3,4,2,4,3,3,powerful,spiritual|identity,en,80s pop,Madonna|Patrick Leonard|Stephen Bray|Prince,Prince|Janet Jackson,,1,medium,draft,"Personal, gospel-tinged pop about faith, family and freedom."
+m-ray,Madonna,Ray of Light,1998,studio,electronic|pop,3,4,3,3,3,4,3,3,clear,spiritual|introspection,en,electronica,Madonna|William Orbit,Björk|Massive Attack,,1,medium,draft,"Atmospheric electronica and trance; spiritual and mature."
+m-music,Madonna,Music,2000,studio,electronic|pop,4,5,4,3,3,4,4,4,clear,party|love,en,French touch,Madonna|Mirwais|William Orbit,Daft Punk|Goldfrapp,,1,medium,draft,"Glitchy French-touch electro mixed with acoustic folk moments."
+m-confessions,Madonna,Confessions on a Dance Floor,2005,studio,dance|disco,5,5,5,3,1,5,4,5,clear,party|identity,en,nu-disco,Madonna|Stuart Price,Kylie Minogue|Daft Punk,,1,medium,draft,"Non-stop disco mix, seamless tracks built for the club."
 ```
 
 ## Albums that aren't in Fandome yet
@@ -71,5 +83,5 @@ Our list is incomplete: add every studio album of the artist (no live albums, co
 ## Prompt for ChatGPT (copy as is, then paste the album list)
 
 > You are a music expert helping to describe albums for a music discovery app. For each album in the list, return one CSV row with exactly these columns:
-> album_id,artist,title,year,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,sounds_like,influenced_by,landmark,notes
-> Rules: keep album_id, artist, title and year exactly as given. genres: 1–3 from this list, main first, separated by |: pop, dance, electronic, synthpop, disco, rock, indie, alt, metal, punk, prog, hiphop, trap, rnb, soul, funk, jazz, folk, songwriter, country, latin, reggaeton, afro, kpop, sertanejo, funkbr, pagode, forro, classical, soundtrack, reggae, opera. Scales are whole numbers 0–5: energy (0 calm–5 intense), electronic (0 acoustic–5 fully electronic), mood (0 dark–5 bright), theatrical (0 intimate–5 dramatic), experimental (0 accessible–5 experimental), polish (0 raw–5 glossy), tempo (0 slow–5 fast), groove (0 not danceable–5 dance floor). Anchors: energy 1 = Adele "21", 5 = Metallica "Master of Puppets"; electronic 4 = Madonna "Ray of Light", 5 = Kraftwerk; mood 1 = Radiohead "OK Computer", 5 = ABBA "Arrival"; theatrical 5 = Queen "A Night at the Opera"; experimental 5 = Björk "Medúlla"; groove 5 = Madonna "Confessions on a Dance Floor". voice: one of soft, clear, powerful, raspy, rap, spoken, choral, instrumental. lyrics: 1–2 of love, heartbreak, introspection, social, political, storytelling, party, irony, spiritual, sensuality, identity, nostalgia (separated by |). language: ISO codes separated by |. scene: max 4 words. sounds_like and influenced_by: up to 3 artist names each, separated by |. landmark: 1 if it is one of the artist's defining albums, else 0. notes: your own words, max 15 words, in double quotes; never copy text from reviews or Wikipedia. If you are not sure about an album, still give your best estimate but add "(unsure)" at the end of notes. Return only the CSV with the header, nothing else.
+> album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes
+> Rules: keep album_id, artist, title and year exactly as given (for albums not in the list, follow the id rule in the guide). genres: 1–3 from this list, main first, separated by |: pop, dance, electronic, synthpop, disco, rock, indie, alt, metal, punk, prog, hiphop, trap, rnb, soul, funk, jazz, folk, songwriter, country, latin, reggaeton, afro, kpop, sertanejo, funkbr, pagode, forro, classical, soundtrack, reggae, opera. Scales are whole numbers 0–5: energy (0 calm–5 intense), electronic (0 acoustic–5 fully electronic), mood (0 dark–5 bright), theatrical (0 intimate–5 dramatic), experimental (0 accessible–5 experimental), polish (0 raw–5 glossy), tempo (0 slow–5 fast), groove (0 not danceable–5 dance floor). Anchors: energy 1 = Adele "21", 5 = Metallica "Master of Puppets"; electronic 4 = Madonna "Ray of Light", 5 = Kraftwerk; mood 1 = Radiohead "OK Computer", 5 = ABBA "Arrival"; theatrical 5 = Queen "A Night at the Opera"; experimental 5 = Björk "Medúlla"; groove 5 = Madonna "Confessions on a Dance Floor". voice: one of soft, clear, powerful, raspy, rap, spoken, choral, instrumental. lyrics: 1–2 of love, heartbreak, introspection, social, political, storytelling, party, irony, spiritual, sensuality, identity, nostalgia (separated by |). language: ISO codes separated by |. scene: max 4 words. sounds_like and influenced_by: up to 3 artist names each, separated by |. type: one of studio, soundtrack, compilation, live, remix, ep. producers: documented main producers, separated by | (never as influences). influenced_by: only influences documented by the artist, producers or qualified critics (not collaborators). landmark: 1 if it is one of the artist's defining albums, else 0. confidence: high, medium or low for the whole row. status: draft. notes: your own words, max 15 words, in double quotes; never copy text from reviews or Wikipedia. Leave a cell EMPTY when the evidence about this specific album is not enough; never infer a value only from the genre or the artist's usual style. Return the CSV with the header, then a separate sources list per album (sources and one line of reasoning for non-obvious values).
