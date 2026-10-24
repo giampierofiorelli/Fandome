@@ -151,10 +151,34 @@ export function Modal({ onClose, children, title }: { onClose: () => void; child
     }
   }, [])
 
+  // Phones: keep the sheet inside the visible area, right above the keyboard. Without this, iOS
+  // scrolls the page when the keyboard opens and taps inside the sheet land in the wrong place
+  // (the first tap on Post only closed the keyboard).
+  const root = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const vv = window.visualViewport
+    if (!isSheet || !vv) return
+    const fit = () => {
+      const el = root.current
+      if (!el) return
+      el.style.top = `${vv.offsetTop}px`
+      el.style.height = `${vv.height}px`
+      el.style.bottom = 'auto'
+      if (window.scrollY !== 0 && vv.height < window.innerHeight) window.scrollTo(0, 0)
+    }
+    fit()
+    vv.addEventListener('resize', fit)
+    vv.addEventListener('scroll', fit)
+    return () => {
+      vv.removeEventListener('resize', fit)
+      vv.removeEventListener('scroll', fit)
+    }
+  }, [isSheet, open])
+
   return createPortal(
     <AnimatePresence onExitComplete={onClose}>
       {open && (
-        <div className="modal-root" key="modal">
+        <div className="modal-root" key="modal" ref={root}>
           <motion.div className="modal-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} onClick={close} />
           <motion.div
             className={isSheet ? 'modal sheet' : 'modal'}

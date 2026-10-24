@@ -73,7 +73,8 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   const saved = !!me?.saved?.includes(post.id)
   // Albums linked in the text; any whose title isn't in the text is shown as a chip below it.
   const postAlbums = (post.albumIds ?? []).map((id) => albumById(id)).filter((a): a is NonNullable<typeof a> => Boolean(a))
-  const looseAlbums = postAlbums.filter((a) => !post.text.toLowerCase().includes(a.title.toLowerCase()))
+  // Attached albums always show as cards under the text (the title in the text is linked too).
+  const looseAlbums = postAlbums
   const canSeeRemoved = me && (me.id === post.authorId || isAdmin(state) || (me.mod && postArtists(post).some((a) => me.mod!.artistIds.includes(a))))
   if (post.removed && !canSeeRemoved) {
     return <div className="post tombstone muted small">This post was removed for breaking the community rules.</div>

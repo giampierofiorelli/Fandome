@@ -473,7 +473,7 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .modal-head h3 { font-size: 18px; font-weight: 500; }
 @media (max-width: 640px) {
   .modal-root { align-items: flex-end; padding: 0; overflow: hidden; }
-  .modal.sheet { max-width: none; border-radius: 34px 34px 0 0; border-bottom: 0; padding: 8px 20px calc(20px + env(safe-area-inset-bottom)); max-height: 92vh; overflow-y: auto; }
+  .modal.sheet { max-width: none; border-radius: 34px 34px 0 0; border-bottom: 0; padding: 8px 20px calc(20px + env(safe-area-inset-bottom)); max-height: 92%; overflow-y: auto; }
 }
 .sheet-handle { width: 40px; height: 5px; border-radius: 3px; background: var(--hair); margin: 6px auto 12px; cursor: grab; }
 .composer-row { display: flex; gap: 12px; }
