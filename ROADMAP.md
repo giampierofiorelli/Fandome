@@ -23,6 +23,17 @@ Things we agreed on but deliberately postponed. Check this list before planning 
   4. Rules: only recently active users can host (like pages); parties can be reported and handled by the artist's moderators.
   - Shared presence (who's really listening) and a shared chat need the backend.
 
+- **Ideas from the research documents** (not built yet):
+  - "Start here" lane in each artist room for new fans (eras, where to begin, beginner questions welcome).
+  - Lasting discussions per era / album / tour, findable with search ("the memory of the fandom").
+  - The 5 plain rules shown during sign-up.
+  - Recognition for helping, never for spending: "member since", "guide saved 25 times", "welcomed 50 new fans".
+  - Accessibility for all ages: adjustable text size and an "essential mode" with fewer things on screen.
+  - Fans near you: pick a city (never an address), meetups only in public places (needs the backend for real counts).
+  - When a concert chat or listening party ends, it becomes a lasting discussion.
+  - Email digest and notification modes: instant / digest / only important (needs backend and email).
+  - Optional supporter membership paying for site features, never "closer to the artist"; later Community Originals.
+  - Review direct messages with the lawyer before opening to the public (the documents advise none at first).
 - **Marketplace for collectors** (buying and selling). Not now: the collection is a showcase only. Only as a separate product with identity checks (KYC), protected payments and legal review (counterfeits, scams, ticket touting, IP).
 - **Real post translation**: Chrome's on-device Translator where available, a free service (e.g. MyMemory, ~5,000 chars/day) as fallback. Today translations are pre-written demo text.
 - **Real brand icons for unknown websites** in profile links (favicons) once there is a server to fetch and store them; today unknown sites get a generic link icon, to avoid sending visitors' IPs to third parties.
