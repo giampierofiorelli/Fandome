@@ -44,7 +44,7 @@ One row per album, in CSV (comma-separated, one line per album, text with commas
 - **polish**: 1 = garage/lo-fi; 3 = normal studio; 5 = big-budget pop.
 - **groove**: 0 = ballads; 3 = some danceable tracks; 5 = Madonna *Confessions on a Dance Floor*.
 
-Use whole numbers 0–5. When unsure between two values, pick the one closer to the album's best-known songs.
+Use whole numbers 0–5. Judge the whole album, not only its best-known singles (or their remixes). When still unsure, leave the cell empty or lower `confidence`.
 
 **Leave a cell empty when the sources aren't enough.** An empty value means "unknown", and the algorithm ignores it instead of guessing. Never fill a value only from the album's genre or the artist's usual style: it has to come from evidence about *this* album (critics, musicologists, producers' and engineers' accounts, official credits).
 
