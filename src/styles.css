@@ -1151,3 +1151,5 @@ body.story-open .modal-root { z-index: 100; }
 .collab-summary { margin: 0 0 8px; }
 .collab-snippet { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 220px; }
 .collab-invite .grow { flex: 1 1 100%; }
+.disco-logo { position: relative; display: inline-block; }
+.disco-logo-canvas { position: absolute; left: 0; top: 0; pointer-events: none; }

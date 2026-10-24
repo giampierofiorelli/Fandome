@@ -5,6 +5,7 @@ import { useStore } from './store/store'
 import { conversations } from './store/reducer'
 import { useComposer } from './components/Composer'
 import { useToast } from './components/Toast'
+import { DiscoLogo } from './components/DiscoLogo'
 import { IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
 import { starterPack } from './lib/packs'
@@ -69,7 +70,7 @@ function TopBar() {
   return (
     <div className="home-top">
       <Link to="/" className="dotmatrix brand-mini" aria-label="Fandome home">
-        FANDOME
+        <DiscoLogo text="FANDOME" />
       </Link>
       {!inMessages && (
         <Link to="/messages" className="glass-circle dm-btn" aria-label={unread ? `Messages, ${unread} unread` : 'Messages'}>
