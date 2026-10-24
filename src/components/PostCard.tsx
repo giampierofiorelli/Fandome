@@ -14,7 +14,7 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconUsers, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconUsers, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume, IconBookmark } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
 import { collaborators } from '../lib/collab'
@@ -70,6 +70,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
     }
   }
 
+  const saved = !!me?.saved?.includes(post.id)
   const canSeeRemoved = me && (me.id === post.authorId || isAdmin(state) || (me.mod && postArtists(post).some((a) => me.mod!.artistIds.includes(a))))
   if (post.removed && !canSeeRemoved) {
     return <div className="post tombstone muted small">This post was removed for breaking the community rules.</div>
@@ -298,15 +299,24 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
               <button className="act" aria-label="Send to your story or a friend" onClick={() => setSendSheet(true)}>
                 <IconSend size={18} />
               </button>
-              <button className="act" aria-label="Copy link" onClick={share}>
-                <IconShare size={18} />
-              </button>
+              <SaveButton saved={saved} onToggle={() => {
+                dispatch({ type: 'toggleSave', postId: post.id })
+                if (!saved) toast('Saved · only you can see it', me ? { label: 'View', onClick: () => nav(`/u/${me.handle}?tab=saved`) } : undefined)
+              }} />
               {me && (
                 <div className="act-wrap">
                   <button className="act" aria-label="More" aria-expanded={moreMenu} onClick={() => setMoreMenu(!moreMenu)}>
                     <IconMore size={18} />
                   </button>
                   <Popover open={moreMenu} onClose={() => setMoreMenu(false)} align="right">
+                    <button
+                      onClick={() => {
+                        setMoreMenu(false)
+                        void share()
+                      }}
+                    >
+                      <IconShare size={16} /> Copy link
+                    </button>
                     {owner && !post.replyTo && !post.removed && (
                       <button
                         onClick={() => {
@@ -384,6 +394,17 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
 }
 
 // Heart that pops with a small particle burst — feedback fires on the same frame as the state change.
+// Bookmark: drops in with a little bounce when saved.
+function SaveButton({ saved, onToggle }: { saved: boolean; onToggle: () => void }) {
+  return (
+    <button className={`act ${saved ? 'on-ink' : ''}`} aria-label={saved ? 'Remove from saved' : 'Save'} aria-pressed={saved} onClick={onToggle}>
+      <motion.span key={saved ? 'on' : 'off'} initial={saved ? { y: -6, scale: 0.6 } : false} animate={{ y: 0, scale: 1 }} transition={{ type: 'spring', bounce: 0.55, visualDuration: 0.35 }} style={{ display: 'inline-flex' }}>
+        <IconBookmark size={18} filled={saved} />
+      </motion.span>
+    </button>
+  )
+}
+
 function LikeButton({ liked, count, onToggle }: { liked: boolean; count: number; onToggle: () => void }) {
   const [burst, setBurst] = useState(0)
   return (

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
 import { newId, useStore } from '../store/store'
@@ -8,8 +8,10 @@ import { useComposer } from '../components/Composer'
 import { Chat } from '../components/Chat'
 import { FeedList } from '../components/FeedList'
 import { ShareCardButton } from '../components/ShareCard'
-import { Avatar, Tabs } from '../components/ui'
-import { IconArrowLeft, IconCheck, IconFlag, IconPen } from '../components/icons'
+import { Avatar, Modal, Tabs } from '../components/ui'
+import { calendarFileName, concertIcs, googleCalendarUrl } from '../lib/calendar'
+import type { Concert } from '../data/types'
+import { IconArrowLeft, IconArrowUpRight, IconCalendar, IconCheck, IconFlag, IconPen } from '../components/icons'
 import { artistById, isUpcoming, timeAgo } from '../lib/util'
 
 const CROWD_LINES = ['Who’s near the front?', 'Meeting at the usual spot!', 'This setlist 😭', 'Anyone selling a spare? (official resale only pls)', 'Flying in tomorrow ✈️', 'Best night of my life', 'Did you see the outfit change?!']
@@ -74,6 +76,7 @@ export default function ConcertPage() {
           <button className="pill-btn glass" onClick={() => compose({ concertId: concert.id, artistId: artist.id })}>
             <IconPen size={15} /> {upcoming ? 'Meetup' : 'Memory'}
           </button>
+          {upcoming && <AddToCalendar concert={concert} artistName={artist.name} />}
           {upcoming && concert.url && (
             <a className="pill-btn glass" href={concert.url} target="_blank" rel="noopener noreferrer">
               Tickets ↗
@@ -271,5 +274,51 @@ function TicketsTab({ concertId }: { concertId: string }) {
       ))}
       {reporting && <ReportModal target={{ kind: 'ticket', id: reporting }} what="listing" onClose={() => setReporting(null)} />}
     </div>
+  )
+}
+
+// Add the show to the phone's calendar (.ics) or to Google Calendar. All-day event with a
+// reminder the day before; nothing is sent anywhere unless you pick Google.
+function AddToCalendar({ concert, artistName }: { concert: Concert; artistName: string }) {
+  const [open, setOpen] = useState(false)
+  const [devUrl, setDevUrl] = useState('')
+  // The build writes /cal/<id>.ics for every upcoming show; in development make the file here.
+  useEffect(() => {
+    if (!open || !import.meta.env.DEV) return
+    const u = URL.createObjectURL(new Blob([concertIcs(concert, artistName)], { type: 'text/calendar' }))
+    setDevUrl(u)
+    return () => URL.revokeObjectURL(u)
+  }, [open, concert, artistName])
+  const icsUrl = import.meta.env.DEV ? devUrl : `${import.meta.env.BASE_URL}cal/${calendarFileName(concert)}`
+  return (
+    <>
+      <button className="pill-btn glass" onClick={() => setOpen(true)}>
+        <IconCalendar size={15} /> Calendar
+      </button>
+      {open && (
+        <Modal title="Add to calendar" onClose={() => setOpen(false)}>
+          <p className="muted small cal-what">
+            {artistName} · {concert.venue}, {concert.city} · all day, with a reminder the day before. Check the time on the official site.
+          </p>
+          <div className="cal-options">
+            <a className="cal-option" href={icsUrl} onClick={() => setTimeout(() => setOpen(false), 300)}>
+              <IconCalendar size={20} />
+              <span className="grow">
+                <strong>Phone calendar</strong>
+                <span className="muted small block">Apple Calendar, Outlook and others (.ics)</span>
+              </span>
+            </a>
+            <a className="cal-option" href={googleCalendarUrl(concert, artistName)} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+              <IconCalendar size={20} />
+              <span className="grow">
+                <strong>Google Calendar</strong>
+                <span className="muted small block">Opens Google in a new tab</span>
+              </span>
+              <IconArrowUpRight size={16} />
+            </a>
+          </div>
+        </Modal>
+      )}
+    </>
   )
 }

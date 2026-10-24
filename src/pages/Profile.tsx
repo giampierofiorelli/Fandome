@@ -2,8 +2,8 @@ import { isOwnedBy } from '../lib/collab'
 import { CollectionGrid } from '../components/Collection'
 import { AnimatePresence } from 'motion/react'
 import { ProfileQR } from '../components/ProfileQR'
-import { useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
@@ -22,13 +22,21 @@ import { useToast } from '../components/Toast'
 import { newId } from '../store/store'
 import type { ProfileLink, User } from '../data/types'
 
-type Tab = 'posts' | 'collection' | 'diary' | 'ratings' | 'likes'
+type Tab = 'posts' | 'collection' | 'diary' | 'ratings' | 'likes' | 'saved'
 
 // Letterboxd-style fan profile: your fan story is your identity.
 export default function Profile() {
   const { handle } = useParams()
   const { state, dispatch, me } = useStore()
-  const [tab, setTab] = useState<Tab>('posts')
+  const [params] = useSearchParams()
+  const [tab, setTab] = useState<Tab>(params.get('tab') === 'saved' ? 'saved' : 'posts')
+  const tabsRef = useRef<HTMLDivElement>(null)
+  // Opened from "Saved · View": go straight to the saved posts.
+  useEffect(() => {
+    if (params.get('tab') !== 'saved') return
+    const t = setTimeout(() => tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 350)
+    return () => clearTimeout(t)
+  }, [params])
   const [reporting, setReporting] = useState(false)
   const [qr, setQr] = useState(false)
   const user = state.users.find((u) => u.handle === handle)
@@ -44,6 +52,8 @@ export default function Profile() {
   const shows = concerts.filter((c) => user.attended.includes(c.id)).sort((a, b) => a.date.localeCompare(b.date))
   const rated = Object.entries(user.ratings).sort((a, b) => b[1] - a[1])
   const liked = state.posts.filter((p) => p.likes.includes(user.id))
+  // Saved posts are private: only on your own profile.
+  const saved = isMe ? (user.saved ?? []).map((id) => state.posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p) && !p!.removed) : []
   const firstArtist = Object.entries(user.fanSince).sort((a, b) => a[1] - b[1])[0]
 
   // Diary: concerts and album reviews on one timeline.
@@ -164,7 +174,7 @@ export default function Profile() {
       <AnimatePresence>{qr && <ProfileQR key="qr" user={user} onClose={() => setQr(false)} />}</AnimatePresence>
       {isMe && <BecomeModCard />}
       {reporting && <ReportModal target={{ kind: 'user', id: user.id }} what={user.name} onClose={() => setReporting(false)} />}
-      <div className="section-head center">
+      <div className="section-head center profile-tabs" ref={tabsRef}>
         <Tabs<Tab>
           tabs={[
             { id: 'posts', label: 'Posts' },
@@ -172,6 +182,7 @@ export default function Profile() {
             { id: 'diary', label: 'Diary' },
             { id: 'ratings', label: 'Ratings' },
             { id: 'likes', label: 'Likes' },
+            ...(isMe ? [{ id: 'saved' as Tab, label: 'Saved' }] : []),
           ]}
           value={tab}
           onChange={setTab}
@@ -181,6 +192,12 @@ export default function Profile() {
         <>
           <PinnedList posts={pinnedPosts} canEdit={isMe} />
           {(!pinnedPosts.length || posts.length > pinnedPosts.length) && <FeedList items={posts.filter((p) => !pinnedPosts.includes(p)).map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
+        </>
+      )}
+      {tab === 'saved' && isMe && (
+        <>
+          <p className="muted small saved-note">Only you can see your saved posts.</p>
+          <FeedList items={saved.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="Tap the bookmark on any post to keep it here." />
         </>
       )}
       {tab === 'likes' && <FeedList items={liked.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No likes yet." />}

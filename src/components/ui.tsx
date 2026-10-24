@@ -176,8 +176,17 @@ export function Modal({ onClose, children, title }: { onClose: () => void; child
 // Segmented control: a glass track with a solid pill that glides to the active option.
 export function Tabs<T extends string>({ tabs, value, onChange }: { tabs: { id: T; label: string }[]; value: T; onChange: (v: T) => void }) {
   const id = useId()
+  const wrap = useRef<HTMLDivElement>(null)
+  // Long tab rows scroll sideways: keep the active tab in view (without moving the page).
+  useEffect(() => {
+    const w = wrap.current
+    const btn = w?.querySelector<HTMLElement>('.seg-btn.active')
+    if (!w || !btn || w.scrollWidth <= w.clientWidth) return
+    const left = btn.getBoundingClientRect().left - w.getBoundingClientRect().left + w.scrollLeft
+    if (left < w.scrollLeft || left + btn.offsetWidth > w.scrollLeft + w.clientWidth) w.scrollTo({ left: left - (w.clientWidth - btn.offsetWidth) / 2, behavior: 'smooth' })
+  }, [value])
   return (
-    <div className="seg-wrap">
+    <div className="seg-wrap" ref={wrap}>
       <div className="seg" role="tablist">
         {tabs.map((t) => (
           <button key={t.id} role="tab" aria-selected={value === t.id} className={value === t.id ? 'seg-btn active' : 'seg-btn'} onClick={() => onChange(t.id)}>

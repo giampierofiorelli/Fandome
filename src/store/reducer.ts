@@ -22,6 +22,7 @@ export type Action =
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
   | { type: 'pinPost'; postId: Id; replace?: Id }
+  | { type: 'toggleSave'; postId: Id }
   | { type: 'respondCollab'; postId: Id; accept: boolean }
   | { type: 'leaveCollab'; postId: Id }
   | { type: 'unpinPost'; postId: Id }
@@ -194,6 +195,18 @@ function apply(state: State, action: Action): State {
         const collab = p.collab.filter((c) => c.userId !== me)
         return { ...p, collab: collab.length ? collab : undefined }
       })
+    case 'toggleSave': {
+      // Private bookmarks: only you see what you saved.
+      if (!me || !state.posts.some((x) => x.id === action.postId)) return state
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id !== me) return u
+          const saved = u.saved ?? []
+          return { ...u, saved: saved.includes(action.postId) ? saved.filter((id) => id !== action.postId) : [action.postId, ...saved] }
+        }),
+      }
+    }
     case 'pinPost':
     case 'unpinPost': {
       // Pins live on the author's profile: your own posts, or a page you manage.

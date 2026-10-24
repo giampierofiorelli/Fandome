@@ -1186,3 +1186,13 @@ body.story-open .modal-root { z-index: 100; }
 .deezer .embed-logo { background: #a238ff; }
 .social-poster .block { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.35; margin-top: 2px; }
 .tiktok .embed-logo { box-shadow: none; }
+.act.on-ink { color: var(--text); }
+.saved-note { text-align: center; margin: 0 0 10px; }
+
+/* Add to calendar */
+.cal-what { margin: 0 2px 12px; line-height: 1.45; }
+.cal-options { display: grid; gap: 10px; }
+.cal-option { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 18px; border: 1px solid var(--glass-line); background: var(--glass-strong); color: var(--text); text-decoration: none; transition: transform 0.12s ease-out; }
+.cal-option:active { transform: scale(0.98); }
+.cal-option strong { font-weight: 500; }
+.profile-tabs { scroll-margin-top: 12px; }

@@ -180,6 +180,10 @@ export function Privacy() {
         If you choose “Connect Spotify”, you log in on Spotify and the access key is kept only in your browser. Concert dates come from Ticketmaster through a nightly job: no personal data is sent;
         ticket links open Ticketmaster’s own site.
       </p>
+      <p>
+        Saved posts are private and stay on your device. “Add to calendar” gives you a calendar file made by Fandome; the Google Calendar option opens Google, which then receives the show details
+        under its own privacy policy.
+      </p>
 
       <h2>Moderation</h2>
       <p>

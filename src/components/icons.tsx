@@ -295,3 +295,14 @@ export const IconUsers = (p: P) => (
     <path d="M16.5 14.2c2.6.2 4.5 2 5 4.6" />
   </Svg>
 )
+export const IconBookmark = ({ filled, ...p }: P & { filled?: boolean }) => (
+  <Svg {...p} fill={filled ? 'currentColor' : 'none'}>
+    <path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.2-6.5 4.2v-16a1 1 0 0 1 1-1z" />
+  </Svg>
+)
+export const IconCalendar = (p: P) => (
+  <Svg {...p}>
+    <rect x="3.5" y="5" width="17" height="15.5" rx="3" />
+    <path d="M3.5 10h17M8 3v4M16 3v4" />
+  </Svg>
+)
