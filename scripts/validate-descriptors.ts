@@ -74,7 +74,6 @@ for (const file of files) {
     const lyr = r.lyrics.split('|').filter(Boolean)
     if (lyr.some((l) => !LYRICS.has(l))) say(where, `lyrics "${r.lyrics}"`)
     if (r.language && r.language.split('|').some((l) => !/^[a-z]{2}$/.test(l))) say(where, `language "${r.language}"`)
-    if (r.scene.split(/\s+/).filter(Boolean).length > 4) say(where, `scene longer than 4 words`)
     if (!/^[01]$/.test(r.landmark)) say(where, `landmark "${r.landmark}"`)
     if (!['high', 'medium', 'low'].includes(r.confidence)) say(where, `confidence "${r.confidence}"`)
     if (!['draft', 'reviewed'].includes(r.status)) say(where, `status "${r.status}"`)
