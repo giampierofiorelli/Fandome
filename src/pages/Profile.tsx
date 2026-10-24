@@ -346,7 +346,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
 function LinkIcon({ s }: { s: LinkService }) {
   if (s.icon)
     return (
-      <svg viewBox="0 0 24 24" className="brand-glyph" aria-hidden>
+      <svg viewBox="0 0 24 24" className="brand-glyph" width="13" height="13" preserveAspectRatio="xMidYMid meet" aria-hidden>
         <path d={s.icon} fill="#fff" />
       </svg>
     )
