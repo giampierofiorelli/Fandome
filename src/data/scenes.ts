@@ -11,6 +11,8 @@ export type Genre =
   | 'flamenco' | 'ska' | 'dubstep' | 'ukgarage' | 'frenchtouch' | 'dancehall' | 'kuduro' | 'newjackswing' | 'acidhouse'
   | 'deephouse' | 'edm' | 'breakbeat' | 'hyperpop' | 'blues' | 'postdisco' | 'electrohouse' | 'britpop' | 'powerpop' | 'electropop' | 'tropicalhouse'
   | 'trappop' | 'italodisco' | 'dancepop' | 'eurodance'
+  | 'gothpop' | 'darkwave' | 'poppunk' | 'newwave' | 'grunge' | 'experimentalpop' | 'industrial' | 'eurotrance' | 'grime'
+  | 'footwork' | 'garage' | 'neorave' | 'gothtrap'
 
 export interface ArtistScene {
   country: string
@@ -144,6 +146,8 @@ export const GENRE_LABELS: Record<Genre, string> = {
   kuduro: 'Kuduro', newjackswing: 'New jack swing', acidhouse: 'Acid house', deephouse: 'Deep house', edm: 'EDM', breakbeat: 'Breakbeat',
   hyperpop: 'Hyperpop', blues: 'Blues', postdisco: 'Post-disco', electrohouse: 'Electro house', britpop: 'Britpop', powerpop: 'Power pop', electropop: 'Electropop', tropicalhouse: 'Tropical house',
   trappop: 'Trap-pop', italodisco: 'Italo disco', dancepop: 'Dance-pop', eurodance: 'Eurodance',
+  gothpop: 'Goth pop', darkwave: 'Darkwave', poppunk: 'Pop punk', newwave: 'New wave', grunge: 'Grunge', experimentalpop: 'Experimental pop',
+  industrial: 'Industrial', eurotrance: 'Eurotrance', grime: 'Grime', footwork: 'Footwork', garage: 'Garage', neorave: 'Neo-rave', gothtrap: 'Goth trap',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
