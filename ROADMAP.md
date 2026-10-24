@@ -12,7 +12,11 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 - **Ticketmaster API key** for live concert dates: add the `TICKETMASTER_API_KEY` repository secret (Settings → Secrets and variables → Actions). The nightly job in `scripts/fetch-concerts.ts` does the rest.
 - **Owner name, contact email and address** for the legal notice, privacy policy and terms (GDPR, D.Lgs. 70/2003 art. 7, DSA arts. 11–12): `OWNER_NAME`, `CONTACT_EMAIL`, `OWNER_ADDRESS` (and `OWNER_VAT` only if it becomes an economic activity) in `src/config.ts`. Shown in the footer and on `/legal`.
 - **Lawyer review** of the privacy policy, terms, moderation and ticket-board wording before opening to the public.
-- **Artist photos still missing**: sombr and Muse (Wikidata item to add in `scripts/fetch-artist-photos.ts`, or `EXTRA_QIDS`), Tina Turner and Michael Jackson (their Wikidata photos are US-only public-domain promo shots: pick a CC photo on Commons instead). Re-run the script, then resize to 480px JPEG.
+- **Official artist profile photos (owner's decision).** Replace the temporary Wikimedia Commons photos with the profile image each artist currently uses on Spotify / Apple Music, the one they chose to represent themselves now. Owner's position: Fandome is for fans but above all to promote and support the artists; the owner takes responsibility for using these images.
+  - Source: Spotify Web API (`/v1/artists/{id}` → `images`) or Apple Music API (artist artwork), fetched in the nightly GitHub Action and saved with the site, so visitors' browsers don't contact Spotify/Apple.
+  - Write the statement in the right places, starting with the site footer and the Legal notice: images belong to the artists and their rights holders, used to promote and support them, removed on request.
+  - Then remove the Commons credits (`src/data/artistPhotos.json`, `PhotoCredit`, the Legal notice list) and the temporary photos in `public/artists/`.
+  - Until then the Commons photos stay, as a demo (sombr, Muse, Tina Turner and Michael Jackson have none yet).
 - **Artist catalogue**: 58 rooms in `src/data/seed.ts` + `src/data/catalog.ts`, with main studio albums typed by hand. Next: albums from MusicBrainz automatically (free, 1 request/second), then a "Request an artist" flow (create the room after N requests or admin approval).
 
 ## Product, later
