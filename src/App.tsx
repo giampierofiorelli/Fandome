@@ -1,5 +1,5 @@
-import { motion } from 'motion/react'
-import { useEffect, type ReactNode } from 'react'
+import { AnimatePresence, motion } from 'motion/react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { Link, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { useStore } from './store/store'
 import { conversations } from './store/reducer'
@@ -119,6 +119,42 @@ function useAutoUpdate() {
   }, [toast])
 }
 
+// First visit on this device: the animated logo, big, for a moment. Tap to skip.
+const INTRO_KEY = 'fandome:intro'
+function Intro() {
+  const [show, setShow] = useState(() => {
+    try {
+      return !localStorage.getItem(INTRO_KEY)
+    } catch {
+      return false
+    }
+  })
+  useEffect(() => {
+    if (!show) return
+    try {
+      localStorage.setItem(INTRO_KEY, String(Date.now()))
+    } catch {
+      // private mode: it may show again next time
+    }
+    const t = setTimeout(() => setShow(false), 2300)
+    return () => clearTimeout(t)
+  }, [show])
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.div className="intro" onClick={() => setShow(false)} initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} aria-hidden>
+          <motion.div className="dotmatrix intro-logo" initial={{ scale: 0.92, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 1.04 }} transition={spring}>
+            <DiscoLogo text="FANDOME" fast />
+          </motion.div>
+          <motion.p className="intro-tag" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.5 }}>
+            by music lovers, for music lovers
+          </motion.p>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}
+
 export default function App() {
   const { me, dispatch } = useStore()
   const compose = useComposer()
@@ -170,6 +206,7 @@ export default function App() {
         <Footer />
       </main>
 
+      <Intro />
       <ConsentBanner />
       <nav className="tabbar" aria-label="Main">
         <Tab to="/" end icon={<IconHome size={22} />} label="Home" />

@@ -1278,3 +1278,8 @@ body.story-open .modal-root { z-index: 100; }
 
 .chart-top-info .dot-crown { display: block; margin-bottom: 4px; }
 .chart-top { gap: 14px; padding: 16px 16px 16px 4px; }
+
+/* First-visit intro: the animated logo */
+.intro { position: fixed; inset: 0; z-index: 200; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; background: var(--bg); cursor: pointer; }
+.intro-logo { font-size: 44px; letter-spacing: 0.06em; color: var(--text); }
+.intro-tag { margin: 0; font-size: 13px; color: var(--muted); }

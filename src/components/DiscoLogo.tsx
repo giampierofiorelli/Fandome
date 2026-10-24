@@ -58,7 +58,8 @@ export function findDots(text: string, font: string, w: number, h: number, scale
   return dots
 }
 
-export function DiscoLogo({ text }: { text: string }) {
+// fast: the intro version, lively from the first frame (wave at once, more sparks).
+export function DiscoLogo({ text, fast = false }: { text: string; fast?: boolean }) {
   const wrap = useRef<HTMLSpanElement>(null)
   const canvas = useRef<HTMLCanvasElement>(null)
 
@@ -72,7 +73,7 @@ export function DiscoLogo({ text }: { text: string }) {
     let dots: Dot[] = []
     const sparks: Spark[] = []
     let nextSpark = 0
-    let nextWave = performance.now() + 4000
+    let nextWave = performance.now() + (fast ? 250 : 4000)
     let waveStart = -1
     const dpr = Math.min(3, window.devicePixelRatio || 1)
 
@@ -126,13 +127,13 @@ export function DiscoLogo({ text }: { text: string }) {
           return
         }
         // A new spark every ~0.5–1.2s, at most 3 at a time: very subtle.
-        if (t > nextSpark && sparks.length < 3) {
+        if (t > nextSpark && sparks.length < (fast ? 7 : 3)) {
           sparks.push({ dot: Math.floor(Math.random() * dots.length), color: NEON[Math.floor(Math.random() * NEON.length)], start: t, life: 900 + Math.random() * 900 })
-          nextSpark = t + 500 + Math.random() * 700
+          nextSpark = t + (fast ? 60 + Math.random() * 120 : 500 + Math.random() * 700)
         }
         if (t > nextWave) {
           waveStart = t
-          nextWave = t + 9000 + Math.random() * 5000
+          nextWave = t + (fast ? 1500 : 9000 + Math.random() * 5000)
         }
         for (let i = sparks.length - 1; i >= 0; i--) {
           const s = sparks[i]
@@ -189,7 +190,7 @@ export function DiscoLogo({ text }: { text: string }) {
       cancelAnimationFrame(raf)
       document.removeEventListener('visibilitychange', onVis)
     }
-  }, [text])
+  }, [text, fast])
 
   return (
     <span className="disco-logo" ref={wrap}>
