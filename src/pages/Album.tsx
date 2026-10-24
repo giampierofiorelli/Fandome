@@ -10,6 +10,7 @@ import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { useComposer } from '../components/Composer'
 import { IconPen } from '../components/icons'
 import { SimilarList } from '../components/SimilarList'
+import { SceneBack } from '../components/SceneBack'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
 import { similarAlbums } from '../lib/similar'
 import { avoidAlbums } from '../lib/suggest'
@@ -35,6 +36,7 @@ export default function AlbumPage() {
 
   return (
     <>
+      <SceneBack />
       <header className="hero-soft album-hero" style={{ ['--tint' as string]: artist?.color }}>
         <div className="album-hero-cover">
           <AlbumCover album={album} size={168} />

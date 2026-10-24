@@ -7,6 +7,7 @@ import { artistGenres, similarArtists } from '../lib/similar'
 import { avoidAlbums } from '../lib/suggest'
 import { genreLabel } from '../lib/descriptors'
 import { SuggestedArtist } from '../components/SuggestedArtist'
+import { SceneBack } from '../components/SceneBack'
 import { starterPack } from '../lib/packs'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
@@ -56,6 +57,7 @@ export default function ArtistPage() {
 
   return (
     <>
+      <SceneBack />
       <header className="hero-soft" style={{ ['--tint' as string]: artist.color }}>
         {artistPhoto(artist.id) && <img className="hero-artist-photo" src={artistPhoto(artist.id)!.url} alt={artist.name} style={{ objectPosition: photoPos(artistPhoto(artist.id)) }} />}
         <div className="hero-kicker">Fan room · independent</div>

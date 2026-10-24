@@ -1348,3 +1348,16 @@ a.link-rich:active { transform: scale(0.985); }
 .scene-check.on { background: var(--accent); border-color: transparent; color: #fff; }
 .scene-check:active { transform: scale(0.9); }
 .scene-step.done strong { color: var(--text-2); }
+
+.scene-back { display: inline-flex; align-items: center; gap: 6px; margin: 14px 0 0; }
+.scene-step-open { border: 0; background: none; padding: 0; font: inherit; text-align: left; cursor: pointer; }
+.step-sheet { display: flex; flex-direction: column; gap: 16px; }
+.step-head { display: flex; align-items: center; gap: 14px; }
+.step-name { display: block; font-size: 22px; font-weight: 500; letter-spacing: -0.03em; }
+.step-why { margin: 0; font-size: 15px; line-height: 1.45; }
+.step-todo { display: flex; flex-direction: column; gap: 8px; }
+.step-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.step-links .pill-btn { display: inline-flex; align-items: center; gap: 6px; }
+.step-foot { display: flex; flex-direction: column; align-items: stretch; gap: 10px; border-top: 1px solid var(--glass-line); padding-top: 14px; }
+.step-foot .link-btn { align-self: center; }
+.step-done { color: var(--accent); text-align: center; }

@@ -93,6 +93,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const [asId, setAsId] = useState(opts.as ?? '')
   const [photoBusy, setPhotoBusy] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
+  // One post per tap, even if the tap fires both pointerdown and click.
+  const posted = useRef(false)
   const audioFileRef = useRef<HTMLInputElement>(null)
   const [audio, setAudio] = useState<VoiceNote | null>(null)
   const recorder = useRef<ReturnType<typeof createRecorder> | null>(null)
@@ -150,7 +152,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const canPost = recSecs === null && (text.trim().length > 0 || Boolean(photo) || Boolean(embed) || Boolean(audio)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0) && artistIds.length > 0
 
   const submit = () => {
-    if (!canPost) return
+    if (!canPost || posted.current) return
+    posted.current = true
     dispatch({
       type: 'post',
       id: newId(),
@@ -427,7 +430,19 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
             </button>
           )}
         </div>
-        <button className="btn primary post-btn" disabled={!canPost} onClick={submit}>
+        <button
+          className="btn primary post-btn"
+          disabled={!canPost}
+          // On phones the first tap also closes the keyboard: the sheet moves down and the click was
+          // lost under the finger (a second tap was needed). Post as soon as the finger touches.
+          onPointerDown={(e) => {
+            if (e.pointerType !== 'mouse') {
+              e.preventDefault()
+              submit()
+            }
+          }}
+          onClick={submit}
+        >
           {parent ? 'Reply' : 'Post'}
         </button>
       </div>
