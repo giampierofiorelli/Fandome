@@ -99,6 +99,7 @@ export const albums: Album[] = [
   { id: 'gaga-harlequin', artistId: 'gaga', title: 'Harlequin', year: 2024 },
   { id: 'gaga-jokerfolieadeuxmusicfromthemotionpicture', artistId: 'gaga', title: 'Joker: Folie à Deux (Music From the Motion Picture)', year: 2024 },
   { id: 'g-mayhem', artistId: 'gaga', title: 'Mayhem', year: 2025 },
+  { id: 'gaga-applemusiclivemayhemrequiem', artistId: 'gaga', title: 'Apple Music Live: MAYHEM Requiem', year: 2026 },
   ...catalogAlbums,
 ]
 

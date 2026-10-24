@@ -1,0 +1,36 @@
+album_id,genre,scope,source_keys,evidence,evidence_strength
+g-mayhem,dancepop,album,M_GU|M_AOTY|M_NME,Dance-pop is the driving structural and commercial form across most tracks,high
+g-mayhem,pop,album,M_Q|M_PF|M_SL,Publisher genre plus multiple critical treatments of album as pop,high
+g-mayhem,synthpop,substantial,M_SL|M_NME|M_AOTY,Predominant 1980s synth-pop idiom across middle sequence,high
+g-mayhem,electropop,substantial,M_EU|M_Q|M_AOTY,Electronic-pop identity and explicit electropop descriptions,high
+g-mayhem,electronic,album,M_VO|M_PF|M_Q,"Programmed and analog-synth layers pervasive, mixed with guitars and piano",high
+g-mayhem,dance,album,M_GU|M_ST,Dance-floor orientation over large portion of original album,high
+g-mayhem,industrial,substantial,M_PF|M_SL|M_VA,"Mechanical/abrasive industrial texture in Disease, Killah and neighboring songs",high
+g-mayhem,industrialdance,track-subset,M_SL|M_EU,Artist-named industrial dance influence; not every track uses that sound,medium
+g-mayhem,disco,substantial,M_GU|M_PF,Disco character of Zombieboy and other funk/disco-oriented songs,high
+g-mayhem,house,substantial,M_GU|M_ST,House pulse and French-touch rhythm recurring in club tracks,high
+g-mayhem,electro,track-subset,M_SL|M_PF,Garden of Eden called electro; growling synth bass and electropop rhythmic material,high
+g-mayhem,electrofunk,track-subset,M_GU|M_PF,Killah described as electro-funk with dance-oriented bass and beat,high
+g-mayhem,funk,substantial,M_VA|M_GU|M_PF,Several songs emphasize rubbery bass and Chic/Prince funk lineage,high
+g-mayhem,rock,substantial,M_VO|M_GU|M_VA,Guitars and live rock instrumentation in several songs,high
+g-mayhem,poprock,track-subset,M_SL|M_AOTY,The Beast described pop-rock; metagenre appears in album taxonomy,medium
+g-mayhem,grunge,texture,M_VA|M_Q,Grunge guitar approach invoked especially on Perfect Celebrity,medium
+g-mayhem,electrogrunge,track-subset,M_MR|M_EL,Artist explicitly calls Perfect Celebrity electro-grunge; not the full album,high
+g-mayhem,pianohouse,track-subset,M_PF,Abracadabra contains critic-identified piano-house passages,high
+g-mayhem,newwave,track-subset,M_GU,Killah described as incorporating new-wave rock rhythmic shift,high
+g-mayhem,frenchtouch,track-subset,M_ST|M_EL,"Shadow of a Man identified with French touch house, artist acknowledges French dance influence",high
+g-mayhem,drumandbass,texture,M_GU,Killah has a break of double-time drum-and-bass/techstep texture,high
+g-mayhem,techstep,texture,M_GU,Guardian uses techstep for the double-time segment of Killah,high
+g-mayhem,softrock,track-subset,M_Q|M_GU,Die With A Smile explicitly described as 1970s soft-rock influenced ballad,high
+g-mayhem,nudisco,stylistic-reference,M_AOTY,Album of the Year explicit nu-disco descriptor; concentrated in disco-pop sections,medium
+g-mayhem,boogie,texture,M_GU,Reviewer explicitly names 1980s boogie among allusions,medium
+g-mayhem,aor,track-subset,M_GU,"Reviewer labels LoveDrug AOR influenced, while beat remains four-on-the-floor",high
+g-mayhem,powerballad,track-subset,M_GU|M_SL,Blade of Grass and Die With A Smile are identified as power ballads,high
+g-mayhem,hairmetal,texture,M_GU,"Reviewer describes hair-metal guitar solo in Zombieboy, not whole song genre",high
+gaga-applemusiclivemayhemrequiem,pop,album,R_AP|R_OFF,Apple Music uses Pop for standalone live release; familiar pop songs rearranged,high
+gaga-applemusiclivemayhemrequiem,electronic,substantial,R_AP|R_VA,"Synths, programming, electronic marches and droning textures in live reworks",high
+gaga-applemusiclivemayhemrequiem,industrial,track-subset,R_AP|R_VA,Heavy industrial treatment of Killah; Disease described as NIN-like,high
+gaga-applemusiclivemayhemrequiem,newwave,substantial,R_VA,Variety characterizes live arrangements as recalling 1980s new-wave timbre,high
+gaga-applemusiclivemayhemrequiem,gothpop,substantial,R_VA,"Variety explicitly names goth pop as live sonic reference, not entire set",high
+gaga-applemusiclivemayhemrequiem,electrofunk,track-subset,R_AP,Electro-funk reworking of Die With A Smile explicitly identified by platform,high
+gaga-applemusiclivemayhemrequiem,rock,substantial,R_VA,Full live band and guitar-based industrial rock coloration,medium
