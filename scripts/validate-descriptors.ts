@@ -3,6 +3,7 @@
 // Run: npx vite-node scripts/validate-descriptors.ts
 import { readdirSync, readFileSync } from 'node:fs'
 import { albums, artists } from '../src/data/seed'
+import { parseCsv as parse } from '../src/lib/csv'
 
 const HEADER = 'album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes'.split(',')
 const SCALES = ['energy', 'electronic', 'mood', 'theatrical', 'experimental', 'polish', 'tempo', 'groove']
@@ -10,29 +11,6 @@ const GENRES = new Set('pop dance electronic synthpop disco rock indie alt metal
 const TYPES = new Set(['studio', 'soundtrack', 'compilation', 'live', 'remix', 'ep', 'mixtape'])
 const VOICES = new Set(['soft', 'clear', 'powerful', 'raspy', 'rap', 'spoken', 'choral', 'instrumental'])
 const LYRICS = new Set('love heartbreak introspection social political storytelling party irony spiritual sensuality identity nostalgia'.split(' '))
-
-// Minimal CSV parser (quoted fields, doubled quotes).
-function parse(text: string): string[][] {
-  const rows: string[][] = []
-  let row: string[] = []
-  let cell = ''
-  let q = false
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i]
-    if (q) {
-      if (c === '"' && text[i + 1] === '"') (cell += '"'), i++
-      else if (c === '"') q = false
-      else cell += c
-    } else if (c === '"') q = true
-    else if (c === ',') row.push(cell), (cell = '')
-    else if (c === '\n' || c === '\r') {
-      if (c === '\r' && text[i + 1] === '\n') i++
-      row.push(cell), rows.push(row), (row = []), (cell = '')
-    } else cell += c
-  }
-  if (cell || row.length) row.push(cell), rows.push(row)
-  return rows.filter((r) => r.some((x) => x.trim()))
-}
 
 const slug = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
 const albumIds = new Set(albums.map((a) => a.id))

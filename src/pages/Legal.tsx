@@ -25,7 +25,7 @@ export function ConsentBanner() {
           </button>
           <strong>Your privacy</strong>
           <p>
-            Fandome uses only what it needs to work, saved on your device. No ads, no analytics. Videos and music players (YouTube, Spotify, Instagram…) come from other companies that may set cookies and see your IP: load them automatically?
+            Fandome uses only what it needs to work, saved on your device. No analytics, no tracking. Videos and music players (YouTube, Spotify, Instagram…) come from other companies that may set cookies and see your IP: load them automatically?
           </p>
           <p className="consent-note">If you say no, each one stays closed and opens only if you tap it. You can change your choice anytime in Settings or from “Privacy choices” at the bottom of every page.</p>
           <div className="consent-actions">
@@ -190,7 +190,7 @@ export function Privacy() {
       </p>
 
       <h2>No tracking</h2>
-      <p>No advertising, no analytics, no tracking cookies. Fonts are served from this site, not from Google.</p>
+      <p>No analytics and no tracking cookies. Fonts are served from this site, not from Google.</p>
 
       <h2>Hosting</h2>
       <p>
@@ -292,7 +292,7 @@ export function Terms() {
         No profiling: everything is worked out on your device from what you chose to follow (DSA art. 27). Following: posts from people you follow, newest first. Latest:
         every post about the artists you follow, newest first. Trending: posts about your artists from the last 48 hours (a week when it is quiet), ranked by how many different people replied
         (counts most), reposted or quoted, or liked them, with older posts fading; each person counts once, and at most two posts per author are shown. Artist suggestions in Explore come from the
-        artists followed by people you follow and by fans of your artists; each one says why it is shown. Latest is always there if you prefer a plain timeline. Today there is no advertising and nothing is boosted for money; if sponsored content ever appears, it will always be clearly labelled as such (DSA art. 26) and never disguised as a recommendation.
+        artists followed by people you follow and by fans of your artists; each one says why it is shown. “If you like this album”, on album pages, compares albums by other artists using descriptions written by Fandome’s editors from published reviews and credits: genres (the main ones count most), sound (energy, electronic or acoustic, mood, danceability…), and documented links such as the same producer, a shared influence or a critic’s comparison; it shows at most two albums per artist and always says why. It doesn’t use anything about you. Latest is always there if you prefer a plain timeline. Today there is no advertising and nothing is boosted for money; if sponsored content ever appears, it will always be clearly labelled as such (DSA art. 26) and never disguised as a recommendation.
       </p>
 
       <h2 id="reporting">Reporting and moderation</h2>

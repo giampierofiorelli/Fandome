@@ -8,10 +8,10 @@ import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, artistPhoto, Avatar, PhotoCredit, photoPos, Tabs } from '../components/ui'
-import { AnimatePresence, motion } from 'motion/react'
+import { motion } from 'motion/react'
 import { useToast } from '../components/Toast'
 import { sceneLine } from '../data/scenes'
-import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
+import { fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
 import { artistById, isUpcoming } from '../lib/util'
 import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen, IconSend } from '../components/icons'
@@ -24,13 +24,12 @@ export default function ArtistPage() {
   const { state, dispatch, me } = useStore()
   const compose = useComposer()
   const [tab, setTab] = useState('all')
-  const [rating, setRating] = useState<string | null>(null)
   const [suggest, setSuggest] = useState(false)
   if (!artist) return <Navigate to="/explore" replace />
 
   const joined = Boolean(me?.fanSince[artist.id])
   const fans = state.users.filter((u) => u.fanSince[artist.id])
-  const myAlbums = albums.filter((a) => a.artistId === artist.id)
+  const myAlbums = albums.filter((a) => a.artistId === artist.id).sort((a, b) => a.year - b.year)
   const shows = concerts.filter((c) => c.artistId === artist.id).sort((a, b) => b.date.localeCompare(a.date))
   const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
@@ -97,7 +96,7 @@ export default function ArtistPage() {
 
       {tab === 'albums' && (
         <>
-          <p className="muted small center tab-hint">Tap an album to score it out of 10</p>
+          <p className="muted small center tab-hint">Tap an album to rate it and find similar music</p>
           <div className="album-grid">
             {myAlbums.map((al) => {
               const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))
@@ -105,7 +104,7 @@ export default function ArtistPage() {
               const mine = me?.ratings[al.id]
               const fav = me?.top4.includes(al.id)
               return (
-                <button key={al.id} className="album-tile" onClick={() => setRating(al.id)}>
+                <Link key={al.id} to={`/album/${al.id}`} className="album-tile">
                   <span className="album-art">
                     <AlbumCover album={al} size={150} />
                     {fav && (
@@ -119,14 +118,13 @@ export default function ArtistPage() {
                   <span className="muted small">
                     {al.year} · {avg ? `fans ${fmtScore(Math.round(avg * 10) / 10)}` : 'no ratings yet'}
                   </span>
-                </button>
+                </Link>
               )
             })}
           </div>
         </>
       )}
       {suggest && <SuggestArtistSheet artistId={artist.id} onClose={() => setSuggest(false)} />}
-      <AnimatePresence>{rating && <AlbumRater key={rating} albumId={rating} onClose={() => setRating(null)} />}</AnimatePresence>
 
       {tab === 'shows' && <ShowsTab artistId={artist.id} />}
 

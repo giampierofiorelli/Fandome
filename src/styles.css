@@ -1298,3 +1298,10 @@ a.link-rich:active { transform: scale(0.985); }
 .add-preview { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; width: 100%; margin: 0 0 8px; padding: 12px 14px; border-radius: 16px; border: 1px dashed var(--glass-edge); background: transparent; color: var(--text); font: inherit; font-size: 14px; font-weight: 500; text-align: left; }
 .add-preview .muted { font-weight: 400; }
 .hero-scene { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+
+/* Album page: the sound (descriptors) and similar albums */
+.album-sound { padding: 0 2px; }
+.sound-genres { display: flex; flex-wrap: wrap; }
+.sound-line { margin: 10px 0 0; }
+.similar-row + .similar-row::before { left: 70px; }
+.similar-why { margin-top: 3px; color: var(--text-2); }

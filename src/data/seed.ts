@@ -59,12 +59,21 @@ export const artists: Artist[] = [
 ]
 
 export const albums: Album[] = [
+  { id: 'madonna-madonna', artistId: 'madonna', title: 'Madonna', year: 1983 },
   { id: 'm-virgin', artistId: 'madonna', title: 'Like a Virgin', year: 1984 },
   { id: 'm-trueblue', artistId: 'madonna', title: 'True Blue', year: 1986 },
   { id: 'm-prayer', artistId: 'madonna', title: 'Like a Prayer', year: 1989 },
+  { id: 'madonna-erotica', artistId: 'madonna', title: 'Erotica', year: 1992 },
+  { id: 'madonna-bedtimestories', artistId: 'madonna', title: 'Bedtime Stories', year: 1994 },
   { id: 'm-ray', artistId: 'madonna', title: 'Ray of Light', year: 1998 },
   { id: 'm-music', artistId: 'madonna', title: 'Music', year: 2000 },
+  { id: 'madonna-americanlife', artistId: 'madonna', title: 'American Life', year: 2003 },
   { id: 'm-confessions', artistId: 'madonna', title: 'Confessions on a Dance Floor', year: 2005 },
+  { id: 'madonna-hardcandy', artistId: 'madonna', title: 'Hard Candy', year: 2008 },
+  { id: 'madonna-mdna', artistId: 'madonna', title: 'MDNA', year: 2012 },
+  { id: 'madonna-rebelheart', artistId: 'madonna', title: 'Rebel Heart', year: 2015 },
+  { id: 'madonna-madamex', artistId: 'madonna', title: 'Madame X', year: 2019 },
+  { id: 'madonna-confessionsii', artistId: 'madonna', title: 'Confessions II', year: 2026 },
   { id: 'k-lightyears', artistId: 'kylie', title: 'Light Years', year: 2000 },
   { id: 'k-fever', artistId: 'kylie', title: 'Fever', year: 2001 },
   { id: 'k-disco', artistId: 'kylie', title: 'Disco', year: 2020 },
