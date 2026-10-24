@@ -25,10 +25,20 @@ export function fanSeeds(me: User, albums: Album[]): AlbumSeed[] {
   return [...rated, ...followed]
 }
 
+// Albums that push similar suggestions away: rated 2/5 (4/10) or lower, and albums you hid.
+// A hidden artist is only hidden: it doesn't push down a whole genre.
+export function avoidAlbums(me: User | null | undefined, albums: Album[]): string[] {
+  if (!me) return []
+  const hidden = new Set(me.notForMe ?? [])
+  const low = Object.entries(me.ratings ?? {}).filter(([, r]) => r <= 2).map(([id]) => id)
+  return [...low, ...albums.filter((a) => hidden.has(a.id)).map((a) => a.id)]
+}
+
 export function suggestArtists(me: User, users: User[], artists: Artist[], limit = 4, albums: Album[] = []): ArtistSuggestion[] {
   const mine = new Set(Object.keys(me.fanSince))
   const people = users.filter((u) => u.id !== me.id && u.kind !== 'page')
   const seeds = fanSeeds(me, albums)
+  const avoid = avoidAlbums(me, albums)
   const hidden = new Set(me.notForMe ?? [])
   // Discovery: a small push for artists from countries none of your artists come from.
   const myCountries = new Set([...mine].map((id) => sceneOf(id)?.country).filter(Boolean))
@@ -47,7 +57,7 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
     const theirs = albums.filter((al) => al.artistId === a.id)
     // An album of theirs you rated highly is the clearest reason of all.
     const loved = theirs.find((al) => (me.ratings?.[al.id] ?? 0) >= 4)
-    const match = loved ? { score: 1, reason: `You rated ${loved.title} highly` } : seeds.length ? soundMatch(seeds, theirs.map((al) => al.id)) : null
+    const match = loved ? { score: 1, reason: `You rated ${loved.title} highly` } : seeds.length ? soundMatch(seeds, theirs.map((al) => al.id), avoid) : null
     const sound = match && match.score >= 0.35 ? Math.min(1, match.score) : 0
     if (!social && !sound) continue
     const top = [...shared.entries()].sort((x, y) => y[1] - x[1])[0]?.[0]

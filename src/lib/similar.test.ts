@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { DESCRIPTORS, parseDescriptors, releaseLabel } from './descriptors'
-import { compareAlbums, genreSimilarity, scaleSimilarity, similarAlbums } from './similar'
+import { artistGenres, compareAlbums, genreSimilarity, scaleSimilarity, similarAlbums, similarArtists } from './similar'
 import { albums, artists } from '../data/seed'
 import { suggestArtists } from './suggest'
 import type { User } from '../data/types'
@@ -127,5 +127,49 @@ describe('discovery and "Not for me"', () => {
     expect(s.map((x) => x.artist.id)).not.toContain('madonna')
     expect(s.find((x) => x.artist.id === 'charlixcx')?.newCountry).toBe('United Kingdom')
     expect(s.find((x) => x.artist.id === 'annalisa')?.newCountry).toBeUndefined()
+  })
+})
+
+describe('engine v2', () => {
+  const mk = (rows: string[]) => parseDescriptors([HEAD, ...rows].join('\n'))
+
+  it('counts related genres (deep house is close to house), not only identical names', () => {
+    const [a, b, c] = mk([
+      row('a-x', 'A', 'deephouse', ',,,,,,,'),
+      row('b-x', 'B', 'house', ',,,,,,,'),
+      row('c-x', 'C', 'folk', ',,,,,,,'),
+    ])
+    expect(genreSimilarity(a, b)).toBeGreaterThan(0.3)
+    expect(genreSimilarity(a, c)).toBe(0)
+    expect(compareAlbums(a, b).reasons[0]).toBe('Close genres: deep house and house')
+  })
+
+  it('uses lyric themes, voice, era, scene and language when genres and sound tie', () => {
+    const base = (id: string, artist: string, year: number, lyrics: string, voice: string, lang: string) =>
+      `${id},${artist},${id},${year},studio,pop,,,,,,,,,${voice},${lyrics},${lang},Italian urban pop,,,,0,high,draft,note`
+    const [a, near, far] = mk([base('a-y', 'A', 2020, 'love|identity', 'soft', 'it'), base('b-y', 'B', 2019, 'love|identity', 'soft', 'it'), base('c-y', 'C', 1975, 'party', 'raspy', 'en')])
+    expect(compareAlbums(a, near).score).toBeGreaterThan(compareAlbums(a, far).score)
+    expect(compareAlbums(a, near).reasons).toContain('Both sing about love and identity')
+  })
+
+  it('finds two-step connections through a third artist or producer', () => {
+    const r = similarAlbums('blanco-bluceleste').find((s) => s.albumId === 'elodie-thisiselodie')
+    expect(r?.reasons[0]).toMatch(/^Connected through Mahmood/)
+  })
+
+  it('keeps lists varied and pushes down what you dislike', () => {
+    const plain = similarAlbums('m-confessions', { limit: 5 })
+    const avoided = similarAlbums('m-confessions', { limit: 5, avoid: [plain[0].albumId] })
+    expect(avoided[0]?.albumId).not.toBe(plain[0].albumId)
+  })
+
+  it('builds artist profiles from albums and suggests similar artists with a concrete reason', () => {
+    const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+    const country = { madonna: 'US', charlixcx: 'GB', elodie: 'IT', annalisa: 'IT', mahmood: 'IT', blanco: 'IT' } as Record<string, string>
+    const list = similarArtists('blanco', albumIdsOf, Object.keys(country), { countryOf: (id) => country[id] })
+    expect(list[0].artistId).toBe('mahmood')
+    expect(list.every((s) => s.reason.length > 0)).toBe(true)
+    expect(list.find((s) => s.artistId === 'charlixcx')?.newCountry ?? 'GB').toBe('GB')
+    expect(artistGenres(albumIdsOf('madonna'))[0]).toBe('pop')
   })
 })

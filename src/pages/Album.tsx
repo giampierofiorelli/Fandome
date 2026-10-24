@@ -12,6 +12,8 @@ import { IconPen } from '../components/icons'
 import { SimilarList } from '../components/SimilarList'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
 import { similarAlbums } from '../lib/similar'
+import { avoidAlbums } from '../lib/suggest'
+import { albums } from '../data/seed'
 import { sceneOf } from '../data/scenes'
 
 // One page per album: reached from albums linked in posts. Rate it, and read what fans say.
@@ -29,7 +31,7 @@ export default function AlbumPage() {
   const items = albumFeed(state.posts, album.id)
   const sound = descriptorOf(album.id)
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
-  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe })
+  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
 
   return (
     <>

@@ -10,7 +10,7 @@ import { FeedList } from '../components/FeedList'
 import { PinnedList } from '../components/PostCard'
 import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
-import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
+import { AlbumCover, ArtistDisc, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
 import { IconQr, IconChevronUp, IconDisc, IconFlag, IconLink, IconPin, IconPlus, IconTicket, IconX } from '../components/icons'
 import { BecomeModCard, ModBadge, ReportModal } from '../components/Moderation'
@@ -196,6 +196,28 @@ export default function Profile() {
       )}
       {tab === 'saved' && isMe && (
         <>
+          {(user.discovered ?? []).length > 0 && (
+            <div className="discoveries">
+              <div className="section-head">
+                <h2>Your discoveries</h2>
+                <span className="muted small">{user.discovered!.length}</span>
+              </div>
+              <p className="muted small saved-note">Artists and albums you marked “New to me” in suggestions. Only you can see them.</p>
+              <div className="album-chips">
+                {user.discovered!.map((id) => {
+                  const al = albumById(id)
+                  const ar = al ? undefined : artistById(id)
+                  if (!al && !ar) return null
+                  return (
+                    <Link key={id} to={al ? `/album/${al.id}` : `/a/${ar!.id}`} className="album-chip">
+                      {al ? <AlbumCover album={al} size={28} /> : <ArtistDisc id={ar!.id} size={28} />}
+                      <span>{al ? `${al.title} · ${artistById(al.artistId)?.name ?? ''}` : ar!.name}</span>
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
           <p className="muted small saved-note">Only you can see your saved posts.</p>
           <FeedList items={saved.map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="Tap the bookmark on any post to keep it here." />
         </>

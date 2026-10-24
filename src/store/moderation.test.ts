@@ -128,3 +128,17 @@ describe('collab posts', () => {
     expect(s.posts.find((x) => x.id === 'cp')!.collab).toBeUndefined()
   })
 })
+
+describe('suggestion feedback', () => {
+  it('"New to me" toggles a private discovery; "Not for me" hides once', () => {
+    let s = me()
+    s = reducer(s, { type: 'newToMe', id: 'mahmood' })
+    s = reducer(s, { type: 'newToMe', id: 'm-ray' })
+    expect(s.users.find((u) => u.id === s.meId)!.discovered).toEqual(['m-ray', 'mahmood'])
+    s = reducer(s, { type: 'newToMe', id: 'mahmood' })
+    expect(s.users.find((u) => u.id === s.meId)!.discovered).toEqual(['m-ray'])
+    s = reducer(s, { type: 'notForMe', id: 'blanco' })
+    s = reducer(s, { type: 'notForMe', id: 'blanco' })
+    expect(s.users.find((u) => u.id === s.meId)!.notForMe).toEqual(['blanco'])
+  })
+})

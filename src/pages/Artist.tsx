@@ -2,7 +2,11 @@ import { SuggestArtistSheet } from '../components/ShareSheet'
 import { isAbout } from '../lib/postArtists'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { albums, concerts, parties } from '../data/seed'
+import { albums, artists, concerts, parties } from '../data/seed'
+import { artistGenres, similarArtists } from '../lib/similar'
+import { avoidAlbums } from '../lib/suggest'
+import { genreLabel } from '../lib/descriptors'
+import { SuggestedArtist } from '../components/SuggestedArtist'
 import { starterPack } from '../lib/packs'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
@@ -10,7 +14,7 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, artistPhoto, Avatar, PhotoCredit, photoPos, Tabs } from '../components/ui'
 import { motion } from 'motion/react'
 import { useToast } from '../components/Toast'
-import { sceneLine } from '../data/scenes'
+import { sceneLine, sceneOf } from '../data/scenes'
 import { fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
 import { artistById, isUpcoming } from '../lib/util'
@@ -34,11 +38,18 @@ export default function ArtistPage() {
   const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
   const feed = artist.feeds.find((f) => f.id === tab)
+  // "If you like this artist": computed from the descriptions of their albums.
+  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+  const soundGenres = artistGenres(albumIdsOf(artist.id), 8)
+  const likeThem = soundGenres.length
+    ? similarArtists(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
+    : []
 
   const tabs = [
     { id: 'all', label: 'All' },
     ...artist.feeds.map((f) => ({ id: f.id, label: f.label })),
     { id: 'albums', label: 'Albums' },
+    ...(likeThem.length ? [{ id: 'similar', label: 'Similar' }] : []),
     { id: 'shows', label: 'Tours & shows' },
     { id: 'fans', label: 'Fans' },
   ]
@@ -94,6 +105,32 @@ export default function ArtistPage() {
 
       {(tab === 'all' || feed) && <FeedList items={topicFeed(state.posts, artist.id, feed?.tags)} empty="No posts in this feed yet. Be the first!" />}
 
+      {tab === 'similar' && (
+        <>
+          <p className="muted small center tab-hint">The sound across their albums</p>
+          <div className="sound-genres artist-sound">
+            {soundGenres.map((g) => (
+              <span key={g} className="chip">
+                {genreLabel(g)}
+              </span>
+            ))}
+          </div>
+          <div className="section-head">
+            <h2>If you like {artist.name}</h2>
+          </div>
+          <div className="glass-card list">
+            {likeThem.map((s) => (
+              <SuggestedArtist key={s.artistId} artistId={s.artistId} reason={s.reason} newCountry={s.newCountry} />
+            ))}
+          </div>
+          <p className="muted small suggest-why">
+            From the sound of their albums, their producers and documented influences.{' '}
+            <Link to="/terms#feeds" className="link-btn">
+              How it works
+            </Link>
+          </p>
+        </>
+      )}
       {tab === 'albums' && (
         <>
           <p className="muted small center tab-hint">Tap an album to rate it and find similar music</p>

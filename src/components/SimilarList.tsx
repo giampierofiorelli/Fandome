@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import type { Similar } from '../lib/similar'
 import { albumById, artistById } from '../lib/util'
 import { AlbumCover } from './ui'
-import { IconX } from './icons'
+import { IconSparkle, IconX } from './icons'
+import { useStore } from '../store/store'
 import { COUNTRY_NAMES, fromCountry } from '../data/scenes'
 
 const countryName = (code: string) => COUNTRY_NAMES[code] ?? code
@@ -10,6 +11,7 @@ const countryName = (code: string) => COUNTRY_NAMES[code] ?? code
 // Albums suggested by the descriptor engine, each with the reason it is shown.
 // "Not for me" hides one for good (only on this device).
 export function SimilarList({ items, onHide }: { items: Similar[]; onHide?: (albumId: string) => void }) {
+  const { me, dispatch } = useStore()
   return (
     <div className="album-chart">
       {items.map((s) => {
@@ -28,10 +30,23 @@ export function SimilarList({ items, onHide }: { items: Similar[]; onHide?: (alb
                 <span className="small block similar-why">{s.reasons.join(' · ')}</span>
               </span>
             </Link>
-            {onHide && (
-              <button className="not-for-me" aria-label={`Not for me: ${al.title}`} title="Not for me" onClick={() => onHide(al.id)}>
-                <IconX size={14} />
-              </button>
+            {me && (
+              <span className="suggest-tools">
+                <button
+                  className={me.discovered?.includes(al.id) ? 'not-for-me on' : 'not-for-me'}
+                  aria-pressed={Boolean(me.discovered?.includes(al.id))}
+                  aria-label={`New to me: ${al.title}`}
+                  title="New to me"
+                  onClick={() => dispatch({ type: 'newToMe', id: al.id })}
+                >
+                  <IconSparkle size={14} />
+                </button>
+                {onHide && (
+                  <button className="not-for-me" aria-label={`Not for me: ${al.title}`} title="Not for me" onClick={() => onHide(al.id)}>
+                    <IconX size={14} />
+                  </button>
+                )}
+              </span>
             )}
           </div>
         )

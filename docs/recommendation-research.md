@@ -128,6 +128,14 @@ Then a **diversity re-rank** (maximal marginal relevance): don't show five artis
 
 Needs a backend for the data imports and shared signals (MusicBrainz dumps, ListenBrainz); the scoring itself can run in the browser for a few hundred artists.
 
+## 5. What is built (October 2026)
+
+- Album descriptors for 6 artists (47 releases) in `docs/descriptors/`, loaded by `src/lib/descriptors.ts`.
+- Score between two albums (`compareProfiles`): genres with families (45%), sound scales (30%), voice/themes/era/scene/language (25%), each only where both are known; plus documented links (direct sounds-like/influence scaled by genre fit, shared producers, influences, comparisons, two-step connections). Multiplied by the row's confidence.
+- Ranking: discovery bonus for other countries, penalty for what is similar to albums rated low or hidden, MMR for variety, max 2 per artist.
+- Uses: album pages, artist pages (profiles from albums), Explore (artists you might like = 50% people + 50% sound; Because you rated…; Discover paths).
+- Quality check in `src/lib/recQuality.ts`, enforced by tests.
+
 ## Sources
 
 - Spotify approach (secondary sources): [attractgroup](https://attractgroup.com/blog/how-spotify-algorithm-works-for-music-recommendation/), [Music Pulse](https://www.musicpulse.app/blog/how-the-spotify-algorithm-really-works-in-2026), [scaleengineer](https://scaleengineer.com/blog/how-spotify-optimized-their-recommendation-system)

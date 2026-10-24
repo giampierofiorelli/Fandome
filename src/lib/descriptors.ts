@@ -10,6 +10,7 @@ export interface Descriptor {
   albumId: string
   artist: string
   title: string
+  year?: number
   type: string
   genres: string[] // in order of importance
   scales: Partial<Record<Scale, number>>
@@ -39,6 +40,7 @@ export function parseDescriptors(text: string): Descriptor[] {
       albumId: r.album_id,
       artist: r.artist,
       title: r.title,
+      year: /^\d{4}$/.test(r.year) ? Number(r.year) : undefined,
       type: r.type,
       genres: list(r.genres),
       scales,

@@ -6,13 +6,15 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
 import { discussedAlbums, tagFeed } from '../lib/feed'
 import { DotCrown } from '../components/DiscoLogo'
-import { IconArrowUpRight, IconPin, IconSearch, IconX } from '../components/icons'
-import { fromCountry, sceneOf } from '../data/scenes'
+import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
+import { sceneOf } from '../data/scenes'
 import { albumById, artistById, formatDate, trending } from '../lib/util'
-import { suggestArtists } from '../lib/suggest'
+import { avoidAlbums, suggestArtists } from '../lib/suggest'
+import { discoverPaths } from '../lib/paths'
 import { similarAlbums } from '../lib/similar'
 import { descriptorOf } from '../lib/descriptors'
 import { SimilarList } from '../components/SimilarList'
+import { SuggestedArtist } from '../components/SuggestedArtist'
 
 export default function Explore() {
   const { state, me, dispatch } = useStore()
@@ -39,7 +41,8 @@ export default function Explore() {
         .sort((x, y) => y[1] - x[1])[0]?.[0]
     : undefined
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
-  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe }) : []
+  const paths = me ? discoverPaths(me, artists, albums) : []
+  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) }) : []
   const [allRooms, setAllRooms] = useState(false)
   // Your rooms first, then A–Z; the full list on request.
   const mine = me ? Object.keys(me.fanSince) : []
@@ -123,24 +126,7 @@ export default function Explore() {
               </div>
               <div className="glass-card list">
                 {suggestions.map(({ artist: a, reason, newCountry }) => (
-                  <div key={a.id} className="row-item">
-                    <Link to={`/a/${a.id}`} className="suggest-link">
-                      <ArtistDisc id={a.id} size={44} />
-                      <span className="grow">
-                        <strong>{a.name}</strong>
-                        <span className="muted small block">
-                          {reason}
-                          {newCountry && ` · ${fromCountry(newCountry)}`}
-                        </span>
-                      </span>
-                    </Link>
-                    <button className="pill-btn light small" onClick={() => dispatch({ type: 'followArtist', artistId: a.id })}>
-                      Follow
-                    </button>
-                    <button className="not-for-me" aria-label={`Not for me: ${a.name}`} title="Not for me" onClick={() => dispatch({ type: 'notForMe', id: a.id })}>
-                      <IconX size={14} />
-                    </button>
-                  </div>
+                  <SuggestedArtist key={a.id} artistId={a.id} reason={reason} newCountry={newCountry} />
                 ))}
               </div>
               <p className="muted small suggest-why">
@@ -149,6 +135,18 @@ export default function Explore() {
                   How it works
                 </Link>
               </p>
+            </>
+          )}
+          {paths.length > 0 && (
+            <>
+              <div className="section-head">
+                <h2>Discover</h2>
+              </div>
+              <div className="glass-card list">
+                {paths.map((p) => (
+                  <SuggestedArtist key={p.kind} artistId={p.artistId} reason={p.reason} kicker={p.kicker} />
+                ))}
+              </div>
             </>
           )}
           {becauseRated.length > 0 && (

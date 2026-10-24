@@ -24,6 +24,7 @@ export type Action =
   | { type: 'pinPost'; postId: Id; replace?: Id }
   | { type: 'toggleSave'; postId: Id }
   | { type: 'notForMe'; id: Id }
+  | { type: 'newToMe'; id: Id }
   | { type: 'respondCollab'; postId: Id; accept: boolean }
   | { type: 'leaveCollab'; postId: Id }
   | { type: 'unpinPost'; postId: Id }
@@ -214,6 +215,17 @@ function apply(state: State, action: Action): State {
       // Hides a suggestion (artist or album) for good; private, only on this device.
       if (!me) return state
       return { ...state, users: state.users.map((u) => (u.id === me && !(u.notForMe ?? []).includes(action.id) ? { ...u, notForMe: [...(u.notForMe ?? []), action.id] } : u)) }
+    case 'newToMe':
+      // Your discoveries: toggled from a suggestion, private, only on this device.
+      if (!me) return state
+      return {
+        ...state,
+        users: state.users.map((u) => {
+          if (u.id !== me) return u
+          const list = u.discovered ?? []
+          return { ...u, discovered: list.includes(action.id) ? list.filter((x) => x !== action.id) : [action.id, ...list] }
+        }),
+      }
     case 'pinPost':
     case 'unpinPost': {
       // Pins live on the author's profile: your own posts, or a page you manage.
