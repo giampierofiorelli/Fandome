@@ -60,3 +60,7 @@ React 18 + TypeScript + Vite, `HashRouter` (Pages has no server routing), state 
 - Supabase (free plan) for real accounts, posts, realtime chat and storage — still hosted on GitHub Pages.
 - Moderation tools: report → case → decision → appeal → audit log.
 - Concert data source (setlist.fm API is free for non-commercial use only).
+
+## Roadmap
+
+Features decided for later and what is waiting on the owner: see [ROADMAP.md](ROADMAP.md).
