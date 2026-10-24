@@ -33,9 +33,9 @@ export function ToastProvider({ children, initial }: { children: ReactNode; init
             <motion.div
               key={toast.id}
               className="toast"
-              initial={{ opacity: 0, y: 16, scale: 0.96, filter: 'blur(6px)' }}
-              animate={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
-              exit={{ opacity: 0, y: 8, scale: 0.98, filter: 'blur(4px)' }}
+              initial={{ opacity: 0, y: 16, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 8, scale: 0.98 }}
               transition={springSnappy}
             >
               <IconCheck size={16} /> {toast.msg}

@@ -140,9 +140,9 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
             <motion.p
               key={translated ? 'tr' : 'orig'}
               className="post-text"
-              initial={{ opacity: 0, filter: 'blur(4px)' }}
-              animate={{ opacity: 1, filter: 'blur(0px)' }}
-              exit={{ opacity: 0, filter: 'blur(4px)' }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.18 }}
             >
               <RichText text={translated && post.translation ? post.translation : post.text} />
@@ -391,9 +391,9 @@ function Popover({ open, onClose, children, align = 'left' }: { open: boolean; o
           className={align === 'right' ? 'menu right' : 'menu'}
           role="menu"
           style={{ transformOrigin: align === 'right' ? 'bottom right' : 'top left' }}
-          initial={{ opacity: 0, scale: 0.92, y: -4, filter: 'blur(6px)' }}
-          animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
-          exit={{ opacity: 0, scale: 0.96, y: -2, filter: 'blur(4px)' }}
+          initial={{ opacity: 0, scale: 0.92, y: -4 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.96, y: -2 }}
           transition={springSnappy}
         >
           {children}

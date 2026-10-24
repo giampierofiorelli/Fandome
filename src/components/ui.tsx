@@ -144,9 +144,9 @@ export function Modal({ onClose, children, title }: { onClose: () => void; child
             aria-modal="true"
             aria-label={title}
             onClick={(e) => e.stopPropagation()}
-            initial={isSheet ? { y: '100%' } : { opacity: 0, scale: 0.95, y: 10, filter: 'blur(10px)' }}
-            animate={isSheet ? { y: 0 } : { opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
-            exit={isSheet ? { y: '100%' } : { opacity: 0, scale: 0.97, y: 6, filter: 'blur(6px)' }}
+            initial={isSheet ? { y: '100%' } : { opacity: 0, scale: 0.95, y: 10 }}
+            animate={isSheet ? { y: 0 } : { opacity: 1, scale: 1, y: 0 }}
+            exit={isSheet ? { y: '100%' } : { opacity: 0, scale: 0.97, y: 6 }}
             transition={isSheet ? springSheet : spring}
             drag={isSheet ? 'y' : false}
             dragListener={false}

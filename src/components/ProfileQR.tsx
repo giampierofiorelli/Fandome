@@ -71,6 +71,8 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
     [0, n - 7],
     [n - 7, 0],
   ]
+  // All dots in one path: one element instead of ~1,000 (much faster to open on phones).
+  const dotsPath = useMemo(() => dots.map(([r, c]) => `M${c + 0.05} ${r + 0.5}a0.45 0.45 0 1 0 0.9 0a0.45 0.45 0 1 0 -0.9 0`).join(''), [url, n])
   const gid = `qrg-${t}`
 
   const share = async () => {
@@ -132,9 +134,7 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
             </linearGradient>
           </defs>
           <g fill={`url(#${gid})`}>
-            {dots.map(([r, c]) => (
-              <circle key={`${r}-${c}`} cx={c + 0.5} cy={r + 0.5} r={0.45} />
-            ))}
+            <path d={dotsPath} />
             {al.map(([r, c]) => (
               <g key={`a${r}${c}`}>
                 <path d={ring(c + 0.5, r + 0.5, 2.5, 1.5)} fillRule="evenodd" />

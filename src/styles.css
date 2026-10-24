@@ -1101,3 +1101,24 @@ body:has(.sv-root) .modal-root { z-index: 100; }
 .pqr-actions button.done { background: #fff; color: #2f8f6a; }
 /* messages always above overlays (QR, stories, rater) */
 .toast-layer { z-index: 120; }
+
+/* ---------- Performance (iPhone) ----------
+   Live blur (backdrop-filter) over a moving, blurred background made every frame expensive.
+   Same look, painted once: a still colour field, and no live blur on things that move or repeat. */
+.backdrop {
+  background:
+    radial-gradient(42vmax 42vmax at 15vmax 10vmax, color-mix(in srgb, var(--blob-1) 90%, transparent), transparent 70%),
+    radial-gradient(36vmax 36vmax at calc(100% - 4vmax) calc(20vh + 26vmax), color-mix(in srgb, var(--blob-2) 90%, transparent), transparent 70%),
+    radial-gradient(34vmax 34vmax at calc(10vw + 25vmax) calc(100% + 4vmax), color-mix(in srgb, var(--blob-3) 90%, transparent), transparent 70%),
+    var(--bg);
+}
+.blob { display: none; }
+.grain { inset: 0; }
+.modal-backdrop { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(10, 12, 16, 0.42); }
+@media (max-width: 640px) {
+  .modal.sheet { backdrop-filter: none; -webkit-backdrop-filter: none; background: color-mix(in srgb, var(--bg) 70%, #fff); }
+  .post, .card, .glass-card, .tile, .coll-tile, .album-tile, .share-story, .report-reason { backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  .modal.sheet { background: color-mix(in srgb, var(--bg) 88%, #fff); }
+}
