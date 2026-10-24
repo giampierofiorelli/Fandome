@@ -10,6 +10,7 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, artistPhoto, Avatar, PhotoCredit, photoPos, Tabs } from '../components/ui'
 import { AnimatePresence, motion } from 'motion/react'
 import { useToast } from '../components/Toast'
+import { sceneLine } from '../data/scenes'
 import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
 import { artistById, isUpcoming } from '../lib/util'
@@ -50,6 +51,7 @@ export default function ArtistPage() {
         <div className="hero-kicker">Fan room · independent</div>
         <h1 className="hero-name">{artist.name}</h1>
         <p className="hero-tagline">{artist.tagline}</p>
+        {sceneLine(artist.id) && <p className="hero-scene">{sceneLine(artist.id)}</p>}
         <div className="hero-stats">
           <div>
             <div className="bignum">{fans.length}</div>
