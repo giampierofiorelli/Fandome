@@ -1,0 +1,5 @@
+album_id,artist_credit,title,original_year,type,catalog_status,expected_catalog_id,instruction,edition
+gaga-dawnofchromatica,Lady Gaga,Dawn of Chromatica,2021,remix,not_in_catalog,gaga-dawnofchromatica,"add catalogue album, attach only this phase row",Original 14-track 2021 remixes; exclude 2020 Chromatica
+gaga-loveforsale,Lady Gaga (with Tony Bennett),Love for Sale,2021,studio,not_in_catalog,gaga-loveforsale,"add catalogue album, attach only this phase row","Original 12-track October 2021 recording, not 15-track deluxe"
+gaga-harlequin,Lady Gaga,Harlequin,2024,studio,not_in_catalog,gaga-harlequin,"add catalogue album, attach only this phase row","September 27 studio companion album, not soundtrack or score"
+gaga-jokerfolieadeuxmusicfromthemotionpicture,Lady Gaga and Joaquin Phoenix,Joker: Folie à Deux (Music From the Motion Picture),2024,soundtrack,not_in_catalog,gaga-jokerfolieadeuxmusicfromthemotionpicture,"add catalogue album, attach only this phase row","October 4 16-song cast album, not Harlequin or Hildur Guðnadóttir score"

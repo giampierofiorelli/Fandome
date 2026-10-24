@@ -1,0 +1,40 @@
+album_id,genre,scope,source_keys,evidence,strength
+gaga-dawnofchromatica,dancepop,album broad,D_AOTY|D_PF,Album retains dance-pop hooks but rearranges their sonic architecture,high
+gaga-dawnofchromatica,hyperpop,substantial,D_PF|D_AOTY|D_AM,Hyperpop approach central on Charli XCX 911 and several abrasive club reworks,high
+gaga-dawnofchromatica,electronic,album broad,D_PF|D_AM,"Synthesizers, digital editing and electronic programming dominate new versions",high
+gaga-dawnofchromatica,house,substantial / inherited,D_AOTY|D_PF,Source house framework present but numerous remixes subvert the beat,medium
+gaga-dawnofchromatica,edm,genre taxonomy,D_AOTY,Database explicitly classifies electronic dance music; uneven club function,medium
+gaga-dawnofchromatica,bubblegumbass,genre taxonomy / subset,D_AOTY,Named taxonomy; maximalist bright distortions in some tracks,medium
+gaga-dawnofchromatica,electropop,genre taxonomy,D_AOTY,Named genre classification for digital pop-song remakes,medium
+gaga-dawnofchromatica,electrohouse,genre taxonomy / subset,D_AOTY,Explicit album taxonomy; not basis of every remix,medium
+gaga-dawnofchromatica,deconstructedclub,genre taxonomy / subset,D_AOTY|D_PF,Explicit album taxonomy and Arca disruptive sequencing,medium
+gaga-dawnofchromatica,divahouse,genre taxonomy / subset,D_AOTY,Explicit style label; must not be assumed dominant throughout,medium
+gaga-dawnofchromatica,glitchpop,genre taxonomy / subset,D_AOTY,Explicit secondary genre metadata; producer processing is track-variable,medium
+gaga-dawnofchromatica,avantpop,track subset,D_PF,Pitchfork directly calls Arca Rain on Me an avant-pop reconstruction,high
+gaga-dawnofchromatica,newwave,track subset,D_PF,Planningtorock 1000 Doves is explicitly likened to new wave,high
+gaga-dawnofchromatica,rock,track subset,D_PF|D_AM,Rina Sawayama Free Woman remix foregrounds wailing rock riffs,high
+gaga-dawnofchromatica,metal,track subset,D_PF|D_AM,Replay and Free Woman include leather/metal and nu-metal idioms,medium
+gaga-loveforsale,jazz,whole album,L_APPLE|L_AM|L_GU1,Original 2021 album is Cole Porter jazz standards backed by jazz ensembles,high
+gaga-loveforsale,vocaljazz,whole album,L_APPLE|L_AM,Two jazz vocalists foreground interpretation and phrasing,high
+gaga-loveforsale,swing,substantial,L_GU1|L_GU2,Up-tempo standards are swung; slower ballad performances also important,high
+gaga-loveforsale,traditionalpop,whole album,L_AM|L_GU1,American Songbook vocal-pop compositions and traditional instrumentation,high
+gaga-loveforsale,bigband,substantial,L_QOB|L_GU1,Full brass/string arrangements and orchestral swing on multiple songs,medium
+gaga-loveforsale,standards,whole album repertoire style,L_APPLE|L_AM,Every principal song drawn from Cole Porter songbook standards,high
+gaga-loveforsale,easylistening,album framing,L_GU2,Guardian explicitly frames record as easy listening,medium
+gaga-harlequin,jazz,album broad,H_OFF|H_AM|H_APPLE,Core recording is updated jazz and American songbook material,high
+gaga-harlequin,vocaljazz,album broad,H_AM|H_OFF,Voice-led standards and live jazz ensemble interpretations,high
+gaga-harlequin,traditionalpop,album broad,H_AM|H_APPLE,Classic American songs and theatrical vocal arrangements,high
+gaga-harlequin,bigband,substantial,H_GU|H_AM,Brassy band arrangements on Good Morning and Get Happy,high
+gaga-harlequin,showtunes,substantial,H_AM|H_GU|H_APPLE,Broadway and movie musical numbers performed as character pieces,high
+gaga-harlequin,swing,substantial,H_AM|H_GU,Swinging standards within a genre-changing collection,medium
+gaga-harlequin,rock,track subset,H_GU|H_SL|H_CAP,The Joker is staged as driving rock; other tracks add guitars,high
+gaga-harlequin,surfrock,track subset,H_APPLE,Gaga specifically describes World on a String as gritty surf-rock,high
+gaga-harlequin,surfpunk,track subset / artist description,H_CAP,Gaga names surf punk among album genre colours,high
+gaga-harlequin,soul,track subset,H_SL|H_CAP,Gonna Build a Mountain has soulful arrangement; Gaga also identifies soul,high
+gaga-harlequin,gospel,track subset,H_AM,World on a String explicitly described as lightly gospel-inflected,high
+gaga-harlequin,funk,track subset / artist description,H_CAP,Artist directly names funk in album palette,high
+gaga-jokerfolieadeuxmusicfromthemotionpicture,soundtrack,whole album,J_LABEL|J_MUSIC|J_APPLE,Original film music compilation; not Hildur Gudnadottir instrumental score,high
+gaga-jokerfolieadeuxmusicfromthemotionpicture,traditionalpop,whole album,J_APPLE|J_QOB,Period standards dominate film-song repertoire,high
+gaga-jokerfolieadeuxmusicfromthemotionpicture,showtunes,substantial,J_MUSIC|J_APPLE,Multiple songs derive from classical film and stage musicals,high
+gaga-jokerfolieadeuxmusicfromthemotionpicture,jazz,substantial,J_QOB|J_STEREO,Standards and theatrical jazz orchestration are extensively used,medium
+gaga-jokerfolieadeuxmusicfromthemotionpicture,pop,track subset,J_APPLE|J_QOB,Later Carpenters and Bee Gees pop covers among older jazz standards,medium

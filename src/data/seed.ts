@@ -94,6 +94,10 @@ export const albums: Album[] = [
   { id: 'gaga-joanne', artistId: 'gaga', title: 'Joanne', year: 2016 },
   { id: 'gaga-astarisborn', artistId: 'gaga', title: 'A Star Is Born', year: 2018 },
   { id: 'g-chromatica', artistId: 'gaga', title: 'Chromatica', year: 2020 },
+  { id: 'gaga-dawnofchromatica', artistId: 'gaga', title: 'Dawn of Chromatica', year: 2021 },
+  { id: 'gaga-loveforsale', artistId: 'gaga', title: 'Love for Sale', year: 2021 },
+  { id: 'gaga-harlequin', artistId: 'gaga', title: 'Harlequin', year: 2024 },
+  { id: 'gaga-jokerfolieadeuxmusicfromthemotionpicture', artistId: 'gaga', title: 'Joker: Folie à Deux (Music From the Motion Picture)', year: 2024 },
   { id: 'g-mayhem', artistId: 'gaga', title: 'Mayhem', year: 2025 },
   ...catalogAlbums,
 ]
