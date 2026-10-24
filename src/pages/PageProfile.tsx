@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import type { Post, User } from '../data/types'
+import { canManagePage } from '../store/reducer'
 import { useStore } from '../store/store'
 import { useComposer } from '../components/Composer'
 import { FeedList } from '../components/FeedList'
-import { PostCard } from '../components/PostCard'
+import { PinnedList } from '../components/PostCard'
 import { Avatar } from '../components/ui'
 import { IconCheck, IconGlobe, IconPen, IconSettings } from '../components/icons'
 import { prettyUrl } from '../lib/media'
@@ -99,13 +100,7 @@ export default function PageProfile({ user }: { user: User }) {
       <div className="section-head">
         <h2>Posts</h2>
       </div>
-      {pinnedPosts.length > 0 && (
-        <div className="feed pinned-feed">
-          {pinnedPosts.map((p) => (
-            <PostCard key={p.id} post={p} pinned />
-          ))}
-        </div>
-      )}
+      <PinnedList posts={pinnedPosts} canEdit={Boolean(me && canManagePage(state, user.id, me.id))} />
       {(!pinnedPosts.length || posts.length > pinnedPosts.length) && <FeedList items={posts.filter((p) => !pinnedPosts.includes(p)).map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
     </>
   )

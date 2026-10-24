@@ -55,7 +55,8 @@ export type Action =
   | { type: 'declineInvite'; code: string }
   | { type: 'removePageMember'; pageId: Id; userId: Id }
   | { type: 'requestVerification'; pageId: Id }
-  | { type: 'report'; id: Id; at: number; target: Report['target']; reason: ReportReason; note?: string }
+  | { type: 'report'; id: Id; at: number; target: Report['target']; reason: ReportReason; note?: string; contact?: Report['contact']; goodFaith: boolean }
+  | { type: 'movePin'; postId: Id; dir: -1 | 1 }
   | { type: 'resolveReport'; reportId: Id; action: 'remove' | 'dismiss'; reason?: ReportReason; note?: string; at: number }
   | { type: 'appeal'; postId: Id; text: string; at: number }
   | { type: 'decideAppeal'; postId: Id; restore: boolean }
@@ -175,6 +176,17 @@ function apply(state: State, action: Action): State {
         pinned = [p.id, ...kept]
       }
       return { ...state, users: state.users.map((u) => (u.id === owner.id ? { ...u, pinned } : u)) }
+    }
+    case 'movePin': {
+      const p = state.posts.find((x) => x.id === action.postId)
+      if (!me || !p || !(p.authorId === me || canManagePage(state, p.authorId, me))) return state
+      const owner = state.users.find((u) => u.id === p.authorId)!
+      const list = (owner.pinned ?? []).filter((id) => state.posts.some((x) => x.id === id))
+      const i = list.indexOf(p.id)
+      const j = i + action.dir
+      if (i < 0 || j < 0 || j >= list.length) return state
+      ;[list[i], list[j]] = [list[j], list[i]]
+      return { ...state, users: state.users.map((u) => (u.id === owner.id ? { ...u, pinned: list } : u)) }
     }
     case 'like':
       if (!me) return state
@@ -355,10 +367,13 @@ function apply(state: State, action: Action): State {
         dms: state.dms.filter((m) => dmVisible(m, action.now)),
       }
     case 'report': {
-      if (!me || isGuest(state)) return state
+      // Anyone can report, with or without a profile (DSA art. 16). Without one we need a name and email,
+      // except for child sexual abuse, which can be reported anonymously.
+      if (!me || !action.goodFaith) return state
+      if (isGuest(state) && action.reason !== 'sexual' && !(action.contact?.name.trim() && /.+@.+\..+/.test(action.contact.email))) return state
       // One open report per person per thing.
       if (state.reports.some((r) => r.by === me && r.status === 'open' && r.target.kind === action.target.kind && r.target.id === action.target.id)) return state
-      const r: Report = { id: action.id, at: action.at, by: me, target: action.target, reason: action.reason, note: action.note?.trim() || undefined, status: 'open' }
+      const r: Report = { id: action.id, at: action.at, by: me, target: action.target, reason: action.reason, note: action.note?.trim() || undefined, contact: action.contact?.email ? action.contact : undefined, goodFaith: true, status: 'open' }
       return { ...state, reports: [r, ...state.reports] }
     }
     case 'resolveReport': {

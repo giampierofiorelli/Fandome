@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
-import { PostCard } from '../components/PostCard'
+import { PinnedList } from '../components/PostCard'
 import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
@@ -159,13 +159,7 @@ export default function Profile() {
       </div>
       {tab === 'posts' && (
         <>
-          {pinnedPosts.length > 0 && (
-            <div className="feed pinned-feed">
-              {pinnedPosts.map((p) => (
-                <PostCard key={p.id} post={p} pinned />
-              ))}
-            </div>
-          )}
+          <PinnedList posts={pinnedPosts} canEdit={isMe} />
           {(!pinnedPosts.length || posts.length > pinnedPosts.length) && <FeedList items={posts.filter((p) => !pinnedPosts.includes(p)).map((p) => ({ key: p.id, post: p, at: p.createdAt }))} empty="No posts yet." />}
         </>
       )}

@@ -117,6 +117,8 @@ export interface Report {
   target: { kind: 'post' | 'user' | 'story' | 'dm'; id: Id }
   reason: ReportReason
   note?: string
+  contact?: { name: string; email: string } // people without a profile (DSA art. 16(2)(c))
+  goodFaith: boolean // "accurate and complete to the best of my knowledge" (art. 16(2)(d))
   status: 'open' | 'removed' | 'dismissed'
   handledAt?: number
 }

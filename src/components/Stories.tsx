@@ -470,7 +470,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
               {muted ? <IconMute size={20} /> : <IconVolume size={20} />}
             </button>
           )}
-          {!isMine && me?.handle !== 'guest' && (
+          {!isMine && (
             <button
               className="sv-x flag"
               aria-label="Report story"

@@ -14,7 +14,7 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconFlag, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
 
@@ -632,5 +632,33 @@ function PageBadge({ verified }: { verified: boolean }) {
     <span className={verified ? 'page-badge verified' : 'page-badge'} title={verified ? 'Website verified' : 'Website not verified yet'}>
       <IconGlobe size={11} /> Site{verified && <IconCheck size={11} />}
     </span>
+  )
+}
+
+// Pinned posts at the top of a profile. Whoever runs the profile can move them up and down.
+export function PinnedList({ posts, canEdit }: { posts: Post[]; canEdit: boolean }) {
+  const { dispatch } = useStore()
+  if (!posts.length) return null
+  return (
+    <div className="feed pinned-feed">
+      {posts.map((p, i) => (
+        <motion.div key={p.id} layout transition={spring} className="pinned-item">
+          {canEdit && posts.length > 1 && (
+            <div className="pin-order" aria-label="Change order">
+              <span className="muted small">
+                {i + 1} of {posts.length}
+              </span>
+              <button className="glass-circle small" aria-label="Move up" disabled={i === 0} onClick={() => dispatch({ type: 'movePin', postId: p.id, dir: -1 })}>
+                <IconChevronUp size={16} />
+              </button>
+              <button className="glass-circle small" aria-label="Move down" disabled={i === posts.length - 1} onClick={() => dispatch({ type: 'movePin', postId: p.id, dir: 1 })}>
+                <IconChevronUp size={16} style={{ transform: 'rotate(180deg)' }} />
+              </button>
+            </div>
+          )}
+          <PostCard post={p} pinned />
+        </motion.div>
+      ))}
+    </div>
   )
 }

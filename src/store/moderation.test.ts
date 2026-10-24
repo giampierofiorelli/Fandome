@@ -7,14 +7,14 @@ const as = (s: State, id: string): State => ({ ...s, meId: id })
 
 describe('moderation', () => {
   it('reports go to moderators of that fandom, never to the reporter or the author', () => {
-    let s = reducer(me(), { type: 'report', id: 'x', at: NOW, target: { kind: 'post', id: 'p2' }, reason: 'harassment' })
+    let s = reducer(me(), { type: 'report', id: 'x', at: NOW, target: { kind: 'post', id: 'p2' }, reason: 'harassment', goodFaith: true })
     const r = s.reports.find((x) => x.id === 'x')!
     expect(canHandleReport(s, 'u-giulia', r)).toBe(true) // Giulia moderates Madonna, p2 is a Madonna post
     expect(canHandleReport(s, 'u-kenji', r)).toBe(false) // not a moderator yet
     // a second report from the same person is ignored
-    expect(reducer(s, { type: 'report', id: 'y', at: NOW, target: { kind: 'post', id: 'p2' }, reason: 'spam' }).reports.length).toBe(s.reports.length)
+    expect(reducer(s, { type: 'report', id: 'y', at: NOW, target: { kind: 'post', id: 'p2' }, reason: 'spam', goodFaith: true }).reports.length).toBe(s.reports.length)
     // profile reports are for the admin only
-    s = reducer(s, { type: 'report', id: 'u', at: NOW, target: { kind: 'user', id: 'u-rafa' }, reason: 'impersonation' })
+    s = reducer(s, { type: 'report', id: 'u', at: NOW, target: { kind: 'user', id: 'u-rafa' }, reason: 'impersonation', goodFaith: true })
     expect(reportsFor(s, 'u-giulia').some((x) => x.id === 'u')).toBe(false)
   })
   it('removing a post records the reason, and the author can appeal once', () => {
@@ -42,5 +42,24 @@ describe('moderation', () => {
     s = reducer(s, { type: 'decideModRequest', userId: 'u-kenji', approve: true, at: NOW })
     expect(s.users.find((u) => u.id === 'u-kenji')!.mod!.artistIds).toEqual(['madonna'])
     expect(s.users.find((u) => u.id === 'me')!.mod).toBeUndefined()
+  })
+})
+
+describe('reports without a profile and pin order', () => {
+  it('a guest can report with name and email, or anonymously for child abuse', () => {
+    const g = reducer(initialState(NOW), { type: 'onboard', name: 'Guest', handle: 'guest', location: '', artistIds: [], followIds: [], at: NOW })
+    const base = { type: 'report' as const, at: NOW, target: { kind: 'post' as const, id: 'p2' }, goodFaith: true }
+    expect(reducer(g, { ...base, id: 'a', reason: 'harassment' }).reports.some((r) => r.id === 'a')).toBe(false)
+    expect(reducer(g, { ...base, id: 'b', reason: 'harassment', contact: { name: 'Ann', email: 'ann@example.com' } }).reports.some((r) => r.id === 'b')).toBe(true)
+    expect(reducer(g, { ...base, id: 'c', reason: 'sexual' }).reports.some((r) => r.id === 'c')).toBe(true)
+    expect(reducer(g, { ...base, id: 'd', reason: 'sexual', goodFaith: false }).reports.some((r) => r.id === 'd')).toBe(false)
+  })
+  it('moves pinned posts up and down', () => {
+    let s = me()
+    for (const id of ['a', 'b', 'c']) s = reducer(s, { type: 'post', id, at: NOW, text: id })
+    for (const id of ['a', 'b', 'c']) s = reducer(s, { type: 'pinPost', postId: id })
+    s = reducer(s, { type: 'movePin', postId: 'a', dir: -1 })
+    expect(s.users.find((u) => u.id === 'me')!.pinned).toEqual(['c', 'a', 'b'])
+    expect(reducer(s, { type: 'movePin', postId: 'c', dir: -1 })).toBe(s)
   })
 })

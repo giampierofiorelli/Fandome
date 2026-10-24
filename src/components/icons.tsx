@@ -274,3 +274,8 @@ export const IconFlag = (p: P) => (
     <path d="M5 4.5h11l-2 4 2 4H5" />
   </Svg>
 )
+export const IconChevronUp = (p: P) => (
+  <Svg {...p}>
+    <path d="m6 15 6-6 6 6" />
+  </Svg>
+)

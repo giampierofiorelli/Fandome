@@ -7,6 +7,7 @@ import { Avatar } from '../components/ui'
 import * as spotify from '../lib/spotify'
 import { useToast } from '../components/Toast'
 import { setConsent, useConsent } from '../lib/prefs'
+import { MyReports } from '../components/Moderation'
 
 export default function Settings() {
   const { state, dispatch } = useStore()
@@ -32,6 +33,7 @@ export default function Settings() {
       <PagesCard />
       <PrivacyCard />
       <ModerationCard />
+      <ReportsCard />
       <SpotifyCard />
       <section className="card">
         <h3>Your data</h3>
@@ -200,6 +202,16 @@ function PrivacyCard() {
       <p className="small legal-links">
         <Link to="/privacy">Privacy policy</Link> · <Link to="/terms">Terms & community rules</Link>
       </p>
+    </section>
+  )
+}
+
+function ReportsCard() {
+  const { state, me } = useStore()
+  if (!me || !state.reports.some((r) => r.by === me.id)) return null
+  return (
+    <section className="card">
+      <MyReports />
     </section>
   )
 }

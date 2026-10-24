@@ -301,5 +301,5 @@ export function seedDms(now: number): DirectMessage[] {
 
 // Demo: a report waiting in the moderation queue.
 export function seedReports(now: number): Report[] {
-  return [{ id: 'r1', at: now - 10 * 60_000, by: 'u-rafa', target: { kind: 'post', id: 'p-spam' }, reason: 'spam', note: 'Asks for gift-card payments: classic ticket scam.', status: 'open' }]
+  return [{ id: 'r1', at: now - 10 * 60_000, by: 'u-rafa', target: { kind: 'post', id: 'p-spam' }, reason: 'spam', note: 'Asks for gift-card payments: classic ticket scam.', goodFaith: true, status: 'open' }]
 }

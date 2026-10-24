@@ -82,7 +82,7 @@ export function Privacy() {
 
       <h2>Moderation</h2>
       <p>
-        If you report content, the report (what, why, when) is kept to handle it. If moderators remove your content we tell you why and you can appeal. Moderators see only reported public posts;
+        If you report content, the report (what, why, when, and your name and email if you have no profile) is kept only to handle it and tell you the outcome. If moderators remove your content we tell you why and you can appeal. Moderators see only reported public posts;
         private messages are looked at only if one of the people in the chat reports them.
       </p>
 
@@ -134,9 +134,20 @@ export function Terms() {
 
       <h2>Reporting and moderation</h2>
       <p>
-        Anyone can report a post, story, profile or message with “Report” (notice and action, DSA art. 16). Volunteer moderators, shown with a badge on their profile, review reports for the fandoms they
-        look after. When we remove something we tell the author which rule it broke and why (statement of reasons, DSA art. 17), and the author can appeal once; the appeal is reviewed by the site team.
-        Threats to someone’s life or safety are reported to the authorities.
+        <strong>Anyone can report</strong>, with or without a profile, using “Report” on a post, story, profile or private chat (notice and action mechanism, EU Digital Services Act art. 16). A report
+        should say what’s wrong and, if you think it’s illegal, why. Without a profile we ask for your name and email so we can reply; reports of child sexual abuse can be anonymous. You confirm the
+        report is made in good faith. The person reported is not told who reported them.
+      </p>
+      <p>
+        <strong>Who decides and how fast.</strong> Fandome is a non-commercial community run by volunteer fans, not a company with a moderation team. The law asks every service to handle reports in a
+        timely, diligent, non-arbitrary and objective way, without setting a fixed deadline; we do our best to review each report within 72 hours, and first of all anything that threatens someone’s life or
+        safety or involves minors. Volunteer moderators, shown with a badge on their profile, review reports about posts in the fandoms they look after; reports about people, stories and private chats are
+        handled by the site team. Nobody decides on their own posts or reports.
+      </p>
+      <p>
+        <strong>What happens next.</strong> We tell the reporter what we decided. If we remove something, we tell the author which rule it broke and why (statement of reasons, DSA art. 17), and the author
+        can appeal once; the appeal is reviewed by someone else. Content that seems to be a crime threatening life or safety is reported to the police (DSA art. 18). Orders from authorities are followed as
+        the law requires. In an emergency, call 112.
       </p>
 
       <h2>Messages and activity</h2>

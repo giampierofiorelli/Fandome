@@ -53,21 +53,21 @@ function ReportForm({ target }: { target: Report['target'] }) {
   const toast = useToast()
   const [reason, setReason] = useState<ReportReason | null>(null)
   const [note, setNote] = useState('')
-  if (!me || me.handle === 'guest')
-    return (
-      <p className="muted">
-        <Link to="/welcome" className="tag">
-          Create your profile
-        </Link>{' '}
-        to report content. If something is illegal and urgent, contact the police.
-      </p>
-    )
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [faith, setFaith] = useState(false)
+  if (!me) return null
+  const guest = me.handle === 'guest'
   const already = state.reports.some((r) => r.by === me.id && r.status === 'open' && r.target.kind === target.kind && r.target.id === target.id)
-  if (already) return <p className="muted">You already reported this. Moderators will review it.</p>
+  if (already) return <p className="muted">You already reported this. We’ll let you know what we decide.</p>
+  // Without a profile the law asks for a name and email, except for child sexual abuse (anonymous).
+  const needContact = guest && reason !== 'sexual'
+  const contactOk = !needContact || (name.trim().length > 1 && /.+@.+\..+/.test(email))
+  const can = reason && faith && contactOk && (reason !== 'other' || note.trim())
   return (
     <div className="report-form">
       <p className="muted small" style={{ marginTop: 0 }}>
-        What’s wrong? Moderators review every report. The person won’t know who reported them.
+        Anyone can report, with or without a profile. The person you report won’t know who you are.
       </p>
       <div className="report-reasons" role="radiogroup">
         {REASONS.map((r) => (
@@ -77,20 +77,60 @@ function ReportForm({ target }: { target: Report['target'] }) {
           </button>
         ))}
       </div>
-      <textarea value={note} onChange={(e) => setNote(e.target.value)} rows={2} maxLength={500} placeholder="Anything else moderators should know? (optional)" />
+      <textarea value={note} onChange={(e) => setNote(e.target.value)} rows={2} maxLength={1000} placeholder={reason === 'other' ? 'Explain what’s wrong (required)' : 'Why is it a problem? If you think it’s illegal, say which law (optional)'} />
+      {guest && (
+        <div className="report-contact">
+          <input value={name} onChange={(e) => setName(e.target.value)} placeholder={needContact ? 'Your name' : 'Your name (optional)'} aria-label="Your name" autoComplete="name" />
+          <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={needContact ? 'Your email' : 'Your email (optional)'} aria-label="Your email" type="email" inputMode="email" autoComplete="email" />
+          <span className="muted small">{reason === 'sexual' ? 'You can report child sexual abuse anonymously.' : 'Used only to handle this report and tell you the outcome.'}</span>
+        </div>
+      )}
+      <label className="ob-agree">
+        <input type="checkbox" checked={faith} onChange={(e) => setFaith(e.target.checked)} />
+        <span>I believe in good faith that this report is accurate and complete.</span>
+      </label>
+      <p className="report-law small">
+        Fandome is a non-commercial community run by volunteer fans. We review every report carefully, fairly and as quickly as we can, usually within 72 hours; threats to someone’s safety and abuse of minors come first. We’ll tell you what we decide (EU Digital Services Act, art. 16). In an emergency call 112.{' '}
+        <Link to="/terms" onClick={() => close()}>
+          How moderation works
+        </Link>
+      </p>
       <div className="row-end">
         <button
           className="pill-btn ink"
-          disabled={!reason || (reason === 'other' && !note.trim())}
+          disabled={!can}
           onClick={() => {
-            dispatch({ type: 'report', id: newId(), at: Date.now(), target, reason: reason!, note })
-            toast('Thanks. Moderators will review it.')
+            dispatch({ type: 'report', id: newId(), at: Date.now(), target, reason: reason!, note, goodFaith: faith, contact: guest && email ? { name: name.trim(), email: email.trim() } : undefined })
+            toast('Report received. We’ll let you know what we decide.')
             close()
           }}
         >
           Send report
         </button>
       </div>
+    </div>
+  )
+}
+
+// Your reports and what happened to them (DSA art. 16(5): the reporter is told the decision).
+export function MyReports() {
+  const { state, me } = useStore()
+  if (!me) return null
+  const mine = state.reports.filter((r) => r.by === me.id)
+  if (!mine.length) return null
+  return (
+    <div className="my-reports">
+      <span className="small">
+        <strong>Your reports</strong>
+      </span>
+      {mine.slice(0, 5).map((r) => (
+        <span key={r.id} className="my-report small">
+          <span>
+            {reasonLabel(r.reason)} · {r.target.kind} · {timeAgo(r.at)}
+          </span>
+          <span className={`my-report-status ${r.status}`}>{r.status === 'open' ? 'Under review' : r.status === 'removed' ? 'Action taken' : 'No rule broken'}</span>
+        </span>
+      ))}
     </div>
   )
 }
