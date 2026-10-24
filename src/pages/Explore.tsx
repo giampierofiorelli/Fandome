@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { artists, concerts } from '../data/seed'
+import { artists, concerts, demoAlbumBuzz } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
@@ -24,8 +24,8 @@ export default function Explore() {
 
   const trends = trending(state.posts, { limit: 6 })
   // Albums people are talking about: last 24 hours, or the last week when it's quiet.
-  const discussedDay = discussedAlbums(state.posts, Date.now(), 24)
-  const discussed = (discussedDay.length >= 3 ? discussedDay : discussedAlbums(state.posts, Date.now(), 24 * 7)).slice(0, 5)
+  const discussedDay = discussedAlbums(state.posts, Date.now(), 24, demoAlbumBuzz)
+  const discussed = (discussedDay.length >= 3 ? discussedDay : discussedAlbums(state.posts, Date.now(), 24 * 7, demoAlbumBuzz)).slice(0, 5)
   const discussedWindow = discussedDay.length >= 3 ? 'today' : 'this week'
   const suggestions = me ? suggestArtists(me, state.users, artists) : []
   const [allRooms, setAllRooms] = useState(false)

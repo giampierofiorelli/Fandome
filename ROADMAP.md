@@ -50,6 +50,8 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 - **Real brand icons for unknown websites** in profile links (favicons) once there is a server to fetch and store them; today unknown sites get a generic link icon, to avoid sending visitors' IPs to third parties.
 - **Font credits line** (optional): "Fonts: Geist and Doto, SIL Open Font License 1.1" in the privacy page or terms.
 
+- **Remove demo numbers before launch**: `demoAlbumBuzz` in `src/data/seed.ts` adds fake "fans talking" to the album chart for the demo.
+
 ## Needs a backend (move off GitHub Pages)
 
 Everything is stored only in each visitor's browser today (IndexedDB). A backend is needed for: real accounts and login, shared posts/messages/stories between devices, real anonymous link-click totals, moderation shared across moderators, reports reaching the team, the admin role as a server-side permission, collection and story media storage.

@@ -117,7 +117,7 @@ export function albumFeed(posts: Post[], albumId: string): FeedItem[] {
 
 // "Most discussed albums": albums mentioned or reviewed in the last hours, counted by distinct
 // people (authors of the posts plus people who replied to them), so one account can't push an album.
-export function discussedAlbums(posts: Post[], now = Date.now(), hours = 24): { albumId: string; people: number; posts: number }[] {
+export function discussedAlbums(posts: Post[], now = Date.now(), hours = 24, boost: Record<string, number> = {}): { albumId: string; people: number; posts: number }[] {
   const since = now - hours * 3_600_000
   const people = new Map<string, Set<string>>()
   const count = new Map<string, number>()
@@ -133,7 +133,8 @@ export function discussedAlbums(posts: Post[], now = Date.now(), hours = 24): { 
       count.set(id, (count.get(id) ?? 0) + 1)
     }
   }
+  for (const id of Object.keys(boost)) if (!people.has(id)) people.set(id, new Set())
   return [...people.entries()]
-    .map(([albumId, set]) => ({ albumId, people: set.size, posts: count.get(albumId) ?? 0 }))
+    .map(([albumId, set]) => ({ albumId, people: set.size + (boost[albumId] ?? 0), posts: count.get(albumId) ?? 0 }))
     .sort((a, b) => b.people - a.people || b.posts - a.posts)
 }

@@ -50,7 +50,7 @@ function migrate(parsed: State): State {
         // Demo album links for older saves.
         posts = posts.map((p) => (p.albumIds ? p : { ...p, albumIds: fresh.posts.find((f) => f.id === p.id)?.albumIds }))
         // Demo collab posts for older saves (only if missing).
-        const demo = fresh.posts.filter((p) => (p.id === 'p-collab2' || p.id === 'p-collab-invite') && !posts.some((x) => x.id === p.id))
+        const demo = fresh.posts.filter((p) => (p.id === 'p-collab2' || p.id === 'p-collab-invite' || p.id.startsWith('pa-')) && !posts.some((x) => x.id === p.id))
         if (demo.length) posts = [...demo, ...posts].sort((a, b) => b.createdAt - a.createdAt)
         return reducer({ ...parsed, users: allUsers, posts, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms, reports: parsed.reports ?? fresh.reports, tickets: parsed.tickets ?? fresh.tickets }, { type: 'prune', now })
       }

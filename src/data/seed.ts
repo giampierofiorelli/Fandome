@@ -242,6 +242,17 @@ export function seedPosts(now: number): Post[] {
     p({ id: 'p17', authorId: 'u-giulia', artistId: 'madonna', concertId: 'm-milan-2027', text: 'Milan 2027 crew forming 🇮🇹 who’s in? #tour', likes: ['u-claire', 'u-kenji'] }, 26 * 60),
     p({ id: 'p19', authorId: 'pg-archive', artistId: 'madonna', text: 'New in the archive: every Drowned World Tour date with venue notes, sourced from fan reports. Corrections welcome! https://rayoflight-archive.example/drowned-world #rayoflight', likes: ['u-giulia', 'u-kenji', 'u-claire'] }, 7 * 60),
     p({ id: 'p18', authorId: 'u-claire', artistId: 'psb', review: { albumId: 'p-behaviour', rating: 4.5 }, text: 'Their most melancholic and beautiful record. "Being Boring" still wrecks me. #eras', likes: ['u-sam'] }, 28 * 60),
+    // Demo: talk about albums by different artists (feeds "Most discussed albums").
+    p({ id: 'pa-1', authorId: 'u-emma', artistId: 'taylorswift', artistIds: ['taylorswift'], albumIds: ['taylorswift-thelifeofashowgirl'], text: 'The Life of a Showgirl on repeat since this morning. The bridge on track 3 is unreal ✨', likes: ['u-ana', 'u-claire', 'u-sam', 'u-lucia'] }, 35),
+    p({ id: 'pa-2', authorId: 'u-sam', artistId: 'charlixcx', artistIds: ['charlixcx'], albumIds: ['charlixcx-brat'], text: 'Brat still sounds like the future. Which track would you play first at a party?', likes: ['u-rafa', 'u-emma', 'u-kenji'] }, 70),
+    p({ id: 'pa-3', authorId: 'u-rafa', artistId: 'kendrick', artistIds: ['kendrick'], albumIds: ['kendrick-gnx'], text: 'GNX front to back on the train. The production is so sharp.', likes: ['u-sam', 'u-kenji'] }, 110),
+    p({ id: 'pa-4', authorId: 'u-lucia', artistId: 'badbunny', artistIds: ['badbunny'], albumIds: ['badbunny-debitirarmasfotos'], text: 'Debí Tirar Más Fotos me hace llorar cada vez 🇵🇷', lang: 'es', translation: 'Debí Tirar Más Fotos makes me cry every time 🇵🇷', likes: ['u-ana', 'u-rafa', 'u-claire'] }, 150),
+    p({ id: 'pa-5', authorId: 'u-claire', artistId: 'gaga', artistIds: ['gaga'], albumIds: ['g-mayhem'], text: 'Mayhem is her best album in ten years. Fight me (nicely) 💚', likes: ['u-emma', 'u-giulia'] }, 200),
+    p({ id: 'pa-6', authorId: 'u-ana', artistId: 'beyonce', artistIds: ['beyonce'], albumIds: ['beyonce-renaissance'], text: 'Renaissance is a whole club night in one album. Favourite transition?', likes: ['u-lucia', 'u-sam'] }, 260),
+    p({ id: 'pa-7', authorId: 'u-giulia', artistId: 'sabrina', artistIds: ['sabrina'], albumIds: ['sabrina-shortnsweet'], text: 'Short n’ Sweet is the perfect summer record, even in October.', likes: ['u-emma'] }, 320),
+    p({ id: 'pa-r1', authorId: 'u-claire', replyTo: 'pa-1', artistId: 'taylorswift', text: 'That bridge!! Easter eggs everywhere 👀' }, 25),
+    p({ id: 'pa-r2', authorId: 'u-kenji', replyTo: 'pa-2', artistId: 'charlixcx', text: '360, no question.' }, 60),
+    p({ id: 'pa-r3', authorId: 'u-rafa', replyTo: 'pa-4', artistId: 'badbunny', text: 'Same. That album is a love letter.' }, 140),
   ]
 }
 
@@ -319,4 +330,17 @@ export function seedTickets(now: number): TicketListing[] {
 // Demo: a report waiting in the moderation queue.
 export function seedReports(now: number): Report[] {
   return [{ id: 'r1', at: now - 10 * 60_000, by: 'u-rafa', target: { kind: 'post', id: 'p-spam' }, reason: 'spam', note: 'Asks for gift-card payments: classic ticket scam.', goodFaith: true, status: 'open' }]
+}
+
+// Demo only: extra people "talking" about some albums, so the chart looks like a lively site.
+// Remove when real users arrive (the backend will count real conversations).
+export const demoAlbumBuzz: Record<string, number> = {
+  'taylorswift-thelifeofashowgirl': 184,
+  'charlixcx-brat': 141,
+  'kendrick-gnx': 126,
+  'badbunny-debitirarmasfotos': 117,
+  'g-mayhem': 96,
+  'beyonce-renaissance': 74,
+  'm-ray': 63,
+  'sabrina-shortnsweet': 58,
 }
