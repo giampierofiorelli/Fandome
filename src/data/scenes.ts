@@ -13,6 +13,8 @@ export type Genre =
   | 'trappop' | 'italodisco' | 'dancepop' | 'eurodance'
   | 'gothpop' | 'darkwave' | 'poppunk' | 'newwave' | 'grunge' | 'experimentalpop' | 'industrial' | 'eurotrance' | 'grime'
   | 'footwork' | 'garage' | 'neorave' | 'gothtrap' | 'avantpop' | 'bubblegumbass'
+  | 'clubpop' | 'wonkypop' | 'leftfieldpop' | 'popfunk' | 'electrofunk' | 'dreampop' | 'nudisco' | 'futurepop' | 'indiepop'
+  | 'electroclash' | 'bloghouse' | 'pianohouse' | 'trance'
 
 export interface ArtistScene {
   country: string
@@ -148,6 +150,8 @@ export const GENRE_LABELS: Record<Genre, string> = {
   trappop: 'Trap-pop', italodisco: 'Italo disco', dancepop: 'Dance-pop', eurodance: 'Eurodance',
   gothpop: 'Goth pop', darkwave: 'Darkwave', poppunk: 'Pop punk', newwave: 'New wave', grunge: 'Grunge', experimentalpop: 'Experimental pop',
   industrial: 'Industrial', eurotrance: 'Eurotrance', grime: 'Grime', footwork: 'Footwork', garage: 'Garage', neorave: 'Neo-rave', gothtrap: 'Goth trap', avantpop: 'Avant-pop', bubblegumbass: 'Bubblegum bass',
+  clubpop: 'Club pop', wonkypop: 'Wonky pop', leftfieldpop: 'Left-field pop', popfunk: 'Pop-funk', electrofunk: 'Electro-funk', dreampop: 'Dream pop',
+  nudisco: 'Nu-disco', futurepop: 'Futurepop', indiepop: 'Indie pop', electroclash: 'Electroclash', bloghouse: 'Bloghouse', pianohouse: 'Piano house', trance: 'Trance',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
