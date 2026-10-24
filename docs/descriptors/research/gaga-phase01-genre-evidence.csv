@@ -1,0 +1,64 @@
+album_id,genre,source,scope,evidence,evidence_strength
+g-fame,dancepop,https://www.ladygaga.com/us-en/music/the-fame,whole album,Primary pop-song dance framework,high
+g-fame,pop,https://www.allmusic.com/album/the-fame-mw0001327294,whole album,Pop songwriting and mainstream hooks,high
+g-fame,electropop,https://www.ladygaga.com/us-en/music/the-fame,whole album,Official 1980s electro-pop classification,high
+g-fame,synthpop,https://www.ladygaga.com/us-en/music/the-fame,whole album,Official synth-pop classification,high
+g-fame,electronic,https://www.ladygaga.com/us-en/music/the-fame,whole album,Synth/programming-dominant sound,high
+g-fame,dance,https://www.allmusic.com/album/the-fame-mw0001327294,whole album,Club/dance styling and rhythmic emphasis,high
+g-fame,disco,https://www.allmusic.com/album/the-fame-mw0001327294,whole album,Electro-disco sound; rhythmic disco foundation,high
+g-fame,electrodisco,https://www.allmusic.com/album/the-fame-mw0001327294,whole album,Critic calls electro-disco the crossover production basis,high
+g-fame,newwave,https://www.allmusic.com/album/the-fame-mw0001327294,some tracks,New-wave textures in album tracks including title song,high
+g-fame,glamrock,https://www.ladygaga.com/us-en/music/the-fame,texture,Official description of glam-rock contribution,high
+g-fame,rock,https://www.washingtonpost.com/lifestyle/style/understanding-lady-gaga/2011/02/14/AByv3jH_story.html,some tracks,Boys Boys Boys borrows rock-group compositional idea,high
+gaga-thefamemonster,dancepop,https://www.ladygaga.com/us-en/music/the-fame-monster,whole album,Official dance-pop classification,high
+gaga-thefamemonster,pop,https://www.allmusic.com/album/fame-monster-mw0001947970,whole album,Memorable high-budget pop songs,high
+gaga-thefamemonster,electropop,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,whole album,Review calls music electro-pop and synthetic dance pop,high
+gaga-thefamemonster,synthpop,https://www.ladygaga.com/us-en/music/the-fame-monster,whole album,Official synth-pop classification,high
+gaga-thefamemonster,electronic,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,whole album,Heavy synthesized arrangement of principal songs,high
+gaga-thefamemonster,dance,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,whole album,Dance and club pop production,high
+gaga-thefamemonster,europop,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,whole album,Explicit Europop stylistic axis,high
+gaga-thefamemonster,house,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,some tracks,Stadium-house analogue for Bad Romance,high
+gaga-thefamemonster,newwave,https://www.slantmagazine.com/music/lady-gaga-the-fame-monster/,some tracks,Towering new-wave synths Bad Romance and Dance in Dark,high
+gaga-thefamemonster,rock,https://www.allmusic.com/album/fame-monster-mw0001947970,some tracks,Speechless guitar-driven rock ballad,high
+gaga-thefamemonster,gospel,https://www.slantmagazine.com/music/lady-gaga-the-fame-monster/,some tracks,Teeth gospel-tinged vocal and rhythm rhetoric,high
+gaga-thefamemonster,blues,https://www.slantmagazine.com/music/lady-gaga-the-fame-monster/,some tracks,Speechless explicitly called blues-rock,high
+gaga-thefamemonster,hinrg,https://pitchfork.com/reviews/albums/13823-the-fame-monster/,texture,Contemporary hi-NRG language in assessment of this electronic pop style,high
+g-btw,dancepop,https://www.theguardian.com/music/2011/may/18/lady-gaga-born-this-way-review,whole album,Overwhelming dance-pop basis,high
+g-btw,pop,https://pitchfork.com/reviews/albums/lady-gaga-born-this-way-the-tenth-anniversary/,whole album,Large-scale pop anthems,high
+g-btw,electronic,https://www.ladygaga.com/gb-en/music/born-this-way,whole album,Electronic-focused production,high
+g-btw,electropop,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,whole album,Album genre metadata electropop; supported electronic-pop review,medium
+g-btw,techno,https://www.theguardian.com/music/2011/may/18/lady-gaga-born-this-way-review,some tracks,Berlin techno driving Scheiße,high
+g-btw,technopop,https://www.ladygaga.com/gb-en/music/born-this-way,whole album,Official calls album techno-pop,high
+g-btw,electrorock,https://www.ladygaga.com/gb-en/music/born-this-way,whole album,Official calls electronic rock key to album,high
+g-btw,rock,https://www.theguardian.com/music/2011/may/23/lady-gaga-born-this-way-review,some tracks,American arena and heartland rock songs,high
+g-btw,disco,https://www.theguardian.com/music/2011/may/23/lady-gaga-born-this-way-review,some tracks,Disco-oriented dance arrangements and title-song influence,high
+g-btw,industrial,https://pitchfork.com/reviews/albums/lady-gaga-born-this-way-the-tenth-anniversary/,some tracks,Industrial pop heard on Scheiße and Government Hooker,high
+g-btw,electrohouse,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,some tracks,Explicit electro-house genre label in album metadata,medium
+g-btw,house,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,some tracks,Electro-house parent genre,medium
+g-btw,europop,https://www.theguardian.com/music/2011/may/23/lady-gaga-born-this-way-review,texture,European dance-pop and Europop musical sensibility,high
+g-btw,synthpop,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,some tracks,Synthpop metadata and track sections,medium
+g-btw,glamrock,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,texture,Album metadata marks glam rock influence rather than full glam rock album,medium
+g-btw,postindustrial,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,texture,Post-industrial style label in album metadata,medium
+g-btw,artpop,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,texture,Art-pop style label in album metadata,medium
+g-btw,electroclash,https://www.albumoftheyear.org/album/2312-lady-gaga-born-this-way.php,some tracks,Electroclash style label in album metadata,medium
+g-btw,metal,https://pitchfork.com/reviews/albums/lady-gaga-born-this-way-the-tenth-anniversary/,texture,Metal guitar riffs in subset; not a metal record,high
+g-btw,country,https://www.theguardian.com/music/2011/may/23/lady-gaga-born-this-way-review,some tracks,Yoü and I country-rock song texture,high
+g-btw,latin,https://www.theguardian.com/music/2011/may/18/lady-gaga-born-this-way-review,some tracks,Americano integrates Latino music,high
+gaga-artpop,dancepop,https://www.slantmagazine.com/music/lady-gaga-artpop/,whole album,Main conventional dance-pop framework,high
+gaga-artpop,pop,https://www.theguardian.com/music/2013/nov/07/lady-gaga-artpop-review,whole album,Pop songs amid experimental arrangement shifts,high
+gaga-artpop,edm,https://www.ladygaga.com/us-en/music/artpop,whole album,Official describes EDM as core sound,high
+gaga-artpop,electronic,https://pitchfork.com/reviews/albums/lady-gaga-artpop/,whole album,Aggressive digital synths and programming,high
+gaga-artpop,electropop,https://www.theguardian.com/music/2013/nov/07/lady-gaga-artpop-review,some tracks,Venus includes electropop adaptation; other synth-pop sections,high
+gaga-artpop,synthpop,https://www.slantmagazine.com/music/lady-gaga-artpop/,some tracks,Electronic synth-pop section and pop hooks,high
+gaga-artpop,techno,https://www.metacritic.com/music/artpop/lady-gaga/critic-reviews,some tracks,Billboard critic includes techno among album music forms,medium
+gaga-artpop,disco,https://www.theguardian.com/music/2013/nov/07/lady-gaga-artpop-review,some tracks,Fashion straightforward disco,high
+gaga-artpop,eurodisco,https://www.slantmagazine.com/music/lady-gaga-artpop/,some tracks,Title track described as slick Eurodisco,high
+gaga-artpop,rock,https://www.metacritic.com/music/artpop/lady-gaga/critic-reviews,some tracks,Billboard notes rock within stylistic mix,medium
+gaga-artpop,rnb,https://www.metacritic.com/music/artpop/lady-gaga/critic-reviews,some tracks,Billboard explicitly notes R&B components,medium
+gaga-artpop,trap,https://www.slantmagazine.com/music/lady-gaga-artpop/,some tracks,Trap-inspired Jewels n Drugs,high
+gaga-artpop,dubstep,https://www.theguardian.com/music/2013/nov/07/lady-gaga-artpop-review,texture,Aura bass likened to sped-up dubstep drop,high
+gaga-artpop,europop,https://www.theguardian.com/music/2013/nov/07/lady-gaga-artpop-review,some tracks,Gypsy uses forceful Europop,high
+gaga-artpop,electrohouse,https://www.albumoftheyear.org/album/8497-lady-gaga-artpop.php,some tracks,Electro-house genre label on 2013 album metadata,medium
+gaga-artpop,complextro,https://www.albumoftheyear.org/album/8497-lady-gaga-artpop.php,texture,Complextro label from album genre metadata,medium
+gaga-artpop,melodicdubstep,https://www.albumoftheyear.org/album/8497-lady-gaga-artpop.php,texture,Melodic-dubstep label from album metadata; not album-wide,medium
+gaga-artpop,metal,https://www.slantmagazine.com/music/lady-gaga-artpop/,texture,Swine compared to metal/techno aggression; not a metal album,high

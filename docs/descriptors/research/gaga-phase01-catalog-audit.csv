@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition_note
+g-fame,Lady Gaga,The Fame,2008,already_in_seed,g-fame,No catalogue addition; append descriptor row only,Original 2008 album; exclude later reissue and bonus content
+gaga-thefamemonster,Lady Gaga,The Fame Monster,2009,missing,gaga-thefamemonster,Add original eight-song standalone EP to catalogue,Not identical to two-disc The Fame Monster/The Fame deluxe
+g-btw,Lady Gaga,Born This Way,2011,already_in_seed,g-btw,No catalogue addition; append descriptor row only,Original 2011 edition only; not 2021 tenth-anniversary bonus remakes
+gaga-artpop,Lady Gaga,ARTPOP,2013,missing,gaga-artpop,Add album to catalogue and check original running order,2013 original includes Do What U Want; 2019 onward digital removal
