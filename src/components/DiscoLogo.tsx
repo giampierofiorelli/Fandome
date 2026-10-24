@@ -198,3 +198,100 @@ export function DiscoLogo({ text }: { text: string }) {
     </span>
   )
 }
+
+// A crown drawn with dots, same "disco" touch as the logo but livelier and starting at once:
+// a rainbow wave sweeps across it every few seconds and single dots spark in neon.
+// Small, narrow crown: three points and a band, elegant at small sizes.
+const CROWN = ['1...1...1', '.1.1.1.1.', '.1111111.', '.1111111.', '.........', '.1111111.']
+
+export function DotCrown({ pitch = 5, color = 'currentColor' }: { pitch?: number; color?: string }) {
+  const ref = useRef<HTMLCanvasElement>(null)
+  const w = CROWN[0].length * pitch
+  const h = CROWN.length * pitch
+  useEffect(() => {
+    const cv = ref.current
+    if (!cv) return
+    const dpr = Math.min(3, window.devicePixelRatio || 1)
+    cv.width = Math.ceil(w * dpr)
+    cv.height = Math.ceil(h * dpr)
+    const ctx = cv.getContext('2d')!
+    const base = color === 'currentColor' ? getComputedStyle(cv).color : color
+    const dots: Dot[] = []
+    CROWN.forEach((row, y) => [...row].forEach((c, x) => c === '1' && dots.push({ x: (x + 0.5) * pitch, y: (y + 0.5) * pitch, r: pitch * 0.36 })))
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const sparks: Spark[] = []
+    let nextSpark = 0
+    let waveStart = performance.now() + 150 // first wave right away
+    let raf = 0
+    let last = 0
+    const draw = (t: number) => {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+      ctx.clearRect(0, 0, w, h)
+      ctx.globalAlpha = 1
+      ctx.shadowBlur = 0
+      ctx.fillStyle = base
+      for (const d of dots) {
+        ctx.beginPath()
+        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2)
+        ctx.fill()
+      }
+      if (still) return
+      if (t > nextSpark && sparks.length < 4) {
+        sparks.push({ dot: Math.floor(Math.random() * dots.length), color: NEON[Math.floor(Math.random() * NEON.length)], start: t, life: 700 + Math.random() * 700 })
+        nextSpark = t + 220 + Math.random() * 380
+      }
+      for (let i = sparks.length - 1; i >= 0; i--) {
+        const s = sparks[i]
+        const k = (t - s.start) / s.life
+        if (k >= 1) {
+          sparks.splice(i, 1)
+          continue
+        }
+        const d = dots[s.dot]
+        ctx.globalAlpha = Math.sin(k * Math.PI)
+        ctx.shadowColor = s.color
+        ctx.shadowBlur = pitch * 1.4
+        ctx.fillStyle = s.color
+        ctx.beginPath()
+        ctx.arc(d.x, d.y, d.r * 1.1, 0, Math.PI * 2)
+        ctx.fill()
+      }
+      const k = (t - waveStart) / 1300
+      if (k >= 1) waveStart = t + 2600 + Math.random() * 1600
+      else if (k >= 0) {
+        const cx = -pitch * 3 + k * (w + pitch * 6)
+        for (const d of dots) {
+          const dist = Math.abs(d.x - cx)
+          if (dist > pitch * 3) continue
+          const col = `hsl(${(d.x / w) * 300} 100% 58%)`
+          ctx.globalAlpha = (1 - dist / (pitch * 3)) * 0.95
+          ctx.shadowColor = col
+          ctx.shadowBlur = pitch * 1.2
+          ctx.fillStyle = col
+          ctx.beginPath()
+          ctx.arc(d.x, d.y, d.r * 1.1, 0, Math.PI * 2)
+          ctx.fill()
+        }
+      }
+    }
+    const tick = (t: number) => {
+      if (t - last >= 32) {
+        last = t
+        draw(t)
+      }
+      raf = requestAnimationFrame(tick)
+    }
+    draw(performance.now())
+    if (!still) raf = requestAnimationFrame(tick)
+    const onVis = () => {
+      cancelAnimationFrame(raf)
+      if (document.visibilityState === 'visible' && !still) raf = requestAnimationFrame(tick)
+    }
+    document.addEventListener('visibilitychange', onVis)
+    return () => {
+      cancelAnimationFrame(raf)
+      document.removeEventListener('visibilitychange', onVis)
+    }
+  }, [pitch, color, w, h])
+  return <canvas ref={ref} className="dot-crown" style={{ width: w, height: h }} aria-hidden />
+}

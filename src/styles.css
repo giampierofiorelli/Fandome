@@ -1275,3 +1275,6 @@ body.story-open .modal-root { z-index: 100; }
 .chart-row-info { min-width: 0; }
 .chart-row-info strong { display: block; font-weight: 500; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chart-row > svg { color: var(--muted); flex-shrink: 0; }
+
+.chart-top-info .dot-crown { display: block; margin-bottom: 4px; }
+.chart-top { gap: 14px; padding: 16px 16px 16px 4px; }

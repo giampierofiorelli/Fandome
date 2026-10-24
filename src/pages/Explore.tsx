@@ -5,6 +5,7 @@ import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
 import { discussedAlbums, tagFeed } from '../lib/feed'
+import { DotCrown } from '../components/DiscoLogo'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
 import { albumById, artistById, formatDate, trending } from '../lib/util'
 import { suggestArtists } from '../lib/suggest'
@@ -147,9 +148,12 @@ export default function Explore() {
                   if (i === 0)
                     return (
                       <Link key={al.id} to={`/album/${al.id}`} className="chart-top" style={{ ['--tint' as string]: artist?.color }}>
-                        <AlbumCover album={al} size={112} />
+                        <span className="chart-num" aria-label="Number 1">
+                          1
+                        </span>
+                        <AlbumCover album={al} size={104} />
                         <span className="chart-top-info">
-                          <span className="dotmatrix chart-rank">01</span>
+                          <DotCrown pitch={3} />
                           <strong className="chart-top-title">{al.title}</strong>
                           <span className="chart-artist">
                             <ArtistDisc id={al.artistId} size={20} /> {artist?.name}
