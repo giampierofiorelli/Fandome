@@ -53,10 +53,10 @@ describe('reducer', () => {
     expect(s.posts.find((p) => p.id === 'p15')!.quoteDetached).toBeFalsy()
   })
 
-  it('caps Top 4 favourites at four albums', () => {
+  it('caps favourite albums at five', () => {
     let s = onboarded()
-    for (const id of ['m-virgin', 'm-trueblue', 'm-prayer', 'm-ray', 'm-music']) s = reducer(s, { type: 'toggleTop4', albumId: id })
-    expect(s.users.find((u) => u.id === 'me')!.top4).toHaveLength(4)
+    for (const id of ['m-virgin', 'm-trueblue', 'm-prayer', 'm-ray', 'm-music', 'm-confessions']) s = reducer(s, { type: 'toggleTop4', albumId: id })
+    expect(s.users.find((u) => u.id === 'me')!.top4).toHaveLength(5)
   })
 
   it('reposts with tags appear in the following feed of followers', () => {

@@ -1,4 +1,5 @@
 import { concerts, seedChats, seedDms, seedPosts, seedReports, seedStories, seedTickets, seedUsers } from '../data/seed'
+import { MAX_FAVOURITES } from '../data/types'
 import type { CollectionItem, ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, TicketListing, User } from '../data/types'
 import { postArtists } from '../lib/postArtists'
 
@@ -344,7 +345,7 @@ function apply(state: State, action: Action): State {
     case 'toggleTop4':
       return updateMe(state, (u) => {
         if (u.top4.includes(action.albumId)) return { ...u, top4: u.top4.filter((a) => a !== action.albumId) }
-        if (u.top4.length >= 4) return u
+        if (u.top4.length >= MAX_FAVOURITES) return u
         return { ...u, top4: [...u.top4, action.albumId] }
       })
     case 'chat': {

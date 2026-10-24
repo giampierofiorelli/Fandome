@@ -390,7 +390,8 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .passport-rows { margin: 18px 0 4px; }
 .passport-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--on-ink) 12%, transparent); font-size: 15px; }
 .passport-row b { font-weight: 400; font-size: 20px; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
-.top4-row { display: flex; gap: 10px; margin-top: 14px; }
+.top4-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 14px; max-width: 380px; }
+.top4-row .cover { width: 100% !important; height: auto !important; aspect-ratio: 1; }
 .top4-row .cover { transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .top4-row .cover:hover { transform: translateY(-4px) rotate(-2deg); }
 .diary-date { color: var(--muted); font-size: 13px; width: 96px; flex-shrink: 0; font-variant-numeric: tabular-nums; }

@@ -9,6 +9,7 @@ import { useToast } from './Toast'
 import { AlbumCover } from './ui'
 import { angleToProgress, Dial } from './Dial'
 import { IconHeart, IconPen, IconX } from './icons'
+import { MAX_FAVOURITES } from '../data/types'
 
 // Ratings are stored 0–5 (legacy) and shown as a score out of 10.
 export const toScore = (rating: number) => Math.round(rating * 2 * 2) / 2
@@ -137,7 +138,7 @@ export function AlbumRater({ albumId, onClose }: { albumId: string; onClose: () 
           <button
             className={fav ? 'pill-btn light' : 'pill-btn glass'}
             onClick={() => {
-              if (!fav && me.top4.length >= 4) return toast('You can pick up to 4 favourite albums')
+              if (!fav && me.top4.length >= MAX_FAVOURITES) return toast(`You can pick up to ${MAX_FAVOURITES} favourite albums`)
               dispatch({ type: 'toggleTop4', albumId })
               toast(fav ? 'Removed from favourites' : 'Added to your favourite albums')
             }}

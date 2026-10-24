@@ -1,3 +1,6 @@
+// Favourite albums shown in the fan passport.
+export const MAX_FAVOURITES = 5
+
 export type Id = string
 
 export interface Artist {
@@ -61,7 +64,7 @@ export interface User {
   bio: string
   location: string
   fanSince: Record<Id, number> // artistId -> year
-  top4: Id[] // album ids (Letterboxd-style favourites)
+  top4: Id[] // favourite album ids, up to MAX_FAVOURITES (field name kept for saved data)
   attended: Id[] // concert ids ("I was there")
   going: Id[] // upcoming concert ids
   tours?: string[] // past tours you saw, as `${artistId}::${tour}` (no specific date needed)
