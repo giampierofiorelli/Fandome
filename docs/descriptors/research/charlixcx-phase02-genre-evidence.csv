@@ -1,0 +1,33 @@
+album_id,genre,scope,source,editorial_rationale,guide_registered
+charlixcx-number1angel,pop,album,https://www.nme.com/blogs/nme-blogs/charli-xcx-number-1-angel-2011045,Described as electronic pop throughout; hooks remain pop-centred.,yes
+charlixcx-number1angel,electropop,album,https://www.nme.com/blogs/nme-blogs/charli-xcx-number-1-angel-2011045,Described as electronic pop (canonical electropop descriptor).,yes
+charlixcx-number1angel,electronic,album,https://www.allmusic.com/album/number-1-angel-mw0003028177,Cavernous electronics and programmed electronic production are an album signature.,yes
+charlixcx-number1angel,dancepop,album,https://pitchfork.com/reviews/albums/23059-number-1-angel/,Bridges PC Music styles and radio-oriented dance-pop; club-oriented tracks recur.,yes
+charlixcx-number1angel,trap,album,https://www.nme.com/reviews/charli-xcx-charli-review-2547002,Later signed NME retrospective explicitly mentions trap beats throughout the tape.,yes
+charlixcx-number1angel,hiphop,track,https://music.apple.com/us/album/number-1-angel/1210513679,Apple Music cites the Auto-Tuned hip-hop sound on Dreamer.,yes
+charlixcx-number1angel,rnb,album/editorial category,https://pitchfork.com/reviews/albums/23059-number-1-angel/,Pitchfork groups this release under pop/R&B; also R&B-rooted vocal delivery.,yes
+charlixcx-number1angel,dancehall,track,https://music.apple.com/us/album/number-1-angel/1210513679,Apple Music editorial identifies melodic dancehall in 3AM (Pull Up).,yes
+charlixcx-number1angel,tropicalhouse,track,https://pitchfork.com/reviews/albums/23059-number-1-angel/,Pitchfork names trop-house in 3AM; never present this as album-wide dominance.,yes
+charlixcx-pop2,pop,album,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,The critic frames it as radically reimagined contemporary pop.,yes
+charlixcx-pop2,electronic,album,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,Experimental electronics and highly synthetic arrangement are pervasive.,yes
+charlixcx-pop2,dancepop,album,https://www.nme.com/reviews/charli-xcx-pop-2-2177551,NME explicitly calls the songs metamorphic dance-pop.,yes
+charlixcx-pop2,electropop,album,https://www.theshfl.com/album/Pop-2,Explicit album-wide electropop genre tag from music critic editorial.,yes
+charlixcx-pop2,hyperpop,retrospective album,https://www.theshfl.com/album/Pop-2,Contemporary music-critic classification of the album; term is retrospective.,yes
+charlixcx-pop2,synthpop,album,https://www.theshfl.com/album/Pop-2,Music critic explicitly tags the record synthpop.,yes
+charlixcx-pop2,eurodance,album/sonic model,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,Pitchfork names European dance-pop templates and describes them as part of overall hybrid.,yes
+charlixcx-pop2,experimentalpop,album,https://www.nme.com/reviews/charli-xcx-pop-2-2177551,"NME highlights experimental, structurally transformative dance-pop throughout.",NO - CLAUDE TO REGISTER
+charlixcx-pop2,rnb,track/production reference,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,Pitchfork cites Jeremih-style R&B chords in Out of My Head.,yes
+charlixcx-pop2,hiphop,track/production reference,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,Pitchfork describes 808s and rap-style repetition on I Got It and other sections.,yes
+charlixcx-pop2,bubblegumbass,producer-scene association,https://pitchfork.com/reviews/albums/charli-xcx-pop-2/,Review identifies PC Music as bubblegum-bass collective; inference to album is indirect.,NO - CLAUDE TO REGISTER
+charlixcx-charli,pop,album,https://www.nme.com/reviews/charli-xcx-charli-review-2547002,Clear album-wide pop classification from NME.,yes
+charlixcx-charli,electropop,album and multiple tracks,https://pitchfork.com/reviews/albums/charli-xcx-charli/,Pitchfork identifies synthetic electro-pop production and singles.,yes
+charlixcx-charli,electronic,album,https://pitchfork.com/reviews/albums/charli-xcx-charli/,Repeated references to corrosive electronics and digital textures.,yes
+charlixcx-charli,dancepop,album/club tracks,https://www.nme.com/reviews/charli-xcx-charli-review-2547002,"Club choruses are a repeated pop feature, balanced by ballads.",yes
+charlixcx-charli,synthpop,"track, strong recurring elements",https://pitchfork.com/reviews/albums/charli-xcx-charli/,Pitchfork explicitly calls Gone synth-pop and notes wide use of synths.,yes
+charlixcx-charli,eurodance,album/sonic model,https://pitchfork.com/reviews/albums/charli-xcx-charli/,Pitchfork describes Swedish Eurodance sound adapted into album production.,yes
+charlixcx-charli,avantpop,album and artistic approach,https://www.nme.com/reviews/charli-xcx-charli-review-2547002,"NME describes Charli post-Sucker as avant-pop, carried into this album.",NO - CLAUDE TO REGISTER
+charlixcx-charli,edm,track,https://pitchfork.com/reviews/albums/charli-xcx-charli/,EDM drop specifically named for Blame It on Your Love.,yes
+charlixcx-charli,rnb,album/editorial category,https://pitchfork.com/reviews/albums/charli-xcx-charli/,"Pitchfork classified record Pop/R&B, though this does not mean most tracks are R&B.",yes
+charlixcx-charli,hiphop,track,https://pitchfork.com/reviews/albums/charli-xcx-charli/,"Rap-vocal sections with collaborators on Shake It, and hip-hop-related rhythm references.",yes
+charlixcx-charli,bubblegumbass,retrospective/aggregator album genre,https://www.albumoftheyear.org/album/159499-charli-xcx-charli.php,"AOTY metadata associates the release with bubblegum bass; weaker evidence, review before import.",NO - CLAUDE TO REGISTER
+charlixcx-charli,rock,production-element,https://pitchfork.com/reviews/albums/charli-xcx-charli/,"Arena-sized 1980s rock drums feature in reviewer production analysis, not a primarily rock album.",yes

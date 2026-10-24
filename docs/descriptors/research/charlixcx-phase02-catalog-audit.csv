@@ -1,0 +1,4 @@
+album_id,title,year,type,catalog_status_at_research,required_action
+charlixcx-number1angel,Number 1 Angel,2017,mixtape,absent from catalog.ts Charli entry,"Append ['Number 1 Angel', 2017] to existing charlixcx album array; generated ID will match"
+charlixcx-pop2,Pop 2,2017,mixtape,absent from catalog.ts Charli entry,"Append ['Pop 2', 2017] to existing charlixcx album array; generated ID will match"
+charlixcx-charli,Charli,2019,studio,present in catalog.ts,Keep existing Charli record and existing album_id unchanged
