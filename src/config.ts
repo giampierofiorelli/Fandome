@@ -8,3 +8,7 @@ export const SPOTIFY_CLIENT_ID = ''
 // Fill these in before opening the site to the public.
 export const OWNER_NAME = ''
 export const CONTACT_EMAIL = ''
+// Optional but recommended for the legal notice (EU e-commerce rules ask for a geographic address;
+// a VAT number only if Fandome becomes an economic activity).
+export const OWNER_ADDRESS = ''
+export const OWNER_VAT = ''

@@ -10,7 +10,7 @@ Things we agreed on but deliberately postponed. Check this list before planning 
   - Load Apple's MusicKit script only after the person taps "Connect Apple Music" (GDPR: no data to Apple before that).
 - **Spotify Client ID** for the listening party: paste it into `src/config.ts` (`SPOTIFY_CLIENT_ID`). Development mode allows 25 users.
 - **Ticketmaster API key** for live concert dates: add the `TICKETMASTER_API_KEY` repository secret (Settings → Secrets and variables → Actions). The nightly job in `scripts/fetch-concerts.ts` does the rest.
-- **Owner name and contact email** for the privacy policy and terms (GDPR, DSA arts. 11–12): `OWNER_NAME` and `CONTACT_EMAIL` in `src/config.ts`.
+- **Owner name, contact email and address** for the legal notice, privacy policy and terms (GDPR, D.Lgs. 70/2003 art. 7, DSA arts. 11–12): `OWNER_NAME`, `CONTACT_EMAIL`, `OWNER_ADDRESS` (and `OWNER_VAT` only if it becomes an economic activity) in `src/config.ts`. Shown in the footer and on `/legal`.
 - **Lawyer review** of the privacy policy, terms, moderation and ticket-board wording before opening to the public.
 - **Artist catalogue**: list of artists to add (or let Claude propose ~200); albums come automatically from MusicBrainz (free, 1 request/second). Then a "Request an artist" flow (create the room after N requests or admin approval).
 

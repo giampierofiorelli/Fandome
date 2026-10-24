@@ -26,6 +26,15 @@ export function setConsent(media: boolean) {
   }
   window.dispatchEvent(new Event('fandome:consent'))
 }
+// "Privacy choices": forget the choice so the banner asks again (withdrawing is as easy as giving).
+export function resetConsent() {
+  try {
+    localStorage.removeItem(KEY)
+  } catch {
+    // ignore
+  }
+  window.dispatchEvent(new Event('fandome:consent'))
+}
 export function useConsent(): Consent | null {
   const [c, setC] = useState(getConsent)
   useEffect(() => {

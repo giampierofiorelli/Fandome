@@ -24,7 +24,7 @@ import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
 import Invite from './pages/Invite'
 import { Conversation, Inbox } from './pages/Messages'
-import { ConsentBanner, Privacy, Terms } from './pages/Legal'
+import { ConsentBanner, Footer, LegalNotice, Privacy, Terms } from './pages/Legal'
 import { ModQueue } from './components/Moderation'
 
 export const GUEST_HANDLE = 'guest'
@@ -126,8 +126,8 @@ export default function App() {
 
   // New page starts at the top (keep position only for back/forward).
   useEffect(() => {
-    window.scrollTo({ top: 0 })
-  }, [loc.pathname])
+    if (!loc.hash) window.scrollTo({ top: 0 }) // links to a section (/legal#report) scroll there instead
+  }, [loc.pathname, loc.hash])
 
   // No login wall: first-time visitors land straight in the app as a guest.
   const needsGuest = !me && !loc.pathname.startsWith('/welcome')
@@ -161,10 +161,11 @@ export default function App() {
             <Route path="/mod" element={<ModQueue />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/legal" element={<LegalNotice />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </motion.div>
-        <p className="legal">Fandome prototype · demo data · independent fan community, not affiliated with any artist</p>
+        <Footer />
       </main>
 
       <ConsentBanner />

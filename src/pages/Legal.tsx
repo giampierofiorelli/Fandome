@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'motion/react'
+import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { CONTACT_EMAIL, OWNER_NAME } from '../config'
-import { setConsent, useConsent } from '../lib/prefs'
+import { CONTACT_EMAIL, OWNER_ADDRESS, OWNER_NAME, OWNER_VAT } from '../config'
+import { resetConsent, setConsent, useConsent } from '../lib/prefs'
 import { spring } from '../lib/motion'
 
 const owner = OWNER_NAME || '[site owner’s name, to be added]'
@@ -38,6 +39,105 @@ export function ConsentBanner() {
         </motion.div>
       )}
     </AnimatePresence>
+  )
+}
+
+// Footer on every page: who runs the site, how to reach us, legal pages, privacy choices, credits.
+export function Footer() {
+  const year = new Date().getFullYear()
+  return (
+    <footer className="site-footer">
+      <nav className="footer-links" aria-label="Legal">
+        <Link to="/legal">Legal notice</Link>
+        <Link to="/privacy">Privacy</Link>
+        <Link to="/terms">Terms & rules</Link>
+        <button onClick={resetConsent}>Privacy choices</button>
+        <Link to="/legal#report">Report illegal content</Link>
+      </nav>
+      <p>
+        © {year} Fandome · run by {OWNER_NAME || 'the site owner'}
+        {CONTACT_EMAIL && (
+          <>
+            {' '}
+            · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+          </>
+        )}
+      </p>
+      <p>Independent, non-commercial fan community. Not affiliated with, endorsed or sponsored by any artist, label or ticket seller. Artist names identify topics only; names, marks and logos belong to their owners.</p>
+      <p className="footer-credits">
+        Prototype with demo data · Fonts Geist & Doto (SIL OFL 1.1) · Brand icons Simple Icons (CC0) · Concert dates Ticketmaster · Music data MusicBrainz
+      </p>
+    </footer>
+  )
+}
+
+// Links like /legal#report: scroll to the section once the page is shown.
+function useScrollToHash() {
+  const { hash, pathname } = useLocation()
+  useEffect(() => {
+    if (!hash) return
+    const t = setTimeout(() => {
+      const el = document.getElementById(hash.slice(1))
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' })
+    }, 150)
+    return () => clearTimeout(t)
+  }, [hash, pathname])
+}
+
+// Legal notice (who we are, how to reach us): EU e-commerce rules (D.Lgs. 70/2003 art. 7) and the
+// Digital Services Act single points of contact (arts. 11–12).
+export function LegalNotice() {
+  useScrollToHash()
+  return (
+    <article className="legal-page">
+      <div className="eyebrow">Legal notice</div>
+      <h1 className="display">Who runs <span className="display-strong">Fandome</span></h1>
+      <p className="muted small">Draft for the prototype · to be reviewed by a lawyer before public launch.</p>
+
+      <h2>Service provider</h2>
+      <p>
+        {owner}
+        <br />
+        {OWNER_ADDRESS || '[address, to be added]'}
+        <br />
+        Email: {email}
+        {OWNER_VAT && (
+          <>
+            <br />
+            VAT: {OWNER_VAT}
+          </>
+        )}
+      </p>
+      <p>Fandome is an independent, non-commercial community run by volunteer fans. It is not affiliated with, endorsed or sponsored by any artist, label, management, promoter or ticket seller.</p>
+
+      <h2>Contact point (EU Digital Services Act)</h2>
+      <p>
+        For users and for authorities of EU countries, the European Commission and the European Board for Digital Services: {email}. Languages: English and Italian. We answer as quickly as we can.
+      </p>
+
+      <h2 id="report">Report illegal content</h2>
+      <p>
+        Use “Report” on the post, story, profile, message, listing or collection piece: anyone can report, with or without a profile. If you can’t use the button, write to {email} with the link to the content, why
+        you think it’s illegal, your name and email (not needed for child sexual abuse material) and a statement that the report is made in good faith. In an emergency call 112.{' '}
+        <Link to="/terms#reporting">How moderation works</Link>
+      </p>
+
+      <h2>Copyright and trademarks</h2>
+      <p>
+        Posts belong to the people who wrote them. Artist names are used only to identify the topic of discussion; names, marks, logos and artwork belong to their owners. If you hold rights in something shared
+        here, report it with “Report” → Copyright, or write to {email}.
+      </p>
+
+      <h2>Supervisory authorities</h2>
+      <p>
+        Digital services: AGCOM (Autorità per le Garanzie nelle Comunicazioni), Italy’s Digital Services Coordinator. Personal data: Garante per la protezione dei dati personali (garanteprivacy.it).
+      </p>
+
+      <h2>Credits</h2>
+      <p>
+        Fonts: Geist and Doto, SIL Open Font License 1.1. Brand icons: Simple Icons (CC0); marks belong to their owners. Music data: MusicBrainz. Concert dates: Ticketmaster. Hosting: GitHub Pages.
+      </p>
+    </article>
   )
 }
 
@@ -108,6 +208,7 @@ export function Privacy() {
 }
 
 export function Terms() {
+  useScrollToHash()
   return (
     <article className="legal-page">
       <div className="eyebrow">Terms & community rules</div>
@@ -138,7 +239,7 @@ export function Terms() {
         <li>Meetups only in public places.</li>
       </ol>
 
-      <h2>Reporting and moderation</h2>
+      <h2 id="reporting">Reporting and moderation</h2>
       <p>
         <strong>Anyone can report</strong>, with or without a profile, using “Report” on a post, story, profile or private chat (notice and action mechanism, EU Digital Services Act art. 16). A report
         should say what’s wrong and, if you think it’s illegal, why. Without a profile we ask for your name and email so we can reply; reports of child sexual abuse can be anonymous. You confirm the
