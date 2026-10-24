@@ -184,7 +184,7 @@ function apply(state: State, action: Action): State {
     }
     case 'addLink': {
       const u = state.users.find((x) => x.id === me)
-      if (!me || !u || isGuest(state) || (u.links?.length ?? 0) >= MAX_LINKS || !/^https?:\/\//.test(action.url)) return state
+      if (!me || !u || (u.links?.length ?? 0) >= MAX_LINKS || !/^https?:\/\//.test(action.url)) return state
       return updateMe(state, (x) => ({ ...x, links: [...(x.links ?? []), { id: action.id, url: action.url, label: action.label?.trim() || undefined, clicks: 0 }] }))
     }
     case 'editLink':

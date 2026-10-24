@@ -273,6 +273,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
     if (!clean) return
     if (links.some((l) => l.url === clean)) return toast('That link is already there')
     dispatch({ type: 'addLink', id: newId(), url: clean, label })
+    toast(`${label.trim() || linkService(clean).label} added to your profile`)
     setUrl('')
     setLabel('')
   }
