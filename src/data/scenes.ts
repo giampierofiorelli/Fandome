@@ -7,6 +7,7 @@ export type Genre =
   | 'pop' | 'dance' | 'electronic' | 'synthpop' | 'disco' | 'rock' | 'indie' | 'alt' | 'metal' | 'punk' | 'prog'
   | 'hiphop' | 'trap' | 'rnb' | 'soul' | 'funk' | 'jazz' | 'folk' | 'songwriter' | 'country' | 'latin' | 'reggaeton'
   | 'afro' | 'kpop' | 'sertanejo' | 'funkbr' | 'pagode' | 'forro' | 'classical' | 'soundtrack' | 'reggae' | 'opera'
+  | 'house' | 'techno' | 'ambient' | 'triphop' | 'artpop' | 'gospel'
 
 export interface ArtistScene {
   country: string
@@ -135,6 +136,7 @@ export const GENRE_LABELS: Record<Genre, string> = {
   funk: 'Funk', jazz: 'Jazz', folk: 'Folk', songwriter: 'Singer-songwriter', country: 'Country', latin: 'Latin', reggaeton: 'Reggaeton',
   afro: 'Afro', kpop: 'K-pop', sertanejo: 'Sertanejo', funkbr: 'Brazilian funk', pagode: 'Pagode', forro: 'Forró',
   classical: 'Classical', soundtrack: 'Soundtrack', reggae: 'Reggae', opera: 'Opera',
+  house: 'House', techno: 'Techno', ambient: 'Ambient', triphop: 'Trip-hop', artpop: 'Art pop', gospel: 'Gospel',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
