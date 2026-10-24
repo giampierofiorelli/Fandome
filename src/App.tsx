@@ -87,6 +87,16 @@ function TopBar() {
   )
 }
 
+// Reload for a new version without replaying the intro.
+function reloadQuietly() {
+  try {
+    sessionStorage.setItem(SKIP_INTRO, '1')
+  } catch {
+    // ignore
+  }
+  location.reload()
+}
+
 // Keep phones on the latest version: the app is a single page that is rarely
 // reloaded, so check for a newer build when you come back to it and every few minutes.
 function useAutoUpdate() {
@@ -100,10 +110,10 @@ function useAutoUpdate() {
         const html = await (await fetch(`${import.meta.env.BASE_URL}index.html?v=${Date.now()}`, { cache: 'no-store' })).text()
         const latest = html.match(/index-[\w-]+\.js/)?.[0]
         if (!latest || latest === current) return
-        if (reloadNow) return location.reload()
+        if (reloadNow) return reloadQuietly()
         if (offered) return
         offered = true
-        toast('A new version of Fandome is ready', { label: 'Refresh', onClick: () => location.reload() })
+        toast('A new version of Fandome is ready', { label: 'Refresh', onClick: reloadQuietly })
       } catch {
         // offline: try again later
       }
@@ -119,23 +129,23 @@ function useAutoUpdate() {
   }, [toast])
 }
 
-// First visit on this device: the animated logo, big, for a moment. Tap to skip.
-const INTRO_KEY = 'fandome:intro'
+// Every time the site is opened (or reloaded): the animated logo, big, for a moment. Tap to skip.
+// Not after the automatic reload to a new version.
+const SKIP_INTRO = 'fandome:skipIntro'
 function Intro() {
   const [show, setShow] = useState(() => {
     try {
-      return !localStorage.getItem(INTRO_KEY)
+      if (sessionStorage.getItem(SKIP_INTRO)) {
+        sessionStorage.removeItem(SKIP_INTRO)
+        return false
+      }
     } catch {
-      return false
+      // storage blocked: just show it
     }
+    return true
   })
   useEffect(() => {
     if (!show) return
-    try {
-      localStorage.setItem(INTRO_KEY, String(Date.now()))
-    } catch {
-      // private mode: it may show again next time
-    }
     const t = setTimeout(() => setShow(false), 2300)
     return () => clearTimeout(t)
   }, [show])
