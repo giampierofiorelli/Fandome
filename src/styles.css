@@ -1096,3 +1096,8 @@ body:has(.sv-root) .modal-root { z-index: 100; }
 .coll-photo-btns { display: flex; gap: 8px; }
 .coll-photo-remove { position: absolute; right: 10px; bottom: 10px; }
 .link-disc:has(> .brand-glyph) { line-height: 0; font-size: 0; }
+.pqr-icon { display: inline-flex; height: 22px; align-items: center; justify-content: center; }
+.pqr-actions button { overflow: hidden; }
+.pqr-actions button.done { background: #fff; color: #2f8f6a; }
+/* messages always above overlays (QR, stories, rater) */
+.toast-layer { z-index: 120; }

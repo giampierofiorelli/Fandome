@@ -1,11 +1,11 @@
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useMemo, useState } from 'react'
 import { createPortal } from 'react-dom'
 import qrcode from 'qrcode-generator'
 import type { User } from '../data/types'
-import { spring } from '../lib/motion'
+import { spring, springSnappy } from '../lib/motion'
 import { useToast } from './Toast'
-import { IconDownload, IconLink, IconShare, IconX } from './icons'
+import { IconCheck, IconDownload, IconLink, IconShare, IconX } from './icons'
 
 // Backgrounds you cycle through with "Color" (the first one is the person's own colour).
 const THEMES = (c: string): { bg: string; a: string; b: string; light?: boolean }[] => [
@@ -84,10 +84,16 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
       // share sheet closed
     }
   }
+  const [done, setDone] = useState<'copy' | 'download' | null>(null)
+  const flash = (k: 'copy' | 'download') => {
+    setDone(k)
+    navigator.vibrate?.(8)
+    setTimeout(() => setDone((d) => (d === k ? null : d)), 1600)
+  }
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(url)
-      toast('Link copied')
+      flash('copy')
     } catch {
       prompt('Copy link', url)
     }
@@ -99,6 +105,7 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
       a.href = URL.createObjectURL(blob)
       a.download = `fandome-${user.handle}.png`
       a.click()
+      flash('download')
       setTimeout(() => URL.revokeObjectURL(a.href), 2000)
     } catch {
       toast('Couldn’t create the image')
@@ -152,21 +159,35 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
         <div className="pqr-brand dotmatrix">FANDOME</div>
       </motion.div>
       <div className="pqr-actions">
-        <button onClick={share}>
+        <motion.button onClick={share} whileTap={{ scale: 0.92 }} transition={springSnappy}>
           <IconShare size={22} />
           Share profile
-        </button>
-        <button onClick={copy}>
-          <IconLink size={22} />
-          Copy link
-        </button>
-        <button onClick={download}>
-          <IconDownload size={22} />
-          Download
-        </button>
+        </motion.button>
+        <ActionButton onClick={copy} done={done === 'copy'} icon={<IconLink size={22} />} label="Copy link" doneLabel="Copied" />
+        <ActionButton onClick={download} done={done === 'download'} icon={<IconDownload size={22} />} label="Download" doneLabel="Saved" />
       </div>
     </motion.div>,
     document.body,
+  )
+}
+
+// Button that confirms itself: press, then the icon pops into a check and the label changes.
+function ActionButton({ onClick, done, icon, label, doneLabel }: { onClick: () => void; done: boolean; icon: React.ReactNode; label: string; doneLabel: string }) {
+  return (
+    <motion.button onClick={onClick} whileTap={{ scale: 0.92 }} animate={done ? { scale: [1, 1.06, 1] } : { scale: 1 }} transition={springSnappy} className={done ? 'done' : ''} aria-live="polite">
+      <span className="pqr-icon">
+        <AnimatePresence mode="popLayout" initial={false}>
+          <motion.span key={done ? 'ok' : 'icon'} initial={{ scale: 0.3, opacity: 0, rotate: done ? -45 : 45 }} animate={{ scale: 1, opacity: 1, rotate: 0 }} exit={{ scale: 0.3, opacity: 0 }} transition={{ type: 'spring', bounce: 0.5, visualDuration: 0.3 }} style={{ display: 'inline-flex' }}>
+            {done ? <IconCheck size={22} /> : icon}
+          </motion.span>
+        </AnimatePresence>
+      </span>
+      <AnimatePresence mode="popLayout" initial={false}>
+        <motion.span key={done ? doneLabel : label} initial={{ y: 8, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -8, opacity: 0 }} transition={{ type: 'spring', bounce: 0, visualDuration: 0.2 }}>
+          {done ? doneLabel : label}
+        </motion.span>
+      </AnimatePresence>
+    </motion.button>
   )
 }
 
