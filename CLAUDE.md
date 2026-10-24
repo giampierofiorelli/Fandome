@@ -5,7 +5,7 @@
 - Keep the current design (calm glass, one column, big light numerals, Doto dot-matrix accents, floating tab bar). The listening party look must not change.
 - GDPR: nothing from third parties loads before consent or a user tap; fonts are self-hosted.
 - Album descriptors (`docs/album-descriptors-guide.md`, branch `descriptors`): owner's rule, no limit on the number of values in any column; every genre a source names goes in, new genres are added to the list.
-- Discovery (suggestions, Bridge, "A scene you don't know yet") never targets the global markets (US, UK, also CA, AU, IE) or English-language pop: only local scenes, singing mainly in their own language (owner's rule; `isLocalArtist` in `src/data/scenes.ts`).
+- Discovery (suggestions, Bridge, "A scene you don't know yet") never targets the global markets (US, UK; CA, AU, IE too for now, to rethink later) or English-language pop: only local scenes, singing mainly in their own language (owner's rule; `isLocalArtist` in `src/data/scenes.ts`).
 - **Before planning new work, read `ROADMAP.md`**: it lists features we decided to do later (e.g. Apple Music in the listening party, collector marketplace) and what is waiting on the owner.
 - The owner writes in Italian: answer in Italian, short, outcome first.
 
