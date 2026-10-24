@@ -10,11 +10,6 @@ export interface FeedItem {
   repostedBy?: { userId: string; tags: string[] }
 }
 
-const score = (p: Post, now: number) => {
-  const ageH = (now - p.createdAt) / 3_600_000
-  return (p.likes.length + 2 * p.reposts.length + 1) / Math.pow(ageH + 2, 1.2)
-}
-
 // "Following": chronological, people you follow + yourself, including their reposts.
 export function followingFeed(posts: Post[], me: User): FeedItem[] {
   const who = new Set([...me.following, me.id])
@@ -29,12 +24,69 @@ export function followingFeed(posts: Post[], me: User): FeedItem[] {
   return items.sort((a, b) => b.at - a.at)
 }
 
-// "Discover": popular posts from your fandoms (Bluesky-style alternative feed).
-export function discoverFeed(posts: Post[], artistIds: string[], now = Date.now()): FeedItem[] {
+const aboutMine = (p: Post, artistIds: string[]) => !postArtists(p).length || postArtists(p).some((a) => artistIds.includes(a))
+
+// "Latest": every post about the artists you follow, newest first (also from people you don't follow).
+export function latestFeed(posts: Post[], artistIds: string[]): FeedItem[] {
   return posts
-    .filter((p) => !p.replyTo && (!postArtists(p).length || postArtists(p).some((a) => artistIds.includes(a))))
-    .sort((a, b) => score(b, now) - score(a, now))
+    .filter((p) => !p.replyTo && !p.removed && aboutMine(p, artistIds))
+    .sort((a, b) => b.createdAt - a.createdAt)
     .map((p) => ({ key: p.id, post: p, at: p.createdAt }))
+}
+
+export const TRENDING_HOURS = 48
+const GRAVITY = 1.5
+const MAX_PER_AUTHOR = 2
+// What a person did with a post, counted once per person at their strongest action:
+// a reply (a conversation) says more than a repost or quote, which says more than a like.
+const W_REPLY = 3
+const W_SHARE = 2
+const W_LIKE = 1
+
+// Interest = distinct people engaging, weighted by action, fading with age (Hacker News-style
+// gravity). Counting people rather than clicks makes it hard for one account to push a post.
+export function trendScore(p: Post, all: Post[], now: number): number {
+  const owners = new Set(postOwners(p))
+  const best = new Map<string, number>()
+  const bump = (who: string, w: number) => {
+    if (owners.has(who)) return
+    best.set(who, Math.max(best.get(who) ?? 0, w))
+  }
+  for (const id of p.likes) bump(id, W_LIKE)
+  for (const r of p.reposts) bump(r.userId, W_SHARE)
+  for (const x of all) {
+    if (x.removed) continue
+    if (x.replyTo === p.id) bump(x.authorId, W_REPLY)
+    else if (x.quoteOf === p.id) bump(x.authorId, W_SHARE)
+  }
+  let points = 0
+  for (const w of best.values()) points += w
+  const ageH = Math.max(0, (now - p.createdAt) / 3_600_000)
+  return points / Math.pow(ageH + 2, GRAVITY)
+}
+
+// "Trending": what's getting people talking about your artists right now. Only the last 48 hours
+// (or the last week when it's quiet), at most two posts per person, nothing without engagement.
+export function trendingFeed(posts: Post[], artistIds: string[], now = Date.now()): { items: FeedItem[]; hours: number } {
+  const pick = (hours: number) => {
+    const scored = posts
+      .filter((p) => !p.replyTo && !p.removed && aboutMine(p, artistIds) && now - p.createdAt <= hours * 3_600_000)
+      .map((p) => ({ p, s: trendScore(p, posts, now) }))
+      .filter((x) => x.s > 0)
+      .sort((a, b) => b.s - a.s)
+    const perAuthor = new Map<string, number>()
+    const out: FeedItem[] = []
+    for (const { p } of scored) {
+      const n = perAuthor.get(p.authorId) ?? 0
+      if (n >= MAX_PER_AUTHOR) continue
+      perAuthor.set(p.authorId, n + 1)
+      out.push({ key: p.id, post: p, at: p.createdAt })
+    }
+    return out
+  }
+  const recent = pick(TRENDING_HOURS)
+  if (recent.length >= 3) return { items: recent, hours: TRENDING_HOURS }
+  return { items: pick(24 * 7), hours: 24 * 7 }
 }
 
 // Custom topic feed inside an artist space, matched by hashtags.

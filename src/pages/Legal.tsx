@@ -244,6 +244,14 @@ export function Terms() {
         <li>Meetups only in public places.</li>
       </ol>
 
+      <h2 id="feeds">How feeds and suggestions work</h2>
+      <p>
+        No ads, no paid boosts and no profiling. Everything is worked out on your device from what you chose to follow (DSA art. 27). Following: posts from people you follow, newest first. Latest:
+        every post about the artists you follow, newest first. Trending: posts about your artists from the last 48 hours (a week when it is quiet), ranked by how many different people replied
+        (counts most), reposted or quoted, or liked them, with older posts fading; each person counts once, and at most two posts per author are shown. Artist suggestions in Explore come from the
+        artists followed by people you follow and by fans of your artists; each one says why it is shown. Latest is always there if you prefer a plain timeline.
+      </p>
+
       <h2 id="reporting">Reporting and moderation</h2>
       <p>
         <strong>Anyone can report</strong>, with or without a profile, using “Report” on a post, story, profile or private chat (notice and action mechanism, EU Digital Services Act art. 16). A report

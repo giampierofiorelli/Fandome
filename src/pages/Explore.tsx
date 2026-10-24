@@ -6,9 +6,10 @@ import { Avatar } from '../components/ui'
 import { tagFeed } from '../lib/feed'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
 import { artistById, formatDate, trending } from '../lib/util'
+import { suggestArtists } from '../lib/suggest'
 
 export default function Explore() {
-  const { state } = useStore()
+  const { state, me, dispatch } = useStore()
   const [params, setParams] = useSearchParams()
   const tag = params.get('tag')
   const q = (params.get('q') ?? '').trim().toLowerCase()
@@ -19,6 +20,7 @@ export default function Explore() {
   const posts = q ? state.posts.filter((p) => `${p.text} ${p.translation ?? ''}`.toLowerCase().includes(q)) : []
 
   const trends = trending(state.posts, { limit: 6 })
+  const suggestions = me ? suggestArtists(me, state.users, artists) : []
   return (
     <>
       <header className="hello">
@@ -90,8 +92,37 @@ export default function Explore() {
 
       {!tag && !q && (
         <>
+          {suggestions.length > 0 && (
+            <>
+              <div className="section-head">
+                <h2>Artists you might like</h2>
+              </div>
+              <div className="glass-card list">
+                {suggestions.map(({ artist: a, reason }) => (
+                  <div key={a.id} className="row-item">
+                    <Link to={`/a/${a.id}`} className="suggest-link">
+                      <span className="dot big" style={{ background: a.color }} />
+                      <span className="grow">
+                        <strong>{a.name}</strong>
+                        <span className="muted small block">{reason}</span>
+                      </span>
+                    </Link>
+                    <button className="pill-btn light small" onClick={() => dispatch({ type: 'followArtist', artistId: a.id })}>
+                      Follow
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <p className="muted small suggest-why">
+                Based on who you follow and what fans of your artists follow. No ads, no tracking.{' '}
+                <Link to="/terms#feeds" className="link-btn">
+                  How it works
+                </Link>
+              </p>
+            </>
+          )}
           <div className="section-head">
-            <h2>Trending</h2>
+            <h2>Trending tags</h2>
           </div>
           <div className="trend-grid">
             {trends.map((t, i) => (

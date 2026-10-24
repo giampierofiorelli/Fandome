@@ -10,12 +10,12 @@ import { RemovedNotice } from '../components/Moderation'
 import { FeedList } from '../components/FeedList'
 import { ArtistDisc, Avatar, Tabs } from '../components/ui'
 import { IconArrowUpRight, IconPlay, IconX } from '../components/icons'
-import { discoverFeed, followingFeed } from '../lib/feed'
+import { followingFeed, latestFeed, TRENDING_HOURS, trendingFeed } from '../lib/feed'
 import { artistById, formatDate, isUpcoming, trending } from '../lib/util'
 import { spring } from '../lib/motion'
 import { dismissShows, newShowsFor } from '../lib/liveConcerts'
 
-type Mode = 'following' | 'discover'
+type Mode = 'following' | 'latest' | 'trending'
 
 function greeting(h = new Date().getHours()) {
   return h < 5 ? 'Good night' : h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening'
@@ -33,7 +33,8 @@ export default function Home() {
 
   if (!me) return null
   const mine = Object.keys(me.fanSince)
-  const items = mode === 'following' ? followingFeed(state.posts, me) : discoverFeed(state.posts, mine)
+  const trend = mode === 'trending' ? trendingFeed(state.posts, mine) : null
+  const items = mode === 'following' ? followingFeed(state.posts, me) : mode === 'latest' ? latestFeed(state.posts, mine) : trend!.items
   const party = parties[0]
   const partyArtist = artistById(party.artistId)!
   const next = concerts.filter((c) => isUpcoming(c.date) && mine.includes(c.artistId)).sort((a, b) => a.date.localeCompare(b.date))[0]
@@ -122,7 +123,7 @@ export default function Home() {
         <motion.div {...tile(2)} className="tile">
           <Link to="/explore" className="tile-link">
             <div className="tile-kicker row-between">
-              Trending <IconArrowUpRight size={16} />
+              Top tags <IconArrowUpRight size={16} />
             </div>
             <ol className="numbered">
               {trends.map((t, i) => (
@@ -169,13 +170,27 @@ export default function Home() {
         <Tabs<Mode>
           tabs={[
             { id: 'following', label: 'Following' },
-            { id: 'discover', label: 'Discover' },
+            { id: 'latest', label: 'Latest' },
+            { id: 'trending', label: 'Trending' },
           ]}
           value={mode}
           onChange={setMode}
         />
       </div>
-      <FeedList items={items} caughtUpAfter={mode === 'following' ? seenAt : undefined} empty="Follow some fans or join a fandom to fill your feed." />
+      <p className="muted small feed-explain">
+        {mode === 'following' && 'Posts from people you follow, newest first.'}
+        {mode === 'latest' && 'Everything about your artists, newest first.'}
+        {mode === 'trending' && `What people are talking about most for your artists in the last ${trend!.hours === TRENDING_HOURS ? '48 hours' : 'week'}.`}
+        {mode === 'trending' && (
+          <>
+            {' '}
+            <Link to="/terms#feeds" className="link-btn">
+              How it works
+            </Link>
+          </>
+        )}
+      </p>
+      <FeedList items={items} caughtUpAfter={mode === 'following' ? seenAt : undefined} empty={mode === 'trending' ? 'Nothing is trending for your artists right now. Have a look at Latest.' : 'Follow some fans or join a fandom to fill your feed.'} />
     </>
   )
 }
