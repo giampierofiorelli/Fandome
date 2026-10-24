@@ -6,7 +6,8 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
 import { discussedAlbums, tagFeed } from '../lib/feed'
 import { DotCrown } from '../components/DiscoLogo'
-import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
+import { IconArrowUpRight, IconPin, IconSearch, IconX } from '../components/icons'
+import { fromCountry, sceneOf } from '../data/scenes'
 import { albumById, artistById, formatDate, trending } from '../lib/util'
 import { suggestArtists } from '../lib/suggest'
 import { similarAlbums } from '../lib/similar'
@@ -37,7 +38,8 @@ export default function Explore() {
         .filter(([id, r]) => r >= 4 && descriptorOf(id))
         .sort((x, y) => y[1] - x[1])[0]?.[0]
     : undefined
-  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: (id) => albumById(id)?.artistId }) : []
+  const artistOfAlbum = (id: string) => albumById(id)?.artistId
+  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe }) : []
   const [allRooms, setAllRooms] = useState(false)
   // Your rooms first, then A–Z; the full list on request.
   const mine = me ? Object.keys(me.fanSince) : []
@@ -120,17 +122,23 @@ export default function Explore() {
                 <h2>Artists you might like</h2>
               </div>
               <div className="glass-card list">
-                {suggestions.map(({ artist: a, reason }) => (
+                {suggestions.map(({ artist: a, reason, newCountry }) => (
                   <div key={a.id} className="row-item">
                     <Link to={`/a/${a.id}`} className="suggest-link">
                       <ArtistDisc id={a.id} size={44} />
                       <span className="grow">
                         <strong>{a.name}</strong>
-                        <span className="muted small block">{reason}</span>
+                        <span className="muted small block">
+                          {reason}
+                          {newCountry && ` · ${fromCountry(newCountry)}`}
+                        </span>
                       </span>
                     </Link>
                     <button className="pill-btn light small" onClick={() => dispatch({ type: 'followArtist', artistId: a.id })}>
                       Follow
+                    </button>
+                    <button className="not-for-me" aria-label={`Not for me: ${a.name}`} title="Not for me" onClick={() => dispatch({ type: 'notForMe', id: a.id })}>
+                      <IconX size={14} />
                     </button>
                   </div>
                 ))}
@@ -148,7 +156,7 @@ export default function Explore() {
               <div className="section-head">
                 <h2>Because you rated {albumById(seedAlbum)?.title}</h2>
               </div>
-              <SimilarList items={becauseRated} />
+              <SimilarList items={becauseRated} onHide={(id) => dispatch({ type: 'notForMe', id })} />
             </>
           )}
           {discussed.length > 0 && (

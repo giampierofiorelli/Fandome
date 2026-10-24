@@ -162,3 +162,6 @@ export function sceneLine(artistId: string): string | null {
   if (!s) return null
   return `${COUNTRY_NAMES[s.country] ?? s.country} · from the ${s.since}s · ${s.genres.map((g) => GENRE_LABELS[g]).join(', ')}`
 }
+
+// "from the United States", "from Italy".
+export const fromCountry = (name: string) => `from ${/^(United|Netherlands|Philippines|Dominican|Czech|Bahamas)/.test(name) ? 'the ' : ''}${name}`

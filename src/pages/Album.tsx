@@ -12,11 +12,12 @@ import { IconPen } from '../components/icons'
 import { SimilarList } from '../components/SimilarList'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
 import { similarAlbums } from '../lib/similar'
+import { sceneOf } from '../data/scenes'
 
 // One page per album: reached from albums linked in posts. Rate it, and read what fans say.
 export default function AlbumPage() {
   const { albumId } = useParams()
-  const { state, me } = useStore()
+  const { state, me, dispatch } = useStore()
   const compose = useComposer()
   const [rating, setRating] = useState(false)
   const album = albumById(albumId)
@@ -27,7 +28,8 @@ export default function AlbumPage() {
   const mine = me?.ratings[album.id]
   const items = albumFeed(state.posts, album.id)
   const sound = descriptorOf(album.id)
-  const similar = similarAlbums(album.id, { artistOf: (id) => albumById(id)?.artistId })
+  const artistOfAlbum = (id: string) => albumById(id)?.artistId
+  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe })
 
   return (
     <>
@@ -93,7 +95,7 @@ export default function AlbumPage() {
               How it works
             </Link>
           </div>
-          <SimilarList items={similar} />
+          <SimilarList items={similar} onHide={me ? (id) => dispatch({ type: 'notForMe', id }) : undefined} />
         </>
       )}
       <div className="section-head">

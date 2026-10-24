@@ -23,6 +23,7 @@ export type Action =
   | { type: 'restorePost'; post: Post }
   | { type: 'pinPost'; postId: Id; replace?: Id }
   | { type: 'toggleSave'; postId: Id }
+  | { type: 'notForMe'; id: Id }
   | { type: 'respondCollab'; postId: Id; accept: boolean }
   | { type: 'leaveCollab'; postId: Id }
   | { type: 'unpinPost'; postId: Id }
@@ -209,6 +210,10 @@ function apply(state: State, action: Action): State {
         }),
       }
     }
+    case 'notForMe':
+      // Hides a suggestion (artist or album) for good; private, only on this device.
+      if (!me) return state
+      return { ...state, users: state.users.map((u) => (u.id === me && !(u.notForMe ?? []).includes(action.id) ? { ...u, notForMe: [...(u.notForMe ?? []), action.id] } : u)) }
     case 'pinPost':
     case 'unpinPost': {
       // Pins live on the author's profile: your own posts, or a page you manage.

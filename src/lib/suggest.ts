@@ -4,11 +4,13 @@
 // sound (album descriptors: albums you rated highly, then the albums of artists you follow).
 import type { Album, Artist, User } from '../data/types'
 import { soundMatch, type AlbumSeed } from './similar'
+import { COUNTRY_NAMES, sceneOf } from '../data/scenes'
 
 export interface ArtistSuggestion {
   artist: Artist
   reason: string
   score: number
+  newCountry?: string // country name, when none of the artists you follow comes from there
 }
 
 const names = (list: string[]) => (list.length <= 2 ? list.join(' and ') : `${list.slice(0, 2).join(', ')} and ${list.length - 2} more`)
@@ -27,9 +29,12 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
   const mine = new Set(Object.keys(me.fanSince))
   const people = users.filter((u) => u.id !== me.id && u.kind !== 'page')
   const seeds = fanSeeds(me, albums)
+  const hidden = new Set(me.notForMe ?? [])
+  // Discovery: a small push for artists from countries none of your artists come from.
+  const myCountries = new Set([...mine].map((id) => sceneOf(id)?.country).filter(Boolean))
   const rows: { artist: Artist; social: number; sound: number; friends: string[]; topFan?: string; soundReason?: string }[] = []
   for (const a of artists) {
-    if (mine.has(a.id)) continue
+    if (mine.has(a.id) || hidden.has(a.id)) continue
     // People you follow who are fans of this artist (strongest signal).
     const friends = people.filter((u) => me.following.includes(u.id) && u.fanSince[a.id])
     // Fans of your artists who are also fans of this one.
@@ -52,7 +57,10 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
   return rows
     .map((r) => {
       const reason = r.friends.length ? `Followed by ${names(r.friends)}` : r.soundReason ?? `Fans of ${r.topFan} also follow`
-      return { artist: r.artist, reason, score: 0.5 * (r.social / maxSocial) + 0.5 * r.sound }
+      const country = sceneOf(r.artist.id)?.country
+      const isNew = Boolean(country && myCountries.size && !myCountries.has(country))
+      const score = 0.5 * (r.social / maxSocial) + 0.5 * r.sound + (isNew ? 0.05 : 0)
+      return { artist: r.artist, reason, score, newCountry: isNew ? COUNTRY_NAMES[country!] ?? country : undefined }
     })
     .sort((x, y) => y.score - x.score)
     .slice(0, limit)

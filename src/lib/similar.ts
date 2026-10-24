@@ -65,6 +65,7 @@ export interface Similar {
   albumId: string
   score: number
   reasons: string[]
+  newCountry?: string // set when the album comes from another country than the one you started from
 }
 
 const CONFIDENCE = { high: 1, medium: 0.9, low: 0.8 }
@@ -106,15 +107,26 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 }
 
 // Albums by other artists, best first, at most `perArtist` from the same artist so the list stays varied.
-export function similarAlbums(albumId: string, opts: { limit?: number; perArtist?: number; artistOf?: (albumId: string) => string | undefined } = {}): Similar[] {
-  const { limit = 5, perArtist = 2 } = opts
+// Discovery bonus: a small push for albums from another country, so suggestions cross scenes.
+const DISCOVERY = 0.05
+
+export function similarAlbums(
+  albumId: string,
+  opts: { limit?: number; perArtist?: number; artistOf?: (albumId: string) => string | undefined; countryOf?: (albumId: string) => string | undefined; hide?: string[] } = {},
+): Similar[] {
+  const { limit = 5, perArtist = 2, hide = [] } = opts
   const a = DESCRIPTORS[albumId]
   if (!a) return []
   const artistOf = opts.artistOf ?? ((id: string) => DESCRIPTORS[id]?.artist)
   const mine = artistOf(albumId)
   const ranked = Object.values(DESCRIPTORS)
-    .filter((b) => b.albumId !== albumId && artistOf(b.albumId) !== mine)
-    .map((b) => compareAlbums(a, b))
+    .filter((b) => b.albumId !== albumId && artistOf(b.albumId) !== mine && !hide.includes(b.albumId) && !hide.includes(artistOf(b.albumId) ?? ''))
+    .map((b) => {
+      const s = compareAlbums(a, b)
+      const from = opts.countryOf?.(albumId)
+      const to = opts.countryOf?.(b.albumId)
+      return from && to && from !== to ? { ...s, score: s.score + DISCOVERY, newCountry: to } : s
+    })
     .filter((s) => s.score >= 0.2)
     .sort((x, y) => y.score - x.score)
   const out: Similar[] = []

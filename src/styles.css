@@ -1303,5 +1303,11 @@ a.link-rich:active { transform: scale(0.985); }
 .album-sound { padding: 0 2px; }
 .sound-genres { display: flex; flex-wrap: wrap; }
 .sound-line { margin: 10px 0 0; }
-.similar-row + .similar-row::before { left: 70px; }
+.similar-item { position: relative; display: flex; align-items: center; }
+.similar-item > .chart-row { flex: 1; min-width: 0; }
+.similar-item + .similar-item > .chart-row::before { content: ''; position: absolute; top: 0; left: 70px; right: 4px; height: 1px; background: var(--glass-line); }
+.not-for-me { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border: 0; border-radius: 50%; background: none; color: var(--muted); cursor: pointer; transition: background 0.2s, transform 0.12s ease-out; }
+.not-for-me:hover { background: var(--glass-strong); }
+.not-for-me:active { transform: scale(0.9); }
+.row-item .not-for-me { margin-left: -6px; }
 .similar-why { margin-top: 3px; color: var(--text-2); }
