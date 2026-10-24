@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Embed, Post } from '../data/types'
-import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
+import { EMBED_ICON, EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
 import { firstOneOffLoad, setConsent, useConsent } from '../lib/prefs'
 import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
@@ -689,10 +689,14 @@ function SocialEmbed({ embed }: { embed: Embed }) {
         <iframe src={embedSrc(embed)} title={`${label} post`} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen loading="lazy" />
       ) : (
         <button className="social-poster" onClick={tap} aria-label={`Show ${label} post`}>
-          <span className="embed-logo">{label.slice(0, 2)}</span>
+          <span className="embed-logo">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+              <path d={EMBED_ICON[embed.kind].path} fill="currentColor" />
+            </svg>
+          </span>
           <span className="grow">
-            <strong>{isAudioEmbed(embed.kind) ? `Listen on ${label}` : `${label} post`}</strong>
-            <span className="muted small block">Opening it lets {label} set cookies and see your IP</span>
+            <strong>{label}</strong>
+            <span className="muted small block">Can set cookies and see your IP</span>
           </span>
           <span className="pill-btn glass small">{isAudioEmbed(embed.kind) ? 'Play' : 'Show'}</span>
         </button>

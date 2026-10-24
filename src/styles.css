@@ -1180,3 +1180,9 @@ body.story-open .modal-root { z-index: 100; }
 .embed-note { margin: 2px 2px 4px; font-size: 12px; line-height: 1.4; color: var(--muted); }
 .embed-note .link-btn { font-size: 12px; padding: 0; color: var(--text-2); }
 .consent p.consent-note { margin-top: -4px; font-size: 12.5px; color: var(--muted); }
+/* Closed-player cards: real brand marks, full privacy line */
+.embed-logo svg { display: block; width: 22px; height: 22px; flex-shrink: 0; }
+.spotify .embed-logo { background: #1ed760; color: #000; }
+.deezer .embed-logo { background: #a238ff; }
+.social-poster .block { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.35; margin-top: 2px; }
+.tiktok .embed-logo { box-shadow: none; }

@@ -2,8 +2,8 @@
 // their servers, shown with their own player), links, and photo compression.
 import type { Embed } from '../data/types'
 import {
-  siApplemusic, siBandcamp, siBluesky, siDeezer, siDiscogs, siDiscord, siFacebook, siInstagram, siKofi, siLastdotfm, siLetterboxd, siMixcloud,
-  siPatreon, siPinterest, siReddit, siSoundcloud, siSpotify, siSubstack, siTelegram, siThreads, siTidal, siTiktok, siTumblr, siTwitch, siX, siYoutube,
+  siApplemusic, siAudiomack, siBandcamp, siBluesky, siDeezer, siDiscogs, siDiscord, siFacebook, siInstagram, siKofi, siLastdotfm, siLetterboxd, siMixcloud,
+  siPatreon, siPinterest, siReddit, siSoundcloud, siSpotify, siSubstack, siTelegram, siThreads, siTidal, siTiktok, siTumblr, siTwitch, siVimeo, siX, siYoutube,
 } from 'simple-icons'
 
 const YT = /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
@@ -99,6 +99,11 @@ export const EMBED_LABEL: Record<Embed['kind'], string> = {
   mixcloud: 'Mixcloud',
   audiomack: 'Audiomack',
   vimeo: 'Vimeo',
+}
+// Official brand marks (Simple Icons, CC0) for the closed-player cards; brand names stay nominative only.
+export const EMBED_ICON: Record<Embed['kind'], { path: string }> = {
+  youtube: siYoutube, x: siX, instagram: siInstagram, tiktok: siTiktok, soundcloud: siSoundcloud, spotify: siSpotify,
+  apple: siApplemusic, deezer: siDeezer, tidal: siTidal, mixcloud: siMixcloud, audiomack: siAudiomack, vimeo: siVimeo,
 }
 // Music players are compact; social posts are tall.
 export const isAudioEmbed = (k: Embed['kind']) => ['soundcloud', 'spotify', 'apple', 'deezer', 'tidal', 'mixcloud', 'audiomack'].includes(k)
