@@ -57,6 +57,7 @@ An artist like Madonna has made very different records (dance-pop, Ray of Light'
 - **The fan's seed is album-level too**: we already know which albums each fan rated. Someone who rates Ray of Light 10/10 gets electronic, atmospheric suggestions; someone who loves Like a Prayer gets classic pop. Same artist, different paths.
 - Explanations can then name the album: "Because you loved Ray of Light: atmospheric electronic pop, like…".
 - Songs can come later with the same model.
+- **How to fill them**: [`album-descriptors-guide.md`](album-descriptors-guide.md) (columns, scale anchors, example, ChatGPT prompt). Filling them ourselves is enough to start: they're our own judgments, no licence needed.
 
 ### 3.1c One engine for every suggestion
 
