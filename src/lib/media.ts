@@ -220,3 +220,33 @@ export function cleanLink(input: string): string | null {
     return null
   }
 }
+
+// Link preview (title, description, image) read through Microlink, a free metadata service,
+// only when someone writes a post with a link. The image is fetched and shrunk right away and
+// stored in the post; if the site doesn't allow that, the preview simply has no image.
+export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<import('../data/types').LinkPreview | null> {
+  const ctrl = new AbortController()
+  const t = setTimeout(() => ctrl.abort(), timeoutMs)
+  try {
+    const res = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`, { signal: ctrl.signal, referrerPolicy: 'no-referrer' })
+    if (!res.ok) return null
+    const json = (await res.json()) as { status: string; data?: { title?: string; description?: string; publisher?: string; image?: { url?: string } } }
+    const d = json.data
+    if (json.status !== 'success' || !d || (!d.title && !d.description)) return null
+    let image: string | undefined
+    if (d.image?.url) {
+      try {
+        const blob = await (await fetch(d.image.url, { signal: ctrl.signal, referrerPolicy: 'no-referrer' })).blob()
+        if (blob.type.startsWith('image/')) image = await compressImage(new File([blob], 'preview', { type: blob.type }), 640, 0.78)
+      } catch {
+        // the site blocks copying its image: preview without it
+      }
+    }
+    const clip = (s: string | undefined, n: number) => (s ? (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s) : undefined)
+    return { url, title: clip(d.title, 120), description: clip(d.description, 200), site: d.publisher || prettyUrl(url).host, image }
+  } catch {
+    return null
+  } finally {
+    clearTimeout(t)
+  }
+}

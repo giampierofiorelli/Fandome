@@ -2,7 +2,7 @@ import { AnimatePresence, motion, useDragControls } from 'motion/react'
 import { createContext, useContext, useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
-import type { Album, User } from '../data/types'
+import type { Album, LinkPreview, User } from '../data/types'
 import { artistById } from '../lib/util'
 import { project, spring, springSheet } from '../lib/motion'
 import { prettyUrl } from '../lib/media'
@@ -361,5 +361,25 @@ export function ArtistLine({ ids, compact }: { ids: string[]; compact?: boolean 
         </motion.span>
       ))}
     </div>
+  )
+}
+
+// Rich preview of a web link: image (copied into the post), site, title and a line of text.
+export function LinkPreviewCard({ link, asLink }: { link: LinkPreview; asLink?: boolean }) {
+  const body = (
+    <>
+      {link.image && <img className="link-rich-img" src={link.image} alt="" loading="lazy" decoding="async" />}
+      <span className="link-rich-body">
+        <span className="link-rich-site">{link.site ?? prettyUrl(link.url).host}</span>
+        {link.title && <strong className="link-rich-title">{link.title}</strong>}
+        {link.description && <span className="link-rich-desc">{link.description}</span>}
+      </span>
+    </>
+  )
+  if (!asLink) return <div className="link-rich">{body}</div>
+  return (
+    <a className="link-rich" href={link.url} target="_blank" rel="noopener noreferrer nofollow ugc" onClick={(e) => e.stopPropagation()}>
+      {body}
+    </a>
   )
 }

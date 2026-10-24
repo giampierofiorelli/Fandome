@@ -204,6 +204,13 @@ export function Privacy() {
         you tap a single player. Tapping one when you chose “Only essential” loads only that player, for that time: your saved choice does not change and nothing else loads. They may set cookies and receive your IP address under their own privacy policies (consent, art. 6(1)(a) GDPR). You can change or withdraw your choice anytime in Settings or with “Privacy choices” at the bottom of every page; withdrawing stops future loading but cannot remove cookies a platform already set (you can clear them in your browser).
       </p>
 
+      <h2>Link previews</h2>
+      <p>
+        When you write a post with a web link, your browser asks Microlink (microlink.io), a metadata service, for the page’s title, description and image, and then fetches that image
+        from the linked site; both receive the link and your IP address. This happens only while you write a post with a link (legitimate interest in showing what a link is, art. 6(1)(f)
+        GDPR). The image is shrunk and saved in the post, so people reading it never contact the linked site. You can remove the preview before posting.
+      </p>
+
       <h2>Spotify and concert dates</h2>
       <p>
         If you choose “Connect Spotify”, you log in on Spotify and the access key is kept only in your browser. Concert dates come from Ticketmaster through a nightly job: no personal data is sent;

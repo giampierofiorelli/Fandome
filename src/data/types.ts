@@ -129,6 +129,7 @@ export interface Post {
   photo?: string // uploaded photo (compressed data URL)
   youtube?: string // YouTube video id, embedded (video stays on YouTube)
   audio?: { src: string; duration: number; peaks: number[] } // voice note / audio clip
+  link?: LinkPreview // preview of a plain web link (title, text, image saved in the post)
   embed?: Embed // post from another social, embedded via the platform's own player
   // Instagram-style collab: invited people; once accepted the post is theirs too (both profiles, both audiences)
   collab?: { userId: Id; status: 'pending' | 'accepted' }[]
@@ -230,4 +231,14 @@ export interface Party {
   title: string
   hostId: Id
   tracks: { title: string; seconds: number }[]
+}
+
+// Preview of a web link, read once when the post is written. The image is copied into the post,
+// so readers never load anything from the linked site.
+export interface LinkPreview {
+  url: string
+  title?: string
+  description?: string
+  site?: string
+  image?: string // small JPEG data URL
 }

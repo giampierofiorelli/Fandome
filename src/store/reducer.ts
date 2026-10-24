@@ -18,7 +18,7 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[]; at?: number }
-  | { type: 'post'; id: Id; at: number; text: string; collabIds?: Id[]; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; albumIds?: Id[]; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
+  | { type: 'post'; id: Id; at: number; text: string; collabIds?: Id[]; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; albumIds?: Id[]; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; link?: Post['link']; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
   | { type: 'pinPost'; postId: Id; replace?: Id }
@@ -162,6 +162,7 @@ function apply(state: State, action: Action): State {
         photo: action.photo,
         youtube: action.youtube,
         embed: action.embed,
+        link: action.link,
         audio: action.audio,
         // Collaborators must be people the author can reach (follow either way); max 3; not replies.
         collab: action.replyTo ? undefined : (() => {

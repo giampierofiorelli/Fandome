@@ -2,11 +2,12 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { albums, artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
-import { AlbumCover, ArtistDisc, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
+import { AlbumCover, ArtistDisc, Avatar, LinkPreviewCard, Modal, ScoreBadge, useModalClose } from './ui'
 import { IconDisc, IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPlus, IconPoll, IconUsers, IconX } from './icons'
 import { AudioPlayer } from './AudioPlayer'
 import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
-import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
+import { compressImage, detectEmbed, EMBED_LABEL, fetchLinkPreview, findUrls, prettyUrl, stripUrl } from '../lib/media'
+import type { LinkPreview } from '../data/types'
 import { canMessage, MAX_COLLAB, MAX_POST_ALBUMS, MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
 import { postArtists } from '../lib/postArtists'
 import { useToast } from './Toast'
@@ -125,6 +126,22 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
     }
     recorder.current = null
   }
+  // Plain web links get a preview card (title, text, image), fetched once while writing.
+  const linkUrl = detectEmbed(text) ? undefined : findUrls(text)[0]
+  const [preview, setPreview] = useState<{ url: string; data: LinkPreview | null; loading: boolean } | null>(null)
+  const [hiddenPreviews, setHiddenPreviews] = useState<string[]>([])
+  const asked = useRef('')
+  useEffect(() => {
+    if (!linkUrl || hiddenPreviews.includes(linkUrl) || asked.current === linkUrl) return
+    const t = setTimeout(() => {
+      asked.current = linkUrl
+      setPreview({ url: linkUrl, data: null, loading: true })
+      // A newer link may replace this one meanwhile: keep the answer only if it still matches.
+      void fetchLinkPreview(linkUrl).then((data) => setPreview((cur) => (cur && cur.url === linkUrl ? { url: linkUrl, data, loading: false } : cur)))
+    }, 700)
+    return () => clearTimeout(t)
+  }, [linkUrl, hiddenPreviews])
+  const shownPreview = preview && preview.url === linkUrl && !hiddenPreviews.includes(linkUrl) ? preview : null
   const reviewMode = Boolean(opts.reviewAlbumId)
   const albumId = opts.reviewAlbumId ?? ''
   const rating = opts.reviewAlbumId && me ? me.ratings[opts.reviewAlbumId] ?? 0 : 0
@@ -141,7 +158,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       type: 'post',
       id: newId(),
       at: Date.now(),
-      text: embed ? stripUrl(text, embed.url) : text.trim(),
+      text: embed ? stripUrl(text, embed.url) : shownPreview?.data ? stripUrl(text, shownPreview.url) : text.trim(),
+      link: !embed && shownPreview?.data ? shownPreview.data : undefined,
       photo: photo ?? undefined,
       audio: audio ?? undefined,
       embed,
@@ -208,6 +226,22 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
       </div>
+      {shownPreview && (
+        <div className="link-preview-edit">
+          {shownPreview.loading ? (
+            <div className="link-rich loading">
+              <span className="muted small">Loading preview…</span>
+            </div>
+          ) : shownPreview.data ? (
+            <LinkPreviewCard link={shownPreview.data} />
+          ) : null}
+          {(shownPreview.loading || shownPreview.data) && (
+            <button type="button" className="media-remove" aria-label="Remove preview" onClick={() => setHiddenPreviews([...hiddenPreviews, shownPreview.url])}>
+              <IconX size={14} />
+            </button>
+          )}
+        </div>
+      )}
       {albumIds.length > 0 && (
         <div className="album-chips composer-albums">
           {albumIds.map((id) => {

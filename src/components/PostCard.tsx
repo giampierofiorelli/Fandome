@@ -13,7 +13,7 @@ import { albumById, concertById, formatDate, timeAgo } from '../lib/util'
 import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
-import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
+import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, LinkPreviewCard, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
 import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconUsers, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume, IconBookmark } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
@@ -222,7 +222,7 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
           {post.youtube && !post.embed && <YouTubeEmbed id={post.youtube} />}
           {post.embed?.kind === 'youtube' && <YouTubeEmbed id={post.embed.id} />}
           {post.embed && post.embed.kind !== 'youtube' && <SocialEmbed embed={post.embed} />}
-          {!post.embed && <LinkCard text={post.text} />}
+          {!post.embed && (post.link ? <LinkPreviewCard link={post.link} asLink /> : <LinkCard text={post.text} />)}
 
           {post.poll && (
             <div className="poll" onClick={(e) => e.stopPropagation()}>
