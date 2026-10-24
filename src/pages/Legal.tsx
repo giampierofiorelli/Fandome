@@ -50,6 +50,14 @@ export function Footer() {
   const year = new Date().getFullYear()
   return (
     <footer className="site-footer">
+      <section className="manifesto" aria-label="Why Fandome exists">
+        <div className="dotmatrix manifesto-kicker">OUR MANIFESTO</div>
+        <p className="manifesto-lead">Made by music lovers, for music lovers, and above all to support the artists.</p>
+        <p>
+          The internet and social media were born with a promise: open and fair, for the people who listen and for the people who make music. It hasn’t always gone that way, and algorithms
+          now decide too much of what we hear. Here there are no ads, no paid boosts and no hidden ranking: you choose who to follow, and you can always see why something is shown.
+        </p>
+      </section>
       <nav className="footer-links" aria-label="Legal">
         <Link to="/legal">Legal notice</Link>
         <Link to="/privacy">Privacy</Link>

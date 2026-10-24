@@ -1214,3 +1214,9 @@ body.story-open .modal-root { z-index: 100; }
 .photo-credits .photo-credit { display: inline; }
 .room-photo { position: absolute; top: 14px; left: 14px; width: 46px; height: 46px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 8px 18px -8px rgba(0, 0, 0, 0.4); z-index: 1; }
 .room-tile { min-height: 184px; }
+
+/* Footer manifesto */
+.manifesto { max-width: 520px; margin: 0 auto 14px; padding: 18px 18px 16px; border-radius: 22px; background: var(--glass-strong); border: 1px solid var(--glass-line); text-align: left; }
+.manifesto-kicker { font-size: 11px; color: var(--accent); margin-bottom: 8px; }
+.site-footer .manifesto p { font-size: 13px; line-height: 1.5; color: var(--text-2); }
+.site-footer .manifesto p.manifesto-lead { font-size: 17px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.3; color: var(--text); margin-bottom: 8px; }
