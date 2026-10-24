@@ -1,6 +1,7 @@
 import type { Post, User } from '../data/types'
 import { extractTags } from '../store/reducer'
 import { isAbout, postArtists } from './postArtists'
+import { postOwners } from './collab'
 
 export interface FeedItem {
   key: string
@@ -20,9 +21,9 @@ export function followingFeed(posts: Post[], me: User): FeedItem[] {
   const items: FeedItem[] = []
   for (const p of posts) {
     if (p.replyTo) continue
-    if (who.has(p.authorId)) items.push({ key: p.id, post: p, at: p.createdAt })
+    if (postOwners(p).some((id) => who.has(id))) items.push({ key: p.id, post: p, at: p.createdAt })
     for (const r of p.reposts) {
-      if (who.has(r.userId) && r.userId !== p.authorId) items.push({ key: `${p.id}:${r.userId}`, post: p, at: r.at, repostedBy: { userId: r.userId, tags: r.tags } })
+      if (who.has(r.userId) && !postOwners(p).includes(r.userId)) items.push({ key: `${p.id}:${r.userId}`, post: p, at: r.at, repostedBy: { userId: r.userId, tags: r.tags } })
     }
   }
   return items.sort((a, b) => b.at - a.at)

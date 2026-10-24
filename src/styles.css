@@ -1129,3 +1129,25 @@ body.story-open .modal-root { z-index: 100; }
 @media (max-width: 640px) and (prefers-color-scheme: dark) {
   .menu, .consent { background: color-mix(in srgb, var(--bg) 85%, #fff); }
 }
+
+/* ---------- Collab posts ---------- */
+.collab-stack { position: relative; width: 46px; height: 46px; flex-shrink: 0; }
+.collab-stack > a { position: absolute; display: inline-flex; border-radius: 50%; }
+.collab-stack > a:first-child { left: 0; top: 0; }
+.collab-stack > a:last-child { right: 0; bottom: 0; box-shadow: 0 0 0 2px var(--bg); border-radius: 50%; }
+.collab-stack.small { width: 30px; height: 30px; }
+.collab-names { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 0 1 auto; }
+.collab-names a { color: inherit; text-decoration: none; }
+.collab-names strong { font-weight: 600; letter-spacing: -0.015em; }
+.collab-invite { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin: 8px 0 4px; padding: 10px 12px; border-radius: 16px; background: var(--glass-strong); border: 1px solid var(--glass-edge); }
+.collab-invite strong { font-weight: 600; }
+.collab-pending { margin: 6px 0 0; }
+.collab-picker { display: flex; flex-direction: column; gap: 8px; margin: 6px 0 10px; padding: 12px; border-radius: 18px; background: var(--glass); border: 1px solid var(--glass-line); }
+.collab-picker > input { height: 40px; border-radius: 999px; padding: 0 14px; }
+.collab-people { display: flex; flex-wrap: wrap; gap: 6px; max-height: 150px; overflow-y: auto; }
+.collab-person { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px 0 3px; border-radius: 999px; border: 1px solid var(--glass-line); background: var(--glass-strong); color: inherit; font: inherit; font-size: 13px; font-weight: 500; }
+.collab-person.on { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.collab-person:disabled { opacity: 0.45; }
+.collab-summary { margin: 0 0 8px; }
+.collab-snippet { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 220px; }
+.collab-invite .grow { flex: 1 1 100%; }

@@ -18,10 +18,12 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[]; at?: number }
-  | { type: 'post'; id: Id; at: number; text: string; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
+  | { type: 'post'; id: Id; at: number; text: string; collabIds?: Id[]; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
   | { type: 'pinPost'; postId: Id; replace?: Id }
+  | { type: 'respondCollab'; postId: Id; accept: boolean }
+  | { type: 'leaveCollab'; postId: Id }
   | { type: 'unpinPost'; postId: Id }
   | { type: 'like'; postId: Id }
   | { type: 'repost'; postId: Id; tags: string[]; at: number }
@@ -159,6 +161,11 @@ function apply(state: State, action: Action): State {
         youtube: action.youtube,
         embed: action.embed,
         audio: action.audio,
+        // Collaborators must be people the author can reach (follow either way); max 3; not replies.
+        collab: action.replyTo ? undefined : (() => {
+          const ids = [...new Set(action.collabIds ?? [])].filter((id) => id !== authorId && state.users.some((u) => u.id === id && u.handle !== 'guest' && id !== 'u-mod') && (canMessage(state, me, id) || canManagePage(state, id, me) || state.users.find((u) => u.id === me)?.following.includes(id))).slice(0, MAX_COLLAB)
+          return ids.length ? ids.map((userId) => ({ userId, status: 'pending' as const })) : undefined
+        })(),
         lang: 'en',
         likes: [],
         reposts: [],
@@ -173,6 +180,20 @@ function apply(state: State, action: Action): State {
       // Undo of a delete: put the post back (only your own, only if it's gone).
       if (!me || state.posts.some((p) => p.id === action.post.id) || !(action.post.authorId === me || canManagePage(state, action.post.authorId, me))) return state
       return { ...state, posts: [action.post, ...state.posts].sort((a, b) => b.createdAt - a.createdAt) }
+    case 'respondCollab':
+      // Accept → the post joins your profile and your followers' feeds. Decline → you're simply removed.
+      return updatePost(state, action.postId, (p) => {
+        const mine = p.collab?.find((c) => c.userId === me && c.status === 'pending')
+        if (!mine) return p
+        const collab = action.accept ? p.collab!.map((c) => (c.userId === me ? { ...c, status: 'accepted' as const } : c)) : p.collab!.filter((c) => c.userId !== me)
+        return { ...p, collab: collab.length ? collab : undefined }
+      })
+    case 'leaveCollab':
+      return updatePost(state, action.postId, (p) => {
+        if (!p.collab?.some((c) => c.userId === me)) return p
+        const collab = p.collab.filter((c) => c.userId !== me)
+        return { ...p, collab: collab.length ? collab : undefined }
+      })
     case 'pinPost':
     case 'unpinPost': {
       // Pins live on the author's profile: your own posts, or a page you manage.
@@ -484,6 +505,8 @@ export const MAX_POST_ARTISTS = 4
 export const MAX_PINS = 3
 export const MAX_LINKS = 8
 export const MAX_ITEMS = 30
+export const MAX_COLLAB = 3
+export const collabInvitesFor = (state: State, userId: Id) => state.posts.filter((p) => p.collab?.some((c) => c.userId === userId && c.status === 'pending'))
 // A DM stays until seen, then for 24h after being seen.
 export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
 export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)

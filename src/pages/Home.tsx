@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { concerts, parties } from '../data/seed'
 import { useStore } from '../store/store'
-import { invitesFor } from '../store/reducer'
+import { collabInvitesFor, invitesFor } from '../store/reducer'
 import { StoriesBar } from '../components/Stories'
 import { MessagingNotice } from './Messages'
 import { RemovedNotice } from '../components/Moderation'
@@ -42,6 +42,7 @@ export default function Home() {
   const listeners = state.users.filter((u) => u.fanSince[party.artistId]).slice(0, 4)
   const guest = me.handle === 'guest'
   const invites = invitesFor(state, me.id)
+  const collabInvites = collabInvitesFor(state, me.id)
 
   return (
     <>
@@ -65,6 +66,18 @@ export default function Home() {
             <span className="muted small block">Become an admin of this {page.page?.category.toLowerCase()} page</span>
           </span>
           <Link to={`/invite/${invite.code}`} className="pill-btn ink small">
+            View
+          </Link>
+        </div>
+      ))}
+      {collabInvites.map((p) => (
+        <div key={p.id} className="invite-banner">
+          <Avatar user={userById(p.authorId)} size={40} />
+          <span className="grow">
+            <strong>{userById(p.authorId)?.name} invited you to a collab</strong>
+            <span className="muted small block collab-snippet">“{p.text.slice(0, 70)}{p.text.length > 70 ? '…' : ''}”</span>
+          </span>
+          <Link to={`/p/${p.id}`} className="pill-btn ink small">
             View
           </Link>
         </div>

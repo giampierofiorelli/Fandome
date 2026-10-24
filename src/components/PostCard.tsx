@@ -14,9 +14,10 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconChevronUp, IconFlag, IconMore, IconUsers, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
+import { collaborators } from '../lib/collab'
 
 interface Props {
   post: Post
@@ -51,6 +52,10 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   const myVote = me && post.poll ? post.poll.options.findIndex((o) => o.votes.includes(me.id)) : -1
   const totalVotes = post.poll?.options.reduce((n, o) => n + o.votes.length, 0) ?? 0
   const owner = Boolean(me && (post.authorId === me.id || canManagePage(state, post.authorId, me.id)))
+  const collabUsers = collaborators(post).map((id) => userById(id)).filter((u): u is NonNullable<typeof u> => Boolean(u))
+  const pendingCollab = (post.collab ?? []).filter((c) => c.status === 'pending').map((c) => userById(c.userId))
+  const invitedMe = Boolean(me && post.collab?.some((c) => c.userId === me.id && c.status === 'pending'))
+  const iAmCollab = Boolean(me && collaborators(post).includes(me.id))
   const pinnedIds = (author?.pinned ?? []).filter((id) => state.posts.some((p) => p.id === id))
   const isPinned = pinnedIds.includes(post.id)
   const canDetach = quoted && me && quoted.authorId === me.id && !post.quoteDetached
@@ -85,7 +90,16 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
         </div>
       )}
       <div className="post-main">
-        {author ? (
+        {author && collabUsers.length > 0 ? (
+          <span className={embedded ? 'post-avatar collab-stack small' : 'post-avatar collab-stack'}>
+            <Link to={`/u/${author.handle}`} onClick={(e) => e.stopPropagation()} aria-label={`${author.name}’s profile`}>
+              <Avatar user={author} size={embedded ? 22 : 34} />
+            </Link>
+            <Link to={`/u/${collabUsers[0].handle}`} onClick={(e) => e.stopPropagation()} aria-label={`${collabUsers[0].name}’s profile`}>
+              <Avatar user={collabUsers[0]} size={embedded ? 22 : 34} />
+            </Link>
+          </span>
+        ) : author ? (
           <Link to={`/u/${author.handle}`} className="post-avatar" onClick={(e) => e.stopPropagation()} aria-label={`${author.name}’s profile`}>
             <Avatar user={author} size={embedded ? 26 : 42} />
           </Link>
@@ -94,7 +108,20 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
         )}
         <div className="post-body">
           <header className="post-head">
-            <UserLink user={author} />
+            {collabUsers.length > 0 ? (
+              <span className="collab-names" onClick={(e) => e.stopPropagation()}>
+                <Link to={`/u/${author?.handle}`}>
+                  <strong>{author?.name}</strong>
+                </Link>{' '}
+                <span className="muted">and</span>{' '}
+                <Link to={`/u/${collabUsers[0].handle}`}>
+                  <strong>{collabUsers[0].name}</strong>
+                </Link>
+                {collabUsers.length > 1 && <span className="muted"> +{collabUsers.length - 1}</span>}
+              </span>
+            ) : (
+              <UserLink user={author} />
+            )}
             {author?.kind === 'page' && <PageBadge verified={author.page?.verification === 'verified'} />}
             <ModBadge user={author} />
             <span className="muted">· {timeAgo(post.createdAt)}</span>
@@ -118,6 +145,20 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
             )}
           </header>
           <ArtistLine ids={postArtists(post)} compact={embedded} />
+          {!embedded && me && invitedMe && (
+            <div className="collab-invite" onClick={(e) => e.stopPropagation()}>
+              <span className="grow small">
+                <strong>{author?.name}</strong> invited you to collaborate: the post will also show on your profile.
+              </span>
+              <button className="pill-btn glass small" onClick={() => (dispatch({ type: 'respondCollab', postId: post.id, accept: false }), toast('Declined'))}>
+                Decline
+              </button>
+              <button className="pill-btn ink small" onClick={() => (dispatch({ type: 'respondCollab', postId: post.id, accept: true }), toast('You’re now a collaborator'))}>
+                Accept
+              </button>
+            </div>
+          )}
+          {!embedded && owner && pendingCollab.length > 0 && <p className="muted small collab-pending">Waiting for {pendingCollab.map((u) => u?.name).join(', ')} to accept the collab</p>}
           {parent && !embedded && (
             <p className="muted small">
               Replying to <Link to={`/p/${parent.id}`} onClick={(e) => e.stopPropagation()} className="tag">@{userById(parent.authorId)?.handle}</Link>
@@ -282,7 +323,18 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
                         <IconPushpin size={16} /> {isPinned ? 'Unpin from profile' : 'Pin to profile'}
                       </button>
                     )}
-                    {!owner && (
+                    {iAmCollab && (
+                      <button
+                        onClick={() => {
+                          setMoreMenu(false)
+                          dispatch({ type: 'leaveCollab', postId: post.id })
+                          toast('Removed from your profile')
+                        }}
+                      >
+                        <IconUsers size={16} /> Remove me from this collab
+                      </button>
+                    )}
+                    {!owner && !iAmCollab && (
                       <button
                         onClick={() => {
                           setMoreMenu(false)

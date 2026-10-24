@@ -127,6 +127,8 @@ export interface Post {
   youtube?: string // YouTube video id, embedded (video stays on YouTube)
   audio?: { src: string; duration: number; peaks: number[] } // voice note / audio clip
   embed?: Embed // post from another social, embedded via the platform's own player
+  // Instagram-style collab: invited people; once accepted the post is theirs too (both profiles, both audiences)
+  collab?: { userId: Id; status: 'pending' | 'accepted' }[]
   // Taken down by moderation. The author sees why (EU DSA "statement of reasons") and can appeal.
   removed?: { at: number; reason: ReportReason; note?: string; appeal?: { at: number; text: string; status: 'pending' | 'upheld' } }
 }

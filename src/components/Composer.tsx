@@ -3,11 +3,11 @@ import { artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
 import { AlbumCover, ArtistDisc, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
-import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconX } from './icons'
+import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconUsers, IconX } from './icons'
 import { AudioPlayer } from './AudioPlayer'
 import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
 import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
-import { MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
+import { canMessage, MAX_COLLAB, MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
 import { postArtists } from '../lib/postArtists'
 import { useToast } from './Toast'
 
@@ -62,6 +62,8 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const toggleArtist = (id: string) =>
     setArtistIds((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : cur.length >= MAX_POST_ARTISTS ? cur : [...cur, id]))
   const [pollOn, setPollOn] = useState(false)
+  const [collabOpen, setCollabOpen] = useState(false)
+  const [collabIds, setCollabIds] = useState<string[]>([])
   const [pollOpts, setPollOpts] = useState(['', ''])
   const [photo, setPhoto] = useState<string | null>(null)
   const myPages = me ? pagesManagedBy(state, me.id) : []
@@ -122,6 +124,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       audio: audio ?? undefined,
       embed,
       as: asId || undefined,
+      collabIds: parent ? undefined : collabIds,
       artistId: artistIds[0],
       artistIds,
       concertId: opts.concertId,
@@ -130,7 +133,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       poll: pollOn ? { options: pollOpts.filter((o) => o.trim()).map((label) => ({ label: label.trim(), votes: [] })) } : undefined,
       review: reviewMode && albumId ? { albumId, rating } : undefined,
     })
-    toast(reviewMode ? 'Logged to your diary' : parent ? 'Reply posted' : 'Posted')
+    toast(reviewMode ? 'Logged to your diary' : parent ? 'Reply posted' : collabIds.length ? 'Posted · collaborators invited' : 'Posted')
     onClose()
   }
 
@@ -181,6 +184,12 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
       </div>
+      {collabOpen && !parent && <CollabPicker selected={collabIds} onChange={setCollabIds} />}
+      {!collabOpen && collabIds.length > 0 && (
+        <p className="muted small collab-summary">
+          With {collabIds.map((id) => userById(id)?.name).join(', ')} · they’ll be asked to accept
+        </p>
+      )}
       {quoted && (
         <div className="quote-preview">
           <strong>{userById(quoted.authorId)?.name}</strong> <span className="muted">@{userById(quoted.authorId)?.handle}</span>
@@ -303,6 +312,11 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           </>
         )}
         {!reviewMode && !parent && (
+          <button className={collabOpen || collabIds.length ? 'pill active' : 'pill'} aria-label="Invite collaborators" onClick={() => setCollabOpen(!collabOpen)}>
+            <IconUsers size={14} /> Collab{collabIds.length ? ` ${collabIds.length}` : ''}
+          </button>
+        )}
+        {!reviewMode && !parent && (
           <button className={pollOn ? 'pill active' : 'pill'} onClick={() => setPollOn(!pollOn)}>
             <IconPoll size={14} /> Poll
           </button>
@@ -344,5 +358,37 @@ function CharRing({ used, max }: { used: number; max: number }) {
       </svg>
       {warn && <span>{left}</span>}
     </span>
+  )
+}
+
+// Invite up to 3 people to share the post (Instagram-style collab). They accept or decline.
+function CollabPicker({ selected, onChange }: { selected: string[]; onChange: (ids: string[]) => void }) {
+  const { state, me } = useStore()
+  const [q, setQ] = useState('')
+  if (!me) return null
+  const people = state.users
+    .filter((u) => u.id !== me.id && u.handle !== 'guest' && u.id !== 'u-mod' && (canMessage(state, me.id, u.id) || me.following.includes(u.id)))
+    .filter((u) => !q || `${u.name} ${u.handle}`.toLowerCase().includes(q.toLowerCase()))
+    .slice(0, 12)
+  const toggle = (id: string) => onChange(selected.includes(id) ? selected.filter((x) => x !== id) : selected.length >= MAX_COLLAB ? selected : [...selected, id])
+  return (
+    <div className="collab-picker">
+      <span className="small">
+        <strong>Collab</strong> <span className="muted">· the post appears on their profile too once they accept (max {MAX_COLLAB})</span>
+      </span>
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search people you follow" aria-label="Search collaborators" />
+      <div className="collab-people">
+        {people.map((u) => {
+          const on = selected.includes(u.id)
+          return (
+            <button key={u.id} type="button" className={on ? 'collab-person on' : 'collab-person'} aria-pressed={on} onClick={() => toggle(u.id)} disabled={!on && selected.length >= MAX_COLLAB}>
+              <Avatar user={u} size={34} />
+              <span>{u.name}</span>
+            </button>
+          )
+        })}
+        {!people.length && <span className="muted small">Follow people to invite them.</span>}
+      </div>
+    </div>
   )
 }

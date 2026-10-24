@@ -287,3 +287,11 @@ export const IconQr = (p: P) => (
     <path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM14 18.5v2M18.5 14h2" />
   </Svg>
 )
+export const IconUsers = (p: P) => (
+  <Svg {...p}>
+    <circle cx="9" cy="8.5" r="3.5" />
+    <path d="M2.5 19.5c.6-3.3 3.3-5.5 6.5-5.5s5.9 2.2 6.5 5.5" />
+    <circle cx="17" cy="9.5" r="2.7" />
+    <path d="M16.5 14.2c2.6.2 4.5 2 5 4.6" />
+  </Svg>
+)

@@ -1,3 +1,4 @@
+import { isOwnedBy } from '../lib/collab'
 import { CollectionGrid } from '../components/Collection'
 import { AnimatePresence } from 'motion/react'
 import { ProfileQR } from '../components/ProfileQR'
@@ -37,7 +38,7 @@ export default function Profile() {
   const isMe = user.id === me.id
   const follows = me.following.includes(user.id)
   const followers = state.users.filter((u) => u.following.includes(user.id)).length
-  const posts = state.posts.filter((p) => p.authorId === user.id).sort((a, b) => b.createdAt - a.createdAt)
+  const posts = state.posts.filter((p) => isOwnedBy(p, user.id)).sort((a, b) => b.createdAt - a.createdAt)
   const reviews = posts.filter((p) => p.review)
   const pinnedPosts = (user.pinned ?? []).map((id) => posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p))
   const shows = concerts.filter((c) => user.attended.includes(c.id)).sort((a, b) => a.date.localeCompare(b.date))

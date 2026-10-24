@@ -1,3 +1,4 @@
+import { isOwnedBy } from '../lib/collab'
 import { Link } from 'react-router-dom'
 import type { Post, User } from '../data/types'
 import { canManagePage } from '../store/reducer'
@@ -19,7 +20,7 @@ export default function PageProfile({ user }: { user: User }) {
   const isMember = page.members.some((m) => m.userId === me.id)
   const follows = me.following.includes(user.id)
   const followers = state.users.filter((u) => u.following.includes(user.id)).length
-  const posts = state.posts.filter((p) => p.authorId === user.id).sort((a, b) => b.createdAt - a.createdAt)
+  const posts = state.posts.filter((p) => isOwnedBy(p, user.id)).sort((a, b) => b.createdAt - a.createdAt)
   const pinnedPosts = (user.pinned ?? []).map((id) => posts.find((p) => p.id === id)).filter((p): p is Post => Boolean(p))
   const verified = page.verification === 'verified'
 

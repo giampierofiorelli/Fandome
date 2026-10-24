@@ -108,3 +108,23 @@ describe('collection', () => {
     expect(s.users.find((u) => u.id === 'me')!.collection).toEqual([])
   })
 })
+
+describe('collab posts', () => {
+  it('invites, accepts, shows on both profiles and feeds, and lets a collaborator leave', async () => {
+    const { followingFeed } = await import('../lib/feed')
+    const { isOwnedBy } = await import('../lib/collab')
+    let s = me() // follows u-giulia
+    s = reducer(s, { type: 'post', id: 'cp', at: NOW, text: 'together', collabIds: ['u-giulia', 'u-giulia', 'nobody'] })
+    let p = s.posts.find((x) => x.id === 'cp')!
+    expect(p.collab).toEqual([{ userId: 'u-giulia', status: 'pending' }])
+    expect(isOwnedBy(p, 'u-giulia')).toBe(false) // not before accepting
+    s = reducer({ ...s, meId: 'u-giulia' }, { type: 'respondCollab', postId: 'cp', accept: true })
+    p = s.posts.find((x) => x.id === 'cp')!
+    expect(isOwnedBy(p, 'u-giulia')).toBe(true)
+    // a follower of Giulia (not of me) now sees it
+    const kenji = { ...s.users.find((u) => u.id === 'u-kenji')!, following: ['u-giulia'] }
+    expect(followingFeed(s.posts, kenji).some((i) => i.post.id === 'cp')).toBe(true)
+    s = reducer(s, { type: 'leaveCollab', postId: 'cp' })
+    expect(s.posts.find((x) => x.id === 'cp')!.collab).toBeUndefined()
+  })
+})
