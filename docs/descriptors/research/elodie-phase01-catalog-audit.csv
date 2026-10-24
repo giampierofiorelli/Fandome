@@ -1,0 +1,7 @@
+album_id,artist,title,year,existing_in_repo_catalog,phase01_csv,action,type_or_other_note
+elodie-unaltravita,Elodie,Un'altra vita,2016,no,yes,Add catalogue album record; verify provisional studio/EP classification,MusicBrainz album vs Universal EP.
+elodie-tuttacolpamia,Elodie,Tutta colpa mia,2017,no,yes,Add catalogue album record,Studio album.
+elodie-thisiselodie,Elodie,This Is Elodie,2020,yes,yes,Keep exact existing ID; descriptors only,Catalogue existing ID elodie-thisiselodie.
+elodie-okrespira,Elodie,OK. Respira,2023,yes,no,No action in phase01,Next studio-album batch.
+elodie-miamimiodi,Elodie,Mi ami mi odi,2025,no,no,Defer to next batch,Proposed new id subject to repo convention.
+elodie-redlight,Elodie,Red Light,2023,no,no,Not studio; decide special type handling,Documented 7-song clubtape/mixtape; guide has no mixtape type.
