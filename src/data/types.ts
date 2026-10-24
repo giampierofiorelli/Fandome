@@ -117,12 +117,25 @@ export interface Post {
   removed?: { at: number; reason: ReportReason; note?: string; appeal?: { at: number; text: string; status: 'pending' | 'upheld' } }
 }
 
+// Ticket board on a show: fans find each other; any exchange happens off Fandome,
+// at face value or less, through the official resale / name change.
+export interface TicketListing {
+  id: Id
+  concertId: Id
+  userId: Id
+  kind: 'need' | 'spare'
+  qty: number
+  note?: string
+  at: number
+  closed?: boolean
+}
+
 export type ReportReason = 'spam' | 'harassment' | 'hate' | 'violence' | 'sexual' | 'privacy' | 'copyright' | 'impersonation' | 'misinformation' | 'other'
 export interface Report {
   id: Id
   at: number
   by: Id
-  target: { kind: 'post' | 'user' | 'story' | 'dm'; id: Id }
+  target: { kind: 'post' | 'user' | 'story' | 'dm' | 'ticket'; id: Id }
   reason: ReportReason
   note?: string
   contact?: { name: string; email: string } // people without a profile (DSA art. 16(2)(c))
@@ -181,6 +194,7 @@ export interface DirectMessage {
   text?: string
   audio?: { src: string; duration: number; peaks: number[] }
   postId?: Id // a post shared in the chat
+  artistId?: Id // an artist room suggested to the other person
   seenAt?: number
 }
 

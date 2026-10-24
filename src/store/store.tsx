@@ -28,7 +28,7 @@ function load(): State {
           allUsers = [...users.map((u) => (u.id === 'u-giulia' || u.id === 'u-kenji' ? { ...u, mod: fresh.users.find((f) => f.id === u.id)?.mod, modRequest: fresh.users.find((f) => f.id === u.id)?.modRequest } : u)), ...fresh.users.filter((f) => !users.some((u) => u.id === f.id))]
           posts = [...fresh.posts.filter((p) => p.id === 'p-spam'), ...posts]
         }
-        return reducer({ ...parsed, users: allUsers, posts, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms, reports: parsed.reports ?? fresh.reports }, { type: 'prune', now })
+        return reducer({ ...parsed, users: allUsers, posts, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms, reports: parsed.reports ?? fresh.reports, tickets: parsed.tickets ?? fresh.tickets }, { type: 'prune', now })
       }
     }
   } catch {

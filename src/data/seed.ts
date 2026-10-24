@@ -1,6 +1,6 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
-import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User, Report } from './types'
+import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User, Report, TicketListing } from './types'
 
 export const artists: Artist[] = [
   {
@@ -296,6 +296,14 @@ export function seedDms(now: number): DirectMessage[] {
     { id: 'd1', from: 'u-giulia', to: 'me', at: m(40), text: 'Ciao! Saw you joined the Madonna room 💗' },
     { id: 'd2', from: 'u-giulia', to: 'me', at: m(39), text: 'Are you thinking about Milan 2027? We’re organising a meetup.' },
     { id: 'd3', from: 'u-kenji', to: 'me', at: m(300), text: 'Welcome! If you need a Ray of Light listening order, ask me 😄' },
+  ]
+}
+
+// Demo: two fans on the ticket board for Milan.
+export function seedTickets(now: number): TicketListing[] {
+  return [
+    { id: 't1', concertId: 'm-milan-2027', userId: 'u-giulia', kind: 'need', qty: 1, note: 'Pit if possible, happy with any seat. I can do the official name change.', at: now - 5 * 3_600_000 },
+    { id: 't2', concertId: 'm-milan-2027', userId: 'u-rafa', kind: 'spare', qty: 2, note: 'My friends can’t come. Face value, official name change only.', at: now - 26 * 3_600_000 },
   ]
 }
 

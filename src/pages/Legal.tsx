@@ -156,11 +156,27 @@ export function Terms() {
         the law requires. In an emergency, call 112.
       </p>
 
+      <h2>Tickets</h2>
+      <p>
+        The ticket board on a show only helps fans find each other. <strong>Fandome doesn’t sell, buy, hold, check or guarantee tickets and doesn’t handle payments</strong>: any exchange is a private
+        matter between the people involved, who are responsible for it. Under Italian law (art. 1, par. 545, Law 232/2016) only a private person may pass on a ticket, occasionally, without a
+        commercial purpose and at <strong>face value or less</strong>; selling above face value is forbidden and fined by AGCOM. Many big concerts have named tickets: use the ticket seller’s official
+        name change or fan-to-fan resale. Never pay by gift card, crypto or bank transfer to strangers, meet only in public places, and report suspicious listings with “Report”. Listings that break these
+        rules are removed; touts and scammers are banned.
+      </p>
+
+      <h2>Suggestions and sharing</h2>
+      <p>You can suggest an artist room or send a post to people you can message. They arrive as a card in their private messages; nobody is added to anything without tapping.</p>
+
       <h2>Messages and activity</h2>
       <p>Private messages disappear 24 hours after they’re seen. Messaging and some features need you to have been active in the last 30 days.</p>
 
       <h2>Liability</h2>
-      <p>Fandome is provided as it is, as a prototype. We’re not responsible for what users post, but we act quickly when something illegal is reported.</p>
+      <p>
+        Fandome is a non-commercial fan community, provided as it is. As a hosting service we aren’t responsible for what users post or agree among themselves, as long as we don’t know about illegal
+        content and act quickly once it’s reported to us (EU Digital Services Act, art. 6). We don’t check content before it’s published and we give no guarantee about events, dates, tickets or other
+        users. Concert dates come from third parties and can change: always check with the official organiser. Nothing on Fandome is endorsed by the artists, who are named only to identify the topic.
+      </p>
       <p className="small">
         <Link to="/privacy">Privacy policy</Link>
       </p>

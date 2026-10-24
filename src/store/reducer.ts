@@ -1,5 +1,5 @@
-import { seedChats, seedDms, seedPosts, seedReports, seedStories, seedUsers } from '../data/seed'
-import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, User } from '../data/types'
+import { concerts, seedChats, seedDms, seedPosts, seedReports, seedStories, seedTickets, seedUsers } from '../data/seed'
+import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, TicketListing, User } from '../data/types'
 import { postArtists } from '../lib/postArtists'
 
 export interface State {
@@ -12,6 +12,7 @@ export interface State {
   dms: DirectMessage[]
   lastSeen: number // for the "You're all caught up" finite feed
   reports: Report[]
+  tickets: TicketListing[]
   adminId?: Id // runs the site; never shown publicly
 }
 
@@ -41,7 +42,9 @@ export type Action =
   | { type: 'shareStory'; id: Id; at: number; storyId: Id; text?: string }
   | { type: 'viewStory'; storyId: Id }
   | { type: 'deleteStory'; storyId: Id }
-  | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio']; postId?: Id }
+  | { type: 'sendDm'; id: Id; to: Id; at: number; text?: string; audio?: DirectMessage['audio']; postId?: Id; artistId?: Id }
+  | { type: 'addListing'; id: Id; concertId: Id; kind: TicketListing['kind']; qty: number; note?: string; at: number; faceValue: boolean }
+  | { type: 'closeListing'; id: Id }
   | { type: 'sharePostToStory'; id: Id; at: number; postId: Id; text?: string }
   | { type: 'receiveDm'; id: Id; from: Id; at: number; text: string }
   | { type: 'openConversation'; withUserId: Id; at: number }
@@ -83,6 +86,7 @@ export function initialState(now: number): State {
     stories: seedStories(now),
     dms: seedDms(now),
     reports: seedReports(now),
+    tickets: seedTickets(now),
     lastSeen: now - 12 * 60 * 60_000,
   }
 }
@@ -372,8 +376,9 @@ function apply(state: State, action: Action): State {
       return { ...state, stories: state.stories.filter((s) => !(s.id === action.storyId && s.authorId === me)) }
     case 'sendDm': {
       const sharedPost = action.postId && state.posts.some((p) => p.id === action.postId) ? action.postId : undefined
-      if (!me || isGuest(state) || !(action.text?.trim() || action.audio || sharedPost) || !canMessage(state, me, action.to) || messagingPaused(state, me, action.at)) return state
-      const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio, postId: sharedPost }
+      const sharedArtist = action.artistId && concerts.some((c) => c.artistId === action.artistId) ? action.artistId : undefined
+      if (!me || isGuest(state) || !(action.text?.trim() || action.audio || sharedPost || sharedArtist) || !canMessage(state, me, action.to) || messagingPaused(state, me, action.at)) return state
+      const dm: DirectMessage = { id: action.id, from: me, to: action.to, at: action.at, text: action.text?.trim() || undefined, audio: action.audio, postId: sharedPost, artistId: sharedArtist }
       return { ...state, dms: [...state.dms, dm] }
     }
     case 'receiveDm':
@@ -393,6 +398,17 @@ function apply(state: State, action: Action): State {
         stories: state.stories.filter((s) => action.now - s.createdAt < DAY),
         dms: state.dms.filter((m) => dmVisible(m, action.now)),
       }
+    case 'addListing': {
+      // Spare tickets only at face value or less (Italian law: art. 1 c. 545 L. 232/2016).
+      const c = concerts.find((x) => x.id === action.concertId)
+      if (!me || isGuest(state) || !c || c.date < new Date(action.at).toISOString().slice(0, 10)) return state
+      if (action.kind === 'spare' && !action.faceValue) return state
+      if (state.tickets.some((t) => t.userId === me && t.concertId === c.id && !t.closed)) return state // one open listing per show
+      const qty = Math.min(4, Math.max(1, Math.round(action.qty)))
+      return { ...state, tickets: [{ id: action.id, concertId: c.id, userId: me, kind: action.kind, qty, note: action.note?.trim().slice(0, 200) || undefined, at: action.at }, ...state.tickets] }
+    }
+    case 'closeListing':
+      return { ...state, tickets: state.tickets.map((t) => (t.id === action.id && (t.userId === me || isAdmin(state)) ? { ...t, closed: true } : t)) }
     case 'report': {
       // Anyone can report, with or without a profile (DSA art. 16). Without one we need a name and email,
       // except for child sexual abuse, which can be reported anonymously.
@@ -410,6 +426,7 @@ function apply(state: State, action: Action): State {
       // Settles every open report about the same thing.
       let next: State = { ...state, reports: state.reports.map((x) => (x.status === 'open' && x.target.kind === r.target.kind && x.target.id === r.target.id ? { ...x, status, handledAt: action.at } : x)) }
       if (action.action === 'remove' && r.target.kind === 'post') next = updatePost(next, r.target.id, (p) => ({ ...p, removed: { at: action.at, reason: action.reason ?? r.reason, note: action.note?.trim() || undefined } }))
+      if (action.action === 'remove' && r.target.kind === 'ticket') next = { ...next, tickets: next.tickets.map((t) => (t.id === r.target.id ? { ...t, closed: true } : t)) }
       if (action.action === 'remove' && r.target.kind === 'story') next = { ...next, stories: next.stories.filter((s) => s.id !== r.target.id) }
       return next
     }
@@ -462,7 +479,9 @@ export function canMessage(state: State, a: Id, b: Id) {
   const ua = state.users.find((u) => u.id === a)
   const ub = state.users.find((u) => u.id === b)
   if (!ua || !ub || a === b || ua.kind === 'page' || ub.kind === 'page' || ub.id === 'u-mod') return false
-  return ua.following.includes(b) || ub.following.includes(a)
+  // A ticket listing lets people who don't follow each other get in touch about it.
+  const listing = (id: Id) => state.tickets.some((t) => t.userId === id && !t.closed)
+  return ua.following.includes(b) || ub.following.includes(a) || listing(a) || listing(b)
 }
 // Messaging rewards taking part: anyone with no public activity for 30 days
 // can still read messages but can't send until they do something again.
@@ -521,7 +540,13 @@ export const isAdmin = (state: State) => Boolean(state.meId && state.adminId ===
 export function canHandleReport(state: State, userId: Id, r: Report): boolean {
   if (state.adminId === userId) return true
   const mod = state.users.find((u) => u.id === userId)?.mod
-  if (!mod || r.target.kind !== 'post' || r.by === userId) return false
+  if (!mod || r.by === userId) return false
+  if (r.target.kind === 'ticket') {
+    const t = state.tickets.find((x) => x.id === r.target.id)
+    const c = t && concerts.find((x) => x.id === t.concertId)
+    return Boolean(t && c && t.userId !== userId && mod.artistIds.includes(c.artistId))
+  }
+  if (r.target.kind !== 'post') return false
   const post = state.posts.find((p) => p.id === r.target.id)
   return Boolean(post && post.authorId !== userId && postArtists(post).some((a) => mod.artistIds.includes(a)))
 }

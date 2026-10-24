@@ -1,16 +1,17 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { newId, useStore } from '../store/store'
 import { canMessage, conversations, DAY, dmExpiresIn, messagingLeft, messagingPaused } from '../store/reducer'
 import { AudioPlayer } from '../components/AudioPlayer'
 import { useToast } from '../components/Toast'
-import { Avatar } from '../components/ui'
+import { ArtistDisc, Avatar } from '../components/ui'
+import { concerts } from '../data/seed'
 import { IconArrowLeft, IconFlag, IconMic, IconSend, IconX } from '../components/icons'
 import { ReportModal } from '../components/Moderation'
 import { createRecorder, MAX_VOICE_SECONDS } from '../lib/audio'
 import { springSnappy } from '../lib/motion'
-import { timeAgo } from '../lib/util'
+import { artistById, timeAgo } from '../lib/util'
 
 const hours = (ms: number) => (ms >= 3_600_000 ? `${Math.ceil(ms / 3_600_000)}h` : `${Math.max(1, Math.ceil(ms / 60_000))}m`)
 
@@ -96,7 +97,7 @@ export function Inbox() {
                   ) : (
                     <>
                       {lastMsg.from === me.id ? 'You: ' : ''}
-                      {lastMsg.audio ? 'Voice message' : lastMsg.postId ? 'Shared a post' : lastMsg.text}
+                      {lastMsg.audio ? 'Voice message' : lastMsg.postId ? 'Shared a post' : lastMsg.artistId ? 'Suggested an artist room' : lastMsg.text}
                     </>
                   )}
                 </span>
@@ -132,6 +133,7 @@ export function Inbox() {
 
 export function Conversation() {
   const { handle } = useParams()
+  const about = new URLSearchParams(useLocation().search).get('about')
   const { state, dispatch, me } = useStore()
   const toast = useToast()
   const nav = useNavigate()
@@ -238,6 +240,7 @@ export function Conversation() {
         {reporting && <ReportModal target={{ kind: 'dm', id: other.id }} what={`${other.name} (private chat)`} onClose={() => setReporting(false)} />}
       </header>
       <p className="dm-rule center muted small">Messages disappear 24h after they’re seen</p>
+      {about && <TicketAbout listingId={about} />}
       {otherAway && !paused && <p className="dm-away center small">{other.name} hasn’t been active for a month, so they can read your message but can’t reply until they’re back.</p>}
       {paused && me.handle !== 'guest' ? (
         <div className="dm-list">
@@ -267,6 +270,8 @@ export function Conversation() {
               >
                 {m.postId ? (
                   <SharedPostBubble postId={m.postId} />
+                ) : m.artistId ? (
+                  <ArtistBubble artistId={m.artistId} mine={mine} />
                 ) : (
                   <div className={m.audio ? 'bubble audio' : 'bubble'}>{m.audio ? <AudioPlayer src={m.audio.src} duration={m.audio.duration} peaks={m.audio.peaks} /> : m.text}</div>
                 )}
@@ -343,6 +348,31 @@ export function Conversation() {
   )
 }
 
+// An artist room suggested in a chat, with a one-tap Join.
+function ArtistBubble({ artistId, mine }: { artistId: string; mine: boolean }) {
+  const { dispatch, me } = useStore()
+  const a = artistById(artistId)
+  if (!a || !me) return null
+  const joined = me.fanSince[artistId] !== undefined
+  return (
+    <div className="dm-artist" style={{ ['--c' as string]: a.color }}>
+      <Link to={`/a/${a.id}`} className="dm-artist-main">
+        <ArtistDisc id={a.id} size={44} />
+        <span className="grow">
+          <span className="muted small block">{mine ? 'You suggested' : 'Suggested for you'}</span>
+          <strong>{a.name}</strong>
+          <span className="muted small block dm-artist-tag">{a.tagline}</span>
+        </span>
+      </Link>
+      {!mine && (
+        <button className={joined ? 'pill-btn glass small' : 'pill-btn ink small'} disabled={joined} onClick={() => dispatch({ type: 'followArtist', artistId: a.id })}>
+          {joined ? 'Joined ✓' : 'Join room'}
+        </button>
+      )}
+    </div>
+  )
+}
+
 // A post sent in a chat: a small card that opens the post.
 function SharedPostBubble({ postId }: { postId: string }) {
   const { state, userById } = useStore()
@@ -359,6 +389,22 @@ function SharedPostBubble({ postId }: { postId: string }) {
       {(p.photo || p.image) && <span className="dm-post-pic" style={p.photo ? { backgroundImage: `url(${p.photo})` } : { background: p.image }} />}
       <span className="dm-post-text">{p.text}</span>
     </Link>
+  )
+}
+
+// Writing about a ticket listing: what it is, and the safety rules, right in the chat.
+function TicketAbout({ listingId }: { listingId: string }) {
+  const { state } = useStore()
+  const t = state.tickets.find((x) => x.id === listingId)
+  const c = t && concerts.find((x) => x.id === t.concertId)
+  if (!t || !c) return null
+  return (
+    <div className="dm-ticket">
+      <strong>
+        About: {t.kind === 'spare' ? `${t.qty} spare ${t.qty === 1 ? 'ticket' : 'tickets'}` : `looking for ${t.qty} ${t.qty === 1 ? 'ticket' : 'tickets'}`} · {artistById(c.artistId)?.name}, {c.city}
+      </strong>
+      <span className="small">Face value or less, through the official name change or resale. Never pay by gift card, crypto or bank transfer to strangers. Fandome doesn’t handle tickets or payments.</span>
+    </div>
   )
 }
 

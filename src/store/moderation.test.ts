@@ -75,3 +75,25 @@ describe('profile links', () => {
     expect(s.users.find((u) => u.id === 'me')!.links![0]).toEqual({ id: 'l', url: 'https://instagram.com/gianni', label: undefined, clicks: 1 })
   })
 })
+
+describe('ticket board and suggestions', () => {
+  it('spare tickets need the face-value promise; one open listing per show; listing enables contact', () => {
+    let s = me()
+    const base = { type: 'addListing' as const, concertId: 'm-milan-2027', qty: 2, at: NOW }
+    expect(reducer(s, { ...base, id: 'x', kind: 'spare', faceValue: false })).toBe(s)
+    s = reducer(s, { ...base, id: 'x', kind: 'spare', faceValue: true })
+    expect(s.tickets.find((t) => t.id === 'x')).toMatchObject({ userId: 'me', qty: 2, kind: 'spare' })
+    expect(reducer(s, { ...base, id: 'y', kind: 'need', faceValue: false }).tickets.some((t) => t.id === 'y')).toBe(false)
+    // u-sam doesn't follow me and I don't follow him, but he can write about my listing
+    s = reducer({ ...s, meId: 'u-sam' }, { type: 'sendDm', id: 'd', to: 'me', at: NOW, text: 'Still available?' })
+    expect(s.dms.some((m) => m.id === 'd')).toBe(true)
+    s = reducer({ ...s, meId: 'me' }, { type: 'closeListing', id: 'x' })
+    expect(s.tickets.find((t) => t.id === 'x')!.closed).toBe(true)
+  })
+  it('suggests an artist room in a message', () => {
+    let s = me()
+    s = reducer(s, { type: 'sendDm', id: 'a', to: 'u-giulia', at: NOW, artistId: 'kylie' })
+    expect(s.dms.find((m) => m.id === 'a')!.artistId).toBe('kylie')
+    expect(reducer(s, { type: 'sendDm', id: 'b', to: 'u-giulia', at: NOW, artistId: 'nobody' }).dms.some((m) => m.id === 'b')).toBe(false)
+  })
+})

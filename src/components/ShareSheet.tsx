@@ -6,8 +6,10 @@ import { newId, useStore } from '../store/store'
 import { canMessage, conversations, messagingPaused } from '../store/reducer'
 import { MessagingNotice } from '../pages/Messages'
 import { StoryComposer } from './Stories'
-import { Avatar, Modal } from './ui'
-import { IconCheck, IconPlus, IconSearch } from './icons'
+import { ArtistDisc, Avatar, Modal } from './ui'
+import { useToast } from './Toast'
+import { artistById } from '../lib/util'
+import { IconCheck, IconLink, IconPlus, IconSearch } from './icons'
 import { springSnappy } from '../lib/motion'
 
 // Instagram-style share: put the post in your story, or send it to someone in private.
@@ -108,6 +110,119 @@ function SendList({ post, onStory }: { post: Post; onStory: () => void }) {
               )
             })}
             {!people.length && <p className="muted small">{q ? 'Nobody found.' : 'Follow people to send them posts.'}</p>}
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+// Suggest an artist room to people you know: it arrives as a card in their messages.
+export function SuggestArtistSheet({ artistId, onClose }: { artistId: string; onClose: () => void }) {
+  return (
+    <Modal title="Suggest this room" onClose={onClose}>
+      <SuggestList artistId={artistId} />
+    </Modal>
+  )
+}
+function SuggestList({ artistId }: { artistId: string }) {
+  const { state, dispatch, me } = useStore()
+  const toast = useToast()
+  const [q, setQ] = useState('')
+  const [sent, setSent] = useState<string[]>([])
+  const artist = artistById(artistId)
+  if (!me || !artist) return null
+  const now = Date.now()
+  const recent = conversations(state, now).map((c) => c.userId)
+  const people = state.users
+    .filter((u) => u.id !== me.id && u.kind !== 'page' && u.handle !== 'guest' && canMessage(state, me.id, u.id))
+    .sort((a, b) => Number(a.fanSince[artistId] !== undefined) - Number(b.fanSince[artistId] !== undefined) || (recent.indexOf(a.id) + 1 || 99) - (recent.indexOf(b.id) + 1 || 99))
+    .filter((u) => !q || `${u.name} ${u.handle}`.toLowerCase().includes(q.toLowerCase()))
+  const url = `${location.origin}${location.pathname}#/a/${artistId}`
+  return (
+    <div className="share-sheet">
+      <div className="share-post" style={{ ['--c' as string]: artist.color }}>
+        <ArtistDisc id={artistId} size={40} />
+        <span className="grow">
+          <strong>{artist.name}</strong>
+          <span className="muted small block share-post-text">{artist.tagline}</span>
+        </span>
+      </div>
+      <button
+        className="share-story"
+        onClick={async () => {
+          try {
+            if (navigator.share) await navigator.share({ title: `${artist.name} fans on Fandome`, url })
+            else {
+              await navigator.clipboard.writeText(url)
+              toast('Link copied')
+            }
+          } catch {
+            // closed
+          }
+        }}
+      >
+        <span className="share-icon-circle">
+          <IconLink size={18} />
+        </span>
+        <span className="grow">
+          <strong>Share a link</strong>
+          <span className="muted small block">Invite friends who aren’t on Fandome yet</span>
+        </span>
+      </button>
+      <div className="section-head">
+        <h2>Send to people you know</h2>
+      </div>
+      {me.handle === 'guest' ? (
+        <p className="muted small">
+          <Link to="/welcome" className="tag">
+            Create your profile
+          </Link>{' '}
+          to suggest rooms to people.
+        </p>
+      ) : messagingPaused(state, me.id, now) ? (
+        <MessagingNotice compact />
+      ) : (
+        <>
+          <label className="share-search">
+            <IconSearch size={16} />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search people" aria-label="Search people" />
+          </label>
+          <div className="share-people">
+            {people.map((u) => {
+              const fan = u.fanSince[artistId] !== undefined
+              const done = sent.includes(u.id)
+              return (
+                <div key={u.id} className="share-person">
+                  <Avatar user={u} size={40} />
+                  <span className="grow">
+                    <strong>{u.name}</strong>
+                    <span className="muted small block">{fan ? `Already in the ${artist.name} room` : `@${u.handle}`}</span>
+                  </span>
+                  <motion.button
+                    className={done || fan ? 'pill-btn glass small' : 'pill-btn ink small'}
+                    disabled={done || fan}
+                    whileTap={{ scale: 0.92 }}
+                    transition={springSnappy}
+                    onClick={() => {
+                      dispatch({ type: 'sendDm', id: newId(), to: u.id, at: Date.now(), artistId })
+                      setSent((s) => [...s, u.id])
+                    }}
+                  >
+                    {done ? (
+                      <>
+                        <IconCheck size={14} /> Sent
+                      </>
+                    ) : fan ? (
+                      'Fan'
+                    ) : (
+                      'Suggest'
+                    )}
+                  </motion.button>
+                </div>
+              )
+            })}
+            {!people.length && <p className="muted small">{q ? 'Nobody found.' : 'Follow people to suggest rooms to them.'}</p>}
           </div>
         </>
       )}

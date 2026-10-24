@@ -1,3 +1,4 @@
+import { SuggestArtistSheet } from '../components/ShareSheet'
 import { isAbout } from '../lib/postArtists'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
@@ -12,7 +13,7 @@ import { useToast } from '../components/Toast'
 import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
 import { artistById, isUpcoming } from '../lib/util'
-import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen } from '../components/icons'
+import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen, IconSend } from '../components/icons'
 
 // Weverse-style artist space: one room per artist, with topic feeds
 // (Bluesky custom feeds), albums to rate (Letterboxd) and shows.
@@ -23,6 +24,7 @@ export default function ArtistPage() {
   const compose = useComposer()
   const [tab, setTab] = useState('all')
   const [rating, setRating] = useState<string | null>(null)
+  const [suggest, setSuggest] = useState(false)
   if (!artist) return <Navigate to="/explore" replace />
 
   const joined = Boolean(me?.fanSince[artist.id])
@@ -67,6 +69,9 @@ export default function ArtistPage() {
           </button>
           <button className="glass-circle" onClick={() => compose({ artistId: artist.id })} aria-label="Post here">
             <IconPen size={17} />
+          </button>
+          <button className="glass-circle" onClick={() => setSuggest(true)} aria-label="Suggest this room to someone">
+            <IconSend size={17} />
           </button>
           {pack.length > 0 && (
             <Link to={`/starter/${artist.id}`} className="pill-btn glass small">
@@ -116,6 +121,7 @@ export default function ArtistPage() {
           </div>
         </>
       )}
+      {suggest && <SuggestArtistSheet artistId={artist.id} onClose={() => setSuggest(false)} />}
       <AnimatePresence>{rating && <AlbumRater key={rating} albumId={rating} onClose={() => setRating(null)} />}</AnimatePresence>
 
       {tab === 'shows' && <ShowsTab artistId={artist.id} />}

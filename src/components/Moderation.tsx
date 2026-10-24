@@ -350,6 +350,7 @@ function ReportItem({ report }: { report: Report }) {
   const post = report.target.kind === 'post' ? state.posts.find((p) => p.id === report.target.id) : undefined
   const user = report.target.kind === 'user' || report.target.kind === 'dm' ? userById(report.target.id) : undefined
   const story = report.target.kind === 'story' ? state.stories.find((s) => s.id === report.target.id) : undefined
+  const ticket = report.target.kind === 'ticket' ? state.tickets.find((t) => t.id === report.target.id && !t.closed) : undefined
   const msgs = report.target.kind === 'dm' ? state.dms.filter((m) => m.from === report.target.id && m.to === report.by).slice(-3) : []
   const act = (action: 'remove' | 'dismiss') => {
     dispatch({ type: 'resolveReport', reportId: report.id, action, reason, note, at: Date.now() })
@@ -384,7 +385,12 @@ function ReportItem({ report }: { report: Report }) {
         </p>
       ))}
       {story && <p className="report-note">Story: {story.text ?? story.kind}</p>}
-      {!post && !user && !story && <p className="muted small">The content is no longer available.</p>}
+      {ticket && (
+        <p className="report-note">
+          Ticket listing by {userById(ticket.userId)?.name}: {ticket.kind === 'spare' ? 'spare' : 'looking for'} {ticket.qty} · {ticket.note ?? 'no note'}
+        </p>
+      )}
+      {!post && !user && !story && !ticket && <p className="muted small">The content is no longer available.</p>}
       {report.target.kind === 'post' && post && (
         <div className="report-decide">
           <select value={reason} onChange={(e) => setReason(e.target.value as ReportReason)} aria-label="Rule broken">
@@ -401,7 +407,7 @@ function ReportItem({ report }: { report: Report }) {
         <button className="pill-btn glass small" onClick={() => act('dismiss')}>
           Keep it
         </button>
-        {(post || story) && (
+        {(post || story || ticket) && (
           <button className="pill-btn danger-solid small" onClick={() => act('remove')}>
             Remove
           </button>
