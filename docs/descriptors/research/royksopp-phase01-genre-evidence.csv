@@ -1,0 +1,34 @@
+album_id,genre,scope,source_keys,evidence,strength
+royksopp-melodyam,electronic,album,M_AM|M_PF|M_Q,dominant production medium,high
+royksopp-melodyam,downtempo,album,M_AM|M_PF,"slow, detailed down-tempo electronica",high
+royksopp-melodyam,triphop,album,M_AM|M_PF,trip-hop texture/drum patterns and expert classification,high
+royksopp-melodyam,house,substantial,M_PF,"friendly house pulses, not continuous club record",high
+royksopp-melodyam,ambient,substantial,M_PF,ambient-like instrumental passages and atmosphere,medium
+royksopp-melodyam,pop,substantial,M_PF|M_AM,"memorable pop melodic hooks, not conventional pop singles throughout",medium
+royksopp-melodyam,chillout,album-context,M_PF,review connects album to chillout listening and compilations,medium
+royksopp-melodyam,downbeat,album,M_AM,AllMusic explicit Downbeat style label,high
+royksopp-melodyam,dance,track-subset,M_AM|M_PF,club-ready sections in otherwise relaxed set,medium
+royksopp-theunderstanding,electronic,album,U_PF|U_AM,electronically programmed album,high
+royksopp-theunderstanding,electropop,album,U_GA,Danish music criticism expressly says electropop,high
+royksopp-theunderstanding,synthpop,substantial,U_AM,AllMusic explicitly names synth pop,high
+royksopp-theunderstanding,pop,album,U_PF|U_GA,stronger song and melody orientation,high
+royksopp-theunderstanding,dance,album,U_AM|U_PF,expansive dance/electronica focus,high
+royksopp-theunderstanding,house,substantial,U_PF|U_AM,house-related sustained dance pulses,medium
+royksopp-theunderstanding,disco,stylistic-reference,U_AM,"explicit disco nods (Moroder), not uniform disco production",medium
+royksopp-theunderstanding,ambient,track-subset,U_PF,ambient-style closing and atmospheric material,high
+royksopp-theunderstanding,trance,track-subset,U_PF|U_RA,Only This Moment described as trance and RA retrospective,medium
+royksopp-theunderstanding,electro,substantial,U_RA,RA explicitly describes stronger electro sound on 2005 record,medium
+royksopp-theunderstanding,breakbeat,track-subset,U_PF,49 Percent and other tracks with detailed breaks,medium
+royksopp-junior,electronic,album,J_PF|J_AM|J_GU,electronic album core,high
+royksopp-junior,dancepop,album,J_AM|J_GU,John Bush explicitly calls sophisticated dance-pop,high
+royksopp-junior,pop,album,J_RA|J_AM,Resident Advisor tags Pop and stresses pop hooks,high
+royksopp-junior,house,album,J_RA,Resident Advisor lists House,high
+royksopp-junior,synthpop,substantial,J_RS|J_PF,synth-rich melodic pop with Scandinavian voices,medium
+royksopp-junior,disco,substantial,J_PF|J_RS,"disco-inflected songs, especially This Must Be It",high
+royksopp-junior,eurodance,stylistic-reference,J_AM|J_RS,AllMusic explicit Euro-Dance and RS 90s reference,high
+royksopp-junior,dance,album,J_GU|J_AM,strong physical grooves for much of record,high
+royksopp-junior,alternativedance,album-style,J_AM,AllMusic explicit Alternative Dance style,high
+royksopp-junior,italodisco,track-subset,J_PF,The Girl and the Robot explicitly cited as Italo disco-influenced,high
+royksopp-junior,techno,stylistic-reference,J_RS|J_PF,"early techno references, not a pure techno album",medium
+royksopp-junior,downtempo,track-subset,J_AM|J_PF,slower album passages such as Silver Cruiser,high
+royksopp-junior,rave,stylistic-reference,J_RS,Rolling Stone explicitly mentions 90s rave color,medium

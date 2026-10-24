@@ -1,0 +1,17 @@
+album_id,genre,scope,source_ids,evidence,review_needed
+elisa-lotus,pop,album broad: AllMusic taxonomy,L03_AM,AllMusic lists Italian Pop and Pop/Rock; acoustic reworkings still contain pop songwriting.,no
+elisa-lotus,rock,SUONO category; original pop-rock songs reworked,L03_SUONO|L03_AM,"SUONO tags Rock; AllMusic Pop/Rock, despite fundamentally acoustic arrangements. Do not interpret as amplified rock.",review weighting
+elisa-lotus,poprock,album category/style broad,L03_AM,"AllMusic Pop/Rock umbrella, original songs reworked as acoustic variants.",review weighting
+elisa-lotus,alt,indie/alternative taxonomy,L03_AM,"AllMusic classifies album Alternative/Indie Rock; preserve scope as style classification, not indie label claim.",yes
+elisa-lotus,indierock,exact AllMusic Alternative/Indie Rock style,L03_AM,"AllMusic style taxonomy, not hard-rock sonic claim.",yes
+elisa-lotus,adultalternativepoprock,exact AllMusic style,L03_AM,AllMusic Adult Alternative Pop/Rock taxonomy.,yes
+elisa-pearldays,rock,album dominant,P04_ROCKOL1|P04_ROCKOL2|P04_SUONO,Multiple music critics: predominantly electric-guitar-driven rock record.,no
+elisa-pearldays,poprock,album dominant accessible,P04_ROCKOL2|P04_SUONO,Pop-rock specifically named by Rockol and SUONO.,no
+elisa-pearldays,pop,album broader form,P04_ROCKOL1|P04_ROCKOL2,Pop hooks and radio-friendly melodic approach in critics reviews.,no
+elisa-pearldays,electronic,minor/textural,P04_ROCKOL_PRESS,Record-company statement identifies some electronic side; secondary to guitars.,yes
+elisa-heart,alternativerock,main album style,H09_AM|H09_AOTY,AllMusic explicitly contemporary alt-rock; indexed as Alternative Rock by AOTY.,no
+elisa-heart,poprock,main album style,H09_AOTY|H09_AM,AOTY Pop Rock tag and AllMusic Pop/Rock editorial classification.,no
+elisa-heart,rock,main sound guitar,H09_ROCKOL|H09_SOUNDSBLOG,Rock and guitars emphasized in criticism and Elisa interview.,no
+elisa-heart,pop,broader style,H09_AM,AllMusic Pop/Rock combined category; pop-oriented songwriting and Italian radio singles.,no
+elisa-heart,electronica,"substantial influence, not wholly electronic album",H09_AM,AllMusic expressly calls out influence of electronica; not a claim of fully electronic production.,no
+elisa-heart,electronic,broader electronic influence,H09_AM,Album includes sounds inspired by electronica; less central than alternative rock.,yes

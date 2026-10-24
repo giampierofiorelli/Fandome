@@ -1,0 +1,4 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+royksopp-melodyam,Röyksopp,Melody A.M.,2001,already_in_catalog,royksopp-melodyam,No catalog update; append descriptor row only if absent,"original studio album, not later special or bonus edition"
+royksopp-theunderstanding,Röyksopp,The Understanding,2005,already_in_catalog,royksopp-theunderstanding,No catalog update; append descriptor row only if absent,"original studio album, not later special or bonus edition"
+royksopp-junior,Röyksopp,Junior,2009,already_in_catalog,royksopp-junior,No catalog update; append descriptor row only if absent,"original studio album, not later special or bonus edition"

@@ -31,4 +31,11 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   reggaeton: ['latin', 'dance'], dancehall: ['reggae', 'dance'], ska: ['reggae', 'punk'], kuduro: ['afro', 'dance'], afrobeat: ['afro'],
   funkbr: ['dance', 'hiphop'], bossanova: ['jazz', 'latin'], flamenco: ['folk', 'latin'], fado: ['folk'], caboverde: ['afro', 'folk'],
   sertanejo: ['country'], pagode: ['folk'], forro: ['folk'],
+  // added Oct 2026 (Elisa, Lazza, Röyksopp, Robyn, Geolier, Madame research)
+  hardcorehiphop: ['hiphop'], latintrap: ['trap', 'latin'], westcoasthiphop: ['hiphop'], nusoul: ['soul'],
+  alternativerock: ['alt'], adultalternativepoprock: ['poprock', 'alt'], electronica: ['electronic'], downtempo: ['electronic'],
+  softrock: ['rock', 'pop'], classicalcrossover: ['classical', 'pop'], drumandbass: ['breakbeat'], itpop: ['indiepop'],
+  calypsopop: ['pop', 'reggae'], hiprock: ['hiphop', 'rock'], drill: ['trap'], contemporaryrnb: ['rnb'],
+  hiphopsoul: ['rnb', 'hiphop'], bubblegumpop: ['pop'], europop: ['pop', 'dance'], chillout: ['downtempo', 'ambient'],
+  downbeat: ['downtempo'], electro: ['electronic', 'dance'], rave: ['electronic', 'dance'], ambientbreakbeat: ['ambient', 'breakbeat'],
 }

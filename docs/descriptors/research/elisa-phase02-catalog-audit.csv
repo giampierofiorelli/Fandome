@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,catalog_status,action,evidence
+elisa-lotus,elisa,Lotus,2003,already present,Keep exact existing ID/year and type studio. Original sixteen-track studio acoustic recut—not live.,L03_MB|L03_ROCKOL
+elisa-pearldays,elisa,Pearl Days,2004,already present,Original ten-track album only; no 2005 reissue bonus Una poesia anche per te.,P04_MB|P04_ROCKOL2
+elisa-heart,elisa,Heart,2009,missing in catalog,"Add album identity {title: Heart,year:2009} under Elisa and retain elisa-heart descriptor ID.",H09_AM|H09_ROCKOL

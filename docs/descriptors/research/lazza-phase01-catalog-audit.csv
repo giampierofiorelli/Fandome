@@ -1,0 +1,6 @@
+album_id,title,year,type,catalog_status,action
+lazza-zzala,Zzala,2017,studio,NEW,Add to Fandome via catalogue row for artist lazza; verify title and year
+lazza-remida,Re Mida,2019,studio,EXISTING,Keep current ID; do not import Aurum/Piano Solo as original
+lazza-j,J,2020,mixtape,NEW,Add as mixtape; do not confuse with J EP designation in some platform metadata
+lazza-sirio,Sirio,2022,studio,EXISTING,Original 17-track version only; exclude 2023 Cenere and Concertos
+lazza-locura,Locura,2024,studio,EXISTING,Original 18-track version only; exclude 2025 Jam + Opera

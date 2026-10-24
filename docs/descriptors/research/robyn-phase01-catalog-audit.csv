@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,album_in_catalog,action,evidence
+robyn-robynishere,robyn,Robyn Is Here,1995,no,add album to Robyn artist catalog,DISC_SNL|DISC_OFFICIAL
+robyn-mytruth,robyn,My Truth,1999,no,add album to Robyn artist catalog,DISC_SNL|DISC_OFFICIAL
+robyn-dontstopthemusic,robyn,Don't Stop the Music,2002,no,add album to Robyn artist catalog,DISC_SNL|DISC_OFFICIAL|R02_MB

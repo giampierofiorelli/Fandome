@@ -1,0 +1,4 @@
+album_id,title,year,type,status_in_fandome_catalog,expected_slug,original_edition,notes
+royksopp-senior,Senior,2010,studio,ADD album to src/data/catalog.ts,royksopp-senior,"Original studio album, no bonus tracks",Do not confuse with 2009 Junior
+royksopp-theinevitableend,The Inevitable End,2014,studio,ALREADY PRESENT in src/data/catalog.ts,royksopp-theinevitableend,"Original studio album, no bonus tracks",Original 2014 12-song record; exclude second Prologue CD
+royksopp-profoundmysteries,Profound Mysteries,2022,studio,ALREADY PRESENT in src/data/catalog.ts,royksopp-profoundmysteries,"Original studio album, no bonus tracks",Original April 2022 ten tracks; exclude Profound Mysteries II and III

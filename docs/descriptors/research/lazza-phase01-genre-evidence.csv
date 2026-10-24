@@ -1,0 +1,22 @@
+album_id,genre,scope,source_claim_paraphrase,url,importance
+lazza-zzala,hiphop,album,Rockol 2017/2024; The Crate explicitly calls the record rap,https://www.rockol.it/news-746276/lazza-compleanno-30-anni-album-zzala-recensione,main
+lazza-zzala,trap,album,The Crate identifies dark trap sound; Rockol says contemporary trap sound,https://www.thecrate.it/album/lazza-zzala,main
+lazza-remida,hiphop,album,"Original review identifies record as rap, old-school rhymes and punchlines",https://www.rockol.it/recensioni-musicali/album/8541/lazza-re-mida,main
+lazza-remida,trap,album,Rockol reviews contemporary trap/Auto-Tune sound of album,https://www.rockol.it/recensioni-musicali/album/8541/lazza-re-mida,main
+lazza-j,trap,album,Newsic identifies almost all beats as trap,https://www.newsic.it/recensione-lazza-j-mixtape/,main
+lazza-j,hiphop,album,Rolling Stone and Billboard treat J as rap/hip-hop mixtape,https://www.rollingstone.it/musica/interviste-musica/lazza-ora-vi-spiego-la-differenza-fra-un-album-e-un-mixtape/525028/,broader
+lazza-j,drill,track: Moncler,La Casa del Rap specifically singles out drill approach on Moncler,https://www.lacasadelrap.com/2020/07/25/lazza-j-recensione-2/,track_only
+lazza-sirio,poprap,album,OndaRock describes album as melodic pop-rap,https://www.ondarock.it/recensioni/2022-lazza-sirio/,main
+lazza-sirio,trap,album,OndaRock discusses central trap style; Newsic reviews classic trap productions,https://www.ondarock.it/recensioni/2022-lazza-sirio/,main
+lazza-sirio,hiphop,album,OndaRock explicitly traces hardcore hip-hop sections to rapper core,https://www.ondarock.it/recensioni/2022-lazza-sirio/,broader
+lazza-sirio,pop,album,OndaRock explicitly identifies broad pop framing,https://www.ondarock.it/recensioni/2022-lazza-sirio/,broader
+lazza-sirio,trappop,track: Uscito di galera,OndaRock uses trap-pop for that track,https://www.ondarock.it/recensioni/2022-lazza-sirio/,track_only
+lazza-sirio,posttrap,track: Molotov,OndaRock calls Molotov a sung post-trap hybrid,https://www.ondarock.it/recensioni/2022-lazza-sirio/,track_only
+lazza-sirio,reggaeton,track: Cinema,OndaRock describes reggaeton on Cinema; Newsic also references reggaeton beats,https://www.ondarock.it/recensioni/2022-lazza-sirio/,track_only
+lazza-sirio,hardcorehiphop,track: Topboy,OndaRock explicitly labels Noyz Narcos collaboration hardcore hip-hop,https://www.ondarock.it/recensioni/2022-lazza-sirio/,track_only
+lazza-locura,poprap,album,OndaRock header defines pop-rap; discusses introspective pop-rap throughout,https://www.ondarock.it/recensioni/2024-lazza-locura/,main
+lazza-locura,trappop,album,OndaRock header defines pop-trap and identifies trap hybrids,https://www.ondarock.it/recensioni/2024-lazza-locura/,main
+lazza-locura,hiphop,album,OndaRock notes hip-hop core and rapper delivery,https://www.ondarock.it/recensioni/2024-lazza-locura/,broader
+lazza-locura,trap,album,OndaRock describes multiple trap tracks,https://www.ondarock.it/recensioni/2024-lazza-locura/,broader
+lazza-locura,pop,album,OndaRock and Rockol describe broader pop-facing album,https://www.ondarock.it/recensioni/2024-lazza-locura/,broader
+lazza-locura,electronic,album,OndaRock details electronic synth-heavy beats and arrangements across several tracks,https://www.ondarock.it/recensioni/2024-lazza-locura/,supporting

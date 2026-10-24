@@ -1,0 +1,4 @@
+album_id,title,year,status,type,catalog_source,note
+madame-madame,Madame,2021,existing,studio,src/data/catalog.ts,Original 16-track physical release; exclude expanded digital-only Marea / Tu mi hai capito
+madame-lamore,L'amore,2023,existing,studio,src/data/catalog.ts,Original 14-track CD/LP edition; Tekno pokè is digital-only bonus
+madame-disincanto,Disincanto,2026,missing,studio,src/data/catalog.ts,"Add in catalog artist albums array; official Sugar release date 2026-04-17, distributor may say 2026-04-16"

@@ -1,0 +1,36 @@
+album_id,genre,scope,source_keys,editorial_rationale,evidence_strength
+royksopp-profoundmysteriesii,electronic,dominant,II_AM|II_PF|II_QOB,Electronic studio production and synthesis throughout,high
+royksopp-profoundmysteriesii,dance,substantial,II_AM|II_PF|II_NME,"Club/dance style, rave oriented productions especially Unity",high
+royksopp-profoundmysteriesii,synthpop,substantial,II_AM|II_PF,Downbeat/synth-pop anthems and 1980s electro-pop legacy,high
+royksopp-profoundmysteriesii,electropop,substantial,II_PF|II_AM,Synth-based vocal pop with deliberately retro electronic structures,high
+royksopp-profoundmysteriesii,pop,substantial,II_PF|II_NME,Pitchfork Pop/R&B classification and direct vocal pop hooks,high
+royksopp-profoundmysteriesii,downtempo,substantial,II_AM,"AllMusic exact genre-style, slower Sorry and interludes",high
+royksopp-profoundmysteriesii,triphop,album-style,II_AM,AllMusic exact style for album; not every track,high
+royksopp-profoundmysteriesii,downbeat,album-style,II_AM,AllMusic exact downbeat style,high
+royksopp-profoundmysteriesii,ambientbreakbeat,album-style,II_AM,AllMusic exact style Ambient Breakbeat,high
+royksopp-profoundmysteriesii,eurodance,minor-album-style,II_AM,AllMusic explicit Euro-Dance descriptor,medium
+royksopp-profoundmysteriesii,italodisco,referenced-sound,II_PF,"Artist explicitly acknowledges Italo disco legacy; album nods to sound, not uniform",medium
+royksopp-profoundmysteriesii,rave,track-and-references,II_PF|II_NME,90s UK rave influence and Unity radio-rave melodic production,medium
+royksopp-profoundmysteriesii,ambient,minor,II_AM|II_OFF,Atmospheric interludes and downbeat textures,medium
+royksopp-profoundmysteriesii,rnb,album-classification,II_PF,"Pitchfork Pop/R&B label; a secondary classification, not core groove",medium
+royksopp-profoundmysteriesiii,electronic,dominant,III_AM|III_SLANT|III_QOB,Electronic synth compositions throughout,high
+royksopp-profoundmysteriesiii,synthpop,substantial,III_AM|III_SLANT,"AllMusic describes trilogy as synth-pop, clear on vocal tracks",high
+royksopp-profoundmysteriesiii,pop,substantial,III_SLANT|III_AM,Accessible pop songwriting amid atmospheric instrumental epics,high
+royksopp-profoundmysteriesiii,downtempo,substantial,III_AM|III_SLANT,"Glacial, slow synth and string arrangements across multiple tracks",high
+royksopp-profoundmysteriesiii,downbeat,album-style,III_AM,AllMusic explicit downbeat style,high
+royksopp-profoundmysteriesiii,triphop,album-style,III_AM|III_QUI,AllMusic exact trip-hop label and Quietus Portishead comparison,high
+royksopp-profoundmysteriesiii,ambientbreakbeat,album-style,III_AM,AllMusic explicit Ambient Breakbeat,high
+royksopp-profoundmysteriesiii,eurodance,album-style,III_AM,AllMusic explicit Euro-Dance tag; strong songs not entire album,high
+royksopp-profoundmysteriesiii,dance,substantial,III_AM|III_QUI,The Night and Speed King supply energetic dancefloor moments,high
+royksopp-profoundmysteriesiii,ambient,substantial,III_SLANT|III_AM,Speed King ambient beds and cinematic synth instrumental passages,high
+royksopp-profoundmysteriesiii,electropop,album-description,III_QUI,The Quietus calls outfit electro-pop with dance-pop material,high
+royksopp-profoundmysteriesiii,nudisco,one-track,III_RFS,Expert critic explicitly names nu-disco on Me&Youphoria,medium
+royksopp-profoundmysteriesiii,disco,one-track,III_RFS,Space-disco Speed King comparison; not dominant style,medium
+royksopp-profoundmysteriesiii,tropicalhouse,one-track,III_QUI,Quietus explicitly compares Just Wanted to Know to tropical-house/R&B,medium
+royksopp-profoundmysteriesiii,rnb,one-track,III_QUI,Just Wanted to Know R&B features according to Quietus,medium
+royksopp-profoundmysteriesiii,edm,one-track,III_QUI,Stay Awhile EDM drops mentioned in Quietus,medium
+royksopp-profoundmysteriesiii,electro,one-track,III_RFS,Me&Youphoria cited electro beat; not whole album style,medium
+royksopp-nebulousnightsanambientexcursionintoprofoundmysteries,ambient,dominant,N_OFF|N_PF|N_DJ|N_APPLE,The artist and critics identify record as ambient reinterpretation of 2022 material,high
+royksopp-nebulousnightsanambientexcursionintoprofoundmysteries,electronic,dominant,N_APPLE|N_QOB,Electronic analogue studio compositions dominate live session,high
+royksopp-nebulousnightsanambientexcursionintoprofoundmysteries,deephouse,one-track,N_APPLE,Apple editorial describes deep-house bass pattern on Waiting Still,medium
+royksopp-nebulousnightsanambientexcursionintoprofoundmysteries,house,one-track-broader,N_APPLE,Broader house family for explicitly described deep-house track only,medium

@@ -1,0 +1,44 @@
+album_id,genre,scope,source_ids,rationale,strength
+robyn-robyn,electropop,album dominant,R05_PF|R05_NY|R05_SL,"Programmed electric hooks, glitchy/stripped production.",high
+robyn-robyn,synthpop,album significant,R05_NY|R05_SN,New Yorker describes synth-based 80s pop references and pure electronic instrumentation.,high
+robyn-robyn,dancepop,album significant,R05_SL|R05_PRESS,Critic frames record as dance album and dance-pop.,high
+robyn-robyn,pop,album dominant broad,R05_PF|R05_NY,"Main pop editorial categorization, independent of precise microgenre.",high
+robyn-robyn,electronic,album significant broad,R05_NY|R05_NY10,Dominant electronic studio textures.,high
+robyn-robyn,rnb,album significant influence,R05_NY|R05_PF,Avant-garde R&B and original teen-pop R&B delivery; not an all-R&B album.,high
+robyn-robyn,hiphop,album influence/song subset,R05_NY|R05_NY10,"Critic notes hip-hop elements in cadence and production, some tracks.",medium
+robyn-robyn,indiepop,album stylistic taxonomy / independent approach,R05_SL|R05_PRESS,Artistic independence and pop/indie synthesis; more context than sharply defined genre.,low
+robyn-robyn,dancehall,track-level only,R05_NY10,"Critic describes Cobrastyle fragments of dancehall rhythms, not whole-album genre.",medium
+robyn-bodytalkpt1,dancepop,album dominant,P1_AM|P1_PF,"Independent synth dance music, strong club tracks.",high
+robyn-bodytalkpt1,electropop,album significant,P1_PF|P1_AM,Electronic songs with pop hooks and emotional articulation.,high
+robyn-bodytalkpt1,synthpop,album significant,P1_PF|P1_AM,Prominent synth hooks and synthesizer programming.,medium
+robyn-bodytalkpt1,pop,album dominant broad,P1_PF|P1_AM,Pop songwriting across all eight songs.,high
+robyn-bodytalkpt1,electronic,album dominant broad,P1_Q|P1_PF,"Majority of songs electronic, with acoustic closer exceptions.",high
+robyn-bodytalkpt1,alternativedance,album style tag,P1_AM,AllMusic explicitly lists alternative dance.,high
+robyn-bodytalkpt1,leftfieldpop,album style tag,P1_AM,AllMusic explicitly lists Left-Field Pop.,high
+robyn-bodytalkpt1,electrohouse,specific track,P1_PF,Pitchfork categorizes Dont Fucking Tell Me What To Do electro-house.,high
+robyn-bodytalkpt1,dancehall,specific track,P1_PF|P1_AM,Dancehall Queen rhythm/production track evidence.,high
+robyn-bodytalkpt1,reggae,specific track/broad family,P1_PF,"Dancehall Queen and synth reggae/Sleng Teng allusion, not dominant.",medium
+robyn-bodytalkpt1,rnb,qualified general album classification,P1_PF,"Pitchfork broad Pop/R&B, not dominant across tracks.",medium
+robyn-bodytalkpt2,dancepop,album dominant,P2_PF|P2_AM,Mainstream club dance-pop beats with vivid hooks.,high
+robyn-bodytalkpt2,synthpop,album dominant,P2_PF,Pitchfork explicitly calls it clubby synth-pop.,high
+robyn-bodytalkpt2,electropop,album closely evidenced,P2_PF|P2_AM,Electronic synth-pop and distinct verses.,medium
+robyn-bodytalkpt2,pop,album dominant broad,P2_AM|P2_PF,Verses/choruses designed as polished pop.,high
+robyn-bodytalkpt2,electronic,album dominant broad,P2_Q|P2_MC,Electronic programmed production majority.,high
+robyn-bodytalkpt2,alternativedance,album style tag,P2_AM|P2_MC,Direct AllMusic and Metacritic tag.,high
+robyn-bodytalkpt2,leftfieldpop,album style tag,P2_AM,Direct AllMusic Left-Field Pop.,high
+robyn-bodytalkpt2,rnb,editorial umbrella and song subset,P2_MC|P2_PF,Pitchfork Pop/R&B classification; album includes R&B cadence.,medium
+robyn-bodytalkpt2,hiphop,song-level / guest,P2_PF|P2_AM,Criminal Intent and U Should Know Better hip-hop production or feature.,high
+robyn-bodytalkpt2,eurodance,secondary metadata,P2_MC,"Metacritic lists Euro-Dance, not a dominant specialist label.",medium
+robyn-bodytalk,dancepop,album dominant,F_PF|F_Q|F_MC,Album broad club-pop and dance floor framing.,high
+robyn-bodytalk,electropop,album dominant,F_PF|F_GU,Synthesized vocal melodic dance textures / electro-pop.,high
+robyn-bodytalk,synthpop,album significant,F_PF|P2_PF,Kinetic synth-led tracks imported from two volumes and new songs.,high
+robyn-bodytalk,pop,album dominant broad,F_PF|F_MC,"Strong pop hooks, full album.",high
+robyn-bodytalk,electronic,album dominant broad,F_GU|F_Q,Wide use of programmed electronic instrumentation.,high
+robyn-bodytalk,alternativedance,album metadata,F_MC|F_PF,Metacritic alternative dance alongside club/dance.,high
+robyn-bodytalk,rnb,umbrella/selected tracks,F_PF,Pitchfork Pop/R&B; not predominant on every track.,medium
+robyn-bodytalk,electrohouse,single track,P1_PF|F_Q,Don’t Fucking Tell Me What To Do reused from Pt.1.,high
+robyn-bodytalk,house,secondary club family,F_Q|F_PF,"Dance floor electronics and house sensibilities, not a pure house album.",medium
+robyn-bodytalk,eurodance,specific tracks,F_PF|F_Q,Remixed Hang With Me and Indestructible plus Stars 4-Ever Euro-dance framing.,high
+robyn-bodytalk,dancehall,specific track,F_GU|F_Q,"Dancehall Queen reused, non-album-wide.",high
+robyn-bodytalk,hiphop,specific tracks,F_GU|F_Q,"U Should Know Better and Criminal Intent hip-hop accents, not core.",high
+robyn-bodytalk,disco,track rework / dance reference,F_PF,"Eurodisco remodelled songs, not disco-dominant.",medium

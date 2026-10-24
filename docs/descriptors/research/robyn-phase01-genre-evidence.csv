@@ -1,0 +1,24 @@
+album_id,genre,scope,source_ids,evidence,review_needed
+robyn-robynishere,dancepop,dominant,R95_AM|R95_AOTY,"AllMusic calls the full album European dance-pop, reinforced by the genre catalogue.",no
+robyn-robynishere,pop,dominant,R95_AM|R95_Q,Mainstream pop hooks and album listing.,no
+robyn-robynishere,rnb,significant,R95_AM|R95_AOTY,AllMusic explicitly tags contemporary R&B; not all songs.,no
+robyn-robynishere,contemporaryrnb,significant,R95_AM|R95_AOTY,"Specific Contemporary R&B style tag, alongside its broader category.",no
+robyn-robynishere,newjackswing,secondary album annotation,R95_AOTY,Secondary genre taxonomy; not established as dominant by the signed album review.,yes
+robyn-robynishere,hiphopsoul,secondary album annotation,R95_AOTY,Secondary taxonomy only; keep lower priority and review before final.,yes
+robyn-robynishere,bubblegumpop,secondary album annotation,R95_AOTY,Secondary catalogue descriptor; not a direct AllMusic quoted genre.,yes
+robyn-robynishere,triphop,peripheral album annotation,R95_AOTY,Secondary classification; album-wide relevance requires human review.,yes
+robyn-mytruth,pop,dominant,R99_AM|R99_A,Critical review and licensed genre metadata.,no
+robyn-mytruth,rnb,significant,R99_AM|R99_Q,"Mature R&B-centred songwriting and production, critical context.",no
+robyn-mytruth,soul,significant,R99_AM|R99_Q,"Soulful arrangement and voice on a significant share, with instrumental players.",no
+robyn-mytruth,dancepop,secondary,R99_AM|R99_SLEEVE,Club/dance-pop album metadata and tracks such as Play.,no
+robyn-mytruth,house,track-level,R99_SLEEVE|R99_Q,Main Thing is credited to Masters at Work and album metadata says house; not overall dominant.,no
+robyn-mytruth,electronic,secondary,R99_SLEEVE|R99_AM,Minimal electronic arrangement for Electric plus mixed electric textures.,no
+robyn-mytruth,funk,track-level,R99_AM,"The critic calls Main Thing funky; tag track colour only, not album-dominant funk.",no
+robyn-dontstopthemusic,dancepop,dominant,R02_AM|R02_AOTY,AllMusic dance-pop taxonomy and hook-rich review.,no
+robyn-dontstopthemusic,pop,dominant,R02_AM|R02_GAFFA,A pop-led hybrid per contemporaneous critics.,no
+robyn-dontstopthemusic,rnb,significant,R02_AM|R02_GAFFA,R&B particularly on driving Keep This Fire Burning; less all-encompassing than debut.,no
+robyn-dontstopthemusic,eurodance,secondary album annotation,R02_AM_TAGS,"Specific AllMusic style label, not uniform on the ballads.",yes
+robyn-dontstopthemusic,europop,secondary album annotation,R02_AM_TAGS,Specific Euro-Pop AllMusic category; new exact token.,yes
+robyn-dontstopthemusic,electropop,secondary album annotation,R02_AOTY,Secondary genre taxonomy on album; keep distinct from synthpop.,yes
+robyn-dontstopthemusic,triphop,peripheral album annotation,R02_AOTY,"Only catalog taxonomy, not primary signed review consensus.",yes
+robyn-dontstopthemusic,electronic,significant,R02_Q|R02_AM,"Licensed electronic album category, studio programming; not all tracks.",no

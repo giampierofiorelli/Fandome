@@ -1,0 +1,23 @@
+album_id,genre,scope,source_ids,evidence,review_needed
+elisa-pipesflowers,poprock,dominant,P97_AOTY|P97_AM,Specialist critic describes guitar-driven alternative-pop with pop hooks; AOTY specifically names pop rock.,no
+elisa-pipesflowers,alternativerock,dominant,P97_AM|P97_AOTY,AllMusic alternative rock review and AOTY specific genre classification.,no
+elisa-pipesflowers,rock,dominant broader,P97_AM|P97_AOTY,"Live bass, drums and prominent guitars document core rock accompaniment.",no
+elisa-pipesflowers,pop,significant broader,P97_AM,AllMusic specifically hears European pop songwriting and British-style hooks.,no
+elisa-pipesflowers,alt,broader alternative descriptor,P97_AM,Original review positions the album as female-fronted alternative pop/rock.,no
+elisa-pipesflowers,indierock,AllMusic specialist style,P97_AM,AllMusic labels record Alternative/Indie Rock; does not assert independent-label status.,no
+elisa-pipesflowers,adultalternativepoprock,AllMusic specialist style,P97_AM,"AllMusic explicitly tags Adult Alternative Pop/Rock, broader than the artist age.",no
+elisa-asilesworld,electronic,dominant,A00_RO|A00_AM,"Rockol explicitly describes warmer electronic music, recording adopts extensive programming.",no
+elisa-asilesworld,triphop,significant,A00_AM_STYLE|A00_AOTY,AllMusic album style and AOTY album annotation both identify trip-hop.,no
+elisa-asilesworld,pop,significant broader,A00_AM|A00_AOTY,Pop-based songwriting retains accessible melodies despite unconventional textures.,no
+elisa-asilesworld,artpop,significant taxonomy,A00_AOTY|A00_AM,Art pop album tag on editorial metadata; Björk-influenced unusual production described by critic.,no
+elisa-asilesworld,electronica,AllMusic specialist style,A00_AM_STYLE,AllMusic calls this Electronica; distinct from its general electronic parent.,no
+elisa-asilesworld,alternativedance,AllMusic specialist style,A00_AM_STYLE,"AllMusic Alternative Dance style, not evidence for continuous dancing or fast BPM.",no
+elisa-asilesworld,downtempo,secondary catalog taxonomy,A00_AOTY,AOTY tags Downtempo; lower priority than contemporary Rockol and AllMusic classification.,yes
+elisa-asilesworld,indierock,peripheral AllMusic label,A00_AM_STYLE,AllMusic Alternative/Indie Rock style; original Rockol notes this album abandons typical debut guitars.,yes
+elisa-thencomesthesun,poprock,dominant,T01_AM|T01_RO2,AllMusic Pop/Rock style and Rockol description of guitar-led songs support the specific hybrid.,no
+elisa-thencomesthesun,alternativerock,significant,T01_AM|T01_MB,AllMusic explicitly tags Alternative/Indie Rock and instrumental credits include electric guitars.,no
+elisa-thencomesthesun,pop,significant broader,T01_AM|T01_RO,AllMusic pop label and radio-oriented songs Heaven Out of Hell and Rainbow.,no
+elisa-thencomesthesun,rock,significant broader,T01_AM|T01_MB,Full-band accompaniment guitar/bass/drums and rock arrangements.,no
+elisa-thencomesthesun,adultalternativepoprock,AllMusic specialist style,T01_AM,AllMusic album style Adult Alternative Pop/Rock.,no
+elisa-thencomesthesun,alt,broader alternative descriptor,T01_AM,"Alt/indie emphasis, not all tracks: piano-based ballads are equally important.",no
+elisa-thencomesthesun,indierock,AllMusic specialist style,T01_AM,"Album labelled Alternative/Indie Rock; used as style, not assertion of indie-label release.",no

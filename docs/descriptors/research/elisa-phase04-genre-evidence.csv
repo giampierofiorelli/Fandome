@@ -1,0 +1,18 @@
+﻿album_id,genre,scope,justification,source_ids
+elisa-diariaperti,pop,album,Album is described as Italian pop by specialist reviewers,D03|D04|D05
+elisa-diariaperti,songwriter,album,Autobiographical Italian cantautorato and song-led arrangements; not a guitar-rock or punk record,D03|D04|D05
+elisa-diariaperti,itpop,single-track accent,Rolling Stone explicitly calls the Calcutta-written single an it-pop example,D04
+elisa-diariaperti,reggae,single-track accent,Rockol describes L estate e gia fuori as reggae with electronic texture,D03
+elisa-diariaperti,calypsopop,single-track accent,Rolling Stone explicitly calls L estate e gia fuori calypso pop,D04
+elisa-diariaperti,electronic,single-track accent,"Rockol mentions electronic timbres in L estate e gia fuori, not general synthetic dominance",D03
+elisa-ritornoalfuturobacktothefuture,pop,album,Reviewers situate the entire double album in contemporary pop,R03|R04|R06
+elisa-ritornoalfuturobacktothefuture,electropop,album,OndaRock labels the whole work electro-pop,R03
+elisa-ritornoalfuturobacktothefuture,electronic,album,"Synth layers, electronic arrangements and club production span multiple tracks",R01|R03|R07
+elisa-ritornoalfuturobacktothefuture,indierock,album,OndaRock whole-album classification; guitars appear across English section,R03
+elisa-ritornoalfuturobacktothefuture,rnb,multiple tracks,"Rockol and Newsic identify several R&B tracks, mainly English half",R04|R05|R06
+elisa-ritornoalfuturobacktothefuture,soul,multiple tracks,Specialist critics identify soul and black-music productions across English material,R04|R05|R06
+elisa-ritornoalfuturobacktothefuture,house,single-track accents,Rockol identifies house elements on Seta and Palla al centro,R04|R05
+elisa-ritornoalfuturobacktothefuture,rock,multiple tracks,Rock guitar references and power-rock / early Elisa dynamics in English half,R04|R06
+elisa-ritornoalfuturobacktothefuture,hiphop,localized accent,"Urban/hip-hop oriented elements in selected collaborative songs, NOT a rap-dominated album",R04|R05|R06
+elisa-ritornoalfuturobacktothefuture,gospel,single-track accent,"SentireAscoltare singles out Show s Rollin as garage gospel, not album-wide gospel",R05
+elisa-ritornoalfuturobacktothefuture,hiprock,single-track accent,SentireAscoltare specifically characterizes Fuckin Believers as hip-rock,R05

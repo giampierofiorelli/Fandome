@@ -1,0 +1,19 @@
+album_id,genre,scope,source_ids,why_included_or_warning,novel_to_current_guide
+elisa-ivy,pop,album taxonomy and repertoire,I10_ALLMUSIC|I10_ROCKOL_REVIEW,"Italian pop and melodic ballad writing, despite acoustic recuts.",no
+elisa-ivy,poprock,broad album taxonomy / select originals,I10_ALLMUSIC|I10_ROCKOL_REVIEW,"AllMusic Pop/Rock umbrella; Nostalgia is the principal fresh pop-rock number, not the dominant instrumentation.",previously_proposed
+elisa-ivy,softrock,secondary whole-album taxonomy,I10_AOTY,Soft Rock listed by AOTY; weaker than primary AllMusic piano/acoustic judgment.,yes
+elisa-ivy,adultalternativepoprock,AllMusic album taxonomy,I10_ALLMUSIC,AllMusic specialist Album Styles; acoustic performance central rather than electric alternative rock.,previously_proposed
+elisa-ivy,indierock,AllMusic style label only,I10_ALLMUSIC,"AllMusic Alternative/Indie Rock label, not self-description of the core sound.",previously_proposed
+elisa-ivy,classicalcrossover,secondary whole-album taxonomy,I10_AOTY,AOTY calls this Classical Crossover; label is contested by sparse acoustic/pop reviews. Treat as provisional.,yes
+elisa-lanimavola,pop,album dominant,A13_ROCKOL_REVIEW|A13_PANORAMA|A13_AAB,Italian-language melodic pop arrangements are dominant.,no
+elisa-lanimavola,poprock,album broad,A13_ROCKOL_REVIEW|A13_PANORAMA,"Cinematic pop with notably Anglo-rock instrumentation/arrangements, per contemporary critics.",previously_proposed
+elisa-lanimavola,rock,album supporting idiom,A13_ROCKOL_REVIEW|A13_PANORAMA,Rock guitar/energy is substantial but not exclusive nor hard rock.,no
+elisa-lanimavola,electronic,one important track texture,A13_PANORAMA,1980s electronic elements specifically evidenced on Maledetto labirinto; not a predominantly electronic record.,no
+elisa-on,pop,album dominant,O16_ROCKOL|O16_SOUNDS|O16_ALLMUSICITALIA,Glossy contemporary radio pop present throughout thirteen tracks.,no
+elisa-on,electronic,album major instrument source,O16_ROCKOL|O16_SOUNDS,"Synthesizers, programming, drum machines displace some guitar/drums.",no
+elisa-on,dancepop,"album recurrent, explicit tracks",O16_ROCKOL|O16_SOUNDS,"Ready Now and Rain over my head identified dance-pop, several additional up-tempo numbers.",no
+elisa-on,triphop,identified track-level elements,O16_ROCKOL|O16_ROCKOL_TOUR,"With the Hurt and Bruciare per te are cited for trip-hop rhythmic elements, not album-wide form.",no
+elisa-on,drumandbass,identified track-level elements,O16_ROCKOL|O16_ROCKOL_TOUR,Explicit drum’n’bass accents cited on With the Hurt / Bruciare per te; not whole-album primary genre.,yes
+elisa-on,soul,album secondary + specific track,O16_ROCKOL|O16_SOUNDS,Hold On for a Minute carries explicit soul seasoning; distinct from full genre of album.,no
+elisa-on,funk,one specific track,O16_ROCKOL,"Peter Pan funk and rhythmic Motown reference on Love Me Forever; peripheral, supported.",no
+elisa-on,rock,one specific track,O16_ROCKOL,Catch the Light has electric guitar/drums lean arrangement evocative of earlier albums.,no

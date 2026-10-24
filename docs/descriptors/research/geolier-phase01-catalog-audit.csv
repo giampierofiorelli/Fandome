@@ -1,0 +1,5 @@
+album_id,title,research_year,catalog_status,catalog_year,action,evidence_url
+geolier-emanuele,Emanuele,2019,existing,2019,Keep existing ID and year,https://shop.universalmusic.it/products/geolier-emanuele-vinile
+geolier-ilcoraggiodeibambini,Il coraggio dei bambini,2023,existing,2023,Keep existing ID and year,https://billboard.it/interviste/geolier-racconta-il-suo-nuovo-album-il-coraggio-dei-bambini/2023/01/0698797/
+geolier-diolosa,Dio lo sa,2024,existing,2025,CORRECT catalog year from 2025 to 2024 (preserve ID),https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa
+geolier-tuttoepossibile,Tutto è possibile,2026,missing,,ADD new studio album under artist geolier,https://open.spotify.com/album/5EKYDOBrlVJlvMGEgdgytB

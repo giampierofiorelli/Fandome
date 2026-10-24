@@ -1,0 +1,30 @@
+album_id,genre_token,scope,source_keys,explanation,evidence_strength,catalogue_status
+royksopp-senior,electronic,album,S_AM|S_PF,Electronic ensemble dominated by synthesis and studio programming,high,existing_token
+royksopp-senior,downtempo,dominant,S_AM|S_PF|S_OFF,Low-velocity instrumental material across album,high,new_token_add_to_catalogue
+royksopp-senior,downbeat,album-style,S_AM,"AllMusic explicit downbeat style, overlapping with downtempo",high,new_token_add_to_catalogue
+royksopp-senior,ambientbreakbeat,album-style,S_AM,AllMusic explicitly names Ambient Breakbeat,high,new_token_add_to_catalogue
+royksopp-senior,ambient,album-substantial,S_NME|S_PF,Ambient textures and drifting instrumental passages,high,existing_token
+royksopp-senior,breakbeat,subset,S_AM|S_UTR,Breakbeat subtype and glitch percussion in individual tracks,medium,existing_token
+royksopp-senior,disco,minor-stylistic,S_NME,"Scandinavian cosmic disco appears as a critical reference, not prevailing style",low,existing_token
+royksopp-senior,dance,minor-stylistic,S_AM|S_PF,AllMusic Club/Dance classification; critics stress little four-on-the-floor,medium,existing_token
+royksopp-theinevitableend,electronic,dominant,E_AM|E_PF|E_OFF,Overwhelmingly electronic production,high,existing_token
+royksopp-theinevitableend,electropop,substantial,E_AM|E_PF,AllMusic electro-pop description and Pitchfork electronic-pop vocal material,high,existing_token
+royksopp-theinevitableend,downtempo,dominant,E_AM|E_PF,"Many long, slow, atmospheric songs",high,new_token_add_to_catalogue
+royksopp-theinevitableend,downbeat,album-style,E_AM,AllMusic explicit Downbeat style,high,new_token_add_to_catalogue
+royksopp-theinevitableend,triphop,album-style,E_AM,"AllMusic explicit Trip-Hop style; broad association, not every track",high,existing_token
+royksopp-theinevitableend,ambientbreakbeat,album-style,E_AM,AllMusic explicit Ambient Breakbeat style,high,new_token_add_to_catalogue
+royksopp-theinevitableend,pop,substantial,E_AM|E_GU2,Guest-led pop melodies and Scandipop passages,high,existing_token
+royksopp-theinevitableend,dance,selected-tracks,E_AM|E_GU2|E_PF,"Not album-wide; Skulls, Monument, Running to the Sea have dance pulses",medium,existing_token
+royksopp-theinevitableend,disco,selected-track,E_PF,Pitchfork explicitly describes filter-disco pulse on Skulls,medium,existing_token
+royksopp-profoundmysteries,electronic,dominant,P_AM|P_PF,Foundational electronics across all tracks,high,existing_token
+royksopp-profoundmysteries,electropop,substantial,P_PF,Pitchfork explicit electro-pop on energetic vocal material,high,existing_token
+royksopp-profoundmysteries,pop,substantial,P_AM|P_PF,Guest vocals and pop compositional arc across several songs,high,existing_token
+royksopp-profoundmysteries,downtempo,substantial,P_AM|P_PF,AllMusic taxonomy and slow instrumental stretches,high,new_token_add_to_catalogue
+royksopp-profoundmysteries,downbeat,album-style,P_AM,AllMusic explicit Downbeat style,high,new_token_add_to_catalogue
+royksopp-profoundmysteries,triphop,album-style,P_AM,AllMusic explicit Trip-Hop style,high,existing_token
+royksopp-profoundmysteries,ambientbreakbeat,album-style,P_AM,AllMusic explicit Ambient Breakbeat style,high,new_token_add_to_catalogue
+royksopp-profoundmysteries,eurodance,album-style,P_AM,AllMusic explicit Euro-Dance style; not all tracks,high,existing_token
+royksopp-profoundmysteries,dance,substantial,P_PF|P_AM,Club tracks contrast with quieter interludes,high,existing_token
+royksopp-profoundmysteries,techno,selected-track,P_PF,"Pitchfork identifies techno on This Time, This Place",high,existing_token
+royksopp-profoundmysteries,synthpop,selected-track,P_PF,Pitchfork identifies gentle synth-pop on The Ladder,high,existing_token
+royksopp-profoundmysteries,ambient,selected-instrumentals,P_PF|P_AM,Quiet drifting instrumentals are ambient in texture,medium,existing_token

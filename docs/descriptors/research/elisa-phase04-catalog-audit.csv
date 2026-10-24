@@ -1,0 +1,3 @@
+﻿album_id,artist,title,year,status_at_audit,catalog_title,catalog_year,action,edition,caveat
+elisa-diariaperti,Elisa,Diari aperti,2018,existing_catalog_identity,Diari aperti,2018,append descriptor only,2018 original 11-track studio album; exclude 2019 Segreti svelati expansion,Verify existing descriptors branch for collision before append
+elisa-ritornoalfuturobacktothefuture,Elisa,Ritorno al futuro/Back to the Future,2022,existing_catalog_identity,Ritorno al futuro/Back to the Future,2022,append descriptor only,Original Island/Universal 25-track 2CD 2022-02-18 (12 Italian +13 English),Digital/bonus editions include two more tracks; do not score expanded issue

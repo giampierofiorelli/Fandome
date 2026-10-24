@@ -1,0 +1,4 @@
+album_id,artist,exact_title,year,type,as_of_2026_10_24_repo_default_catalog,required_action,expected_album_id,identity_notes
+elisa-ivy,Elisa,Ivy,2010,studio,absent,add to catalog,elisa-ivy,2010 studio album with covers and acoustic re-recordings; separate from live DVD
+elisa-lanimavola,Elisa,L’anima vola,2013,studio,present,reuse exact ID/title,elisa-lanimavola,Artist first complete Italian album; do not add non-Italian title variations
+elisa-on,Elisa,On,2016,studio,absent,add to catalog,elisa-on,"13 tracks: 11 English, 2 Italian; case On as official"

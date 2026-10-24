@@ -157,8 +157,8 @@ describe('engine v2', () => {
   })
 
   it('finds two-step connections through a third artist or producer', () => {
-    const r = similarAlbums('blanco-bluceleste').find((s) => s.albumId === 'elodie-thisiselodie')
-    expect(r?.reasons[0]).toMatch(/^Connected through Mahmood/)
+    const r = compareAlbums(DESCRIPTORS['blanco-bluceleste'], DESCRIPTORS['elodie-thisiselodie'])
+    expect(r.reasons[0]).toMatch(/^Connected through Mahmood/)
   })
 
   it('keeps lists varied and pushes down what you dislike', () => {

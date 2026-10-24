@@ -1,0 +1,30 @@
+album_id,genre,scope,expert_evidence,source_url,note
+geolier-emanuele,hiphop,album,Universal Music album page and Rockol hip-hop review,https://shop.universalmusic.it/products/geolier-emanuele-vinile,primary category
+geolier-emanuele,trap,album,Universal Music: hip hop and trap across the original 16 tracks,https://shop.universalmusic.it/products/geolier-emanuele-vinile,direct category description
+geolier-emanuele,latin,track: Como Te,Rockol: Latin-tinged Como Te; not a claim about all tracks,https://www.rockol.it/recensioni-musicali/album/8887/geolier-emanuele,subordinate track influence
+geolier-ilcoraggiodeibambini,hiphop,album,OndaRock: Neapolitan hip hop rooted in contemporary rap,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,primary
+geolier-ilcoraggiodeibambini,trap,album,OndaRock genre header lists trap,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,primary
+geolier-ilcoraggiodeibambini,trappop,album,OndaRock explicitly calls album pop-trap,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,hybrid genre
+geolier-ilcoraggiodeibambini,poprap,album,SentireAscoltare describes pop/rap/trap together; Rockambula identifies pop-rap,https://www.sentireascoltare.com/album/geolier-il-coraggio-dei-bambini/,"secondary, first reviewer explicitly calls pop rap trap"
+geolier-ilcoraggiodeibambini,hardcorehiphop,album,OndaRock genre header lists hardcore hip-hop,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,NEW IDENTIFIER
+geolier-ilcoraggiodeibambini,pop,album,OndaRock genre header pop,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,broad genus
+geolier-ilcoraggiodeibambini,latin,track: Monday,OndaRock identifies Latin-inflected rhythm on Monday,https://www.ondarock.it/recensioni/2023-geolier-ilcoraggiodeibambini/,track only
+geolier-diolosa,hiphop,album,Rockol characterizes album as a rap record,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,primary
+geolier-diolosa,poprap,album,OndaRock describes album as pop-rap,https://www.ondarock.it/recensioni/2024-geolier-dio-lo-sa/,album-wide
+geolier-diolosa,trappop,album,OndaRock describes album as pop-trap,https://www.ondarock.it/recensioni/2024-geolier-dio-lo-sa/,album-wide
+geolier-diolosa,trap,album,Pop-trap reviewed as part of broader trap vocabulary,https://www.ondarock.it/recensioni/2024-geolier-dio-lo-sa/,parent term for pop-trap
+geolier-diolosa,pop,album,Rockol: many pop melodic refrains,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,parent style
+geolier-diolosa,latin,track: Bella e brutta notizia,Rockol specifically describes this track as Latin,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,track-specific
+geolier-diolosa,country,track: Una come te,Rockol explicitly calls this a country beat with guitar,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,track-specific
+geolier-diolosa,gospel,track: Per sempre,Rockol describes gospel-coloured opening,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,track-specific
+geolier-diolosa,funk,track: Una vita fa,Rockol describes instrumental funk ending,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,track-specific
+geolier-diolosa,jazz,"tracks: skit, 357",Rockol describes off-kilter jazz-like beat and jazzy underlay,https://www.rockol.it/recensioni-musicali/album/11105/geolier-dio-lo-sa,track-specific
+geolier-tuttoepossibile,hiphop,album,Rockol describes restrained vs hard-edged rap and west-coast-inflected track,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,primary
+geolier-tuttoepossibile,poprap,album,Rockol describes continuing rap/melody structure,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,cross-over editorial normalization
+geolier-tuttoepossibile,trap,track: Arcobaleno,Rockol explicitly identifies feature as Latin trap,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,parent genre
+geolier-tuttoepossibile,pop,album tracks,Rockol describes pop-friendly/radio hooks and melodic love tracks,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,broad category
+geolier-tuttoepossibile,latintrap,track: Arcobaleno,Rockol explicitly identifies Anuel AA as Latin-trap artist and song electronic/Latin influenced,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,NEW IDENTIFIER; feature-level not album dominant
+geolier-tuttoepossibile,latin,track: Arcobaleno,Rockol explicitly situates Arcobaleno in Latin idiom; album otherwise diverse,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,track only
+geolier-tuttoepossibile,jazz,track: Desiderio,Rockol: jazz-influenced episode with prominent sax,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,track only
+geolier-tuttoepossibile,indie,track: Canzone d’amore,Rockol: contemporaneous indie character,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,track only
+geolier-tuttoepossibile,westcoasthiphop,track: 1h,Rockol explicitly evokes West Coast hip hop 1980s-90s,https://www.rockol.it/recensioni-musicali/album/11709/geolier-tutto-e-possibile,NEW IDENTIFIER; one track

@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,catalog_status,action,evidence
+elisa-pipesflowers,elisa,Pipes & Flowers,1997,already present,"keep ID, title and original release year",P97_MB|P97_RO
+elisa-asilesworld,elisa,Asile’s World,2000,already present,keep existing curly-apostrophe catalogue title; descriptor may use canonical straight apostrophe? REVIEW title equality; recommend exact matching curly apostrophe in CSV,A00_SUGAR|A00_RO
+elisa-thencomesthesun,elisa,Then Comes the Sun,2001,already present,keep existing exact title/year/ID,T01_MB|T01_RO
