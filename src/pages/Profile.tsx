@@ -8,10 +8,15 @@ import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
-import { IconDisc, IconFlag, IconPin, IconTicket } from '../components/icons'
+import { IconChevronUp, IconDisc, IconFlag, IconLink, IconPin, IconPlus, IconTicket, IconX } from '../components/icons'
 import { BecomeModCard, ModBadge, ReportModal } from '../components/Moderation'
 import PageProfile from './PageProfile'
-import { canMessage } from '../store/reducer'
+import { canMessage, MAX_LINKS } from '../store/reducer'
+import { cleanLink, linkService, prettyUrl } from '../lib/media'
+import { Modal } from '../components/ui'
+import { useToast } from '../components/Toast'
+import { newId } from '../store/store'
+import type { ProfileLink, User } from '../data/types'
 
 type Tab = 'posts' | 'diary' | 'ratings' | 'likes'
 
@@ -61,6 +66,7 @@ export default function Profile() {
           </div>
           <ModBadge user={user} label />
           {user.bio && <p className="prof-bio">{user.bio}</p>}
+          <ProfileLinks user={user} isMe={isMe} />
           <div className="hero-actions center">
             {isMe ? (
               <Link to="/settings" className="pill-btn glass">
@@ -209,5 +215,118 @@ export default function Profile() {
         </div>
       )}
     </>
+  )
+}
+
+// Link-in-bio: the person's other places (socials, music, shop…), with anonymous click counts.
+function ProfileLinks({ user, isMe }: { user: User; isMe: boolean }) {
+  const { dispatch } = useStore()
+  const [editing, setEditing] = useState(false)
+  const links = user.links ?? []
+  if (!links.length && !isMe) return null
+  return (
+    <div className="prof-links">
+      {links.map((l) => {
+        const s = linkService(l.url)
+        return (
+          <a
+            key={l.id}
+            href={l.url}
+            target="_blank"
+            rel="noopener noreferrer nofollow ugc"
+            className="prof-link"
+            style={{ ['--c' as string]: s.color }}
+            onClick={() => dispatch({ type: 'clickLink', userId: user.id, id: l.id })}
+          >
+            <span className="link-disc">{s.key === 'web' ? <IconLink size={13} /> : s.label[0]}</span>
+            <span className="prof-link-label">{l.label || s.label}</span>
+            {isMe && <span className="link-clicks">{l.clicks}</span>}
+          </a>
+        )
+      })}
+      {isMe && (
+        <button className="prof-link add" onClick={() => setEditing(true)}>
+          <span className="link-disc">
+            <IconPlus size={13} />
+          </span>
+          {links.length ? 'Edit links' : 'Add your links'}
+        </button>
+      )}
+      {editing && (
+        <Modal title="Your links" onClose={() => setEditing(false)}>
+          <LinksEditor links={links} />
+        </Modal>
+      )}
+    </div>
+  )
+}
+
+function LinksEditor({ links }: { links: ProfileLink[] }) {
+  const { dispatch } = useStore()
+  const toast = useToast()
+  const [url, setUrl] = useState('')
+  const [label, setLabel] = useState('')
+  const clean = cleanLink(url)
+  const service = clean ? linkService(clean) : null
+  const total = links.reduce((n, l) => n + l.clicks, 0)
+  const add = () => {
+    if (!clean) return
+    if (links.some((l) => l.url === clean)) return toast('That link is already there')
+    dispatch({ type: 'addLink', id: newId(), url: clean, label })
+    setUrl('')
+    setLabel('')
+  }
+  return (
+    <div className="links-editor">
+      {links.length > 0 && (
+        <p className="muted small" style={{ margin: 0 }}>
+          {total} {total === 1 ? 'click' : 'clicks'} in total
+        </p>
+      )}
+      {links.map((l, i) => {
+        const s = linkService(l.url)
+        return (
+          <div key={l.id} className="link-row" style={{ ['--c' as string]: s.color }}>
+            <span className="link-disc">{s.key === 'web' ? <IconLink size={13} /> : s.label[0]}</span>
+            <span className="grow link-row-main">
+              <input value={l.label ?? ''} placeholder={s.label} onChange={(e) => dispatch({ type: 'editLink', id: l.id, label: e.target.value })} aria-label="Label" maxLength={40} />
+              <span className="muted small link-host">{prettyUrl(l.url).short}</span>
+            </span>
+            <span className="link-stat">
+              <strong>{l.clicks}</strong>
+              <span className="muted small">clicks</span>
+            </span>
+            <span className="link-tools">
+              <button className="icon-btn" aria-label="Move up" disabled={i === 0} onClick={() => dispatch({ type: 'moveLink', id: l.id, dir: -1 })}>
+                <IconChevronUp size={16} />
+              </button>
+              <button className="icon-btn" aria-label="Remove link" onClick={() => dispatch({ type: 'removeLink', id: l.id })}>
+                <IconX size={16} />
+              </button>
+            </span>
+          </div>
+        )
+      })}
+      {links.length < MAX_LINKS ? (
+        <div className="link-add">
+          <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Paste a link: instagram.com/you, a playlist, your site…" inputMode="url" aria-label="Link" onKeyDown={(e) => e.key === 'Enter' && add()} />
+          {service && (
+            <div className="link-add-row" style={{ ['--c' as string]: service.color }}>
+              <span className="link-disc">{service.key === 'web' ? <IconLink size={13} /> : service.label[0]}</span>
+              <input value={label} onChange={(e) => setLabel(e.target.value)} placeholder={`Label (default: ${service.label})`} maxLength={40} aria-label="Label" />
+              <button className="pill-btn ink small" onClick={add}>
+                Add
+              </button>
+            </div>
+          )}
+          {url && !clean && <span className="muted small">That doesn’t look like a web link.</span>}
+        </div>
+      ) : (
+        <p className="muted small">You can add up to {MAX_LINKS} links.</p>
+      )}
+      <p className="report-law small">
+        Clicks are counted anonymously: we store only a number for each link, never who clicked, and visitors get no cookies. Only you see the numbers.
+      </p>
+    </div>
   )
 }

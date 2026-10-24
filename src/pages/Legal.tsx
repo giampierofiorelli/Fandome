@@ -86,6 +86,12 @@ export function Privacy() {
         private messages are looked at only if one of the people in the chat reports them.
       </p>
 
+      <h2>Profile links</h2>
+      <p>
+        You can add links to your other profiles. When someone taps one, we add 1 to that link’s counter. We store only the number: no visitor identity, no IP address, no cookie. Only the profile owner
+        sees the numbers.
+      </p>
+
       <h2>Age</h2>
       <p>You must be at least 14 to join (art. 2-quinquies of the Italian Privacy Code). Below 14, a parent’s consent is required.</p>
 

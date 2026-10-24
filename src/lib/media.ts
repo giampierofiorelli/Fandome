@@ -138,3 +138,63 @@ export async function compressImage(file: File, max = 1280, quality = 0.82): Pro
     URL.revokeObjectURL(url)
   }
 }
+
+// Profile links: which service a link points to, for its label and colour.
+// We draw our own monogram instead of brand logos.
+export interface LinkService {
+  key: string
+  label: string
+  color: string
+}
+const SERVICES: { key: string; label: string; color: string; hosts: string[] }[] = [
+  { key: 'instagram', label: 'Instagram', color: '#e1306c', hosts: ['instagram.com'] },
+  { key: 'tiktok', label: 'TikTok', color: '#111111', hosts: ['tiktok.com'] },
+  { key: 'x', label: 'X', color: '#111111', hosts: ['x.com', 'twitter.com'] },
+  { key: 'threads', label: 'Threads', color: '#111111', hosts: ['threads.net', 'threads.com'] },
+  { key: 'bluesky', label: 'Bluesky', color: '#1185fe', hosts: ['bsky.app'] },
+  { key: 'facebook', label: 'Facebook', color: '#1877f2', hosts: ['facebook.com', 'fb.com'] },
+  { key: 'youtube', label: 'YouTube', color: '#ff0033', hosts: ['youtube.com', 'youtu.be'] },
+  { key: 'twitch', label: 'Twitch', color: '#9146ff', hosts: ['twitch.tv'] },
+  { key: 'spotify', label: 'Spotify', color: '#1db954', hosts: ['spotify.com'] },
+  { key: 'apple', label: 'Apple Music', color: '#fa2d48', hosts: ['music.apple.com'] },
+  { key: 'soundcloud', label: 'SoundCloud', color: '#ff5500', hosts: ['soundcloud.com'] },
+  { key: 'bandcamp', label: 'Bandcamp', color: '#1da0c3', hosts: ['bandcamp.com'] },
+  { key: 'deezer', label: 'Deezer', color: '#a238ff', hosts: ['deezer.com'] },
+  { key: 'tidal', label: 'TIDAL', color: '#111111', hosts: ['tidal.com'] },
+  { key: 'lastfm', label: 'Last.fm', color: '#d51007', hosts: ['last.fm'] },
+  { key: 'discogs', label: 'Discogs', color: '#333333', hosts: ['discogs.com'] },
+  { key: 'rym', label: 'Rate Your Music', color: '#2a5db0', hosts: ['rateyourmusic.com'] },
+  { key: 'mixcloud', label: 'Mixcloud', color: '#5000ff', hosts: ['mixcloud.com'] },
+  { key: 'tumblr', label: 'Tumblr', color: '#36465d', hosts: ['tumblr.com'] },
+  { key: 'pinterest', label: 'Pinterest', color: '#e60023', hosts: ['pinterest.com', 'pin.it'] },
+  { key: 'reddit', label: 'Reddit', color: '#ff4500', hosts: ['reddit.com'] },
+  { key: 'discord', label: 'Discord', color: '#5865f2', hosts: ['discord.gg', 'discord.com'] },
+  { key: 'telegram', label: 'Telegram', color: '#26a5e4', hosts: ['t.me', 'telegram.me'] },
+  { key: 'substack', label: 'Substack', color: '#ff6719', hosts: ['substack.com'] },
+  { key: 'patreon', label: 'Patreon', color: '#ff424d', hosts: ['patreon.com'] },
+  { key: 'kofi', label: 'Ko-fi', color: '#ff5e5b', hosts: ['ko-fi.com'] },
+  { key: 'linkedin', label: 'LinkedIn', color: '#0a66c2', hosts: ['linkedin.com'] },
+  { key: 'letterboxd', label: 'Letterboxd', color: '#40bcf4', hosts: ['letterboxd.com'] },
+]
+export function linkService(url: string): LinkService {
+  try {
+    const host = new URL(url).hostname.replace(/^www\.|^m\./, '')
+    const s = SERVICES.find((x) => x.hosts.some((h) => host === h || host.endsWith(`.${h}`)))
+    if (s) return { key: s.key, label: s.label, color: s.color }
+    return { key: 'web', label: host, color: '#6b7280' }
+  } catch {
+    return { key: 'web', label: url, color: '#6b7280' }
+  }
+}
+// Accept "instagram.com/me" or "https://…"; only http(s) links.
+export function cleanLink(input: string): string | null {
+  const v = input.trim()
+  if (!v) return null
+  try {
+    const u = new URL(/^https?:\/\//i.test(v) ? v : `https://${v}`)
+    if (!/^https?:$/.test(u.protocol) || !u.hostname.includes('.')) return null
+    return u.toString()
+  } catch {
+    return null
+  }
+}

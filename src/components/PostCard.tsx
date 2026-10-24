@@ -85,7 +85,13 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
         </div>
       )}
       <div className="post-main">
-        <Avatar user={author} size={embedded ? 26 : 42} />
+        {author ? (
+          <Link to={`/u/${author.handle}`} className="post-avatar" onClick={(e) => e.stopPropagation()} aria-label={`${author.name}’s profile`}>
+            <Avatar user={author} size={embedded ? 26 : 42} />
+          </Link>
+        ) : (
+          <Avatar user={author} size={embedded ? 26 : 42} />
+        )}
         <div className="post-body">
           <header className="post-head">
             <UserLink user={author} />

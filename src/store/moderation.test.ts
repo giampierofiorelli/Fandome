@@ -63,3 +63,15 @@ describe('reports without a profile and pin order', () => {
     expect(reducer(s, { type: 'movePin', postId: 'c', dir: -1 })).toBe(s)
   })
 })
+
+describe('profile links', () => {
+  it('adds up to 8 links and counts clicks anonymously, not your own', () => {
+    let s = me()
+    s = reducer(s, { type: 'addLink', id: 'l', url: 'https://instagram.com/gianni' })
+    expect(reducer(s, { type: 'addLink', id: 'bad', url: 'javascript:alert(1)' })).toBe(s)
+    s = reducer(s, { type: 'clickLink', userId: 'me', id: 'l' })
+    expect(s.users.find((u) => u.id === 'me')!.links![0].clicks).toBe(0)
+    s = reducer({ ...s, meId: 'u-giulia' }, { type: 'clickLink', userId: 'me', id: 'l' })
+    expect(s.users.find((u) => u.id === 'me')!.links![0]).toEqual({ id: 'l', url: 'https://instagram.com/gianni', label: undefined, clicks: 1 })
+  })
+})

@@ -64,3 +64,16 @@ describe('voice note waveform', () => {
     expect(p[0]).toBeCloseTo(0.08)
   })
 })
+
+describe('profile link services', () => {
+  it('recognises services and cleans links', async () => {
+    const { linkService, cleanLink } = await import('./media')
+    expect(linkService('https://www.instagram.com/x').label).toBe('Instagram')
+    expect(linkService('https://artist.bandcamp.com/album/y').key).toBe('bandcamp')
+    expect(linkService('https://music.apple.com/it/album/z').label).toBe('Apple Music')
+    expect(linkService('https://example.org/me')).toMatchObject({ key: 'web', label: 'example.org' })
+    expect(cleanLink('instagram.com/me')).toBe('https://instagram.com/me')
+    expect(cleanLink('javascript:alert(1)')).toBeNull()
+    expect(cleanLink('hello')).toBeNull()
+  })
+})

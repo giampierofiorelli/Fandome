@@ -57,6 +57,11 @@ export type Action =
   | { type: 'requestVerification'; pageId: Id }
   | { type: 'report'; id: Id; at: number; target: Report['target']; reason: ReportReason; note?: string; contact?: Report['contact']; goodFaith: boolean }
   | { type: 'movePin'; postId: Id; dir: -1 | 1 }
+  | { type: 'addLink'; id: Id; url: string; label?: string }
+  | { type: 'editLink'; id: Id; label: string }
+  | { type: 'removeLink'; id: Id }
+  | { type: 'moveLink'; id: Id; dir: -1 | 1 }
+  | { type: 'clickLink'; userId: Id; id: Id }
   | { type: 'resolveReport'; reportId: Id; action: 'remove' | 'dismiss'; reason?: ReportReason; note?: string; at: number }
   | { type: 'appeal'; postId: Id; text: string; at: number }
   | { type: 'decideAppeal'; postId: Id; restore: boolean }
@@ -177,6 +182,28 @@ function apply(state: State, action: Action): State {
       }
       return { ...state, users: state.users.map((u) => (u.id === owner.id ? { ...u, pinned } : u)) }
     }
+    case 'addLink': {
+      const u = state.users.find((x) => x.id === me)
+      if (!me || !u || isGuest(state) || (u.links?.length ?? 0) >= MAX_LINKS || !/^https?:\/\//.test(action.url)) return state
+      return updateMe(state, (x) => ({ ...x, links: [...(x.links ?? []), { id: action.id, url: action.url, label: action.label?.trim() || undefined, clicks: 0 }] }))
+    }
+    case 'editLink':
+      return updateMe(state, (x) => ({ ...x, links: x.links?.map((l) => (l.id === action.id ? { ...l, label: action.label.trim() || undefined } : l)) }))
+    case 'removeLink':
+      return updateMe(state, (x) => ({ ...x, links: x.links?.filter((l) => l.id !== action.id) }))
+    case 'moveLink':
+      return updateMe(state, (x) => {
+        const list = [...(x.links ?? [])]
+        const i = list.findIndex((l) => l.id === action.id)
+        const j = i + action.dir
+        if (i < 0 || j < 0 || j >= list.length) return x
+        ;[list[i], list[j]] = [list[j], list[i]]
+        return { ...x, links: list }
+      })
+    case 'clickLink':
+      // Anonymous counter: no visitor id, no IP, no cookie. Your own clicks don't count.
+      if (action.userId === me) return state
+      return { ...state, users: state.users.map((u) => (u.id === action.userId ? { ...u, links: u.links?.map((l) => (l.id === action.id ? { ...l, clicks: l.clicks + 1 } : l)) } : u)) }
     case 'movePin': {
       const p = state.posts.find((x) => x.id === action.postId)
       if (!me || !p || !(p.authorId === me || canManagePage(state, p.authorId, me))) return state
@@ -425,6 +452,7 @@ function apply(state: State, action: Action): State {
 export const DAY = 24 * 60 * 60_000
 export const MAX_POST_ARTISTS = 4
 export const MAX_PINS = 3
+export const MAX_LINKS = 8
 // A DM stays until seen, then for 24h after being seen.
 export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
 export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)
