@@ -472,6 +472,8 @@ const ROWS: Row[] = [
   ['bandabardo', 'Bandabardò', '#e08a3f', 'Folk-rock party from Florence', []],
   ['goblin', 'Goblin', '#6a3f3f', 'Prog rock and horror soundtracks', [['Profondo rosso', 1975], ['Roller', 1976], ['Suspiria', 1977]]],
   ['ildivo', 'Il Divo', '#8a7aa8', 'Four voices, operatic pop', [['Il Divo', 2004], ['Ancora', 2005], ['Siempre', 2006]]],
+  ['gnr', 'Guns N’ Roses', '#c93f3f', 'Welcome to the jungle, and to this room', [['Appetite for Destruction', 1987], ['G N’ R Lies', 1988], ['Use Your Illusion I', 1991], ['Use Your Illusion II', 1991], ['Chinese Democracy', 2008]]],
+  ['pearljam', 'Pearl Jam', '#6f8a7a', 'Seattle’s enduring live band', [['Ten', 1991], ['Vs.', 1993], ['Vitalogy', 1994], ['No Code', 1996], ['Yield', 1998], ['Gigaton', 2020], ['Dark Matter', 2024]]],
 ]
 
 const slug = (s: string) =>
