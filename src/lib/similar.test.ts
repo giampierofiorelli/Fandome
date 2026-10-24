@@ -106,13 +106,17 @@ describe('discovery and "Not for me"', () => {
   const artistOf = (id: string) => albums.find((a) => a.id === id)?.artistId
   const countryOf = (id: string) => ({ madonna: 'US', charlixcx: 'GB', elodie: 'IT', annalisa: 'IT' })[artistOf(id) ?? ''] as string | undefined
 
-  it('gives a small push to albums from another country and says where they come from', () => {
-    const plain = similarAlbums('elodie-okrespira', { artistOf })
-    const disc = similarAlbums('elodie-okrespira', { artistOf, countryOf })
-    const madonna = disc.find((s) => artistOf(s.albumId) === 'madonna')!
-    expect(madonna.newCountry).toBe('US')
-    expect(madonna.score).toBeCloseTo(plain.find((s) => s.albumId === madonna.albumId)!.score + 0.05)
-    expect(disc.filter((s) => artistOf(s.albumId) === 'annalisa').every((s) => !s.newCountry)).toBe(true)
+  it('pushes local scenes from another country, never the global US/UK markets', () => {
+    // From Madonna (US): Italian albums get the push and say where they come from.
+    const plain = similarAlbums('m-confessions', { artistOf })
+    const disc = similarAlbums('m-confessions', { artistOf, countryOf })
+    const italian = disc.find((s) => countryOf(s.albumId) === 'IT')!
+    expect(italian.newCountry).toBe('IT')
+    const before = plain.find((s) => s.albumId === italian.albumId)
+    if (before) expect(italian.score).toBeCloseTo(before.score + 0.05)
+    // From Elodie (IT): Madonna (US) and Charli xcx (UK) get no discovery push.
+    const fromItaly = similarAlbums('elodie-okrespira', { artistOf, countryOf })
+    expect(fromItaly.filter((s) => ['US', 'GB'].includes(countryOf(s.albumId) ?? '')).every((s) => !s.newCountry)).toBe(true)
   })
 
   it('never shows hidden albums or artists again', () => {
@@ -122,11 +126,11 @@ describe('discovery and "Not for me"', () => {
   })
 
   it('hides artists you said are not for you, and marks artists from a new country', () => {
-    const me = { id: 'me', name: 'Me', fanSince: { elodie: 2020 }, following: [], ratings: {}, notForMe: ['madonna'] } as unknown as User
-    const s = suggestArtists(me, [], artists.filter((a) => ['madonna', 'charlixcx', 'annalisa', 'elodie'].includes(a.id)), 4, albums)
+    const me = { id: 'me', name: 'Me', fanSince: { charlixcx: 2020 }, following: [], ratings: {}, notForMe: ['madonna'] } as unknown as User
+    const s = suggestArtists(me, [], artists.filter((a) => ['madonna', 'charlixcx', 'annalisa', 'elodie', 'kylie'].includes(a.id)), 4, albums)
     expect(s.map((x) => x.artist.id)).not.toContain('madonna')
-    expect(s.find((x) => x.artist.id === 'charlixcx')?.newCountry).toBe('United Kingdom')
-    expect(s.find((x) => x.artist.id === 'annalisa')?.newCountry).toBeUndefined()
+    expect(s.find((x) => x.artist.id === 'annalisa')?.newCountry).toBe('Italy')
+    expect(s.find((x) => x.artist.id === 'kylie')?.newCountry).toBeUndefined()
   })
 })
 

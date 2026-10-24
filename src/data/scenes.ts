@@ -168,3 +168,15 @@ export function sceneLine(artistId: string): string | null {
 
 // "from the United States", "from Italy".
 export const fromCountry = (name: string) => `from ${/^(United|Netherlands|Philippines|Dominican|Czech|Bahamas)/.test(name) ? 'the ' : ''}${name}`
+
+// Global English-language markets: everyone already hears them, so discovery never pushes towards
+// them (no bonus, no Bridge, no "scene you don't know yet"). Discovery goes to local scenes
+// (Italy, Brazil, Spain and Latin America, France, Afro, Korea… see ROADMAP "Scenes").
+export const GLOBAL_MARKETS = new Set(['US', 'GB', 'CA', 'AU', 'IE'])
+export const isLocalScene = (country?: string) => Boolean(country && !GLOBAL_MARKETS.has(country))
+// A local-scene artist: outside the global markets and singing mainly in a language other than
+// English (Robyn or Kim Petras sing English pop: global, not a scene to discover).
+export const isLocalArtist = (artistId?: string) => {
+  const s = artistId ? SCENES[artistId] : undefined
+  return Boolean(s && isLocalScene(s.country) && s.lang !== 'en')
+}

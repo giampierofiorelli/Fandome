@@ -1,17 +1,26 @@
 import { describe, expect, it } from 'vitest'
 import { discoverPaths } from './paths'
 import { albums, artists } from '../data/seed'
-import { sceneOf } from '../data/scenes'
+import { isLocalArtist, sceneOf } from '../data/scenes'
 import type { User } from '../data/types'
 
 const fan = (fans: string[], notForMe: string[] = []) => ({ id: 'me', name: 'Me', fanSince: Object.fromEntries(fans.map((f) => [f, 2020])), following: [], ratings: {}, notForMe }) as unknown as User
 
 describe('discovery paths', () => {
-  it('builds a bridge to another country with a concrete reason', () => {
-    const [bridge] = discoverPaths(fan(['elodie', 'annalisa']), artists, albums)
+  it('builds a bridge to a local scene in another country, with a concrete reason', () => {
+    const [bridge] = discoverPaths(fan(['charlixcx']), artists, albums)
     expect(bridge.kind).toBe('bridge')
-    expect(sceneOf(bridge.artistId)!.country).not.toBe('IT')
-    expect(bridge.reason).toMatch(/^From the United States · OK\. Respira sounds like Madonna/)
+    expect(sceneOf(bridge.artistId)!.country).toBe('IT')
+    expect(bridge.reason).toMatch(/^From Italy · /)
+  })
+
+  it('never sends discovery to the global markets or to English-language pop', () => {
+    for (const fans of [['elodie', 'annalisa'], ['charlixcx'], ['mahmood'], ['madonna', 'kylie', 'blanco']]) {
+      for (const p of discoverPaths(fan(fans), artists, albums)) {
+        expect(isLocalArtist(p.artistId)).toBe(true)
+        expect(['US', 'GB', 'CA', 'AU', 'IE']).not.toContain(sceneOf(p.artistId)!.country)
+      }
+    }
   })
 
   it('goes deeper into the scene of an artist you follow from abroad', () => {

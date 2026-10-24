@@ -1,11 +1,13 @@
 // Three discovery paths in Explore (owner's Scenes plan, see ROADMAP):
-//   Bridge: an artist you follow → a close artist from another country
-//   Go deeper: you follow an artist from abroad → more from that scene
-//   A scene you don't know yet: a country none of your artists come from, entered through its
+//   Bridge: an artist you follow → a close artist from another country's local scene
+//   Go deeper: you follow an artist from a local scene abroad → more from that scene
+//   A scene you don't know yet: a local scene none of your artists come from, entered through its
 //   artist closest to what you follow; rotates weekly.
 // Country and genres come from scenes.ts (every room); the Bridge also uses album descriptors.
+// Discovery targets are local-scene artists only: outside the global markets (US, UK, Canada,
+// Australia, Ireland) and singing mainly in their own language, not English.
 import type { Album, Artist, User } from '../data/types'
-import { COUNTRY_NAMES, GENRE_LABELS, fromCountry, sceneOf, type Genre } from '../data/scenes'
+import { COUNTRY_NAMES, GENRE_LABELS, fromCountry, isLocalArtist, sceneOf, type Genre } from '../data/scenes'
 import { genreListSimilarity, similarArtists } from './similar'
 
 export interface PathSuggestion {
@@ -38,7 +40,7 @@ export function discoverPaths(me: User, artists: Artist[], albums: Album[], now 
   const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
   let bridge: { from: string; to: string; reason: string; score: number } | null = null
   for (const f of followed) {
-    const best = similarArtists(f, albumIdsOf, artists.map((a) => a.id).filter(free), { countryOf: (id) => sceneOf(id)?.country, limit: 8 }).find((s) => s.newCountry && !myCountries.has(s.newCountry))
+    const best = similarArtists(f, albumIdsOf, artists.map((a) => a.id).filter(free), { countryOf: (id) => sceneOf(id)?.country, limit: 8 }).find((s) => s.newCountry && !myCountries.has(s.newCountry) && isLocalArtist(s.artistId))
     if (best && (!bridge || best.score > bridge.score)) bridge = { from: f, to: best.artistId, reason: best.reason, score: best.score }
   }
   if (!bridge) {
@@ -46,7 +48,7 @@ export function discoverPaths(me: User, artists: Artist[], albums: Album[], now 
       const fs = sceneOf(f)!
       for (const a of artists) {
         const s = sceneOf(a.id)
-        if (!free(a.id) || !s || myCountries.has(s.country)) continue
+        if (!free(a.id) || !s || myCountries.has(s.country) || !isLocalArtist(a.id)) continue
         const score = genreListSimilarity(fs.genres, s.genres)
         if (score >= 0.5 && (!bridge || score > bridge.score)) {
           const common = shared(fs.genres, s.genres)
@@ -63,10 +65,10 @@ export function discoverPaths(me: User, artists: Artist[], albums: Album[], now 
   let deeper: { from: string; to: string; score: number } | null = null
   for (const f of followed) {
     const fs = sceneOf(f)!
-    if (fs.country === home) continue
+    if (fs.country === home || !isLocalArtist(f)) continue
     for (const a of artists) {
       const s = sceneOf(a.id)
-      if (!free(a.id) || !s || s.country !== fs.country) continue
+      if (!free(a.id) || !s || s.country !== fs.country || !isLocalArtist(a.id)) continue
       const score = genreListSimilarity(fs.genres, s.genres)
       if (score > 0.2 && (!deeper || score > deeper.score)) deeper = { from: f, to: a.id, score }
     }
@@ -88,7 +90,7 @@ export function discoverPaths(me: User, artists: Artist[], albums: Album[], now 
   const count = new Map<string, number>()
   for (const a of artists) {
     const s = sceneOf(a.id)
-    if (!s || myCountries.has(s.country) || usedCountries.has(s.country)) continue
+    if (!s || myCountries.has(s.country) || usedCountries.has(s.country) || !isLocalArtist(a.id)) continue
     count.set(s.country, (count.get(s.country) ?? 0) + 1)
     if (!free(a.id)) continue
     const score = genreListSimilarity(myGenres, s.genres)

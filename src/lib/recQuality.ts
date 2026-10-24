@@ -10,7 +10,7 @@ export interface Quality {
   coverage: number // share of described albums suggested at least once (long tail, not just hits)
   artistCoverage: number // share of described artists suggested at least once
   diversity: number // 1 − average genre similarity inside a list (higher = more varied)
-  novelty: number // share of suggestions from another country than the album you start from
+  novelty: number // share of suggestions from a local scene in another country (never US/UK)
   explained: number // share of suggestions with at least one reason (must be 1)
   empty: number // albums with no suggestion at all
   topShare: number // share of all suggestions taken by the single most suggested album (popularity bias)

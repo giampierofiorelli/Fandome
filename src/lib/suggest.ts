@@ -4,7 +4,7 @@
 // sound (album descriptors: albums you rated highly, then the albums of artists you follow).
 import type { Album, Artist, User } from '../data/types'
 import { soundMatch, type AlbumSeed } from './similar'
-import { COUNTRY_NAMES, sceneOf } from '../data/scenes'
+import { COUNTRY_NAMES, isLocalArtist, sceneOf } from '../data/scenes'
 
 export interface ArtistSuggestion {
   artist: Artist
@@ -40,7 +40,7 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
   const seeds = fanSeeds(me, albums)
   const avoid = avoidAlbums(me, albums)
   const hidden = new Set(me.notForMe ?? [])
-  // Discovery: a small push for artists from countries none of your artists come from.
+  // Discovery: a small push for artists from local scenes none of your artists come from (not US/UK).
   const myCountries = new Set([...mine].map((id) => sceneOf(id)?.country).filter(Boolean))
   const rows: { artist: Artist; social: number; sound: number; friends: string[]; topFan?: string; soundReason?: string }[] = []
   for (const a of artists) {
@@ -68,7 +68,7 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
     .map((r) => {
       const reason = r.friends.length ? `Followed by ${names(r.friends)}` : r.soundReason ?? `Fans of ${r.topFan} also follow`
       const country = sceneOf(r.artist.id)?.country
-      const isNew = Boolean(country && myCountries.size && !myCountries.has(country))
+      const isNew = Boolean(country && myCountries.size && !myCountries.has(country) && isLocalArtist(r.artist.id))
       const score = 0.5 * (r.social / maxSocial) + 0.5 * r.sound + (isNew ? 0.05 : 0)
       return { artist: r.artist, reason, score, newCountry: isNew ? COUNTRY_NAMES[country!] ?? country : undefined }
     })

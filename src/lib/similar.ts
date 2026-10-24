@@ -8,7 +8,7 @@
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
-import type { Genre } from '../data/scenes'
+import { isLocalArtist, type Genre } from '../data/scenes'
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
 const and = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`)
@@ -315,7 +315,8 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 
 // ---------- ranking: discovery, things you don't like, variety ----------
 
-// Discovery bonus: a small push for albums and artists from another country, so suggestions cross scenes.
+// Discovery bonus: a small push for albums and artists from another country's local scene (never the
+// global US/UK markets), so suggestions cross scenes.
 export const DISCOVERY = 0.05
 // What you rated low or said is not for you pushes similar things down (up to this much).
 const AVOID = 0.3
@@ -358,6 +359,7 @@ export function similarAlbums(
     avoid?: string[] // album ids you rated low or hid: similar albums are pushed down
   } = {},
 ): Similar[] {
+  const local = (id: string) => isLocalArtist(opts.artistOf?.(id))
   const { limit = 5, perArtist = 2, hide = [] } = opts
   const a = profileOf(albumId)
   if (!a) return []
@@ -371,7 +373,7 @@ export function similarAlbums(
       const b = albumProfile(d)
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
-      const isNew = Boolean(from && to && from !== to)
+      const isNew = Boolean(from && to && from !== to && local(d.albumId))
       return { albumId: d.albumId, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined }
     })
     .filter((s) => s.score >= 0.2 && s.reasons.length)
@@ -456,7 +458,7 @@ export function similarArtists(
     }
     // Profile resemblance (repeated traits) and the best concrete album pair, half each.
     const to = opts.countryOf?.(other)
-    const isNew = Boolean(from && to && from !== to)
+    const isNew = Boolean(from && to && from !== to && isLocalArtist(other))
     const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid)
     const why = best?.c.reasons[0] ?? c.reasons[0]
     if (score < 0.3 || !why || !best) continue
