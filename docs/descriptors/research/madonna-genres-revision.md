@@ -7,7 +7,7 @@ Asked by the owner after the genres house, techno, ambient, trip-hop, art pop, g
 | Like a Prayer | pop, rnb, rock | pop, gospel, funk | Phase 02: gospel choir (Pitchfork, Leonard interview), funk tracks (AllMusic) |
 | Erotica | pop, dance, rnb | house, pop, rnb | Phase 02: house beats (Pitchfork 2026, Slant 2007/2022); Betts' hip-hop/R&B side |
 | Ray of Light | electronic, pop, dance | electronic, pop, trip-hop | Phase 03: trip-hop rhythms (AllMusic), many downtempo tracks |
-| Rebel Heart | pop, dance, electronic | pop, house, gospel | Phase 05: gospel house "Living for Love" (Pitchfork), 90s house touch (Slant). Gospel added by the owner; electronic dropped (max 3 genres) |
+| Rebel Heart | pop, dance, electronic | pop, gospel house | Phase 05: gospel house "Living for Love" (Pitchfork), 90s house touch (Slant). Owner: gospel house as its own genre, no plain house |
 | Madame X | pop, latin, electronic | pop, fado, Cape Verdean | Phase 05: fado and batuque at the core (Pitchfork, Guardian); `latin` was a proxy the researcher flagged |
 | CONFESSIONS II | dance, electronic, disco | house, dance, disco | Phase 05: Chicago/acid house (Pitchfork, Guardian, Price interview) |
 
