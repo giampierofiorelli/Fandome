@@ -1,0 +1,3 @@
+album_id,artist,title,original_year,type,catalog_status,expected_catalog_id,instruction,edition
+trentemoller-memoria,Trentemøller,Memoria,2022,studio,already_in_catalog,trentemoller-memoria,Keep existing album id; add only this new Phase 03 descriptor row,Original 14-track 2022 studio edition
+trentemoller-dreamweaver,Trentemøller,Dreamweaver,2024,studio,add_to_catalogue,trentemoller-dreamweaver,Add new 2024 album to src/data/catalog.ts; append only this Phase 03 descriptor row,Original 10-track 2024 studio edition

@@ -1,0 +1,38 @@
+album_id,genre,scope,source_keys,evidence,strength
+trentemoller-memoria,electronic,whole album,M_AM|M_Q|M_BC,Licensed electronica/electronic category; programmed layers throughout,high
+trentemoller-memoria,dreampop,whole album,M_BC|M_SV|M_MAG,Bandcamp explicit genre; Danish critics and Magnetic see core melodic dream-pop material,high
+trentemoller-memoria,shoegaze,whole album,M_BC|M_SV|M_UT|M_GA,Official shoegaze tag corroborated by multiple Danish specialist reviews,high
+trentemoller-memoria,electronica,whole album,M_SV|M_GA,Soundvenue expressly frames album as electronica merged with shoegaze,high
+trentemoller-memoria,indierock,substantial album style,M_BC|M_NMR,"Official indie-rock tag, live guitar and band interplay",medium
+trentemoller-memoria,postrock,substantial,M_MAG|M_ED,Magnetic describes several post-rock cuts and album hybrid; Echoes and Dust corroborates,high
+trentemoller-memoria,postpunk,some tracks / album style,M_SV|M_WIM|M_YEAR,In the Gloaming and Dead or Alive carry post-punk rhythmic/song signatures,high
+trentemoller-memoria,ambient,substantial / instrumental tracks,M_ECHO|M_MAG|M_NMR,Substantial long ambient passages and Linger close; not uniformly ambient,high
+trentemoller-memoria,krautrock,one strong track,M_SV|M_ED|M_NMR,When The Sun Explodes explicitly identified as krautrock; not 14-track blanket,high
+trentemoller-memoria,newwave,stylistic lineage / some tracks,M_ECHO|M_LAUT,New-wave reference in critic comparisons and song timbre,medium
+trentemoller-memoria,synthwave,style/track colours,M_WIM,Dutch review explicitly names synthwave references,medium
+trentemoller-memoria,noiserock,one track,M_BC|M_NMR,Label and critic directly label Dead Or Alive a noise-rock outburst,high
+trentemoller-memoria,pop,substantial melodic approach,M_ED|M_NMR,Echoes and Dust calls an unusually pop-oriented set; still hybrid and instrumental,medium
+trentemoller-memoria,rock,some songs / texture,M_SV|M_ED,Guitar-rock voice and feedback rather than a pure electronic record,medium
+trentemoller-memoria,indie,whole-album broad class,M_NMR,Indie named explicitly in Nordic Music Review as component,medium
+trentemoller-memoria,punk,one track / dynamic reference,M_BC|M_NMR,"Dead Or Alive punk drive, not a punk album",medium
+trentemoller-memoria,indiedance,limited tracks / editorial translation,M_MAG|M_YEAR,Indie-dance phrasing and rhythmic In the Gloaming; indie-dance token kept distinct from alternative dance; low album-wide salience,low
+trentemoller-dreamweaver,dreampop,whole album,D_BC|D_OD|D_QMAG|D_BIO,"Primary label, artist, independent critics agree dream-pop album identity",high
+trentemoller-dreamweaver,shoegaze,whole album,D_BC|D_BIO|D_OD|D_MEL,Repeated official and qualified shoegaze classification; densely effected guitars,high
+trentemoller-dreamweaver,darkwave,whole album,D_BIO|D_OD|D_MEL,Label biography and qualified critics label darkwave,high
+trentemoller-dreamweaver,indierock,substantial,D_BC|D_QMAG,Official indie-rock tag; artist says it contributes to this album,high
+trentemoller-dreamweaver,electronic,whole album hybrid,D_OD|D_MEL|D_Q,Critic electronic label; per-song credited programming/keys despite organic priority,high
+trentemoller-dreamweaver,newwave,substantial / style,D_OOR|D_OD,OOR explicitly hears vintage new-wave sound on album; OndaRock corroborates wave tracks,high
+trentemoller-dreamweaver,postpunk,substantial / lineage,D_MEL|D_BIO,Specialist genre tag plus album darkwave rhythm and bass vocabulary,medium
+trentemoller-dreamweaver,synthpop,several tracks,D_QOBREV,Qobuz expressly identifies synthpop arrangements including Behind My Eyes,high
+trentemoller-dreamweaver,electropop,one highlighted track,D_OD,OndaRock explicitly labels Dreamweavers song electropop,high
+trentemoller-dreamweaver,noiserock,two tracks,D_OFF|D_OOR,"Behind My Eyes / In A Storm guitar-climax noise rock, not the whole album",high
+trentemoller-dreamweaver,ambient,closing section,D_OFF|D_NP,Winter’s Ghost and Closure ambient-adjacent close; Dutch reviewer also names ambient,high
+trentemoller-dreamweaver,slowcore,closing section,D_OFF,Official description uses slo-core on last two tracks; track-limited,medium
+trentemoller-dreamweaver,spacerock,one track,D_OFF|D_BC,Official A Different Light described as space rock/folk blend,high
+trentemoller-dreamweaver,folk,some songs / influence,D_OFF|D_MET,A Different Light guitar folk; Nick Drake informed guitar decision,high
+trentemoller-dreamweaver,psychedelicrock,style reference / inspiration,D_BIO|D_MET,Label album described more psychedelic; artist invokes 1970s psych rock on song,medium
+trentemoller-dreamweaver,postrock,specialist album genre tag,D_MEL,Specialist review explicitly lists post-rock; less corroborated by others,medium
+trentemoller-dreamweaver,synthwave,some tracks / critical analogy,D_SV,Sound & Vision says synthwave wash; avoid treating as entire album,medium
+trentemoller-dreamweaver,indie,broad album metadata,D_OOR|D_Q,OOR labels album indie; Qobuz places in Alternative & Indie category,medium
+trentemoller-dreamweaver,rock,broad album category,D_Q|D_OFF,Guitar band sonics and Qobuz Pop/Rock/rock category,medium
+trentemoller-dreamweaver,alt,broad tag,D_BC|D_Q,Official alternative tag and Qobuz Alternative & Indie category; broad not alt-rock claim,medium

@@ -41,4 +41,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   bigbeat: ['breakbeat', 'electronic'], chillwave: ['synthpop', 'indie'], synthwave: ['synthpop', 'electronic'], hardhouse: ['house'], techhouse: ['house', 'techno'], acousticpop: ['pop', 'folk'], teenpop: ['pop'], altpop: ['pop', 'alt'], countrypop: ['country', 'pop'], gfunk: ['hiphop', 'funk'], bluegrass: ['country', 'folk'], discopop: ['disco', 'pop'], yachtrock: ['softrock'], quietstorm: ['rnb', 'soul'],
   dub: ['reggae', 'electronic'], experimental: ['electronic'], experimentaltechno: ['techno'], gothabilly: ['rock'], idm: ['electronic'], minimaltechno: ['techno'], neofolk: ['folk'], postpunk: ['punk', 'rock'], postrock: ['rock'], shoegaze: ['indie', 'rock'], surfrock: ['rock'],
   altcountry: ['country', 'alt'], electrogaze: ['electronic', 'shoegaze'], electropunk: ['electronic', 'punk'], gothicamericana: ['rock', 'folk'], indieelectronic: ['indie', 'electronic'], krautrock: ['rock', 'experimental'], neoambient: ['ambient'], postgoth: ['postpunk', 'darkwave'], slowcore: ['indie', 'rock'],
+  indiedance: ['dance', 'indie'], noiserock: ['rock'], spacerock: ['rock'], psychedelicrock: ['rock'],
 }

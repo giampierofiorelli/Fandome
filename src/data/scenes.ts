@@ -17,7 +17,7 @@ export type Genre =
   | 'electroclash' | 'bloghouse' | 'pianohouse' | 'trance'
   | 'indierock' | 'slackerrock' | 'indietronica' | 'postpunkrevival' | 'alternativedance'
   | 'urbanpop' | 'bossanova' | 'folkpop' | 'afrobeat' | 'poprap' | 'posttrap' | 'poprock' | 'electrorock' | 'punkrock' | 'jungle'
-  | 'hardcorehiphop' | 'latintrap' | 'westcoasthiphop' | 'nusoul' | 'alternativerock' | 'adultalternativepoprock' | 'electronica' | 'downtempo' | 'softrock' | 'classicalcrossover' | 'drumandbass' | 'itpop' | 'calypsopop' | 'hiprock' | 'drill' | 'contemporaryrnb' | 'hiphopsoul' | 'bubblegumpop' | 'europop' | 'chillout' | 'downbeat' | 'electro' | 'rave' | 'ambientbreakbeat' | 'bigbeat' | 'chillwave' | 'synthwave' | 'hardhouse' | 'techhouse' | 'acousticpop' | 'teenpop' | 'altpop' | 'countrypop' | 'gfunk' | 'bluegrass' | 'discopop' | 'yachtrock' | 'quietstorm' | 'dub' | 'experimental' | 'experimentaltechno' | 'gothabilly' | 'idm' | 'minimaltechno' | 'neofolk' | 'postpunk' | 'postrock' | 'shoegaze' | 'surfrock' | 'altcountry' | 'electrogaze' | 'electropunk' | 'gothicamericana' | 'indieelectronic' | 'krautrock' | 'neoambient' | 'postgoth' | 'slowcore'
+  | 'hardcorehiphop' | 'latintrap' | 'westcoasthiphop' | 'nusoul' | 'alternativerock' | 'adultalternativepoprock' | 'electronica' | 'downtempo' | 'softrock' | 'classicalcrossover' | 'drumandbass' | 'itpop' | 'calypsopop' | 'hiprock' | 'drill' | 'contemporaryrnb' | 'hiphopsoul' | 'bubblegumpop' | 'europop' | 'chillout' | 'downbeat' | 'electro' | 'rave' | 'ambientbreakbeat' | 'bigbeat' | 'chillwave' | 'synthwave' | 'hardhouse' | 'techhouse' | 'acousticpop' | 'teenpop' | 'altpop' | 'countrypop' | 'gfunk' | 'bluegrass' | 'discopop' | 'yachtrock' | 'quietstorm' | 'dub' | 'experimental' | 'experimentaltechno' | 'gothabilly' | 'idm' | 'minimaltechno' | 'neofolk' | 'postpunk' | 'postrock' | 'shoegaze' | 'surfrock' | 'altcountry' | 'electrogaze' | 'electropunk' | 'gothicamericana' | 'indieelectronic' | 'krautrock' | 'neoambient' | 'postgoth' | 'slowcore' | 'indiedance' | 'noiserock' | 'spacerock' | 'psychedelicrock'
 
 export interface ArtistScene {
   country: string
@@ -162,6 +162,7 @@ export const GENRE_LABELS: Record<Genre, string> = {
   bigbeat: 'Big beat', chillwave: 'Chillwave', synthwave: 'Synthwave', hardhouse: 'Hard house', techhouse: 'Tech house', acousticpop: 'Acoustic pop', teenpop: 'Teen pop', altpop: 'Alt-pop', countrypop: 'Country pop', gfunk: 'G-funk', bluegrass: 'Bluegrass', discopop: 'Disco-pop', yachtrock: 'Yacht rock', quietstorm: 'Quiet storm',
   dub: 'Dub', experimental: 'Experimental', experimentaltechno: 'Experimental techno', gothabilly: 'Gothabilly', idm: 'IDM', minimaltechno: 'Minimal techno', neofolk: 'Neofolk', postpunk: 'Post-punk', postrock: 'Post-rock', shoegaze: 'Shoegaze', surfrock: 'Surf rock',
   altcountry: 'Alt-country', electrogaze: 'Electrogaze', electropunk: 'Electropunk', gothicamericana: 'Gothic Americana', indieelectronic: 'Indie electronic', krautrock: 'Krautrock', neoambient: 'Neo-ambient', postgoth: 'Post-goth', slowcore: 'Slowcore',
+  indiedance: 'Indie dance', noiserock: 'Noise rock', spacerock: 'Space rock', psychedelicrock: 'Psychedelic rock',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
