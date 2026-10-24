@@ -55,7 +55,7 @@ export function Footer() {
         <p className="manifesto-lead">Made by music lovers, for music lovers, and above all to support the artists.</p>
         <p>
           The internet and social media were born with a promise: open and democratic, for the people who listen and for the people who make music. It hasn’t gone that way. Algorithms and
-          playlists decide what we hear, and if you’re not on the right list, nobody gets to know you.
+          playlists decide what we hear, and if you’re not on the right playlist, nobody gets to know you.
         </p>
         <p>
           Fandome wants a truer, more open and more democratic way to discover music and to be discovered: fans bring the artists they love to other fans, and you can always see why
@@ -71,7 +71,7 @@ export function Footer() {
         <Link to="/legal#report">Report illegal content</Link>
       </nav>
       <p>
-        © {year} Fandome · run by {OWNER_NAME || 'the site owner'}
+        © {year} Fandome · by music lovers, for music lovers
         {CONTACT_EMAIL && (
           <>
             {' '}
