@@ -17,6 +17,7 @@ export default function Onboarding() {
   const { state, dispatch, userById } = useStore()
   const nav = useNavigate()
   const [step, setStep] = useState(0)
+  const [find, setFind] = useState('')
   // GDPR (Italy): consent to data processing from age 14; terms accepted before joining.
   const [agreed, setAgreed] = useState(false)
   const [dir, setDir] = useState(1)
@@ -110,8 +111,12 @@ export default function Onboarding() {
             <>
               <div className="ob-kicker">Select all that apply</div>
               <h1 className="ob-q">Who are you a fan of?</h1>
+              <input className="ob-find" type="search" placeholder={`Search ${artists.length} artists`} value={find} onChange={(e) => setFind(e.target.value)} aria-label="Search artists" />
               <div className="ob-pills">
-                {artists.map((a, i) => {
+                {[...artists]
+                  .sort((x, y) => x.name.localeCompare(y.name, 'en', { sensitivity: 'base' }))
+                  .filter((a) => picked.includes(a.id) || !find.trim() || a.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(find.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')))
+                  .map((a, i) => {
                   const on = picked.includes(a.id)
                   return (
                     <motion.button

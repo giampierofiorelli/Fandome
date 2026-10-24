@@ -12,7 +12,7 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 - **Ticketmaster API key** for live concert dates: add the `TICKETMASTER_API_KEY` repository secret (Settings → Secrets and variables → Actions). The nightly job in `scripts/fetch-concerts.ts` does the rest.
 - **Owner name, contact email and address** for the legal notice, privacy policy and terms (GDPR, D.Lgs. 70/2003 art. 7, DSA arts. 11–12): `OWNER_NAME`, `CONTACT_EMAIL`, `OWNER_ADDRESS` (and `OWNER_VAT` only if it becomes an economic activity) in `src/config.ts`. Shown in the footer and on `/legal`.
 - **Lawyer review** of the privacy policy, terms, moderation and ticket-board wording before opening to the public.
-- **Artist catalogue**: list of artists to add (or let Claude propose ~200); albums come automatically from MusicBrainz (free, 1 request/second). Then a "Request an artist" flow (create the room after N requests or admin approval).
+- **Artist catalogue**: 58 rooms in `src/data/seed.ts` + `src/data/catalog.ts`, with main studio albums typed by hand. Next: albums from MusicBrainz automatically (free, 1 request/second), then a "Request an artist" flow (create the room after N requests or admin approval).
 
 ## Product, later
 

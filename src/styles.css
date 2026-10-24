@@ -1199,3 +1199,5 @@ body.story-open .modal-root { z-index: 100; }
 .feed-explain { margin: -4px 2px 12px; }
 .suggest-link { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; color: inherit; text-decoration: none; }
 .suggest-why { margin: 8px 4px 0; }
+.ob-find { margin: 0 0 14px; }
+.rooms-more { display: block; margin: 14px auto 0; }

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { artists, concerts } from '../data/seed'
 import { useStore } from '../store/store'
@@ -15,12 +16,18 @@ export default function Explore() {
   const q = (params.get('q') ?? '').trim().toLowerCase()
 
   const people = q ? state.users.filter((u) => `${u.name} ${u.handle} ${u.bio} ${u.location}`.toLowerCase().includes(q)) : []
-  const rooms = q ? artists.filter((a) => a.name.toLowerCase().includes(q)) : []
+  const fold = (t: string) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  const rooms = q ? artists.filter((a) => fold(a.name).includes(fold(q))) : []
   const shows = q ? concerts.filter((c) => `${c.city} ${c.venue} ${c.tour} ${c.date.slice(0, 4)}`.toLowerCase().includes(q)) : []
   const posts = q ? state.posts.filter((p) => `${p.text} ${p.translation ?? ''}`.toLowerCase().includes(q)) : []
 
   const trends = trending(state.posts, { limit: 6 })
   const suggestions = me ? suggestArtists(me, state.users, artists) : []
+  const [allRooms, setAllRooms] = useState(false)
+  // Your rooms first, then A–Z; the full list on request.
+  const mine = me ? Object.keys(me.fanSince) : []
+  const sortedRooms = [...artists].sort((x, y) => Number(mine.includes(y.id)) - Number(mine.includes(x.id)) || x.name.localeCompare(y.name, 'en', { sensitivity: 'base' }))
+  const shownRooms = allRooms ? sortedRooms : sortedRooms.slice(0, Math.max(8, mine.length))
   return (
     <>
       <header className="hello">
@@ -137,7 +144,7 @@ export default function Explore() {
             <h2>Fan rooms</h2>
           </div>
           <div className="room-grid">
-            {artists.map((a) => (
+            {shownRooms.map((a) => (
               <Link key={a.id} to={`/a/${a.id}`} className="room-tile" style={{ ['--tint' as string]: a.color }}>
                 <span className="room-name">{a.name}</span>
                 <span className="room-sub">{a.tagline}</span>
@@ -147,6 +154,11 @@ export default function Explore() {
               </Link>
             ))}
           </div>
+          {shownRooms.length < sortedRooms.length && (
+            <button className="btn rooms-more" onClick={() => setAllRooms(true)}>
+              Show all {sortedRooms.length} artists
+            </button>
+          )}
         </>
       )}
     </>

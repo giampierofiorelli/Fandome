@@ -1,5 +1,6 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
+import { catalogAlbums, catalogArtists } from './catalog'
 import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User, Report, TicketListing } from './types'
 
 export const artists: Artist[] = [
@@ -54,6 +55,7 @@ export const artists: Artist[] = [
       { id: 'eras', label: 'Eras', tags: ['thefame', 'bornthisway', 'mayhem', 'eras'] },
     ],
   },
+  ...catalogArtists,
 ]
 
 export const albums: Album[] = [
@@ -79,6 +81,7 @@ export const albums: Album[] = [
   { id: 'g-btw', artistId: 'gaga', title: 'Born This Way', year: 2011 },
   { id: 'g-chromatica', artistId: 'gaga', title: 'Chromatica', year: 2020 },
   { id: 'g-mayhem', artistId: 'gaga', title: 'Mayhem', year: 2025 },
+  ...catalogAlbums,
 ]
 
 export const concerts: Concert[] = [
