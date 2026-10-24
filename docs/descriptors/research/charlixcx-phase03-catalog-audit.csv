@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,existing_in_catalog,edition,source_path
+charlixcx-howimfeelingnow,charlixcx,how i’m feeling now,2020,yes,Original standard 11-track album,src/data/catalog.ts
+charlixcx-crash,charlixcx,Crash,2022,yes,Original standard 12-track album,src/data/catalog.ts
+charlixcx-brat,charlixcx,Brat,2024,yes,Original standard 15-track album,src/data/catalog.ts

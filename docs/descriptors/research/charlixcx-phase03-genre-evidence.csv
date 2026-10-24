@@ -1,0 +1,45 @@
+album_id,order,genre,source_url,scope,reason,known_in_guide
+charlixcx-howimfeelingnow,1,pop,https://pitchfork.com/reviews/albums/charli-xcx-how-im-feeling-now/,album,electro-pop artist; pop song framework,yes
+charlixcx-howimfeelingnow,2,hyperpop,https://www.theguardian.com/music/2021/oct/25/charli-xcx-review-explosive-hyperpop-hedonism-to-exorcise-the-trauma-of-lockdown,retrospective album description,industrial hyperpop applied to Anthems and the lockdown album,yes
+charlixcx-howimfeelingnow,3,electropop,https://www.qobuz.com/it-it/album/how-im-feeling-now-charli-xcx/ip8qjy1m6dakc,album / i finally understand,review explicitly calls album futuristic electronic pop and a track electro-pop,yes
+charlixcx-howimfeelingnow,4,electronic,https://www.allmusic.com/album/how-im-feeling-now-mw0003376062,album,electronically constructed production,yes
+charlixcx-howimfeelingnow,5,industrial,https://www.nme.com/reviews/charli-xcx-how-im-feeling-now-review-lockdown-2668831,Pink Diamond only,industrial electronic textures cited for opening track,yes
+charlixcx-howimfeelingnow,6,leftfieldpop,https://www.allmusic.com/album/how-im-feeling-now-mw0003376062,album,AllMusic expressly lists left-field pop as an album style; exact normalized new tag,no
+charlixcx-howimfeelingnow,7,dance,https://www.qobuz.com/it-it/album/how-im-feeling-now-charli-xcx/ip8qjy1m6dakc,claws / other songs,"club pop and more dance-y Claws, not every track",yes
+charlixcx-howimfeelingnow,8,edm,https://pitchfork.com/reviews/albums/charli-xcx-how-im-feeling-now/,claws,review explicitly describes euphoric EDM build,yes
+charlixcx-howimfeelingnow,9,trap,https://www.theguardian.com/music/2020/may/16/charli-xcx-how-im-feeling-now-review-show-and-tell-turned-up-to-11,album cues,review says club-pop takes cues from trap,yes
+charlixcx-howimfeelingnow,10,kpop,https://www.theguardian.com/music/2020/may/16/charli-xcx-how-im-feeling-now-review-show-and-tell-turned-up-to-11,album cues,review says club-pop takes cues from K-pop; not Korean-language,yes
+charlixcx-howimfeelingnow,11,trance,https://www.nme.com/reviews/charli-xcx-how-im-feeling-now-review-lockdown-2668831,Pink Diamond only,review says trance-laced,yes
+charlixcx-howimfeelingnow,12,clubpop,https://pitchfork.com/reviews/albums/charli-xcx-how-im-feeling-now/,album overall,review explicitly names club pop,no
+charlixcx-howimfeelingnow,13,wonkypop,https://www.nme.com/reviews/charli-xcx-how-im-feeling-now-review-lockdown-2668831,album overall,NME explicitly names wonky-pop,no
+charlixcx-crash,1,pop,https://pitchfork.com/reviews/albums/charli-xcx-crash/,album,mainstream pop framework,yes
+charlixcx-crash,2,dancepop,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album,Rockol explicitly names dance-pop,yes
+charlixcx-crash,3,synthpop,https://www.nme.com/reviews/charli-xcx-crash-review-3183846,album / Good Ones,synth-driven 1980s inspired mainstream pop,yes
+charlixcx-crash,4,disco,https://www.nme.com/reviews/charli-xcx-crash-review-3183846,album,NME disco revival characterization,yes
+charlixcx-crash,5,eurodance,https://pitchfork.com/reviews/albums/charli-xcx-crash/,album,Pitchfork explicitly names Eurodance,yes
+charlixcx-crash,6,italodisco,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album,Rockol explicitly names Italo disco,yes
+charlixcx-crash,7,nudisco,https://www.nme.com/reviews/charli-xcx-crash-review-3183846,album,NME uses nu-disco,no
+charlixcx-crash,8,funk,https://www.nme.com/reviews/charli-xcx-crash-review-3183846,album,NME says disco-funk,yes
+charlixcx-crash,9,popfunk,https://pitchfork.com/reviews/albums/charli-xcx-crash/,album,Pitchfork names pop-funk,no
+charlixcx-crash,10,electrofunk,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album,Rockol names electro-funk,no
+charlixcx-crash,11,newjackswing,https://pitchfork.com/reviews/albums/charli-xcx-crash/,Crash track,title track new jack swing beat,yes
+charlixcx-crash,12,dreampop,https://pitchfork.com/reviews/albums/charli-xcx-crash/,album,Pitchfork explicitly names dream-pop,no
+charlixcx-crash,13,house,https://www.theguardian.com/music/2022/mar/17/charli-xcx-crash-review-atlantic,Used To Know Me,Robin S Show Me Love interpolation with house groove,yes
+charlixcx-crash,14,futurepop,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album,Rockol explicitly names futurepop,no
+charlixcx-crash,15,indiepop,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album,Rockol explicitly names indie pop,no
+charlixcx-crash,16,newwave,https://www.rockol.it/recensioni-musicali/album/10132/charli-xcx-crash,album synth references,Rockol references new wave-style keys,yes
+charlixcx-crash,17,electronic,https://www.nme.com/reviews/charli-xcx-crash-review-3183846,album broad production,prominent synths and programmed drums; broad production character,yes
+charlixcx-brat,1,electronic,https://www.qobuz.com/us-en/album/brat-charli-xcx/capw1vifm759b,album,Qobuz classifies album as electronic,yes
+charlixcx-brat,2,dance,https://www.nme.com/reviews/album/charli-xcx-brat-review-lyrics-tracklist-3762875,album,NME emphasizes full dancefloor album,yes
+charlixcx-brat,3,pop,https://pitchfork.com/reviews/albums/charli-xcx-brat/,album,Pitchfork identifies pop album,yes
+charlixcx-brat,4,hyperpop,https://www.theguardian.com/music/2024/dec/20/the-50-best-albums-of-2024-no-1-charli-xcx-brat-and-brat-and-its-completely-different-but-also-still-brat,album,Guardian explicit hyperpop filter,yes
+charlixcx-brat,5,electroclash,https://www.theguardian.com/music/2024/dec/20/the-50-best-albums-of-2024-no-1-charli-xcx-brat-and-brat-and-its-completely-different-but-also-still-brat,album,Guardian explicitly names electroclash,no
+charlixcx-brat,6,bloghouse,https://www.theguardian.com/music/2024/dec/20/the-50-best-albums-of-2024-no-1-charli-xcx-brat-and-brat-and-its-completely-different-but-also-still-brat,album,"Guardian names acid-y bloghouse, not necessarily acid house",no
+charlixcx-brat,7,dubstep,https://www.theguardian.com/music/2024/dec/20/the-50-best-albums-of-2024-no-1-charli-xcx-brat-and-brat-and-its-completely-different-but-also-still-brat,album,Guardian explicitly names dubstep references,yes
+charlixcx-brat,8,house,https://www.nme.com/reviews/album/charli-xcx-brat-review-lyrics-tracklist-3762875,Mean girls,piano-house breakdown in Mean girls,yes
+charlixcx-brat,9,pianohouse,https://www.nme.com/reviews/album/charli-xcx-brat-review-lyrics-tracklist-3762875,Mean girls,specific piano-house breakdown,no
+charlixcx-brat,10,ukgarage,https://www.theguardian.com/music/2024/oct/11/charli-xcx-brat-remix-album-billie-eilish-ariana-grande-lorde,Rewind,Guardian says original Rewind deconstructed UK garage,yes
+charlixcx-brat,11,synthpop,https://www.theguardian.com/music/2024/oct/11/charli-xcx-brat-remix-album-billie-eilish-ariana-grande-lorde,Sympathy Is a Knife,Guardian explicitly names jagged synth-pop,yes
+charlixcx-brat,12,industrial,https://www.nme.com/reviews/album/charli-xcx-brat-review-lyrics-tracklist-3762875,Everything is romantic,NME industrial beats in Everything is romantic,yes
+charlixcx-brat,13,dancepop,https://www.slantmagazine.com/music/charli-xcx-brat-album-review/,album,"Slant compares hyperpop and dance-pop, a dance-pop/pop balance",yes
+charlixcx-brat,14,italodisco,https://www.slantmagazine.com/music/charli-xcx-brat-album-review/,I think about it all the time,Slant says Italo-disco chanteuse styling; narrowly scoped / review before import,yes
