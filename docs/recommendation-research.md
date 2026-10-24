@@ -48,6 +48,25 @@ Genre alone isn't enough. Each artist gets, besides country / language / decade 
 
 About 20–25 values per artist, ~5 minutes each by someone who knows the music (Pandora needs 20–30 minutes per song; we score artists, not songs). Moderators of each fandom can help (they're already volunteers per artist).
 
+### 3.1b Albums carry the descriptors, not only artists (owner's point)
+
+An artist like Madonna has made very different records (dance-pop, Ray of Light's electronic and spiritual sound, Erotica's house, Music's electro-folk…). Describing her only as "pop, dance" loses most of that. So:
+
+- **Each album gets the descriptors** (sound scales, genres, mood, voice, lyrics focus). The ~300 albums we have are a manageable start.
+- **The artist profile is computed from the albums**: a weighted average, where a trait that repeats across many albums weighs more (the "pattern" that comes back), and landmark/most-rated albums weigh a bit more. The artist page shows the traits that repeat most ("pop, dance"), but matching keeps the full spread.
+- **The fan's seed is album-level too**: we already know which albums each fan rated. Someone who rates Ray of Light 10/10 gets electronic, atmospheric suggestions; someone who loves Like a Prayer gets classic pop. Same artist, different paths.
+- Explanations can then name the album: "Because you loved Ray of Light: atmospheric electronic pop, like…".
+- Songs can come later with the same model.
+
+### 3.1c One engine for every suggestion
+
+The same scores power everything, with different filters:
+- **Artists you might like** (Explore, today based only on co-follows) → full hybrid score, any country.
+- **Bridge / Go deeper / A scene you don't know yet** → same score, with a filter or bonus on country and scene.
+- **Starter packs, album page "if you like this album", onboarding suggestions** → same engine.
+
+So the work on scenes improves international suggestions too, and vice versa.
+
 ### 3.2 The graph
 
 Nodes: artists, albums, genres, scenes, countries, decades. Typed, weighted edges:
@@ -100,7 +119,7 @@ Then a **diversity re-rank** (maximal marginal relevance): don't show five artis
 ## 4. Phases
 
 1. **Done**: country, language, decade, genres for all rooms.
-2. **Descriptors** for ~80 artists (50 from Italy, Brazil, France, Spain/Latin, plus 30 international "bridges"), editorial; import MusicBrainz tags for all.
+2. **Descriptors on albums** for ~80 artists (50 from Italy, Brazil, France, Spain/Latin, plus 30 international "bridges"); artist profiles computed from their albums; import MusicBrainz tags for all.
 3. **Graph v1**: editorial edges for those 80 + MusicBrainz relations; ListenBrainz similar artists (after checking the licence).
 4. **Scoring + explanations**: Bridge in artist rooms, Scenes page in Explore, feedback buttons.
 5. **Tune with data**: weights from what fans actually follow; extend descriptors to all rooms with moderators.
