@@ -14,7 +14,7 @@ import { spring, springSnappy } from '../lib/motion'
 import { useComposer } from './Composer'
 import { useToast } from './Toast'
 import { AlbumCover, ArtistLine, Avatar, LANG_NAMES, Modal, RichText, RollingCount, ScoreBadge, UserLink, useModalClose } from './ui'
-import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconFlag, IconMic, IconMore, IconPlus, IconPoll, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
+import { IconArrowUpRight, IconCheck, IconLink, IconPlay, IconGlobe, IconHeart, IconPin, IconQuote, IconReply, IconRepost, IconShare, IconFlag, IconMore, IconPlus, IconPushpin, IconSend, IconTag, IconTrash, IconVolume } from './icons'
 import { ShareSheet } from './ShareSheet'
 import { postArtists } from '../lib/postArtists'
 
@@ -397,14 +397,6 @@ function Popover({ open, onClose, children, align = 'left' }: { open: boolean; o
   )
 }
 
-// Small preview of a post: its photo, or an icon for links, voice notes and polls.
-function PinThumb({ post }: { post: Post }) {
-  if (post.photo) return <img className="pin-thumb" src={post.photo} alt="" />
-  if (post.image) return <span className="pin-thumb" style={{ background: post.image }} />
-  const icon = post.audio ? <IconMic size={18} /> : post.embed || post.youtube ? <IconPlay size={18} /> : post.poll ? <IconPoll size={18} /> : <IconQuote size={18} />
-  return <span className="pin-thumb icon">{icon}</span>
-}
-
 // Profile already has 3 pins: pick which one the new post replaces.
 function PinReplaceModal({ post, pinnedIds, onClose }: { post: Post; pinnedIds: string[]; onClose: () => void }) {
   const { state, dispatch } = useStore()
@@ -426,18 +418,15 @@ function PinReplaceList({ pinned, onPick }: { pinned: Post[]; onPick: (id: strin
   return (
     <>
       <p className="muted small" style={{ marginTop: 0 }}>
-        Choose the pinned post to replace with this one.
+        Choose the pinned post to replace with this one. Scroll to see all of them.
       </p>
       <div className="pin-list">
-        {pinned.map((p) => (
-          <div key={p.id} className="pin-row">
-            <PinThumb post={p} />
-            <span className="pin-info">
-              <span className="pin-text">{p.text.trim() || (p.photo || p.image ? 'Photo' : p.embed || p.youtube ? `${p.embed ? EMBED_LABEL[p.embed.kind] : 'YouTube'} link` : p.audio ? 'Voice note' : p.poll ? 'Poll' : 'Post')}</span>
-              <span className="muted small">
-                {timeAgo(p.createdAt)} · {p.likes.length} likes
-              </span>
-            </span>
+        {pinned.map((p, i) => (
+          <div key={p.id} className="pin-row full">
+            <span className="pin-count">Pinned {i + 1} of {pinned.length}</span>
+            <div className="pin-post">
+              <PostCard post={p} embedded />
+            </div>
             <button
               className="pill-btn ink small"
               onClick={() => {
