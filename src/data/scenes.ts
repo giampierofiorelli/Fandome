@@ -174,9 +174,12 @@ export const fromCountry = (name: string) => `from ${/^(United|Netherlands|Phili
 // (Italy, Brazil, Spain and Latin America, France, Afro, Korea… see ROADMAP "Scenes").
 export const GLOBAL_MARKETS = new Set(['US', 'GB', 'CA', 'AU', 'IE'])
 export const isLocalScene = (country?: string) => Boolean(country && !GLOBAL_MARKETS.has(country))
-// A local-scene artist: outside the global markets and singing mainly in a language other than
-// English (Robyn or Kim Petras sing English pop: global, not a scene to discover).
+// The scenes of the owner's plan (Italy, Brazil, Spain and Latin America, France, Afro, Korea): always
+// local, whatever the language (Afrobeats is often sung in English or Pidgin).
+export const PLAN_SCENE_COUNTRIES = new Set(['IT', 'BR', 'ES', 'MX', 'CO', 'AR', 'PR', 'CL', 'PE', 'VE', 'CU', 'DO', 'UY', 'EC', 'PA', 'GT', 'FR', 'BE', 'CH', 'NG', 'ZA', 'GH', 'KR'])
+// A local-scene artist: from a plan scene, or outside the global markets and singing mainly in a
+// language other than English (Robyn or Kim Petras sing English pop: global, not a scene to discover).
 export const isLocalArtist = (artistId?: string) => {
   const s = artistId ? SCENES[artistId] : undefined
-  return Boolean(s && isLocalScene(s.country) && s.lang !== 'en')
+  return Boolean(s && isLocalScene(s.country) && (PLAN_SCENE_COUNTRIES.has(s.country) || s.lang !== 'en'))
 }
