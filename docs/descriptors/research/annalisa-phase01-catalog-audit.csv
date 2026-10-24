@@ -1,0 +1,10 @@
+album_id,title,year,type,catalog_status_at_research,descriptor_scope
+annalisa-nali,Nali,2011,studio,already_in_catalog,included_this_batch
+annalisa-mentretuttocambia,Mentre tutto cambia,2012,studio,missing_from_catalog,included_this_batch
+annalisa-nonsoballare,Non so ballare,2013,studio,missing_from_catalog,included_this_batch
+annalisa-splende,Splende,2015,studio,missing_from_catalog,later_batch
+annalisa-seavessiuncuore,Se avessi un cuore,2016,studio,missing_from_catalog,later_batch
+annalisa-byebye,Bye Bye,2018,studio,already_in_catalog,later_batch
+annalisa-nuda,Nuda,2020,studio,already_in_catalog,later_batch
+annalisa-epoisiamofinitinelvortice,E poi siamo finiti nel vortice,2023,studio,already_in_catalog,later_batch
+annalisa-maiosonofuoco,Ma io sono fuoco,2025,studio,missing_from_catalog,later_batch
