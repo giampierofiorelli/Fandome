@@ -371,5 +371,17 @@
   "license": "CC BY-SA 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_1975_(14712180536).jpg"
+ },
+ "sombr": {
+  "src": "artists/sombr.jpg",
+  "provided": true
+ },
+ "tinaturner": {
+  "src": "artists/tinaturner.jpg",
+  "provided": true
+ },
+ "mj": {
+  "src": "artists/mj.jpg",
+  "provided": true
  }
 }
