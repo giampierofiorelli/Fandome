@@ -1,0 +1,4 @@
+album_id,artist,title,year,type,catalog_status,instruction
+annalisa-splende,Annalisa,Splende,2015,studio,new,ROWS entry currently shows only Nali/Bye Bye/Nuda/E poi siamo...; add Splende using exact slug
+annalisa-seavessiuncuore,Annalisa,Se avessi un cuore,2016,studio,new,Add using exact slug; keep 2016 album separate from April 2016 single
+annalisa-byebye,Annalisa,Bye Bye,2018,studio,existing,"Already in catalog.ts, preserve the generated ID and do not duplicate"
