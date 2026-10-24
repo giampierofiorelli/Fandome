@@ -47,6 +47,7 @@ async function main() {
   const all: Concert[] = []
   let failed = 0
   for (const a of artists) {
+    if (a.touring === false) continue // passed away or split up: tribute shows aren't their dates
     try {
       const found = await get<{ _embedded?: { attractions?: TmAttraction[] } }>('attractions.json', { keyword: a.name, classificationName: 'music', size: '20' })
       const attraction = pickAttraction(found._embedded?.attractions ?? [], a.name)

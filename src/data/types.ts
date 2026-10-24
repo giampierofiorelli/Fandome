@@ -6,6 +6,7 @@ export interface Artist {
   color: string // accent used for the artist space (no official artwork)
   tagline: string
   feeds: { id: string; label: string; tags: string[] }[]
+  touring?: false // no longer performing: skip the nightly concert lookup
 }
 
 export interface Album {
