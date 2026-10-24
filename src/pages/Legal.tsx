@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { CONTACT_EMAIL, OWNER_ADDRESS, OWNER_NAME, OWNER_VAT } from '../config'
 import { resetConsent, setConsent, useConsent } from '../lib/prefs'
 import { spring } from '../lib/motion'
+import { artists } from '../data/seed'
+import { PhotoCredit, artistPhoto } from '../components/ui'
 
 const owner = OWNER_NAME || '[site owner’s name, to be added]'
 const email = CONTACT_EMAIL || '[contact email, to be added]'
@@ -66,7 +68,7 @@ export function Footer() {
       </p>
       <p>Independent, non-commercial fan community. Not affiliated with, endorsed or sponsored by any artist, label or ticket seller. Artist names identify topics only; names, marks and logos belong to their owners.</p>
       <p className="footer-credits">
-        Prototype with demo data · Fonts Geist & Doto (SIL OFL 1.1) · Brand icons Simple Icons (CC0) · Concert dates Ticketmaster · Music data MusicBrainz
+        Prototype with demo data · Fonts Geist & Doto (SIL OFL 1.1) · Brand icons Simple Icons (CC0) · <Link to="/legal#photos">Artist photos Wikimedia Commons</Link> · Concert dates Ticketmaster · Music data MusicBrainz
       </p>
     </footer>
   )
@@ -138,6 +140,20 @@ export function LegalNotice() {
       <p>
         Fonts: Geist and Doto, SIL Open Font License 1.1. Brand icons: Simple Icons (CC0); marks belong to their owners. Music data: MusicBrainz. Concert dates: Ticketmaster. Hosting: GitHub Pages.
       </p>
+      <h3 id="photos">Artist photos</h3>
+      <p>
+        Freely licensed photos from Wikimedia Commons (public domain or Creative Commons BY / BY-SA), shown unchanged and stored with the site. They are by independent photographers, not
+        official images, and do not imply any endorsement by the artists. If you are a rights holder or the person pictured and want a photo changed, write to us or use “Report illegal content”.
+      </p>
+      <ul className="photo-credits">
+        {artists
+          .filter((a) => artistPhoto(a.id))
+          .map((a) => (
+            <li key={a.id}>
+              <strong>{a.name}</strong> <PhotoCredit id={a.id} />
+            </li>
+          ))}
+      </ul>
     </article>
   )
 }

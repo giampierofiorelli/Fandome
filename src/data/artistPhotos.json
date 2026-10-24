@@ -1,0 +1,377 @@
+{
+ "madonna": {
+  "src": "artists/madonna.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:MadonnaO2171023_(97_of_133)_(53269593787)_(cropped).jpg"
+ },
+ "kylie": {
+  "src": "artists/kylie.jpg",
+  "author": "PhilipRomanoPhoto",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:KylieMinogue-byPhilipRomano_(cropped).jpg"
+ },
+ "psb": {
+  "src": "artists/psb.jpg",
+  "author": "Jørgen Hans Maltesen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pet_Shop_Boys_live_i_Tivoli.JPG"
+ },
+ "depeche": {
+  "src": "artists/depeche.jpg",
+  "author": "Brianhphoto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Depeche_mode_in_portland_Nov_2023.jpg"
+ },
+ "gaga": {
+  "src": "artists/gaga.jpg",
+  "author": "Office of the Vice President of the United States",
+  "license": "Public domain",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lady_Gaga_at_Oscars_2016.jpg"
+ },
+ "harrystyles": {
+  "src": "artists/harrystyles.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:HarryStylesWembley170623_(14_of_93)_(52982076132)_(cropped).jpg"
+ },
+ "ariana": {
+  "src": "artists/ariana.jpg",
+  "author": "Barbie Simons",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ariana_Grande_promoting_Wicked_(2024).jpg"
+ },
+ "beyonce": {
+  "src": "artists/beyonce.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_(10_of_118)_(52946364598)_(best_crop).jpg"
+ },
+ "sabrina": {
+  "src": "artists/sabrina.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sabrina_Carpenter_-_O2_Arena_2025_-_086_(cropped_2).jpg"
+ },
+ "charlixcx": {
+  "src": "artists/charlixcx.jpg",
+  "author": "Elena Ternovaja",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charli_xcx_at_Berlinale_2026-1.jpg"
+ },
+ "robyn": {
+  "src": "artists/robyn.jpg",
+  "author": "lewis chaplin from Carshalton, England",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robyn_face.jpg"
+ },
+ "adele": {
+  "src": "artists/adele.jpg",
+  "author": "Marc E.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adele_2016.jpg"
+ },
+ "bjork": {
+  "src": "artists/bjork.jpg",
+  "author": "Bruce McAdam from Reykjavik, Iceland",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bj%C3%B6rk_by_Hello,_I_am_Bruce_at_Nature_Awareness_Nattura_concert_Reykjavik_2008.jpg"
+ },
+ "dualipa": {
+  "src": "artists/dualipa.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dua_Lipa-69798_(cropped).jpg"
+ },
+ "feverray": {
+  "src": "artists/feverray.jpg",
+  "author": ".res",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fever_Ray.jpg"
+ },
+ "florence": {
+  "src": "artists/florence.jpg",
+  "author": "Jason Persse",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florence_and_the_Machine.jpg"
+ },
+ "franz": {
+  "src": "artists/franz.jpg",
+  "author": "Erin Mc",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Ferdinand.jpg"
+ },
+ "jlo": {
+  "src": "artists/jlo.jpg",
+  "author": "Everwest",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_(cropped_3).jpg"
+ },
+ "bieber": {
+  "src": "artists/bieber.jpg",
+  "author": "Lou Stejskal",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Justin_Bieber_in_2015.jpg"
+ },
+ "katyperry": {
+  "src": "artists/katyperry.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:KatyPerryWestminst111224_(81_of_95)_(54206733094)_(cropped_2).jpg"
+ },
+ "kimpetras": {
+  "src": "artists/kimpetras.jpg",
+  "author": "Ted Eytan",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Petras_(42743719761)_(a).jpg"
+ },
+ "kraftwerk": {
+  "src": "artists/kraftwerk.jpg",
+  "author": "SafeForWork",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kraftwerk_In_Chicago-01.jpg"
+ },
+ "lanadelrey": {
+  "src": "artists/lanadelrey.jpg",
+  "author": "Mike Monaghan from Seattle, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lana_Del_Rey_Seattle.jpg"
+ },
+ "capaldi": {
+  "src": "artists/capaldi.jpg",
+  "author": "Harald Krichel",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lewis_Capaldi-8116.jpg"
+ },
+ "lorde": {
+  "src": "artists/lorde.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lorde_Glasto2025-9_(cropped).jpg"
+ },
+ "lykkeli": {
+  "src": "artists/lykkeli.jpg",
+  "author": "Unidentified commissioned photographer",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lykke_Li_3.JPG"
+ },
+ "maneskin": {
+  "src": "artists/maneskin.jpg",
+  "author": "Paolo Santambrogio",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maneskin_2018.jpg"
+ },
+ "garrix": {
+  "src": "artists/garrix.jpg",
+  "author": "Moiyeah",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martin_Garrix_-_Superbloom_Festival_2023_-_DSC2689_(cropped).jpg"
+ },
+ "massiveattack": {
+  "src": "artists/massiveattack.jpg",
+  "author": "Photo by Festival Eurockéennes/Rod le Hiboo, artwork by Jezhotwells",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massive_Attack_composite.jpg"
+ },
+ "miley": {
+  "src": "artists/miley.jpg",
+  "author": "Raphael Pour-Hashemi",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miley_Cyrus_Primavera19_-226_(48986293772)_(cropped).jpg"
+ },
+ "mo": {
+  "src": "artists/mo.jpg",
+  "author": "Emma Swann",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danish_singer_M%C3%98.jpg"
+ },
+ "moby": {
+  "src": "artists/moby.jpg",
+  "author": "Uncensored Interview",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moby_1.jpg"
+ },
+ "placebo": {
+  "src": "artists/placebo.jpg",
+  "author": "Marcelo Teson from Los Angeles, CA, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Placebo_coachella.jpg"
+ },
+ "prince": {
+  "src": "artists/prince.jpg",
+  "author": "Yves Lorson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Brussels_1986_(retouched).jpg"
+ },
+ "radiohead": {
+  "src": "artists/radiohead.jpg",
+  "author": "Raph_PH",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:RadioheadO2211125_composite.jpg"
+ },
+ "royksopp": {
+  "src": "artists/royksopp.jpg",
+  "author": "Stian Andersen",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royksopp_2014-09-29_001_(cropped).jpg"
+ },
+ "samsmith": {
+  "src": "artists/samsmith.jpg",
+  "author": "PhilipRomanoPhoto",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:SamSmith-byPhilipRomano.jpg"
+ },
+ "selena": {
+  "src": "artists/selena.jpg",
+  "author": "Frank Sun",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_(cropped).jpg"
+ },
+ "shawn": {
+  "src": "artists/shawn.jpg",
+  "author": "Cosmopolitan UK",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:191125_Shawn_Mendes_at_the_2019_American_Music_Awards.png"
+ },
+ "sia": {
+  "src": "artists/sia.jpg",
+  "author": "Kris Krug at https://www.flickr.com/photos/kk",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sia_performing_photograph_by_Kris_Krug.jpg"
+ },
+ "sigurros": {
+  "src": "artists/sigurros.jpg",
+  "author": "Dale Cruse - 10M views",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigur_R%C3%B3s_at_the_Orpheum_Theatre,_San_Francisco.jpg"
+ },
+ "takethat": {
+  "src": "artists/takethat.jpg",
+  "author": "Marc E.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Take_That_performing_in_Glasgow,_2017.jpg"
+ },
+ "tameimpala": {
+  "src": "artists/tameimpala.jpg",
+  "author": "Michael Spencer",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tame_Impala.jpg"
+ },
+ "taylorswift": {
+  "src": "artists/taylorswift.jpg",
+  "author": "iHeartRadioCA",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_(3).png"
+ },
+ "mariah": {
+  "src": "artists/mariah.jpg",
+  "author": "Shawn Miller",
+  "license": "Public domain",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mariah_Carey_Library_of_Congress_2023_2_(cropped)02.jpg"
+ },
+ "britney": {
+  "src": "artists/britney.jpg",
+  "author": "Jen from USA.",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Britney_Spears-FFT-Toronto_(cropped).jpg"
+ },
+ "cher": {
+  "src": "artists/cher.jpg",
+  "author": "Gage Skidmore from Surprise, AZ, United States of America",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cher_(50537941963)_(cropped).jpg"
+ },
+ "tovelo": {
+  "src": "artists/tovelo.jpg",
+  "author": "Daniel Åhs Karlsson",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tove_Lo_(2)_By_Daniel_%C3%85hs_Karlsson.jpeg"
+ },
+ "u2": {
+  "src": "artists/u2.jpg",
+  "author": "Remy",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:U2_on_Joshua_Tree_Tour_2017_Brussels_8-1-17.jpg"
+ },
+ "weeknd": {
+  "src": "artists/weeknd.jpg",
+  "author": "Brian Ziff",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Weeknd_Portrait_by_Brian_Ziff.jpg"
+ },
+ "celine": {
+  "src": "artists/celine.jpg",
+  "author": "Georges Biard",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A9line_Dion_2012.jpg"
+ },
+ "whitney": {
+  "src": "artists/whitney.jpg",
+  "author": "PH2 Mark Kettenhofen",
+  "license": "Public domain",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitney_Houston_(cropped3).JPEG"
+ },
+ "zaralarsson": {
+  "src": "artists/zaralarsson.jpg",
+  "author": "Jr. Smith IV",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zara_Larsson_Concert_2026_(cropped).jpg"
+ },
+ "the1975": {
+  "src": "artists/the1975.jpg",
+  "author": "Begoña from Errenteria, España",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_1975_(14712180536).jpg"
+ }
+}

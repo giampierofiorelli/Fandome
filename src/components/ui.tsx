@@ -7,6 +7,7 @@ import { artistById } from '../lib/util'
 import { project, spring, springSheet } from '../lib/motion'
 import { prettyUrl } from '../lib/media'
 import { IconX } from './icons'
+import photos from '../data/artistPhotos.json'
 
 export function useMediaQuery(q: string) {
   const [match, setMatch] = useState(() => typeof window !== 'undefined' && window.matchMedia(q).matches)
@@ -236,9 +237,52 @@ export function ScoreBadge({ rating, size = 'md' }: { rating: number; size?: 'sm
 export const LANG_NAMES: Record<string, string> = { it: 'Italian', es: 'Spanish', fr: 'French', de: 'German', pt: 'Portuguese', ja: 'Japanese' }
 
 // Artist disc: the artist's colour with their initial in the dot-matrix face.
+// Freely licensed artist photos (Wikimedia Commons), stored with the site: no third-party request.
+export interface ArtistPhotoInfo {
+  src: string
+  author: string
+  license: string
+  licenseUrl?: string
+  sourceUrl: string
+}
+export function artistPhoto(id: string): (ArtistPhotoInfo & { url: string }) | null {
+  const p = (photos as Record<string, ArtistPhotoInfo>)[id]
+  return p ? { ...p, url: `${import.meta.env.BASE_URL}${p.src}` } : null
+}
+
+// "Photo: author · CC BY-SA 4.0" with links to the file page and the licence (required by CC licences).
+export function PhotoCredit({ id, className }: { id: string; className?: string }) {
+  const p = artistPhoto(id)
+  if (!p) return null
+  return (
+    <p className={className ? `photo-credit ${className}` : 'photo-credit'}>
+      Photo:{' '}
+      <a href={p.sourceUrl} target="_blank" rel="noopener noreferrer">
+        {p.author}
+      </a>{' '}
+      ·{' '}
+      {p.licenseUrl ? (
+        <a href={p.licenseUrl} target="_blank" rel="noopener noreferrer">
+          {p.license}
+        </a>
+      ) : (
+        p.license
+      )}{' '}
+      · Wikimedia Commons
+    </p>
+  )
+}
+
 export function ArtistDisc({ id, size = 22 }: { id: string; size?: number }) {
   const a = artistById(id)
   if (!a) return null
+  const photo = artistPhoto(id)
+  if (photo)
+    return (
+      <span className="artist-disc photo" style={{ ['--c' as string]: a.color, width: size, height: size }} aria-hidden>
+        <img src={photo.url} alt="" loading="lazy" decoding="async" />
+      </span>
+    )
   return (
     <span className="artist-disc" style={{ ['--c' as string]: a.color, width: size, height: size, fontSize: Math.round(size * 0.52) }} aria-hidden>
       {a.name[0]}

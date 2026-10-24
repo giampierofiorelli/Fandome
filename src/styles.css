@@ -1201,3 +1201,16 @@ body.story-open .modal-root { z-index: 100; }
 .suggest-why { margin: 8px 4px 0; }
 .ob-find { margin: 0 0 14px; }
 .rooms-more { display: block; margin: 14px auto 0; }
+
+/* Artist photos (Wikimedia Commons, stored with the site) */
+.artist-disc.photo { padding: 0; overflow: hidden; background: var(--c); }
+.artist-disc.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-artist-photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 14px; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 14px 30px -12px color-mix(in srgb, var(--tint) 70%, transparent); }
+.hero-credit { margin-top: 12px; }
+.photo-credit { font-size: 11px; line-height: 1.4; color: var(--muted); margin: 0; }
+.photo-credit a { color: inherit; text-decoration: underline; text-decoration-color: var(--hair); text-underline-offset: 2px; }
+.photo-credits { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 8px; }
+.photo-credits li strong { font-size: 13px; font-weight: 500; }
+.photo-credits .photo-credit { display: inline; }
+.room-photo { position: absolute; top: 14px; left: 14px; width: 46px; height: 46px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 8px 18px -8px rgba(0, 0, 0, 0.4); z-index: 1; }
+.room-tile { min-height: 184px; }
