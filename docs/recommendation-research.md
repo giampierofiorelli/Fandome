@@ -24,7 +24,7 @@ What the research agrees on:
 | Source | What | Licence | Use for Fandome |
 |---|---|---|---|
 | **Our own fans' signals** | follows, album ratings, saves, posts that link albums, co-follows | ours | Collaborative part. Already used ("fans of X also follow"). Grows with users. |
-| **MusicBrainz** | artists, releases, labels, areas, members, relations, community tags and genres | CC0 (public domain) | Facts and tags for every artist: free, no permission needed. |
+| **MusicBrainz** | artists, releases, labels, areas, members, relations (core data); community tags, genres and ratings (supplementary data) | core data CC0 (any use); tags, genres, ratings CC BY-NC-SA 3.0 (non-commercial, credit, share-alike; commercial licence from MetaBrainz) | Core facts and relations for every artist, free. Tags/genres fine while Fandome is non-commercial; commercial licence needed later. No account needed to read (User-Agent, max 1 request/second). |
 | **ListenBrainz** | similar artists from listening sessions, tag-based radio | listens CC0; similar-artists licence to confirm | Open "people who listen to A also listen to B" before we have our own users. |
 | **Wikidata** | genres, influences, awards, country, images | CC0 | Extra facts; weight "influenced by" low unless sourced. |
 | **Editorial tagging** | sound scales, mood, scene, "sounds like", "precursor" | ours | Our Music-Genome-lite: the heart of explainable cross-scene suggestions. |
@@ -119,7 +119,7 @@ Then a **diversity re-rank** (maximal marginal relevance): don't show five artis
 ## 4. Phases
 
 1. **Done**: country, language, decade, genres for all rooms.
-2. **Descriptors on albums** for ~80 artists (50 from Italy, Brazil, France, Spain/Latin, plus 30 international "bridges"); artist profiles computed from their albums; import MusicBrainz tags for all.
+2. **Descriptors on albums** for ~80 artists (50 from Italy, Brazil, France, Spain/Latin, plus 30 international "bridges"); artist profiles computed from their albums; import MusicBrainz core data for all (tags too while non-commercial).
 3. **Graph v1**: editorial edges for those 80 + MusicBrainz relations; ListenBrainz similar artists (after checking the licence).
 4. **Scoring + explanations**: Bridge in artist rooms, Scenes page in Explore, feedback buttons.
 5. **Tune with data**: weights from what fans actually follow; extend descriptors to all rooms with moderators.
