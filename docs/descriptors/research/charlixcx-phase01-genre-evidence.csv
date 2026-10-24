@@ -1,0 +1,34 @@
+album_id,genre_token,scope,source,url,evidence_summary,evidence_strength
+charlixcx-trueromance,pop,album,Pitchfork review,https://pitchfork.com/reviews/albums/17880-charli-xcx-true-romance/,Core accessible pop songwriting,high
+charlixcx-trueromance,synthpop,album,Pitchfork review,https://pitchfork.com/reviews/albums/17880-charli-xcx-true-romance/,Explicit synth-pop stylistic reference,high
+charlixcx-trueromance,electronic,album,Apple Music listing,https://music.apple.com/us/album/true-romance/620473750,Album explicitly categorized electronic; synth-led production,high
+charlixcx-trueromance,dance,album_tracks,Apple Music album editorial,https://music.apple.com/us/album/true-romance/620473750,Describes dance-pop examples Take My Hand and Black Roses,medium
+charlixcx-trueromance,rnb,album_context,AllMusic album review,https://www.allmusic.com/album/true-romance-mw0002499541,Discusses rap and R&B mixture shaping this era of recordings,medium
+charlixcx-trueromance,gothpop,album,NME review,https://www.nme.com/reviews/reviews-charlie-xcx-14353-308858,Explicit goth-pop label for full record; NEW TOKEN,high
+charlixcx-trueromance,disco,specific_track,NME review,https://www.nme.com/reviews/reviews-charlie-xcx-14353-308858,Take My Hand identified as disco; does not describe entire album,medium
+charlixcx-trueromance,darkwave,specific_track,NME review,https://www.nme.com/reviews/reviews-charlie-xcx-14353-308858,Nuclear Seasons described as darkwave; NEW TOKEN; track-specific,medium
+charlixcx-sucker,powerpop,album,Pitchfork review,https://pitchfork.com/reviews/albums/20066-sucker/,Explicit main album genre,high
+charlixcx-sucker,pop,album,Pitchfork review,https://pitchfork.com/reviews/albums/20066-sucker/,Mainstream pop songwriting and melodic hooks,high
+charlixcx-sucker,rock,album,Guardian Alexis Petridis review,https://www.theguardian.com/music/2015/feb/12/charli-xcx-sucker-review,Guitars and power chords integrated into pop songs,high
+charlixcx-sucker,poppunk,specific_track,Guardian Kitty Empire review,https://www.theguardian.com/music/2015/feb/15/charli-xcx-sucker-review-precision-lasered-songwriting,London Queen described as pop-punk; NEW TOKEN,high
+charlixcx-sucker,punk,album_and_creation_context,Pitchfork review; NME interview,https://pitchfork.com/reviews/albums/20066-sucker/,Punk-leaning songwriting and Swedish punk experimentation; Petridis disputes literal punk genre,medium
+charlixcx-sucker,newwave,album,Pitchfork review,https://pitchfork.com/reviews/albums/20066-sucker/,Explicit new-wave elements and melodic rock pop; NEW TOKEN,high
+charlixcx-sucker,edm,specific_track,Guardian Kitty Empire review,https://www.theguardian.com/music/2015/feb/15/charli-xcx-sucker-review-precision-lasered-songwriting,EDM build/drop in Break the Rules,high
+charlixcx-sucker,grunge,specific_track,Guardian Kitty Empire review,https://www.theguardian.com/music/2015/feb/15/charli-xcx-sucker-review-precision-lasered-songwriting,Grunge-like guitar motifs in Break the Rules; NEW TOKEN; not dominant sound,medium
+charlixcx-vroomvroom,pop,album,Resident Advisor,https://ra.co/reviews/18106,Explicit pop classification for EP,high
+charlixcx-vroomvroom,electronic,album,Bearded Gentlemen Music,https://beardedgentlemenmusic.com/2016/03/23/charli-xcx-vroom-vroom-review/,"Heavy electronic production, synth and bass sounds",high
+charlixcx-vroomvroom,hyperpop,retrospective_album,The FADER 2026 and historical classification,https://www.thefader.com/2026/02/24/charli-xcx-vroom-vroom-ep-10-anniversary-review,"Later association with the hyperpop movement; RETROSPECTIVE, not 2016 self-label",medium
+charlixcx-vroomvroom,experimentalpop,album,Resident Advisor,https://ra.co/reviews/18106,Charli describes label as platform for experimental pop; NEW TOKEN,high
+charlixcx-vroomvroom,edm,album,Bearded Gentlemen Music,https://beardedgentlemenmusic.com/2016/03/23/charli-xcx-vroom-vroom-review/,EDM-influenced pop throughout EP,high
+charlixcx-vroomvroom,trap,album_tracks,The Line of Best Fit,https://www.thelineofbestfit.com/reviews/albums/charli-xcx-vroom-vroom,Trap beats appear among EP styles,high
+charlixcx-vroomvroom,industrial,retrospective_album,The FADER 2026,https://www.thefader.com/2026/02/24/charli-xcx-vroom-vroom-ep-10-anniversary-review,Industrial electronic texture cited in retrospective; NEW TOKEN,medium
+charlixcx-vroomvroom,eurodance,specific_track,Resident Advisor,https://ra.co/reviews/18106,Paradise explicitly called Eurodance,high
+charlixcx-vroomvroom,eurotrance,specific_track,Pitchfork review,https://pitchfork.com/reviews/albums/21683-vroom-vroom-ep/,Paradise described as Eurotrance; NEW TOKEN,high
+charlixcx-vroomvroom,grime,album_tracks,Pitchfork; Bearded Gentlemen Music,https://pitchfork.com/reviews/albums/21683-vroom-vroom-ep/,Secret grime-influenced; electronic genres mentioned across EP; NEW TOKEN,high
+charlixcx-vroomvroom,dancehall,specific_track,Pitchfork review,https://pitchfork.com/reviews/albums/21683-vroom-vroom-ep/,Trophy glitchy dancehall beat,high
+charlixcx-vroomvroom,hiphop,album_tracks,Bearded Gentlemen Music,https://beardedgentlemenmusic.com/2016/03/23/charli-xcx-vroom-vroom-review/,Underground hip-hop elements cited,medium
+charlixcx-vroomvroom,footwork,album_tracks,Bearded Gentlemen Music,https://beardedgentlemenmusic.com/2016/03/23/charli-xcx-vroom-vroom-review/,Footwork cited among EP influences; NEW TOKEN,medium
+charlixcx-vroomvroom,garage,album_tracks,Bearded Gentlemen Music,https://beardedgentlemenmusic.com/2016/03/23/charli-xcx-vroom-vroom-review/,"Garage cited, not specifically UK garage; NEW TOKEN",medium
+charlixcx-vroomvroom,neorave,specific_track,Apple Music editorial,https://music.apple.com/us/album/vroom-vroom-ep/1083723149,Trophy described as neo-rave; NEW TOKEN,high
+charlixcx-vroomvroom,gothtrap,specific_track,Resident Advisor,https://ra.co/reviews/18106,Secret (Shh) described as goth-trap; NEW TOKEN,medium
+charlixcx-vroomvroom,alt,release_metadata,Apple Music genre listing,https://music.apple.com/us/album/vroom-vroom-ep/1083723149,Storefront Alternative category; coarse classifier not independent sound analysis,low

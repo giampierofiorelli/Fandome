@@ -1,0 +1,11 @@
+album_id,title,year,type,catalog_state_at_read,action_note
+charlixcx-trueromance,True Romance,2013,studio,present,Derived from catalog.ts existing title
+charlixcx-sucker,Sucker,2014,studio,present,Derived from catalog.ts existing title
+charlixcx-vroomvroom,Vroom Vroom,2016,ep,missing,Add as a distinct four-track EP; title without storefront suffix - EP
+charlixcx-number1angel,Number 1 Angel,2017,mixtape,missing,Future batch; do not add descriptors yet
+charlixcx-pop2,Pop 2,2017,mixtape,missing,Future batch; do not add descriptors yet
+charlixcx-charli,Charli,2019,studio,present,Future batch
+charlixcx-howimfeelingnow,how i'm feeling now,2020,studio,present,Future batch; title/year from catalog.ts
+charlixcx-crash,Crash,2022,studio,present,Future batch
+charlixcx-brat,Brat,2024,studio,present,Future batch
+charlixcx-wutheringheights,Wuthering Heights,2026,soundtrack,missing,Apple Music lists release; classify film-related project separately; future research
