@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { artists, concerts, demoAlbumBuzz } from '../data/seed'
+import { albums, artists, concerts, demoAlbumBuzz } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc, artistPhoto, Avatar, photoPos } from '../components/ui'
@@ -9,6 +9,9 @@ import { DotCrown } from '../components/DiscoLogo'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
 import { albumById, artistById, formatDate, trending } from '../lib/util'
 import { suggestArtists } from '../lib/suggest'
+import { similarAlbums } from '../lib/similar'
+import { descriptorOf } from '../lib/descriptors'
+import { SimilarList } from '../components/SimilarList'
 
 export default function Explore() {
   const { state, me, dispatch } = useStore()
@@ -27,7 +30,14 @@ export default function Explore() {
   const discussedDay = discussedAlbums(state.posts, Date.now(), 24, demoAlbumBuzz)
   const discussed = (discussedDay.length >= 3 ? discussedDay : discussedAlbums(state.posts, Date.now(), 24 * 7, demoAlbumBuzz)).slice(0, 5)
   const discussedWindow = discussedDay.length >= 3 ? 'today' : 'this week'
-  const suggestions = me ? suggestArtists(me, state.users, artists) : []
+  const suggestions = me ? suggestArtists(me, state.users, artists, 4, albums) : []
+  // Your best-rated album that has a description: albums by other artists that sound related.
+  const seedAlbum = me
+    ? Object.entries(me.ratings)
+        .filter(([id, r]) => r >= 4 && descriptorOf(id))
+        .sort((x, y) => y[1] - x[1])[0]?.[0]
+    : undefined
+  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: (id) => albumById(id)?.artistId }) : []
   const [allRooms, setAllRooms] = useState(false)
   // Your rooms first, then A–Z; the full list on request.
   const mine = me ? Object.keys(me.fanSince) : []
@@ -126,11 +136,19 @@ export default function Explore() {
                 ))}
               </div>
               <p className="muted small suggest-why">
-                Based on who you follow and what fans of your artists follow.{' '}
+                Based on who you follow, what fans of your artists follow and the sound of the albums you love.{' '}
                 <Link to="/terms#feeds" className="link-btn">
                   How it works
                 </Link>
               </p>
+            </>
+          )}
+          {becauseRated.length > 0 && (
+            <>
+              <div className="section-head">
+                <h2>Because you rated {albumById(seedAlbum)?.title}</h2>
+              </div>
+              <SimilarList items={becauseRated} />
             </>
           )}
           {discussed.length > 0 && (

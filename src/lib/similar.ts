@@ -128,3 +128,40 @@ export function similarAlbums(albumId: string, opts: { limit?: number; perArtist
   }
   return out
 }
+
+// Seeds for a fan: albums they rated highly, plus (weaker) the albums of artists they follow.
+export interface AlbumSeed {
+  albumId: string
+  weight: number
+  rated: boolean
+}
+
+export interface SoundMatch {
+  score: number
+  seedAlbumId: string
+  albumId: string
+  reason: string
+}
+
+const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1)
+
+// Best match between a fan's seed albums and one artist's albums, with the reason in plain words.
+export function soundMatch(seeds: AlbumSeed[], albumIds: string[]): SoundMatch | null {
+  let best: SoundMatch | null = null
+  for (const seed of seeds) {
+    const a = DESCRIPTORS[seed.albumId]
+    if (!a) continue
+    for (const id of albumIds) {
+      const b = DESCRIPTORS[id]
+      if (!b || b.artist === a.artist) continue
+      const c = compareAlbums(a, b)
+      const score = c.score * seed.weight
+      if (best && score <= best.score) continue
+      const why = c.reasons[0] ?? ''
+      const isLink = !/^(Both|Similar sound)/.test(why)
+      const reason = isLink ? why : seed.rated ? `Because you rated ${a.title}: ${lowerFirst(why)}` : `Close to ${a.artist}’s ${a.title}: ${lowerFirst(why)}`
+      best = { score, seedAlbumId: a.albumId, albumId: b.albumId, reason }
+    }
+  }
+  return best
+}

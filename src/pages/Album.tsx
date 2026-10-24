@@ -8,7 +8,8 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc } from '../components/ui'
 import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { useComposer } from '../components/Composer'
-import { IconArrowUpRight, IconPen } from '../components/icons'
+import { IconPen } from '../components/icons'
+import { SimilarList } from '../components/SimilarList'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
 import { similarAlbums } from '../lib/similar'
 
@@ -88,29 +89,11 @@ export default function AlbumPage() {
         <>
           <div className="section-head">
             <h2>If you like this album</h2>
-            <Link to="/legal#feeds" className="muted small">
+            <Link to="/terms#feeds" className="muted small">
               How it works
             </Link>
           </div>
-          <div className="album-chart">
-            {similar.map((s) => {
-              const al = albumById(s.albumId)
-              if (!al) return null
-              return (
-                <Link key={al.id} to={`/album/${al.id}`} className="chart-row similar-row">
-                  <AlbumCover album={al} size={52} />
-                  <span className="grow chart-row-info">
-                    <strong>{al.title}</strong>
-                    <span className="muted small block">
-                      {artistById(al.artistId)?.name} · {al.year}
-                    </span>
-                    <span className="small block similar-why">{s.reasons.join(' · ')}</span>
-                  </span>
-                  <IconArrowUpRight size={16} />
-                </Link>
-              )
-            })}
-          </div>
+          <SimilarList items={similar} />
         </>
       )}
       <div className="section-head">
