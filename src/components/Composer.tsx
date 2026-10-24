@@ -130,17 +130,14 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const linkUrl = detectEmbed(text) ? undefined : findUrls(text)[0]
   const [preview, setPreview] = useState<{ url: string; data: LinkPreview | null; loading: boolean } | null>(null)
   const [hiddenPreviews, setHiddenPreviews] = useState<string[]>([])
-  const asked = useRef('')
-  useEffect(() => {
-    if (!linkUrl || hiddenPreviews.includes(linkUrl) || asked.current === linkUrl) return
-    const t = setTimeout(() => {
-      asked.current = linkUrl
-      setPreview({ url: linkUrl, data: null, loading: true })
-      // A newer link may replace this one meanwhile: keep the answer only if it still matches.
-      void fetchLinkPreview(linkUrl).then((data) => setPreview((cur) => (cur && cur.url === linkUrl ? { url: linkUrl, data, loading: false } : cur)))
-    }, 700)
-    return () => clearTimeout(t)
-  }, [linkUrl, hiddenPreviews])
+  // Only on a tap: reading a link's preview contacts other services, so it's the writer's choice.
+  const askPreview = () => {
+    if (!linkUrl) return
+    const url = linkUrl
+    setHiddenPreviews(hiddenPreviews.filter((u) => u !== url))
+    setPreview({ url, data: null, loading: true })
+    void fetchLinkPreview(url).then((data) => setPreview((cur) => (cur && cur.url === url ? { url, data, loading: false } : cur)))
+  }
   const shownPreview = preview && preview.url === linkUrl && !hiddenPreviews.includes(linkUrl) ? preview : null
   const reviewMode = Boolean(opts.reviewAlbumId)
   const albumId = opts.reviewAlbumId ?? ''
@@ -226,6 +223,13 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
       </div>
+      {linkUrl && !shownPreview && (
+        <button type="button" className="add-preview" onClick={askPreview}>
+          <IconImage size={15} /> Add link preview
+          <span className="muted small">title and image, read via Microlink</span>
+        </button>
+      )}
+      {shownPreview && !shownPreview.loading && !shownPreview.data && <p className="muted small">No preview available for this link.</p>}
       {shownPreview && (
         <div className="link-preview-edit">
           {shownPreview.loading ? (

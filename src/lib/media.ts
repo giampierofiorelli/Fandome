@@ -221,7 +221,7 @@ export function cleanLink(input: string): string | null {
   }
 }
 
-// Link preview (title, description, image) read through Microlink, a free metadata service,
+// Link preview (title and image) read through Microlink, a free metadata service,
 // only when someone writes a post with a link. The image is fetched and shrunk right away and
 // stored in the post; if the site doesn't allow that, the preview simply has no image.
 export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<import('../data/types').LinkPreview | null> {
@@ -232,7 +232,7 @@ export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<
     if (!res.ok) return null
     const json = (await res.json()) as { status: string; data?: { title?: string; description?: string; publisher?: string; image?: { url?: string } } }
     const d = json.data
-    if (json.status !== 'success' || !d || (!d.title && !d.description)) return null
+    if (json.status !== 'success' || !d || !d.title) return null
     let image: string | undefined
     if (d.image?.url) {
       try {
@@ -243,7 +243,8 @@ export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<
       }
     }
     const clip = (s: string | undefined, n: number) => (s ? (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s) : undefined)
-    return { url, title: clip(d.title, 120), description: clip(d.description, 200), site: d.publisher || prettyUrl(url).host, image }
+    // Title and image only (the picture sites publish for social sharing); no description.
+    return { url, title: clip(d.title, 120), site: d.publisher || prettyUrl(url).host, image }
   } catch {
     return null
   } finally {

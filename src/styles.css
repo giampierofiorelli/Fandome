@@ -1295,3 +1295,5 @@ a.link-rich:active { transform: scale(0.985); }
 .link-rich.loading { padding: 18px 14px; }
 .link-preview-edit { position: relative; margin-bottom: 6px; }
 .link-preview-edit .link-rich { margin-top: 0; }
+.add-preview { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; width: 100%; margin: 0 0 8px; padding: 12px 14px; border-radius: 16px; border: 1px dashed var(--glass-edge); background: transparent; color: var(--text); font: inherit; font-size: 14px; font-weight: 500; text-align: left; }
+.add-preview .muted { font-weight: 400; }
