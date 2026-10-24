@@ -1253,3 +1253,4 @@ body.story-open .modal-root { z-index: 100; }
 .discussed-list .row-item .cover span { display: none; }
 .discussed-list .row-item .cover { border-radius: 10px; flex-shrink: 0; }
 .artist-picked .pick.on::after { content: none; }
+.site-footer .manifesto p + p { margin-top: 8px; }

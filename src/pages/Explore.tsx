@@ -125,7 +125,7 @@ export default function Explore() {
                 ))}
               </div>
               <p className="muted small suggest-why">
-                Based on who you follow and what fans of your artists follow. No ads, no tracking.{' '}
+                Based on who you follow and what fans of your artists follow.{' '}
                 <Link to="/terms#feeds" className="link-btn">
                   How it works
                 </Link>

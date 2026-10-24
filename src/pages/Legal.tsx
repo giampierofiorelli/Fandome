@@ -54,12 +54,14 @@ export function Footer() {
         <div className="dotmatrix manifesto-kicker">OUR MANIFESTO</div>
         <p className="manifesto-lead">Made by music lovers, for music lovers, and above all to support the artists.</p>
         <p>
-          No hate, no bullying, no body shaming: here fans of different artists discover each other’s music, they don’t fight.
+          The internet and social media were born with a promise: open and democratic, for the people who listen and for the people who make music. It hasn’t gone that way. Algorithms and
+          playlists decide what we hear, and if you’re not on the right list, nobody gets to know you.
         </p>
         <p>
-          The internet and social media were born with a promise: open and fair, for the people who listen and for the people who make music. It hasn’t always gone that way, and algorithms
-          now decide too much of what we hear. Here there are no ads, no paid boosts and no hidden ranking: you choose who to follow, and you can always see why something is shown.
+          Fandome wants a truer, more open and more democratic way to discover music and to be discovered: fans bring the artists they love to other fans, and you can always see why
+          something is shown to you.
         </p>
+        <p>No hate, no bullying, no body shaming: here fans of different artists discover each other’s music, they don’t fight.</p>
       </section>
       <nav className="footer-links" aria-label="Legal">
         <Link to="/legal">Legal notice</Link>
@@ -281,10 +283,10 @@ export function Terms() {
 
       <h2 id="feeds">How feeds and suggestions work</h2>
       <p>
-        No ads, no paid boosts and no profiling. Everything is worked out on your device from what you chose to follow (DSA art. 27). Following: posts from people you follow, newest first. Latest:
+        No profiling: everything is worked out on your device from what you chose to follow (DSA art. 27). Following: posts from people you follow, newest first. Latest:
         every post about the artists you follow, newest first. Trending: posts about your artists from the last 48 hours (a week when it is quiet), ranked by how many different people replied
         (counts most), reposted or quoted, or liked them, with older posts fading; each person counts once, and at most two posts per author are shown. Artist suggestions in Explore come from the
-        artists followed by people you follow and by fans of your artists; each one says why it is shown. Latest is always there if you prefer a plain timeline.
+        artists followed by people you follow and by fans of your artists; each one says why it is shown. Latest is always there if you prefer a plain timeline. Today there is no advertising and nothing is boosted for money; if sponsored content ever appears, it will always be clearly labelled as such (DSA art. 26) and never disguised as a recommendation.
       </p>
 
       <h2 id="reporting">Reporting and moderation</h2>
