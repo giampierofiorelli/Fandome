@@ -1,0 +1,20 @@
+album_id,genre_token,genre_as_source_worded,evidence_url,scope,why_included
+annalisa-nuda,electropop,elettropop,https://www.ondarock.it/recensioni/2020-annalisa-nuda/,album,album review genre header
+annalisa-nuda,trappop,trap-pop,https://www.ondarock.it/recensioni/2020-annalisa-nuda/,album,album review genre header
+annalisa-nuda,pop,elettropop / trap-pop,https://www.ondarock.it/recensioni/2020-annalisa-nuda/,parent,pop component of documented compound genres
+annalisa-nuda,trap,trap-pop,https://www.ondarock.it/recensioni/2020-annalisa-nuda/,parent,"trap component, also discussed in review"
+annalisa-nuda,electronic,elettropop,https://www.ondarock.it/recensioni/2020-annalisa-nuda/,parent,synthetic backing independently confirmed by MusicBrainz credits
+annalisa-epoisiamofinitinelvortice,pop,pop,https://www.ondarock.it/recensioni/2023-annalisa-e-poi-siamo-finiti-nel-vortice/,album,album review genre header
+annalisa-epoisiamofinitinelvortice,electropop,elettropop,https://www.ondarock.it/recensioni/2023-annalisa-e-poi-siamo-finiti-nel-vortice/,album,core album style explicitly described
+annalisa-epoisiamofinitinelvortice,dance,dance,https://www.rockol.it/recensioni-musicali/album/10843/annalisa-e-poi-siamo-finiti-nel-vortice,album,dance floor oriented sound
+annalisa-epoisiamofinitinelvortice,electronic,elettronico,https://www.rockol.it/recensioni-musicali/album/10843/annalisa-e-poi-siamo-finiti-nel-vortice,album,album built around electronic sound
+annalisa-epoisiamofinitinelvortice,italodisco,italodisco,https://www.ondarock.it/recensioni/2023-annalisa-e-poi-siamo-finiti-nel-vortice/,track: Mon amour,critic likens track to Italo disco tradition
+annalisa-epoisiamofinitinelvortice,disco,italodisco,https://www.ondarock.it/recensioni/2023-annalisa-e-poi-siamo-finiti-nel-vortice/,parent,broad parent style of critic-named Italo disco
+annalisa-maiosonofuoco,dancepop,dance-pop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,album,album genre header
+annalisa-maiosonofuoco,electropop,electropop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,album,album genre header
+annalisa-maiosonofuoco,synthpop,synth-pop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,album,album genre header
+annalisa-maiosonofuoco,pop,dance-pop / electropop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,parent,parent genre
+annalisa-maiosonofuoco,dance,dance-pop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,parent,parent genre
+annalisa-maiosonofuoco,electronic,electropop / synth-pop,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,parent,parent genre
+annalisa-maiosonofuoco,eurodance,eurodance,https://www.ondarock.it/recensioni/2025-annalisa-ma-io-sono-fuoco/,"tracks: Emanuela, Chiodi, Io sono","secondary song-level reference, not album-wide uniformity"
+annalisa-maiosonofuoco,funk,funk,https://www.rockol.it/recensioni-musicali/album/11596/annalisa-ma-io-sono-fuoco,track: Delusa,source says funky flavor on Delusa

@@ -1,0 +1,4 @@
+album_id,artist,title,year,catalog_status_as_checked,integration_action,explanation
+annalisa-nuda,Annalisa,Nuda,2020,exists,keep existing entry,catalog.ts original 2020
+annalisa-epoisiamofinitinelvortice,Annalisa,E poi siamo finiti nel vortice,2023,exists,keep existing entry,catalog.ts original 2023
+annalisa-maiosonofuoco,Annalisa,Ma io sono fuoco,2025,missing,add to catalog.ts,artistId annalisa; generated album ID follows canonical slug
