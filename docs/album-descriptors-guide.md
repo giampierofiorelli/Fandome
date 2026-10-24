@@ -54,9 +54,18 @@ m-music,Madonna,Music,2000,electronic|pop,4,5,4,3,3,4,4,4,clear,party|love,en,Fr
 m-confessions,Madonna,Confessions on a Dance Floor,2005,dance|disco,5,5,5,3,1,5,4,5,clear,party|identity,en,nu-disco,Kylie Minogue|Daft Punk,ABBA|Donna Summer,1,"Non-stop disco mix, seamless tracks built for the club."
 ```
 
+## Albums that aren't in Fandome yet
+
+Our list is incomplete: add every studio album of the artist (no live albums, compilations or EPs unless they are landmarks).
+
+- Existing albums: keep their `album_id` exactly (find them in `src/data/seed.ts` and `src/data/catalog.ts`).
+- New albums: `album_id` = the artist's Fandome id + `-` + the title in lowercase with only letters and digits (accents removed, spaces and punctuation dropped). Examples: Madonna (`madonna`) "Erotica" → `madonna-erotica`; "American Life" → `madonna-americanlife`; Sigur Rós (`sigurros`) "( )" → use the year: `sigurros-2002`. The artist's Fandome id is the first part of its existing album ids (for the first five rooms: Madonna = `madonna`, Kylie Minogue = `kylie`, Pet Shop Boys = `psb`, Depeche Mode = `depeche`, Lady Gaga = `gaga`).
+- Put the exact official title and the original release year.
+
 ## How to send them
 
-- Put the rows in a `.csv` file (or paste them in chat in a code block), with exactly the header above.
+- **Where (for Claude with GitHub access):** one file per artist in `docs/descriptors/<artist-id>.csv` (e.g. `docs/descriptors/madonna.csv`), with exactly the header above. Commit them on a branch named `descriptors` (not on `main`), so they don't clash with work on the site; Claude merges and imports them.
+- Otherwise: a `.csv` file, or rows pasted in chat in a code block, with exactly the header above.
 - One artist per batch is easiest to check. Claude validates every row (values, genres, ids) before importing, and runs a test so nothing broken reaches the site.
 
 ## Prompt for ChatGPT (copy as is, then paste the album list)
