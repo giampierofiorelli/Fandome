@@ -16,6 +16,13 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 
 ## Product, later
 
+- **Real listening parties** (today: one demo party hard-coded in `src/data/seed.ts`, always live in a loop, fake listeners, local-only chat).
+  1. Create a party: host picks the artist, an album (track list and durations from MusicBrainz) or their own running order, and a start date/time.
+  2. Announce it in the artist room and on Home with a countdown, "Remind me", and suggest-to-friends (like artist rooms).
+  3. Real start and end: playback position comes from the start time (works without a server, same idea as `src/lib/party.ts`); the party ends after the last track and stays as a memory with chat and "I was there".
+  4. Rules: only recently active users can host (like pages); parties can be reported and handled by the artist's moderators.
+  - Shared presence (who's really listening) and a shared chat need the backend.
+
 - **Marketplace for collectors** (buying and selling). Not now: the collection is a showcase only. Only as a separate product with identity checks (KYC), protected payments and legal review (counterfeits, scams, ticket touting, IP).
 - **Real post translation**: Chrome's on-device Translator where available, a free service (e.g. MyMemory, ~5,000 chars/day) as fallback. Today translations are pre-written demo text.
 - **Real brand icons for unknown websites** in profile links (favicons) once there is a server to fetch and store them; today unknown sites get a generic link icon, to avoid sending visitors' IPs to third parties.
