@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { albums, artists, concerts, demoAlbumBuzz } from '../data/seed'
 import { useStore } from '../store/store'
@@ -43,11 +42,10 @@ export default function Explore() {
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
   const paths = me ? discoverPaths(me, artists, albums) : []
   const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) }) : []
-  const [allRooms, setAllRooms] = useState(false)
   // Your rooms first, then A–Z; the full list on request.
   const mine = me ? Object.keys(me.fanSince) : []
   const sortedRooms = [...artists].sort((x, y) => Number(mine.includes(y.id)) - Number(mine.includes(x.id)) || x.name.localeCompare(y.name, 'en', { sensitivity: 'base' }))
-  const shownRooms = allRooms ? sortedRooms : sortedRooms.slice(0, Math.max(8, mine.length))
+  const shownRooms = sortedRooms.slice(0, Math.max(8, Math.min(mine.length, 12)))
   return (
     <>
       <header className="hello">
@@ -230,11 +228,9 @@ export default function Explore() {
               </Link>
             ))}
           </div>
-          {shownRooms.length < sortedRooms.length && (
-            <button className="btn rooms-more" onClick={() => setAllRooms(true)}>
-              Show all {sortedRooms.length} artists
-            </button>
-          )}
+          <Link to="/artists" className="btn rooms-more">
+            All {sortedRooms.length} artist rooms
+          </Link>
         </>
       )}
     </>

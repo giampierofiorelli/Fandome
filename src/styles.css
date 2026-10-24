@@ -1361,3 +1361,17 @@ a.link-rich:active { transform: scale(0.985); }
 .step-foot { display: flex; flex-direction: column; align-items: stretch; gap: 10px; border-top: 1px solid var(--glass-line); padding-top: 14px; }
 .step-foot .link-btn { align-self: center; }
 .step-done { color: var(--accent); text-align: center; }
+
+/* Seven tab bar buttons: narrower on phones so the + stays in the middle */
+@media (max-width: 480px) {
+  .tabbar { gap: 2px; padding: 6px; }
+  .tabbar-item { width: 44px; }
+  .tabbar-plus { margin: 0 2px; }
+}
+/* Artists page */
+.filter-row { display: flex; gap: 6px; overflow-x: auto; padding: 2px 2px 8px; margin: 0 -2px; scrollbar-width: none; }
+.filter-row::-webkit-scrollbar { display: none; }
+.chip.filter { flex-shrink: 0; border: 1px solid var(--glass-line); cursor: pointer; font: inherit; font-size: 13px; }
+.chip.filter.on { background: var(--ink); color: var(--on-ink); border-color: transparent; }
+.artists-count { margin: 6px 2px 10px; }
+a.rooms-more { display: block; text-align: center; text-decoration: none; }

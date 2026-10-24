@@ -6,7 +6,7 @@ import { conversations } from './store/reducer'
 import { useComposer } from './components/Composer'
 import { useToast } from './components/Toast'
 import { DiscoLogo } from './components/DiscoLogo'
-import { IconGlobe, IconHeadphones, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
+import { IconGlobe, IconHeadphones, IconMic, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
 import { starterPack } from './lib/packs'
 import { spring } from './lib/motion'
@@ -22,6 +22,7 @@ import StarterPackPage from './pages/StarterPack'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
 import ScenesPage from './pages/Scenes'
+import ArtistsPage from './pages/Artists'
 import ScenePage from './pages/Scene'
 import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
@@ -195,6 +196,7 @@ export default function App() {
           <Routes location={loc}>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/artists" element={<ArtistsPage />} />
             <Route path="/scenes" element={<ScenesPage />} />
             <Route path="/scenes/:sceneId" element={<ScenePage />} />
             <Route path="/a/:artistId" element={<ArtistPage />} />
@@ -225,12 +227,13 @@ export default function App() {
       <nav className="tabbar" aria-label="Main">
         <Tab to="/" end icon={<IconHome size={22} />} label="Home" />
         <Tab to="/explore" icon={<IconSearch size={22} />} label="Explore" />
+        <Tab to="/artists" icon={<IconMic size={22} />} label="Artists" />
         <motion.button className="tabbar-plus" onClick={() => compose()} aria-label="New post" whileTap={{ scale: 0.88 }} transition={spring}>
           <IconPlus size={22} />
         </motion.button>
         <Tab to="/scenes" icon={<IconGlobe size={22} />} label="Scenes" />
         <Tab to="/party/party-confessions" icon={<IconHeadphones size={22} />} label="Listening party" />
-        {me && <Tab to={`/u/${me.handle}`} icon={<IconUser size={22} />} label="Profile" />}
+        {me ? <Tab to={`/u/${me.handle}`} icon={<IconUser size={22} />} label="Profile" /> : <Tab to="/welcome" icon={<IconUser size={22} />} label="Join Fandome" />}
       </nav>
     </>
   )
