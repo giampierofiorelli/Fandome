@@ -328,3 +328,57 @@ export function didYouKnow(artistId: string, albums: Album[], skip: string[] = [
   if (d.scene) facts.push(`Scene: ${d.scene}.`)
   return facts.filter((f) => !skip.some((s) => s && f.includes(s))).slice(0, 3)
 }
+
+// Optional mini quiz: just for fun, no points, no effect on the level. Built from the data we have
+// (scenes.ts for every artist, descriptors where they exist); options are stable for each artist.
+export interface QuizQuestion {
+  q: string
+  options: string[]
+  answer: string
+}
+
+function seeded(text: string) {
+  let h = 2166136261
+  for (const c of text) h = Math.imul(h ^ c.charCodeAt(0), 16777619)
+  return () => ((h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0) / 4294967296)
+}
+function shuffle<T>(xs: T[], rnd: () => number) {
+  const a = [...xs]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+export function quizFor(artistId: string, artists: Artist[], albums: Album[]): QuizQuestion[] {
+  const s = SCENES[artistId]
+  const name = artists.find((a) => a.id === artistId)?.name
+  if (!s || !name) return []
+  const rnd = seeded(artistId)
+  const out: QuizQuestion[] = []
+  const begin = startWith(artistId, albums)
+  const d = begin ? DESCRIPTORS[begin.albumId] : undefined
+  const pool = (xs: string[], not: string[]) => shuffle([...new Set(xs)].filter((x) => !not.some((n) => n.toLowerCase() === x.toLowerCase())), rnd)
+  if (d) {
+    const prod = d.producers.filter((p) => p.toLowerCase() !== d.artist.toLowerCase())
+    if (prod.length) {
+      const wrong = pool(Object.values(DESCRIPTORS).flatMap((x) => x.producers), [...d.producers, ...artists.map((a) => a.name)]).slice(0, 2)
+      if (wrong.length === 2) out.push({ q: `Who produced ${d.title}?`, answer: prod[0], options: shuffle([prod[0], ...wrong], rnd) })
+    }
+    if (d.influencedBy.length) {
+      const wrong = pool(Object.values(DESCRIPTORS).flatMap((x) => x.influencedBy), d.influencedBy).slice(0, 2)
+      if (wrong.length === 2) out.push({ q: `${d.title} draws on…`, answer: d.influencedBy[0], options: shuffle([d.influencedBy[0], ...wrong], rnd) })
+    }
+  }
+  if (out.length < 2) {
+    const decades = [s.since - 10, s.since, s.since + 10].filter((x) => x >= 1930 && x <= 2020)
+    if (decades.length === 3) out.push({ q: `When did ${name} start?`, answer: `${s.since}s`, options: decades.map((x) => `${x}s`) })
+  }
+  if (out.length < 2) {
+    const main = GENRE_LABELS[s.genres[0] as Genre]
+    const wrong = shuffle(['pop', 'rock', 'songwriter', 'hiphop', 'electronic', 'opera', 'folk', 'disco', 'jazz', 'punk'].filter((g) => !s.genres.includes(g as Genre)), rnd).slice(0, 2).map((g) => GENRE_LABELS[g as Genre])
+    out.push({ q: `${name} is mainly…`, answer: main, options: shuffle([main, ...wrong], rnd) })
+  }
+  return out.slice(0, 2)
+}

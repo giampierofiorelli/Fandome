@@ -3,7 +3,7 @@ import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { albums, artists } from '../data/seed'
-import { buildScene, compareFor, didYouKnow, exploredArtists, listenFor, LEVEL_NAMES, startWith, type ScenePath } from '../lib/scenePath'
+import { buildScene, compareFor, didYouKnow, exploredArtists, listenFor, LEVEL_NAMES, quizFor, startWith, type QuizQuestion, type ScenePath } from '../lib/scenePath'
 import { isAbout } from '../lib/postArtists'
 import { useComposer } from '../components/Composer'
 import { ShareCardButton } from '../components/ShareCard'
@@ -170,7 +170,9 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
   const cues = begin ? listenFor(begin.albumId) : undefined
   const yours = new Set([...Object.keys(me?.fanSince ?? {}), ...Object.keys(me?.ratings ?? {}).map((x) => albums.find((al) => al.id === x)?.artistId ?? '')])
   const compare = compareFor(a.id, yours, artists, albums)
-  const facts = didYouKnow(a.id, albums, [step.connection ?? ''])
+  const quiz = quizFor(a.id, artists, albums)
+  // Facts that would give away a quiz answer are left out.
+  const facts = didYouKnow(a.id, albums, [step.connection ?? '', ...quiz.map((q) => q.answer)])
   const fanPosts = state.posts.filter((p) => isAbout(p, a.id) && !p.removed && !p.replyTo && p.text.trim()).sort((x, y) => y.createdAt - x.createdAt).slice(0, 2)
   const theirs = albums.filter((al) => al.artistId === a.id).sort((x, y) => x.year - y.year)
   const listened = Boolean(me?.listened?.includes(a.id))
@@ -267,6 +269,7 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
             <span className="muted small block">Join Fandome to keep your progress.</span>
           )}
         </div>
+        <Quiz questions={quiz} />
         {facts.length > 0 && (
           <div className="step-todo">
             <span className="scene-card-lang">Did you know?</span>
@@ -352,5 +355,35 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
         </div>
       </div>
     </Modal>
+  )
+}
+
+// Optional mini quiz: tap an answer to see if you got it. No points, no streaks, no effect on your level.
+function Quiz({ questions }: { questions: QuizQuestion[] }) {
+  const [picked, setPicked] = useState<Record<number, string>>({})
+  if (!questions.length) return null
+  return (
+    <div className="step-todo">
+      <span className="scene-card-lang">Quick quiz (just for fun)</span>
+      {questions.map((q, i) => {
+        const choice = picked[i]
+        return (
+          <div key={q.q} className="quiz-q">
+            <span className="small">{q.q}</span>
+            <div className="step-links">
+              {q.options.map((o) => {
+                const state = !choice ? '' : o === q.answer ? ' right' : o === choice ? ' wrong' : ''
+                return (
+                  <button key={o} className={`chip quiz-option${state}`} disabled={Boolean(choice)} onClick={() => setPicked({ ...picked, [i]: o })}>
+                    {o}
+                  </button>
+                )
+              })}
+            </div>
+            {choice && <span className="muted small block">{choice === q.answer ? 'Yes!' : `It’s ${q.answer}.`}</span>}
+          </div>
+        )
+      })}
+    </div>
   )
 }

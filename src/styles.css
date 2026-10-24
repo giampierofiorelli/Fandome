@@ -1386,3 +1386,9 @@ a.rooms-more { display: block; text-align: center; text-decoration: none; }
 .step-facts { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.5; }
 .step-post { display: block; padding: 10px 12px; border-radius: 14px; background: var(--glass); border: 1px solid var(--glass-line); color: var(--text); text-decoration: none; }
 .step-ask { align-self: flex-start; }
+
+.quiz-q { display: flex; flex-direction: column; gap: 6px; }
+.quiz-option { border: 1px solid var(--glass-line); cursor: pointer; font: inherit; font-size: 13px; }
+.quiz-option:disabled { cursor: default; opacity: 0.55; }
+.quiz-option.right { opacity: 1; background: color-mix(in srgb, var(--accent) 16%, transparent); border-color: var(--accent); }
+.quiz-option.wrong { opacity: 1; text-decoration: line-through; }

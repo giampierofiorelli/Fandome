@@ -57,3 +57,20 @@ group('scene step extras', () => {
     expect(didYouKnow('mina', albums)).toEqual([])
   })
 })
+
+group('quiz', () => {
+  it('asks two questions with the right answer among three options, stable for each artist', async () => {
+    const { quizFor } = await import('./scenePath')
+    for (const id of ['annalisa', 'mina', 'moroder', 'battisti']) {
+      const qs = quizFor(id, artists, albums)
+      expect(qs.length).toBe(2)
+      for (const q of qs) {
+        expect(q.options).toHaveLength(3)
+        expect(q.options).toContain(q.answer)
+        expect(new Set(q.options).size).toBe(3)
+      }
+      expect(quizFor(id, artists, albums)).toEqual(qs)
+    }
+    expect(quizFor('annalisa', artists, albums)[0].q).toBe('Who produced E poi siamo finiti nel vortice?')
+  })
+})
