@@ -1,0 +1,3 @@
+album_id,artist_id,album,year,type,last_observed_in_catalog,proposed_action
+charlixcx-wutheringheights,charlixcx,Wuthering Heights,2026,soundtrack,no,add album with ID before import; do not duplicate if Claude already added
+charlixcx-musicfashionfilm,charlixcx,"Music, Fashion, Film",2026,studio,no,add album with ID before import; do not duplicate if Claude already added

@@ -1,0 +1,21 @@
+album_id,genre,evidence,scope,qualification
+charlixcx-wutheringheights,pop,Pitchfork (album taxonomy); Slant (album prose),album,reviewed genre
+charlixcx-wutheringheights,soundtrack,"Pitchfork, AP, Metacritic",release/type,Type already soundtrack; descriptive soundtrack included too
+charlixcx-wutheringheights,artpop,"Album of The Year (art pop), Pitchfork experimental pop characterization",album,secondary taxonomy; not a critic-wide consensus
+charlixcx-wutheringheights,synthpop,No Ripcord critique listed via Metacritic; synths throughout Guardian,album,explicit review term; hybrid of synths and strings
+charlixcx-wutheringheights,electronic,Pitchfork/Guardian descriptions: drum machines and synth production,album sonic element,broad musical descriptor supported by instrumentation
+charlixcx-wutheringheights,rock,Pitchfork Pop/R&B/Rock review category,album,coarse outlet taxonomy
+charlixcx-wutheringheights,industrial,Guardian: industrial-metal drums on House and Funny Mouth,track-specific,Do not treat as dominant whole-album sound
+charlixcx-wutheringheights,gothpop,NME headline gothic pop; Guardian gothic aesthetics,album,Gothic pop language mapped to existing gothpop token; editorial interpretation
+charlixcx-musicfashionfilm,pop,Resident Advisor genre Pop; Pitchfork genre Pop/R&B/Rock,album,primary style
+charlixcx-musicfashionfilm,rock,Pitchfork and Guardian album analyses; NME rock album description,album,high-consensus guitar-based approach
+charlixcx-musicfashionfilm,indierock,Album of the Year indie rock; Pitchfork Rakes/Strokes guitar references,album,aggregated categorization supported by critical sonic descriptions
+charlixcx-musicfashionfilm,slackerrock,Pitchfork explicit slacker rock description; Album of The Year tag,album,NEW TOKEN
+charlixcx-musicfashionfilm,indietronica,Album of the Year primary style,album,NEW TOKEN; lower evidence than independent review
+charlixcx-musicfashionfilm,postpunkrevival,Album of the Year named subgenre,album,NEW TOKEN; lower-confidence editorial tag
+charlixcx-musicfashionfilm,alt,Pitchfork indie rock and alternative comparisons; AOTY alternative dance,album descriptor,broad category proposed; implicit in alt/indie rock context
+charlixcx-musicfashionfilm,poppunk,Resident Advisor: garage pop-punk for Yeah,track-specific,Existing genre; not dominant
+charlixcx-musicfashionfilm,electronic,Resident Advisor synth/bass and electronic rock-hybrid discussion,album sonic element,Despite guitar pivot retains electronic processing
+charlixcx-musicfashionfilm,synthpop,Resident Advisor: pop synth lines on Camera and Wink Wink,track-specific,Only synth-led tracks; may remove if validator/editor considers too strong
+charlixcx-musicfashionfilm,alternativedance,Album of the Year genre list,album,NEW TOKEN; weaker single-source tag
+charlixcx-musicfashionfilm,grunge,"Pitchfork references Garbage grunge-pop, textures",track/style comparison,Guitar timbre and comparisons; not a genre consensus
