@@ -17,7 +17,7 @@ interface Spark {
   life: number
 }
 
-function findDots(text: string, font: string, w: number, h: number, scale: number): Dot[] {
+export function findDots(text: string, font: string, w: number, h: number, scale: number): Dot[] {
   const c = document.createElement('canvas')
   c.width = Math.ceil(w * scale)
   c.height = Math.ceil(h * scale)

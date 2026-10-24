@@ -83,8 +83,12 @@ export default function ConcertPage() {
             <ShareCardButton
               label="Share"
               color={artist.color}
-              title={upcoming ? `I’m going to ${artist.name} in ${concert.city}` : `I was there: ${artist.name}, ${concert.city}`}
-              lines={[concert.venue, d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }), concert.tour, `@${me.handle}`]}
+              kicker={upcoming ? 'I’M GOING' : 'I WAS THERE'}
+              title={artist.name}
+              subtitle={concert.city}
+              handle={me.handle}
+              stats={upcoming ? [{ n: days, label: days === 1 ? 'day to go' : 'days to go' }, { n: attendees.length, label: 'fans going' }] : [{ n: attendees.length, label: 'fans were there' }]}
+              rows={[concert.venue, d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }), concert.tour].filter(Boolean)}
             />
           )}
         </div>

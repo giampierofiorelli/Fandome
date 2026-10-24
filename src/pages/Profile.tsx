@@ -101,12 +101,16 @@ export default function Profile() {
               <ShareCardButton
                 label="Share passport"
                 color={user.color}
-                title={`${user.name}’s Fan Passport`}
-                lines={[
-                  ...Object.entries(user.fanSince).slice(0, 3).map(([id, y]) => `${artistById(id)?.name} fan since ${y}`),
-                  `${showCount} shows · ${rated.length} albums rated`,
-                  `@${user.handle}`,
+                kicker="FAN PASSPORT"
+                title={user.name}
+                subtitle={user.location || undefined}
+                handle={user.handle}
+                stats={[
+                  { n: showCount, label: showCount === 1 ? 'show' : 'shows' },
+                  { n: rated.length, label: 'albums rated' },
+                  { n: Object.keys(user.fanSince).length, label: 'artists' },
                 ]}
+                rows={Object.entries(user.fanSince).slice(0, 3).map(([id, y]) => `${artistById(id)?.name} · fan since ${y}`)}
               />
             )}
           </div>
