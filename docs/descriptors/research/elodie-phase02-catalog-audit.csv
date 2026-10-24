@@ -1,0 +1,4 @@
+album_id,artist,title,year,catalogue_state,action,caution
+elodie-okrespira,Elodie,OK. Respira,2023,already_in_catalog_ts,keep_current_id,Do not re-add or rename existing record
+elodie-miamimiodi,Elodie,Mi Ami Mi Odi,2025,missing_in_catalog_ts,add_studio_album_metadata,Use 12-track standard edition as baseline; no new artist record
+elodie-redlight,Elodie,Red Light,2023,not_in_catalog_ts,hold_until_mixtape_type_decision,Artist expressly rejects album and EP classification; no validator-compatible type
