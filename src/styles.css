@@ -1175,3 +1175,8 @@ body.story-open .modal-root { z-index: 100; }
 .share-rec-bar { width: 56px; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--on-ink) 25%, transparent); overflow: hidden; }
 .share-rec-bar span { display: block; height: 100%; background: var(--on-ink); transform-origin: left; }
 @keyframes rec-blink { 50% { opacity: 0.3; } }
+
+/* Closed embeds: what a tap does and how to change the default */
+.embed-note { margin: 2px 2px 4px; font-size: 12px; line-height: 1.4; color: var(--muted); }
+.embed-note .link-btn { font-size: 12px; padding: 0; color: var(--text-2); }
+.consent p.consent-note { margin-top: -4px; font-size: 12.5px; color: var(--muted); }

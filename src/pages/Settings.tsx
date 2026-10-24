@@ -196,7 +196,8 @@ function PrivacyCard() {
       <p className="muted small">
         {on
           ? 'Videos, music players and posts from YouTube, Spotify, Instagram and other platforms open already expanded. Those companies may set cookies and see your IP address.'
-          : 'Videos, music players and posts from other platforms stay closed until you tap them, so those companies learn nothing about you just for scrolling.'}
+          : 'Videos, music players and posts from other platforms stay closed until you tap them, so those companies learn nothing about you just for scrolling. Tapping one loads only that one; this setting stays off.'}
+        {' You can change this anytime.'}
         {consent && ` Choice saved on ${new Date(consent.at).toLocaleDateString('en-GB')}.`}
       </p>
       <p className="small legal-links">

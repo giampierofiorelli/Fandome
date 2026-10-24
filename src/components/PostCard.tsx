@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { Embed, Post } from '../data/types'
 import { EMBED_LABEL, embedSrc, findUrls, isAudioEmbed, prettyUrl } from '../lib/media'
-import { useConsent } from '../lib/prefs'
+import { firstOneOffLoad, setConsent, useConsent } from '../lib/prefs'
 import { loadYouTubeApi, type YTPlayer } from '../lib/youtube'
 import { AudioPlayer } from './AudioPlayer'
 import { useStore } from '../store/store'
@@ -558,27 +558,57 @@ function RepostTagsForm({ postId }: { postId: string }) {
   )
 }
 
+// One tap loads one player. The first time in a visit, say that the privacy choice hasn't changed.
+function useOneOffLoad(setTapped: (v: boolean) => void) {
+  const toast = useToast()
+  const navigate = useNavigate()
+  return () => {
+    setTapped(true)
+    if (firstOneOffLoad()) toast('Loaded just this one. Your privacy choice hasn’t changed.', { label: 'Settings', onClick: () => navigate('/settings') })
+  }
+}
+
+// Under a closed player: what a tap does, and how to change the default.
+function EmbedNote() {
+  return (
+    <div className="embed-note">
+      Tap loads only this one ·{' '}
+      <button className="link-btn" onClick={() => setConsent(true)}>
+        Always show media
+      </button>{' '}
+      ·{' '}
+      <Link to="/settings" className="link-btn">
+        Settings
+      </Link>
+    </div>
+  )
+}
+
 // YouTube: with the reader's consent the player shows right away; without it we
 // show a neutral poster (not even the thumbnail, which comes from Google) until they tap.
 function YouTubeEmbed({ id }: { id: string }) {
   const consent = useConsent()
   const auto = consent?.media === true
   const [tapped, setTapped] = useState(false)
+  const tap = useOneOffLoad(setTapped)
   return (
-    <div className="yt" onClick={(e) => e.stopPropagation()}>
-      {tapped ? (
-        <YouTubePlayer id={id} />
-      ) : auto ? (
-        <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`} title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen />
-      ) : (
-        <button className="yt-poster blank" onClick={() => setTapped(true)} aria-label="Play YouTube video">
-          <span className="yt-play">
-            <IconPlay size={22} />
-          </span>
-          <span className="embed-consent">YouTube video · playing it shares data with YouTube</span>
-        </button>
-      )}
-    </div>
+    <>
+      <div className="yt" onClick={(e) => e.stopPropagation()}>
+        {tapped ? (
+          <YouTubePlayer id={id} />
+        ) : auto ? (
+          <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`} title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen />
+        ) : (
+          <button className="yt-poster blank" onClick={tap} aria-label="Play YouTube video">
+            <span className="yt-play">
+              <IconPlay size={22} />
+            </span>
+            <span className="embed-consent">YouTube video · playing it lets YouTube set cookies and see your IP</span>
+          </button>
+        )}
+      </div>
+      {!tapped && !auto && <EmbedNote />}
+    </>
   )
 }
 
@@ -651,21 +681,23 @@ function SocialEmbed({ embed }: { embed: Embed }) {
   const consent = useConsent()
   const [tapped, setTapped] = useState(false)
   const load = tapped || consent?.media === true
+  const tap = useOneOffLoad(setTapped)
   const label = EMBED_LABEL[embed.kind]
   return (
     <div className={`social ${embed.kind}${isAudioEmbed(embed.kind) ? ' audio' : ''}${load ? ' loaded' : ''}`} onClick={(e) => e.stopPropagation()}>
       {load ? (
         <iframe src={embedSrc(embed)} title={`${label} post`} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen loading="lazy" />
       ) : (
-        <button className="social-poster" onClick={() => setTapped(true)} aria-label={`Show ${label} post`}>
+        <button className="social-poster" onClick={tap} aria-label={`Show ${label} post`}>
           <span className="embed-logo">{label.slice(0, 2)}</span>
           <span className="grow">
             <strong>{isAudioEmbed(embed.kind) ? `Listen on ${label}` : `${label} post`}</strong>
-            <span className="muted small block">Opening it shares data with {label}</span>
+            <span className="muted small block">Opening it lets {label} set cookies and see your IP</span>
           </span>
           <span className="pill-btn glass small">{isAudioEmbed(embed.kind) ? 'Play' : 'Show'}</span>
         </button>
       )}
+      {!load && <EmbedNote />}
       <a className="social-open muted small" href={embed.url} target="_blank" rel="noopener noreferrer nofollow ugc">
         Open on {label} ↗
       </a>

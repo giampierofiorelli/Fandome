@@ -47,3 +47,12 @@ export function useConsent(): Consent | null {
 
 // Embeds open expanded only with consent; otherwise each one waits for a tap.
 export const autoEmbeds = () => getConsent()?.media === true
+
+// Someone who chose "Only essential" taps one player: it loads just that one (that tap is their
+// consent for it) and the saved choice stays the same. Tell them once per visit.
+let toldOneOff = false
+export function firstOneOffLoad(): boolean {
+  if (toldOneOff || getConsent()?.media === true) return false
+  toldOneOff = true
+  return true
+}

@@ -25,6 +25,7 @@ export function ConsentBanner() {
           <p>
             Fandome uses only what it needs to work, saved on your device. No ads, no analytics. Videos and music players (YouTube, Spotify, Instagram…) come from other companies that may set cookies and see your IP: load them automatically?
           </p>
+          <p className="consent-note">If you say no, each one stays closed and opens only if you tap it. You can change your choice anytime in Settings or from “Privacy choices” at the bottom of every page.</p>
           <div className="consent-actions">
             <button className="pill-btn ink" onClick={() => setConsent(false)}>
               Only essential
@@ -34,7 +35,7 @@ export function ConsentBanner() {
             </button>
           </div>
           <Link to="/privacy" className="consent-link">
-            Privacy policy · change it anytime in Settings
+            Privacy policy
           </Link>
         </motion.div>
       )}
@@ -171,7 +172,7 @@ export function Privacy() {
       <h2>Embedded media (only with your consent)</h2>
       <p>
         Posts can embed players from YouTube, Spotify, Apple Music, SoundCloud, Deezer, TIDAL, Mixcloud, Audiomack, Vimeo, X, Instagram and TikTok. These load only if you choose “Allow media”, or when
-        you tap a single player. They may set cookies and receive your IP address under their own privacy policies (consent, art. 6(1)(a) GDPR). You can withdraw consent anytime in Settings.
+        you tap a single player. Tapping one when you chose “Only essential” loads only that player, for that time: your saved choice does not change and nothing else loads. They may set cookies and receive your IP address under their own privacy policies (consent, art. 6(1)(a) GDPR). You can change or withdraw your choice anytime in Settings or with “Privacy choices” at the bottom of every page; withdrawing stops future loading but cannot remove cookies a platform already set (you can clear them in your browser).
       </p>
 
       <h2>Spotify and concert dates</h2>
