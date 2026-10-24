@@ -1,0 +1,4 @@
+album_id,title,year,catalog_presence,verified_against,notes
+mahmood-gioventubruciata,Gioventù bruciata,2019,existing,src/data/catalog.ts,Existing catalog title preserved; no new entry
+mahmood-ghettolimpo,Ghettolimpo,2021,existing,src/data/catalog.ts,Existing catalog title preserved; no new entry
+mahmood-neilettideglialtri,Nei letti degli altri,2024,existing,src/data/catalog.ts,Existing catalog title preserved; do not create separate duplicate for March 2024 expansion

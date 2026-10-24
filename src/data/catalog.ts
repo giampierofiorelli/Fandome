@@ -196,7 +196,7 @@ const ROWS: Row[] = [
   ['pausini', 'Laura Pausini', '#e0708f', 'From Solarolo to the world', [['Laura Pausini', 1993], ['Le cose che vivi', 1996], ['La mia risposta', 1998], ['Resta in ascolto', 2004], ['Fatti sentire', 2018], ['Anime parallele', 2023]]],
   ['annalisa', 'Annalisa', '#e07ab5', 'Italian pop that never stops', [['Nali', 2011], ['Mentre tutto cambia', 2012], ['Non so ballare', 2013], ['Splende', 2015], ['Se avessi un cuore', 2016], ['Bye Bye', 2018], ['Nuda', 2020], ['E poi siamo finiti nel vortice', 2023], ['Ma io sono fuoco', 2025]]],
   ['elodie', 'Elodie', '#c9506f', 'Voice, style and huge stages', [['Un\'altra vita', 2016], ['Tutta colpa mia', 2017], ['This Is Elodie', 2020], ['OK. Respira', 2023], ['Red Light', 2023], ['Mi Ami Mi Odi', 2025]]],
-  ['blanco', 'Blanco', '#5a9ae0', 'Sky blue and hearts on fire', [['Blu celeste', 2021], ['Innamorato', 2023]]],
+  ['blanco', 'Blanco', '#5a9ae0', 'Sky blue and hearts on fire', [['Blu celeste', 2021], ['Innamorato', 2023], ['Ma’', 2026]]],
   ['mahmood', 'Mahmood', '#8a5ac9', 'Soldi, Brividi and new roads', [['Gioventù bruciata', 2019], ['Ghettolimpo', 2021], ['Nei letti degli altri', 2024]]],
   ['rickymartin', 'Ricky Martin', '#e05a3f', 'Livin’ la vida loca', [['Vuelve', 1998], ['Ricky Martin', 1999], ['Sound Loaded', 2000], ['Life', 2005], ['Música + Alma + Sexo', 2011]]],
   ['ritaora', 'Rita Ora', '#d94a7a', 'Pop with London attitude', [['Ora', 2012], ['Phoenix', 2018], ['You & I', 2023]]],

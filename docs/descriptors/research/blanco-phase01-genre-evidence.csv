@@ -1,0 +1,32 @@
+album_id,genre_token,source,scope,evidence_note
+blanco-bluceleste,pop,OndaRock Antonio Silvestri; Rockol Claudio Cabona,album,Explicit overall album framework
+blanco-bluceleste,poprap,OndaRock title metadata pop-rap,album,New canonical token: poprap
+blanco-bluceleste,trap,OndaRock and Sentireascoltare,album,Clear stylistic family and album-specific post-trap/hybrid
+blanco-bluceleste,posttrap,OndaRock Figli di puttana; Sentireascoltare album framing,track/album,New token posttrap; album broadly situated in post-trap
+blanco-bluceleste,rnb,"OndaRock album header pop-rap, r’n’b",album,R&B explicitly named
+blanco-bluceleste,rock,Rockol; OndaRock,album,Rock vocal energy and tracks in album
+blanco-bluceleste,poppunk,OndaRock Paraocchi,track,"Punk-pop sonic hybrid present on record, not every song"
+blanco-bluceleste,punk,Rockol album-wide punk attitude; Sentireascoltare punk,album,Behavior/texture: genre prominence lower than pop
+blanco-bluceleste,poprock,Sentireascoltare pop-rock comparison,album context,"New token poprock, independent critique genre naming"
+blanco-bluceleste,electrorock,OndaRock Notti in bianco electro-rock,track,"New token electrorock, song-level"
+blanco-bluceleste,punkrock,OndaRock Pornografia punk-rock,track,"New token punkrock, song-level"
+blanco-bluceleste,songwriter,"OndaRock title track, Lucciole, Afrodite: cantautorato",selected tracks,Editorial normalization of cantautorato to songwriter
+blanco-innamorato,pop,OndaRock; Rockol; Billboard Italia,album,Main category
+blanco-innamorato,poppunk,"OndaRock opening, Billboard Italia",album/track,Strong album identity with opening pop-punk electronic
+blanco-innamorato,poprap,OndaRock album header pop-rap and tracks pop-rap-rock,album,New token poprap
+blanco-innamorato,rock,OndaRock and Rockol,album,Rock/pop crossover
+blanco-innamorato,poprock,OndaRock Scusa and L’isola delle rose pop-rap-rock,selected tracks,New token poprock: compound genre from critic phrase
+blanco-innamorato,electronic,OndaRock La mia famiglia; Billboard obsessive synths,album/track,Electronic production; not every track
+blanco-innamorato,jungle,OndaRock Ancora ancora ancora,track,"New token jungle, one track explicitly named"
+blanco-innamorato,rnb,OndaRock Fotocopia,track,R&B explicitly qualified
+blanco-innamorato,popfunk,OndaRock Un briciolo di allegria,track,"Existing token popfunk, one song"
+blanco-innamorato,funk,OndaRock Un briciolo di allegria pop-funk,track/broader,Broad funk + compound popfunk retained per rule
+blanco-innamorato,songwriter,OndaRock and Rockol melodic cantautorato references,album,Songwriter/cantautorato described as stylistic component
+blanco-ma,pop,OndaRock album category; Rockol review; Universal,album,Main genre
+blanco-ma,rock,OndaRock title track finale stadium rock; Grignani feature,tracks,Rock sonorities not full album
+blanco-ma,poprock,OndaRock Tanto non rinasco pop-rock elettronico,track,New token poprock
+blanco-ma,poppunk,"OndaRock Maledetta rabbia, Woo",tracks,Fewer punk passages vs debut
+blanco-ma,electronic,OndaRock electronic rock/pop tracks; Sentireascoltare,tracks/production,Programmed beats and electronic textures persist
+blanco-ma,trap,OndaRock Ti voglio bene uomo trap beats,track,"Trap-derived beats opening track, not primary identity"
+blanco-ma,industrial,Sentireascoltare industrial suggestions,album production,"Critical description, not broad consensus"
+blanco-ma,songwriter,Rockol songwriting and reflective cantautore emphasis,album,Italian cantautorato approach to personal narrative

@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,type,observed_in_main_catalog,catalog_action
+blanco-bluceleste,blanco,Blu celeste,2021,studio,yes,retain current catalog ID exactly
+blanco-innamorato,blanco,Innamorato,2023,studio,yes,retain current catalog ID exactly
+blanco-ma,blanco,Ma’,2026,studio,no,add to existing Blanco row in src/data/catalog.ts (do not duplicate if Claude already added)
