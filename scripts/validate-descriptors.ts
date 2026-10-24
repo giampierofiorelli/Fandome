@@ -6,7 +6,7 @@ import { albums, artists } from '../src/data/seed'
 
 const HEADER = 'album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes'.split(',')
 const SCALES = ['energy', 'electronic', 'mood', 'theatrical', 'experimental', 'polish', 'tempo', 'groove']
-const GENRES = new Set('pop dance electronic synthpop disco rock indie alt metal punk prog hiphop trap rnb soul funk jazz folk songwriter country latin reggaeton afro kpop sertanejo funkbr pagode forro classical soundtrack reggae opera house techno ambient triphop artpop gospel'.split(' '))
+const GENRES = new Set('pop dance electronic synthpop disco rock indie alt metal punk prog hiphop trap rnb soul funk jazz folk songwriter country latin reggaeton afro kpop sertanejo funkbr pagode forro classical soundtrack reggae opera house techno ambient triphop artpop gospel fado caboverde'.split(' '))
 const TYPES = new Set(['studio', 'soundtrack', 'compilation', 'live', 'remix', 'ep'])
 const VOICES = new Set(['soft', 'clear', 'powerful', 'raspy', 'rap', 'spoken', 'choral', 'instrumental'])
 const LYRICS = new Set('love heartbreak introspection social political storytelling party irony spiritual sensuality identity nostalgia'.split(' '))
