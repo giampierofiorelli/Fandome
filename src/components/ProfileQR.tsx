@@ -28,7 +28,9 @@ function useQr(text: string) {
     return { n, dark }
   }, [text])
 }
-// The three big corner squares are drawn separately, rounded (centre stays square-ish: round centres break scanners).
+// The three corner markers are drawn as round "records" (ring + centre disc): our own look, and
+// verified to scan. Rounded squares looked like a certain camera logo.
+const ring = (cx: number, cy: number, ro: number, ri: number) => `M${cx - ro} ${cy}a${ro} ${ro} 0 1 0 ${ro * 2} 0a${ro} ${ro} 0 1 0 ${-ro * 2} 0zM${cx - ri} ${cy}a${ri} ${ri} 0 1 0 ${ri * 2} 0a${ri} ${ri} 0 1 0 ${-ri * 2} 0z`
 const inFinder = (r: number, c: number, n: number) => (r < 7 && c < 7) || (r < 7 && c >= n - 7) || (r >= n - 7 && c < 7)
 // Alignment patterns (small squares) must stay solid too, or scanners lose their grip on dotted codes.
 const ALIGN: number[][] = [[], [], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90]]
@@ -128,14 +130,14 @@ export function ProfileQR({ user, onClose }: { user: User; onClose: () => void }
             ))}
             {al.map(([r, c]) => (
               <g key={`a${r}${c}`}>
-                <path d={`M${c - 2 + 1} ${r - 2} h3 a1 1 0 0 1 1 1 v3 a1 1 0 0 1 -1 1 h-3 a1 1 0 0 1 -1 -1 v-3 a1 1 0 0 1 1 -1z M${c - 1} ${r - 1} v3 h3 v-3z`} fillRule="evenodd" />
-                <rect x={c} y={r} width={1} height={1} rx={0.3} />
+                <path d={ring(c + 0.5, r + 0.5, 2.5, 1.5)} fillRule="evenodd" />
+                <circle cx={c + 0.5} cy={r + 0.5} r={0.6} />
               </g>
             ))}
             {finders.map(([r, c]) => (
               <g key={`f${r}${c}`}>
-                <path d={`M${c + 1.6} ${r} h3.8 a1.6 1.6 0 0 1 1.6 1.6 v3.8 a1.6 1.6 0 0 1 -1.6 1.6 h-3.8 a1.6 1.6 0 0 1 -1.6 -1.6 v-3.8 a1.6 1.6 0 0 1 1.6 -1.6z M${c + 1.9} ${r + 1} a0.9 0.9 0 0 0 -0.9 0.9 v3.2 a0.9 0.9 0 0 0 0.9 0.9 h3.2 a0.9 0.9 0 0 0 0.9 -0.9 v-3.2 a0.9 0.9 0 0 0 -0.9 -0.9z`} fillRule="evenodd" />
-                <rect x={c + 2} y={r + 2} width={3} height={3} rx={0.6} />
+                <path d={ring(c + 3.5, r + 3.5, 3.5, 2.5)} fillRule="evenodd" />
+                <circle cx={c + 3.5} cy={r + 3.5} r={1.5} />
               </g>
             ))}
           </g>
@@ -209,12 +211,14 @@ async function renderPng(user: User, n: number, dark: (r: number, c: number) => 
       ctx.fill()
     }
   for (const [r, col] of al) {
+    const X = x0 + (col + 0.5) * s
+    const Y = y0 + (r + 0.5) * s
     ctx.beginPath()
-    ctx.roundRect(x0 + (col - 2) * s, y0 + (r - 2) * s, 5 * s, 5 * s, s)
-    ctx.rect(x0 + (col - 1) * s, y0 + (r - 1) * s, 3 * s, 3 * s)
+    ctx.arc(X, Y, 2.5 * s, 0, Math.PI * 2)
+    ctx.arc(X, Y, 1.5 * s, 0, Math.PI * 2, true)
     ctx.fill('evenodd')
     ctx.beginPath()
-    ctx.roundRect(x0 + col * s, y0 + r * s, s, s, 0.3 * s)
+    ctx.arc(X, Y, 0.6 * s, 0, Math.PI * 2)
     ctx.fill()
   }
   for (const [r, col] of [
@@ -222,12 +226,14 @@ async function renderPng(user: User, n: number, dark: (r: number, c: number) => 
     [0, n - 7],
     [n - 7, 0],
   ]) {
+    const X = x0 + (col + 3.5) * s
+    const Y = y0 + (r + 3.5) * s
     ctx.beginPath()
-    ctx.roundRect(x0 + col * s, y0 + r * s, 7 * s, 7 * s, 1.6 * s)
-    ctx.roundRect(x0 + (col + 1) * s, y0 + (r + 1) * s, 5 * s, 5 * s, 0.9 * s)
+    ctx.arc(X, Y, 3.5 * s, 0, Math.PI * 2)
+    ctx.arc(X, Y, 2.5 * s, 0, Math.PI * 2, true)
     ctx.fill('evenodd')
     ctx.beginPath()
-    ctx.roundRect(x0 + (col + 2) * s, y0 + (r + 2) * s, 3 * s, 3 * s, 0.6 * s)
+    ctx.arc(X, Y, 1.5 * s, 0, Math.PI * 2)
     ctx.fill()
   }
   const cx = x0 + (n / 2) * s
