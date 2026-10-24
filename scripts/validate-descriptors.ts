@@ -68,7 +68,7 @@ for (const file of files) {
     if (!/^\d{4}$/.test(r.year)) say(where, `year "${r.year}"`)
     if (!TYPES.has(r.type)) say(where, `type "${r.type}"`)
     const genres = r.genres.split('|').filter(Boolean)
-    if (!genres.length || genres.length > 3 || genres.some((g) => !GENRES.has(g))) say(where, `genres "${r.genres}"`)
+    if (!genres.length || genres.length > 6 || genres.some((g) => !GENRES.has(g))) say(where, `genres "${r.genres}"`)
     for (const s of SCALES) if (r[s] !== '' && !/^[0-5]$/.test(r[s])) say(where, `${s} "${r[s]}" (0–5 or empty)`)
     if (r.voice && !VOICES.has(r.voice)) say(where, `voice "${r.voice}"`)
     const lyr = r.lyrics.split('|').filter(Boolean)
