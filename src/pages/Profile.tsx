@@ -1,3 +1,5 @@
+import { AnimatePresence } from 'motion/react'
+import { ProfileQR } from '../components/ProfileQR'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { concerts } from '../data/seed'
@@ -8,11 +10,11 @@ import type { Post } from '../data/types'
 import { ShareCardButton } from '../components/ShareCard'
 import { AlbumCover, Avatar, ScoreBadge, Tabs } from '../components/ui'
 import { albumById, artistById, formatDate } from '../lib/util'
-import { IconChevronUp, IconDisc, IconFlag, IconLink, IconPin, IconPlus, IconTicket, IconX } from '../components/icons'
+import { IconQr, IconChevronUp, IconDisc, IconFlag, IconLink, IconPin, IconPlus, IconTicket, IconX } from '../components/icons'
 import { BecomeModCard, ModBadge, ReportModal } from '../components/Moderation'
 import PageProfile from './PageProfile'
 import { canMessage, MAX_LINKS } from '../store/reducer'
-import { cleanLink, linkService, prettyUrl } from '../lib/media'
+import { cleanLink, linkService, prettyUrl, type LinkService } from '../lib/media'
 import { Modal } from '../components/ui'
 import { useToast } from '../components/Toast'
 import { newId } from '../store/store'
@@ -26,6 +28,7 @@ export default function Profile() {
   const { state, dispatch, me } = useStore()
   const [tab, setTab] = useState<Tab>('posts')
   const [reporting, setReporting] = useState(false)
+  const [qr, setQr] = useState(false)
   const user = state.users.find((u) => u.handle === handle)
   if (!user || !me) return <Navigate to="/" replace />
   if (user.kind === 'page') return <PageProfile user={user} />
@@ -68,6 +71,9 @@ export default function Profile() {
           {user.bio && <p className="prof-bio">{user.bio}</p>}
           <ProfileLinks user={user} isMe={isMe} />
           <div className="hero-actions center">
+            <button className="glass-circle" aria-label="Share profile with a QR code" onClick={() => setQr(true)}>
+              <IconQr size={18} />
+            </button>
             {isMe ? (
               <Link to="/settings" className="pill-btn glass">
                 Settings
@@ -149,6 +155,7 @@ export default function Profile() {
           )}
         </div>
       </header>
+      <AnimatePresence>{qr && <ProfileQR key="qr" user={user} onClose={() => setQr(false)} />}</AnimatePresence>
       {isMe && <BecomeModCard />}
       {reporting && <ReportModal target={{ kind: 'user', id: user.id }} what={user.name} onClose={() => setReporting(false)} />}
       <div className="section-head center">
@@ -238,7 +245,7 @@ function ProfileLinks({ user, isMe }: { user: User; isMe: boolean }) {
             style={{ ['--c' as string]: s.color }}
             onClick={() => dispatch({ type: 'clickLink', userId: user.id, id: l.id })}
           >
-            <span className="link-disc">{s.key === 'web' ? <IconLink size={13} /> : s.label[0]}</span>
+            <span className="link-disc"><LinkIcon s={s} /></span>
             <span className="prof-link-label">{l.label || s.label}</span>
             {isMe && <span className="link-clicks">{l.clicks}</span>}
           </a>
@@ -288,7 +295,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
         const s = linkService(l.url)
         return (
           <div key={l.id} className="link-row" style={{ ['--c' as string]: s.color }}>
-            <span className="link-disc">{s.key === 'web' ? <IconLink size={13} /> : s.label[0]}</span>
+            <span className="link-disc"><LinkIcon s={s} /></span>
             <span className="grow link-row-main">
               <input value={l.label ?? ''} placeholder={s.label} onChange={(e) => dispatch({ type: 'editLink', id: l.id, label: e.target.value })} aria-label="Label" maxLength={40} />
               <span className="muted small link-host">{prettyUrl(l.url).short}</span>
@@ -313,7 +320,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
           <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Paste a link: instagram.com/you, a playlist, your site…" inputMode="url" aria-label="Link" onKeyDown={(e) => e.key === 'Enter' && add()} />
           {service && (
             <div className="link-add-row" style={{ ['--c' as string]: service.color }}>
-              <span className="link-disc">{service.key === 'web' ? <IconLink size={13} /> : service.label[0]}</span>
+              <span className="link-disc"><LinkIcon s={service} /></span>
               <input value={label} onChange={(e) => setLabel(e.target.value)} placeholder={`Label (default: ${service.label})`} maxLength={40} aria-label="Label" />
               <button className="pill-btn ink small" onClick={add}>
                 Add
@@ -330,4 +337,15 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
       </p>
     </div>
   )
+}
+
+// Brand icon (white on the brand colour) or our monogram when there's no icon.
+function LinkIcon({ s }: { s: LinkService }) {
+  if (s.icon)
+    return (
+      <svg viewBox="0 0 24 24" className="brand-glyph" aria-hidden>
+        <path d={s.icon} fill="#fff" />
+      </svg>
+    )
+  return s.key === 'web' ? <IconLink size={13} /> : <>{s.label[0]}</>
 }

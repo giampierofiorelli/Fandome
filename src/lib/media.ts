@@ -1,6 +1,10 @@
 // Media helpers for posts: embeds from other socials (the content stays on
 // their servers, shown with their own player), links, and photo compression.
 import type { Embed } from '../data/types'
+import {
+  siApplemusic, siBandcamp, siBluesky, siDeezer, siDiscogs, siDiscord, siFacebook, siInstagram, siKofi, siLastdotfm, siLetterboxd, siMixcloud,
+  siPatreon, siPinterest, siReddit, siSoundcloud, siSpotify, siSubstack, siTelegram, siThreads, siTidal, siTiktok, siTumblr, siTwitch, siX, siYoutube,
+} from 'simple-icons'
 
 const YT = /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
 const X = /(?:twitter|x)\.com\/[A-Za-z0-9_]+\/status(?:es)?\/(\d{5,25})/
@@ -139,12 +143,22 @@ export async function compressImage(file: File, max = 1280, quality = 0.82): Pro
   }
 }
 
-// Profile links: which service a link points to, for its label and colour.
-// We draw our own monogram instead of brand logos.
+// Profile links: which service a link points to, for its label, colour and icon.
+// Icons come from Simple Icons (CC0 drawings, bundled with the site: no requests to the brands).
+// The marks still belong to their owners and are used only to say "my profile on X".
+// LinkedIn and Rate Your Music aren't in the library, so they keep our monogram.
 export interface LinkService {
   key: string
   label: string
   color: string
+  icon?: string // SVG path, 24×24
+}
+const ICONS: Record<string, { path: string; hex: string }> = {
+  instagram: siInstagram, tiktok: siTiktok, x: siX, threads: siThreads, bluesky: siBluesky, facebook: siFacebook,
+  youtube: siYoutube, twitch: siTwitch, spotify: siSpotify, apple: siApplemusic, soundcloud: siSoundcloud,
+  bandcamp: siBandcamp, deezer: siDeezer, tidal: siTidal, lastfm: siLastdotfm, discogs: siDiscogs, mixcloud: siMixcloud,
+  tumblr: siTumblr, pinterest: siPinterest, reddit: siReddit, discord: siDiscord, telegram: siTelegram,
+  substack: siSubstack, patreon: siPatreon, kofi: siKofi, letterboxd: siLetterboxd,
 }
 const SERVICES: { key: string; label: string; color: string; hosts: string[] }[] = [
   { key: 'instagram', label: 'Instagram', color: '#e1306c', hosts: ['instagram.com'] },
@@ -180,7 +194,10 @@ export function linkService(url: string): LinkService {
   try {
     const host = new URL(url).hostname.replace(/^www\.|^m\./, '')
     const s = SERVICES.find((x) => x.hosts.some((h) => host === h || host.endsWith(`.${h}`)))
-    if (s) return { key: s.key, label: s.label, color: s.color }
+    if (s) {
+      const ic = ICONS[s.key]
+      return { key: s.key, label: s.label, color: ic ? `#${ic.hex}` : s.color, icon: ic?.path }
+    }
     return { key: 'web', label: host, color: '#6b7280' }
   } catch {
     return { key: 'web', label: url, color: '#6b7280' }

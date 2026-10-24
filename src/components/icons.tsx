@@ -279,3 +279,11 @@ export const IconChevronUp = (p: P) => (
     <path d="m6 15 6-6 6 6" />
   </Svg>
 )
+export const IconQr = (p: P) => (
+  <Svg {...p}>
+    <rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1.6" />
+    <rect x="14" y="3.5" width="6.5" height="6.5" rx="1.6" />
+    <rect x="3.5" y="14" width="6.5" height="6.5" rx="1.6" />
+    <path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM14 18.5v2M18.5 14h2" />
+  </Svg>
+)
