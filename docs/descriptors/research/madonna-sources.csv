@@ -1,0 +1,11 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+madonna-madonna,Official artist discography,primary,https://www.madonna.com/products/madonna,"Release, original album track list, early collaborators",Confirmed
+madonna-madonna,"Pitchfork — Jill Mapes, Madonna (2017)",expert_review,https://pitchfork.com/reviews/albums/madonna-madonna/,"Electronic timbres, synths/drum machines, guitar/piano accents, club-groove, emotional posture, significance",Strong
+madonna-madonna,"AllMusic — Stephen Thomas Erlewine, Madonna",expert_review,https://www.allmusic.com/album/release/madonna-mr0000541854,"Debut as post-disco club pop, historical role; excerpt accessible in web search",Supplementary
+m-virgin,"AllMusic — Stephen Thomas Erlewine, Like a Virgin",expert_review,https://www.allmusic.com/album/r12204,"Album context, production, pop/dance character; web search excerpt",Strong
+m-virgin,Pitchfork — 200 Best Albums of 1980s (2018),expert_review,https://pitchfork.com/features/lists-and-guides/the-200-best-albums-of-the-1980s/,"More polished electro-pop, unvarnished ballad singing, irony and melody",Strong
+m-virgin,BMI — Dave Simons interviews engineer Jason Corsaro (2006),technical_interview,https://www.bmi.com/advice/Tips_From_the_Top_The_Making_of_Madonnas_Like_a_Virgin,"Live drums, bass, Nile Rodgers/Chic musicians, rock-like recorded attack",Strong
+m-virgin,The Guardian — Caroline Sullivan (2011),expert_commentary,https://www.theguardian.com/music/2011/jun/11/madonna-like-a-virgin,"Club-friendly hooks, lyrical sexual control and materialism",Strong
+m-trueblue,"AllMusic — Stephen Thomas Erlewine, True Blue",expert_review,https://www.allmusic.com/album/true-blue-mw0000190762,"Dance grooves, girl groups, Latin rhythms, ballads and social concerns; web search excerpt",Strong
+m-trueblue,Classic Pop — Classic Album: True Blue (2025),expert_retrospective,https://www.classicpopmag.com/features/classic-album/classic-albumadonna-madonna-true-blue/,"First-hand collaborator quotations, arrangements, sequenced bass, album track-by-track",Strong
+m-trueblue,Robert Christgau — Madonna Consumer Guide,expert_dissent,https://www.robertchristgau.com/get_artist.php?id=862,Dissenting assessment of musical quality; do not conflate merit with sonic description,Context only

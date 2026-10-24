@@ -1,0 +1,16 @@
+year,title,album_id,id_status,catalog_source
+1983,Madonna,madonna-madonna,proposed_requires_seed_update,https://www.madonna.com/pages/music
+1984,Like a Virgin,m-virgin,existing_exact,https://www.madonna.com/pages/music
+1986,True Blue,m-trueblue,existing_exact,https://www.madonna.com/pages/music
+1989,Like a Prayer,m-prayer,existing_exact,https://www.madonna.com/pages/music
+1992,Erotica,madonna-erotica,proposed_requires_seed_update,https://www.madonna.com/pages/music
+1994,Bedtime Stories,madonna-bedtimestories,proposed_requires_seed_update,https://www.madonna.com/pages/music
+1998,Ray of Light,m-ray,existing_exact,https://www.madonna.com/pages/music
+2000,Music,m-music,existing_exact,https://www.madonna.com/pages/music
+2003,American Life,madonna-americanlife,proposed_requires_seed_update,https://www.madonna.com/pages/music
+2005,Confessions on a Dance Floor,m-confessions,existing_exact,https://www.madonna.com/pages/music
+2008,Hard Candy,madonna-hardcandy,proposed_requires_seed_update,https://www.madonna.com/pages/music
+2012,MDNA,madonna-mdna,proposed_requires_seed_update,https://www.madonna.com/pages/music
+2015,Rebel Heart,madonna-rebelheart,proposed_requires_seed_update,https://www.madonna.com/pages/music
+2019,Madame X,madonna-madamex,proposed_requires_seed_update,https://www.madonna.com/pages/music
+2026,Confessions II,madonna-confessionsii,proposed_requires_seed_update,https://www.madonna.com/pages/music
