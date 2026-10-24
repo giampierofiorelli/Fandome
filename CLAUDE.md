@@ -6,6 +6,7 @@
 - GDPR: nothing from third parties loads before consent or a user tap; fonts are self-hosted.
 - Album descriptors (`docs/album-descriptors-guide.md`, branch `descriptors`): owner's rule, no limit on the number of values in any column; every genre a source names goes in, new genres are added to the list.
 - Discovery (suggestions, Bridge, "A scene you don't know yet") never targets the global markets (US, UK; CA, AU, IE too for now, to rethink later) or English-language pop: only local scenes, singing mainly in their own language (owner's rule; `isLocalArtist` in `src/data/scenes.ts`).
+- **Remind the owner (asked in Oct 2026):** Scenes need data, point 8 of the Scenes work in ROADMAP: album descriptors for the Italian classics (Mina, Battisti, Moroder, Carrà, Dalla…) and the connections file (`docs/connections-guide.md`, prompt ready for ChatGPT). Bring it up when we next talk about Scenes or descriptors.
 - **Before planning new work, read `ROADMAP.md`**: it lists features we decided to do later (e.g. Apple Music in the listening party, collector marketplace) and what is waiting on the owner.
 - The owner writes in Italian: answer in Italian, short, outcome first.
 

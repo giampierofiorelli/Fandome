@@ -83,7 +83,9 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       setText(`${before}${pad}${al.title}${after.startsWith(' ') ? '' : ' '}${after}`)
     }
     setPanel(null)
-    requestAnimationFrame(() => textRef.current?.focus())
+    // Back to the text only with a mouse. On phones, refocusing reopened the keyboard: iOS then shifts
+    // where taps land inside the sheet, so the first tap on Post only closed the keyboard.
+    if (!window.matchMedia('(pointer: coarse)').matches) requestAnimationFrame(() => textRef.current?.focus())
   }
   const [pollOn, setPollOn] = useState(false)
   const [collabOpen, setCollabOpen] = useState(false)
