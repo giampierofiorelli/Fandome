@@ -1,0 +1,16 @@
+album_id,genre,scope,source_ids,why_included,evidence_strength
+royksopp-trueelectric,electronic,entire album,TE_OFF|TE_ALL,Electronic construction and club reworks,high
+royksopp-trueelectric,dance,entire album,TE_OFF|TE_ALL,Club-dance orientation explicitly described by duo,high
+royksopp-trueelectric,house,many tracks,TE_WM|TE_RF,House motifs across remixes,high
+royksopp-trueelectric,techno,several tracks,TE_WM|TE_RF,Harder late-album techno cuts,high
+royksopp-trueelectric,trance,many tracks,TE_WM,"Reviewer specifically names trance,",high
+royksopp-trueelectric,breakbeat,track/group accents,TE_WM|TE_ALL,Explicit review/metadata descriptions,high
+royksopp-trueelectric,downtempo,minority / catalogue-derived,TE_ALL|TE_WM,"AllMusic taxonomy and review note, not club album dominant",medium
+royksopp-trueelectric,deephouse,Sordid Affair subset,TE_RF,Qualified single-track critique,medium
+royksopp-trueelectric,synthpop,selected synth-based pop,TE_WM|TE_ALL,Muziekweb genre categorization supports synthpop and electronic sound,medium
+royksopp-trueelectric,electropop,vocal pop selection,TE_WM|TE_ALL,"Broad electro/dance-pop blend, not central to heavy club tracks",medium
+royksopp-trueelectric,triphop,older composition textures,TE_ALL,"AllMusic style metadata, does not dominate reconstructions",medium
+royksopp-trueelectric,ambientbreakbeat,subset / metadata,TE_ALL,AllMusic explicit genre classification,high
+royksopp-trueelectric,eurodance,minority / style metadata,TE_ALL,AllMusic Euro-Dance style tag,high
+royksopp-trueelectric,hardhouse,club sections,TE_WM,Review explicitly names hard house,high
+royksopp-trueelectric,techhouse,I Had This Thing only,TE_RF,Critic explicitly describes track as tech house,medium

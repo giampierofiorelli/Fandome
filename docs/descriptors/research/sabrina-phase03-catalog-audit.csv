@@ -1,0 +1,2 @@
+album_id,artist,title,year,catalog_state,action,validation_note
+sabrina-mansbestfriend,Sabrina Carpenter,Man’s Best Friend,2025,present in src/data/catalog.ts at 2026-10-24,append descriptor ONLY,Case and curly apostrophe retained; existing catalog slug matches

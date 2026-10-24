@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,catalog_status_checked_2026_10_24,action,warning
+robyn-doitagain,Robyn,Do It Again,2014,ep,missing from Robyn solo list,Add co-billed Röyksopp & Robyn project with link to both artists or design explicit collaboration relation,Do not present as Robyn solo LP; do not duplicate older Röyksopp studio album
+robyn-loveisfree,Robyn,Love Is Free,2015,ep,missing from Robyn solo list,Add as Robyn & La Bagatelle Magique collaboration EP; update credit display,Group Robyn/Markus Jägerstedt/Christian Falk distinct from Robyn solo
+robyn-honey,Robyn,Honey,2018,studio,existing ID robyn-honey,append descriptors only,"Use original 9-track version, not remixes"
+robyn-sexistential,Robyn,Sexistential,2026,studio,existing ID robyn-sexistential,append descriptors only,Max Martin songwriting credit not producer

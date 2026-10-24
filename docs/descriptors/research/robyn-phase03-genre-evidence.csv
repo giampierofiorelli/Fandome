@@ -1,0 +1,44 @@
+album_id,genre,scope,source_ids,why_included,evidence_strength
+robyn-doitagain,electronic,album dominant,DA_PF|DA_MB,Electronic production throughout,high
+robyn-doitagain,electropop,several tracks; title track,DA_TR|DA_PF,"Synth-driven singles, album not uniformly pop",high
+robyn-doitagain,dancepop,single-focused subset,DA_TR|DA_PF,Club-facing title and pop choruses,medium
+robyn-doitagain,pop,pop vocal subset,DA_PF,Pop/R&B qualified umbrella,medium
+robyn-doitagain,house,rhythmic passages,DA_PF,Club beats and four-to-floor subset; no claim entire project house,medium
+robyn-doitagain,techno,certain passages,DA_PF,"Machine rhythm and extended dance parts, nuanced stylistic judgment",low
+robyn-doitagain,synthpop,some tracks,DA_TR,"Electronic pop synthesizers, title track",medium
+robyn-doitagain,ambient,instrumental passages,DA_PF,Long contemplative/meditative electronic sections,medium
+robyn-doitagain,rnb,critic broad categorization,DA_PF,"Pitchfork Pop/R&B genre umbrella, non-dominant",medium
+robyn-loveisfree,house,album dominant,LF_PF|LF_PFT,House-based club EP,high
+robyn-loveisfree,acidhouse,title track specific,LF_PF,Explicit acid-house groove on Love Is Free,high
+robyn-loveisfree,dance,album dominant,LF_PF,Five tracks made for dancing,high
+robyn-loveisfree,electronic,album dominant broad,LF_PF|LF_MC,Dance electronics and sampled instrumentation,high
+robyn-loveisfree,pop,pop crossover general,LF_PF|LF_MC,Pop/R&B category,medium
+robyn-loveisfree,disco,cover and other track subset,LF_PF,Loose Joints cover includes disco samples/horns,high
+robyn-loveisfree,bigbeat,Got To Work It Out only,LF_PF,Explicit big-beat reference to one song,high
+robyn-loveisfree,rnb,critical broad label,LF_PF,Pitchfork Pop/R&B genre grouping,medium
+robyn-loveisfree,leftfieldpop,editorial taxonomy,LF_MC,Metacritic lists left-field pop,medium
+robyn-honey,pop,album main,H_PF|H_OFF,Pop/R&B classification and pop hooks,high
+robyn-honey,house,album dominant,H_PF|H_GU,"Unhurried, airy house beats across album",high
+robyn-honey,electronic,album significant,H_PF|H_Q,Programmed synth/drum textures,high
+robyn-honey,dancepop,album hybrid,H_PF|H_GU,Dancefloor-oriented pop with softer emphasis,high
+robyn-honey,disco,album significant,H_PF|H_INTER,Because It Is In The Music disco shuffle,high
+robyn-honey,postdisco,critic whole-album claim,H_INTER,Pitchfork explicitly calls an existential post-disco record,high
+robyn-honey,synthpop,song-specific,H_PF,Send To Robin Immediately described as synthpop,high
+robyn-honey,tropicalhouse,album minority accents,H_PF,"Unhurried tropical-house fragments, not entire album",high
+robyn-honey,rnb,broad review genre,H_PF,Pop/R&B label context only,medium
+robyn-sexistential,dancepop,album dominant,S_RA|S_ALL,Upbeat club-pop core,high
+robyn-sexistential,synthpop,album dominant,S_AOTY|S_PF,Arpeggiated and pulsing synth hooks,high
+robyn-sexistential,electropop,album significant,S_PF|S_AOTY,Electric pop and programmed beats,high
+robyn-sexistential,pop,album dominant broad,S_RA|S_ALL,AllMusic pop / RA pop,high
+robyn-sexistential,electronic,album dominant broad,S_PF|S_GU,Synthesisers and programmed percussion,high
+robyn-sexistential,alternativedance,editorial album style,S_ALL,AllMusic explicit style,high
+robyn-sexistential,leftfieldpop,editorial album style,S_ALL,AllMusic explicit style,high
+robyn-sexistential,trance,critic album tag,S_RA,RA primary genre tag,high
+robyn-sexistential,eurotrance,track-level closer,S_RA,Light Up specific,high
+robyn-sexistential,house,specific title track,S_PF,Minimal house on Sexistential,high
+robyn-sexistential,postdisco,editorial album style,S_ALL,AllMusic explicit post-disco,high
+robyn-sexistential,funk,track-specific,S_RA,It Don’t Mean A Thing Prince-like funk,high
+robyn-sexistential,disco,track-specific,S_RA,Into The Sun electro-disco; broad disco category,high
+robyn-sexistential,rnb,review umbrella,S_PF,Pitchfork Pop/R&B broad classification,medium
+robyn-sexistential,chillwave,track-specific,S_RA,Blow My Mind identified as chillwave,high
+robyn-sexistential,synthwave,aggregator album secondary,S_AOTY,"AOTY secondary synthwave metadata, confirm on editorial review",medium

@@ -17,7 +17,7 @@ export type Genre =
   | 'electroclash' | 'bloghouse' | 'pianohouse' | 'trance'
   | 'indierock' | 'slackerrock' | 'indietronica' | 'postpunkrevival' | 'alternativedance'
   | 'urbanpop' | 'bossanova' | 'folkpop' | 'afrobeat' | 'poprap' | 'posttrap' | 'poprock' | 'electrorock' | 'punkrock' | 'jungle'
-  | 'hardcorehiphop' | 'latintrap' | 'westcoasthiphop' | 'nusoul' | 'alternativerock' | 'adultalternativepoprock' | 'electronica' | 'downtempo' | 'softrock' | 'classicalcrossover' | 'drumandbass' | 'itpop' | 'calypsopop' | 'hiprock' | 'drill' | 'contemporaryrnb' | 'hiphopsoul' | 'bubblegumpop' | 'europop' | 'chillout' | 'downbeat' | 'electro' | 'rave' | 'ambientbreakbeat'
+  | 'hardcorehiphop' | 'latintrap' | 'westcoasthiphop' | 'nusoul' | 'alternativerock' | 'adultalternativepoprock' | 'electronica' | 'downtempo' | 'softrock' | 'classicalcrossover' | 'drumandbass' | 'itpop' | 'calypsopop' | 'hiprock' | 'drill' | 'contemporaryrnb' | 'hiphopsoul' | 'bubblegumpop' | 'europop' | 'chillout' | 'downbeat' | 'electro' | 'rave' | 'ambientbreakbeat' | 'bigbeat' | 'chillwave' | 'synthwave' | 'hardhouse' | 'techhouse' | 'acousticpop' | 'teenpop' | 'altpop' | 'countrypop' | 'gfunk' | 'bluegrass' | 'discopop' | 'yachtrock' | 'quietstorm'
 
 export interface ArtistScene {
   country: string
@@ -159,6 +159,7 @@ export const GENRE_LABELS: Record<Genre, string> = {
   urbanpop: 'Urban pop', bossanova: 'Bossa nova', folkpop: 'Folk pop', afrobeat: 'Afrobeat', poprap: 'Pop rap', posttrap: 'Post-trap', poprock: 'Pop rock',
   electrorock: 'Electro rock', punkrock: 'Punk rock', jungle: 'Jungle',
   hardcorehiphop: 'Hardcore hip-hop', latintrap: 'Latin trap', westcoasthiphop: 'West Coast hip-hop', nusoul: 'Nu soul', alternativerock: 'Alternative rock', adultalternativepoprock: 'Adult alternative pop/rock', electronica: 'Electronica', downtempo: 'Downtempo', softrock: 'Soft rock', classicalcrossover: 'Classical crossover', drumandbass: 'Drum and bass', itpop: 'It-pop', calypsopop: 'Calypso pop', hiprock: 'Hip-rock', drill: 'Drill', contemporaryrnb: 'Contemporary R&B', hiphopsoul: 'Hip-hop soul', bubblegumpop: 'Bubblegum pop', europop: 'Europop', chillout: 'Chill-out', downbeat: 'Downbeat', electro: 'Electro', rave: 'Rave', ambientbreakbeat: 'Ambient breakbeat',
+  bigbeat: 'Big beat', chillwave: 'Chillwave', synthwave: 'Synthwave', hardhouse: 'Hard house', techhouse: 'Tech house', acousticpop: 'Acoustic pop', teenpop: 'Teen pop', altpop: 'Alt-pop', countrypop: 'Country pop', gfunk: 'G-funk', bluegrass: 'Bluegrass', discopop: 'Disco-pop', yachtrock: 'Yacht rock', quietstorm: 'Quiet storm',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"

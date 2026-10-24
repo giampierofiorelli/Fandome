@@ -1,0 +1,21 @@
+﻿album_id,genre,scope,source,evidence,evidence_strength
+sabrina-eyeswideopen,pop,dominant,AllMusic; Apple Music,Both professional review and label editorial identify pop as the primary style,high
+sabrina-eyeswideopen,acousticpop,dominant texture,AllMusic; Apple Music,AllMusic explicitly calls it acoustic pop; Apple names acoustic strumming,high
+sabrina-eyeswideopen,teenpop,album genre,AllMusic,AllMusic formal album-style label teen pop,high
+sabrina-eyeswideopen,poprock,album genre,AllMusic,AllMusic lists contemporary pop/rock; normalized to poprock,medium
+sabrina-eyeswideopen,dancepop,secondary album style,AllMusic,AllMusic formal dance-pop album tag; quieter acoustic repertoire is dominant,medium
+sabrina-eyeswideopen,folkpop,secondary texture,The Line of Best Fit,Retrospective critical review describes debut as folk-flecked pop,medium
+sabrina-evolution,dancepop,dominant,AllMusic; Qobuz,Matt Collar foregrounds bright lyrical dance-pop,high
+sabrina-evolution,pop,broad umbrella,AllMusic; Apple Music,Labels classify album as pop/rock-pop,high
+sabrina-evolution,electropop,album catalogue,Album of the Year,Genre catalogue lists electropop; corroborating production is predominantly electronic,medium
+sabrina-evolution,teenpop,album catalogue,Album of the Year,Catalogue specifically labels teen pop,medium
+sabrina-evolution,rnb,secondary influence,AllMusic,"Review mentions R&B influence as part of the expanded sound, not pure R&B",medium
+sabrina-evolution,contemporaryrnb,album catalogue,Album of the Year,Genre catalogue label contemporary R&B; lower corroboration than dance-pop,medium
+sabrina-evolution,altpop,album catalogue,Album of the Year,Alternative pop catalogue tag; independently thin professional support,low
+sabrina-singularacti,dancepop,dominant,AllMusic; Apple Music; The Line of Best Fit,"AllMusic and Apple independently name dance-pop, expert review corroborates synth/dance palette",high
+sabrina-singularacti,pop,broad umbrella,AllMusic; Qobuz,Album formal pop genre,high
+sabrina-singularacti,electropop,album catalogue,Album of the Year; The Line of Best Fit,Catalogue label plus explicit critic description of synth textures,medium
+sabrina-singularacti,contemporaryrnb,album catalogue,Album of the Year,Catalogue classification; slow-jam and vocal details support secondary flavor,medium
+sabrina-singularacti,rnb,secondary texture,EARMILK; Album of the Year,Review cites soul-filled vocals and slow-jam dynamics; not a pure R&B album,medium
+sabrina-singularacti,altpop,album catalogue,Album of the Year,"Genre catalogue marks alternative pop, not independently the dominant critical framing",low
+sabrina-singularacti,trap,minor/album catalogue,Album of the Year,Album-level genre catalogue tag; critics do not describe the entire album as trap,low

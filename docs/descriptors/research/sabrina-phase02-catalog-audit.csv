@@ -1,0 +1,4 @@
+﻿album_id,artist_id,title,original_year,in_default_catalog,catalog_action,id_derivation,edition_caveat
+sabrina-singularactii,sabrina,Singular: Act II,2019,no,ADD original 9-track 2019 studio album,sabrina-singularactii,Do not confuse with Act I (2018) or 2024 LP rerelease
+sabrina-emailsicantsend,sabrina,emails i can’t send,2022,yes,NONE; preserve existing row,sabrina-emailsicantsend,13 original songs; exclude 2023 fwd bonus 4
+sabrina-shortnsweet,sabrina,Short n’ Sweet,2024,yes,NONE; preserve existing row,sabrina-shortnsweet,12 original tracks; exclude 2025 deluxe and alternate bonus

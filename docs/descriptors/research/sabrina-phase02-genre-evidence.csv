@@ -1,0 +1,27 @@
+﻿album_id,genre,scope,sources,evidence,evidence_strength
+sabrina-singularactii,dancepop,dominant,AllMusic; Universal Music Canada,Critic characterizes romantic pop and R&B-influenced dance music; original label confirms rhythmic tracks,high
+sabrina-singularactii,pop,dominant umbrella,AllMusic; PAPER,Both sources describe a varied standalone pop record,high
+sabrina-singularactii,rnb,recurrent influence,AllMusic; Hollywood Records,"R&B influence appears across pop-oriented songs, not a pure R&B album",high
+sabrina-singularactii,contemporaryrnb,recurrent influence,PAPER; Hollywood Records,Modern R&B and pop&B vocabulary; especially Tell Em and Pushing 20,medium
+sabrina-singularactii,electronic,sonic component,AllMusic; Hollywood Records; Qobuz,Programmed synth/drum-led cuts alternate with a guitar-and-strings ballad,medium
+sabrina-singularactii,poprap,one featured track,PAPER; MusicBrainz,Saweetie feature adds pop-rap accent to I Cant Stop Me; not album-wide,medium
+sabrina-emailsicantsend,pop,album umbrella,AllMusic; Vogue,"Contemporary pop foundations, albeit with singer-songwriter departures",high
+sabrina-emailsicantsend,songwriter,recurrent structural style,AllMusic; Vogue,"Confessional narrative, direct writing, introspective songwriter influences",high
+sabrina-emailsicantsend,dancepop,part of record,AllMusic; Sputnikmusic,Read Your Mind/Fast Times/Nonsense are comparatively beat-driven,high
+sabrina-emailsicantsend,poprock,track accents,Sputnikmusic; AllMusic,Vicious and Tornado Warnings emphasize guitar-driven pop-rock,medium
+sabrina-emailsicantsend,folkpop,track accents,Sputnikmusic; Vogue,"How many things acoustic folk-pop, with simpler writing throughout",medium
+sabrina-emailsicantsend,disco,one to two songs,Sputnikmusic; Exclaim!,Read Your Mind specifically cited as disco-driven; unlike later single Feather,medium
+sabrina-emailsicantsend,powerpop,single-track descriptor,Sputnikmusic,Review names Vicious a power-pop track; not overall dominant,medium
+sabrina-emailsicantsend,rnb,secondary influence,Exclaim!; AllMusic,"Retrospective critics mention an R&B strand, not a primary album sound",medium
+sabrina-shortnsweet,pop,dominant umbrella,Pitchfork; AllMusic; Slant,Multiple critics describe a cohesion across changing pop idioms,high
+sabrina-shortnsweet,dancepop,recurrent,AllMusic; Pitchfork,"Numerous rhythmic pop songs, but alternates with acoustic/country ballads",high
+sabrina-shortnsweet,nudisco,major single / album accent,Pitchfork; Exclaim!,Espresso explicitly described as nu-disco; not the whole album,high
+sabrina-shortnsweet,disco,recurrent accent,Slant; ELLE; Evening Standard,Disco grooves and stylistic references in Espresso and other songs,high
+sabrina-shortnsweet,country,multiple tracks / recurring,Pitchfork; Exclaim!; Evening Standard,"Slim Pickins, Sharpest Tool and Please Please Please carry country twang",high
+sabrina-shortnsweet,countrypop,recurrent hybrid,Evening Standard; Exclaim!,Professional review characterizes the record as country-pop-influenced,high
+sabrina-shortnsweet,rnb,individual tracks,Pitchfork; Exclaim!,"Good Graces is explicitly described as throwback R&B, with Bed Chem as another influence",high
+sabrina-shortnsweet,poprock,individual track / textures,Pitchfork; SLUG Magazine,Taste described as pop-rock; some other tracks have live guitar textures,medium
+sabrina-shortnsweet,folkpop,individual tracks,Slant,Lie to Girls and Slim Pickins explicitly lean toward folk-pop,high
+sabrina-shortnsweet,synthpop,track-level accent,Evening Standard,"Eighties synth-pop referenced among album styles, not the dominant approach",medium
+sabrina-shortnsweet,gfunk,isolated timbre,Slant,"Bed Chem carries a trace of G-funk in the synth whistle, NOT an album-wide G-funk idiom",low
+sabrina-shortnsweet,bluegrass,localized/secondary influence,ELLE,"Editorial music commentary explicitly mentions bluegrass among stylistic influences, not a core genre",low

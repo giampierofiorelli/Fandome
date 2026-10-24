@@ -1,0 +1,4 @@
+﻿album_id,artist_id,title,year,catalog_status,action,existing_or_new,source,notes
+sabrina-eyeswideopen,sabrina,Eyes Wide Open,2015,missing_in_verified_catalog,add_album_to_src_data_catalog_ts,new,GitHub src/data/catalog.ts verified 2026-10-24,Keep the original 2015/2016/2018 titles; do not replace existing later Sabrina releases.
+sabrina-evolution,sabrina,EVOLution,2016,missing_in_verified_catalog,add_album_to_src_data_catalog_ts,new,GitHub src/data/catalog.ts verified 2026-10-24,Keep the original 2015/2016/2018 titles; do not replace existing later Sabrina releases.
+sabrina-singularacti,sabrina,Singular: Act I,2018,missing_in_verified_catalog,add_album_to_src_data_catalog_ts,new,GitHub src/data/catalog.ts verified 2026-10-24,Keep the original 2015/2016/2018 titles; do not replace existing later Sabrina releases.

@@ -1,0 +1,15 @@
+album_id,genre_token,scope,album_specific_evidence,source_ids,relative_importance
+sabrina-mansbestfriend,pop,album,"Pitchfork labels album Pop/R&B, Apple and Qobuz category pop",SC25-01|SC25-03|SC25-04,dominant
+sabrina-mansbestfriend,disco,several songs,Apple foregrounds seventies disco; Tears and My Man on Willpower receive disco/ABBA comparisons,SC25-01|SC25-04|SC25-05|SC25-08,central thread
+sabrina-mansbestfriend,dancepop,track plus period idiom,Slant describes House Tour as Paula Abdul-era dance-pop,SC25-05,track-specific
+sabrina-mansbestfriend,country,several songs,Country-tinted Manchild and country shuffle Go Go Juice and country in Sugar Talking,SC25-01|SC25-04|SC25-06|SC25-07,secondary album thread
+sabrina-mansbestfriend,rnb,multiple songs,Pitchfork Pop/R&B label; Slant explicitly blends R&B with smooth rock in Never Getting Laid,SC25-04|SC25-05|SC25-09,secondary album thread
+sabrina-mansbestfriend,softrock,album palette,The Skinny describes soft rock within record’s sound; not as rock-dominant,SC25-10,secondary album thread
+sabrina-mansbestfriend,discopop,Tears,Slant explicitly calls Tears a disco-pop song,SC25-05,track-specific new token
+sabrina-mansbestfriend,nudisco,Tears,Pitchfork calls Tears a form of nu-disco,SC25-04,"track-specific, existing taxonomy"
+sabrina-mansbestfriend,funk,House Tour/Tears,Qobuz hears electro-funk; Prince-inspired track aesthetics reinforce style,SC25-03|SC25-06,track-specific; broader than electrofunk
+sabrina-mansbestfriend,electrofunk,House Tour,Qobuz editorial explicitly names electro-funk flourishes,SC25-03,track-specific
+sabrina-mansbestfriend,newjackswing,House Tour,Apple album note explicitly calls House Tour new jack swing-inspired,SC25-01,track-specific influence
+sabrina-mansbestfriend,yachtrock,Never Getting Laid,Slant explicitly describes yacht-rock-meets-R&B,SC25-05,track-specific new token
+sabrina-mansbestfriend,reggae,Nobody’s Son,LA Times explicitly notes a reggae groove on this track,SC25-08,track-specific groove
+sabrina-mansbestfriend,quietstorm,Never Getting Laid,Qobuz notes 1990s quiet-storm shades in R&B-pop track,SC25-03,track-specific new token
