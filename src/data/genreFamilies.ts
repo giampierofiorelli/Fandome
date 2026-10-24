@@ -39,4 +39,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   hiphopsoul: ['rnb', 'hiphop'], bubblegumpop: ['pop'], europop: ['pop', 'dance'], chillout: ['downtempo', 'ambient'],
   downbeat: ['downtempo'], electro: ['electronic', 'dance'], rave: ['electronic', 'dance'], ambientbreakbeat: ['ambient', 'breakbeat'],
   bigbeat: ['breakbeat', 'electronic'], chillwave: ['synthpop', 'indie'], synthwave: ['synthpop', 'electronic'], hardhouse: ['house'], techhouse: ['house', 'techno'], acousticpop: ['pop', 'folk'], teenpop: ['pop'], altpop: ['pop', 'alt'], countrypop: ['country', 'pop'], gfunk: ['hiphop', 'funk'], bluegrass: ['country', 'folk'], discopop: ['disco', 'pop'], yachtrock: ['softrock'], quietstorm: ['rnb', 'soul'],
+  dub: ['reggae', 'electronic'], experimental: ['electronic'], experimentaltechno: ['techno'], gothabilly: ['rock'], idm: ['electronic'], minimaltechno: ['techno'], neofolk: ['folk'], postpunk: ['punk', 'rock'], postrock: ['rock'], shoegaze: ['indie', 'rock'], surfrock: ['rock'],
 }

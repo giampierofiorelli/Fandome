@@ -1,0 +1,59 @@
+album_id,genre,scope,source_keys,evidence,strength
+trentemoller-thelastresort,electronic,whole album,L_OFF|L_PF|L_RA,Electronic composition/programming dominates; acoustic instruments are auxiliary,high
+trentemoller-thelastresort,downtempo,whole album,L_PF|L_OFF,Slow mood pieces form the programme core,high
+trentemoller-thelastresort,ambient,some tracks,L_OFF|L_PF,Dreamlike ambience and atmospheric passages; not fully ambient,high
+trentemoller-thelastresort,triphop,some tracks,L_RA,RA identifies several cello/guitar-tinged trip-hop songs,high
+trentemoller-thelastresort,dub,some tracks,L_OFF|L_RA,Evil Dub and Nightwalker; explicit dub descriptions,high
+trentemoller-thelastresort,techhouse,some tracks / prior-style context,L_RA,RA tech-house taxonomy; especially clubward material and deluxe edition caution,medium
+trentemoller-thelastresort,techno,some tracks / historical crossover,L_RA|L_HOT,"Techno and dub-techno elements, not dominant listening mode",medium
+trentemoller-thelastresort,minimaltechno,some tracks / historical crossover,L_PF|L_RA,Minimal-techno pulse and studio craft; prior singles more strongly represent it,medium
+trentemoller-thelastresort,house,some tracks,L_PF,Only selected standard-edition tracks reach house/dancefloor tempo,high
+trentemoller-thelastresort,electro,some tracks / historical crossover,L_RA,RA explicitly labels Electro but predominantly discussing broader release incl bonus disc,medium
+trentemoller-thelastresort,electrohouse,some tracks / historical crossover,L_PF,Review contrasts early electro-house with calmer album; low album-wide weight,medium
+trentemoller-thelastresort,chillout,whole album listening context,L_PF,Critic frames as home-listening/chillout music,medium
+trentemoller-thelastresort,idm,texture,L_PF,IDM micro-rhythmic detail named in Pitchfork producer-style assessment,low
+trentemoller-thelastresort,italodisco,one track / stylistic nod,L_RA,Opening cut compared to Italo; shorthand is not blanket disco classification,low
+trentemoller-thetrentemllerchronicles,electronic,whole double compilation,C_PF|C_RA,Electronically produced early works and remixes across both discs,high
+trentemoller-thetrentemllerchronicles,techno,substantial,C_RA|C_AM,RA direct tag; AllMusic explicit style,high
+trentemoller-thetrentemllerchronicles,electro,substantial,C_RA,RA explicit tag and strongly electrified remix half,high
+trentemoller-thetrentemllerchronicles,electrohouse,substantial,C_PF,Pitchfork explicitly calls multiple singles muted electro-house and remix disc muscular electro-house,high
+trentemoller-thetrentemllerchronicles,minimaltechno,substantial,C_AM|C_RA,AllMusic explicit minimal techno; early singles and understated CD1,high
+trentemoller-thetrentemllerchronicles,techhouse,substantial,C_AM,AllMusic explicit Tech-House style,high
+trentemoller-thetrentemllerchronicles,house,substantial,C_AM,AllMusic house classification; dancefloor selections,high
+trentemoller-thetrentemllerchronicles,dub,some tracks,C_RA,RA explicit dub listing; spacious delay work,high
+trentemoller-thetrentemllerchronicles,chillout,first disc first half,C_RA,"First side begins with calm chillout, opposite to CD2 club mixes",high
+trentemoller-thetrentemllerchronicles,ambient,track texture,C_PF,Pitchfork ambient drift specifically on Snowflake,medium
+trentemoller-thetrentemllerchronicles,drumandbass,track subset,C_PF,Snowflake takes a drum and bass turn; not whole-set dominant,high
+trentemoller-thetrentemllerchronicles,experimentaltechno,album style taxonomy,C_AM,AllMusic explicit experimental techno category,high
+trentemoller-thetrentemllerchronicles,dance,substantial,C_RA|C_PF,"Strong club-facing portions, especially second disc",high
+trentemoller-intothegreatwideyonder,electronic,whole album hybrid,Y_OFF|Y_PF,Electronics and synthetic drum patterns persist beneath rock instrumentation,high
+trentemoller-intothegreatwideyonder,rock,substantial,Y_OFF|Y_IR|Y_NME,Live guitar-led arrangements and rock song approaches,high
+trentemoller-intothegreatwideyonder,indie,substantial,Y_IR|Y_SV,2010 independent/rock scene crossover and credited collaborators,medium
+trentemoller-intothegreatwideyonder,electrorock,substantial hybrid,Y_OFF|Y_IR,Label explicitly describes indie/electro-rock focus in 2010 album retrospective,high
+trentemoller-intothegreatwideyonder,postpunk,substantial influence/texture,Y_NME,NME identifies post-punk as a sonic direction,high
+trentemoller-intothegreatwideyonder,surfrock,some tracks / guitar texture,Y_PF|Y_SV|Y_INT,"Reverb surf guitar recurring, prominent on Silver Surfer Ghost Rider Go",high
+trentemoller-intothegreatwideyonder,ambient,some tracks / texture,Y_OFF|Y_GA,"Atmospheric textures and soundscapes, not unbroken ambient programme",medium
+trentemoller-intothegreatwideyonder,downtempo,some tracks / catalogue style,Y_AM|Y_IR,AllMusic Downbeat label; instrumental tracks often restrained,medium
+trentemoller-intothegreatwideyonder,techno,context / some tracks,Y_AM|Y_NME,AllMusic techno tag; reviews emphasize partial move beyond techno,medium
+trentemoller-intothegreatwideyonder,house,context / pulse,Y_AM|Y_SV,AllMusic House; underground club pulse persists only in parts,medium
+trentemoller-intothegreatwideyonder,experimentaltechno,album style taxonomy,Y_AM,"AllMusic explicit Experimental Techno, despite stronger rock direction",medium
+trentemoller-intothegreatwideyonder,dance,limited rhythmic elements,Y_AM|Y_SV,Club/Dance database umbrella contrasts with many non-club tracks,low
+trentemoller-intothegreatwideyonder,pop,song-based sections,Y_IR|Y_GA,Irish Times and Jyllands-Posten report pop song structures and dark pop quality,medium
+trentemoller-intothegreatwideyonder,gothabilly,reviewer metaphor / hybrid texture,Y_NME,NME headline uses gothabilly for gothic surf/rockabilly-electronic hybrid,low
+trentemoller-reworkedremixed,electronic,whole compilation,R_OFF|R_RA,Electronic productions and remixes underpin both discs,high
+trentemoller-reworkedremixed,house,substantial,R_RA,RA explicit House tag and dark-house remixes,high
+trentemoller-reworkedremixed,electro,substantial,R_RA,RA explicit Electro classification,high
+trentemoller-reworkedremixed,indie,substantial,R_OFF|R_RA,Indie bands and indie pop source material remixed throughout,high
+trentemoller-reworkedremixed,rock,substantial,R_OFF|R_MUSICBASE,Label and physical issue classify rock material in hybrid collection,high
+trentemoller-reworkedremixed,techno,some tracks / catalogued style,R_MUSICBASE,Release-level physical issue lists Techno,medium
+trentemoller-reworkedremixed,techhouse,some tracks / catalogued style,R_MUSICBASE,Release-level issue classifies Tech House,medium
+trentemoller-reworkedremixed,ambient,some tracks,R_MUSICBASE|R_OFF,Film-like atmospheric reworks and ambient classification,medium
+trentemoller-reworkedremixed,breakbeat,some tracks,R_MUSICBASE,Release metadata explicitly names breakbeat,medium
+trentemoller-reworkedremixed,synthpop,some tracks,R_MUSICBASE|R_RA,Alluded synth-pop cover and physical issue classification,high
+trentemoller-reworkedremixed,postrock,some tracks,R_OFF,Official artist notes explicitly name heavy post-rock mutations,medium
+trentemoller-reworkedremixed,electrorock,some tracks / source material,R_OFF,Official notes identify electro-rock origin for album remixes,medium
+trentemoller-reworkedremixed,industrial,one remix,R_OFF,Official notes explicitly call Giana Factory Dirty Snow remix raw industrial,high
+trentemoller-reworkedremixed,experimental,some tracks / album tag,R_RA|R_MUSICBASE,"RA tags Experimental, record widely varied rather than uniformly avant-garde",medium
+trentemoller-reworkedremixed,pop,some tracks / source material,R_OFF|R_RA,Indie pop and vocal synth-pop reworkings,medium
+trentemoller-reworkedremixed,shoegaze,source-track texture,R_RA,RA identifies Chimes & Bells source as gothic shoegaze; not uniform remixes,low
+trentemoller-reworkedremixed,neofolk,one rework,R_OFF,Marie Fisker rendition of Sycamore Feeling described as neo-folk,high
