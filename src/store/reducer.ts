@@ -403,12 +403,13 @@ function apply(state: State, action: Action): State {
     case 'partnerSeen':
       if (!me) return state
       return { ...state, dms: state.dms.map((m) => (m.from === me && m.to === action.partnerId && !m.seenAt ? { ...m, seenAt: action.at } : m)) }
-    case 'prune':
-      return {
-        ...state,
-        stories: state.stories.filter((s) => action.now - s.createdAt < DAY),
-        dms: state.dms.filter((m) => dmVisible(m, action.now)),
-      }
+    case 'prune': {
+      // Runs every 30s: only produce a new state (re-render + save) when something actually expired.
+      const stories = state.stories.filter((s) => action.now - s.createdAt < DAY)
+      const dms = state.dms.filter((m) => dmVisible(m, action.now))
+      if (stories.length === state.stories.length && dms.length === state.dms.length) return state
+      return { ...state, stories, dms }
+    }
     case 'addListing': {
       // Spare tickets only at face value or less (Italian law: art. 1 c. 545 L. 232/2016).
       const c = concerts.find((x) => x.id === action.concertId)

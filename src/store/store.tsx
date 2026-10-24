@@ -1,15 +1,30 @@
-import { createContext, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react'
+import { createContext, useContext, useEffect, useMemo, useReducer, useRef, type ReactNode } from 'react'
 import type { User } from '../data/types'
-import { gcBlobs } from '../lib/mediaStore'
+import { gcBlobs, loadSavedState, saveState } from '../lib/mediaStore'
 import { initialState, reducer, type Action, type State } from './reducer'
 
 const KEY = 'fandome:v1'
 
-function load(): State {
+// Saved state lives in IndexedDB. Older versions used localStorage: read it once, then move it.
+export async function loadInitialState(): Promise<State> {
+  try {
+    const saved = (await Promise.race([loadSavedState(), new Promise((r) => setTimeout(() => r(undefined), 2500))])) as State | undefined
+    if (saved && saved.version === 1) return migrate(saved)
+  } catch {
+    // IndexedDB unavailable (some private modes): fall back to localStorage
+  }
   try {
     const raw = localStorage.getItem(KEY)
-    if (raw) {
-      const parsed = JSON.parse(raw) as State
+    if (raw) return migrate(JSON.parse(raw) as State)
+  } catch {
+    // corrupted: start fresh
+  }
+  return initialState(Date.now())
+}
+
+function migrate(parsed: State): State {
+  try {
+    {
       if (parsed.version === 1) {
         // Older saves predate stories / DMs / pages: fill in what's missing.
         const now = Date.now()
@@ -50,15 +65,43 @@ interface Store {
 
 const Ctx = createContext<Store | null>(null)
 
-export function StoreProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(reducer, undefined, load)
+export function StoreProvider({ children, initial }: { children: ReactNode; initial: State }) {
+  const [state, dispatch] = useReducer(reducer, initial)
 
+  // Save off the critical path: batch changes and write to IndexedDB asynchronously,
+  // so the screen never waits (the old synchronous localStorage write froze it with photos).
+  const latest = useRef(state)
+  latest.current = state
   useEffect(() => {
-    try {
-      localStorage.setItem(KEY, JSON.stringify(state))
-    } catch {
-      // Quota full (usually photos) or private mode: tell the user instead of failing silently.
-      window.dispatchEvent(new CustomEvent('fandome:storage-full'))
+    let cancelled = false
+    const save = () => {
+      saveState(latest.current)
+        .then(() => {
+          // Moved to IndexedDB: free the old localStorage copy (it counted against a ~5MB quota).
+          try {
+            localStorage.removeItem(KEY)
+          } catch {
+            // ignore
+          }
+        })
+        .catch(() => {
+          // No IndexedDB (rare private modes): last resort, localStorage.
+          try {
+            localStorage.setItem(KEY, JSON.stringify(latest.current))
+          } catch {
+            window.dispatchEvent(new CustomEvent('fandome:storage-full'))
+          }
+        })
+    }
+    const t = setTimeout(() => !cancelled && save(), 300)
+    const flush = () => document.visibilityState === 'hidden' && save()
+    document.addEventListener('visibilitychange', flush)
+    window.addEventListener('pagehide', save)
+    return () => {
+      cancelled = true
+      clearTimeout(t)
+      document.removeEventListener('visibilitychange', flush)
+      window.removeEventListener('pagehide', save)
     }
   }, [state])
 

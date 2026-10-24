@@ -396,10 +396,10 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => (e.key === 'Escape' ? onClose() : e.key === 'ArrowRight' ? next() : e.key === 'ArrowLeft' ? prev() : null)
     window.addEventListener('keydown', onKey)
-    document.body.classList.add('no-scroll')
+    document.body.classList.add('no-scroll', 'story-open')
     return () => {
       window.removeEventListener('keydown', onKey)
-      document.body.classList.remove('no-scroll')
+      document.body.classList.remove('no-scroll', 'story-open')
     }
   })
 
@@ -427,7 +427,7 @@ function StoryViewer({ order, startAuthor, onClose, onShare }: { order: string[]
   return createPortal(
     <motion.div className="sv-root" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
       <motion.div
-        className="sv"
+        className={story.post ? 'sv with-post' : 'sv'}
         initial={{ scale: 0.92, y: 30 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.94, y: 40, opacity: 0 }}

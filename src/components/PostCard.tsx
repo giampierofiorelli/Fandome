@@ -370,6 +370,13 @@ function LikeButton({ liked, count, onToggle }: { liked: boolean; count: number;
 // Popover anchored to its trigger (transform-origin top-left), closes on outside press.
 function Popover({ open, onClose, children, align = 'left' }: { open: boolean; onClose: () => void; children: React.ReactNode; align?: 'left' | 'right' }) {
   const ref = useRef<HTMLDivElement>(null)
+  // Keep the open menu above the next posts (their wrappers are separate stacking contexts).
+  useEffect(() => {
+    if (!open) return
+    const item = ref.current?.closest('.feed > div')
+    item?.classList.add('menu-open')
+    return () => item?.classList.remove('menu-open')
+  }, [open])
   useEffect(() => {
     if (!open) return
     const onDown = (e: PointerEvent) => {

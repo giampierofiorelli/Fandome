@@ -1,16 +1,21 @@
-// Big media (story videos) stored in this browser's IndexedDB.
-// localStorage holds ~5MB, a 3-minute video can be far larger.
+// This browser's IndexedDB: big media (story videos) and the app's saved state.
+// localStorage holds ~5MB and writes synchronously (it froze the screen with photos saved).
 import { useEffect, useState } from 'react'
 
 const DB = 'fandome-media'
 const STORE = 'blobs'
+const STATE = 'state'
 let dbp: Promise<IDBDatabase> | null = null
 
 function db(): Promise<IDBDatabase> {
   if (!dbp) {
     dbp = new Promise((res, rej) => {
-      const req = indexedDB.open(DB, 1)
-      req.onupgradeneeded = () => req.result.createObjectStore(STORE)
+      const req = indexedDB.open(DB, 2)
+      req.onupgradeneeded = () => {
+        const d = req.result
+        if (!d.objectStoreNames.contains(STORE)) d.createObjectStore(STORE)
+        if (!d.objectStoreNames.contains(STATE)) d.createObjectStore(STATE)
+      }
       req.onsuccess = () => res(req.result)
       req.onerror = () => {
         dbp = null
@@ -21,18 +26,22 @@ function db(): Promise<IDBDatabase> {
   return dbp
 }
 
-function run<T>(mode: IDBTransactionMode, fn: (s: IDBObjectStore) => IDBRequest<T>): Promise<T> {
+function run<T>(mode: IDBTransactionMode, fn: (s: IDBObjectStore) => IDBRequest<T>, store = STORE): Promise<T> {
   return db().then(
     (d) =>
       new Promise<T>((res, rej) => {
-        const tx = d.transaction(STORE, mode)
-        const req = fn(tx.objectStore(STORE))
+        const tx = d.transaction(store, mode)
+        const req = fn(tx.objectStore(store))
         tx.oncomplete = () => res(req.result)
         tx.onerror = () => rej(tx.error ?? req.error)
         tx.onabort = () => rej(tx.error ?? new Error('aborted'))
       }),
   )
 }
+
+// App state (one record). Writing is asynchronous: the screen never waits for it.
+export const loadSavedState = () => run<unknown>('readonly', (s) => s.get('v1'), STATE)
+export const saveState = (value: unknown) => run('readwrite', (s) => s.put(value, 'v1'), STATE).then(() => undefined)
 
 export const putBlob = (key: string, blob: Blob) => run('readwrite', (s) => s.put(blob, key)).then(() => undefined)
 export const getBlob = (key: string) => run<Blob | undefined>('readonly', (s) => s.get(key))

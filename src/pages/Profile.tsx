@@ -248,7 +248,7 @@ function ProfileLinks({ user, isMe }: { user: User; isMe: boolean }) {
             style={{ ['--c' as string]: s.color }}
             onClick={() => dispatch({ type: 'clickLink', userId: user.id, id: l.id })}
           >
-            <span className="link-disc"><LinkIcon s={s} /></span>
+            <span className={s.icon ? 'link-disc brand' : 'link-disc'}><LinkIcon s={s} /></span>
             <span className="prof-link-label">{l.label || s.label}</span>
             {isMe && <span className="link-clicks">{l.clicks}</span>}
           </a>
@@ -298,7 +298,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
         const s = linkService(l.url)
         return (
           <div key={l.id} className="link-row" style={{ ['--c' as string]: s.color }}>
-            <span className="link-disc"><LinkIcon s={s} /></span>
+            <span className={s.icon ? 'link-disc brand' : 'link-disc'}><LinkIcon s={s} /></span>
             <span className="grow link-row-main">
               <input value={l.label ?? ''} placeholder={s.label} onChange={(e) => dispatch({ type: 'editLink', id: l.id, label: e.target.value })} aria-label="Label" maxLength={40} />
               <span className="muted small link-host">{prettyUrl(l.url).short}</span>
@@ -323,7 +323,7 @@ function LinksEditor({ links }: { links: ProfileLink[] }) {
           <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Paste a link: instagram.com/you, a playlist, your site…" inputMode="url" aria-label="Link" onKeyDown={(e) => e.key === 'Enter' && add()} />
           {service && (
             <div className="link-add-row" style={{ ['--c' as string]: service.color }}>
-              <span className="link-disc"><LinkIcon s={service} /></span>
+              <span className={service.icon ? 'link-disc brand' : 'link-disc'}><LinkIcon s={service} /></span>
               <input value={label} onChange={(e) => setLabel(e.target.value)} placeholder={`Label (default: ${service.label})`} maxLength={40} aria-label="Label" />
               <button className="pill-btn ink small" onClick={add}>
                 Add
