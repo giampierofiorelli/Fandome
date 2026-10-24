@@ -1,0 +1,75 @@
+album_id,genre,scope,source_keys,evidence,strength
+trentemoller-lost,electronic,whole album,L_BC|L_RA|L_PF|L_GA,"Dominant electronic construction coexists with guitars, band performances",high
+trentemoller-lost,indierock,substantial,L_RA|L_GA|L_BC,Song-led alternative indie rock and guitars prominently shape the record,high
+trentemoller-lost,electronica,whole album,L_LBF|L_RA,Krautrock-tinged electronica explicitly identified,high
+trentemoller-lost,rock,substantial,L_RA|L_PF|L_BC,Guitar-driven rock structures and dynamic song arrangements,high
+trentemoller-lost,pop,whole album context,L_RA|L_PF,RA Pop category; pop-oriented melodic/vocal songwriting despite instrumental tracks,high
+trentemoller-lost,krautrock,substantial,L_RA|L_LBF,Multiple reviewers identify krautrock suites and rhythmic structures,high
+trentemoller-lost,dreampop,substantial,L_BC,Official album tags explicitly say dream pop; not every track,medium
+trentemoller-lost,shoegaze,substantial texture,L_BC,Official album tags explicitly say shoegaze; guitar wash/processing,medium
+trentemoller-lost,slowcore,some tracks,L_GA|L_BC,GAFFA notes slowcore intrusion and Low contributes to The Dream,high
+trentemoller-lost,electrorock,some tracks,L_RA,Resident Advisor describes River Of Life as electro-rock,high
+trentemoller-lost,electro,some tracks,L_RA,Primitive electro is part of album stylistic palette,medium
+trentemoller-lost,techno,some tracks,L_PF,Instrumental techno-associated structures and sound design; not all tracks,medium
+trentemoller-lost,house,some tracks,L_PF|L_LBF,Minimal house methods and earlier atmospheric house are intermittent,medium
+trentemoller-lost,newwave,substantial / secondary,L_ART|L_BEA,AllMusic connects this album to dark new wave; specific new-romantic moments,medium
+trentemoller-lost,postpunk,some tracks,L_BEA,Never Stop Running characterized as post-punk arrangement,medium
+trentemoller-lost,altcountry,one track,L_RA|L_BEA,The Dream identified as alt-country by critics,high
+trentemoller-lost,gothicamericana,style influence,L_RA,Resident Advisor names gothic Americana among collected stylistic influences,medium
+trentemoller-lost,industrial,one track / texture,L_PF,Still On Fire compared with industrial sound design,medium
+trentemoller-lost,dubstep,one track / texture,L_PF,Dubstep element reported on Never Stop Running; not entire album,high
+trentemoller-lost,artpop,one track,L_APP,Apple Music editorial calls Gravity art-pop,medium
+trentemoller-lost,ambient,some tracks / texture,L_BEA|L_LBF,The Dream ambient bed and Gravity airy outro; not uniformly ambient,medium
+trentemoller-lost,postgoth,one track / texture,L_BEA,Beat explicitly places post-goth among The Dream textures,medium
+trentemoller-lostreworks,electronic,whole album,R_OFF|R_AM,Electronic remixes predominate across reinterpretations,high
+trentemoller-lostreworks,electroclash,some tracks,R_OFF,Label identifies retro electroclash on River Of Life remix,high
+trentemoller-lostreworks,electro,substantial,R_OFF|R_SLUG,Electronic machine arrangements emphasized across selected reworks,medium
+trentemoller-lostreworks,electrorock,some tracks,R_OFF,Toydrum retains and intensifies Come Undone electro-rock elements,high
+trentemoller-lostreworks,house,substantial / style,R_AM,AllMusic explicitly tags House,high
+trentemoller-lostreworks,experimentaltechno,whole release style tag,R_AM,AllMusic explicitly tags Experimental Techno; evidence uneven across tracks,high
+trentemoller-lostreworks,downbeat,whole release style tag,R_AM,AllMusic explicitly tags Downbeat,high
+trentemoller-lostreworks,indierock,some tracks / style,R_AM,AllMusic Alternative/Indie Rock classifies source/collection sound,medium
+trentemoller-lostreworks,alternativerock,some tracks / style,R_AM,AllMusic expressly tags Alternative/Indie Rock,medium
+trentemoller-lostreworks,rock,some tracks,R_OFF,Guitar-led and rock-origin material remains in versions,medium
+trentemoller-lostreworks,poprock,broad editorial style,R_AM,"AllMusic Pop/Rock category, not a promise of uniform pop-rock form",medium
+trentemoller-lostreworks,breakbeat,some tracks,R_OFF,Label describes Unkwon dusty broken-beat Deceive rework,high
+trentemoller-lostreworks,electrogaze,one track,R_OFF,Label explicitly coins electro-gaze for T.O.M. And His Computer River of Life,medium
+trentemoller-lostreworks,pop,some tracks,R_OFF,Jenny Wilson reframes Candy Tongue as melancholic pop,medium
+trentemoller-fixion,electronic,whole album,F_BC|F_AM|F_MR,Synth-based electronic record and producer studio testimony,high
+trentemoller-fixion,postpunk,substantial,F_OD|F_DK|F_GU,Critics independently note post-punk architecture and rhythmic focus,high
+trentemoller-fixion,synthpop,substantial,F_EX|F_MR,Exclaim expressly says synth pop; prominent synth song forms,high
+trentemoller-fixion,newwave,substantial,F_EX|F_OD,Exclaim uses new wave; 1980s-wave sound pattern,high
+trentemoller-fixion,darkwave,whole album sound,F_OD,OndaRock explicitly describes darkwave atmospheres and decay,high
+trentemoller-fixion,electro,substantial,F_BC|F_OD,Bandcamp official electro tag; OndaRock electronic/electropop groove,high
+trentemoller-fixion,indierock,substantial,F_BC|F_AM,Official indie rock tag and AllMusic alt/indie rock,high
+trentemoller-fixion,alternativerock,substantial,F_AM,AllMusic explicitly Alternative/Indie Rock stylistic class,high
+trentemoller-fixion,dreampop,substantial / texture,F_BC,Official dream pop tag; atmospheric guitar and voice treatment,medium
+trentemoller-fixion,shoegaze,substantial / texture,F_BC,Official shoegaze tag supported by reverberant guitar textures,medium
+trentemoller-fixion,gothpop,some tracks,F_DK,Berlingske describes One Eye Open and River In Me as goth-pop,high
+trentemoller-fixion,electropop,one track,F_OD,OndaRock describes Circuits electropop after New Order,high
+trentemoller-fixion,experimentaltechno,style tag,F_AM,AllMusic explicitly Experimental Techno,high
+trentemoller-fixion,idm,style tag,F_AM,AllMusic explicitly IDM,high
+trentemoller-fixion,indieelectronic,style tag,F_AM,AllMusic explicitly Indie Electronic; token absent from original list,high
+trentemoller-fixion,krautrock,one track,F_DK,Soundvenue categorizes Circuits as partly krautrock,high
+trentemoller-fixion,electropunk,some tracks,F_BC|F_BD,Label explicitly says electropunk; Circuits described as electro-punky by artist,high
+trentemoller-fixion,ambient,one track,F_BD,Artist describes November as ambient and atmospheric instrumental,high
+trentemoller-fixion,funk,one track / texture,F_BD|F_DK,Artist identifies My Conviction as funky; Danish critic describes particular funk arrangement,medium
+trentemoller-obverse,electronic,whole album,O_BC|O_AM,Electronically arranged album dominated by synth/drum studio design,high
+trentemoller-obverse,dreampop,substantial,O_OFF|O_BC|O_AM,Official release text and AllMusic explicitly name dream pop,high
+trentemoller-obverse,shoegaze,substantial,O_OFF|O_BC|O_BIO,Official Slowdive context and explicit shoegaze record classification,high
+trentemoller-obverse,indieelectronic,whole album style tag,O_AM,AllMusic explicitly Indie Electronic,high
+trentemoller-obverse,indierock,substantial,O_BC|O_AM,Official indie rock tag plus AllMusic alternative/indie rock,high
+trentemoller-obverse,alternativerock,substantial,O_AM,AllMusic Alternative/Indie Rock label,high
+trentemoller-obverse,rock,substantial,O_AM|O_OFF,Indie guitar and distortion alongside electronic design,medium
+trentemoller-obverse,newwave,some tracks / style,O_AM,AllMusic New Wave/Post-Punk Revival broader classification,medium
+trentemoller-obverse,postpunkrevival,some tracks / style,O_AM,AllMusic explicitly New Wave/Post-Punk Revival,high
+trentemoller-obverse,synthwave,some tracks / style,O_BIO,AllMusic album-specific biography lists synthwave among 2019 elements,medium
+trentemoller-obverse,krautrock,style influence,O_BIO|O_OFF,AllMusic identifies krautrock; label points to kosmische/motorik spirit,medium
+trentemoller-obverse,darkwave,some tracks / textures,O_UTR|O_CV,Foggy Figures darkwave rhythm and critics darkwave framing,medium
+trentemoller-obverse,experimentaltechno,style tag,O_AM,"AllMusic explicitly Experimental Techno, despite limited club music",high
+trentemoller-obverse,electronica,whole album,O_STD|O_OFF,Evening Standard calls the record electronica,high
+trentemoller-obverse,poprock,broad editorial style,O_AM,AllMusic overarching Pop/Rock classification; mix of vocal and guitar pieces,medium
+trentemoller-obverse,electropop,some tracks / broad context,O_OFF,Official page quotes DJ Mag France identifying electro-pop alongside rock and electronica,medium
+trentemoller-obverse,ambient,some tracks,O_ECL|O_OFF,"Foggy Figures ambient opening, atmospheric instrumental passages",medium
+trentemoller-obverse,drumandbass,one track texture,O_OFF|O_ECL,Label identifies Foggy Figures neo-ambient-meets-drum-and-bass,high
+trentemoller-obverse,neoambient,one track texture,O_OFF,Label explicitly describes Foggy Figures neo-ambient,medium

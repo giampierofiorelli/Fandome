@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,type,catalog_status,expected_catalog_id,instruction,edition
+trentemoller-lost,Trentemøller,Lost,2013,studio,already_in_catalog,trentemoller-lost,Retain existing ID; append only phase02 row,"original standard album, not later edition"
+trentemoller-lostreworks,Trentemøller,Lost Reworks,2014,remix,add_to_catalogue,trentemoller-lostreworks,Add original 2014 remix album; preserve slug ID,seven-track original LP; extended digital 10-track differs
+trentemoller-fixion,Trentemøller,Fixion,2016,studio,already_in_catalog,trentemoller-fixion,Retain existing ID; append only phase02 row,"original standard album, not later edition"
+trentemoller-obverse,Trentemøller,Obverse,2019,studio,already_in_catalog,trentemoller-obverse,Retain existing ID; append only phase02 row,"original standard album, not later edition"
