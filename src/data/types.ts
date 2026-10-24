@@ -67,11 +67,25 @@ export interface User {
   ratings: Record<Id, number> // albumId -> 0.5..5
   following: Id[]
   joinedAt?: number
+  collection?: CollectionItem[] // showcase only: nothing here is for sale
   links?: ProfileLink[] // link-in-bio: up to 8, with anonymous click counts
   pinned?: Id[] // up to 3 posts shown first on the profile, newest pin first
   mod?: { artistIds: Id[]; since: number } // volunteer moderator for these fandoms (shown on the profile)
   modRequest?: { artistIds: Id[]; reason: string; at: number; status: 'pending' | 'declined' }
   activeAt?: number // last public action (like, vote, rating…); posts and stories count on their own
+}
+
+export const COLLECTION_FORMATS = ['Vinyl LP', '12" single', '7" single', 'Picture disc', 'CD', 'CD single', 'Cassette', 'Box set', 'Promo', 'Ticket stub', 'Poster', 'Tour merch', 'Magazine / book', 'Other'] as const
+export interface CollectionItem {
+  id: Id
+  title: string
+  artistId?: Id
+  format: (typeof COLLECTION_FORMATS)[number]
+  year?: number
+  note?: string // the story behind it
+  photo?: string // compressed data URL
+  image?: string // gradient placeholder (demo)
+  at: number
 }
 
 export interface ProfileLink {
@@ -135,7 +149,7 @@ export interface Report {
   id: Id
   at: number
   by: Id
-  target: { kind: 'post' | 'user' | 'story' | 'dm' | 'ticket'; id: Id }
+  target: { kind: 'post' | 'user' | 'story' | 'dm' | 'ticket' | 'item'; id: Id }
   reason: ReportReason
   note?: string
   contact?: { name: string; email: string } // people without a profile (DSA art. 16(2)(c))

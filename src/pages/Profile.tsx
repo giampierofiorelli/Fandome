@@ -1,3 +1,4 @@
+import { CollectionGrid } from '../components/Collection'
 import { AnimatePresence } from 'motion/react'
 import { ProfileQR } from '../components/ProfileQR'
 import { useState } from 'react'
@@ -20,7 +21,7 @@ import { useToast } from '../components/Toast'
 import { newId } from '../store/store'
 import type { ProfileLink, User } from '../data/types'
 
-type Tab = 'posts' | 'diary' | 'ratings' | 'likes'
+type Tab = 'posts' | 'collection' | 'diary' | 'ratings' | 'likes'
 
 // Letterboxd-style fan profile: your fan story is your identity.
 export default function Profile() {
@@ -162,6 +163,7 @@ export default function Profile() {
         <Tabs<Tab>
           tabs={[
             { id: 'posts', label: 'Posts' },
+            ...((user.collection?.length || isMe) ? [{ id: 'collection' as Tab, label: user.collection?.length ? `Collection ${user.collection.length}` : 'Collection' }] : []),
             { id: 'diary', label: 'Diary' },
             { id: 'ratings', label: 'Ratings' },
             { id: 'likes', label: 'Likes' },
@@ -204,6 +206,7 @@ export default function Profile() {
           )}
         </div>
       )}
+      {tab === 'collection' && <CollectionGrid user={user} isMe={isMe} />}
       {tab === 'ratings' && (
         <div className="glass-card list">
           {!rated.length && <p className="empty">No ratings yet.</p>}

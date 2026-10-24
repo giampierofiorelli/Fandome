@@ -1,5 +1,5 @@
 import { concerts, seedChats, seedDms, seedPosts, seedReports, seedStories, seedTickets, seedUsers } from '../data/seed'
-import type { ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, TicketListing, User } from '../data/types'
+import type { CollectionItem, ChatMessage, DirectMessage, Embed, Id, Poll, Post, Report, ReportReason, Story, TicketListing, User } from '../data/types'
 import { postArtists } from '../lib/postArtists'
 
 export interface State {
@@ -60,6 +60,8 @@ export type Action =
   | { type: 'requestVerification'; pageId: Id }
   | { type: 'report'; id: Id; at: number; target: Report['target']; reason: ReportReason; note?: string; contact?: Report['contact']; goodFaith: boolean }
   | { type: 'movePin'; postId: Id; dir: -1 | 1 }
+  | { type: 'addItem'; item: CollectionItem }
+  | { type: 'removeItem'; id: Id }
   | { type: 'addLink'; id: Id; url: string; label?: string }
   | { type: 'editLink'; id: Id; label: string }
   | { type: 'removeLink'; id: Id }
@@ -186,6 +188,15 @@ function apply(state: State, action: Action): State {
       }
       return { ...state, users: state.users.map((u) => (u.id === owner.id ? { ...u, pinned } : u)) }
     }
+    case 'addItem': {
+      const u = state.users.find((x) => x.id === me)
+      const it = action.item
+      if (!me || !u || !it.title.trim() || (u.collection?.length ?? 0) >= MAX_ITEMS) return state
+      const clean: CollectionItem = { ...it, title: it.title.trim().slice(0, 80), note: it.note?.trim().slice(0, 500) || undefined }
+      return updateMe(state, (x) => ({ ...x, collection: [clean, ...(x.collection ?? [])] }))
+    }
+    case 'removeItem':
+      return updateMe(state, (x) => ({ ...x, collection: x.collection?.filter((i) => i.id !== action.id) }))
     case 'addLink': {
       const u = state.users.find((x) => x.id === me)
       if (!me || !u || (u.links?.length ?? 0) >= MAX_LINKS || !/^https?:\/\//.test(action.url)) return state
@@ -426,6 +437,7 @@ function apply(state: State, action: Action): State {
       // Settles every open report about the same thing.
       let next: State = { ...state, reports: state.reports.map((x) => (x.status === 'open' && x.target.kind === r.target.kind && x.target.id === r.target.id ? { ...x, status, handledAt: action.at } : x)) }
       if (action.action === 'remove' && r.target.kind === 'post') next = updatePost(next, r.target.id, (p) => ({ ...p, removed: { at: action.at, reason: action.reason ?? r.reason, note: action.note?.trim() || undefined } }))
+      if (action.action === 'remove' && r.target.kind === 'item') next = { ...next, users: next.users.map((u) => (u.collection?.some((i) => i.id === r.target.id) ? { ...u, collection: u.collection.filter((i) => i.id !== r.target.id) } : u)) }
       if (action.action === 'remove' && r.target.kind === 'ticket') next = { ...next, tickets: next.tickets.map((t) => (t.id === r.target.id ? { ...t, closed: true } : t)) }
       if (action.action === 'remove' && r.target.kind === 'story') next = { ...next, stories: next.stories.filter((s) => s.id !== r.target.id) }
       return next
@@ -470,6 +482,7 @@ export const DAY = 24 * 60 * 60_000
 export const MAX_POST_ARTISTS = 4
 export const MAX_PINS = 3
 export const MAX_LINKS = 8
+export const MAX_ITEMS = 30
 // A DM stays until seen, then for 24h after being seen.
 export const dmVisible = (m: DirectMessage, now: number) => !m.seenAt || now - m.seenAt < DAY
 export const dmExpiresIn = (m: DirectMessage, now: number) => (m.seenAt ? Math.min(DAY, Math.max(0, DAY - (now - m.seenAt))) : null)

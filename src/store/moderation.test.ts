@@ -97,3 +97,14 @@ describe('ticket board and suggestions', () => {
     expect(reducer(s, { type: 'sendDm', id: 'b', to: 'u-giulia', at: NOW, artistId: 'nobody' }).dms.some((m) => m.id === 'b')).toBe(false)
   })
 })
+
+describe('collection', () => {
+  it('adds and removes showcase pieces', () => {
+    let s = me()
+    s = reducer(s, { type: 'addItem', item: { id: 'i1', title: ' Ray of Light ', format: 'Vinyl LP', year: 1998, at: NOW } })
+    expect(s.users.find((u) => u.id === 'me')!.collection![0]).toMatchObject({ id: 'i1', title: 'Ray of Light' })
+    expect(reducer(s, { type: 'addItem', item: { id: 'i2', title: '  ', format: 'CD', at: NOW } })).toBe(s)
+    s = reducer(s, { type: 'removeItem', id: 'i1' })
+    expect(s.users.find((u) => u.id === 'me')!.collection).toEqual([])
+  })
+})

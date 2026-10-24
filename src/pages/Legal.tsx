@@ -165,6 +165,12 @@ export function Terms() {
         rules are removed; touts and scammers are banned.
       </p>
 
+      <h2>Collections</h2>
+      <p>
+        Your profile can show your collection (records, CDs, tickets, memorabilia) with your own photos and stories. It’s a showcase, not a shop: no prices, offers or sales. A marketplace may come in the
+        future only with proper protections (identity checks, protected payments, legal review). Photos of items should be your own.
+      </p>
+
       <h2>Suggestions and sharing</h2>
       <p>You can suggest an artist room or send a post to people you can message. They arrive as a card in their private messages; nobody is added to anything without tapping.</p>
 

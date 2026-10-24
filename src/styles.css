@@ -1069,3 +1069,28 @@ body:has(.sv-root) .modal-root { z-index: 100; }
 .dm-artist-tag { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 190px; }
 .dm-artist .pill-btn { justify-content: center; }
 .share-icon-circle { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--glass); flex-shrink: 0; }
+
+/* ---------- Collection showcase ---------- */
+.collection-note { margin: 4px 0 12px; }
+.coll-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 640px) { .coll-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.coll-tile { display: flex; flex-direction: column; gap: 3px; padding: 8px 8px 12px; border-radius: 22px; border: 1px solid var(--glass-edge); background: var(--glass); color: inherit; font: inherit; text-align: left; cursor: pointer; min-width: 0; transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.coll-tile:active { transform: scale(0.97); }
+.coll-tile.add { border-style: dashed; }
+.coll-art { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 1; border-radius: 16px; margin-bottom: 6px; background-size: cover; background-position: center; color: rgba(255, 255, 255, 0.8); box-shadow: 0 10px 22px -14px rgba(0, 0, 0, 0.5); }
+.coll-art.add { background: var(--glass-strong); color: var(--muted); box-shadow: none; }
+.coll-art.big { border-radius: 22px; width: 100%; }
+.coll-artist { position: absolute; left: 8px; bottom: 8px; display: inline-flex; border-radius: 50%; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7); }
+.coll-title { font-weight: 600; font-size: 14px; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 4px; }
+.coll-tile .muted { padding: 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.coll-detail { display: flex; flex-direction: column; gap: 12px; }
+.coll-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.coll-story { margin: 0; font-size: 15.5px; line-height: 1.5; }
+.coll-form { display: flex; flex-direction: column; gap: 10px; }
+.coll-form > input, .coll-row input, .coll-row select { height: 44px; border-radius: 999px; padding: 0 16px; }
+.coll-row { display: flex; gap: 8px; }
+.coll-row select { flex: 1; }
+.coll-row input { width: 96px; flex: 0 0 auto; }
+.coll-photo { position: relative; aspect-ratio: 4 / 3; border-radius: 20px; background: var(--glass) center / cover; border: 1px dashed var(--glass-edge); display: flex; align-items: center; justify-content: center; }
+.coll-photo-btns { display: flex; gap: 8px; }
+.coll-photo-remove { position: absolute; right: 10px; bottom: 10px; }

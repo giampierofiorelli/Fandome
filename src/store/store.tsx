@@ -18,8 +18,12 @@ function load(): State {
         // Saves from before the activity rule: nobody starts out paused.
         const users = withPages.map((u) => {
           if (u.id === parsed.meId) return u.joinedAt ? u : { ...u, joinedAt: now }
+          const f = fresh.users.find((x) => x.id === u.id)
+          // Demo additions for older saves: collection and links of seed fans.
+          if (f && !u.collection && f.collection) u = { ...u, collection: f.collection }
+          if (f && !u.links && f.links) u = { ...u, links: f.links }
           if (u.activeAt !== undefined) return u
-          return { ...u, activeAt: fresh.users.find((f) => f.id === u.id)?.activeAt ?? now }
+          return { ...u, activeAt: f?.activeAt ?? now }
         })
         // Saves from before moderation: add the demo report, its spam post and moderators.
         let posts = parsed.posts

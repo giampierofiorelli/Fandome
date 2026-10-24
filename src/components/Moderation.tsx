@@ -351,6 +351,8 @@ function ReportItem({ report }: { report: Report }) {
   const user = report.target.kind === 'user' || report.target.kind === 'dm' ? userById(report.target.id) : undefined
   const story = report.target.kind === 'story' ? state.stories.find((s) => s.id === report.target.id) : undefined
   const ticket = report.target.kind === 'ticket' ? state.tickets.find((t) => t.id === report.target.id && !t.closed) : undefined
+  const itemOwner = report.target.kind === 'item' ? state.users.find((u) => u.collection?.some((i) => i.id === report.target.id)) : undefined
+  const item = itemOwner?.collection?.find((i) => i.id === report.target.id)
   const msgs = report.target.kind === 'dm' ? state.dms.filter((m) => m.from === report.target.id && m.to === report.by).slice(-3) : []
   const act = (action: 'remove' | 'dismiss') => {
     dispatch({ type: 'resolveReport', reportId: report.id, action, reason, note, at: Date.now() })
@@ -390,7 +392,12 @@ function ReportItem({ report }: { report: Report }) {
           Ticket listing by {userById(ticket.userId)?.name}: {ticket.kind === 'spare' ? 'spare' : 'looking for'} {ticket.qty} · {ticket.note ?? 'no note'}
         </p>
       )}
-      {!post && !user && !story && !ticket && <p className="muted small">The content is no longer available.</p>}
+      {item && (
+        <p className="report-note">
+          Collection piece by {itemOwner?.name}: {item.title} ({item.format}){item.note ? ` · ${item.note}` : ''}
+        </p>
+      )}
+      {!post && !user && !story && !ticket && !item && <p className="muted small">The content is no longer available.</p>}
       {report.target.kind === 'post' && post && (
         <div className="report-decide">
           <select value={reason} onChange={(e) => setReason(e.target.value as ReportReason)} aria-label="Rule broken">
@@ -407,7 +414,7 @@ function ReportItem({ report }: { report: Report }) {
         <button className="pill-btn glass small" onClick={() => act('dismiss')}>
           Keep it
         </button>
-        {(post || story || ticket) && (
+        {(post || story || ticket || item) && (
           <button className="pill-btn danger-solid small" onClick={() => act('remove')}>
             Remove
           </button>
