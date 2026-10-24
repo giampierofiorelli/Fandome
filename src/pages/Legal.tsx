@@ -207,7 +207,7 @@ export function Privacy() {
       <h2>Link previews</h2>
       <p>
         When you write a post with a web link and tap “Add link preview”, your browser asks Microlink (microlink.io), a metadata service, for the page’s title and image, and then fetches that image
-        from the linked site; both receive the link and your IP address. This happens only when you ask for it. The image is shrunk and saved in the post, so people reading it never contact the linked site. You can remove the preview before posting.
+        from the linked site; both receive the link and your IP address. This happens only when you ask for it. The image is shrunk and saved in the post, so people reading it never contact the linked site. You can remove the preview before posting. Links to news articles show only the headline, never the article’s image (press publishers’ right, art. 43-bis of the Italian copyright law).
       </p>
 
       <h2>Spotify and concert dates</h2>

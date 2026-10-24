@@ -13,7 +13,7 @@ describe('youtube links', () => {
   })
 })
 
-import { detectEmbed, embedSrc, findUrls, stripUrl } from './media'
+import { detectEmbed, embedSrc, findUrls, isNewsLink, stripUrl } from './media'
 
 describe('embeds and links', () => {
   it('detects X, Instagram and TikTok posts', () => {
@@ -75,5 +75,16 @@ describe('profile link services', () => {
     expect(cleanLink('instagram.com/me')).toBe('https://instagram.com/me')
     expect(cleanLink('javascript:alert(1)')).toBeNull()
     expect(cleanLink('hello')).toBeNull()
+  })
+})
+
+describe('news links get no preview image', () => {
+  it('spots news sites, bylines and news-like addresses', () => {
+    expect(isNewsLink('https://www.repubblica.it/spettacoli/musica/x')).toBe(true)
+    expect(isNewsLink('https://pitchfork.com/reviews/albums/brat')).toBe(true)
+    expect(isNewsLink('https://example.com/2026/10/some-story')).toBe(true)
+    expect(isNewsLink('https://shop.example.com/item', { author: 'Jane' })).toBe(true)
+    expect(isNewsLink('https://www.zalando.it/')).toBe(false)
+    expect(isNewsLink('https://madonna.com/tour')).toBe(false)
   })
 })

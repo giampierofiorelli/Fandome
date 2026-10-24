@@ -230,11 +230,13 @@ export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<
   try {
     const res = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`, { signal: ctrl.signal, referrerPolicy: 'no-referrer' })
     if (!res.ok) return null
-    const json = (await res.json()) as { status: string; data?: { title?: string; description?: string; publisher?: string; image?: { url?: string } } }
+    const json = (await res.json()) as { status: string; data?: { title?: string; description?: string; publisher?: string; author?: string | null; date?: string | null; image?: { url?: string } } }
     const d = json.data
     if (json.status !== 'success' || !d || !d.title) return null
     let image: string | undefined
-    if (d.image?.url) {
+    // News: title only. Press publishers' right (EU DSM art. 15, Italian LDA art. 43-bis) covers
+    // article photos too; only links and very short extracts (like a headline) are free.
+    if (d.image?.url && !isNewsLink(url, d)) {
       try {
         const blob = await (await fetch(d.image.url, { signal: ctrl.signal, referrerPolicy: 'no-referrer' })).blob()
         if (blob.type.startsWith('image/')) image = await compressImage(new File([blob], 'preview', { type: blob.type }), 640, 0.78)
@@ -249,5 +251,20 @@ export async function fetchLinkPreview(url: string, timeoutMs = 15000): Promise<
     return null
   } finally {
     clearTimeout(t)
+  }
+}
+
+// Is this link a news article? Then the preview carries no image (see fetchLinkPreview).
+// Signals: a byline or publication date in the page metadata, a known news or music-press site,
+// or a news-like address. When in doubt, no image.
+const NEWS_SITES = /(^|\.)(ansa\.it|repubblica\.it|corriere\.it|lastampa\.it|ilsole24ore\.com|ilfattoquotidiano\.it|ilpost\.it|open\.online|fanpage\.it|tgcom24\.mediaset\.it|rainews\.it|sky\.it|rockol\.it|allmusicitalia\.it|billboard\.(com|it)|rollingstone\.(com|it)|pitchfork\.com|nme\.com|variety\.com|bbc\.(co\.uk|com)|theguardian\.com|nytimes\.com|washingtonpost\.com|cnn\.com|reuters\.com|apnews\.com|lemonde\.fr|elpais\.com|spiegel\.de|vogue\.(com|it)|vanityfair\.(com|it)|people\.com|tmz\.com|stereogum\.com|consequence\.net|complex\.com|clashmusic\.com|thefader\.com)$/i
+export function isNewsLink(url: string, meta: { author?: string | null; date?: string | null } = {}): boolean {
+  if (meta.author || meta.date) return true
+  try {
+    const u = new URL(url)
+    if (NEWS_SITES.test(u.hostname.replace(/^www\./, ''))) return true
+    return /\/(news|notizie|article|articolo|articles|story|cronaca)\/|\/20\d{2}\/\d{1,2}\//i.test(u.pathname)
+  } catch {
+    return true
   }
 }

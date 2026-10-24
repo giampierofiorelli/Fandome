@@ -52,7 +52,7 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 
 - **Remove demo numbers before launch**: `demoAlbumBuzz` in `src/data/seed.ts` adds fake "fans talking" to the album chart for the demo.
 
-- **Our own link-preview reader** (instead of Microlink): browsers can't read other sites' pages (CORS: Zalando, YouTube, Spotify, Rolling Stone, Repubblica, Pitchfork all block it), so a few lines of our own code must run on a server. Free option: a Cloudflare Worker on the owner's free account (100k requests/day), which reads the page's `og:title` and `og:image` (the picture sites publish for social sharing) and returns them; no third-party data service, Cloudflare's standard DPA. Then switch `fetchLinkPreview` in `src/lib/media.ts` to it. Lawyer: press publishers' right (EU DSM art. 15) for news-site previews.
+- **Our own link-preview reader** (instead of Microlink): browsers can't read other sites' pages (CORS: Zalando, YouTube, Spotify, Rolling Stone, Repubblica, Pitchfork all block it), so a few lines of our own code must run on a server. Free option: a Cloudflare Worker on the owner's free account (100k requests/day), which reads the page's `og:title` and `og:image` (the picture sites publish for social sharing) and returns them; no third-party data service, Cloudflare's standard DPA. Then switch `fetchLinkPreview` in `src/lib/media.ts` to it, and use `og:type = article` as one more signal for `isNewsLink` (news links: headline only, no image). Lawyer: press publishers' right (EU DSM art. 15) for news-site previews.
 
 ## Needs a backend (move off GitHub Pages)
 
