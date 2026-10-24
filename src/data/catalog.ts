@@ -347,6 +347,14 @@ const ROWS: Row[] = [
   ['bamboledipezza', 'Bambole di Pezza', '#e04a6f', 'All-female Italian punk rock', []],
   ['comacose', 'Coma_Cose', '#d9a3c9', 'A duo in love, on and off stage', [['Hype Aura', 2019], ['Nostralgia', 2021]]],
   ['pinguini', 'Pinguini Tattici Nucleari', '#4ab5a3', 'Stadium indie-pop with a sense of humour', [['Gioventù brucata', 2017], ['Fuori dall’hype', 2019], ['Fake News', 2022]]],
+  ['elataubert', 'Ela Taubert', '#e0a3b5', 'Colombian pop with heartbreak lyrics', []],
+  ['palomamorphy', 'Paloma Morphy', '#b5a3e0', 'Fresh Latin pop voice', []],
+  ['netonvega', 'Netón Vega', '#8a6f4a', 'Corridos with a new-generation twist', [['Mi Vida Mi Muerte', 2025]]],
+  ['beele', 'Beéle', '#e0a03f', 'Afrobeat and reggaeton from Barranquilla', [['Borondo', 2025]]],
+  ['omarcourtz', 'Omar Courtz', '#5a7ac9', 'Puerto Rican reggaeton, smooth and dark', [['Primera Musa', 2024]]],
+  ['kapo', 'Kapo', '#3fa38a', 'Colombian urban music for summer nights', []],
+  ['judeline', 'Judeline', '#9a7ac9', 'Mystic, flamenco-tinged pop from Cádiz', [['Bodhiria', 2024]]],
+  ['rusowsky', 'Rusowsky', '#e07a8f', 'Bedroom pop from Madrid', [['Daisy', 2025]]],
 ]
 
 const slug = (s: string) =>
