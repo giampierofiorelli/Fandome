@@ -9,7 +9,7 @@ export type Genre =
   | 'afro' | 'kpop' | 'sertanejo' | 'funkbr' | 'pagode' | 'forro' | 'classical' | 'soundtrack' | 'reggae' | 'opera'
   | 'house' | 'techno' | 'ambient' | 'triphop' | 'artpop' | 'gospel' | 'fado' | 'caboverde' | 'gospelhouse'
   | 'flamenco' | 'ska' | 'dubstep' | 'ukgarage' | 'frenchtouch' | 'dancehall' | 'kuduro' | 'newjackswing' | 'acidhouse'
-  | 'deephouse' | 'edm' | 'breakbeat' | 'hyperpop' | 'blues' | 'postdisco' | 'electrohouse' | 'britpop'
+  | 'deephouse' | 'edm' | 'breakbeat' | 'hyperpop' | 'blues' | 'postdisco' | 'electrohouse' | 'britpop' | 'powerpop' | 'electropop' | 'tropicalhouse'
 
 export interface ArtistScene {
   country: string
@@ -141,7 +141,7 @@ export const GENRE_LABELS: Record<Genre, string> = {
   house: 'House', techno: 'Techno', ambient: 'Ambient', triphop: 'Trip-hop', artpop: 'Art pop', gospel: 'Gospel', fado: 'Fado', caboverde: 'Cape Verdean', gospelhouse: 'Gospel house',
   flamenco: 'Flamenco', ska: 'Ska', dubstep: 'Dubstep', ukgarage: 'UK garage', frenchtouch: 'French touch', dancehall: 'Dancehall',
   kuduro: 'Kuduro', newjackswing: 'New jack swing', acidhouse: 'Acid house', deephouse: 'Deep house', edm: 'EDM', breakbeat: 'Breakbeat',
-  hyperpop: 'Hyperpop', blues: 'Blues', postdisco: 'Post-disco', electrohouse: 'Electro house', britpop: 'Britpop',
+  hyperpop: 'Hyperpop', blues: 'Blues', postdisco: 'Post-disco', electrohouse: 'Electro house', britpop: 'Britpop', powerpop: 'Power pop', electropop: 'Electropop', tropicalhouse: 'Tropical house',
 }
 
 // "Italy · from the 1960s · Singer-songwriter, Pop"
