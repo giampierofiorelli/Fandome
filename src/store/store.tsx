@@ -47,6 +47,9 @@ function migrate(parsed: State): State {
           allUsers = [...users.map((u) => (u.id === 'u-giulia' || u.id === 'u-kenji' ? { ...u, mod: fresh.users.find((f) => f.id === u.id)?.mod, modRequest: fresh.users.find((f) => f.id === u.id)?.modRequest } : u)), ...fresh.users.filter((f) => !users.some((u) => u.id === f.id))]
           posts = [...fresh.posts.filter((p) => p.id === 'p-spam'), ...posts]
         }
+        // Demo collab posts for older saves (only if missing).
+        const demo = fresh.posts.filter((p) => (p.id === 'p-collab2' || p.id === 'p-collab-invite') && !posts.some((x) => x.id === p.id))
+        if (demo.length) posts = [...demo, ...posts].sort((a, b) => b.createdAt - a.createdAt)
         return reducer({ ...parsed, users: allUsers, posts, stories: parsed.stories ?? fresh.stories, dms: parsed.dms ?? fresh.dms, reports: parsed.reports ?? fresh.reports, tickets: parsed.tickets ?? fresh.tickets }, { type: 'prune', now })
       }
     }
