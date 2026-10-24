@@ -12,3 +12,7 @@ Asked by the owner after the genres house, techno, ambient, trip-hop, art pop, g
 | CONFESSIONS II | dance, electronic, disco | house, dance, disco | Phase 05: Chicago/acid house (Pitchfork, Guardian, Price interview) |
 
 Unchanged: the other nine albums (their genres already fit). Still draft; a second rater can revisit these too.
+
+## Second pass: up to 6 genres (owner, 2026-10-24)
+
+The limit went from 3 to 6 genres, in order of importance (the first weighs most), so the research is not squeezed. Added only genres that the collected sources name for that album: Like a Virgin + funk, soul (Pitchfork, Corsaro); True Blue + latin (AllMusic); Like a Prayer + rock, R&B (phase 02 coding); Erotica + dance; Bedtime Stories + hip-hop (LA Times, Pitchfork: hip-hop soul); Ray of Light + ambient, techno, dance (Pitchfork, AllMusic); Music + funk, trip-hop (Grammy: electrofunk; AllMusic); Confessions + pop; Hard Candy + hip-hop, funk, disco (Slant, Pitchfork); MDNA + house (Guardian); Rebel Heart + electronic, dance (EDM: Pitchfork, Guardian); Madame X + reggaeton, trap, Brazilian funk (Pitchfork); CONFESSIONS II + electronic. Madonna (1983) and American Life unchanged.
