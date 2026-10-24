@@ -3,10 +3,10 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { artists, concerts } from '../data/seed'
 import { useStore } from '../store/store'
 import { FeedList } from '../components/FeedList'
-import { artistPhoto, Avatar, photoPos } from '../components/ui'
-import { tagFeed } from '../lib/feed'
+import { AlbumCover, artistPhoto, Avatar, photoPos } from '../components/ui'
+import { discussedAlbums, tagFeed } from '../lib/feed'
 import { IconArrowUpRight, IconPin, IconSearch } from '../components/icons'
-import { artistById, formatDate, trending } from '../lib/util'
+import { albumById, artistById, formatDate, trending } from '../lib/util'
 import { suggestArtists } from '../lib/suggest'
 
 export default function Explore() {
@@ -22,6 +22,10 @@ export default function Explore() {
   const posts = q ? state.posts.filter((p) => `${p.text} ${p.translation ?? ''}`.toLowerCase().includes(q)) : []
 
   const trends = trending(state.posts, { limit: 6 })
+  // Albums people are talking about: last 24 hours, or the last week when it's quiet.
+  const discussedDay = discussedAlbums(state.posts, Date.now(), 24)
+  const discussed = (discussedDay.length >= 3 ? discussedDay : discussedAlbums(state.posts, Date.now(), 24 * 7)).slice(0, 5)
+  const discussedWindow = discussedDay.length >= 3 ? 'today' : 'this week'
   const suggestions = me ? suggestArtists(me, state.users, artists) : []
   const [allRooms, setAllRooms] = useState(false)
   // Your rooms first, then A–Z; the full list on request.
@@ -126,6 +130,32 @@ export default function Explore() {
                   How it works
                 </Link>
               </p>
+            </>
+          )}
+          {discussed.length > 0 && (
+            <>
+              <div className="section-head">
+                <h2>Most discussed albums</h2>
+                <span className="muted small">{discussedWindow}</span>
+              </div>
+              <div className="glass-card list discussed-list">
+                {discussed.map((d, i) => {
+                  const al = albumById(d.albumId)
+                  if (!al) return null
+                  return (
+                    <Link key={al.id} to={`/album/${al.id}`} className="row-item">
+                      <span className="num muted small">{String(i + 1).padStart(2, '0')}</span>
+                      <AlbumCover album={al} size={44} />
+                      <span className="grow">
+                        <strong>{al.title}</strong>
+                        <span className="muted small block">
+                          {artistById(al.artistId)?.name} · {d.people} {d.people === 1 ? 'fan' : 'fans'} talking
+                        </span>
+                      </span>
+                    </Link>
+                  )
+                })}
+              </div>
             </>
           )}
           <div className="section-head">

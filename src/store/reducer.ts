@@ -18,7 +18,7 @@ export interface State {
 
 export type Action =
   | { type: 'onboard'; name: string; handle: string; location: string; artistIds: Id[]; followIds: Id[]; at?: number }
-  | { type: 'post'; id: Id; at: number; text: string; collabIds?: Id[]; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
+  | { type: 'post'; id: Id; at: number; text: string; collabIds?: Id[]; artistId?: Id; artistIds?: Id[]; concertId?: Id; quoteOf?: Id; replyTo?: Id; poll?: Poll; review?: { albumId: Id; rating: number }; albumIds?: Id[]; photo?: string; audio?: Post['audio']; youtube?: string; embed?: Embed; as?: Id }
   | { type: 'delete'; postId: Id }
   | { type: 'restorePost'; post: Post }
   | { type: 'pinPost'; postId: Id; replace?: Id }
@@ -158,6 +158,7 @@ function apply(state: State, action: Action): State {
         replyTo: action.replyTo,
         poll: action.poll,
         review: action.review,
+        albumIds: action.albumIds?.length ? [...new Set(action.albumIds)].slice(0, MAX_POST_ALBUMS) : undefined,
         photo: action.photo,
         youtube: action.youtube,
         embed: action.embed,
@@ -515,6 +516,7 @@ function apply(state: State, action: Action): State {
 
 export const DAY = 24 * 60 * 60_000
 export const MAX_POST_ARTISTS = 4
+export const MAX_POST_ALBUMS = 4
 export const MAX_PINS = 3
 export const MAX_LINKS = 8
 export const MAX_ITEMS = 30

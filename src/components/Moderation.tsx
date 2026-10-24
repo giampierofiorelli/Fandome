@@ -19,6 +19,7 @@ export const REASONS: { id: ReportReason; label: string; hint: string }[] = [
   { id: 'copyright', label: 'Copyright', hint: 'Photos, videos or music that aren’t theirs' },
   { id: 'impersonation', label: 'Impersonation', hint: 'Pretending to be an artist, staff or someone else' },
   { id: 'misinformation', label: 'False information', hint: 'Fake news about artists or events' },
+  { id: 'offtopic', label: 'Not about music', hint: 'Fandome is only about music and artists' },
   { id: 'other', label: 'Something else', hint: 'Tell us more below' },
 ]
 export const reasonLabel = (r: ReportReason) => REASONS.find((x) => x.id === r)?.label ?? r

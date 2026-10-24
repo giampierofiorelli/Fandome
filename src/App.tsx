@@ -17,6 +17,7 @@ import ConcertPage from './pages/Concert'
 import Profile from './pages/Profile'
 import Thread from './pages/Thread'
 import Party from './pages/Party'
+import AlbumPage from './pages/Album'
 import StarterPackPage from './pages/StarterPack'
 import Settings from './pages/Settings'
 import Onboarding from './pages/Onboarding'
@@ -151,6 +152,7 @@ export default function App() {
             <Route path="/u/:handle" element={<Profile />} />
             <Route path="/p/:postId" element={<Thread />} />
             <Route path="/party/:partyId" element={<Party />} />
+            <Route path="/album/:albumId" element={<AlbumPage />} />
             <Route path="/starter/:packId" element={<StarterPackPage />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/pages/new" element={<PageNew />} />

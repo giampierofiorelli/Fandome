@@ -71,6 +71,9 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
   }
 
   const saved = !!me?.saved?.includes(post.id)
+  // Albums linked in the text; any whose title isn't in the text is shown as a chip below it.
+  const postAlbums = (post.albumIds ?? []).map((id) => albumById(id)).filter((a): a is NonNullable<typeof a> => Boolean(a))
+  const looseAlbums = postAlbums.filter((a) => !post.text.toLowerCase().includes(a.title.toLowerCase()))
   const canSeeRemoved = me && (me.id === post.authorId || isAdmin(state) || (me.mod && postArtists(post).some((a) => me.mod!.artistIds.includes(a))))
   if (post.removed && !canSeeRemoved) {
     return <div className="post tombstone muted small">This post was removed for breaking the community rules.</div>
@@ -187,9 +190,19 @@ export function PostCard({ post, repostedBy, embedded, pinned }: Props) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.18 }}
             >
-              <RichText text={translated && post.translation ? post.translation : post.text} />
+              <RichText text={translated && post.translation ? post.translation : post.text} albums={postAlbums} />
             </motion.p>
           </AnimatePresence>
+          {looseAlbums.length > 0 && (
+            <div className="album-chips">
+              {looseAlbums.map((al) => (
+                <Link key={al.id} to={`/album/${al.id}`} className="album-chip" onClick={(e) => e.stopPropagation()}>
+                  <AlbumCover album={al} size={28} />
+                  <span>{al.title}</span>
+                </Link>
+              ))}
+            </div>
+          )}
           {post.lang !== 'en' && post.translation && (
             <button
               className="link-btn small inline-icon"

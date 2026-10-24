@@ -47,6 +47,8 @@ function migrate(parsed: State): State {
           allUsers = [...users.map((u) => (u.id === 'u-giulia' || u.id === 'u-kenji' ? { ...u, mod: fresh.users.find((f) => f.id === u.id)?.mod, modRequest: fresh.users.find((f) => f.id === u.id)?.modRequest } : u)), ...fresh.users.filter((f) => !users.some((u) => u.id === f.id))]
           posts = [...fresh.posts.filter((p) => p.id === 'p-spam'), ...posts]
         }
+        // Demo album links for older saves.
+        posts = posts.map((p) => (p.albumIds ? p : { ...p, albumIds: fresh.posts.find((f) => f.id === p.id)?.albumIds }))
         // Demo collab posts for older saves (only if missing).
         const demo = fresh.posts.filter((p) => (p.id === 'p-collab2' || p.id === 'p-collab-invite') && !posts.some((x) => x.id === p.id))
         if (demo.length) posts = [...demo, ...posts].sort((a, b) => b.createdAt - a.createdAt)

@@ -10,3 +10,5 @@
 ## Manifesto (owner's words, shown in the footer)
 
 Fandome is made by music lovers for music lovers, and above all to promote and support the artists. It is also a way to push back against the power of algorithms: the internet and social media promised to be democratic and accessible, for listeners and for artists, and it hasn't always gone that way. Product decisions follow from this: no ads, no paid boosts, no hidden ranking, explainable feeds and suggestions, artists presented at their best.
+
+No hate, no bullying, no body shaming of artists, no fan wars: fans of different artists should discover each other's music, not fight. Fandome is only about music: every post is tied to at least one artist, off-topic content is discouraged and can be reported ("Not about music").

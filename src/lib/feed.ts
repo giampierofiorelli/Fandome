@@ -104,3 +104,36 @@ export function tagFeed(posts: Post[], tag: string): FeedItem[] {
     .sort((a, b) => b.createdAt - a.createdAt)
     .map((p) => ({ key: p.id, post: p, at: p.createdAt }))
 }
+
+// Posts that mention an album (linked in the text) or review it.
+export const mentionsAlbum = (p: Post, albumId: string) => Boolean(p.albumIds?.includes(albumId) || p.review?.albumId === albumId)
+
+export function albumFeed(posts: Post[], albumId: string): FeedItem[] {
+  return posts
+    .filter((p) => !p.replyTo && !p.removed && mentionsAlbum(p, albumId))
+    .sort((a, b) => b.createdAt - a.createdAt)
+    .map((p) => ({ key: p.id, post: p, at: p.createdAt }))
+}
+
+// "Most discussed albums": albums mentioned or reviewed in the last hours, counted by distinct
+// people (authors of the posts plus people who replied to them), so one account can't push an album.
+export function discussedAlbums(posts: Post[], now = Date.now(), hours = 24): { albumId: string; people: number; posts: number }[] {
+  const since = now - hours * 3_600_000
+  const people = new Map<string, Set<string>>()
+  const count = new Map<string, number>()
+  for (const p of posts) {
+    if (p.removed || p.createdAt < since) continue
+    const ids = new Set([...(p.albumIds ?? []), ...(p.review ? [p.review.albumId] : [])])
+    if (!ids.size) continue
+    const who = new Set([p.authorId, ...posts.filter((r) => r.replyTo === p.id && !r.removed).map((r) => r.authorId)])
+    for (const id of ids) {
+      const set = people.get(id) ?? new Set<string>()
+      who.forEach((w) => set.add(w))
+      people.set(id, set)
+      count.set(id, (count.get(id) ?? 0) + 1)
+    }
+  }
+  return [...people.entries()]
+    .map(([albumId, set]) => ({ albumId, people: set.size, posts: count.get(albumId) ?? 0 }))
+    .sort((a, b) => b.people - a.people || b.posts - a.posts)
+}

@@ -1,13 +1,13 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
-import { artists } from '../data/seed'
+import { albums, artists } from '../data/seed'
 import { newId, useStore } from '../store/store'
 import { albumById, artistById, concertById } from '../lib/util'
 import { AlbumCover, ArtistDisc, Avatar, Modal, ScoreBadge, useModalClose } from './ui'
-import { IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPoll, IconUsers, IconX } from './icons'
+import { IconDisc, IconImage, IconMic, IconMusic, IconPin, IconPlay, IconPlus, IconPoll, IconUsers, IconX } from './icons'
 import { AudioPlayer } from './AudioPlayer'
 import { createRecorder, fileToVoiceNote, MAX_VOICE_SECONDS, type VoiceNote } from '../lib/audio'
 import { compressImage, detectEmbed, EMBED_LABEL, prettyUrl, stripUrl } from '../lib/media'
-import { canMessage, MAX_COLLAB, MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
+import { canMessage, MAX_COLLAB, MAX_POST_ALBUMS, MAX_POST_ARTISTS, pagesManagedBy } from '../store/reducer'
 import { postArtists } from '../lib/postArtists'
 import { useToast } from './Toast'
 
@@ -17,6 +17,7 @@ export interface ComposeOpts {
   artistId?: string
   concertId?: string
   reviewAlbumId?: string // opens in "log album" mode (Letterboxd-style)
+  albumId?: string // start with this album linked ("Talk about it" on an album page)
   as?: string // post as a page the user manages
 }
 
@@ -52,7 +53,11 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const quoted = opts.quoteOf ? state.posts.find((p) => p.id === opts.quoteOf) : undefined
   const parent = opts.replyTo ? state.posts.find((p) => p.id === opts.replyTo) : undefined
   const myArtists = me ? Object.keys(me.fanSince) : []
-  const [text, setText] = useState('')
+  const startAlbum = albumById(opts.albumId)
+  const [text, setText] = useState(startAlbum ? `${startAlbum.title} ` : '')
+  const [albumIds, setAlbumIds] = useState<string[]>(startAlbum ? [startAlbum.id] : [])
+  const [panel, setPanel] = useState<'artists' | 'albums' | null>(null)
+  const textRef = useRef<HTMLTextAreaElement>(null)
   const [artistIds, setArtistIds] = useState<string[]>(() => {
     if (opts.artistId) return [opts.artistId]
     const from = parent ?? quoted
@@ -61,6 +66,23 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   })
   const toggleArtist = (id: string) =>
     setArtistIds((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : cur.length >= MAX_POST_ARTISTS ? cur : [...cur, id]))
+  // Link an album: its title goes into the text at the cursor, and its artist is tagged too.
+  const addAlbum = (id: string) => {
+    const al = albumById(id)
+    if (!al || albumIds.includes(id) || albumIds.length >= MAX_POST_ALBUMS) return
+    setAlbumIds([...albumIds, id])
+    setArtistIds((cur) => (cur.includes(al.artistId) || cur.length >= MAX_POST_ARTISTS ? cur : [...cur, al.artistId]))
+    if (!text.toLowerCase().includes(al.title.toLowerCase())) {
+      const el = textRef.current
+      const at = el ? el.selectionStart : text.length
+      const before = text.slice(0, at)
+      const after = text.slice(at)
+      const pad = before && !/\s$/.test(before) ? ' ' : ''
+      setText(`${before}${pad}${al.title}${after.startsWith(' ') ? '' : ' '}${after}`)
+    }
+    setPanel(null)
+    requestAnimationFrame(() => textRef.current?.focus())
+  }
   const [pollOn, setPollOn] = useState(false)
   const [collabOpen, setCollabOpen] = useState(false)
   const [collabIds, setCollabIds] = useState<string[]>([])
@@ -111,7 +133,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
   const concert = concertById(opts.concertId)
   const validPoll = pollOpts.filter((o) => o.trim()).length >= 2
   const embed = detectEmbed(text)
-  const canPost = recSecs === null && (text.trim().length > 0 || Boolean(photo) || Boolean(embed) || Boolean(audio)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0)
+  const canPost = recSecs === null && (text.trim().length > 0 || Boolean(photo) || Boolean(embed) || Boolean(audio)) && text.length <= MAX && (!pollOn || validPoll) && (!reviewMode || rating > 0) && artistIds.length > 0
 
   const submit = () => {
     if (!canPost) return
@@ -127,6 +149,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       collabIds: parent ? undefined : collabIds,
       artistId: artistIds[0],
       artistIds,
+      albumIds,
       concertId: opts.concertId,
       quoteOf: opts.quoteOf,
       replyTo: opts.replyTo,
@@ -176,6 +199,7 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
       <div className="composer-row">
         <Avatar user={myPages.find((p) => p.id === asId) ?? me} />
         <textarea
+          ref={textRef}
           autoFocus
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -184,6 +208,24 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
           onKeyDown={(e) => (e.metaKey || e.ctrlKey) && e.key === 'Enter' && submit()}
         />
       </div>
+      {albumIds.length > 0 && (
+        <div className="album-chips composer-albums">
+          {albumIds.map((id) => {
+            const al = albumById(id)!
+            return (
+              <span key={id} className="album-chip">
+                <AlbumCover album={al} size={28} />
+                <span>{al.title}</span>
+                <button type="button" className="chip-x" aria-label={`Remove ${al.title}`} onClick={() => setAlbumIds(albumIds.filter((x) => x !== id))}>
+                  <IconX size={12} />
+                </button>
+              </span>
+            )
+          })}
+        </div>
+      )}
+      {panel === 'albums' && <AlbumPicker artistIds={artistIds} selected={albumIds} onPick={addAlbum} onClose={() => setPanel(null)} />}
+      {panel === 'artists' && <ArtistPicker selected={artistIds} onToggle={toggleArtist} onClose={() => setPanel(null)} />}
       {collabOpen && !parent && <CollabPicker selected={collabIds} onChange={setCollabIds} />}
       {!collabOpen && collabIds.length > 0 && (
         <p className="muted small collab-summary">
@@ -311,6 +353,11 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
             </button>
           </>
         )}
+        {!reviewMode && (
+          <button className={panel === 'albums' || albumIds.length ? 'pill active' : 'pill'} aria-label="Link an album" onClick={() => setPanel(panel === 'albums' ? null : 'albums')}>
+            <IconDisc size={14} /> Album{albumIds.length ? ` ${albumIds.length}` : ''}
+          </button>
+        )}
         {!reviewMode && !parent && (
           <button className={collabOpen || collabIds.length ? 'pill active' : 'pill'} aria-label="Invite collaborators" onClick={() => setCollabOpen(!collabOpen)}>
             <IconUsers size={14} /> Collab{collabIds.length ? ` ${collabIds.length}` : ''}
@@ -324,16 +371,23 @@ function ComposerForm({ opts }: { opts: ComposeOpts }) {
         <CharRing used={text.length} max={MAX} />
       </div>
       <div className="composer-foot">
-        <div className="artist-picker" role="group" aria-label="Artists this post is about">
-          {[...artists].sort((x, y) => Number(myArtists.includes(y.id)) - Number(myArtists.includes(x.id))).map((a) => {
-            const on = artistIds.includes(a.id)
+        <div className="artist-picked" role="group" aria-label="Artists this post is about">
+          {artistIds.map((id) => {
+            const a = artistById(id)
+            if (!a) return null
             return (
-              <button key={a.id} type="button" className={on ? 'pick on' : 'pick'} style={{ ['--c' as string]: a.color }} aria-pressed={on} onClick={() => toggleArtist(a.id)}>
-                <ArtistDisc id={a.id} size={20} />
+              <button key={id} type="button" className="pick on" style={{ ['--c' as string]: a.color }} onClick={() => toggleArtist(id)} aria-label={`Remove ${a.name}`}>
+                <ArtistDisc id={id} size={20} />
                 {a.name}
+                <IconX size={12} />
               </button>
             )
           })}
+          {artistIds.length < MAX_POST_ARTISTS && (
+            <button type="button" className={artistIds.length ? 'pick add' : 'pick add needed'} onClick={() => setPanel(panel === 'artists' ? null : 'artists')}>
+              <IconPlus size={14} /> {artistIds.length ? 'Artist' : 'Choose an artist'}
+            </button>
+          )}
         </div>
         <button className="btn primary post-btn" disabled={!canPost} onClick={submit}>
           {parent ? 'Reply' : 'Post'}
@@ -362,6 +416,92 @@ function CharRing({ used, max }: { used: number; max: number }) {
 }
 
 // Invite up to 3 people to share the post (Instagram-style collab). They accept or decline.
+const fold = (t: string) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+// Every post is about at least one artist (Fandome is only about music). Your artists and
+// the ones trending this week come first; search finds any of the others.
+function ArtistPicker({ selected, onToggle, onClose }: { selected: string[]; onToggle: (id: string) => void; onClose: () => void }) {
+  const { state, me } = useStore()
+  const [q, setQ] = useState('')
+  const mine = me ? Object.keys(me.fanSince) : []
+  const week = Date.now() - 7 * 86_400_000
+  const heat = new Map<string, number>()
+  for (const p of state.posts) if (p.createdAt > week) for (const id of postArtists(p)) heat.set(id, (heat.get(id) ?? 0) + 1)
+  const trending = [...heat.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => id).filter((id) => !mine.includes(id)).slice(0, 8)
+  const results = q.trim() ? artists.filter((a) => fold(a.name).includes(fold(q.trim()))).slice(0, 30) : []
+  const row = (id: string) => {
+    const a = artistById(id)
+    if (!a) return null
+    const on = selected.includes(id)
+    return (
+      <button key={id} type="button" className={on ? 'pick on' : 'pick'} style={{ ['--c' as string]: a.color }} aria-pressed={on} onClick={() => onToggle(id)} disabled={!on && selected.length >= MAX_POST_ARTISTS}>
+        <ArtistDisc id={id} size={20} />
+        {a.name}
+      </button>
+    )
+  }
+  return (
+    <div className="collab-picker picker-panel">
+      <div className="row-between">
+        <span className="small">
+          <strong>Artists</strong> <span className="muted">· every post is about music (max {MAX_POST_ARTISTS})</span>
+        </span>
+        <button type="button" className="link-btn small" onClick={onClose}>
+          Done
+        </button>
+      </div>
+      <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder={`Search ${artists.length} artists`} aria-label="Search artists" />
+      {q.trim() ? (
+        <div className="pick-wrap">{results.length ? results.map((a) => row(a.id)) : <span className="muted small">No artist with that name yet.</span>}</div>
+      ) : (
+        <>
+          {mine.length > 0 && <div className="picker-label">Your artists</div>}
+          <div className="pick-wrap">{mine.map(row)}</div>
+          {trending.length > 0 && <div className="picker-label">Trending this week</div>}
+          <div className="pick-wrap">{trending.map(row)}</div>
+        </>
+      )}
+    </div>
+  )
+}
+
+// Link an album to the post: albums of the post's artists first, search finds any album.
+function AlbumPicker({ artistIds, selected, onPick, onClose }: { artistIds: string[]; selected: string[]; onPick: (id: string) => void; onClose: () => void }) {
+  const [q, setQ] = useState('')
+  const query = fold(q.trim())
+  const list = query
+    ? albums.filter((al) => fold(`${al.title} ${artistById(al.artistId)?.name ?? ''}`).includes(query)).slice(0, 30)
+    : albums.filter((al) => artistIds.includes(al.artistId)).sort((a, b) => b.year - a.year).slice(0, 30)
+  return (
+    <div className="collab-picker picker-panel">
+      <div className="row-between">
+        <span className="small">
+          <strong>Link an album</strong> <span className="muted">· its title becomes a link to the album page (max {MAX_POST_ALBUMS})</span>
+        </span>
+        <button type="button" className="link-btn small" onClick={onClose}>
+          Close
+        </button>
+      </div>
+      <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search albums or artists" aria-label="Search albums" />
+      <div className="album-pick-list">
+        {list.map((al) => (
+          <button key={al.id} type="button" className="album-pick" disabled={selected.includes(al.id) || selected.length >= MAX_POST_ALBUMS} onClick={() => onPick(al.id)}>
+            <AlbumCover album={al} size={40} />
+            <span className="grow">
+              <strong>{al.title}</strong>
+              <span className="muted small block">
+                {artistById(al.artistId)?.name} · {al.year}
+              </span>
+            </span>
+            {selected.includes(al.id) && <span className="muted small">Linked</span>}
+          </button>
+        ))}
+        {!list.length && <span className="muted small">{query ? 'No album found.' : 'Choose an artist, or search any album.'}</span>}
+      </div>
+    </div>
+  )
+}
+
 function CollabPicker({ selected, onChange }: { selected: string[]; onChange: (ids: string[]) => void }) {
   const { state, me } = useStore()
   const [q, setQ] = useState('')

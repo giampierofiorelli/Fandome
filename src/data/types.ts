@@ -123,6 +123,7 @@ export interface Post {
   quoteDetached?: boolean // Bluesky-style: quoted author removed the quote link
   replyTo?: Id
   review?: { albumId: Id; rating: number }
+  albumIds?: Id[] // albums mentioned in the text (linked to their page), max 4
   poll?: Poll
   image?: string // CSS gradient placeholder for demo photos
   photo?: string // uploaded photo (compressed data URL)
@@ -148,7 +149,7 @@ export interface TicketListing {
   closed?: boolean
 }
 
-export type ReportReason = 'spam' | 'harassment' | 'hate' | 'violence' | 'sexual' | 'privacy' | 'copyright' | 'impersonation' | 'misinformation' | 'other'
+export type ReportReason = 'spam' | 'harassment' | 'hate' | 'violence' | 'sexual' | 'privacy' | 'copyright' | 'impersonation' | 'misinformation' | 'offtopic' | 'other'
 export interface Report {
   id: Id
   at: number

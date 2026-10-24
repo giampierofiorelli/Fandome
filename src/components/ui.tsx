@@ -44,11 +44,28 @@ export function UserLink({ user }: { user?: User }) {
 }
 
 // Renders web links, #tags and @mentions as links.
-export function RichText({ text }: { text: string }) {
-  const parts = text.split(/(https?:\/\/[^\s<>"]+[^\s<>".,!?;:)\]'’]|[#@][\p{L}\p{N}_.]+)/gu)
+const escapeRe = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+// Text with links: URLs, #tags, @people, and the albums the author attached (each title is
+// linked once, at its first appearance, to the album page).
+export function RichText({ text, albums }: { text: string; albums?: { id: string; title: string }[] }) {
+  const titles = (albums ?? []).filter((a) => a.title.trim()).sort((x, y) => y.title.length - x.title.length)
+  const albumPat = titles.length ? `|(?<![\\p{L}\\p{N}])(?:${titles.map((a) => escapeRe(a.title)).join('|')})(?![\\p{L}\\p{N}])` : ''
+  const re = new RegExp(`(https?:\\/\\/[^\\s<>"]+[^\\s<>".,!?;:)\\]'’]|[#@][\\p{L}\\p{N}_.]+${albumPat})`, 'giu')
+  const parts = text.split(re)
+  const used = new Set<string>()
   return (
     <>
       {parts.map((part, i) => {
+        const album = part && titles.find((a) => a.title.toLowerCase() === part.toLowerCase())
+        if (album && !used.has(album.id)) {
+          used.add(album.id)
+          return (
+            <Link key={i} to={`/album/${album.id}`} className="tag album-link" onClick={(e) => e.stopPropagation()}>
+              {part}
+            </Link>
+          )
+        }
         if (/^https?:\/\//.test(part))
           return (
             <a key={i} href={part} target="_blank" rel="noopener noreferrer nofollow ugc" className="tag link" onClick={(e) => e.stopPropagation()}>

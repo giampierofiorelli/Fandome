@@ -54,6 +54,9 @@ export function Footer() {
         <div className="dotmatrix manifesto-kicker">OUR MANIFESTO</div>
         <p className="manifesto-lead">Made by music lovers, for music lovers, and above all to support the artists.</p>
         <p>
+          No hate, no bullying, no body shaming: here fans of different artists discover each other’s music, they don’t fight.
+        </p>
+        <p>
           The internet and social media were born with a promise: open and fair, for the people who listen and for the people who make music. It hasn’t always gone that way, and algorithms
           now decide too much of what we hear. Here there are no ads, no paid boosts and no hidden ranking: you choose who to follow, and you can always see why something is shown.
         </p>
@@ -259,8 +262,16 @@ export function Terms() {
         the official platform.
       </p>
 
-      <h2>Community rules</h2>
+      <h2 id="rules">Community rules</h2>
       <ol className="rules">
+        <li>
+          Fandome is only about music. Every post is about at least one artist; posts on other topics (politics, unrelated ads, off-topic chatter) don’t belong here and may be removed.
+          Please report them with “Not about music”.
+        </li>
+        <li>
+          No hate, bullying or body shaming, towards artists or fans: no mocking of looks, bodies, age, identity or private lives. No fan wars: rivalries are welcome when they’re about the
+          music and help people discover new artists.
+        </li>
         <li>Critique the work or the opinion, never attack the person.</li>
         <li>No hate, threats, harassment or sexual content involving anyone without consent; nothing involving minors.</li>
         <li>Don’t share other people’s private information.</li>
