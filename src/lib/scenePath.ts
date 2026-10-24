@@ -5,7 +5,8 @@ import type { Album, Artist, Post, User } from '../data/types'
 import { GENRE_LABELS, SCENES, isLocalArtist, type Genre } from '../data/scenes'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { genreListSimilarity, similarArtists } from './similar'
-import { DESCRIPTORS } from './descriptors'
+import { DESCRIPTORS, genreLabel, type Descriptor } from './descriptors'
+import { describe as describeConnection, yourConnections } from './connections'
 import { postArtists } from './postArtists'
 
 export interface SceneDef {
@@ -61,6 +62,7 @@ export interface Step {
   artistId: string
   reason: string
   done: boolean
+  connection?: string // documented link to one of your artists, in plain words
 }
 export interface Unit {
   id: string
@@ -144,8 +146,18 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
   }
   // Album-level resemblance is stronger evidence than sharing a broad genre like pop.
   for (const [id, r] of rich) closeness.set(id, { ...closeness.get(id)!, score: Math.max(closeness.get(id)!.score, r.score + 0.3) })
+  // Your connection: a documented link between the scene's artist and your artists (followed, or an
+  // album you rated): the strongest reason of all, so connected artists open the path.
+  const yours = new Set([...mine, ...Object.keys(me?.ratings ?? {}).map((x) => albums.find((a) => a.id === x)?.artistId).filter((x): x is string => Boolean(x))])
+  const connection = new Map<string, string>()
+  for (const id of ids) {
+    const c = yourConnections(id, yours, ctx.artists)[0]
+    if (c) connection.set(id, describeConnection(c, name, id, yours))
+  }
+  for (const id of connection.keys()) closeness.set(id, { ...closeness.get(id)!, score: closeness.get(id)!.score + 1 })
   const own = (id: string) => `${SCENES[id].since}s · ${and(SCENES[id].genres.map(label))}`
   const reasonClose = (id: string) => {
+    if (connection.has(id)) return connection.get(id)!
     if (rich.has(id)) return rich.get(id)!.reason
     const c = closeness.get(id)!
     if (!c.to) return own(id)
@@ -159,7 +171,7 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
   // new enough to be interesting), and so on.
   const order = (pool: string[], n: number): Step[] => {
     const sorted = [...pool].sort((a, b) => closeness.get(b)!.score - closeness.get(a)!.score || fans(b) - fans(a) || name(a).localeCompare(name(b)))
-    if (!mine.length) return sorted.slice(0, n).map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id) }))
+    if (!mine.length) return sorted.slice(0, n).map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id), connection: connection.get(id) }))
     const half = Math.ceil(sorted.length / 2)
     const close = sorted.slice(0, half)
     const further = sorted.slice(half)
@@ -168,7 +180,7 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
       const stretch = out.length % 3 === 2
       const id = (stretch ? further.shift() : close.shift()) ?? (stretch ? close.shift() : further.shift())
       if (!id) break
-      out.push({ artistId: id, reason: stretch ? reasonStretch(id) : reasonClose(id), done: explored.has(id) })
+      out.push({ artistId: id, reason: stretch && !connection.has(id) ? reasonStretch(id) : reasonClose(id), done: explored.has(id), connection: connection.get(id) })
     }
     return out
   }
@@ -179,7 +191,7 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
   const start = mine.length
     ? [...notMine].sort((a, b) => closeness.get(b)!.score - closeness.get(a)!.score).slice(0, 3)
     : [...notMine].sort((a, b) => fans(b) - fans(a) || name(a).localeCompare(name(b))).slice(0, 3)
-  units.push({ id: 'start', kicker: 'Unit 1', title: 'Start here', steps: start.map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id) })) })
+  units.push({ id: 'start', kicker: 'Unit 1', title: 'Start here', steps: start.map((id) => ({ artistId: id, reason: reasonClose(id), done: explored.has(id), connection: connection.get(id) })) })
   // 2. Now: artists who started in the 2010s or later.
   const now = ids.filter((id) => SCENES[id].since >= 2010)
   if (now.length >= 3) units.push({ id: 'now', kicker: `Unit ${units.length + 1}`, title: 'Now', steps: order(now, 6) })
@@ -253,4 +265,37 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
       { label: 'Albums rated', value: Math.min(rated, 10), total: 10 },
     ],
   }
+}
+
+// Where to begin with an artist: a defining album first (from the descriptors), else their first album.
+export function startWith(artistId: string, albums: Album[]): { albumId: string; why: string } | undefined {
+  const theirs = albums.filter((a) => a.artistId === artistId).sort((a, b) => a.year - b.year)
+  if (!theirs.length) return undefined
+  const described = theirs.filter((a) => DESCRIPTORS[a.id])
+  // The most recent defining album: closest to how they sound today.
+  const landmark = [...described].reverse().find((a) => DESCRIPTORS[a.id].landmark)
+  if (landmark) return { albumId: landmark.id, why: 'One of their defining albums' }
+  if (described.length) return { albumId: described[0].id, why: 'A good way in' }
+  return { albumId: theirs[0].id, why: 'Their first album here' }
+}
+
+// What to notice while listening, from the album's description (our own words, no review text).
+export function listenFor(albumId: string): { notes?: string; cues: string[] } | undefined {
+  const d: Descriptor | undefined = DESCRIPTORS[albumId]
+  if (!d) return undefined
+  const s = d.scales
+  const cues: string[] = []
+  const add = (ok: boolean | undefined, w: string) => ok && cues.push(w)
+  add(s.electronic !== undefined && s.electronic >= 4, 'electronic production')
+  add(s.electronic !== undefined && s.electronic <= 1, 'an acoustic sound')
+  add(s.groove !== undefined && s.groove >= 4, 'grooves made for dancing')
+  add(s.theatrical !== undefined && s.theatrical >= 4, 'a theatrical delivery')
+  add(s.theatrical !== undefined && s.theatrical <= 1, 'an intimate delivery')
+  add(s.mood !== undefined && s.mood <= 1, 'a dark mood')
+  add(s.mood !== undefined && s.mood >= 4, 'a bright mood')
+  add(s.experimental !== undefined && s.experimental >= 4, 'experimental touches')
+  if (d.voice[0]) cues.push(`a ${d.voice[0]} voice`)
+  const genres = d.genres.slice(0, 3).map((g) => genreLabel(g).toLowerCase())
+  if (genres.length) cues.push(and(genres))
+  return { notes: d.notes || undefined, cues }
 }

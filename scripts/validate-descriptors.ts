@@ -60,5 +60,36 @@ for (const file of files) {
   const fresh = body.filter((c) => !albumIds.has(c[0])).map((c) => c[0])
   console.log(`${file}: ${body.length} rows${fresh.length ? `, new albums to add to the catalogue: ${fresh.join(', ')}` : ''}`)
 }
+// Connection files (docs/connections/*.csv, format in docs/connections-guide.md).
+const CONN_HEADER = 'from_artist,to_artist,type,work,year,source,url,confidence,notes'.split(',')
+const CONN_TYPES = new Set(['influenced', 'soundslike', 'sampled', 'covered', 'collaborated', 'produced'])
+const names = new Set(artists.map((a) => slug(a.name)))
+let connFiles: string[] = []
+try {
+  connFiles = readdirSync('docs/connections').filter((f) => f.endsWith('.csv'))
+} catch {
+  connFiles = []
+}
+for (const file of connFiles) {
+  const [head, ...body] = parse(readFileSync(`docs/connections/${file}`, 'utf8'))
+  const say = (where: string, msg: string) => (problems++, console.log(`connections/${file} ${where}: ${msg}`))
+  if (!head || head.join(',') !== CONN_HEADER.join(',')) {
+    say('header', `expected ${CONN_HEADER.join(',')}`)
+    continue
+  }
+  const outside = new Set<string>()
+  body.forEach((cells, n) => {
+    const where = `row ${n + 2}`
+    if (cells.length !== CONN_HEADER.length) return say(where, `${cells.length} columns instead of ${CONN_HEADER.length}`)
+    const r = Object.fromEntries(CONN_HEADER.map((h, i) => [h, cells[i].trim()]))
+    if (!r.from_artist || !r.to_artist) say(where, 'from_artist and to_artist are required')
+    if (!CONN_TYPES.has(r.type)) say(where, `type "${r.type}"`)
+    if (r.year && !/^\d{4}$/.test(r.year)) say(where, `year "${r.year}"`)
+    if (!r.source || !/^https?:\/\//.test(r.url)) say(where, 'source and url are required')
+    if (!['high', 'medium', 'low'].includes(r.confidence)) say(where, `confidence "${r.confidence}"`)
+    for (const n of [r.from_artist, r.to_artist]) if (n && !names.has(slug(n))) outside.add(n)
+  })
+  console.log(`connections/${file}: ${body.length} rows${outside.size ? `; artists without a Fandome room (kept for later, not shown yet): ${[...outside].join(', ')}` : ''}`)
+}
 console.log(problems ? `\n${problems} problem(s)` : '\nAll descriptor files are valid.')
 process.exit(problems ? 1 : 0)

@@ -3,7 +3,9 @@ import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { albums, artists } from '../data/seed'
-import { buildScene, LEVEL_NAMES } from '../lib/scenePath'
+import { buildScene, listenFor, LEVEL_NAMES, startWith, type ScenePath } from '../lib/scenePath'
+import { rootsAndHeirs } from '../lib/connections'
+import { albumById } from '../lib/util'
 import { artistById } from '../lib/util'
 import { AlbumCover, ArtistDisc, Modal } from '../components/ui'
 import { sceneLine } from '../data/scenes'
@@ -119,20 +121,28 @@ export default function ScenePage() {
           How it works
         </Link>
       </p>
-      <AnimatePresence>{step && <StepSheet key={step.artistId} step={step} sceneId={path.def.id} sceneName={path.def.name} onClose={() => setStep(null)} />}</AnimatePresence>
+      <AnimatePresence>{step && <StepSheet key={step.artistId} step={step} path={path} onOpen={setStep} onClose={() => setStep(null)} />}</AnimatePresence>
     </>
   )
 }
 
 // One step, explained: who it is, why it's here, and what you can do (each action completes it).
-function StepSheet({ step, sceneId, sceneName, onClose }: { step: Step; sceneId: string; sceneName: string; onClose: () => void }) {
+function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePath; onOpen: (s: Step) => void; onClose: () => void }) {
   const { me, dispatch } = useStore()
   const a = artistById(step.artistId)
   if (!a) return null
+  const sceneId = path.def.id
+  const sceneName = path.def.name
+  const allSteps = path.units.flatMap((u) => u.steps)
+  const stepOf = (id: string): Step => allSteps.find((s) => s.artistId === id) ?? { artistId: id, reason: sceneLine(id) ?? '', done: false }
+  const family = rootsAndHeirs(a.id, new Set(path.artistIds), artists)
+  const begin = startWith(a.id, albums)
+  const beginAlbum = begin ? albumById(begin.albumId) : undefined
+  const cues = begin ? listenFor(begin.albumId) : undefined
   const theirs = albums.filter((al) => al.artistId === a.id).sort((x, y) => x.year - y.year)
   const listened = Boolean(me?.listened?.includes(a.id))
   const following = Boolean(me?.fanSince[a.id])
-  const q = encodeURIComponent(a.name)
+  const q = encodeURIComponent(beginAlbum ? `${a.name} ${beginAlbum.title}` : a.name)
   const done = step.done || listened || following
   return (
     <Modal title={a.name} onClose={onClose}>
@@ -144,10 +154,37 @@ function StepSheet({ step, sceneId, sceneName, onClose }: { step: Step; sceneId:
             {sceneLine(a.id) && <span className="muted small block">{sceneLine(a.id)}</span>}
           </span>
         </div>
-        <p className="step-why">
-          <span className="scene-card-lang">Why it’s here</span>
-          {step.reason}
-        </p>
+        {step.connection && (
+          <p className="step-why step-connection">
+            <span className="scene-card-lang">Your connection</span>
+            {step.connection}
+          </p>
+        )}
+        {step.reason !== step.connection && (
+          <p className="step-why">
+            <span className="scene-card-lang">Why it’s here</span>
+            {step.reason}
+          </p>
+        )}
+        {beginAlbum && (
+          <div className="step-todo">
+            <span className="scene-card-lang">Start with</span>
+            <Link to={`/album/${beginAlbum.id}?from=${sceneId}`} className="album-chip" onClick={onClose}>
+              <AlbumCover album={beginAlbum} size={28} />
+              <span>
+                {beginAlbum.title} · {beginAlbum.year}
+              </span>
+            </Link>
+            <span className="muted small block">{begin!.why}</span>
+            {cues && (
+              <p className="step-listen">
+                <strong>Listen for: </strong>
+                {cues.cues.join(', ')}
+                {cues.notes && <span className="muted block">{cues.notes}</span>}
+              </p>
+            )}
+          </div>
+        )}
         <div className="step-todo">
           <span className="scene-card-lang">1 · Listen</span>
           <div className="step-links">
@@ -178,6 +215,31 @@ function StepSheet({ step, sceneId, sceneName, onClose }: { step: Step; sceneId:
             <span className="muted small block">Join Fandome to keep your progress.</span>
           )}
         </div>
+        {(family.roots.length > 0 || family.heirs.length > 0) && (
+          <div className="step-todo">
+            <span className="scene-card-lang">In the family</span>
+            {family.roots.length > 0 && (
+              <div className="step-family">
+                <span className="muted small">Draws on</span>
+                {family.roots.map((id) => (
+                  <button key={id} className="chip step-family-chip" onClick={() => onOpen(stepOf(id))}>
+                    <ArtistDisc id={id} size={20} /> {artistById(id)?.name}
+                  </button>
+                ))}
+              </div>
+            )}
+            {family.heirs.length > 0 && (
+              <div className="step-family">
+                <span className="muted small">Inspired</span>
+                {family.heirs.map((id) => (
+                  <button key={id} className="chip step-family-chip" onClick={() => onOpen(stepOf(id))}>
+                    <ArtistDisc id={id} size={20} /> {artistById(id)?.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
         {theirs.length > 0 && (
           <div className="step-todo">
             <span className="scene-card-lang">3 · Rate an album (optional)</span>

@@ -1375,3 +1375,9 @@ a.link-rich:active { transform: scale(0.985); }
 .chip.filter.on { background: var(--ink); color: var(--on-ink); border-color: transparent; }
 .artists-count { margin: 6px 2px 10px; }
 a.rooms-more { display: block; text-align: center; text-decoration: none; }
+
+.step-connection { padding: 12px 14px; border-radius: 16px; background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.step-connection .scene-card-lang { color: var(--accent); }
+.step-listen { margin: 4px 0 0; font-size: 14px; line-height: 1.45; }
+.step-family { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.step-family-chip { border: 1px solid var(--glass-line); cursor: pointer; font: inherit; font-size: 13px; }
