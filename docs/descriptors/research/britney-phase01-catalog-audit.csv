@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,present_in_catalog,descriptor_present,catalog_action,evidence
+britney-babyonemoretime,britney,…Baby One More Time,1999,studio,yes,no,retain existing catalog entry; append descriptor row,src/data/catalog.ts branch descriptors; docs/descriptors/britney.csv not found
+britney-oopsididitagain,britney,Oops!… I Did It Again,2000,studio,yes,no,retain existing catalog entry; append descriptor row,src/data/catalog.ts branch descriptors; docs/descriptors/britney.csv not found
+britney-britney,britney,Britney,2001,studio,yes,no,retain existing catalog entry; append descriptor row,src/data/catalog.ts branch descriptors; docs/descriptors/britney.csv not found
+britney-inthezone,britney,In the Zone,2003,studio,yes,no,retain existing catalog entry; append descriptor row,src/data/catalog.ts branch descriptors; docs/descriptors/britney.csv not found
