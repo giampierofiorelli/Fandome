@@ -2,19 +2,20 @@ import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
 import { useState } from 'react'
 import { AnimatePresence } from 'motion/react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
-import { albumArtistIds, albumById, artistById } from '../lib/util'
+import { albumArtistIds, albumById, albumHasArtist, artistById } from '../lib/util'
 import { albumFeed } from '../lib/feed'
 import { FeedList } from '../components/FeedList'
-import { AlbumCover, ArtistDisc } from '../components/ui'
+import { AlbumCover, ArtistDisc, Tabs } from '../components/ui'
 import { AlbumRater, fmtScore, toScore } from '../components/AlbumRater'
 import { useComposer } from '../components/Composer'
 import { IconPen } from '../components/icons'
 import { SimilarList } from '../components/SimilarList'
 import { SceneBack } from '../components/SceneBack'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
-import { similarAlbums } from '../lib/similar'
+import { artistGenres, similarAlbums } from '../lib/similar'
+import { roomTabs } from './Artist'
 import { avoidAlbums } from '../lib/suggest'
 import { albums } from '../data/seed'
 import { sceneOf } from '../data/scenes'
@@ -25,6 +26,7 @@ export default function AlbumPage() {
   const { state, me, dispatch } = useStore()
   const compose = useComposer()
   const [rating, setRating] = useState(false)
+  const navigate = useNavigate()
   const album = albumById(albumId)
   if (!album) return <Navigate to="/explore" replace />
   const artist = artistById(album.artistId)
@@ -36,9 +38,17 @@ export default function AlbumPage() {
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
   const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, artistsOf: (id) => { const x = albumById(id); return x ? albumArtistIds(x) : [] }, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
 
+  // The artist room's sections stay on top: tap one to go back to the room on that section.
+  const room = artist ? roomTabs(artist, artistGenres(albums.filter((a) => albumHasArtist(a, artist.id)).map((a) => a.id), 1).length > 0) : []
+
   return (
     <>
       <SceneBack />
+      {artist && (
+        <div className="section-head center tabs-sticky album-room-tabs">
+          <Tabs tabs={room} value="albums" onChange={(t) => navigate(t === 'all' ? `/a/${artist.id}` : `/a/${artist.id}?tab=${t}`)} />
+        </div>
+      )}
       <header className="hero-soft album-hero" style={{ ['--tint' as string]: artist?.color }}>
         <div className="album-hero-cover">
           <AlbumCover album={album} size={168} />

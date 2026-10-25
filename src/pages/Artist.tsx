@@ -1,7 +1,7 @@
 import { SuggestArtistSheet } from '../components/ShareSheet'
 import { isAbout } from '../lib/postArtists'
 import { useRef, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import { albums, artists, concerts, parties } from '../data/seed'
 import { artistGenres, similarArtists } from '../lib/similar'
 import { avoidAlbums } from '../lib/suggest'
@@ -28,7 +28,10 @@ export default function ArtistPage() {
   const artist = artistById(artistId)
   const { state, dispatch, me } = useStore()
   const compose = useComposer()
-  const [tab, setTab] = useState('all')
+  // The open tab lives in the address (?tab=albums): coming back from an album lands on the same tab.
+  const [params, setParams] = useSearchParams()
+  const tab = params.get('tab') ?? 'all'
+  const setTab = (t: string) => setParams(t === 'all' ? {} : { tab: t }, { replace: true })
   // The tab row stays on top while scrolling; switching tab from further down starts the new tab at its top.
   const tabsTop = useRef<HTMLDivElement>(null)
   const pickTab = (t: string) => {
@@ -53,14 +56,7 @@ export default function ArtistPage() {
     ? similarArtists(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
     : []
 
-  const tabs = [
-    { id: 'all', label: 'All' },
-    ...artist.feeds.map((f) => ({ id: f.id, label: f.label })),
-    { id: 'albums', label: 'Albums' },
-    ...(likeThem.length ? [{ id: 'similar', label: 'Similar' }] : []),
-    { id: 'shows', label: 'Tours & shows' },
-    { id: 'fans', label: 'Fans' },
-  ]
+  const tabs = roomTabs(artist, likeThem.length > 0)
 
   return (
     <>
@@ -286,4 +282,16 @@ export function groupTours(past: typeof concerts) {
       return { tour, shows: sorted, years: y0 === y1 ? y0 : `${y0}–${y1.slice(2)}`, first: sorted[0].date }
     })
     .sort((a, b) => b.first.localeCompare(a.first))
+}
+
+// The sections of an artist's room, also shown on its album pages to move back between sections.
+export function roomTabs(artist: { feeds: { id: string; label: string }[] }, similar: boolean) {
+  return [
+    { id: 'all', label: 'All' },
+    ...artist.feeds.map((f) => ({ id: f.id, label: f.label })),
+    { id: 'albums', label: 'Albums' },
+    ...(similar ? [{ id: 'similar', label: 'Similar' }] : []),
+    { id: 'shows', label: 'Tours & shows' },
+    { id: 'fans', label: 'Fans' },
+  ]
 }
