@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,exists_in_catalog,must_add,comment
+carra-milleluci,Milleluci,1974,studio,no,yes,No existing track entry for this album in src/data/catalog.ts branch descriptors; add exactly once
+carra-felicitatata,Felicità tà tà,1974,studio,no,yes,No existing track entry for this album in src/data/catalog.ts branch descriptors; add exactly once
+carra-forteforteforte,Forte forte forte,1976,studio,no,yes,No existing track entry for this album in src/data/catalog.ts branch descriptors; add exactly once
+carra-fiesta,Fiesta,1977,studio,no,yes,No existing track entry for this album in src/data/catalog.ts branch descriptors; add exactly once

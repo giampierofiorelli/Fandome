@@ -1,0 +1,28 @@
+﻿album_id,genre,source,scope,evidence_strength,reason
+carra-milleluci,pop,https://it.wikipedia.org/wiki/Milleluci_(Raffaella_Carr%C3%A0),whole album,medium,Album classified Pop; original LP is orchestral vocal variety repertoire
+carra-milleluci,musicaleggera,https://raffaellacarra.com/discografia/milleluci/,some tracks,low,Italian television song/variety context; editorial mapping rather than a literal source genre label
+carra-milleluci,showtunes,https://www.fondazioneprada.org/project/fenomenologia-di-raffaella-carra-milleluci/,texture,low,TV revue show covers musicals and stage formats; soundtrack itself need not contain musical-theatre songs
+carra-milleluci,rumba,https://raffaellacarra.com/discografia/milleluci/,some tracks,low,Rumba degli scugnizzi explicitly references rumba; dance-rhythm performance not independently verified
+carra-milleluci,tarantella,https://raffaellacarra.com/discografia/milleluci/,some tracks,low,Tarantelluccia suggests a tarantella piece; title alone cannot establish arrangement rhythm
+carra-felicitatata,pop,https://raffaellacarra.com/discografia/felicita-ta-ta/,whole album,high,Official track list and mainstream pop repertory; Pop label from Discogs
+carra-felicitatata,disco,https://www.qobuz.com/us-en/interpreter/raffaella-carra/223948,some tracks,medium,Qobuz calls this the 1974 disco outing and names Rumore and title track
+carra-felicitatata,europop,https://www.discogs.com/master/439374-Raffaella-Carr%C3%A0-Felicit%C3%A0-T%C3%A0-T%C3%A0,whole album,medium,Discogs album master uses Europop style
+carra-felicitatata,funk,https://www.groovespin.com/album/raffaella-carra-felicita-ta-ta-439374,some tracks,low,Funk/Soul umbrella from release classification; exact tracks not specified
+carra-felicitatata,soul,https://www.discogs.com/master/439374-Raffaella-Carr%C3%A0-Felicit%C3%A0-T%C3%A0-T%C3%A0,some tracks,low,Funk/Soul high-level classification only; no individual track certified as soul
+carra-forteforteforte,pop,https://raffaellacarra.com/discografia/forte-forte-forte/,whole album,high,Official original album contains variety pop material
+carra-forteforteforte,disco,https://www.discogs.com/release/6146864-Raffaella-Carr%C3%A0-Forte-Forte-Forte,some tracks,medium,1976 discography styles Disco for album; hit A far l amore also indexed as disco
+carra-forteforteforte,europop,https://www.discogs.com/release/6146864-Raffaella-Carr%C3%A0-Forte-Forte-Forte,whole album,medium,Disco and Europop used together for 1976 release
+carra-forteforteforte,italodisco,https://it.wikipedia.org/wiki/Forte_forte_forte,some tracks,medium,Album tagged Italo disco retrospectively; avoid implying fully electronic 1980s sound
+carra-forteforteforte,eurodisco,https://raffaellacarra.com/discografia/forte-forte-forte/,some tracks,medium,Official album note says 0303456 and Bobo step anticipate typical Eurodisco sonorities
+carra-forteforteforte,funk,https://en.wikipedia.org/wiki/A_far_l%27amore_comincia_tu,some tracks,medium,Explicit song-level funk classification for A far l amore comincia tu
+carra-forteforteforte,latinpop,https://en.wikipedia.org/wiki/A_far_l%27amore_comincia_tu,some tracks,medium,Explicit song-level Latin pop classification for A far l amore comincia tu
+carra-forteforteforte,ballad,https://www.discogs.com/release/6146864-Raffaella-Carr%C3%A0-Forte-Forte-Forte,some tracks,medium,Discogs records Ballad among the album edition styles
+carra-fiesta,eurodisco,https://raffaellacarra.com/discografia/fiesta-3/,some tracks,high,Official site names Dreamin of you and Melodia as Eurodisco songs
+carra-fiesta,disco,https://es.wikipedia.org/wiki/Fiesta_(%C3%A1lbum_de_Raffaella_Carr%C3%A1),some tracks,medium,Disco also listed as album genre; official site validates Eurodisco subset
+carra-fiesta,pop,https://it.wikipedia.org/wiki/Fiesta_(Raffaella_Carr%C3%A0),whole album,medium,Album tagged Pop alongside Italo disco
+carra-fiesta,latinpop,https://en.wikipedia.org/wiki/Fiesta_(Raffaella_Carr%C3%A0_album),some tracks,medium,Album explicitly labelled Latin pop; Fiesta is performed in Spanish
+carra-fiesta,italodisco,https://it.wikipedia.org/wiki/Fiesta_(Raffaella_Carr%C3%A0),some tracks,medium,Retrospective Italian album genre label Italo disco
+carra-fiesta,ballad,https://raffaellacarra.com/discografia/fiesta-3/,some tracks,high,Official account explicitly identifies I Thank You Life as an orchestral ballad
+carra-fiesta,musicaltheatre,https://raffaellacarra.com/discografia/fiesta-3/,texture,medium,Official album description describes I Thank You Life as orchestrated in musical style; not whole record
+carra-fiesta,rock,https://es.wikipedia.org/wiki/Fiesta_(%C3%A1lbum_de_Raffaella_Carr%C3%A1),some tracks,low,Spanish album-level classification says Rock but does not identify individual tracks
+carra-fiesta,electronic,https://es.wikipedia.org/wiki/Fiesta_(%C3%A1lbum_de_Raffaella_Carr%C3%A1),texture,low,Spanish metadata calls the record electronic; studio equipment not documented

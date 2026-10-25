@@ -191,7 +191,7 @@ const ROWS: Row[] = [
   ['philcollins', 'Phil Collins', '#8a8f9a', 'In the air tonight, still', [['Face Value', 1981], ['Hello, I Must Be Going!', 1982], ['No Jacket Required', 1985], ['…But Seriously', 1989]]],
   ['pixies', 'Pixies', '#b5a34a', 'Loud, quiet, loud', [['Surfer Rosa', 1988], ['Doolittle', 1989], ['Bossanova', 1990], ['Trompe le Monde', 1991], ['Doggerel', 2022]]],
   ['police', 'The Police', '#5a7fa8', 'Every breath you take, together', [['Outlandos d’Amour', 1978], ['Reggatta de Blanc', 1979], ['Zenyatta Mondatta', 1980], ['Ghost in the Machine', 1981], ['Synchronicity', 1983]]],
-  ['carra', 'Raffaella Carrà', '#e0503f', 'Fiesta, Tuca Tuca and Italian pop joy', [['Raffaella', 1971], ['Raffaella Carrà', 1971], ['Raffaella... Senzarespiro', 1972], ['Scatola a sorpresa', 1973]]],
+  ['carra', 'Raffaella Carrà', '#e0503f', 'Fiesta, Tuca Tuca and Italian pop joy', [['Raffaella', 1971], ['Raffaella Carrà', 1971], ['Raffaella... Senzarespiro', 1972], ['Scatola a sorpresa', 1973], ['Milleluci', 1974], ['Felicità tà tà', 1974], ['Forte forte forte', 1976], ['Fiesta', 1977]]],
   ['berte', 'Loredana Bertè', '#4ab5a3', 'Rebel, always', [['Normale o super', 1976], ['Traslocando', 1982], ['Jazz', 1983]]],
   ['pausini', 'Laura Pausini', '#e0708f', 'From Solarolo to the world', [['Laura Pausini', 1993], ['Le cose che vivi', 1996], ['La mia risposta', 1998], ['Resta in ascolto', 2004], ['Fatti sentire', 2018], ['Anime parallele', 2023]]],
   ['annalisa', 'Annalisa', '#e07ab5', 'Italian pop that never stops', [['Nali', 2011], ['Mentre tutto cambia', 2012], ['Non so ballare', 2013], ['Splende', 2015], ['Se avessi un cuore', 2016], ['Bye Bye', 2018], ['Nuda', 2020], ['E poi siamo finiti nel vortice', 2023], ['Ma io sono fuoco', 2025]]],
