@@ -71,4 +71,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   twist: ['rockandroll', 'dance'], tango: ['latin'],
   latinpop: ['latin', 'pop'], rumba: ['latin'], tarantella: ['folk'],
   childrensmusic: ['pop'], liscio: ['folk', 'dance'], waltz: ['dance'], pasodoble: ['dance', 'latin'], march: ['classical'], polka: ['folk', 'dance'], sonjarocho: ['folk', 'latin'],
+  freestyle: ['dance', 'latin'],
 }

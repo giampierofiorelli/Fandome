@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+rihanna-musicofthesun,Music of the Sun,2005,studio,no,yes,Add as original studio album; preserve specified slug and year
+rihanna-agirllikeme,A Girl Like Me,2006,studio,no,yes,Add as original studio album; preserve specified slug and year
+rihanna-goodgirlgonebad,Good Girl Gone Bad,2007,studio,yes,no,Catalogue id preserved; replace nothing
+rihanna-ratedr,Rated R,2009,studio,yes,no,Catalogue id preserved; replace nothing

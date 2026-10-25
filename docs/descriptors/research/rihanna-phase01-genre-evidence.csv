@@ -1,0 +1,43 @@
+album_id,genre,source,scope,evidence_strength,reason
+rihanna-musicofthesun,pop,https://www.allmusic.com/album/music-of-the-sun-r783863/credits,whole album,high,AllMusic pop/dance-pop character across the original studio set
+rihanna-musicofthesun,dancepop,https://www.allmusic.com/album/music-of-the-sun-r783863/credits,some tracks,high,Pon de Replay and If Its Lovin That You Want; dance-pop core
+rihanna-musicofthesun,contemporaryrnb,https://www.allmusic.com/album/music-of-the-sun-r783863/credits,whole album,high,AllMusic current R&B style
+rihanna-musicofthesun,rnb,https://www.slantmagazine.com/music/rihanna-music-of-the-sun/,whole album,high,Sal Cinquemani describes R&B matrix and less danceable middle stretch
+rihanna-musicofthesun,dancehall,https://www.allmusic.com/album/music-of-the-sun-r783863/credits,some tracks,high,"Pon de Replay dancehall-derived rhythm, plus Elephant Man remix"
+rihanna-musicofthesun,reggae,https://www.allmusic.com/album/music-of-the-sun-r783863/credits,some tracks,medium,Pon de Replay reggae vocal cadence and You Dont Love Me material; track-specific influence
+rihanna-musicofthesun,hiphop,https://www.slantmagazine.com/music/rihanna-music-of-the-sun/,some tracks,medium,Hip-hop in club framework; rap guests Kardinal Offishall and J-Status
+rihanna-musicofthesun,freestyle,https://www.slantmagazine.com/music/rihanna-music-of-the-sun/,texture,low,"That La La La is by Full Force, identified as freestyle production team; no firm arrangement-wide label"
+rihanna-musicofthesun,ballad,https://www.slantmagazine.com/music/rihanna-music-of-the-sun/,some tracks,high,Willing to Wait and Now I Know are slower material; strings on closer
+rihanna-agirllikeme,pop,https://www.qobuz.com/us-en/album/a-girl-like-me-rihanna/0060249879897,whole album,high,"Label describes pop, material spans dance songs and ballads"
+rihanna-agirllikeme,dancepop,https://www.allmusic.com/album/a-girl-like-me-mw0000348566,some tracks,high,SOS bright club beat and We Ride rhythmic radio-pop
+rihanna-agirllikeme,rnb,https://www.allmusic.com/album/a-girl-like-me-mw0000348566,whole album,high,Contemporary R&B album style
+rihanna-agirllikeme,contemporaryrnb,https://www.allmusic.com/album/a-girl-like-me-mw0000348566,whole album,high,AllMusic classification Contemporary R&B
+rihanna-agirllikeme,reggae,https://www.allmusic.com/album/a-girl-like-me-mw0000348566,some tracks,high,Kisses Dont Lie explicitly crunchy reggae
+rihanna-agirllikeme,dancehall,https://www.allmusic.com/album/a-girl-like-me-mw0000348566,some tracks,high,Break It Off with Sean Paul explicitly dancehall
+rihanna-agirllikeme,rock,https://www.allmusic.com/album/release/a-girl-like-me-mr0000494501,some tracks,medium,Kisses Dont Lie hybrid rock-reggae described in reviews; do not treat whole album as rock
+rihanna-agirllikeme,ballad,https://www.qobuz.com/us-en/album/a-girl-like-me-rihanna/0060249879897,some tracks,high,Unfaithful noir narrative and string arrangement; Final Goodbye and A Million Miles Away
+rihanna-goodgirlgonebad,dancepop,https://www.slantmagazine.com/music/rihanna-good-girl-gone-bad/,whole album,high,Most songs described as uptempo dance-pop
+rihanna-goodgirlgonebad,pop,https://www.allmusic.com/album/mw0000573185,whole album,high,AllMusic general pop designation
+rihanna-goodgirlgonebad,rnb,https://pitchfork.com/reviews/albums/10320-good-girl-gone-bad/,some tracks,medium,Umbrella R&B and slower tracks; reviewer disputes treating whole album as R&B
+rihanna-goodgirlgonebad,contemporaryrnb,https://www.allmusic.com/album/mw0000573185,some tracks,medium,AllMusic Contemporary R&B labeling on release
+rihanna-goodgirlgonebad,electro,https://pitchfork.com/reviews/albums/10320-good-girl-gone-bad/,some tracks,high,Push Up on Me rapid electro synth blips
+rihanna-goodgirlgonebad,freestyle,https://www.slantmagazine.com/music/rihanna-good-girl-gone-bad/,some tracks,high,Push Up on Me explicitly invokes 1980s Latin freestyle style
+rihanna-goodgirlgonebad,postdisco,https://www.slantmagazine.com/music/rihanna-good-girl-gone-bad/,some tracks,high,Push Up on Me post-disco / Moroder-era style
+rihanna-goodgirlgonebad,newwave,https://pitchfork.com/reviews/albums/10320-good-girl-gone-bad/,some tracks,high,"Shut Up and Drive uses sampled/recast New Order Blue Monday, processed new-wave guitar"
+rihanna-goodgirlgonebad,rock,https://www.rte.ie/entertainment/music-reviews/2007/0615/449506-rihanna/,some tracks,high,Shut Up and Drive described as electric-guitar rock-oriented
+rihanna-goodgirlgonebad,poprock,https://www.rte.ie/entertainment/music-reviews/2007/0615/449506-rihanna/,some tracks,medium,Shut Up and Drive pop song with rock guitar; editorial cross-genre mapping
+rihanna-goodgirlgonebad,hiphop,https://www.qobuz.com/us-en/album/good-girl-gone-bad-rihanna/d65iwcvg6shab,some tracks,medium,Umbrella Jay-Z rap feature and R&B-hip-hop background; not all tracks
+rihanna-goodgirlgonebad,ballad,https://pitchfork.com/reviews/albums/10320-good-girl-gone-bad/,some tracks,high,"Rehab, Hate That I Love You and title song soften opening run"
+rihanna-ratedr,pop,https://www.qobuz.com/us-en/album/rated-r-rihanna/0060252728371,whole album,high,Album original material combines pop songs with darker motifs
+rihanna-ratedr,rnb,https://www.allmusic.com/album/rated-r-mw0001791113,whole album,high,AllMusic genre basis and ballad/hip-hop hybrids
+rihanna-ratedr,contemporaryrnb,https://www.allmusic.com/album/rated-r-mw0001791113,whole album,high,AllMusic Contemporary R&B genre style
+rihanna-ratedr,electronic,https://www.theguardian.com/music/2009/nov/19/rihanna-cd-review,some tracks,high,Wait Your Turn electronic grind; G4L reverse drum electronics
+rihanna-ratedr,dubstep,https://pitchfork.com/reviews/albums/13740-rated-r/,some tracks,high,Chase & Status bass production on Wait Your Turn and G4L
+rihanna-ratedr,electropop,https://www.hotpress.com/music/rated-r-6096919,some tracks,high,G4L singled out as skewed electro-pop
+rihanna-ratedr,rock,https://www.theguardian.com/music/2009/nov/29/rihanna-rated-r-cd-review,some tracks,high,Rockstar 101 Slash electric guitar; Fire Bomb rock heft
+rihanna-ratedr,poprock,https://www.slantmagazine.com/music/rihanna-rated-r/,some tracks,medium,Fire Bomb rock-pop/power ballad described via Roxette/P!nk sonic comparisons
+rihanna-ratedr,hiphop,https://www.qobuz.com/us-en/album/rated-r-rihanna/0060252728371,some tracks,high,Hard featuring Jeezy and G4L have rap-like delivery
+rihanna-ratedr,dancehall,https://www.theguardian.com/culture/2021/apr/01/rihannas-30-greatest-singles-ranked,some tracks,high,Rude Boy dancehall toughness
+rihanna-ratedr,dancepop,https://www.theguardian.com/culture/2021/apr/01/rihannas-30-greatest-singles-ranked,some tracks,medium,Rude Boy uses EDM-pop overlay; one of few club tracks on disc
+rihanna-ratedr,latin,https://www.hotpress.com/music/rated-r-6096919,texture,high,"Te Amo Latin flavor in arrangement, not full album"
+rihanna-ratedr,ballad,https://www.theguardian.com/music/2009/nov/29/rihanna-rated-r-cd-review,some tracks,high,Stupid in Love and Cold Case Love contrasting ballads; Russian Roulette piano
