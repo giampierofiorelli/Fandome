@@ -42,3 +42,8 @@ The owner flagged that Ray of Light is mostly not a dance record, is close to tr
 - Prince co-wrote and co-produced "Love Song", a duet with Madonna (album credits; already in `producers`).
 - Prince played electric guitar, uncredited, on "Like a Prayer" (the title track, the album's key song), "Keep It Together" and "Act of Contrition" (Pitchfork review by Maura Johnston; Paul Zollo interview; Wikipedia, Like a Prayer (album)). `electricguitar` added.
 - Engine (general rule, Oct 2026): an artist credited as producer of an album is a direct link to that artist's own albums ("Prince worked on Like a Prayer"), weighed like a documented influence.
+
+## Music: revision (Oct 2026, owner asked why Daft Punk, Air, Röyksopp were missing)
+- `sounds_like` Daft Punk: Stereogum, "Music turns 20" (https://stereogum.com/2098583/music-turns-20/reviews/the-anniversary): Mirwais' sound "owed a whole lot to the French filter-house of the late '90s, Daft Punk in particular". Air: Grammy.com, Music at 20 (https://www.grammy.com/news/madonna-music-20-anniversary-2000) places Mirwais with his French touch contemporaries Daft Punk, Air, Rinôçérôse. Cher (Believe, Auto-Tune over Euro-house) and Kylie Minogue (Fever): same Stereogum piece, as comparable moves.
+- `genres`: + `filterhouse` (Stereogum: "French filter-house"), + `dancepop`, `electronica` (Wikipedia infobox: pop, dance-pop, electronica), + `house`, `techno`, `rock`, `rnb` (Wikipedia: influences from funk, house, techno, rock, country, folk and R&B).
+- Not documented as an influence by Madonna or Mirwais: kept as comparisons (`sounds_like`), not `influenced_by`.
