@@ -1,0 +1,41 @@
+album_id,genre,source,url,scope,evidence_note
+jlo-onthe6,latinpop,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,whole album,AllMusic explicitly categorizes the album as Latin Pop and describes its Latin soul synthesis
+jlo-onthe6,dancepop,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,whole album,AllMusic style classification and review of dance-oriented singles
+jlo-onthe6,rnb,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,whole album,R&B tracks across both halves of the record are discussed by Heather Phares
+jlo-onthe6,pop,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,whole album,AllMusic pop style classification
+jlo-onthe6,adultcontemporary,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,some tracks,AllMusic classification and several mainstream smooth ballads
+jlo-onthe6,soul,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,texture,Latin soul cited as Lopez’s own term for the album blend
+jlo-onthe6,hiphop,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,some tracks,AllMusic specifically references rap-influenced cuts and hip-hop guests
+jlo-onthe6,latin,all_on,https://www.allmusic.com/album/on-the-6-mw0000238554,whole album,"Latino repertoire and Spanish-language recordings are recurrent, not a single-track anomaly"
+jlo-onthe6,salsa,latimes_on,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42384-story.html,some tracks,"Elysa Gardner describes salsa-kissed R&B passages, rather than a whole-album salsa style"
+jlo-onthe6,flamenco,latimes_on,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42384-story.html,texture,"Reviewer notes flamenco-flavored Could This Be Love, not a strict full-album flamenco genre"
+jlo-onthe6,disco,latimes_on,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42384-story.html,some tracks,Disco-informed Una Noche Mas singled out by contemporary review
+jlo-jlo,dancepop,slant_jlo,https://www.slantmagazine.com/music/jennifer-lopez-j-lo/,whole album,Sal Cinquemani explicitly calls the mixture retro dance-pop
+jlo-jlo,rnb,latimes_jlo,https://www.latimes.com/archives/la-xpm-2001-jan-21-ca-14899-story.html,whole album,Natalie Nichols identifies R&B throughout the sophomore album
+jlo-jlo,latinpop,all_jlo,https://www.allmusic.com/album/jlo-mw0000103727,some tracks,AllMusic lists Latin Pop; Spanish and Latin pop tracks recur
+jlo-jlo,pop,all_jlo,https://www.allmusic.com/album/jlo-mw0000103727,whole album,AllMusic lists Pop
+jlo-jlo,hiphop,latimes_jlo,https://www.latimes.com/archives/la-xpm-2001-jan-21-ca-14899-story.html,some tracks,Los Angeles Times explicitly names hip-hop elements
+jlo-jlo,funk,latimes_jlo,https://www.latimes.com/archives/la-xpm-2001-jan-21-ca-14899-story.html,some tracks,Los Angeles Times explicitly names funk
+jlo-jlo,adultcontemporary,all_jlo,https://www.allmusic.com/album/jlo-mw0000103727,some tracks,AllMusic explicitly lists Adult Contemporary; ballads are secondary
+jlo-jlo,electronic,latimes_jlo,https://www.latimes.com/archives/la-xpm-2001-jan-21-ca-14899-story.html,texture,"Electronic-dance sounds identified as texture, not uniform album genre"
+jlo-jlo,latin,latimes_jlo,https://www.latimes.com/archives/la-xpm-2001-jan-21-ca-14899-story.html,some tracks,Los Angeles Times names Latin styles and Spanish material
+jlo-jtothalotheremixes,hiphop,nme_remix,https://www.nme.com/reviews/reviews-nme-6225-331785,some tracks,NME identifies hip-hop orientation of rap collaborations and Trackmasters remixes
+jlo-jtothalotheremixes,rnb,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,some tracks,"AllMusic describes vocals, rap revisions, and R&B-context material in first half"
+jlo-jtothalotheremixes,dancepop,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,whole album,AllMusic dance-pop classification; several tracks adapted for club play
+jlo-jtothalotheremixes,pop,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,whole album,AllMusic classifies work as pop
+jlo-jtothalotheremixes,house,nme_remix,https://www.nme.com/reviews/reviews-nme-6225-331785,some tracks,NME explicitly identifies Latino-house remixes
+jlo-jtothalotheremixes,latinhouse,nme_remix,https://www.nme.com/reviews/reviews-nme-6225-331785,some tracks,Exact specialist term Latino House on remix version; new token requested
+jlo-jtothalotheremixes,hinrg,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,some tracks,AllMusic explicitly names Hi-NRG for Hex Hector Waiting for Tonight mix
+jlo-jtothalotheremixes,latinpop,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,some tracks,AllMusic styles include Latin Pop; included club reinterpretations
+jlo-jtothalotheremixes,adultcontemporary,all_remix,https://www.allmusic.com/album/j-to-tha-l-o-the-remixes-r572119,some tracks,AllMusic styles mention adult contemporary; isolated Alive ballad
+jlo-thisismethen,rnb,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,whole album,AllMusic explicitly calls it mainstream pop-R&B and urban soul
+jlo-thisismethen,soul,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,whole album,AllMusic emphasizes urban and classic soul
+jlo-thisismethen,pop,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,whole album,AllMusic names mainstream pop
+jlo-thisismethen,popfunk,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,some tracks,AllMusic explicitly references early-1980s pop-funk
+jlo-thisismethen,softrock,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,some tracks,AllMusic explicitly names soft-rock allusions
+jlo-thisismethen,hiphop,mb_then,https://musicbrainz.org/release/9b18c398-8d77-49c9-aa3f-43efd5cdfc9f,some tracks,MusicBrainz shows hip-hop samples and guest rap in Jenny from the Block
+jlo-thisismethen,adultcontemporary,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,some tracks,AllMusic style classification; adult-oriented ballads
+jlo-thisismethen,latinpop,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,texture,AllMusic broad album classification; not central to critic’s urban-soul account
+jlo-thisismethen,dancepop,all_then,https://www.allmusic.com/album/this-is-me-then-mw0000229367,texture,AllMusic broad style tag but review says glitzy dance-pop largely phased out
+jlo-thisismethen,motown,musiccritic_then,https://musiccritic.com/pop/lopezjennifer_thisisme.htm,texture,Contemporary critic explicitly says album has a late-seventies Motown feel
+jlo-thisismethen,funk,musiccritic_then,https://musiccritic.com/pop/lopezjennifer_thisisme.htm,some tracks,Relaxed funk basslines singled out in contemporary review

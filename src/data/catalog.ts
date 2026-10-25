@@ -19,7 +19,7 @@ const ROWS: Row[] = [
   ['feverray', 'Fever Ray', '#7d5ba6', 'Strange, tender, electronic', [['Fever Ray', 2009], ['Plunge', 2017], ['Radical Romantics', 2023]]],
   ['florence', 'Florence + The Machine', '#c2523c', 'Harps, howls and barefoot stages', [['Lungs', 2009], ['Ceremonials', 2011], ['How Big, How Blue, How Beautiful', 2015], ['High as Hope', 2018], ['Dance Fever', 2022], ['Everybody Scream', 2025]]],
   ['franz', 'Franz Ferdinand', '#d9472b', 'Angular guitars for dancing', [['Franz Ferdinand', 2004], ['You Could Have It So Much Better', 2005], ['Tonight', 2009], ['Right Thoughts, Right Words, Right Action', 2013], ['Always Ascending', 2018], ['The Human Fear', 2025]]],
-  ['jlo', 'Jennifer Lopez', '#e7a04f', 'From the block to the dance floor', [['On the 6', 1999], ['J.Lo', 2001], ['This Is Me… Then', 2002], ['Love?', 2011], ['This Is Me… Now', 2024]]],
+  ['jlo', 'Jennifer Lopez', '#e7a04f', 'From the block to the dance floor', [['On the 6', 1999], ['J.Lo', 2001], ['J to tha L-O!: The Remixes', 2002], ['This Is Me… Then', 2002], ['Love?', 2011], ['This Is Me… Now', 2024]]],
   ['bieber', 'Justin Bieber', '#5f86c9', 'Grown up with his fans', [['My World 2.0', 2010], ['Believe', 2012], ['Purpose', 2015], ['Changes', 2020], ['Justice', 2021], ['Swag', 2025]]],
   ['katyperry', 'Katy Perry', '#e85d9f', 'Candy-coloured pop, loud choruses', [['One of the Boys', 2008], ['Teenage Dream', 2010], ['Prism', 2013], ['Witness', 2017], ['Smile', 2020], ['143', 2024]]],
   ['kimpetras', 'Kim Petras', '#ff6fb5', 'Pure pop, no apologies', [['Clarity', 2019], ['Turn Off the Light', 2019], ['Feed the Beast', 2023]]],

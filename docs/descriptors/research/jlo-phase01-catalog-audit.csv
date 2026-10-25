@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog,descriptor_already_present,action,audit_note
+jlo-onthe6,On the 6,1999,studio,yes,no,add descriptor row,Keep Fandome catalog title and existing ID
+jlo-jlo,J.Lo,2001,studio,yes,no,add descriptor row,Keep existing ID; album title punctuation
+jlo-jtothalotheremixes,J to tha L-O!: The Remixes,2002,remix,no,no,add catalogue entry and descriptor row,Landmark remix album: first remixes collection at US No 1; note alternate punctuations / editions
+jlo-thisismethen,This Is Me… Then,2002,studio,yes,no,add descriptor row,Use existing Fandome ID; exact ellipsis and spacing retained
