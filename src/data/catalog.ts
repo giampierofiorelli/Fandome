@@ -63,7 +63,7 @@ const ROWS: Row[] = [
   ['blackpink', 'BLACKPINK', '#f27aa8', 'In your area, in this room', [['The Album', 2020], ['Born Pink', 2022]]],
   ['badbunny', 'Bad Bunny', '#3fae6a', 'Reggaeton, Puerto Rico and big feelings', [['X 100pre', 2018], ['YHLQMDLG', 2020], ['El Último Tour del Mundo', 2020], ['Un Verano Sin Ti', 2022], ['Nadie Sabe Lo Que Va a Pasar Mañana', 2023], ['Debí Tirar Más Fotos', 2025]]],
   ['billie', 'Billie Eilish', '#7fbf3f', 'Whispered songs, screamed along', [['When We All Fall Asleep, Where Do We Go?', 2019], ['Happier Than Ever', 2021], ['Hit Me Hard and Soft', 2024]]],
-  ['chappell', 'Chappell Roan', '#e0569b', 'Pink pony club members only (everyone welcome)', [['The Rise and Fall of a Midwest Princess', 2023]]],
+  ['chappell', 'Chappell Roan', '#e0569b', 'Pink pony club members only (everyone welcome)', [['School Nights', 2017], ['The Rise and Fall of a Midwest Princess', 2023]]],
   ['benson', 'Benson Boone', '#d98c4a', 'Backflips and big choruses', [['Fireworks & Rollerblades', 2024], ['American Heart', 2025]]],
   ['teddyswims', 'Teddy Swims', '#c77a3f', 'Soul voice, therapy sessions', [['I’ve Tried Everything but Therapy (Part 1)', 2023], ['I’ve Tried Everything but Therapy (Part 2)', 2025]]],
   ['gracie', 'Gracie Abrams', '#8fa3c9', 'Diary pages set to music', [['Good Riddance', 2023], ['The Secret of Us', 2024]]],

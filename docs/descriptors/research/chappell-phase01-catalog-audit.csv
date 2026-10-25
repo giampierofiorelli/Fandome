@@ -1,0 +1,3 @@
+album_id,artist,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+chappell-schoolnights,Chappell Roan,School Nights,2017,ep,missing,chappell-schoolnights,Add one EP entry under chappell; keep five-track 2017 original; no live edition,Original Atlantic five-track EP; avoid 2018 single called School Nights.
+chappell-theriseandfallofamidwestprincess,Chappell Roan,The Rise and Fall of a Midwest Princess,2023,studio,present,chappell-theriseandfallofamidwestprincess,Use existing catalog ID; add descriptor once only.,"2023 14-track original; excludes singles Good Luck Babe, The Giver and The Subway."
