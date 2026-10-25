@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,in_catalogue,existing_descriptor,action,notes
+daftpunk-homework,daftpunk,Homework,1997,studio,yes,no,retain seeded album ID,original album
+daftpunk-discovery,daftpunk,Discovery,2001,studio,yes,no,retain seeded album ID,original album
+daftpunk-daftclub,daftpunk,Daft Club,2003,remix,no,no,add new album in catalog.ts before import,official remix album with third-party production/remix collaborations
+daftpunk-humanafterall,daftpunk,Human After All,2005,studio,yes,no,retain seeded album ID,original album

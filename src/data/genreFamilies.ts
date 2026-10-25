@@ -72,5 +72,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   latinpop: ['latin', 'pop'], rumba: ['latin'], tarantella: ['folk'],
   childrensmusic: ['pop'], liscio: ['folk', 'dance'], waltz: ['dance'], pasodoble: ['dance', 'latin'], march: ['classical'], polka: ['folk', 'dance'], sonjarocho: ['folk', 'latin'],
   freestyle: ['dance', 'latin'],
-  alternativernb: ['rnb', 'alt'], psychedelicsoul: ['soul', 'psychedelicrock'], contemporarygospel: ['gospel', 'rnb'], retrosoul: ['soul'], dreamtrance: ['trance'], dreamhouse: ['house', 'trance'], progressivehouse: ['house'], melodictrance: ['trance'], newage: ['ambient'], worldmusic: ['folk'], italodance: ['eurodance', 'dance'], acidtechno: ['techno', 'acidhouse'], frenchhouse: ['house', 'disco'],
+  alternativernb: ['rnb', 'alt'], psychedelicsoul: ['soul', 'psychedelicrock'], contemporarygospel: ['gospel', 'rnb'], retrosoul: ['soul'], dreamtrance: ['trance'], dreamhouse: ['house', 'trance'], progressivehouse: ['house'], melodictrance: ['trance'], newage: ['ambient'], worldmusic: ['folk'], italodance: ['eurodance', 'dance'], acidtechno: ['techno', 'acidhouse'], frenchhouse: ['house', 'disco'], chicagohouse: ['house'], leftfieldhouse: ['house', 'experimentalelectronic'],
 }
