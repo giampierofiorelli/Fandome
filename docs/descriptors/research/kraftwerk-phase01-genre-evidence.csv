@@ -1,0 +1,41 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+kraftwerk-kraftwerk,krautrock,album / historical movement,K70-AM|K70-AOTY|K70-DJ,Critics explicitly classify the early Düsseldorf improvisational work as Krautrock,high
+kraftwerk-kraftwerk,electronic,significant / mixed instrumentation,K70-AM|K70-AOTY,Tape manipulation and electronic organs combined with flute violin and live percussion,high
+kraftwerk-kraftwerk,experimental,overall approach,K70-AM|K70-PROG,"Free-form explorations, cut-ups, noise and extended non-song structures",high
+kraftwerk-kraftwerk,experimentalelectronic,explicit AllMusic subgenre,K70-AM,AllMusic explicitly tags Experimental Electronic; avoid implying modern synth dominance,high
+kraftwerk-kraftwerk,artrock,review description,K70-AM,Ned Raggett directly describes an exploratory art-rock album,high
+kraftwerk-kraftwerk,psychedelicrock,critic-reported psych roots,K70-AM|K70-PROG,Raggett directly describes psychedelic roots; not a predominant guitar-psych rock record,medium
+kraftwerk-kraftwerk,drone,retrospective album substyle,K70-AOTY|K70-PROG,AOTY lists drone; sustained electroacoustic hum on select instrumentals,medium
+kraftwerk-kraftwerk,musiqueconcrete,passages / cut-up textures,K70-AM|K70-AOTY,Raggett explicitly names musique concrète jumps; AOTY album taxonomy,high
+kraftwerk-kraftwerk,avantgarde,database broad genre,K70-AM,AllMusic lists Avant-Garde as higher-order genre,medium
+kraftwerk-kraftwerk,rock,rock-rooted improvisation,K70-AM|K70-DJ,Art-rock and percussion-based free-form improvised passages with organic instrumentation,medium
+kraftwerk-kraftwerk,dance,low-signal database family,K70-AM,"AllMusic adds broad Club/Dance category, but album is NOT a dance-floor production",low
+kraftwerk-kraftwerk2,krautrock,whole-album,K72-AM|K72-AOTY,Album-specific Krautrock classification,high
+kraftwerk-kraftwerk2,experimental,whole-album,K72-AOTY|K72-AM,Experimental textures and irregular extended structures,high
+kraftwerk-kraftwerk2,electronic,significant; not all-synth,K72-AM|K72-HU,"Rhythm machine, tape delays and oscillators alongside acoustic flute/strings",high
+kraftwerk-kraftwerk2,experimentalelectronic,genre/substyle,K72-AM,AllMusic uses explicit Experimental Electronic style,high
+kraftwerk-kraftwerk2,musiqueconcrete,"sound collages, not entire album",K72-AOTY|K72-HU,AOTY genre tag plus manipulated sample/tape and found-sound texture,medium
+kraftwerk-kraftwerk2,ambient,quiet passage / secondary,K72-AOTY,"Explicit secondary ambient album tag, not a fully ambient record",medium
+kraftwerk-kraftwerk2,avantgarde,metadata parent genre,K72-AM,AllMusic calls Avant-Garde parent genre,medium
+kraftwerk-kraftwerk2,rock,genre family with organic playing,K72-AM|K72-ORIG,AllMusic broad Pop/Rock plus guitar and bass credits; weak as autonomous genre,low
+kraftwerk-ralfundflorian,electronic,album-defining,K73-AM|K73-ISC,"Synthesis and electronic devices now central, although acoustic instruments remain",high
+kraftwerk-ralfundflorian,progressiveelectronic,album classification,K73-AOTY|K73-SHFL,Progressive electronic explicitly named by independent album catalogues,medium
+kraftwerk-ralfundflorian,krautrock,historical style,K73-ISC|K73-AOTY|K73-SHFL,1973 transitional German experimental music retains Krautrock elements,high
+kraftwerk-ralfundflorian,experimental,dominant methods,K73-ISC|K73-AM,"Unconventional wordless vocals, timbral treatment and expansive improvisatory passages",high
+kraftwerk-ralfundflorian,experimentalelectronic,genre/substyle,K73-AM,Explicit AllMusic Experimental Electronic album tag,high
+kraftwerk-ralfundflorian,ambient,significant calm passages,K73-ISC|K73-AOTY,Calm and atmospheric flute/synth works including Tongebirge and Heimatklänge,high
+kraftwerk-ralfundflorian,berlinschool,retrospective classification,K73-AOTY,"AOTY tags Berlin School, though group is from Düsseldorf, not that geographical scene",low
+kraftwerk-ralfundflorian,avantgarde,catalogue higher-order category,K73-AM|K73-SHFL,AllMusic genre Avant-Garde and SHFL editorial label,medium
+kraftwerk-ralfundflorian,synthpop,"proto-style only, not primary",K73-ISC,Critic says proto-synthpop; melodic prototype rather than mature synth-pop album,low
+kraftwerk-ralfundflorian,electro,proto-style; selected tracks,K73-ISC|K73-NME,"Critics hear proto-electro in rhythms and sonics, not genre across full record",low
+kraftwerk-autobahn,progressiveelectronic,album primary genre,K74-AOTY|K74-ROLL,AOTY album and AllMusic original title-song style explicitly use Progressive Electronic,high
+kraftwerk-autobahn,electronic,dominant but with acoustic/live material,K74-AM|K74-HFN|K74-PROD,Minimoog/ARP and synth bass with live flute and other instruments,high
+kraftwerk-autobahn,krautrock,historical style,K74-AM|K74-AOTY,Kraut Rock remains an explicitly named category for the original album,high
+kraftwerk-autobahn,ambient,substantial side B and passages,K74-AM|K74-AOTY|K74-HFN,Ambient foundations especially slower sound paintings and Kometenmelodie,high
+kraftwerk-autobahn,experimentalelectronic,whole-album stylistic metadata,K74-AM,Explicit AllMusic Experimental Electronic style,high
+kraftwerk-autobahn,berlinschool,"retrospective subgenre, not location",K74-AOTY,"Album tag Berlin School describes extended synthesis structures, not Düsseldorf geography",low
+kraftwerk-autobahn,postminimalism,retrospective subgenre,K74-AOTY,Explicit AOTY subgenre; categorisation not directly supported by original credits,low
+kraftwerk-autobahn,electro,original German LP metadata category,K74-ORIG|K74-AM,Original pressing metadata and AllMusic descriptions point to early electro pulse,medium
+kraftwerk-autobahn,synthpop,emergent songwriting rather than entire record,K74-AM|K74-CLASSIC,AllMusic identifies roots of synth pop; title track uses repeated sung refrain,medium
+kraftwerk-autobahn,electrofunk,retrospective precursor / title track,K74-AM,"AllMusic identifies electro-funk roots, not a fully developed electro-funk genre record",low
+kraftwerk-autobahn,pop,melodic theme / title track,K74-CLASSIC|K74-HFN,Critics describe novel electronic pop songwriting and catchy melodic central piece,medium

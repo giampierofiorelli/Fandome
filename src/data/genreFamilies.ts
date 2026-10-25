@@ -63,4 +63,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   videogamemusic: [], electronoir: ['electronic'], retrowave: ['synthwave'], // video game music is a format, like soundtrack
   coldwave: ['postpunk', 'darkwave'], ebm: ['industrial', 'electronic'],
   ambientpop: ['ambient', 'pop'], lounge: ['easylistening', 'jazz'], spaceagepop: ['easylistening'], spacepop: ['pop', 'psychedelicpop'],
+  experimentalelectronic: ['electronic', 'experimental'], artrock: ['rock', 'experimental'], drone: ['experimental', 'ambient'], musiqueconcrete: ['experimental', 'avantgarde'], avantgarde: ['experimental'], berlinschool: ['progressiveelectronic', 'ambient'], postminimalism: ['modernclassical'],
 }

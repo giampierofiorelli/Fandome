@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+kraftwerk-kraftwerk,Kraftwerk,1970,studio,missing,,Add in chronological position; preserve this ID,"Four-track Philips 6305 058; exclude Organisation Tone Float, different band"
+kraftwerk-kraftwerk2,Kraftwerk 2,1972,studio,missing,,Add; release 1972 despite recordings 1971,Six-track German Philips 6305 117; first pressing dating disputed by collector tables
+kraftwerk-ralfundflorian,Ralf und Florian,1973,studio,missing,,Add; treat Ralf & Florian / Ralf and Florian as title aliases,German original Philips 6305 197 has 6 tracks; names vary on international issues
+kraftwerk-autobahn,Autobahn,1974,studio,existing,kraftwerk-autobahn,Keep existing id; add descriptor only,"1974 German Philips 6305 231 full 22+ minute title track, not 1975 single cut"
