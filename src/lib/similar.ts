@@ -183,9 +183,26 @@ export function scaleSimilarity(a: { scales: Partial<Record<Scale, number>> }, b
 }
 
 // Voice, lyric themes, era, scene and language, each only when both are known.
+// Themes weighted by rarity too: sharing "sensuality" says more than sharing "love".
+let themeRarity: Map<string, number> | null = null
+function themeSim(a: Set<string>, b: Set<string>) {
+  if (!a.size || !b.size) return null
+  if (!themeRarity) {
+    const all = Object.values(DESCRIPTORS)
+    const df = new Map<string, number>()
+    for (const d of all) for (const t of d.lyrics) df.set(t, (df.get(t) ?? 0) + 1)
+    themeRarity = new Map([...df].map(([t, n]) => [t, Math.log((all.length + 1) / (n + 1)) + 0.3]))
+  }
+  const w = (t: string) => themeRarity!.get(t) ?? 1
+  let inter = 0
+  let union = 0
+  for (const t of new Set([...a, ...b])) (union += w(t)), a.has(t) && b.has(t) && (inter += w(t))
+  return union ? inter / union : 0
+}
+
 function extrasSimilarity(a: Profile, b: Profile) {
   const parts: [number | null, number][] = [
-    [jaccard(a.lyrics, b.lyrics), 0.35],
+    [themeSim(a.lyrics, b.lyrics), 0.35],
     [jaccard(a.voice, b.voice), 0.25],
     [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 30) : null, 0.2],
     [jaccard(a.scene, b.scene), 0.1],
