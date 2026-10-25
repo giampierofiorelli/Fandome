@@ -1,0 +1,28 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-lovesinyoulovesinme,disco,dominant / album,L-REVIEW|L-ORIG,1978 contemporary review specifies gentle dancefloor disco; continuous side A.,high
+moroder-lovesinyoulovesinme,eurodisco,album style / retrospective,L-CLUB|L-OFF,Album specifically classified Euro Disco; recorded with Munich studio team.,medium
+moroder-lovesinyoulovesinme,pop,significant / mainstream songwriting,L-REISSUE|L-AM,"Reissue historical notes describe pop-focused approach, with conventional melodically structured songs.",medium
+moroder-lovesinyoulovesinme,electronic,significant / some tracks,L-REISSUE|L-ORIG|L-AM,Minimoog and vocoder credited and described on I Cant Wait and Love Now Hurt Later; not wholly synthesized.,high
+moroder-lovesinyoulovesinme,rnb,broad album database taxonomy,L-AM,AllMusic broad R&B family taxonomy; do not elevate to core rhythm-and-blues.,low
+moroder-lovesinyoulovesinme,soul,broad catalogue category,L-REISSUE|L-ORIG,Reissue retail classification soul and vocal stylistic milieu; weak as distinct sonic album-wide style.,low
+moroder-midnightexpress,soundtrack,whole album / original OST,M-OFF|M-MB,"Original Alan Parker film score, issued as 1978 soundtrack.",high
+moroder-midnightexpress,electronic,whole album / foundational scoring,M-AM|M-SLEEVE,Synthesizer-led film music and sequencer electronics; still credits live drums.,high
+moroder-midnightexpress,electrodisco,prominent Chase / retroactive album label,M-AOTY|M-PITCH,Chase synthesizer-bass disco pulse prompts retrospective electro-disco categorisation.,medium
+moroder-midnightexpress,disco,one dominant long piece / several passages,M-AM|M-PITCH,Chase is extended sequenced disco; remaining score includes non-dance tension pieces.,high
+moroder-midnightexpress,dancepop,database style / some melodic cues,M-AM,"AllMusic Dance-Pop style reflects catchy melodic Chase, not the entire score.",low
+moroder-midnightexpress,trance,one track / rhythmic texture,M-AM,"John Bush explicitly likens Chase to sequencer trance, a retroactive texture rather than full trance-album identity.",medium
+moroder-midnightexpress,rnb,broad catalogue taxonomy,M-AM,"AllMusic R&B category is metadata-level only, not evidence all cues use R&B rhythms.",low
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,disco,significant both sides,B-SLEEVE|B-AOTY|B-RECORD,Discogs original issue calls it disco; electronic dance treatment of TV melodies.,high
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,electrodisco,significant / retrospective,B-AOTY|B-QOBUZ,Album genre tag; synthesizer programming and beat underpin space-themed sequences.,medium
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,spacedisco,significant / retrospective,B-AOTY,"Explicit Space Disco label for this 1978 space-themed album, not 1978 nomenclature.",medium
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,electronic,significant across LP,B-QOBUZ|B-SLEEVE,"Moog and synth arrangement throughout but live guitar, strings and drums documented.",high
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,dance,most side A / some side B,B-QOBUZ|B-RECORD,Licensed catalogue says electronic dance; disco arrangement of TV themes.,medium
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,funk,Evolution / prominent groove,B-GUARDIAN|B-NPR,Contemporary sound described by critic as funky psychedelic instrumental; emphasis on Evolution.,medium
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,soundtrack,"TV-theme arrangements, not original soundtrack",B-MORODER|B-KNACK|B-QOBUZ,Only side A consists of transformed TV music; artist specifically disputes original-score description.,medium
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions,soul,broad record-shop grouping / not a core genre,B-RECORD,Original LP is filed Funk / Soul; independent R&B/soul vocal evidence insufficient; very weak scope.,low
+moroder-emc,electrodisco,dominant album,E-AOTY|E-ALLMUSIC,Explicit Electro-Disco classification; programmed beat and synth disco songs throughout.,high
+moroder-emc,eurodisco,dominant album,E-AOTY|E-FACT,Explicit Euro-Disco tag and Munich disco studio tradition.,high
+moroder-emc,disco,whole album,E-ALLMUSIC|E-FACT,Six originally released songs retain dominant disco-dance foundations.,high
+moroder-emc,electronic,majority sound / not fully electronic,E-ALLMUSIC|E-REDBULL|E-SOS,"Lead synths, digital recording and vocoder coexist with live piano/drums.",high
+moroder-emc,dancepop,significant hooks / melodic songs,E-ALLMUSIC,Independent AllMusic assessment frames it as computerized dance-pop and disco songwriting.,medium
+moroder-emc,pop,broader melodic pop songwriting,E-FACT|E-OFF,"FACT says the record revisits pop standards and conventional hooks, not all experimental instrumentals.",medium
