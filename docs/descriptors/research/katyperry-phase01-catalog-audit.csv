@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,catalog_status,catalog_existing_id,action,original_release_credit,evidence_url
+katyperry-katyhudson,katyperry,Katy Hudson,2001,studio,not_in_catalog,,add_album,Katy Hudson,https://musicbrainz.org/artist/122d63fc-8671-43e4-9752-34e846d62a9c
+katyperry-oneoftheboys,katyperry,One of the Boys,2008,studio,already_in_catalog,katyperry-oneoftheboys,preserve_existing,Katy Perry,https://musicbrainz.org/artist/122d63fc-8671-43e4-9752-34e846d62a9c
+katyperry-teenagedream,katyperry,Teenage Dream,2010,studio,already_in_catalog,katyperry-teenagedream,preserve_existing,Katy Perry,https://musicbrainz.org/artist/122d63fc-8671-43e4-9752-34e846d62a9c
+katyperry-prism,katyperry,Prism,2013,studio,already_in_catalog,katyperry-prism,preserve_existing,Katy Perry,https://musicbrainz.org/artist/122d63fc-8671-43e4-9752-34e846d62a9c
