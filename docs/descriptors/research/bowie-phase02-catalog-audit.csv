@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalogue_status,action,catalogue_note
+bowie-theriseandfallofziggystardustandthespidersfrommars,The Rise and Fall of Ziggy Stardust and the Spiders from Mars,1972,studio,existing,keep,Already listed in src/data/catalog.ts; preserve computed slug id
+bowie-aladdinsane,Aladdin Sane,1973,studio,missing,add,Add after Ziggy Stardust; original 1973 issue
+bowie-pinups,Pin Ups,1973,studio,missing,add,"Re-recorded studio covers, not an archival compilation; original 19 Oct 1973"
+bowie-diamonddogs,Diamond Dogs,1974,studio,missing,add,Bowie sole album producer; Visconti mixed tracks and string work
