@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+rettore-estasiclamorosa,Estasi clamorosa,1981,studio,yes,no,"Already in catalog as the exact derived ID, update its descriptor only; no duplicate."
+rettore-kamikazerocknrollsuicide,Kamikaze Rock 'n' Roll Suicide,1982,studio,no,yes,Not in catalog branch descriptors as of 2026-10-25; add once before validation.
+rettore-farwest,Far West,1983,studio,no,yes,Not in catalog branch descriptors as of 2026-10-25; add once before validation.
+rettore-danceteria,Danceteria,1985,studio,no,yes,Not in catalog branch descriptors as of 2026-10-25; add once before validation.

@@ -1,0 +1,27 @@
+album_id,genre,source,scope,evidence_strength,reason
+rettore-estasiclamorosa,pop,https://www.allmusic.com/album/estasi-clamorosa-mw0003698553,whole album,high,AllMusic classifies LP in Pop/Rock/Pop; original songs span different idioms
+rettore-estasiclamorosa,poprock,https://musicbase.net/estasi-clamorosa?v=5391331,whole album,medium,Original issue lists Pop Rock; electric-guitar rhythm sections documented on Diva Curiosa Mamma Estasi
+rettore-estasiclamorosa,synthpop,https://musicbase.net/estasi-clamorosa?v=5391331,some tracks,medium,Original issue uses Synth-pop album style; track-specific synth identity not proven by keyboards credit alone
+rettore-estasiclamorosa,disco,https://musicbase.net/estasi-clamorosa?v=5391331,some tracks,medium,Original issue classified Disco despite some non-dance songs
+rettore-estasiclamorosa,ska,https://www.ondarock.it/monografie/donatellarettore/,some tracks,high,OndaRock specifically identifies hit Donatella as ska
+rettore-estasiclamorosa,rock,https://www.qobuz.com/us-en/album/estasi-clamorosa-donatella-rettore/tkggb12b9xxge,whole album,low,"Pop/Rock umbrella classification; guitar parts corroborate texture, not separate rock composition"
+rettore-estasiclamorosa,electronic,https://musicbase.net/estasi-clamorosa?v=5391331,some tracks,low,Electronic category on original vinyl issue; keyboards alone do not certify full-electronic sound
+rettore-estasiclamorosa,funk,https://musicbase.net/estasi-clamorosa?v=5391331,some tracks,low,Funk/Soul genre-family tagging on original pressing; no specific track securely isolated as funk
+rettore-estasiclamorosa,soul,https://musicbase.net/estasi-clamorosa?v=5391331,some tracks,low,Funk/Soul umbrella only; no verified soul arrangement for a specific track
+rettore-kamikazerocknrollsuicide,newwave,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,whole album,high,OndaRock milestone explicitly classifies the whole 1982 LP as new wave
+rettore-kamikazerocknrollsuicide,synthpop,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,some tracks,high,Reviewer details synth-wave and synthesized riffs notably on Sayonara; synth models independently credited
+rettore-kamikazerocknrollsuicide,pop,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,whole album,medium,Critic sets record in innovative Italian mainstream pop despite unusually dark concept
+rettore-kamikazerocknrollsuicide,electronic,https://www.45cat.com/vinyl/album/arlp12398,some tracks,high,Original LP documents Oberheim Prophet and ARP programming; sonic role supported on Sayonara Karakiri
+rettore-kamikazerocknrollsuicide,rock,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,some tracks,high,Sayonara explicitly features rock guitar; band performs electric rhythm parts elsewhere
+rettore-kamikazerocknrollsuicide,punk,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,some tracks,high,Garage explicitly described with hammering punk-wave rhythms
+rettore-kamikazerocknrollsuicide,ballad,https://www.ondarock.it/monografie/donatellarettore/,some tracks,high,Giulietta described as spare piano-supported ballad
+rettore-kamikazerocknrollsuicide,march,https://www.ondarock.it/recensioni/pietremiliariitaliane/donatellarettore-kamikazerocknrollsuicide/,some tracks,medium,Sangue del mio sangue characterized by critic as a marcetta; rhythmic texture not military genre overall
+rettore-farwest,pop,https://www.qobuz.com/nz-en/album/collection-rettore-far-west-danceteria-rettore/0825646617616,whole album,high,Label metadata Pop for original nine-song 1983 LP
+rettore-farwest,poprock,https://musicbase.net/far-west,whole album,medium,1983 original issue metadata Pop Rock and guitar rhythm section across album
+rettore-farwest,rock,https://it.wikipedia.org/wiki/Far_West_%28album%29,whole album,medium,"Album broadly categorized Rock, Pop; no country-music sound established despite theme"
+rettore-farwest,electronic,https://www.rollingstone.it/musica/classifiche-liste-musica/10-dischi-deludenti-di-grandi-artisti-italiani/952840/,whole album,high,Rolling Stone retrospective describes the album as sonically bold with electronic sounds; instrument credits cite synth and drum machines
+rettore-danceteria,synthpop,https://shop.saifam.com/product/rettore-danceteria-vinilerosa180gr-limitededition300copienumerate-com380,whole album,high,Reissue label explicitly calls 1985 album synth-pop and electronic
+rettore-danceteria,dance,https://it.wikipedia.org/wiki/Danceteria,whole album,medium,"Album identified as Dance; original title evokes club but genre comes from classification, not title"
+rettore-danceteria,pop,https://www.qobuz.com/nz-en/album/collection-rettore-far-west-danceteria-rettore/0825646617616,whole album,medium,"Label metadata Pop; material contains more tender tracks, e.g. Giù dal nero ciel"
+rettore-danceteria,electronic,https://shop.saifam.com/product/rettore-danceteria-vinilerosa180gr-limitededition300copienumerate-com380,whole album,high,Saifam names electronic style; Peter Woelpl credited synthesizers and extensive keyboards
+rettore-danceteria,rock,https://it.wikipedia.org/wiki/Danceteria,some tracks,medium,"Album categorised Rock among Dance/Pop; guitars are credited, exact rock-leaning tracks remain uncertain"
