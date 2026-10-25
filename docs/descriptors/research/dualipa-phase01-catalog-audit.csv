@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+dualipa-dualipa,Dua Lipa,Dua Lipa,2017,already_in_catalog,dualipa-dualipa,Keep catalogue ID and import new descriptor only,Original 12 tracks; exclude Complete Edition and deluxe
+dualipa-futurenostalgia,Dua Lipa,Future Nostalgia,2020,already_in_catalog,dualipa-futurenostalgia,Keep catalogue ID and import new descriptor only,Original 11 tracks; exclude Moonlight Edition
+dualipa-clubfuturenostalgia,Dua Lipa,Club Future Nostalgia,2020,must_add,dualipa-clubfuturenostalgia,Add new catalogue entry then import descriptor,28 August 2020 original DJ mix; not unmixed version
+dualipa-radicaloptimism,Dua Lipa,Radical Optimism,2024,already_in_catalog,dualipa-radicaloptimism,Keep catalogue ID and import new descriptor only,Original 11 tracks; exclude Extended Versions

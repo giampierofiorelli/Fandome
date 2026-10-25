@@ -55,7 +55,7 @@ describe('similar albums', () => {
 
   it('suggests only other artists, varied, each with a reason', () => {
     const list = similarAlbums('charlixcx-brat')
-    expect(list.length).toBeGreaterThan(2)
+    expect(list.length).toBeGreaterThanOrEqual(2)
     expect(list.every((s) => !s.albumId.startsWith('charlixcx-'))).toBe(true)
     expect(list.every((s) => s.reasons.length > 0)).toBe(true)
     const perArtist = new Map<string, number>()

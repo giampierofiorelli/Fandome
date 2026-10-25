@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+ariana-yourstruly,Ariana Grande,Yours Truly,2013,studio,already_in_catalog,ariana-yourstruly,Append descriptors only; do not duplicate catalog album,Original studio release; ignore later anniversary editions and live versions
+ariana-myeverything,Ariana Grande,My Everything,2014,studio,already_in_catalog,ariana-myeverything,Append descriptors only; do not duplicate catalog album,Original studio release; ignore later anniversary editions and live versions
+ariana-dangerouswoman,Ariana Grande,Dangerous Woman,2016,studio,already_in_catalog,ariana-dangerouswoman,Append descriptors only; do not duplicate catalog album,Original studio release; ignore later anniversary editions and live versions
+ariana-sweetener,Ariana Grande,Sweetener,2018,studio,already_in_catalog,ariana-sweetener,Append descriptors only; do not duplicate catalog album,Original studio release; ignore later anniversary editions and live versions

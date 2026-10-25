@@ -1,0 +1,31 @@
+﻿album_id,genre,scope,source_keys,what_it_supports,evidence_strength
+ariana-thankunext,pop,album,T_PF|T_AM,Primary pop framework described across the record,high
+ariana-thankunext,rnb,album,T_PF,Primary contemporary R&B phrasing and vocal production,high
+ariana-thankunext,trappop,substantial,T_G,Guardian explicitly describes the closing track as trap-pop; echoed by record-wide trap beats,medium
+ariana-thankunext,trap,substantial,T_PFT|T_G,Atlanta-like trap sonics repeatedly described; stylistic rather than a rap album,high
+ariana-thankunext,dancepop,album,T_AM,AllMusic explicitly tags the release dance-pop,high
+ariana-thankunext,hiphop,substantial,T_PFT|T_PF,Rapping/ad-libs and hip-hop-derived rhythms; not the whole album,medium
+ariana-thankunext,dancehall,track_only,T_G,Guardian specifically calls Bloodline a dancehall nod,high
+ariana-positions,rnb,album,P_PF|P_G,Midtempo and 1990s R&B vocal/beat idiom across most tracks,high
+ariana-positions,pop,album,P_PF|P_AM,Mainstream pop song framework with hooks and polished arrangements,high
+ariana-positions,dancepop,album_metadata,P_AM,AllMusic provides dance-pop style despite more relaxed album character,medium
+ariana-positions,trap,substantial,P_G,Trap-speckled R&B rhythms on significant songs,medium
+ariana-positions,soul,substantial,P_G,Soul-influenced vocals and arrangements; guest ballads and slower sections,medium
+ariana-positions,nusoul,track_only,P_G,Explicit neo-soul description of My Hair,high
+ariana-positions,newjackswing,track_only,P_G,Explicit new jack swing component of Love Language,high
+ariana-positions,disco,track_only,P_G,Love Language disco component,high
+ariana-positions,garage,track_only,P_G,Positions track compared with Craig David garage style,medium
+ariana-positions,house,track_only,P_G2,Guardian specifically identifies house rhythms in Motive,high
+ariana-eternalsunshine,pop,album,E_PF|E_AM,Album pop format and repeated melodic vocal refrains,high
+ariana-eternalsunshine,rnb,album,E_PF|E_G,Most tracks characterized as restrained mid-tempo R&B,high
+ariana-eternalsunshine,contemporaryrnb,album_metadata,E_AM,AllMusic uses the exact Contemporary R&B style label,high
+ariana-eternalsunshine,synthpop,substantial,E_PFT,Pitchfork explicitly calls the Supernatural style synth-pop; another synth-led song follows Europop conventions,medium
+ariana-eternalsunshine,dancepop,album_metadata,E_AM,AllMusic explicitly labels Dance-Pop but album is not continually club-oriented,medium
+ariana-eternalsunshine,trap,substantial,E_FADER|E_PFT,Trap beats and hi-hats form parts of the prevailing instrumental palette,medium
+ariana-eternalsunshine,disco,track_only,E_PF|E_NME,Bye characterized as disco; track scope only,high
+ariana-eternalsunshine,house,track_only,E_HARV|E_NME,Yes and? uses club-house / ballroom-inspired bounce,high
+ariana-eternalsunshine,europop,track_only,E_PFT,Pitchfork explicitly cites Robyn-flavored Europop on We Cant Be Friends,high
+ariana-eternalsunshine,alternativerock,track_only,E_PF,Imperfect for You described with alt-rock strum; not album-wide alt-rock,medium
+ariana-wickedthesoundtrack,soundtrack,album,W_UNI|W_AM|W_UIT,Original motion picture soundtrack released alongside 2024 film,high
+ariana-wickedthesoundtrack,musicaltheatre,album,W_AM|W_SCH,Musical theatre / musicals named by AllMusic and original theatrical composer,high
+ariana-wickedthesoundtrack,showtunes,album,W_AM|W_REP,Original Broadway-derived staged story-songs performed by film cast,high

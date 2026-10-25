@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,catalog_status,instruction,edition
+ariana-thankunext,Ariana Grande,"thank u, next",2019,studio,already_in_catalog,Preserve existing exact ID; append descriptor only,Original standard studio release
+ariana-positions,Ariana Grande,Positions,2020,studio,already_in_catalog,Preserve existing exact ID; append descriptor only,Original standard studio release
+ariana-eternalsunshine,Ariana Grande,Eternal Sunshine,2024,studio,already_in_catalog,Preserve existing exact ID; append descriptor only,Original standard studio release
+ariana-wickedthesoundtrack,Ariana Grande,Wicked: The Soundtrack,2024,soundtrack,add_to_catalog,"Add to Ariana catalogue/seed, then append descriptor","Original 2024 motion-picture songs album, not score or sing-along"

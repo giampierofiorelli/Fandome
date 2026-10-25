@@ -1,0 +1,44 @@
+album_id,genre,scope,source_url,evidence,evidence_strength
+ariana-yourstruly,rnb,whole album,https://www.allmusic.com/album/yours-truly-mw0002565183|https://pitchfork.com/reviews/albums/18591-ariana-grande-yours-truly/,Retro R&B framework and vocals,high
+ariana-yourstruly,contemporaryrnb,whole album,https://www.allmusic.com/album/yours-truly-mw0002565183,AllMusic explicitly names Contemporary R&B,high
+ariana-yourstruly,pop,whole album,https://pitchfork.com/reviews/albums/18591-ariana-grande-yours-truly/|https://www.allmusic.com/album/yours-truly-mw0002565183,Pitchfork Pop/R&B album; pop songwriting,high
+ariana-yourstruly,hiphopsoul,substantial,https://pitchfork.com/reviews/albums/18591-ariana-grande-yours-truly/,Explicit 1990s hip-hop soul vibe,high
+ariana-yourstruly,dancepop,substantial,https://www.allmusic.com/album/yours-truly-mw0002565183,AllMusic album style Dance-Pop,high
+ariana-yourstruly,doowop,some tracks,https://pitchfork.com/reviews/albums/18591-ariana-grande-yours-truly/,1950s doo-wop vocals and forms especially Honeymoon Avenue,high
+ariana-yourstruly,soul,texture,https://www.allmusic.com/album/yours-truly-mw0002565183,Soulful singing and early nineties R&B character,medium
+ariana-yourstruly,jazz,some tracks,https://www.allmusic.com/album/yours-truly-mw0002565183,Jazz-inflected Almost Is Never Enough; not overall jazz album,high
+ariana-yourstruly,edm,some tracks,https://pitchfork.com/reviews/albums/18591-ariana-grande-yours-truly/,Closing Better Left Unsaid classified as EDM concession,high
+ariana-myeverything,pop,whole album,https://www.allmusic.com/album/my-everything-mw0002698499|https://pitchfork.com/reviews/albums/19765-ariana-grande-my-everything/,Pop-oriented crossover singles,high
+ariana-myeverything,dancepop,whole album,https://www.allmusic.com/album/my-everything-mw0002698499|https://pitchfork.com/reviews/albums/19765-ariana-grande-my-everything/,AllMusic Dance-Pop and Pitchfork hit orientation,high
+ariana-myeverything,contemporaryrnb,whole album,https://www.allmusic.com/album/my-everything-mw0002698499,AllMusic Contemporary R&B classification,high
+ariana-myeverything,rnb,substantial,https://www.slantmagazine.com/music/ariana-grande-my-everything/|https://pitchfork.com/reviews/albums/19765-ariana-grande-my-everything/,R&B production and love-song material coexist with EDM singles,high
+ariana-myeverything,electropop,substantial,https://www.slantmagazine.com/music/ariana-grande-my-everything/,Slant explicitly calls out electro-pop production,high
+ariana-myeverything,electronic,substantial,https://www.theguardian.com/music/2014/aug/21/ariana-grande-my-everything-review,Synth-based programmed tracks alongside R&B ballads,medium
+ariana-myeverything,edm,substantial,https://pitchfork.com/reviews/albums/19765-ariana-grande-my-everything/|https://www.theguardian.com/music/2014/aug/24/my-everything-ariana-grande-review-slick-expensive-album,Break Free as a prominent EDM song and EDM-driven turn,high
+ariana-myeverything,hiphopsoul,some tracks,https://www.slantmagazine.com/music/ariana-grande-my-everything/,Be My Baby explicitly described as hip-hop soul,high
+ariana-myeverything,hinrg,some tracks,https://www.theguardian.com/music/2014/aug/24/my-everything-ariana-grande-review-slick-expensive-album,Break Free explicitly framed as hi-NRG,high
+ariana-dangerouswoman,pop,whole album,https://pitchfork.com/reviews/albums/21892-dangerous-woman/|https://www.allmusic.com/album/dangerous-woman-deluxe-edition-mw0002932301,General pop album classification,high
+ariana-dangerouswoman,dancepop,whole album,https://www.allmusic.com/album/dangerous-woman-deluxe-edition-mw0002932301|https://pitchfork.com/reviews/albums/21892-dangerous-woman/,AllMusic Dance-Pop and prominent club-focused tracks,high
+ariana-dangerouswoman,rnb,whole album,https://www.allmusic.com/album/dangerous-woman-deluxe-edition-mw0002932301,AllMusic describes central modern R&B production,high
+ariana-dangerouswoman,contemporaryrnb,substantial,https://www.allmusic.com/album/dangerous-woman-deluxe-edition-mw0002932301,Contemporary R&B on Tommy Brown productions,medium
+ariana-dangerouswoman,electro,some tracks,https://www.theguardian.com/music/2016/may/22/ariana-grande-dangerous-woman-review,Guardian explicitly describes electro on Into You; do not substitute electropop,high
+ariana-dangerouswoman,disco,some tracks,https://www.theguardian.com/music/2016/may/22/ariana-grande-dangerous-woman-review|https://www.slantmagazine.com/music/ariana-grande-dangerous-woman/,Greedy explicitly disco or disco-funk,high
+ariana-dangerouswoman,house,some tracks,https://www.theguardian.com/music/2016/may/22/ariana-grande-dangerous-woman-review|https://www.slantmagazine.com/music/ariana-grande-dangerous-woman/,Be Alright styled as nineties house,high
+ariana-dangerouswoman,deephouse,some tracks,https://www.slantmagazine.com/music/ariana-grande-dangerous-woman/,Slant expressly calls Be Alright deep house,high
+ariana-dangerouswoman,funk,some tracks,https://www.slantmagazine.com/music/ariana-grande-dangerous-woman/,Slant specifically labels Greedy disco-funk,high
+ariana-dangerouswoman,doowop,some tracks,https://www.slantmagazine.com/music/ariana-grande-dangerous-woman/,Moonlight characterized as doo-wop,high
+ariana-dangerouswoman,jazz,texture,https://www.theguardian.com/music/2016/may/22/ariana-grande-dangerous-woman-review,Moonlight jazzy refrain not album-wide jazz,medium
+ariana-dangerouswoman,hiphop,some tracks,https://www.allmusic.com/album/dangerous-woman-deluxe-edition-mw0002932301,Rap-featuring R&B cuts and hip-hop production touches,medium
+ariana-sweetener,pop,whole album,https://pitchfork.com/reviews/albums/ariana-grande-sweetener/|https://www.nme.com/reviews/ariana-grande-sweetener-review-2367159,Album-wide pop identity,high
+ariana-sweetener,rnb,whole album,https://pitchfork.com/reviews/albums/ariana-grande-sweetener/|https://www.allmusic.com/album/sweetener-mw0003187762,R&B styling and vocals prominent across album,high
+ariana-sweetener,contemporaryrnb,whole album,https://www.allmusic.com/album/sweetener-mw0003187762,Contemporary R&B production and stylistic core,medium
+ariana-sweetener,dancepop,substantial,https://www.allmusic.com/album/sweetener-mw0003187762|https://pitchfork.com/reviews/albums/ariana-grande-sweetener/,Some programmed dance-pop and club beat sections,medium
+ariana-sweetener,hiphop,substantial,https://www.nme.com/reviews/ariana-grande-sweetener-review-2367159|https://pitchfork.com/reviews/albums/ariana-grande-sweetener/,Explicit hip-hop beats and vocal phrasing,high
+ariana-sweetener,trap,substantial,https://pitchfork.com/reviews/albums/ariana-grande-sweetener/|https://www.nme.com/reviews/ariana-grande-sweetener-review-2367159,Trap-inflected tracks and rhythmic breakdowns,high
+ariana-sweetener,funk,substantial,https://pitchfork.com/reviews/albums/ariana-grande-sweetener/,Pharrell funk-light arrangements per Pitchfork,high
+ariana-sweetener,cloudpop,some tracks,https://www.nme.com/reviews/ariana-grande-sweetener-review-2367159,NME explicitly says cloud-pop textures,high
+ariana-sweetener,gospel,texture,https://www.allmusic.com/album/sweetener-mw0003187762|https://pitchfork.com/reviews/albums/ariana-grande-sweetener/,Get Well Soon gospel phrases and R.E.M gospel-style harmonies,high
+ariana-sweetener,disco,some tracks,https://www.allmusic.com/album/sweetener-mw0003187762,AllMusic mentions revived disco touches,medium
+ariana-sweetener,edm,some tracks,https://www.allmusic.com/album/sweetener-mw0003187762,"Goodnight n Go EDM sheen, not album-wide",high
+ariana-sweetener,reggae,texture,https://www.slantmagazine.com/music/ariana-grande-sweetener/,God Is a Woman reggae-inflected rhythm only,high
+ariana-sweetener,doowop,texture,https://pitchfork.com/reviews/albums/ariana-grande-sweetener/,"R.E.M has doo-wop vocal runs, not whole-album doo-wop",high

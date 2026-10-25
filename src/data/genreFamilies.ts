@@ -48,4 +48,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   industrialdance: ['industrial', 'dance'], electrogrunge: ['electronic', 'grunge'], techstep: ['drumandbass'], boogie: ['funk', 'disco'], aor: ['rock', 'softrock'], powerballad: ['rock', 'pop'], hairmetal: ['metal', 'rock'],
   jazzpop: ['jazz', 'pop'], adultcontemporary: ['pop'], rockopera: ['rock', 'showtunes'],
   folktronica: ['folk', 'electronic'], chamberpop: ['pop'],
+  baltimoreclub: ['house', 'breakbeat'], cloudpop: ['pop', 'electronic'], doowop: ['rnb', 'pop'], musicaltheatre: ['soundtrack', 'showtunes'], neopsychedelia: ['psychedelicrock', 'indie'],
 }

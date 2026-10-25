@@ -364,8 +364,9 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 export const DISCOVERY = 0.05
 // Most that documented links can add to a pair's score.
 const LINK_CAP = 0.3
-// Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead).
-const MIN_GENRE = 0.15
+// Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead),
+// set between the highest bad (0.151) and the lowest good (0.188) owner-judged pair; re-check as judgments grow.
+const MIN_GENRE = 0.17
 // Minimum score for an album suggestion, calibrated on the owner's judged pairs (docs/similarity-judgments.csv).
 const MIN_SCORE = 0.3
 // What you rated low or said is not for you pushes similar things down (up to this much).

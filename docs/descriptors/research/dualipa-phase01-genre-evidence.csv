@@ -1,0 +1,48 @@
+album_id,genre,scope,source_keys,evidence,strength
+dualipa-dualipa,pop,whole album,D_AM|D_NME|D_AP,Explicit mainstream pop release,high
+dualipa-dualipa,dancepop,substantial,D_AM|D_NME,AllMusic dance-pop tag and multiple driving singles,high
+dualipa-dualipa,electropop,substantial,D_AP|D_GU,Apple names electropop on Lost in Your Light and electronic vocal pop,high
+dualipa-dualipa,synthpop,substantial,D_GU,Guardian describes synth-pop signature with acoustic exceptions,high
+dualipa-dualipa,rnb,substantial,D_AP|D_GU,Soulful Miguel collaboration and R&B crossover writing,high
+dualipa-dualipa,electronic,substantial,D_GU|D_NME,Programmed beats and layered synths on a majority of uptempo songs,high
+dualipa-dualipa,leftfieldpop,album taxonomy,D_AM,Explicit AllMusic Left-Field Pop style label,high
+dualipa-dualipa,tropicalhouse,some tracks,D_GU|D_AP,Hotter Than Hell and New Rules tropical-house inflections,medium
+dualipa-dualipa,edm,some tracks,D_GU,Guardian explicitly identifies EDM influences on two major songs,medium
+dualipa-dualipa,dancehall,some tracks,D_NME,NME singles out dancehall influence on Hotter Than Hell,medium
+dualipa-dualipa,soul,vocal texture,D_AP|D_GU,Soul-inflected husky phrasing; not a uniform soul album,medium
+dualipa-futurenostalgia,pop,whole album,F_PF|F_GU|F_AM,Sophisticated concise pop songwriting over club beats,high
+dualipa-futurenostalgia,dancepop,whole album,F_AM|F_GU,1980s-style melodic dance-pop structures throughout,high
+dualipa-futurenostalgia,disco,whole album,F_PF|F_GU|F_AM,1970s disco grooves central to album conception,high
+dualipa-futurenostalgia,popfunk,whole album,F_PF,Pitchfork explicitly categorizes album as pop-funk,high
+dualipa-futurenostalgia,funk,substantial,F_PF|F_GU,Syncopated bass guitar and sharp funk rhythmic accents,high
+dualipa-futurenostalgia,electronic,substantial,F_MB|F_Q,Synth programming and drum machines across many tracks,high
+dualipa-futurenostalgia,synthpop,substantial,F_OB|F_IN,1980s synth-pop reference with electronic hooks,high
+dualipa-futurenostalgia,dance,whole album,F_OB|F_AM,Clubbing tempo and grooves dominate the eleven tracks,high
+dualipa-futurenostalgia,electropop,era/style reference,F_GQ,2000s electropop cited by singer as a formative album sound,medium
+dualipa-futurenostalgia,house,some tracks,F_AM,House/1990s club accents amid a broader disco-pop album,medium
+dualipa-futurenostalgia,powerpop,era/texture reference,F_GE,Guardian retrospectively identifies 1980s power-pop hues,medium
+dualipa-clubfuturenostalgia,electronic,whole album,C_PF|C_NME|C_NY,Electronic DJ reconstruction structures the continuous mix,high
+dualipa-clubfuturenostalgia,house,whole album,C_NME|C_PF|C_NY,House production and heavyweight house remixers anchor the project,high
+dualipa-clubfuturenostalgia,disco,substantial,C_NME|C_NY,Disco-derived drums bass and samples recur,high
+dualipa-clubfuturenostalgia,pianohouse,some tracks,C_PF,Pitchfork explicitly identifies piano-house arrangements,medium
+dualipa-clubfuturenostalgia,deephouse,some tracks,C_PF|C_TQ,Mr Fingers and Moodymann deep-house style passages,medium
+dualipa-clubfuturenostalgia,baltimoreclub,some tracks,C_PF,Pitchfork expressly names Baltimore club on the mixed remix record,medium
+dualipa-clubfuturenostalgia,dance,whole album,C_NME|C_NY,Continuous dance-floor set is the form and function,high
+dualipa-clubfuturenostalgia,pop,underlying songs,C_GR|C_PF,Pop toplines survive the newly produced mixes,high
+dualipa-clubfuturenostalgia,soul,sample/texture,C_NME|C_GR|C_NYI,1980s soul recordings and samples folded into contemporary house,medium
+dualipa-clubfuturenostalgia,funk,some tracks,C_NME|C_PF,Funk-driven Horse Meat Disco and Moodymann remixes,medium
+dualipa-clubfuturenostalgia,techno,scene/context,C_TQ|C_NME,Selected contributors from techno and house circuit; not uniformly techno,medium
+dualipa-clubfuturenostalgia,trap,some tracks,C_NME,Yaeji treatment described with trap-house accents,medium
+dualipa-clubfuturenostalgia,rnb,review taxonomy,C_PF,Pitchfork's Pop/R&B editorial category plus intact vocal songs,high
+dualipa-clubfuturenostalgia,electro,texture,C_NME|C_PF,Electro/funk synthesis on selected remixes,medium
+dualipa-radicaloptimism,pop,whole album,R_PF|R_SL|R_AM,"Contemporary compact pop songs, not a Britpop album",high
+dualipa-radicaloptimism,dancepop,whole album,R_AM|R_OB,Dance-pop pulse persists from Future Nostalgia,high
+dualipa-radicaloptimism,electronic,substantial,R_SL|R_Q,Synthetic bass and synth/drum programming coexist with guitars,high
+dualipa-radicaloptimism,disco,some tracks,R_SL|R_OB,Disco opener and retro club song structures,medium
+dualipa-radicaloptimism,neopsychedelia,"album texture, disputed",R_SL|R_GU|R_PF,Slant names neo-psychedelia; Guardian and Pitchfork contest its audible dominance,medium
+dualipa-radicaloptimism,funk,substantial,R_AM|R_SL,Kevin Parker bass groove and syncopated pop-funk accents,high
+dualipa-radicaloptimism,europop,some tracks,R_PF,Explicit Pitchfork Euro-pop description of Illusion,medium
+dualipa-radicaloptimism,house,some tracks,R_PF,Filter-house sound referenced by Pitchfork on Illusion,medium
+dualipa-radicaloptimism,frenchtouch,some tracks/style comparison,R_PF,French-touch production analogy in Pitchfork's discussion of Illusion,medium
+dualipa-radicaloptimism,latin,some tracks,R_SL,Slant describes Latin-flavored Maria,medium
+dualipa-radicaloptimism,electronica,some tracks,R_AM,Electronica-tinged Y2K texture on Happy for You,medium
