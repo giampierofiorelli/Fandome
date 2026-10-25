@@ -1,0 +1,4 @@
+album_id,title,year,type,existing_in_catalog,action,catalog_evidence,cobilled_credit,cobilled_with,notes
+aguilera-backtobasics,Back to Basics,2006,studio,yes,KEEP EXISTING ID,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,,,Existing 2006 studio album
+aguilera-bionic,Bionic,2010,studio,yes,KEEP EXISTING ID,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,,,"Existing 2010 standard album, not deluxe"
+aguilera-burlesqueoriginalmotionpicturesoundtrack,Burlesque (Original Motion Picture Soundtrack),2010,soundtrack,no,ADD CATALOG ALBUM,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,Christina Aguilera & Cher,cher,"Original soundtrack, exact Apple Music title; co-bill with Cher"

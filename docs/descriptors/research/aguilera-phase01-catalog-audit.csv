@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,in_artist_catalog,existing_descriptor_csv,action,reason
+aguilera-christinaaguilera,aguilera,Christina Aguilera,1999,studio,yes,no,use_existing_catalog_id,Listed in descriptors-branch catalog.ts artist entry
+aguilera-mireflejo,aguilera,Mi Reflejo,2000,studio,no,no,add_to_catalog,Studio album absent from the six-title catalog.ts artist entry
+aguilera-mykindofchristmas,aguilera,My Kind of Christmas,2000,studio,no,no,add_to_catalog,Studio album absent from the six-title catalog.ts artist entry
+aguilera-stripped,aguilera,Stripped,2002,studio,yes,no,use_existing_catalog_id,Listed in descriptors-branch catalog.ts artist entry

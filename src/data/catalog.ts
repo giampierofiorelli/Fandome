@@ -139,7 +139,7 @@ const ROWS: Row[] = [
   ['boneym', 'Boney M.', '#d94a8f', 'Rasputin, Rivers of Babylon and more', [['Take the Heat off Me', 1976], ['Love for Sale', 1977], ['Nightflight to Venus', 1978], ['Oceans of Fantasy', 1979]]],
   ['eno', 'Brian Eno', '#7a8f9a', 'Ambient pioneer, quiet genius', [['Here Come the Warm Jets', 1974], ['Another Green World', 1975], ['Music for Airports', 1978], ['Apollo: Atmospheres and Soundtracks', 1983]]],
   ['chic', 'Chic', '#e0b54a', 'Le freak, c’est chic', [['Chic', 1977], ['C’est Chic', 1978], ['Risqué', 1979], ['It’s About Time', 2018]]],
-  ['aguilera', 'Christina Aguilera', '#c94a6f', 'Genie, Stripped and that voice', [['Christina Aguilera', 1999], ['Stripped', 2002], ['Back to Basics', 2006], ['Bionic', 2010], ['Liberation', 2018], ['Aguilera', 2022]]],
+  ['aguilera', 'Christina Aguilera', '#c94a6f', 'Genie, Stripped and that voice', [['Christina Aguilera', 1999], ['Mi Reflejo', 2000], ['My Kind of Christmas', 2000], ['Stripped', 2002], ['Back to Basics', 2006], ['Bionic', 2010], ['Burlesque (Original Motion Picture Soundtrack)', 2010], ['Liberation', 2018], ['Aguilera', 2022]]],
   ['cliffrichard', 'Cliff Richard', '#5a8fc9', 'Seven decades of hits', [['Cliff', 1959], ['21 Today', 1961], ['I’m Nearly Famous', 1976], ['Wired for Sound', 1981]]],
   ['cranberries', 'The Cranberries', '#6f8f5a', 'Dolores’ voice, still echoing', [['Everybody Else Is Doing It, So Why Can’t We?', 1993], ['No Need to Argue', 1994], ['To the Faithful Departed', 1996], ['Bury the Hatchet', 1999], ['In the End', 2019]]],
   ['cyndi', 'Cyndi Lauper', '#e05fb5', 'Girls just want to have fun', [['She’s So Unusual', 1983], ['True Colors', 1986], ['A Night to Remember', 1989], ['Hat Full of Stars', 1993]]],
