@@ -477,6 +477,7 @@ const ROWS: Row[] = [
   ['enya', 'Enya', '#7fa9c9', 'Orinoco Flow, layered voices from Donegal', [['Enya', 1987], ['Watermark', 1988], ['Shepherd Moons', 1991], ['The Memory of Trees', 1995]]],
   ['prodigy', 'The Prodigy', '#d94a3f', 'Firestarters of the rave generation', [['Experience', 1992], ['Music for the Jilted Generation', 1994], ['The Fat of the Land', 1997], ['Prodigy Present: The Dirtchamber Sessions Volume One', 1999]]],
   ['enigma', 'Enigma', '#8a6fb5', 'Gregorian chant meets the dance floor', [['MCMXC a.D.', 1990], ['The Cross of Changes', 1993], ['Le Roi Est Mort, Vive Le Roi!', 1996], ['The Screen Behind the Mirror', 2000]]],
+  ['chemicalbrothers', 'The Chemical Brothers', '#e0a03f', 'Block rockin’ beats, psychedelic dance floors', [['Fourteenth Century Sky', 1994], ['Exit Planet Dust', 1995], ['Dig Your Own Hole', 1997], ['Surrender', 1999]]],
 ]
 
 const slug = (s: string) =>

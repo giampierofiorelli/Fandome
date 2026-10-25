@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,in_catalog,action,notes
+chemicalbrothers-fourteenthcenturysky,The Chemical Brothers,Fourteenth Century Sky,1994,ep,no,add_artist_then_album,New artist not in checked descriptors-branch catalog.ts or seed.ts; no existing descriptor CSV
+chemicalbrothers-exitplanetdust,The Chemical Brothers,Exit Planet Dust,1995,studio,no,add_artist_then_album,New artist not in checked descriptors-branch catalog.ts or seed.ts; no existing descriptor CSV
+chemicalbrothers-digyourownhole,The Chemical Brothers,Dig Your Own Hole,1997,studio,no,add_artist_then_album,New artist not in checked descriptors-branch catalog.ts or seed.ts; no existing descriptor CSV
+chemicalbrothers-surrender,The Chemical Brothers,Surrender,1999,studio,no,add_artist_then_album,New artist not in checked descriptors-branch catalog.ts or seed.ts; no existing descriptor CSV
