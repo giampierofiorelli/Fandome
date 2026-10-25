@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+carra-raffaella1978,Raffaella,1978,studio,no,yes,Title duplicates original 1971 entry: suffix ID with year; add the album to catalog AND seed before validator (otherwise its new-album slug check rejects the disambiguator).
+carra-applauso,Applauso,1979,studio,no,yes,Not present in catalogue; add title/year and the exact proposed ID.
+carra-mispendotutto,Mi spendo tutto,1980,studio,no,yes,Not present in catalogue; add title/year and the exact proposed ID.
+carra-raffaellacarra1981,Raffaella Carrà,1981,studio,no,yes,Title duplicates original 1971 entry: suffix ID with year; add the album to catalog AND seed before validator (otherwise its new-album slug check rejects the disambiguator).
