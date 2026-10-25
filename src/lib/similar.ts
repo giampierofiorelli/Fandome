@@ -439,6 +439,10 @@ export function similarAlbums(
     const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
     reserved.push({ ...s, reasons: s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2) })
   }
+  // Discovery (owner's rule): one place goes to the closest album from a local scene in another country,
+  // if one passes the same cut and genre test. Same rule for every album; no slot if nothing qualifies.
+  const foreignLocal = scored.find((s) => s.newCountry && s.fits && !reserved.some((r) => r.albumId === s.albumId))
+  if (foreignLocal && !reserved.some((r) => r.newCountry) && reserved.length < limit) reserved.push(foreignLocal)
   // Otherwise only albums that really share genres, or have a documented link.
   const rest = scored.filter((s) => s.fits && !reserved.some((r) => r.albumId === s.albumId))
   const sameArtist = (it: { albumId: string }, out: { albumId: string }[]) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length
