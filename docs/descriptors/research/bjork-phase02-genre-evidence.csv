@@ -1,0 +1,53 @@
+album_id,genre,source,url,scope,evidence_strength,notes
+bjork-telegram,electronic,Björk Official Store — Telegram,https://shop.bjork.com/products/bjork-telegram,whole album,high,Official remix release; electronic works dominate
+bjork-telegram,electronica,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,whole album,high,AllMusic genre classification
+bjork-telegram,experimental,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,whole album,high,AllMusic experimental label; variety of radical recastings
+bjork-telegram,alternativedance,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,whole album,high,AllMusic alternative dance style
+bjork-telegram,techno,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,some tracks,high,Critic treats remixes as entry point into techno; not applied to string quartet
+bjork-telegram,drumandbass,Chartsurfer — Telegram original editions,https://www.chartsurfer.de/artist/bjoerk/telegram-album_fhpcnn.html,some tracks,medium,Dillinja Cover Me; 1996 UK pressing genre
+bjork-telegram,idm,Chartsurfer — Telegram original editions,https://www.chartsurfer.de/artist/bjoerk/telegram-album_fhpcnn.html,some tracks,medium,LFO and Mika Vainio industrially abstract mixes; US promo style
+bjork-telegram,triphop,Chartsurfer — Telegram original editions,https://www.chartsurfer.de/artist/bjoerk/telegram-album_fhpcnn.html,some tracks,medium,US 1996 promotional CD style; not whole UK album
+bjork-telegram,industrial,Chartsurfer — Telegram original editions,https://www.chartsurfer.de/artist/bjoerk/telegram-album_fhpcnn.html,some tracks,medium,US promo style; abrasive remixes
+bjork-telegram,electro,Chartsurfer — Telegram original editions,https://www.chartsurfer.de/artist/bjoerk/telegram-album_fhpcnn.html,some tracks,medium,Japanese/US promotional pressings style
+bjork-telegram,experimentalrock,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,texture,high,AllMusic style tag; minor relevance
+bjork-telegram,alternativerock,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,texture,high,AllMusic alternative pop/rock umbrella; minimal rock instrumentation
+bjork-telegram,pop,AllMusic / Stephen Thomas Erlewine — Telegram,https://www.allmusic.com/album/mw0000087069,whole album,high,Original songwriting remains alternative pop
+bjork-homogenic,artpop,Björk Bandcamp — Homogenic,https://bjork.bandcamp.com/album/homogenic,whole album,high,Original artist-label tags include art pop
+bjork-homogenic,electronic,Björk Bandcamp — Homogenic,https://bjork.bandcamp.com/album/homogenic,whole album,high,Original official label electronic
+bjork-homogenic,experimental,Björk Bandcamp — Homogenic,https://bjork.bandcamp.com/album/homogenic,whole album,high,Official label experimental and experimental electronic
+bjork-homogenic,electronica,AllMusic / Heather Phares — Homogenic,https://www.allmusic.com/album/homogenic-mw0000026812,whole album,high,AllMusic electronic style label
+bjork-homogenic,triphop,AllMusic / Heather Phares — Homogenic,https://www.allmusic.com/album/homogenic-mw0000026812,some tracks,high,AllMusic style label; slow atmospheric breaks
+bjork-homogenic,techno,"Björk interviewed for Musician, December 1997",https://www.bjork.fr/Musician,some tracks,high,Artist deliberately conceived Icelandic techno beats
+bjork-homogenic,idm,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,Aphex Twin-associated rhythm designs in critic review
+bjork-homogenic,avantgarde,Björk Bandcamp — Homogenic,https://bjork.bandcamp.com/album/homogenic,whole album,high,Artist-label avant-garde tag
+bjork-homogenic,neoclassical,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,Pitchfork neoclassical passages in octet
+bjork-homogenic,orchestralpop,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,Pop songwriting with expansive string arrangements; editorial broader mapping
+bjork-homogenic,breakbeat,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,Pitchfork names filtered breakbeats
+bjork-homogenic,ambient,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,Ambient textures underbeat; album not primarily ambient
+bjork-homogenic,pop,Pitchfork / Philip Sherburne — Homogenic,https://pitchfork.com/reviews/albums/22835-homogenic/,whole album,high,"Formally structured vocal songs, artist remains pop songwriter"
+bjork-selmasongs,soundtrack,Björk Official Store — Selmasongs,https://shop.bjork.com/products/bjork-selmasongs,whole album,high,Official title and film music
+bjork-selmasongs,musicaltheatre,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,whole album,high,Film musical traditions are constitutive
+bjork-selmasongs,showtunes,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,some tracks,high,Theatre-like numbers and classic musical fantasy in Selma’s scenes
+bjork-selmasongs,artpop,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,whole album,high,Experimental Björk vocal songcraft in a narrative musical
+bjork-selmasongs,electronic,Björk Official Store — Selmasongs,https://shop.bjork.com/products/bjork-selmasongs,whole album,high,Factory and train rhythmic designs and electronic beat programming
+bjork-selmasongs,electronica,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,some tracks,high,AllMusic electronica style label
+bjork-selmasongs,experimental,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,some tracks,high,AllMusic experimental genre and unusual sound as instruments
+bjork-selmasongs,triphop,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,some tracks,high,AllMusic trip-hop label; intermittent programmed beats
+bjork-selmasongs,orchestralpop,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,some tracks,high,Pop songs built around sweeping orchestral scoring
+bjork-selmasongs,industrial,Pitchfork — Selmasongs review,https://pitchfork.com/reviews/albums/729-selmasongs/,some tracks,medium,Factory machine percussion of Cvalda and New World
+bjork-selmasongs,pop,AllMusic / Heather Phares — Selmasongs,https://www.allmusic.com/album/mw0000098204,whole album,high,Pop melodies remain in soundtrack songs
+bjork-vespertine,artpop,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,whole album,high,"Art-pop songwriting, layered acoustic-electronic treatment"
+bjork-vespertine,electronica,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,whole album,high,AllMusic electronica style classification
+bjork-vespertine,electronic,Pitchfork / Ryan Schreiber — Vespertine,https://pitchfork.com/reviews/albums/727-vespertine/,whole album,high,Pitchfork genre electronic
+bjork-vespertine,experimental,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,whole album,high,AllMusic experimental style; novel microbeat construction
+bjork-vespertine,ambientpop,Sputnikmusic — Vespertine review by JohnnyoftheWell,https://www.sputnikmusic.com/review/83677/Bjork-Vespertine/,whole album,medium,Sputnikmusic names ambient pop for stylistic shift
+bjork-vespertine,folktronica,Album of the Year — 2001 art-pop genre listings,https://www.albumoftheyear.org/genre/141-art-pop/2001/rolling-stone/,some tracks,medium,Secondary album genre list identifies folktronica
+bjork-vespertine,chamberpop,Sputnikmusic — Vespertine review by JohnnyoftheWell,https://www.sputnikmusic.com/review/83677/Bjork-Vespertine/,some tracks,medium,Sputnikmusic calls It’s Not Up to You chamber pop
+bjork-vespertine,triphop,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,some tracks,high,AllMusic trip-hop style; restricted role
+bjork-vespertine,idm,Pitchfork / Ryan Schreiber — Vespertine,https://pitchfork.com/reviews/albums/727-vespertine/,texture,high,Textural role of IDM acknowledged in criticism
+bjork-vespertine,glitchpop,Album of the Year — 2001 art-pop genre listings,https://www.albumoftheyear.org/genre/141-art-pop/2001/rolling-stone/,some tracks,medium,Secondary genre list explicitly names glitch pop
+bjork-vespertine,microsound,Album of the Year — 2001 art-pop genre listings,https://www.albumoftheyear.org/genre/141-art-pop/2001/rolling-stone/,whole album,medium,Named album genre in secondary index; corroborated by peer-reviewed microbeats analysis
+bjork-vespertine,orchestralpop,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,some tracks,high,Orchestral choral songs with pop songwriting; descriptive subtype
+bjork-vespertine,downtempo,Album of the Year — 2001 art-pop genre listings,https://www.albumoftheyear.org/genre/141-art-pop/2001/rolling-stone/,whole album,medium,Secondary album genre listing identifies downtempo
+bjork-vespertine,ambient,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,some tracks,high,Ambience dominates several low-rhythm tracks
+bjork-vespertine,pop,AllMusic / Heather Phares — Vespertine,https://www.allmusic.com/album/mw0000586936,whole album,high,Pop song form remains

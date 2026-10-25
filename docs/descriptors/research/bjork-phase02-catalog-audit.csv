@@ -1,0 +1,5 @@
+album_id,title,year,type,catalogue_status,action,credit,special_note
+bjork-telegram,Telegram,1996,remix,add,Add to catalog.ts before validation,Björk,"1996 is UK original; US AllMusic is January 1997; remix, not new studio material"
+bjork-homogenic,Homogenic,1997,studio,existing,Keep existing catalogue ID,Björk,Catalog already lists Homogenic 1997
+bjork-selmasongs,Selmasongs,2000,soundtrack,add,Add to catalog.ts before validation,Björk,"Seven-track music-for-film record, avoid merging with movie audio or later bonus versions"
+bjork-vespertine,Vespertine,2001,studio,existing,Keep existing catalogue ID,Björk,Catalog already lists Vespertine 2001
