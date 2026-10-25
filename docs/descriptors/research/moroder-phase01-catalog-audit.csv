@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+moroder-thatsbubblegumthatsgiorgio,That's Bubble Gum - That's Giorgio,1969,studio,missing,,Add album in src/data/catalog.ts; import phase01 descriptor row,Original LP only; no later bonus tracks; verify title punctuation as indicated in import notes
+moroder-giorgio,Giorgio,1970,studio,missing,,Add album in src/data/catalog.ts; import phase01 descriptor row,1970 Giorgio is chiefly a regional revised reissue of debut
+moroder-sonofmyfather,Son of My Father,1972,studio,missing,,Add album in src/data/catalog.ts; import phase01 descriptor row,Original LP only; no later bonus tracks; verify title punctuation as indicated in import notes
+moroder-giorgiosmusic,Giorgio's Music,1973,studio,missing,,Add album in src/data/catalog.ts; import phase01 descriptor row,Original LP only; no later bonus tracks; verify title punctuation as indicated in import notes

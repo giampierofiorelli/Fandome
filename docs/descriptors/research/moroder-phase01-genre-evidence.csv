@@ -1,0 +1,25 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-thatsbubblegumthatsgiorgio,bubblegumpop,dominant,B69-NPR|B69-MBASE|B69-REP,Critic identifies the album as bubblegum; original LP named for it; includes Yummy Yummy Yummy and Looky Looky.,high
+moroder-thatsbubblegumthatsgiorgio,pop,dominant,B69-MBASE|B69-OUT,Official-era debut described as pop; archival LP annotated Pop.,high
+moroder-thatsbubblegumthatsgiorgio,poprock,significant tracks,B69-MBASE|B69-HERB,Both record databases label the original album pop rock.,medium
+moroder-thatsbubblegumthatsgiorgio,rock,some covers,B69-MBASE|B69-HERB,Original credits include covers of Bad Moon Rising and Proud Mary; rock style indexed for LP.,medium
+moroder-thatsbubblegumthatsgiorgio,garagerock,some tracks / secondary metadata,B69-MBASE,Record entry explicitly tags garage rock; do not generalise to dominant sound.,low
+moroder-thatsbubblegumthatsgiorgio,schlager,period context / some original material,B69-SPIN|B69-REP,Schlager references early German singles and surrounding milieu; weaker whole-album classification.,medium
+moroder-giorgio,bubblegumpop,dominant carryover repertoire,G70-WIKI|G70-MBASE|G70-SPIN,1970 LP recycles most 1969 bubblegum recordings; not evidence of a newly recorded 1970 production style.,medium
+moroder-giorgio,pop,dominant carryover repertoire,G70-WIKI|G70-MBASE,Early European pop repertoire dominates the ten tracks on the documented reconfigured LP.,medium
+moroder-giorgio,poprock,reused material,G70-WIKI|G70-MBASE,Shared recordings have documented 1969 pop-rock classification.,medium
+moroder-giorgio,rock,several covers / broader umbrella,G70-WIKI|G70-MBASE,Bad Moon Rising and related reused material; rock elements not the whole recording style.,medium
+moroder-giorgio,psychedelicrock,album-level metadata / chiefly newer material,G70-WIKI,The 1970 album entry uses psychedelic rock; independent specialist confirmation sparse.,low
+moroder-giorgio,schlager,historical scene,G70-SPIN|G70-WIKI,Bubblegum/Schlager production context; not evidence every 1970 cut is German-language schlager.,low
+moroder-sonofmyfather,pop,dominant,S72-BERT|S72-WIKI|S72-SPIN,Archive classifies Pop/Rock; writer describes catchy melodic commercial arrangements.,high
+moroder-sonofmyfather,rock,significant,S72-BERT|S72-LP|S72-WIKI,"Live drums, electric guitars and rock-band performances survive alongside synth passages.",high
+moroder-sonofmyfather,bubblegumpop,important strain,S72-AOTY|S72-NPR|S72-SPIN,Genre aggregator names bubblegum pop; contemporary analysis describes continuity of his sugary early pop.,medium
+moroder-sonofmyfather,glamrock,some tracks / database classification,S72-AOTY,Album genre tags call out glam rock; no signed full-album critic verification.,low
+moroder-sonofmyfather,psychedelicpop,some tracks / database classification,S72-AOTY|S72-NPR,Psychedelic pop explicitly tagged; title recording has prominent phasing.,medium
+moroder-sonofmyfather,psychedelicrock,significant / catalog genre,S72-WIKI|S72-NPR,Discography classifies psychedelic rock; title-track phasing is better documented than whole-album dominance.,medium
+moroder-sonofmyfather,sunshinepop,some tracks / database classification,S72-AOTY,Sunshine pop listed among album genre tags; weaker independent confirmation.,low
+moroder-sonofmyfather,protodisco,historical stylistic designation,S72-SPIN|S72-TIME,SPIN explicitly calls 1972 album proto-disco; Moroder says title cut had strong rhythm but not disco beat.,medium
+moroder-giorgiosmusic,schlager,dominant,M73-WIKI|M73-CHART|M73-REP,The 1973 German-language LP is consistently situated in Schlager; reissue label explains regional pop idiom.,medium
+moroder-giorgiosmusic,pop,dominant,M73-RECORD|M73-AOTY,Original LP vendor tags pop and genre service pop rock.,medium
+moroder-giorgiosmusic,poprock,significant / metadata,M73-AOTY,Album of the Year lists pop rock; no signed album review to assess how dominant.,low
+moroder-giorgiosmusic,rock,broader form of pop rock,M73-AOTY,Broader rock family follows the source genre pop rock; do not count as rock-dominant.,low
