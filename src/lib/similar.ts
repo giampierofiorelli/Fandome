@@ -572,7 +572,7 @@ export function similarArtists(
   candidates: string[],
   opts: { limit?: number; countryOf?: (artistId: string) => string | undefined; hide?: string[]; avoid?: string[] } = {},
 ): SimilarArtist[] {
-  const { limit = 4, hide = [] } = opts
+  const { limit = 10, hide = [] } = opts
   const me = artistProfile(artistId, albumIdsOf(artistId))
   if (!me) return []
   const myAlbums = profilesOf(albumIdsOf(artistId))
