@@ -1,0 +1,24 @@
+album_id,genre,source,scope,evidence_strength,reason
+carra-raffaellacarra82,pop,https://shop.warnermusic.it/products/raffaella-carr-82-cd,whole album,high,Record label files the original 1982 album under Pop; both editions contain varied pop songs
+carra-raffaellacarra82,italodisco,https://www.rockol.it/news-723527/raffaella-carra-morta-canzoni-famose-testi-curiosita-discografia,some tracks,high,Qualified Rockol analysis explicitly identifies Ballo ballo as italo-disco
+carra-raffaellacarra82,disco,https://musicbase.net/danilo-vaona,some tracks,medium,"Ballo Ballo original 1982 single tagged disco, not all tracks"
+carra-raffaellacarra82,europop,https://www.caprarecords.com/release/18012988/raffaella-carra-raffaella-carra-82,whole album,medium,Original Spanish 1982 LP listed Europop; does not imply every track dances
+carra-raffaellacarra82,ballad,https://www.caprarecords.com/release/18012988/raffaella-carra-raffaella-carra-82,some tracks,medium,Spanish LP style tags include Ballad; individual ballad tracks unassigned
+carra-raffaellacarra82,chanson,https://www.caprarecords.com/release/18012988/raffaella-carra-raffaella-carra-82,some tracks,low,"Spanish LP classifies Chanson; track attribution unverified, genre is edition-level evidence"
+carra-fatalita,pop,https://shop.warnermusic.it/products/fatalit-cd,whole album,high,Warner current catalogue tags 1983 album Pop
+carra-fatalita,europop,https://www.merchbar.com/albums/raffaella-carr/fatalit-745228,whole album,medium,1983 LP listed Europop in issue metadata
+carra-fatalita,ballad,https://www.accordiespartiti.it/accordi/italiani/carra-raffaella/innamorata/,some tracks,high,Musician explicitly identifies Innamorata as pop ballad; not a disco track
+carra-fatalita,chanson,https://www.merchbar.com/albums/raffaella-carr/fatalit-745228,some tracks,medium,"1983 LP classified Chanson, not assigned to invented specific track"
+carra-fatalita,disco,https://musicbase.net/danilo-vaona,some tracks,medium,Original title song Fatalità separately tagged Disco
+carra-fatalita,italodisco,https://it.wikipedia.org/wiki/Fatalit%C3%A0/N%C3%A9_con_te%2C_n%C3%A9_senza_te,some tracks,low,Original 1983 title-song single tagged Italo disco; not a whole-LP claim
+carra-bolero,italodisco,https://www.vinileria.it/negozio/lp/raffaella-carra-%E2%80%8E-bolero/,some tracks,medium,"Original CGD LP classified Italo-Disco, with Linn and PPG synth equipment"
+carra-bolero,disco,https://www.popsike.com/Rare-LP-33T-Raffaella-Carra-Bolero-ItaloDisco-oritaly-1984-CGD-20447/124669673405.html,some tracks,medium,"Original LP tagged Disco, but track-level attribution is unverified"
+carra-bolero,europop,https://www.vinileria.it/negozio/lp/raffaella-carra-%E2%80%8E-bolero/,whole album,medium,Album release listed as Europop
+carra-bolero,pop,https://www.qobuz.com/us-en/album/bolero-raffaella-carra/fwplhiaal3jfa,whole album,high,Record-label streaming catalogue classifies album as Pop
+carra-bolero,electronic,https://www.vinileria.it/negozio/lp/raffaella-carra-%E2%80%8E-bolero/,texture,high,LP Electronic umbrella plus documented Linn II and PPG 2.3 programming
+carra-bolero,chanson,https://www.vinileria.it/negozio/lp/raffaella-carra-%E2%80%8E-bolero/,some tracks,medium,"Original release tagged Chanson, no single-track assignment substantiated"
+carra-bolero,ballad,https://musicbase.net/danilo-vaona,some tracks,medium,Dolce Far Niente separately tagged Theme/Ballad/Disco; hybrid track evidence
+carra-fidati,italodisco,https://musicbase.net/fidati,some tracks,high,Original LP classified Italo-Disco; electronic-drums and computer-equipped players credited
+carra-fidati,pop,https://www.vinylzone.ru/catalog/net-v-nalichii/2715/,whole album,medium,LP classified Pop as umbrella genre and also electronic music
+carra-fidati,electronic,https://www.vinylzone.ru/catalog/net-v-nalichii/2715/,texture,high,Original LP classified Electronic and original personnel document electronic drums/computer
+carra-fidati,ballad,https://musicbase.net/fidati,some tracks,medium,Original LP listed Ballad; specific track assignment unsupported without listening or review

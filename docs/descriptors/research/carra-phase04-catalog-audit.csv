@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+carra-raffaellacarra82,Raffaella Carrà '82,1982,studio,no,yes,Absent from descriptors-branch catalog.ts; add after checking for incoming imports and seed IDs.
+carra-fatalita,Fatalità,1983,studio,no,yes,Absent from descriptors-branch catalog.ts; add after checking for incoming imports and seed IDs.
+carra-bolero,Bolero,1984,studio,no,yes,Absent from descriptors-branch catalog.ts; add after checking for incoming imports and seed IDs.
+carra-fidati,Fidati!,1985,studio,no,yes,Absent from descriptors-branch catalog.ts; add after checking for incoming imports and seed IDs.
