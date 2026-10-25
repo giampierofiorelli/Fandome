@@ -24,10 +24,10 @@ If a link doesn't open, say so and use the rules below.
 3. Split the work into **phases** of 3–4 albums, in chronological order. One phase = one ZIP. Each phase is **strictly incremental**: only its new rows, never rows from earlier phases or other artists.
 4. For each album, research critics, musicologists, interviews, producers' and engineers' accounts and official credits, then fill one row.
 
-## Row format (exactly 26 columns, this header)
+## Row format (exactly 27 columns, this header)
 
 ```
-album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,instruments,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes
+album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,instruments,production,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes
 ```
 
 - `album_id`: existing albums keep the id from the catalogue (artist id + `-` + title in lowercase, letters and digits only, accents removed). New albums follow the same rule.
@@ -35,7 +35,8 @@ album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experim
 - `genres`: **every genre a source names for this album, no limit**, in order of importance, separated by `|`. Use the tokens of the genre list; if a source names a genre that isn't in the list, **use it anyway** (lowercase, letters only, e.g. `bossanova`) and list it in CLAUDE_IMPORT.md as a new genre: Claude adds it. Specific and broader genre together when both fit (e.g. `deephouse|house`). `synthpop` and `electropop` are different genres.
 - The 8 scales (`energy`, `electronic`, `mood`, `theatrical`, `experimental`, `polish`, `tempo`, `groove`): whole numbers 0–5, using the guide's anchors. **Empty cell = unknown**: leave it empty rather than guess from the artist's usual style.
 - `instruments`: the main instruments heard on the album, main first (credits, liner notes, reviews, engineers' accounts), from the guide's list; an instrument not listed is used anyway (lowercase, letters only) and reported in CLAUDE_IMPORT.md. Leave empty if sources don't say.
-- `voice`, `instruments`, `lyrics`, `language`, `producers`, `sounds_like`, `influenced_by`: lists separated by `|`, **no limit on the number of values** in any column. Allowed values for `voice` and `lyrics` are in the guide.
+- `production`: how the album is made, main first: vocal treatment and use (auto-tune, vocoder, filtered or pitch-shifted vocals, layered vocals, falsetto, whistle register, belting), recording and production techniques (sampling, analog tape, lo-fi, wall of sound, heavy reverb, sidechain, live in the studio), signature machines and software (TR-808, LinnDrum, Moog, Fairlight, Pro Tools, Ableton…), from the guide's list; anything not listed is used anyway and reported in CLAUDE_IMPORT.md. Only what sources state; empty if unknown.
+- `voice`, `instruments`, `production`, `lyrics`, `language`, `producers`, `sounds_like`, `influenced_by`: lists separated by `|`, **no limit on the number of values** in any column. Allowed values for `voice` and `lyrics` are in the guide.
 - `producers`: only people credited as producer or co-producer (not writers or mixers). `influenced_by`: only documented influences (stated by the artist, the producer or a qualified critic, with the source in the sources file). Sonic resemblance goes in `sounds_like`.
 - `landmark` 1/0; `confidence` high/medium/low; `status` always `draft`.
 - `notes`: your own words, **max 15 words** (the only column with a limit). Never copy sentences from reviews or Wikipedia.
@@ -53,7 +54,7 @@ Name: `<artist-id>_fandome_phase0N.zip`, with:
 
 No scripts are needed: Claude imports the files, adds catalogue albums and genres, runs the validator and the tests. You can't write to GitHub: give the ZIPs to me and I pass them to Claude.
 
-For artists already described (they have no instruments yet), when I ask: send `<artist-id>_instruments.csv` with header `album_id,instruments,sources`, one row per album already described.
+For artists already described (they have no instruments yet), when I ask: send `<artist-id>_instruments.csv` with header `album_id,instruments,production,sources`, one row per album already described.
 
 Start now with phase 01 of the artist below; when it's ready, tell me what the next phase will contain.
 

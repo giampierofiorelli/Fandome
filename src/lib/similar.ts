@@ -9,6 +9,7 @@
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
+import { productionLabel } from '../data/production'
 import { isLocalArtist, type Genre } from '../data/scenes'
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
@@ -33,6 +34,7 @@ export interface Profile {
   scales: Partial<Record<Scale, number>>
   voice: Set<string>
   instruments: Map<string, number> // main instruments, weighted by order
+  production: Map<string, number> // vocal treatment, techniques, machines, software, weighted by order
   lyrics: Set<string>
   language: Set<string>
   scene: Set<string>
@@ -59,6 +61,7 @@ export function albumProfile(d: Descriptor): Profile {
     scales: d.scales,
     voice: new Set(d.voice),
     instruments: new Map(d.instruments.map((x, i) => [x, 1 / (i + 1)])),
+    production: new Map(d.production.map((x, i) => [x, 1 / (i + 1)])),
     lyrics: new Set(d.lyrics),
     language: new Set(d.language),
     scene: sceneTokens(d.scene),
@@ -79,6 +82,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
   const scaleSum: Partial<Record<Scale, [number, number]>> = {}
   const voice = new Set<string>()
   const instruments = new Map<string, number>()
+  const production = new Map<string, number>()
   const lyrics = new Set<string>()
   const language = new Set<string>()
   const scene = new Set<string>()
@@ -96,6 +100,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
     }
     d.voice.forEach((v) => voice.add(v))
     d.instruments.forEach((x, i) => instruments.set(x, (instruments.get(x) ?? 0) + w / (i + 1)))
+    d.production.forEach((x, i) => production.set(x, (production.get(x) ?? 0) + w / (i + 1)))
     d.lyrics.forEach((v) => lyrics.add(v))
     d.language.forEach((v) => language.add(v))
     sceneTokens(d.scene).forEach((v) => scene.add(v))
@@ -103,6 +108,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
   }
   for (const [g, v] of genres) genres.set(g, Math.min(1, v / total) * 1.0)
   for (const [x, v] of instruments) instruments.set(x, Math.min(1, v / total))
+  for (const [x, v] of production) production.set(x, Math.min(1, v / total))
   const scales: Partial<Record<Scale, number>> = {}
   for (const s of SCALES) if (scaleSum[s]) scales[s] = scaleSum[s]![0] / scaleSum[s]![1]
   years.sort((a, b) => a - b)
@@ -115,6 +121,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
     scales,
     voice,
     instruments,
+    production,
     lyrics,
     language,
     scene,
@@ -211,28 +218,31 @@ function themeSim(a: Set<string>, b: Set<string>) {
   return union ? inter / union : 0
 }
 
-// Instruments weighted by order (main first) and rarity: sharing a harpsichord says more than sharing drums.
-let instrumentRarity: Map<string, number> | null = null
-function instrumentSim(a: Map<string, number>, b: Map<string, number>) {
+// Instruments and production weighted by order (main first) and rarity: sharing a harpsichord or a vocoder
+// says more than sharing drums or reverb.
+const rarityCache = new Map<string, Map<string, number>>()
+function listSim(field: 'instruments' | 'production', a: Map<string, number>, b: Map<string, number>) {
   if (!a.size || !b.size) return null
-  if (!instrumentRarity) {
+  if (!rarityCache.has(field)) {
     const all = Object.values(DESCRIPTORS)
     const df = new Map<string, number>()
-    for (const d of all) for (const x of d.instruments) df.set(x, (df.get(x) ?? 0) + 1)
-    instrumentRarity = new Map([...df].map(([x, n]) => [x, Math.log((all.length + 1) / (n + 1)) + 0.3]))
+    for (const d of all) for (const x of d[field]) df.set(x, (df.get(x) ?? 0) + 1)
+    rarityCache.set(field, new Map([...df].map(([x, n]) => [x, Math.log((all.length + 1) / (n + 1)) + 0.3])))
   }
-  const r = (x: string) => instrumentRarity!.get(x) ?? 1
+  const rare = rarityCache.get(field)!
+  const r = (x: string) => rare.get(x) ?? 1
   return weightedJaccard(new Map([...a].map(([x, w]) => [x, w * r(x)])), new Map([...b].map(([x, w]) => [x, w * r(x)])))
 }
 
-// Instruments weigh more than era (owner, Oct 2026: instrumentation creates affinity); language almost nothing.
+// Instruments and production weigh more than era (owner, Oct 2026: they create affinity); language almost nothing.
 function extrasSimilarity(a: Profile, b: Profile) {
   const parts: [number | null, number][] = [
-    [themeSim(a.lyrics, b.lyrics), 0.3],
-    [instrumentSim(a.instruments, b.instruments), 0.25],
-    [jaccard(a.voice, b.voice), 0.2],
-    [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 30) : null, 0.15],
-    [jaccard(a.scene, b.scene), 0.08],
+    [themeSim(a.lyrics, b.lyrics), 0.26],
+    [listSim('instruments', a.instruments, b.instruments), 0.22],
+    [listSim('production', a.production, b.production), 0.16],
+    [jaccard(a.voice, b.voice), 0.16],
+    [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 30) : null, 0.12],
+    [jaccard(a.scene, b.scene), 0.06],
     [a.language.size && b.language.size ? ([...a.language].some((l) => b.language.has(l)) ? 1 : 0) : null, 0.02],
   ]
   const known = parts.filter(([v]) => v !== null) as [number, number][]
@@ -369,6 +379,8 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   if (themes.length >= 2) reasons.push(`Both sing about ${and(themes.slice(0, 2))}`)
   const sharedInstruments = [...a.instruments.keys()].filter((x) => b.instruments.has(x))
   if (sharedInstruments.length >= 2) reasons.push(`Both built on ${and(sharedInstruments.slice(0, 2).map((x) => instrumentLabel(x).toLowerCase()))}`)
+  const sharedProduction = [...a.production.keys()].filter((x) => b.production.has(x))
+  if (sharedProduction.length) reasons.push(`Both use ${and(sharedProduction.slice(0, 2).map(productionLabel))}`)
 
   // Links overlap as evidence ("sounds like X" and "draws on X" often say the same thing): their total is capped.
   score = base + Math.min(LINK_CAP, score - base)

@@ -16,6 +16,7 @@ export interface Descriptor {
   scales: Partial<Record<Scale, number>>
   voice: string[]
   instruments: string[] // main first
+  production: string[] // vocal treatment, techniques, machines, software; main first
   lyrics: string[]
   language: string[]
   scene: string
@@ -47,6 +48,7 @@ export function parseDescriptors(text: string): Descriptor[] {
       scales,
       voice: list(r.voice),
       instruments: list(r.instruments ?? ''),
+      production: list(r.production ?? ''),
       lyrics: list(r.lyrics),
       language: list(r.language),
       scene: r.scene,
