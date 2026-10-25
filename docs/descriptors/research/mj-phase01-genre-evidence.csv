@@ -1,0 +1,24 @@
+﻿album_id,genre,source,source_type,url,scope,evidence_strength,notes
+mj-gottobethere,rnb,AllMusic — Got to Be There (Rob Theakston),critical review,https://www.allmusic.com/album/mw0000202994,whole album,high,AllMusic album genre R&B
+mj-gottobethere,soul,AllMusic — Got to Be There (Rob Theakston),critical review,https://www.allmusic.com/album/mw0000202994,whole album,high,AllMusic style soul
+mj-gottobethere,popsoul,AllMusic — Got to Be There (Rob Theakston),critical review,https://www.allmusic.com/album/mw0000202994,whole album,high,AllMusic style pop-soul
+mj-gottobethere,pop,AllMusic — Got to Be There (Rob Theakston),critical review,https://www.allmusic.com/album/mw0000202994,whole album,high,AllMusic style pop
+mj-gottobethere,ampop,AllMusic — Got to Be There (Rob Theakston),critical review,https://www.allmusic.com/album/mw0000202994,whole album,high,AllMusic lists AM Pop; needs new Fandome genre token
+mj-ben,rnb,AllMusic — Ben (Lindsay Planer),critical review,https://www.allmusic.com/album/ben-mw0000197848,whole album,high,AllMusic album R&B genre
+mj-ben,soul,AllMusic — Ben (Lindsay Planer),critical review,https://www.allmusic.com/album/ben-mw0000197848,whole album,high,AllMusic style soul
+mj-ben,popsoul,AllMusic — Ben (Lindsay Planer),critical review,https://www.allmusic.com/album/ben-mw0000197848,whole album,high,AllMusic style pop-soul
+mj-ben,pop,The Michael Jackson Database — Ben,discography and aggregated personnel,https://www.themjdb.com/albums/ben/,whole album,medium,Discography describes album as pop in addition to R&B and soul
+mj-ben,funk,Ben album retrospective — Motown and funk arrangement of My Girl,discography research,https://en.wikipedia.org/wiki/Ben_%28Michael_Jackson_album%29,some tracks,low,Funk inflection specifically described for My Girl; limited album weight
+mj-musicme,rnb,AllMusic — Music & Me (Ron Wynn),critical review,https://www.allmusic.com/album/music-me-mw0000320103,whole album,high,AllMusic album genre R&B
+mj-musicme,soul,AllMusic — Music & Me (Ron Wynn),critical review,https://www.allmusic.com/album/music-me-mw0000320103,whole album,high,AllMusic style soul
+mj-musicme,popsoul,AllMusic — Music & Me (Ron Wynn),critical review,https://www.allmusic.com/album/music-me-mw0000320103,whole album,high,AllMusic style pop-soul
+mj-musicme,pop,The Michael Jackson Database — Music & Me,discography and aggregated personnel,https://www.themjdb.com/albums/music-me/,whole album,medium,Discography characterises record as pop alongside R&B and soul
+mj-musicme,showtunes,MusicBrainz — Music & Me original 1973 vinyl,primary-release metadata,https://musicbrainz.org/release/7c73f72d-8fa2-45a7-9125-a04696f64f3a,some tracks,medium,All the Things You Are from Very Warm for May; Morning Glow from Pippin; stage songs are a minority
+mj-musicme,standards,MusicBrainz — Music & Me original 1973 vinyl,primary-release metadata,https://musicbrainz.org/release/7c73f72d-8fa2-45a7-9125-a04696f64f3a,some tracks,medium,All the Things You Are is a widely established popular standard; interpreted rather than newly written
+mj-forevermichael,soul,"AllMusic — Forever, Michael (William Ruhlmann)",critical review,https://www.allmusic.com/album/forever-michael-mw0000830955,whole album,high,AllMusic soul style
+mj-forevermichael,rnb,"AllMusic — Forever, Michael (William Ruhlmann)",critical review,https://www.allmusic.com/album/forever-michael-mw0000830955,whole album,high,AllMusic R&B album genre
+mj-forevermichael,popsoul,"AllMusic — Forever, Michael (William Ruhlmann)",critical review,https://www.allmusic.com/album/forever-michael-mw0000830955,whole album,high,AllMusic pop-soul style
+mj-forevermichael,phillysoul,"Forever, Michael — genre and personnel discography",tertiary album documentation,https://en.wikipedia.org/wiki/Forever%2C_Michael,whole album,low,Secondary genre taxonomy explicitly names Philadelphia soul
+mj-forevermichael,pop,"The Michael Jackson Database — Forever, Michael",discography and aggregated personnel,https://www.themjdb.com/albums/forever-michael/,whole album,medium,Album classified pop within Motown database
+mj-forevermichael,funk,"Forever, Michael — genre and personnel discography",tertiary album documentation,https://en.wikipedia.org/wiki/Forever%2C_Michael,some tracks,low,Secondary description highlights funk songs
+mj-forevermichael,disco,"The Michael Jackson Database — Forever, Michael",discography and aggregated personnel,https://www.themjdb.com/albums/forever-michael/,some tracks,low,Database labels disco; AllMusic qualifies the more dance-led side as limited

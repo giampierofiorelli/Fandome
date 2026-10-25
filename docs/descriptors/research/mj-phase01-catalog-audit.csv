@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,action,catalogue_match,reason
+mj-gottobethere,mj,Got to Be There,1972,studio,no,ADD,,Absent from the mj catalogue list on descriptors branch; add before importing descriptor rows
+mj-ben,mj,Ben,1972,studio,no,ADD,,Absent from the mj catalogue list on descriptors branch; add before importing descriptor rows
+mj-musicme,mj,Music & Me,1973,studio,no,ADD,,Absent from the mj catalogue list on descriptors branch; add before importing descriptor rows
+mj-forevermichael,mj,"Forever, Michael",1975,studio,no,ADD,,Absent from the mj catalogue list on descriptors branch; add before importing descriptor rows
