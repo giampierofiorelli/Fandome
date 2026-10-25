@@ -1,0 +1,45 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+kraftwerk-radioactivity,electronic,dominant album,R-AM|R-DIS|R-SLEEVE,Electronic sound sources across all twelve original tracks; no acoustic flute or guitar,high
+kraftwerk-radioactivity,experimentalelectronic,album / critic classification,R-AM|R-DIS,Electronic experimental collage and oscillator/shortwave sound design; whole album,high
+kraftwerk-radioactivity,avantgarde,album catalog taxonomy,R-AM|R-DIS,"AllMusic avant-garde umbrella; radio noises, silences and sound-collages",high
+kraftwerk-radioactivity,krautrock,retrospective album taxonomy,R-AM,AllMusic Kraut Rock style reflects Kraftwerk origin; no claim of rock instrumentation,medium
+kraftwerk-radioactivity,electropop,title-track / Antenna proto-pop,R-AM|R-DIS,AllMusic calls 1975 title track electro-pop; pop songwriting is secondary within LP,medium
+kraftwerk-radioactivity,synthpop,Antenna / retroactive precursor,R-DIS,"Review says proto-synthpop, specifically Antenna; not fully synthpop-oriented 1975 LP",low
+kraftwerk-radioactivity,progressiveelectronic,retrospective album style,R-AOTY,"AOTY explicitly tags Progressive Electronic, while ambient sections are not all proggy",medium
+kraftwerk-radioactivity,minimalsynth,retrospective genre of album,R-AOTY,AOTY calls the LP Minimal Synth; sparse synth-based composition fits scope,medium
+kraftwerk-radioactivity,dance,metadata category / selected beat passages,R-AM|R-DIS,AllMusic Club/Dance broad style; some recurring pulses but album not made for club,low
+kraftwerk-radioactivity,poprock,"AllMusic catalog family, not sonic foundation",R-AM,Database gives Pop/Rock top-level genre; cannot infer rock instruments,low
+kraftwerk-transeuropeexpress,electronic,whole album,T-AM|T-ORIG,"All electronically produced album, programmed analog electronics and synths",high
+kraftwerk-transeuropeexpress,experimentalelectronic,album review style,T-AM,AllMusic explicitly names Experimental Electronic,high
+kraftwerk-transeuropeexpress,krautrock,legacy genre taxonomy,T-AM,AllMusic Kraut Rock label refers to historical movement; not 1970 experimental lineup,medium
+kraftwerk-transeuropeexpress,electro,album style from original edition,T-LP,1977 LP catalog categorizes electro; machine beat and sequenced bass,medium
+kraftwerk-transeuropeexpress,synthpop,retrospective original-LP catalog style,T-LP,"LP catalogue labels synth-pop; melodic singing and synth lines, not 1980s pop template",medium
+kraftwerk-transeuropeexpress,avantgarde,AllMusic broad category,T-AM,AllMusic classifies Avant-Garde; avant-garde art conception and prolonged loops,medium
+kraftwerk-transeuropeexpress,poprock,AllMusic parent genre not actual rock playing,T-AM,AllMusic Pop/Rock generic umbrella,low
+kraftwerk-transeuropeexpress,industrial,retrospective LP edition taxonomy,T-LP,"Some original issue metadata lists Industrial, largely metallic title-suite beat texture",low
+kraftwerk-transeuropeexpress,progressiveelectronic,album metadata genre,T-AOTY,Album-level Progressive Electronic catalog tag; extended interlocked title suite,medium
+kraftwerk-transeuropeexpress,minimalsynth,album metadata genre,T-AOTY,"Album-level Minimal Synth tag, cyclical melodic ostinati and reduced palette",medium
+kraftwerk-themanmachine,synthpop,album / dominant,M-AM|M-AOTY,AllMusic synthpop and AOTY primary classification; melodic electronic pop forms,high
+kraftwerk-themanmachine,electronic,album / dominant,M-AM|M-AOTY|M-ORIG,"Electronic instrumentation and rhythm throughout, as credited on original LP",high
+kraftwerk-themanmachine,electro,album catalog style,M-AM|M-LP,"AllMusic and original LP metadata label electro, electronic dance syncopation",high
+kraftwerk-themanmachine,electropop,expert analytic style,M-AM,Steve Huey explicitly situates album as early new-wave electro-pop,high
+kraftwerk-themanmachine,pop,strong melodic/pop songs,M-AM|M-PF,Explicitly more pop-oriented record with The Model and melodic Neon Lights,high
+kraftwerk-themanmachine,dance,substantial / album-oriented,M-AM|M-PF,"Club/Dance named style with more danceable syncopation, still includes restrained passages",high
+kraftwerk-themanmachine,krautrock,retrospective album style,M-AM,AllMusic historical Kraut Rock classification; genre not acoustic rock,low
+kraftwerk-themanmachine,experimentalelectronic,explicit database style,M-AM,"Named Experimental Electronic style, even with more accessible pop arrangements",medium
+kraftwerk-themanmachine,poprock,generic top-level category,M-AM,Pop/Rock AllMusic parent genre rather than actual guitar-rock,low
+kraftwerk-themanmachine,spacedisco,retroactive album genre metadata,M-AOTY,"Album-of-the-Year tags Space Disco; prominent Spacelab, but not all songs cosmic",low
+kraftwerk-themanmachine,progressiveelectronic,retroactive album taxonomy,M-AOTY,"AOTY genre classification, especially extended atmospheric pieces",medium
+kraftwerk-themanmachine,experimentalrock,AllMusic style taxonomy only,M-AM,Named Experimental Rock on AllMusic; contradicted by no conventional rock ensemble,low
+kraftwerk-themanmachine,protopunk,AllMusic style taxonomy only,M-AM,Named Proto-Punk in AllMusic metadata; **not** punk drums/guitars or LP-wide style,low
+kraftwerk-computerworld,synthpop,whole album,C-AM|C-AOTY,Album-specific explicit synthpop genre supported by highly melodic mechanical song structures,high
+kraftwerk-computerworld,electronic,whole album,C-AM|C-RA,Entire recording synthesizer and sequencer dominated,high
+kraftwerk-computerworld,electro,album / genre named,C-AM|C-RA|C-AOTY,RA cites Electro; rhythmic patterns and Numbers instrumental anthem,high
+kraftwerk-computerworld,experimental,RA album taxonomy,C-RA,Resident Advisor lists Experimental despite compact popular hooks,medium
+kraftwerk-computerworld,experimentalelectronic,AllMusic album style,C-AM,AllMusic explicitly names Experimental Electronic style,medium
+kraftwerk-computerworld,minimalsynth,AOTY retroactive taxonomy,C-AOTY,Genre database tags Minimal Synth; tight repeated keyboard motifs,medium
+kraftwerk-computerworld,progressiveelectronic,AOTY retroactive taxonomy,C-AOTY,AOTY secondary Progressive Electronic style; track arrangements advanced but album pop accessible,medium
+kraftwerk-computerworld,pop,RA album genre,C-RA|C-PF,"RA explicitly tags pop, and title/pocket calculator pieces are melodically simple",high
+kraftwerk-computerworld,dance,AllMusic album style,C-AM|C-RA,"AllMusic Club/Dance, RA details rhythmic dance pulse across many tracks",high
+kraftwerk-computerworld,disco,selected rhythmic references,C-RA|C-DIS,"RA reports Moroder-like disco groove on title track, not pure disco LP",low
+kraftwerk-computerworld,funk,some album grooves / critic descriptor,C-RA,"RA calls the robots funky: body popping Numbers and loping title track, not traditional funk-band LP",medium
