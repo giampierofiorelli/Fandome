@@ -155,7 +155,21 @@ function weightedJaccard(wa: Map<string, number>, wb: Map<string, number>) {
   return max ? min / max : 0
 }
 
-const genreSim = (a: Profile, b: Profile) => weightedJaccard(expandGenres(a.genres), expandGenres(b.genres))
+// Rare genres say more than common ones: sharing "country" or "big band" means more than sharing "pop".
+// Each genre is weighted by how few described albums have it (inverse document frequency).
+let rarity: Map<string, number> | null = null
+function rarityOf(g: string) {
+  if (!rarity) {
+    const all = Object.values(DESCRIPTORS)
+    const df = new Map<string, number>()
+    for (const d of all) for (const x of expandGenres(new Map(d.genres.map((y) => [y, 1]))).keys()) df.set(x, (df.get(x) ?? 0) + 1)
+    rarity = new Map([...df].map(([x, n]) => [x, Math.log((all.length + 1) / (n + 1)) + 0.3]))
+  }
+  return rarity.get(g) ?? Math.log(Object.keys(DESCRIPTORS).length + 1) + 0.3
+}
+const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g)]))
+
+const genreSim = (a: Profile, b: Profile) => weightedJaccard(byRarity(expandGenres(a.genres)), byRarity(expandGenres(b.genres)))
 
 // 1 = same genres in the same order, 0 = nothing shared even at family level.
 export const genreSimilarity = (a: Descriptor, b: Descriptor) => genreSim(albumProfile(a), albumProfile(b))
@@ -253,6 +267,8 @@ function relatedPair(a: Profile, b: Profile): [string, string] | null {
 export interface Comparison {
   score: number // final, with links and confidence
   base: number // genres + sound + extras only
+  genre: number // genre similarity alone
+  linked: boolean // a documented link (producer, influence, sounds-like…)
   reasons: string[]
 }
 
@@ -291,7 +307,8 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   }
 
   // Shared genres, most important for both first; else the closest related pair.
-  const shared = [...a.genres.keys()].filter((g) => b.genres.has(g)).sort((x, y) => Math.min(b.genres.get(y)!, a.genres.get(y)!) - Math.min(b.genres.get(x)!, a.genres.get(x)!))
+  const weight = (g: string) => Math.min(a.genres.get(g)!, b.genres.get(g)!) * rarityOf(g)
+  const shared = [...a.genres.keys()].filter((g) => b.genres.has(g)).sort((x, y) => weight(y) - weight(x))
   const reasons = [...links]
   if (shared.length) reasons.push(`Both ${and(shared.slice(0, 3).map((g) => genreLabel(g).toLowerCase()))}`)
   else {
@@ -303,7 +320,7 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   const themes = [...a.lyrics].filter((t) => b.lyrics.has(t))
   if (themes.length >= 2) reasons.push(`Both sing about ${and(themes.slice(0, 2))}`)
 
-  return { score: score * b.confidence, base, reasons: reasons.slice(0, 2) }
+  return { score: score * b.confidence, base, genre, linked: links.length > 0, reasons: reasons.slice(0, 2) }
 }
 
 export interface Similar {
@@ -323,6 +340,8 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 // Discovery bonus: a small push for albums and artists from another country's local scene (never the
 // global US/UK markets), so suggestions cross scenes.
 export const DISCOVERY = 0.05
+// Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead).
+const MIN_GENRE = 0.15
 // What you rated low or said is not for you pushes similar things down (up to this much).
 const AVOID = 0.3
 // Variety: how much resemblance to what is already in the list costs (maximal marginal relevance).
@@ -372,17 +391,20 @@ export function similarAlbums(
   const mine = artistOf(albumId)
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(albumId)
-  const scored = Object.values(DESCRIPTORS)
+  let scored = Object.values(DESCRIPTORS)
     .filter((d) => d.albumId !== albumId && artistOf(d.albumId) !== mine && !hide.includes(d.albumId) && !hide.includes(artistOf(d.albumId) ?? ''))
     .map((d) => {
       const b = albumProfile(d)
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined }
+      return { albumId: d.albumId, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: c.genre >= MIN_GENRE || c.linked }
     })
     .filter((s) => s.score >= 0.2 && s.reasons.length)
     .sort((x, y) => y.score - x.score)
+  // Only albums that really share genres, or have a documented link; if none do, keep the single best.
+  if (scored.some((s) => s.fits)) scored = scored.filter((s) => s.fits)
+  else scored = scored.slice(0, 1)
   // Fewer, closer suggestions beat a full list: drop what scores well below the best match.
   const floor = (scored[0]?.score ?? 0) * 0.6
   const close = scored.filter((s) => s.score >= floor)
