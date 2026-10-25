@@ -69,3 +69,13 @@ Source: Wikipedia, Like a Virgin (song), with its cited sources.
 - `sounds_like` Michael Jackson: Ed Masley (The Arizona Republic) points to similarities between the bass line and "Billie Jean" (on Thriller).
 - `genres` + motown (arrangement drawing on Motown).
 - Jackson 5: owner wants the link once the Jackson 5 are described; find a source for Like a Virgin specifically before adding it.
+
+## American Life: revision (Oct 2026, owner: much richer, political themes count)
+Source: Wikipedia, American Life, with its cited sources.
+- `genres`: folktronica (infobox; Priya Elan, NME), Eurotechno ("diluted Eurotechno", Ben Ratliff, Rolling Stone; new token `eurotechno`), electroclash (infobox), electro-folk (Greg Kot, Chicago Tribune), folk (Sal Cinquemani, Slant), Eurodance (infobox link).
+- `instruments`: acoustic guitar (intro device across the album), piano (Stuart Price), strings arranged by Michel Colombier (AIR Studios), synths (Nord Lead on "Hollywood"), drums and percussion from an E-mu Emulator, electric guitar, bass, organ, cello on specific tracks; church choir (`choral`); vocoder ("Nobody Knows Me").
+- `production`: stuttering and frozen audio in Pro Tools (`sonicmanipulation`, `protools`), Auto-Tune (Antares) and an AMS pitch shifter (`autotune`, `pitchedvocals`), vocoder, E-mu Emulator, string arrangements.
+- `lyrics`: politics (aftermath of 9/11, the Iraq war), the American Dream and materialism (social), fame and "nothingness" (irony), her mother's death and her marriage (heartbreak, introspection), spirituality, Hispanic identity of the Che Guevara-style cover (identity). `voice` + rap (title track), choral.
+- `influenced_by`: Massive Attack's 100th Window and Lemon Jelly's Lost Horizons, cited by Madonna ("We set out to put the two worlds of acoustic and electronic music together").
+- `sounds_like`: Jewel (Jon Pareles, NYT, on the folk songwriting); Red Hot Chili Peppers and the Beatles' "Norwegian Wood" ("Hollywood").
+- Mark "Spike" Stent: additional production and mixing only, not in `producers`.

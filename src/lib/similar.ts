@@ -471,6 +471,7 @@ const LINK_CAP = 0.3
 const MIN_GENRE = 0.17
 // Minimum score for an album suggestion, calibrated on the owner's judged pairs (docs/similarity-judgments.csv).
 const MIN_SCORE = 0.3
+const MIN_INFLUENCE_SCORE = 0.2
 // What you rated low or said is not for you pushes similar things down (up to this much).
 const AVOID = 0.3
 // Variety: how much resemblance to what is already in the list costs (maximal marginal relevance).
@@ -534,7 +535,9 @@ export function similarAlbums(
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE || c.linked }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
-    .filter((s) => s.score >= MIN_SCORE && s.reasons.length)
+    // An influence the album documents (the artist's own words, a credited source) is strong evidence
+    // on its own, so the closest album of that artist has a lower cut.
+    .filter((s) => s.reasons.length && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist))))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
@@ -549,10 +552,10 @@ export function similarAlbums(
   }
   // Discovery (owner's rule): one place goes to the closest album from a local scene in another country,
   // if one passes the same cut and genre test. Same rule for every album; no slot if nothing qualifies.
-  const foreignLocal = scored.find((s) => s.newCountry && s.fits && !reserved.some((r) => r.albumId === s.albumId))
+  const foreignLocal = scored.find((s) => s.newCountry && s.fits && s.score >= MIN_SCORE && !reserved.some((r) => r.albumId === s.albumId))
   if (foreignLocal && !reserved.some((r) => r.newCountry) && reserved.length < limit) reserved.push(foreignLocal)
   // Otherwise only albums that really share genres, or have a documented link.
-  const rest = scored.filter((s) => s.fits && !reserved.some((r) => r.albumId === s.albumId))
+  const rest = scored.filter((s) => s.fits && s.score >= MIN_SCORE && !reserved.some((r) => r.albumId === s.albumId))
   const sameArtist = (it: { albumId: string }, out: { albumId: string }[]) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length
   const picked = [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length, (it, out) => sameArtist(it, [...reserved, ...out]) < perArtist)]
   return picked.map(({ albumId: id, score, reasons, newCountry }) => ({ albumId: id, score, reasons, ...(newCountry ? { newCountry } : {}) }))
