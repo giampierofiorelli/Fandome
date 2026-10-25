@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,action,evidence
+whitney-waitingtoexhaleoriginalsoundtrackalbum,Waiting to Exhale: Original Soundtrack Album,1995,soundtrack,absent,add,Fandome catalog.ts (descriptors branch); estate soundtrack tracklist 1995.
+whitney-thepreacherswifeoriginalsoundtrackalbum,The Preacher’s Wife: Original Soundtrack Album,1996,soundtrack,absent,add,Fandome catalog.ts (descriptors branch); estate original 15-track soundtrack 1996.
+whitney-myloveisyourlove,My Love Is Your Love,1998,studio,existing,retain_existing_id,Fandome catalog.ts currently contains title/year under artist whitney.
+whitney-justwhitney,Just Whitney,2002,studio,absent,add,Fandome catalog.ts (descriptors branch); estate studio album 2002.
