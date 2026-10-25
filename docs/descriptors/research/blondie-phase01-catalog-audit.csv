@@ -1,0 +1,5 @@
+album_id,title,year,already_in_catalog,needs_catalog_addition,notes
+blondie-blondie,Blondie,1976,yes,no,Existing catalog title/year/id retained
+blondie-plasticletters,Plastic Letters,1978,yes,no,Existing catalog title/year/id retained
+blondie-parallellines,Parallel Lines,1978,yes,no,Existing catalog title/year/id retained
+blondie-eattothebeat,Eat to the Beat,1979,yes,no,Existing catalog title/year/id retained
