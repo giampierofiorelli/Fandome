@@ -1,0 +1,30 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-foreverdancing,disco,dominant whole 19-cut album,F-AM|F-ORIG|F-LP,AllMusic names disco and original 1992 catalogue files it under disco.,high
+moroder-foreverdancing,dancepop,significant whole album,F-AM,Album-level AllMusic dance-pop style.,high
+moroder-foreverdancing,dance,whole album / broad genre,F-ORIG|F-LP,Original issue is catalogued as dancefloor music; broad umbrella for dance classics.,high
+moroder-foreverdancing,house,1992 issue retrospective style,F-LP,Transcribed original issue metadata assigns house; do not interpret every cover as house.,medium
+moroder-foreverdancing,hinrg,album issue retrospective style,F-LP,Early-1990s issue classification explicitly Hi NRG; material varies.,medium
+moroder-foreverdancing,synthpop,album issue retrospective style,F-LP,Sleeve discography assigns synth-pop; scope less secure than disco.,medium
+moroder-foreverdancing,electronic,recording/album style,F-LP,Original edition explicitly electronic and credits synthesizer programming.,medium
+moroder-dejavu,dancepop,dominant across radio-oriented collaborations,D-AM|D-CHART,Specialist catalogues call album dance-pop; melodic contemporary hooks are central.,high
+moroder-dejavu,disco,prominent/recurring album strand,D-RA|D-AM|D-TECH,"Reviewers and producer note deliberate disco motifs and guitar on several songs, not all tracks.",high
+moroder-dejavu,pop,dominant songwriting category,D-RA|D-AM,Album consciously built around guest-led pop songs.,high
+moroder-dejavu,edm,significant album crossover,D-AM|D-VAR|D-RA,Artist explicitly discusses marrying EDM with melodic pop; specialist review calls crossover.,high
+moroder-dejavu,electronic,significant synth/programming foundations,D-TECH|D-QOB,Producer documents extensive synthetic instruments and programming with acoustic instrumentation.,high
+moroder-dejavu,dance,"whole album, broad family",D-AM|D-APPLE,Club/dance style and licensed Dance category reflect the album primary market.,high
+moroder-dejavu,electro,original issue metadata / some tracks,D-CHART,2015 discography names electro; lower specificity than disco/pop.,medium
+moroder-dejavu,synthpop,original catalogue style / some tracks,D-CHART,Synth-pop appears in original issue metadata; live drumming prevents asserting total synthetic composition.,medium
+moroder-dejavu,leftfieldpop,"catalogue style, disputed",D-AM|D-RA,AllMusic lists left-field pop; RA considers most compositions conventional.,low
+moroder-dejavu,techno,"licensed store-wide album tag, weak sonic match",D-QOB,Qobuz labels album techno as a broad retail genre; critics focus pop and disco.,low
+moroder-dejavu,nudisco,one prominent track / neo-disco description,D-VAR,Moroder interview characterizes Kylie single as neo-disco; not necessarily core album style.,medium
+moroder-tronrunroriginalsoundtrack,soundtrack,full game soundtrack,T-STEAM|T-ALL|T-D23,Issued as official game score plus commissioned remixes.,high
+moroder-tronrunroriginalsoundtrack,electronic,whole record,T-ALL|T-STEAM,AllMusic categorizes electronic and game team describes synthetic technology-centered sound.,high
+moroder-tronrunroriginalsoundtrack,videogamemusic,"entire issue, medium-specific AllMusic style",T-ALL,AllMusic explicitly uses Video Game Music style; added to genre contract for genre recall.,high
+moroder-tronrunroriginalsoundtrack,edm,"some commissioned remix tracks, official broad wording",T-D23,Disney groups remix contributors under EDM umbrella; the 14 tracks are stylistically heterogeneous.,medium
+moroder-queenofthesouthoriginalseriessoundtrack,soundtrack,whole 28-cue television album,Q-BAND|Q-QOB,Lakeshore issued 28 tracks of a co-composed original series score.,high
+moroder-queenofthesouthoriginalseriessoundtrack,electronic,majority album sound,Q-LABEL|Q-BAND,Label describes synth-based electronic score with orchestral/Latin accents.,high
+moroder-queenofthesouthoriginalseriessoundtrack,electronoir,explicit specialist sonic label; recurring album aesthetic,Q-SG|Q-BAND,"Electro-noir is reviewers and label sonic term, not evidence of an established independent movement.",medium
+moroder-queenofthesouthoriginalseriessoundtrack,synthwave,official Bandcamp album tag,Q-BAND,Label tagged the record synthwave; synth palette and retro feel align.,medium
+moroder-queenofthesouthoriginalseriessoundtrack,retrowave,official Bandcamp album tag,Q-BAND,Label tagged retrowave; classification is contextual rather than dominant musicological consensus.,medium
+moroder-queenofthesouthoriginalseriessoundtrack,classical,some cues / instrumental texture,Q-BAND|Q-SG,"String writing and classical elements described, not a fully classical album.",medium
+moroder-queenofthesouthoriginalseriessoundtrack,latin,some cues / rhythmic/tonal texture,Q-BAND|Q-SG,"Latin stylings explicitly described, prominently in Moyocoyotzin.",medium

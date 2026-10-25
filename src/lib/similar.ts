@@ -169,7 +169,7 @@ function rarityOf(g: string) {
 }
 // Genres that say what a record is for, not how it sounds (a soundtrack can be disco, orchestral, rock or a musical):
 // they barely count for similarity and are never given as a reason on their own.
-export const FORMAT_GENRES = new Set(['soundtrack'])
+export const FORMAT_GENRES = new Set(['soundtrack', 'videogamemusic'])
 const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : 1)
 const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g) * soundWeight(g)]))
 

@@ -12,4 +12,6 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'ariana-wickedforgoodthesoundtrack': { credit: 'Cynthia Erivo & Ariana Grande' },
   'moroder-lovesinyoulovesinme': { credit: 'Giorgio & Chris' },
   'moroder-philipoakeygiorgiomoroder': { credit: 'Philip Oakey & Giorgio Moroder' },
+  'moroder-tronrunroriginalsoundtrack': { credit: 'Giorgio Moroder & Raney Shockne' },
+  'moroder-queenofthesouthoriginalseriessoundtrack': { credit: 'Giorgio Moroder & Raney Shockne' },
 }
