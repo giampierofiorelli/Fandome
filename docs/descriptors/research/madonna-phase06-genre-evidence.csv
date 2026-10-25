@@ -1,0 +1,30 @@
+album_id,genre,scope,source_keys,evidence,strength
+madonna-imbreathless,bigband,album,IB_AM|IB_SL,Brass-forward big-band arrangements shape the retro concept,high
+madonna-imbreathless,swing,album,IB_SE|IB_AOTY,Jazz-era swing phrasing and arrangements recur in the record,high
+madonna-imbreathless,jazz,album,IB_SE|IB_CH,Jazz-influenced standards idiom forms much of the 12-track record,high
+madonna-imbreathless,jazzpop,album,IB_AOTY|IB_AM,Aggregated jazz-pop label matches reviewer account of pop writing in 1940s-jazz language,medium
+madonna-imbreathless,traditionalpop,album,IB_AOTY|IB_AM,Mid-century traditional pop classification; contemporary Madonna original compositions,medium
+madonna-imbreathless,showtunes,substantial,IB_AOTY|IB_SL|IB_OFF,"Three Sondheim film songs, plus additional theatrical writing",high
+madonna-imbreathless,pop,album,IB_CH|IB_SE|IB_AOTY,Madonna pop songwriting intertwined with retro show material,high
+madonna-imbreathless,soundtrack,album_context,IB_OFF|IB_CH|IB_CP,Film companion marketed with movie title; only three songs actually in film,high
+madonna-imbreathless,poprock,catalogue_style,IB_AM,"AllMusic Pop/Rock taxonomy, not uniform electric-guitar rock",medium
+madonna-imbreathless,adultcontemporary,catalogue_style,IB_AM,AllMusic explicitly applies Adult Contemporary style,medium
+madonna-imbreathless,latin,single_track_texture,IB_SL,"Latin colour expressly identified on I’m Going Bananas, not dominant",medium
+madonna-imbreathless,dancepop,track_subset,IB_AM|IB_AOTY|IB_VG,Dance-pop associated with Vogue and the Part II remix,high
+madonna-imbreathless,house,track_subset,IB_VG|IB_RO|IB_CH,"House production centrally documented on Vogue, not most tracks",high
+madonna-imbreathless,deephouse,track_subset,IB_VG|IB_AM,Reviewer describes Vogue as deep house groove; stylistically one song,medium
+madonna-imbreathless,disco,track_subset_influence,IB_BB|IB_RO,Producer cites Philly Salsoul foundation of Vogue; disco lineage not entire set,medium
+madonna-imbreathless,electronic,track_subset,IB_CH|IB_QB,Electronic arrangement and drum machine central on last two tracks only,high
+madonna-imbreathless,dance,track_subset,IB_AM|IB_SL,Dance portions strongest on Vogue and Now I’m Following You Part II,medium
+madonna-imbreathless,downtempo,catalogue_style,IB_CH,1990 pressing metadata includes Downtempo; not evidence of uniform style,low
+madonna-evita,showtunes,album,EV_AOTY|EV_AM|EV_CA,"Sung-through adaptation of stage musical, not stand-alone dance-pop",high
+madonna-evita,rockopera,album,EV_PA|EV_AOTY|EV_AL,Contemporary music journalist and catalogue describe rock opera,high
+madonna-evita,soundtrack,album,EV_OFF|EV_APP|EV_MB,Complete film soundtrack of 31 tracks with cast and orchestra,high
+madonna-evita,classical,orchestral_style,EV_AM|EV_QB|EV_AL,Orchestral and choir-heavy studio score; AllMusic classical style,medium
+madonna-evita,rock,substantial_style,EV_CA|EV_PA,Rock-opera score includes rock-derived rhythmic writing,medium
+madonna-evita,opera,form_context,EV_AL|EV_PA,Sung-through dramatic construction described as modern opera by filmmaker,medium
+madonna-evita,pop,substantial_style,EV_AM|EV_CA,"Pop ballad and film-musical influences, not a straightforward Madonna pop album",medium
+madonna-evita,poprock,catalogue_style,EV_AM,"AllMusic Pop/Rock catalogue descriptor, not a claim that every track is rock",low
+madonna-evita,latin,track_subset_texture,EV_CA|EV_PA|EV_AL,"Latin colours tied to Argentine setting, uneven across the dramatic score",medium
+madonna-evita,dancepop,catalogue_style,EV_AM,AllMusic Dance-Pop label mainly speaks to accessible pop moments and singles,low
+madonna-evita,adultcontemporary,catalogue_style,EV_AM,AllMusic explicitly assigns Adult Contemporary style,medium

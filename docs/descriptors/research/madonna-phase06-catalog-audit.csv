@@ -1,0 +1,3 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+madonna-imbreathless,Madonna,I'm Breathless,1990,missing_from_seed_and_descriptors,madonna-imbreathless,Add new album to seed.ts; append this descriptor once,"Original 1990 12-track Music from and Inspired by Dick Tracy, not Vogue maxi-single or expanded editions"
+madonna-evita,Madonna,Evita,1996,missing_from_seed_and_descriptors,madonna-evita,Add new album to seed.ts; append this descriptor once,"Complete 1996 two-CD movie soundtrack (31 tracks), not the 19-track highlights disc or 1997 rereleases"
