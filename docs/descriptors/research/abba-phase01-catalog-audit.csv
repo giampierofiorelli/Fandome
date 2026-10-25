@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+abba-ringring,Ring Ring,1973,studio,missing,,Add to src/data/catalog.ts and descriptor CSV,Original 1973 Swedish LP includes Swedish Ring Ring and English-version reprise; some territories replace one cut.
+abba-waterloo,Waterloo,1974,studio,existing,abba-waterloo,Descriptor only: preserve catalog ID,Swedish first pressing includes both Swedish and English Waterloo; international first LP usually English only.
+abba-abba,ABBA,1975,studio,missing,,Add to src/data/catalog.ts and descriptor CSV,Use original 11-song 1975 LP; omit later compilation and deluxe bonus tracks.
+abba-arrival,Arrival,1976,studio,existing,abba-arrival,Descriptor only: preserve catalog ID,Original Swedish ten-track LP excludes Fernando; included in some 1976 regional editions and later reissues.

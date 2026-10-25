@@ -54,4 +54,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   smoothsoul: ['soul', 'rnb'], synthfunk: ['funk', 'electronic'],
   orchestralpop: ['pop'],
   balearicbeat: ['dance', 'electronic'],
+  schlager: ['pop', 'traditionalpop'], folkrock: ['folk', 'rock'], baroquepop: ['pop'], phillysoul: ['soul', 'disco'],
 }

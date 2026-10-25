@@ -1,0 +1,40 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+abba-ringring,pop,dominant,O-RING|A-RING|C-ALBUMS,"Early accessible vocal pop throughout, unlike any later single style.",high
+abba-ringring,europop,dominant,A-RING|C-ALBUMS,Specialist styles classify the early Swedish pop output as Europop.,high
+abba-ringring,rock,significant,C-ALBUMS|O-RING,Multiple electric-guitar pop/rock cuts and Rock n Roll Band.,high
+abba-ringring,folkpop,some tracks,C-ALBUMS|A-RING,Gentle melodic folk-pop aspects on Another Town Another Train.,medium
+abba-ringring,glamrock,one prominent track,C-ALBUMS,Classic Pop specifically calls the title song glam rock.,high
+abba-ringring,countryrock,some tracks,C-ALBUMS,Love Isnt Easy is described with country-rock textures.,medium
+abba-ringring,bubblegumpop,some tracks,A-RING|C-ALBUMS,Light and deliberately simple vintage pop on story songs.,medium
+abba-ringring,traditionalpop,some tracks,A-RING|C-ALBUMS,Old-fashioned adult-oriented pop arrangements on select early material.,medium
+abba-ringring,schlager,historical milieu; review,O-RING,Official history identifies the songwriting milieu as Swedish schlager; weaker album-level genre claim.,medium
+abba-waterloo,pop,dominant,O-WATER|A-WATER,"Album combines rock with catchy pop songs, especially singles.",high
+abba-waterloo,europop,dominant,A-WATER|O-WATER,Cross-border Swedish pop writing and Euro-pop styling.,high
+abba-waterloo,rock,significant,A-WATER|O-STUDIO,Hard-driving guitars and a rocky beat across more than title track.,high
+abba-waterloo,glamrock,significant,C-ALBUMS|O-STUDIO,Waterloo is glam rock and Watch Out has early rock styling.,high
+abba-waterloo,folkrock,reviewed strand,A-WATER,AllMusic describes folk-rock among this albums varied stylistic strands.,high
+abba-waterloo,reggae,one track,A-WATER|C-ALBUMS,"Sitting in the Palmtree has a reggae pastiche, not a whole reggae album.",medium
+abba-waterloo,funk,one track,C-ALBUMS,My Mama Said credited with a distinctly funky groove.,medium
+abba-waterloo,disco,one track groove,C-ALBUMS,My Mama Said has an early disco-like bass part; not dominant disco.,medium
+abba-waterloo,baroquepop,one track,C-ALBUMS,Classic Pop calls Suzy-Hang-Around baroque pop.,medium
+abba-waterloo,traditionalpop,some tracks,C-ALBUMS|A-WATER,Hasta Manana and Honey Honey use conventional singalong pop.,medium
+abba-abba,pop,dominant,A-ABBA|C-ALBUMS,SOS and Mamma Mia exemplify precision melodic pop.,high
+abba-abba,europop,dominant,A-ABBA|C-ALBUMS,Swedish and Euro-pop sound with international hooks.,high
+abba-abba,poprock,significant,A-ABBA|C-ALBUMS,Mamma Mia and faster guitar-led songs blend pop and rock.,high
+abba-abba,rock,significant,A-ABBA|C-ALBUMS,Several crunchy-guitar performances including Hey Hey Helen and So Long.,high
+abba-abba,glamrock,some tracks,C-ALBUMS,So Long and Hey Hey Helen specifically described as glam-rock.,medium
+abba-abba,reggae,one track,A-ABBA|C-ALBUMS,Tropical Loveland is an explicit reggae-style detour.,medium
+abba-abba,funk,one track,C-ALBUMS,Man In The Middle uses an R&B/funk or blaxploitation-style instrumental feel.,medium
+abba-abba,prog,one instrumental,C-ALBUMS|A-ABBA,Intermezzo No 1 described as proggy keyboard instrumental; not a prog album.,high
+abba-abba,traditionalpop,some tracks,A-ABBA|C-ALBUMS,I Do Do Do has vintage orchestral/50s pop arrangements.,medium
+abba-arrival,pop,dominant,P-ARR|C-ARR|A-ARR,Consistent tightly structured international pop songwriting.,high
+abba-arrival,europop,dominant,A-ARR|P-ARR,AllMusic categorizes album under Euro-pop styling.,high
+abba-arrival,dancepop,significant,A-ARR|C-ARR,Dancing Queen and Thats Me are overt danceable pop.,high
+abba-arrival,disco,significant,A-ARR|C-ARR,Explicit disco rhythmic influence on prominent album tracks.,high
+abba-arrival,popsoul,some tracks / textures,C-ARR|C-ALBUMS,Soul-inflected pop arrangements and multi-part vocals occur among songs.,medium
+abba-arrival,soul,some tracks / textures,C-ARR|C-ALBUMS,"Philadelphia soul mentioned as aesthetic input, not a soul-dominant album.",medium
+abba-arrival,rock,some tracks,C-ARR,Tiger and Why Did It Have To Be Me bring rock/rock-n-roll instrumentation.,medium
+abba-arrival,aor,significant album styling,C-ALBUMS,Classic Pop describes Arrival as moving into AOR sound.,high
+abba-arrival,blues,one track,C-ARR,Why Did It Have To Be Me is explicitly called bluesy and Fats Domino-inspired.,medium
+abba-arrival,phillysoul,influence / some tracks,C-ARR|C-ALBUMS,Critics explicitly identify Philadelphia soul elements in the production.,medium
+abba-arrival,folk,background influence,C-ARR|C-ALBUMS,Classic Pop notes folk elements in the mature arrangements.,medium
