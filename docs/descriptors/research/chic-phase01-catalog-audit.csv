@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,existing_catalog_id,action,notes
+chic-chic,chic,Chic,1977,studio,yes,chic-chic,keep existing id; add descriptor only,Already listed in branch descriptors
+chic-cestchic,chic,C’est Chic,1978,studio,yes,chic-cestchic,keep existing id; add descriptor only,Already listed in branch descriptors
+chic-risque,chic,Risqué,1979,studio,yes,chic-risque,keep existing id; add descriptor only,Already listed in branch descriptors
+chic-realpeople,chic,Real People,1980,studio,no,,add album to src/data/catalog.ts then import descriptor,Catalog has Chic/C’est Chic/Risqué/It’s About Time but omits Real People

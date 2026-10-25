@@ -1,0 +1,25 @@
+﻿album_id,genre,source,source_type,url,scope,evidence_strength,notes
+chic-chic,disco,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,whole album,high,AllMusic album style; central club material
+chic-chic,funk,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,whole album,high,Alex Henderson explicitly describes blend of funk and disco
+chic-chic,soul,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,whole album,high,AllMusic style and review
+chic-chic,rnb,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,whole album,high,AllMusic main genre R&B
+chic-chic,eurodisco,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,texture,high,Reviewer describes blend with Euro-disco
+chic-chic,quietstorm,"AllMusic — Chic, review by Alex Henderson",critical review,https://www.allmusic.com/album/chic-mw0000615010,some tracks,high,"AllMusic style; quieter soul songs, not the club singles"
+chic-cestchic,disco,"AllMusic — C’est Chic, review by Jason Birchmeier",critical review,https://www.allmusic.com/album/cest-chic-mw0000615011,whole album,high,AllMusic and its dance-floor song analysis
+chic-cestchic,funk,Herb Music — C’est Chic (1978) genre and personnel listing,discographic metadata,https://www.herbmusic.net/album/chic-c%27est-chic-35148,whole album,medium,Herb Music album genre Funk
+chic-cestchic,soul,"AllMusic — C’est Chic, review by Jason Birchmeier",critical review,https://www.allmusic.com/album/cest-chic-mw0000615011,whole album,high,AllMusic soul style
+chic-cestchic,rnb,"AllMusic — C’est Chic, review by Jason Birchmeier",critical review,https://www.allmusic.com/album/cest-chic-mw0000615011,whole album,high,AllMusic main genre R&B
+chic-cestchic,quietstorm,"AllMusic — C’est Chic, review by Jason Birchmeier",critical review,https://www.allmusic.com/album/cest-chic-mw0000615011,some tracks,high,AllMusic Quiet Storm style; At Last I Am Free
+chic-risque,disco,"AllMusic — Risque, review by Alex Henderson",critical review,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ahzfqxqw5ld6e,whole album,high,AllMusic genre/style Disco and Good Times
+chic-risque,funk,"Classic Pop — The Lowdown: Nile Rodgers, David Burke (7 May 2025)",critical retrospective,https://www.classicpopmag.com/features/the-lowdown-nile-rodgers-and-chic-albums/,whole album,high,Classic Pop describes seriously funky hooks on this album
+chic-risque,soul,"AllMusic — Risque, review by Alex Henderson",critical review,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ahzfqxqw5ld6e,whole album,high,AllMusic Soul style and slow ballads
+chic-risque,rnb,"AllMusic — Risque, review by Alex Henderson",critical review,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ahzfqxqw5ld6e,whole album,high,AllMusic main R&B category
+chic-risque,quietstorm,"AllMusic — Risque, review by Alex Henderson",critical review,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ahzfqxqw5ld6e,some tracks,high,AllMusic Quiet Storm style; A Warm Summer Night and Will You Cry
+chic-realpeople,funk,Rhino — Album of the Day: Real People (30 June 2015),label retrospective,https://www.rhino.com/aod/real-people-chic,whole album,high,Rhino explicitly states album blends funk and other idioms
+chic-realpeople,soul,Rhino — Album of the Day: Real People (30 June 2015),label retrospective,https://www.rhino.com/aod/real-people-chic,whole album,high,Rhino old-school soul description
+chic-realpeople,disco,"AllMusic — Real People, review by Alex Henderson",critical review,https://www.allmusic.com/album/real-people-mw0000085140,whole album,high,AllMusic album style; reduced influence versus early records
+chic-realpeople,rnb,"AllMusic — Real People, review by Alex Henderson",critical review,https://www.allmusic.com/album/real-people-mw0000085140,whole album,high,AllMusic main genre R&B
+chic-realpeople,newwave,Rhino — Album of the Day: Real People (30 June 2015),label retrospective,https://www.rhino.com/aod/real-people-chic,texture,high,Rhino identifies new wave as part of the blend; not whole-album dominant
+chic-realpeople,rock,Rhino — Album of the Day: Real People (30 June 2015),label retrospective,https://www.rhino.com/aod/real-people-chic,texture,high,Rhino describes guitar-riff rock influences
+chic-realpeople,quietstorm,"AllMusic — Real People, review by Alex Henderson",critical review,https://www.allmusic.com/album/real-people-mw0000085140,some tracks,high,AllMusic album style; low-key ballad elements
+chic-realpeople,contemporaryrnb,"AllMusic — Real People, review by Alex Henderson",critical review,https://www.allmusic.com/album/real-people-mw0000085140,some tracks,high,AllMusic retrospective style; historically anachronistic classification
