@@ -1,0 +1,30 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-americangigolo,soundtrack,whole album,AG-O|AG-L|AG-A,Original 1980 cinematic score with two vocal songs and six instrumentals.,high
+moroder-americangigolo,electronic,whole album,AG-I|AG-A|AG-M,Composer describes synth-driven scoring; critic confirms constructed synthetic ambience.,high
+moroder-americangigolo,poprock,some tracks,AG-A|AG-I,AllMusic gives Contemporary Pop/Rock; especially extended Blondie opening song.,high
+moroder-americangigolo,disco,some tracks,AG-I|AG-S,"Moroder says the disco pulse informs the work, strongest in Call Me and Night Drive.",medium
+moroder-americangigolo,synthpop,texture,AG-I|AG-A,Synthesized melodic score and catchy electronically colored vocal pop; an interpretive form of the soundtrack sound.,medium
+moroder-americangigolo,newwave,one prominent track,AG-I|AG-O,"Moroder explicitly associates Blondie with new wave, referring to Call Me; not score-wide.",medium
+moroder-americangigolo,pop,some tracks,AG-A|AG-Q,Pop-rock crossover in the two long vocal numbers; not nine-sided generic film score.,medium
+moroder-americangigolo,electro,some tracks,AG-S|AG-I,"Original LP retailer classifies electro; rhythmic electronically synthesized Night Drive is a strand, not a full-length claim.",medium
+moroder-foxes,soundtrack,whole album,FX-O|FX-V,Commercial original double LP of music connected with film; mixed performers.,high
+moroder-foxes,disco,significant,FX-T|FX-O,"TCM highlights disco artists; extended Donna Summer and Cher tracks, dance-pop side.",high
+moroder-foxes,pop,significant,FX-T|FX-O,"TCM directly characterizes compilation as pop/disco, including Janis Ian.",high
+moroder-foxes,rock,some tracks,FX-V|FX-R,Two original-LP tracks are by Angel; film guide explicitly differentiates rock from disco content.,medium
+moroder-foxes,electronic,significant,FX-O|FX-V,"Long Moroder instrumental Valley of the Dolls and electronic-disco variants, not all tracks.",medium
+moroder-foxes,hardrock,two tracks,FX-H|FX-V,Angel repertoire is contemporaneous hard rock: 20th Century Foxes and Virginia; not genre of whole double LP.,medium
+moroder-catpeople,soundtrack,whole album,CP-O|CP-A,"Original 1982 score album, one vocal single and nine cinematic instrumental cues.",high
+moroder-catpeople,electronic,whole album,CP-F|CP-W|CP-M,"Predominantly electronic suspense score, synth programming and sound processing, with live supporting instruments.",high
+moroder-catpeople,ambient,significant,CP-W|CP-F,Producer describes uneasy soundscapes and critic describes sustained atmospheric/atonal cues.,medium
+moroder-catpeople,darkambient,significant,CP-D|CP-F|CP-W,"Album of the Year explicitly uses dark ambient; ominous drones/cues corroborate texture, no claim of sole style.",medium
+moroder-catpeople,synthpop,one prominent track,CP-A|CP-R,"Album is synth-driven; opening Bowie song is synth-oriented pop/rock, unlike instrumental majority.",medium
+moroder-catpeople,disco,texture,CP-A,"AllMusic lists Disco among album styles, but only certain pulsing passages qualify.",medium
+moroder-catpeople,dancepop,one prominent track,CP-A|CP-R,AllMusic album style Dance-Pop: do not extrapolate to ominous nine instrumental cues.,medium
+moroder-catpeople,rock,one prominent track,CP-R,AllMusic categorizes Bowie title composition as pop/rock or album rock.,medium
+moroder-solitarymen,softrock,significant,SM-V,Independent commentary explicitly describes 1983 project as synth-based soft rock.,medium
+moroder-solitarymen,synthpop,significant,SM-A|SM-V|SM-R,Electronics and pop-derived melodic song structures with a synthesizer-led sound.,medium
+moroder-solitarymen,electronic,significant,SM-A|SM-O,"AllMusic electronic album genre and credited Moroder/Levay synths, contrasted with live musicians.",high
+moroder-solitarymen,disco,some tracks,SM-R|SM-P|SM-V,Label emphasizes disco workouts; opposing reviewer hears ballad-dominant soft rock: album not uniformly disco.,medium
+moroder-solitarymen,aor,some tracks,SM-V,Signed critic explicitly calls Lady Lady an AOR ballad and identifies similar tracks.,medium
+moroder-solitarymen,dance,some tracks,SM-A|SM-R|SM-P,"AllMusic Club/Dance, reissue label dance workouts, Apple Dance; varies by track.",high
+moroder-solitarymen,pop,significant,SM-V|SM-A,Mainly accessible 1980s synthesized pop songs with smooth rock/dance crossover.,medium

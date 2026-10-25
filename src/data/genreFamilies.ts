@@ -58,4 +58,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   progressivepop: ['pop', 'prog'], dancerock: ['dance', 'rock'], hardrock: ['rock'],
   garagerock: ['rock'], protodisco: ['disco'], psychedelicpop: ['pop'], sunshinepop: ['pop'],
   rockandroll: ['rock'], minimalsynth: ['electronic'], spacedisco: ['disco', 'electronic'], progressiveelectronic: ['electronic', 'prog'],
+  darkambient: ['ambient'],
 }
