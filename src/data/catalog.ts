@@ -114,7 +114,7 @@ const ROWS: Row[] = [
   ['daftpunk', 'Daft Punk', '#c9a23f', 'Robots who taught us to dance', [['Homework', 1997], ['Discovery', 2001], ['Human After All', 2005], ['Random Access Memories', 2013]]],
   ['moroder', 'Giorgio Moroder', '#3fa3c9', 'The father of disco electronics', [['From Here to Eternity', 1977], ['E=MC²', 1979], ['Déjà Vu', 2015]]],
   ['rihanna', 'Rihanna', '#b8304f', 'Still waiting for the next album, together', [['Good Girl Gone Bad', 2007], ['Rated R', 2009], ['Loud', 2010], ['Talk That Talk', 2011], ['Unapologetic', 2012], ['Anti', 2016]]],
-  ['amy', 'Amy Winehouse', '#8a3f4a', 'Back to Black, forever', [['Frank', 2003], ['Back to Black', 2006]]],
+  ['amy', 'Amy Winehouse', '#8a3f4a', 'Back to Black, forever', [['Frank', 2003], ['Back to Black', 2006], ['Lioness: Hidden Treasures', 2011]]],
   ['oasis', 'Oasis', '#3f6f9e', 'Mad for it, thirty years on', [['Definitely Maybe', 1994], ['(What’s the Story) Morning Glory?', 1995], ['Be Here Now', 1997], ['Standing on the Shoulder of Giants', 2000], ['Don’t Believe the Truth', 2005], ['Dig Out Your Soul', 2008]]],
   ['blur', 'Blur', '#e0a33f', 'Britpop, art school and Parklife', [['Leisure', 1991], ['Modern Life Is Rubbish', 1993], ['Parklife', 1994], ['The Great Escape', 1995], ['Blur', 1997], ['13', 1999], ['Think Tank', 2003], ['The Magic Whip', 2015], ['The Ballad of Darren', 2023]]],
   ['gorillaz', 'Gorillaz', '#5fa35a', 'A virtual band with very real fans', [['Gorillaz', 2001], ['Demon Days', 2005], ['Plastic Beach', 2010], ['Humanz', 2017], ['Song Machine, Season One', 2020], ['Cracker Island', 2023]]],

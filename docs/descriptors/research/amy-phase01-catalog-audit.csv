@@ -1,0 +1,4 @@
+album_id,title,year,type,catalog_status,current_id,action,notes
+amy-frank,Frank,2003,studio,present,amy-frank,add_descriptor_only,Keep 2003 UK original scope; 2007 US rearrangement is not separate original album.
+amy-backtoblack,Back to Black,2006,studio,present,amy-backtoblack,add_descriptor_only,Original 2006 11-track album; exclude 2007 deluxe and 2026 anniversary reissue.
+amy-lionesshiddentreasures,Lioness: Hidden Treasures,2011,compilation,missing,,add_to_catalog_and_descriptor,"2011 standalone posthumous compilation, not third completed studio LP; no live albums."

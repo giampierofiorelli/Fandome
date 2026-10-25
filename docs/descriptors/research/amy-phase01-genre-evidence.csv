@@ -1,0 +1,34 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+amy-frank,jazz,dominant,F01|F02|F06,"Jazz vocals, harmonies and standards are integral to the debut",high
+amy-frank,soul,dominant,F01|F02|F05,Soul idiom and singer-songwriter material appear throughout,high
+amy-frank,nusoul,dominant,F02|F05|F08,Critic explicitly calls it neo-soul; normalized to existing nusoul token,high
+amy-frank,rnb,significant,F02|F03|F05,Soul and R&B production underpins large share; not R&B only,high
+amy-frank,vocaljazz,significant,F01|F06|F07,Jazz vocal technique/scat is repeatedly documented,high
+amy-frank,souljazz,secondary album classification,F05|F01,Album of the Year explicitly lists Soul Jazz; secondary taxonomy,medium
+amy-frank,jazzpop,secondary album classification,F05|F01,Album of the Year calls Jazz Pop; not the primary critical label,medium
+amy-frank,contemporaryrnb,secondary album classification,F05|F02,Album metadata lists Contemporary R&B,medium
+amy-frank,popsoul,secondary album classification,F05,Secondary metadata calls Pop Soul; low weight,medium
+amy-frank,hiphop,significant production influence,F02|F06|F09,"Soul II Soul groove, programmed breaks, hip-hop sampling and production methods",high
+amy-frank,acidjazz,qualified critic comparison,F08,Retrospective says part of album recalls acid jazz; NOT whole-album categorisation,low
+amy-backtoblack,soul,dominant,B01|B02|B03,Neo-Motown and Stax-inspired soul style dominates original 11 tracks,high
+amy-backtoblack,rnb,dominant,B03|B04|B01,AllMusic contemporary R&B classification and vocal/production context,high
+amy-backtoblack,nusoul,significant,B03|B02,AllMusic labels neo-soul; existing nusoul token,high
+amy-backtoblack,pop,significant,B01|B02|B08,Melodic retro pop songwriting and girl-group hooks; not electronic dance-pop,medium
+amy-backtoblack,contemporaryrnb,significant,B03|B04,Professional album metadata explicitly lists Contemporary R&B,high
+amy-backtoblack,doowop,significant historic song structure,B05|B02|B08,Sixties girl-group / doo-wop vocal constructions across multiple songs,medium
+amy-backtoblack,northernsoul,critic style reference,B02,Pitchfork explicitly names Northern soul among specific references,medium
+amy-backtoblack,ska,limited song-level colour,B02|B01,Pitchfork names ska references; not dominant,medium
+amy-backtoblack,reggae,limited / track-level,B02|B04,"Caribbean-influenced offbeat rhythms on selected tracks, especially Just Friends",medium
+amy-backtoblack,jazz,voice / historic roots only,B06|B03,Jazz phrasing retained vocally; AllMusic says the sound shifts away from jazz,low
+amy-lionesshiddentreasures,soul,dominant,L03|L05|L07,Compilation is weighted toward ballads and 1960s soul interpretations,high
+amy-lionesshiddentreasures,rnb,significant,L03|L07,Pitchfork and label position it in R&B with vintage soul content,high
+amy-lionesshiddentreasures,jazz,significant,L03|L05|L01,Jazz standards and scat performances recur in disparate sessions,high
+amy-lionesshiddentreasures,vocaljazz,significant,L03|L01|L05,Jazz standards and voice-centred interpretation prominent,high
+amy-lionesshiddentreasures,nusoul,track-level / retrospective,L08|L03,Half Time described as neo-soul; not a uniformly neo-soul compilation,medium
+amy-lionesshiddentreasures,standards,substantial repertoire,L01|L03|L09,Covers of preexisting standards are an important share,high
+amy-lionesshiddentreasures,pop,secondary category metadata,L07|L03,Apple Music pop category and accessible vintage repertoire,medium
+amy-lionesshiddentreasures,reggae,specific recording,L01|L07,Our Day Will Come is the estate-described reggae version,high
+amy-lionesshiddentreasures,bossanova,specific recording,L01|L07,The Girl from Ipanema is a bossa nova interpretation,high
+amy-lionesshiddentreasures,doowop,specific recording / revival,L01|L04,Original song doo-wop context and Between the Cheats doo-wop feel,medium
+amy-lionesshiddentreasures,hiphop,specific guest appearance,L04|L06,Nas featured rap on Like Smoke; not representative of all tracks,high
+amy-lionesshiddentreasures,loversrock,specific recording historical comparison,L07,Apple Music compares reggae track to Heptones lovers-rock arrangement,medium
