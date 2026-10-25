@@ -1,0 +1,3 @@
+album_id,title,year,catalog_status,descriptor_status,action,existing_id_preserved,edition_basis,notes
+elodie-redlight,Red Light,2023,existing,existing,REPLACE existing row in elodie.csv; do not append,yes,Original seven-track 2023 digital clubtape; type mixtape,Previously imported from HELD.json after mixtape type was added; preserves release identity
+elodie-miamimiodi,Mi Ami Mi Odi,2025,existing,existing,REPLACE existing row in elodie.csv; do not append,yes,"Standard 12-track CD May 2025, not 13-track digital variant with Yakuza",New producers require checking standard vs variant; never include Rvssian for Yakuza standard

@@ -1,0 +1,20 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength,review_needed
+elodie-redlight,house,dominant,R01|R03|R05|R09,Explicit whole-release house; 1990s-house examples Red Light and Euphoria,high,no
+elodie-redlight,dancepop,dominant,R01|R06,Whole-project dance-pop named by two signed critics,high,no
+elodie-redlight,dance,dominant,R02|R05|R06,Artist frames the project as 7 seamlessly mixed club songs for dancing,high,no
+elodie-redlight,electronic,dominant umbrella,R01|R03|R06,"Electronic club production, rhythmic synths and bass throughout; house broad family",high,no
+elodie-redlight,rnb,secondary recurring,R01,Album-level R&B named explicitly in independent review; not all tracks,high,no
+elodie-redlight,pop,dominant umbrella,R01|R07,Album dance-pop style + label genre pop metadata,high,no
+elodie-redlight,trance,track-level,R09,"Ascendente described with EDM/trance echoes, 1/7 track; excerpt-only",medium,yes
+elodie-redlight,edm,track-level,R09,Reviewer specifically identifies EDM feel on Ascendente; not album dominant,medium,yes
+elodie-redlight,afrobeat,texture,R05,Billboard reviewer says an afrobeat spritz; not Afrobeat-led album,medium,yes
+elodie-redlight,techno,track-level influence,R08,Ascendente producer cites techno origin; not a techno album; editorial review required,medium,yes
+elodie-miamimiodi,pop,dominant,M01|M02,Explicit overarching pop description and track hooks,high,no
+elodie-miamimiodi,electropop,significant,M01,Independently signed reviewer uses electropop as album category,high,no
+elodie-miamimiodi,rnb,significant,M01|M02,Album R&B including Feeling duet; OndaRock header lists it,high,no
+elodie-miamimiodi,house,secondary,M01,"Critic lists house among whole-album genres, primarily club-oriented first half",medium,yes
+elodie-miamimiodi,dancepop,secondary,M06|M01,"Secondary genre categorization, dance-pop first half; full specialist text blocked",medium,yes
+elodie-miamimiodi,electronic,significant umbrella,M02|M01,Rockol calls album electronic and OndaRock details synthetic arrangements,high,no
+elodie-miamimiodi,dance,secondary,M01|M02,"Prominent dance-oriented opening, not uninterrupted whole-album club mix",medium,yes
+elodie-miamimiodi,poprap,track-level,M01,In grado and Muah described pop-rap/electropop-rap; not core sound,high,no
+elodie-miamimiodi,contemporaryrnb,track-level historical style,M02|M01,Feeling evokes contemporary R&B from early-2000s American style; one duet,medium,yes
