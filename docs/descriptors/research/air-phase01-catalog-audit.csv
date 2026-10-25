@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+air-premierssymptomes,Premiers Symptômes,1997,ep,missing,,Add tuple under air before Moon Safari,Five original 1997 tracks; 1999/2001/2015 editions with added Californie and Brakes On MUST NOT affect this row.
+air-moonsafari,Moon Safari,1998,studio,existing,air-moonsafari,Keep existing ID; descriptor only,"Original 10-song 1998 album; do not add 2008/2024 bonus discs, BBC performances or remixes."
+air-thevirginsuicides,The Virgin Suicides,2000,soundtrack,existing,air-thevirginsuicides,Keep existing ID; descriptor only,"Original AIR score, 13 tracks, not various-artists 1970s songs used in film; no 2015 bonus material."
+air-10000hzlegend,10 000 Hz Legend,2001,studio,existing,air-10000hzlegend,Keep existing ID; descriptor only,Original 11-song 28 May 2001 FR/UK; 12-song Japan edition and 2021 bonus mixes excluded.

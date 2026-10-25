@@ -1,0 +1,64 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+air-premierssymptomes,electronic,whole EP,P-AM|P-Q,"Synths, samplers and programmed rhythms central to original five cuts.",high
+air-premierssymptomes,downtempo,dominant five-track release,P-AM|P-AOTY,John Bush explicitly calls collection downtempo; original material mostly unhurried.,high
+air-premierssymptomes,synthpop,substantial; soft synth-pop texture,P-AM,John Bush specifically describes downtempo synth-pop.,high
+air-premierssymptomes,electronica,whole EP; AllMusic label,P-AM,Electronic production and AllMusic Electronica style classification.,high
+air-premierssymptomes,ambientpop,album style taxonomy; not every cut,P-AM|P-AOTY,Explicit Ambient Pop genre metadata for original early collection.,medium
+air-premierssymptomes,triphop,broad contemporary style taxonomy,P-AM,"AllMusic names Trip-Hop; beat textures, not rap-based performance.",medium
+air-premierssymptomes,lounge,album metadata and tonal character,P-AOTY|P-AM,Lounge named in 1997 EP genre database; smooth easy-listening textures.,medium
+air-premierssymptomes,spaceagepop,album genre database / retrospective,P-AOTY,Album of the Year explicitly names Space Age Pop as a secondary style.,medium
+air-premierssymptomes,indiepop,broad AllMusic metadata,P-AM,AllMusic names Indie Pop in styles; low-confidence as an album-wide genre.,low
+air-premierssymptomes,pop,broad album family,P-AM,"AllMusic Pop/Rock umbrella; melodic structures, not primarily radio vocal pop.",low
+air-premierssymptomes,dance,several early singles; database taxonomy,P-AM|P-NOVA,AllMusic Club/Dance style and early dance-oriented material; not whole EP.,medium
+air-premierssymptomes,easylistening,lounge/easy-listening song texture,P-AOTY|P-AM,Lounge/ambient-pop framing and relaxed melodic arrangements indicate listening style.,low
+air-premierssymptomes,alternativerock,AllMusic alternative/indie rock taxonomy only,P-AM,"Database classification, not evidence of sustained live-rock instrumentation.",low
+air-moonsafari,electronic,whole album,M-AM|M-APPLE,"Analog synths, machines, processed voices establish electronic album foundation.",high
+air-moonsafari,downtempo,majority album,M-DJ|M-APPLE,Retrospectives identify album as foundational down-tempo listening record.,high
+air-moonsafari,ambientpop,whole album; AllMusic style,M-AM|M-STEREO,AllMusic Ambient Pop classification plus atmospheric melodic pieces.,high
+air-moonsafari,electronica,whole album,M-AM|M-DJ,AllMusic electronic style; melodic producer-led studio music.,high
+air-moonsafari,triphop,album taxonomy; selective beat texture,M-AM,"AllMusic Trip-Hop style, notwithstanding band-led instrumentation.",medium
+air-moonsafari,pop,prominent melodic songs,M-AM|M-STEREO,"Songwriting/vocals on All I Need, Sexy Boy and You Make It Easy; pop hooks.",high
+air-moonsafari,synthpop,substantial song/keyboard texture,M-AM|M-LEMONDE,AllMusic and contemporaneous French criticism describe synthesizer pop textures.,medium
+air-moonsafari,indiepop,AllMusic style metadata / melodic songs,M-AM,Indie Pop named in AllMusic style taxonomy; not primary over electronic.,medium
+air-moonsafari,lounge,many tracks / general aesthetic,M-DJ|M-STEREO,Specialist retrospectives identify lounge/easy-listening pop character.,high
+air-moonsafari,easylistening,whole album sound design,M-DJ|M-GODIN,Easy-listening arranging and Godin direct recollection of 1990s easy-listening wave.,high
+air-moonsafari,chillout,album as later listening context,M-DJ|M-APPLE,"Widely placed in chill-out listening, despite duo rejecting reductive box.",high
+air-moonsafari,disco,Sexy Boy / intermittent synth-bass texture,M-APPLE|M-LA,Contemporaneous disco synth riff in Sexy Boy; not continuous disco album.,medium
+air-moonsafari,funk,La Femme d’argent bass / groove texture,M-STEREO|M-DJ,Bass-led grooves offer funk coloration; not album-dominant funk music.,low
+air-moonsafari,dance,selected singles and motifs,M-PITCH|M-LA,Danceable pulse on Sexy Boy and Kelly Watch the Stars amid predominantly restrained tracks.,medium
+air-moonsafari,psychedelicrock,soft-focus 1970s production tint,M-STEREO,Stereogum explicitly describes psychedelic-rock echoes across album sound.,medium
+air-moonsafari,spacepop,French space-pop sonic idiom,M-STEREO|M-PFCLASS,Pitchfork names original Air output instrumental French space-pop.,medium
+air-moonsafari,alternativerock,broad AllMusic style metadata only,M-AM,"Alternative/Indie Rock appears as AllMusic indexing, not core album rock.",low
+air-thevirginsuicides,soundtrack,whole score,V-AM|V-Q,Original score for Sofia Coppola film; distinct from licensed-songs OST.,high
+air-thevirginsuicides,electronic,whole score; mixed sound sources,V-AM|V-PF,"Analog synthesizers anchor compositions but coexist with drums, guitar and strings.",high
+air-thevirginsuicides,ambientpop,main thematic language,V-AM,AllMusic Ambient Pop taxonomy plus delicate recurring themes.,medium
+air-thevirginsuicides,electronica,album style metadata,V-AM,AllMusic Electronica classification of soundscape score.,high
+air-thevirginsuicides,ambient,many instrumental cues,V-AM|V-LA,"Quiet atmospheric cues and long, slow sustained moods; not strictly dark ambient.",medium
+air-thevirginsuicides,triphop,database taxonomy / sparse rhythmic passages,V-AM,AllMusic Trip-Hop genre metadata; stronger as texture than all-track identity.,low
+air-thevirginsuicides,rock,recurring textures / drums and guitars,V-PF,Pitchfork names rock influences and acoustic-electric guitar/bass presence.,medium
+air-thevirginsuicides,prog,"prog-rock atmospherics, not full genre",V-PF,Pitchfork explicitly describes progressive-rock atmosphere.,medium
+air-thevirginsuicides,psychedelicrock,several score cues / arrangement influence,V-PF,Pitchfork names late-60s/early-70s psychedelic-rock melodic influences.,medium
+air-thevirginsuicides,spacepop,comparative earlier idiom used as backdrop,V-PF,Pitchfork locates evolving score in French space-pop frame; not unqualified main genre.,low
+air-thevirginsuicides,lounge,some subdued film-score colors,V-AM|V-LA,AllMusic cites lounge and 60s/70s soundtrack instrumentation.,medium
+air-thevirginsuicides,pop,Playground Love and melodic cues,V-AM|V-KINDA,Single is intimate melodic song; majority score is instrumental.,medium
+air-thevirginsuicides,indiepop,broad AllMusic taxonomy,V-AM,"Indie Pop named by AllMusic, restricted to pop-facing cues.",low
+air-thevirginsuicides,alternativerock,broad AllMusic metadata,V-AM,Alternative/Indie Rock indexed but not sustained guitar-band album.,low
+air-thevirginsuicides,downtempo,whole score pacing,V-AM|V-LA,"Slow, sparse background score and minor-key cues; descriptive stylistic alignment.",medium
+air-thevirginsuicides,easylistening,instrumental/lounge textural overlap,V-AM|V-LA,"Traditional lounge easy-listening arrangements, but darker than Moon Safari.",low
+air-10000hzlegend,electronic,dominant whole album,H-AM|H-Q,"Synth programming, vocoders and electronic production across original 11 songs.",high
+air-10000hzlegend,electronica,album style taxonomy,H-AM,Explicit Electronica style listing; complex electronic studio sound.,high
+air-10000hzlegend,experimental,album-level sound/form departure,H-SHINDIG|H-PF,Godin recalls deliberately experimental sessions and nonlinear structures.,high
+air-10000hzlegend,pop,many songs / contrasting forms,H-AM|H-PF,Strong songwriting and catchy moments but many tracks destabilize pop.,high
+air-10000hzlegend,synthpop,some hooks and vocal synth arrangements,H-AM,AllMusic discusses synth-pop textures; no claim of uniform synth-pop.,medium
+air-10000hzlegend,ambientpop,album AllMusic taxonomy,H-AM,Ambient Pop style and contemplative synth-based sequences.,medium
+air-10000hzlegend,triphop,style taxonomy / some breaks,H-AM,AllMusic Trip-Hop label; varied beat programming.,medium
+air-10000hzlegend,rock,substantial live band passages,H-PF|H-WP,Beck song and drums/guitars lead sections; critics describe rock-facing album.,high
+air-10000hzlegend,poprock,melodic live-band songs,H-AM|H-WP,AllMusic Pop/Rock and contemporary review describe pop-song/rock hybrid.,medium
+air-10000hzlegend,folk,"The Vagabond, prominent track",H-PF|H-WP,Beck folk-like acoustic strumming/harmonica is explicitly described.,high
+air-10000hzlegend,dance,intermittent club beats / AllMusic style,H-AM|H-PF,AllMusic Club/Dance indexing and several rhythmic electronic passages.,medium
+air-10000hzlegend,disco,Radio #1 rhythmic reference,H-WP,Washington Post calls a deliberately disco-styled surface in Radio #1.,medium
+air-10000hzlegend,industrial,Don’t Be Light experimental guitar beat texture,H-WP,Critic describes that track grunge-industrial rather than whole-album industrial.,low
+air-10000hzlegend,ambient,Caramel Prisoner and sustained quiet passages,H-PF,Pitchfork specifically calls closer ambient; localized feature.,medium
+air-10000hzlegend,alternativerock,AllMusic generic taxonomy,H-AM,AllMusic Alternative/Indie Rock tag is broad and weaker than actual rock cues.,low
+air-10000hzlegend,downtempo,several contemplative cuts,H-AM,AllMusic characterizes overall record as unhurried while full LP varies.,medium
+air-10000hzlegend,grunge,one-track texture,H-WP,Washington Post uses grunge-industrial for Dont Be Light; not dominant.,low

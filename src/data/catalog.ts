@@ -121,7 +121,7 @@ const ROWS: Row[] = [
   ['suede', 'Suede', '#7a5a8f', 'Glamour, guitars and Brett’s hips', [['Suede', 1993], ['Dog Man Star', 1994], ['Coming Up', 1996], ['Head Music', 1999], ['Bloodsports', 2013], ['Autofiction', 2022], ['Antidepressants', 2025]]],
   ['aha', 'a-ha', '#4f8fc9', 'Take on me, take on this room', [['Hunting High and Low', 1985], ['Scoundrel Days', 1986], ['Stay on These Roads', 1988], ['East of the Sun, West of the Moon', 1990], ['Minor Earth Major Sky', 2000], ['True North', 2022]]],
   ['agnesobel', 'Agnes Obel', '#7f9aa8', 'Piano, strings and quiet wonder', [['Philharmonics', 2010], ['Aventine', 2013], ['Citizen of Glass', 2016], ['Myopia', 2020]]],
-  ['air', 'Air', '#8fb5d9', 'French electronic daydreams', [['Moon Safari', 1998], ['The Virgin Suicides', 2000], ['10 000 Hz Legend', 2001], ['Talkie Walkie', 2004], ['Pocket Symphony', 2007]]],
+  ['air', 'Air', '#8fb5d9', 'French electronic daydreams', [['Premiers Symptômes', 1997], ['Moon Safari', 1998], ['The Virgin Suicides', 2000], ['10 000 Hz Legend', 2001], ['Talkie Walkie', 2004], ['Pocket Symphony', 2007]]],
   ['alcazar', 'Alcazar', '#e05fa3', 'Swedish disco, glitter guaranteed', [['Casino', 2000], ['Alcazarized', 2003]]],
   ['aliciakeys', 'Alicia Keys', '#a8704a', 'Piano, soul and New York', [['Songs in A Minor', 2001], ['The Diary of Alicia Keys', 2003], ['As I Am', 2007], ['The Element of Freedom', 2009], ['Girl on Fire', 2012], ['Here', 2016], ['Alicia', 2020]]],
   ['goldfrapp', 'Goldfrapp', '#c9a85a', 'Glam electronics and pastoral dreams', [['Felt Mountain', 2000], ['Black Cherry', 2003], ['Supernature', 2005], ['Seventh Tree', 2008], ['Head First', 2010], ['Tales of Us', 2013], ['Silver Eye', 2017]]],
