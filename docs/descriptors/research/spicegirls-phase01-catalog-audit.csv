@@ -1,0 +1,4 @@
+album_id,artist,title,year,type,in_catalog,in_descriptors,action,notes
+spicegirls-spice,Spice Girls,Spice,1996,studio,yes,no,add_descriptor_row_only,Existing catalog album id; no catalog addition necessary.
+spicegirls-spiceworld,Spice Girls,Spiceworld,1997,studio,yes,no,add_descriptor_row_only,Existing catalog album id; no catalog addition necessary.
+spicegirls-forever,Spice Girls,Forever,2000,studio,yes,no,add_descriptor_row_only,Existing catalog album id; no catalog addition necessary.
