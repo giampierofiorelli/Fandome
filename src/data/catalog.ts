@@ -297,7 +297,7 @@ const ROWS: Row[] = [
   ['biggie', 'The Notorious B.I.G.', '#5a5a6f', 'Brooklyn’s finest storyteller', [['Ready to Die', 1994], ['Life After Death', 1997]]],
   ['oliviadean', 'Olivia Dean', '#d9a36f', 'Warm soul for modern hearts', [['Messy', 2023], ['The Art of Loving', 2025]]],
   ['lolayoung', 'Lola Young', '#c95a6f', 'Messy, honest and loud', [['My Mind Wanders and Sometimes Leaves Completely', 2024], ['This Wasn’t Meant for You Anyway', 2024]]],
-  ['raye', 'RAYE', '#b58a3f', 'Escapism, jazz and big-band pop', [['My 21st Century Blues', 2023]]],
+  ['raye', 'RAYE', '#b58a3f', 'Escapism, jazz and big-band pop', [['Euphoric Sad Songs', 2020], ['My 21st Century Blues', 2023], ['THIS MUSIC MAY CONTAIN HOPE.', 2026]]],
   ['pinkpantheress', 'PinkPantheress', '#f0a3c9', 'Tiny songs, huge replays', [['Heaven Knows', 2023], ['Fancy That', 2025]]],
   ['skyenewman', 'Skye Newman', '#8fa3b5', 'A new British voice to watch', []],
   ['siennaspiro', 'Sienna Spiro', '#a38fb5', 'Big ballads from a new voice', []],

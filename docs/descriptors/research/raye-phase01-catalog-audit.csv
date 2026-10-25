@@ -1,0 +1,4 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+raye-euphoricsadsongs,RAYE,Euphoric Sad Songs,2020,new,raye-euphoricsadsongs,"Add landmark mini-album as type=ep, not studio; nine-track 2020 edition; retain canon of exactly two studio albums.",2020 Polydor 9-track mini-album
+raye-my21stcenturyblues,RAYE,My 21st Century Blues,2023,existing,raye-my21stcenturyblues,"Reuse exact existing catalog ID/title, do not duplicate; 15-track original.",2023 Human Re Sources 15-track original
+raye-thismusicmaycontainhope,RAYE,THIS MUSIC MAY CONTAIN HOPE.,2026,new,raye-thismusicmaycontainhope,Add second studio album; preserve published all-caps and final punctuation where possible; verify the ID against slug.,2026 Human Re Sources 17-track original (four seasons)

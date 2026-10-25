@@ -1,0 +1,37 @@
+album_id,genre,scope,source_keys,evidence,strength
+raye-euphoricsadsongs,dancepop,dominant,E20_GU|E20_TIVO,Guardian and specialist editorial characterize nine-track project as dance-pop.,high
+raye-euphoricsadsongs,pop,dominant,E20_Q|E20_GU,Contemporary commercial pop core of nine-track release.,high
+raye-euphoricsadsongs,house,significant,E20_AP|E20_GU,"Apple describes recurring house four-to-floor patterns, not just featured DJ names.",high
+raye-euphoricsadsongs,synthpop,significant,E20_TIVO|E20_AP,Album synth-pop aesthetic; Change Your Mind singled out.,high
+raye-euphoricsadsongs,disco,track-level,E20_AP|E20_PR,Natalie Dont and Love of Your Life described as disco-tinged.,medium
+raye-euphoricsadsongs,dance,general umbrella,E20_AP|E20_GU,"Dancefloor basis of project, broader than house.",high
+raye-euphoricsadsongs,funk,track-level,E20_AP,Finale Love of Your Life described with funk texture.,medium
+raye-euphoricsadsongs,electronic,secondary,E20_AP|E20_TIVO,Electronic synths and beats carry several songs; not every ballad.,high
+raye-my21stcenturyblues,pop,dominant,B23_PF|B23_GU,Both critics frame album as pop despite diverse arrangement.,high
+raye-my21stcenturyblues,rnb,dominant,B23_PF|B23_NME,Pitchfork genre Pop/R&B and account of multiple contemporary R&B songs.,high
+raye-my21stcenturyblues,soul,significant,B23_NME|B23_PF,Multiple brass-forward modern soul compositions and voice-centered retro R&B.,high
+raye-my21stcenturyblues,jazz,significant,B23_PF|B23_NME,Jazz-rooted singing and several jazz-inspired live-band cuts.,high
+raye-my21stcenturyblues,blues,significant,B23_GU|B23_NME,Guardian explicitly names blues among album stylistic sources.,high
+raye-my21stcenturyblues,dancehall,secondary,B23_GU,Guardian explicitly identifies dancehall in whole-album mix.,high
+raye-my21stcenturyblues,house,secondary,B23_GU|B23_PF,House-derived dance segments; not continuous club album.,high
+raye-my21stcenturyblues,funk,track-level,B23_NME|B23_PF,Worth It has funk-oriented guitar/bass and rhythm.,medium
+raye-my21stcenturyblues,triphop,track-level,B23_NME,Escapism explicitly identified by NME as trip-hop influenced.,medium
+raye-my21stcenturyblues,hiphop,significant,B23_PF|B23_NME,Rap-leaning Escapism and Flip a Switch rhythmic/vocal material.,high
+raye-my21stcenturyblues,dance,secondary,B23_GU|B23_PF,Black Mascara and other floor-oriented songs.,high
+raye-my21stcenturyblues,popsoul,secondary editorial,B23_NME|B23_PF,Soul-based songwriting presented through mainstream pop structures.,medium
+raye-thismusicmaycontainhope,pop,dominant,H26_PF|H26_NME,Contemporary second album pop concept with eclectic styles.,high
+raye-thismusicmaycontainhope,jazz,dominant,H26_PF|H26_OCI|H26_NME,"Jazz-rooted throughout vocal delivery, brass and several arrangements.",high
+raye-thismusicmaycontainhope,rnb,significant,H26_PF|H26_OCI,Pitchfork explicit R&B anchor in cross-genre concept.,medium
+raye-thismusicmaycontainhope,soul,significant,H26_OCI|H26_NME,Classic soul heard across midtempo and big-band-pop arrangements.,medium
+raye-thismusicmaycontainhope,bigband,significant,H26_OCI|H26_NME,Charts and professional reviews describe big-band playing repeatedly.,medium
+raye-thismusicmaycontainhope,orchestralpop,significant,H26_PF|H26_OCI,Pitchfork explicitly uses orchestral pop; original credits confirm orchestra across multiple tracks.,medium
+raye-thismusicmaycontainhope,jazzpop,significant,H26_NME|H26_Q,NME explicitly describes jazz-pop across the album and jazz swing selections.,medium
+raye-thismusicmaycontainhope,swing,significant,H26_NME|H26_GU,Swing jazz and swinging theatrical numbers recur.,medium
+raye-thismusicmaycontainhope,funk,significant,H26_NME|H26_GU,Multiple spirited funk songs including brass-driven title-like set pieces.,medium
+raye-thismusicmaycontainhope,showtunes,significant,H26_GU|H26_NME,Guardian notes show tunes; concert-like theatrical song structures throughout.,medium
+raye-thismusicmaycontainhope,house,track-level,H26_GU,Guardian identifies house within genre-spanning album.,medium
+raye-thismusicmaycontainhope,gospel,track-level,H26_Q,"Fields is explicitly described as gospel-soul, with album vocal ensembles.",medium
+raye-thismusicmaycontainhope,disco,track-level,H26_Q,Skin & Bones described in released album editorial as disco-diva moment.,medium
+raye-thismusicmaycontainhope,easylistening,track-level,H26_GU,Guardian identifies easy listening among styles; not core album aesthetic.,medium
+raye-thismusicmaycontainhope,hiphop,track-level,H26_Q,The WhatsApp Shakespeare contains hip-hop swagger alongside brass.,medium
+raye-thismusicmaycontainhope,powerballad,significant,H26_MERC|H26_NME,Mercury reporting identifies power ballads within this record; not whole album.,medium

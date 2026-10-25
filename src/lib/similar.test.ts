@@ -73,10 +73,11 @@ describe('similar albums', () => {
     expect(similarAlbums('k-fever')).toEqual([])
   })
   it('follows the main genres, not one track or an artist-level link', () => {
-    // I'm Breathless is big band and standards (Vogue is one house track): Gaga's jazz albums come first,
+    // I'm Breathless is big band and standards (Vogue is one house track): jazz and big-band albums come first,
     // not her dance albums that "sound like Madonna".
     const top = similarAlbums('madonna-imbreathless').slice(0, 2).map((s) => s.albumId)
-    expect(top.every((id) => ['gaga-harlequin', 'gaga-cheektocheek', 'gaga-loveforsale'].includes(id))).toBe(true)
+    const bigBand = ['gaga-harlequin', 'gaga-cheektocheek', 'gaga-loveforsale', 'raye-thismusicmaycontainhope']
+    expect(top.every((id) => bigBand.includes(id))).toBe(true)
     expect(similarAlbums('madonna-imbreathless').map((s) => s.albumId)).not.toContain('g-fame')
   })
 })
