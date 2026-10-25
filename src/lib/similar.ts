@@ -602,7 +602,7 @@ export function similarArtists(
   }
   scored.sort((x, y) => y.score - x.score)
   // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
-  // artist's albums gets a place, at most two, if still above the cut. A broad discography (Madonna's
+  // artist's albums gets a place, at most three (of ten), if still above the cut. A broad discography (Madonna's
   // 17 albums) dilutes the overall profile, so the documented link is the stronger evidence.
   // Strongest first: influences the artist names for their whole work, then an album's documented
   // influences, then documented comparisons; within each, by score.
@@ -616,7 +616,7 @@ export function similarArtists(
     return null
   }
   const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link).sort((x, y) => x.link!.rank - y.link!.rank)
-  const reserved = linked.slice(0, 2).map(({ s, link }) => ({ ...s, reason: link!.reason }))
+  const reserved = linked.slice(0, 3).map(({ s, link }) => ({ ...s, reason: link!.reason }))
   const rest = scored.filter((s) => !reserved.some((r) => r.artistId === s.artistId))
   return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, ...s }) => s)
 }
