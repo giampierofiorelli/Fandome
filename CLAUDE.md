@@ -8,6 +8,7 @@
 - Discovery (suggestions, Bridge, "A scene you don't know yet") never targets the global markets (US, UK; CA, AU, IE too for now, to rethink later) or English-language pop: only local scenes, singing mainly in their own language (owner's rule; `isLocalArtist` in `src/data/scenes.ts`).
 - **Scenes data (Italian classics' descriptors, connections file, point 8 in ROADMAP): the owner will bring it up; don't remind them (Oct 2026). Never list unreleased albums as "to research".**
 - **ChatGPT descriptors prompt:** `docs/chatgpt-descriptors-prompt.md`, one prompt for every artist (only the last line names the artist). Keep it in sync when the guide or genre list changes.
+- **Recommendation engine (owner's rule):** when the owner flags a bad suggestion, it is a signal that the algorithm is wrong: find the root cause and fix it with a general rule, the same for every album. Never special-case an album, artist or result. Record the owner's judgment in `docs/similarity-judgments.csv` and check every change against all judged pairs and the whole catalogue (`src/lib/judgments.test.ts`, `src/lib/recQuality.test.ts`).
 - **Before planning new work, read `ROADMAP.md`**: it lists features we decided to do later (e.g. Apple Music in the listening party, collector marketplace) and what is waiting on the owner.
 - The owner writes in Italian: answer in Italian, short, outcome first.
 
