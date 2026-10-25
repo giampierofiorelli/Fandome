@@ -1,0 +1,5 @@
+album_id,title,year,type,artist_id,artist_in_catalogue,album_in_catalogue,existing_descriptors,action,phase
+enya-enya,Enya,1987,studio,enya,no,no,no,create artist enya and catalogue entry; then import new descriptor,01
+enya-watermark,Watermark,1988,studio,enya,no,no,no,create artist enya and catalogue entry; then import new descriptor,01
+enya-shepherdmoons,Shepherd Moons,1991,studio,enya,no,no,no,create artist enya and catalogue entry; then import new descriptor,01
+enya-thememoryoftrees,The Memory of Trees,1995,studio,enya,no,no,no,create artist enya and catalogue entry; then import new descriptor,01
