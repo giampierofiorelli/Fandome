@@ -1,0 +1,22 @@
+﻿album_id,genre,source_url,scope,evidence_strength,what_it_supports
+gala-comeintomylife,eurodance,https://storyofsong.com/story/freed-from-desire/,some_tracks,high,Freed From Desire is expressly described as Eurodance; album also contains softer songs.
+gala-comeintomylife,dancepop,https://www.allmusic.com/album/come-into-my-life-mw0001026268,whole_album,high,AllMusic explicitly compares the album singles with dance-pop.
+gala-comeintomylife,dance,https://music.apple.com/us/album/come-into-my-life-the-album/1714234986,whole_album,high,Retailer/label album category is Dance.
+gala-comeintomylife,house,https://poprescue.com/2015/07/27/pop-rescue-come-into-my-life-by-gala-cd-1997/,some_tracks,medium,Review explicitly calls the closing Let A Boy Cry mix Italy-house; dance/house beats heard elsewhere.
+gala-comeintomylife,eurohouse,https://www.discogs.com/fr/master/28922-Gala-Freed-From-Desire,some_tracks,medium,Discogs style of Freed From Desire master is Euro House.
+gala-comeintomylife,electronic,https://www.allmusic.com/album/come-into-my-life-mw0001026268,whole_album,medium,Album is described via electronic acid-techno and dance production; synthesis described track by track.
+gala-comeintomylife,pop,https://www.allmusic.com/album/come-into-my-life-mw0001026268,whole_album,high,AllMusic calls Gala a pop star and tracks pop and dance-pop.
+gala-comeintomylife,italodance,https://www.discogs.com/fr/master/28922-Gala-Freed-From-Desire,some_tracks,medium,"Discogs names Italodance for the Freed From Desire master, not the whole record."
+gala-comeintomylife,latinpop,https://www.allmusic.com/album/come-into-my-life-mw0001026268,texture,medium,"AllMusic style catalog says Latin Pop; likely linked to Summer Eclipse guitar, not dominant album character."
+gala-comeintomylife,acidtechno,https://www.allmusic.com/album/come-into-my-life-mw0001026268,texture,medium,"Dean Carlson describes old-school acid techno ancestry, not definitive full-album genre."
+gala-toughlove,poprock,https://wildysworld.blogspot.com/2009/06/review-gala-tough-love.html,whole_album,high,EP review describes album-era songs as dance/pop/rock and a rockier route.
+gala-toughlove,dancepop,https://wildysworld.blogspot.com/2009/06/review-gala-tough-love.html,whole_album,high,Review explicitly uses dance/pop for I’m The World and the crossover sound.
+gala-toughlove,pop,https://music.apple.com/us/album/tough-love/527292579,whole_album,high,Original full-length is categorised Pop.
+gala-toughlove,electropop,https://www.rockwired.com/gala.html,whole_album,medium,RockWired describes a grittier electro-pop sound for the New York recordings.
+gala-toughlove,rock,https://neufutur.com/2009/04/gala-%E2%80%93-tough-love-ep-cd/,some_tracks,high,"Review explicitly calls the title song a blending of rock, dance and pop."
+gala-toughlove,dance,https://neufutur.com/2009/04/gala-%E2%80%93-tough-love-ep-cd/,whole_album,high,Review locates dance arrangements across Tough Love songs.
+gala-toughlove,alternativerock,https://wildysworld.blogspot.com/2009/06/review-gala-tough-love.html,some_tracks,high,Review names alternative rock guitar on DKOL and alternative grit on Faraway.
+gala-toughlove,dancerock,https://wildysworld.blogspot.com/2009/06/review-gala-tough-love.html,some_tracks,medium,Review explicitly describes a mixture of rock and dance styles.
+gala-toughlove,rnb,https://neufutur.com/2009/04/gala-%E2%80%93-tough-love-ep-cd/,some_tracks,high,"Faraway specifically named R&B track, not the whole album."
+gala-toughlove,funk,https://neufutur.com/2009/04/gala-%E2%80%93-tough-love-ep-cd/,some_tracks,high,Faraway specifically described with a funk-laced groove.
+gala-toughlove,disco,https://neufutur.com/2009/04/gala-%E2%80%93-tough-love-ep-cd/,texture,medium,"Freed From Desire Un-remix carries a disco nod, a limited-scope texture."

@@ -287,7 +287,7 @@ const ROWS: Row[] = [
   ['paolachiara', 'Paola & Chiara', '#e0a3d9', 'Vamos a bailar, sisters of pop', [['Festival', 2002]]],
   ['rinogaetano', 'Rino Gaetano', '#c9a33f', 'Ironic songs, still sung today', [['Mio fratello è figlio unico', 1976], ['Aida', 1977], ['Nuntereggae più', 1978]]],
   ['robertmiles', 'Robert Miles', '#5ab5d9', 'Children, the dream house anthem', [['Dreamland', 1996], ['23am', 1997], ['Organik', 2001]]],
-  ['gala', 'Gala', '#e05f9a', 'Freed from desire, still on the dance floor', [['Come into My Life', 1997]]],
+  ['gala', 'Gala', '#e05f9a', 'Freed from desire, still on the dance floor', [['Come into My Life', 1997], ['Tough Love', 2009]]],
   ['bersani', 'Samuele Bersani', '#7a9a8f', 'Clever, gentle Italian songwriting', [['C’hanno preso tutto', 1992], ['Freak', 1995], ['Samuele Bersani', 1997], ['L’aldiquà', 2006]]],
   ['sangiovanni', 'sangiovanni', '#9ad9b5', 'Malibu summers and Gen Z pop', [['Cadere volare', 2021]]],
   ['santifrancesi', 'Santi Francesi', '#5a6f8f', 'Indie duo with an electronic soul', []],

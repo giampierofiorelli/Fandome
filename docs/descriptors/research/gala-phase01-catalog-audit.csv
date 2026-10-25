@@ -1,0 +1,14 @@
+﻿album_id,title,original_year,type,already_in_catalog,catalogue_add,action,reason
+gala-comeintomylife,Come Into My Life,1997,studio,yes,no,retain_catalogue_id,Listed in catalog.ts; use existing slug.
+gala-toughlove,Tough Love,2009,studio,no,yes,add_to_catalogue,Second original studio album; original 12-track Matriarchy edition.
+,L’Album,1997?,unverified,no,no,verification_needed,Appears in older unsourced secondary discographies; no independently verified release/tracklist found; do not create speculative duplicate.
+,Remixes / Gala Remixes,1998–2000,remix,no,no,excluded,Release metadata inconsistent on year; insufficient evidence of landmark status; overlaps singles.
+,Coming Into a Decade (10th Anniversary),2007,compilation,no,no,excluded,Documented 15-track 2007 anniversary compilation consists of singles/remixes and medleys; mostly duplicate content.
+,Tough Love EP,2009,ep,no,no,excluded,"Preview of the 2009 album containing overlapping tracks, not a separate landmark project."
+,Tough Love (Deluxe Version),2012,studio reissue,no,no,excluded,Expanded reissue of 2009 album; avoid duplicate album.
+,Lose Yourself in Me / deluxe,2012–2013,single/remix,no,no,excluded,"Single and remix collection, not documented as separate landmark EP."
+,Taste of Me / deluxe,2013–2014,ep,no,no,excluded,"Single and remix EPs, with no verified landmark justification."
+,The Beautiful,2014,ep,no,no,excluded,"Single-centred remix project, not a distinct landmark album."
+,Singles V1,2015,ep,no,no,excluded,Mostly single remixes of earlier songs; excluded to prevent double weighting.
+,Parallel Lines,2021,single,no,no,excluded,"Single, not an album."
+,Everyone Has Inside (Deluxe),2022,single/remix,no,no,excluded,Repackaging of 1996 single with later mixes; not a new album.
