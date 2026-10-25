@@ -1,0 +1,36 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+mariah-mariahcarey,pop,dominant,D90_ALL|D90_LAT,AllMusic pop taxonomy and contemporary review of mainstream pop-soul writing.,high
+mariah-mariahcarey,rnb,dominant,D90_ALL|D90_ALB,Original album combines R&B vocal and arranging styles with pop.,high
+mariah-mariahcarey,contemporaryrnb,dominant,D90_ALL|D90_AOTY,Specific AllMusic subgenre taxonomy; not inferred from later output.,high
+mariah-mariahcarey,popsoul,significant,D90_LAT|D90_AOTY,LA Times contemporary critic identifies pop-soul as main hybrid; second metadata source agrees.,high
+mariah-mariahcarey,soul,significant,D90_RM|D90_LAT,Classic-soul arrangements and gospel-inflected soul delivery in contemporary criticism.,medium
+mariah-mariahcarey,adultcontemporary,significant,D90_AOTY|D90_ALL,Adult-contemporary crossover ballads and adult R&B tagging.,medium
+mariah-mariahcarey,dancepop,secondary,D90_ALL|D90_AOTY,Contemporary review of uptempo pop/R&B material; not continuous club play.,medium
+mariah-mariahcarey,gospel,vocal_style_across_album,D90_LAT|D90_NYT,"Gospel is explicitly her vocal approach and lineage, not a claim the album is solely gospel.",medium
+mariah-mariahcarey,doowop,track_specific,D90_RM,"Record Mirror hears doo-wop in Vision of Love, not across entire LP.",medium
+mariah-emotions,rnb,dominant,E91_ALL|E91_SLA,AllMusic R&B taxonomy and independent review of sustained soul/R&B songwriting.,high
+mariah-emotions,pop,dominant,E91_ALL|E91_APP,Pop crossover songwriting throughout ballads and the dance songs.,high
+mariah-emotions,soul,significant,E91_SLA|E91_ALB,Gospel-soul ballads and strong classic-soul influences recur.,high
+mariah-emotions,popsoul,significant,E91_SLA|E91_ALB,Critical description of pop/soul fusion in vocal writing and production.,high
+mariah-emotions,gospel,significant,E91_SLA|E91_ALB,"If It’s Over and other cuts contain Hammond, gospel harmonies, devotional language.",high
+mariah-emotions,dancepop,significant,E91_APP|E91_ALB,"Title track, Make It Happen and other dance-oriented songs contrast with ballads.",high
+mariah-emotions,disco,significant,E91_ALB|E91_APP,Disco-oriented Clivillés/Cole production on important album tracks.,high
+mariah-emotions,house,track_or_group_of_tracks,E91_ALB|E91_SLA2,House pulse particularly prominent on title track; do not generalize across slow ballads.,medium
+mariah-emotions,jazz,final_track_only,E91_ALB|E91_ALL,The Wind is jazz-influenced coda; not an album-wide jazz foundation.,medium
+mariah-musicbox,pop,dominant,M93_ALL|M93_APP,Pop ballads dominate standard edition.,high
+mariah-musicbox,adultcontemporary,dominant,M93_ALL|M93_RS,AllMusic explicitly calls adult contemporary pop; contemporary review stresses slow ballads.,high
+mariah-musicbox,rnb,significant,M93_ALL|M93_WALT,R&B songwriting and producers alongside softened pop direction.,high
+mariah-musicbox,contemporaryrnb,significant,M93_ALL|M93_MB,AllMusic specific style; per-song music production supports contemporary R&B.,medium
+mariah-musicbox,popsoul,significant,M93_RS|M93_ALL,Pop and soul ballad lineage explicitly discussed by period critic.,medium
+mariah-musicbox,soul,secondary,M93_RS|M93_WALT,Soul phrasing and vocal tradition remain while arrangements shift toward pop.,medium
+mariah-musicbox,gospel,track_specific,M93_RS|M93_APP,Gospel choir-like background vocals in Without You and songs like Anytime You Need a Friend.,medium
+mariah-musicbox,dancepop,two_tracks,M93_APP|M93_MB,Now That I Know / I’ve Been Thinking About You provide rhythmic dance passages; not album dominant.,medium
+mariah-merrychristmas,christmas,dominant_seasonal_theme,C94_ALL|C94_APP|C94_BB,"Explicit Christmas album category and original holiday releases; seasonal identity, not one sonic texture.",high
+mariah-merrychristmas,pop,dominant,C94_ALL|C94_APP,"Holiday/pop songs, originals and high-gloss song arrangements.",high
+mariah-merrychristmas,gospel,significant,C94_BB|C94_ALL,Producer/artist documents real church players and Loris Holland; critics identify gospel treatments.,high
+mariah-merrychristmas,soul,significant,C94_APP|C94_BB,"Motown-flavored Christmas (Baby Please Come Home), soul-inflected church singing.",high
+mariah-merrychristmas,popsoul,significant,C94_AOTY|C94_APP,Secondary pop-soul taxonomy consistent with label editorial description.,medium
+mariah-merrychristmas,traditionalpop,significant,C94_ALL|C94_APP,Covers of established seasonal standards in classic pop arrangements.,medium
+mariah-merrychristmas,rnb,secondary,C94_AOTY|C94_BB,R&B-format ballad Miss You Most and artist’s R&B voice complement Christmas material.,medium
+mariah-merrychristmas,adultcontemporary,secondary,C94_AOTY|C94_BB,Radio adult-contemporary positioning and song style; not the sole album genre.,medium
+mariah-merrychristmas,dance,track_specific,C94_ALL|C94_APP,Joy to the World receives explicit club/rhythmic rendition; not a house album.,medium

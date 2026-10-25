@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,existing_catalog_id,exists_in_catalog,exists_in_descriptors,action,notes
+mariah-mariahcarey,Mariah Carey,Mariah Carey,1990,studio,mariah-mariahcarey,yes,no,add descriptor row only,Existing generated catalog ID based on title slug.
+mariah-emotions,Mariah Carey,Emotions,1991,studio,,no,no,add catalog album and descriptor,Missing Emotions 1991 from catalog; official second studio album.
+mariah-musicbox,Mariah Carey,Music Box,1993,studio,mariah-musicbox,yes,no,add descriptor row only,"Existing generated catalog ID; standard 1993 studio album, not anniversary expansion."
+mariah-merrychristmas,Mariah Carey,Merry Christmas,1994,studio,,no,no,add catalog album and descriptor,"Missing Merry Christmas 1994; studio holiday album, not a compilation or later edition."
