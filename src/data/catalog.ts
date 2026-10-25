@@ -478,6 +478,7 @@ const ROWS: Row[] = [
   ['prodigy', 'The Prodigy', '#d94a3f', 'Firestarters of the rave generation', [['Experience', 1992], ['Music for the Jilted Generation', 1994], ['The Fat of the Land', 1997], ['Prodigy Present: The Dirtchamber Sessions Volume One', 1999]]],
   ['enigma', 'Enigma', '#8a6fb5', 'Gregorian chant meets the dance floor', [['MCMXC a.D.', 1990], ['The Cross of Changes', 1993], ['Le Roi Est Mort, Vive Le Roi!', 1996], ['The Screen Behind the Mirror', 2000]]],
   ['chemicalbrothers', 'The Chemical Brothers', '#e0a03f', 'Block rockin’ beats, psychedelic dance floors', [['Fourteenth Century Sky', 1994], ['Exit Planet Dust', 1995], ['Dig Your Own Hole', 1997], ['Surrender', 1999]]],
+  ['portishead', 'Portishead', '#5f6f7f', 'Bristol noir, torch songs over broken beats', [['Dummy', 1994], ['Portishead', 1997], ['Roseland NYC Live', 1998], ['Third', 2008]]],
 ]
 
 const slug = (s: string) =>

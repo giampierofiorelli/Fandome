@@ -8,7 +8,7 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin',
   // guitars and strings
   guitar: 'Guitar', baritoneguitar: 'Baritone guitar', acousticguitar: 'Acoustic guitar', electricguitar: 'Electric guitar', bass: 'Bass guitar', synthbass: 'Synth bass', doublebass: 'Double bass',
-  steelguitar: 'Steel guitar', mandolin: 'Mandolin', banjo: 'Banjo', ukulele: 'Ukulele', sitar: 'Sitar', sarangi: 'Sarangi', harp: 'Harp', hammereddulcimer: 'Hammered dulcimer',
+  steelguitar: 'Steel guitar', mandolin: 'Mandolin', banjo: 'Banjo', ukulele: 'Ukulele', sitar: 'Sitar', sarangi: 'Sarangi', harp: 'Harp', hammereddulcimer: 'Hammered dulcimer', hurdygurdy: 'Hurdy-gurdy',
   strings: 'Strings', violin: 'Violin', cello: 'Cello', orchestra: 'Orchestra',
   // drums and percussion
   drums: 'Drums', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', tabla: 'Tabla',

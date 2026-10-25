@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_catalog,action,audit_basis,repo_url
+portishead-dummy,Portishead,Dummy,1994,studio,no,add artist portishead and this album,"catalog.ts and seed.ts searched, no Portishead",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+portishead-portishead,Portishead,Portishead,1997,studio,no,add artist portishead and this album,"catalog.ts and seed.ts searched, no Portishead",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+portishead-roselandnyclive,Portishead,Roseland NYC Live,1998,live,no,add artist portishead and this album,"catalog.ts and seed.ts searched, no Portishead",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+portishead-third,Portishead,Third,2008,studio,no,add artist portishead and this album,"catalog.ts and seed.ts searched, no Portishead",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
