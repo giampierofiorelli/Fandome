@@ -1,0 +1,24 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-electricdreams,soundtrack,whole album,E-OFF|E-AM|E-LP,1984 original multi-artist motion picture soundtrack; not the complete film music cue list,high
+moroder-electricdreams,newwave,strong overall album label,E-AM|E-LP,Independent album genre index identifies new wave; Culture Club and Heaven 17 material strengthens the context,high
+moroder-electricdreams,synthpop,significant album programme,E-AM|E-MB,Specialist genre indexing names synth-pop; synth instrument performances on album tracks,high
+moroder-electricdreams,poprock,significant track group,E-AM|E-MB,Contemporary pop-rock is an explicit AllMusic album style; Lynne songs include guitar lead,high
+moroder-electricdreams,pop,majority popular-song material,E-AM|E-LP,"Pop-focused vocal original-song program, with several contrasting instrumentals",medium
+moroder-metropolis,soundtrack,whole album,M-ORIG|M-OFF,Ten-song original LP for Moroder film reconstruction of Lang,high
+moroder-metropolis,electrorock,majority / retrospective descriptor,M-ES|M-ORIG,Moroder explains move toward rock; original genre labels include electronic rock,medium
+moroder-metropolis,rock,prominent songs and vocal performances,M-ORIG|M-ES,Rock performers and songwriting dominate most vocal tracks; not the instrumentals,high
+moroder-metropolis,poprock,many vocal songs,M-ORIG|M-DIST,Original physical release filed pop/rock and soundtrack adds MTV-era pop songs,medium
+moroder-metropolis,synthpop,subset / critic category,M-ORIG|M-DIST,Original issue filed synth-pop; instrumentation in cues and selected songs,medium
+moroder-metropolis,electronic,two original instrumentals / synth-heavy hybrid,M-ORIG|M-DIST,Synthesis is particularly evident in Moroder instrumentals and score design,medium
+moroder-innovisions,synthpop,most tracks / publisher and AllMusic,I-REP|I-AM|I-LP,Issuer calls the album classic synthpop; original pressing tagged synth-pop,high
+moroder-innovisions,electropop,many songs / publisher term,I-REP,Label explicitly describes 1985 collection as eighties electropop,high
+moroder-innovisions,electronic,instrumentation and LP taxonomy,I-LP,Original LP filed electronic; credits identify keyboards and synthesizers,high
+moroder-innovisions,disco,archival disco tracks / original LP,I-LP|I-OFF,Disco-listed 1985 LP includes 1970s material and two early electro-disco reworkings,medium
+moroder-innovisions,dance,whole album broad category,I-QOBUZ|I-LP,Current label metadata classifies the album broadly as dance,medium
+moroder-philipoakeygiorgiomoroder,synthpop,dominant whole album,P-AM|P-AOTY|P-LP,Both AllMusic and aggregate expert categorisations state synth-pop,high
+moroder-philipoakeygiorgiomoroder,newwave,whole-album style,P-AM,AllMusic explicitly labels the album new wave,high
+moroder-philipoakeygiorgiomoroder,europop,album comparison / qualified critic,P-AM,AllMusic critic Evan Cater compares sound with synth-based Europop bands,medium
+moroder-philipoakeygiorgiomoroder,dancepop,several tracks / qualified categorisation,P-AOTY,Genre-specific specialist aggregation lists dance-pop,medium
+moroder-philipoakeygiorgiomoroder,hinrg,some prominent dance numbers,P-AOTY,Specialist album genre tags include hi-NRG; not dominant on every song,medium
+moroder-philipoakeygiorgiomoroder,electronic,synth-led album / original credits,P-LP|P-ORIG,Drum programming and numerous synthesizer performances; retains electric guitar,medium
+moroder-philipoakeygiorgiomoroder,pop,melodic songwriting umbrella,P-AM|P-AOTY,"Conventional melodic pop hooks atop sequencers, with radio-structured songs",medium
