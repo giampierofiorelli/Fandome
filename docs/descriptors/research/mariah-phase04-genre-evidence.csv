@@ -1,0 +1,44 @@
+album_id,genre,scope,source_keys,evidence,strength
+mariah-merrychristmasiiyou,christmas,dominant,M01|M02|M04,Original second Christmas album; secular and sacred Christmas material.,high
+mariah-merrychristmasiiyou,pop,dominant,M01|M02,Original cheerful holiday pop compositions and contemporary reinterpretations.,high
+mariah-merrychristmasiiyou,gospel,significant,M01|M02|M03,Religious carols and church choir / gospel-harmonized passages occur repeatedly.,high
+mariah-merrychristmasiiyou,rnb,significant,M01|M02,When Christmas Comes is expressly described as R&B; modern songwriting provides a recurring strand.,high
+mariah-merrychristmasiiyou,contemporaryrnb,secondary,M01|M07,AllMusic adult contemporary R&B taxonomy; not all tracks are beat-led.,high
+mariah-merrychristmasiiyou,adultcontemporary,significant,M01|M02,"Adult-oriented smooth original ballads, traditional orchestral Christmas arrangements.",medium
+mariah-merrychristmasiiyou,traditionalpop,significant,M02|M01,Standards and brassy orchestral traditional-style seasonal readings.,high
+mariah-merrychristmasiiyou,soul,secondary,M02|M01,When Christmas Comes compared by critic to Donny Hathaway soul/R&B holiday precedent.,medium
+mariah-merrychristmasiiyou,hiphop,track-level,M02,Housetop Celebration explicitly recycles a Kurtis Blow rap beat; NOT hip-hop-dominant album.,high
+mariah-merrychristmasiiyou,jazz,track-level,M01|M02,Charlie Brown/Vince Guaraldi holiday standard and associated jazzy arrangements; not jazz LP.,medium
+mariah-meiammariahtheelusivechanteuse,rnb,dominant,C01|C02|C04|C05,"Review consensus: predominantly 1990s-rooted and updated R&B, songs and ballads.",high
+mariah-meiammariahtheelusivechanteuse,contemporaryrnb,dominant,C01|C05,Contemporary production for core pop/R&B songbook.,medium
+mariah-meiammariahtheelusivechanteuse,pop,significant,C01|C04,Mainstream accessible pop hooks and big vocal ballads throughout.,high
+mariah-meiammariahtheelusivechanteuse,soul,significant,C02|C04,Old-school soul songwriting and timbral/arrangement references recur beyond one song.,high
+mariah-meiammariahtheelusivechanteuse,hiphop,significant,C01|C04|C05,"Multiple sample-heavy, producer-led songs Dedicated, Thirsty and Money.",high
+mariah-meiammariahtheelusivechanteuse,hiphopsoul,significant,C01|C04,Cross-pollination of R&B soul vocals with hip-hop loops and artist collaborations.,medium
+mariah-meiammariahtheelusivechanteuse,gospel,significant,C01|C02|C03,"Repeated gospel/hymn vocabulary: Cry., One More Try, Heavenly; beyond a one-track exception.",high
+mariah-meiammariahtheelusivechanteuse,disco,track-level,C01|C02|C03,You Don’t Know What to Do and Meteorite cited as disco passages.,high
+mariah-meiammariahtheelusivechanteuse,quietstorm,secondary texture,C02,Guardian invokes quiet-storm mode of restrained singing; primarily a vocal/ballad texture.,medium
+mariah-meiammariahtheelusivechanteuse,dancepop,track-level,C01|C02,"Disco-leaning uptempo numbers, not an uninterrupted dance album.",medium
+mariah-caution,rnb,dominant,W01|W02|W03,Three critics agree album is compact contemporary R&B.,high
+mariah-caution,contemporaryrnb,dominant,W01|W03,New R&B producers applied to Carey restrained slow-jam signature.,high
+mariah-caution,pop,significant,W01|W03,Full album reviewed as pop/R&B; melody-forward radio-ready structure.,high
+mariah-caution,soul,significant,W01|W02,"Recurring pop-soul intimacy, multi-layer vocals and soft rhythmic arrangements.",high
+mariah-caution,popsoul,significant,W01,Pitchfork explicitly calls the album her core pop-soul aesthetic.,high
+mariah-caution,hiphop,secondary,W01|W04,"Slick Rick, Gunna and hip-hop samples feature across multiple album tracks.",high
+mariah-caution,hiphopsoul,secondary,W01|W04,"R&B/soul vocals and recurrent hip-hop beats, samples and features coexist.",medium
+mariah-caution,downtempo,significant,W01|W02|W03,"Extended slow/midtempo pulse across the album, NOT simply absence of dance-pop.",high
+mariah-caution,quietstorm,secondary texture,W01|W02|W03,"Silky slow-jam, low-intensity R&B style; term used as interpretive style.",medium
+mariah-caution,adultcontemporary,track-level,W02|W03,Portrait ballad and selected traditional ballad instrumentation.,medium
+mariah-hereforitall,rnb,dominant,H01|H03|H05,Overall contemporary R&B and soul-pop body; multiple production styles.,high
+mariah-hereforitall,contemporaryrnb,dominant,H01|H03|H04,Current R&B production across much of the 11-track album.,high
+mariah-hereforitall,pop,significant,H01|H05,Commercial pop songwriting framework and official label classification.,high
+mariah-hereforitall,soul,significant,H01|H02|H03,Recurring 1970s retro-soul and organically arranged vocal ballads.,high
+mariah-hereforitall,nusoul,secondary,H01|H04,Paak collaboration and Qobuz critic cite neo-soul frame; not all songs share it.,medium
+mariah-hereforitall,funk,secondary,H01|H03,Play This Song and I Won’t Allow It specifically include prominent funk guitars and rhythm.,high
+mariah-hereforitall,disco,track-level,H01|H02|H03,I Won’t Allow It specifically classified disco-funk; not whole album disco.,high
+mariah-hereforitall,gospel,significant,H01|H02|H03,Jesus I Do and title closer sustain gospel strand; church vocals and uplift.,high
+mariah-hereforitall,hiphop,secondary,H03|H04,Type Dangerous uses classic rap sample; modern hip-hop production on other tracks.,high
+mariah-hereforitall,hiphopsoul,secondary,H03,NME explicitly uses hip-hop soul for sampled lead single Type Dangerous.,high
+mariah-hereforitall,dancehall,track-level,H03,NME calls Sugar Sweet dancehall influenced; confined to track rather than album.,high
+mariah-hereforitall,trap,track-level,H03,NME explicitly labels Confetti & Champagne trap-driven; do not generalize.,high
+mariah-hereforitall,doowop,track-level,H04,Qobuz review compares In Your Feelings arrangement to Smokey Robinson doo-wop; reference not album-wide.,medium

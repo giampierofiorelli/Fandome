@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+mariah-merrychristmasiiyou,Mariah Carey,Merry Christmas II You,2010,missing,mariah-merrychristmasiiyou,APPEND catalog album; keep distinct from 1994 Merry Christmas,Original 2010 ~13-track sequence; no Jump Smokers bonus remix
+mariah-meiammariahtheelusivechanteuse,Mariah Carey,Me. I Am Mariah... The Elusive Chanteuse,2014,missing,mariah-meiammariahtheelusivechanteuse,APPEND standard studio album; do not import deluxe tracks,"Original standard 2014, 14 musical tracks plus short title outro"
+mariah-caution,Mariah Carey,Caution,2018,missing,mariah-caution,APPEND standard studio album; exclude Japan Runway bonus,Original 2018 10-track release
+mariah-hereforitall,Mariah Carey,Here for It All,2025,already_in_catalog,mariah-hereforitall,PRESERVE existing catalog ID; add descriptor only,Original 2025 11-track core release including featured songs
