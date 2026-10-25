@@ -224,7 +224,7 @@ const ROWS: Row[] = [
   ['trst', 'TR/ST', '#4a3f5a', 'Dark synth from Toronto', [['TR/ST', 2012], ['Joyland', 2014], ['The Destroyer – 1', 2019]]],
   ['travis', 'Travis', '#5a9ac9', 'Why does it always rain on us?', [['Good Feeling', 1997], ['The Man Who', 1999], ['The Invisible Band', 2001], ['12 Memories', 2003], ['L.A. Times', 2024]]],
   ['trentemoller', 'Trentemøller', '#3f5a6f', 'Danish electronic shadows', [['The Last Resort', 2006], ['The Trentemøller Chronicles', 2007], ['Into the Great Wide Yonder', 2010], ['Reworked / Remixed', 2011], ['Lost', 2013], ['Lost Reworks', 2014], ['Fixion', 2016], ['Obverse', 2019], ['Memoria', 2022], ['Dreamweaver', 2024]]],
-  ['troye', 'Troye Sivan', '#9ab5e0', 'Blue neighbourhoods and bloom', [['TRXYE', 2014], ['Blue Neighbourhood', 2015], ['Bloom', 2018], ['In a Dream', 2020], ['Something to Give Each Other', 2023]]],
+  ['troye', 'Troye Sivan', '#9ab5e0', 'Blue neighbourhoods and bloom', [['TRXYE', 2014], ['Blue Neighbourhood', 2015], ['Bloom', 2018], ['In a Dream', 2020], ['Something to Give Each Other', 2023], ['She’s the Best', 2026]]],
   ['twodoor', 'Two Door Cinema Club', '#e0a35a', 'Indie dance from Bangor', [['Tourist History', 2010], ['Beacon', 2012], ['Gameshow', 2016], ['False Alarm', 2019], ['Keep On Smiling', 2022]]],
   ['ub40', 'UB40', '#c94a3f', 'Red red wine and reggae', [['Signing Off', 1980], ['Present Arms', 1981], ['Labour of Love', 1983], ['Promises and Lies', 1993]]],
   ['vasco', 'Vasco Rossi', '#d93f3f', 'Il Blasco and his stadiums', [['Vado al massimo', 1982], ['Bollicine', 1983], ['C’è chi dice no', 1987], ['Liberi liberi', 1989], ['Gli spari sopra', 1993], ['Nessun pericolo… per te', 1996]]],

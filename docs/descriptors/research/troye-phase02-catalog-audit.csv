@@ -1,0 +1,3 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+troye-somethingtogiveeachother,troye,Something to Give Each Other,2023,present,troye-somethingtogiveeachother,Retain existing album ID. Import new descriptor row only.,2023 original 10 track standard; exclude Rush remix singles and deluxe
+troye-shesthebest,troye,She's the Best,2026,absent,troye-shesthebest,Add to src/data/catalog.ts as 2026 studio album; then import 25 column descriptor.,2026 Oct 9 original 12 track album; do not use Aug 14 single listing

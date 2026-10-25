@@ -1,0 +1,23 @@
+album_id,genre,scope,source_keys,evidence,strength
+troye-somethingtogiveeachother,pop,dominant,T23_PF|T23_AM|T23_NME,"Whole project described as pop with varied club, R&B and soft ballad material.",high
+troye-somethingtogiveeachother,dancepop,dominant,T23_AM|T23_NME|T23_Q,AllMusic direct Dance-Pop tag; many dance-oriented tracks.,high
+troye-somethingtogiveeachother,dance,substantial,T23_AM|T23_NME|T23_PF,Dancefloor music central to album but not uninterrupted.,high
+troye-somethingtogiveeachother,house,substantial,T23_PF|T23_NME,House explicitly documented on Rush with broader club framing; not every track.,high
+troye-somethingtogiveeachother,electronic,substantial,T23_NME|T23_PF|T23_Q,Synthetic beats and sampled electronics across many arrangements; some tender midtempo pop too.,medium
+troye-somethingtogiveeachother,rnb,album taxonomy,T23_PF,Pitchfork classifies record Pop/R&B; reviewer does not establish R&B dominance.,medium
+troye-somethingtogiveeachother,ukgarage,track-specific,T23_PF,Got Me Started explicitly compared to UK-garage sample-heavy music with two-step beat; not album-wide.,medium
+troye-somethingtogiveeachother,frenchtouch,track-specific,T23_NME,"NME describes One of Your Girls production as French-touch swirl; one song, not dominant.",high
+troye-shesthebest,pop,dominant,T26_PF|T26_Q|T26_AM,Whole record framed as pop.,high
+troye-shesthebest,leftfieldpop,album taxonomy,T26_AM|T26_V|T26_PF,AllMusic direct style tag; critics document unconventional production and arrangements.,high
+troye-shesthebest,electronic,substantial,T26_V|T26_PF|T26_G,"Electronic beats, processed vocals and synth textures on multiple songs.",high
+troye-shesthebest,dancepop,album taxonomy,T26_AM|T26_N,AllMusic direct genre style; album also includes softer afterparty tracks.,high
+troye-shesthebest,rnb,album taxonomy,T26_PF|T26_Q,Pitchfork Pop/R&B taxonomy; satin-lined R&B-pop on Lost Time.,medium
+troye-shesthebest,house,substantial,T26_V|T26_PF|T26_N,Vogue describes house; Pitchfork identifies house beats on Canada Dry and I Do This for You.,high
+troye-shesthebest,triphop,substantial/track-led,T26_V|T26_N,Vogue describes trip-hop among eclectic sonic palette; NME names title cut as trip-hoppy.,high
+troye-shesthebest,breakbeat,texture and track-specific,T26_V|T26_G,Vogue names breakbeat; Guardian describes shuffling beat on title track.,high
+troye-shesthebest,alternativedance,cross-album critical frame,T26_N|T26_G,NME 1990s alt-dance; Guardian Balearic-inflected British dance-pop on several tracks.,high
+troye-shesthebest,shoegaze,texture/track-specific,T26_V|T26_G,Vogue explicitly reports shoegaze; Guardian notes distorted guitars and abstract noise on Love So Big It Hurts.,medium
+troye-shesthebest,orchestralpop,track-specific,T26_V,"Vogue explicitly refers to flamboyant orchestral pop, scope not dominant.",high
+troye-shesthebest,acousticpop,track-specific,T26_G,Guardian identifies acoustic-pop character on Embarrassingly.,high
+troye-shesthebest,drumandbass,track-influence,T26_G,Guardian describes drum-and-bass influence on Troye Meets World only.,high
+troye-shesthebest,balearicbeat,multiple-track style; newly proposed,T26_G|T26_N,Guardian explicitly names Balearic sound on Canada Dry and I Do This for You; normalized Balearic beat token proposed.,medium
