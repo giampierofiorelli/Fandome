@@ -1,0 +1,52 @@
+album_id,genre,source,url,scope,evidence
+nodoubt-nodoubt,ska,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,whole album,Explicit ska roots
+nodoubt-nodoubt,skapunk,AllMusic 1992 style index,https://www.allmusic.com/album/no-doubt-mw0000280360,whole album,Style Ska-Punk
+nodoubt-nodoubt,thirdwaveskarevival,AllMusic 1992 style index,https://www.allmusic.com/album/no-doubt-mw0000280360,whole album,Style Third Wave Ska Revival
+nodoubt-nodoubt,newwave,Album of the Year 1992 genre index,https://www.albumoftheyear.org/album/4203-no-doubt-no-doubt.php,some tracks,"Explicit New Wave tag; secondary index, also supported by 1980s synth review descriptions"
+nodoubt-nodoubt,poprock,Album of the Year 1992 genre index,https://www.albumoftheyear.org/album/4203-no-doubt-no-doubt.php,whole album,Explicit Pop Rock
+nodoubt-nodoubt,alternativepoprock,AllMusic 1992 style index,https://www.allmusic.com/album/no-doubt-mw0000280360,whole album,Style Alternative Pop/Rock
+nodoubt-nodoubt,alternativeindierock,AllMusic 1992 style index,https://www.allmusic.com/album/no-doubt-mw0000280360,whole album,Style Alternative/Indie Rock
+nodoubt-nodoubt,funk,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,some tracks,Funk explicitly described
+nodoubt-nodoubt,punk,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,some tracks,Punk explicitly named
+nodoubt-nodoubt,rock,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,whole album,Rock explicitly named
+nodoubt-nodoubt,latin,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,some tracks,Latin elements explicitly named
+nodoubt-nodoubt,dance,Los Angeles Times 1992 contemporary album review,https://www.latimes.com/archives/la-xpm-1992-08-15-ca-5006-story.html,some tracks,Dance explicitly named
+nodoubt-nodoubt,postgrunge,AllMusic 1992 style index,https://www.allmusic.com/album/no-doubt-mw0000280360,texture,"Style Post-Grunge, broad index with reservations"
+nodoubt-thebeaconstreetcollection,skapunk,AllMusic Beacon album styles,https://www.allmusic.com/album/the-beacon-street-collection-mw0000027620,whole album,Ska-punk style
+nodoubt-thebeaconstreetcollection,ska,LA Times May 1995 original review,https://www.latimes.com/archives/la-xpm-1995-05-27-ca-6486-story.html,whole album,Original ska mix
+nodoubt-thebeaconstreetcollection,thirdwaveskarevival,AllMusic Beacon album styles,https://www.allmusic.com/album/the-beacon-street-collection-mw0000027620,whole album,Third Wave Ska Revival
+nodoubt-thebeaconstreetcollection,reggae,LA Times May 1995 original review,https://www.latimes.com/archives/la-xpm-1995-05-27-ca-6486-story.html,some tracks,Reggae grooves in Stricken and other songs
+nodoubt-thebeaconstreetcollection,poprock,Album of the Year Beacon tag index,https://www.albumoftheyear.org/album/4202-no-doubt-the-beacon-street-collection.php,whole album,Pop Rock
+nodoubt-thebeaconstreetcollection,alternativerock,Album of the Year Beacon tag index,https://www.albumoftheyear.org/album/4202-no-doubt-the-beacon-street-collection.php,whole album,Alternative Rock
+nodoubt-thebeaconstreetcollection,alternativepoprock,AllMusic Beacon album styles,https://www.allmusic.com/album/the-beacon-street-collection-mw0000027620,whole album,Alternative Pop/Rock
+nodoubt-thebeaconstreetcollection,punk,AllMusic artist history,https://www.allmusic.com/artist/no-doubt-mn0000341672/discography,whole album,Rawer more punk-inspired than their debut
+nodoubt-thebeaconstreetcollection,funk,LA Times May 1995 original review,https://www.latimes.com/archives/la-xpm-1995-05-27-ca-6486-story.html,some tracks,Funky jam-pop comparison
+nodoubt-thebeaconstreetcollection,twotone,Album of the Year Beacon tag index,https://www.albumoftheyear.org/album/4202-no-doubt-the-beacon-street-collection.php,texture,2 Tone tag; stylistic heritage rather than literal 1979 movement membership
+nodoubt-thebeaconstreetcollection,postgrunge,AllMusic Beacon album styles,https://www.allmusic.com/album/the-beacon-street-collection-mw0000027620,texture,Broad style label not a dominant recorded idiom
+nodoubt-tragickingdom,skapunk,AllMusic Tragic Kingdom styles,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,whole album,Ska-Punk
+nodoubt-tragickingdom,thirdwaveskarevival,Pitchfork 2020 retrospective,https://pitchfork.com/reviews/albums/no-doubt-tragic-kingdom/,whole album,Third-wave ska and ska revival
+nodoubt-tragickingdom,ska,LA Times November 1995 review,https://www.latimes.com/archives/la-xpm-1995-11-13-ca-2706-story.html,whole album,Ska central component
+nodoubt-tragickingdom,poprock,AllMusic Tragic Kingdom review,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,whole album,Pop sensibility paired with rock
+nodoubt-tragickingdom,newwave,LA Times November 1995 review,https://www.latimes.com/archives/la-xpm-1995-11-13-ca-2706-story.html,whole album,Edgy New Wave guitar rock
+nodoubt-tragickingdom,alternativerock,Pitchfork 2020 retrospective,https://pitchfork.com/reviews/albums/no-doubt-tragic-kingdom/,whole album,Alternative scene crossover and rock instrumentation
+nodoubt-tragickingdom,alternativepoprock,AllMusic Tragic Kingdom style index,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,whole album,Alternative Pop/Rock
+nodoubt-tragickingdom,alternativeindierock,AllMusic Tragic Kingdom style index,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,whole album,Alternative/Indie Rock
+nodoubt-tragickingdom,reggae,LA Times November 1995 review,https://www.latimes.com/archives/la-xpm-1995-11-13-ca-2706-story.html,some tracks,Reggae rhythms; Sunday Morning in Pitchfork
+nodoubt-tragickingdom,punk,AllMusic Tragic Kingdom review,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,some tracks,1990s punk component
+nodoubt-tragickingdom,rock,Pitchfork album review genre,https://pitchfork.com/reviews/albums/no-doubt-tragic-kingdom/,whole album,Explicit rock umbrella
+nodoubt-tragickingdom,funk,LA Times November 1995 review,https://www.latimes.com/archives/la-xpm-1995-11-13-ca-2706-story.html,some tracks,Motown funk touches
+nodoubt-tragickingdom,disco,Pitchfork 2020 retrospective,https://pitchfork.com/reviews/albums/no-doubt-tragic-kingdom/,some tracks,You Can Do It disco number
+nodoubt-tragickingdom,metal,LA Times November 1995 review,https://www.latimes.com/archives/la-xpm-1995-11-13-ca-2706-story.html,texture,Touches of metal not dominant genre
+nodoubt-tragickingdom,postgrunge,AllMusic Tragic Kingdom style index,https://www.allmusic.com/album/tragic-kingdom-mw0000179531,texture,Broad style label only
+nodoubt-returnofsaturn,poprock,Album of the Year 2000 style index,https://www.albumoftheyear.org/album/4200-no-doubt-return-of-saturn.php,whole album,Pop Rock
+nodoubt-returnofsaturn,alternativerock,Album of the Year 2000 style index,https://www.albumoftheyear.org/album/4200-no-doubt-return-of-saturn.php,whole album,Alternative Rock
+nodoubt-returnofsaturn,alternativepoprock,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,whole album,Alternative Pop/Rock
+nodoubt-returnofsaturn,alternativeindierock,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,whole album,Alternative/Indie Rock
+nodoubt-returnofsaturn,newwave,Washington Post 2000 review,https://www.washingtonpost.com/archive/lifestyle/2000/04/12/no-doubts-long-bumpy-ride-to-saturn/aadad9e4-3e3e-4ebc-8d5d-c117bd1038ce/,whole album,1980s new wave reference points across songs
+nodoubt-returnofsaturn,powerpop,Album of the Year 2000 style index,https://www.albumoftheyear.org/album/4200-no-doubt-return-of-saturn.php,whole album,Power Pop index
+nodoubt-returnofsaturn,skapunk,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,some tracks,"Ska-punk style, residual rather than dominant"
+nodoubt-returnofsaturn,ska,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,some tracks,Third-wave ska remnants
+nodoubt-returnofsaturn,thirdwaveskarevival,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,some tracks,Third Wave Ska Revival tag
+nodoubt-returnofsaturn,postgrunge,AllMusic Return of Saturn style index,https://www.allmusic.com/album/r471089,texture,Broad Post-Grunge index
+nodoubt-returnofsaturn,dub,Washington Post 2000 review,https://www.washingtonpost.com/archive/lifestyle/2000/04/12/no-doubts-long-bumpy-ride-to-saturn/aadad9e4-3e3e-4ebc-8d5d-c117bd1038ce/,some tracks,Marry Me dub elements
+nodoubt-returnofsaturn,rock,Washington Post 2000 review,https://www.washingtonpost.com/archive/lifestyle/2000/04/12/no-doubts-long-bumpy-ride-to-saturn/aadad9e4-3e3e-4ebc-8d5d-c117bd1038ce/,whole album,Guitar-driven alternative rock
