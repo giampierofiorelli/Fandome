@@ -1,0 +1,31 @@
+﻿album_id,genre,scope,source_keys,evidence,strength
+mina-tintarelladiluna,pop,whole original LP,T-AM|T-EN,"Original 1960 Italian pop with English titles and Italian singles; album, not song-only.",high
+mina-tintarelladiluna,rockandroll,majority/upbeat rock-and-roll period,T-FIN|T-REVIEW|T-SING,"Mina breakthrough rock-and-roll performance, album samples of original late-50s repertoire.",medium
+mina-tintarelladiluna,boogiewoogie,album classification / rhythmic portion,T-IT,The Italian album entry explicitly names boogie-woogie; not every ballad follows this rhythm.,medium
+mina-tintarelladiluna,europop,retrospective database classification,T-AM,AllMusic Euro-Pop label; not a historical claim that the term was used in 1960.,medium
+mina-tintarelladiluna,italianpop,retrospective database classification,T-AM,AllMusic Italian Pop; propose a distinct genre token for Italian popular repertoire.,medium
+mina-tintarelladiluna,adultcontemporary,retrospective catalogue classification,T-AM,AllMusic Adult Contemporary tag; not a contemporary 1960 marketing category.,low
+mina-tintarelladiluna,rock,broad database umbrella,T-AM,Pop/Rock database family only; rock-and-roll is more precise.,low
+mina-ilcieloinunastanza,pop,whole album,C-IT|C-AM,Pop classification and mixed accessible commercial songs across the original LP.,high
+mina-ilcieloinunastanza,italianpop,whole album / database subgenre,C-AM,"AllMusic Italian Pop label, not evidence of a distinct modern It-pop scene.",medium
+mina-ilcieloinunastanza,musicaleggera,whole record / contemporary Italian canzone,C-EN,Source uses musica leggera; meaningful period-specific Italian label.,medium
+mina-ilcieloinunastanza,europop,retrospective catalogue tag,C-AM,AllMusic Euro-Pop; retroactive database taxonomy.,medium
+mina-ilcieloinunastanza,adultcontemporary,retrospective catalogue tag,C-AM,AllMusic Adult Contemporary rather than 1960-era terminology.,low
+mina-ilcieloinunastanza,traditionalpop,orchestral vocal side / editorial taxonomy,C-IT|C-EN,Tony De Vita orchestral mainstream song arrangements meet traditional-pop usage; not an explicit source token.,low
+mina-ilcieloinunastanza,jazz,one documented track,C-JAZZ,"Jazz specialist indexes Invoco te; jazz is a trace genre, not a dominant album style.",low
+mina-mina,jazz,dominant six American standards and phrasing,M-JAZZ|M-IT,Specialist jazz criticism lists six jazz standards on the LP; major album identity.,high
+mina-mina,vocaljazz,dominant singer-centered standard interpretations,M-JAZZ|M-ORIG,Jazz standards with full vocal interpretations and Martelli orchestration; narrower vocal-jazz genre.,high
+mina-mina,standards,major LP repertoire,M-JAZZ|M-ORIG,"Nearness of You, Angel Eyes, Stella By Starlight and other American standards.",high
+mina-mina,bossanova,part of Brazilian song selection,M-EN|M-OFFICIAL,Insensatez and Brazilian compositions; secondary bossa nova material.,high
+mina-mina,pop,broad crossover / rest of album,M-EN|M-AM,Jazz/Brazilian record presented through popular-song framework; source explicitly lists Pop.,medium
+mina-mina,latin,Spanish/Portuguese section,M-ORIG|M-EN,"La Barca and Sabor A Mí alongside Brazilian repertoire, not whole LP.",medium
+mina-mina,italianpop,retrospective catalogue genre,M-AM,AllMusic Italian Pop metadata; jazz is more specific for this LP.,medium
+mina-mina,traditionalpop,standard-bearing vocal arrangements,M-JAZZ|M-IT,Orchestral pop and Great American Songbook treatments; period stylistic description.,medium
+mina-mina,europop,retrospective catalogue tag,M-AM,AllMusic Euro-Pop tag; weak against jazz-dominant tracklist.,low
+mina-mina,adultcontemporary,retrospective catalogue tag,M-AM,AllMusic Adult Contemporary label; not original mid-60s label.,low
+mina-studiouno,pop,dominant album genre,S-OFF|S-IT|S-AM,Official twelve-song Italian pop LP; domestic canzone and adapted hits.,high
+mina-studiouno,italianpop,dominant Italian-language pop,S-AM|S-RAI,AllMusic specifically tags Italian Pop; Rai says all vocals Italian.,high
+mina-studiouno,europop,broader 1965 European pop classification,S-AM,AllMusic Euro-Pop taxonomy; covers and Italian TV pop.,medium
+mina-studiouno,adultcontemporary,database retro tag / ballads,S-AM,AllMusic Adult Contemporary; retroactive style for orchestral melodic adult pop.,medium
+mina-studiouno,traditionalpop,orchestral and vocal ballad subset,S-RAI|S-IT,Orchestra-backed song structures and theatrical romantic ballads; editorial taxonomy.,medium
+mina-studiouno,rock,broad Pop/Rock umbrella,S-AM,"AllMusic Pop/Rock is an umbrella family, not evidence of a guitar-rock album.",low

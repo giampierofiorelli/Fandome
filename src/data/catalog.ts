@@ -151,7 +151,7 @@ const ROWS: Row[] = [
   ['bunnymen', 'Echo & the Bunnymen', '#4a5f7a', 'Liverpool’s moody masterpieces', [['Crocodiles', 1980], ['Heaven Up Here', 1981], ['Porcupine', 1983], ['Ocean Rain', 1984], ['Echo & the Bunnymen', 1987]]],
   ['ellie', 'Ellie Goulding', '#e8a3c9', 'Lights, love and electro-pop', [['Lights', 2010], ['Halcyon', 2012], ['Delirium', 2015], ['Brightest Blue', 2020], ['Higher Than Heaven', 2023]]],
   ['morricone', 'Ennio Morricone', '#8a7a5a', 'The sound of cinema', [['Il buono, il brutto, il cattivo', 1966], ['C’era una volta il West', 1968], ['The Mission', 1986], ['Nuovo Cinema Paradiso', 1988]]],
-  ['mina', 'Mina', '#c94a7a', 'The voice, the tiger of Cremona', [['Studio Uno', 1965], ['Frutta e verdura', 1973], ['Mina Live ’78', 1978], ['Mina Celentano', 1998]]],
+  ['mina', 'Mina', '#c94a7a', 'The voice, the tiger of Cremona', [['Tintarella di luna', 1960], ['Il cielo in una stanza', 1960], ['Mina', 1964], ['Studio Uno', 1965], ['Frutta e verdura', 1973], ['Mina Live ’78', 1978], ['Mina Celentano', 1998]]],
   ['eurythmics', 'Eurythmics', '#e04a4a', 'Sweet dreams are made of this', [['Sweet Dreams (Are Made of This)', 1983], ['Touch', 1983], ['Be Yourself Tonight', 1985], ['Revenge', 1986], ['Savage', 1987], ['Peace', 1999]]],
   ['fischerspooner', 'Fischerspooner', '#b5a33f', 'Electroclash theatre', [['#1', 2001], ['Odyssey', 2005], ['Entertainment', 2009], ['Sir', 2018]]],
   ['foofighters', 'Foo Fighters', '#c93f3f', 'Everlong singalongs', [['Foo Fighters', 1995], ['The Colour and the Shape', 1997], ['There Is Nothing Left to Lose', 1999], ['One by One', 2002], ['In Your Honor', 2005], ['Wasting Light', 2011], ['Medicine at Midnight', 2021], ['But Here We Are', 2023]]],
