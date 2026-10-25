@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+moroder-spinach1,Spinach 1,1973,studio,missing,,Add collaborative 1973 album under Fandome artist moroder; do not register separate duplicate Spinach ID,Original Canyon Y-1017 was 1973 LP drawn partly from previously issued 1970-72 Spinach singles; composer/performer credits not interchangeable with producer credits.
+moroder-einzelganger,Einzelgänger,1975,studio,missing,,Add 1975 Oasis solo alias record with moroder prefix,Official website gives September 1975; pseudonym is Einzelgänger; engineer Reinhold Mack not named producer.
+moroder-knightsinwhitesatin,Knights in White Satin,1976,studio,missing,,Add original 6-track 1976 album,"Title intentionally Knights with K, different from Moody Blues Nights; 4 extra Repertoire CD bonuses excluded."
+moroder-fromheretoeternity,From Here to Eternity,1977,studio,existing,moroder-fromheretoeternity,Keep existing catalogue album ID; descriptor row only,"Eight original 1977 tracks, no 2013 bonus edit or 1985 From Here to Eternity...And Back re-recording/compilation."

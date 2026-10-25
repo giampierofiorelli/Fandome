@@ -1,0 +1,29 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-spinach1,rockandroll,significant,SP-MBASE|SP-REISSUE,"Original/reissue metadata explicitly says Rock & Roll; compilation of pre-1973 singles, not disco.",high
+moroder-spinach1,poprock,significant,SP-MBASE|SP-REISSUE,Album issue style is Pop Rock; overlaps rocking pop songs.,medium
+moroder-spinach1,rock,broad family,SP-MBASE,Original LP categorized Rock as a broad market category.,medium
+moroder-spinach1,pop,broad family,SP-MBASE,Original LP categorized Pop alongside Rock; do not treat all tracks as pop.,medium
+moroder-spinach1,psychedelicrock,some tracks / record taxonomy,SP-MBASE,Original issue metadata explicitly labels Psychedelic Rock; no signed track-by-track review.,low
+moroder-spinach1,synthpop,some tracks / retro tag,SP-MBASE|SP-REISSUE,Listed as Synth-pop retrospectively; 1970–1973 single-era material means genre should be re-audited.,low
+moroder-spinach1,electronic,broad catalog family,SP-MBASE,The record catalog has an Electronic category; evidence is inadequate for a whole-album electronic score.,low
+moroder-einzelganger,electronic,dominant,E75-OFF|E75-REP|E75-ELECTRONIC,"Analogue synthesizers, sequenced percussion and processed voice central to entire 1975 project.",high
+moroder-einzelganger,experimental,dominant,E75-REP|E75-REYNOLDS|E75-VF,Publisher and specialist critics explicitly classify as experimental electronic record.,high
+moroder-einzelganger,minimalsynth,significant,E75-DMY,DMY calls it pre-NDW minimal synth with repeating synthetic bass and sparse texture.,high
+moroder-einzelganger,krautrock,qualified critical comparison,E75-RETRO|E75-DMY,One critic calls it Krautrock; another post-Krautrock; artists do not confirm direct influence.,medium
+moroder-einzelganger,electronica,broad descriptor,E75-ELECTRONIC,Electronic Sound calls the exploratory work leftfield electronica; less precise than minimal synth.,medium
+moroder-knightsinwhitesatin,disco,dominant,K76-REP|K76-ALLMUSIC|K76-HAMILTON|K76-DMY,"1976 dancefloor concept, continuous first side and conventional disco ensemble.",high
+moroder-knightsinwhitesatin,eurodisco,whole album / Munich scene,K76-DMY|K76-PF,Munich-made proto-Italo/eurodisco aesthetic identified in critical histories; retrospective subgenre.,medium
+moroder-knightsinwhitesatin,funk,"significant, some tracks",K76-REP|K76-QOBUZ|K76-RETRO,I Wanna Funk With You Tonite and live bass groove; style also in Qobuz umbrella.,medium
+moroder-knightsinwhitesatin,soul,weak catalog umbrella,K76-QOBUZ,Qobuz classifies 1976 issue under Soul/Funk/R&B; not independently established as whole-LP soul.,low
+moroder-knightsinwhitesatin,rnb,weak catalog umbrella,K76-QOBUZ|K76-ALLMUSIC,"R&B is a broad retailer/AllMusic genre family, not a specific contemporary album-scene diagnosis.",low
+moroder-fromheretoeternity,electrodisco,dominant / retrospective tag,F77-AOTY|F77-PITCH,Electronic sequenced disco throughout; aggregator explicitly labels electro-disco.,high
+moroder-fromheretoeternity,eurodisco,dominant,F77-ALLMUSIC|F77-PITCH|F77-AOTY,Critics explicitly describe sustained synthetic Eurodisco; original Munich production.,high
+moroder-fromheretoeternity,disco,dominant,F77-PITCH|F77-ALLMUSIC|F77-REP,Both sides fundamentally disco-oriented and album built for sustained club listening.,high
+moroder-fromheretoeternity,electronic,dominant,F77-REP|F77-ALLMUSIC|F77-QOBUZ,Original LP claims only electronic keyboards; sequenced/drum-machine sound dominant.,high
+moroder-fromheretoeternity,dancepop,significant,F77-ALLMUSIC,AllMusic explicitly identifies Dance-Pop style; more conventional side B songs.,medium
+moroder-fromheretoeternity,spacedisco,retrospective / some tracks,F77-AOTY,AOTY calls LP Space Disco; suited especially to Utopia/Los Angeles passages; one-tag source.,low
+moroder-fromheretoeternity,progressiveelectronic,retrospective / extended side A,F77-AOTY|F77-PITCH,"Aggregator labels Progressive Electronic; critics identify continuous, developing first-side suite.",medium
+moroder-fromheretoeternity,hinrg,retrospective / driving passages,F77-AOTY|F77-ALLMUSIC,AOTY includes Hi-NRG; AllMusic documents high-energy disco; genre chronology caveat.,low
+moroder-fromheretoeternity,electro,some tracks / beat style,F77-PITCH,Pitchfork describes the opening suite as Euro-centric electro beats.,medium
+moroder-fromheretoeternity,rnb,broad market family,F77-ALLMUSIC,"AllMusic lists R&B under overall genre, not a claim of acoustic soul-band playing.",low
+moroder-fromheretoeternity,dance,broad club category,F77-ALLMUSIC|F77-QOBUZ,Both providers use dance/club taxonomy; specific disco genres lead.,high
