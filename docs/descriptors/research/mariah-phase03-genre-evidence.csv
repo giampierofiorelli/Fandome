@@ -1,0 +1,35 @@
+album_id,genre,scope,source_keys,evidence,strength
+mariah-charmbracelet,rnb,dominant,C_SL|C_AM|C_Q,Review and professional catalog classify overall record as mainstream R&B.,high
+mariah-charmbracelet,contemporaryrnb,dominant,C_AM|C_AOTY,AllMusic explicitly uses Contemporary R&B for full album.,high
+mariah-charmbracelet,pop,significant,C_SL|C_GUA,Pop hooks and ballad arrangements recur despite urban tracks.,high
+mariah-charmbracelet,hiphopsoul,significant,C_AOTY|C_SL,Secondary discography labels hip-hop soul; Slant notes recurring hip-hop/soul interactions.,medium
+mariah-charmbracelet,nusoul,significant,C_SL|C_AOTY,Dre & Vidal pair brings neo-soul on Clown and Lullaby; not whole-record dominance.,medium
+mariah-charmbracelet,soul,significant,C_SL|C_GUA,Live instrumental warmth and soulful songs beyond rapper-led cuts.,high
+mariah-charmbracelet,hiphop,significant,C_SL|C_Q,Just Blaze-produced songs and multiple featured rap verses; production/guests not every song.,high
+mariah-charmbracelet,adultcontemporary,significant,C_AM|C_GUA,MOR/adult pop ballad orientation; professional style metadata.,high
+mariah-charmbracelet,gospel,track-level,C_SL|C_Q,My Saving Grace gospel-coloured; do not treat all songs as gospel.,high
+mariah-charmbracelet,rock,track-level,C_SL|C_SH,Bringin on the Heartbreak is a Def Leppard rock cover rearranged; do not generalize.,high
+mariah-theemancipationofmimi,rnb,dominant,M_PF|M_SL,Period R&B album anchored in soul and hip-hop aesthetics.,high
+mariah-theemancipationofmimi,contemporaryrnb,dominant,M_PF|M_Q,Mid-2000s R&B arrangements and production throughout.,high
+mariah-theemancipationofmimi,pop,significant,M_PF|M_AMUS,Cross-over hooks and prominent pop singles.,high
+mariah-theemancipationofmimi,hiphop,significant,M_PF|M_SL,"Atlanta-linked drums, sampling, rap-feature and hip-hop production.",high
+mariah-theemancipationofmimi,hiphopsoul,significant,M_PF|M_SL,Two styles interwoven: hip-hop beats with R&B/soul singing.,medium
+mariah-theemancipationofmimi,soul,significant,M_PF|M_AMUS,"Classic Philadelphia soul, live players and understated soul phrasing.",high
+mariah-theemancipationofmimi,gospel,track-level,M_PF|M_AMUS,Fly Like a Bird explicitly gospel soul and church-related; not dominant.,high
+mariah-theemancipationofmimi,dancepop,track-level,M_PF|M_AMUS,Club-directed singles incl. It's Like That; not a dance-pop album.,medium
+mariah-emc,rnb,dominant,E_GUA|E_AM|E_SL,Whole-album contemporary R&B frame.,high
+mariah-emc,contemporaryrnb,dominant,E_AM|E_GUA,Explicit AllMusic classification; 2008 electronic R&B production.,high
+mariah-emc,pop,significant,E_GUA|E_SL,Accessible radio pop song structure and hooks.,high
+mariah-emc,hiphop,significant,E_GUA|E_SL,"Hip-hop-led production, rap collaborations, synth beats.",high
+mariah-emc,dancepop,significant,E_GUA|E_SL,Several dance/club-directed uptempo songs; not a continuous dance record.,medium
+mariah-emc,disco,track-level,E_GUA|E_SL,I'm That Chick and O.O.C. called disco/dance floor by critics; scoped.,high
+mariah-emc,soul,track-level,E_GUA,Songs and vocal gospel/soul performance references; not a dominant soul album.,medium
+mariah-emc,reggae,track-level,E_Q|E_GUA,Cruise Control with Damian Marley/Jamaican styling; reggae texture only.,medium
+mariah-emc,gospel,track-level,E_GUA,I Wish You Well is explicitly piano/gospel choir closer.,high
+mariah-memoirsofanimperfectangel,rnb,dominant,I_GUA|I_SL|I_AM,Contemporary R&B throughout the album.,high
+mariah-memoirsofanimperfectangel,contemporaryrnb,dominant,I_AM|I_Q,Professional classification and Tricky Stewart / The-Dream beats.,high
+mariah-memoirsofanimperfectangel,pop,significant,I_SL|I_AM,Pop hooks within slow-to-midtempo R&B.,high
+mariah-memoirsofanimperfectangel,soul,significant,I_SL|I_GUA,Soul ballad/phrasing references recur; Slant disputes successful execution.,medium
+mariah-memoirsofanimperfectangel,hiphop,significant,I_Q|I_GUA,"Hip-hop-influenced beats, sampled material; no rapper guest on core disc.",medium
+mariah-memoirsofanimperfectangel,adultcontemporary,significant,I_AM|I_SL,Full-album style metadata and polished ballad sequences.,high
+mariah-memoirsofanimperfectangel,gospel,track-level,I_SL|I_Q,Cover finale I Want to Know What Love Is includes gospel choir; isolated.,high

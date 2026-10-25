@@ -1,0 +1,5 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+mariah-charmbracelet,Mariah Carey,Charmbracelet,2002,missing,mariah-charmbracelet,Add album to src/data/catalog.ts before validating; then append descriptor row,Original 2002 15-track program (closing remix belongs to original issue)
+mariah-theemancipationofmimi,Mariah Carey,The Emancipation of Mimi,2005,existing,mariah-theemancipationofmimi,Keep existing ID and replace no existing descriptor row,Standard 2005 14-track album; not Ultra Platinum edition
+mariah-emc,Mariah Carey,E=MC²,2008,missing,mariah-emc,Add album to src/data/catalog.ts before validating; then append descriptor row,Original 2008 14-track edition; not MC30 bonus material
+mariah-memoirsofanimperfectangel,Mariah Carey,Memoirs of an Imperfect Angel,2009,missing,mariah-memoirsofanimperfectangel,Add album to src/data/catalog.ts before validating; then append descriptor row,Original 2009 17-track disc 1; exclude bonus remix disc
