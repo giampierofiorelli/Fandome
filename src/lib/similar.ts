@@ -167,7 +167,11 @@ function rarityOf(g: string) {
   }
   return rarity.get(g) ?? Math.log(Object.keys(DESCRIPTORS).length + 1) + 0.3
 }
-const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g)]))
+// Genres that say what a record is for, not how it sounds (a soundtrack can be disco, orchestral, rock or a musical):
+// they barely count for similarity and are never given as a reason on their own.
+export const FORMAT_GENRES = new Set(['soundtrack'])
+const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : 1)
+const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g) * soundWeight(g)]))
 
 const genreSim = (a: Profile, b: Profile) => weightedJaccard(byRarity(expandGenres(a.genres)), byRarity(expandGenres(b.genres)))
 
@@ -276,6 +280,7 @@ function relatedPair(a: Profile, b: Profile): [string, string] | null {
     return out
   }
   for (const ga of a.genres.keys()) for (const gb of b.genres.keys()) {
+    if (FORMAT_GENRES.has(ga) || FORMAT_GENRES.has(gb)) continue
     if (ga !== gb && (ancestors(ga).has(gb) || ancestors(gb).has(ga) || [...ancestors(ga)].some((x) => x !== 'pop' && ancestors(gb).has(x)))) return [ga, gb]
   }
   return null
@@ -328,7 +333,7 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
 
   // Shared genres, most important for both first; else the closest related pair.
   const weight = (g: string) => Math.min(a.genres.get(g)!, b.genres.get(g)!) * rarityOf(g)
-  const shared = [...a.genres.keys()].filter((g) => b.genres.has(g)).sort((x, y) => weight(y) - weight(x))
+  const shared = [...a.genres.keys()].filter((g) => b.genres.has(g) && !FORMAT_GENRES.has(g)).sort((x, y) => weight(y) - weight(x))
   const reasons = [...links]
   if (shared.length) reasons.push(`Both ${and(shared.slice(0, 3).map((g) => genreLabel(g).toLowerCase()))}`)
   else {

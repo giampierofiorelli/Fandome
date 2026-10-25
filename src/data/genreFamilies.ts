@@ -10,7 +10,7 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   avantpop: ['experimentalpop'], leftfieldpop: ['experimentalpop'], hyperpop: ['experimentalpop', 'electronic'], bubblegumbass: ['hyperpop'],
   clubpop: ['pop', 'dance'], wonkypop: ['experimentalpop', 'electronic'], futurepop: ['synthpop'], indiepop: ['indie', 'pop'], dreampop: ['indie', 'pop'],
   gothpop: ['pop', 'darkwave'], urbanpop: ['pop', 'rnb', 'hiphop'], folkpop: ['folk', 'pop'], powerpop: ['pop', 'rock'], kpop: ['pop'],
-  songwriter: ['pop', 'folk'], soundtrack: ['classical'], opera: ['classical'],
+  songwriter: ['pop', 'folk'], soundtrack: [], opera: ['classical'], // soundtrack is a format, not a sound (FORMAT_GENRES in similar.ts)
   // dance / electronic
   disco: ['dance', 'funk'], nudisco: ['disco'], italodisco: ['disco', 'synthpop'], postdisco: ['disco'], eurodance: ['dance', 'pop'],
   house: ['dance', 'electronic'], deephouse: ['house'], acidhouse: ['house'], gospelhouse: ['house', 'gospel'], pianohouse: ['house'],
@@ -44,11 +44,11 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   indiedance: ['dance', 'indie'], noiserock: ['rock'], spacerock: ['rock'], psychedelicrock: ['rock'],
   electrodisco: ['disco', 'electronic'], glamrock: ['rock'], hinrg: ['dance', 'disco'], technopop: ['electronic', 'pop'], eurodisco: ['disco'], postindustrial: ['industrial'], complextro: ['electrohouse', 'electronic'], melodicdubstep: ['dubstep'],
   americana: ['country', 'folk', 'rock'], bigband: ['jazz'], bluesrock: ['blues', 'rock'], countryrock: ['country', 'rock'], eurohouse: ['house', 'eurodance'], pianorock: ['rock', 'pop'], swing: ['jazz'], traditionalpop: ['pop', 'jazz'], vocaljazz: ['jazz'],
-  deconstructedclub: ['electronic', 'experimental'], divahouse: ['house', 'dance'], easylistening: ['pop'], glitchpop: ['electropop', 'experimentalpop'], showtunes: ['traditionalpop', 'soundtrack'], standards: ['traditionalpop', 'jazz'], surfpunk: ['surfrock', 'punk'],
+  deconstructedclub: ['electronic', 'experimental'], divahouse: ['house', 'dance'], easylistening: ['pop'], glitchpop: ['electropop', 'experimentalpop'], showtunes: ['traditionalpop'], standards: ['traditionalpop', 'jazz'], surfpunk: ['surfrock', 'punk'],
   industrialdance: ['industrial', 'dance'], electrogrunge: ['electronic', 'grunge'], techstep: ['drumandbass'], boogie: ['funk', 'disco'], aor: ['rock', 'softrock'], powerballad: ['rock', 'pop'], hairmetal: ['metal', 'rock'],
   jazzpop: ['jazz', 'pop'], adultcontemporary: ['pop'], rockopera: ['rock', 'showtunes'],
   folktronica: ['folk', 'electronic'], chamberpop: ['pop'],
-  baltimoreclub: ['house', 'breakbeat'], cloudpop: ['pop', 'electronic'], doowop: ['rnb', 'pop'], musicaltheatre: ['soundtrack', 'showtunes'], neopsychedelia: ['psychedelicrock', 'indie'],
+  baltimoreclub: ['house', 'breakbeat'], cloudpop: ['pop', 'electronic'], doowop: ['rnb', 'pop'], musicaltheatre: ['showtunes'], neopsychedelia: ['psychedelicrock', 'indie'],
   souljazz: ['jazz', 'soul'], popsoul: ['pop', 'soul'], acidjazz: ['jazz', 'funk'], northernsoul: ['soul'], loversrock: ['reggae'],
   christmas: ['traditionalpop'], // sleigh bells, orchestras, standards: close to traditional pop
   smoothsoul: ['soul', 'rnb'], synthfunk: ['funk', 'electronic'],
