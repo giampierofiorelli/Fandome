@@ -5,13 +5,13 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   // keys
   piano: 'Piano', electricpiano: 'Electric piano', clavinet: 'Clavinet', organ: 'Organ', harpsichord: 'Harpsichord', accordion: 'Accordion', keyboards: 'Keyboards', harmonium: 'Harmonium', melodica: 'Melodica', mellotron: 'Mellotron', chamberlin: 'Chamberlin', celesta: 'Celesta', pumporgan: 'Pump organ', clavichord: 'Clavichord', glassharmonica: 'Glass harmonica', musicbox: 'Music box',
   // electronic
-  synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin',
+  synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin', stylophone: 'Stylophone',
   // guitars and strings
   guitar: 'Guitar', baritoneguitar: 'Baritone guitar', acousticguitar: 'Acoustic guitar', electricguitar: 'Electric guitar', bass: 'Bass guitar', synthbass: 'Synth bass', doublebass: 'Double bass',
   steelguitar: 'Steel guitar', mandolin: 'Mandolin', bouzouki: 'Bouzouki', requinto: 'Requinto guitar', banjo: 'Banjo', ukulele: 'Ukulele', sitar: 'Sitar', coralsitar: 'Coral electric sitar', sarangi: 'Sarangi', harp: 'Harp', hammereddulcimer: 'Hammered dulcimer', hurdygurdy: 'Hurdy-gurdy', dulcimer: 'Dulcimer',
   strings: 'Strings', violin: 'Violin', cello: 'Cello', orchestra: 'Orchestra',
   // drums and percussion
-  drums: 'Drums', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', tabla: 'Tabla',
+  drums: 'Drums', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', kalimba: 'Kalimba', tabla: 'Tabla',
   // winds
   brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', clarinet: 'Clarinet', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', whistle: 'Whistle', musicalsaw: 'Musical saw', kazoo: 'Kazoo',
 }

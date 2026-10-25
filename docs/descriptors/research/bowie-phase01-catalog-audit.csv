@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,action,catalogue_title,caveat
+bowie-davidbowie,bowie,David Bowie,1967,studio,no,add catalogue album,David Bowie,First eponymous release; use original UK 14-track LP
+bowie-davidbowie1969,bowie,David Bowie (1969),1969,studio,no,add catalogue album,David Bowie (1969),Original UK title David Bowie; disambiguate as David Bowie (1969); 1972 RCA reissue titled Space Oddity
+bowie-themanwhosoldtheworld,bowie,The Man Who Sold the World,1970,studio,no,add catalogue album,The Man Who Sold the World,US November 1970 release predates UK April 1971
+bowie-hunkydory,bowie,Hunky Dory,1971,studio,yes,preserve existing,Hunky Dory,Catalogue already has Hunky Dory; preserve computed ID
