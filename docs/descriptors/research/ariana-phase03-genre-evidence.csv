@@ -1,0 +1,16 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength,review_needed
+ariana-wickedforgoodthesoundtrack,soundtrack,dominant / album type,W01|W07|W08,Original motion-picture song soundtrack on Republic/Verve; not the distinct instrumental score.,high,no
+ariana-wickedforgoodthesoundtrack,musicaltheatre,dominant / full album,W03|W04|W05|W06,"Adaptation of the second act of Stephen Schwartz’s Broadway musical, with character-driven songs and ensembles.",high,no
+ariana-wickedforgoodthesoundtrack,showtunes,dominant / full album,W03|W05|W06,"Dramatic stage-musical numbers including Thank Goodness, Wonderful, No Good Deed and For Good.",high,no
+ariana-petal,pop,dominant / whole album,P03|P05|P07,Pitchfork and Variety call it pop; AllMusic corroborates pop classification.,high,no
+ariana-petal,rnb,dominant / whole album,P03|P04|P06,"Pop/R&B framing and recurring R&B phrasing, production and restrained vocal styling.",high,no
+ariana-petal,contemporaryrnb,significant / album taxonomy,P07|P06,AllMusic specifically lists contemporary R&B; AP independently describes modern R&B stylings.,medium,no
+ariana-petal,electronic,significant / whole album sound,P04|P05|P09,"Distorted synthetic percussion, sub-bass, programmed rhythms and icy electronic production recur.",high,no
+ariana-petal,dancepop,secondary / album taxonomy,P07|P06,"AllMusic lists dance-pop; AP hears several lighter or rhythm-led songs, though the album is not a club set.",medium,no
+ariana-petal,synthpop,track-level / Kiss Me,P08|P04|P05,NME explicitly identifies synth-pop on Kiss Me; synth-led textures recur but not dominant.,medium,yes
+ariana-petal,triphop,track-level and secondary rhythmic texture,P05|P11,Variety evokes a Portishead-like trip-hop rhythm in the title song; AwardsWatch describes trip-hop patterns more broadly.,medium,yes
+ariana-petal,ukgarage,percussion texture / some songs,P04,"Guardian identifies shuffling UKG percussion, not a uniformly UK-garage album.",medium,yes
+ariana-petal,newwave,track-level / Bad Thing (Bunny Hop),P05,"Variety explicitly describes Bad Thing as new-wave-esque, not album-wide style.",medium,yes
+ariana-petal,dreampop,track-level guitar texture / Bad Thing,P06,"AP identifies dream-pop guitars on Bad Thing, not a full-album dream-pop sound.",medium,yes
+ariana-petal,funk,track-level groove / Never Get Over Me,P05,Variety calls its rhythmic foundation an icy funk groove. Not a general album-wide funk classification.,medium,yes
+ariana-petal,downtempo,track-level / Big Feelings,P03,Pitchfork explicitly calls Big Feelings a downtempo crooner; subdued pace also appears throughout.,medium,yes
