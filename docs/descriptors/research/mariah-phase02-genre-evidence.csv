@@ -1,0 +1,49 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+mariah-daydream,rnb,dominant,D95_ALL|D95_PF|D95_BB,Independent R&B album review and production interviews emphasise soul-oriented core.,high
+mariah-daydream,pop,dominant,D95_ALL|D95_PF,Pop songcraft and adult radio ballads remain central to whole album.,high
+mariah-daydream,contemporaryrnb,dominant,D95_ALL|D95_AOT,AllMusic specifically lists contemporary R&B and album taxonomy agrees.,high
+mariah-daydream,adultcontemporary,significant,D95_ALL|D95_AOT,Ballads such as One Sweet Day and Open Arms maintain adult-contemporary traditions.,high
+mariah-daydream,popsoul,significant,D95_AOT|D95_PF,Pop Soul explicit album taxonomy; reviews describe crossover and soulful arrangements.,medium
+mariah-daydream,smoothsoul,secondary,D95_AOT|D95_PF,Smooth Soul genre label and softly delivered midtempo Melt Away/Underneath the Stars; not all tracks.,medium
+mariah-daydream,soul,significant,D95_BB|D95_PF,Carey deliberately evokes 1970s soul in Underneath the Stars and other R&B songs.,high
+mariah-daydream,hiphop,significant,D95_PF|D95_HIT|D95_AP,Album pivots towards hip-hop beats; DO NOT credit off-album Fantasy ODB remix.,high
+mariah-daydream,dancepop,secondary,D95_AP|D95_ALL,Fantasy is an upbeat pop/dance hit; balance with many slow tracks.,medium
+mariah-daydream,gospel,song_specific,D95_AP,"Apple editorial explicitly terms I Am Free gospel-powered, not whole album gospel.",high
+mariah-daydream,house,one_original_album_interlude,D95_AP|D95_LN,Daydream Interlude: Fantasy Sweet Dub Mix is a house track on original 12-song CD.,high
+mariah-daydream,deephouse,one_original_album_interlude,D95_AP,Apple editorial specifically describes original album interlude as deep house.,high
+mariah-butterfly,rnb,dominant,B97_ALL|B97_RS,Contemporary reviews hear predominantly R&B across tracks.,high
+mariah-butterfly,contemporaryrnb,dominant,B97_ALL|B97_AOT,Explicit contemporary R&B taxonomy and period production.,high
+mariah-butterfly,hiphop,significant,B97_RS|B97_RET,Prominent hip-hop-derived drums/sampling and collaborations in Honey and Breakdown.,high
+mariah-butterfly,hiphopsoul,significant,B97_AOT|B97_RET,"Hip Hop Soul is an explicit album genre tag, backed by documented R&B/hip-hop fusion.",high
+mariah-butterfly,pop,significant,B97_ALL|B97_RS,Carey retains major-pop hooks and Afanasieff ballads inside hip-hop-centred album.,high
+mariah-butterfly,popsoul,significant,B97_AOT,Pop Soul secondary album genre; used below dominant hip-hop/R&B.,medium
+mariah-butterfly,smoothsoul,secondary,B97_AOT|B97_SL,"Smooth Soul taxonomy and layered, intimate quiet-storm textures.",medium
+mariah-butterfly,soul,significant,B97_SL|B97_RET,Slant describes soulful whisper vocals and classic-soul/gospel elements.,high
+mariah-butterfly,adultcontemporary,significant,B97_ALL|B97_RS,Butterfly and My All represent classic polished Carey ballad approach.,high
+mariah-butterfly,quietstorm,significant,B97_SL,"Slant explicitly calls this a quiet-storm album, despite contemporary hip-hop singles.",high
+mariah-butterfly,dancepop,secondary,B97_ALL,"AllMusic Dance-Pop album taxonomy, principally high-energy single and club passages.",medium
+mariah-butterfly,gospel,song_specific,B97_SL,"Slant notes gospel coloration to Butterfly title ballad, not uniformly gospel repertoire.",medium
+mariah-butterfly,house,one_original_album_interlude,B97_Q|B97_MB,Fly Away (Butterfly Reprise) on original LP uses David Morales club-house sound.,medium
+mariah-rainbow,rnb,dominant,R99_ALL|R99_USA,"Original record is extensively R&B in melodies, harmonies and producer choices.",high
+mariah-rainbow,contemporaryrnb,dominant,R99_ALL|R99_AOT,Named contemporary R&B on independent catalogue and secondary genre taxonomy.,high
+mariah-rainbow,pop,dominant,R99_ALL|R99_ELP,Contemporary reviewers and artist interview explicitly call the album pop/R&B crossover.,high
+mariah-rainbow,hiphop,significant,R99_USA|R99_INT,"Hip-hop samples, guest rap and DJ Clue on substantial uptempo part of album.",high
+mariah-rainbow,hiphopsoul,significant,R99_AOT,Album-level hip-hop soul taxonomy rather than evidence all songs are rap.,medium
+mariah-rainbow,poprap,secondary,R99_AOT|R99_INT,Album genre Pop Rap supported by Jay-Z and other hip-hop guest features.,medium
+mariah-rainbow,popsoul,significant,R99_AOT|R99_WP,Pop Soul taxonomy and Jam & Lewis adult-soul ballads support crossover classification.,high
+mariah-rainbow,soul,significant,R99_ELP|R99_WP,Artist cites classic soul ballads and producer discussed Bliss soul instrumentation.,high
+mariah-rainbow,adultcontemporary,significant,R99_ALL|R99_AOT,Multiple ballads remain main album through-line despite hip-hop collaborations.,high
+mariah-rainbow,dancepop,secondary,R99_ALL|R99_VOG,Crossover uptempo hits noted by reviewers and artist; not a continuous dance record.,medium
+mariah-glitter,rnb,dominant,G01_ALB|G01_SLA,Carey blends R&B melodies with 1980s funk and 2001 tracks.,high
+mariah-glitter,dancepop,significant,G01_AOT|G01_SLA,Explicit album Dance-Pop metadata and disco-styled remakes.,high
+mariah-glitter,pop,significant,G01_SLA|G01_ALB,Classic Carey pop-ballad craftsmanship mixed into dance-era recreation.,high
+mariah-glitter,funk,significant,G01_ALB|G01_LAT|G01_NME,"Contemporary critics emphasise funk musicians, Rick James and bass-driven early-eighties production.",high
+mariah-glitter,postdisco,significant,G01_ALB|G01_SLA,Post-disco repertoire and 1982 setting are foundational to original album aesthetic.,high
+mariah-glitter,disco,significant,G01_SLA|G01_LAT|G01_AOT,Covers of Indeep and Cherrelle plus contemporary review identify disco setting.,high
+mariah-glitter,hiphop,significant,G01_ALB|G01_SLA,Rap guest spots and modern DJ Clue tracks across multiple songs.,high
+mariah-glitter,poprap,secondary,G01_AOT|G01_SLA,Pop Rap catalogue tag is borne out by the multi-guest crossover tracks.,medium
+mariah-glitter,contemporaryrnb,significant,G01_AOT|G01_ALB,2001 contemporary R&B songwriting and arrangements coexist with period recreation.,medium
+mariah-glitter,synthfunk,significant,G01_AOT|G01_LAT,Synth Funk specifically documented as album genre; LA Times hears synth-driven robo-funk.,high
+mariah-glitter,soul,secondary,G01_ALB|G01_SLA,Early 80s soul via Jam/Lewis and ballad vocal delivery; not sole genre.,medium
+mariah-glitter,popsoul,secondary,G01_AOT|G01_SLA,Pop Soul is album taxonomy secondary to R&B/disco/funk tracks.,medium
+mariah-glitter,adultcontemporary,song_specific,G01_AOT|G01_SLA,Large-format Carey ballads Lead the Way and Never Too Far are not the whole disc.,medium

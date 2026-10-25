@@ -3,7 +3,7 @@
 import { DESCRIPTORS } from './descriptors'
 import { genreSimilarity, similarAlbums } from './similar'
 import { albums } from '../data/seed'
-import { sceneOf } from '../data/scenes'
+import { GLOBAL_MARKETS, isLocalArtist, sceneOf } from '../data/scenes'
 
 export interface Quality {
   albums: number // albums with a description
@@ -11,6 +11,7 @@ export interface Quality {
   artistCoverage: number // share of described artists suggested at least once
   diversity: number // 1 − average genre similarity inside a list (higher = more varied)
   novelty: number // share of suggestions from a local scene in another country (never US/UK)
+  globalToLocal: number // for albums from global markets (US, UK…), share of suggestions from a local scene
   explained: number // share of suggestions with at least one reason (must be 1)
   empty: number // albums with no suggestion at all
   topShare: number // share of all suggestions taken by the single most suggested album (popularity bias)
@@ -24,6 +25,8 @@ export function evaluate(limit = 5): Quality {
   let total = 0
   let explained = 0
   let foreign = 0
+  let fromGlobal = 0
+  let globalToLocal = 0
   let empty = 0
   const div: number[] = []
   for (const id of ids) {
@@ -34,6 +37,7 @@ export function evaluate(limit = 5): Quality {
       seen.set(s.albumId, (seen.get(s.albumId) ?? 0) + 1)
       if (s.reasons.length) explained++
       if (s.newCountry) foreign++
+      if (GLOBAL_MARKETS.has(countryOf(id) ?? '')) (fromGlobal++, isLocalArtist(artistOf(s.albumId)) && globalToLocal++)
     }
     if (list.length > 1) {
       let sum = 0
@@ -50,6 +54,7 @@ export function evaluate(limit = 5): Quality {
     artistCoverage: suggestedArtists.size / artists.size,
     diversity: div.reduce((a, b) => a + b, 0) / (div.length || 1),
     novelty: foreign / (total || 1),
+    globalToLocal: globalToLocal / (fromGlobal || 1),
     explained: explained / (total || 1),
     empty,
     topShare: Math.max(0, ...seen.values()) / (total || 1),

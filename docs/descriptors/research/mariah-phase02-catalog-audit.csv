@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,existing_catalog_id,exists_in_catalog,exists_in_descriptors,action,notes
+mariah-daydream,Mariah Carey,Daydream,1995,studio,mariah-daydream,yes,no,add descriptor row only,Use generated ID already in catalog; original 1995 12-song album.
+mariah-butterfly,Mariah Carey,Butterfly,1997,studio,mariah-butterfly,yes,no,add descriptor row only,Use generated ID already in catalog; album not 1998 two-track Butterfly remix release.
+mariah-rainbow,Mariah Carey,Rainbow,1999,studio,,no,no,add catalog entry and descriptor row,Original 1999 14-track album; not 2024 anniversary edition.
+mariah-glitter,Mariah Carey,Glitter,2001,soundtrack,,no,no,add catalog entry and descriptor row,"Carey-led original 2001 film soundtrack, not every licensed cue heard in movie."
