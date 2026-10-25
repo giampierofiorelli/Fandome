@@ -6,6 +6,7 @@
 //      comparisons, and two-step connections through a third artist or producer
 // Lists are then re-ranked for variety (MMR), push away what you said you don't like, and give a
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
+import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
@@ -603,14 +604,19 @@ export function similarArtists(
   // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
   // artist's albums gets a place, at most two, if still above the cut. A broad discography (Madonna's
   // 17 albums) dilutes the overall profile, so the documented link is the stronger evidence.
-  const reserved: typeof scored = []
-  for (const s of scored) {
-    if (reserved.length >= 2) break
+  // Strongest first: influences the artist names for their whole work, then an album's documented
+  // influences, then documented comparisons; within each, by score.
+  const named = ARTIST_INFLUENCES[artistId]?.names ?? []
+  const linkOf = (s: (typeof scored)[number]) => {
+    if (includesName(named, s.profile.artist)) return { rank: 0, reason: `Influenced by ${s.profile.artist}` }
     const drew = myAlbums.find((a) => includesName(a.influencedBy, s.profile.artist))
-    const like = drew ? undefined : myAlbums.find((a) => includesName(a.soundsLike, s.profile.artist))
-    if (drew) reserved.push({ ...s, reason: `${drew.title} draws on ${s.profile.artist}` })
-    else if (like) reserved.push({ ...s, reason: `${like.title} sounds like ${s.profile.artist}` })
+    if (drew) return { rank: 1, reason: `${drew.title} draws on ${s.profile.artist}` }
+    const like = myAlbums.find((a) => includesName(a.soundsLike, s.profile.artist))
+    if (like) return { rank: 2, reason: `${like.title} sounds like ${s.profile.artist}` }
+    return null
   }
+  const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link).sort((x, y) => x.link!.rank - y.link!.rank)
+  const reserved = linked.slice(0, 2).map(({ s, link }) => ({ ...s, reason: link!.reason }))
   const rest = scored.filter((s) => !reserved.some((r) => r.artistId === s.artistId))
   return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, ...s }) => s)
 }

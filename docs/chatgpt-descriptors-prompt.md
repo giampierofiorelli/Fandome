@@ -40,7 +40,7 @@ album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experim
 
 DELIVERABLES: one ZIP per phase, as in earlier batches
 Name: <artist-id>_fandome_phase0N.zip, containing:
-- CLAUDE_IMPORT.md: phase contents (album ids and titles), albums to add to the catalogue (title, year, type), albums billed to more than one artist (exact credit, e.g. "Röyksopp & Robyn"), new genre, instrument or production tokens, caveats (editions, credits, dates), what the next phase will contain.
+- CLAUDE_IMPORT.md: phase contents (album ids and titles), albums to add to the catalogue (title, year, type), albums billed to more than one artist (exact credit, e.g. "Röyksopp & Robyn"), new genre, instrument or production tokens, ARTIST INFLUENCES (in phase 01 only: artists this artist has named as influences on their work as a whole, in interviews or biographies, each with its source; not tied to one album), caveats (editions, credits, dates), what the next phase will contain.
 - <artist-id>_phase0N_rows_ONLY.csv: header + only this phase's rows.
 - <artist-id>_phase0N_sources.csv: album_id,source,source_type,url,what_it_supports,evidence_strength (working links).
 - <artist-id>_phase0N_genre_evidence.csv: one line per genre per album, with source and scope (whole album, some tracks, texture).
