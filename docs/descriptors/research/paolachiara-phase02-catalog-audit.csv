@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,already_in_catalog,already_in_descriptors,recommended_action,catalog_source_url
+paolachiara-blu,Blu,2004,studio,no,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-winthegame,Win the Game,2007,studio,no,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-milleluci,Milleluci,2010,studio,no,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-giungla,Giungla,2013,studio,no,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
