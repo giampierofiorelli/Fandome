@@ -146,6 +146,14 @@ describe('discovery and "Not for me"', () => {
 describe('engine v2', () => {
   const mk = (rows: string[]) => parseDescriptors([HEAD, ...rows].join('\n'))
 
+  it('counts shared instruments, the rarer the more (harpsichord over drums)', () => {
+    const H = 'album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,instruments,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes'
+    const r = (id: string, ins: string) => `${id},${id.toUpperCase()},${id},2020,studio,pop,3,3,3,3,3,3,3,3,clear,${ins},love,en,,,,,0,high,draft,note`
+    const [a, b, c] = parseDescriptors([H, r('a-i', 'harpsichord|strings'), r('b-i', 'harpsichord|strings'), r('c-i', 'drums|electricguitar')].join('\n'))
+    expect(compareAlbums(a, b).score).toBeGreaterThan(compareAlbums(a, c).score)
+    expect(compareAlbums(a, b).reasons.join(' ')).toMatch(/harpsichord and strings/)
+  })
+
   it('counts related genres (deep house is close to house), not only identical names', () => {
     const [a, b, c] = mk([
       row('a-x', 'A', 'deephouse', ',,,,,,,'),

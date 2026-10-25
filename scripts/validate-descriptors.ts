@@ -1,11 +1,12 @@
 // Checks every album descriptor CSV in docs/descriptors/ against docs/album-descriptors-guide.md
 // before anything is imported into the app. Prints problems per row; exits with 1 if any.
 // Run: npx vite-node scripts/validate-descriptors.ts
+import { INSTRUMENTS } from '../src/data/instruments'
 import { readdirSync, readFileSync } from 'node:fs'
 import { albums, artists } from '../src/data/seed'
 import { parseCsv as parse } from '../src/lib/csv'
 
-const HEADER = 'album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes'.split(',')
+const HEADER = 'album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experimental,polish,tempo,groove,voice,instruments,lyrics,language,scene,producers,sounds_like,influenced_by,landmark,confidence,status,notes'.split(',')
 const SCALES = ['energy', 'electronic', 'mood', 'theatrical', 'experimental', 'polish', 'tempo', 'groove']
 const GENRES = new Set('pop dance electronic synthpop disco rock indie alt metal punk prog hiphop trap rnb soul funk jazz folk songwriter country latin reggaeton afro kpop sertanejo funkbr pagode forro classical soundtrack reggae opera house techno ambient triphop artpop gospel fado caboverde gospelhouse flamenco ska dubstep ukgarage frenchtouch dancehall kuduro newjackswing acidhouse deephouse edm breakbeat hyperpop blues postdisco electrohouse britpop powerpop electropop tropicalhouse trappop italodisco dancepop eurodance gothpop darkwave poppunk newwave grunge experimentalpop industrial eurotrance grime footwork garage neorave gothtrap avantpop bubblegumbass clubpop wonkypop leftfieldpop popfunk electrofunk dreampop nudisco futurepop indiepop electroclash bloghouse pianohouse trance indierock slackerrock indietronica postpunkrevival alternativedance urbanpop bossanova folkpop afrobeat poprap posttrap poprock electrorock punkrock jungle hardcorehiphop latintrap westcoasthiphop nusoul alternativerock adultalternativepoprock electronica downtempo softrock classicalcrossover drumandbass itpop calypsopop hiprock drill contemporaryrnb hiphopsoul bubblegumpop europop chillout downbeat electro rave ambientbreakbeat bigbeat chillwave synthwave hardhouse techhouse acousticpop teenpop altpop countrypop gfunk bluegrass discopop yachtrock quietstorm dub experimental experimentaltechno gothabilly idm minimaltechno neofolk postpunk postrock shoegaze surfrock altcountry electrogaze electropunk gothicamericana indieelectronic krautrock neoambient postgoth slowcore indiedance noiserock spacerock psychedelicrock electrodisco glamrock hinrg technopop eurodisco postindustrial complextro melodicdubstep americana bigband bluesrock countryrock eurohouse pianorock swing traditionalpop vocaljazz deconstructedclub divahouse easylistening glitchpop showtunes standards surfpunk industrialdance electrogrunge techstep boogie aor powerballad hairmetal jazzpop adultcontemporary rockopera folktronica chamberpop baltimoreclub cloudpop doowop musicaltheatre neopsychedelia souljazz popsoul acidjazz northernsoul loversrock christmas smoothsoul synthfunk orchestralpop balearicbeat schlager folkrock baroquepop phillysoul progressivepop dancerock hardrock garagerock protodisco psychedelicpop sunshinepop rockandroll minimalsynth spacedisco progressiveelectronic darkambient modernclassical videogamemusic electronoir retrowave coldwave ebm ambientpop lounge spaceagepop spacepop experimentalelectronic artrock drone musiqueconcrete avantgarde berlinschool postminimalism experimentalrock protopunk boogiewoogie italianpop musicaleggera blueeyedsoul mpb samba tropicalia chanson ballad twist tango latinpop rumba tarantella childrensmusic liscio waltz pasodoble march polka sonjarocho'.split(' '))
 const TYPES = new Set(['studio', 'soundtrack', 'compilation', 'live', 'remix', 'ep', 'mixtape'])
@@ -26,7 +27,7 @@ for (const file of files) {
     console.log(`${file} ${where}: ${msg}`)
   }
   if (!head || head.join(',') !== HEADER.join(',')) {
-    say('header', `expected the ${HEADER.length}-column header of the guide (v2)`)
+    say('header', `expected the ${HEADER.length}-column header of the guide (v3, with instruments)`)
     continue
   }
   const seen = new Set<string>()
@@ -49,6 +50,8 @@ for (const file of files) {
     if (!genres.length || genres.some((g) => !GENRES.has(g))) say(where, `genres "${r.genres}"`)
     for (const s of SCALES) if (r[s] !== '' && !/^[0-5]$/.test(r[s])) say(where, `${s} "${r[s]}" (0–5 or empty)`)
     if (r.voice.split('|').filter(Boolean).some((v) => !VOICES.has(v))) say(where, `voice "${r.voice}"`)
+    const ins = r.instruments.split('|').filter(Boolean)
+    if (ins.some((x) => !INSTRUMENTS.has(x))) say(where, `instruments "${r.instruments}" (unknown: ${ins.filter((x) => !INSTRUMENTS.has(x)).join(', ')})`)
     const lyr = r.lyrics.split('|').filter(Boolean)
     if (lyr.some((l) => !LYRICS.has(l))) say(where, `lyrics "${r.lyrics}"`)
     if (r.language && r.language.split('|').some((l) => !/^[a-z]{2}$/.test(l))) say(where, `language "${r.language}"`)

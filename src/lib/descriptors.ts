@@ -15,6 +15,7 @@ export interface Descriptor {
   genres: string[] // in order of importance
   scales: Partial<Record<Scale, number>>
   voice: string[]
+  instruments: string[] // main first
   lyrics: string[]
   language: string[]
   scene: string
@@ -45,6 +46,7 @@ export function parseDescriptors(text: string): Descriptor[] {
       genres: list(r.genres),
       scales,
       voice: list(r.voice),
+      instruments: list(r.instruments ?? ''),
       lyrics: list(r.lyrics),
       language: list(r.language),
       scene: r.scene,

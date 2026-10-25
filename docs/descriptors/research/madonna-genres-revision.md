@@ -45,3 +45,4 @@ Genres now: dance-pop, post-disco, synth-pop, electropop, disco, pop, dance, new
 - Sire's Michael Rosenblatt wanted an "R&B feel"; Jellybean Benitez added a "synthesized disco beat with soulful flourishes" and new wave elements (Wikipedia).
 - sounds_like (critics' comparisons, not documented influences): Donna Summer, Chic, Michael Jackson, Stephanie Mills (Borderline), Cyndi Lauper, Grace Jones (Burning Up), Soft Cell (synth sound).
 - Not added: freestyle, hi-NRG, synth funk, electro-disco (only user tags on Rate Your Music); "punk" (attitude, not sound); "60s girl-group" (no genre token, one track).
+- instruments (Oct 2026, first use of the column): synth, drum machine, synth bass, electric guitar, piano, saxophone — Wikipedia (LinnDrum, Moog bass, Oberheim OB-X, rhythm guitars, Holiday piano solo, Think of Me sax) and The Quietus (Fred Zarr's synths, Bobby Malach's tenor sax).

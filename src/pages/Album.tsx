@@ -1,3 +1,4 @@
+import { instrumentLabel } from '../data/instruments'
 import { useState } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useParams } from 'react-router-dom'
@@ -92,6 +93,7 @@ export default function AlbumPage() {
               ))}
             </div>
             {sound.scene && <p className="small sound-line">{sound.scene}</p>}
+            {sound.instruments.length > 0 && <p className="small sound-line">Instruments: {sound.instruments.map(instrumentLabel).join(', ')}</p>}
             {sound.producers.length > 0 && <p className="muted small sound-line">Produced by {sound.producers.join(', ')}</p>}
           </div>
         </>

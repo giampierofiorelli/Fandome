@@ -8,6 +8,7 @@
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
+import { instrumentLabel } from '../data/instruments'
 import { isLocalArtist, type Genre } from '../data/scenes'
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
@@ -31,6 +32,7 @@ export interface Profile {
   genres: Map<string, number> // own genres and weight (1 = main)
   scales: Partial<Record<Scale, number>>
   voice: Set<string>
+  instruments: Map<string, number> // main instruments, weighted by order
   lyrics: Set<string>
   language: Set<string>
   scene: Set<string>
@@ -56,6 +58,7 @@ export function albumProfile(d: Descriptor): Profile {
     genres,
     scales: d.scales,
     voice: new Set(d.voice),
+    instruments: new Map(d.instruments.map((x, i) => [x, 1 / (i + 1)])),
     lyrics: new Set(d.lyrics),
     language: new Set(d.language),
     scene: sceneTokens(d.scene),
@@ -75,6 +78,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
   const genres = new Map<string, number>()
   const scaleSum: Partial<Record<Scale, [number, number]>> = {}
   const voice = new Set<string>()
+  const instruments = new Map<string, number>()
   const lyrics = new Set<string>()
   const language = new Set<string>()
   const scene = new Set<string>()
@@ -91,12 +95,14 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
       scaleSum[s] = [n + w * d.scales[s]!, c + w]
     }
     d.voice.forEach((v) => voice.add(v))
+    d.instruments.forEach((x, i) => instruments.set(x, (instruments.get(x) ?? 0) + w / (i + 1)))
     d.lyrics.forEach((v) => lyrics.add(v))
     d.language.forEach((v) => language.add(v))
     sceneTokens(d.scene).forEach((v) => scene.add(v))
     if (d.year) years.push(d.year)
   }
   for (const [g, v] of genres) genres.set(g, Math.min(1, v / total) * 1.0)
+  for (const [x, v] of instruments) instruments.set(x, Math.min(1, v / total))
   const scales: Partial<Record<Scale, number>> = {}
   for (const s of SCALES) if (scaleSum[s]) scales[s] = scaleSum[s]![0] / scaleSum[s]![1]
   years.sort((a, b) => a - b)
@@ -108,6 +114,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
     genres,
     scales,
     voice,
+    instruments,
     lyrics,
     language,
     scene,
@@ -204,13 +211,29 @@ function themeSim(a: Set<string>, b: Set<string>) {
   return union ? inter / union : 0
 }
 
+// Instruments weighted by order (main first) and rarity: sharing a harpsichord says more than sharing drums.
+let instrumentRarity: Map<string, number> | null = null
+function instrumentSim(a: Map<string, number>, b: Map<string, number>) {
+  if (!a.size || !b.size) return null
+  if (!instrumentRarity) {
+    const all = Object.values(DESCRIPTORS)
+    const df = new Map<string, number>()
+    for (const d of all) for (const x of d.instruments) df.set(x, (df.get(x) ?? 0) + 1)
+    instrumentRarity = new Map([...df].map(([x, n]) => [x, Math.log((all.length + 1) / (n + 1)) + 0.3]))
+  }
+  const r = (x: string) => instrumentRarity!.get(x) ?? 1
+  return weightedJaccard(new Map([...a].map(([x, w]) => [x, w * r(x)])), new Map([...b].map(([x, w]) => [x, w * r(x)])))
+}
+
+// Instruments weigh more than era (owner, Oct 2026: instrumentation creates affinity); language almost nothing.
 function extrasSimilarity(a: Profile, b: Profile) {
   const parts: [number | null, number][] = [
-    [themeSim(a.lyrics, b.lyrics), 0.35],
-    [jaccard(a.voice, b.voice), 0.25],
-    [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 30) : null, 0.2],
-    [jaccard(a.scene, b.scene), 0.1],
-    [a.language.size && b.language.size ? ([...a.language].some((l) => b.language.has(l)) ? 1 : 0) : null, 0.1],
+    [themeSim(a.lyrics, b.lyrics), 0.3],
+    [instrumentSim(a.instruments, b.instruments), 0.25],
+    [jaccard(a.voice, b.voice), 0.2],
+    [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 30) : null, 0.15],
+    [jaccard(a.scene, b.scene), 0.08],
+    [a.language.size && b.language.size ? ([...a.language].some((l) => b.language.has(l)) ? 1 : 0) : null, 0.02],
   ]
   const known = parts.filter(([v]) => v !== null) as [number, number][]
   const w = known.reduce((n, [, x]) => n + x, 0)
@@ -344,6 +367,8 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   if (traits.length) reasons.push(`Similar sound: ${and(traits.slice(0, 2))}`)
   const themes = [...a.lyrics].filter((t) => b.lyrics.has(t))
   if (themes.length >= 2) reasons.push(`Both sing about ${and(themes.slice(0, 2))}`)
+  const sharedInstruments = [...a.instruments.keys()].filter((x) => b.instruments.has(x))
+  if (sharedInstruments.length >= 2) reasons.push(`Both built on ${and(sharedInstruments.slice(0, 2).map((x) => instrumentLabel(x).toLowerCase()))}`)
 
   // Links overlap as evidence ("sounds like X" and "draws on X" often say the same thing): their total is capped.
   score = base + Math.min(LINK_CAP, score - base)
