@@ -12,6 +12,7 @@ export const PRODUCTION_LABELS: Record<string, string> = {
   // machines and software
   tr808: 'TR-808', tr909: 'TR-909', linndrum: 'LinnDrum', mpc: 'MPC', moog: 'Moog', prophet5: 'Prophet-5', prophet2002: 'Prophet 2002 sampler', oberheim: 'Oberheim',
   dx7: 'DX7', fairlight: 'Fairlight', synclavier: 'Synclavier', protools: 'Pro Tools', logic: 'Logic', ableton: 'Ableton Live', flstudio: 'FL Studio',
+  kurzweilk2000: 'Kurzweil K2000', akais3200: 'Akai S3200', korg01w: 'Korg 01/W',
 }
 export const PRODUCTION = new Set(Object.keys(PRODUCTION_LABELS))
 export const productionLabel = (p: string) => PRODUCTION_LABELS[p] ?? p

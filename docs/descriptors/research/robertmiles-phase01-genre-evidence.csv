@@ -1,0 +1,34 @@
+﻿album_id,genre,source,url,scope,evidence_strength,reason
+robertmiles-dreamland,trance,Synthtopia — Dreamland,https://www.synthtopia.com/content/2003/11/23/robert-miles-dreamland/,whole_album,high,Specialist review calls album a collection of melodic trance cuts.
+robertmiles-dreamland,dreamtrance,Dreamland genre listing,https://en.wikipedia.org/wiki/Dreamland_%28Robert_Miles_album%29,whole_album,medium,Album genre list explicitly names dream trance (secondary source).
+robertmiles-dreamland,dreamhouse,Tokafi — Robert Miles interview,https://www.tokafi.com/15questions/interview-robert-miles/,some_tracks,medium,Artist interview describes dream-house context for Children and debut-era sound.
+robertmiles-dreamland,progressivehouse,AllMusic — Dreamland,https://www.allmusic.com/album/dreamland-mw0000183716,whole_album,high,AllMusic lists Progressive House among album styles.
+robertmiles-dreamland,house,AllMusic — Dreamland,https://www.allmusic.com/album/dreamland-mw0000183716,whole_album,high,AllMusic house tag.
+robertmiles-dreamland,electronic,AllMusic — Dreamland,https://www.allmusic.com/album/dreamland-mw0000183716,whole_album,high,AllMusic genre category.
+robertmiles-dreamland,dance,AllMusic — Dreamland,https://www.allmusic.com/album/dreamland-mw0000183716,whole_album,high,AllMusic club/dance style; specialist review calls it dance music.
+robertmiles-dreamland,ambient,AllMusic — Dreamland,https://www.allmusic.com/album/dreamland-mw0000183716,texture,medium,"Album soundscape and chill-out passages, not a uniformly ambient record."
+robertmiles-dreamland,chillout,Synthtopia — Dreamland,https://www.synthtopia.com/content/2003/11/23/robert-miles-dreamland/,some_tracks,high,Specialist review explicitly contrasts dancefloor and chill-out room uses.
+robertmiles-dreamland,melodictrance,Synthtopia — Dreamland,https://www.synthtopia.com/content/2003/11/23/robert-miles-dreamland/,whole_album,high,Album called melodic trance in specialist review.
+robertmiles-dreamland,newage,Synthtopia — Dreamland,https://www.synthtopia.com/content/2003/11/23/robert-miles-dreamland/,some_tracks,medium,Children is described as combining new age and trance; single track.
+robertmiles-dreamland,techno,Synthtopia — Dreamland,https://www.synthtopia.com/content/2003/11/23/robert-miles-dreamland/,some_tracks,medium,Review notes techno drum texture on In My Dreams; not all songs.
+robertmiles-23am,ambient,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,whole_album,high,AllMusic: album at core is ambient with spacey synthetic textures.
+robertmiles-23am,electronic,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,whole_album,high,AllMusic genre electronic.
+robertmiles-23am,electronica,23am album overview,https://en.wikipedia.org/wiki/23am,whole_album,medium,Discography description lists electronica.
+robertmiles-23am,trance,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,some_tracks,high,"AllMusic tags the record trance, though review stresses ambient."
+robertmiles-23am,progressivehouse,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,some_tracks,high,AllMusic lists progressive house; dance-club tracks subset.
+robertmiles-23am,house,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,some_tracks,high,AllMusic house style for club-oriented cuts.
+robertmiles-23am,chillout,23am album overview,https://en.wikipedia.org/wiki/23am,whole_album,medium,Album genre list describes chill-out.
+robertmiles-23am,dance,AllMusic — 23 AM,https://www.allmusic.com/album/23-am-mw0000031845,some_tracks,high,Review specifically mentions dance-club tracks with singers.
+robertmiles-23am,pop,23am album overview,https://en.wikipedia.org/wiki/23am,some_tracks,medium,Album style list includes pop for vocal song structures.
+robertmiles-23am,electro,Tokafi — Robert Miles interview,https://www.tokafi.com/15questions/interview-robert-miles/,texture,medium,Tokafi describes the album as spanning dense ambient to energetic electro.
+robertmiles-organik,downtempo,AllMusic — Organik,https://www.allmusic.com/album/r532494,whole_album,high,AllMusic calls the album consistently dark and downtempo.
+robertmiles-organik,triphop,AllMusic — Organik,https://www.allmusic.com/album/r532494,some_tracks,high,AllMusic explicitly calls Paths trip-hop; much of album supports this vocabulary.
+robertmiles-organik,electronic,AllMusic — Organik,https://www.allmusic.com/album/r532494,whole_album,high,AllMusic electronic genre and Qobuz album category.
+robertmiles-organik,ambient,Drowned in Sound — Organik,https://dis11.herokuapp.com/releases/2613/reviews/1387-,whole_album,high,Contemporary Drowned in Sound review calls it ambient chillout music.
+robertmiles-organik,chillout,Drowned in Sound — Organik,https://dis11.herokuapp.com/releases/2613/reviews/1387-,whole_album,high,Contemporary review explicitly uses chill-out for record.
+robertmiles-organik,breakbeat,Organik CD sleeve transcription,https://www.bibleinmylanguage.com/robert-miles-organik-s-alt-records-audio-cd-2001-saltcd001/,some_tracks,medium,Original CD sleeve lists Breaks; mapped to breakbeat token.
+robertmiles-organik,jazz,Resident Advisor biography,https://ra.co/dj/robertmiles/biography,some_tracks,high,RA identifies jazz-oriented instrumental collaborators and development toward jazz.
+robertmiles-organik,worldmusic,Organik genre overview,https://fr.wikipedia.org/wiki/Organik,texture,medium,French album overview explicitly calls music world music; RA supports Indian/traditional textures.
+robertmiles-organik,trance,Organik album overview,https://en.wikipedia.org/wiki/Organik,some_tracks,medium,Album genre description includes trance; atypical relative to earlier albums.
+robertmiles-organik,drumandbass,Drowned in Sound — Organik,https://dis11.herokuapp.com/releases/2613/reviews/1387-,some_tracks,high,Drowned in Sound notices a drum-and-bass crescendo in Paths.
+robertmiles-organik,rock,Phase9 — Organik,https://www.phase9.tv/robertmiles-organik-a/,some_tracks,medium,Reviewer calls Trance Shapes the rock-oriented track.

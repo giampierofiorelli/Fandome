@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,already_in_catalog,existing_id,action,notes
+robertmiles-dreamland,Dreamland,1996,studio,yes,robertmiles-dreamland,keep existing,Existing album title in catalog.ts. Descriptor not yet delivered.
+robertmiles-23am,23am,1997,studio,no,,add,First album not listed; new ID follows slug rule.
+robertmiles-organik,Organik,2001,studio,no,,add,First album not listed; new ID follows slug rule.
