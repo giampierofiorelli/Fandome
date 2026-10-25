@@ -1,0 +1,41 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+mina-studiouno66,pop,whole LP,S-AM|S-OFF,1966 mainstream melodic pop songs and ballads,high
+mina-studiouno66,italianpop,whole LP,S-AM,AllMusic Italian Pop explicitly,high
+mina-studiouno66,europop,whole LP / broad catalogue label,S-AM,AllMusic Euro-Pop style tag,medium
+mina-studiouno66,adultcontemporary,whole LP / retrospective,S-AM,AllMusic adult contemporary style tag; retrospective term,medium
+mina-studiouno66,musicaleggera,Italian light popular song tradition,S-OFF|S-WIKI,TV-variety song arrangements in the Italian canzone style,medium
+mina-studiouno66,traditionalpop,ballads / standards subset,S-JAZZ|S-OFF,Ebb Tide and Somewhere in orchestrated standard repertoire,medium
+mina-studiouno66,standards,two pieces,S-JAZZ|S-OFF,Ebb Tide and Lontanissimo (Somewhere) from international standards,high
+mina-studiouno66,jazz,"two standard songs, not jazz-dominant",S-JAZZ,Jazz-specialist essay identifies Ebb Tide and Somewhere,low
+mina-dedicatoamiopadre,jazz,dominant jazz-standards approach / arranged vocals,D-RS|D-JAZZ,Italian specialist critic discusses US balladry and jazz-standards repertoire,high
+mina-dedicatoamiopadre,vocaljazz,significant share,D-JAZZ|D-RS,Mina leads orchestrated vocal interpretations of jazz standards,high
+mina-dedicatoamiopadre,standards,multiple LP cuts,D-JAZZ|D-OFF,"Lazy River, I Should Care, The Man That Got Away, Sentimental Journey, etc.",high
+mina-dedicatoamiopadre,pop,whole LP broad catalogue,D-AM|D-EN,Pop and vocal music in catalogues despite jazz focus,medium
+mina-dedicatoamiopadre,italianpop,broad catalogue,D-AM,Explicit Italian Pop style from AllMusic,medium
+mina-dedicatoamiopadre,europop,broad catalogue,D-AM,AllMusic Euro-Pop retrospective genre,medium
+mina-dedicatoamiopadre,adultcontemporary,broad catalogue,D-AM,AllMusic Adult Contemporary retrospective genre,medium
+mina-dedicatoamiopadre,traditionalpop,US traditional-song subset,D-OFF|D-RS,Hollywood standards / jazz torch ballads from original program,medium
+mina-dedicatoamiopadre,folk,single Marinella and regional-song strand,D-OFF|D-IT,De Andre folk narrative Marinella and Ma se ghe penso are song subsets,low
+mina-dedicatoamiopadre,latin,two Spanish/Latin repertoire songs,D-OFF,Somos and Besame Mucho,medium
+mina-dedicatoamiopadre,bossanova,"one Brazilian standard, So",D-OFF,So is Italian cover of Preciso aprender a ser so; single-track scope,low
+mina-dedicatoamiopadre,swing,jazzy small-band passages,D-RS|D-JAZZ,"Live drums, horns and straight/swinging standards",low
+mina-canzonissima68,pop,whole LP,C-TRACK|C-WIKI,PDU Italian prime-time pop themes and ballads,high
+mina-canzonissima68,italianpop,whole LP,C-WIKI|C-IT,Italian TV pop canon and 1968 recordings,high
+mina-canzonissima68,musicaleggera,whole LP / Italian tradition,C-IT|C-TRACK,Contemporary Italian melodic and TV-variety repertoire,medium
+mina-canzonissima68,europop,broad regional pop umbrella,C-TRACK|C-IT,European mainstream pop arrangement; retrospective regional framing,low
+mina-canzonissima68,adultcontemporary,significant ballad element,C-TRACK|C-TRE,Love ballads with dramatic orchestral delivery,low
+mina-canzonissima68,traditionalpop,orchestral ballad subset,C-TRE|C-WIKI,Vorrei che fosse amore and La voce del silenzio,medium
+mina-canzonissima68,soul,soul covers and classified LP,C-MERCH|C-BIO,Niente di niente Delfonics song and retail soul category,medium
+mina-canzonissima68,rnb,American soul subset,C-BIO|C-TRACK,Delfonics Break Your Promise cover and US R&B materials,low
+mina-canzonissima68,bossanova,one Brazilian song,C-BIO|C-TRACK,Sacumdi Sacumda adapts Nem Vem Que Nao Tem; not whole-album bossa,low
+mina-canzonissima68,folk,metadata genre only,C-IT,"Italian discography explicitly lists Folk, weak album-wide claim",low
+mina-mina1971,pop,dominant / album,M-AM|M-IT,"AllMusic Pop-Rock category, 1971 accessible romantic repertoire",high
+mina-mina1971,italianpop,dominant / album,M-AM,Explicit AllMusic Italian Pop,high
+mina-mina1971,musicaleggera,dominant / album,M-IT,Italian discography classifies musica leggera,medium
+mina-mina1971,europop,whole LP retrospective,M-AM,AllMusic Euro-Pop classification,medium
+mina-mina1971,adultcontemporary,whole LP retrospective,M-AM,AllMusic explicit style,medium
+mina-mina1971,traditionalpop,substantial orchestrated ballad repertoire,M-LP|M-EN,Orchestrated ballad / international standard music,medium
+mina-mina1971,soul,multiple pieces with soulful vocal colouring,M-EN,Secondary discography blue-eyed soul classification,low
+mina-mina1971,blueeyedsoul,retrospective category,M-EN,Secondary discography explicit Blue-eyed Soul tag; require token addition,low
+mina-mina1971,jazz,limited repertoire,M-LP,"Alfie jazz-standard performance, not jazz album",low
+mina-mina1971,standards,subset two covers,M-LP|M-AM,Alfie and Something international covers,medium
