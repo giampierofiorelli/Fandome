@@ -1,0 +1,13 @@
+madonna-madonna: rhythm guitars (type unspecified; current descriptor row lists electricguitar) — madonna-genres-revision.md (Wikipedia) / madonna-evidence-notes.md (Pitchfork 'guitar parts')
+m-virgin: room-recorded drums (recording technique) — madonna-evidence-notes.md (Corsaro, BMI)
+m-prayer: gospel choir; tape effects / taped-recut ending of 'Act of Contrition' — madonna-phase02-evidence.md (Pitchfork, Leonard)
+madonna-erotica: guitar (type unspecified) — madonna-phase02-evidence.md
+madonna-bedtimestories: guitar on 'Secret' (type unspecified) — madonna-phase02-evidence.md (Slant)
+m-ray: Roland Juno-106, Korg MS-20 synths; breakbeats; synth sounds resembling guitar — madonna-phase03-evidence.md (MusicRadar/Orbit, AllMusic)
+m-music: processed guitars; stop-start/stuttered guitar edits (Martin D-28) — madonna-phase03-evidence.md (Grammy, Qobuz)
+madonna-americanlife: digitally chopped/stuttering guitar edits; processed strings; sculpted bass sound on 'Hollywood' (type unspecified) — madonna-phase03 Guardian, Slant, Qobuz
+m-confessions: tablas (mapped to percussion); continuous DJ-style mix — madonna-phase04 Guardian, Billboard/Price
+madonna-hardcandy: Chic-style / disco guitar (type unspecified) — madonna-phase04 Slant
+madonna-madamex: Orquestra de Batukadeiras (batuque ensemble); live guitar (type unspecified); digital vocal edits — madonna-phase05-evidence.md
+madonna-confessionsii: guitars (type unspecified); keyboards — madonna-phase05-evidence.md
+madonna-evita: choir / ensemble — madonna-phase06 EV_QB, genre-evidence

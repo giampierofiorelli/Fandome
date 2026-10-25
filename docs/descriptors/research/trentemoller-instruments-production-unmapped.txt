@@ -1,0 +1,7 @@
+trentemoller-thelastresort: celesta; melodica; cello (RA 'cello/guitar-tinged trip-hop songs'); guitar (type unspecified) — trentemoller-phase01-evidence-notes.md, trentemoller-phase01-sources.csv (L_OFF), trentemoller-phase01-genre-evidence.csv
+trentemoller-intothegreatwideyonder: music box; vintage processors — trentemoller-phase01-evidence-notes.md (Y_OFF)
+trentemoller-reworkedremixed: guitar (type unspecified) — trentemoller-phase01-evidence-notes.md
+trentemoller-lost: guitars (type unspecified); loops — trentemoller-phase02-evidence-notes.md
+trentemoller-fixion: string synths (Joy Division-style; mapped as synth); vintage hardware; processed own voice; echoing guitars (type unspecified) — trentemoller-phase02-evidence-notes.md, trentemoller-phase02-sources.csv (F_MR, F_RV, F_EX)
+trentemoller-obverse: Korg Micro Preset (specific synth, no token); reverse synths; analogue saturation; guitars (type unspecified) — trentemoller-phase02-evidence-notes.md (O_MAG)
+trentemoller-dreamweaver: violin (Maria Jagd); guitar pedals / densely effected guitars; 'electric rhythm' (ambiguous) — trentemoller-phase03-evidence-notes.md, trentemoller-phase03-sources.csv (D_QMAG), trentemoller-phase03-genre-evidence.csv

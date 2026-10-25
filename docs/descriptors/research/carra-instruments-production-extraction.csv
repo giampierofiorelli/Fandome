@@ -1,0 +1,17 @@
+album_id,instruments,production,sources
+carra-raffaella,orchestra,,carra-phase01-evidence-notes.md: Conta su di me 'Sony credits identify original and Ormi orchestra'; Ma che musica maestro 'official RCA identifies Pisano orchestra and backing choir'; Domenica non è 'Ormi orchestra'; carra-phase01-sources.csv: Qobuz 'singers orchestras choirs'
+carra-raffaellacarra,orchestra,,carra-phase01-evidence-notes.md: Raindrops 'Sony credits confirm Ormi orchestra'; Vi dirò la verità 'orchestral performance context'; genre-evidence: 'Ormi orchestration'
+carra-raffaellasenzarespiro,orchestra,,"carra-phase01-evidence-notes.md: 'Presentazione orchestra — spoken introductions and orchestra riffs'; 'revue runs through concert simulation, orchestra riffs, crowd edits'"
+carra-scatolaasorpresa,synth|electricpiano|percussion,layeredvocals,carra-phase01-evidence-notes.md: '1973 LP original sleeve transcription lists ARP and VCS synthesisers plus electric piano'; carra-phase01-sources.csv: 'Ormi ARP and VCS synthesizers electric piano and percussion; Gianni Boncompagni producer; overdubbed vocals'; 'instrumentals and group overdubs retained'
+carra-milleluci,orchestra,,carra-phase02-evidence-notes.md: 'Paolo Ormi arranged and conducted the record'; 'orchestrated revue presentation'; 'studio orchestra'; genre-evidence: 'original LP is orchestral vocal variety repertoire'
+carra-felicitatata,,,
+carra-forteforteforte,,,
+carra-fiesta,orchestra,,carra-phase02-evidence-notes.md: 'I Thank You Life is a separate orchestral ballad in musical style' (single track); genre-evidence: 'orchestrated in musical style; not whole record'
+carra-raffaella1978,orchestra,,"carra-phase03-sources.csv RadioCorriereTV / Rai: '1978 songwriters, orchestral arrangements, TV programme context'"
+carra-applauso,,,
+carra-mispendotutto,handclaps,,carra-phase03-evidence-notes.md: engineer Gaetano Vituzzi (Rockol) 'describes Ormi's handclaps at the beginning of Pedro as probably intended to evoke Spain'; genre-evidence: 'Pedro production deliberately added Spanish-flavoured handclaps' (track-level)
+carra-raffaellacarra1981,,,
+carra-raffaellacarra82,strings,,carra-phase04-evidence-notes.md: Rockol 'hears an Eleanor Rigby-like string riff in the introduction' of Ballo ballo (track-level); 'documented studio rhythm section ... with keyboards from Piero Cairo'
+carra-fatalita,,,
+carra-bolero,drummachine|synth|electricguitar,linndrum,"carra-phase04-evidence-notes.md: 'Sleeve documents Linn II electronic drum machine and PPG 2.3 synthesizer, programmed by Stephen Head, Vaona on keyboards, plus Luciano Ciccaglioni electric guitar and multiple backing singers'"
+carra-fidati,bass|piano|saxophone,,"carra-phase04-evidence-notes.md: sleeve credits 'Danilo Vaona (producer, arrangements, keyboards), Giovanni Boccuzzi (electronic drums), Francesco Boccuzzi (guitar, computer, grand piano), Stephen Head (programming), Tonio Napoletano (electric bass), Sal Genovese (tenor sax)'; 'electronics-plus-live-musicians mix'"

@@ -8,7 +8,7 @@ export const PRODUCTION_LABELS: Record<string, string> = {
   whistleregister: 'Whistle register', belting: 'Belting',
   // recording and production techniques
   sampling: 'Sampling', analogtape: 'Analog tape', lofi: 'Lo-fi', wallofsound: 'Wall of sound', heavyreverb: 'Heavy reverb',
-  sidechain: 'Sidechain pumping', distortion: 'Distortion', liverecording: 'Recorded live in the studio', fieldrecordings: 'Field recordings',
+  sidechain: 'Sidechain pumping', distortion: 'Distortion', liverecording: 'Recorded live in the studio', fieldrecordings: 'Field recordings', tapeeffects: 'Tape effects',
   // machines and software
   tr808: 'TR-808', tr909: 'TR-909', linndrum: 'LinnDrum', mpc: 'MPC', moog: 'Moog', prophet5: 'Prophet-5', oberheim: 'Oberheim',
   dx7: 'DX7', fairlight: 'Fairlight', synclavier: 'Synclavier', protools: 'Pro Tools', logic: 'Logic', ableton: 'Ableton Live', flstudio: 'FL Studio',

@@ -1,0 +1,3 @@
+trst-thedestroyer1: keys (generic, Treble 'somber keys') — trst-phase01-sources.csv
+trst-joyland: keyboards (generic); Apple's 'industrial bass' — trst-phase01-genre-evidence.csv / sources.csv
+trst-joyland: Apple editorial mentions vocal effects but artist denies digital voice treatment (not used) — trst-phase01-evidence-notes.md

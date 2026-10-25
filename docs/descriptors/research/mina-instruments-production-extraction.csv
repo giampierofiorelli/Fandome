@@ -1,0 +1,17 @@
+album_id,instruments,production,sources
+mina-tintarelladiluna,,,
+mina-ilcieloinunastanza,orchestra,,"mina-phase01-evidence-notes.md: 'Tony De Vita directs the original orchestra, except Giulio Libano for final B-side track'; mina-phase01-sources.csv C-EN: 'orchestral rather than electronic accompaniment'"
+mina-mina,orchestra,,mina-phase01-evidence-notes.md: 'arrangement/orchestra Augusto Martelli'; electronic=0 'orchestral acoustic performance'; polish=4 'controlled orchestral studio'; M-OFFICIAL: 'Augusto Martelli orchestra'
+mina-studiouno,orchestra,,mina-phase01-evidence-notes.md: electronic=0 'original orchestral acoustic arrangement'; 'traditionalpop source-backed by Martelli's orchestra'
+mina-studiouno66,orchestra,,mina-phase02-evidence-notes.md: electronic=0 'reflects orchestral instruments and no documented synth- or drum-machine-led tracks'; 'TV-based musica leggera with orchestration'
+mina-dedicatoamiopadre,orchestra|brass|drums|strings,,"mina-phase02-evidence-notes.md: electronic=0 'grounded in acoustic orchestra, brass, drums, strings as described by the Italian critic'; 'reportedly near-live-take performance' (D-RS 'live-to-tape studio playing'); genre-evidence: 'Live drums, horns'"
+mina-canzonissima68,orchestra,,"mina-phase02-evidence-notes.md: electronic=0 '(period orchestra, not synthesis)'; theatrical=4 'prime-time variety with full-orchestra delivery'"
+mina-mina1971,orchestra,,mina-phase02-evidence-notes.md: electronic=0 'for documented conventional instrumental orchestra'; polish=4 'from elaborate orchestration'; M-IT: 'non-electronic orchestration'
+mina-minacantaobrasil,brass|strings|percussion,,"mina-phase03-evidence-notes.md: SHFL 'strong yet modulated performance over Brazilian guitars/percussion/horns'; electronic=0 '(horns, strings/guitars/percussion described, no synth evidence)'; 'brassier spirited' numbers; mina-phase03-sources.csv B02: 'brass, guitars, percussion'"
+mina-fruttaeverdura,orchestra|bass,,"mina-phase03-evidence-notes.md: electronic=0 'with Italian orchestrations and rhythm players, no substantial evidence for synths'; mina-phase03-sources.csv F06: Pino Presti 'arrangement and bass contributions for Mina, including E poi and Frutta e verdura'"
+mina-amantidivalore,orchestra,,mina-phase03-evidence-notes.md: electronic=0 'because evidence of orchestrated 1973 PDU recordings rather than synthesizer-led production'
+mina-babygate,orchestra,,mina-phase03-evidence-notes.md: 'Pino Presti credited for orchestra and arrangements'; electronic=0 'period big-band/live analogue arrangements'
+mina-minacantalucio,orchestra,,mina-phase04-evidence-notes.md: 'Gabriel Yared arranged the album for orchestra'; electronic=0 'Yared's orchestrated acoustic studio treatment'
+mina-lamina,orchestra,,"mina-phase04-evidence-notes.md: electronic=1 'predominantly live/arranged orchestration and reported electronic keyboard/drum details on one song' (weak, AI-assisted source L07)"
+mina-singolare,orchestra,,"mina-phase04-evidence-notes.md: electronic=0 'guitars and studio orchestra predominate, with no credible synth-led evidence'"
+mina-plurale,orchestra,layeredvocals,"mina-phase04-evidence-notes.md: P01 'all choral parts were recorded via successive overdubs of Mina's one voice, allowing groups from trio up to 16 voices'; electronic=0 'natural orchestra and overdubbed human voice'; P02: 16-track recorder"

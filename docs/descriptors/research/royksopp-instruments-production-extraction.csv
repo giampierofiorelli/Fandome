@@ -1,0 +1,11 @@
+album_id,instruments,production,sources
+royksopp-melodyam,sampler|synth|sequencer|strings,sampling,"royksopp-phase01-evidence-notes.md: AllMusic 'unusually careful sampler arrangements'; Pitchfork 'strings and singing amid largely instrumental passages'; 'samples, sequenced synths and beats dominate'; 'inventive sampling'. royksopp-phase01-sources.csv: Pitchfork 'intricate melodic sampling'; AllMusic 'airy samples'"
+royksopp-theunderstanding,synth,,royksopp-phase01-evidence-notes.md: 'dense synth/patterns despite singers and other instruments'. royksopp-phase01-sources.csv (Pitchfork): 'Expanded synth pads'
+royksopp-junior,synth|strings,,"royksopp-phase01-evidence-notes.md: Guardian 'lush synthesizers, tactile dance beats'; 'synth dominant, strings and guests also matter'"
+royksopp-senior,synth|strings|bass,,"royksopp-phase02-evidence-notes.md: 'synth/programmed textures with documented live guitar, strings and bass [S_AM]'; Pitchfork 'melancholy synth/guitar material'"
+royksopp-theinevitableend,strings,,"royksopp-phase02-evidence-notes.md: 'digitally shaped music interspersed with strings, guitar, vocals [E_MB,E_AM]'"
+royksopp-profoundmysteries,synth|piano,,"royksopp-phase02-evidence-notes.md: 'synths dominate, but heard piano and guest singing'; 'ambient-piano segments'"
+royksopp-profoundmysteriesii,synth,heavyreverb,royksopp-phase03-evidence-notes.md: 'records and synth programming largely electronic'; 'big reverbed hooks and vocal dramaturgy [II_PF]'
+royksopp-profoundmysteriesiii,synth|strings,,royksopp-phase03-evidence-notes.md: 'densely engineered synthesis'; 'intermittent strings'. royksopp-phase03-sources.csv (Slant): 'glacial synths/strings'
+royksopp-nebulousnightsanambientexcursionintoprofoundmysteries,,liverecording,"royksopp-phase03-evidence-notes.md: 'recorded live in an after-hours studio session, with analogue warmth'; '30-piece live-recorded studio ambient album'. royksopp-phase03-sources.csv (N_OFF): 'live-recorded ambient reinterpretations; warm raw analogue performance'"
+royksopp-trueelectric,synth,,royksopp-phase04-evidence-notes.md: 'electronic 5 (synth/programmed construction)'

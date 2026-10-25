@@ -1,0 +1,4 @@
+sabrina-singularactii: guitar (type unspecified); 'bass/keys' on In My Bed (bass type unspecified) — sabrina-phase02-evidence-notes.md, sabrina-phase02-sources.csv (Hollywood Records)
+sabrina-emailsicantsend: guitar (type unspecified); spoken-verse style on Tornado Warnings — sabrina-phase02-genre-evidence.csv, sabrina-phase02-evidence-notes.md
+sabrina-shortnsweet: live guitar (type unspecified); country twang; G-funk synth whistle (mapped only as synth) — sabrina-phase02-genre-evidence.csv
+sabrina-mansbestfriend: guitars (type unspecified) — sabrina-phase03-evidence-notes.md

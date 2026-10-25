@@ -1,0 +1,6 @@
+album_id,instruments,production,sources
+lazza-zzala,piano,,lazza-phase01-evidence-notes.md: 'Classical-style piano phrases are documented instrumentation'; 'heavy programmed trap production with real piano parts'; lazza-phase01-sources.csv: Qobuz 'classical piano and hip-hop'
+lazza-remida,piano,autotune,"lazza-phase01-evidence-notes.md: 'hip-hop, trap and Auto-Tune', 'sung/Auto-Tuned hooks', 'occasional live piano'; lazza-phase01-sources.csv: Rockol 'piano, Auto-Tune'"
+lazza-j,,,
+lazza-sirio,synth|drummachine|piano,,"lazza-phase01-evidence-notes.md: 'synths/drum machines, with meaningful piano openings'; lazza-phase01-sources.csv: Universal release notice 'Piano, synths, programmed drums'; Newsic 'piano on opening track'"
+lazza-locura,synth|piano,,"lazza-phase01-evidence-notes.md: 'synth-driven cinematic beats, offset by piano/acoustic detail'; lazza-phase01-genre-evidence.csv: 'electronic synth-heavy beats and arrangements across several tracks'"

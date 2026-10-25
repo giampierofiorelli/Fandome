@@ -1,0 +1,8 @@
+gaga-thefamemonster: guitar on 'Speechless' (type unspecified) — gaga-phase01 genre-evidence (M_AM)
+g-btw: guitars / metal guitar riffs (type unspecified); gospel-style chant — gaga-phase01 notes, B_PF
+g-chromatica: choir (Guardian) — gaga-phase02-sources.csv H_GUARD
+gaga-astarisborn: guitars in country-rock/blues-rock band performances (type unspecified); acoustic duets (instrument unspecified); 'live stage' / live performances (not clearly a recording method, not mapped to liverecording) — gaga-phase02 notes, S_PF
+gaga-harlequin: guitars (type unspecified); choral/ensemble sections; electronic texture on Happy Mistake — gaga-phase03-evidence-notes.md
+gaga-dawnofchromatica: 'digital editing'; 'maximalist bright distortions in some tracks' (taxonomy note, not mapped) — gaga-phase03 genre-evidence
+g-mayhem: live guitars (type unspecified); hair-metal guitar solo on Zombieboy; grunge guitar approach — gaga-phase04 notes/genre-evidence
+gaga-applemusiclivemayhemrequiem: 'full electric band and industrial guitar' (guitar type not stated explicitly); droning textures — gaga-phase04 R_VA

@@ -1,0 +1,17 @@
+moroder-sonofmyfather: keyboards (Fritz Muschler, unspecified type); phasing effects on title track — moroder-phase01 notes/sources (S72-LP, S72-NPR)
+moroder-einzelganger: tape/vocal 'cut-ups' and processed voice stutters (not mapped to vocalchops) — moroder-phase02 sources E75-DAZED, E75-REYNOLDS
+moroder-knightsinwhitesatin: backing vocal choir — moroder-phase02 K76-ORIG/K76-REP
+moroder-fromheretoeternity: female choir / choral harmonies — moroder-phase02 F77-QOBUZ, F77-PITCH
+moroder-lovesinyoulovesinme: backing choir; unspecified live band — moroder-phase03 L-ORIG
+moroder-musicfrombattlestargalacticaandotheroriginalcompositions: choir (side A); guitar on Evolution (type unspecified) — moroder-phase03 B-SLEEVE, B-NPR
+moroder-emc: clavinet (mechanically actuated); Roland System 700 synth; Polymoog (Baby Blue only, mapped to moog); Soundstream live-to-digital recording and computer editing — moroder-phase03 E-REDBULL, E-REVERB, E-SLEEVE
+moroder-americangigolo: keyboards (Faltermeyer, unspecified); 'Roland-era timbres' — moroder-phase04 AG-O/AG-I
+moroder-catpeople: guitar (type unspecified, live); Blaster Beam; reverse-tape manipulation; manipulated animal noise — moroder-phase04 CP-M, CP-W
+moroder-solitarymen: guitar (Richie Zito, type unspecified); keyboards (Sylvester Levay) — moroder-phase04 SM-A
+moroder-electricdreams: guitar (Jeff Lynne, type unspecified) — moroder-phase06 E-MB
+moroder-metropolis: guitars (type unspecified) — moroder-phase06 M-ORIG
+moroder-innovisions: guitar (Richie Zito, type unspecified); remix processing (Brian Reeves) — moroder-phase06 I-LP
+moroder-topgun: live guitars (type unspecified); keyboards — moroder-phase07 TG-QOBUZ/TG-AFI
+moroder-overthetop: guitars (type unspecified; 'guitar-driven', 'harder guitar pieces') — moroder-phase07 OT-SLEEVE, OT-CRIT
+moroder-theneverendingstoryiithenextchapter: choir; pan flute — moroder-phase07 NS-AFI, NS-REVIEW
+moroder-dejavu: guitar (type unspecified, 'Get Lucky-reminiscent'); reFX Nexus soft synth; Boomstar hardware synth — moroder-phase08 D-TECH, D-PITCH

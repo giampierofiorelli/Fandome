@@ -1,0 +1,5 @@
+elisa-lotus: natural reverb / raw rehearsal-room feel (not 'heavy' reverb) — elisa-phase02-sources.csv (L03_SUONO)
+elisa-ivy: children's choir — elisa-phase03-sources.csv (I10_TGCOM)
+elisa-lanimavola: guitar (type unspecified, 'rock guitar'); orchestral dimension — elisa-phase03-evidence-notes.md, elisa-phase03-sources.csv (A13_PANORAMA)
+elisa-diariaperti: guitar (type unspecified); whispered singing — elisa-phase04-evidence-notes.md, elisa-phase04-sources.csv (D03)
+elisa-ritornoalfuturobacktothefuture: guitar (type unspecified) — elisa-phase04-evidence-notes.md

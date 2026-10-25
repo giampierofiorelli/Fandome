@@ -1,0 +1,8 @@
+mina-tintarelladiluna: 'period acoustic-band arrangements' (no specific instruments named) — mina-phase01-evidence-notes.md
+mina-dedicatoamiopadre: live-to-tape / near-live-take studio performance (not mapped to liverecording) — mina-phase02 D-RS
+mina-minacantaobrasil: Brazilian guitars (type unspecified); 'polished orchestral arrangement' — mina-phase03 B02/B03
+mina-amantidivalore: choral ironic presentation on 'Carlo detto il mandrillo' — mina-phase03-evidence-notes.md
+mina-babygate: big-band arrangements (brass not named explicitly) — mina-phase03-evidence-notes.md
+mina-lamina: electronic keyboard/drum details and funk bass riff on 'L'importante è finire' (weak AI-assisted source L07, not used) — mina-phase04-evidence-notes.md
+mina-singolare: guitars (type unspecified); acoustic/band/soft-rock arrangements — mina-phase04-evidence-notes.md
+mina-plurale: 16-track multitrack recording (self-choir) — mina-phase04 P01/P02

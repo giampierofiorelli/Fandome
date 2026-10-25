@@ -1,0 +1,7 @@
+album_id,instruments,production,sources
+elodie-unaltravita,,,elodie-phase01-evidence-notes.md: only 'one song combining acoustic and electronic sounds' (no specific instrument)
+elodie-tuttacolpamia,,liverecording|tapeeffects,"elodie-phase01-evidence-notes.md: 'label identifies live in-session playing and vintage instruments, spring reverb and tape delay'. elodie-phase01-sources.csv (Universal): 'live in-session recording; vintage gear; spring reverb/tape delay'"
+elodie-thisiselodie,synth,,elodie-phase01-evidence-notes.md: 'urban/electropop and synth/beat-driven passages' vs acoustic songs; 'elaborate synthetic arrangements'; 'house keyboard in a single 2020 song'
+elodie-okrespira,,,elodie-phase02-evidence-notes.md: no instrument or technique named
+elodie-miamimiodi,synth|strings,,"elodie-revision-redlight-evidence-notes.md: 'assertive club opening, quieter ballads, strings, and early-2000s R&B ending'. elodie-revision-redlight-genre-evidence.csv: 'OndaRock details synthetic arrangements'"
+elodie-redlight,synth,,"elodie-revision-redlight-genre-evidence.csv: 'Electronic club production, rhythmic synths and bass throughout'. elodie-revision-redlight-evidence-notes.md: 'relentless electronic four-on-the-floor dance sequence and strong bass'"

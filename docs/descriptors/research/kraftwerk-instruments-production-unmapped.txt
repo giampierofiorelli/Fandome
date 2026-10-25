@@ -1,0 +1,7 @@
+kraftwerk-kraftwerk: Tubon (bass keyboard); violin; musique concrète tape edits — kraftwerk-phase01-evidence-notes.md, kraftwerk-phase01-sources.csv (K70-DJ)
+kraftwerk-kraftwerk2: violin; guitar (type unspecified); oscillators; filtering — kraftwerk-phase01-evidence-notes.md, kraftwerk-phase01-sources.csv (K72-ORIG, K72-HU), kraftwerk-phase01-genre-evidence.csv
+kraftwerk-ralfundflorian: guitar (type unspecified); 'string instruments' (unspecified) — kraftwerk-phase01-evidence-notes.md, kraftwerk-phase01-sources.csv (K73-ORIG)
+kraftwerk-autobahn: ARP Odyssey (synth, no token); Robovox (voice device); live guitar (type unspecified); violin — kraftwerk-phase01-evidence-notes.md, kraftwerk-phase01-sources.csv (K74-PROD, K74-ORIG)
+kraftwerk-radioactivity: Orchestron; shortwave/radio collage — kraftwerk-phase02-sources.csv (R-LP), kraftwerk-phase02-evidence-notes.md
+kraftwerk-transeuropeexpress: loops — kraftwerk-phase02-sources.csv (T-SONG)
+kraftwerk-computerworld: speech synthesis ('primitive voice synthesis'); pocket calculator (Casio) as instrument — kraftwerk-phase02-evidence-notes.md, kraftwerk-phase02-sources.csv (C-MUSIC)

@@ -1,0 +1,12 @@
+album_id,instruments,production,sources
+robyn-robynishere,brass,,"robyn-phase01-evidence-notes.md: 'programmed rhythmic pop alongside live guitars, horns and other players in credits [R95_Q]'"
+robyn-mytruth,acousticguitar|piano|brass|strings,,"robyn-phase01-evidence-notes.md: 'Qobuz documents acoustic guitar, piano, horns, strings and some electronics [R99_Q]'"
+robyn-dontstopthemusic,,,robyn-phase01-evidence-notes.md: only 'programmed beats/keyboards' (no specific instrument)
+robyn-robyn,synth,,"robyn-phase02-evidence-notes.md: 'synth-beat-driven pop record'; 'programmed synths central, varied instrumentation'. robyn-phase02-genre-evidence.csv: New Yorker 'synth-based 80s pop references and pure electronic instrumentation'"
+robyn-bodytalkpt1,synth|mallets,,"robyn-phase02-evidence-notes.md: 'programmed synth music, acoustic and vibraphone closer'. robyn-phase02-genre-evidence.csv: 'Prominent synth hooks and synthesizer programming'"
+robyn-bodytalkpt2,synth,,"robyn-phase02-evidence-notes.md: 'dominantly programmed synthpop'; Pitchfork 'streamlined, club-friendly synthpop'"
+robyn-bodytalk,synth|drummachine|strings,,"robyn-phase02-evidence-notes.md: 'synths/drum machines dominate, strings and acoustic features'"
+robyn-doitagain,synth,,robyn-phase03-evidence-notes.md: 'electronic 5 (synth-constructed)'. robyn-phase03-genre-evidence.csv: 'Synth-driven singles'
+robyn-loveisfree,brass|percussion,sampling,robyn-phase03-evidence-notes.md: 'electronics 4 (samples plus horns/percussion)'; 'eccentric loose sample collage'. robyn-phase03-genre-evidence.csv: 'sampled instrumentation'; 'Loose Joints cover includes disco samples/horns'
+robyn-honey,synth,,robyn-phase03-genre-evidence.csv: 'Programmed synth/drum textures'
+robyn-sexistential,synth,,robyn-phase03-genre-evidence.csv: 'Arpeggiated and pulsing synth hooks'; 'Synthesisers and programmed percussion'. robyn-phase03-sources.csv (Guardian): 'Sharper synths compared with Honey'

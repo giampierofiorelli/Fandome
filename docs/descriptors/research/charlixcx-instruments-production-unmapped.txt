@@ -1,0 +1,5 @@
+charlixcx-crash: guitars (type unspecified) — charlixcx-phase03-evidence-notes.md
+charlixcx-brat: robotic (Daft Punk-like) vocal treatment, unspecified device — charlixcx-phase03-evidence-notes.md (NME)
+charlixcx-brat: Serum (software synth) — charlixcx-phase03-sources.csv (MusicRadar)
+charlixcx-wutheringheights: processed vocals (unspecified); drones; industrial-metal drums on House and Funny Mouth (type unspecified) — charlixcx-phase04-evidence-notes.md, charlixcx-phase04-genre-evidence.csv
+charlixcx-number1angel / pop2 / howimfeelingnow: heavily processed/treated vocals beyond the mapped tokens — charlixcx-phase02/03-evidence-notes.md

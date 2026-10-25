@@ -1,0 +1,8 @@
+album_id,instruments,production,sources
+sabrina-eyeswideopen,acousticguitar|ukulele,,"sabrina-phase01-evidence-notes.md: 'Apple describes acoustic guitar strumming and ukulele'; 'guitar/ukulele-forward arrangement and light pop programming'. sabrina-phase01-sources.csv (Apple): 'acoustic strums, ukulele'"
+sabrina-evolution,synth,,sabrina-phase01-evidence-notes.md: 'synthesizer/drum programming paired with mainstream pop production'
+sabrina-singularacti,synth,,sabrina-phase01-evidence-notes.md: 'punchy sequenced beats'; 'prominent synths/drum programming'. sabrina-phase01-sources.csv (Line of Best Fit): 'synths'
+sabrina-singularactii,synth|strings,,"sabrina-phase02-evidence-notes.md: 'Sequenced beats, synthesizer, programming and commercial mixing dominate many tracks, but strings, guitar, ballad elements survive'. sabrina-phase02-genre-evidence.csv: 'Programmed synth/drum-led cuts alternate with a guitar-and-strings ballad'"
+sabrina-emailsicantsend,,,sabrina-phase02-evidence-notes.md: only 'acoustic and ballad-heavy repertoire'; sabrina-phase02-genre-evidence.csv: 'guitar-driven pop-rock' on Vicious/Tornado Warnings (guitar type unspecified)
+sabrina-shortnsweet,synth,belting,sabrina-phase02-evidence-notes.md: 'a hybrid of synthesizers/drum-programming and acoustic/live instrumentation'; 'broader pop-rock belting across tracks'. sabrina-phase02-genre-evidence.csv: 'synth whistle' (Bed Chem); 'live guitar textures'
+sabrina-mansbestfriend,synth|piano|brass|strings|drums,,"sabrina-phase03-evidence-notes.md: 'synthesizers and programming present, plus organic piano, guitars, horns, strings and live drums'. sabrina-phase03-sources.csv (Guardian SC25-07): 'strings/guitar'"

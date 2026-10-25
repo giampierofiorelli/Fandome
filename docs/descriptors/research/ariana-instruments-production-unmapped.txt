@@ -1,0 +1,5 @@
+ariana-yourstruly: melismatic lead vocals — ariana-phase01-evidence-notes.md
+ariana-eternalsunshine: guitar (type unspecified; 'alt-rock strum' on imperfect for you) — ariana-phase02-evidence-notes.md
+ariana-wickedthesoundtrack: full-cast choir/choral passages; keyboards (unspecified) — ariana-phase02-evidence-notes.md, ariana-phase02-sources.csv (W_REP)
+ariana-wickedforgoodthesoundtrack: cast choruses/choral voices; amplified keyboards (unspecified) — ariana-phase03-evidence-notes.md, ariana-phase03-sources.csv (W09)
+ariana-petal: guitar (type unspecified; dream-pop guitars on Bad Thing) — ariana-phase03-evidence-notes.md, ariana-phase03-genre-evidence.csv

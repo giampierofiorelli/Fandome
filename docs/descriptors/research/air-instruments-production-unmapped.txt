@@ -1,0 +1,4 @@
+air-premierssymptomes: tambura; guitars (type unspecified); tuba (mapped to brass) — air-phase01 P-Q
+air-moonsafari: guitar (type unspecified); background harmonies / processed voices; modest multitrack recording — air-phase01 M-GODIN, M-MB
+air-thevirginsuicides: guitars ('acoustic-electric guitar/bass presence', type ambiguous) — air-phase01 V-AM, genre-evidence
+air-10000hzlegend: choir/ensemble vocals; robotic/processed speech on How Does It Make You Feel?; orchestral arrangements (mapped to strings); guitars on rock sections (type unspecified) — air-phase01 H-AM, H-PF, H-MB

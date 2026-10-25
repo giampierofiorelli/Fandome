@@ -1,0 +1,4 @@
+blanco-innamorato: guitar (type unspecified: 'piano, guitar', 'live/acoustic piano/guitar') — blanco-phase01-evidence-notes.md
+blanco-ma: guitars (type unspecified) — blanco-phase01-evidence-notes.md
+blanco-ma: compressed vocals (Rockol 'compressed vocals', 'constrained/compressed vocal presentation') — blanco-phase01-sources.csv / evidence-notes.md
+blanco-bluceleste: screaming and whispered vocal passages (OndaRock) — blanco-phase01-evidence-notes.md
