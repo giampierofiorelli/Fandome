@@ -1,52 +1,61 @@
-# Fandome import — Raffaella Carrà, phase 01
+# CLAUDE_IMPORT — REPLACE Raffaella Carrà Phase 01 (corrected)
 
-**Research as of:** 25 October 2026. Read-only inspection of GitHub branch `descriptors`.
+Date: 25 October 2026. Artist `carra`. **This ZIP is a replacement for the ORIGINAL phase 01, not a new album phase.**
 
-**Fandome artist ID:** `carra` (catalogue entry exists). No album entries in the catalogue for this artist (`[]`) and no `docs/descriptors/carra.csv` or `research/carra-*` files were present when checked. This ZIP is strictly incremental: **four new rows only**, no older phases, no other artists.
+## Required import behavior
 
-## New phase-01 rows, in original release order
+The four original rows already exist in `docs/descriptors/carra.csv` and all four albums are already in `src/data/catalog.ts` on branch `descriptors`. Replace exactly these four rows using `album_id` as the unique key. **Do not append duplicates. Do not touch imported Phases 02–04.** Preserve row order with other album phases.
 
-| album_id | Official original album title | Year | Type | Catalogue action |
-|---|---|---:|---|---|
-| `carra-raffaella` | Raffaella | 1971 | studio | add |
-| `carra-raffaellacarra` | Raffaella Carrà | 1971 | studio | add |
-| `carra-raffaellasenzarespiro` | Raffaella... Senzarespiro | 1972 | studio | add; flag fake-live designation |
-| `carra-scatolaasorpresa` | Scatola a sorpresa | 1973 | studio | add |
+| album_id | Original album | Year | Import |
+|---|---|---:|---|
+| `carra-raffaella` | Raffaella | 1971 | REPLACE row; catalogue already has album |
+| `carra-raffaellacarra` | Raffaella Carrà | 1971 | REPLACE row; catalogue already has album |
+| `carra-raffaellasenzarespiro` | Raffaella... Senzarespiro | 1972 | REPLACE row; catalogue already has album |
+| `carra-scatolaasorpresa` | Scatola a sorpresa | 1973 | REPLACE row; catalogue already has album |
 
-## New genre tokens for `src/data/scenes.ts`
+## What changed
 
-- `twist` — Scatola a sorpresa: *Let's Twist Again*; **some tracks** only.
-- `tango` — Scatola a sorpresa: *La Cumparsita*; **some tracks** only.
-- `samba` — Scatola a sorpresa: *La samba di Orfeo*; **some tracks** only.
+- The four CSV rows now contain **33 genre assignments** with **33 genre evidence lines**, plus a **45-track audit** in `carra_phase01_evidence-notes.md`.
+- A minority genre appears even if limited to one track; `scope=some tracks` rather than `whole album`. Evidence grades and prose distinguish proved performed sound from documented origin of a cover.
+- The 1971 funk case matters especially: *Reggae Rrrrr!* should not be tagged reggae just from its title. Treccani independently documents *Chissà chi sei* as an Italian adaptation of soul-funk *Sookie Sookie*.
+- Preserve original 1971/1972 ambiguous credit/date context and studio-recreated concert classification.
 
-All other used tokens (`pop`, `italianpop`, `dancepop`, `rockandroll`) are in the existing Genre type. Update genre-family mappings appropriately only after checking their established conventions. `pop` is an album-wide label; `italianpop` is source-labelled for the 1972 album, whereas `dancepop` has track-scoped support. **Avoid classifying the early records as disco or Italo disco based on the later career.**
+## New genre tokens to introduce (only if absent in current `Genre` and `GENRE_PARENTS`)
 
-## Critical historical and attribution caveats
+- `childrensmusic` — children-oriented popular song (not all TV songs).
+- `liscio` — regional Italian social dance music of Romagna.
+- `waltz` — triple-metre dance related to Romagna mia.
+- `pasodoble` — Spanish traditional march-form dance.
+- `march` — instrumental processional/military march.
+- `polka` — Central European dance type.
+- `sonjarocho` — Mexican Veracruz musical form originally behind La Bamba.
 
-1. **Debut release year disputed:** [official site](https://raffaellacarra.com/discografia/raffaella/) and [label-distributed Apple page](https://music.apple.com/us/album/raffaella/1689218689) date original first *Raffaella* April **1971**; [RAI](https://www.radiocorrieretv.rai.it/raffaella-carra-artista/) and some music databases give **1970**, the year of its lead TV singles. Use 1971 for the proposed catalogue row, but verify physical issue evidence if catalogue policy resolves the conflict differently.
-2. **Fake-live album:** *Raffaella... Senzarespiro* (1972) recreated a concert in the studio. [Official archive](https://raffaellacarra.com/discografia/raffaella-senzarespiro/) identifies it as studio; streaming metadata markets it Live. The row deliberately uses **studio**, not **live**, with full explanation in notes.
-3. **1971 second LP producer dispute:** Sony/Qobuz names **Gianni Boncompagni** as producer on several tracks and **Roberto Formentini** as *project coordinator*; [a discographic archive](https://ilsalottodiraffaella.com/2024/10/09/raffaella-carra/) calls Formentini the album producer. Only Boncompagni is provisionally filled in `producers`; review original LP sleeve before settling whether Formentini deserves an additional producer credit.
-4. **1973 instrumentation:** sleeve-credits transcription at [rodny.cz](https://www.rodny.cz/?id=r2360648&lng=1) names ARP/VCS synthesisers, electric piano, vocals overdubbed, drums and producer. This is a third-party transcription of original record metadata; primary sleeve confirmation recommended. It supports *electronic 2*, not the genre **electronic**.
-5. **Cover does not mean influence:** covers of songs by Motown/Bacharach/Peret/Bonfá, etc. do not prove that their creators influenced the sound of an entire LP. All `influenced_by` fields intentionally remain empty. All `sounds_like` fields remain empty where an album-specific comparison cannot be substantiated.
-6. **Languages and lyrics:** identify original-issue repertory, sometimes without individual sung-text transcription. Some track-level language/lyric judgements are provisional; see evidence notes. Blank numbers are deliberately unknown, not zero.
-7. **Generic reissue dates:** 1971 Apple digital first-of-year dates for the second LP differ from original official December issue and should not overwrite chronology. Rerecordings, LP sleeve variants and foreign-language editions must not be conflated with new Italian studio works.
-8. **No code or repository modification** in this bundle. Claude must add new catalogue albums and tokens, then run the project's descriptor validator and tests.
+Add each actually missing token to `src/data/scenes.ts` and `src/data/genreFamilies.ts`; update validator hardcoded genre set if needed, matching established practice. Suggested parents: childrensmusic → pop, liscio → folk|dance, waltz → dance, pasodoble → dance|latin, march → classical (or [] if not desired), polka → folk|dance, sonjarocho → folk|latin. Parent assignment is a recommendation for Claude to inspect, not an automatically verified hierarchy.
 
-## Phase 02, next ZIP (not included)
+## Packaging and verification
 
-1. *Milleluci* (1974) — studio.
-2. *Felicità tà tà* (1974) — studio; verify dance/disco emergence from contemporary recordings, not only later retrospective tags.
-3. *Forte forte forte* (1976) — studio.
-4. *Fiesta* (1977) — studio.
+1. Import the FOUR replacement rows by ID (not append).
+2. Update the known genre union/parents and validator genre set (only where absent).
+3. Review `carra_phase01_genre_evidence.csv`: historical repertoire genre is explicitly weaker than demonstrated arrangement; never let an unsupported source texture masquerade as entire-LP style.
+4. Keep all later phase rows and catalogue entries identical.
+5. Run `npx vite-node scripts/validate-descriptors.ts` and repository tests after import. This tool run only validates CSV format and cross-file evidence, not Fandome runtime code.
 
-## Subsequent discography planning (requires rechecking at each phase)
+## Producer/edition caveats
 
-Likely later Italian studio LPs: *Raffaella* (1978), *Applauso* (1979), *Mi spendo tutto* (1980), *Raffaella Carrà* (1981), *Raffaella Carrà 82* (1982), *Fatalità* (1983), *Bolero* (1984), *Fidati!* (1985), *Curiosità* (1986), *Raffaella* (1988), *Inviato speciale* (1990), *Raffaella Carrà* (1991), *Hola Raffaella* (1993), *Carràmba che rumba!* (1996), *Replay* (2013), *Ogni volta che è Natale* (2018). Dates/type, duplicate Spanish editions and 1999 *Fiesta – I grandi successi* (rerecordings/compilation) must be screened separately. Multiple eponymous albums require year-disambiguated IDs in later phases (e.g. `carra-raffaella1978`), never reuse phase-01 IDs. The 1999 record is **not automatically** a new studio album simply because lists sometimes classify it as one.
+- `Gianni Boncompagni` is verified as producer by Sony/Qobuz on labelled tracks and by AllMusic for the 1972 LP / sleeve archive for 1973. Roberto Formentini appears as project coordinator in Sony song-level credits but as album-level producer on other secondary discographies. Do not add him automatically without resolving original sleeves.
+- 1971 debut date appears as April 1971 on official record archive, 1970 in some retrospective accounts; unchanged catalogue year.
+- `Raffaella... Senzarespiro` is `studio`: deliberately studio-constructed false live recording; streaming reissue labels can be misleading.
+- The 1973 LP incorporates short instrumentals and original song covers. Not all singers/genres/languages apply to every track.
 
-## Bundle file map
+## Contents (exactly six files)
 
-- `carra_phase01_rows_ONLY.csv`: exact 25-column header and four new rows.
-- `carra_phase01_sources.csv`: working published source URLs, claims and relative evidence strength.
-- `carra_phase01_genre_evidence.csv`: one genre evidence record per token per album, whole album vs some tracks/context.
-- `carra_phase01_evidence-notes.md`: justification for values, uncertainty and documented disagreements.
-- `carra_phase01_catalog-audit.csv`: Fandome catalogue comparison, actions to add.
+1. `CLAUDE_IMPORT.md`
+2. `carra_phase01_rows_ONLY.csv` — header + FOUR replacement rows only
+3. `carra_phase01_sources.csv` — album-level and track-level working sources
+4. `carra_phase01_genre_evidence.csv` — each album genre and track reason
+5. `carra_phase01_evidence-notes.md` — all 45 tracks, scale rationale and disagreements
+6. `carra_phase01_catalog-audit.csv` — all already in catalogue; replace, do not add
+
+## Next phase
+
+**None requested. Research stops with this correction.**

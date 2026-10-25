@@ -1,42 +1,112 @@
-# Fandome — Raffaella Carrà phase 01 (research notes)
+# Raffaella Carrà — Phase 01 replacement: album-by-album / song-by-song evidence
 
-Research checked: 25 October 2026. Scores are cautious editorial interpretations of specific original-album documentation, not measured audio features. The source CSV links every album to verifiable pages. Blank cells are intentional. The first two 1971 LPs are distinct releases.
+**Read first.** This is a corrective replacement of the original phase 01, NOT a new phase 05 or extra album release. Exactly the same four IDs exist in the `descriptors` branch. Replace their existing rows by `album_id` only; do not append, duplicate, or overwrite later phase 02–04 rows.
 
-## `carra-raffaella` — *Raffaella* (1971)
+## Method and uncertainty
 
-- **Year and status:** original RCA PSL 10498 listing at [official site](https://raffaellacarra.com/discografia/raffaella/) states April 1971, corroborated by [Sony/Apple](https://music.apple.com/us/album/raffaella/1689218689). [RAI](https://www.radiocorrieretv.rai.it/raffaella-carra-artista/) and AllMusic's career chronology give 1970, seemingly conflating the 1970 singles and television appearance with the first LP. Prefer the original edition date; do not silently erase the conflict.
-- **Production:** [Sony/Qobuz track metadata](https://www.qobuz.com/us-en/album/raffaella-1971-raffaella-carra/bwutndgji946a) labels **Gianni Boncompagni** as producer on all 11 tracks; **Roberto Formentini** is *project coordinator*, **not** listed here as co-producer. Franco Pisano and Paolo Ormi led orchestral accompaniments and 4+4 di Nora Orlandi provided backing vocals; those arrangement/performance roles do not make them producers.
-- **Genre and sound:** [Apple](https://music.apple.com/us/album/raffaella/1689218689) lists **pop** for the LP; [AllMusic](https://www.allmusic.com/artist/raffaella-carr%C3%A0-mn0000327427) supplies *Italian pop* only as broader artist context; it is therefore **not** imported as an album-specific genre. The first LP combines show themes (*Ma che musica maestro*), soul-associated international covers (*I Say a Little Prayer*), and adult song standards. Covering a soul composition does not alone establish a soul performance; *Reggae Rrrrr!* is a track title, insufficient by itself to score reggae across the album.
-- **Ratings:** energy **3** and tempo **3** reflect a mixed rather than uniformly fast programme; groove **3** reflects dance-driven TV themes within the mix; mood **4** and theatrical **4** reflect celebratory signature and TV-revue framing (official tracklist and Canzonissima notes); experimental **1** (largely conventional compositions and covers); polish **3** (professional RCA studio/orchestral production). Electronic left blank: no sound-source inventory adequate for a calibrated fraction. Vocal **clear** is an editorial category based on documented melodic lead vocals, without claims of a particular timbral technique. Lyrics **love|party** and Italian/English languages are based on titles and works appearing on the label tracklist; lyrical completeness is uncertain.
-- **Landmark 1:** first LP, housing the 1970 breakout television song. **Confidence medium:** original year conflict and no album-length critical listening review. **Sounds_like** and **influenced_by** blank: covers and collaborator credits do not establish causal influences or album-level comparators.
+- Every original recording listed by the official Carrà archive has a separate line below. Album genres include documented minority genres, even one-song repertoire styles. Source and scope sit next to every genre in `carra_phase01_genre_evidence.csv`.
+- **Crucial**: `repertoire origin` (known genre of an original composition), `source description of the Carrà recording`, and `instrument/arranger credits` are different grades of evidence. A folk source piece may be radically reworked in orchestral pop; a cover is not proof of musical influence or identical instrumentation.
+- `reggae` is intentionally NOT in the 1971 debut genre list: despite the title *Reggae Rrrrr!*, one available song account describes it as closer to funky music. `funk` is supported at least at track level. The exact sonics need original recording inspection.
+- Genres in album rows describe the set of styles present or traceable across the songs, not every song simultaneously. Some lower-confidence genre assignments are admitted because they retain important musical diversity; treat the evidence strength in the genre audit as a condition for recommending by that feature.
+- No album-specific expert endorsement of influences, so `influenced_by` stays empty; covering Don Covay, Bacharach, Peret, the Rolling Stones or Luiz Bonfá is NOT evidence that those performers influenced Carrà’s arrangements.
+- No source-auditable album-wide electronic ranking for 1971–72: `electronic` remains blank. On 1973 LP original sleeve transcription lists ARP and VCS synthesisers plus electric piano; `electronic=2` is an editorial low/modest estimate, not proof of electronic-music genre.
+- Genre provenance is not always direct sonic evidence, particularly **folk, sonjarocho, easylistening, ballad, soul and standards**. Need listening/qualified analysis to promote to verified performance tags. Import with the accompanying uncertainty retained.
+- Scales remain coarse editorial judgements of entire records. `energy`, `mood`, `tempo` and `groove` are not measured BPM or dynamics. Specifically do not assign album-level scoring from only Tuca Tuca or the rock medley.
+- Arrangers are not producers: Paolo Ormi and Franco Pisano are not placed in `producers`. Qobuz credits Gianni Boncompagni as producer (on individually credited recordings); Roberto Formentini as project coordinator. Some LP-level archives instead name Formentini as producer: original sleeve should arbitrate. No speculative producer additions.
+- Date dispute for debut: official 04/1971; RAI retrospective sometimes 1970 (the singles and Canzonissima year). Preserve catalogue 1971. `Senzarespiro` is a purposefully fabricated concert *recorded in studio*: preserve `type=studio` despite some live listings.
+- Source metadata for some originals differs (e.g. La samba di Orfeo publisher; Borriquito and La Bamba original stylistic traditions); do not infer exact guitars, rhythms, timbres, or accents just from inherited genres.
 
-## `carra-raffaellacarra` — *Raffaella Carrà* (1971)
+## Raffaella (1971) — RCA PSL 10498
+**Album-level proposed genres:** `pop|funk|soul|folk|ballad`. **Producer:** Gianni Boncompagni. **Confidence:** medium.
 
-- **Edition:** [official 1971 RCA PSL 10518](https://raffaellacarra.com/discografia/raffaella-carra-11/) is December 1971, not the April *Raffaella* debut. [Official reissue notes](https://raffaellacarra.com/discografia/secondo-lp-71-colorato-rosso/) confirm three television singles and international cover material. Apple has a generic **January 1, 1971** digital date; do not use it for original month.
-- **Production conflict:** [Sony/Qobuz](https://www.qobuz.com/ca-en/album/raffaella-carra-raffaella-carra/0743218832420) credits Boncompagni as producer on numerous tracks, while the [specialist archive](https://ilsalottodiraffaella.com/2024/10/09/raffaella-carra/) identifies Roberto Formentini as album producer. Since Sony calls Formentini *project coordinator*, CSV currently lists **Boncompagni only**, with Formentini flagged for human verification. Paolo Ormi and Franco Pisano are arrangers/conductors, not entered as producers.
-- **Genres:** [Apple](https://music.apple.com/us/album/raffaella-carr%C3%A0/255785509) classifies the LP **pop**; **dancepop** is a **some-tracks** designation based on the hit *Tuca Tuca* and [AllMusic's](https://www.allmusic.com/artist/raffaella-carr%C3%A0-mn0000327427) dance-pop framework. Ballads and Bacharach covers prevent treating every track as dance-pop. *Italian pop* is only a broader artist-context label here and is not imported without album-specific classification. The Spanish-language *Borriquito* derives from Peret's [rumba-catalana repertoire](https://www.rtve.es/play/noticias/20240724/historia-real-detras-borriquito-exito-peret/16196257.shtml); without verified Carrà arrangement it is **not** automatically tagged as rumba catalana.
-- **Ratings:** energy **3**, tempo **3**, groove **3** because energetic *Tuca Tuca* and *Chissà se va* sit beside *E penso a te* and Bacharach ballads. Mood **4**, theatrical **4**: high-spirited revue and choreographed singles rather than a uniform club record. Experimental **1**, polish **3**: conventional professional orchestral production despite a provocative televised performance. Electronic left blank. Voice **clear**, lyric **love|sensuality|party** (the flirtatious *Tuca Tuca*, romantic covers, dance novelties), languages **it|en|es** from original repertoire.
-- **Landmark 1:** *Tuca Tuca* and TV-performance breakthrough. **Confidence medium:** split production attribution and album-genres partly supported by single-level evidence. Do not transfer Peret, Dionne Warwick or Bacharach to **influenced_by** just because their songs were covered.
+| Original-LP track | Music / form / song origin | What is established, and what remains uncertain |
+|---|---|---|
+| Chissà chi sei | soul/funk repertoire; Carrà rewriting of Don Covay Sookie Sookie | Treccani explicitly traces soul-funk original; confirmed original record and Italian reworking; not proof of identical arrangement. |
+| Conta su di me (Footprints in the Moon) | pop cover; subgenre unverified | Sony credits identify original and Ormi orchestra but provide no sound analysis. |
+| I Say a Little Prayer | Bacharach pop standard; soul repertoire connection | Original song recorded by Warwick and Franklin; Carrà recording-specific soul sound not established. |
+| TOP | international pop adaptation; sound unverified | Qobuz identifies Oscar Harris and Frank Smith authors; no justified extra genre. |
+| Pensami (Who Are We) | James Last melodic pop adaptation; arrangement unverified | Qobuz composer and arranger metadata only; easy listening as actual recording remains unproven. |
+| Ma che musica maestro | orchestrated television theme; march-like pop | Hit Parade Italia calls it a marcetta; official RCA identifies Pisano orchestra and backing choir. |
+| Dudulalà | adapted South African traditional/folk theme; children chorus | Original 1971 single documentation names folk theme and I Monelli; avoid adding afro as performance claim. |
+| Non ti mettere con Bill | variety pop; rhythmic subgenre unverified | Official RCA singles and Qobuz identify Pisano; do not infer rock or funk. |
+| If I Give My Heart to You | sentimental pop standard / ballad repertoire | Doris Day recorded classic 1954 version; Carrà recording treatment unverified. |
+| Reggae Rrrrr! | funk-leaning dance novelty; NOT confirmed reggae | Available song-specific account explicitly says funkier than reggae despite title. |
+| Domenica non è (Hum a Song) | international popular song adaptation; style unknown | Qobuz composer Richard Ross and Ormi orchestra; no secure further style diagnosis. |
 
-## `carra-raffaellasenzarespiro` — *Raffaella... Senzarespiro* (1972)
+**Eight-scale reasoning:** Energy 3, tempo 3 and groove 3 reflect alternation of full band dance novelties and calmer covers; mood 4 is variety-positive but not uniform. Theatrical 4 follows television stage material; experimental 1 and polish 3 are conservative, not independently measured. Electronic unknown.
 
-- **Type disagreement is structural:** the [official archive](https://raffaellacarra.com/discografia/raffaella-senzarespiro/) explicitly calls it the third **studio** album, a *falso album dal vivo* made in the studio from her revue's setlist. [Apple](https://music.apple.com/us/album/raffaella-senzarespiro-live/1689218915) markets it as **Live**. [Vittorio Papa's retrospective](https://www.orrorea33giri.com/raffaella-carra-senza-respiro-1972/) doubts the authenticity of its live staging. Set **type=studio** to reflect the recording process, but Claude should preserve this caveat. This is not a genuine field-concert recording.
-- **Production:** [AllMusic album credits](https://www.allmusic.com/album/raffaella-senzarespiro-mw0003652716) explicitly tag Boncompagni **Producer** and Carrà **Speech/Speaker**; RAI identifies Ormi as arranger and leader of the music. Do not assign producer credit to Ormi.
-- **Genres:** AllMusic explicitly labels the original album **Italian Pop**; Apple uses **Pop**. **dancepop** is track-level descriptive borrowing from reprise of the previously released *Tuca Tuca*, backed by AllMusic artist-level context; other tracks cover the Supremes and stage material, so not a uniform electronic/dance LP.
-- **Ratings:** energy **4**, tempo **4**, groove **4**, theatrical **5** reflect the documented show medley, dance finale, spoken introduction and fabricated concert staging. Mood **4** fits the mostly lively staged programme; experimental **2** credits the unusual self-conscious live simulation, *not* radical composition; polish **3** is a studio performance edited to mimic a concert. Electronic unknown, left empty. Voice **clear|spoken**: [AllMusic](https://www.allmusic.com/album/raffaella-senzarespiro-mw0003652716) lists spoken performance; languages **it|en** from the mixed tracklist. **party|love** are repertory-level summaries, not exhaustive lyric coding.
-- **Landmark 0**: historically distinctive but less decisive than the signature-single LPs; **confidence medium** because of type conflict and limited full-album review evidence. Original single remix/medley should not be counted as a separate album.
+**Album-wide critical limits:** Treccani specifically describes Sookie Sookie as soul-funk; it does not claim every Carrà arrangement is soul. Song Reggae Rrrrr! is described as funkier than reggae, unlike the misleading title. Historic original genres are tagged only at song level.
 
-## `carra-scatolaasorpresa` — *Scatola a sorpresa* (1973)
+## Raffaella Carrà (1971) — RCA PSL 10518
+**Album-level proposed genres:** `pop|dancepop|rumba|ballad|easylistening|childrensmusic`. **Producer:** Gianni Boncompagni. **Confidence:** medium.
 
-- **Edition:** [official CGD 69048](https://raffaellacarra.com/discografia/scatola-a-sorpresa/) and [Apple](https://music.apple.com/us/album/scatola-a-sorpresa/1689285470) establish original 1973 issue and 15-track all-dance-standards programme. Sleeve matrix reported 31 October, commercial release November: this is not a conflicting **year**.
-- **Personnel:** [archival transcription of the original vinyl credits](https://www.rodny.cz/?id=r2360648&lng=1) credits **Gianni Boncompagni** as **producer** and **Paolo Ormi** with grand/electric piano, ARP and VCS synthesisers, electronic strings, bass, percussion, arrangement/conducting; multiple Carrà vocal overdubs are credited. Treat this transcription as medium-strength until an original sleeve image is inspected; Ormi remains an arranger and player, **not** a documented producer. Recording/mixing credits are not producers.
-- **Genre hierarchy, carefully scoped:** [Apple](https://music.apple.com/us/album/scatola-a-sorpresa/1689285470) calls whole album **pop**. The [official original tracklist](https://raffaellacarra.com/discografia/scatola-a-sorpresa/) explicitly has a **rock-and-roll medley**, plus *Let's Twist Again* (**twist**), *La Cumparsita* (**tango**, [original composition independently identified by UNESCO](https://www.unesco.org/es/memory-world/lac/gerardo-matos-rodriguez-documentary-collection-18/03/1897-25/04/1948)) and *La samba di Orfeo* (**samba**, [Luiz Bonfá's underlying work](https://luizbonfa.bandcamp.com/track/samba-de-orfeu)). The latter three are tagged **some tracks only**, genres of the identified repertoire rather than verified claims that Carrà preserved the original groove exactly. No blanket disco label for this pre-disco record. The **twist**, **tango** and **samba** tokens are new.
-- **Ratings:** energy **4**, tempo **4**, groove **4** because virtually all material is presented as rhythmic historical dance repertoire; theatrical **4**, mood **4** align with the cover-spectacle framing. **electronic 2** follows the unusual ARP/VCS/electric piano credits balanced against a live drummer and orchestral practice. **experimental 2** reflects that technology/repertoire combination, still with accessible covers. **polish 3** is professional studio craft, not an asserted hi-fi technical measurement. Voice **clear**, vocals overdubbed, not sufficient to call a lead choral ensemble; lyrics **party** is provisional mood/setting, as multiple standards have other lyrical themes. Languages **it|en|es** from credited repertory, with Spanish vocal verification still pending.
-- **Landmark 0:** collectible packaging and first CGD chapter but later singles became more defining. **Confidence medium** due to track-style versus actual-arrangement uncertainty. Cover performers and composers are *repertoire* references, **not influenced_by** evidence. `sounds_like` left empty until direct album-level sonic comparisons can be defended.
+| Original-LP track | Music / form / song origin | What is established, and what remains uncertain |
+|---|---|---|
+| Tuca Tuca | choreographed dance novelty / dance-pop | Original single and Canzonissima performances documented; do not retroject later disco. |
+| Raindrops Keep Fallin’ on My Head | Bacharach/David song standard; potential easy listening | Sony credits confirm Ormi orchestra, original composers; exact sonic character not examined. |
+| Vi dirò la verità | original Italian pop; subgenre unknown | Original Franco Pisano and Boncompagni writers; orchestral performance context only. |
+| Maga Maghella | children-oriented song / TV character theme | Explicitly created for Canzonissima children segment; cannot generalize this style. |
+| Close to You | Bacharach/David standard / easy-listening repertoire | Song identity confirmed; Carrà interpretation might differ substantially from Carpenters. |
+| Chissà se va | Canzonissima television pop dance theme | Label metadata and show documentation; no invented funk/disco. |
+| Perdono, non lo faccio più | Italian song / pop | No independent specific genre label; stylistic reading held at generic pop. |
+| Papà | sentimental family song, vocal with backing chorus | Lyric and composer Boncompagni; rhythm and instrumental specifics not independently sourced. |
+| Borriquito | Catalan rumba heritage, originally Peret | RTVE identifies Peret and rumba catalana; do not claim Carrà uses Peret guitar technique. |
+| E penso a te | Battisti/Mogol relationship ballad / Italian pop | Composer and lyricist confirmed; soft/slow interpretation not verified directly. |
 
-## Cross-album methodological caveats
+**Eight-scale reasoning:** Energy 3, tempo 3 and groove 3 balance Tuca Tuca and Borriquito against reflective Papà, E penso a te, Close to You and Raindrops. Mood 4 and theatrical 4 reflect television performance context; experimental 1 and polish 3 are conservative. Electronic unknown.
 
-1. This period has few published track-by-track critical album reviews or engineer interviews. Evidence is mostly original-release discography, preserved label credits, music reference metadata, historical retrospectives and archive transcriptions. No invented interviews, influences, sound-alike artists or absent instrumentation.
-2. Genres from a specific track remain in the `genres` list only with **some tracks** in the evidence CSV. The list is descriptive coverage, not a claim the entire LP follows every genre. New tokens require Claude's catalogue additions prior to running validation.
-3. The 8 scales are editorial 0–5 judgements anchored to the guide. They should be revisited with full-album listening or producer/engineer evidence. Missing `electronic` is deliberate for the 1971–72 LPs.
-4. Date, title and type are the *original* LP versions; digital reissue track numbering and cover variants are never treated as additional albums.
+**Album-wide critical limits:** Peret is a rumba catalana reference, but no reliable isolated Carrà arrangement critique was located. The Bacharach compositions do not alone prove soft rock or lush easy listening, so associated tokens are low confidence. Childrensmusic refers only to Maga Maghella.
+
+## Raffaella... Senzarespiro (1972) — RCA PSL 10537
+**Album-level proposed genres:** `pop|italianpop|dancepop|soul|rnb|rumba`. **Producer:** Gianni Boncompagni. **Confidence:** medium.
+
+| Original-LP track | Music / form / song origin | What is established, and what remains uncertain |
+|---|---|---|
+| Ma che sera | Italian stage variety-pop | Boncompagni composition in official original album; specific groove unknown. |
+| Where Did Our Love Go | Motown / Supremes soul cover | Classic Motown identifies 1964 original; Carrà recording criticised but no arrangement analysis. |
+| Harraff! | instrumental studio interlude | Track-specific discographic metadata names instrumental Paolo Ormi piece. |
+| Presentazione orchestra | spoken introductions and orchestra riffs | Official original tracklist identifies separate riffs; spoken sections distinguish lead voice. |
+| Sensazionale | show-stopper / Italian pop | Boncompagni original stage song; no defensible narrow genre. |
+| Accidenti a quella sera | Italian popular song / performance piece | Documented 1972 single, no independent style label. |
+| Fantasia (medley) | multiple earlier styles; Peret rumba element | Contains Ma che musica maestro, Perdono, Tuca Tuca, Borriquito, Chissà se va; do not flatten to single dance style. |
+| Tuca Tuca, sì | choreographed dance-pop reprise | Official catalogue explicitly identifies new version of Tuca Tuca. |
+| She’s Lookin’ Good | Rodger Collins/Wilson Pickett soul / R&B repertoire | Original soul-dance recording; Carrà interpretation style not established. |
+
+**Eight-scale reasoning:** Energy 4, tempo 4, groove 4 and theatrical 5: revue runs through concert simulation, orchestra riffs, crowd edits and a fast-moving medley, interrupted by interludes; experimental 2 relates to staged fake-live conceit rather than adventurous harmony. Mood 4 and polish 3 approximate the mixed material. Electronic unknown.
+
+**Album-wide critical limits:** Contemporary retrospective criticism finds manipulated crowd ambience; official Carrà archive confirms a studio recreation. Motown/Supremes and Rodger Collins give soul context to two English covers, but no track-by-track arranger account establishes that the Carrà takes preserve their rhythm sections.
+
+## Scatola a sorpresa (1973) — CGD 69048
+**Album-level proposed genres:** `pop|rockandroll|rock|twist|liscio|waltz|pasodoble|march|polka|tango|sonjarocho|samba|showtunes|standards|latin|folk`. **Producer:** Gianni Boncompagni. **Confidence:** medium.
+
+| Original-LP track | Music / form / song origin | What is established, and what remains uncertain |
+|---|---|---|
+| Conosci Frankie | popular song; no validated narrow genre | Song credits on album and no genre-specific reliable source. |
+| Satisfaction (I Can’t Get No) | Rolling Stones rock composition | Original song rock; Carrà arrangement could differ; preserve track-level heritage. |
+| Quando, quando, quando | Italian/international pop standard | Renis/Testa repertoire; Carrà recording arrangement unverified. |
+| Rock’n’roll medley | rock and roll medley | Original disc itself calls it rock’n’roll: Miss Molly, Long Tall Sally, Tutti Frutti, Whole Lotta Shakin.’ |
+| Romagna mia | Romagna liscio / waltz repertoire | Liscio museum and historical newspaper discuss Casadei original; Carrà genre proof is repertorial. |
+| España cañí | instrumental Spanish pasodoble | Original SGAE publisher score explicitly uses pasodoble; discographic sources document instrumental. |
+| Flick Flock (La marcia dei bersaglieri) | instrumental military march | Exact original title explicitly a march; does not imply militaristic lyrics. |
+| Let’s Twist Again | twist song | Rock & Roll Hall of Fame establishes Checker original twist classic; Carrà cover on LP. |
+| Tea for Two | Broadway show tune / standard repertoire | From No No Nanette; not proof that Carrà performed swing/jazz improvisation. |
+| Rosamunda | Czech polka source | Radio Prague and composer Vejvoda work history; Carrà version unanalysed. |
+| La cumparsita | instrumental tango repertoire | Classic Gerardo Matos Rodríguez tango; actual adaptation style unconfirmed. |
+| La Bamba | Veracruz son jarocho / Latin folk repertoire | Smithsonian work genealogy; do not assume Carrà uses jarana/requinto. |
+| Lola | 1920s-era popular standard; specific subgenre unresolved | No track-specific performed-genre or instrumentation criticism. |
+| Bumba mama | 1973 Carrà popular-song original | No specific genre independently verified; refrain from extrapolating from song name. |
+| La samba di Orfeo | instrumental samba composition | Based on Luiz Bonfá Samba de Orfeu; recording-specific samba percussion not sourced. |
+
+**Eight-scale reasoning:** Energy 4, groove 4 and tempo 4 reflect the official dance-history revue, but four instrumental titles and variable traditional dance tempi prevent treating every track as high energy. Theatrical 4, polish 3 and experimental 2 are cautious interpretations; electronic 2 is anchored in ARP/VCS/electric-piano sleeve credits. Mood 4 is broad positive dance selection.
+
+**Album-wide critical limits:** Liscio, waltz, pasodoble, polka, tango, son jarocho and samba name individual dance compositions or their source traditions. For several tracks the exact recorded rhythm cannot be established without qualified listening. Do not drop minority traditions or falsely transfer them to all fifteen tracks.
+
+## Key corrections compared with original Phase 01
+
+- `carra-raffaella`: formerly `pop`; now adds source-linked `funk`, `soul`, `folk` and `ballad` with mixed evidence grades and full eleven-track review. Added choral vocal evidence.
+- `carra-raffaellacarra`: formerly `pop|dancepop`; now identifies the Peret rumba, ballads, Bacharach easy-listening repertoire and a specific children-oriented track. Producer conflict documented, no unsupported producer copied.
+- `carra-raffaellasenzarespiro`: formerly `pop|italianpop|dancepop`; now retains Motown/soul and R&B context, Borriquito rumba within Fantasia and the spoken/instrumental staging. Live/studio qualification retained.
+- `carra-scatolaasorpresa`: formerly `pop|rockandroll|twist|tango|samba`; now also notes Stones rock, liscio waltz, pasodoble, march, polka, La Bamba son jarocho, Broadway standard, Latin and folk sources; instrumentals and group overdubs retained.
+
+## Source map
+All referenced working URLs, evidence strength and what each actually supports appear in the source CSV. A downstream review should be able to reject any weak genre WITHOUT losing the track information here.

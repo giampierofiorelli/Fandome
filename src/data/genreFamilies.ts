@@ -70,4 +70,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   mpb: ['latin', 'pop'], samba: ['latin'], tropicalia: ['mpb', 'psychedelicrock'], chanson: ['traditionalpop', 'songwriter'], ballad: ['pop'],
   twist: ['rockandroll', 'dance'], tango: ['latin'],
   latinpop: ['latin', 'pop'], rumba: ['latin'], tarantella: ['folk'],
+  childrensmusic: ['pop'], liscio: ['folk', 'dance'], waltz: ['dance'], pasodoble: ['dance', 'latin'], march: ['classical'], polka: ['folk', 'dance'], sonjarocho: ['folk', 'latin'],
 }
