@@ -47,7 +47,7 @@ export default function ArtistsPage() {
         </h1>
         <div className="search-wrap">
           <IconSearch size={18} />
-          <input className="search" type="search" placeholder={`Search ${artists.length} artists`} value={q} onChange={(e) => (setQ(e.target.value), setShown(PAGE))} aria-label="Search artists" />
+          <input className="search" type="search" name="fandome-artist-search" inputMode="search" enterKeyHint="search" autoComplete="off" autoCorrect="off" autoCapitalize="none" spellCheck={false} placeholder={`Search ${artists.length} artists`} value={q} onChange={(e) => (setQ(e.target.value), setShown(PAGE))} aria-label="Search artists" />
         </div>
       </header>
       <div className="filter-row" role="group" aria-label="Scene">

@@ -111,7 +111,7 @@ export default function Onboarding() {
             <>
               <div className="ob-kicker">Select all that apply</div>
               <h1 className="ob-q">Who are you a fan of?</h1>
-              <input className="ob-find" type="search" placeholder={`Search ${artists.length} artists`} value={find} onChange={(e) => setFind(e.target.value)} aria-label="Search artists" />
+              <input className="ob-find" type="search" name="fandome-artist-search" inputMode="search" enterKeyHint="search" autoComplete="off" autoCorrect="off" autoCapitalize="none" spellCheck={false} placeholder={`Search ${artists.length} artists`} value={find} onChange={(e) => setFind(e.target.value)} aria-label="Search artists" />
               <div className="ob-pills">
                 {[...artists]
                   .sort((x, y) => x.name.localeCompare(y.name, 'en', { sensitivity: 'base' }))

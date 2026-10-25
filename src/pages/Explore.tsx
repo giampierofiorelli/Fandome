@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { albums, artists, concerts, demoAlbumBuzz } from '../data/seed'
 import { useStore } from '../store/store'
@@ -19,6 +20,14 @@ export default function Explore() {
   const { state, me, dispatch } = useStore()
   const [params, setParams] = useSearchParams()
   const tag = params.get('tag')
+  // What you type shows at once; the search (and the address) follows a moment later, so typing stays fast.
+  const [text, setText] = useState(params.get('q') ?? '')
+  useEffect(() => {
+    const t = setTimeout(() => {
+      if (text !== (params.get('q') ?? '')) setParams(text ? { q: text } : {}, { replace: true })
+    }, 250)
+    return () => clearTimeout(t)
+  }, [text])
   const q = (params.get('q') ?? '').trim().toLowerCase()
 
   const people = q ? state.users.filter((u) => `${u.name} ${u.handle} ${u.bio} ${u.location}`.toLowerCase().includes(q)) : []
@@ -32,7 +41,8 @@ export default function Explore() {
   const discussedDay = discussedAlbums(state.posts, Date.now(), 24, demoAlbumBuzz)
   const discussed = (discussedDay.length >= 3 ? discussedDay : discussedAlbums(state.posts, Date.now(), 24 * 7, demoAlbumBuzz)).slice(0, 5)
   const discussedWindow = discussedDay.length >= 3 ? 'today' : 'this week'
-  const suggestions = me ? suggestArtists(me, state.users, artists, 4, albums) : []
+  // Suggestions don't depend on the search: computed only when your profile or the fans change.
+  const suggestions = useMemo(() => (me ? suggestArtists(me, state.users, artists, 4, albums) : []), [me, state.users])
   // Your best-rated album that has a description: albums by other artists that sound related.
   const seedAlbum = me
     ? Object.entries(me.ratings)
@@ -40,8 +50,11 @@ export default function Explore() {
         .sort((x, y) => y[1] - x[1])[0]?.[0]
     : undefined
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
-  const paths = me ? discoverPaths(me, artists, albums) : []
-  const becauseRated = seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) }) : []
+  const paths = useMemo(() => (me ? discoverPaths(me, artists, albums) : []), [me])
+  const becauseRated = useMemo(
+    () => (seedAlbum ? similarAlbums(seedAlbum, { limit: 3, artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) }) : []),
+    [seedAlbum, me],
+  )
   // Your rooms first, then A–Z; the full list on request.
   const mine = me ? Object.keys(me.fanSince) : []
   const sortedRooms = [...artists].sort((x, y) => Number(mine.includes(y.id)) - Number(mine.includes(x.id)) || x.name.localeCompare(y.name, 'en', { sensitivity: 'base' }))
@@ -58,9 +71,17 @@ export default function Explore() {
           <input
             className="search"
             type="search"
+            name="fandome-search"
+            role="searchbox"
+            inputMode="search"
+            enterKeyHint="search"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
             placeholder="Fans, fandoms, shows… try “Turin”"
-            value={params.get('q') ?? ''}
-            onChange={(e) => setParams(e.target.value ? { q: e.target.value } : {})}
+            value={text}
+            onChange={(e) => setText(e.target.value)}
           />
         </div>
       </header>

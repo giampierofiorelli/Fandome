@@ -13,10 +13,22 @@ import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
 import { isLocalArtist, type Genre } from '../data/scenes'
 
-const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')
+// Names are compared folded (accents, case, punctuation off); the same few hundred names come back
+// millions of times, so each is folded once.
+const folded = new Map<string, string>()
+const fold = (s: string) => {
+  let f = folded.get(s)
+  if (f === undefined) folded.set(s, (f = s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')))
+  return f
+}
 const and = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`)
 const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1)
-const includesName = (names: string[], name: string) => names.some((n) => fold(n) === fold(name))
+const nameSets = new WeakMap<string[], Set<string>>()
+const includesName = (names: string[], name: string) => {
+  let set = nameSets.get(names)
+  if (!set) nameSets.set(names, (set = new Set(names.map(fold))))
+  return set.has(fold(name))
+}
 const intersect = (xs: string[], ys: string[], skip: string[]) => xs.filter((x) => includesName(ys, x) && !includesName(skip, x))
 const jaccard = (a: Set<string>, b: Set<string>) => {
   if (!a.size || !b.size) return null
@@ -50,7 +62,14 @@ const CONFIDENCE = { high: 1, medium: 0.9, low: 0.8 }
 const STOP = new Set(['the', 'and', 'of', 'pop', 'music', 's', 'era'])
 const sceneTokens = (s: string) => new Set(s.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !STOP.has(w)))
 
+// Descriptors never change while the app runs: profiles and comparisons are computed once and kept.
+const albumProfiles = new WeakMap<Descriptor, Profile>()
 export function albumProfile(d: Descriptor): Profile {
+  let p = albumProfiles.get(d)
+  if (!p) albumProfiles.set(d, (p = buildAlbumProfile(d)))
+  return p
+}
+function buildAlbumProfile(d: Descriptor): Profile {
   const genres = new Map<string, number>()
   // Order matters: the main genres carry the album, the long tail (often one track) weighs little.
   d.genres.forEach((g, i) => genres.set(g, 1 / (i + 1)))
@@ -76,7 +95,13 @@ export function albumProfile(d: Descriptor): Profile {
 
 // Artist profile: albums averaged, defining (landmark) albums weigh 1.5×, so traits that come back
 // across the catalogue weigh more than a one-off.
+const artistProfiles = new Map<string, Profile | null>()
 export function artistProfile(id: string, albumIds: string[]): Profile | null {
+  const key = `${id}:${albumIds.join(',')}`
+  if (!artistProfiles.has(key)) artistProfiles.set(key, buildArtistProfile(id, albumIds))
+  return artistProfiles.get(key)!
+}
+function buildArtistProfile(id: string, albumIds: string[]): Profile | null {
   const ds = albumIds.map((x) => DESCRIPTORS[x]).filter(Boolean)
   if (!ds.length) return null
   const genres = new Map<string, number>()
@@ -196,10 +221,16 @@ export const FORMAT_GENRES = new Set(['soundtrack', 'videogamemusic'])
 const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : 1)
 const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g) * soundWeight(g)]))
 
-const genreSim = (a: Profile, b: Profile) => weightedJaccard(byRarity(expandGenres(a.genres)), byRarity(expandGenres(b.genres)))
+const genreVectors = new WeakMap<Profile, Map<string, number>>()
+const genreVec = (p: Profile) => {
+  let v = genreVectors.get(p)
+  if (!v) genreVectors.set(p, (v = byRarity(expandGenres(p.genres))))
+  return v
+}
+const genreSim = (a: Profile, b: Profile) => weightedJaccard(genreVec(a), genreVec(b))
 // Share of the first album's genre weight that the second album covers (asymmetric).
 function genreCover(a: Profile, b: Profile) {
-  const wa = byRarity(expandGenres(a.genres)), wb = byRarity(expandGenres(b.genres))
+  const wa = genreVec(a), wb = genreVec(b)
   let shared = 0, total = 0
   for (const [g, w] of wa) (total += w), (shared += Math.min(w, wb.get(g) ?? 0))
   return total ? shared / total : 0
@@ -343,7 +374,15 @@ export interface Comparison {
   reasons: string[]
 }
 
+const comparisons = new WeakMap<Profile, WeakMap<Profile, Comparison>>()
 export function compareProfiles(a: Profile, b: Profile): Comparison {
+  let row = comparisons.get(a)
+  if (!row) comparisons.set(a, (row = new WeakMap()))
+  let c = row.get(b)
+  if (!c) row.set(b, (c = buildComparison(a, b)))
+  return c
+}
+function buildComparison(a: Profile, b: Profile): Comparison {
   const genre = genreSim(a, b)
   const scale = scaleSimilarity(a, b)
   const extras = extrasSimilarity(a, b)
