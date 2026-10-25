@@ -1,0 +1,5 @@
+﻿album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+mina-minacantaobrasil,Mina canta o Brasil,1970,studio,missing,,"Insert chronologically before Mina (1971), after Canzonissima 68; no replacement of earlier phase rows",1970 PDU original 11 songs in Portuguese; 2001 remaster retains repertoire; some material previously sung in Italian
+mina-fruttaeverdura,Frutta e verdura,1973,studio,existing,mina-fruttaeverdura,Keep existing ID and exact title; add only descriptor row,1973 PDU PLD L 5069 ten songs; first issued in bundle with distinct Amanti di valore LP
+mina-amantidivalore,Amanti di valore,1973,studio,missing,,Add distinct companion album after Frutta e verdura; do not combine into one double-album row,"1973 PDU PLD 5070 11 tracks; all lyrics Franco Califano, all music Carlo Pes; no extra Spanish versions"
+mina-babygate,Baby Gate,1974,studio,missing,,"Add separately; preserve original Baby Gate identity, not 1958–59 Baby Gate singles or adjacent Mina® LP","1974 PDU PLD L 6006 eleven tracks, 9 English plus 2 Italian; original paired packaging with Mina® does not merge content"

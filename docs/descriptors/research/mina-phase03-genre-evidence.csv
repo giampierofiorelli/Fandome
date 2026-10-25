@@ -1,0 +1,36 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+mina-minacantaobrasil,pop,core; whole album,B03|B06,The SHFL tags pop and documents pop-oriented adaptations of Brazilian songs.,high
+mina-minacantaobrasil,mpb,core repertoire; retroactive critical classification,B03|B04,The SHFL explicitly tags MPB; Brazilian writers and songbook span mid-century popular music.,high
+mina-minacantaobrasil,bossanova,multiple repertoire pieces,B03|B06|B01,SHFL explicitly calls bossa nova; softer Chico Buarque numbers have restrained Brazilian arrangement.,high
+mina-minacantaobrasil,samba,repertoire and grooves,B03|B02|B04,The SHFL directly references samba songwriters and rhythms; Rolling Stone notes percussion-led tropical style.,high
+mina-minacantaobrasil,tropicalia,critical context; not every track,B02|B06,"Rolling Stone calls the album tropicalist; treated as retrospective repertoire/context, not uniform psychedelic tropicalismo.",medium
+mina-minacantaobrasil,latin,broad grouping only,B03,"The SHFL labels Latin, broader than the actual Brazilian Portuguese sound.",medium
+mina-minacantaobrasil,europop,database taxonomy,B03,The SHFL explicit Europop tag; weak as musical identity of Brazilian material.,low
+mina-minacantaobrasil,adultcontemporary,broad retrospective taxonomy,B03,The SHFL includes adult contemporary as classification rather than distinct album-wide rhythm.,low
+mina-fruttaeverdura,pop,dominant,F03|F01,AllMusic classifies as Euro-Pop/Italian Pop; main LP ten songs are contemporary vocal pop.,high
+mina-fruttaeverdura,italianpop,dominant; album region/style,F03,AllMusic explicit Italian Pop style.,high
+mina-fruttaeverdura,musicaleggera,Italian popular-song context,F01|F03|F08,Mina PDU Italian orchestral/pop tradition; interpretive genre normalization of Italian music classification.,medium
+mina-fruttaeverdura,europop,retrospective AllMusic style,F03,"AllMusic explicit Euro-Pop, broader database category.",medium
+mina-fruttaeverdura,adultcontemporary,retrospective AllMusic style,F03,AllMusic explicit Adult Contemporary.,medium
+mina-fruttaeverdura,bossanova,one significant covered song,F01|F07,"La pioggia di marzo adapts Águas de Março by Jobim; album-specific bossa tag, track-level only.",medium
+mina-fruttaeverdura,blues,E poi only; prominent hit,F02,"Rockol explicitly describes E poi as blues-shaped, nonstandard two-verse arrangement.",high
+mina-fruttaeverdura,chanson,original double-LP label style; broad,F10,Original paired pressing is indexed with Chanson among its styles; not necessarily the dominant sound.,medium
+mina-amantidivalore,pop,dominant,A07|A03|A09,Estatica and original pressing catalog name Pop; accessible melodic songwriter material.,high
+mina-amantidivalore,chanson,album style; catalog taxonomy,A09,"Original release is catalogued Chanson (continental art-song), not proof of French singing.",medium
+mina-amantidivalore,ballad,dominant song-form style,A09|A06,1973 LP is explicitly tagged Ballad; slow intimate relationship songbook.,medium
+mina-amantidivalore,italianpop,album-language context,A07|A03,Italian-language popular songs tied to PDU professional pop studio style.,medium
+mina-amantidivalore,musicaleggera,Italian canzone context,A03|A05,Eleven arranged modern Italian songs in canzone tradition; normalization from documented context.,medium
+mina-amantidivalore,songwriter,whole album authored by one lyrical voice,A03|A04,Single author Franco Califano writes all lyrics to eleven songs with Carlo Pes music.,high
+mina-amantidivalore,adultcontemporary,broad sophisticated adult pop,A06|A07,Mature interpretive pop with restrained and dramatic performances; retrospective style analogy.,low
+mina-babygate,pop,dominant,G02|G08,AllMusic/secondary credit listing classifies pop; reinterpretations of accessible oldies.,high
+mina-babygate,rockandroll,historically grounded record focus,G08|G03,"Cover material from 1950s rock and roll, deliberately revisiting Baby Gate origins.",high
+mina-babygate,jazz,standard subset,G08|G01,"Flamingo, I Only Have Eyes for You, and I’m in the Mood for Love are classic jazz repertoire.",medium
+mina-babygate,vocaljazz,specific standard covers,G01|G04,Interpretive singing on jazz standards; not the dominant style of rock & roll songs.,medium
+mina-babygate,standards,several songs,G01|G03,"Multiple jazz and pre-rock pop standards, explicit Rockol retrospective framing.",high
+mina-babygate,rnb,retroactive genre tag,G08|G01,Secondary album classification rhythm-and-blues and early popular rhythm repertory; low specificity.,medium
+mina-babygate,doowop,stylistic subset,G06|G10|G01,Musicbase calls original 1974 LP Doo Wop/Ballad; applies only to part of oldies selections.,medium
+mina-babygate,ballad,album style subset,G10|G01,Original record-style catalogue identifies Ballad beside Doo Wop for slower 1950s covers.,medium
+mina-babygate,traditionalpop,standards subset,G01|G02,Classic pre-rock love standards in traditional pop vocal interpretation.,medium
+mina-babygate,italianpop,AllMusic explicit,G02,"AllMusic Italian Pop album style, broad retrospective categorization.",medium
+mina-babygate,europop,AllMusic explicit,G02,"AllMusic Euro-Pop album style, broad classification.",medium
+mina-babygate,adultcontemporary,AllMusic explicit,G02,AllMusic Adult Contemporary retrospective style.,medium
