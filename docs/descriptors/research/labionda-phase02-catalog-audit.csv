@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+labionda-bandido,Bandido,1979,studio,no,yes,Original album verified; no repeats of phase01
+labionda-highenergy,High Energy,1979,studio,no,yes,Original album verified; no repeats of phase01
+labionda-iwannabeyourlover,I Wanna Be Your Lover,1980,studio,no,yes,Original album verified; no repeats of phase01
+labionda-inbeatween,In Beatween,1998,studio,no,yes,Confirmed separate original album; ID follows labionda + ASCII alphanumerics; 1998 mixed new and reworks

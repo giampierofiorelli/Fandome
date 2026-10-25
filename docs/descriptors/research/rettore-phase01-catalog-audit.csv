@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,catalog_id_match,comment
+rettore-ognigiornosicantanocanzonidamore,Ogni giorno si cantano canzoni d'amore,1974,studio,no,yes,n/a,Add album to catalogue; no existing descriptor file for artist.
+rettore-donatellarettore,Donatella Rettore,1977,studio,no,yes,n/a,Add album to catalogue; no existing descriptor file for artist.
+rettore-brividodivino,Brivido divino,1979,studio,yes,no,yes,Catalogue title and normalized ID verified in branch descriptors.
+rettore-magnificodelirio,Magnifico delirio,1980,studio,yes,no,yes,Catalogue title and normalized ID verified in branch descriptors.

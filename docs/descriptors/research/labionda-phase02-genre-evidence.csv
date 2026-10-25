@@ -1,0 +1,25 @@
+album_id,genre,source,scope,evidence_strength,reason
+labionda-bandido,disco,https://vinylzone.ru/catalog/net-v-nalichii/25724/,whole album,high,Italian original LP explicitly classified Disco; live drums and orchestra still present
+labionda-bandido,eurodisco,https://archivregiidokpopzeneje.blogspot.com/2012/02/la-bionda-d-d-sound.html,whole album,medium,Munich-recorded European disco album; retrospective regional style; not proof of all electronic sound
+labionda-bandido,electronic,https://vinylzone.ru/catalog/net-v-nalichii/25724/,some tracks,high,Minimoog and Polymoog synthesizers specifically credited on Deserts of Mars
+labionda-bandido,synthpop,https://www.musik-sammler.de/release/la-bionda-bandido-lp-1597247/,whole album,medium,Spanish LP edition indexed Synth Pop; album-level taxonomy not evidence every song is synth-pop
+labionda-bandido,electro,https://www.musik-sammler.de/release/la-bionda-bandido-lp-1597247/,whole album,medium,Spanish LP edition indexed Electro; taxonomic release label not quantified audio
+labionda-bandido,pop,https://vinyl.bertelsmann.com/en/records/view/L4831,whole album,low,Bertelsmann broad Pop/Rock classification; no specific pop arrangement evidence
+labionda-bandido,disco,https://archivregiidokpopzeneje.blogspot.com/2012/02/la-bionda-d-d-sound.html,some tracks,medium,Bandido identified as American-style disco in specialist retrospective
+labionda-bandido,electronic,https://archivregiidokpopzeneje.blogspot.com/2012/02/la-bionda-d-d-sound.html,some tracks,medium,"Deserts of Mars described as futuristic, supported by separately documented synthesizers"
+labionda-highenergy,disco,https://www.vinylesandvintage.com/product-page/la-bionda-high-energy,whole album,high,Original six-song 1979 LP explicitly styled Disco
+labionda-highenergy,electronic,https://eclecticorecords.com.au/products/la-bionda-high-energy-lp-album-very-good-plus-vg,whole album,medium,"LP catalogued Electronic/Disco, plus synth keyboard instrumentation"
+labionda-highenergy,rock,https://archivregiidokpopzeneje.blogspot.com/2012/02/la-bionda-d-d-sound.html,some tracks,medium,I Got Your Number described as the more rock-oriented song
+labionda-highenergy,disco,https://archivregiidokpopzeneje.blogspot.com/2012/02/la-bionda-d-d-sound.html,some tracks,medium,Disco Roller identified as the more disco-driven hit
+labionda-highenergy,eurodisco,https://www.salsa.it/2022/04/21/le-schede-di-music-contamination-fratelli-la-bionda-dd-sound/,whole album,low,Retrospective framing of later 1970s La Bionda albums as European disco
+labionda-iwannabeyourlover,disco,https://www.samledisquaire.com/product/br-56018-la-bionda-i-wanna-be-your-lover-lp-album/,whole album,high,1980 original LP categorized Disco
+labionda-iwannabeyourlover,italodisco,https://www.samledisquaire.com/product/br-56018-la-bionda-i-wanna-be-your-lover-lp-album/,whole album,medium,Retroactive Italo-disco album style classification; live musicians still prominent
+labionda-iwannabeyourlover,electronic,https://www.samledisquaire.com/product/br-56018-la-bionda-i-wanna-be-your-lover-lp-album/,whole album,medium,Original release grouped under Electronic; processed alien voice on title track
+labionda-iwannabeyourlover,poprock,https://meshok.net/item/366888732_La_Bionda_I_Wanna_Be_Your_Lover_LP_Album_Germany_1st_Press,whole album,medium,1980 German first pressing specifically lists Pop Rock among styles
+labionda-iwannabeyourlover,pop,https://meshok.net/item/366888732_La_Bionda_I_Wanna_Be_Your_Lover_LP_Album_Germany_1st_Press,whole album,medium,1980 original German LP filed within Pop and Electronic
+labionda-iwannabeyourlover,electronic,https://www.samledisquaire.com/product/br-56018-la-bionda-i-wanna-be-your-lover-lp-album/,some tracks,high,I Wanna Be Your Lover title song used a specially recorded alien-voice effect
+labionda-inbeatween,eurohouse,https://musicbase.net/in-beatween,whole album,high,1998 original CD specifically catalogued Euro House
+labionda-inbeatween,house,https://musicbase.net/in-beatween,whole album,medium,Broader house-family genre of recorded Euro House; programmed keys documented
+labionda-inbeatween,electronic,https://musicbase.net/in-beatween,whole album,high,1998 CD electronic music classification; arranger Rolando Alberti credited keyboards/programming
+labionda-inbeatween,dance,https://musicbase.net/in-beatween,whole album,medium,Euro House dance music; dance is broader parent genre
+labionda-inbeatween,eurohouse,https://musicbase.net/in-beatween,some tracks,medium,"Modern production on rerecorded Bandido, One For You One For Me, Cafe; refer to new CD mixes"
