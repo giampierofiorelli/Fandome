@@ -13,7 +13,7 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   // drums and percussion
   drums: 'Drums', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', tabla: 'Tabla',
   // winds
-  brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', clarinet: 'Clarinet', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', kazoo: 'Kazoo',
+  brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', clarinet: 'Clarinet', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', whistle: 'Whistle', musicalsaw: 'Musical saw', kazoo: 'Kazoo',
 }
 export const INSTRUMENTS = new Set(Object.keys(INSTRUMENT_LABELS))
 export const instrumentLabel = (i: string) => INSTRUMENT_LABELS[i] ?? i
