@@ -27,3 +27,11 @@
 - Vocal timbre can vary *within* one album; one voice label is a lossy summary. The same problem applies to mood and tempo. Do not make the 0–5 album profile look like acoustic measurement.
 - A `landmark=1` means defining in the artist's catalogue, not guaranteed critical acclaim and not a claim about the popularity of every song.
 - Source review pending: additional independent specialist corroboration, systematic full-track assessment, independent second rater of qualitative scores.
+
+## Ray of Light: revision (Oct 2026, owner)
+The owner flagged that Ray of Light is mostly not a dance record, is close to trip-hop and orchestral, and that Massive Attack's influence is documented. Changes, with sources:
+- `influenced_by` Massive Attack, Björk: Classic Pop, "Madonna: The Second Coming" (https://www.classicpopmag.com/?p=15604): she leaned towards the sound of "I Want You" (her 1995 Massive Attack collaboration) and the Björk-written "Bedtime Story". Tricky, Goldie, The Prodigy: same article, she offered them to work on the album (they turned it down).
+- `producers` + Marius De Vries ("Massive Attack associate", four tracks, SPIN 1998 cover story, https://www.spinmagazine.com/2016/03/madonna-ray-of-light-cover-story-1998/) and Patrick Leonard (album credits).
+- `instruments` + strings: string arrangements by Craig Armstrong (liner notes, tracks 9–10); "electronic rhythms combined with orchestral textures" on "Frozen" and "Drowned World" (Wikipedia, Ray of Light). `production` sampling: San Sebastian Strings sample (liner notes).
+- `genres`: electronica, trip hop and new age added/moved up (Wikipedia: "electronica, trip hop, techno-pop, and new-age sound"; The Guardian 2019: "convincing, idiosyncratic trip-hop"); house and drum and bass as elements.
+- `groove` 3 → 2: only a few tracks are for dancing (title track, Nothing Really Matters); Madonna called it fundamentally a pop record; SPIN: "haunted singer/songwriter introspection and beat-savvy electronic exotica".
