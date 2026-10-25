@@ -54,3 +54,11 @@ Source: Wikipedia, Like a Virgin (album), with its cited sources.
 - `instruments`: Prophet-5, Rhodes and acoustic piano (Robert Sabino); Synclavier (Nile Rodgers); LinnDrum and Simmons programmed by Jimmy Bralower; Tony Thompson drums, Bernard Edwards bass; guitars by Rodgers; synth strings and acoustic guitar ("Love Don't Live Here Anymore"); Lenny Pickett sax solo ("Shoo-Bee-Doo"). `production` prophet5, synclavier, linndrum.
 - `sounds_like`: Cyndi Lauper and the Pointer Sisters (Pete Bishop, Pittsburgh Press); the Shirelles and the Ronettes ("Shoo-Bee-Doo").
 - "Into the Groove" (Madonna, Stephen Bray) is on the 1985 reissue only: producers stay Nile Rodgers.
+
+## True Blue: revision (Oct 2026, owner: the album came up too rarely, data too thin)
+Source: Wikipedia, True Blue (Madonna album), with its cited sources.
+- `genres`: pop and dance-pop (infobox); songs influenced by Latin pop, girl groups, the Motown sound and Cuban music; "Papa Don't Preach" with classical and Baroque-inspired strings (`baroquepop`); "La Isla Bonita" a Latin pop dance ballad with bossa nova influences and flamenco guitar. New genre token `cuban`.
+- `instruments`: synthesizers, strings, drum machines, synth bass, keyboards (Fred Zarr), acoustic and electric guitar (Bruce Gaitsch; flamenco guitar), drums (Jonathan Moffett), percussion and maracas (Paulinho da Costa), saxophone (David Boroff, "Where's the Party"). `production`: double-tracked and backing vocals (`layeredvocals`), string arrangements by Billy Meyers.
+- `lyrics`: love, commitment and fidelity; teenage pregnancy (social); anti-war and anti-poverty songs (political); deceit (heartbreak); standing up to male authority (identity). `language` en|es: four lines in Spanish in "La Isla Bonita".
+- `sounds_like`: The Dixie Cups ("True Blue" recalls "Chapel of Love"); The Go-Go's (John Quayle).
+- Kept for future link weights: "Open Your Heart" was first written for Cyndi Lauper.
