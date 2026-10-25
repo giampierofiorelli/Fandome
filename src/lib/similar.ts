@@ -47,7 +47,8 @@ const sceneTokens = (s: string) => new Set(s.toLowerCase().split(/[^a-z0-9]+/).f
 
 export function albumProfile(d: Descriptor): Profile {
   const genres = new Map<string, number>()
-  d.genres.forEach((g, i) => genres.set(g, 1 / Math.sqrt(i + 1)))
+  // Order matters: the main genres carry the album, the long tail (often one track) weighs little.
+  d.genres.forEach((g, i) => genres.set(g, 1 / (i + 1)))
   return {
     id: d.albumId,
     artist: d.artist,
@@ -84,7 +85,7 @@ export function artistProfile(id: string, albumIds: string[]): Profile | null {
     const w = (d.landmark ? 1.5 : 1) * CONFIDENCE[d.confidence]
     total += w
     conf += CONFIDENCE[d.confidence]
-    d.genres.forEach((g, i) => genres.set(g, (genres.get(g) ?? 0) + w / Math.sqrt(i + 1)))
+    d.genres.forEach((g, i) => genres.set(g, (genres.get(g) ?? 0) + w / (i + 1)))
     for (const s of SCALES) if (d.scales[s] !== undefined) {
       const [n, c] = scaleSum[s] ?? [0, 0]
       scaleSum[s] = [n + w * d.scales[s]!, c + w]
@@ -259,13 +260,17 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   const genre = genreSim(a, b)
   const scale = scaleSimilarity(a, b)
   const extras = extrasSimilarity(a, b)
-  const parts = [[genre, 0.45], [scale, 0.3], [extras, 0.25]].filter(([v]) => v !== null) as [number, number][]
-  const base = parts.reduce((n, [v, w]) => n + v * w, 0) / parts.reduce((n, [, w]) => n + w, 0)
+  // Sound and extras (energy, era, themes…) are alike across many albums: they only count fully when
+  // the genres are close too, so two albums with different genres can't look similar through them.
+  const gate = Math.min(1, 0.4 + genre / 0.25)
+  const parts = [[genre, 0.45, 1], [scale, 0.3, gate], [extras, 0.25, gate]].filter(([v]) => v !== null) as [number, number, number][]
+  const base = parts.reduce((n, [v, w, k]) => n + v * w * k, 0) / parts.reduce((n, [, w]) => n + w, 0)
   let score = base
   const links: string[] = []
 
-  // Links name an artist, not one album, so they count in proportion to how close the genres are.
-  const fit = Math.min(1, genre / 0.4)
+  // Links name an artist, not one album, so they only count when the two albums' genres are close:
+  // nothing below 0.15 (e.g. a Gaga dance album that "sounds like Madonna" vs Madonna's big-band soundtrack).
+  const fit = Math.max(0, Math.min(1, (genre - 0.15) / 0.25))
   const direct = 0.25 * fit
   const show = fit >= 0.5
   if (includesName(a.soundsLike, b.artist)) (score += direct), show && links.push(`${a.title} sounds like ${b.artist}`)
@@ -321,7 +326,7 @@ export const DISCOVERY = 0.05
 // What you rated low or said is not for you pushes similar things down (up to this much).
 const AVOID = 0.3
 // Variety: how much resemblance to what is already in the list costs (maximal marginal relevance).
-const VARIETY = 0.25
+const VARIETY = 0.15
 
 function avoidPenalty(p: Profile, avoid: Profile[]) {
   return avoid.length ? AVOID * Math.max(...avoid.map((x) => compareProfiles(x, p).base)) ** 2 : 0
@@ -378,7 +383,10 @@ export function similarAlbums(
     })
     .filter((s) => s.score >= 0.2 && s.reasons.length)
     .sort((x, y) => y.score - x.score)
-  const picked = mmr(scored, (x, y) => genreSim(x.profile, y.profile), limit, (it, out) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length < perArtist)
+  // Fewer, closer suggestions beat a full list: drop what scores well below the best match.
+  const floor = (scored[0]?.score ?? 0) * 0.6
+  const close = scored.filter((s) => s.score >= floor)
+  const picked = mmr(close, (x, y) => genreSim(x.profile, y.profile), limit, (it, out) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length < perArtist)
   return picked.map(({ albumId: id, score, reasons, newCountry }) => ({ albumId: id, score, reasons, ...(newCountry ? { newCountry } : {}) }))
 }
 

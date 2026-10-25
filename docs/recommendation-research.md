@@ -131,7 +131,7 @@ Needs a backend for the data imports and shared signals (MusicBrainz dumps, List
 ## 5. What is built (October 2026)
 
 - Album descriptors for 6 artists (47 releases) in `docs/descriptors/`, loaded by `src/lib/descriptors.ts`.
-- Score between two albums (`compareProfiles`): genres with families (45%), sound scales (30%), voice/themes/era/scene/language (25%), each only where both are known; plus documented links (direct sounds-like/influence scaled by genre fit, shared producers, influences, comparisons, two-step connections). Multiplied by the row's confidence.
+- Score between two albums (`compareProfiles`): genres with families (45%; each genre weighs 1/position, so a long tail of one-track genres weighs little), sound scales (30%), voice/themes/era/scene/language (25%), each only where both are known; sound and extras count fully only when genres are close (gate 0.4 + genre/0.25); plus documented links (direct sounds-like/influence scaled by genre fit, zero below genre 0.15, shared producers, influences, comparisons, two-step connections). Multiplied by the row's confidence. Album lists drop matches under 60% of the best score (Oct 2026, after I'm Breathless was matched to Gaga's dance albums through an artist-level "sounds like Madonna").
 - Ranking: discovery bonus for other countries, penalty for what is similar to albums rated low or hidden, MMR for variety, max 2 per artist.
 - Uses: album pages, artist pages (profiles from albums), Explore (artists you might like = 50% people + 50% sound; Because you rated…; Discover paths).
 - Quality check in `src/lib/recQuality.ts`, enforced by tests.
