@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,already_in_catalog,catalog_action,catalog_match_or_note
+whitney-whitneyhouston,whitney,Whitney Houston,1985,studio,yes,retain existing album/id,Exact existing title and normalized album id.
+whitney-whitney,whitney,Whitney,1987,studio,yes,retain existing album/id,Exact existing title and normalized album id.
+whitney-imyourbabytonight,whitney,I’m Your Baby Tonight,1990,studio,yes,retain existing album/id,Catalog title uses curly apostrophe; slug is imyourbabytonight.
+whitney-thebodyguardoriginalsoundtrackalbum,whitney,The Bodyguard: Original Soundtrack Album,1992,soundtrack,no,add album to Whitney catalog,Soundtrack is absent from catalog.ts; add as The Bodyguard: Original Soundtrack Album (1992).
