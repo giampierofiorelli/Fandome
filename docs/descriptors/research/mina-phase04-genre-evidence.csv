@@ -1,0 +1,29 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+mina-minacantalucio,pop,album dominant,C04|C05,Original 1975 LP classified pop; lyrical Battisti covers arranged as Italian popular music.,high
+mina-minacantalucio,musicaleggera,album broad Italian category,C04,Album discography explicitly calls musica leggera; not a narrowly defined instrumentation.,medium
+mina-minacantalucio,italianpop,album contextual translation,C01|C04,Italian pop songbook project recorded as ten Italian-language Battisti reinterpretations.,medium
+mina-minacantalucio,poprock,selected original compositions / arrangements,C01|C05,"Battisti catalog includes pop-rock, but Yared orchestration changes the sonic balance; weak retroactive qualifier.",low
+mina-minacantalucio,blues,secondary discography genre,C04,Specific blues genre is listed in contemporaneous LP discography summary; not necessarily whole-album dominant.,medium
+mina-lamina,pop,album dominant,L01|L02,Original LP classified Pop; varied melodic vocal pop performances.,high
+mina-lamina,italianpop,album contextual / repertoire,L01|L02,All Italian-language versions and originals within 1975 domestic singer tradition.,medium
+mina-lamina,chanson,album style as issued,L02,Original PDU vinyl is cataloged as Chanson; French song adaptations included.,high
+mina-lamina,ballad,album style as issued,L02,Cataloged explicitly as Ballad; several extended slower vocal pieces.,high
+mina-lamina,musicaleggera,broad repertoire taxonomy,L01|L02,Accessible Italian popular songs and ballads; Italian umbrella label rather than distinct instrumentation.,medium
+mina-lamina,bossanova,individual single rhythm,L07,One famous song described as bossa-inflected: not overall bossa-nova album. Source acknowledges AI assistance.,low
+mina-lamina,funk,individual single bass groove,L07,L’importante è finire funk bass riff; scope strictly one track and source lower reliability.,low
+mina-singolare,pop,whole album,S01|S03,Original PDU album classed pop by label discography and release metadata.,high
+mina-singolare,italianpop,album Italian repertoire,S01|S06,Italian-language mainstream pop songwriting and covers throughout.,medium
+mina-singolare,musicaleggera,broad album category,S06,Italian discography explicitly classifies album musica leggera.,medium
+mina-singolare,softrock,album review style,S04|S06,Reviewer explicitly associates record with 1970s soft rock; specific band-style arrangements.,medium
+mina-singolare,poprock,album review style,S04|S06,Reviews and secondary discographies call some ensemble arrangements pop rock.,medium
+mina-singolare,ballad,album style / several slower tracks,S03,MusicBrainz album genre tag ballad; several slow narrative vocal interpretations.,medium
+mina-plurale,jazz,majority stylistic orientation,P03|P06|P07,"Jazz standards, swing medleys and vocal jazz chord harmonies throughout record.",high
+mina-plurale,vocaljazz,album vocal arrangement technique,P01|P02|P03,Sixteen-track overdubbed close harmony vocal jazz based on standard and swing repertoire.,high
+mina-plurale,standards,substantial repertoire,P01|P03,"Moonlight Serenade, Mood Indigo, Pennsylvania 6-5000 in original LP.",high
+mina-plurale,bigband,several numbers; historical repertoire,P01|P03,Songs associated with Glenn Miller big band are arranged by Gianni Ferrio orchestra.,medium
+mina-plurale,swing,several numbers,P01|P03,"Moonlight Serenade and Pennsylvania 6-5000, jazz-swing traditions; not whole record.",medium
+mina-plurale,pop,secondary classification / broad album,P04|P05|P07,Retail and discography classifications retain Pop with jazz styles.,high
+mina-plurale,blues,single track,P01,"Scettico Blues is present and named blues; genre applies to limited segment, not entire LP.",low
+mina-plurale,folk,single track traditional alpine,P01,Il testamento del capitano explicitly identified as a traditional Alpini song.,medium
+mina-plurale,traditionalpop,several arrangements,P01|P03,Popular standards arranged with a formal studio orchestra and multi-voice vocals.,medium
+mina-plurale,musicaleggera,album broad Italian category,P06,Italian discography labels the LP musica leggera along with jazz.,medium

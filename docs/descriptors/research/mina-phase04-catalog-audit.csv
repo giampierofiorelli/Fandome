@@ -1,0 +1,5 @@
+﻿album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+mina-minacantalucio,Minacantalucio,1975,studio,missing,,Add canonical original title and ID to Mina catalog; keep as a separate LP from La Mina,"PDU PLD L 6036. Recorded and issued 1975, ten Battisti-Mogol songs; original boxed package may combine with La Mina; not a compilation of Mina recordings."
+mina-lamina,La Mina,1975,studio,missing,,Add 1975 album after Minacantalucio with ID mina-lamina,PDU PLD L 6037. Ten tracks; frequently sold together with Minacantalucio but a distinct original LP. L’importante è finire is one song only.
+mina-singolare,Singolare,1976,studio,missing,,Add separate studio album under ID mina-singolare; do not create combined Singolare e plurale duplicate,PDU PLD L 6067; original ten tracks and solo vocals; the 1976 twin-LP edition contains a separate second LP.
+mina-plurale,Plurale,1976,studio,missing,,Add separate album under ID mina-plurale; maintain chronological pair after Singolare,"PDU PLD L 6068; eleven tracks incl Intro and 8-second Good Evening Friends; all vocals are Mina multitracked, not a live choir."
