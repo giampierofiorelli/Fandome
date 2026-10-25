@@ -8,7 +8,7 @@ import { isAbout } from '../lib/postArtists'
 import { useComposer } from '../components/Composer'
 import { ShareCardButton } from '../components/ShareCard'
 import { rootsAndHeirs } from '../lib/connections'
-import { albumById } from '../lib/util'
+import { albumById, albumHasArtist } from '../lib/util'
 import { artistById } from '../lib/util'
 import { AlbumCover, ArtistDisc, Modal } from '../components/ui'
 import { sceneLine } from '../data/scenes'
@@ -174,7 +174,7 @@ function StepSheet({ step, path, onOpen, onClose }: { step: Step; path: ScenePat
   // Facts that would give away a quiz answer are left out.
   const facts = didYouKnow(a.id, albums, [step.connection ?? '', ...quiz.map((q) => q.answer)])
   const fanPosts = state.posts.filter((p) => isAbout(p, a.id) && !p.removed && !p.replyTo && p.text.trim()).sort((x, y) => y.createdAt - x.createdAt).slice(0, 2)
-  const theirs = albums.filter((al) => al.artistId === a.id).sort((x, y) => x.year - y.year)
+  const theirs = albums.filter((al) => albumHasArtist(al, a.id)).sort((x, y) => x.year - y.year)
   const listened = Boolean(me?.listened?.includes(a.id))
   const following = Boolean(me?.fanSince[a.id])
   const q = encodeURIComponent(beginAlbum ? `${a.name} ${beginAlbum.title}` : a.name)

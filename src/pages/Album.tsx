@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
-import { albumById, artistById } from '../lib/util'
+import { albumArtistIds, albumById, artistById } from '../lib/util'
 import { albumFeed } from '../lib/feed'
 import { FeedList } from '../components/FeedList'
 import { AlbumCover, ArtistDisc } from '../components/ui'
@@ -32,7 +32,7 @@ export default function AlbumPage() {
   const items = albumFeed(state.posts, album.id)
   const sound = descriptorOf(album.id)
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
-  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
+  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, artistsOf: (id) => { const x = albumById(id); return x ? albumArtistIds(x) : [] }, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
 
   return (
     <>
@@ -46,10 +46,15 @@ export default function AlbumPage() {
         </div>
         <h1 className="hero-name album-hero-title">{album.title}</h1>
         {artist && (
-          <Link to={`/a/${artist.id}`} className="album-hero-artist">
-            <ArtistDisc id={artist.id} size={24} /> {artist.name}
-          </Link>
+          <div className="album-hero-artists">
+            {[artist, ...(album.withArtists ?? []).map((id) => artistById(id)).filter(Boolean)].map((a) => (
+              <Link key={a!.id} to={`/a/${a!.id}`} className="album-hero-artist">
+                <ArtistDisc id={a!.id} size={24} /> {a!.name}
+              </Link>
+            ))}
+          </div>
         )}
+        {album.credit && <p className="muted small album-credit">{album.credit}</p>}
         <div className="hero-stats">
           <div>
             <div className="bignum">{avg ? fmtScore(avg) : '–'}</div>

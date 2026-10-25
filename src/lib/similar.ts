@@ -410,6 +410,7 @@ export function similarAlbums(
     limit?: number
     perArtist?: number
     artistOf?: (albumId: string) => string | undefined
+    artistsOf?: (albumId: string) => string[] // all billed artists, for co-billed albums
     countryOf?: (albumId: string) => string | undefined
     hide?: string[] // album or artist ids
     avoid?: string[] // album ids you rated low or hid: similar albums are pushed down
@@ -421,10 +422,13 @@ export function similarAlbums(
   if (!a) return []
   const artistOf = opts.artistOf ?? ((id: string) => DESCRIPTORS[id]?.artist)
   const mine = artistOf(albumId)
+  const mineAll = opts.artistsOf?.(albumId) ?? [mine]
+  const shared = (id: string) => (opts.artistsOf?.(id) ?? []).some((x) => mineAll.includes(x))
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(albumId)
   const scored = Object.values(DESCRIPTORS)
-    .filter((d) => d.albumId !== albumId && artistOf(d.albumId) !== mine && !hide.includes(d.albumId) && !hide.includes(artistOf(d.albumId) ?? ''))
+    // Never another album by the same artist, co-billed albums included (Do It Again is Röyksopp's and Robyn's).
+    .filter((d) => d.albumId !== albumId && artistOf(d.albumId) !== mine && !shared(d.albumId) && !hide.includes(d.albumId) && !hide.includes(artistOf(d.albumId) ?? ''))
     .map((d) => {
       const b = albumProfile(d)
       const c = compareProfiles(a, b)

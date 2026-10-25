@@ -37,7 +37,7 @@ export function discoverPaths(me: User, artists: Artist[], albums: Album[], now 
   const home = [...myCountries.entries()].sort((a, b) => b[1] - a[1])[0][0]
 
   // 1. Bridge: album descriptors first (concrete reason), scene genres as a fallback.
-  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id || a.withArtists?.includes(id)).map((a) => a.id)
   let bridge: { from: string; to: string; reason: string; score: number } | null = null
   for (const f of followed) {
     const best = similarArtists(f, albumIdsOf, artists.map((a) => a.id).filter(free), { countryOf: (id) => sceneOf(id)?.country, limit: 8 }).find((s) => s.newCountry && !myCountries.has(s.newCountry) && isLocalArtist(s.artistId))

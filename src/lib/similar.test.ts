@@ -69,6 +69,15 @@ describe('similar albums', () => {
     expect(list.some((s) => s.reasons[0].includes('Madonna'))).toBe(true)
   })
 
+  it('treats co-billed albums as belonging to every billed artist', () => {
+    const doItAgain = albums.find((a) => a.id === 'robyn-doitagain')!
+    expect(doItAgain.withArtists).toContain('royksopp')
+    expect(doItAgain.credit).toBe('Röyksopp & Robyn')
+    const artistsOf = (id: string) => { const a = albums.find((x) => x.id === id); return a ? [a.artistId, ...(a.withArtists ?? [])] : [] }
+    for (const id of ['royksopp-junior', 'royksopp-theunderstanding', 'royksopp-melodyam'])
+      expect(similarAlbums(id, { artistsOf }).map((s) => s.albumId)).not.toContain('robyn-doitagain')
+  })
+
   it('returns nothing for albums without descriptors', () => {
     expect(similarAlbums('k-fever')).toEqual([])
   })

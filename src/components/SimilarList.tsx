@@ -24,7 +24,7 @@ export function SimilarList({ items, onHide }: { items: Similar[]; onHide?: (alb
               <span className="grow chart-row-info">
                 <strong>{al.title}</strong>
                 <span className="muted small block">
-                  {artistById(al.artistId)?.name} · {al.year}
+                  {al.credit ?? artistById(al.artistId)?.name} · {al.year}
                   {s.newCountry && ` · ${fromCountry(countryName(s.newCountry))}`}
                 </span>
                 <span className="small block similar-why">{s.reasons.join(' · ')}</span>

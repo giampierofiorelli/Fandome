@@ -18,7 +18,7 @@ import { useToast } from '../components/Toast'
 import { sceneLine, sceneOf } from '../data/scenes'
 import { fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
-import { artistById, isUpcoming } from '../lib/util'
+import { albumHasArtist, artistById, isUpcoming } from '../lib/util'
 import { IconCheck, IconHeadphones, IconHeart, IconPackage, IconPen, IconSend } from '../components/icons'
 
 // Weverse-style artist space: one room per artist, with topic feeds
@@ -34,13 +34,13 @@ export default function ArtistPage() {
 
   const joined = Boolean(me?.fanSince[artist.id])
   const fans = state.users.filter((u) => u.fanSince[artist.id])
-  const myAlbums = albums.filter((a) => a.artistId === artist.id).sort((a, b) => a.year - b.year)
+  const myAlbums = albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year)
   const shows = concerts.filter((c) => c.artistId === artist.id).sort((a, b) => b.date.localeCompare(a.date))
   const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
   const feed = artist.feeds.find((f) => f.id === tab)
   // "If you like this artist": computed from the descriptions of their albums.
-  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+  const albumIdsOf = (id: string) => albums.filter((a) => albumHasArtist(a, id)).map((a) => a.id)
   const soundGenres = artistGenres(albumIdsOf(artist.id), 8)
   const likeThem = soundGenres.length
     ? similarArtists(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })

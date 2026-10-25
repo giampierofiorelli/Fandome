@@ -1,0 +1,15 @@
+// Albums billed to more than one artist. `with` lists the other artists that have a room on Fandome:
+// the album shows on each of their pages. `credit` is the billing as printed on the record.
+// When a co-billed artist gets a room, add their id to `with`.
+export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
+  'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
+  'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
+  'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },
+  'gaga-loveforsale': { credit: 'Tony Bennett & Lady Gaga' },
+  'gaga-astarisborn': { credit: 'Lady Gaga & Bradley Cooper' },
+  'gaga-jokerfolieadeuxmusicfromthemotionpicture': { credit: 'Lady Gaga & Joaquin Phoenix' },
+  'ariana-wickedthesoundtrack': { credit: 'Cynthia Erivo & Ariana Grande' },
+  'ariana-wickedforgoodthesoundtrack': { credit: 'Cynthia Erivo & Ariana Grande' },
+  'moroder-lovesinyoulovesinme': { credit: 'Giorgio & Chris' },
+  'moroder-philipoakeygiorgiomoroder': { credit: 'Philip Oakey & Giorgio Moroder' },
+}

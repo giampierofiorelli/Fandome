@@ -43,7 +43,7 @@ album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experim
 
 Name: `<artist-id>_fandome_phase0N.zip`, with:
 
-- `CLAUDE_IMPORT.md`: what the phase contains (album ids and titles), albums to add to the catalogue (title, year, type), new genre tokens, caveats (editions, credits, release dates), and what the next phase will contain.
+- `CLAUDE_IMPORT.md`: what the phase contains (album ids and titles), albums to add to the catalogue (title, year, type), albums billed to more than one artist (exact credit, e.g. `Röyksopp & Robyn`), new genre tokens, caveats (editions, credits, release dates), and what the next phase will contain.
 - `<artist-id>_phase0N_rows_ONLY.csv`: header + only this phase's rows.
 - `<artist-id>_phase0N_sources.csv`: `album_id,source,source_type,url,what_it_supports,evidence_strength`, with working links.
 - `<artist-id>_phase0N_genre_evidence.csv`: one line per genre per album, with source and scope (whole album, some tracks, texture).

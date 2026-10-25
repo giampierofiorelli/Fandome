@@ -17,6 +17,8 @@ export interface Album {
   artistId: Id
   title: string
   year: number
+  withArtists?: Id[] // other billed artists that have a room (src/data/coBilled.ts)
+  credit?: string // full billing when more than one artist, e.g. 'Röyksopp & Robyn'
 }
 
 export interface Concert {

@@ -1,6 +1,7 @@
 // Demo data for the prototype. Artist names identify topics only:
 // no official artwork, logos or content. Upcoming dates are fictional.
 import { catalogAlbums, catalogArtists } from './catalog'
+import { CO_BILLED } from './coBilled'
 import type { Album, Artist, ChatMessage, Concert, DirectMessage, Party, Post, Story, User, Report, TicketListing } from './types'
 
 export const artists: Artist[] = [
@@ -58,7 +59,7 @@ export const artists: Artist[] = [
   ...catalogArtists,
 ]
 
-export const albums: Album[] = [
+const baseAlbums: Album[] = [
   { id: 'madonna-madonna', artistId: 'madonna', title: 'Madonna', year: 1983 },
   { id: 'm-virgin', artistId: 'madonna', title: 'Like a Virgin', year: 1984 },
   { id: 'm-trueblue', artistId: 'madonna', title: 'True Blue', year: 1986 },
@@ -104,6 +105,9 @@ export const albums: Album[] = [
   { id: 'gaga-applemusiclivemayhemrequiem', artistId: 'gaga', title: 'Apple Music Live: MAYHEM Requiem', year: 2026 },
   ...catalogAlbums,
 ]
+
+// Co-billed albums carry their other artists and full credit.
+export const albums: Album[] = baseAlbums.map((a) => (CO_BILLED[a.id] ? { ...a, withArtists: CO_BILLED[a.id].with, credit: CO_BILLED[a.id].credit } : a))
 
 export const concerts: Concert[] = [
   {

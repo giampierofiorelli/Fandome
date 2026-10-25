@@ -54,7 +54,7 @@ export function suggestArtists(me: User, users: User[], artists: Artist[], limit
       for (const id of Object.keys(u.fanSince)) if (mine.has(id)) shared.set(id, (shared.get(id) ?? 0) + 1)
     }
     const social = friends.length * 2 + [...shared.values()].reduce((n, v) => n + v, 0)
-    const theirs = albums.filter((al) => al.artistId === a.id)
+    const theirs = albums.filter((al) => al.artistId === a.id || al.withArtists?.includes(a.id))
     // An album of theirs you rated highly is the clearest reason of all.
     const loved = theirs.find((al) => (me.ratings?.[al.id] ?? 0) >= 4)
     const match = loved ? { score: 1, reason: `You rated ${loved.title} highly` } : seeds.length ? soundMatch(seeds, theirs.map((al) => al.id), avoid) : null

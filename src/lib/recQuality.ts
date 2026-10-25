@@ -30,7 +30,8 @@ export function evaluate(limit = 5): Quality {
   let empty = 0
   const div: number[] = []
   for (const id of ids) {
-    const list = similarAlbums(id, { limit, artistOf, countryOf })
+    const artistsOf = (x: string) => { const al = albums.find((a) => a.id === x); return al ? [al.artistId, ...(al.withArtists ?? [])] : [] }
+    const list = similarAlbums(id, { limit, artistOf, artistsOf, countryOf })
     if (!list.length) empty++
     for (const s of list) {
       total++

@@ -138,7 +138,7 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
   }
 
   // Richer reasons where album descriptors exist on both sides (same producer, influences…).
-  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+  const albumIdsOf = (id: string) => albums.filter((a) => a.artistId === id || a.withArtists?.includes(id)).map((a) => a.id)
   const described = (id: string) => albumIdsOf(id).some((x) => DESCRIPTORS[x])
   const rich = new Map<string, { reason: string; score: number }>()
   for (const f of mine.filter(described)) {
@@ -269,7 +269,7 @@ export function buildScene(sceneId: string, ctx: SceneContext): ScenePath | null
 
 // Where to begin with an artist: a defining album first (from the descriptors), else their first album.
 export function startWith(artistId: string, albums: Album[]): { albumId: string; why: string } | undefined {
-  const theirs = albums.filter((a) => a.artistId === artistId).sort((a, b) => a.year - b.year)
+  const theirs = albums.filter((a) => a.artistId === artistId || a.withArtists?.includes(artistId)).sort((a, b) => a.year - b.year)
   if (!theirs.length) return undefined
   const described = theirs.filter((a) => DESCRIPTORS[a.id])
   // The most recent defining album: closest to how they sound today.

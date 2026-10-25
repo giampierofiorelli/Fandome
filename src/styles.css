@@ -1252,6 +1252,8 @@ body.story-open .modal-root { z-index: 100; }
 .album-hero-cover .cover { border-radius: 18px; box-shadow: 0 20px 40px -18px color-mix(in srgb, var(--tint) 70%, transparent); }
 .album-hero-title { font-size: 40px; line-height: 1.05; }
 .album-hero-artist { display: inline-flex; align-items: center; gap: 8px; margin: 6px 0 4px; color: var(--text); font-weight: 500; text-decoration: none; }
+.album-hero-artists { display: flex; flex-wrap: wrap; justify-content: inherit; gap: 4px 16px; }
+.album-credit { margin: 0 0 4px; }
 
 /* Explore: most discussed albums */
 .artist-picked .pick.on::after { content: none; }

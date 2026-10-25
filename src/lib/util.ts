@@ -5,6 +5,9 @@ import { extractTags } from '../store/reducer'
 
 export const artistById = (id?: string) => artists.find((a) => a.id === id)
 export const albumById = (id?: string) => albums.find((a) => a.id === id)
+// An album belongs to its main artist and to any co-billed artist with a room.
+export const albumHasArtist = (a: { artistId: string; withArtists?: string[] }, id: string) => a.artistId === id || Boolean(a.withArtists?.includes(id))
+export const albumArtistIds = (a: { artistId: string; withArtists?: string[] }) => [a.artistId, ...(a.withArtists ?? [])]
 export const concertById = (id?: string) => concerts.find((c) => c.id === id)
 
 export function isUpcoming(date: string, now = Date.now()) {
