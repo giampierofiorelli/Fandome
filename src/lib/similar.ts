@@ -342,6 +342,8 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 export const DISCOVERY = 0.05
 // Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead).
 const MIN_GENRE = 0.15
+// Minimum score for an album suggestion, calibrated on the owner's judged pairs (docs/similarity-judgments.csv).
+const MIN_SCORE = 0.3
 // What you rated low or said is not for you pushes similar things down (up to this much).
 const AVOID = 0.3
 // Variety: how much resemblance to what is already in the list costs (maximal marginal relevance).
@@ -391,7 +393,7 @@ export function similarAlbums(
   const mine = artistOf(albumId)
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(albumId)
-  let scored = Object.values(DESCRIPTORS)
+  const scored = Object.values(DESCRIPTORS)
     .filter((d) => d.albumId !== albumId && artistOf(d.albumId) !== mine && !hide.includes(d.albumId) && !hide.includes(artistOf(d.albumId) ?? ''))
     .map((d) => {
       const b = albumProfile(d)
@@ -400,11 +402,10 @@ export function similarAlbums(
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
       return { albumId: d.albumId, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: c.genre >= MIN_GENRE || c.linked }
     })
-    .filter((s) => s.score >= 0.2 && s.reasons.length)
+    // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
+    // Only albums that really share genres, or have a documented link.
+    .filter((s) => s.score >= MIN_SCORE && s.fits && s.reasons.length)
     .sort((x, y) => y.score - x.score)
-  // Only albums that really share genres, or have a documented link; if none do, keep the single best.
-  if (scored.some((s) => s.fits)) scored = scored.filter((s) => s.fits)
-  else scored = scored.slice(0, 1)
   // Fewer, closer suggestions beat a full list: drop what scores well below the best match.
   const floor = (scored[0]?.score ?? 0) * 0.6
   const close = scored.filter((s) => s.score >= floor)

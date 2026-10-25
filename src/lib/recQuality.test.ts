@@ -8,7 +8,8 @@ describe('suggestion quality', () => {
     expect(q.coverage).toBeGreaterThanOrEqual(0.7)
     expect(q.artistCoverage).toBe(1)
     expect(q.topShare).toBeLessThanOrEqual(0.15)
-    expect(q.empty).toBe(0)
+    // An empty list is allowed (no suggestion beats a bad one), but it must stay rare.
+    expect(q.empty / q.albums).toBeLessThanOrEqual(0.05)
   })
   it('keeps lists varied and crosses countries', () => {
     expect(q.diversity).toBeGreaterThanOrEqual(0.5)

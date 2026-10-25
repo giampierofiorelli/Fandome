@@ -91,7 +91,7 @@ export default function AlbumPage() {
           </div>
         </>
       )}
-      {similar.length > 0 && (
+      {(similar.length > 0 || sound) && (
         <>
           <div className="section-head">
             <h2>If you like this album</h2>
@@ -99,7 +99,11 @@ export default function AlbumPage() {
               How it works
             </Link>
           </div>
-          <SimilarList items={similar} onHide={me ? (id) => dispatch({ type: 'notForMe', id }) : undefined} />
+          {similar.length > 0 ? (
+            <SimilarList items={similar} onHide={me ? (id) => dispatch({ type: 'notForMe', id }) : undefined} />
+          ) : (
+            <p className="muted small">No album close enough yet. We only suggest real matches: more will come as more albums are described.</p>
+          )}
         </>
       )}
       <div className="section-head">
