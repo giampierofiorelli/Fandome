@@ -1,0 +1,12 @@
+album_id,genre,source,scope,evidence_strength,reason
+carra-raffaella,pop,https://music.apple.com/us/album/raffaella/1689218689,whole album,high,Label Pop categorisation
+carra-raffaellacarra,pop,https://music.apple.com/us/album/raffaella-carr%C3%A0/255785509,whole album,high,Label Pop categorisation
+carra-raffaellacarra,dancepop,https://www.allmusic.com/artist/raffaella-carr%C3%A0-mn0000327427,some tracks,medium,AllMusic describes Carrà as dance-pop singer and identifies Tuca Tuca dance craze; album also contains ballads
+carra-raffaellasenzarespiro,pop,https://music.apple.com/us/album/raffaella-senzarespiro-live/1689218915,whole album,high,Apple Music calls album Pop
+carra-raffaellasenzarespiro,italianpop,https://www.allmusic.com/album/raffaella-senzarespiro-mw0003652716,whole album,high,AllMusic explicitly labels this album Italian Pop
+carra-raffaellasenzarespiro,dancepop,https://www.allmusic.com/artist/raffaella-carr%C3%A0-mn0000327427,some tracks,medium,Show incorporates Tuca Tuca and choreographed dance novelties; wider artist genre background
+carra-scatolaasorpresa,pop,https://music.apple.com/us/album/scatola-a-sorpresa/1689285470,whole album,high,Apple Music classifies this release Pop
+carra-scatolaasorpresa,rockandroll,https://raffaellacarra.com/discografia/scatola-a-sorpresa/,some tracks,high,Explicit rock-and-roll medley includes Little Richard and rock standards
+carra-scatolaasorpresa,twist,https://raffaellacarra.com/discografia/scatola-a-sorpresa/,some tracks,medium,Official album track Let’s Twist Again within programme described as historical dance styles
+carra-scatolaasorpresa,tango,https://www.unesco.org/es/memory-world/lac/gerardo-matos-rodriguez-documentary-collection-18/03/1897-25/04/1948,some tracks,medium,Album includes La Cumparsita and UNESCO documents it as classic tango; performance variation unverified
+carra-scatolaasorpresa,samba,https://luizbonfa.bandcamp.com/track/samba-de-orfeu,some tracks,medium,Album includes La samba di Orfeo; composer source identifies original as Samba de Orfeu; arrangement unverified

@@ -68,4 +68,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   boogiewoogie: ['blues', 'rockandroll'], italianpop: ['pop'], musicaleggera: ['italianpop', 'traditionalpop'],
   blueeyedsoul: ['soul', 'pop'],
   mpb: ['latin', 'pop'], samba: ['latin'], tropicalia: ['mpb', 'psychedelicrock'], chanson: ['traditionalpop', 'songwriter'], ballad: ['pop'],
+  twist: ['rockandroll', 'dance'], tango: ['latin'],
 }
