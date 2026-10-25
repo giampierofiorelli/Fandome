@@ -30,7 +30,7 @@ const ROWS: Row[] = [
   ['lykkeli', 'Lykke Li', '#9b8bb5', 'Sad songs you can dance to', [['Youth Novels', 2008], ['Wounded Rhymes', 2011], ['I Never Learn', 2014], ['So Sad So Sexy', 2018], ['EYEYE', 2022]]],
   ['maneskin', 'Måneskin', '#b8233a', 'Rock is back, and it’s Roman', [['Il ballo della vita', 2018], ['Teatro d’ira: Vol. I', 2021], ['Rush!', 2023]]],
   ['garrix', 'Martin Garrix', '#2bb3e0', 'Festival drops and main-stage nights', [['Sentio', 2022]]],
-  ['massiveattack', 'Massive Attack', '#4a4f5a', 'Bristol’s dark, slow heartbeat', [['Blue Lines', 1991], ['Protection', 1994], ['Mezzanine', 1998], ['100th Window', 2003], ['Heligoland', 2010]]],
+  ['massiveattack', 'Massive Attack', '#4a4f5a', 'Bristol’s dark, slow heartbeat', [['Blue Lines', 1991], ['Protection', 1994], ['No Protection', 1995], ['Mezzanine', 1998], ['100th Window', 2003], ['Heligoland', 2010]]],
   ['miley', 'Miley Cyrus', '#d65fa0', 'Every reinvention welcome', [['Bangerz', 2013], ['Younger Now', 2017], ['Plastic Hearts', 2020], ['Endless Summer Vacation', 2023], ['Something Beautiful', 2025]]],
   ['mo', 'MØ', '#f2b33d', 'Danish pop with a punk heart', [['No Mythologies to Follow', 2014], ['Forever Neverland', 2018], ['Motordrome', 2022], ['Plæygirl', 2024]]],
   ['moby', 'Moby', '#63a3c7', 'Ambient, techno and everything in between', [['Everything Is Wrong', 1995], ['Play', 1999], ['18', 2002], ['Hotel', 2005], ['Wait for Me', 2009]]],

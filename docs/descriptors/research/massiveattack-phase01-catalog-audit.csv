@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,in_catalog,add_to_catalog,existing_descriptor,action,notes
+massiveattack-bluelines,Blue Lines,1991,studio,yes,no,absent,keep catalog id,No existing descriptor CSV found
+massiveattack-protection,Protection,1994,studio,yes,no,absent,keep catalog id,No existing descriptor CSV found
+massiveattack-noprotection,No Protection,1995,remix,no,yes,absent,add to catalog,1995 original release as Massive Attack v Mad Professor
+massiveattack-mezzanine,Mezzanine,1998,studio,yes,no,absent,keep catalog id,No existing descriptor CSV found

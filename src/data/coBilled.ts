@@ -17,4 +17,5 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'whitney-waitingtoexhaleoriginalsoundtrackalbum': { credit: 'Various artists' },
   'whitney-sparkleoriginalmotionpicturesoundtrack': { credit: 'Various artists' },
   'bjork-glingglo': { credit: 'Björk Guðmundsdóttir & Tríó Guðmundar Ingólfssonar' },
+  'massiveattack-noprotection': { credit: 'Massive Attack v Mad Professor' },
 }
