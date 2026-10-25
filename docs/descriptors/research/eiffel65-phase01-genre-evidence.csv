@@ -1,0 +1,31 @@
+album_id,genre,source,url,scope,evidence_strength,notes
+eiffel65-europop,eurodance,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,whole album,high,primary dance style
+eiffel65-europop,italodance,Chartsurfer — Europop pressings and credits,https://www.chartsurfer.de/artist/eiffel-65/europop-album_frfrhc.html,whole album,medium,original pressing style
+eiffel65-europop,dancepop,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,whole album,high,AllMusic style
+eiffel65-europop,europop,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,whole album,high,AllMusic style
+eiffel65-europop,eurohouse,Chartsurfer — Europop pressings and credits,https://www.chartsurfer.de/artist/eiffel-65/europop-album_frfrhc.html,whole album,medium,listed as Euro House
+eiffel65-europop,house,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,some tracks,high,general house-oriented grooves
+eiffel65-europop,deephouse,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,some tracks,high,"critic specifies deep-house grooves, not uniform throughout"
+eiffel65-europop,eurodisco,Eiffel 65 / Bliss Corporation — Music,https://www.eiffel65.com/music,whole album,high,artist website calls these Eurodisco beats
+eiffel65-europop,synthpop,Chartsurfer — Europop pressings and credits,https://www.chartsurfer.de/artist/eiffel-65/europop-album_frfrhc.html,whole album,medium,2000 Portugal edition explicitly lists Synth-pop among album styles
+eiffel65-europop,electro,Chartsurfer — Europop pressings and credits,https://www.chartsurfer.de/artist/eiffel-65/europop-album_frfrhc.html,some tracks,medium,pressing-specific electro label
+eiffel65-europop,trance,Chartsurfer — Europop pressings and credits,https://www.chartsurfer.de/artist/eiffel-65/europop-album_frfrhc.html,some tracks,medium,Canada pressing style; lower representativeness
+eiffel65-europop,electronic,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,whole album,high,AllMusic umbrella style
+eiffel65-europop,pop,"AllMusic — Europop, Jose F. Promis",https://www.allmusic.com/album/europop-mw0000257752,whole album,high,melodic pop choruses
+eiffel65-contact,eurodance,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,whole album,high,AllMusic style
+eiffel65-contact,dancepop,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,whole album,high,AllMusic style
+eiffel65-contact,frenchhouse,Eiffel 65 / Bliss Corporation — Music,https://www.eiffel65.com/music,some tracks,high,official description explicitly invokes French house
+eiffel65-contact,house,Eiffel 65 / Bliss Corporation — Music,https://www.eiffel65.com/music,some tracks,high,parent style of French house; specific sound comparison
+eiffel65-contact,synthpop,Eiffel 65 / Bliss Corporation — Music,https://www.eiffel65.com/music,some tracks,high,official album description
+eiffel65-contact,trance,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,some tracks,high,People of Tomorrow loops
+eiffel65-contact,disco,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,some tracks,high,Life Like Thunder beat
+eiffel65-contact,italodance,Wikipedia — Contact! album (cross-check only),https://en.wikipedia.org/wiki/Contact%21_%28Eiffel_65_album%29,whole album,low,"secondary designation only, review carefully"
+eiffel65-contact,electronica,Wikipedia — Contact! album (cross-check only),https://en.wikipedia.org/wiki/Contact%21_%28Eiffel_65_album%29,whole album,low,secondary broad original style
+eiffel65-contact,pop,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,whole album,high,catchy melodic pop appeal
+eiffel65-contact,electronic,"AllMusic — Contact!, MacKenzie Wilson",https://www.allmusic.com/album/contact-mw0000530811,whole album,high,electronic studio dance music classification
+eiffel65-eiffel65,pop,Rockol — Eiffel 65 album review (July 15 2003),https://www.rockol.it/recensioni-musicali/album/v-1614/eiffel-65-eiffel-65,whole album,high,Rockol reports clear pop shift
+eiffel65-eiffel65,dancepop,AllMusic — Eiffel 65 (2003),https://www.allmusic.com/album/eiffel-65-mw0000529271,whole album,medium,AllMusic style
+eiffel65-eiffel65,eurodance,AllMusic — Eiffel 65 (2003),https://www.allmusic.com/album/eiffel-65-mw0000529271,some tracks,medium,AllMusic style but not dominant over pop
+eiffel65-eiffel65,electropop,Wikipedia (Italian) — Eiffel 65 album (cross-check only),https://it.wikipedia.org/wiki/Eiffel_65_%28album%29,some tracks,low,secondary Italian article: electropop
+eiffel65-eiffel65,italodance,Eiffel 65 (2003) — album-specific 2013 blog review,https://ramrock94.wordpress.com/2013/03/24/eiffel-65-recensione/,some tracks,low,album-specific amateur review; requires independent confirmation
+eiffel65-eiffel65,electronic,AllMusic — Eiffel 65 (2003),https://www.allmusic.com/album/eiffel-65-mw0000529271,whole album,medium,AllMusic electronic genre

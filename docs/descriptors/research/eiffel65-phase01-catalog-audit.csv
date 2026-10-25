@@ -1,0 +1,4 @@
+album_id,artist_id,artist,title,year,type,catalogue_status,catalogue_entry,descriptor_file_existing,phase,action
+eiffel65-europop,eiffel65,Eiffel 65,Europop,1999,studio,already_in_catalogue,Europop (1999),no,01,reuse catalogue ID
+eiffel65-contact,eiffel65,Eiffel 65,Contact!,2001,studio,already_in_catalogue,Contact! (2001),no,01,reuse catalogue ID
+eiffel65-eiffel65,eiffel65,Eiffel 65,Eiffel 65,2003,studio,add_to_catalogue,Eiffel 65 (2003),no,01,create catalogue entry and then import row

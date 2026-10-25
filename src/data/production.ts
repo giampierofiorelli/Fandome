@@ -3,7 +3,7 @@
 // A source naming something not listed: the researcher uses it anyway (lowercase, letters and digits) and Claude adds it.
 export const PRODUCTION_LABELS: Record<string, string> = {
   // vocal treatment and use
-  autotune: 'Auto-Tune', vocoder: 'Vocoder', talkbox: 'Talk box', pitchedvocals: 'Pitch-shifted vocals', vocalfilter: 'Filtered vocals',
+  autotune: 'Auto-Tune', vocoder: 'Vocoder', harmonizer: 'Harmonizer', talkbox: 'Talk box', pitchedvocals: 'Pitch-shifted vocals', vocalfilter: 'Filtered vocals',
   distortedvocals: 'Distorted vocals', vocalchops: 'Chopped vocals', layeredvocals: 'Layered vocals', falsetto: 'Falsetto',
   whistleregister: 'Whistle register', belting: 'Belting',
   // recording and production techniques

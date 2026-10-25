@@ -457,7 +457,7 @@ const ROWS: Row[] = [
   ['99posse', '99 Posse', '#c93f3f', 'Naples reggae and rap', [['Curre curre guaglió', 1993], ['Cerco tiempo', 1996]]],
   ['almamegretta', 'Almamegretta', '#5a8a8f', 'Mediterranean dub from Naples', [['Sanacore', 1995], ['Lingo', 1998]]],
   ['articolo31', 'Articolo 31', '#e0a35a', 'The pioneers of Italian hip-hop', [['Così com’è', 1996], ['Nessuno', 1998]]],
-  ['eiffel65', 'Eiffel 65', '#3f6fe0', 'I’m blue, da ba dee', [['Europop', 1999], ['Contact!', 2001]]],
+  ['eiffel65', 'Eiffel 65', '#3f6fe0', 'I’m blue, da ba dee', [['Europop', 1999], ['Contact!', 2001], ['Eiffel 65', 2003]]],
   ['righeira', 'Righeira', '#e0c95a', 'Vamos a la playa, Italo disco', []],
   ['planetfunk', 'Planet Funk', '#5ab5a3', 'Chase the sun with Italian electronica', [['Non Zero Sumness', 2002], ['The Illogical Consequence', 2005]]],
   ['labionda', 'La Bionda', '#c9a35a', 'Italo disco pioneers', [['Fratelli La Bionda s.r.l.', 1972], ['Ogni volta che tu te ne vai', 1975], ['Tutto va bene', 1977], ['La Bionda', 1978], ['Bandido', 1979], ['High Energy', 1979], ['I Wanna Be Your Lover', 1980], ['In Beatween', 1998]]],
