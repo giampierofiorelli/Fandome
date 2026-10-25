@@ -47,3 +47,8 @@ Scope: UK girl-group's **three released studio albums**, through 25 October 2026
 - The `Spiceworld` album and the *Spice World* film are not distinct full studio album rows merely because the record accompanies the film.
 - AllMusic pages are discoverable in search but some automated fetches return 403; citations identify precise album pages for normal browser access. The Bondegezou original-CD transcription returned 502 in automated open, although its detailed search result displayed credits. Cross-check its information against MusicBrainz/Qobuz in the original CD before treating it as an independent primary document.
 - Albumism is an album-focused retrospective by a named critic, not a contemporary primary production record. Editorial resemblance (`sounds_like`) and documented/critic-inferred influence (`influenced_by`) are separate fields. 
+
+## Claude revision (Oct 2026, owner): Madonna as a documented influence on Spice and Spiceworld
+- Geri Halliwell: she was into "pop music like early Madonna and Michael Jackson" (Marie Claire, excerpt from her memoir: https://marieclaire.com/celebrity/a21505/geri-halliwell-spice-girls-story); named her daughter Bluebell Madonna (Hello, 2006, via Wikipedia).
+- Melanie C still idolises Madonna (Interview magazine, "New Again: Spice Girls": https://interviewmagazine.com/music/new-again-spice-girls).
+- Madonna, Elle 1998: she had been "a kind of Spice Girl" when she started (via Queerty: https://www.queerty.com/how-geri-halliwells-fingerprints-are-all-over-madonnas-biggest-hit-from-the-last-20-years-20231212/).

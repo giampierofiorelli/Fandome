@@ -600,7 +600,19 @@ export function similarArtists(
     scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them })
   }
   scored.sort((x, y) => y.score - x.score)
-  return mmr(scored, (x, y) => genreSim(x.profile, y.profile), limit).map(({ profile: _p, ...s }) => s)
+  // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
+  // artist's albums gets a place, at most two, if still above the cut. A broad discography (Madonna's
+  // 17 albums) dilutes the overall profile, so the documented link is the stronger evidence.
+  const reserved: typeof scored = []
+  for (const s of scored) {
+    if (reserved.length >= 2) break
+    const drew = myAlbums.find((a) => includesName(a.influencedBy, s.profile.artist))
+    const like = drew ? undefined : myAlbums.find((a) => includesName(a.soundsLike, s.profile.artist))
+    if (drew) reserved.push({ ...s, reason: `${drew.title} draws on ${s.profile.artist}` })
+    else if (like) reserved.push({ ...s, reason: `${like.title} sounds like ${s.profile.artist}` })
+  }
+  const rest = scored.filter((s) => !reserved.some((r) => r.artistId === s.artistId))
+  return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, ...s }) => s)
 }
 
 // Genre lists (main first) compared with families, e.g. two artists' scene genres from scenes.ts.
