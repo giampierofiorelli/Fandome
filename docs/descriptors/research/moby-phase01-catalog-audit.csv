@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,in_catalog,catalog_action,descriptor_exists,phase,notes
+moby-moby,moby,Moby,1992,studio,no,add to artist moby catalogue,no,01,Instinct label-controlled debut; not a fresh 1992 recording project.
+moby-ambient,moby,Ambient,1993,studio,no,add to artist moby catalogue,no,01,Instinct archival selection; compiled as released album.
+moby-move,moby,Move,1993,ep,no,add to artist moby catalogue,no,01,1993 landmark EP; first Elektra and Mute release; retain US/UK edition differences.
+moby-everythingiswrong,moby,Everything Is Wrong,1995,studio,yes,retain existing id,no,01,Original catalogue entry preserved; add descriptor row only.
