@@ -1,0 +1,4 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+abba-thealbum,The Album,1977,studio,existing,abba-thealbum,Append descriptor only to docs/descriptors/abba.csv; do not duplicate catalog item,Nine-track 12 Dec 1977 Swedish original; not the 1978 international market date or later bonus tracks; not film soundtrack type.
+abba-voulezvous,Voulez-Vous,1979,studio,existing,abba-voulezvous,Append descriptor only to docs/descriptors/abba.csv,Ten-track 23 April 1979 original; do not append Gimme! Gimme! Gimme! or Summer Night City bonus material.
+abba-supertrouper,Super Trouper,1980,studio,existing,abba-supertrouper,Append descriptor only to docs/descriptors/abba.csv,Ten-track 3 Nov 1980 original; one song is live-sourced but album remains studio; no Elaine bonus.

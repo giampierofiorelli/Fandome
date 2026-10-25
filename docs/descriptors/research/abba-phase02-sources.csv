@@ -1,0 +1,28 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+abba-thealbum,A-O,official discography,https://abbasite.com/discography/,Original Swedish release 12 December 1977; nine tracks; ambition and mini-musical.,high
+abba-thealbum,A-F,official historical essay,https://abbasite.com/articles/abba-the-album-pushing-boundaries/,"Extended songwriting and structure; fame, lyrical maturity and The Girl With the Golden Hair.",high
+abba-thealbum,A-M,signed professional album review,https://www.allmusic.com/album/the-album-mw0000312170,"Bruce Eder: Europop, pop/rock, hard rock, dance-rock, progressive rock; Fleetwood Mac and Kurt Weill influence.",high
+abba-thealbum,A-P,label-distributed editorial album essay,https://music.apple.com/us/album/abba-the-album/1440821028,"Nine-track original; pop-rock, synthesizers, theatrical and progressive elements; emotional contrast.",high
+abba-thealbum,A-G,music catalogue genre taxonomy,https://www.albumoftheyear.org/album/20967-abba-the-album.php,"Secondary tags Europop, progressive pop, pop rock; release year and producer credits.",medium
+abba-thealbum,A-C,structured release and track credits,https://musicbrainz.org/release/bd71fffa-30d5-4e72-8572-8591544a7554,Andersson/Ulvaeus credited producers; Tretow engineer; original tracks and instruments.,high
+abba-thealbum,A-H,official ABBA historical narrative,https://abbasite.com/story/,Original release period and historically established fifth studio album.,medium
+abba-voulezvous,V-O,official discography,https://abbasite.com/discography/,Original release 23 April 1979; disco-focused rhythmic character; soft ballads.,high
+abba-voulezvous,V-F,official long-form recording history,https://abbasite.com/articles/voulez-vous-in-focus/,Bahamas and US dance-radio influence; Miami Criteria sessions with Foxy musicians.,high
+abba-voulezvous,V-M,signed professional album review,https://www.allmusic.com/album/voulez-vous-mw0000318368,"Bruce Eder: pop, rock and disco; contrast between dance tracks and ballads; seventies arrangements.",high
+abba-voulezvous,V-M2,signed professional review of title track,https://www.allmusic.com/song/voulez-vous-mt0004706823,"Stewart Mason details disco groove, synth riff, dance-pop and Europop sound; track scope.",medium
+abba-voulezvous,V-G,music catalogue genre taxonomy,https://www.albumoftheyear.org/album/20968-abba-voulez-vous.php,"Europop, euro-disco and dance-pop tags, 1979 release and production.",medium
+abba-voulezvous,V-C,structured release and track credits,https://musicbrainz.org/release/85d34787-64a2-4148-b8de-d07ddf0dc46a,"Per-track producer vs engineers, synthesizers, male and female lead vocals, and rock instruments.",high
+abba-voulezvous,V-D,original edition audit and sleeve credits,https://abbaomnibus.com/discs/voulez-vous/,1979 original ten-track album and B&B original production; later bonus editions distinguished.,high
+abba-voulezvous,V-R,signed professional retrospective,https://www.allmusic.com/album/release/voulez-vous-mr0000905254,Critical recognition of Bee Gees disco-era influence on substantial portion of album.,high
+abba-supertrouper,S-O,official discography,https://abbasite.com/discography/,"1980 original release; more mature lyrics, heartbreak, and electro-dance Lay All Your Love on Me.",high
+abba-supertrouper,S-F,official anniversary historical essay,https://abbasite.com/articles/abbas-super-trouper-reissue-including-remastering-out-october-30th/,"Breakup, fame fatigue, wistful mood, dancing 12-inch and album sequence.",high
+abba-supertrouper,S-M,signed professional album review,https://www.allmusic.com/album/super-trouper-mw0000199164,"William Ruhlmann: back towards pop-rock, strong melancholy, Beach Boys influence on On and On and On.",high
+abba-supertrouper,S-P,label-distributed editorial album essay,https://music.apple.com/us/album/super-trouper-bonus-track-version/1440823811,Melancholic themes despite buoyant pop rhythms; Me and I electronics and medieval Piper; bonus-edition caution.,high
+abba-supertrouper,S-G,music catalogue genre taxonomy,https://www.albumoftheyear.org/album/20969-abba-super-trouper.php,"Europop, Euro-Disco, Schlager secondary genre labels and November 1980 date.",medium
+abba-supertrouper,S-D,original LP tracklist and credits,https://abbaomnibus.com/discs/super-trouper/,"Ten-track original 1980 tracklist, personnel and studio/live origin of The Way Old Friends Do.",high
+abba-supertrouper,S-C,structured per-track studio credits,https://musicbrainz.org/release/33e9c8cb-b861-4482-aa17-3d75c4fb8a31,"Producer assignments, instruments and synthesizers in original tracks, original LP.",high
+abba-supertrouper,S-C2,structured original release credits,https://musicbrainz.org/release/05515960-0d69-3ace-99c8-b3263b932dbc,Layered keyboards/synths and ten original tracks; exact producer vs engineering roles.,high
+abba-supertrouper,S-CP,signed detailed album retrospective,https://www.classicpopmag.com/features/classic-album/abba-super-trouper/,Synth-pop on Me and I; disco Lay All Your Love; schlager on Andante; folk-derived Piper; Beach Boys reference.,high
+abba-supertrouper,S-T,specialist track provenance,https://abbaomnibus.com/songs/the-way-old-friends-do/,Live recording on the original studio album; not itself a separate live album.,high
+abba-supertrouper,S-B,signed album commentary,https://www.subjectivesounds.com/musicblog/abba-super-trouper-album-review,The Piper described as traditional folk-like; track-local genre association; author opinion only.,medium
+abba-supertrouper,S-L,signed song-focused professional review,https://www.allmusic.com/song/lay-all-your-love-on-me-mt0001964233,Disco-styled 1980 original Lay All Your Love On Me; track-specific.,medium

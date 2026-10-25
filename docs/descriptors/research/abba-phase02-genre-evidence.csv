@@ -1,0 +1,29 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+abba-thealbum,pop,dominant,A-O|A-M|A-P,Original nine-track album keeps ABBA melodic pop songwriting throughout.,high
+abba-thealbum,europop,dominant,A-M|A-G,Album classified Europop/Euro-pop; central Swedish hook-based sound.,high
+abba-thealbum,poprock,significant,A-M|A-G|A-P,Critics document guitar-led pop/rock on several album songs.,high
+abba-thealbum,rock,significant,A-M|A-P,Rock guitars and a harder band sound recur in Eagle and Hole in Your Soul.,high
+abba-thealbum,progressivepop,significant; secondary genre classification,A-G|A-F|A-P,Progressive Pop is an explicit genre label in catalogue; official account confirms longer and less standard structures.,medium
+abba-thealbum,prog,significant; progressive rock features,A-M|A-P,"AllMusic explicitly names progressive rock traits; Apple points to prog touches, notably Eagle.",medium
+abba-thealbum,dancepop,some tracks,A-M|A-P,AllMusic genre classification and bright rhythmic tracks such as Take a Chance on Me.,medium
+abba-thealbum,dancerock,some tracks,A-M,Professional critic specifically identifies dance-rock crossover in the album.,medium
+abba-thealbum,hardrock,some tracks,A-M,Review explicitly names harder rock passages including Hole in Your Soul; not a dominant hard-rock album.,medium
+abba-thealbum,musicaltheatre,three-track suite,A-O|A-F|A-M,Three original LP songs belong to mini-musical The Girl with the Golden Hair.,high
+abba-voulezvous,pop,dominant,V-O|V-M,Album remains melody-focused international pop with dance and ballad portions.,high
+abba-voulezvous,disco,dominant / substantial,V-O|V-M|V-F,Official account explicitly describes disco craze and dancebeats dominating many tracks.,high
+abba-voulezvous,eurodisco,significant,V-G|V-M,Secondary album taxonomy explicitly names Euro-Disco; European interpretation of disco production.,medium
+abba-voulezvous,dancepop,significant,V-G|V-M2,Album taxonomy and title-track analysis describe polished pop songs set to dance rhythms.,high
+abba-voulezvous,europop,significant,V-M|V-G,Several ballads and hooks fall in critics Euro-pop classification; not every song disco.,high
+abba-voulezvous,poprock,some tracks,V-M|V-O,Polished rock-flavoured moments and guitars in Does Your Mother Know.,medium
+abba-voulezvous,rock,some tracks,V-M|V-C,Guitar-driven male-led Does Your Mother Know and rock arrangements persist beside disco.,medium
+abba-supertrouper,pop,dominant,S-O|S-M|S-P,"Melodic, chorus-led pop is the album core even across variable tempos.",high
+abba-supertrouper,europop,dominant,S-M|S-G,AllMusic and secondary genre taxonomy describe 1980 mature Europop.,high
+abba-supertrouper,poprock,significant,S-M|S-CP,Review says turn back to pop-rock; On and On and On illustrates band-rock track.,high
+abba-supertrouper,dancepop,significant / some tracks,S-M|S-P|S-L,"Dance-pop rhythm on title song and Lay All Your Love on Me, not uniform across album.",medium
+abba-supertrouper,disco,some tracks,S-M|S-L|S-P,Disco remains concentrated especially on Lay All Your Love on Me.,high
+abba-supertrouper,eurodisco,some tracks; secondary taxonomy,S-G|S-L,"Euro-Disco album tagging, but reviewer explicitly warns dance sound limited to tracks.",medium
+abba-supertrouper,synthpop,some tracks,S-CP|S-C2|S-O,"Classic Pop explicitly calls parts synth-pop, especially Me and I; official notes electro-dance on Lay.",high
+abba-supertrouper,schlager,some tracks,S-CP|S-G,Classic Pop notes schlager material on Andante Andante; secondary album taxonomy agrees.,medium
+abba-supertrouper,rock,some tracks,S-M|S-CP,Critic calls On and On and On a Beach Boys-inspired rocker.,high
+abba-supertrouper,electrodisco,single-track texture,S-O|S-L|S-CP,"Lay All Your Love on Me combines dance/disco with electronic synthesis; track-specific, not universal.",medium
+abba-supertrouper,folk,folk-derived track texture,S-B|S-CP,The Piper is medieval/folk-inspired rather than indicating an album dominated by folk.,medium
