@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+sia-onlysee,OnlySee,1997,studio,no,yes,New early studio album; add canonical title/year and use exact id.
+sia-healingisdifficult,Healing Is Difficult,2001,studio,no,yes,New early studio album; add canonical title/year and use exact id.
+sia-colourthesmallone,Colour the Small One,2004,studio,yes,no,Existing catalogue exact title/year verified on descriptors branch
+sia-somepeoplehaverealproblems,Some People Have Real Problems,2008,studio,yes,no,Existing catalogue exact title/year verified on descriptors branch

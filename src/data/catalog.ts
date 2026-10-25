@@ -42,7 +42,7 @@ const ROWS: Row[] = [
   ['samsmith', 'Sam Smith', '#d98aa8', 'From lonely hours to Gloria', [['In the Lonely Hour', 2014], ['The Thrill of It All', 2017], ['Love Goes', 2020], ['Gloria', 2023]]],
   ['selena', 'Selena Gomez', '#c77dba', 'Soft pop, real stories', [['Stars Dance', 2013], ['Revival', 2015], ['Rare', 2020], ['I Said I Love You First', 2025]]],
   ['shawn', 'Shawn Mendes', '#5d8fb5', 'Guitar pop and big singalongs', [['Handwritten', 2015], ['Illuminate', 2016], ['Shawn Mendes', 2018], ['Wonder', 2020], ['Shawn', 2024]]],
-  ['sia', 'Sia', '#e8c547', 'Huge hooks behind the wig', [['Colour the Small One', 2004], ['Some People Have Real Problems', 2008], ['We Are Born', 2010], ['1000 Forms of Fear', 2014], ['This Is Acting', 2016], ['Reasonable Woman', 2024]]],
+  ['sia', 'Sia', '#e8c547', 'Huge hooks behind the wig', [['OnlySee', 1997], ['Healing Is Difficult', 2001], ['Colour the Small One', 2004], ['Some People Have Real Problems', 2008], ['We Are Born', 2010], ['1000 Forms of Fear', 2014], ['This Is Acting', 2016], ['Reasonable Woman', 2024]]],
   ['sigurros', 'Sigur Rós', '#7fa7b8', 'Glacial, bowed and beautiful', [['Ágætis byrjun', 1999], ['( )', 2002], ['Takk…', 2005], ['Með suð í eyrum við spilum endalaust', 2008], ['Átta', 2023]]],
   ['takethat', 'Take That', '#3f7fd1', 'Never forget the dance routines', [['Everything Changes', 1993], ['Nobody Else', 1995], ['Beautiful World', 2006], ['The Circus', 2008], ['Progress', 2010], ['This Life', 2023]]],
   ['tameimpala', 'Tame Impala', '#e07b39', 'Psychedelic grooves, endless reverb', [['Innerspeaker', 2010], ['Lonerism', 2012], ['Currents', 2015], ['The Slow Rush', 2020], ['Deadbeat', 2025]]],

@@ -1,0 +1,34 @@
+album_id,genre,source,scope,evidence_and_caveat,evidence_strength
+sia-onlysee,acidjazz,https://www.albumoftheyear.org/album/77262-sia-onlysee.php,whole album,Community genre metadata only; adjacent Crisp band context is not musical proof,low
+sia-onlysee,triphop,https://www.albumoftheyear.org/album/77262-sia-onlysee.php,whole album,Album community style classification; no detailed review of mix,low
+sia-onlysee,downtempo,https://www.albumoftheyear.org/album/77262-sia-onlysee.php,whole album,Catalog genre label rather than measured average tempo,low
+sia-onlysee,nusoul,https://www.albumoftheyear.org/album/77262-sia-onlysee.php,whole album,Neo-soul represented as permitted nusoul token,low
+sia-onlysee,songwriter,https://www.albumoftheyear.org/album/77262-sia-onlysee.php,whole album,Singer-songwriter metadata; not a claim all tracks are acoustic,low
+sia-onlysee,pop,https://www.theaudiodb.com/album/2139282-Sia-onlysee,whole album,Generic pop classification,low
+sia-healingisdifficult,rnb,https://gaffa.dk/anmeldelser/2001/oktober/events/sia-healing-is-difficult/,whole album,Described as R&B with jazz/funk grooves,high
+sia-healingisdifficult,soul,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,whole album,Soul inflection of album production and vocal delivery,high
+sia-healingisdifficult,triphop,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Taken for Granted,Chiming trip-hop identification for original single,high
+sia-healingisdifficult,downtempo,https://www.albumoftheyear.org/album/17158-sia-healing-is-difficult.php,whole album,Album genre catalogued as downtempo,medium
+sia-healingisdifficult,souljazz,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,whole album,Critic describes jazz-soul combinations throughout,medium
+sia-healingisdifficult,nusoul,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Insidiously,Acoustic nu-soul review; token normalized to nusoul,high
+sia-healingisdifficult,newjackswing,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Get Me,Critic explicitly identifies New Jack Swing beats,high
+sia-healingisdifficult,drumandbass,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Judge Me,Critic names drum-and-bass-tinged rhythmic passage,high
+sia-healingisdifficult,dub,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Fear,Dub-reggae sound as described; bass and fluttering flute,high
+sia-healingisdifficult,reggae,https://www.allmusic.com/album/healing-is-difficult-mw0000464188,some tracks: Fear,Dub-reggae blend on original song,high
+sia-healingisdifficult,jazz,https://gaffa.dk/anmeldelser/2001/oktober/events/sia-healing-is-difficult/,whole album,"Jazz-oriented sound, subordinate to R&B",high
+sia-healingisdifficult,funk,https://gaffa.dk/anmeldelser/2001/oktober/events/sia-healing-is-difficult/,some tracks / album texture,Danish review explicitly names jazz funk and heavy bass,medium
+sia-healingisdifficult,ukgarage,https://en.wikipedia.org/wiki/Healing_Is_Difficult,album taxonomy / remix caveat,"2-step garage listed for album, but famous Exemen Little Man version is a remix; not verified for all original tracks",low
+sia-colourthesmallone,downtempo,https://www.independent.com/2006/02/23/sia/,whole album,Low-key slow-burning acoustic trip-hop character,medium
+sia-colourthesmallone,triphop,https://www.independent.com/2006/02/23/sia/,whole album,Review explicitly calls collection soulful acoustic trip-hop,high
+sia-colourthesmallone,pop,https://record.club/releases/albums/sia-colour-the-small-one,whole album,Album categorized as pop,medium
+sia-colourthesmallone,indiepop,https://record.club/releases/albums/sia-colour-the-small-one,whole album,Indie pop catalog classification,low
+sia-colourthesmallone,soul,https://www.slantmagazine.com/music/sia-colour-the-small-one/,some tracks: The Church of What’s Happening Now,Slant review identifies soul character for Church,high
+sia-colourthesmallone,jazz,https://www.theguardian.com/music/2004/jan/02/popandrock.shopping,some tracks: Where I Belong; album affinity,Review explicitly describes jazzy treatment on Where I Belong,high
+sia-colourthesmallone,electronic,https://www.theguardian.com/music/2004/jan/02/popandrock.shopping,texture,"Electro-spacious production touches, not a fully electronic album",medium
+sia-somepeoplehaverealproblems,pop,https://pitchfork.com/reviews/albums/11158-some-people-have-real-problems/,whole album,Pitchfork classifies Pop/R&B,high
+sia-somepeoplehaverealproblems,rnb,https://pitchfork.com/reviews/albums/11158-some-people-have-real-problems/,some tracks / whole album influence,R&B passages and album-wide reviewer classification,high
+sia-somepeoplehaverealproblems,soul,https://www.theguardian.com/music/2008/jan/04/popandrock.shopping5,whole album,Soul-inflected arrangements acknowledged by critic,high
+sia-somepeoplehaverealproblems,indiepop,https://music.apple.com/us/album/some-people-have-real-problems/1648620567,some tracks: Academia,Apple album commentary explicitly calls Academia indie pop,high
+sia-somepeoplehaverealproblems,orchestralpop,https://music.mxdwn.com/2008/01/08/reviews/sia-some-people-have-real-problems/,some tracks,Critic describes orchestral-pop derivatives and ballad arrangements,medium
+sia-somepeoplehaverealproblems,easylistening,https://pitchfork.com/reviews/albums/11158-some-people-have-real-problems/,whole album,Reviewer frames album as easy-listening with many ballads,high
+sia-somepeoplehaverealproblems,ballad,https://www.sfgate.com/music/article/CD-REVIEWS-SIA-Pop-3296714.php,some tracks: Lentil; You Have Been Loved,Critic singles out powerful ballads,high
