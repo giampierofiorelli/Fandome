@@ -1,0 +1,4 @@
+﻿album_id,artist_id,title,year,type,catalog_status,catalog_existing_id,action,original_release_credit,evidence_url
+katyperry-witness,katyperry,Witness,2017,studio,already_in_catalog,katyperry-witness,preserve_existing,Katy Perry,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+katyperry-smile,katyperry,Smile,2020,studio,already_in_catalog,katyperry-smile,preserve_existing,Katy Perry,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+katyperry-143,katyperry,143,2024,studio,already_in_catalog,katyperry-143,preserve_existing,Katy Perry,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
