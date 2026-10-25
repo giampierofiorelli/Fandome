@@ -1,0 +1,35 @@
+album_id,genre,source,scope,reason,evidence_strength
+sia-weareborn,pop,https://pitchfork.com/reviews/albums/14296-we-are-born/,whole album,"Fast-paced guitar-forward pop, distinct from earlier slow work.",high
+sia-weareborn,poprock,https://pitchfork.com/reviews/albums/14296-we-are-born/,some tracks,Nick Valensi electric guitar is central on The Fight / Big Girl Little Girl and elsewhere.,high
+sia-weareborn,dancepop,https://www.slantmagazine.com/music/sia-we-are-born/,some tracks,Dancefloor-oriented Clap Your Hands and You Have Changed.,high
+sia-weareborn,disco,https://www.slantmagazine.com/music/sia-we-are-born/,some tracks,Review explicitly identifies disco-infused pop across the more upbeat songs.,high
+sia-weareborn,funk,https://www.slantmagazine.com/music/sia-we-are-born/,some tracks,You Have Changed recast with funk rhythm section; other pop tracks use funk.,high
+sia-weareborn,rnb,https://www.slantmagazine.com/music/sia-we-are-born/,some tracks,Be Good to Me explicitly described as R&B-styled.,high
+sia-weareborn,soul,https://www.slantmagazine.com/music/sia-we-are-born/,texture,Ragged soulful delivery on Be Good to Me; NOT a claim of all tracks soul.,high
+sia-weareborn,ballad,https://pitchfork.com/reviews/albums/14296-we-are-born/,some tracks,Im in Here and stripped-back Oh Father are subdued compared with hits.,high
+sia-weareborn,waltz,https://pitchfork.com/reviews/albums/14296-we-are-born/,some tracks,Pitchfork specifically calls Be Good to Me waltzing; limited-track dance form.,high
+sia-1000formsoffear,pop,https://time.com/2965568/sia-1000-forms-of-fear-review/,whole album,Tightly structured mainstream pop power-anthem construction.,high
+sia-1000formsoffear,electropop,https://www.albumoftheyear.org/album/15682-sia-1000-forms-of-fear.php,whole album,Album-level genre index explicitly names electropop; track arrangements are hybrid.,high
+sia-1000formsoffear,altpop,https://www.albumoftheyear.org/album/15682-sia-1000-forms-of-fear.php,whole album,Album-level alt-pop tag; not evidence every track is eccentric.,high
+sia-1000formsoffear,artpop,https://www.albumoftheyear.org/album/15682-sia-1000-forms-of-fear.php,whole album,Genre index uses Art Pop at secondary importance; critically debated.,high
+sia-1000formsoffear,rnb,https://www.albumoftheyear.org/album/15682-sia-1000-forms-of-fear.php,some tracks,Genre metadata includes alternative and contemporary R&B traces.,high
+sia-1000formsoffear,contemporaryrnb,https://www.albumoftheyear.org/album/15682-sia-1000-forms-of-fear.php,some tracks,Album genre metadata explicitly includes Contemporary R&B.,high
+sia-1000formsoffear,poprock,https://musicbrainz.org/release/7cea2b50-e8a5-464c-bd22-49ff11ef3ae9,some tracks,Hostage has Nick Valensi guitars and forceful rock pulse; specific track rather than whole.,high
+sia-1000formsoffear,ballad,https://musicbrainz.org/release/7cea2b50-e8a5-464c-bd22-49ff11ef3ae9,some tracks,Eye of the Needle and Big Girls Cry are piano-led slower songs; music reviews discuss ballads.,high
+sia-1000formsoffear,newwave,https://musicbrainz.org/release/7cea2b50-e8a5-464c-bd22-49ff11ef3ae9,texture,Hostage guitar/pulse is described as new-wave-like in a secondary music analysis; hold for validation.,low
+sia-thisisacting,pop,https://music.apple.com/us/album/this-is-acting/1055074478,whole album,Apple Music officially files the standard album under Pop.,high
+sia-thisisacting,rnb,https://www.allmusic.com/album/this-is-acting-mw0002894912,some tracks,AllMusic explicitly identifies Sweet Design as hard-hitting R&B.,high
+sia-thisisacting,dancepop,https://pitchfork.com/reviews/albums/21481-this-is-acting/,some tracks,Move Your Body and Sweet Design presented as festival/party-oriented pop bangers.,high
+sia-thisisacting,poprock,https://www.metacritic.com/music/this-is-acting/sia/details,whole album,Metacritic album style Pop/Rock.,high
+sia-thisisacting,adultalternativepoprock,https://www.metacritic.com/music/this-is-acting/sia/details,whole album,Metacritic explicitly labels Adult Alternative Pop/Rock.,high
+sia-thisisacting,alternativerock,https://www.metacritic.com/music/this-is-acting/sia/details,texture,"Metacritic broad Alternative/Indie Rock label, not verified as a dominant guitar genre.",medium
+sia-thisisacting,leftfieldpop,https://www.metacritic.com/music/this-is-acting/sia/details,whole album,Metacritic includes Left-Field Pop as stylistic category.,high
+sia-thisisacting,reggae,https://www.allmusic.com/album/this-is-acting-mw0002894912,some tracks,Cheap Thrills has spare reggae-tinged rhythm; reggae influence not full reggae album.,high
+sia-thisisacting,ballad,https://www.allmusic.com/album/this-is-acting-mw0002894912,some tracks,"Bird Set Free, Alive, One Million Bullets and Space Between foreground slower anthems.",high
+sia-everydayischristmas,christmas,https://www.metacritic.com/music/everyday-is-christmas/sia/details,whole album,"All ten tracks are original holiday songs, released as Christmas album.",high
+sia-everydayischristmas,pop,https://www.metacritic.com/music/everyday-is-christmas/sia/details,whole album,Holiday-oriented mainstream pop arrangements; the record is catalogued Pop/Rock.,high
+sia-everydayischristmas,poprock,https://www.metacritic.com/music/everyday-is-christmas/sia/details,whole album,Metacritic gives Pop/Rock label; production bridges pop and retro pop-band arrangements.,high
+sia-everydayischristmas,ballad,https://www.timeout.com/music/sia-everyday-is-christmas-album-review,some tracks,Underneath the Mistletoe and Underneath the Christmas Lights described as ballads.,high
+sia-everydayischristmas,calypsopop,https://www.timeout.com/music/sia-everyday-is-christmas-album-review,texture,"Santa Coming for Us uses calypso-like melody; editorial token mapping, not entire-song calypso.",medium
+sia-everydayischristmas,boogiewoogie,https://www.timeout.com/music/sia-everyday-is-christmas-album-review,texture,Barroom piano boogie identified in Santa Coming for Us; piano texture not album-wide.,medium
+sia-everydayischristmas,blues,https://music.apple.com/us/album/everyday-is-christmas-deluxe/1440098012,texture,Apple Music specifically calls Snowman bluesy; arrangement of one track only.,medium

@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,exists_in_descriptors,action,catalog_check
+sia-weareborn,We Are Born,2010,studio,yes,no,add descriptor row only,Existing catalog.ts album uses same slug/id
+sia-1000formsoffear,1000 Forms of Fear,2014,studio,yes,no,add descriptor row only,Existing catalog.ts album uses same slug/id
+sia-thisisacting,This Is Acting,2016,studio,yes,no,add descriptor row only,Existing catalog.ts album uses same slug/id
+sia-everydayischristmas,Everyday Is Christmas,2017,studio,yes,no,add descriptor row only,Existing catalog.ts album uses same slug/id
