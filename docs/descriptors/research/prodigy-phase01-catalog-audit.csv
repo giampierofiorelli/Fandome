@@ -1,0 +1,5 @@
+album_id,artist_id,artist,title,year,type,artist_catalogue_status,album_catalogue_status,descriptor_status,phase,action,notes
+prodigy-experience,prodigy,The Prodigy,Experience,1992,studio,missing_add_artist,missing_add_album,not_present,01,Create artist and album record; preserve phase-only rows,New studio album; import after adding artist
+prodigy-musicforthejiltedgeneration,prodigy,The Prodigy,Music for the Jilted Generation,1994,studio,missing_add_artist,missing_add_album,not_present,01,Create artist and album record; preserve phase-only rows,New studio album; import after adding artist
+prodigy-thefatoftheland,prodigy,The Prodigy,The Fat of the Land,1997,studio,missing_add_artist,missing_add_album,not_present,01,Create artist and album record; preserve phase-only rows,New studio album; import after adding artist
+prodigy-prodigypresentthedirtchambersessionsvolumeone,prodigy,The Prodigy,Prodigy Present: The Dirtchamber Sessions Volume One,1999,compilation,missing_add_artist,missing_add_album,not_present,01,Create artist and album record; preserve phase-only rows,DJ mix by Liam Howlett; original attribution Prodigy Present
