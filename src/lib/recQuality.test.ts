@@ -7,7 +7,7 @@ describe('suggestion quality', () => {
   it('reaches the long tail, not only a few hits', () => {
     expect(q.coverage).toBeGreaterThanOrEqual(0.7)
     // Almost every artist is suggested somewhere. Not all: the first artist of a style the catalogue lacks
-    // (Enya, the only Celtic/new age artist so far) rightly gets no match until a neighbour is described.
+    // (as Enya was before Enigma) rightly gets no match until a neighbour is described.
     expect(q.artistCoverage).toBeGreaterThanOrEqual(0.95)
     expect(q.topShare).toBeLessThanOrEqual(0.15)
     // An empty list is allowed (no suggestion beats a bad one). Empty lists come from catalogue gaps

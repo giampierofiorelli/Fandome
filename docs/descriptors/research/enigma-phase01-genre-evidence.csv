@@ -1,0 +1,37 @@
+album_id,genre,source,source_url,scope,evidence
+enigma-mcmxcad,newage,AllMusic,https://www.allmusic.com/album/mw0000320825,whole album,Primary AllMusic genre
+enigma-mcmxcad,electronic,AllMusic,https://www.allmusic.com/album/mw0000320825,whole album,Primary AllMusic genre
+enigma-mcmxcad,ambient,AllMusic,https://www.allmusic.com/album/mw0000320825,whole album,AllMusic style
+enigma-mcmxcad,downtempo,Musicbase,https://musicbase.net/mcmxc-a-d,whole album,Record style designation
+enigma-mcmxcad,ethnicfusion,AllMusic,https://www.allmusic.com/album/mw0000320825,whole album,"AllMusic style, chants in electronic arrangements"
+enigma-mcmxcad,dance,AllMusic,https://www.allmusic.com/album/mw0000320825,some tracks,"Club/dance style, most evident in Sadeness and Mea Culpa"
+enigma-mcmxcad,worldbeat,Enigma retrospective music history,https://www.sasktalent.com/resources/history-of-electronic-music/enigma.html,whole album,Description of debut crossing world music and electronic
+enigma-mcmxcad,hiphop,Enigma official narrative,https://www.enigmaspace.com/music/mcmxc-ad/,texture,"Hip-hop rhythmic foundation, not a rap record"
+enigma-mcmxcad,eurodisco,AllMusic Ned Raggett,https://www.allmusic.com/album/mw0000320825,texture,Reviewer says crossover between Euro-disco and new age
+enigma-mcmxcad,pop,Enigma official Bandcamp,https://enigmamusic.bandcamp.com/album/mcmxc-a-d,some tracks,Low-weight storefront tag; accessible crossover arrangements
+enigma-thecrossofchanges,newage,AllMusic,https://www.allmusic.com/album/the-cross-of-changes-mw0000107958,whole album,Primary AllMusic genre
+enigma-thecrossofchanges,electronic,AllMusic,https://www.allmusic.com/album/the-cross-of-changes-mw0000107958,whole album,Primary AllMusic genre
+enigma-thecrossofchanges,ethnicfusion,AllMusic,https://www.allmusic.com/album/the-cross-of-changes-mw0000107958,whole album,AllMusic album style
+enigma-thecrossofchanges,worldbeat,Enigma official retrospective,https://www.enigmaspace.com/music/le-roi-est-mort-vive-le-roi/,whole album,Officially describes Cross of Changes worldbeat textures as predecessor
+enigma-thecrossofchanges,downtempo,Chartsurfer original EU listing,https://www.chartsurfer.de/artist/enigma/the-cross-of-changes-album_fruncn.html,whole album,Discography style tag
+enigma-thecrossofchanges,ambient,Chartsurfer original EU listing,https://www.chartsurfer.de/artist/enigma/the-cross-of-changes-album_fruncn.html,whole album,Discography style tag
+enigma-thecrossofchanges,dance,AllMusic,https://www.allmusic.com/album/the-cross-of-changes-mw0000107958,some tracks,Club/dance classification; rhythmic tracks
+enigma-thecrossofchanges,rock,Michael Cretu at official album page,https://www.enigmaspace.com/music/the-cross-of-changes/,texture,"70s rock loops, including sampled Robert Plant/Bonham and guitar passages; album remains electronic"
+enigma-leroiestmortviveleroi,newage,AllMusic,https://www.allmusic.com/album/mw0000425689,whole album,Primary AllMusic genre
+enigma-leroiestmortviveleroi,electronic,AllMusic,https://www.allmusic.com/album/mw0000425689,whole album,Primary AllMusic genre
+enigma-leroiestmortviveleroi,ambient,AllMusic,https://www.allmusic.com/album/mw0000425689,whole album,AllMusic album style
+enigma-leroiestmortviveleroi,ethnicfusion,AllMusic,https://www.allmusic.com/album/mw0000425689,whole album,AllMusic ethnic fusion style; Mongolia sample
+enigma-leroiestmortviveleroi,downtempo,Enigma official Bandcamp,https://enigmamusic.bandcamp.com/album/le-roi-est-mort-vive-le-roi,whole album,Storefront album tag; lower confidence
+enigma-leroiestmortviveleroi,dance,AllMusic,https://www.allmusic.com/album/mw0000425689,some tracks,"Club/dance classification, not sustained dance-floor album"
+enigma-leroiestmortviveleroi,worldbeat,Enigma official retrospective,https://www.enigmaspace.com/music/le-roi-est-mort-vive-le-roi/,texture,Official worldbeat/ethnic elements of its predecessor are carried forward
+enigma-leroiestmortviveleroi,ambientpop,MusicBrainz community album tags,https://musicbrainz.org/release-group/6e58ca05-c84f-38b8-b71d-5ba1296b1049,some tracks,"User-supplied album tag; treat as tentative, not critic consensus"
+enigma-leroiestmortviveleroi,pop,Qobuz label metadata,https://www.qobuz.com/fr-fr/album/le-roi-est-mort-vive-le-roi-enigma/0724384206550,some tracks,Broad licensed storefront genre
+enigma-leroiestmortviveleroi,trance,MusicBrainz community album tags,https://musicbrainz.org/release-group/6e58ca05-c84f-38b8-b71d-5ba1296b1049,texture,Low-weight community album tag; weaker than ambient/new age evidence
+enigma-thescreenbehindthemirror,newage,AllMusic,https://www.allmusic.com/album/the-screen-behind-the-mirror-mw0000670919,whole album,Primary AllMusic genre
+enigma-thescreenbehindthemirror,electronic,Chartsurfer original release metadata,https://www.chartsurfer.de/artist/enigma/the-screen-behind-the-mirror-album_frfrgf.html,whole album,Album genre
+enigma-thescreenbehindthemirror,ambient,AllMusic,https://www.allmusic.com/album/the-screen-behind-the-mirror-mw0000670919,whole album,AllMusic album style
+enigma-thescreenbehindthemirror,downtempo,Chartsurfer original release metadata,https://www.chartsurfer.de/artist/enigma/the-screen-behind-the-mirror-album_frfrgf.html,whole album,Album style
+enigma-thescreenbehindthemirror,ethnicfusion,AllMusic,https://www.allmusic.com/album/the-screen-behind-the-mirror-mw0000670919,whole album,AllMusic album style
+enigma-thescreenbehindthemirror,worldmusic,AllMusic Heather Phares,https://www.allmusic.com/album/the-screen-behind-the-mirror-mw0000670919,texture,World-music instruments and voices named in review
+enigma-thescreenbehindthemirror,dance,AllMusic Heather Phares,https://www.allmusic.com/album/the-screen-behind-the-mirror-mw0000670919,some tracks,"Dance rhythms explicitly identified, but album includes atmospheric passages"
+enigma-thescreenbehindthemirror,classical,Enigma official Cretu interview,https://www.enigmaspace.com/music/the-screen-behind-the-mirror/,texture,"The Carl Orff classical source is sampled in a subset of tracks, not entire classical pieces"

@@ -1,0 +1,5 @@
+album_id,artist_id,artist_in_catalog,album_in_catalog,existing_descriptor,action,title,year,type,verification
+enigma-mcmxcad,enigma,no,no,no,add artist to catalog/seed; add studio album after artist,MCMXC a.D.,1990,studio,"GitHub descriptors branch: src/data/catalog.ts, src/data/seed.ts and docs/descriptors/enigma.csv (404)"
+enigma-thecrossofchanges,enigma,no,no,no,add artist to catalog/seed; add studio album after artist,The Cross of Changes,1993,studio,"GitHub descriptors branch: src/data/catalog.ts, src/data/seed.ts and docs/descriptors/enigma.csv (404)"
+enigma-leroiestmortviveleroi,enigma,no,no,no,add artist to catalog/seed; add studio album after artist,"Le Roi Est Mort, Vive Le Roi!",1996,studio,"GitHub descriptors branch: src/data/catalog.ts, src/data/seed.ts and docs/descriptors/enigma.csv (404)"
+enigma-thescreenbehindthemirror,enigma,no,no,no,add artist to catalog/seed; add studio album after artist,The Screen Behind the Mirror,2000,studio,"GitHub descriptors branch: src/data/catalog.ts, src/data/seed.ts and docs/descriptors/enigma.csv (404)"
