@@ -1,0 +1,62 @@
+album_id,genre,source,url,scope,evidence
+moby-animalrights,alternativerock,animal_charts,https://www.chartsurfer.de/artist/moby/animal-rights-album_fhcreg.html,whole album,Pressing lists alternative rock; mainstream rock writing foregrounds guitar songs.
+moby-animalrights,industrial,animal_la,https://www.latimes.com/archives/la-xpm-1997-02-09-ca-26856-story.html,whole album,Review explicitly calls its dominant guitars industrial-punk.
+moby-animalrights,punkrock,animal_apple,https://music.apple.com/us/album/animal-rights/1556827442,whole album,Editorial overview frames album as a punk-rooted guitar record.
+moby-animalrights,posthardcore,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,whole album,AllMusic explicitly assigns post-hardcore.
+moby-animalrights,rock,animal_la,https://www.latimes.com/archives/la-xpm-1997-02-09-ca-26856-story.html,whole album,The critic specifically calls the pivot a rock album.
+moby-animalrights,punk,animal_charts,https://www.chartsurfer.de/artist/moby/animal-rights-album_fhcreg.html,whole album,Original European issue genre/style credits punk.
+moby-animalrights,alternativepoprock,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,whole album,AllMusic explicitly assigns alternative pop/rock.
+moby-animalrights,alternativeindierock,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,whole album,AllMusic explicitly assigns alternative/indie rock; keep distinct from alternative pop/rock.
+moby-animalrights,ambient,animal_charts,https://www.chartsurfer.de/artist/moby/animal-rights-album_fhcreg.html,some tracks,Limited edition lists ambient; violin-led intro and quieter pieces contrast guitar album.
+moby-animalrights,ambienttechno,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,some tracks,AllMusic explicitly assigns ambient techno; secondary to the aggressive rock majority.
+moby-animalrights,electronica,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,some tracks,AllMusic style tag persists despite rock-oriented majority.
+moby-animalrights,electronic,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,some tracks,AllMusic broad genre electronic; little of the disc is straightforward dance music.
+moby-animalrights,clubdance,animal_all,https://www.allmusic.com/album/animal-rights-mw0000180003,some tracks,AllMusic assigns club/dance among styles; weak fit to main rock program.
+moby-animalrights,grunge,animal_wp,https://www.washingtonpost.com/archive/lifestyle/style/1997/02/02/plain-old-common-synth/4134ce3e-53c4-4c69-a7e9-12d73abd7b16/,some tracks,Contemporary critic describes several songs as techno-grunge.
+moby-play,electronica,play_all,https://www.allmusic.com/album/play-mw0000243891/,whole album,AllMusic identifies the electronic crossover as electronica.
+moby-play,downtempo,play_all,https://www.allmusic.com/album/play-mw0000243891/,whole album,AllMusic styles list downtempo; much material is gentle mid-to-slow.
+moby-play,electronic,play_all,https://www.allmusic.com/album/play-mw0000243891/,whole album,AllMusic broad electronic genre.
+moby-play,ambienttechno,play_all,https://www.allmusic.com/album/play-mw0000243891/,whole album,AllMusic explicitly assigns ambient techno.
+moby-play,breakbeat,play_sos,https://www.soundonsound.com/people/moby-recording-mobys-why-does-my-heart-feel-so-bad,some tracks,Technical breakdown documents a sampled hip-hop breakbeat in Why Does My Heart Feel So Bad.
+moby-play,techno,play_all,https://www.allmusic.com/album/play-mw0000243891/,some tracks,Review identifies breakbeat techno plus reflective techno.
+moby-play,bigbeat,play_all,https://www.allmusic.com/album/play-mw0000243891/,some tracks,Review identifies Bodyrock as big-beat; avoid applying its punch to entire album.
+moby-play,hiphop,play_la,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42375-story.html,some tracks,LA Times calls out album hip-hop styles and vintage source integration.
+moby-play,blues,play_la,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42375-story.html,texture,Blues-derived sampled singers and archived musical fragments.
+moby-play,gospel,play_sos,https://www.soundonsound.com/people/moby-recording-mobys-why-does-my-heart-feel-so-bad,texture,Direct interview details the archival gospel choir vocal and other gospel sample sources.
+moby-play,soul,play_la,https://www.latimes.com/archives/la-xpm-1999-may-30-ca-42375-story.html,texture,Electro-soul characterization of material built on older vocal records.
+moby-play,pop,play_all,https://www.allmusic.com/album/play-mw0000243891/,some tracks,AllMusic calls South Side a pop song and highlights vocal-based tracks.
+moby-play,alternativepoprock,play_all,https://www.allmusic.com/album/play-mw0000243891/,some tracks,AllMusic style explicitly lists alternative pop/rock.
+moby-play,industrial,play_musicradar,https://www.musicradar.com/artists/moby-play-rep,some tracks,Retrospective article notes industrial elements in diverse album; secondary and subtle.
+moby-18,electronica,18_all,https://www.allmusic.com/album/18-mw0000219218,whole album,AllMusic album style electronica.
+moby-18,downtempo,18_all,https://www.allmusic.com/album/18-mw0000219218,whole album,AllMusic style downtempo; characteristic measured and quiet tracks.
+moby-18,electronic,18_all,https://www.allmusic.com/album/18-mw0000219218,whole album,AllMusic electronic broad genre.
+moby-18,ambienttechno,18_all,https://www.allmusic.com/album/18-mw0000219218,whole album,AllMusic explicitly assigns ambient techno.
+moby-18,pop,18_all,https://www.allmusic.com/album/18-mw0000219218,some tracks,Review describes melodic pop and soul songs.
+moby-18,soul,18_all,https://www.allmusic.com/album/18-mw0000219218,some tracks,Soul vocal arrangements and singer-led songs noted in AllMusic review.
+moby-18,gospel,18_pitch,https://pitchfork.com/reviews/albums/5348-18/,some tracks,Contemporary review discusses gospel samples and choir vocals.
+moby-18,ambient,18_chron,https://www.chron.com/entertainment/music/article/18-by-Moby-2058582.php,some tracks,Contemporary review identifies ambient instrumental passages.
+moby-18,hiphop,18_pitch,https://pitchfork.com/reviews/albums/5348-18/,some tracks,Jam for the Ladies is explicitly described as hip-hop.
+moby-18,synthpop,18_chron,https://www.chron.com/entertainment/music/article/18-by-Moby-2058582.php,some tracks,Reviewer describes opener as synth-pop in a disco/glam combination.
+moby-18,disco,18_chron,https://www.chron.com/entertainment/music/article/18-by-Moby-2058582.php,some tracks,Disco element documented for We Are All Made Of Stars.
+moby-18,alternativeindierock,18_all,https://www.allmusic.com/album/18-mw0000219218,some tracks,AllMusic labels alternative/indie rock; Great Escape is specific example.
+moby-18,rock,18_pitch,https://pitchfork.com/reviews/albums/5348-18/,some tracks,Pitchfork describes Great Escape as indie rock.
+moby-hotel,alternativepoprock,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,whole album,AllMusic broad alternative pop/rock and accessible rock song structures.
+moby-hotel,adultalternativepoprock,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,whole album,AllMusic explicitly assigns adult alternative pop/rock.
+moby-hotel,alternativerock,hotel_independent,https://www.the-independent.com/arts-entertainment/music/reviews/album-moby-527917.html,some tracks,Electric guitar rock songs and expanded band-like pop-rock arrangements.
+moby-hotel,alternativeindierock,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,whole album,AllMusic explicitly assigns alternative/indie rock.
+moby-hotel,rock,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,whole album,AllMusic highlights numerous modern rock songs in the main disc.
+moby-hotel,downtempo,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,some tracks,AllMusic explicitly assigns downtempo; slower electronic songs.
+moby-hotel,electronic,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,whole album,AllMusic genre electronic despite more live instruments.
+moby-hotel,electronica,hotel_seattle,https://www.seattlepi.com/entertainment/music/article/check-into-moby-s-hotel-for-top-floor-1172017.php,some tracks,"Contemporary Seattle critic names album within electronica, though rock songwriting is prominent."
+moby-hotel,ambienttechno,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,some tracks,AllMusic label includes ambient techno; bonus Ambient is a separate disc.
+moby-hotel,ambient,hotel_all,https://www.allmusic.com/album/hotel-mw0000700511,some tracks,Ambient intros/outros noted; major ambient suite belongs to bonus CD.
+moby-hotel,pop,hotel_guardian,https://www.theguardian.com/music/2005/mar/11/popandrock.shopping,some tracks,Accessible melodic vocal pop songs across the album.
+moby-hotel,synthpop,hotel_wp,https://www.washingtonpost.com/archive/lifestyle/2005/03/23/mobys-new-structure/a4f3e7b4-3450-4f51-8249-9b0c5f6e0d26/,some tracks,Washington Post explicitly describes the record as synth-pop.
+moby-hotel,disco,hotel_mail,https://mg.co.za/friday/2005-05-27-check-in-with-moby/,some tracks,Contemporary review explicitly describes Very as having a disco beat.
+moby-hotel,newwave,hotel_wp,https://www.washingtonpost.com/archive/lifestyle/2005/03/23/mobys-new-structure/a4f3e7b4-3450-4f51-8249-9b0c5f6e0d26/,some tracks,Washington Post identifies new-wave icons and chilly era influences as album context; AllMusic disagrees.
+moby-hotel,postpunk,hotel_westzeit,https://www.westzeit.de/interviews/?id=556,some tracks,Temptation cover and claimed post-punk influence; disputed sonic correspondence in AllMusic.
+moby-hotel,electroclash,hotel_wp,https://www.washingtonpost.com/archive/lifestyle/2005/03/23/mobys-new-structure/a4f3e7b4-3450-4f51-8249-9b0c5f6e0d26/,some tracks,Washington Post contrasts electro-clash traits with Moby clearer production; a secondary comparison.
+moby-hotel,dancerock,hotel_wp,https://www.washingtonpost.com/archive/lifestyle/2005/03/23/mobys-new-structure/a4f3e7b4-3450-4f51-8249-9b0c5f6e0d26/,some tracks,Washington Post expressly calls the album capable of passing for dance-rock.
+moby-hotel,triphop,hotel_mail,https://mg.co.za/friday/2005-05-27-check-in-with-moby/,some tracks,Mail & Guardian describes I Like It as having a touch of 1990s trip-hop.
+moby-hotel,chillout,hotel_guardian,https://www.theguardian.com/music/2005/mar/11/popandrock.shopping,some tracks,Guardian describes the Temptation remake in chill-out style.
+moby-hotel,blues,hotel_independent,https://www.the-independent.com/arts-entertainment/music/reviews/album-moby-527917.html,texture,Independent documents gritty blues guitar riffs on Beautiful.

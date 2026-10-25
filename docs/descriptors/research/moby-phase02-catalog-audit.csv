@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,in_catalog,existing_catalog_id,existing_descriptor,catalog_action,co_billed,notes
+moby-animalrights,moby,Animal Rights,1996,studio,yes,moby-animalrights,no,keep existing entry; append descriptor only,no,Artist already in catalogue; current docs/descriptors/moby.csv absent at GitHub check.
+moby-play,moby,Play,1999,studio,yes,moby-play,no,keep existing entry; append descriptor only,no,Artist already in catalogue; current docs/descriptors/moby.csv absent at GitHub check.
+moby-18,moby,18,2002,studio,yes,moby-18,no,keep existing entry; append descriptor only,no,Artist already in catalogue; current docs/descriptors/moby.csv absent at GitHub check.
+moby-hotel,moby,Hotel,2005,studio,yes,moby-hotel,no,keep existing entry; append descriptor only,no,Artist already in catalogue; current docs/descriptors/moby.csv absent at GitHub check.
