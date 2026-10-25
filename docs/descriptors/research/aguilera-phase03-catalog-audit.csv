@@ -1,0 +1,4 @@
+album_id,artist_id,artist,title,year,type,in_catalog,action,catalogue_entry,notes
+aguilera-lotus,aguilera,Christina Aguilera,Lotus,2012,studio,no,add catalogue entry under aguilera,"['Lotus', 2012]",Lotus missing from catalog.ts; descriptor row added only by Claude after catalogue update.
+aguilera-liberation,aguilera,Christina Aguilera,Liberation,2018,studio,yes,retain existing catalogue ID,"['Liberation', 2018]",Catalog.ts descriptors branch verified 25 Oct 2026; use supplied ID.
+aguilera-aguilera,aguilera,Christina Aguilera,Aguilera,2022,studio,yes,retain existing catalogue ID,"['Aguilera', 2022]",Catalog.ts descriptors branch verified 25 Oct 2026; use supplied ID.
