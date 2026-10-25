@@ -1,0 +1,39 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+rihanna-loud,Official artist album page,primary_discography,https://www.rihannanow.com/music/loud/,Release date and original 11-song listing,high
+rihanna-loud,Official track-list announcement,primary_discography,https://www.rihannanow.com/news/loud-official-track-list/,Original 11-song running order,high
+rihanna-loud,Qobuz label-delivered credits,credited_metadata,https://www.qobuz.com/us-en/album/loud-rihanna/0060252782934,Track-level production roles; sampled composition contributors,high
+rihanna-loud,MusicBrainz release credits,discographic_database,https://musicbrainz.org/release/ffd98bb7-f0f6-45d4-a79b-0a72ba545512,Per-track instrument and role tags; distinguish generic instruments from specific instruments,medium
+rihanna-loud,Apple Music album editorial,editorial,https://music.apple.com/us/album/loud/1442286224,R&B/trip-hop Skin; dancehall Whats My Name; reggae Man Down; acoustic and piano ballads,high
+rihanna-loud,Ryan Dombal / Pitchfork 2010-11-24,criticism,https://pitchfork.com/reviews/albums/14897-loud/,Genre/rhythm diversity; pop versus reggae and near-dubstep Skin; moods,high
+rihanna-loud,Sal Cinquemani / Slant Magazine 2010,criticism,https://www.slantmagazine.com/music/rihanna-loud/,"Caribbean dance-pop, reggae, acoustic ballad, Avril Lavigne sampling",high
+rihanna-loud,Andy Kellman / AllMusic,criticism,https://www.allmusic.com/album/mw0002049029,Dance-pop / EDM and contemporary R&B category; album less stylistically focused,medium
+rihanna-talkthattalk,Official artist album page,primary_discography,https://www.rihannanow.com/music/talk-that-talk/,Original 11 tracks and 2011 release date,high
+rihanna-talkthattalk,Qobuz label-delivered track credits,credited_metadata,https://www.qobuz.com/us-en/album/talk-that-talk-rihanna/wx1t52qwwcfaa,"Dr Luke, Cirkut, Calvin Harris, Stargate, Kuk Harrell and other credited producer roles",high
+rihanna-talkthattalk,MusicBrainz release credits,discographic_database,https://musicbrainz.org/release/d57dc480-94c7-442d-84b1-0bc57c5b357c,Track credited instrumentation; sampling provenance; producers,medium
+rihanna-talkthattalk,Michael Cragg / The Guardian 2011-11-11 first listen,criticism,https://www.theguardian.com/music/musicblog/2011/nov/11/first-listen-rihanna-album,"Original running order, production documented while touring, genres of each track",high
+rihanna-talkthattalk,Rebecca Nicholson / The Guardian 2011-11-17,criticism,https://www.theguardian.com/music/2011/nov/17/rihanna-talk-that-talk-review,"Synths, rave/electro production and xx sampling",high
+rihanna-talkthattalk,Morwenna Ferrier / The Observer 2011-11-19,criticism,https://www.theguardian.com/music/2011/nov/20/rihanna-talk-that-talk-review,Sexual subject matter and intensity,medium
+rihanna-talkthattalk,Washington Post 2011-11-18 album review,criticism,https://www.washingtonpost.com/lifestyle/style/talk-that-talk-by-rihanna/2011/11/18/gIQAIfc8iN_story.html,House on Where Have You Been; dubstep-inflected You Da One; Caribbean Watch n Learn,high
+rihanna-talkthattalk,Andy Kellman / AllMusic,criticism,https://www.allmusic.com/album/mw0002241043,"Cockiness beat, Drunk on Love sample, Watch n Learn instrumentation and tracks",high
+rihanna-talkthattalk,Apple Music album editorial,editorial,https://music.apple.com/us/album/talk-that-talk/1440758930,"Two dance anthems, guest vocals, ballads, xx sample, rock and Caribbean elements",high
+rihanna-unapologetic,Official artist album page,primary_discography,https://www.rihannanow.com/music/unapologetic/,Original 14 tracks and 2012 release,high
+rihanna-unapologetic,Official Rihanna Unapologetic track-by-track producer credits 2012-11-19,primary_credits,https://www.rihannanow.com/news/unapologetic-album-credits/,Exact credited producers and co-producers; excluded writers and mixers,high
+rihanna-unapologetic,Jessica Hopper / Pitchfork 2012-11-26,criticism,https://pitchfork.com/reviews/albums/17369-unapologetic/,Synth-pop versus piano ballad; Auto-Tune on Future feature; themes,high
+rihanna-unapologetic,Eric Henderson / Slant Magazine 2012-11-20,criticism,https://www.slantmagazine.com/music/rihanna-unapologetic/,Rave opener; slowed-down Loveeeeeee Song; dubstep Jump; electro-ragga No Love Allowed; disco groove,high
+rihanna-unapologetic,Alexis Petridis / The Guardian 2012-11-15,criticism,https://www.theguardian.com/music/2012/nov/15/rihanna-unapologetic-review,"Drumless reggae, warped textures, Nobody Business disco house",high
+rihanna-unapologetic,Jude Rogers / The Observer 2012-11-24,criticism,https://www.theguardian.com/music/2012/nov/25/rihanna-unapologetic-review,"Dubstep, strings on Get It Over With, Numb synth riff",high
+rihanna-unapologetic,James Reed / Boston Globe 2012-11-20,criticism,https://www.bostonglobe.com/arts/music/2012/11/20/review-rihanna-unapologetic/UgTykP59XzyCjxR6LzHnXN/story.html,Ballads versus bass-heavy club tracks; No Love Allowed / Stay,medium
+rihanna-unapologetic,Dan Martin / NME 2012-11-24 issue archive PDF,criticism,https://www.worldradiohistory.com/UK/New-Musical-Express/2012/NME-2012-11-24.pdf,"Avant pop and track differences: Jump, What Now, No Love Allowed",medium
+rihanna-unapologetic,Metacritic Unapologetic album genre metadata,genre_taxonomy,https://www.metacritic.com/music/unapologetic/rihanna/details,EDM and contemporary R&B album classification,medium
+rihanna-unapologetic,Metacritic archival review excerpts,review_aggregation,https://www.metacritic.com/music/unapologetic/rihanna,Contemporary critic split on album coherence and sonic ambition,medium
+rihanna-anti,Official Rihanna ANTI full album credits,primary_credits,https://www.rihannanow.com/music/anti/,"Exact credited producers, instruments, 13-track standard, vocal production; January 28 date",high
+rihanna-anti,MusicBrainz ANTI release track credits,discographic_database,https://musicbrainz.org/release/b8fdf8b5-45f6-4f1d-b7af-b7c28aff8ad8,Independent role cross-check and instrumental credits,medium
+rihanna-anti,Amanda Petrusich / Pitchfork 2016-02-01,criticism,https://pitchfork.com/reviews/albums/21540-anti/,"Vocal character, less club-focused arrangements, Work dancehall/dub, Higher",high
+rihanna-anti,Sal Cinquemani / Slant Magazine 2016-01-28,criticism,https://www.slantmagazine.com/music/rihanna-anti/,"90s distorted loop, alternative R&B, guitar songs, psychedelia, doo-wop",high
+rihanna-anti,SPIN 2016-02 ANTI review,criticism,https://www.spinmagazine.com/2016/02/review-rihanna-anti/,"80s synth-rock on Kiss It Better, Same Ol Mistakes recording choice",high
+rihanna-anti,Album of the Year album metadata,taxonomy,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,Alternative R&B; psychedelic soul; pop soul and art pop labels,medium
+rihanna-anti,Rolling Stone Australia Rihanna songs ranking,artist_quote,https://au.rollingstone.com/music/music-lists/rihann-30-greatest-songs-ranked-44893/sos-2006-44909/,Fred Ball says Love on the Brain meant as Prince and Al Green mixed with old-school soul,high
+rihanna-anti,Jayson Greene / Pitchfork Higher 2016-01-28,criticism,https://pitchfork.com/reviews/tracks/17947-rihanna-higher/,Higher soul and strings; extreme raspy delivery,high
+rihanna-anti,Sarah Rodman / Boston Globe 2016-01-28 ANTI review,criticism,https://www.bostonglobe.com/arts/music/2016/01/28/album-review-rihanna-anti/iDNsRThrxDIw7dc8N8STUN/story.html,Acoustic Never Ending; piano Close To You; soul falsetto shift,high
+rihanna-anti,Alexis Petridis / Guardian 2016-01-28 ANTI review,criticism,https://www.theguardian.com/music/2016/jan/28/rihanna-anti-album-review-brave-bold-and-confused,AOR guitar and electronic experimental R&B palette,medium
+rihanna-anti,Alexis Petridis / Guardian Rihanna songs 2021,criticism,https://www.theguardian.com/culture/2021/apr/01/rihannas-30-greatest-singles-ranked,Doo-wop and early-60s soul on Love on Brain; sampled track identification for older songs,high

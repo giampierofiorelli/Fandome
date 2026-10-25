@@ -1,0 +1,60 @@
+album_id,genre,source,scope,evidence_strength,tracks,evidence_note
+rihanna-loud,pop,https://pitchfork.com/reviews/albums/14897-loud/,whole album,high,General record,Album-level bright pop assessment
+rihanna-loud,rnb,https://music.apple.com/us/album/loud/1442286224,whole album,high,Fading; Skin; album,R&B is album-wide; highlighted in editorial song descriptions
+rihanna-loud,dancepop,https://www.allmusic.com/album/mw0002049029,some tracks,high,S&M; Only Girl (In the World),Named album-level genre style; strongest on club singles
+rihanna-loud,contemporaryrnb,https://www.allmusic.com/album/mw0002049029,some tracks,medium,Fading; Complicated,AllMusic classification applied to relevant material; not entire album claim
+rihanna-loud,edm,https://www.allmusic.com/album/mw0002049029,some tracks,medium,Only Girl (In the World); S&M,"AllMusic EDM style classification, early EDM-era dance tracks"
+rihanna-loud,electronic,https://pitchfork.com/reviews/albums/14897-loud/,some tracks,medium,Only Girl (In the World); S&M,Electronic club pulse and synth-heavy arrangements
+rihanna-loud,dancehall,https://music.apple.com/us/album/loud/1442286224,some tracks,high,What's My Name?,Caribbean dancehall style identified by Apple editorial
+rihanna-loud,reggae,https://www.slantmagazine.com/music/rihanna-loud/,some tracks,high,Man Down,Slant explicitly labels song reggae
+rihanna-loud,triphop,https://music.apple.com/us/album/loud/1442286224,some tracks,high,Skin,Apple directly calls beat a trip-hop/R&B fusion
+rihanna-loud,dubstep,https://pitchfork.com/reviews/albums/14897-loud/,texture,medium,Skin,"Pitchfork: near-dubstep, not full-genre album classification"
+rihanna-loud,powerballad,https://pitchfork.com/reviews/albums/14897-loud/,some tracks,high,California King Bed,Pitchfork compares it with a classic rock power-ballad
+rihanna-loud,acousticpop,https://www.slantmagazine.com/music/rihanna-loud/,some tracks,medium,California King Bed,Slant calls it acoustic ballad; acoustic pop is normalized editorial token
+rihanna-loud,hiphop,https://pitchfork.com/reviews/albums/14897-loud/,some tracks,medium,Raining Men,Nicki Minaj guest rap contrasted with R&B/pop arrangement
+rihanna-loud,poprock,https://www.allmusic.com/album/mw0002049029,some tracks,medium,California King Bed,AllMusic Pop/Rock classification; guitar-driven ballad example
+rihanna-talkthattalk,pop,https://music.apple.com/us/album/talk-that-talk/1440758930,whole album,high,General repertoire,Apple describes pop repertoire across the full album
+rihanna-talkthattalk,rnb,https://www.allmusic.com/album/mw0002241043,some tracks,high,Roc Me Out; Cockiness; Watch n Learn,R&B identified in criticism and track analysis
+rihanna-talkthattalk,dancepop,https://music.apple.com/us/album/talk-that-talk/1440758930,some tracks,high,We Found Love; Where Have You Been,Named dance anthems with pop-song structures
+rihanna-talkthattalk,electronic,https://www.theguardian.com/music/2011/nov/17/rihanna-talk-that-talk-review,some tracks,high,Where Have You Been; Drunk on Love,Review singles out expansive synth sounds
+rihanna-talkthattalk,house,https://www.washingtonpost.com/lifestyle/style/talk-that-talk-by-rihanna/2011/11/18/gIQAIfc8iN_story.html,some tracks,high,Where Have You Been,Washington Post expressly calls it house
+rihanna-talkthattalk,edm,https://music.apple.com/us/album/talk-that-talk/1440758930,some tracks,high,We Found Love; Where Have You Been,Apple editorial directly situates material in EDM
+rihanna-talkthattalk,dubstep,https://www.theguardian.com/music/musicblog/2011/nov/11/first-listen-rihanna-album,some tracks,high,You Da One,Guardian documents dubstep breakdown
+rihanna-talkthattalk,dancehall,https://www.washingtonpost.com/lifestyle/style/talk-that-talk-by-rihanna/2011/11/18/gIQAIfc8iN_story.html,some tracks,medium,Watch n Learn; You Da One,Caribbean-derived beats; dancehall is broad comparative mapping
+rihanna-talkthattalk,hiphop,https://www.allmusic.com/album/mw0002241043,some tracks,medium,Talk That Talk; Cockiness,Jay-Z guest rap and urban beat aesthetics
+rihanna-talkthattalk,powerballad,https://music.apple.com/us/album/talk-that-talk/1440758930,some tracks,high,Farewell; We All Want Love,Apple editorial explicitly calls them power ballads
+rihanna-unapologetic,rnb,https://pitchfork.com/reviews/albums/17369-unapologetic/,whole album,high,Multiple tracks,Pitchfork uses mainstream pop/R&B album genre
+rihanna-unapologetic,pop,https://pitchfork.com/reviews/albums/17369-unapologetic/,whole album,high,Multiple tracks,Pitchfork classifies as pop/R&B
+rihanna-unapologetic,dubstep,https://www.slantmagazine.com/music/rihanna-unapologetic/,some tracks,high,Jump,Slant calls dubstep texture explicit; Chase & Status credited
+rihanna-unapologetic,electronic,https://www.theguardian.com/music/2012/nov/15/rihanna-unapologetic-review,some tracks,high,Numb; Pour It Up,Guardian describes heavy electronic production
+rihanna-unapologetic,synthpop,https://pitchfork.com/reviews/albums/17369-unapologetic/,some tracks,medium,Midtempo synth-led tracks,Pitchfork describes album as synth-pop in sections
+rihanna-unapologetic,dancepop,https://www.metacritic.com/music/unapologetic/rihanna,some tracks,medium,Right Now,Pop and EDM-oriented commercial tracks
+rihanna-unapologetic,hiphop,https://www.slantmagazine.com/music/rihanna-unapologetic/,some tracks,medium,Pour It Up; Numb,Trap-like hip-hop beats and guest rap; hiphop broad classification
+rihanna-unapologetic,house,https://www.theguardian.com/music/2012/nov/15/rihanna-unapologetic-review,some tracks,high,Nobody's Business,Guardian calls track disco-house
+rihanna-unapologetic,disco,https://www.theguardian.com/music/2012/nov/15/rihanna-unapologetic-review,some tracks,high,Nobody's Business,Disco-house groove mentioned explicitly
+rihanna-unapologetic,reggae,https://www.theguardian.com/music/2012/nov/15/rihanna-unapologetic-review,some tracks,high,No Love Allowed,Reggae rhythm explicitly identified
+rihanna-unapologetic,dancehall,https://www.worldradiohistory.com/UK/New-Musical-Express/2012/NME-2012-11-24.pdf,some tracks,medium,No Love Allowed,NME directly frames as dancehall
+rihanna-unapologetic,electro,https://www.slantmagazine.com/music/rihanna-unapologetic/,texture,medium,No Love Allowed,Slant calls it electro-ragga
+rihanna-unapologetic,rave,https://www.slantmagazine.com/music/rihanna-unapologetic/,some tracks,medium,Phresh Out the Runway,Slant calls it a rave anthem
+rihanna-unapologetic,avantpop,https://www.worldradiohistory.com/UK/New-Musical-Express/2012/NME-2012-11-24.pdf,some tracks,medium,Jump; What Now,"NME names avant pop as direction, not whole album"
+rihanna-unapologetic,ballad,https://pitchfork.com/reviews/albums/17369-unapologetic/,some tracks,high,Stay; What Now,Piano-led ballad contrasts with club material
+rihanna-unapologetic,edm,https://www.metacritic.com/music/unapologetic/rihanna/details,some tracks,medium,Right Now; Phresh Out the Runway,Metacritic names EDM as album genre; representative club tracks
+rihanna-unapologetic,contemporaryrnb,https://www.metacritic.com/music/unapologetic/rihanna/details,some tracks,medium,Pour It Up; Numb,Metacritic explicitly names contemporary R&B
+rihanna-anti,rnb,https://pitchfork.com/reviews/albums/21540-anti/,whole album,high,Record,Pitchfork classifies pop/R&B and describes inward R&B forms
+rihanna-anti,contemporaryrnb,https://musicbrainz.org/release/b8fdf8b5-45f6-4f1d-b7af-b7c28aff8ad8,some tracks,medium,Needed Me; Yeah I Said It; Woo,Track-level modern R&B style; MusicBrainz R&B broad context
+rihanna-anti,alternativernb,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,whole album,medium,Album metadata,Album of the Year explicitly identifies alternative R&B
+rihanna-anti,popsoul,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,some tracks,medium,Love on the Brain; Higher,Pop soul genre identified by aggregator and track reviews
+rihanna-anti,pop,https://pitchfork.com/reviews/albums/21540-anti/,whole album,high,Record,Pitchfork identifies pop as broad umbrella
+rihanna-anti,dancehall,https://pitchfork.com/reviews/albums/21540-anti/,some tracks,high,Work,Pitchfork expressly calls it dancehall indebted
+rihanna-anti,dub,https://pitchfork.com/reviews/albums/21540-anti/,texture,high,Work,Pitchfork specifically calls Work dub-indebted
+rihanna-anti,soul,https://pitchfork.com/reviews/tracks/17947-rihanna-higher/,some tracks,high,Higher; Love on the Brain,Pitchfork describes soul revue styling on Higher
+rihanna-anti,doowop,https://www.slantmagazine.com/music/rihanna-anti/,some tracks,high,Love on the Brain,Slant directly specifies 1960s doo-wop
+rihanna-anti,psychedelicpop,https://www.slantmagazine.com/music/rihanna-anti/,some tracks,high,Same Ol Mistakes,Slant explicitly cites psychedelic pop
+rihanna-anti,psychedelicsoul,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,some tracks,medium,Same Ol Mistakes,"Psychedelic soul metadata, relevant to Tame Impala cover"
+rihanna-anti,rock,https://www.slantmagazine.com/music/rihanna-anti/,some tracks,high,Kiss It Better; Woo,Menacing electric guitars in specific tracks
+rihanna-anti,aor,https://www.theguardian.com/music/2016/jan/28/rihanna-anti-album-review-brave-bold-and-confused,texture,medium,Kiss It Better,"Guardian describes 1980s AOR-style guitar; texture, not a whole-album AOR claim"
+rihanna-anti,hiphop,https://www.slantmagazine.com/music/rihanna-anti/,texture,medium,Consideration; Needed Me,90s distorted loop / modern beat influences
+rihanna-anti,acousticpop,https://www.bostonglobe.com/arts/music/2016/01/28/album-review-rihanna-anti/iDNsRThrxDIw7dc8N8STUN/story.html,some tracks,high,Never Ending,Boston Globe explicitly identifies acoustic guitar ballad
+rihanna-anti,poprap,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,texture,medium,Consideration; Needed Me,Album of the Year tags Pop Rap as genre; track attribution remains tentative
+rihanna-anti,artpop,https://www.albumoftheyear.org/album/46140-rihanna-anti.php,texture,medium,Record as a whole,Album of the Year lists Art Pop as genre; qualified secondary classification
+rihanna-anti,electronica,https://www.theguardian.com/music/2016/jan/28/rihanna-anti-album-review-brave-bold-and-confused,some tracks,medium,Needed Me; Woo,Guardian describes album electronica / experimental R&B palette

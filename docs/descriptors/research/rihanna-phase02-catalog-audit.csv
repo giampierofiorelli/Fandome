@@ -1,0 +1,5 @@
+album_id,title,year,type,exists_in_catalog,must_add,comment
+rihanna-loud,Loud,2010,studio,yes,no,Existing in src/data/catalog.ts on descriptors branch; new descriptor only.
+rihanna-talkthattalk,Talk That Talk,2011,studio,yes,no,Existing in src/data/catalog.ts on descriptors branch; new descriptor only.
+rihanna-unapologetic,Unapologetic,2012,studio,yes,no,Existing in src/data/catalog.ts on descriptors branch; new descriptor only.
+rihanna-anti,Anti,2016,studio,yes,no,Existing in src/data/catalog.ts on descriptors branch; new descriptor only.
