@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,catalog_status,catalog_title,catalog_year,action
+mj-offthewall,mj,Off the Wall,1979,studio,existing,Off the Wall,1979,keep existing ID; attach descriptor row only
+mj-thriller,mj,Thriller,1982,studio,existing,Thriller,1982,keep existing ID; attach descriptor row only
+mj-bad,mj,Bad,1987,studio,existing,Bad,1987,keep existing ID; attach descriptor row only
+mj-dangerous,mj,Dangerous,1991,studio,existing,Dangerous,1991,keep existing ID; attach descriptor row only

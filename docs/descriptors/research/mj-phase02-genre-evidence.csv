@@ -1,0 +1,46 @@
+album_id,genre,source,url,scope,what_it_supports,evidence_strength
+mj-offthewall,disco,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,whole album,Central disco sound and rhythmic drive,high
+mj-offthewall,funk,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,whole album,Funk guitar/rhythm integrated through album,high
+mj-offthewall,soul,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,whole album,Smooth soul vocals and arrangements,high
+mj-offthewall,pop,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,whole album,Mainstream pop melodic language,high
+mj-offthewall,rnb,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,whole album,R&B album classification,high
+mj-offthewall,quietstorm,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,some tracks,Quiet storm album style; slower romantic songs,high
+mj-offthewall,softrock,AllMusic: Off the Wall — Stephen Thomas Erlewine,https://www.allmusic.com/album/off-the-wall-mw0000190332,some tracks,Soft-rock portions cited in review,high
+mj-thriller,pop,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,whole album,Pop crossover album style,high
+mj-thriller,rnb,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,whole album,R&B album genre,high
+mj-thriller,postdisco,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,whole album,AllMusic album-wide post-disco style,high
+mj-thriller,funk,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Review cites harder funk arrangements,high
+mj-thriller,rock,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Rock guitar and idioms particularly Beat It,high
+mj-thriller,hardrock,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Hard-rock sound on Beat It,high
+mj-thriller,soul,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Review cites smoother soul compositions,high
+mj-thriller,quietstorm,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Album style applied to slow romantic songs,high
+mj-thriller,contemporaryrnb,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,whole album,AllMusic explicitly labels Contemporary R&B,high
+mj-thriller,adultcontemporaryrnb,AllMusic: Thriller — Stephen Thomas Erlewine,https://www.allmusic.com/album/thriller-mw0000056882,some tracks,Exact source category Adult Contemporary R&B; new Fandome token,high
+mj-bad,dancepop,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,whole album,AllMusic album style,high
+mj-bad,contemporaryrnb,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,whole album,AllMusic contemporary R&B style,high
+mj-bad,pop,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,whole album,AllMusic pop designation,high
+mj-bad,rnb,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,whole album,AllMusic R&B genre,high
+mj-bad,poprock,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,some tracks,AllMusic contemporary pop/rock album style,high
+mj-bad,synthfunk,Album of the Year: Bad genre metadata,https://www.albumoftheyear.org/album/10686-michael-jackson-bad.php,some tracks,Aggregator lists Synth Funk among album genres,medium
+mj-bad,popsoul,Album of the Year: Bad genre metadata,https://www.albumoftheyear.org/album/10686-michael-jackson-bad.php,some tracks,Aggregator lists Pop Soul among album genres,medium
+mj-bad,funk,AllMusic: Bad (song review by Jason Elias),https://www.allmusic.com/song/bad-mt0017734793,some tracks,Title-song review specifically identifies funk,medium
+mj-bad,newjackswing,Album of the Year: Bad genre metadata,https://www.albumoftheyear.org/album/10686-michael-jackson-bad.php,texture,"Retrospective aggregator term, historical application disputed",medium
+mj-bad,postdisco,AllMusic: Bad (song review by Jason Elias),https://www.allmusic.com/song/bad-mt0017734793,some tracks,"Title-song descriptor, not whole album",medium
+mj-bad,gospel,Christian Science Monitor: Bad reveals a harder edge (1987),https://www.csmonitor.com/1987/0902/lglove.html,some tracks,Contemporaneous review names Man in the Mirror gospel-flavored,high
+mj-bad,hardrock,Los Angeles Times: Michael Jackson has a good thing in Bad (1987),https://www.latimes.com/archives/la-xpm-1987-08-31-ca-3131-story.html,some tracks,1987 review explicitly names Dirty Diana a hard-rock song,high
+mj-bad,adultcontemporary,AllMusic: Bad — Stephen Thomas Erlewine,https://www.allmusic.com/album/bad-mw0000650293,some tracks,Erlewine explicitly refers to adult contemporary ballad styles,high
+mj-dangerous,newjackswing,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,whole album,Teddy Riley-led material dominates opening six songs and closer,high
+mj-dangerous,rnb,AllMusic: Dangerous — Stephen Thomas Erlewine,https://www.allmusic.com/album/dangerous-mw0000674875/awards,whole album,AllMusic R&B genre,high
+mj-dangerous,pop,AllMusic: Dangerous — Stephen Thomas Erlewine,https://www.allmusic.com/album/dangerous-mw0000674875/awards,whole album,AllMusic pop album style,high
+mj-dangerous,dancepop,AllMusic: Dangerous — Stephen Thomas Erlewine,https://www.allmusic.com/album/dangerous-mw0000674875/awards,some tracks,AllMusic dance-pop album style,high
+mj-dangerous,hiphop,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,some tracks,Critic identifies hip-hop content in opening section,high
+mj-dangerous,funk,Sessiondays: Dangerous 1991 session players and original credits,https://sessiondays.com/2020/09/10/1991-michael-jackson-dangerous/,some tracks,Source describes funk elements,medium
+mj-dangerous,rock,Sessiondays: Dangerous 1991 session players and original credits,https://sessiondays.com/2020/09/10/1991-michael-jackson-dangerous/,some tracks,Rock elements explicitly described,high
+mj-dangerous,gospel,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,some tracks,Gospel Will You Be There and Keep the Faith,high
+mj-dangerous,hardrock,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,some tracks,Give In to Me hard-rock guitar,high
+mj-dangerous,poprock,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,some tracks,Black or White described as pop-rock,high
+mj-dangerous,industrial,Sessiondays: Dangerous 1991 session players and original credits,https://sessiondays.com/2020/09/10/1991-michael-jackson-dangerous/,texture,Industrial sound elements and metallic timbres,medium
+mj-dangerous,electronic,Sessiondays: Dangerous 1991 session players and original credits,https://sessiondays.com/2020/09/10/1991-michael-jackson-dangerous/,texture,Electronic source elements and programmed arrangements,medium
+mj-dangerous,classical,Sessiondays: Dangerous 1991 session players and original credits,https://sessiondays.com/2020/09/10/1991-michael-jackson-dangerous/,some tracks,Orchestral/classical references and prelude; not album-wide,medium
+mj-dangerous,rap,"Los Angeles Times: Michael Jackson’s Dangerous (Chris Willman, 1991)",https://www.latimes.com/la-archive-dangerous-review-nov24-story.html,some tracks,Guest rap and hip-hop vocal passages,high
+mj-dangerous,contemporaryrnb,AllMusic: Dangerous — Stephen Thomas Erlewine,https://www.allmusic.com/album/dangerous-mw0000674875/awards,whole album,Explicit Contemporary R&B album style,high

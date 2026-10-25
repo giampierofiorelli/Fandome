@@ -3,7 +3,7 @@
 // instrument not listed here, the researcher uses it anyway (lowercase, letters only) and Claude adds it.
 export const INSTRUMENT_LABELS: Record<string, string> = {
   // keys
-  piano: 'Piano', electricpiano: 'Electric piano', organ: 'Organ', harpsichord: 'Harpsichord', accordion: 'Accordion', keyboards: 'Keyboards', harmonium: 'Harmonium', melodica: 'Melodica', mellotron: 'Mellotron', chamberlin: 'Chamberlin', celesta: 'Celesta', pumporgan: 'Pump organ', clavichord: 'Clavichord', glassharmonica: 'Glass harmonica', musicbox: 'Music box',
+  piano: 'Piano', electricpiano: 'Electric piano', clavinet: 'Clavinet', organ: 'Organ', harpsichord: 'Harpsichord', accordion: 'Accordion', keyboards: 'Keyboards', harmonium: 'Harmonium', melodica: 'Melodica', mellotron: 'Mellotron', chamberlin: 'Chamberlin', celesta: 'Celesta', pumporgan: 'Pump organ', clavichord: 'Clavichord', glassharmonica: 'Glass harmonica', musicbox: 'Music box',
   // electronic
   synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin',
   // guitars and strings
