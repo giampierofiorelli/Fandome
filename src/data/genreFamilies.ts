@@ -25,7 +25,7 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   postpunkrevival: ['indierock', 'punk'], electrorock: ['rock', 'electronic'], newwave: ['rock', 'synthpop'], darkwave: ['newwave', 'electronic'],
   // soul / r&b / hip-hop
   soul: ['rnb'], funk: ['soul'], gospel: ['soul'], blues: ['soul'], popfunk: ['funk', 'pop'], electrofunk: ['funk', 'electronic'],
-  newjackswing: ['rnb', 'hiphop'], trap: ['hiphop'], cuban: ['latin'], trappop: ['trap', 'pop'], gothtrap: ['trap'], posttrap: ['trap'], poprap: ['hiphop', 'pop'],
+  newjackswing: ['rnb', 'hiphop'], trap: ['hiphop'], trappop: ['trap', 'pop'], gothtrap: ['trap'], posttrap: ['trap'], poprap: ['hiphop', 'pop'],
   grime: ['hiphop', 'electronic'],
   // regional
   reggaeton: ['latin', 'dance'], dancehall: ['reggae', 'dance'], ska: ['reggae', 'punk'], kuduro: ['afro', 'dance'], afrobeat: ['afro'],
