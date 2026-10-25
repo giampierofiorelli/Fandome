@@ -286,21 +286,24 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
 
   // Links name an artist, not one album, so they only count when the two albums' genres are close:
   // nothing below 0.15 (e.g. a Gaga dance album that "sounds like Madonna" vs Madonna's big-band soundtrack).
-  const fit = Math.max(0, Math.min(1, (genre - 0.15) / 0.25))
+  const closeness = Math.max(0, Math.min(1, (genre - 0.15) / 0.25))
+  // A documented link keeps a quarter of its weight even across genres; it is shown only when genres are close.
+  const fit = 0.25 + 0.75 * closeness
   const direct = 0.25 * fit
-  const show = fit >= 0.5
+  const show = closeness >= 0.5
   if (includesName(a.soundsLike, b.artist)) (score += direct), show && links.push(`${a.title} sounds like ${b.artist}`)
   else if (includesName(b.soundsLike, a.artist)) (score += direct), show && links.push(`${b.title} sounds like ${a.artist}`)
   if (includesName(a.influencedBy, b.artist)) (score += direct), show && links.push(`${a.title} was influenced by ${b.artist}`)
   else if (includesName(b.influencedBy, a.artist)) (score += direct), show && links.push(`${b.title} draws on ${a.artist}`)
 
   const artists = [a.artist, b.artist]
+  // Shared influences, producers and comparisons also need close genres (a producer can make very different records).
   const infl = intersect(a.influencedBy, b.influencedBy, artists)
-  if (infl.length) (score += Math.min(0.24, 0.12 * infl.length)), links.push(`Both draw on ${and(infl.slice(0, 2))}`)
+  if (infl.length && fit > 0) (score += Math.min(0.24, 0.12 * infl.length) * fit), show && links.push(`Both draw on ${and(infl.slice(0, 2))}`)
   const prod = intersect(a.producers, b.producers, artists)
-  if (prod.length) (score += Math.min(0.2, 0.1 * prod.length)), links.push(`Both produced by ${and(prod.slice(0, 2))}`)
+  if (prod.length && fit > 0) (score += Math.min(0.2, 0.1 * prod.length) * fit), show && links.push(`Both produced by ${and(prod.slice(0, 2))}`)
   const like = intersect(a.soundsLike, b.soundsLike, artists)
-  if (like.length) (score += Math.min(0.16, 0.08 * like.length)), links.push(`Both sound like ${and(like.slice(0, 2))}`)
+  if (like.length && fit > 0) (score += Math.min(0.16, 0.08 * like.length) * fit), show && links.push(`Both sound like ${and(like.slice(0, 2))}`)
   if (!links.length) {
     const path = twoStep(a, b) ?? twoStep(b, a)
     if (path) (score += 0.06 * fit), show && links.push(path)
@@ -320,6 +323,8 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   const themes = [...a.lyrics].filter((t) => b.lyrics.has(t))
   if (themes.length >= 2) reasons.push(`Both sing about ${and(themes.slice(0, 2))}`)
 
+  // Links overlap as evidence ("sounds like X" and "draws on X" often say the same thing): their total is capped.
+  score = base + Math.min(LINK_CAP, score - base)
   return { score: score * b.confidence, base, genre, linked: links.length > 0, reasons: reasons.slice(0, 2) }
 }
 
@@ -340,6 +345,8 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 // Discovery bonus: a small push for albums and artists from another country's local scene (never the
 // global US/UK markets), so suggestions cross scenes.
 export const DISCOVERY = 0.05
+// Most that documented links can add to a pair's score.
+const LINK_CAP = 0.3
 // Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead).
 const MIN_GENRE = 0.15
 // Minimum score for an album suggestion, calibrated on the owner's judged pairs (docs/similarity-judgments.csv).
@@ -400,16 +407,24 @@ export function similarAlbums(
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: c.genre >= MIN_GENRE || c.linked }
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: c.genre >= MIN_GENRE || c.linked }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
-    // Only albums that really share genres, or have a documented link.
-    .filter((s) => s.score >= MIN_SCORE && s.fits && s.reasons.length)
+    .filter((s) => s.score >= MIN_SCORE && s.reasons.length)
     .sort((x, y) => y.score - x.score)
-  // Fewer, closer suggestions beat a full list: drop what scores well below the best match.
-  const floor = (scored[0]?.score ?? 0) * 0.6
-  const close = scored.filter((s) => s.score >= floor)
-  const picked = mmr(close, (x, y) => genreSim(x.profile, y.profile), limit, (it, out) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length < perArtist)
+  // A documented influence or comparison naming a described artist is the strongest evidence we have:
+  // that artist's closest album (still above the cut) gets a place, with the link as the reason.
+  const named = (n: string) => includesName(a.influencedBy, n) || includesName(a.soundsLike, n)
+  const reserved: typeof scored = []
+  for (const s of scored) {
+    if (reserved.length >= 2 || !named(s.artist) || reserved.some((r) => r.artist === s.artist)) continue
+    const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
+    reserved.push({ ...s, reasons: s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2) })
+  }
+  // Otherwise only albums that really share genres, or have a documented link.
+  const rest = scored.filter((s) => s.fits && !reserved.some((r) => r.albumId === s.albumId))
+  const sameArtist = (it: { albumId: string }, out: { albumId: string }[]) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length
+  const picked = [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length, (it, out) => sameArtist(it, [...reserved, ...out]) < perArtist)]
   return picked.map(({ albumId: id, score, reasons, newCountry }) => ({ albumId: id, score, reasons, ...(newCountry ? { newCountry } : {}) }))
 }
 
