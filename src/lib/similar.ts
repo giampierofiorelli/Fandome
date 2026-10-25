@@ -176,8 +176,16 @@ function rarityOf(g: string) {
   if (!rarity) {
     const all = Object.values(DESCRIPTORS)
     const df = new Map<string, number>()
-    for (const d of all) for (const x of expandGenres(new Map(d.genres.map((y) => [y, 1]))).keys()) df.set(x, (df.get(x) ?? 0) + 1)
-    rarity = new Map([...df].map(([x, n]) => [x, Math.log((all.length + 1) / (n + 1)) + 0.3]))
+    const artists = new Map<string, Set<string>>()
+    for (const d of all)
+      for (const x of expandGenres(new Map(d.genres.map((y) => [y, 1]))).keys()) {
+        df.set(x, (df.get(x) ?? 0) + 1)
+        if (!artists.has(x)) artists.set(x, new Set())
+        artists.get(x)!.add(d.artist)
+      }
+    // A genre only one artist has can't be shared with anyone else: it would only dilute the match
+    // (like min_df = 2 in tf-idf). It counts through its parent genres until a second artist has it.
+    rarity = new Map([...df].map(([x, n]) => [x, artists.get(x)!.size < 2 ? 0 : Math.log((all.length + 1) / (n + 1)) + 0.3]))
   }
   return rarity.get(g) ?? Math.log(Object.keys(DESCRIPTORS).length + 1) + 0.3
 }
