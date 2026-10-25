@@ -1,0 +1,5 @@
+album_id,title,year,type,catalogue_status,action,credit,special_note
+bjork-bjork,Björk,1977,studio,add,Add to catalog.ts,Björk Guðmundsdóttir,First Icelandic childhood album; absent from official post-1993 studio sequence
+bjork-glingglo,Gling-Gló,1990,studio,add,Add to catalog.ts,Björk Guðmundsdóttir & Tríó Guðmundar Ingólfssonar,Jointly billed album; add entry in coBilled.ts
+bjork-debut,Debut,1993,studio,existing,Retain current Fandome id,Björk,Already listed in catalogue
+bjork-post,Post,1995,studio,existing,Retain current Fandome id,Björk,Already listed in catalogue

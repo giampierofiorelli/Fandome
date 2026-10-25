@@ -1,0 +1,36 @@
+album_id,genre,source,url,scope,evidence_strength,notes
+bjork-bjork,childrenspop,AllMusic — Björk Gudmundsdóttir (Joslyn Layne),https://www.allmusic.com/album/r548457,whole album,high,AllMusic specifies Children’s Pop; NEW TOKEN
+bjork-bjork,childrensmusic,AllMusic — Björk Gudmundsdóttir (Joslyn Layne),https://www.allmusic.com/album/r548457,whole album,high,Broader umbrella justified by album’s children’s pop classification
+bjork-bjork,pop,AllMusic — Björk Gudmundsdóttir (Joslyn Layne),https://www.allmusic.com/album/r548457,whole album,high,Pop constituent of AllMusic Children’s Pop
+bjork-bjork,novelty,Björk (1977) release historical background,https://en.wikipedia.org/wiki/Bj%C3%B6rk_%28album%29,whole album,medium,"Secondary classification only, low independent support; NEW TOKEN"
+bjork-glingglo,vocaljazz,AllMusic — Gling-Gló (Joslyn Layne),https://www.allmusic.com/album/gling-gl%C3%B3-mw0000323351,whole album,high,Explicit AllMusic style
+bjork-glingglo,jazz,AllMusic — Gling-Gló (Joslyn Layne),https://www.allmusic.com/album/gling-gl%C3%B3-mw0000323351,whole album,high,Underlying acoustic jazz repertoire
+bjork-glingglo,standards,AllMusic — Gling-Gló (Joslyn Layne),https://www.allmusic.com/album/gling-gl%C3%B3-mw0000323351,whole album,high,AllMusic lists jazz standards
+bjork-glingglo,swing,Discogs — Gling-Gló master and reissues,https://www.discogs.com/es/master/1884-Bj%C3%B6rk-Gu%C3%B0mundsd%C3%B3ttir-Tr%C3%AD%C3%B3-Gu%C3%B0mundar-Ing%C3%B3lfssonar-Gling-Gl%C3%B3,some tracks,medium,"Reissue style tag, not uniform across tracks"
+bjork-glingglo,polka,Discogs — Gling-Gló master and reissues,https://www.discogs.com/es/master/1884-Bj%C3%B6rk-Gu%C3%B0mundsd%C3%B3ttir-Tr%C3%AD%C3%B3-Gu%C3%B0mundar-Ing%C3%B3lfssonar-Gling-Gl%C3%B3,some tracks,medium,"Discogs reissue style only, lower confidence"
+bjork-debut,artpop,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,whole album,high,Artist/label tagging; modern retrospective broad description
+bjork-debut,electronic,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,whole album,high,Electronic pop instrument/production approach
+bjork-debut,electropop,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,whole album,high,"Artist official page explicitly electronic pop, mapped to token electropop"
+bjork-debut,house,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,some tracks,high,Dance singles and house elements; not every track
+bjork-debut,dance,AllMusic — Debut: style classification,https://www.allmusic.com/album/r184600/charts-awards,some tracks,high,Club/dance tracks
+bjork-debut,alternativedance,AllMusic — Debut: style classification,https://www.allmusic.com/album/r184600/charts-awards,some tracks,high,AllMusic Alternative Dance
+bjork-debut,triphop,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,some tracks,high,Official album context states trip-hop
+bjork-debut,electronica,AllMusic — Debut: style classification,https://www.allmusic.com/album/r184600/charts-awards,whole album,high,AllMusic electronica style
+bjork-debut,pop,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,whole album,high,Pop songwriting within electronic hybrid
+bjork-debut,jazz,Björk / One Little Independent — Debut,https://bjork.bandcamp.com/album/debut,some tracks,high,Jazz covers and instrumentation
+bjork-debut,worldmusic,Pitchfork — Homogenic retrospective (Philip Sherburne),https://pitchfork.com/reviews/albums/22835-homogenic/,some tracks,high,"Reviewer notes world-music touches, non-dominant"
+bjork-post,artpop,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,whole album,high,Official album description: art-pop
+bjork-post,avantpop,"Post (1995): genre audit, secondary discography",https://en.wikipedia.org/wiki/Post_%28Bj%C3%B6rk_album%29,whole album,medium,Secondary genre label avant-pop; Pitchfork instead calls it avant-dance
+bjork-post,experimentalpop,"Post (1995): genre audit, secondary discography",https://en.wikipedia.org/wiki/Post_%28Bj%C3%B6rk_album%29,whole album,medium,Secondary explicit experimental-pop genre label; less strong than label styles
+bjork-post,electronic,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,whole album,high,Electronic foundations
+bjork-post,triphop,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Official and Pitchfork: trip-hop sections
+bjork-post,techno,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Explicit official style
+bjork-post,house,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Explicit official style
+bjork-post,idm,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Explicit official style
+bjork-post,ambient,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Explicit official style
+bjork-post,industrial,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Explicit official style and Army of Me/Enjoy
+bjork-post,jazz,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Official album description and Modern Things
+bjork-post,bigband,"Pitchfork — Post retrospective (Jenn Pelly, 2020)",https://pitchfork.com/reviews/albums/bjork-post/,some tracks,high,It’s Oh So Quiet orchestra and swing
+bjork-post,pop,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,whole album,high,Art-pop and song-led material
+bjork-post,dance,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,some tracks,high,Official electronic/dance hybrid
+bjork-post,electronica,Björk / One Little Independent — Post,https://bjork.bandcamp.com/album/post,whole album,high,Label electronic tags and electronica description
