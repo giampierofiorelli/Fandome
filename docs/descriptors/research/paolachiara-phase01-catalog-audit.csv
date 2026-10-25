@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog,recommended_action,catalog_source_url
+paolachiara-cichiamanobambine,Ci chiamano bambine,1997,studio,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-giornatastorica,Giornata storica,1998,studio,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-television,Television,2000,studio,no,add new catalogue album,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+paolachiara-festival,Festival,2002,studio,yes,keep existing catalogue ID,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
