@@ -24,3 +24,10 @@ All genres the sources name, now that there is no limit: Madonna (1983) + disco 
 ## Fourth pass: every named genre (owner rule, 2026-10-24)
 
 Owner's rule: any genre a source names goes in; new ones are added to the list. Added: Madonna (1983) + post-disco (AllMusic); Bedtime Stories + new jack swing (Pitchfork); Erotica + flamenco (Slant 2007), breakbeat (Pitchfork: house and breaks); Ray of Light + breakbeat (AllMusic); Music + French touch (Grammy); Hard Candy + ska (Pitchfork: electro-ska); MDNA + dubstep (Guardian), EDM (Observer); Rebel Heart + EDM (Pitchfork, Guardian), dancehall (Observer), hyperpop (phase 05 notes); Madame X + kuduro (Guardian); CONFESSIONS II + acid house (Pitchfork), deep house, UK garage (Guardian), French touch (Pitchfork), breakbeat (Slant: vintage breaks). Elodie: Un'altra vita + blues, This Is Elodie + dancehall (Rockol).
+
+## Music (2000): genres added by Claude, Oct 2026
+
+Owner noted Joanne should connect to Music through its country/folk side. Added at the end of the list (track-level flavour, low weight): `folktronica`, `chamberpop`, `countryrock`, `country`, `folk`.
+- Albumism, 20th-anniversary retrospective: the album as "electro-funk, folktronica and chamber pop" — https://www.albumism.com/features/madonna-music-turns-20-anniversary-retrospective
+- Grammy.com, 20th anniversary: "Don't Tell Me" mixes Madonna's acoustic guitar, dance beats and country strings, "folktronica" — https://www.grammy.com/news/madonna-music-20-anniversary-2000
+- Wikipedia, "Don't Tell Me": electronica, folktronica, country rock, trip hop; a "country-dance song" — https://en.wikipedia.org/wiki/Don%27t_Tell_Me_(Madonna_song)
