@@ -47,3 +47,10 @@ The owner flagged that Ray of Light is mostly not a dance record, is close to tr
 - `sounds_like` Daft Punk: Stereogum, "Music turns 20" (https://stereogum.com/2098583/music-turns-20/reviews/the-anniversary): Mirwais' sound "owed a whole lot to the French filter-house of the late '90s, Daft Punk in particular". Air: Grammy.com, Music at 20 (https://www.grammy.com/news/madonna-music-20-anniversary-2000) places Mirwais with his French touch contemporaries Daft Punk, Air, Rinôçérôse. Cher (Believe, Auto-Tune over Euro-house) and Kylie Minogue (Fever): same Stereogum piece, as comparable moves.
 - `genres`: + `filterhouse` (Stereogum: "French filter-house"), + `dancepop`, `electronica` (Wikipedia infobox: pop, dance-pop, electronica), + `house`, `techno`, `rock`, `rnb` (Wikipedia: influences from funk, house, techno, rock, country, folk and R&B).
 - Not documented as an influence by Madonna or Mirwais: kept as comparisons (`sounds_like`), not `influenced_by`.
+
+## Like a Virgin: revision (Oct 2026, owner asked why Cyndi Lauper's She's So Unusual was missing)
+Source: Wikipedia, Like a Virgin (album), with its cited sources.
+- `genres`: dance-pop, post-disco (infobox); new wave, post-disco, a dash of hip-hop (Alexis Petridis, The Guardian); "dance-pop album in a style of new wave" blending disco, rock, sixties pop and synthesizer electronics (Nicole Horning); synth-pop ("Material Girl"); girl-group tradition and doo-wop (Stephen Holden, NYT; "Shoo-Bee-Doo").
+- `instruments`: Prophet-5, Rhodes and acoustic piano (Robert Sabino); Synclavier (Nile Rodgers); LinnDrum and Simmons programmed by Jimmy Bralower; Tony Thompson drums, Bernard Edwards bass; guitars by Rodgers; synth strings and acoustic guitar ("Love Don't Live Here Anymore"); Lenny Pickett sax solo ("Shoo-Bee-Doo"). `production` prophet5, synclavier, linndrum.
+- `sounds_like`: Cyndi Lauper and the Pointer Sisters (Pete Bishop, Pittsburgh Press); the Shirelles and the Ronettes ("Shoo-Bee-Doo").
+- "Into the Groove" (Madonna, Stephen Bray) is on the 1985 reissue only: producers stay Nile Rodgers.

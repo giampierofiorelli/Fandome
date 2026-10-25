@@ -196,6 +196,13 @@ const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : 1)
 const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g) * soundWeight(g)]))
 
 const genreSim = (a: Profile, b: Profile) => weightedJaccard(byRarity(expandGenres(a.genres)), byRarity(expandGenres(b.genres)))
+// Share of the first album's genre weight that the second album covers (asymmetric).
+function genreCover(a: Profile, b: Profile) {
+  const wa = byRarity(expandGenres(a.genres)), wb = byRarity(expandGenres(b.genres))
+  let shared = 0, total = 0
+  for (const [g, w] of wa) (total += w), (shared += Math.min(w, wb.get(g) ?? 0))
+  return total ? shared / total : 0
+}
 
 // 1 = same genres in the same order, 0 = nothing shared even at family level.
 export const genreSimilarity = (a: Descriptor, b: Descriptor) => genreSim(albumProfile(a), albumProfile(b))
@@ -417,6 +424,8 @@ export function compareAlbums(a: Descriptor, b: Descriptor): Similar {
 export const DISCOVERY = 0.05
 // Most that documented links can add to a pair's score.
 const LINK_CAP = 0.3
+// The genre test blends overlap (Jaccard) with how much of the seed album's genres the candidate covers:
+// albums researched with long genre lists (every genre a source names) are no longer penalised for it.
 // Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead),
 // set between the highest bad (0.151) and the lowest good (0.188) owner-judged pair; re-check as judgments grow.
 const MIN_GENRE = 0.17
@@ -482,7 +491,7 @@ export function similarAlbums(
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: c.genre >= MIN_GENRE || c.linked }
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE || c.linked }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     .filter((s) => s.score >= MIN_SCORE && s.reasons.length)
