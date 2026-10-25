@@ -1,0 +1,28 @@
+album_id,genre,scope,source_keys,evidence,strength
+troye-trxye,pop,dominant,T14_AM|T14_UM,AllMusic and record label present this as a pop EP.,high
+troye-trxye,electronic,dominant production character,T14_AM|T14_AP,Keyboard-heavy and atmospheric electronic-based pop runs throughout the EP.,high
+troye-trxye,electropop,significant,T14_AP|T14_AT,Electronic pop foregrounded in editorial album summary and genre classification.,medium
+troye-trxye,dancepop,significant,T14_AM|T14_AP,Explicit dance-pop style and several more driving electronic tracks.,high
+troye-trxye,leftfieldpop,secondary album classification,T14_AM,AllMusic explicitly applies Left-Field Pop at EP level.,medium
+troye-trxye,rnb,track-level/texture,T14_AP,Apple Music calls Happy Little Pill and Gasoline R&B-grooved; not whole-record R&B.,medium
+troye-blueneighbourhood,pop,dominant,T15_AM|T15_GU2,Broad central pop foundation of debut LP.,high
+troye-blueneighbourhood,electropop,dominant,T15_GU1|T15_RO,The Guardian explicitly describes layered electropop across album.,high
+troye-blueneighbourhood,electronic,significant,T15_GU1|T15_GU2,Electronic programming and synth-led arrangements characterize much of record.,high
+troye-blueneighbourhood,dancepop,significant,T15_AM,AllMusic album-wide style label Dance-Pop; less central than melancholy mid-tempos.,medium
+troye-blueneighbourhood,leftfieldpop,secondary,T15_AM,AllMusic Left-Field Pop style attached to album; not a claim of avant-garde composition.,medium
+troye-blueneighbourhood,edm,track-level textures,T15_GU1,Review notes tinges of EDM; record is not uniformly festival EDM.,medium
+troye-bloom,pop,dominant,T18_PF|T18_AM|T18_AP,All principal critics and artist frame a mainstream melodic pop album.,high
+troye-bloom,dancepop,significant,T18_AM|T18_GU2|T18_AP,Explicit dance-pop album classification; singles more kinetic than ballads.,high
+troye-bloom,electropop,significant,T18_GU2|T18_GU,"Electropop on several substantive tracks Plum, Lucky Strike, Bloom.",high
+troye-bloom,leftfieldpop,secondary,T18_AM,"AllMusic Left-Field Pop classification, secondary to mainstream pop.",medium
+troye-bloom,rnb,secondary album classification,T18_PF,Pitchfork Pop/R&B listing; album review focuses on conventional mid-tempo pop.,medium
+troye-bloom,electronic,significant production texture,T18_PF|T18_GU2,"Electronic synths, reverbs and programmed beats throughout substantial sections.",medium
+troye-inadream,pop,dominant,T20_PF|T20_SL,Melodic pop songs remain EP base despite experiments.,high
+troye-inadream,indiepop,significant,T20_PF,Pitchfork explicitly describes EP as exploring indie-pop margins.,high
+troye-inadream,electronic,dominant production texture,T20_PF|T20_SL,"Synthetic percussion, Auto-Tune and electronic instruments throughout.",high
+troye-inadream,synthpop,significant,T20_SL,Slant explicitly categorizes EP as synth-pop continuation.,high
+troye-inadream,dancepop,significant,T20_SL,"Slant calls Oscar Görres productions dazzling dance-pop, not uniform across all tracks.",high
+troye-inadream,rnb,secondary editorial classification,T20_PF,Pitchfork album genre Pop/R&B; secondary to pop/electronics.,medium
+troye-inadream,indierock,substantial track textures,T20_PF,Pitchfork identifies warped indie rock in EP eclectic palette; guitars important on interlude.,medium
+troye-inadream,house,track-level,T20_PF|T20_SL,"Stud changes into house rhythm, not entire EP house.",medium
+troye-inadream,techhouse,track-level/critic palette,T20_PF,Pitchfork explicitly identifies tech-house in varied EP palette; not dominant.,medium

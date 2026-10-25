@@ -1,0 +1,8 @@
+album_id,artist,title,original_year,catalog_status,expected_catalog_id,instruction,edition
+troye-trxye,Troye Sivan,TRXYE,2014,new,troye-trxye,Add landmark major-label EP using type=ep; no earlier studio status,5-track original EMI EP
+troye-wild,Troye Sivan,WILD,2015,audited_not_added,troye-wild,Do not import: preview EP 6 tracks all in Blue Neighbourhood deluxe; reconsider only with user permission,2015 6-track EP overlaps 2015 deluxe
+troye-blueneighbourhood,Troye Sivan,Blue Neighbourhood,2015,already_catalogued,troye-blueneighbourhood,"Keep exact existing catalog id, original standard album as basis; mention WILD deluxe duplication",2015 10-track standard; excludes expanded deluxe
+troye-bloom,Troye Sivan,Bloom,2018,already_catalogued,troye-bloom,Keep exact existing catalog id; original studio version,2018 original 10-song studio album
+troye-inadream,Troye Sivan,In a Dream,2020,new,troye-inadream,Add significant stand-alone original 6-song EP using type=ep,"2020 original 6 tracks, no acoustic bonus"
+troye-somethingtogiveeachother,Troye Sivan,Something to Give Each Other,2023,deferred_phase02,troye-somethingtogiveeachother,Next batch; do not duplicate in Phase 01,2023 standard studio album
+troye-shesthebest,Troye Sivan,She's the Best,2026,deferred_phase02,troye-shesthebest,Next batch: newly released 9 October 2026; add fourth studio album,2026 original 12-track album
