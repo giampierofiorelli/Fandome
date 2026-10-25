@@ -31,3 +31,17 @@ Owner noted Joanne should connect to Music through its country/folk side. Added 
 - Albumism, 20th-anniversary retrospective: the album as "electro-funk, folktronica and chamber pop" — https://www.albumism.com/features/madonna-music-turns-20-anniversary-retrospective
 - Grammy.com, 20th anniversary: "Don't Tell Me" mixes Madonna's acoustic guitar, dance beats and country strings, "folktronica" — https://www.grammy.com/news/madonna-music-20-anniversary-2000
 - Wikipedia, "Don't Tell Me": electronica, folktronica, country rock, trip hop; a "country-dance song" — https://en.wikipedia.org/wiki/Don%27t_Tell_Me_(Madonna_song)
+
+## Madonna (1983): deeper genre research by Claude, Oct 2026 (owner's request)
+
+Genres now: dance-pop, post-disco, synth-pop, electropop, disco, pop, dance, new wave, R&B, funk, electro, soul, nu-disco (main first).
+- Wikipedia infobox: synth-pop, electropop, dance-pop, post-disco; lead: "mostly a dance-pop and post-disco album" — https://en.wikipedia.org/wiki/Madonna_(album)
+- AllMusic (Erlewine): Dance-Pop, Post-Disco; "dance-pop and post-disco R&B" — https://www.allmusic.com/album/madonna-mw0000268192
+- Houston Chronicle (Joey Guerra, via Wikipedia): a blend of "pop, disco, New Wave and R&B".
+- Rolling Stone (via Wikipedia): "downtown New York electro grooves"; Don Shewey: "minimal" funk.
+- Spin (Michaelangelo Matos): "reinvigorated disco"; Rooksby: "dissonant, upbeat synthetic disco".
+- Albumism: "a funky New Wave disco album"; Steve Bray songs "funk-infused" — https://albumism.com/features/madonna-eponymous-debut-album-anniversary
+- The Quietus: "R&B groove" (Everybody), "soulful" (Borderline), "electro" (Burning Up 12"), overall "nu-disco" — https://thequietus.com/opinion-and-essays/anniversary/madonna-debut-album-review/
+- Sire's Michael Rosenblatt wanted an "R&B feel"; Jellybean Benitez added a "synthesized disco beat with soulful flourishes" and new wave elements (Wikipedia).
+- sounds_like (critics' comparisons, not documented influences): Donna Summer, Chic, Michael Jackson, Stephanie Mills (Borderline), Cyndi Lauper, Grace Jones (Burning Up), Soft Cell (synth sound).
+- Not added: freestyle, hi-NRG, synth funk, electro-disco (only user tags on Rate Your Music); "punk" (attitude, not sound); "60s girl-group" (no genre token, one track).
