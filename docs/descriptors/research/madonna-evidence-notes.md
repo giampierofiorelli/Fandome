@@ -62,3 +62,10 @@ Source: Wikipedia, True Blue (Madonna album), with its cited sources.
 - `lyrics`: love, commitment and fidelity; teenage pregnancy (social); anti-war and anti-poverty songs (political); deceit (heartbreak); standing up to male authority (identity). `language` en|es: four lines in Spanish in "La Isla Bonita".
 - `sounds_like`: The Dixie Cups ("True Blue" recalls "Chapel of Love"); The Go-Go's (John Quayle).
 - Kept for future link weights: "Open Your Heart" was first written for Cyndi Lauper.
+
+## Like a Virgin: links (Oct 2026, owner: Chic, Michael Jackson and the Jackson 5 must come up)
+Source: Wikipedia, Like a Virgin (song), with its cited sources.
+- `influenced_by` Chic: Madonna chose Nile Rodgers because she wanted the "Chic kind of approach" (Jason Corsaro, Sound on Sound); Rodgers built the rhythm section from Chic (Bernard Edwards bass, Tony Thompson drums); the arrangement draws on Motown and the sound of Chic. Four Tops: the three-note bass motif is reworked from "I Can't Help Myself (Sugar Pie Honey Bunch)" (Rikky Rooksby).
+- `sounds_like` Michael Jackson: Ed Masley (The Arizona Republic) points to similarities between the bass line and "Billie Jean" (on Thriller).
+- `genres` + motown (arrangement drawing on Motown).
+- Jackson 5: owner wants the link once the Jackson 5 are described; find a source for Like a Virgin specifically before adding it.

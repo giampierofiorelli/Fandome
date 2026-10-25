@@ -539,9 +539,11 @@ export function similarAlbums(
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
   const named = (n: string) => includesName(a.influencedBy, n) || includesName(a.soundsLike, n)
+  // Up to three places (of ten); documented influences before comparisons, then by score.
   const reserved: typeof scored = []
-  for (const s of scored) {
-    if (reserved.length >= 2 || !named(s.artist) || reserved.some((r) => r.artist === s.artist)) continue
+  const linked = scored.filter((s) => named(s.artist)).sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)))
+  for (const s of linked) {
+    if (reserved.length >= 3 || reserved.some((r) => r.artist === s.artist)) continue
     const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
     reserved.push({ ...s, reasons: s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2) })
   }
