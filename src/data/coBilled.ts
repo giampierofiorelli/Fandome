@@ -14,4 +14,6 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'moroder-philipoakeygiorgiomoroder': { credit: 'Philip Oakey & Giorgio Moroder' },
   'moroder-tronrunroriginalsoundtrack': { credit: 'Giorgio Moroder & Raney Shockne' },
   'moroder-queenofthesouthoriginalseriessoundtrack': { credit: 'Giorgio Moroder & Raney Shockne' },
+  'whitney-waitingtoexhaleoriginalsoundtrackalbum': { credit: 'Various artists' },
+  'whitney-sparkleoriginalmotionpicturesoundtrack': { credit: 'Various artists' },
 }

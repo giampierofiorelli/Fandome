@@ -1,0 +1,4 @@
+album_id,title,year,type,catalog_status,action,evidence
+whitney-onewishtheholidayalbum,One Wish: The Holiday Album,2003,studio,absent,add,Read-only confirmed absent from descriptors/src/data/catalog.ts artist whitney entry and docs/descriptors/whitney.csv 2026-10-25
+whitney-ilooktoyou,I Look to You,2009,studio,absent,add,Read-only confirmed absent from descriptors/src/data/catalog.ts artist whitney entry and docs/descriptors/whitney.csv 2026-10-25
+whitney-sparkleoriginalmotionpicturesoundtrack,Sparkle: Original Motion Picture Soundtrack,2012,soundtrack,absent,add,Read-only confirmed absent from descriptors/src/data/catalog.ts artist whitney entry and docs/descriptors/whitney.csv 2026-10-25
