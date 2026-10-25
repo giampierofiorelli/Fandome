@@ -36,3 +36,9 @@ The owner flagged that Ray of Light is mostly not a dance record, is close to tr
 - `genres`: electronica, trip hop and new age added/moved up (Wikipedia: "electronica, trip hop, techno-pop, and new-age sound"; The Guardian 2019: "convincing, idiosyncratic trip-hop"); house and drum and bass as elements.
 - `groove` 3 → 2: only a few tracks are for dancing (title track, Nothing Really Matters); Madonna called it fundamentally a pop record; SPIN: "haunted singer/songwriter introspection and beat-savvy electronic exotica".
 - Kinds of link, kept for future weights (owner): **drew on the sound**: Massive Attack, Björk (Classic Pop). **Asked to work on the album, declined**: Tricky, Goldie, The Prodigy (Classic Pop). **Considered as collaborators**: Robert Miles, Trent Reznor, Nellee Hooper (J. Randy Taraborrelli, *Madonna: An Intimate Biography*, 2002, cited by Wikipedia); not in `influenced_by`. **Worked on it before Orbit**: Babyface, Patrick Leonard (Wikipedia, *The Making of Ray*). **Related personnel**: Marius De Vries, Craig Armstrong (both worked with Massive Attack).
+- Ray of Light: `dance` removed from genres (owner: apart from a few tracks it is not a dance record).
+
+## Like a Prayer: Prince (Oct 2026, owner)
+- Prince co-wrote and co-produced "Love Song", a duet with Madonna (album credits; already in `producers`).
+- Prince played electric guitar, uncredited, on "Like a Prayer" (the title track, the album's key song), "Keep It Together" and "Act of Contrition" (Pitchfork review by Maura Johnston; Paul Zollo interview; Wikipedia, Like a Prayer (album)). `electricguitar` added.
+- Engine (general rule, Oct 2026): an artist credited as producer of an album is a direct link to that artist's own albums ("Prince worked on Like a Prayer"), weighed like a documented influence.

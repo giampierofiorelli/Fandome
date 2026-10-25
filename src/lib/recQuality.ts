@@ -17,7 +17,7 @@ export interface Quality {
   topShare: number // share of all suggestions taken by the single most suggested album (popularity bias)
 }
 
-export function evaluate(limit = 5): Quality {
+export function evaluate(limit = 10): Quality {
   const artistOf = (id: string) => albums.find((a) => a.id === id)?.artistId
   const countryOf = (id: string) => sceneOf(artistOf(id) ?? '')?.country
   const ids = Object.keys(DESCRIPTORS)

@@ -358,6 +358,9 @@ export function compareProfiles(a: Profile, b: Profile): Comparison {
   else if (includesName(b.soundsLike, a.artist)) (score += direct), show && links.push(`${b.title} sounds like ${a.artist}`)
   if (includesName(a.influencedBy, b.artist)) (score += direct), show && links.push(`${a.title} was influenced by ${b.artist}`)
   else if (includesName(b.influencedBy, a.artist)) (score += direct), show && links.push(`${b.title} draws on ${a.artist}`)
+  // An artist credited as producer of the other album worked on it (Prince co-produced Like a Prayer).
+  if (includesName(a.producers, b.artist)) (score += direct), show && links.push(`${b.artist} worked on ${a.title}`)
+  else if (includesName(b.producers, a.artist)) (score += direct), show && links.push(`${a.artist} worked on ${b.title}`)
 
   const artists = [a.artist, b.artist]
   // Shared influences, producers and comparisons also need close genres (a producer can make very different records).
@@ -462,7 +465,7 @@ export function similarAlbums(
   } = {},
 ): Similar[] {
   const local = (id: string) => isLocalArtist(opts.artistOf?.(id))
-  const { limit = 5, perArtist = 2, hide = [] } = opts
+  const { limit = 10, perArtist = 2, hide = [] } = opts
   const a = profileOf(albumId)
   if (!a) return []
   const artistOf = opts.artistOf ?? ((id: string) => DESCRIPTORS[id]?.artist)
