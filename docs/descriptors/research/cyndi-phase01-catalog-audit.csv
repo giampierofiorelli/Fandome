@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,artist_id,already_in_catalog,descriptor_exists_before_phase,action,caveat
+cyndi-shessounusual,She’s So Unusual,1983,studio,cyndi,yes,no,Add descriptor row; retain existing catalogue album ID,Original catalog uses typographic apostrophe She’s.
+cyndi-truecolors,True Colors,1986,studio,cyndi,yes,no,Add descriptor row; retain existing catalogue album ID,No catalogue addition required.
+cyndi-anighttoremember,A Night to Remember,1989,studio,cyndi,yes,no,Add descriptor row; retain existing catalogue album ID,No catalogue addition required.
+cyndi-hatfullofstars,Hat Full of Stars,1993,studio,cyndi,yes,no,Add descriptor row; retain existing catalogue album ID,No catalogue addition required.
