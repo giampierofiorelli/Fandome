@@ -1,0 +1,5 @@
+album_id,title,original_year,type,catalog_status,catalog_id,import_instruction,edition_note
+trst-trst,TRST,2012,studio,existing,trst-trst,"Preserve ID trst-trst, correct existing catalogue display title from TR/ST to original official album title TRST, then append phase row",Current Fandome catalogue title TR/ST is artist styling; 2012 Arts & Crafts LP is titled TRST. Original 11 songs; some later digital variants have 13.
+trst-joyland,Joyland,2014,studio,existing,trst-joyland,Preserve existing catalogue id; append only phase row,Original 11-track March 4 2014 Arts & Crafts issue.
+trst-thedestroyer1,The Destroyer – 1,2019,studio,existing,trst-thedestroyer1,Preserve exact catalog title and id; append only phase row,Existing catalog uses en dash and numeral; issued as The Destroyer - 1 / Part One / Vol. 1 on other services. Eight-track April LP.
+trst-thedestroyer2,The Destroyer – 2,2019,studio,missing,,"Add catalogue tuple (The Destroyer – 2, 2019) after existing Part 1; append descriptor",Original November 1 2019 eight-track follow-up; do not add 2022 combined Destroyer Vol 1 & 2 as duplicate.

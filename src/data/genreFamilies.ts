@@ -61,4 +61,5 @@ export const GENRE_PARENTS: Record<Genre, Genre[]> = {
   darkambient: ['ambient'],
   modernclassical: ['classical'],
   videogamemusic: [], electronoir: ['electronic'], retrowave: ['synthwave'], // video game music is a format, like soundtrack
+  coldwave: ['postpunk', 'darkwave'], ebm: ['industrial', 'electronic'],
 }

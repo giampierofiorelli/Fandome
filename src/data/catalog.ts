@@ -221,7 +221,7 @@ const ROWS: Row[] = [
   ['venditti', 'Antonello Venditti', '#c9504a', 'Rome, piano and big choirs', [['Lilly', 1975], ['Sotto la pioggia', 1982], ['Cuore', 1984], ['Benvenuti in paradiso', 1991]]],
   ['annaoxa', 'Anna Oxa', '#9a5ac9', 'Transformations and Sanremo', []],
   ['toto', 'Toto', '#c98a3f', 'Africa, Rosanna and session legends', [['Toto', 1978], ['Hydra', 1979], ['Toto IV', 1982], ['Isolation', 1984], ['Fahrenheit', 1986]]],
-  ['trst', 'TR/ST', '#4a3f5a', 'Dark synth from Toronto', [['TR/ST', 2012], ['Joyland', 2014], ['The Destroyer – 1', 2019]]],
+  ['trst', 'TR/ST', '#4a3f5a', 'Dark synth from Toronto', [['TRST', 2012], ['Joyland', 2014], ['The Destroyer – 1', 2019], ['The Destroyer – 2', 2019]]],
   ['travis', 'Travis', '#5a9ac9', 'Why does it always rain on us?', [['Good Feeling', 1997], ['The Man Who', 1999], ['The Invisible Band', 2001], ['12 Memories', 2003], ['L.A. Times', 2024]]],
   ['trentemoller', 'Trentemøller', '#3f5a6f', 'Danish electronic shadows', [['The Last Resort', 2006], ['The Trentemøller Chronicles', 2007], ['Into the Great Wide Yonder', 2010], ['Reworked / Remixed', 2011], ['Lost', 2013], ['Lost Reworks', 2014], ['Fixion', 2016], ['Obverse', 2019], ['Memoria', 2022], ['Dreamweaver', 2024]]],
   ['troye', 'Troye Sivan', '#9ab5e0', 'Blue neighbourhoods and bloom', [['TRXYE', 2014], ['Blue Neighbourhood', 2015], ['Bloom', 2018], ['In a Dream', 2020], ['Something to Give Each Other', 2023], ['She’s the Best', 2026]]],

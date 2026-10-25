@@ -1,0 +1,53 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+trst-trst,synthpop,album core,T12-PITCH|T12-MUSICOMH,Pitchfork explicitly identifies synth-pop and extensive programmed melodies.,high
+trst-trst,darkwave,album-wide style,T12-PITCH|T12-RA,Darkwave/coldwave atmosphere emphasized across complete record.,high
+trst-trst,electronic,album-wide instrumentation,T12-QOBUZ|T12-MUSIC,Extensive synthetic timbres and digital drum programming throughout.,high
+trst-trst,coldwave,album-wide / critical classification,T12-PITCH|T12-RA,Both critics describe coldwave language and revival context.,high
+trst-trst,electropop,album styling / editorial,T12-QOBUZ|T12-MUSICOMH,Qobuz editorial calls electronic-pop writing; artist considers debut fundamentally pop.,medium
+trst-trst,ebm,album sound / critical classification,T12-TIMEOUT|T12-SOUNDVENUE,"Time Out explicitly names EBM as a sonic frame for Trust debut; techno beats corroborate, but genre is not exclusive.",medium
+trst-trst,pop,dominant songwriting framework,T12-RA|T12-MUSICOMH,Resident Advisor lists pop; Alfons directly calls it pop record.,high
+trst-trst,experimental,database classification / experimental vocals,T12-RA|T12-PITCH,RA labels experimental; contorted vocals and unusual synth timbres; not avant-garde overall.,medium
+trst-trst,indieelectronic,specialist discography tag,T12-ALL,"AllMusic Indie Electronic style metadata, not a separately demonstrated acoustic band genre.",medium
+trst-trst,techno,dance-rhythm texture / many tracks,T12-SOUNDVENUE,Signed review cites repeated 4/4 techno beats; not a pure techno album.,medium
+trst-trst,rave,album aesthetic / not dominant genre,T12-MUSIC,Signed review describes dark rave aesthetic alongside Eurotrance.,medium
+trst-trst,trance,"textural comparison, some tracks",T12-MUSIC|T12-PITCH,Euro-trance aesthetic; Bulbform trance-like synth line.,medium
+trst-trst,disco,one track / industrial disco,T12-MUSIC,This Ready Flesh called industrial disco; album not disco in its entirety.,low
+trst-trst,electroclash,one track resemblance,T12-RA,This Ready Flesh likened to electroclash; not album-dominant.,low
+trst-joyland,synthpop,album-wide core,J14-APPLE|J14-SKINNY,Gothic synth-pop songwriting central to the 11 original tracks.,high
+trst-joyland,darkwave,album atmosphere,J14-PITCH|J14-EXCLAIM,Coldwave and dark electronic pop anchor more extroverted second album.,high
+trst-joyland,electronic,instrumentation throughout,J14-ALL|J14-APPLE,"Synth bass, programmed drums and keyboards underpin record.",high
+trst-joyland,electropop,broader album pop method,J14-APPLE|J14-EXCLAIM,Electronic pop hooks are emphasized in interviews and editorial.,medium
+trst-joyland,ebm,"several tracks, not whole record",J14-SKINNY,Review explicitly calls Icabod and Four Gut EBM with pop sheen.,high
+trst-joyland,techno,significant rhythmic influences,J14-SKINNY|J14-JNS,Review describes techno; Alfons says he listened to older techno in production.,high
+trst-joyland,house,some club tracks / influence,J14-SKINNY,Critic names dark house elements among several dance styles.,medium
+trst-joyland,trance,select rhythmic / synth passages,J14-SKINNY,Trance textures among modern club references.,medium
+trst-joyland,rave,significant / early-rave sonic influence,J14-SKINNY,Reviewer names early rave among incorporated strands.,medium
+trst-joyland,eurodance,near-style / some tracks,J14-SKINNY,"Reviewer says production teeters on Eurodance, not full genre commitment.",medium
+trst-joyland,pop,album songwriting,J14-EXCLAIM|J14-PITCH,Alfons specifically targeted emotive mainstream melodies and hooks.,high
+trst-joyland,indieelectronic,classification,J14-ALL,"AllMusic Indie Electronic style, album-level catalog term.",medium
+trst-joyland,dance,substantial club grooves,J14-SKINNY|J14-EXCLAIM,Many heavy dancefloor rhythms and club-driven songs.,high
+trst-joyland,coldwave,album-wide critical comparison,J14-PITCH,Pitchfork calls the project coldwave; applied to album despite expanded sound.,medium
+trst-thedestroyer1,synthpop,core style,D1-ALL|D1-SYNTH,AllMusic tags synth pop; melodic programmed structures prominent.,high
+trst-thedestroyer1,darkwave,core dark style,D1-ARTIST|D1-SLUG,Official dark-wave release tag and independent signed discussion.,high
+trst-thedestroyer1,electronic,majority instrumentation,D1-ARTIST|D1-ALL,Synthetic instrumentation predominates; live drums on Bicep.,high
+trst-thedestroyer1,electropop,album-wide explicit artist tag,D1-ARTIST|D1-SLUG,Bandcamp electropop and press description support record.,high
+trst-thedestroyer1,industrialdance,significant rhythm vocabulary,D1-ALL|D1-EXCLAIM,AllMusic identifies industrial dance; tense percussive machine beats across selections.,high
+trst-thedestroyer1,indieelectronic,album catalogue style,D1-ALL,AllMusic lists indie electronic style.,medium
+trst-thedestroyer1,industrial,several tracks / industrial sound,D1-EXCLAIM|D1-SLUG,"Clanging, abrasive rhythm and studio sonics on certain cuts.",medium
+trst-thedestroyer1,postpunk,stylistic strand not dominant,D1-EXCLAIM,Independent critic directly mentions post-punk as source of sound.,medium
+trst-thedestroyer1,dreampop,some tracks / subtle textures,D1-EXCLAIM,Exclaim references dream pop as part of the album palette.,medium
+trst-thedestroyer1,pop,accessible ballad / writing,D1-ALL|D1-EXCLAIM,Lyrical and melodic forms of Gone/Control Me reflect pop structure.,medium
+trst-thedestroyer1,dance,significant but less constant,D1-ARTIST|D1-EXCLAIM,Bicep and Grouch retain strong club drive; quieter moments reduce full-album danceability.,high
+trst-thedestroyer1,indie,broad official release metadata,D1-ARTIST,"Official artist Bandcamp tag, umbrella classification.",low
+trst-thedestroyer1,coldwave,retrospective context,D1-ATWOOD,Atwood locates album in contemporary coldwave sound.,medium
+trst-thedestroyer1,house,one song rhythmic texture,D1-SYNTH,Critic describes house groove on Grouch; avoid whole-album claim.,medium
+trst-thedestroyer2,synthpop,album core,D2-ALL|D2-NORMAN,AllMusic and signed record review agree synthesizer-led pop structures.,high
+trst-thedestroyer2,darkwave,album overall atmosphere,D2-ARTIST|D2-ALL,Darkwave official album tag and independent specialist classification.,high
+trst-thedestroyer2,electronic,predominant / includes live instruments,D2-ARTIST|D2-ELECTRIC,"Synth-driven studio album, credited live drums and piano passages.",high
+trst-thedestroyer2,electropop,official album genre tag,D2-ARTIST|D2-FLAUNT,Official Bandcamp and contemporary review call electropop.,high
+trst-thedestroyer2,industrialdance,album database / limited groove,D2-ALL,AllMusic official style tag; weaker on this comparatively quiet half.,medium
+trst-thedestroyer2,indieelectronic,specialist album-style tag,D2-ALL,AllMusic indie electronic metadata.,medium
+trst-thedestroyer2,dreampop,some tracks and ambient swells,D2-DAIS|D2-POSTPUNK,Label bio and track critic directly describe dream pop.,high
+trst-thedestroyer2,ambient,significant production texture,D2-DAIS|D2-VANCOUVER,"Dais cites ambient arrangements, especially restrained spacious songs.",high
+trst-thedestroyer2,dance,a minority of tracks,D2-ARTIST|D2-EXCLAIM,"Official tag and Iris-driven electronic club passages, despite slower overall form.",medium
+trst-thedestroyer2,indie,official broad metadata,D2-ARTIST,"Broad label Bandcamp indie tag, weak as distinct genre.",low
