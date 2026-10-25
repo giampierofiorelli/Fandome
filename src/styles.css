@@ -204,6 +204,9 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .seg-label { position: relative; }
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 34px 2px 12px; }
 .section-head.center { justify-content: center; margin-top: 22px; }
+/* Section tabs (artist room, moderation) stay on top while the page scrolls. */
+.tabs-sticky { position: sticky; top: calc(env(safe-area-inset-top) + 8px); z-index: 30; }
+.tabs-sticky .seg { background: color-mix(in srgb, var(--bg) 92%, #fff 8%); box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.35); }
 
 /* Big light numerals */
 .bignum { font-size: 44px; font-weight: 250; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; }

@@ -1,6 +1,6 @@
 import { SuggestArtistSheet } from '../components/ShareSheet'
 import { isAbout } from '../lib/postArtists'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { albums, artists, concerts, parties } from '../data/seed'
 import { artistGenres, similarArtists } from '../lib/similar'
@@ -29,6 +29,13 @@ export default function ArtistPage() {
   const { state, dispatch, me } = useStore()
   const compose = useComposer()
   const [tab, setTab] = useState('all')
+  // The tab row stays on top while scrolling; switching tab from further down starts the new tab at its top.
+  const tabsTop = useRef<HTMLDivElement>(null)
+  const pickTab = (t: string) => {
+    setTab(t)
+    const y = tabsTop.current?.getBoundingClientRect().top ?? 0
+    if (y < 0) window.scrollTo({ top: window.scrollY + y })
+  }
   const [suggest, setSuggest] = useState(false)
   if (!artist) return <Navigate to="/explore" replace />
 
@@ -101,8 +108,9 @@ export default function ArtistPage() {
         </div>
         <PhotoCredit id={artist.id} className="hero-credit" />
       </header>
-      <div className="section-head center">
-        <Tabs tabs={tabs} value={tab} onChange={setTab} />
+      <div ref={tabsTop} />
+      <div className="section-head center tabs-sticky">
+        <Tabs tabs={tabs} value={tab} onChange={pickTab} />
       </div>
 
       {(tab === 'all' || feed) && <FeedList items={topicFeed(state.posts, artist.id, feed?.tags)} empty="No posts in this feed yet. Be the first!" />}

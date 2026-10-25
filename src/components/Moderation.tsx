@@ -333,7 +333,9 @@ export function ModQueue() {
           {admin ? 'Site team view.' : `You moderate ${me.mod!.artistIds.map((a) => artistById(a)?.name).join(', ')}.`} Every removal tells the author which rule it broke.
         </p>
       </header>
-      <Tabs tabs={tabs} value={tab} onChange={setTab} />
+      <div className="tabs-sticky">
+        <Tabs tabs={tabs} value={tab} onChange={setTab} />
+      </div>
       {tab === 'reports' && (reports.length ? reports.map((r) => <ReportItem key={r.id} report={r} />) : <p className="empty">No open reports. Nice.</p>)}
       {tab === 'requests' && (requests.length ? requests.map((u) => <RequestItem key={u.id} user={u} />) : <p className="empty">No requests.</p>)}
       {tab === 'appeals' && (appeals.length ? appeals.map((p) => <AppealItem key={p.id} post={p} />) : <p className="empty">No appeals.</p>)}
