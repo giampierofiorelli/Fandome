@@ -1,0 +1,23 @@
+album_id,genre,source,scope,evidence_strength,reason,track_or_edition
+labionda-fratellilabiondasrl,folk,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,whole album,high,Artist cites acoustic West Coast folk repertoire and three-guitar model,original 1972 album
+labionda-fratellilabiondasrl,pop,https://it.wikipedia.org/wiki/Fratelli_La_Bionda_s.r.l.,whole album,medium,Release classification as pop; varied song arrangements,1972 LP
+labionda-fratellilabiondasrl,country,https://it.wikipedia.org/wiki/Fratelli_La_Bionda_s.r.l.,whole album,medium,Album classified country; source does not break down specific songs,1972 LP
+labionda-fratellilabiondasrl,folkrock,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,texture,medium,West Coast acoustic group arrangements; editorial mapping to folk-rock,1972 LP
+labionda-fratellilabiondasrl,prog,https://stratosfera1.rssing.com/chan-34270979/all_p36.html,texture,low,Specialist commentary frames first two albums as progressive; broad retrospective style,1972 LP
+labionda-ognivoltachetutenevai,pop,https://www.qobuz.com/au-en/album/ogni-volta-che-tu-te-ne-vai-fratelli-la-bionda/3614970238546,some tracks,medium,Qobuz classifies the title song as Pop (a 1-track digital listing); cannot claim this proves every LP track,1975 Ricordi LP
+labionda-ognivoltachetutenevai,folkrock,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,whole album,medium,Early duo acoustic / West Coast base explicitly described as their first two records,1975 LP
+labionda-ognivoltachetutenevai,softrock,https://stratosfera1.rssing.com/chan-34270979/all_p36.html,texture,low,Review notes softer instrumentation and West Coast-inflected pop-rock,1975 LP
+labionda-ognivoltachetutenevai,prog,https://stratosfera1.rssing.com/chan-34270979/all_p36.html,some tracks,low,Reviewer describes progressive-era musical characteristics; no passage mapping all tracks,1975 LP
+labionda-ognivoltachetutenevai,songwriter,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,whole album,medium,Authors songwriting roots and language; editorial mapping to songwriter genre,1975 LP
+labionda-tuttovabene,pop,https://alwaysdiscofunk.blogspot.com/2012/04/la-bionda.html,whole album,medium,Track sequence largely recycles Italian popular songs from original album,1977 revised LP
+labionda-tuttovabene,folkrock,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,some tracks,medium,Underlying 1975 recordings described as folky West Coast pop; reused in 1977,1977 revised LP
+labionda-tuttovabene,softrock,https://stratosfera1.rssing.com/chan-34270979/all_p36.html,some tracks,low,"Retained tracks inherit 1975 softer pop-rock sound, but remixes not compared",1977 revised LP
+labionda-tuttovabene,songwriter,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,some tracks,medium,Original 1975 songwriting material reused in 1977; no new style blanket assumed,1977 revised LP
+labionda-labionda,disco,https://www.chartsurfer.de/artist/la-bionda/la-bionda-album_frnpph.html,whole album,high,1978 Baby LP classified disco; One For You One For Me directly identified as disco,1978 LP
+labionda-labionda,eurodisco,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,some tracks,medium,Munich European disco practices described by artist; editorial specific subgenre,1978 LP
+labionda-labionda,europop,https://www.chartsurfer.de/artist/la-bionda/la-bionda-album_frnpph.html,whole album,medium,1978 Austrian original edition styled Europop and Disco,1978 LP
+labionda-labionda,pop,https://vinyl.bertelsmann.com/en/records/view/L4697,whole album,medium,Label archive broad Pop/Rock; Pop from 1978 edition style,1978 LP
+labionda-labionda,electronic,https://www.chartsurfer.de/artist/la-bionda/la-bionda-album_frnpph.html,texture,high,ARP synthesizer credited; electronic on release metadata; does not mean synthesizers dominate all tracks,1978 LP
+labionda-labionda,funk,https://www.chartsurfer.de/artist/la-bionda/la-bionda-album_frnpph.html,texture,low,"Funk/Soul is a release umbrella, not direct proof of individual funk track",1978 LP
+labionda-labionda,soul,https://www.chartsurfer.de/artist/la-bionda/la-bionda-album_frnpph.html,texture,low,Funk/Soul broad release category; cannot claim all tracks are soul,1978 LP
+labionda-labionda,ballad,https://www.rollingstone.it/musica/interviste-musica/la-bionda-is-magic/567160/,some tracks,high,Carmelo directly calls There For Me a slow song originally proposed as single,There For Me

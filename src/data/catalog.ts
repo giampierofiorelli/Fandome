@@ -460,7 +460,7 @@ const ROWS: Row[] = [
   ['eiffel65', 'Eiffel 65', '#3f6fe0', 'I’m blue, da ba dee', [['Europop', 1999], ['Contact!', 2001]]],
   ['righeira', 'Righeira', '#e0c95a', 'Vamos a la playa, Italo disco', []],
   ['planetfunk', 'Planet Funk', '#5ab5a3', 'Chase the sun with Italian electronica', [['Non Zero Sumness', 2002], ['The Illogical Consequence', 2005]]],
-  ['labionda', 'La Bionda', '#c9a35a', 'Italo disco pioneers', []],
+  ['labionda', 'La Bionda', '#c9a35a', 'Italo disco pioneers', [['Fratelli La Bionda s.r.l.', 1972], ['Ogni volta che tu te ne vai', 1975], ['Tutto va bene', 1977], ['La Bionda', 1978]]],
   ['lunapop', 'Lùnapop', '#5ac9e0', '50 Special and the end of the nineties', [['…Squérez?', 1999]]],
   ['gazosa', 'Gazosa', '#e0e05a', 'Teen pop from the early 2000s', []],
   ['zeroassoluto', 'Zero Assoluto', '#7a8fb5', 'Roman pop for the 2000s', []],
