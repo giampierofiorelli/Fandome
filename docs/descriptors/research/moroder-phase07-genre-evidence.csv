@@ -1,0 +1,31 @@
+album_id,genre,scope,source_ids,evidence,evidence_strength
+moroder-topgun,soundtrack,whole album,TG-OFF|TG-1986,Original 1986 Columbia motion-picture songs compilation.,high
+moroder-topgun,poprock,prominent across album,TG-QOBUZ|TG-AOR,Pop/Rock licensed classification with rock guitars and melodic pop song structures.,high
+moroder-topgun,rock,many tracks,TG-PRESS|TG-REVIEW,Rock material especially Kenny Loggins Cheap Trick and Loverboy.,high
+moroder-topgun,aor,significant song style,TG-AOR,Record shop explicitly labels album AOR; adult-oriented big melodic guitar arrangements.,medium
+moroder-topgun,synthpop,significant tracks,TG-PRESS|TG-AOR,Synth-pop classified for electronic romantic Berlin / Marietta sides; album not entirely synth-pop.,medium
+moroder-topgun,hardrock,some tracks,TG-PRESS,1986 original album sleeve-derived style: hard rock for louder guitar tracks.,medium
+moroder-topgun,hinrg,some tracks / retroactive pressing metadata,TG-PRESS,Original-vinyl catalogue explicitly tags Hi-NRG; not full album and no claim of nonstop nightclub rhythm.,low
+moroder-topgun,pop,prominent across album,TG-QOBUZ|TG-REVIEW,Licensed Qobuz categories Pop/Rock and Pop; accessible radio pop is a substantial album component.,high
+moroder-overthetop,soundtrack,whole album,OT-OFF|OT-SLEEVE,Ten-song original film soundtrack.,high
+moroder-overthetop,aor,several tracks,OT-CRIT|OT-ALLM,Specialist retrospective highlights AOR melodic-rock songs.,high
+moroder-overthetop,poprock,many tracks,OT-CRIT|OT-1987,1980s pop-rock across many vocal themes.,medium
+moroder-overthetop,rock,prominent,OT-CRIT|OT-1987,Guitar-driven songs across rock singers and groups.,high
+moroder-overthetop,hardrock,some tracks,OT-CRIT|OT-1987,Sammy Hagar and guitar-heavy songs marked as harder rock.,medium
+moroder-overthetop,pop,several softer tracks,OT-CRIT,Critic notes generic 1980s pop beside harder rock songs.,medium
+moroder-tobenumberone,europop,album-level tag,TB-TAG,Release-group explicitly tagged Europop.,medium
+moroder-tobenumberone,pop,whole album,TB-TAG|TB-LP,MusicBrainz genre and German LP catalogue name Pop.,high
+moroder-tobenumberone,poprock,some tracks,TB-STYLE,Discogs album style explicitly Pop Rock; mixture of electric guitar and keyboard arrangements.,medium
+moroder-tobenumberone,newjackswing,some tracks / metadata,TB-STYLE,"Genre/style listed at album release level, not all tracks.",medium
+moroder-tobenumberone,poprap,some tracks / metadata,TB-STYLE,"Explicit style listing, not proof of rap vocals on every track.",medium
+moroder-tobenumberone,breakbeat,rhythmic style on some tracks / metadata,TB-STYLE,Explicit release style; not a primarily breakbeat record.,low
+moroder-tobenumberone,downtempo,some tracks / metadata,TB-STYLE,Explicit label points to some slower recordings rather than full album mood.,low
+moroder-tobenumberone,electronic,significant instruments / umbrella genre,TB-STYLE|TB-STUDIO,Discogs broader Electronic style and original sleeve cites credited synth musicians; guitars are also present.,medium
+moroder-tobenumberone,rock,some tracks / broad genre,TB-STYLE,Original album issue uses broad Rock category; not a predominately rock LP.,low
+moroder-theneverendingstoryiithenextchapter,soundtrack,whole album,NS-MB|NS-FILM,"Original 1990 WEA film soundtrack, not a purely Moroder score.",high
+moroder-theneverendingstoryiithenextchapter,modernclassical,dominant orchestral score / classification,NS-STYLE|NS-REVIEW,Original release styles Modern Classical; Folk symphonic cues dominate track count.,high
+moroder-theneverendingstoryiithenextchapter,classical,dominant orchestral material / broad parent,NS-AFI|NS-REVIEW,Large symphony orchestras and choir perform score; classical is parent descriptor not separate modern classical influence.,medium
+moroder-theneverendingstoryiithenextchapter,poprock,three sung songs,NS-STYLE|NS-REVIEW,"Discogs pop-rock tag applies to Joe Milner rock-arranged songs, not Folk orchestral score.",medium
+moroder-theneverendingstoryiithenextchapter,rock,some songs / broad label,NS-STYLE|NS-REVIEW,Release classed Rock and review specifies rocking adaptation of title song.,medium
+moroder-theneverendingstoryiithenextchapter,ambient,some textures / original genre tag,NS-STYLE,"Original issue explicitly includes Ambient, best understood as a minor cue texture.",low
+moroder-theneverendingstoryiithenextchapter,electronic,some songs / broad release category,NS-STYLE|NS-MB,Electronic classification reflects pop parts; most cues are orchestral.,low
