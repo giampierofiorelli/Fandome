@@ -37,7 +37,7 @@ group('connections', () => {
     expect(startWith('annalisa', albums)?.albumId).toBe('annalisa-epoisiamofinitinelvortice')
     const cues = listenFor('annalisa-epoisiamofinitinelvortice')!
     expect(cues.cues.length).toBeGreaterThan(0)
-    expect(listenFor('k-fever')).toBeUndefined()
+    expect(listenFor('no-such-album')).toBeUndefined()
   })
 })
 

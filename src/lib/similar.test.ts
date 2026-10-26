@@ -79,7 +79,7 @@ describe('similar albums', () => {
   })
 
   it('returns nothing for albums without descriptors', () => {
-    expect(similarAlbums('k-fever')).toEqual([])
+    expect(similarAlbums('no-such-album')).toEqual([])
   })
 })
 

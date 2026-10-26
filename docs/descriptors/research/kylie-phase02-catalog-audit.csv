@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,catalog_source,import_action,notes
+kylie-kylieminogue,Kylie Minogue,1994,studio,needs_addition,not_in_seed_or_catalog,add exact id after phase 01,This is the fifth studio album; do not confuse with 1988 Kylie or renamed 1997 UK release.
+kylie-impossibleprincess,Impossible Princess,1997,studio,needs_addition,not_in_seed_or_catalog,add exact id after phase 01,"Original 1997 title, renamed Kylie Minogue in 1998 UK release; one album only."
+k-lightyears,Light Years,2000,studio,existing,src/data/seed.ts,keep exact id,Legacy k- prefix is mandatory; original 2000 release.
+k-fever,Fever,2001,studio,existing,src/data/seed.ts,keep exact id,Legacy k- prefix is mandatory; US 2002 edition is not original release.
