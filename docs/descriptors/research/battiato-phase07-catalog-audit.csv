@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog_ts,already_in_current_descriptors_csv,action,evidence
+battiato-fleurs,Fleurs,1999,studio,no,no,ADD new catalogue album and append only new descriptor row,The public descriptors-branch catalog.ts battiato list stops at Gommalacca (1998); battiato.csv contains pre-1999 entries; no Phase 07 album in either.
+battiato-campimagnetici,Campi magnetici,2000,soundtrack,no,no,ADD new catalogue album and append only new descriptor row,The public descriptors-branch catalog.ts battiato list stops at Gommalacca (1998); battiato.csv contains pre-1999 entries; no Phase 07 album in either.
+battiato-ferrobattuto,Ferro battuto,2001,studio,no,no,ADD new catalogue album and append only new descriptor row,The public descriptors-branch catalog.ts battiato list stops at Gommalacca (1998); battiato.csv contains pre-1999 entries; no Phase 07 album in either.
+battiato-fleurs3,Fleurs 3,2002,studio,no,no,ADD new catalogue album and append only new descriptor row,The public descriptors-branch catalog.ts battiato list stops at Gommalacca (1998); battiato.csv contains pre-1999 entries; no Phase 07 album in either.
