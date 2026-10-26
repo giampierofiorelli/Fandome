@@ -1,0 +1,3 @@
+album_id,artist_id,title,year,type,catalogue_status,descriptor_status,phase,required_action,supporting_reference
+fontainesdc-romance,fontainesdc,Romance,2024,studio,missing_artist_and_album_on_branch_check_2026-10-26,no_existing_artist_csv,02,Create fontainesdc artist if still absent; add album id to catalog.ts / seed.ts before validator; append only current two descriptor rows,https://fontainesdc.com/pages/music
+fontainesdc-dopaminechamber,fontainesdc,Dopamine Chamber,2026,studio,missing_artist_and_album_on_branch_check_2026-10-26,no_existing_artist_csv,02,Create fontainesdc artist if still absent; add album id to catalog.ts / seed.ts before validator; append only current two descriptor rows,https://fontainesdc.com/pages/music

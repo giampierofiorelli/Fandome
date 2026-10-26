@@ -1,0 +1,33 @@
+album_id,genre,source,url,scope,what_source_says,evidence_strength
+fontainesdc-romance,indierock,allmusic,https://www.allmusic.com/album/romance-mw0004275028,whole album,AllMusic lists Indie Rock / Alternative Indie Rock,high
+fontainesdc-romance,alternativerock,pf2024,https://pitchfork.com/reviews/albums/fontaines-dc-romance/,whole album,Pitchfork describes 1990s alternative rock as a central component,high
+fontainesdc-romance,postpunkrevival,allmusic,https://www.allmusic.com/album/romance-mw0004275028,whole album,AllMusic explicitly lists New Wave/Post-Punk Revival,high
+fontainesdc-romance,rock,pf2024,https://pitchfork.com/reviews/albums/fontaines-dc-romance/,whole album,Pitchfork category Rock; stadium-scaled guitar rock,high
+fontainesdc-romance,postpunk,gr2024,https://www.theguardian.com/music/article/2024/aug/15/fontaines-dc-romance-review-xl-recordings,whole album,The Guardian frames the album as the group expanding away from its post-punk core,medium
+fontainesdc-romance,britpop,pf2024,https://pitchfork.com/reviews/albums/fontaines-dc-romance/,some tracks,Britpop is explicitly identified among the album components,high
+fontainesdc-romance,postbritpop,newmus2024,https://www.albumoftheyear.org/album/931219-fontaines-dc-romance.php,some tracks,AOTY tags Post-Britpop as a subgenre,medium
+fontainesdc-romance,gothicrock,newmus2024,https://www.albumoftheyear.org/album/931219-fontaines-dc-romance.php,some tracks,AOTY explicitly includes Gothic Rock; title track evokes The Cure,medium
+fontainesdc-romance,dreampop,newmus2024,https://www.albumoftheyear.org/album/931219-fontaines-dc-romance.php,some tracks,AOTY lists Dream Pop; Guardian describes dreamy arrangements,medium
+fontainesdc-romance,shoegaze,gr2024,https://www.theguardian.com/music/article/2024/aug/15/fontaines-dc-romance-review-xl-recordings,some tracks,Guardian calls Sundowner guitars shoegaze-y; Crack cites shoegaze influence,high
+fontainesdc-romance,grunge,vogue2024,https://www.vogue.com/article/fontaines-dc-romance-album-interview-2024,texture,Vogue identifies grungy breaks; Pitchfork emphasises 1990s alt-rock texture,medium
+fontainesdc-romance,gothicamericana,pf2024,https://pitchfork.com/reviews/albums/fontaines-dc-romance/,some tracks,Pitchfork explicitly identifies gothic Americana among album styles,high
+fontainesdc-romance,newwave,allmusic,https://www.allmusic.com/album/romance-mw0004275028,whole album,AllMusic pairs New Wave with Post-Punk Revival in its style taxonomy,high
+fontainesdc-romance,janglepop,newmus2024,https://www.albumoftheyear.org/album/931219-fontaines-dc-romance.php,some tracks,AOTY supplies Jangle Pop; Guardian describes Favourite guitar pop,medium
+fontainesdc-romance,numetal,gr2024,https://www.theguardian.com/music/article/2024/aug/15/fontaines-dc-romance-review-xl-recordings,some tracks,"Guardian describes light nu-metal touches, especially Here’s the Thing; interviews confirm Korn influence",high
+fontainesdc-romance,electronica,vogue2024,https://www.vogue.com/article/fontaines-dc-romance-album-interview-2024,texture,Vogue calls electronica a secondary part of the album palette,medium
+fontainesdc-romance,boombap,pf2024,https://pitchfork.com/reviews/albums/fontaines-dc-romance/,some tracks,Pitchfork explicitly identifies boom-bap beats in Starburster,high
+fontainesdc-dopaminechamber,alternativerock,credits2026,https://tracknack.com/profile/artist/fontaines-dc,whole album,Release genre metadata calls album Alternative Rock,medium
+fontainesdc-dopaminechamber,indierock,credits2026,https://tracknack.com/profile/artist/fontaines-dc,whole album,Release metadata explicitly lists Indie Rock,medium
+fontainesdc-dopaminechamber,rock,pf2026,https://pitchfork.com/reviews/albums/fontaines-dc-dopamine-chamber/,whole album,Pitchfork places album in rock category and describes stadium rock,high
+fontainesdc-dopaminechamber,postpunk,rte2026,https://www.rte.ie/entertainment/music-reviews/2026/1016/1594938-fontaines-d-c-dopamine-chamber-through-a-glass-darkly/,whole album,RTÉ places lush new record inside its post-punk lineage,medium
+fontainesdc-dopaminechamber,synthpop,nme2026,https://www.nme.com/reviews/album/fontaines-d-c-dopamine-chamber-album-review-3972863,some tracks,NME describes Mimesis as 1980s synth-pop noir,high
+fontainesdc-dopaminechamber,gothpop,rte2026,https://www.rte.ie/entertainment/music-reviews/2026/1016/1594938-fontaines-d-c-dopamine-chamber-through-a-glass-darkly/,some tracks,RTÉ explicitly uses goth pop for the album rhythmic colour,high
+fontainesdc-dopaminechamber,triphop,nme2026,https://www.nme.com/reviews/album/fontaines-d-c-dopamine-chamber-album-review-3972863,some tracks,NME describes trip-hop sound/groove on Tongue,high
+fontainesdc-dopaminechamber,electronic,rtelaunch,https://www.rte.ie/entertainment/2026/0818/1588370-fontaines-d-c-announce-fifth-album-dopamine-chamber/,whole album,"Press statement foregrounds synthetic/electronic sounds, with guitar absent on several cuts",high
+fontainesdc-dopaminechamber,gothicrock,guardian2026,https://www.theguardian.com/music/2026/oct/12/fontaines-dc-dopamine-chamber-album-review-xl-grian-chatten,some tracks,The Guardian identifies gothy guitar-rock palette and The Cure traits,medium
+fontainesdc-dopaminechamber,industrial,rte2026,https://www.rte.ie/entertainment/music-reviews/2026/1016/1594938-fontaines-d-c-dopamine-chamber-through-a-glass-darkly/,texture,RTÉ hears industrial percussion on Six Shot Morning; not dominant style,high
+fontainesdc-dopaminechamber,electroclash,rte2026,https://www.rte.ie/entertainment/music-reviews/2026/1016/1594938-fontaines-d-c-dopamine-chamber-through-a-glass-darkly/,some tracks,RTÉ calls Mimesis electro-clash indebted,high
+fontainesdc-dopaminechamber,electronica,nme2026,https://www.nme.com/reviews/album/fontaines-d-c-dopamine-chamber-album-review-3972863,some tracks,NME identifies electronica tinges in Demolition,high
+fontainesdc-dopaminechamber,dreampop,pf2026,https://pitchfork.com/reviews/albums/fontaines-dc-dopamine-chamber/,some tracks,Pitchfork explicitly calls Japan a dream-pop ballad,high
+fontainesdc-dopaminechamber,grunge,pf2026,https://pitchfork.com/reviews/albums/fontaines-dc-dopamine-chamber/,some tracks,Pitchfork describes Demolition as grungey,high
+fontainesdc-dopaminechamber,ballad,nme2026,https://www.nme.com/reviews/album/fontaines-d-c-dopamine-chamber-album-review-3972863,some tracks,NME identifies cinematic balladry on Marianne and Where Is Gone?,high
