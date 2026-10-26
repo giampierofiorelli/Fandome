@@ -1,0 +1,40 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+queen-themiracle,hardrock,significant,M2|M3|M6,"Anthemic heavy guitar writing (I Want It All, Khashoggi’s Ship), high-weight rock strand",high
+queen-themiracle,poprock,dominant,M3|M6,Broad pop-rock balance across radio-oriented songs and guitar cuts,high
+queen-themiracle,albumrock,whole-album style,M3,AllMusic explicit Album Rock style,high
+queen-themiracle,artrock,some tracks,M3,"AllMusic explicit Art Rock style, with multipart title and closer structures",medium
+queen-themiracle,arenarock,significant,M2|M3,"Communal, stadium-scale rock refrains; I Want It All singled out",high
+queen-themiracle,synthpop,some tracks,M6|M4,AOTY Synthpop label; synthesizer/programmable pop textures on selected songs,medium
+queen-themiracle,aor,some tracks,M6,"AOTY AOR label, more relevant to melodic radio-facing songs",medium
+queen-themiracle,dancerock,some tracks,M3,"AllMusic explicit Dance-Rock style, especially programmed/rhythmic singles",medium
+queen-themiracle,contemporarypoprock,significant,M3,AllMusic Contemporary Pop/Rock label,high
+queen-themiracle,rock,whole album umbrella,M2|M3,Official reissue calls songs raw rock and heavy-rock; umbrella below specific styles,high
+queen-innuendo,hardrock,significant,I2|I3|I6,Hard-rock writing in Headlong and The Hitman; AllMusic style,high
+queen-innuendo,artrock,significant,I3|I6|I7,Epic multipart title composition; explicit art-rock tags,high
+queen-innuendo,prog,some tracks,I6|I7|I10,Progressive Rock label and changing metres on Innuendo title song,high
+queen-innuendo,poprock,significant,I2|I6,AOTY Pop Rock classification alongside accessible shorter songs,medium
+queen-innuendo,albumrock,whole-album style,I3,AllMusic explicit Album Rock style,high
+queen-innuendo,arenarock,significant,I3,AllMusic explicit Arena Rock style,high
+queen-innuendo,synthpop,some tracks,I6|I10,"Synthpop descriptor for keyboard-led material, not the record’s main axis",medium
+queen-innuendo,contemporarypoprock,significant,I3,AllMusic Contemporary Pop/Rock classification,high
+queen-innuendo,dancerock,few tracks,I3,AllMusic Dance-Rock style; lower-ranked due to rock-dominant album,medium
+queen-innuendo,flamenco,passage of title track,I7|I10,May describes Spanish/flamenco duet with Howe in central section,high
+queen-madeinheaven,poprock,significant,H4|H5,AOTY Pop Rock plus professional review’s strong melodies,high
+queen-madeinheaven,albumrock,whole-album style,H4,AllMusic album-style tag Album Rock,high
+queen-madeinheaven,hardrock,some tracks,H4|H5,"Heavy guitar textures, rather than uniformly forceful material",high
+queen-madeinheaven,arenarock,some tracks,H4,AllMusic explicit Arena Rock classification,high
+queen-madeinheaven,contemporarypoprock,significant,H4,AllMusic contemporary Pop/Rock style,high
+queen-madeinheaven,aor,some tracks,H5,AOTY explicit AOR tag for polished ballad-driven material,medium
+queen-madeinheaven,ambient,one extended closing piece,H5|H10,AOTY Ambient tag and long untitled soundscape; not most songs,medium
+queen-madeinheaven,gospel,one significant track,H8|H2,"Let Me Live has credited gospel-style choir, distinguished from whole album",medium
+queen-madeinheaven,dancerock,one prominent track,H11|H6,You Don’t Fool Me explicitly listed Dance rock; applies only to original 1995 album version,low
+queen-thecosmosrocks,hardrock,dominant,C3|C7|C8,AllMusic Hard Rock label; band describes rocking new work,high
+queen-thecosmosrocks,bluesrock,significant,C2|C7|C8,Explicit blues-rock album categorisation plus blues-rooted Rodgers band sound,medium
+queen-thecosmosrocks,albumrock,whole-album style,C3,AllMusic Album Rock classification,high
+queen-thecosmosrocks,arenarock,significant,C3|C4,AllMusic Arena Rock and oversized guitars/refrains,high
+queen-thecosmosrocks,contemporarypoprock,significant,C3,AllMusic Contemporary Pop/Rock,high
+queen-thecosmosrocks,artrock,some tracks,C3,"AllMusic Art Rock style, more incidental than blues/hard rock",medium
+queen-thecosmosrocks,rock,whole album umbrella,C1|C2,"Label press calls it rock and roll, band talks rock as primary identity",high
+queen-thecosmosrocks,blues,some tracks,C7|C2,Roger Taylor says some laid-back blues; lower priority than blues rock,high
+queen-thecosmosrocks,rockandroll,significant,C2|C1,May explicitly identifies rock’n’roll direction in album-making interview,medium
+queen-thecosmosrocks,boogie,one track,C5,Observer review explicitly describes Cosmos Rockin as boogie,high
