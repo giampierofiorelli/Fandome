@@ -1,0 +1,3 @@
+album_id,artist,title,year,type,in_catalog,in_descriptors,action,notes,source
+sombr-inanotherlife,sombr,in another life,2023,ep,no,no,add catalog entry and descriptor; preserve ep type,"MusicBrainz explicit EP, eight songs; digital stores sometimes group with albums",https://musicbrainz.org/release-group/c56106d9-fcd5-49fd-a74d-1ad3e2e0ddc9
+sombr-ibarelyknowher,sombr,I Barely Know Her,2025,studio,yes,no,add descriptor only; do not add duplicate to catalog,Existing catalog entry; original digital release 2025-08-22,https://press.warnerrecords.com/sites/g/files/g2000014901/files/2025-08/SOMBR%20RELEASES%20DEBUT%20ALBUM%20%20I%20BARELY%20KNOW%20HER%20%20OUT%20NOW.pdf
