@@ -1,0 +1,5 @@
+album_id,title,year,type,in_current_catalog,action,notes
+irama-irama,Irama,2016,studio,no,add artist and this release,studio album
+irama-plume,Plume,2018,ep,no,add artist and this release,EP; do not convert into studio
+irama-giovani,Giovani,2018,studio,no,add artist and this release,studio album
+irama-crepe,Crepe,2020,ep,no,add artist and this release,EP; do not convert into studio
