@@ -78,6 +78,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Kraftwerk', 'Giorgio Moroder', 'Donna Summer', 'Can', 'Neu!', 'The Velvet Underground'],
     source: 'Stephen Morris (Julien\'s Auctions tribute to Florian Schneider; Electronic Beats "Tanks for the beats": Can, Neu!, Maureen Tucker); Bernard Sumner (The New European; 2015 interview: Kraftwerk, Neu!, Donna Summer); Peter Hook (Under the Radar: Moroder); Guardian 2023 Blue Monday inspirations',
   },
+  tameimpala: {
+    names: ['Air', 'My Bloody Valentine', 'The Flaming Lips', 'Supertramp', 'The Doors', 'Blue Cheer', 'Bee Gees'],
+    source: 'Kevin Parker: Guardian 2013 (Air, Talkie Walkie); Los Angeles Times 2010 (My Bloody Valentine, Blue Cheer); i-D and Jambands 2015 (The Flaming Lips, The Doors); Sound Opinions 2013 (Supertramp); NME 2015 (Bee Gees, Currents)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

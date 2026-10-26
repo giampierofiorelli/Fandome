@@ -1,0 +1,7 @@
+﻿album_id,title,year,type,in_catalog_ts,action,notes
+tameimpala-tameimpala,Tame Impala,2008,ep,NO,ADD,Modular breakthrough EP; distinguish from the separate earlier H.I.T.S. 003 / Hole in the Sky edition
+tameimpala-innerspeaker,Innerspeaker,2010,studio,YES,KEEP,Already in catalog.ts; preserve existing canonical album ID derived from catalog
+tameimpala-lonerism,Lonerism,2012,studio,YES,KEEP,Already in catalog.ts
+tameimpala-currents,Currents,2015,studio,YES,KEEP,Already in catalog.ts
+tameimpala-theslowrush,The Slow Rush,2020,studio,YES,NEXT PHASE,Already in catalog.ts; not included in phase 01
+tameimpala-deadbeat,Deadbeat,2025,studio,YES,NEXT PHASE,Already in catalog.ts; not included in phase 01
