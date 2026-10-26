@@ -1,0 +1,52 @@
+﻿album_id,genre,source,url,scope,what_it_supports,evidence_strength
+kylie-bodylanguage,dancepop,bodyall,https://www.allmusic.com/album/body-language-r675507/review,whole album,AllMusic identifies dance-pop as the persistent foundation,high
+kylie-bodylanguage,electropop,bodyslant,https://www.slantmagazine.com/music/kylie-minogue-body-language/,whole album,Electro-pop tracks led by minimalist Slow,high
+kylie-bodylanguage,electropop,bodyaoty,https://www.albumoftheyear.org/album/1802-kylie-minogue-body-language.php,whole album,Electro-pop tracks led by minimalist Slow,high
+kylie-bodylanguage,contemporaryrnb,bodyaoty,https://www.albumoftheyear.org/album/1802-kylie-minogue-body-language.php,whole album,R&B-inflected treatment across several album cuts,medium
+kylie-bodylanguage,contemporaryrnb,bodyind,https://www.independent.co.uk/arts-entertainment/music/reviews/album-kylie-minogue-78216.html,whole album,R&B-inflected treatment across several album cuts,medium
+kylie-bodylanguage,synthpop,bodyall,https://www.allmusic.com/album/body-language-r675507/review,whole album,AllMusic calls out 1980s synth pop; Slant describes synth-pop immersion,high
+kylie-bodylanguage,synthpop,bodyslant,https://www.slantmagazine.com/music/kylie-minogue-body-language/,whole album,AllMusic calls out 1980s synth pop; Slant describes synth-pop immersion,high
+kylie-bodylanguage,electroclash,bodyall,https://www.allmusic.com/album/body-language-r675507/review,some tracks,AllMusic specifically names electroclash elements,high
+kylie-bodylanguage,disco,bodyslant,https://www.slantmagazine.com/music/kylie-minogue-body-language/,whole album,1980s disco references throughout; not all songs are disco,high
+kylie-bodylanguage,electrodisco,bodyaoty,https://www.albumoftheyear.org/album/1802-kylie-minogue-body-language.php,some tracks,Secondary electro-disco tag supported by synthetic dance arrangements,medium
+kylie-bodylanguage,synthfunk,bodyaoty,https://www.albumoftheyear.org/album/1802-kylie-minogue-body-language.php,some tracks,80s electronic funk on Still Standing and Sweet Music,medium
+kylie-bodylanguage,synthfunk,bodyapple,https://music.apple.com/us/album/body-language/693183065,some tracks,80s electronic funk on Still Standing and Sweet Music,medium
+kylie-bodylanguage,pop,bodyapple,https://music.apple.com/us/album/body-language/693183065,whole album,Apple Music pop album category,high
+kylie-bodylanguage,downtempo,bodyaoty,https://www.albumoftheyear.org/album/1802-kylie-minogue-body-language.php,some tracks,Slower Chocolate and Someday; secondary downtempo tag,medium
+kylie-bodylanguage,downtempo,bodyguardian,https://www.theguardian.com/music/2003/nov/14/popandrock.shopping4,some tracks,Slower Chocolate and Someday; secondary downtempo tag,medium
+kylie-bodylanguage,nudisco,bodyslant,https://www.slantmagazine.com/music/kylie-minogue-body-language/,some tracks,Still Standing described as nu-disco in Slant,high
+kylie-bodylanguage,hiphop,bodyslant,https://www.slantmagazine.com/music/kylie-minogue-body-language/,some tracks,Hip-hop-flavoured Red Blooded Woman and Secret rap,medium
+kylie-bodylanguage,electronic,bodyind,https://www.independent.co.uk/arts-entertainment/music/reviews/album-kylie-minogue-78216.html,texture,Synth-led electronic framework; both writers describe electro arrangements,medium
+kylie-bodylanguage,electronic,bodyobserver,https://www.theguardian.com/theobserver/2003/nov/16/features.review157,texture,Synth-led electronic framework; both writers describe electro arrangements,medium
+kylie-x,electropop,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,whole album,Principal genre; Slant identifies divergent versions of electropop,high
+kylie-x,electropop,xslant,https://www.slantmagazine.com/music/kylie-minogue-x/,whole album,Principal genre; Slant identifies divergent versions of electropop,high
+kylie-x,dancepop,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,whole album,Predominant four-on-the-floor chart-pop even across varied songs,high
+kylie-x,dancepop,xpitch,https://pitchfork.com/reviews/albums/10947-x/,whole album,Predominant four-on-the-floor chart-pop even across varied songs,high
+kylie-x,pop,xall,https://www.allmusic.com/album/r1265366/review,whole album,AllMusic dance-pop/pop style category,high
+kylie-x,electroclash,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,some tracks,Album of the Year secondary genre; modern electro styling,medium
+kylie-x,electrodisco,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,some tracks,Electro-disco named by Pitchfork and genre index,high
+kylie-x,electrodisco,xpitch,https://pitchfork.com/reviews/albums/10947-x/,some tracks,Electro-disco named by Pitchfork and genre index,high
+kylie-x,synthpop,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,some tracks,Secondary genre tag; The One synth-heavy dance-pop,medium
+kylie-x,poprock,xaoty,https://www.albumoftheyear.org/album/1804-kylie-minogue-x.php,some tracks,Secondary pop-rock tag; 2 Hearts / Stars,medium
+kylie-x,disco,xpitch,https://pitchfork.com/reviews/albums/10947-x/,whole album,Pitchfork says multiple kinds of disco recur,high
+kylie-x,electronica,xwiki,https://en.wikipedia.org/wiki/X_%28Kylie_Minogue_album%29,texture,Secondary synth-driven electronica album description; not supported as a primary genre by critics,low
+kylie-x,electrorock,xpitch,https://pitchfork.com/reviews/albums/10947-x/,some tracks,2 Hearts explicitly described as electro-rock vamp,high
+kylie-x,rnb,xpitch,https://pitchfork.com/reviews/albums/10947-x/,some tracks,Contemporary 2000s R&B influence in a subset of tracks,high
+kylie-x,cosmicdisco,xpitch,https://pitchfork.com/reviews/albums/10947-x/,some tracks,Pitchfork explicitly uses cosmic disco to describe the range,high
+kylie-x,hiphop,xslant,https://www.slantmagazine.com/music/kylie-minogue-x/,some tracks,Speakerphone/Nu-Di-Ty flirt with hip-hop; restricted to tracks,medium
+kylie-x,funk,xpitch,https://pitchfork.com/reviews/albums/10947-x/,some tracks,Wow and related dance cuts described as funked-up electro,medium
+kylie-aphrodite,dancepop,aphall,https://www.allmusic.com/album/aphrodite-r1814540/review,whole album,The album is designed as a unified collection of dance-pop,high
+kylie-aphrodite,dancepop,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,whole album,The album is designed as a unified collection of dance-pop,high
+kylie-aphrodite,electropop,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,whole album,Primary electropop genre in the contemporary discography index,medium
+kylie-aphrodite,disco,aphall,https://www.allmusic.com/album/aphrodite-r1814540/review,whole album,Disco-pop aesthetic across the bulk of the album,high
+kylie-aphrodite,disco,aphslant,https://www.slantmagazine.com/music/kylie-minogue-aphrodite/,whole album,Disco-pop aesthetic across the bulk of the album,high
+kylie-aphrodite,pop,aphall,https://www.allmusic.com/album/aphrodite-r1814540/review,whole album,AllMusic pop and electronic genre classification,high
+kylie-aphrodite,synthpop,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,Secondary synthpop style; synth hooks are foregrounded,medium
+kylie-aphrodite,electronic,aphall,https://www.allmusic.com/album/aphrodite-r1814540/review,whole album,AllMusic names Electronic as a top-level category,high
+kylie-aphrodite,electrohouse,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,"Secondary electro house style only, not universal",medium
+kylie-aphrodite,nudisco,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,Secondary nu-disco tag; retro disco/dance construction,medium
+kylie-aphrodite,electrodisco,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,Secondary electro-disco tag in stylistic index,medium
+kylie-aphrodite,progressivehouse,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,"Secondary progressive house tag, lower prominence",low
+kylie-aphrodite,house,aphaoty,https://www.albumoftheyear.org/album/1801-kylie-minogue-aphrodite.php,some tracks,General family used only alongside documented progressive/electro house,low
+kylie-aphrodite,rnb,aphguardian,https://www.theguardian.com/music/2010/jul/04/kylie-minogue-aphrodite-review,some tracks,Guardian identifies title track as R&B-informed,medium
+kylie-aphrodite,poptrance,aphmeta,https://www.metacritic.com/music/aphrodite/kylie-minogue,some tracks,Uncut describes pop-trance in contemporaneous review excerpt,low

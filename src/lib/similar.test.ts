@@ -86,13 +86,13 @@ describe('similar albums', () => {
 describe('artist suggestions by sound', () => {
   const fan = (fans: string[], ratings: Record<string, number> = {}) =>
     ({ id: 'me', name: 'Me', kind: 'person', fanSince: Object.fromEntries(fans.map((f) => [f, 2020])), following: [], ratings }) as unknown as User
-  const roster = artists.filter((a) => ['madonna', 'elodie', 'annalisa', 'charlixcx', 'kylie'].includes(a.id))
+  const roster = artists.filter((a) => ['madonna', 'elodie', 'annalisa', 'charlixcx', 'psb'].includes(a.id))
 
   it('suggests artists whose albums sound close to the ones you follow, and says why', () => {
     const s = suggestArtists(fan(['elodie']), [], roster, 4, albums)
     expect(s.length).toBeGreaterThan(0)
     expect(s.map((x) => x.artist.id)).not.toContain('elodie')
-    expect(s.map((x) => x.artist.id)).not.toContain('kylie') // no descriptors, no fans: nothing to say
+    expect(s.map((x) => x.artist.id)).not.toContain('psb') // no descriptors, no fans: nothing to say
     expect(s.every((x) => x.reason.length > 0)).toBe(true)
   })
 

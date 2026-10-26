@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,catalog_status,catalog_source,import_action,notes
+kylie-bodylanguage,Body Language,2003,studio,existing,"src/data/seed.ts (branch descriptors, 26 Oct 2026)",keep exact existing ID; append new descriptor row,Already present in current seed; absent from current docs/descriptors/kylie.csv as checked 26 Oct 2026.
+kylie-x,X,2007,studio,existing,"src/data/seed.ts (branch descriptors, 26 Oct 2026)",keep exact existing ID; append new descriptor row,Already present in current seed; absent from current docs/descriptors/kylie.csv as checked 26 Oct 2026.
+kylie-aphrodite,Aphrodite,2010,studio,existing,"src/data/seed.ts (branch descriptors, 26 Oct 2026)",keep exact existing ID; append new descriptor row,Already present in current seed; absent from current docs/descriptors/kylie.csv as checked 26 Oct 2026.
