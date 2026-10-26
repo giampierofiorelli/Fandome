@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,catalog_status,evidence,action
+k-disco,DISCO,2020,studio,existing,"src/data/seed.ts, branch descriptors",Keep this exact ID; append descriptor only if absent
+k-tension,Tension,2023,studio,existing,"src/data/seed.ts, branch descriptors",Keep this exact ID; append descriptor only if absent
+kylie-tensionii,Tension II,2024,studio,existing,"src/data/seed.ts, branch descriptors",Keep this exact ID; append descriptor only if absent
