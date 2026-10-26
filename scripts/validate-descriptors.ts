@@ -66,6 +66,32 @@ for (const file of files) {
   const fresh = body.filter((c) => !albumIds.has(c[0])).map((c) => c[0])
   console.log(`${file}: ${body.length} rows${fresh.length ? `, new albums to add to the catalogue: ${fresh.join(', ')}` : ''}`)
 }
+// Reception files (docs/descriptors/reception/<artist-id>.csv): how important an album is in the artist's career
+// and how highly critics rate it today (at release or later, whichever stands), 0-5 each.
+const REC_HEADER = 'album_id,importance,acclaim,sources'.split(',')
+let recFiles: string[] = []
+try {
+  recFiles = readdirSync('docs/descriptors/reception').filter((f) => f.endsWith('.csv'))
+} catch {
+  recFiles = []
+}
+for (const file of recFiles) {
+  const [head, ...body] = parse(readFileSync(`docs/descriptors/reception/${file}`, 'utf8'))
+  const say = (where: string, msg: string) => (problems++, console.log(`reception/${file} ${where}: ${msg}`))
+  if (!head || head.join(',') !== REC_HEADER.join(',')) {
+    say('header', `expected ${REC_HEADER.join(',')}`)
+    continue
+  }
+  body.forEach((cells, n) => {
+    const where = `row ${n + 2}`
+    if (cells.length !== REC_HEADER.length) return say(where, `${cells.length} columns instead of ${REC_HEADER.length}`)
+    const r = Object.fromEntries(REC_HEADER.map((h, i) => [h, cells[i].trim()]))
+    if (!albumIds.has(r.album_id)) say(where, `album "${r.album_id}" is not in the catalogue`)
+    for (const k of ['importance', 'acclaim']) if (r[k] !== '' && !/^[0-5]$/.test(r[k])) say(where, `${k} "${r[k]}" (0-5 or empty)`)
+    if (!r.sources) say(where, 'sources are required')
+  })
+  console.log(`reception/${file}: ${body.length} rows`)
+}
 // Connection files (docs/connections/*.csv, format in docs/connections-guide.md).
 const CONN_HEADER = 'from_artist,to_artist,type,work,year,source,url,confidence,notes'.split(',')
 const CONN_TYPES = new Set(['influenced', 'soundslike', 'sampled', 'covered', 'collaborated', 'produced'])

@@ -63,6 +63,8 @@ export interface Profile {
   soundsLike: string[]
   influencedBy: string[]
   confidence: number
+  importance?: number // 0-5, career weight (albums only)
+  acclaim?: number // 0-5, critical standing today (albums only)
 }
 
 const CONFIDENCE = { high: 1, medium: 0.9, low: 0.8 }
@@ -97,6 +99,8 @@ function buildAlbumProfile(d: Descriptor): Profile {
     soundsLike: d.soundsLike,
     influencedBy: d.influencedBy,
     confidence: CONFIDENCE[d.confidence],
+    importance: d.importance,
+    acclaim: d.acclaim,
   })
 }
 
@@ -578,12 +582,13 @@ export function similarAlbums(
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: (Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked }
+      const gap = qualityGap(a, b)
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence
     // on its own, so the closest album of that artist has a lower cut.
-    .filter((s) => s.reasons.length && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist))))
+    .filter((s) => s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist))))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
@@ -592,7 +597,8 @@ export function similarAlbums(
   const reserved: typeof scored = []
   // A link names an artist, not a record: of that artist's close albums, the one that best stands for their sound
   // gets the place (closeness × how typical the album is of the artist), not just a near tie on genre labels.
-  const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile))
+  // A career-defining album (importance 0-5, when known) breaks near ties.
+  const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance)
   const linked = scored
     .filter((s) => named(s.artist))
     .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || pick(y) - pick(x))
@@ -720,6 +726,15 @@ export function similarArtists(
 export function genreListSimilarity(a: string[], b: string[]) {
   const toMap = (xs: string[]) => new Map(xs.map((g, i) => [g, 1 / Math.sqrt(i + 1)]))
   return weightedJaccard(expandGenres(toMap(a)), expandGenres(toMap(b)))
+}
+
+// ---------- critical standing ----------
+
+// How far below the album you're on a suggestion stands with critics (0-5 each, at release or later, whichever
+// stands today). Only when both are known. A well-regarded album doesn't lead to one critics panned: 2 points
+// lower pushes it down, 3 or more takes it out, even with a documented link.
+function qualityGap(a: Profile, b: Profile) {
+  return a.acclaim === undefined || b.acclaim === undefined ? 0 : a.acclaim - b.acclaim
 }
 
 // ---------- how typical an album is of its artist ----------

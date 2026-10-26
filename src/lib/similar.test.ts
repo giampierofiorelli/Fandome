@@ -208,3 +208,18 @@ describe('hiding a suggestion', () => {
     }
   })
 })
+
+describe('critical standing', () => {
+  it('a well-regarded album never leads to one critics panned (3+ points lower)', async () => {
+    const { similarAlbums } = await import('./similar')
+    const { DESCRIPTORS } = await import('./descriptors')
+    for (const id of Object.keys(DESCRIPTORS)) {
+      const a = DESCRIPTORS[id].acclaim
+      if (a === undefined) continue
+      for (const s of similarAlbums(id)) {
+        const b = DESCRIPTORS[s.albumId].acclaim
+        if (b !== undefined) expect(a - b).toBeLessThan(3)
+      }
+    }
+  })
+})

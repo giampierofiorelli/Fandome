@@ -47,10 +47,12 @@ Name: <artist-id>_fandome_phase0N.zip, containing:
 - <artist-id>_phase0N_genre_evidence.csv: one line per genre per album, with source and scope (whole album, some tracks, texture).
 - <artist-id>_phase0N_evidence-notes.md: per album, reasoning for each non-obvious value (including instruments and production), and critics' disagreements.
 - <artist-id>_phase0N_catalog-audit.csv: which albums are already in the catalogue and which must be added.
+- <artist-id>_phase0N_reception.csv: header album_id,importance,acclaim,sources, one row per album of this phase. importance 0-5 = how much the album counts in the artist's career (5 = career-defining, the record that made or remade them; 3 = a solid regular album; 1 = minor, contractual or overlooked). acclaim 0-5 = how highly critics rate it today: at release or later, it doesn't matter when, the standing that holds now (5 = acclaimed, in best-of lists; 3 = mixed or average; 1 = panned, then and since). Base both on reviews, retrospective rankings, Metacritic/AOTY critic scores, sales and chart history; name the sources in the sources column (separated by |). Empty if you can't support a value.
 No scripts needed: Claude imports the files, adds albums and tokens, runs the validator and tests. You can't write to GitHub: give the ZIPs to me and I pass them to Claude.
 
 FOR ARTISTS ALREADY DELIVERED (when I ask)
 Send <artist-id>_instruments.csv with header album_id,instruments,production,sources: one row per album already described, same rules as above.
+Send <artist-id>_reception.csv with header album_id,importance,acclaim,sources: one row per album already described, same rules as above.
 
 Start now with phase 01 of the artist below; when it's ready, tell me what the next phase will contain.
 

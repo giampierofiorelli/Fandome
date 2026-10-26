@@ -24,6 +24,8 @@ export interface Descriptor {
   soundsLike: string[]
   influencedBy: string[]
   landmark: boolean
+  importance?: number // 0-5: how much the album counts in the artist's career (reception file)
+  acclaim?: number // 0-5: how highly critics rate it today, at release or later (reception file)
   confidence: 'high' | 'medium' | 'low'
   status: 'draft' | 'reviewed'
   notes: string
@@ -65,10 +67,23 @@ export function parseDescriptors(text: string): Descriptor[] {
 
 const files = import.meta.glob('../../docs/descriptors/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
 
+// Reception (docs/descriptors/reception/<artist-id>.csv): album_id,importance,acclaim,sources.
+const receptionFiles = import.meta.glob('../../docs/descriptors/reception/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+const RECEPTION = new Map<string, { importance?: number; acclaim?: number }>()
+for (const text of Object.values(receptionFiles)) {
+  const [head, ...rows] = parseCsv(text)
+  if (!head) continue
+  const at = (r: string[], k: string) => r[head.indexOf(k)]?.trim() ?? ''
+  for (const r of rows) {
+    const num = (k: string) => (/^[0-5]$/.test(at(r, k)) ? Number(at(r, k)) : undefined)
+    if (at(r, 'album_id')) RECEPTION.set(at(r, 'album_id'), { importance: num('importance'), acclaim: num('acclaim') })
+  }
+}
+
 export const DESCRIPTORS: Record<string, Descriptor> = Object.fromEntries(
   Object.values(files)
     .flatMap(parseDescriptors)
-    .map((d) => [d.albumId, d]),
+    .map((d) => [d.albumId, { ...d, ...RECEPTION.get(d.albumId) }]),
 )
 
 export const descriptorOf = (albumId?: string): Descriptor | undefined => (albumId ? DESCRIPTORS[albumId] : undefined)
