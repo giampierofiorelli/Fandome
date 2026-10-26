@@ -1,0 +1,58 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+queen-adayattheraces,hardrock,dominant,R1|R2,Tie Your Mother Down and White Man frame the guitar-heavy album.,high
+queen-adayattheraces,artrock,significant,R2,AllMusic classifies album as art rock; The Millionaire Waltz spans several contrasting sections.,high
+queen-adayattheraces,rock,umbrella,R1|R2,"Original album falls within rock, with many harder pieces.",high
+queen-adayattheraces,glamrock,classification / theatrical texture,R2,AllMusic explicit glam rock genre metadata; weaker than hard rock here.,medium
+queen-adayattheraces,heavymetal,"some harder material, classification",R2,AllMusic heavy metal style; metal-adjacent Tie Your Mother Down and White Man.,medium
+queen-adayattheraces,albumrock,"whole album, editorial classification",R2,"AllMusic album-rock label, general rather than a distinct acoustic ingredient.",medium
+queen-adayattheraces,arenarock,"whole album, retrospective classification",R2,AllMusic arena-rock label; does not imply the album was recorded in a venue.,medium
+queen-adayattheraces,britishmetal,"some tracks, AllMusic classification",R2,"AllMusic explicitly labels British Metal, not an inference from hard-rock timbre.",medium
+queen-adayattheraces,contemporarypoprock,editorial classification,R2,"AllMusic Contemporary Pop/Rock label, low specificity.",low
+queen-adayattheraces,musichall,some tracks,R2,The Millionaire Waltz and Good Old-Fashioned Lover Boy develop music-hall pop.,high
+queen-adayattheraces,gospel,one prominent track,R5|R6,Somebody to Love has explicitly described layered gospel-choir harmonies.,high
+queen-adayattheraces,poprock,"some tracks, original release listing",R4|R2,"Original album listings categorize pop-rock, while AllMusic describes increasingly streamlined approach.",medium
+queen-adayattheraces,pop,some tracks,R2,"Album has pop passages amid elaborate rock arrangements, especially Lover Boy.",medium
+queen-newsoftheworld,hardrock,dominant,N1|N2,Hard rock dominates It’s Late and direct riffs throughout.,high
+queen-newsoftheworld,rock,umbrella,N1|N2,Concise rock writing underpins album.,high
+queen-newsoftheworld,artrock,editorial classification / selected tracks,N2,"AllMusic art-rock category; lengthy It’s Late and experimental Get Down, Make Love.",medium
+queen-newsoftheworld,glamrock,classification,N2,AllMusic Glam Rock classification; significantly less glam than prior discs.,medium
+queen-newsoftheworld,albumrock,"whole album, editorial classification",N2,AllMusic Album Rock metadata.,medium
+queen-newsoftheworld,arenarock,signature tracks,N2,Audience-participation chants on We Will Rock You and We Are the Champions.,high
+queen-newsoftheworld,contemporarypoprock,generic editorial classification,N2,AllMusic specific editorial tag.,low
+queen-newsoftheworld,dancerock,editorial classification and selected tracks,N2,AllMusic dance-rock tag; Fight from the Inside moves into dance grooves.,medium
+queen-newsoftheworld,punkrock,one prominent track,N7,AllMusic calls Sheer Heart Attack a deliberate punk movement tribute.,high
+queen-newsoftheworld,blues,some tracks,N2,Sleeping on the Sidewalk classified as blues shuffle.,high
+queen-newsoftheworld,funk,some tracks,N2,"Get Down, Make Love described as mechanical funk.",high
+queen-newsoftheworld,disco,one track texture,N2,Fight from the Inside called neo-disco in AllMusic review.,medium
+queen-newsoftheworld,jazz,one track / stylised,N10,"Guardian calls My Melancholy Blues a cod-jazz ballad, not a jazz album.",medium
+queen-newsoftheworld,latin,one track texture,N9|N2,"Who Needs You described as Latin in session research, supported by Latin rhythms in AllMusic.",medium
+queen-jazz,hardrock,dominant,J2|J8,"Heavy electric guitars on Fat Bottomed Girls, Let Me Entertain You and Dead on Time.",high
+queen-jazz,rock,umbrella,J2|J7,Hard-driving original studio rock album despite its title.,high
+queen-jazz,poprock,significant,J8,Album of the Year explicitly classifies the disc as pop rock.,medium
+queen-jazz,artrock,significant,J8|J2,Editorial art-rock classification and complex patchwork of arrangements.,medium
+queen-jazz,glamrock,classification / camp style,J8|J2,Editorial glam-rock classification and theatrical performance.,medium
+queen-jazz,pianorock,some tracks,J8,"Editorial genre label identifies piano rock, evident in Dont Stop Me Now.",medium
+queen-jazz,heavymetal,"some harder tracks, classification",J11,AllMusic heavy-metal classification for heavier tracks; not album-wide metal.,medium
+queen-jazz,albumrock,"whole album, classification",J11,AllMusic Album Rock classification on album page.,medium
+queen-jazz,arenarock,arena-rock classification,J11,AllMusic Arena Rock tag and concert-oriented hooks.,medium
+queen-jazz,contemporarypoprock,generic editorial classification,J11,AllMusic Contemporary Pop/Rock taxonomic label.,low
+queen-jazz,dancerock,track-level plus editorial classification,J11,"AllMusic dance-rock classification, including Fun It.",medium
+queen-jazz,disco,one prominent track,J2,AllMusic calls Fun It Queens first disco song.,high
+queen-jazz,funk,one prominent track,J5,Fun It described as first Queen funk/dance song by specialist researcher.,medium
+queen-thegame,poprock,significant,G2|G10,AllMusic first unabashed pop album; The SHFL specifies pop rock.,high
+queen-thegame,rock,umbrella,G2|G10,Vintage rock n roll and Brian May electric guitar remain central.,high
+queen-thegame,hardrock,"some tracks, editorial category",G2,"AllMusic hard-rock tag, applied more narrowly to Dragon Attack and Rock It.",medium
+queen-thegame,funkrock,some tracks,G10,"The SHFL editorial description names funk rock, with Dragon Attack as exemplar.",high
+queen-thegame,funk,one major track / recurring grooves,G1|G7,QueenOnline documents funk grooves and Another One Bites the Dust.,high
+queen-thegame,disco,one major track,G1|G7,"Official band site says songs bring disco rhythms, especially Another One Bites the Dust.",high
+queen-thegame,dance,some tracks / crossover,G1|G7,The Game marked movement toward dance-oriented music; not entire-album dance pop.,medium
+queen-thegame,rockandroll,one prominent track,G8,Official Queen historical retrospective calls Crazy Little Thing Called Love vintage rock and roll.,high
+queen-thegame,rockabilly,one prominent track,G8|G2,QueenOnline and AllMusic call Crazy Little Thing Called Love a rockabilly revival.,high
+queen-thegame,dancerock,editorial classification,G2,AllMusic dance-rock genre tag.,medium
+queen-thegame,artrock,editorial classification / minor role,G2,AllMusic art-rock tag: a remnant of their earlier mix rather than dominant here.,low
+queen-thegame,heavymetal,some tracks / editorial classification,G2,"AllMusic Heavy Metal metadata, peripheral compared to pop and funk.",low
+queen-thegame,albumrock,"whole album, editorial classification",G2,AllMusic Album Rock category.,medium
+queen-thegame,arenarock,"whole album, editorial classification",G2,"AllMusic Arena Rock category, especially band identity and scale.",medium
+queen-thegame,britishmetal,peripheral editorial classification,G2,"AllMusic explicit British Metal genre taxonomy, minimal specific album coverage.",low
+queen-thegame,contemporarypoprock,editorial classification,G2,AllMusic generic Contemporary Pop/Rock metadata.,low
+queen-thegame,pop,whole-album critical comparison,G2,AllMusic calls The Game the bands first glossy pop album.,high
