@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,in_catalog,action,note
+bowie-youngamericans,bowie,Young Americans,1975,studio,no,add,Add studio album to catalogue
+bowie-stationtostation,bowie,Station to Station,1976,studio,yes,retain,Existing catalogue entry; keep id
+bowie-low,bowie,Low,1977,studio,yes,retain,Existing catalogue entry; keep id
+bowie-heroes,bowie,“Heroes”,1977,studio,yes,retain,Existing catalogue entry; use album typographic curly quotation marks

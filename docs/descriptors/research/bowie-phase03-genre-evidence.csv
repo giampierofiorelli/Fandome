@@ -1,0 +1,36 @@
+album_id,genre,source,url,scope,reason
+bowie-youngamericans,blueeyedsoul,"Stephen Thomas Erlewine, AllMusic: Young Americans",https://www.allmusic.com/album/mw0000098919,whole album,AllMusic explicitly describes album as blue-eyed soul
+bowie-youngamericans,phillysoul,"Douglas Wolk, Pitchfork: Young Americans",https://pitchfork.com/reviews/albums/21488-young-americans/,whole album,Philadelphia soul is the central recorded template
+bowie-youngamericans,soul,David Bowie official store: Young Americans,https://store.davidbowie.com/products/young-americans-2016-remaster-cd,whole album,Official album text describes shift into soul
+bowie-youngamericans,rnb,David Bowie official store: Young Americans,https://store.davidbowie.com/products/young-americans-2016-remaster-cd,whole album,Official edition notes cite R&B directly
+bowie-youngamericans,funk,"Douglas Wolk, Pitchfork: Young Americans",https://pitchfork.com/reviews/albums/21488-young-americans/,some tracks,Fame and rhythmic side of the record; funk singled out
+bowie-youngamericans,disco,"Douglas Wolk, Pitchfork: Young Americans",https://pitchfork.com/reviews/albums/21488-young-americans/,some tracks,Bowie was drawing on emerging Philadelphia disco; not every song is disco
+bowie-youngamericans,plasticsoul,"The Guardian, guide to Bowie V&A retrospective",https://www.theguardian.com/music/2013/feb/16/david-bowie-guide-retrospective-show,whole album,Bowie own term for this project and stylistic interpretation
+bowie-youngamericans,pop,"Stephen Thomas Erlewine, AllMusic: Young Americans",https://www.allmusic.com/album/mw0000098919,whole album,Broad Pop/Rock editorial grouping: low-specificity parent genre
+bowie-stationtostation,artrock,"Stephen Thomas Erlewine, AllMusic Station to Station",https://www.allmusic.com/album/station-to-station-special-edition-r1945265/review,whole album,AllMusic explicitly lists art rock style
+bowie-stationtostation,blueeyedsoul,"Stephen Thomas Erlewine, AllMusic Station to Station",https://www.allmusic.com/album/station-to-station-special-edition-r1945265/review,some tracks,The soul inheritances are concentrated in Golden Years and Stay
+bowie-stationtostation,funk,"Stuart Berman, Pitchfork Station to Station deluxe review",https://pitchfork.com/reviews/albums/14687-station-to-station-deluxe-edition/,some tracks,Explicit funk groove in Golden Years and Stay
+bowie-stationtostation,soul,"Stephen Thomas Erlewine, AllMusic Station to Station",https://www.allmusic.com/album/station-to-station-special-edition-r1945265/review,some tracks,Soul rhythmic elements and phrasing survive earlier era
+bowie-stationtostation,disco,"Stuart Berman, Pitchfork Station to Station deluxe review",https://pitchfork.com/reviews/albums/14687-station-to-station-deluxe-edition/,some tracks,Disco-style grooves coexist with the experimental work
+bowie-stationtostation,krautrock,"Stuart Berman, Pitchfork Station to Station deluxe review",https://pitchfork.com/reviews/albums/14687-station-to-station-deluxe-edition/,texture,Neu! / Kraftwerk motoric influences most conspicuous in title track
+bowie-stationtostation,dancerock,"Stephen Thomas Erlewine, AllMusic Station to Station",https://www.allmusic.com/album/station-to-station-special-edition-r1945265/review,some tracks,AllMusic names dance-rock style
+bowie-stationtostation,experimentalrock,"Stephen Thomas Erlewine, AllMusic Station to Station",https://www.allmusic.com/album/station-to-station-special-edition-r1945265/review,whole album,Extended structures and synthesis integrated with rock band
+bowie-stationtostation,prog,"Stuart Berman, Pitchfork Station to Station deluxe review",https://pitchfork.com/reviews/albums/14687-station-to-station-deluxe-edition/,some tracks,Pitchfork calls title track a prog-disco suite
+bowie-stationtostation,rock,"Stuart Berman, Pitchfork Station to Station deluxe review",https://pitchfork.com/reviews/albums/14687-station-to-station-deluxe-edition/,whole album,Broad review genre rock; supplemented with more specific descriptors
+bowie-low,artrock,Rhino Album of the Day: Low,https://www.rhino.com/aod/low-david-bowie,whole album,Rhino calls first side art-rock and defines record as a divided form
+bowie-low,experimentalrock,"Stephen Thomas Erlewine, AllMusic Low",https://www.allmusic.com/album/low-mw0000185800,whole album,AllMusic classifies experimental rock and dissonant hybrid recording
+bowie-low,electronic,Rhino Album of the Day: Low,https://www.rhino.com/aod/low-david-bowie,whole album,Synthesizers and electronic sound design cross both sides
+bowie-low,ambient,Rhino Album of the Day: Low,https://www.rhino.com/aod/low-david-bowie,some tracks,Atmospheric mostly instrumental second side
+bowie-low,krautrock,Rhino Album of the Day: Low,https://www.rhino.com/aod/low-david-bowie,texture,"Rhino explicitly identifies krautrock influence, not nationality of performers"
+bowie-low,avantfunk,Pitchfork Top 100 Albums of the 1970s: Low,https://pitchfork.com/features/lists-and-guides/5932-top-100-albums-of-the-1970s/,some tracks,Pitchfork describes first-side band as avant-funk
+bowie-low,avantpop,"Stephen Thomas Erlewine, AllMusic Low",https://www.allmusic.com/album/low-mw0000185800,some tracks,AllMusic uses avant pop describing compressed short song forms
+bowie-low,dancerock,"Stephen Thomas Erlewine, AllMusic Low",https://www.allmusic.com/album/low-mw0000185800,some tracks,AllMusic identifies dance-rock element among styles
+bowie-low,rock,Rhino Album of the Day: Low,https://www.rhino.com/aod/low-david-bowie,whole album,Broad genre for the live band passages
+bowie-heroes,artrock,"Stephen Thomas Erlewine, AllMusic Heroes",https://www.allmusic.com/album/r2494/charts-awards,whole album,AllMusic identifies art-rock emphasis
+bowie-heroes,experimentalrock,"Stephen Thomas Erlewine, AllMusic Heroes",https://www.allmusic.com/album/r2494/charts-awards,whole album,AllMusic explicitly labels experimental rock
+bowie-heroes,electronic,Album of the Year: Heroes genre editorial,https://www.albumoftheyear.org/album/5662-david-bowie-heroes.php,whole album,Electronic and synthesizer treatment per genre database and credits
+bowie-heroes,ambient,Album of the Year: Heroes genre editorial,https://www.albumoftheyear.org/album/5662-david-bowie-heroes.php,some tracks,Instrumental pieces Sense of Doubt Moss Garden Neuköln
+bowie-heroes,krautrock,"Ryan Dombal, Pitchfork Heroes",https://pitchfork.com/reviews/albums/21487-heroes/,texture,Pitchfork notes krautrock shuffle and German electronic vocabulary
+bowie-heroes,rock,"Ryan Dombal, Pitchfork Heroes",https://pitchfork.com/reviews/albums/21487-heroes/,some tracks,Live hard-edged ensemble on first side
+bowie-heroes,experimental,"Stephen Thomas Erlewine, AllMusic Heroes",https://www.allmusic.com/album/r2494/charts-awards,whole album,AllMusic experimental classification in addition to rock
+bowie-heroes,dancerock,"Stephen Thomas Erlewine, AllMusic Heroes",https://www.allmusic.com/album/r2494/charts-awards,some tracks,AllMusic lists dance-rock style
