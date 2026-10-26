@@ -47,3 +47,4 @@ Grian Chatten names "Se telefonando" (music and arrangement by Ennio Morricone; 
 - Vogue Adria: https://vogueadria.com/fontaines-dc-dopamine-chamber-inspirations/
 - NPR, 12 Oct 2026 (names Mina, no song).
 influenced_by therefore reads `Mina (Studio Uno '66)`.
+- Rolling Stone Italia cover story: https://www.rollingstone.it/?p=1042332 (Chatten: "Se telefonando è l'ultima canzone che voglio ascoltare prima di morire"; "lo stile magnificamente rétro della Mina anni '60" among the record's sources). No other Mina song is named by Chatten in any source found; NPR only embeds a video of "This World We Love In (Il cielo in una stanza)" next to his quote, so that album is not linked.
