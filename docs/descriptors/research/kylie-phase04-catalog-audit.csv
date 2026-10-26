@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,catalog_status,evidence,action
+kylie-kissmeonce,Kiss Me Once,2014,studio,existing,src/data/seed.ts (descriptors),No catalogue insertion; append descriptor row only
+kylie-kyliechristmas,Kylie Christmas,2015,studio,existing,src/data/seed.ts (descriptors),No catalogue insertion; append descriptor row only
+kylie-golden,Golden,2018,studio,existing,src/data/seed.ts (descriptors),No catalogue insertion; append descriptor row only
