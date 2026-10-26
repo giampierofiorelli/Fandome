@@ -225,7 +225,14 @@ describe('critical standing', () => {
 })
 
 describe('artist links weigh the whole career', () => {
-  it('one album’s influence does not lead the list; artists who name this one as an influence do (owner, Madonna)', () => {
+  it('an influence leads one way: an artist who names Queen is not suggested on Queen\'s page for that (owner)', () => {
+    const of = (id: string) => albums.filter((a) => a.artistId === id || (a.withArtists ?? []).includes(id)).map((a) => a.id)
+    const list = similarArtists('queen', of, artists.map((a) => a.id))
+    expect(list.map((s) => s.artistId)).not.toContain('katyperry')
+    expect(list.every((s) => !/names Queen as an influence|draws on Queen/.test(s.reason))).toBe(true)
+    expect(similarArtists('katyperry', of, artists.map((a) => a.id)).length).toBeGreaterThan(0)
+  })
+  it('one album’s influence does not lead the list; artists whose albums sound like this one do (owner, Madonna)', () => {
     const of = (id: string) => albums.filter((a) => a.artistId === id || (a.withArtists ?? []).includes(id)).map((a) => a.id)
     const list = similarArtists('madonna', of, artists.map((a) => a.id)).map((s) => s.artistId)
     expect(list.slice(0, 3)).not.toContain('mariah')

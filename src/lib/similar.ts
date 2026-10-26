@@ -450,8 +450,9 @@ function buildComparison(a: Profile, b: Profile): Comparison {
   const show = closeness >= 0.5
   if (includesName(a.soundsLike, b.artist)) (score += direct), show && links.push(`${a.title} sounds like ${b.artist}`)
   else if (includesName(b.soundsLike, a.artist)) (score += direct), show && links.push(`${b.title} sounds like ${a.artist}`)
+  // An influence leads one way, from the album to the artist it draws on: an album that names this album's
+  // artist as an influence is no reason to suggest it here (Katy Perry drawing on Queen).
   if (includesName(a.influencedBy, b.artist)) (score += direct), show && links.push(`${a.title} was influenced by ${b.artist}`)
-  else if (includesName(b.influencedBy, a.artist)) (score += direct), show && links.push(`${b.title} draws on ${a.artist}`)
   // An artist credited as producer of the other album worked on it (Prince co-produced Like a Prayer).
   if (includesName(a.producers, b.artist)) (score += direct), show && links.push(`${b.artist} worked on ${a.title}`)
   else if (includesName(b.producers, a.artist)) (score += direct), show && links.push(`${a.artist} worked on ${b.title}`)
@@ -709,8 +710,9 @@ export function similarArtists(
   // influences, then documented comparisons; within each, by score.
   // A link found on one album says little about a whole career (Bedtime Stories drawing on Mariah Carey is one
   // of Madonna's 17 albums): album-level links count for the artist only when they cover at least a quarter of
-  // their albums. Links work both ways: an artist who names this one as an influence (Kylie Minogue → Madonna)
-  // is documented kin too.
+  // their albums. An influence has a direction: it leads from the artist to the ones they draw on, never back
+  // (Katy Perry naming Queen puts Queen on Katy Perry's page, not Katy Perry on Queen's). A comparison
+  // ("sounds like") is a likeness, so it counts both ways.
   const named = ARTIST_INFLUENCES[artistId]?.names ?? []
   const SHARE = 0.25
   const share = (albums: Profile[], has: (p: Profile) => boolean) => (albums.length ? albums.filter(has).length / albums.length : 0)
@@ -718,14 +720,9 @@ export function similarArtists(
     const them = s.profile.artist
     const theirAlbums = profilesOf(albumIdsOf(s.artistId))
     if (includesName(named, them)) return { rank: 0, reason: `Influenced by ${them}` }
-    if (includesName(ARTIST_INFLUENCES[s.artistId]?.names ?? [], me.artist)) return { rank: 1, reason: `${them} names ${me.artist} as an influence` }
     if (share(myAlbums, (a) => includesName(a.influencedBy, them)) >= SHARE) {
       const drew = myAlbums.find((a) => includesName(a.influencedBy, them))!
       return { rank: 2, reason: `${drew.title} draws on ${them}` }
-    }
-    if (share(theirAlbums, (b) => includesName(b.influencedBy, me.artist)) >= SHARE) {
-      const drew = theirAlbums.find((b) => includesName(b.influencedBy, me.artist))!
-      return { rank: 2, reason: `${drew.title} draws on ${me.artist}` }
     }
     if (share(myAlbums, (a) => includesName(a.soundsLike, them)) >= SHARE) {
       const like = myAlbums.find((a) => includesName(a.soundsLike, them))!
