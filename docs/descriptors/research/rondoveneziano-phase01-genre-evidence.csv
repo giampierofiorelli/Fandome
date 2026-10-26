@@ -1,0 +1,24 @@
+﻿album_id,genre,source,scope,what_it_supports,evidence_strength
+rondoveneziano-rondoveneziano,classicalcrossover,https://en.wikipedia.org/wiki/Rond%C3%B2_veneziano_%28album%29,whole album,Explicit album genre,medium
+rondoveneziano-rondoveneziano,baroquepop,https://it.wikipedia.org/wiki/Rond%C3%B2_veneziano_%28album%29,whole album,Italian pop barocco translated literally,medium
+rondoveneziano-rondoveneziano,modernclassical,https://www.xtcr.it/release/2022314/Rondo%27-Veneziano-Rondo%27-Veneziano,whole album,Original Italian pressing style,medium
+rondoveneziano-rondoveneziano,easylistening,https://en.wikipedia.org/wiki/Rond%C3%B2_veneziano_%28album%29,whole album,Explicit album genre,medium
+rondoveneziano-rondoveneziano,electronic,https://www.xtcr.it/release/2022314/Rondo%27-Veneziano-Rondo%27-Veneziano,whole album,Original album record-store genre,medium
+rondoveneziano-rondoveneziano,pop,https://it.wikipedia.org/wiki/Rond%C3%B2_veneziano_%28album%29,whole album,Italian album pop genre,medium
+rondoveneziano-laserenissima,classicalcrossover,https://en.wikipedia.org/wiki/La_Serenissima_%28album%29,whole album,Explicit album genre,medium
+rondoveneziano-laserenissima,baroquepop,https://it.wikipedia.org/wiki/La_Serenissima_%28album%29,whole album,Italian pop barocco translated literally,medium
+rondoveneziano-laserenissima,easylistening,https://en.wikipedia.org/wiki/La_Serenissima_%28album%29,whole album,Explicit album genre,medium
+rondoveneziano-laserenissima,pop,https://it.wikipedia.org/wiki/La_Serenissima_%28album%29,whole album,Album-level classification,medium
+rondoveneziano-scaramucce,classicalcrossover,https://en.wikipedia.org/wiki/Scaramucce,whole album,Explicit album genre,medium
+rondoveneziano-scaramucce,baroquepop,https://musicbrainz.org/release-group/5971c029-de37-3e3a-a6d6-809fafa92776,whole album,MusicBrainz release-group genre tag,medium
+rondoveneziano-scaramucce,modernclassical,https://www.chartsurfer.de/artist/rondo-veneziano/scaramucce-album_ffvhhe.html,whole album,Original LP style,medium
+rondoveneziano-scaramucce,easylistening,https://en.wikipedia.org/wiki/Scaramucce,whole album,Explicit album genre,medium
+rondoveneziano-scaramucce,electronic,https://www.chartsurfer.de/artist/rondo-veneziano/scaramucce-album_ffvhhe.html,texture,Pressing generic electronic label; weaker than orchestral writing,medium
+rondoveneziano-scaramucce,pop,https://it.wikipedia.org/wiki/Scaramucce,whole album,Pop label in Italian entry,low
+rondoveneziano-scaramucce,prog,https://it.wikipedia.org/wiki/Scaramucce,some tracks,Italian source names progressive rock; not corroborated by qualified album critic,low
+rondoveneziano-venezia2000,classicalcrossover,https://en.wikipedia.org/wiki/Venezia_2000,whole album,Compiled works described as classical crossover,medium
+rondoveneziano-venezia2000,baroquepop,https://rondoveneziano.com/en/our-history/,whole album,Original titles drawn from baroque-classical-pop records; ensemble description,medium
+rondoveneziano-venezia2000,modernclassical,https://www.chartsurfer.de/artist/rondo-veneziano/venezia-2000-album_frpurf.html,whole album,Original Italian LP style tag,medium
+rondoveneziano-venezia2000,easylistening,https://en.wikipedia.org/wiki/Venezia_2000,whole album,Explicit compilation genre,medium
+rondoveneziano-venezia2000,electronic,https://www.chartsurfer.de/artist/rondo-veneziano/venezia-2000-album_frpurf.html,texture,LP electronic umbrella genre,medium
+rondoveneziano-venezia2000,synthpop,https://www.chartsurfer.de/artist/rondo-veneziano/venezia-2000-album_frpurf.html,texture,Explicit synth-pop style tag on some countries’ LP editions; do not conflate with electropop,medium

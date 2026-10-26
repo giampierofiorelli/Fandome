@@ -1,0 +1,12 @@
+﻿album_id,title,year,type,artist_in_catalog,album_in_catalog,action,evidence
+rondoveneziano-rondoveneziano,Rondò Veneziano,1980,studio,no,no,"Add artist rondoveneziano to catalog.ts, then add this album under it",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-laserenissima,La Serenissima,1981,studio,no,no,"Add artist rondoveneziano to catalog.ts, then add this album under it",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-scaramucce,Scaramucce,1982,studio,no,no,"Add artist rondoveneziano to catalog.ts, then add this album under it",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-venezia2000,Venezia 2000,1983,compilation,no,no,"Add artist rondoveneziano to catalog.ts, then add this album under it",https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+,The Genius of Venice,1984,reissue,no,no,Do not add separate album; UK title of Rondò Veneziano (1980),https://en.wikipedia.org/wiki/Rond%C3%B2_veneziano_%28album%29
+,Venice in Peril,1983,reissue,no,no,Do not add separate album; international reissue of La Serenissima (1981),https://en.wikipedia.org/wiki/La_Serenissima_%28album%29
+,Fantasia veneziana,1986,reissue,no,no,Later phase: do not add separately; regional title of Rapsodia veneziana (1986). Confirm original label edition,https://en.wikipedia.org/wiki/Rapsodia_veneziana
+,Odissea veneziana,1984,studio,no,no,Next phase as original 1984 LP; official website album tracklist appears to describe a different edition,https://www.estatica.it/it/musica/rondo-veneziano/disco/odissea-veneziana ; https://rondoveneziano.com/en/albums/odissea-veneziana/
+,Casanova,1985,studio,no,no,Next phase; check duplicate regional Odissea Veneziana variant,https://rondoveneziano.com/en/albums/
+,Rapsodia veneziana,1986,studio,no,no,Next phase; prefer original Italian album name,https://en.wikipedia.org/wiki/Rapsodia_veneziana
+,Arabesque,1987,studio,no,no,Next phase,https://rondoveneziano.com/en/albums/
