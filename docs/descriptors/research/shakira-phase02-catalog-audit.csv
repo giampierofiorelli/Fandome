@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,present_in_catalog_ts,action,catalogue_evidence
+shakira-laundryservice,Laundry Service,2001,studio,yes,keep exact catalogue id,src/data/catalog.ts (branch descriptors; verified 2026-10-26)
+shakira-fijacionoralvol1,"Fijación Oral, Vol. 1",2005,studio,yes,keep exact catalogue id,src/data/catalog.ts (branch descriptors; verified 2026-10-26)
+shakira-oralfixationvol2,"Oral Fixation, Vol. 2",2005,studio,yes,keep exact catalogue id,src/data/catalog.ts (branch descriptors; verified 2026-10-26)
+shakira-shewolf,She Wolf,2009,studio,yes,keep exact catalogue id,src/data/catalog.ts (branch descriptors; verified 2026-10-26)
