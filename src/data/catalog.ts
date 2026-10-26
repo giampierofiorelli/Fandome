@@ -484,7 +484,7 @@ const ROWS: Row[] = [
   ['nodoubt', 'No Doubt', '#3f8fe0', 'Orange County ska, just a girl', [['No Doubt', 1992], ['The Beacon Street Collection', 1995], ['Tragic Kingdom', 1995], ['Return of Saturn', 2000]]],
   ['alanis', 'Alanis Morissette', '#8f7a5a', 'Jagged little pill, you oughta know', [['Alanis', 1991], ['Now Is the Time', 1992], ['Jagged Little Pill', 1995], ['Supposed Former Infatuation Junkie', 1998]]],
   ['pulp', 'Pulp', '#c9a14a', 'Common people, Sheffield stories', [['It', 1983], ['Freaks', 1987], ['Separations', 1992], ['His ’n’ Hers', 1994], ['Different Class', 1995], ['This Is Hardcore', 1998], ['We Love Life', 2001], ['More', 2025]]],
-  ['irama', 'Irama', '#d9634a', 'Pop-rap ballads and summer anthems', [['Irama', 2016], ['Plume', 2018], ['Giovani', 2018], ['Crepe', 2020]]],
+  ['irama', 'Irama', '#d9634a', 'Pop-rap ballads and summer anthems', [['Irama', 2016], ['Plume', 2018], ['Giovani', 2018], ['Crepe', 2020], ['Il giorno in cui ho smesso di pensare', 2022], ['No Stress', 2023], ['Antologia della vita e della morte', 2025]]],
 ]
 
 const slug = (s: string) =>

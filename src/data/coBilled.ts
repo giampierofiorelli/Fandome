@@ -20,4 +20,5 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'massiveattack-noprotection': { credit: 'Massive Attack v Mad Professor' },
   'katyperry-katyhudson': { credit: 'Katy Hudson' }, // released under her birth name
   'aguilera-burlesqueoriginalmotionpicturesoundtrack': { with: ['cher'], credit: 'Christina Aguilera & Cher' },
+  'irama-nostress': { credit: 'Irama & Rkomi' },
 }
