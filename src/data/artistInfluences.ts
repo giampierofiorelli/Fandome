@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  lorde: {
+    names: ['James Blake', 'Etta James', 'Fleetwood Mac', 'Otis Redding', 'Robyn', 'Kate Bush'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/lorde-phase01-chatgpt-import-notes.md): GRAMMY.com interview (James Blake, Etta James, Fleetwood Mac, Otis Redding); iHeart 2017 (Robyn); triple j 2017 (Kate Bush on Writer in the Dark)',
+  },
   beberexha: {
     names: ['No Doubt', 'The Cranberries', 'Destiny’s Child', 'Kanye West', 'Lauryn Hill', 'Queen', 'The Killers', 'Twenty One Pilots', 'Aerosmith', 'Nirvana', 'Led Zeppelin', 'Red Hot Chili Peppers'],
     source: 'ChatGPT influence audit (docs/descriptors/research/beberexha-phase01-chatgpt-import-notes.md): Hashtag Legend interview (No Doubt, The Cranberries, Destiny’s Child, Kanye West, Lauryn Hill); GRAMMY.com 2021 Better Mistakes interview (rock influences); NME 2018 (No Doubt on Expectations)',

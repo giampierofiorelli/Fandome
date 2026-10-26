@@ -1,0 +1,4 @@
+album_id,artist,title,year,type,in_catalog,in_existing_descriptors,action,evidence
+lorde-theloveclubep,Lorde,The Love Club EP,2012,ep,no,no,add album to catalog before importing row,"catalog.ts, branch descriptors, inspected 2026-10-26; docs/descriptors/lorde.csv not found"
+lorde-pureheroine,Lorde,Pure Heroine,2013,studio,yes,no,import descriptor row using existing catalogue ID convention,"catalog.ts, branch descriptors, inspected 2026-10-26; docs/descriptors/lorde.csv not found"
+lorde-melodrama,Lorde,Melodrama,2017,studio,yes,no,import descriptor row using existing catalogue ID convention,"catalog.ts, branch descriptors, inspected 2026-10-26; docs/descriptors/lorde.csv not found"

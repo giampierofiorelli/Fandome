@@ -26,7 +26,7 @@ const ROWS: Row[] = [
   ['kraftwerk', 'Kraftwerk', '#c93a3a', 'Where electronic music started', [['Kraftwerk', 1970], ['Kraftwerk 2', 1972], ['Ralf und Florian', 1973], ['Autobahn', 1974], ['Radio-Activity', 1975], ['Trans-Europe Express', 1977], ['The Man-Machine', 1978], ['Computer World', 1981], ['Tour de France Soundtracks', 2003]]],
   ['lanadelrey', 'Lana Del Rey', '#8fa9c4', 'Cinematic sadness, Americana dreams', [['Born to Die', 2012], ['Ultraviolence', 2014], ['Honeymoon', 2015], ['Lust for Life', 2017], ['Norman Fucking Rockwell!', 2019], ['Chemtrails over the Country Club', 2021], ['Blue Banisters', 2021], ['Did You Know That There’s a Tunnel Under Ocean Blvd', 2023]]],
   ['capaldi', 'Lewis Capaldi', '#6b9f7a', 'Ballads and jokes in equal measure', [['Divinely Uninspired to a Hellish Extent', 2019], ['Broken by Desire to Be Heavenly Sent', 2023]]],
-  ['lorde', 'Lorde', '#4d6b8a', 'Melodrama for the thoughtful', [['Pure Heroine', 2013], ['Melodrama', 2017], ['Solar Power', 2021], ['Virgin', 2025]]],
+  ['lorde', 'Lorde', '#4d6b8a', 'Melodrama for the thoughtful', [['The Love Club EP', 2012], ['Pure Heroine', 2013], ['Melodrama', 2017], ['Solar Power', 2021], ['Virgin', 2025]]],
   ['lykkeli', 'Lykke Li', '#9b8bb5', 'Sad songs you can dance to', [['Youth Novels', 2008], ['Wounded Rhymes', 2011], ['I Never Learn', 2014], ['So Sad So Sexy', 2018], ['EYEYE', 2022]]],
   ['maneskin', 'Måneskin', '#b8233a', 'Rock is back, and it’s Roman', [['Il ballo della vita', 2018], ['Teatro d’ira: Vol. I', 2021], ['Rush!', 2023]]],
   ['garrix', 'Martin Garrix', '#2bb3e0', 'Festival drops and main-stage nights', [['Sentio', 2022]]],
