@@ -1,0 +1,18 @@
+album_id,title,year,type,catalog_status,catalog_source,included_in_phase01,notes
+kylie-kylie,Kylie,1988,studio,needs_addition,not_in_seed_ts_or_catalog_ts,yes,New row in this incremental ZIP.
+kylie-enjoyyourself,Enjoy Yourself,1989,studio,needs_addition,not_in_seed_ts_or_catalog_ts,yes,New row in this incremental ZIP.
+kylie-rhythmoflove,Rhythm of Love,1990,studio,needs_addition,not_in_seed_ts_or_catalog_ts,yes,New row in this incremental ZIP.
+kylie-letsgettoit,Let's Get to It,1991,studio,needs_addition,not_in_seed_ts_or_catalog_ts,yes,New row in this incremental ZIP.
+kylie-kylieminogue,Kylie Minogue,1994,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-impossibleprincess,Impossible Princess,1997,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+k-lightyears,Light Years,2000,studio,existing_in_seed_ts,src/data/seed.ts (descriptors),no,Preserve legacy k- id; do not generate kylie- variant.
+k-fever,Fever,2001,studio,existing_in_seed_ts,src/data/seed.ts (descriptors),no,Preserve legacy k- id; do not generate kylie- variant.
+kylie-bodylanguage,Body Language,2003,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-x,X,2007,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-aphrodite,Aphrodite,2010,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-kissmeonce,Kiss Me Once,2014,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-kyliechristmas,Kylie Christmas,2015,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+kylie-golden,Golden,2018,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.
+k-disco,DISCO,2020,studio,existing_in_seed_ts,src/data/seed.ts (descriptors),no,Preserve legacy k- id; do not generate kylie- variant.
+k-tension,Tension,2023,studio,existing_in_seed_ts,src/data/seed.ts (descriptors),no,Preserve legacy k- id; do not generate kylie- variant.
+kylie-tensionii,Tension II,2024,studio,needs_addition,not_in_seed_ts_or_catalog_ts,no,Queue for later phase.

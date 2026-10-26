@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  kylie: {
+    names: ['Prince', 'ABBA', 'Olivia Newton-John', 'Donna Summer', 'Madonna', 'Whitney Houston', 'Cyndi Lauper', 'Fleetwood Mac'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/kylie-phase01-chatgpt-import-notes.md): Vogue 2024 (Prince, ABBA, Olivia Newton-John, Donna Summer); ELLE 2020 (Madonna, Whitney Houston, Cyndi Lauper, Fleetwood Mac, lower strength)',
+  },
   marina: {
     names: ['Kate Bush', 'PJ Harvey', 'Fiona Apple', 'The Distillers', 'Brody Dalle', 'The Dresden Dolls', 'Daniel Johnston', 'Madonna', 'Britney Spears', 'Emily Haines', 'The Shangri-Las', 'Röyksopp', 'Garbage', 'Shirley Manson', 'Patti Smith'],
     source: 'ChatGPT influence audit (docs/descriptors/research/marina-phase01-chatgpt-import-notes.md): Glitter 2015, Irish Times 2012, Drowned in Sound 2012, Wonderland 2012, VICE 2015, The Line of Best Fit (Froot), Glamour',

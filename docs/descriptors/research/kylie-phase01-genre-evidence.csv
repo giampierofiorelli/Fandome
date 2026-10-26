@@ -1,0 +1,47 @@
+album_id,genre,source,url,scope,evidence_note
+kylie-kylie,dancepop,AllMusic,https://www.allmusic.com/album/kylie-mw0000652270,whole album,named Dance-Pop
+kylie-kylie,pop,AllMusic,https://www.allmusic.com/album/kylie-mw0000652270,whole album,named Pop
+kylie-kylie,eurodance,AllMusic,https://www.allmusic.com/album/kylie-mw0000652270,whole album,named Euro-Dance
+kylie-kylie,teenpop,Album of the Year,https://www.albumoftheyear.org/album/22076-kylie-minogue-kylie.php,whole album,genre database tags; secondary
+kylie-kylie,hinrg,Classic Pop,https://www.classicpopmag.com/features/top-15-saw-albums/,some tracks,specialist retrospective: hi-NRG pop standards
+kylie-kylie,eurodisco,Album of the Year,https://www.albumoftheyear.org/album/22076-kylie-minogue-kylie.php,whole album,Euro-Disco genre tag
+kylie-kylie,synthpop,Album of the Year,https://www.albumoftheyear.org/album/22076-kylie-minogue-kylie.php,whole album,Synthpop genre tag; secondary
+kylie-kylie,europop,Apple Music,https://music.apple.com/us/album/kylie/1434579703,some tracks,mid-tempo Europop track cited
+kylie-kylie,bubblegum,AllMusic,https://www.allmusic.com/album/kylie-mw0000652270,whole album,critic calls the SAW album bubblegum; NEW TOKEN
+kylie-enjoyyourself,dancepop,AllMusic,https://www.allmusic.com/album/enjoy-yourself-mw0000201955,whole album,Dance-Pop album style
+kylie-enjoyyourself,pop,Apple Music,https://music.apple.com/us/album/enjoy-yourself/1434672129,whole album,mainstream pop album editorial
+kylie-enjoyyourself,eurodance,AllMusic,https://www.allmusic.com/album/enjoy-yourself-mw0000201955,whole album,Euro-Dance album style
+kylie-enjoyyourself,dance,Classic Pop,https://www.classicpopmag.com/features/classic-album/album-insight-kylie-minogue-enjoy-yourself/,whole album,dance elements explicitly named
+kylie-enjoyyourself,disco,Classic Pop,https://www.classicpopmag.com/features/classic-album/album-insight-kylie-minogue-enjoy-yourself/,whole album,disco elements named
+kylie-enjoyyourself,synthpop,Classic Pop,https://www.classicpopmag.com/features/classic-album/album-insight-kylie-minogue-enjoy-yourself/,whole album,synth-pop elements named
+kylie-enjoyyourself,rnb,Classic Pop,https://www.classicpopmag.com/features/classic-album/album-insight-kylie-minogue-enjoy-yourself/,some tracks,R&B among explicitly named elements
+kylie-enjoyyourself,electrodisco,Album of the Year,https://www.albumoftheyear.org/album/22077-kylie-minogue-enjoy-yourself.php,whole album,Electro-Disco genre metadata
+kylie-enjoyyourself,eurodisco,Album of the Year,https://www.albumoftheyear.org/album/22077-kylie-minogue-enjoy-yourself.php,whole album,Euro-Disco genre metadata
+kylie-enjoyyourself,teenpop,Album of the Year,https://www.albumoftheyear.org/album/22077-kylie-minogue-enjoy-yourself.php,whole album,Teen Pop database genre
+kylie-enjoyyourself,bubblegum,Classic Pop,https://www.classicpopmag.com/features/classic-album/album-insight-kylie-minogue-enjoy-yourself/,some tracks,bubblegum elements explicitly named; NEW TOKEN
+kylie-enjoyyourself,jazz,Apple Music,https://music.apple.com/us/album/enjoy-yourself/1434672129,some tracks,Tell Tale Signs described as jazzy; song only
+kylie-enjoyyourself,yeye,Album of the Year,https://www.albumoftheyear.org/album/22077-kylie-minogue-enjoy-yourself.php,texture,Yé-yé metadata tag uncorroborated by specialist review; disputed NEW TOKEN
+kylie-rhythmoflove,dancepop,AllMusic,https://www.allmusic.com/album/rhythm-of-love-mw0000457557,whole album,Dance-Pop classification
+kylie-rhythmoflove,pop,AllMusic,https://www.allmusic.com/album/rhythm-of-love-mw0000457557,whole album,Pop style classification
+kylie-rhythmoflove,house,Apple Music,https://music.apple.com/us/album/rhythm-of-love/1434672651,some tracks,Better the Devil You Know is house-influenced; AOTY classifies album House
+kylie-rhythmoflove,eurodance,AllMusic,https://www.allmusic.com/album/rhythm-of-love-mw0000457557,whole album,Euro-Dance classification
+kylie-rhythmoflove,discopop,Apple Music,https://music.apple.com/us/album/rhythm-of-love/1434672651,some tracks,Step Back in Time called disco-pop
+kylie-rhythmoflove,divahouse,Album of the Year,https://www.albumoftheyear.org/album/22078-kylie-minogue-rhythm-of-love.php,some tracks,"Diva House genre tag, limited independent corroboration"
+kylie-rhythmoflove,freestyle,Album of the Year,https://www.albumoftheyear.org/album/22078-kylie-minogue-rhythm-of-love.php,some tracks,"Freestyle genre tag, limited independent corroboration"
+kylie-rhythmoflove,newjackswing,Album of the Year,https://www.albumoftheyear.org/album/22078-kylie-minogue-rhythm-of-love.php,some tracks,New Jack Swing genre tag; Classic Pop mentions swingbeat
+kylie-rhythmoflove,eurohouse,Album of the Year,https://www.albumoftheyear.org/album/22078-kylie-minogue-rhythm-of-love.php,some tracks,Euro House genre tag
+kylie-rhythmoflove,hinrg,Album of the Year,https://www.albumoftheyear.org/album/22078-kylie-minogue-rhythm-of-love.php,some tracks,Hi-NRG genre tag
+kylie-rhythmoflove,swingbeat,Classic Pop,https://www.classicpopmag.com/features/kylie-minogue-albums-2/,some tracks,a handful of swingbeat tracks; NEW TOKEN
+kylie-rhythmoflove,italohouse,Classic Pop,https://www.classicpopmag.com/features/kylie-minogue-albums-2/,some tracks,What Do I Have To Do Italo-house-style piano riffs
+kylie-rhythmoflove,electro,Apple Music,https://music.apple.com/us/album/rhythm-of-love/1434672651,some tracks,Count the Days described as 1980s electro throwback
+kylie-rhythmoflove,adultcontemporary,Apple Music,https://music.apple.com/us/album/rhythm-of-love/1434672651,some tracks,The World Still Turns described adult-contemporary pop ballad
+kylie-letsgettoit,dancepop,AllMusic,https://www.allmusic.com/album/lets-get-to-it-mw0000369701,whole album,Dance-Pop album style
+kylie-letsgettoit,pop,Apple Music,https://music.apple.com/us/album/lets-get-to-it/1434693408,whole album,album labelled Pop
+kylie-letsgettoit,newjackswing,Classic Pop,https://www.classicpopmag.com/features/classic-album/kylie-lets-get-to-it/,some tracks,album explicitly includes new jack swing elements
+kylie-letsgettoit,house,Classic Pop,https://www.classicpopmag.com/features/classic-album/kylie-lets-get-to-it/,some tracks,album explicitly includes house elements; Right Here Right Now Apple
+kylie-letsgettoit,hiphop,Classic Pop,https://www.classicpopmag.com/features/classic-album/kylie-lets-get-to-it/,some tracks,explicit hip-hop elements
+kylie-letsgettoit,contemporaryrnb,Album of the Year,https://www.albumoftheyear.org/album/22079-kylie-minogue-lets-get-to-it.php,some tracks,Contemporary R&B database tag; duet corroborates
+kylie-letsgettoit,eurodance,AllMusic,https://www.allmusic.com/album/lets-get-to-it-mw0000369701,whole album,Euro-Dance album style
+kylie-letsgettoit,ukstreetsoul,Album of the Year,https://www.albumoftheyear.org/album/22079-kylie-minogue-lets-get-to-it.php,some tracks,UK Street Soul genre metadata
+kylie-letsgettoit,eurohouse,Album of the Year,https://www.albumoftheyear.org/album/22079-kylie-minogue-lets-get-to-it.php,some tracks,Euro House genre metadata
+kylie-letsgettoit,adultcontemporary,Apple Music,https://music.apple.com/us/album/lets-get-to-it/1434693408,some tracks,If You Were with Me Now as adult-contemporary radio ballad
