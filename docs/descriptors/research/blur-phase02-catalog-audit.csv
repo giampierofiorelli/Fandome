@@ -1,0 +1,5 @@
+﻿album_id,title,year,in_catalog,in_existing_descriptors,action,catalog_artist_id,notes
+blur-blur,Blur,1997,yes,no,add descriptor only; no catalog entry,blur,Read-only descriptors branch contains album title/year in catalog.ts; docs/descriptors/blur.csv returned NOT_FOUND at research cutoff.
+blur-13,13,1999,yes,no,add descriptor only; no catalog entry,blur,Read-only descriptors branch contains album title/year in catalog.ts; docs/descriptors/blur.csv returned NOT_FOUND at research cutoff.
+blur-thinktank,Think Tank,2003,yes,no,add descriptor only; no catalog entry,blur,Read-only descriptors branch contains album title/year in catalog.ts; docs/descriptors/blur.csv returned NOT_FOUND at research cutoff.
+blur-themagicwhip,The Magic Whip,2015,yes,no,add descriptor only; no catalog entry,blur,Read-only descriptors branch contains album title/year in catalog.ts; docs/descriptors/blur.csv returned NOT_FOUND at research cutoff.
