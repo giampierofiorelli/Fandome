@@ -1,0 +1,41 @@
+﻿album_id,genre,source,url,scope,what_it_supports
+bowie-lodger,artrock,MusicBrainz Lodger release-group genres,https://musicbrainz.org/release-group/d6dd84a2-1a62-378c-b6c9-86a8b2211634,whole album,MusicBrainz genre taxonomy
+bowie-lodger,experimentalrock,MusicBrainz Lodger release-group genres,https://musicbrainz.org/release-group/d6dd84a2-1a62-378c-b6c9-86a8b2211634,whole album,MusicBrainz genre taxonomy
+bowie-lodger,newwave,MusicBrainz Lodger release-group genres,https://musicbrainz.org/release-group/d6dd84a2-1a62-378c-b6c9-86a8b2211634,whole album,MusicBrainz genre taxonomy
+bowie-lodger,avantpop,"AllMusic — Stephen Thomas Erlewine, Lodger",https://www.allmusic.com/album/mw0000251982,whole album,AllMusic calls Lodger avant-pop
+bowie-lodger,rock,MusicBrainz Lodger release-group genres,https://musicbrainz.org/release-group/d6dd84a2-1a62-378c-b6c9-86a8b2211634,whole album,MusicBrainz genre taxonomy
+bowie-lodger,dancerock,MusicBrainz Lodger release-group genres,https://musicbrainz.org/release-group/d6dd84a2-1a62-378c-b6c9-86a8b2211634,whole album,MusicBrainz genre taxonomy
+bowie-lodger,reggae,"Pitchfork — Mike Powell, Lodger (2016)",https://pitchfork.com/reviews/albums/21476-lodger/,some tracks,Pitchfork singles out reggae in Yassassin
+bowie-scarymonstersandsupercreeps,artrock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic styles
+bowie-scarymonstersandsupercreeps,newwave,MusicBrainz Scary Monsters release-group genre tags,https://musicbrainz.org/release-group/bb13cb45-254c-3a61-89a5-15d22a97e6d6,whole album,MusicBrainz genre taxonomy
+bowie-scarymonstersandsupercreeps,postpunk,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic style and review
+bowie-scarymonstersandsupercreeps,rock,MusicBrainz Scary Monsters release-group genre tags,https://musicbrainz.org/release-group/bb13cb45-254c-3a61-89a5-15d22a97e6d6,whole album,MusicBrainz genre taxonomy
+bowie-scarymonstersandsupercreeps,experimentalrock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic styles
+bowie-scarymonstersandsupercreeps,dancerock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,some tracks,AllMusic styles; Fashion prominent
+bowie-scarymonstersandsupercreeps,protopunk,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,texture,AllMusic styles
+bowie-scarymonstersandsupercreeps,glamrock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,texture,AllMusic text: glam-rock themes reworked
+bowie-scarymonstersandsupercreeps,artpop,MusicBrainz Scary Monsters release-group genre tags,https://musicbrainz.org/release-group/bb13cb45-254c-3a61-89a5-15d22a97e6d6,whole album,MusicBrainz genre taxonomy
+bowie-scarymonstersandsupercreeps,contemporarypoprock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic styles
+bowie-scarymonstersandsupercreeps,albumrock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic styles
+bowie-scarymonstersandsupercreeps,alternativeindierock,"AllMusic — Stephen Thomas Erlewine, Scary Monsters",https://www.allmusic.com/album/scary-monsters-mw0000251983,whole album,AllMusic Alternative/Indie Rock style
+bowie-letsdance,dancerock,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,blueeyedsoul,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,postdisco,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic review uses post-disco dance music
+bowie-letsdance,newwave,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,poprock,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic parent Pop/Rock
+bowie-letsdance,contemporarypoprock,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,artrock,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,albumrock,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic style
+bowie-letsdance,funk,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,some tracks,AllMusic describes title-track funk
+bowie-letsdance,soul,"AllMusic — Stephen Thomas Erlewine, Let's Dance",https://www.allmusic.com/album/lets-dance-mw0000649915,whole album,AllMusic review: classic soul
+bowie-letsdance,rnb,Musician magazine 1983 — interview with Nile Rodgers,https://www.chictribute.com/arkiv/artiklar/0583musi.html,some tracks,Nile Rodgers discusses 1950s R&B bounce
+bowie-tonight,dancepop,AllMusic — Tonight: album genres/styles,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3A5e62mpn09ffo,whole album,AllMusic style
+bowie-tonight,dancerock,AllMusic — Tonight: album genres/styles,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3A5e62mpn09ffo,whole album,AllMusic style
+bowie-tonight,blueeyedsoul,AllMusic — Tonight: album genres/styles,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3A5e62mpn09ffo,whole album,AllMusic style
+bowie-tonight,sophistipop,AllMusic — Tonight: album genres/styles,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3A5e62mpn09ffo,whole album,AllMusic uses Sophisti-Pop
+bowie-tonight,poprock,MusicBrainz Tonight release group,https://musicbrainz.org/release-group/2d0af79a-cb12-32e3-9cae-21696b910d53,whole album,MusicBrainz genre taxonomy
+bowie-tonight,contemporarypoprock,AllMusic — Tonight: album genres/styles,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3A5e62mpn09ffo,whole album,AllMusic style
+bowie-tonight,reggae,Pitchfork — Loving the Alien 1983–1988,https://pitchfork.com/reviews/albums/david-bowie-loving-the-alien-1983-1988/,some tracks,Pitchfork: Tonight and Don’t Look Down reggae
+bowie-tonight,artrock,MusicBrainz Tonight release group,https://musicbrainz.org/release-group/2d0af79a-cb12-32e3-9cae-21696b910d53,some tracks,MusicBrainz genre taxonomy
+bowie-tonight,rock,MusicBrainz Tonight release group,https://musicbrainz.org/release-group/2d0af79a-cb12-32e3-9cae-21696b910d53,whole album,MusicBrainz genre taxonomy
+bowie-tonight,blues,MusicBrainz Tonight release group,https://musicbrainz.org/release-group/2d0af79a-cb12-32e3-9cae-21696b910d53,texture,MusicBrainz genre taxonomy
