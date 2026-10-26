@@ -1,0 +1,73 @@
+album_id,genre,source,url,scope,what_it_supports
+janet-janet,contemporaryrnb,jall,https://www.allmusic.com/album/janet-mw0000098547,whole album,AllMusic style tag Contemporary R&B.
+janet-janet,dancepop,jall,https://www.allmusic.com/album/janet-mw0000098547,whole album,AllMusic style tag Dance-Pop.
+janet-janet,rnb,jall,https://www.allmusic.com/album/janet-mw0000098547,whole album,AllMusic album-genre R&B.
+janet-janet,pop,jall,https://www.allmusic.com/album/janet-mw0000098547,whole album,AllMusic style tag Pop.
+janet-janet,newjackswing,jslant,https://www.slantmagazine.com/music/janet-jackson-janet/,whole album,Slant names new jack swing among the album styles.
+janet-janet,house,jclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop calls Throb an explicit house anthem.
+janet-janet,hiphop,jslant,https://www.slantmagazine.com/music/janet-jackson-janet/,some tracks,Slant names hip-hop among album styles; Chuck D appears on New Agenda.
+janet-janet,hiphopsoul,jaoty,https://www.albumoftheyear.org/album/8437-janet-janet.php,some tracks,Album of the Year secondary genre hip-hop soul.
+janet-janet,popsoul,jaoty,https://www.albumoftheyear.org/album/8437-janet-janet.php,some tracks,Album of the Year secondary genre pop soul.
+janet-janet,smoothsoul,jaoty,https://www.albumoftheyear.org/album/8437-janet-janet.php,some tracks,Album of the Year secondary genre smooth soul.
+janet-janet,triphop,jaoty,https://www.albumoftheyear.org/album/8437-janet-janet.php,some tracks,Album of the Year secondary genre trip-hop.
+janet-janet,funk,jla,https://www.latimes.com/archives/la-xpm-1993-03-28-ca-15971-story.html,some tracks,1993 Los Angeles Times names funk; Funky Big Band also centers this feel.
+janet-janet,jazz,jslant,https://www.slantmagazine.com/music/janet-jackson-janet/,some tracks,Slant explicitly mentions jazz; Funky Big Band samples Lionel Hampton.
+janet-janet,rock,jslant,https://www.slantmagazine.com/music/janet-jackson-janet/,some tracks,Slant lists rock; What’ll I Do is rock-rooted outlier.
+janet-janet,alternativerock,jclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop explicitly identifies alt-rock on What’ll I Do.
+janet-janet,industrial,jla,https://www.latimes.com/archives/la-xpm-1993-03-28-ca-15971-story.html,texture,"1993 LA Times preview lists industrial among sonic colors, not a dominant genre."
+janet-janet,rap,jla,https://www.latimes.com/archives/la-xpm-1993-03-28-ca-15971-story.html,some tracks,LA Times names rap among styles; Chuck D guests on New Agenda.
+janet-janet,bigband,jall,https://www.allmusic.com/album/janet-mw0000098547,some tracks,AllMusic documents Lionel Hampton big-band sample on Funky Big Band; sample-derived texture only.
+janet-janet,opera,jslant,https://www.slantmagazine.com/music/janet-jackson-janet/,some tracks,Slant directly includes opera in genre palette; operatic guest Kathleen Battle on This Time.
+janet-janet,adultcontemporaryrnb,jall,https://www.allmusic.com/album/janet-mw0000098547,some tracks,AllMusic lists Adult Contemporary R&B style; ballad portions.
+janet-thevelvetrope,contemporaryrnb,vla,https://www.latimes.com/archives/la-xpm-1997-oct-05-ca-39368-story.html,whole album,LA Times describes Jackson’s R&B rhythm foundation; modern contemporary R&B frame.
+janet-thevelvetrope,rnb,vclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,whole album,Classic Pop explicitly calls album R&B.
+janet-thevelvetrope,pop,vla,https://www.latimes.com/archives/la-xpm-1997-oct-05-ca-39368-story.html,whole album,LA Times names pop melodies as central.
+janet-thevelvetrope,hiphop,vclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,whole album,Classic Pop lists hip-hop among album styles.
+janet-thevelvetrope,triphop,vband,https://www.bandwagon.asia/articles/essentials-janet-jackson-the-velvet-rope-1997,some tracks,Bandwagon directly lists trip-hop as an influence in the album’s music.
+janet-thevelvetrope,neosoul,valbumism,https://albumism.com/features/janet-jackson-the-velvet-rope-album-anniversary,some tracks,Albumism contextualizes the record within neo-soul subgenre.
+janet-thevelvetrope,dancepop,vaoty,https://www.albumoftheyear.org/album/18834-janet-the-velvet-rope.php,some tracks,Album of the Year lists dance-pop among the album secondary styles.
+janet-thevelvetrope,artpop,vaoty,https://www.albumoftheyear.org/album/18834-janet-the-velvet-rope.php,some tracks,Album of the Year lists art pop among the album secondary styles.
+janet-thevelvetrope,house,valbumism,https://albumism.com/features/janet-jackson-the-velvet-rope-album-anniversary,some tracks,"Albumism explicitly identifies house on Together Again; original, not remix."
+janet-thevelvetrope,electronica,vband,https://www.bandwagon.asia/articles/essentials-janet-jackson-the-velvet-rope-1997,some tracks,Bandwagon explicitly names electronica elements.
+janet-thevelvetrope,drumandbass,vslant,https://www.slantmagazine.com/music/janet-jackson-the-velvet-rope/,some tracks,Slant identifies Empty as drum-and-bass.
+janet-thevelvetrope,jungle,vpitch,https://pitchfork.com/reviews/albums/janet-jackson-the-velvet-rope-deluxe-edition/,some tracks,Pitchfork says Empty was described as jungle-inflected on release.
+janet-thevelvetrope,quietstorm,v90s,https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/,some tracks,Pitchfork list describes Anything as quiet-storm slow jam.
+janet-thevelvetrope,funk,vla,https://www.latimes.com/archives/la-xpm-1997-oct-05-ca-39368-story.html,some tracks,LA Times calls Free Xone a funk track.
+janet-thevelvetrope,jazz,vla,https://www.latimes.com/archives/la-xpm-1997-oct-05-ca-39368-story.html,texture,"LA Times identifies jazz nuance, not album-wide jazz compositions."
+janet-thevelvetrope,folk,vla,https://www.latimes.com/archives/la-xpm-1997-oct-05-ca-39368-story.html,texture,LA Times names folk nuances; does not mean whole-album folk.
+janet-thevelvetrope,techno,vband,https://www.bandwagon.asia/articles/essentials-janet-jackson-the-velvet-rope-1997,some tracks,Bandwagon names techno elements.
+janet-thevelvetrope,gfunk,vband,https://www.bandwagon.asia/articles/essentials-janet-jackson-the-velvet-rope-1997,some tracks,Bandwagon names G-funk elements.
+janet-thevelvetrope,hardrock,vband,https://www.bandwagon.asia/articles/essentials-janet-jackson-the-velvet-rope-1997,some tracks,Bandwagon lists hard rock among album musical elements.
+janet-thevelvetrope,alternativerock,valbumism,https://albumism.com/features/janet-jackson-the-velvet-rope-album-anniversary,some tracks,Albumism identifies alternative rock elements including title song.
+janet-thevelvetrope,electro,vclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,texture,Classic Pop names electro among album musical vocabularies.
+janet-thevelvetrope,dance,vclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop identifies dance among album styles.
+janet-thevelvetrope,footwork,v90s,https://pitchfork.com/features/lists-and-guides/the-best-albums-of-the-1990s/,texture,"Pitchfork calls the snare texture of Empty proto-footwork: historical comparison only, not a 1997 genre claim."
+janet-allforyou,dancepop,aall,https://www.allmusic.com/album/mw0000017729,whole album,AllMusic style Dance-Pop.
+janet-allforyou,contemporaryrnb,aall,https://www.allmusic.com/album/mw0000017729,whole album,AllMusic style Contemporary R&B.
+janet-allforyou,rnb,aall,https://www.allmusic.com/album/mw0000017729,whole album,AllMusic category R&B.
+janet-allforyou,pop,apitch,https://pitchfork.com/reviews/janet-jackson-all-for-you/,whole album,Pitchfork’s record genre Pop/R&B.
+janet-allforyou,funk,anme,https://www.nme.com/reviews/reviews-nme-4938-335461,some tracks,NME identifies You Ain’t Right and title song as funk.
+janet-allforyou,house,apitch,https://pitchfork.com/reviews/janet-jackson-all-for-you/,some tracks,Pitchfork describes house in album genre range; Come On Get Up also NME.
+janet-allforyou,smoothsoul,aaoty,https://www.albumoftheyear.org/album/17403-janet-all-for-you.php,some tracks,Album of the Year lists smooth soul as secondary.
+janet-allforyou,neosoul,aaoty,https://www.albumoftheyear.org/album/17403-janet-all-for-you.php,some tracks,Album of the Year lists neo-soul as secondary.
+janet-allforyou,downtempo,aaoty,https://www.albumoftheyear.org/album/17403-janet-all-for-you.php,some tracks,Album of the Year secondary genre downtempo.
+janet-allforyou,artpop,aaoty,https://www.albumoftheyear.org/album/17403-janet-all-for-you.php,some tracks,"Album of the Year tags art pop, a minority idiom."
+janet-allforyou,poprock,apitch,https://pitchfork.com/reviews/janet-jackson-all-for-you/,some tracks,Pitchfork expressly names pop-rock in genre pool.
+janet-allforyou,rock,asnr,https://www.newsreview.com/sacramento/content/janet-jackson/5901/,some tracks,Sacramento News & Review calls Trust a Try more rock than pop.
+janet-allforyou,electronica,apitch,https://pitchfork.com/reviews/janet-jackson-all-for-you/,some tracks,Pitchfork explicitly includes electronica.
+janet-allforyou,hiphop,aclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop calls Trust a Try a rocky hip-hopera hybrid; song-level hip-hop context.
+janet-allforyou,disco,awpost,https://www.washingtonpost.com/archive/lifestyle/2001/04/25/janet-jacksons-lighthearted-lament-about-lost-love/a31203c4-b66b-4f56-b149-430d715c7aa2/,some tracks,Washington Post characterizes Janet’s dance music as disco diva mode.
+janet-allforyou,drumandbass,aclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop explicitly names mellow drum and bass on Better Days.
+janet-allforyou,adultcontemporary,aall,https://www.allmusic.com/album/mw0000017729,some tracks,"AllMusic style Adult Contemporary, reflecting ballads."
+janet-damitajo,contemporaryrnb,daoty,https://www.albumoftheyear.org/album/18835-janet-damita-jo.php,whole album,Album of the Year primary genre Contemporary R&B.
+janet-damitajo,dancepop,daoty,https://www.albumoftheyear.org/album/18835-janet-damita-jo.php,some tracks,Album of the Year secondary Dance-Pop.
+janet-damitajo,rnb,dpitch,https://pitchfork.com/reviews/albums/janet-jackson-damita-jo/,whole album,Pitchfork calls R&B central to the album.
+janet-damitajo,smoothsoul,daoty,https://www.albumoftheyear.org/album/18835-janet-damita-jo.php,some tracks,Album of the Year secondary Smooth Soul.
+janet-damitajo,hiphopsoul,daoty,https://www.albumoftheyear.org/album/18835-janet-damita-jo.php,some tracks,Album of the Year secondary Hip Hop Soul.
+janet-damitajo,downtempo,daoty,https://www.albumoftheyear.org/album/18835-janet-damita-jo.php,some tracks,Album of the Year secondary Downtempo.
+janet-damitajo,hiphop,dclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop explicitly describes Damita Jo and My Baby hip-hop.
+janet-damitajo,pop,dmeta,https://www.metacritic.com/music/damita-jo/janet-jackson/details,whole album,Metacritic lists pop genre for this LP.
+janet-damitajo,funk,dclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop highlights 1980s funk throwback R&B Junkie.
+janet-damitajo,soul,dclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop describes I Want You as classic 1960s soul pastiche.
+janet-damitajo,newwave,dclassic,https://www.classicpopmag.com/features/janet-jackson-albums-the-complete-guide/,some tracks,Classic Pop identifies new-wave influence on Just A Little While.
+janet-damitajo,rock,dguardian,https://www.theguardian.com/music/2004/mar/26/popandrock.shopping,some tracks,Guardian identifies Just A Little While as mid-1980s-style rock.

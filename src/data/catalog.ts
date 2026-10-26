@@ -108,7 +108,7 @@ const ROWS: Row[] = [
   ['metallica', 'Metallica', '#7a7f87', 'Riffs, mosh pits and setlist debates', [['Kill ’Em All', 1983], ['Ride the Lightning', 1984], ['Master of Puppets', 1986], ['…And Justice for All', 1988], ['Metallica', 1991], ['72 Seasons', 2023]]],
   ['nirvana', 'Nirvana', '#8f9a5a', 'Smells like a community spirit', [['Bleach', 1989], ['Nevermind', 1991], ['In Utero', 1993], ['MTV Unplugged in New York', 1994]]],
   ['thecure', 'The Cure', '#6a4f7a', 'Lipstick, hairspray and long songs', [['Seventeen Seconds', 1980], ['Pornography', 1982], ['The Head on the Door', 1985], ['Disintegration', 1989], ['Wish', 1992], ['Songs of a Lost World', 2024]]],
-  ['janet', 'Janet Jackson', '#2f2f2f', 'Control, rhythm and a nation of fans', [['Janet Jackson', 1982], ['Dream Street', 1984], ['Control', 1986], ['Rhythm Nation 1814', 1989], ['Janet', 1993], ['The Velvet Rope', 1997], ['All for You', 2001]]],
+  ['janet', 'Janet Jackson', '#2f2f2f', 'Control, rhythm and a nation of fans', [['Janet Jackson', 1982], ['Dream Street', 1984], ['Control', 1986], ['Rhythm Nation 1814', 1989], ['Janet', 1993], ['The Velvet Rope', 1997], ['All for You', 2001], ['Damita Jo', 2004]]],
   ['spicegirls', 'Spice Girls', '#e85d8f', 'Tell us what you want, what you really really want', [['Spice', 1996], ['Spiceworld', 1997], ['Forever', 2000]]],
   ['eminem', 'Eminem', '#5a6f8a', 'Bars, eras and alter egos', [['The Slim Shady LP', 1999], ['The Marshall Mathers LP', 2000], ['The Eminem Show', 2002], ['Recovery', 2010], ['The Death of Slim Shady (Coup de Grâce)', 2024]]],
   ['daftpunk', 'Daft Punk', '#c9a23f', 'Robots who taught us to dance', [['Homework', 1997], ['Discovery', 2001], ['Daft Club', 2003], ['Human After All', 2005], ['Random Access Memories', 2013]]],

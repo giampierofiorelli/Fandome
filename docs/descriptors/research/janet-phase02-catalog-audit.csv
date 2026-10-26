@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,audit_note,expected_id
+janet-janet,Janet,1993,studio,existing,Catalogue title Janet (without official terminal period): preserve inferred Fandome slug janet-janet. Official release stylizes janet.; check generated seed ID before import.,janet-janet
+janet-thevelvetrope,The Velvet Rope,1997,studio,existing,Title/year match Fandome catalogue.,janet-thevelvetrope
+janet-allforyou,All for You,2001,studio,existing,Title/year match Fandome catalogue.,janet-allforyou
+janet-damitajo,Damita Jo,2004,studio,add,Missing from catalogue row for Janet; add before validator.,janet-damitajo
