@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,in_catalog_ts,action,exact_original_credit,notes
+miley-plastichearts,Plastic Hearts,2020,studio,yes,retain,Miley Cyrus,"Existing Fandome album entry; 12 studio songs, omit later bonus covers."
+miley-endlesssummervacation,Endless Summer Vacation,2023,studio,yes,retain,Miley Cyrus,"Existing Fandome entry; 12 original songs, Flowers Demo is not included."
+miley-somethingbeautiful,Something Beautiful,2025,studio,yes,retain,Miley Cyrus,"Existing Fandome entry; original 13 tracks only, exclude deluxe additions."
+miley-basspersuades,Bass Persuades,2026,studio,no,ADD,Miley / MILEY,Artist credit changed to mononym. Keep Fandome artist id miley and row artist Miley Cyrus for consistent import; original 10 tracks include closing remix.
