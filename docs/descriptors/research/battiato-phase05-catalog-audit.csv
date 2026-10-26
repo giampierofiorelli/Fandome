@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog_ts,already_in_current_descriptors_csv,action,evidence
+battiato-fisiognomica,Fisiognomica,1988,studio,yes,no,"retain existing catalog id, add only descriptor row",catalog.ts artist battiato lists Fisiognomica; docs/descriptors/battiato.csv currently Phase 01 only
+battiato-comeuncammelloinunagrondaia,Come un cammello in una grondaia,1991,studio,no,no,ADD,"artist official 1991, Billboard original 1991 EMI LP"
+battiato-gilgamesh,Gilgamesh,1992,studio,no,no,ADD,"official EMI 1992; original disc recorded and mixed at Forum Studios, not concert recording"
+battiato-caffedelapaix,Caffè de la Paix,1993,studio,no,no,ADD,"official EMI 1993, first issue album not compilations"
