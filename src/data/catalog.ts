@@ -73,7 +73,7 @@ const ROWS: Row[] = [
   ['alexwarren', 'Alex Warren', '#6fa7c9', 'Ordinary songs, extraordinary singalongs', [['You’ll Be Alright, Kid', 2025]]],
   ['brunomars', 'Bruno Mars', '#d4a83a', 'Funk, soul and perfect showmanship', [['Doo-Wops & Hooligans', 2010], ['Unorthodox Jukebox', 2012], ['24K Magic', 2016], ['An Evening with Silk Sonic', 2021]]],
   ['kendrick', 'Kendrick Lamar', '#8a8f5a', 'Every verse a thesis', [['Section.80', 2011], ['good kid, m.A.A.d city', 2012], ['To Pimp a Butterfly', 2015], ['DAMN.', 2017], ['Mr. Morale & the Big Steppers', 2022], ['GNX', 2024]]],
-  ['shakira', 'Shakira', '#e7b33f', 'Hips don’t lie, neither do fans', [['Magia', 1991], ['Peligro', 1993], ['Pies Descalzos', 1995], ['¿Dónde Están los Ladrones?', 1998], ['Laundry Service', 2001], ['Fijación Oral, Vol. 1', 2005], ['Oral Fixation, Vol. 2', 2005], ['She Wolf', 2009], ['El Dorado', 2017], ['Las Mujeres Ya No Lloran', 2024]]],
+  ['shakira', 'Shakira', '#e7b33f', 'Hips don’t lie, neither do fans', [['Magia', 1991], ['Peligro', 1993], ['Pies Descalzos', 1995], ['¿Dónde Están los Ladrones?', 1998], ['Laundry Service', 2001], ['Fijación Oral, Vol. 1', 2005], ['Oral Fixation, Vol. 2', 2005], ['She Wolf', 2009], ['Sale el Sol', 2010], ['Shakira', 2014], ['El Dorado', 2017], ['Las Mujeres Ya No Lloran', 2024]]],
   ['rosalia', 'Rosalía', '#d9364f', 'Flamenco to the future', [['Los Ángeles', 2017], ['El Mal Querer', 2018], ['Motomami', 2022], ['Lux', 2025]]],
   ['olivia', 'Olivia Rodrigo', '#9a6fd6', 'Sour, then guts, always loud', [['Sour', 2021], ['Guts', 2023]]],
   ['sza', 'SZA', '#5fa69b', 'Ctrl, SOS and endless replays', [['Ctrl', 2017], ['SOS', 2022]]],

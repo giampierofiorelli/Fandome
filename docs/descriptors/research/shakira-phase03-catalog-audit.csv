@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,present_in_catalog_ts,action,catalogue_evidence
+shakira-saleelsol,Sale el Sol,2010,studio,no,ADD new catalogue album ID,"src/data/catalog.ts on descriptors branch, checked 2026-10-26"
+shakira-shakira,Shakira,2014,studio,no,ADD new catalogue album ID,"src/data/catalog.ts on descriptors branch, checked 2026-10-26"
+shakira-eldorado,El Dorado,2017,studio,yes,KEEP exact existing catalogue ID,"src/data/catalog.ts on descriptors branch, checked 2026-10-26"
+shakira-lasmujeresyanolloran,Las Mujeres Ya No Lloran,2024,studio,yes,KEEP exact existing catalogue ID,"src/data/catalog.ts on descriptors branch, checked 2026-10-26"

@@ -1,0 +1,51 @@
+﻿album_id,genre,source,url,scope,evidence
+shakira-saleelsol,latinpop,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,whole album,AllMusic Latin Pop style
+shakira-saleelsol,pop,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,whole album,AllMusic Pop category and critic pan-global pop review
+shakira-saleelsol,rock,sale_epic,https://www.prnewswire.com/news-releases/shakira-releases-sale-el-sol--the-sun-comes-out-today-october-19th-105259393.html,some tracks,Label identifies rock songs Devoción and title track
+shakira-saleelsol,dancepop,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,whole album,AllMusic Dance-Pop style with several rhythmic cuts
+shakira-saleelsol,merengue,sale_epic,https://www.prnewswire.com/news-releases/shakira-releases-sale-el-sol--the-sun-comes-out-today-october-19th-105259393.html,some tracks,Epic specifically names merengue in Loca and Rabiosa
+shakira-saleelsol,reggaeton,sale_epic,https://www.prnewswire.com/news-releases/shakira-releases-sale-el-sol--the-sun-comes-out-today-october-19th-105259393.html,some tracks,Epic explicitly names reggaeton among tropical rhythms
+shakira-saleelsol,hiphop,sale_wash,https://www.washingtonpost.com/archive/style/2010/10/19/quick-spins/cc97e547-d217-4284-9a1e-ccb832a68bd9/,some tracks,Washington Post describes Loca as hip-hop merengue
+shakira-saleelsol,softrock,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,some tracks,AllMusic describes soft-rock title track
+shakira-saleelsol,newwave,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,some tracks,AllMusic documents new-wave pulse on Tu Boca
+shakira-saleelsol,artpop,sale_all,https://www.allmusic.com/album/sale-el-sol-mw0002049249,some tracks,AllMusic identifies the xx cover Islands as art pop
+shakira-saleelsol,electronica,sale_roll,https://rollingstoneindia.com/shakira/,texture,Rolling Stone explicitly describes clubland electronica within album
+shakira-shakira,pop,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,whole album,AllMusic pop and state-of-the-art radio pop
+shakira-shakira,latinpop,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,whole album,AllMusic Latin Pop style
+shakira-shakira,poprock,shak_bill,https://www.telemundo.com/entretenimiento/billboard-en-espanol/shakira-returns-new-album-steamy-rihanna-video-country-duet-cover-story-tmna577431,whole album,Billboard calls the melodic pop-rock material the record’s core
+shakira-shakira,dancepop,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,some tracks,"AllMusic dance-pop label, Dare as dance cut"
+shakira-shakira,adultcontemporary,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,whole album,AllMusic Adult Contemporary style
+shakira-shakira,rock,shak_nat,https://www.thenationalnews.com/arts-culture/music/album-review-shakira-shakira-1.338409,some tracks,The National rock choruses on Empire
+shakira-shakira,reggae,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,some tracks,AllMusic reggae on Cut Me Deep
+shakira-shakira,dance,shak_nat,https://www.thenationalnews.com/arts-culture/music/album-review-shakira-shakira-1.338409,some tracks,The National describes dance as album component
+shakira-shakira,country,shak_nat,https://www.thenationalnews.com/arts-culture/music/album-review-shakira-shakira-1.338409,some tracks,Country duet Medicine
+shakira-shakira,folk,shak_all,https://www.allmusic.com/album/shakira-mw0002616990,some tracks,AllMusic faux-folk 23
+shakira-shakira,newwave,shak_wash,https://www.washingtonpost.com/entertainment/music/shakira-review-another-appealing-album-from-a-charming-pop-star/2014/03/24/20566db6-b359-11e3-8020-b2d790b3c9e1_story.html,some tracks,Washington Post new-wave/reggae hybrid Can’t Remember
+shakira-shakira,ska,shak_hot,https://www.hotpress.com/music/shakira-shakira-11317392,texture,Hot Press ska-like clipped guitar on Can’t Remember
+shakira-shakira,dub,shak_hot,https://www.hotpress.com/music/shakira-shakira-11317392,some tracks,Hot Press calls Cut Me Deep Jamaican dub reggae
+shakira-shakira,baroquepop,shak_nat,https://www.thenationalnews.com/arts-culture/music/album-review-shakira-shakira-1.338409,some tracks,The National describes Empire elements of baroque pop
+shakira-eldorado,latinpop,dor_all,https://www.allmusic.com/album/el-dorado-mw0003047940,whole album,AllMusic Latin Pop album style and Apple Latin pop category
+shakira-eldorado,reggaeton,dor_apple,https://music.apple.com/us/album/el-dorado/1234665555,whole album,Apple describes trap- and reggaeton-inflected album
+shakira-eldorado,pop,dor_all,https://www.allmusic.com/album/el-dorado-mw0003047940,whole album,AllMusic Pop style
+shakira-eldorado,dancepop,dor_all,https://www.allmusic.com/album/el-dorado-mw0003047940,some tracks,AllMusic Dance-Pop style and dance cuts
+shakira-eldorado,adultcontemporary,dor_all,https://www.allmusic.com/album/el-dorado-mw0003047940,some tracks,AllMusic mature adult contemporary and ballads
+shakira-eldorado,trap,dor_apple,https://music.apple.com/us/album/el-dorado/1234665555,some tracks,Apple calls album trap-inflected; Trap and genre touches
+shakira-eldorado,bachata,dor_wlp,https://worldlisteningpost.com/2018/06/19/shakira-el-dorado/,some tracks,World Listening Post names bachata including Deja Vu
+shakira-eldorado,vallenato,dor_wlp,https://worldlisteningpost.com/2018/06/19/shakira-el-dorado/,some tracks,World Listening Post names vallenato on Colombian style tracks
+shakira-lasmujeresyanolloran,latinpop,las_roll,https://es.rollingstone.com/shakira-esta-de-vuelta-con-las-mujeres-ya-no-lloran/,whole album,Rolling Stone en Español contemporary Latin pop recording
+shakira-lasmujeresyanolloran,pop,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,whole album,Pitchfork describes mainstream pop core
+shakira-lasmujeresyanolloran,reggaeton,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork directly names reggaetón
+shakira-lasmujeresyanolloran,dancepop,las_obs,https://www.theguardian.com/music/2024/mar/23/shakira-las-mujeres-ya-no-lloran-review-the-latin-queen-is-back-on-top,some tracks,Observer describes dance-pop tracks
+shakira-lasmujeresyanolloran,electropop,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork specifically identifies electropop with reggaeton
+shakira-lasmujeresyanolloran,edm,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork identifies EDM-infused dance tracks
+shakira-lasmujeresyanolloran,disco,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork mentions disco beats
+shakira-lasmujeresyanolloran,afrobeats,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork uses Afrobeats plural; distinct from Afrobeat singular
+shakira-lasmujeresyanolloran,bachata,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Dominican bachata on Monotonía
+shakira-lasmujeresyanolloran,ska,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,texture,Pitchfork identifies ska with northern cumbia
+shakira-lasmujeresyanolloran,cumbia,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Northern cumbia stylistic element
+shakira-lasmujeresyanolloran,alternativerock,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Alt-rock heard in Tiempo Sin Verte and Cómo Dónde y Cuándo
+shakira-lasmujeresyanolloran,corridotumbado,las_pais,https://elpais.com/cultura/2024-03-22/las-mujeres-ya-no-lloran-shakira-finiquita-la-demolicion-y-esculpe-un-monumento-a-la-cultura-pop-actual.html,some tracks,El País explicitly identifies El Jefe as corrido tumbado
+shakira-lasmujeresyanolloran,corrido,las_guard,https://www.theguardian.com/music/2024/mar/22/shakira-las-mujeres-ya-no-lloran-review,some tracks,Guardian identifies El Jefe as corrido
+shakira-lasmujeresyanolloran,regionalmexican,las_roll,https://es.rollingstone.com/shakira-esta-de-vuelta-con-las-mujeres-ya-no-lloran/,some tracks,Rolling Stone Spanish explicitly names regional mexicano
+shakira-lasmujeresyanolloran,pophouse,las_guard,https://www.theguardian.com/music/2024/mar/22/shakira-las-mujeres-ya-no-lloran-review,some tracks,Guardian review names pop-house
+shakira-lasmujeresyanolloran,rap,las_pitch,https://pitchfork.com/reviews/albums/shakira-las-mujeres-ya-no-lloran/,some tracks,Pitchfork identifies rap and Cardi B feature
