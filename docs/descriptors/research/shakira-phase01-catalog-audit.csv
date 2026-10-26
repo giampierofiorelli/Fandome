@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_catalog,action,note
+shakira-magia,Shakira,Magia,1991,studio,no,add,Original Columbia/Sony album; no catalogue entry
+shakira-peligro,Shakira,Peligro,1993,studio,no,add,Original Columbia/Sony album; no catalogue entry
+shakira-piesdescalzos,Shakira,Pies Descalzos,1995,studio,yes,keep,Catalogue matches title and 1995 original release
+shakira-dondeestanlosladrones,Shakira,¿Dónde Están los Ladrones?,1998,studio,yes,keep,ID from catalog.ts slug normalization

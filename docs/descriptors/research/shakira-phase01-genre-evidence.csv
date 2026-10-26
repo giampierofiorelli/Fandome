@@ -1,0 +1,33 @@
+﻿album_id,genre,source,url,scope,evidence_note
+shakira-magia,latinpop,MusicBrainz: Magia release group,https://musicbrainz.org/release-group/5ed9b609-a5a9-3cc2-af2c-af83bab00e71,whole album,MusicBrainz Latin pop tag
+shakira-magia,pop,MusicBrainz: Magia release group,https://musicbrainz.org/release-group/5ed9b609-a5a9-3cc2-af2c-af83bab00e71,whole album,MusicBrainz pop tag
+shakira-magia,poprock,Magia liner-note personnel transcription,https://en.wikipedia.org/wiki/Magia_%28Shakira_album%29,whole album,1991 music style recorded in the early-discography source; secondary
+shakira-magia,ballad,"The Guardian – Rory Carroll, 23 Mar 2007",https://www.theguardian.com/uk/2007/mar/23/colombia.world,whole album,Guardian characterises first two albums as mainly ballads
+shakira-peligro,latinpop,MusicBrainz: Peligro release group,https://musicbrainz.org/release-group/fb09e0d5-8a34-3c3d-83d0-49bebb2ee743,whole album,Latin pop MusicBrainz tag
+shakira-peligro,poprock,MusicBrainz: Peligro release group,https://musicbrainz.org/release-group/fb09e0d5-8a34-3c3d-83d0-49bebb2ee743,whole album,Pop/rock community tag and corresponding genre in original album discussion
+shakira-peligro,pop,MusicBrainz: Peligro release group,https://musicbrainz.org/release-group/fb09e0d5-8a34-3c3d-83d0-49bebb2ee743,whole album,Pop community tag
+shakira-peligro,rock,MusicBrainz: Peligro release group,https://musicbrainz.org/release-group/fb09e0d5-8a34-3c3d-83d0-49bebb2ee743,some tracks,Rock community tag; weaker coverage than pop
+shakira-peligro,ballad,"The Guardian – Rory Carroll, 23 Mar 2007",https://www.theguardian.com/uk/2007/mar/23/colombia.world,whole album,First two records described as mainly ballads
+shakira-piesdescalzos,latinpop,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,whole album,Latin pop framing of the album
+shakira-piesdescalzos,poprock,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,whole album,Pop-rock context and rock-guitar-driven songs
+shakira-piesdescalzos,rock,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,whole album,Rock described as part of record palette
+shakira-piesdescalzos,dancepop,Qobuz / TiVo – Jason Birchmeier: Pies Descalzos,https://www.qobuz.com/es-es/album/pies-descalzos-shakira/0827969470923,some tracks,Jason Birchmeier documents dance-pop
+shakira-piesdescalzos,pop,Qobuz / TiVo – Jason Birchmeier: Pies Descalzos,https://www.qobuz.com/es-es/album/pies-descalzos-shakira/0827969470923,whole album,Mainstream pop songwriting
+shakira-piesdescalzos,dancehall,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,some tracks,Apple editor identifies dancehall in palette
+shakira-piesdescalzos,bossanova,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,some tracks,Apple editor names bossa nova
+shakira-piesdescalzos,bachata,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,some tracks,Te Necesito singled out as bachata ballad
+shakira-piesdescalzos,house,Apple Music editors: Pies Descalzos,https://music.apple.com/us/album/pies-descalzos/193662156,some tracks,Estoy Aquí described as featuring 90s house
+shakira-piesdescalzos,ballad,Qobuz / TiVo – Jason Birchmeier: Pies Descalzos,https://www.qobuz.com/es-es/album/pies-descalzos-shakira/0827969470923,some tracks,Review cites ballads
+shakira-piesdescalzos,worldmusic,Qobuz / TiVo – Jason Birchmeier: Pies Descalzos,https://www.qobuz.com/es-es/album/pies-descalzos-shakira/0827969470923,whole album,Broad Qobuz retail classification; low specificity
+shakira-dondeestanlosladrones,latinpop,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,whole album,Apple editorial Latin pop
+shakira-dondeestanlosladrones,poprock,Qobuz / TiVo: Donde Estan Los Ladrones,https://www.qobuz.com/es-es/album/donde-estan-los-ladrones-shakira/0827969470824,whole album,TiVo critic discusses Latin pop and rock crossover
+shakira-dondeestanlosladrones,rock,Rolling Stone: Dónde Están los Ladrones?,https://www.rollingstone.com/music/music-news/shakira-donde-estan-los-ladrones-500-greatest-albums-podcast-1271135/,whole album,Rolling Stone rock edge
+shakira-dondeestanlosladrones,dancepop,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Dance-pop described by Apple
+shakira-dondeestanlosladrones,pop,Qobuz / TiVo: Donde Estan Los Ladrones,https://www.qobuz.com/es-es/album/donde-estan-los-ladrones-shakira/0827969470824,whole album,Eclectic pop via TiVo
+shakira-dondeestanlosladrones,house,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Ciega Sordomuda 90s house
+shakira-dondeestanlosladrones,mariachi,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Ciega Sordomuda mariachi horns
+shakira-dondeestanlosladrones,bachata,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Moscas en la Casa bachata
+shakira-dondeestanlosladrones,hardrock,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Si te vas hard rocking
+shakira-dondeestanlosladrones,ballad,Apple Music editors: Dónde Están los Ladrones,https://music.apple.com/us/album/d%C3%B3nde-est%C3%A1n-los-ladrones/192682818,some tracks,Sombra de Ti ballad
+shakira-dondeestanlosladrones,rockandroll,Qobuz / TiVo: Donde Estan Los Ladrones,https://www.qobuz.com/es-es/album/donde-estan-los-ladrones-shakira/0827969470824,texture,TiVo review names rock and roll rhythm
+shakira-dondeestanlosladrones,worldmusic,Qobuz / TiVo: Donde Estan Los Ladrones,https://www.qobuz.com/es-es/album/donde-estan-los-ladrones-shakira/0827969470824,whole album,Generic Qobuz retail descriptor; low specificity
