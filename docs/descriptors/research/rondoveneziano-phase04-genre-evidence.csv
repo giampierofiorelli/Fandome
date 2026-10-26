@@ -1,0 +1,28 @@
+﻿album_id,genre,source,scope,evidence_note
+rondoveneziano-stagionidivenezia,classicalcrossover,https://www.allmusic.com/album/stagioni-di-venezia-mw0000419087,whole album,AllMusic tags Classical Crossover
+rondoveneziano-stagionidivenezia,baroquepop,https://it.wikipedia.org/wiki/G._P._Reverberi_-_Rond%C3%B2_Veneziano,whole album,Italian album article explicitly calls this pop barocco
+rondoveneziano-stagionidivenezia,easylistening,https://www.allmusic.com/album/stagioni-di-venezia-mw0000419087,whole album,"AllMusic genre Easy Listening, with orchestral variant"
+rondoveneziano-stagionidivenezia,classical,https://www.allmusic.com/album/stagioni-di-venezia-mw0000419087,whole album,AllMusic classical genre category
+rondoveneziano-stagionidivenezia,pop,https://www.qobuz.com/dk-en/album/stagioni-di-venezia-rondo-veneziano/0888880763907,whole album,Qobuz/label Pop category
+rondoveneziano-stagionidivenezia,neoprog,https://www.allmusic.com/album/stagioni-di-venezia-mw0000419087,whole album,Explicit AllMusic Neo-Prog style; lower in order because general platform taxonomy
+rondoveneziano-stagionidivenezia,prog,https://www.allmusic.com/album/stagioni-di-venezia-mw0000419087,whole album,"AllMusic Prog-Rock style, token prog defined in Fandome as progressive rock; platform taxonomy caveat"
+rondoveneziano-ilmagodivenezia,classical,https://www.allmusic.com/album/il-mago-di-venezia-mw0000465682,whole album,AllMusic Classical album-level category
+rondoveneziano-ilmagodivenezia,easylistening,https://www.allmusic.com/album/il-mago-di-venezia-mw0000465682,whole album,AllMusic Easy Listening album-level category
+rondoveneziano-ilmagodivenezia,pop,https://music.apple.com/us/album/il-mago-di-venezia/270586408,whole album,1994 label metadata categorizes as Pop
+rondoveneziano-ilmagodivenezia,baroque,https://www.bibleinmylanguage.com/il-mago-di-venezia-rondo-veneziano-ddd-audio-cd-1994-74321-21775-2/,whole album,"Original CD seller lists Baroque as genre; weak secondary genre attribution, leave trailing"
+rondoveneziano-ilmagodivenezia,neoclassical,https://www.bibleinmylanguage.com/il-mago-di-venezia-rondo-veneziano-ddd-audio-cd-1994-74321-21775-2/,whole album,"Original CD seller lists Neo-Classical; weak secondary source, trailing"
+rondoveneziano-sinfoniadinatale,christmas,https://music.apple.com/us/album/sinfonia-di-natale/1309031944,whole album,Apple Music explicitly classifies as Christmas; repertoire confirms album-wide scope
+rondoveneziano-sinfoniadinatale,classicalcrossover,https://www.allmusic.com/album/sinfonia-di-natale-mw0000419083,whole album,AllMusic Classical Crossover album-level style
+rondoveneziano-sinfoniadinatale,classical,https://www.allmusic.com/album/sinfonia-di-natale-mw0000419083,whole album,AllMusic Classical album genre
+rondoveneziano-sinfoniadinatale,baroquepop,https://it.wikipedia.org/wiki/Sinfonia_di_Natale,whole album,Italian discographic classification pop barocco; album-level
+rondoveneziano-sinfoniadinatale,easylistening,https://www.allmusic.com/album/sinfonia-di-natale-mw0000419083,whole album,AllMusic Orchestral/Easy Listening style
+rondoveneziano-sinfoniadinatale,neoprog,https://www.allmusic.com/album/sinfonia-di-natale-mw0000419083,whole album,"AllMusic Neo-Prog album style, broad taxonomy not independently independently verified"
+rondoveneziano-sinfoniadinatale,prog,https://www.allmusic.com/album/sinfonia-di-natale-mw0000419083,whole album,"AllMusic Prog-Rock style; broad album taxonomy, modest confidence"
+rondoveneziano-marcopolo,classicalcrossover,https://en.wikipedia.org/wiki/Marco_Polo_%28album%29,whole album,Album-specific published genre Classical crossover
+rondoveneziano-marcopolo,easylistening,https://www.allmusic.com/album/marco-polo-mw0000049020,whole album,AllMusic genre Easy Listening; independent Italian album listing corroborates
+rondoveneziano-marcopolo,newage,https://www.allmusic.com/album/marco-polo-mw0000049020,whole album,AllMusic explicit New Age album genre
+rondoveneziano-marcopolo,worldmusic,https://en.wikipedia.org/wiki/Marco_Polo_%28album%29,whole album,"Album-level World music, including Tibetan and Mongolian traditional elements"
+rondoveneziano-marcopolo,classical,https://www.allmusic.com/album/marco-polo-mw0000049020,whole album,AllMusic Classical category
+rondoveneziano-marcopolo,pop,https://it.wikipedia.org/wiki/Marco_Polo_%28Rond%C3%B2_Veneziano%29,whole album,Italian album genre Pop
+rondoveneziano-marcopolo,neoprog,https://www.allmusic.com/album/marco-polo-mw0000049020,whole album,Album-level AllMusic Neo-Prog style; weaker general taxonomy
+rondoveneziano-marcopolo,prog,https://www.allmusic.com/album/marco-polo-mw0000049020,whole album,Explicit AllMusic Prog-Rock style using Fandome canonical prog token
