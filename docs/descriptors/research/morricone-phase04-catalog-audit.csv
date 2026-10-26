@@ -1,0 +1,7 @@
+album_id,title,year,type,catalog_action,evidence,notes
+morricone-metello,Metello,1970,soundtrack,add,"RCA Italy KOLS 1009 ten-track LP dated 1970, SoundtrackCollector and copy listing","new, not in catalog.ts on 2026-10-26"
+morricone-lacaliffa,La Califfa,1971,soundtrack,add,"CBS Italy S70090 fourteen-track LP dated 1971, BnF and MusicBrainz",1970 is FILM/composition date; album 1971
+morricone-saccoevanzetti,Sacco e Vanzetti,1971,soundtrack,add,RCA original 1971 OLS 4 / US LSP-4612 ten-track LP,Ennio Morricone & Joan Baez original co-billing varies by issue
+morricone-giulatesta,Giù la testa,1971,soundtrack,add,Cinevox MDF 33/50 original eleven-cue LP October 1971,do not add bonus track from later remastered CD
+morricone-ilgattoanovecode,Il gatto a nove code,,soundtrack,defer,1971 movie issued only two-track 7-inch; publisher says complete soundtrack waited over twenty years,do not create 1971 full original soundtrack LP; research actual FIRST full album date in future chronological phase
+morricone-questaspeciedamore,Questa specie d’amore,1973,soundtrack,defer,Quartet Records says first full LP was 1973 (despite 1972 film),"candidate for Phase 05, not in this batch"
