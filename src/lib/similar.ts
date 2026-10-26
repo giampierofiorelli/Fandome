@@ -247,6 +247,11 @@ export function scaleSimilarity(a: { scales: Partial<Record<Scale, number>> }, b
   return 1 - diff / 5
 }
 
+// Two albums at opposite ends of a scale (a fully experimental record and a conventional one, an ambient
+// record and a dance album) are not alike, however close their genres: an average of the scales hides it.
+const oppositeEnds = (a: Profile, b: Profile) =>
+  SCALES.some((s) => a.scales[s] !== undefined && b.scales[s] !== undefined && Math.abs(a.scales[s]! - b.scales[s]!) >= 4)
+
 // Voice, lyric themes, era, scene and language, each only when both are known.
 // Themes weighted by rarity too: sharing "sensuality" says more than sharing "love".
 let themeRarity: Map<string, number> | null = null
@@ -371,6 +376,7 @@ export interface Comparison {
   base: number // genres + sound + extras only
   genre: number // genre similarity alone
   linked: boolean // a documented link (producer, influence, sounds-like…)
+  opposite: boolean // at opposite ends of a sound scale (4+ apart out of 5)
   reasons: string[]
 }
 
@@ -442,7 +448,7 @@ function buildComparison(a: Profile, b: Profile): Comparison {
 
   // Links overlap as evidence ("sounds like X" and "draws on X" often say the same thing): their total is capped.
   score = base + Math.min(LINK_CAP, score - base)
-  return { score: score * b.confidence, base, genre, linked: links.length > 0, reasons: reasons.slice(0, 2) }
+  return { score: score * b.confidence, base, genre, linked: links.length > 0, opposite: oppositeEnds(a, b), reasons: reasons.slice(0, 2) }
 }
 
 export interface Similar {
@@ -532,7 +538,7 @@ export function similarAlbums(
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE || c.linked }
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: (Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite) || c.linked }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence
