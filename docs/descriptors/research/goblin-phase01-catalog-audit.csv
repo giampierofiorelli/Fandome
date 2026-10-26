@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,in_catalog,catalog_action,source_url,notes
+goblin-profondorosso,Profondo rosso,1975,soundtrack,yes,keep,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts,Exact Fandome catalogue id preserved
+goblin-roller,Roller,1976,studio,yes,keep,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts,Exact Fandome catalogue id preserved
+goblin-suspiria,Suspiria,1977,soundtrack,yes,keep,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts,Exact Fandome catalogue id preserved
+goblin-ilfantasticoviaggiodelbagarozzomark,Il fantastico viaggio del bagarozzo Mark,1978,studio,no,add,https://www.italianprog.com/a_goblin.htm,1978 original Cinevox SC 33.37; add title to goblin catalogue

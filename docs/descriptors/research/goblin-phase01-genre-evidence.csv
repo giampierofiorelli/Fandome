@@ -1,0 +1,40 @@
+﻿album_id,genre,source,url,scope,evidence
+goblin-profondorosso,prog,allprof,https://www.allmusic.com/album/profondo-rosso-original-score--mw0001920058,whole album,Guarisco explicitly describes prog rock as central
+goblin-profondorosso,rock,ondamon,https://www.ondarock.it/monografie/goblin/,whole album,"Rock band arrangement, riffs and overall framework"
+goblin-profondorosso,jazz,allprof,https://www.allmusic.com/album/profondo-rosso-original-score--mw0001920058,whole album,Guarisco identifies jazz in overall stylistic blend
+goblin-profondorosso,jazzrock,allprof,https://www.allmusic.com/album/profondo-rosso-original-score--mw0001920058,some tracks,Deep Shadows directly labelled jazz-rock
+goblin-profondorosso,hardrock,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Monograph explicitly finds hard rock in score
+goblin-profondorosso,heavymetal,allprof,https://www.allmusic.com/album/profondo-rosso-original-score--mw0001920058,some tracks,AllMusic explicitly says heavy metal is part of hybrid
+goblin-profondorosso,electronic,ondamon,https://www.ondarock.it/monografie/goblin/,texture,Electronic keyboards and sound textures detailed
+goblin-profondorosso,funk,head,https://www.headheritage.co.uk/unsung/reviews/goblin-profondo-rosso,texture,Critic states funk/progressive references in this recording
+goblin-profondorosso,gothicprog,head,https://www.headheritage.co.uk/unsung/reviews/goblin-profondo-rosso,texture,Reviewer calls album gothic-prog; stylistic qualifier rather than stable subgenre
+goblin-roller,prog,allroller,https://www.allmusic.com/album/roller-mw0000341984,whole album,Complex prog-rock is central to album review
+goblin-roller,rock,bandroller,https://goblinrockband.bandcamp.com/album/roller,whole album,Label calls it progressive rock
+goblin-roller,symphonicprog,bandroller,https://goblinrockband.bandcamp.com/album/roller,whole album,Label explicitly characterises record as symphonic prog
+goblin-roller,jazzrock,bandroller,https://goblinrockband.bandcamp.com/album/roller,some tracks,Label calls hybrid jazz-rock
+goblin-roller,funk,allroller,https://www.allmusic.com/album/roller-mw0000341984,some tracks,Snip Snap singled out as a funk excursion
+goblin-roller,psychedelicrock,bandroller,https://goblinrockband.bandcamp.com/album/roller,texture,Label tags reference psychedelic progressive rock
+goblin-roller,electronic,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Review describes electronic spirals on Dr Frankenstein
+goblin-roller,instrumentalrock,bandroller,https://goblinrockband.bandcamp.com/album/roller,whole album,"Label tags instrumental rock, supported by instrumental album description"
+goblin-roller,jazz,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Jazz inserts in long Goblin suite
+goblin-suspiria,electronic,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,whole album,Top-level editorial electronic category; synth effects throughout
+goblin-suspiria,prog,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,whole album,Top-level prog category; rock structures recurring
+goblin-suspiria,rock,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,whole album,Persistent guitar and bass-driven progressive rock elements
+goblin-suspiria,ambient,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,"Reviewer says soundtrack is ambient/atmospheric, not always driving"
+goblin-suspiria,darkambient,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,texture,Reviewer explicitly identifies dark-ambient textures
+goblin-suspiria,avantgarde,gdm,https://www.archiviocolonnesonore.com/goblin/biografia/,whole album,"Archive describes score as opera d’avanguardia, i.e. avant-garde work"
+goblin-suspiria,minimalism,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,texture,Critic hears minimalism and obsessive/repeated motifs
+goblin-suspiria,worldmusic,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,texture,Critic calls out ethnic/world-music allusions
+goblin-suspiria,krautrock,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,texture,Kraut influence cited in electronic passages; not entire album
+goblin-suspiria,folk,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,Black Forest specifically called folk-prog; broader folk comes second
+goblin-suspiria,drone,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,Opening to the Sighs specifically called a drone fragment
+goblin-suspiria,funk,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,Funk elements especially Markos and Blind Concert
+goblin-suspiria,disco,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,Blind Concert disco-funk rhythm; not album-wide disco
+goblin-suspiria,jazz,ondasus,https://ondarock.com/reviews/italian-milestones/goblin-suspiria/,some tracks,Jazz-origin sax and percussion especially Black Forest
+goblin-ilfantasticoviaggiodelbagarozzomark,prog,ondamon,https://www.ondarock.it/monografie/goblin/,whole album,Contemporary critic monograph calls it a standalone progressive concept album
+goblin-ilfantasticoviaggiodelbagarozzomark,rock,allbag,https://www.allmusic.com/album/il-fantastico-viaggio-del-bagarozzo-mark-mw0000342684,whole album,AllMusic hard-rock and prog-rock styles
+goblin-ilfantasticoviaggiodelbagarozzomark,symphonicprog,aotybag,https://www.albumoftheyear.org/album/74965-goblin-il-fantastico-viaggio-del-bagarozzo-mark.php,some tracks,Album aggregator identifies symphonic prog; OndaRock details grand keyboard material
+goblin-ilfantasticoviaggiodelbagarozzomark,hardrock,allbag,https://www.allmusic.com/album/il-fantastico-viaggio-del-bagarozzo-mark-mw0000342684,some tracks,AllMusic explicitly lists Hard Rock
+goblin-ilfantasticoviaggiodelbagarozzomark,jazz,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Critic describes jazz inflections in selected pieces
+goblin-ilfantasticoviaggiodelbagarozzomark,blues,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Critic finds blues-jazz inflections in opening numbers
+goblin-ilfantasticoviaggiodelbagarozzomark,electronic,ondamon,https://www.ondarock.it/monografie/goblin/,some tracks,Review singles out electronic update in Un Ragazzo d Argento
