@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,evidence_url
+beyonce-dangerouslyinlove,Dangerously in Love,2003,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-bday,B’Day,2006,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-iamsashafierce,I Am… Sasha Fierce,2008,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-4,4,2011,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts

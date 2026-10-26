@@ -1,0 +1,37 @@
+﻿album_id,genre,source,url,scope,evidence
+beyonce-dangerouslyinlove,contemporaryrnb,All Dil,https://www.allmusic.com/album/mw0000598421,whole album,AllMusic lists Contemporary R&B
+beyonce-dangerouslyinlove,rnb,All Dil,https://www.allmusic.com/album/mw0000598421,whole album,AllMusic places release in R&B
+beyonce-dangerouslyinlove,pop,All Dil,https://www.allmusic.com/album/mw0000598421,whole album,AllMusic lists Pop
+beyonce-dangerouslyinlove,dancepop,All Dil,https://www.allmusic.com/album/mw0000598421,some tracks,AllMusic lists Dance-Pop and contemporary singles support classification
+beyonce-dangerouslyinlove,soul,Guardian Dil,https://www.theguardian.com/music/2003/jun/27/popandrock.artsfeatures8,some tracks,Guardian explicitly contrasts soul ballads with dancefloor songs
+beyonce-dangerouslyinlove,hiphop,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,some tracks,Hip-hop leaning songs and guest rap voices
+beyonce-dangerouslyinlove,funk,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,some tracks,Crazy in Love described as vintage-funk flavoured
+beyonce-dangerouslyinlove,dancehall,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,some tracks,Baby Boy contains Sean Paul dancehall/reggae influences
+beyonce-dangerouslyinlove,reggae,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,some tracks,Baby Boy described as reggae-spiced
+beyonce-dangerouslyinlove,disco,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,some tracks,Naughty Girl explicitly compared with Donna Summer disco
+beyonce-dangerouslyinlove,house,Lat Dil,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,texture,Baby Boy described as house-spiced
+beyonce-bday,contemporaryrnb,All Bday,https://www.allmusic.com/album/mw0000542181,whole album,AllMusic contemporary R&B style
+beyonce-bday,rnb,Grammy Guide,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,whole album,GRAMMY describes R&B core
+beyonce-bday,funk,Pf Bday,https://pitchfork.com/reviews/albums/9378-bday/,whole album,Pitchfork highlights heavy funk character across up-tempo tracks
+beyonce-bday,pop,All Bday,https://www.allmusic.com/album/mw0000542181,whole album,AllMusic lists Pop
+beyonce-bday,dancepop,Grammy Guide,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,some tracks,Dance and party-driven songs across the record
+beyonce-bday,soul,Grammy Guide,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,some tracks,GRAMMY links album to soulful live performances
+beyonce-bday,gogo,Pf Bday 2026,https://pitchfork.com/reviews/albums/beyonce-bday-20th-anniversary-edition/,some tracks,Freakum Dress specified as D.C. go-go feel
+beyonce-bday,hiphop,Sony Bday,https://www.sonymusic.ca/press_release/beyonce-marks-her-birthday-with-the-release-of-a-remastered-deluxe-bday-album,texture,In the Sony statement Beyoncé says she sought to blend R&B melodic structure with hip-hop sampling and beat minimalism
+beyonce-iamsashafierce,contemporaryrnb,All Sasha,https://www.allmusic.com/album/i-amsasha-fierce-mw0000801448,whole album,AllMusic contemporary R&B
+beyonce-iamsashafierce,rnb,All Sasha,https://www.allmusic.com/album/i-amsasha-fierce-mw0000801448,whole album,AllMusic R&B umbrella
+beyonce-iamsashafierce,pop,All Sasha,https://www.allmusic.com/album/i-amsasha-fierce-mw0000801448,whole album,AllMusic Pop
+beyonce-iamsashafierce,dancepop,Guard Sasha2,https://www.theguardian.com/music/2008/nov/09/beyonce-sasha-fierce-review,some tracks,Sasha Fierce side concentrates club-pop anthems
+beyonce-iamsashafierce,adultcontemporary,All Sasha,https://www.allmusic.com/album/i-amsasha-fierce-mw0000801448,some tracks,AllMusic adult-contemporary style and I Am ballads
+beyonce-iamsashafierce,synthpop,Guard Sasha,https://www.theguardian.com/music/2008/nov/14/beyonce-i-am-sasha-fierce,some tracks,Guardian specifically names 1980s synthpop mode on Radio
+beyonce-iamsashafierce,softrock,Guard Sasha,https://www.theguardian.com/music/2008/nov/14/beyonce-i-am-sasha-fierce,some tracks,I Am half discussed as MOR/soft rock ballads
+beyonce-iamsashafierce,hiphop,Guard Sasha,https://www.theguardian.com/music/2008/nov/14/beyonce-i-am-sasha-fierce,some tracks,"Diva noted as sparse, rap-like club track"
+beyonce-4,contemporaryrnb,All 4,https://www.allmusic.com/album/4-mw0002136254,whole album,AllMusic contemporary R&B
+beyonce-4,rnb,All 4,https://www.allmusic.com/album/4-mw0002136254,whole album,AllMusic R&B album classification
+beyonce-4,soul,Guard 4,https://www.theguardian.com/music/2011/jun/23/beyonce-4-album-review,whole album,Reviewer describes 1960s and 1980s soul references
+beyonce-4,pop,All 4,https://www.allmusic.com/album/4-mw0002136254,whole album,AllMusic lists Pop
+beyonce-4,adultcontemporaryrnb,All 4,https://www.allmusic.com/album/4-mw0002136254,some tracks,AllMusic adult contemporary R&B
+beyonce-4,funk,Guard 4B,https://www.theguardian.com/music/2011/jun/26/beyonce-4-review,some tracks,Retro rhythms and horn-led groove across selected songs
+beyonce-4,dancepop,All 4,https://www.allmusic.com/album/4-mw0002136254,some tracks,AllMusic lists dance-pop; minority of tracks
+beyonce-4,afrobeat,Guard 4,https://www.theguardian.com/music/2011/jun/23/beyonce-4-album-review,some tracks,Countdown has explicitly named Afrobeat brass accents
+beyonce-4,dancehall,Guard 4,https://www.theguardian.com/music/2011/jun/23/beyonce-4-album-review,some tracks,Run the World has dancehall rhythm

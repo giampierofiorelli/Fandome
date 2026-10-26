@@ -1,0 +1,29 @@
+﻿album_id,source,source_type,url,what_it_supports,evidence_strength
+beyonce-dangerouslyinlove,All Dil,expert_review,https://www.allmusic.com/album/mw0000598421,"Genre classifications: contemporary R&B, dance-pop, pop; release date",high
+beyonce-dangerouslyinlove,Guardian Dil,contemporary_review,https://www.theguardian.com/music/2003/jun/27/popandrock.artsfeatures8,Dance-floor versus soul-ballad mixture; critical dissent on cohesion,high
+beyonce-dangerouslyinlove,Lat Dil,contemporary_review,https://www.latimes.com/archives/la-xpm-2003-jun-24-et-nichols24-story.html,"Vintage funk, disco reference, reggae/house flavor; lead vocal dynamics and themes",high
+beyonce-dangerouslyinlove,Mb Dil,release_credits,https://musicbrainz.org/release/3387546e-5401-4d18-ac82-95bea7c3346c,"Producers Beyoncé, Harrison, Storch, Focus, Elliott, Brockman, Stewart, Wilson, McCalla, Batson; credited instruments; documented samples",high
+beyonce-dangerouslyinlove,Grammy Guide,retrospective,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,Career-defining debut and Grammy impact,high
+beyonce-bday,All Bday,expert_review,https://www.allmusic.com/album/mw0000542181,R&B and pop classification; original 2006 release,high
+beyonce-bday,Pf Bday,contemporary_review,https://pitchfork.com/reviews/albums/9378-bday/,"Album-wide high energy, funk focus and few ballads; go-go sound on selected tracks",high
+beyonce-bday,Pf Bday 2026,retrospective,https://pitchfork.com/reviews/albums/beyonce-bday-20th-anniversary-edition/,"Live horns, funk and D.C. go-go texture; retrospective assessment",high
+beyonce-bday,Guard Bday,contemporary_review,https://www.theguardian.com/music/2006/sep/01/popandrock.urban1,"Three-week sessions, songs, vocal energy and genre contrast",high
+beyonce-bday,Guard Bday2,contemporary_review,https://www.theguardian.com/music/2006/sep/03/popandrock,"Producers, compact party-oriented album and rhythmic production",high
+beyonce-bday,Mb Bday,release_credits,https://musicbrainz.org/release/c7616ae5-3e67-4ff9-8605-fb9c84595867,"Rodney Jerkins production, live bass and horn credits; arranger",high
+beyonce-bday,Mb Bday Del,edition_credits,https://musicbrainz.org/release/f0666c8d-d19d-4559-a431-cdb7d4a6c32c,Supplemental original-session and deluxe-only credits; studio instrumentation,high
+beyonce-bday,Grammy Guide,retrospective,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,"Funk, soul, live instrumentation, production team and narrative",high
+beyonce-bday,Bday Oral,producer_interview_reprint,https://beyonceonline.org/2026/05/beyonces-bday-oral-history-collaborators-talk-classic-2006-album/,"Producers recall 808 bass layering, horn sessions, vocal stacks and go-go inspiration",medium
+beyonce-bday,Sony Bday,label_artist_statement,https://www.sonymusic.ca/press_release/beyonce-marks-her-birthday-with-the-release-of-a-remastered-deluxe-bday-album,"Beyoncé first-person statement on sampling, drums, live instruments, arrangements and hip-hop/R&B balance",high
+beyonce-iamsashafierce,All Sasha,expert_review,https://www.allmusic.com/album/i-amsasha-fierce-mw0000801448,"Contemporary R&B, pop and adult contemporary; original edition",high
+beyonce-iamsashafierce,Guard Sasha,contemporary_review,https://www.theguardian.com/music/2008/nov/14/beyonce-i-am-sasha-fierce,"Two-part album, soft-rock/ballads vs synthpop/club music, vocals, sonic experimentation",high
+beyonce-iamsashafierce,Guard Sasha2,contemporary_review,https://www.theguardian.com/music/2008/nov/09/beyonce-sasha-fierce-review,Emotional divide between halves and club-pop emphasis,high
+beyonce-iamsashafierce,Mb Sasha,release_credits,https://musicbrainz.org/release/e00b32b1-a697-4679-b085-52eb6bd5ffd9,Track producer roles; guitars and live drums; editions,high
+beyonce-iamsashafierce,Guard Concept,artist_statement,https://www.theguardian.com/music/2008/oct/24/beyonce-sasha-fierce,"Sasha Fierce as stage persona, two-disc concept and electronic-edged R&B",high
+beyonce-4,All 4,expert_review,https://www.allmusic.com/album/4-mw0002136254,"Contemporary R&B, dance-pop, pop and adult contemporary; no consistent dancefloor focus",high
+beyonce-4,Guard 4,contemporary_review,https://www.theguardian.com/music/2011/jun/23/beyonce-4-album-review,"1980s soul, dancehall Run the World, Afrobeat horns Countdown and R&B ballads",high
+beyonce-4,Guard 4B,contemporary_review,https://www.theguardian.com/music/2011/jun/26/beyonce-4-review,"Retro soul, horns and steel-drum textures in selected tracks, emotional ballads",high
+beyonce-4,Mb 4,release_credits,https://musicbrainz.org/release/7c08b5f8-2d6f-4d72-a829-3175528ef25f,"Guitar, drums, horns, strings, cello, bass, keyboards, piano; producer roles; samples/programming",high
+beyonce-4,Guard Fela,artist_interview_reporting,https://www.theguardian.com/music/2011/may/12/beyonce-new-album-title-4,Beyoncé states Fela Kuti inspired early sessions and concept,high
+beyonce-4,Nme Fela,artist_interview_reporting,https://www.nme.com/news/music/beyonce-275-1284292,"Beyoncé lists Adele, Florence, Prince, Earth Wind & Fire and more as album inspirations",high
+beyonce-4,Billboard Quote,interview_excerpt,https://hiphop-n-more.com/2011/05/beyonce-reveals-title-of-4th-studio-album/,"Direct Beyoncé account of Fela, soul and multiple named influences and vocal choices",medium
+beyonce-4,Grammy Guide,retrospective,https://www.grammy.com/news/beyonce-songbook-musical-album-music-video-guide/,Context and album’s sonic change,high
