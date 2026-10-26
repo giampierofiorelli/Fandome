@@ -37,3 +37,13 @@ Research cutoff: **26 October 2026**. This phase covers **Romance (2024)** and *
 **Critical disagreement / confidence.** NME, The Guardian, Rolling Stone UK and RTÉ praise the cinematic synth expansion; **Financial Times gives a sharply negative review** for ponderous tempos and repetitive gloom, while Pitchfork scores it **7.8** with more reserved praise. We do not infer a consensus from one enthusiastic review; `confidence=medium` for a ten-day-old album, despite high confidence in release dates, official James Ford credit and Mina's explicit influence. `landmark=1` is a provisional judgement: major fifth LP with a distinct, documented stylistic pivot, not a claim of established long-term critical canon.
 
 **Exclusion tests.** No live albums, greatest-hits records, deluxe reissues, standalone singles, EP padding, and no duplicate Phase 01 rows. *Mina* is a documented Italian singer influence, not a Fontaines D.C. member; *Rosalía* is a featured track vocalist, not an album producer or formal co-billed album artist. `notes` for both rows contain <=15 words.
+
+## Mina: the song is Se telefonando (added by Claude, 26 Oct 2026, from the owner's sources)
+
+Grian Chatten names "Se telefonando" (music and arrangement by Ennio Morricone; first album: Studio Uno '66) as the Mina song behind the human, "analogue" side of Dopamine Chamber; he also played it at the Bologna concert (owner).
+- ANSA, 15 Oct 2026: http://www.ansa.it/sito/notizie/cultura/musica/2026/10/15/grian-chatten-dei-fontaines-d.c.-mina-e-stata-fonte-di-ispirazione_070864ba-8546-492b-8696-51f8275905bf.html ("Se telefonando è l'ultima canzone che voglio ascoltare prima di morire"; Mina inspired "l'aspetto umano o se vuoi analogico dell'album Dopamine Chamber")
+- Kalporz review: https://www.kalporz.com/2026/10/fontaines-d-c-dopamine-chamber-xl-2026/ (the echo of Mina in Where Is Gone?, with Rosalía)
+- Ondalternativa review: https://ondalternativa.it/fontaines-d-c-dopamine-chamber/
+- Vogue Adria: https://vogueadria.com/fontaines-dc-dopamine-chamber-inspirations/
+- NPR, 12 Oct 2026 (names Mina, no song).
+influenced_by therefore reads `Mina (Studio Uno '66)`.

@@ -28,7 +28,7 @@ One row per album, in CSV (comma-separated, one line per album, text with commas
 | `scene` | movement or scene | free text (e.g. `Italo disco`, `Britpop`, `cantautori`, `funk carioca`) |
 | `producers` | all documented producers (credits), main first, no limit | names, `|` separated; never listed as influences |
 | `sounds_like` | all artists (any country, no limit) this album sounds close to (sonic similarity, an editorial judgment) | names, `|` separated |
-| `influenced_by` | all artists (no limit) that **documentably** shaped this album (stated by the artist, producer or qualified critics; reference in the sources file) | names, `|` separated; not collaborators, not producers. When the source names a specific record or song, add the album in brackets: `Mina (Il cielo in una stanza)` (for a song, the studio album it first appeared on); the link then leads to that album. Same in `sounds_like` |
+| `influenced_by` | all artists (no limit) that **documentably** shaped this album (stated by the artist, producer or qualified critics; reference in the sources file) | names, `|` separated; not collaborators, not producers. When the source names a specific record or song, add the album in brackets: `Mina (Studio Uno '66)` for the song Se telefonando (for a song, the studio album it first appeared on); the link then leads to that album. Same in `sounds_like` |
 | `landmark` | is it one of the artist's defining albums? | `1` or `0` |
 | `confidence` | how solid the evidence is, for the whole row | `high` (several qualified sources agree), `medium`, `low` |
 | `status` | review state | `draft` (proposal) or `reviewed` (checked by a second person) |
