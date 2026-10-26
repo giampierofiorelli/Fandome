@@ -1,0 +1,28 @@
+album_id,genre,source,url,scope,evidence,evidence_strength
+pinkfloyd-wishyouwerehere,prog,"AllMusic, Stephen Thomas Erlewine",https://www.allmusic.com/album/wish-you-were-here-experience-edition-r2243761,whole_album,Prog-Rock is an AllMusic album style,high
+pinkfloyd-wishyouwerehere,artrock,"AllMusic, Stephen Thomas Erlewine",https://www.allmusic.com/album/wish-you-were-here-experience-edition-r2243761,whole_album,Art Rock is an AllMusic album style,high
+pinkfloyd-wishyouwerehere,albumrock,"AllMusic, Stephen Thomas Erlewine",https://www.allmusic.com/album/wish-you-were-here-experience-edition-r2243761,whole_album,Album Rock is an AllMusic album style,high
+pinkfloyd-wishyouwerehere,poprock,AllMusic: original album genre metadata,https://www.allmusic.com/album/wish-you-were-here-experience-edition-r2243761,whole_album,AllMusic explicitly uses Pop/Rock as broad album genre; normalized to existing poprock token,high
+pinkfloyd-wishyouwerehere,rock,Acclaimed Music: Wish You Were Here,https://www.acclaimedmusic.net/album/A347.htm,whole_album,Parent genre Rock in critic aggregation,medium
+pinkfloyd-animals,prog,AllMusic: Animals,https://www.allmusic.com/album/animals-mw0000191390,whole_album,Prog-Rock is an AllMusic album style,high
+pinkfloyd-animals,artrock,AllMusic: Animals,https://www.allmusic.com/album/animals-mw0000191390,whole_album,Art Rock is an AllMusic album style,high
+pinkfloyd-animals,albumrock,AllMusic: Animals,https://www.allmusic.com/album/animals-mw0000191390,whole_album,Album Rock is an AllMusic album style,high
+pinkfloyd-animals,poprock,AllMusic: original album genre metadata,https://www.allmusic.com/album/animals-mw0000191390,whole_album,AllMusic explicitly uses Pop/Rock as broad album genre; normalized to existing poprock token,high
+pinkfloyd-animals,rock,AllMusic: Animals,https://www.allmusic.com/album/animals-mw0000191390,whole_album,Pop/Rock broad catalog genre,high
+pinkfloyd-animals,hardrock,Classic Rock Review: Animals,https://www.classicrockreview.com/2012/01/1977-pink-floyd-animals/,substantial_album_texture,Review explicitly characterizes Animals as hard-rock oriented,medium
+pinkfloyd-animals,bluesrock,"AllMusic, Stephen Thomas Erlewine: Animals review",https://www.allmusic.com/album/release/animals-mr0003493374,substantial_album_texture,AllMusic specifically notes blues-rock guitar lines,high
+pinkfloyd-animals,spacerock,"AllMusic, Stephen Thomas Erlewine: Animals review",https://www.allmusic.com/album/release/animals-mr0003493374,substantial_album_texture,AllMusic identifies space-rock textures,high
+pinkfloyd-thewall,rockopera,Album of the Year: The Wall genre classification,https://www.albumoftheyear.org/album/4226-pink-floyd-the-wall.php,whole_album,Explicit Rock Opera genre in 1979 album genre listing,medium
+pinkfloyd-thewall,prog,AllMusic: The Wall album,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,Prog-Rock is an AllMusic album style,high
+pinkfloyd-thewall,artrock,AllMusic: The Wall album,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,Art Rock is an AllMusic album style,high
+pinkfloyd-thewall,albumrock,AllMusic: The Wall album,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,Album Rock is an AllMusic album style,high
+pinkfloyd-thewall,hardrock,AllMusic: The Wall album,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,Hard Rock is an AllMusic album style,high
+pinkfloyd-thewall,symphonicrock,Album of the Year: The Wall genre classification,https://www.albumoftheyear.org/album/4226-pink-floyd-the-wall.php,whole_album,Explicit Symphonic Rock label; orchestration is supported by liner notes,medium
+pinkfloyd-thewall,poprock,AllMusic: original album genre metadata,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,AllMusic explicitly uses Pop/Rock as broad album genre; normalized to existing poprock token,high
+pinkfloyd-thewall,rock,AllMusic: The Wall album,https://www.allmusic.com/album/the-wall-mw0000195292,whole_album,Broad Pop/Rock catalog style,high
+pinkfloyd-thewall,disco,Louder: how Roger Waters built The Wall,https://www.loudersound.com/features/pink-floyd-the-wall,specific_tracks,Disco beat documented on Another Brick Part II and Run Like Hell; not the whole album,high
+pinkfloyd-thefinalcut,artrock,AllMusic: The Final Cut,https://www.allmusic.com/album/the-final-cut-r46695/charts-awards,whole_album,Art Rock AllMusic album style,high
+pinkfloyd-thefinalcut,prog,AllMusic: The Final Cut,https://www.allmusic.com/album/the-final-cut-r46695/charts-awards,whole_album,Prog-Rock AllMusic album style,high
+pinkfloyd-thefinalcut,albumrock,AllMusic: The Final Cut,https://www.allmusic.com/album/the-final-cut-r46695/charts-awards,whole_album,Album Rock AllMusic album style,high
+pinkfloyd-thefinalcut,poprock,AllMusic: original album genre metadata,https://www.allmusic.com/album/the-final-cut-r46695/charts-awards,whole_album,AllMusic explicitly uses Pop/Rock as broad album genre; normalized to existing poprock token,high
+pinkfloyd-thefinalcut,rock,AllMusic: The Final Cut,https://www.allmusic.com/album/the-final-cut-r46695/charts-awards,whole_album,Broad Pop/Rock catalog category,high

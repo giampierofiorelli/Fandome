@@ -1,0 +1,5 @@
+album_id,title,year,in_catalog,notes,catalog_addition_required
+pinkfloyd-wishyouwerehere,Wish You Were Here,1975,yes,Existing catalog item; ID confirmed via catalog slug construction.,no
+pinkfloyd-animals,Animals,1977,yes,Existing catalog item; ID confirmed via catalog slug construction.,no
+pinkfloyd-thewall,The Wall,1979,yes,Existing catalog item; ID confirmed via catalog slug construction.,no
+pinkfloyd-thefinalcut,The Final Cut,1983,no,Add 1983 original studio album; no duplicated 2004 bonus track in baseline row.,yes
