@@ -1,0 +1,39 @@
+album_id,genre,source,url,scope,evidence_note,evidence_strength
+battiato-leradelcinghialebianco,progressivepop,aotyera,https://www.albumoftheyear.org/album/78842-franco-battiato-lera-del-cinghiale-bianco.php,whole album,Explicit Progressive Pop classification; dominant album-level structure,medium
+battiato-leradelcinghialebianco,pop,official_era,https://www.battiato.it/lera-del-cinghiale-bianco/,whole album,Artist official discography presents this as move into pop,high
+battiato-leradelcinghialebianco,newwave,rs,https://www.rollingstone.it/musica/classifiche-liste-musica/la-guida-definitiva-agli-album-pop-di-franco-battiato/486812/,whole album,Zuffanti identifies new-wave rhythmic patterns,high
+battiato-leradelcinghialebianco,poprock,mb_era,https://musicbrainz.org/release-group/4084879c-4ade-3c06-8bf2-2a71b25487db,whole album,MusicBrainz release-group pop rock genre,medium
+battiato-leradelcinghialebianco,synthpop,col,https://www.corriere.it/spettacoli/cards/era-cinghiale-bianco-usciva-quarant-anni-fa-disco-che-traghetto-battiato-grande-era-pop/nuovo-pop.shtml,texture,Corriere describes emerging synth-pop within album; not the predominant form,high
+battiato-leradelcinghialebianco,italianpop,all_era,https://www.allmusic.com/album/l-era-del-cinghiale-bianco-mw0000502945,whole album,"AllMusic Italian song and Euro-pop label; national pop tradition, interpreted conservatively",medium
+battiato-leradelcinghialebianco,rock,mb_era,https://musicbrainz.org/release-group/4084879c-4ade-3c06-8bf2-2a71b25487db,some tracks,"Rock arrangement with electric guitars, bass and drums in most tracks",medium
+battiato-leradelcinghialebianco,prog,col,https://www.corriere.it/spettacoli/cards/era-cinghiale-bianco-usciva-quarant-anni-fa-disco-che-traghetto-battiato-grande-era-pop/nuovo-pop.shtml,texture,"Corriere identifies progressive elements, not a straight progressive-rock album",medium
+battiato-leradelcinghialebianco,canzonedautore,aotyera,https://www.albumoftheyear.org/album/78842-franco-battiato-lera-del-cinghiale-bianco.php,whole album,Genre database explicitly Canzone d’autore,medium
+battiato-leradelcinghialebianco,europop,all_era,https://www.allmusic.com/album/l-era-del-cinghiale-bianco-mw0000502945,whole album,"AllMusic Euro-Pop tag, not central to new-wave interpretation",medium
+battiato-leradelcinghialebianco,neoclassical,all_era,https://www.allmusic.com/album/l-era-del-cinghiale-bianco-mw0000502945,some tracks,AllMusic Neo-Classical style; violin-led classical hints rather than whole-album classical music,low
+battiato-patriots,newwave,aotypat,https://www.albumoftheyear.org/album/105597-franco-battiato-patriots.php,whole album,Genre database album-level New Wave classification,medium
+battiato-patriots,artpop,aotypat,https://www.albumoftheyear.org/album/105597-franco-battiato-patriots.php,whole album,Genre database album-level Art Pop classification,medium
+battiato-patriots,synthpop,aotypat,https://www.albumoftheyear.org/album/105597-franco-battiato-patriots.php,whole album,Genre database Synthpop plus AllMusic synth-based pop/rock appraisal,medium
+battiato-patriots,poprock,all_pat,https://www.allmusic.com/album/patriots-mw0000741328,whole album,AllMusic expressly describes synth-based pop/rock arrangements,high
+battiato-patriots,pop,all_pat,https://www.allmusic.com/album/patriots-mw0000741328,whole album,Pop/rock release with accessible song forms,high
+battiato-patriots,rock,q_pat,https://www.qobuz.com/ca-en/album/patriots-franco-battiato/5099952240256,some tracks,Qobuz Pop/Rock Rock metadata and guitar/drums arrangements,medium
+battiato-patriots,europop,all_pat,https://www.allmusic.com/album/patriots-mw0000741328,some tracks,AllMusic Euro-Pop tag; secondary to Art Pop/New Wave,medium
+battiato-patriots,neoclassical,all_pat,https://www.allmusic.com/album/patriots-mw0000741328,texture,"AllMusic Neo-Classical tag applies to classical arrangements, not a formal classical album",medium
+battiato-patriots,classicalpop,all_pat,https://www.allmusic.com/album/patriots-mw0000741328,some tracks,AllMusic Classical Pop tag; most apt for piano/violin-led songs,medium
+battiato-lavocedelpadrone,pop,ondavoice,https://www.ondarock.it/recensioni/pietremiliariitaliane/1981-franco-battiato-la-voce-del-padrone/,whole album,OndaRock centerpiece: seven tightly written pop songs,high
+battiato-lavocedelpadrone,artpop,aotyvoice,https://www.albumoftheyear.org/album/83408-franco-battiato-la-voce-del-padrone.php,whole album,Art Pop explicit album classification and critical discussion of avant-pop synthesis,medium
+battiato-lavocedelpadrone,newwave,ondavoice,https://www.ondarock.it/recensioni/pietremiliariitaliane/1981-franco-battiato-la-voce-del-padrone/,whole album,OndaRock identifies modern new-wave colors in album pop sound,high
+battiato-lavocedelpadrone,synthpop,aotyvoice,https://www.albumoftheyear.org/album/83408-franco-battiato-la-voce-del-padrone.php,whole album,AOTY synthpop tag; AllMusic biography notes Battiato moved to synth pop during this period,medium
+battiato-lavocedelpadrone,poprock,musicbasevoice,https://musicbase.net/la-voce-del-padrone,some tracks,Original LP stylistic label Pop Rock and bass-guitar-drums arrangements,medium
+battiato-lavocedelpadrone,italianpop,ondavoice,https://www.ondarock.it/recensioni/pietremiliariitaliane/1981-franco-battiato-la-voce-del-padrone/,whole album,Italian pop singer-songwriter landmark; generalized mapping of explicit pop designation,medium
+battiato-lavocedelpadrone,canzonedautore,aotyvoice,https://www.albumoftheyear.org/album/83408-franco-battiato-la-voce-del-padrone.php,whole album,AOTY gives explicit Canzone d’autore category,medium
+battiato-lavocedelpadrone,electronic,mb_voice,https://musicbrainz.org/release/df8cfa9b-d59f-3a10-9482-8d4741aaac0c,whole album,Release-group electronic tag for synth-centered production,medium
+battiato-lavocedelpadrone,italodisco,aotyvoice,https://www.albumoftheyear.org/album/83408-franco-battiato-la-voce-del-padrone.php,some tracks,AOTY explicitly tags Italo-Disco but stylistic/chronological fit is debated; track-level dance texture only,low
+battiato-lavocedelpadrone,prog,musicbasevoice,https://musicbase.net/la-voce-del-padrone,texture,Discographical style list names Prog Rock; residual compositional complexity rather than main genre,low
+battiato-larcadinoe,artpop,aotyarca,https://www.albumoftheyear.org/album/104273-franco-battiato-larca-di-noe.php,whole album,Album of the Year Art Pop label,medium
+battiato-larcadinoe,newwave,mb_arca,https://musicbrainz.org/release-group/7d87a292-d873-3abb-90ce-9bb18495c319,whole album,MusicBrainz tags New Wave alongside pop and rock,medium
+battiato-larcadinoe,synthpop,aotyarca,https://www.albumoftheyear.org/album/104273-franco-battiato-larca-di-noe.php,whole album,Album of the Year tags Synthpop; synth-led album sound,medium
+battiato-larcadinoe,pop,um_arca,https://www.universalmusic.it/popular-music/album/larca-di-noe_30748740130/,whole album,Label commercial pop categorization,high
+battiato-larcadinoe,poprock,mb_arca,https://musicbrainz.org/release-group/7d87a292-d873-3abb-90ce-9bb18495c319,whole album,Original release group uses Pop Rock,medium
+battiato-larcadinoe,electronic,mb_arca,https://musicbrainz.org/release-group/7d87a292-d873-3abb-90ce-9bb18495c319,whole album,MusicBrainz genre Electronic; central key/synth arrangement,medium
+battiato-larcadinoe,rock,mb_arca,https://musicbrainz.org/release-group/7d87a292-d873-3abb-90ce-9bb18495c319,some tracks,"MusicBrainz Rock album tag, guitars/bass/drums from original liner",medium
+battiato-larcadinoe,prog,arca_prog,https://en.wikipedia.org/wiki/L%27arca_di_No%C3%A8,texture,Tertiary infobox calls this progressive rock; weak and not corroborated by reviewed music criticism,low

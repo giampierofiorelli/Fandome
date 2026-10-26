@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,action,notes
+battiato-leradelcinghialebianco,L’era del cinghiale bianco,1979,studio,missing in catalog.ts,add to catalog.ts,Studio LP absent from the battiato catalog entry; include in catalogue.
+battiato-patriots,Patriots,1980,studio,missing in catalog.ts,add to catalog.ts,Studio LP absent from the battiato catalog entry; include in catalogue.
+battiato-lavocedelpadrone,La voce del padrone,1981,studio,already present in catalog.ts,retain existing entry and existing computed ID,Existing catalog title verified; release row still new to descriptor corpus.
+battiato-larcadinoe,L’arca di Noè,1982,studio,already present in catalog.ts,retain existing entry and existing computed ID,Existing catalog title verified; release row still new to descriptor corpus.
