@@ -225,6 +225,11 @@ describe('critical standing', () => {
 })
 
 describe('artist links weigh the whole career', () => {
+  it('a record the source names is the album the link leads to (Mina (Il cielo in una stanza))', () => {
+    const top = similarAlbums('fontainesdc-dopaminechamber').map((s) => s.albumId)
+    expect(top.slice(0, 3)).toContain('mina-ilcieloinunastanza')
+    expect(top.filter((id) => id.startsWith('mina-'))).toEqual(['mina-ilcieloinunastanza'])
+  })
   it('an influence leads one way: an artist who names Queen is not suggested on Queen\'s page for that (owner)', () => {
     const of = (id: string) => albums.filter((a) => a.artistId === id || (a.withArtists ?? []).includes(id)).map((a) => a.id)
     const list = similarArtists('queen', of, artists.map((a) => a.id))

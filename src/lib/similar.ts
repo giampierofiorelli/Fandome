@@ -62,6 +62,7 @@ export interface Profile {
   producers: string[]
   soundsLike: string[]
   influencedBy: string[]
+  namedAlbums?: { artist: string; title: string }[]
   confidence: number
   importance?: number // 0-5, career weight (albums only)
   acclaim?: number // 0-5, critical standing today (albums only)
@@ -98,6 +99,7 @@ function buildAlbumProfile(d: Descriptor): Profile {
     producers: d.producers,
     soundsLike: d.soundsLike,
     influencedBy: d.influencedBy,
+    namedAlbums: d.namedAlbums,
     confidence: CONFIDENCE[d.confidence],
     importance: d.importance,
     acclaim: d.acclaim,
@@ -575,6 +577,7 @@ export function similarAlbums(
   const shared = (id: string) => (opts.artistsOf?.(id) ?? []).some((x) => mineAll.includes(x))
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(albumId)
+  const namedAlbum = (s: { artist: string; profile: Profile }) => (a.namedAlbums ?? []).some((w) => fold(w.artist) === fold(s.artist) && plainFold(w.title) === plainFold(s.profile.title))
   const scored = Object.values(DESCRIPTORS)
     // Never another album by the same artist, co-billed albums included (Do It Again is Röyksopp's and Robyn's).
     .filter((d) => d.albumId !== albumId && artistOf(d.albumId) !== mine && !shared(d.albumId) && !hide.includes(d.albumId) && !hide.includes(artistOf(d.albumId) ?? ''))
@@ -589,7 +592,8 @@ export function similarAlbums(
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence
     // on its own, so the closest album of that artist has a lower cut.
-    .filter((s) => s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist))))
+    // A record the source names (a song's album) is the strongest evidence of all: no cut, only the critics' one.
+    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && namedAlbum(s)))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
@@ -602,11 +606,13 @@ export function similarAlbums(
   const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance)
   const linked = scored
     .filter((s) => named(s.artist))
-    .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || pick(y) - pick(x))
+    // The record a source names comes first for its artist; then influences before comparisons; then the best fit.
+    .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || Number(namedAlbum(y)) - Number(namedAlbum(x)) || pick(y) - pick(x))
   for (const s of linked) {
     if (reserved.length >= 3 || reserved.some((r) => r.artist === s.artist)) continue
     const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
-    reserved.push({ ...s, reasons: s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2) })
+    const reasons = namedAlbum(s) ? [`${link} (${s.profile.title})`, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) : s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2)
+    reserved.push({ ...s, reasons })
   }
   // Discovery (owner's rule): one place goes to the closest album from a local scene in another country,
   // if one passes the same cut and genre test. Same rule for every album; no slot if nothing qualifies.

@@ -23,6 +23,8 @@ export interface Descriptor {
   producers: string[]
   soundsLike: string[]
   influencedBy: string[]
+  // Records a source names, written "Artist (Album)" in sounds_like or influenced_by: the link leads to that album.
+  namedAlbums: { artist: string; title: string }[]
   landmark: boolean
   importance?: number // 0-5: how much the album counts in the artist's career (reception file)
   acclaim?: number // 0-5: how highly critics rate it today, at release or later (reception file)
@@ -32,6 +34,13 @@ export interface Descriptor {
 }
 
 const list = (s: string) => s.split('|').map((x) => x.trim()).filter(Boolean)
+// "Mina (Il cielo in una stanza)": the artist, plus the record the source names.
+const WORK = /^(.+?)\s*\((.+)\)$/
+const names = (s: string) => list(s).map((x) => x.match(WORK)?.[1] ?? x)
+const works = (...cols: string[]) => cols.flatMap(list).flatMap((x) => {
+  const m = x.match(WORK)
+  return m ? [{ artist: m[1], title: m[2] }] : []
+})
 
 export function parseDescriptors(text: string): Descriptor[] {
   const [head, ...rows] = parseCsv(text)
@@ -55,8 +64,9 @@ export function parseDescriptors(text: string): Descriptor[] {
       language: list(r.language),
       scene: r.scene,
       producers: list(r.producers),
-      soundsLike: list(r.sounds_like),
-      influencedBy: list(r.influenced_by),
+      soundsLike: names(r.sounds_like),
+      influencedBy: names(r.influenced_by),
+      namedAlbums: works(r.sounds_like, r.influenced_by),
       landmark: r.landmark === '1',
       confidence: (r.confidence || 'low') as Descriptor['confidence'],
       status: (r.status || 'draft') as Descriptor['status'],
