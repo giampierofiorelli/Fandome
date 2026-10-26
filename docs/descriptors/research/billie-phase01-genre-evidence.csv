@@ -1,0 +1,38 @@
+album_id,genre,source,url,scope,what_it_supports
+billie-dontsmileatme,altpop,aot17,https://www.albumoftheyear.org/album/86566-billie-eilish-dont-smile-at-me.php,whole album,Alt-Pop genre heading
+billie-dontsmileatme,electropop,aot17,https://www.albumoftheyear.org/album/86566-billie-eilish-dont-smile-at-me.php,whole album,Electropop listed genre
+billie-dontsmileatme,pop,all17,https://www.allmusic.com/album/dont-smile-at-me-mw0003095797,whole album,Electronic pop EP description
+billie-dontsmileatme,alternativernb,aot17,https://www.albumoftheyear.org/album/86566-billie-eilish-dont-smile-at-me.php,whole album,Alternative R&B listed genre
+billie-dontsmileatme,indieelectronic,all17,https://www.allmusic.com/album/dont-smile-at-me-mw0003095797,whole album,Indie Electronic listed style
+billie-dontsmileatme,hiphop,paper17,https://www.papermag.com/pop-newcomer-billie-eilish-wants-to-make-sure-you-never-forget-her,texture,Artist says EP-period production hip-hop leaning
+billie-dontsmileatme,rnb,paper17,https://www.papermag.com/pop-newcomer-billie-eilish-wants-to-make-sure-you-never-forget-her,texture,Artist specifies R&B production direction
+billie-dontsmileatme,trap,paper17,https://www.papermag.com/pop-newcomer-billie-eilish-wants-to-make-sure-you-never-forget-her,some tracks,Artist describes approach as trap/R&B/mellow
+billie-dontsmileatme,bedroompop,aot17,https://www.albumoftheyear.org/album/86566-billie-eilish-dont-smile-at-me.php,whole album,Bedroom Pop tag on genre aggregation; ADD TOKEN
+billie-whenweallfallasleepwheredowego,altpop,aot19,https://www.albumoftheyear.org/album/137995-billie-eilish-when-we-all-fall-asleep-where-do-we-go.php,whole album,Alt-Pop genre heading
+billie-whenweallfallasleepwheredowego,electropop,aot19,https://www.albumoftheyear.org/album/137995-billie-eilish-when-we-all-fall-asleep-where-do-we-go.php,whole album,Electropop listed genre
+billie-whenweallfallasleepwheredowego,pop,all19,https://www.allmusic.com/album/when-we-fall-asleep-where-do-we-go-mw0003250262,whole album,Pop as lead style
+billie-whenweallfallasleepwheredowego,alternativernb,aot19,https://www.albumoftheyear.org/album/137995-billie-eilish-when-we-all-fall-asleep-where-do-we-go.php,whole album,Alternative R&B listed genre
+billie-whenweallfallasleepwheredowego,indieelectronic,all19,https://www.allmusic.com/album/when-we-fall-asleep-where-do-we-go-mw0003250262,whole album,Indie Electronic style
+billie-whenweallfallasleepwheredowego,hiphop,all19,https://www.allmusic.com/album/when-we-fall-asleep-where-do-we-go-mw0003250262,whole album,Hip-hop element explicitly described
+billie-whenweallfallasleepwheredowego,rnb,pitch19,https://pitchfork.com/reviews/albums/billie-eilish-when-we-all-fall-asleep-where-do-we-go/,texture,Pitchfork categorises as Pop/R&B
+billie-whenweallfallasleepwheredowego,artpop,aot19,https://www.albumoftheyear.org/album/137995-billie-eilish-when-we-all-fall-asleep-where-do-we-go.php,whole album,Art Pop secondary genre
+billie-whenweallfallasleepwheredowego,avantpop,rolling19,https://www.metacritic.com/music/when-we-all-fall-asleep-where-do-we-go/billie-eilish/critic-reviews,whole album,Rolling Stone calls record avant-pop
+billie-whenweallfallasleepwheredowego,trap,pitch19,https://pitchfork.com/reviews/albums/billie-eilish-when-we-all-fall-asleep-where-do-we-go/,some tracks,Trap production influence named
+billie-whenweallfallasleepwheredowego,edm,pitch19,https://pitchfork.com/reviews/albums/billie-eilish-when-we-all-fall-asleep-where-do-we-go/,some tracks,EDM among cross-genre productions
+billie-whenweallfallasleepwheredowego,ambientpop,aot19,https://www.albumoftheyear.org/album/137995-billie-eilish-when-we-all-fall-asleep-where-do-we-go.php,texture,Ambient Pop secondary genre
+billie-whenweallfallasleepwheredowego,dubstep,pitch19,https://pitchfork.com/reviews/albums/billie-eilish-when-we-all-fall-asleep-where-do-we-go/,some tracks,You Should See Me in a Crown dubstep bass drop
+billie-whenweallfallasleepwheredowego,showtunes,guardian19,https://www.theguardian.com/music/2019/mar/31/billie-eilish-when-we-all-fall-asleep-where-do-we-go-review,some tracks,Show-tune structures / stylisation specifically identified
+billie-happierthanever,altpop,aot21,https://www.albumoftheyear.org/album/360793-billie-eilish-happier-than-ever.php,whole album,Alt-Pop main genre
+billie-happierthanever,pop,all21,https://www.allmusic.com/album/mw0003516209,whole album,Pop primary style
+billie-happierthanever,electropop,aot21,https://www.albumoftheyear.org/album/360793-billie-eilish-happier-than-ever.php,some tracks,Electropop listed genre
+billie-happierthanever,songwriter,aot21,https://www.albumoftheyear.org/album/360793-billie-eilish-happier-than-ever.php,whole album,Singer-songwriter style listed
+billie-happierthanever,alternativernb,aot21,https://www.albumoftheyear.org/album/360793-billie-eilish-happier-than-ever.php,whole album,Alternative R&B listed genre
+billie-happierthanever,indieelectronic,all21,https://www.allmusic.com/album/mw0003516209,whole album,Indie Electronic style listing
+billie-happierthanever,rnb,pitch21,https://pitchfork.com/reviews/albums/billie-eilish-happier-than-ever/,texture,Pop/R&B category
+billie-happierthanever,jazz,pitch21,https://pitchfork.com/reviews/albums/billie-eilish-happier-than-ever/,texture,Review explicitly describes major jazz shift
+billie-happierthanever,bossanova,guardian21,https://www.theguardian.com/music/2021/jul/30/billie-eilish-happier-than-ever-review-inside-pop-stardoms-heart-of-darkness,some tracks,Billie Bossa Nova style cited by critic
+billie-happierthanever,techno,guardian21,https://www.theguardian.com/music/2021/jul/30/billie-eilish-happier-than-ever-review-inside-pop-stardoms-heart-of-darkness,some tracks,Oxytocin techno pulse cited
+billie-happierthanever,dancepop,time21,https://time.com/6086022/billie-eilish-happier-than-ever/,some tracks,Time describes dance-pop on the album
+billie-happierthanever,poppunk,latimesr21,https://www.latimes.com/entertainment-arts/music/story/2021-08-02/billie-eilish-happier-than-ever-album,some tracks,Title-track finale described as pop-punk
+billie-happierthanever,triphop,jazz21,https://soundwordscentral.com/2021/07/31/album-review-billie-eilish-happier-than-ever/,some tracks,My Future and Lost Cause noted trip-hop inflections
+billie-happierthanever,funk,nme21,https://www.nme.com/reviews/album/billie-eilish-happier-than-ever-review-3006594,some tracks,I Did Not Change My Number described as wonky funk

@@ -1,0 +1,6 @@
+album_id,title,year,type,catalog_status,catalog_current_title,action
+billie-dontsmileatme,dont smile at me,2017,ep,TO_ADD,,Add EP: defining debut
+billie-whenweallfallasleepwheredowego,"When We All Fall Asleep, Where Do We Go?",2019,studio,EXISTS,"When We All Fall Asleep, Where Do We Go?",Keep existing ID
+billie-happierthanever,Happier Than Ever,2021,studio,EXISTS,Happier Than Ever,Keep existing ID
+billie-guitarsongs,Guitar Songs,2022,ep,TO_ADD_NEXT_PHASE,,Candidate phase 02: 2-song EP; clarify format with provider
+billie-hitmehardandsoft,Hit Me Hard and Soft,2024,studio,EXISTS,Hit Me Hard and Soft,Phase 02; keep existing ID
