@@ -1,0 +1,41 @@
+album_id,genre,source,url,scope,what_it_supports
+janet-janetjackson,rnb,j82all,https://www.allmusic.com/album/janet-jackson-mw0000194270,whole album,AllMusic genre R&B; Apple calls record R&B-pop.
+janet-janetjackson,postdisco,j82spin,https://www.spinmagazine.com/2026/02/every-janet-jackson-album-ranked/,whole album,Al Shipley describes early-1980s post-disco R&B.
+janet-janetjackson,boogie,j82spin,https://www.spinmagazine.com/2026/02/every-janet-jackson-album-ranked/,whole album,SPIN explicitly identifies record with boogie category.
+janet-janetjackson,dancepop,j82all,https://www.allmusic.com/album/janet-jackson-mw0000194270,whole album,AllMusic critic describes prospective dance-pop sound.
+janet-janetjackson,pop,j82apple,https://music.apple.com/us/album/janet-jackson/1443422776,whole album,Apple Music describes R&B-pop songs.
+janet-janetjackson,disco,j82herb,https://www.herbmusic.net/album/janet-jackson-janet-jackson-8142,whole album,Album registry labels dance-pop and disco; AllMusic describes sub-disco rhythm.
+janet-janetjackson,poprock,j82spin,https://www.spinmagazine.com/2026/02/every-janet-jackson-album-ranked/,some tracks,SPIN describes Come Give Your Love to Me as pop/rock outlier.
+janet-dreamstreet,dancepop,d84aoty,https://www.albumoftheyear.org/album/17023-janet-dream-street.php,whole album,Album of the Year classifies album as dance-pop.
+janet-dreamstreet,contemporaryrnb,d84all,https://www.allmusic.com/album/mw0000190415,whole album,AllMusic classifies album contemporary R&B.
+janet-dreamstreet,electrofunk,d84apple,https://music.apple.com/us/album/dream-street/1443429805,whole album,Apple editorial describes urban electro-funk sonics.
+janet-dreamstreet,synthfunk,d84aoty,https://www.albumoftheyear.org/album/17023-janet-dream-street.php,some tracks,Album of the Year identifies synth funk; Pretty Boy is key instance.
+janet-dreamstreet,synthpop,d84press,https://www.rodny.cz/?id=r642936&lng=1,whole album,Vinyl metadata labels original pressing synth-pop.
+janet-dreamstreet,pop,d84all,https://www.allmusic.com/album/mw0000190415,whole album,AllMusic styles include pop.
+janet-dreamstreet,funk,d84allrelease,https://www.allmusic.com/album/release/dream-street-mr0000262685,some tracks,AllMusic directly calls Pretty Boy Minneapolis funk.
+janet-dreamstreet,teenpop,d84aoty,https://www.albumoftheyear.org/album/17023-janet-dream-street.php,whole album,Album of the Year genre tag teen pop.
+janet-dreamstreet,freestyle,d84aoty,https://www.albumoftheyear.org/album/17023-janet-dream-street.php,some tracks,Album of the Year secondary genre freestyle; track scope conservatively assigned.
+janet-control,dancepop,c86aoty,https://www.albumoftheyear.org/album/17024-janet-control.php,whole album,Album of the Year and Acclaimed Music describe dance-pop.
+janet-control,contemporaryrnb,c86aoty,https://www.albumoftheyear.org/album/17024-janet-control.php,whole album,Album of the Year labels contemporary R&B.
+janet-control,newjackswing,c86aoty2,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,whole album,Retrospective new jack swing labeling; precursor rather than contemporaneous 1986 term.
+janet-control,synthfunk,c86aoty,https://www.albumoftheyear.org/album/17024-janet-control.php,whole album,Album of the Year secondary genre synth funk.
+janet-control,synthpop,c86aoty,https://www.albumoftheyear.org/album/17024-janet-control.php,some tracks,Album of the Year secondary genre synthpop.
+janet-control,minneapolissound,c86aoty,https://www.albumoftheyear.org/album/17024-janet-control.php,whole album,Source directly names Minneapolis Sound; NOT interchangeable with general funk.
+janet-control,pop,c86all,https://www.allmusic.com/album/release/control-mr0000281484,whole album,AllMusic calls it a classic pop album.
+janet-control,funk,c86rb,https://daily.redbullmusicacademy.com/2016/02/key-tracks-janet-jackson-control/,whole album,Producer describes funky rhythmic arrangements; Minneapolis funk basis.
+janet-control,freestyle,c86acclaimed,https://acclaimedmusic.net/artist/Janet%20Jackson.htm,some tracks,Acclaimed Music labels The Pleasure Principle freestyle.
+janet-rhythmnation1814,newjackswing,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,whole album,Album of the Year main genre label.
+janet-rhythmnation1814,dancepop,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,whole album,Album of the Year main genre label.
+janet-rhythmnation1814,contemporaryrnb,r89all,https://www.allmusic.com/album/rhythm-nation-1814-mw0000532143,whole album,AllMusic explicitly lists Contemporary R&B in album styles.
+janet-rhythmnation1814,synthfunk,r89pitch,https://pitchfork.com/reviews/albums/22253-rhythm-nation-1814/,whole album,Pitchfork specifically describes their synth funk sound.
+janet-rhythmnation1814,hiphop,r89loc,https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rhythm-Nation_Dozier.pdf,whole album,Library of Congress essay names hip-hop among genres.
+janet-rhythmnation1814,funk,r89pitch,https://pitchfork.com/reviews/albums/22253-rhythm-nation-1814/,whole album,Pitchfork traces album sound to funk; sampled breakbeats and groove.
+janet-rhythmnation1814,pop,r89loc,https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rhythm-Nation_Dozier.pdf,whole album,Library of Congress essay explicitly includes pop.
+janet-rhythmnation1814,rnb,r89loc,https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rhythm-Nation_Dozier.pdf,whole album,Library of Congress essay explicitly includes R&B.
+janet-rhythmnation1814,postindustrial,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,texture,Album of the Year secondary tag; mechanical sonics not dominant genre.
+janet-rhythmnation1814,minneapolissound,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,whole album,Album of the Year secondary genre label Minneapolis Sound.
+janet-rhythmnation1814,sophistipop,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,some tracks,Album of the Year secondary genre tag; associated with polished ballads.
+janet-rhythmnation1814,popsoul,r89aoty,https://www.albumoftheyear.org/genre/329-new-jack-swing/1980s/,some tracks,Album of the Year secondary label pop soul.
+janet-rhythmnation1814,glamrock,r89loc,https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rhythm-Nation_Dozier.pdf,some tracks,"Library of Congress specifically calls out glam rock, especially Black Cat."
+janet-rhythmnation1814,hardrock,r89spin,https://www.spinmagazine.com/2026/02/every-janet-jackson-album-ranked/,some tracks,SPIN calls Black Cat hard rock.
+janet-rhythmnation1814,rockfunk,r89janet,https://bkhonline.com/janet-jackson/,some tracks,Jackson describes Black Cat explicitly as rock-funk composition.

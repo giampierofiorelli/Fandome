@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  janet: {
+    names: ['Stevie Wonder', 'Marvin Gaye', 'Sly and the Family Stone', 'The Jackson 5', 'Michael Jackson', 'Prince', 'Earth, Wind & Fire'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/janet-phase01-chatgpt-import-notes.md): CNN Larry King Live 2001 (Stevie Wonder, Marvin Gaye, Sly and the Family Stone, her brothers); Heart 2024 interview (Jackson 5, Michael Jackson, Prince, Earth, Wind & Fire)',
+  },
   kylie: {
     names: ['Prince', 'ABBA', 'Olivia Newton-John', 'Donna Summer', 'Madonna', 'Whitney Houston', 'Cyndi Lauper', 'Fleetwood Mac'],
     source: 'ChatGPT influence audit (docs/descriptors/research/kylie-phase01-chatgpt-import-notes.md): Vogue 2024 (Prince, ABBA, Olivia Newton-John, Donna Summer); ELLE 2020 (Madonna, Whitney Houston, Cyndi Lauper, Fleetwood Mac, lower strength)',

@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,audit_note,expected_id
+janet-janetjackson,Janet Jackson,1982,studio,add,Missing from catalog.ts; original debut preceding Control,janet-janetjackson
+janet-dreamstreet,Dream Street,1984,studio,add,Missing from catalog.ts; second studio album,janet-dreamstreet
+janet-control,Control,1986,studio,existing,Title and year match catalog.ts,janet-control
+janet-rhythmnation1814,Rhythm Nation 1814,1989,studio,existing,Keep shorter catalogue title and generated ID; original cover also says Janet Jackson's Rhythm Nation 1814,janet-rhythmnation1814
