@@ -1,0 +1,53 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+queen-flashgordon,soundtrack,dominant,F1|F2,Original full-motion-picture score album including instrumental cues.,high
+queen-flashgordon,rock,dominant,F3|F4,Queen rock guitars threaded through a film score with electronic parts.,high
+queen-flashgordon,progressiveelectronica,significant,F3|F4,Both music-company and Brian May site use the exact phrase progressive electronica.,high
+queen-flashgordon,electronica,significant,F3|F4,Broader genre represented by the progressive electronica cited.,high
+queen-flashgordon,progressiveelectronic,significant,F8,Aggregator distinct term Progressive Electronic; keep separate from progressive electronica.,high
+queen-flashgordon,hardrock,some tracks,F2|F6,Battle/theme rock songs are electric hard rock; not the whole soundtrack.,medium
+queen-flashgordon,ambient,significant passages,F8,Ambient cited for score interludes; not a continuous ambient record.,medium
+queen-flashgordon,albumrock,taxonomic broad label,F2,AllMusic explicit style label.,medium
+queen-flashgordon,arenarock,taxonomic broad label,F2,AllMusic explicit style label; prominent anthem Flash.,medium
+queen-flashgordon,contemporarypoprock,taxonomic broad label,F2,AllMusic exact taxonomy Contemporary Pop/Rock.,medium
+queen-flashgordon,heavymetal,specific track/film music,F2|F6,"Battle Theme heavy-metal roar, film-scoring framing, not album dominant.",high
+queen-hotspace,funk,dominant,H1|H5|H7,"Recurrent funk bass, grooves and rhythms on side one.",high
+queen-hotspace,disco,dominant,H1|H5,Disco/funk pivot explicitly described by band and retrospective.,high
+queen-hotspace,dancepop,dominant side one,H2|H7,AllMusic explicitly describes new-wave dance-pop in the first side.,high
+queen-hotspace,synthfunk,dominant side one,H7,Genre aggregator explicitly identifies Synth Funk.,high
+queen-hotspace,electrodisco,dominant side one,H7,Aggregator Electro-Disco label is distinct from disco alone.,high
+queen-hotspace,newwave,significant,H2|H7,Critic describes early side as new-wave dance-pop.,high
+queen-hotspace,dancerock,significant,H2,"AllMusic style Dance-Rock, album also contains harder rock.",high
+queen-hotspace,poprock,significant,H7|H2,Pop/rock overlap explicit in album metadata.,high
+queen-hotspace,rock,significant side two,H1|H2,Rock side two and the band’s guitarist spotlight.,high
+queen-hotspace,funkrock,some tracks,H7,Genre taxonomy Funk Rock and funk-oriented guitar.,medium
+queen-hotspace,dance,dominant side one,H2,AllMusic describes an unabashed pop and dance album.,high
+queen-hotspace,pop,significant,H2,AllMusic calls album pop as well as dance.,high
+queen-hotspace,rnb,significant texture,H5,Retrospective relates album to rhythm-and-blues/soul idioms.,medium
+queen-hotspace,soul,some tracks,H5,"Cool Cat and other tracks draw explicitly on soul, Philadelphia soul styles.",medium
+queen-hotspace,hardrock,some tracks,H1,Band cites Put Out the Fire and Dancer hard guitar work.,medium
+queen-hotspace,albumrock,taxonomic broad label,H2,AllMusic category Album Rock.,medium
+queen-hotspace,contemporarypoprock,taxonomic broad label,H2,AllMusic category Contemporary Pop/Rock.,medium
+queen-hotspace,arenarock,taxonomic broad label,H2,AllMusic category Arena Rock.,medium
+queen-theworks,rock,dominant,W1|W6,Official retrospective describes a return to rock band sound.,high
+queen-theworks,hardrock,significant,W2|W6,Tear It Up and Hammer to Fall drive hard rock main portion.,high
+queen-theworks,poprock,significant,W2|W6,Accessible pop/rock songcraft through electronic and organic songs.,high
+queen-theworks,synthpop,two major songs,W6|W7,Radio Ga Ga explicitly described as synthpop; I Want to Break Free has synth.,high
+queen-theworks,dancerock,significant,W2,AllMusic explicit Dance-Rock style.,high
+queen-theworks,artrock,taxonomic broad label,W2,"AllMusic style Art Rock, plus formal Machines experiment.",medium
+queen-theworks,albumrock,taxonomic broad label,W2,AllMusic style Album Rock.,medium
+queen-theworks,arenarock,significant,W2|W6,Arena rock scale of choruses and guitars.,high
+queen-theworks,contemporarypoprock,taxonomic broad label,W2,AllMusic style Contemporary Pop/Rock.,medium
+queen-theworks,newwave,some tracks,W7|W6,New-wave electronics of Radio Ga Ga; not whole record.,medium
+queen-theworks,electronica,some tracks,W5,Roger Taylor explicitly calls Machines/Radio Ga Ga original electronica.,medium
+queen-theworks,rockandroll,one track,W2,Man on the Prowl 1950s-style rock and roll.,medium
+queen-akindofmagic,rock,dominant,A1|A2,"Stadium rock album of songs, including several developed for Highlander.",high
+queen-akindofmagic,poprock,dominant,A2|A6,Commercial 1986 pop/rock songwriting throughout.,high
+queen-akindofmagic,hardrock,significant,A2,"AllMusic category; Gimme the Prize, Princes of the Universe and One Vision.",high
+queen-akindofmagic,dancerock,significant,A2|A8,Title single reworked into a funkier danceable rock-pop arrangement.,high
+queen-akindofmagic,artrock,taxonomic broad label,A2,AllMusic explicit Art Rock.,medium
+queen-akindofmagic,albumrock,taxonomic broad label,A2,AllMusic genre Album Rock.,medium
+queen-akindofmagic,arenarock,significant,A2,AllMusic category and anthem-based production.,high
+queen-akindofmagic,contemporarypoprock,taxonomic broad label,A2,AllMusic explicit Contemporary Pop/Rock.,medium
+queen-akindofmagic,synthpop,one track,A8|A13,"Title track is specifically identified as synth-pop, in its funkier album rearrangement.",medium
+queen-akindofmagic,funk,some tracks,A8,Queen members describe title track reworking as funkier.,medium
+queen-akindofmagic,heavymetal,one track,A12,Independent reviewer explicitly calls Gimme the Prize heavy metal in style; not record-wide.,medium

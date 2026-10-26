@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,catalog_status,catalog_entry,action,audit_basis
+queen-flashgordon,queen,Flash Gordon,1980,soundtrack,present,catalog.ts Queen array,none,GitHub descriptors branch verified 2026-10-26; album already in catalog
+queen-hotspace,queen,Hot Space,1982,studio,present,catalog.ts Queen array,none,GitHub descriptors branch verified 2026-10-26; album already in catalog
+queen-theworks,queen,The Works,1984,studio,present,catalog.ts Queen array,none,GitHub descriptors branch verified 2026-10-26; album already in catalog
+queen-akindofmagic,queen,A Kind of Magic,1986,studio,present,catalog.ts Queen array,none,GitHub descriptors branch verified 2026-10-26; album already in catalog
