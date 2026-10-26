@@ -194,3 +194,17 @@ describe('engine v2', () => {
     expect(artistGenres(albumIdsOf('madonna'))[0]).toBe('pop')
   })
 })
+
+describe('hiding a suggestion', () => {
+  it('keeps the others in place and fills the gap at the bottom', async () => {
+    const { similarAlbumsStable } = await import('./similar')
+    for (const id of ['shakira-shewolf', 'm-ray', 'battiato-patriots']) {
+      const before = similarAlbumsStable(id).map((s) => s.albumId)
+      if (before.length < 5) continue
+      const hide = [before[1], before[3]]
+      const after = similarAlbumsStable(id, { hide, avoid: hide }).map((s) => s.albumId)
+      expect(after.slice(0, before.length - 2)).toEqual(before.filter((x) => !hide.includes(x)))
+      expect(after.length).toBeGreaterThanOrEqual(before.length - 2)
+    }
+  })
+})

@@ -709,3 +709,41 @@ export function genreListSimilarity(a: string[], b: string[]) {
   const toMap = (xs: string[]) => new Map(xs.map((g, i) => [g, 1 / Math.sqrt(i + 1)]))
   return weightedJaccard(expandGenres(toMap(a)), expandGenres(toMap(b)))
 }
+
+// ---------- lists that stay put when you tap ✕ ----------
+
+// Tapping ✕ on a suggestion hides it and the next eligible one joins at the bottom: the others keep their
+// places. The list is ranked as if nothing on it had been hidden (a hidden item still counts for variety and
+// its "not for me" doesn't reshuffle its neighbours), then hidden items are taken out and the gap is filled.
+// What you hid still pushes similar albums down everywhere else.
+const NEAR = 40
+
+export function similarAlbumsStable(albumId: string, opts: Parameters<typeof similarAlbums>[1] = {}): Similar[] {
+  const limit = opts.limit ?? 10
+  const hide = opts.hide ?? []
+  const near = new Set(similarAlbums(albumId, { ...opts, hide: [], avoid: [], limit: NEAR }).map((s) => s.albumId))
+  const hiddenHere = hide.filter((id) => near.has(id))
+  return similarAlbums(albumId, {
+    ...opts,
+    hide: hide.filter((id) => !near.has(id)),
+    avoid: (opts.avoid ?? []).filter((id) => !near.has(id)),
+    limit: limit + hiddenHere.length,
+  })
+    .filter((s) => !hiddenHere.includes(s.albumId))
+    .slice(0, limit)
+}
+
+export function similarArtistsStable(
+  artistId: string,
+  albumIdsOf: (artistId: string) => string[],
+  candidates: string[],
+  opts: Parameters<typeof similarArtists>[3] = {},
+): SimilarArtist[] {
+  const limit = opts.limit ?? 10
+  const hide = opts.hide ?? []
+  const near = new Set(similarArtists(artistId, albumIdsOf, candidates, { ...opts, hide: [], limit: NEAR }).map((s) => s.artistId))
+  const hiddenHere = hide.filter((id) => near.has(id))
+  return similarArtists(artistId, albumIdsOf, candidates, { ...opts, hide: hide.filter((id) => !near.has(id)), limit: limit + hiddenHere.length })
+    .filter((s) => !hiddenHere.includes(s.artistId))
+    .slice(0, limit)
+}

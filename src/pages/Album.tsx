@@ -14,7 +14,7 @@ import { IconPen } from '../components/icons'
 import { SimilarList } from '../components/SimilarList'
 import { SceneBack } from '../components/SceneBack'
 import { descriptorOf, genreLabel, releaseLabel } from '../lib/descriptors'
-import { artistGenres, similarAlbums } from '../lib/similar'
+import { artistGenres, similarAlbumsStable } from '../lib/similar'
 import { roomTabs } from './Artist'
 import { avoidAlbums } from '../lib/suggest'
 import { albums } from '../data/seed'
@@ -36,7 +36,7 @@ export default function AlbumPage() {
   const items = albumFeed(state.posts, album.id)
   const sound = descriptorOf(album.id)
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
-  const similar = similarAlbums(album.id, { artistOf: artistOfAlbum, artistsOf: (id) => { const x = albumById(id); return x ? albumArtistIds(x) : [] }, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
+  const similar = similarAlbumsStable(album.id, { artistOf: artistOfAlbum, artistsOf: (id) => { const x = albumById(id); return x ? albumArtistIds(x) : [] }, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
 
   // The artist room's sections stay on top: tap one to go back to the room on that section.
   const room = artist ? roomTabs(artist, artistGenres(albums.filter((a) => albumHasArtist(a, artist.id)).map((a) => a.id), 1).length > 0) : []

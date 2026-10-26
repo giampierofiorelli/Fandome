@@ -3,7 +3,7 @@ import { isAbout } from '../lib/postArtists'
 import { useRef, useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import { albums, artists, concerts, parties } from '../data/seed'
-import { artistGenres, similarArtists } from '../lib/similar'
+import { artistGenres, similarArtistsStable } from '../lib/similar'
 import { avoidAlbums } from '../lib/suggest'
 import { genreLabel } from '../lib/descriptors'
 import { SuggestedArtist } from '../components/SuggestedArtist'
@@ -53,7 +53,7 @@ export default function ArtistPage() {
   const albumIdsOf = (id: string) => albums.filter((a) => albumHasArtist(a, id)).map((a) => a.id)
   const soundGenres = artistGenres(albumIdsOf(artist.id), 8)
   const likeThem = soundGenres.length
-    ? similarArtists(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
+    ? similarArtistsStable(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
     : []
 
   const tabs = roomTabs(artist, likeThem.length > 0)
