@@ -590,7 +590,12 @@ export function similarAlbums(
   const named = (n: string) => includesName(a.influencedBy, n) || includesName(a.soundsLike, n)
   // Up to three places (of ten); documented influences before comparisons, then by score.
   const reserved: typeof scored = []
-  const linked = scored.filter((s) => named(s.artist)).sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)))
+  // A link names an artist, not a record: of that artist's close albums, the one that best stands for their sound
+  // gets the place (closeness × how typical the album is of the artist), not just a near tie on genre labels.
+  const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile))
+  const linked = scored
+    .filter((s) => named(s.artist))
+    .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || pick(y) - pick(x))
   for (const s of linked) {
     if (reserved.length >= 3 || reserved.some((r) => r.artist === s.artist)) continue
     const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
@@ -715,6 +720,25 @@ export function similarArtists(
 export function genreListSimilarity(a: string[], b: string[]) {
   const toMap = (xs: string[]) => new Map(xs.map((g, i) => [g, 1 / Math.sqrt(i + 1)]))
   return weightedJaccard(expandGenres(toMap(a)), expandGenres(toMap(b)))
+}
+
+// ---------- how typical an album is of its artist ----------
+
+// Similarity of an album to its artist's whole body of work (0–1): True Blue is more "Madonna" than her debut.
+const typical = new WeakMap<Profile, number>()
+let albumsByArtist: Map<string, string[]> | null = null
+function typicality(p: Profile) {
+  let t = typical.get(p)
+  if (t === undefined) {
+    if (!albumsByArtist) {
+      albumsByArtist = new Map()
+      for (const d of Object.values(DESCRIPTORS)) albumsByArtist.set(d.artist, [...(albumsByArtist.get(d.artist) ?? []), d.albumId])
+    }
+    const ids = albumsByArtist.get(p.artist) ?? []
+    const whole = ids.length > 1 ? artistProfile(`all:${p.artist}`, ids) : null
+    typical.set(p, (t = whole ? compareProfiles(whole, p).base : 0))
+  }
+  return t
 }
 
 // ---------- lists that stay put when you tap ✕ ----------
