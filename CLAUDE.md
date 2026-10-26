@@ -5,7 +5,7 @@
 - Keep the current design (calm glass, one column, big light numerals, Doto dot-matrix accents, floating tab bar). The listening party look must not change.
 - GDPR: nothing from third parties loads before consent or a user tap; fonts are self-hosted.
 - Album descriptors (`docs/album-descriptors-guide.md`, branch `descriptors`): owner's rule, no limit on the number of values in any column; every genre a source names goes in, new genres are added to the list.
-- **Descriptors scope (owner, Oct 2026):** never live albums or compilations / greatest hits, not even landmark ones; studio albums, EPs, soundtracks and documented collaborations only.
+- **Descriptors scope (owner, Oct 2026):** live albums and compilations / greatest hits are not a priority: don't research them for now (studio albums, EPs, soundtracks and documented collaborations first). The ones already described stay; they may be added in the future.
 - Discovery (suggestions, Bridge, "A scene you don't know yet") never targets the global markets (US, UK; CA, AU, IE too for now, to rethink later) or English-language pop: only local scenes, singing mainly in their own language (owner's rule; `isLocalArtist` in `src/data/scenes.ts`).
 - **Scenes data (Italian classics' descriptors, connections file, point 8 in ROADMAP): the owner will bring it up; don't remind them (Oct 2026). Never list unreleased albums as "to research".**
 - **Descriptor schema v4 (Oct 2026):** 27 columns, `instruments` and `production` after `voice` (lists in `src/data/instruments.ts`, `src/data/production.ts`). Both weigh more than era; language almost nothing (owner). Older artists get them via `<artist-id>_instruments.csv` (album_id,instruments,production,sources).

@@ -20,7 +20,7 @@ If a link doesn't open, say so and use the rules below.
 
 FOR EACH ARTIST
 1. Find the artist's Fandome id in catalog.ts (e.g. ['trentemoller', 'Trentemøller', …] → id trentemoller). If docs/descriptors/<artist-id>.csv exists, never repeat albums already described.
-2. List the RELEASED albums: all studio albums, plus EPs, soundtracks, remix or collaboration records only when they matter (landmark or documented collaboration). Never live albums and never compilations or greatest hits, not even landmark ones (owner's rule, Oct 2026): they add little new sound. Never include albums not out yet on today's date. Check the catalogue carefully: if an album is missing from catalog.ts, list it as an album to add (Claude's tests fail otherwise).
+2. List the RELEASED albums: all studio albums, plus EPs, soundtracks, remix or collaboration records only when they matter (landmark or documented collaboration). Skip live albums and compilations or greatest hits for now, even landmark ones (owner, Oct 2026): not a priority, they add little new sound; they may be asked for later. Never include albums not out yet on today's date. Check the catalogue carefully: if an album is missing from catalog.ts, list it as an album to add (Claude's tests fail otherwise).
 3. Split into PHASES of 3–4 albums, chronological. One phase = one ZIP. Each phase is STRICTLY INCREMENTAL: only its new rows, never rows from earlier phases or other artists.
 4. For each album, research critics, musicologists, interviews, producers' and engineers' accounts, liner notes and official credits, then fill one row.
 
