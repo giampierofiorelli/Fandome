@@ -11,7 +11,7 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   steelguitar: 'Steel guitar', mandolin: 'Mandolin', bouzouki: 'Bouzouki', requinto: 'Requinto guitar', banjo: 'Banjo', ukulele: 'Ukulele', sitar: 'Sitar', koto: 'Koto', coralsitar: 'Coral electric sitar', sarangi: 'Sarangi', harp: 'Harp', hammereddulcimer: 'Hammered dulcimer', cimbalom: 'Cimbalom', hurdygurdy: 'Hurdy-gurdy', dulcimer: 'Dulcimer',
   strings: 'Strings', violin: 'Violin', viola: 'Viola', cello: 'Cello', orchestra: 'Orchestra',
   // drums and percussion
-  drums: 'Drums', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', kalimba: 'Kalimba', tabla: 'Tabla', gobletdrum: 'Goblet drum (darbuka)',
+  drums: 'Drums', timpani: 'Timpani', percussion: 'Percussion', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', kalimba: 'Kalimba', tabla: 'Tabla', gobletdrum: 'Goblet drum (darbuka)',
   // winds
   brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', bawu: 'Bawu', clarinet: 'Clarinet', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', whistle: 'Whistle', musicalsaw: 'Musical saw', kazoo: 'Kazoo',
 }

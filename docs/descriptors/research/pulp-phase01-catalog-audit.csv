@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,in_catalog,in_existing_descriptors,action,identity_note
+pulp-it,pulp,It,1983,no,no,Add artist id pulp and new catalog album (then import descriptor),"Original 1983 mini-LP classed as studio, do not duplicate reissues"
+pulp-freaks,pulp,Freaks,1987,no,no,Add artist id pulp and new catalog album (then import descriptor),Original album only; omit bonus tracks and later remaster variants
+pulp-separations,pulp,Separations,1992,no,no,Add artist id pulp and new catalog album (then import descriptor),Original album only; omit bonus tracks and later remaster variants
+pulp-hisnhers,pulp,His 'n' Hers,1994,no,no,Add artist id pulp and new catalog album (then import descriptor),Original album only; omit bonus tracks and later remaster variants

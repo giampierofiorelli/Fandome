@@ -1,0 +1,32 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+pulp-it,itwiki,detailed discography / original-release credits,https://pulpwiki.net/Pulp/It,18 April 1983; original seven-track mini-LP; personnel and producer Simon Hinkler,high
+pulp-it,itsessions,recording-session documentation,https://pulpwiki.net/Pulp/ItLPSessions?action=print,"Track-level acoustic guitars, fretless bass, Rhodes, trombone, flute, clarinet, percussion, recorded sessions",high
+pulp-it,itall,professional criticism,https://www.allmusic.com/album/r47327/review,Primarily acoustic music; folk-like songs; Scott Walker and Leonard Cohen similarities,high
+pulp-it,itwikipedia,release reference / genre summary,https://en.wikipedia.org/wiki/It_(Pulp_album),Indie folk and bedroom pop named for original studio album; less authoritative genre metadata,low
+pulp-it,itaoty,aggregated genre labels,https://www.albumoftheyear.org/album/10885-pulp-it.php,"Explicit genre tags: indie pop, twee pop, jangle pop, baroque pop and neo-acoustic",medium
+pulp-it,pitch,professional criticism,https://pitchfork.com/reviews/albums/15708-it-freaks-separations/,Indie pop; folkier pastoral style; brightness compared with darker successor,high
+pulp-it,jarvis,artist interview,https://pitchfork.com/features/5-10-15-20/10048-jarvis-cocker-on-the-music-of-his-life/,Jarvis on pre-fame 1980s period and deliberate departure from contemporary synthetic pop,high
+pulp-it,allalbums,discography,https://pulpwiki.net/Pulp/Albums,Chronological placement of It as first album,high
+pulp-it,musicbrainzartist,release database,https://musicbrainz.org/artist/76b2e842-5e85-4c97-ab62-d5bc315595b5,Album identification and chronological placement,medium
+pulp-freaks,freakswiki,detailed discography / album sleeve,https://pulpwiki.net/Pulp/Freaks,11 May 1987 release; individual instruments and Pulp production credit,high
+pulp-freaks,freakssessions,recording-session documentation,https://pulpwiki.net/Pulp/FreaksLPSessions,"Farfisa, acoustic/electric guitars, violin, drums; notes conflict on Jonathan Kirk producer versus album sleeve",high
+pulp-freaks,freaksall,professional criticism,https://www.allmusic.com/album/freaks-mw0000027134,"Post-punk tag; oppressive dark mood, murky production and outsider lyrics",high
+pulp-freaks,freaksaoty,aggregated genre labels,https://www.albumoftheyear.org/album/10886-pulp-freaks.php,"Post-punk, indie pop, gothic rock, jangle pop, dark cabaret labels",medium
+pulp-freaks,pitch,professional criticism,https://pitchfork.com/reviews/albums/15708-it-freaks-separations/,Pastoral-to-dark reversal; critic notes Cocker imitating Ian Curtis and Mark E. Smith,high
+pulp-freaks,allalbums,discography,https://pulpwiki.net/Pulp/Albums,Freaks second studio album; release year 1987,high
+pulp-separations,sepwiki,detailed discography / credits,https://pulpwiki.net/Pulp/SeparationsAlbum,"Original 19 June 1992 release, 1989–90 sessions, full band, Alan Smyth/Pulp production",high
+pulp-separations,sepsessions,recording-session documentation,https://pulpwiki.net/Pulp/SeparationsLPSessions,"Casio FZ-10 sampling, Alesis drum machine, Korg synthesizer, bass synth and overdubs",high
+pulp-separations,sepmb,database track-level credits,https://musicbrainz.org/release/86ad123c-7b3a-4978-ac54-217a30f53404,"Producer, 1989–90 recording, sampler and drum-machine instruments",high
+pulp-separations,sepall,professional criticism,https://www.allmusic.com/album/r228574/review,"Acid-house, rave, disco, pop/rock, dance and post-punk labels; album sound",high
+pulp-separations,pitch,professional criticism,https://pitchfork.com/reviews/albums/15708-it-freaks-separations/,Disco mainly in second half; Countdown and My Legendary Girlfriend track evidence,high
+pulp-separations,sepband,record-label / artist storefront,https://pulpmusic.bandcamp.com/album/separations,Reissue notes explicitly contrast early Pulp with disco-pulse period,high
+pulp-separations,jarvis,artist interview,https://pitchfork.com/features/5-10-15-20/10048-jarvis-cocker-on-the-music-of-his-life/,Band interest in house music and musical evolution,high
+pulp-separations,allalbums,discography,https://pulpwiki.net/Pulp/Albums,1992 publication date,high
+pulp-hisnhers,hiswiki,detailed discography / sleeve credits,https://pulpwiki.net/Pulp/HisNHersAlbum,"18 April 1994 original date; instruments, original LP/CD differences, Ed Buller producer",high
+pulp-hisnhers,hissessions,recording-session documentation,https://pulpwiki.net/Pulp/HisNHersLPSessions,"EMS Synthi A, Korg Trident II, Stylophone 350S, organ and specific overdubs",high
+pulp-hisnhers,hismb,release and track credits,https://musicbrainz.org/release/30a94519-0c6e-41ab-8a4e-77cccd91f477,Ed Buller production; sampled passage on David’s Last Summer; session dates,high
+pulp-hisnhers,hisall,professional criticism,https://www.allmusic.com/album/his-n-hers-mw0000625094,"Britpop, synth-pop, glam and post-punk; lyrical themes and mood",high
+pulp-hisnhers,hisaoty,aggregated genre labels,https://www.albumoftheyear.org/album/3603-pulp-his-n-hers.php,"Britpop, synthpop, glam rock and new wave",medium
+pulp-hisnhers,hisshfl,expert album review,https://www.theshfl.com/album/His-n-Hers,"Synthpop, glam, new wave and britpop; expressive ballads",high
+pulp-hisnhers,biog,professional biography,https://www.allmusic.com/artist/p19990/biography,David Bowie and Roxy Music influences; Pulp disco/new-wave and acid-house mixture,high
+pulp-hisnhers,pitch,professional criticism,https://pitchfork.com/reviews/albums/15708-it-freaks-separations/,His n Hers transition toward breakthrough; positioning relative to Different Class,high
