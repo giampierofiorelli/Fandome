@@ -79,3 +79,11 @@ Source: Wikipedia, American Life, with its cited sources.
 - `influenced_by`: Massive Attack's 100th Window and Lemon Jelly's Lost Horizons, cited by Madonna ("We set out to put the two worlds of acoustic and electronic music together").
 - `sounds_like`: Jewel (Jon Pareles, NYT, on the folk songwriting); Red Hot Chili Peppers and the Beatles' "Norwegian Wood" ("Hollywood").
 - Mark "Spike" Stent: additional production and mixing only, not in `producers`.
+
+## Bedtime Stories: revision (Oct 2026, owner: the album came up too rarely, especially next to 1990s records like Mariah Carey's)
+Sources: Wikipedia, Bedtime Stories (Madonna album), with its cited sources; Album of the Year (genres: Contemporary R&B, Pop; tags Trip Hop, Hip Hop Soul, Dance-Pop, Sophisti-Pop, New Jack Swing); AllMusic (styles Adult Contemporary, Contemporary Pop/Rock, Dance-Pop, Pop).
+- Instruments: guitars with wah-wah, keyboards, synthesizers, programmed drums and hand claps, basslines (Meshell Ndegeocello on "I'd Rather Be Your Lover"), live strings on "Take a Bow" (arranged by Craig Armstrong), wind chimes.
+- Production: samples (Lou Donaldson, Aaliyah, the Gap Band, Herbie Hancock, Main Source, Grant Green), backing vocals by Babyface and Donna De Lory.
+- influenced_by: the British club scene of Björk, Massive Attack and Soul II Soul (Björk's Debut led Madonna to ask her for "Bedtime Story"); Mariah Carey's "Dreamlover" among the records that shaped the sessions.
+- sounds_like (critics): Aaliyah, Xscape, Janet Jackson, Toni Braxton, Brandy.
+- landmark 1: over eight million copies, Grammy nomination for Best Pop Album, seen as the start of her "second career epoch" leading to Ray of Light.
