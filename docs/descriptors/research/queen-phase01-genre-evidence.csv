@@ -1,0 +1,44 @@
+﻿album_id,genre,scope,source_ids,evidence,evidence_strength
+queen-queen,hardrock,dominant,D2|D5,Riff-heavy sound and a hard attack recur through the record.,high
+queen-queen,artrock,significant,D2,Unusual structures and arranged guitar orchestration support this editorial style.,high
+queen-queen,prog,significant,D2|D5,Great King Rat and My Fairy King use extended progressive suite sections.,high
+queen-queen,glamrock,context and some tracks,D2,Critic explicitly considers glam for florid theatrical presentation while questioning a total genre fit.,medium
+queen-queen,heavymetal,significant,D5,Very heavy early tracks and proto-metal comparisons; not a homogeneous metal LP.,medium
+queen-queen,albumrock,"whole album, classification",D2,AllMusic editorial album-rock tag.,medium
+queen-queen,rock,dominant umbrella,D5,Pitchfork overarching rock designation.,high
+queen-queen,arenarock,"classification, retrospective",D2,"AllMusic arena-rock style tag, retrospective rather than evidence of 1973 stadium scale.",low
+queen-queen,contemporarypoprock,"classification, generic",D2,AllMusic Contemporary Pop/Rock editorial style. Weak specificity.,low
+queen-queenii,hardrock,dominant,Q3|Q4,Dense heavy guitar songs and a strong rhythm section dominate.,high
+queen-queenii,artrock,dominant,Q3|Q6,Strong artistic structure and recording experiments across Black Side.,high
+queen-queenii,prog,significant,Q3|Q6,Complex linked songs and extended March of the Black Queen; reviewer caveat on prog label.,high
+queen-queenii,heavymetal,significant,Q3|Q2,Reviewer hears weight close to heavy metal; official retrospective calls it arguably Queen’s heaviest.,high
+queen-queenii,glamrock,visual/sonic context,Q3|Q4,Genre label from AllMusic and 1974 flamboyance; less explanatory than art rock and hard rock.,medium
+queen-queenii,albumrock,"whole album, classification",Q3,AllMusic album-rock genre metadata.,medium
+queen-queenii,rock,dominant umbrella,Q6,Critical rock classification.,high
+queen-queenii,arenarock,"classification, retrospective",Q3,AllMusic arena-rock retrospective label.,low
+queen-queenii,contemporarypoprock,"classification, generic",Q3,AllMusic contemporary pop/rock style label.,low
+queen-queenii,musichall,one track precursor,Q6,Pitchfork characterizes The Fairy Feller’s Master-Stroke as developing music-hall rock.,medium
+queen-sheerheartattack,hardrock,dominant,S2|S6,"Brighton Rock, Now I’m Here and Stone Cold Crazy supply heavy riff-based core.",high
+queen-sheerheartattack,glamrock,significant,S2|S8,Glam and theatrical hard rock in songwriting and arrangement.,high
+queen-sheerheartattack,artrock,significant,S2|S6,Contrasting sections and sharply arranged studio material.,high
+queen-sheerheartattack,heavymetal,some tracks,S2|S6,"Harder tracks classed as metal; speed-metal statement is historical precursor, not tag.",high
+queen-sheerheartattack,musichall,some tracks,S7|S6,Bring Back That Leroy Brown uses a 1920s British music-hall style.,high
+queen-sheerheartattack,albumrock,"whole album, classification",S2,AllMusic editorial metadata.,medium
+queen-sheerheartattack,rock,umbrella,S6,Pitchfork covers album as 1970s rock.,high
+queen-sheerheartattack,britishmetal,"some tracks, classification",S2,AllMusic explicitly labels British Metal; proposed new genre token.,medium
+queen-sheerheartattack,arenarock,"classification, retrospective",S2,AllMusic arena-rock label.,low
+queen-sheerheartattack,contemporarypoprock,"classification, generic",S2,AllMusic style label.,low
+queen-sheerheartattack,vaudeville,one track,S6|S7,Pitchfork specifically calls Leroy Brown vaudeville; narrower than album-wide sound.,high
+queen-sheerheartattack,reggae,one track texture,S8,Reviewer describes Misfire as reggae-tinged.,medium
+queen-anightattheopera,hardrock,significant,N3|N9,Death on Two Legs and Sweet Lady represent hard rock.,high
+queen-anightattheopera,prog,significant,N3|N9,The Prophet’s Song plus Bohemian Rhapsody develop ambitious multipart structures.,high
+queen-anightattheopera,artrock,"whole album, critical synthesis",N3|N9,Art-rock framing across multiple contrasting composed sections.,medium
+queen-anightattheopera,rockopera,"one major track, album signature",N3|N9,Bohemian Rhapsody’s rock-and-opera suite is pivotal; not a continuous narrative rock opera.,high
+queen-anightattheopera,musichall,some tracks,N3|N7,Lazing on a Sunday Afternoon and Seaside Rendezvous reference music hall.,high
+queen-anightattheopera,pop,some tracks,N3,You’re My Best Friend marks explicit hook-rich pop territory.,high
+queen-anightattheopera,heavymetal,some tracks,N3,AllMusic explicitly discusses metal passages on Death on Two Legs and Sweet Lady.,high
+queen-anightattheopera,glamrock,context and some tracks,N9,Glitter-era theatrical rock aesthetic in critic survey.,medium
+queen-anightattheopera,rock,dominant umbrella,N9,"Rock album critic category, not its only sound.",high
+queen-anightattheopera,albumrock,album-style classification,N3,Whole-LP editorial rock designation.,medium
+queen-anightattheopera,arenarock,"classification, retrospective",N3,Retrospective arena rock tag; theatrical scale rather than actual concert venue.,low
+queen-anightattheopera,skiffle,one stylistic passage,N10,Review identifies skiffle within multistyle album; low prevalence.,medium

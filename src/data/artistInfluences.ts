@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  queen: {
+    names: ['The Beatles', 'Led Zeppelin', 'Jimmy Page', 'The Who', 'Jimi Hendrix', 'Rory Gallagher', 'Buddy Holly', 'The Crickets', 'The Everly Brothers', 'Free', 'Eric Clapton', 'Liza Minnelli'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/queen-phase01-chatgpt-import-notes.md): Brian May in Guitar World interviews and on brianmay.com (2015, Rory Gallagher); PBS American Masters (Freddie Mercury on Liza Minnelli)',
+  },
   janet: {
     names: ['Stevie Wonder', 'Marvin Gaye', 'Sly and the Family Stone', 'The Jackson 5', 'Michael Jackson', 'Prince', 'Earth, Wind & Fire'],
     source: 'ChatGPT influence audit (docs/descriptors/research/janet-phase01-chatgpt-import-notes.md): CNN Larry King Live 2001 (Stevie Wonder, Marvin Gaye, Sly and the Family Stone, her brothers); Heart 2024 interview (Jackson 5, Michael Jackson, Prince, Earth, Wind & Fire)',
