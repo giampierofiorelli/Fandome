@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  lanadelrey: {
+    names: ['Nina Simone', 'Billie Holiday', 'Eagles', 'The Eagles', 'The Beach Boys', 'Bob Dylan', 'Lou Reed', 'Cat Power', 'Father John Misty', 'Frank Sinatra', 'Elvis Presley', 'Nirvana', 'Eminem', 'Joan Baez', 'Stevie Nicks', 'Britney Spears', 'Thomas Newman', 'Bruce Springsteen'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/lanadelrey-phase01-chatgpt-import-notes.md): Aftonbladet (Nina Simone, Billie Holiday); antiMusic 2014 (Eagles, Beach Boys); The FADER 2014 (Dylan, Lou Reed); NME (Cat Power, Father John Misty, Sinatra, Elvis, Nirvana, Eminem); Biography.com (Baez, Nicks, Britney Spears); Just Jared 2011 (Thomas Newman, Springsteen)',
+  },
   billie: {
     names: ['Tyler, the Creator', 'Drake', 'Earl Sweatshirt', 'A$AP Rocky', 'Miguel', 'The Beatles', 'Green Day', 'Avril Lavigne', 'Lana Del Rey', 'Julie London', 'Peggy Lee', 'Frank Sinatra'],
     source: 'ChatGPT influence audit (docs/descriptors/research/billie-phase01-chatgpt-import-notes.md): PAPER 2017 and Teen Vogue 2017 interviews (rappers, the Beatles, Green Day, Avril Lavigne, Lana Del Rey, Sinatra); Los Angeles Times and ELLE 2021 (Julie London, Peggy Lee)',

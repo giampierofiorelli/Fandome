@@ -1,0 +1,11 @@
+album_id,title,year,type,catalog_status,remarks
+lanadelrey-lanadelray,Lana Del Ray,2010,studio,to_add,first studio album published digitally January 2010; later removed
+lanadelrey-borntodie,Born to Die,2012,studio,existing,preserve catalog id
+lanadelrey-paradise,Paradise,2012,ep,to_add,"landmark original 8-track EP, not the Paradise Edition reissue"
+lanadelrey-ultraviolence,Ultraviolence,2014,studio,existing,preserve catalog id
+lanadelrey-honeymoon,Honeymoon,2015,studio,existing_next_phase,Phase 02
+lanadelrey-lustforlife,Lust for Life,2017,studio,existing_next_phase,Phase 02
+lanadelrey-normanfuckingrockwell,Norman Fucking Rockwell!,2019,studio,existing_next_phase,Phase 02
+lanadelrey-chemtrailsoverthecountryclub,Chemtrails over the Country Club,2021,studio,existing_next_phase,Phase 02
+lanadelrey-bluebanisters,Blue Banisters,2021,studio,existing_later_phase,Phase 03
+lanadelrey-didyouknowthattheresatunnelunderoceanblvd,Did You Know That There’s a Tunnel Under Ocean Blvd,2023,studio,existing_later_phase,Phase 03

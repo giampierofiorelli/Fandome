@@ -1,0 +1,41 @@
+album_id,genre,source,scope,evidence
+lanadelrey-lanadelray,indiepop,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,songwriter,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,chamberpop,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,artpop,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,indierock,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,indiesurf,https://www.albumoftheyear.org/album/71520-lana-del-rey-lana-del-ray-aka-lizzy-grant.php,whole album / genre metadata,Genre listed by Album of the Year; weak single-source tag
+lanadelrey-lanadelray,altpop,https://en.wikipedia.org/wiki/Lana_Del_Ray_(album),whole album / stylistic context,Alternative indie-pop identity; general biography and debut references
+lanadelrey-lanadelray,americana,https://pitchfork.com/features/rising/8657-lana-del-rey/,whole album / critical description,Critic describes original album as dusty Americana
+lanadelrey-lanadelray,triphop,https://www.slantmagazine.com/music/every-lana-del-rey-album-ranked/,some tracks,"Slant specifically identifies trip-hop in Gramma, not entire record"
+lanadelrey-borntodie,altpop,https://www.albumoftheyear.org/album/3061-lana-del-rey-born-to-die.php,whole album / genre metadata,Exact album genre: altpop
+lanadelrey-borntodie,chamberpop,https://www.albumoftheyear.org/album/3061-lana-del-rey-born-to-die.php,whole album / genre metadata,Exact album genre: chamberpop
+lanadelrey-borntodie,artpop,https://www.albumoftheyear.org/album/3061-lana-del-rey-born-to-die.php,whole album / genre metadata,Exact album genre: artpop
+lanadelrey-borntodie,baroquepop,https://www.grammy.com/news/lana-del-rey-born-die-album-record-year-anniversary/,whole album,GRAMMY retrospective explicitly describes album as baroque pop; AOTY concurs
+lanadelrey-borntodie,triphop,https://pitchfork.com/reviews/albums/16223-lana-del-rey/,whole album,Review describes recurrent trip-hop beats; AOTY concurs
+lanadelrey-borntodie,orchestralpop,https://en.wikipedia.org/wiki/Born_to_Die,whole album,Album described as orchestral pop with prominent string arrangements
+lanadelrey-borntodie,indiepop,https://en.wikipedia.org/wiki/Born_to_Die,texture / contextual,Alternative and indie-pop crossover inferred from album profile; lower confidence
+lanadelrey-borntodie,sadcore,https://en.wikipedia.org/wiki/Born_to_Die,whole album / critical coinage,"Hollywood sadcore cited for the LP; non-standard genre token, low consensus"
+lanadelrey-borntodie,hiphop,https://www.grammy.com/news/lana-del-rey-born-die-album-record-year-anniversary/,whole album / texture,Hip-hop beats and ad-libs integrated with orchestral pop
+lanadelrey-borntodie,rnb,https://www.theguardian.com/music/2012/jan/29/lana-del-rey-born-die-review,some tracks,R&B phrasing specifically on Off to the Races
+lanadelrey-paradise,altpop,https://www.albumoftheyear.org/album/4854-lana-del-rey-paradise.php,whole EP / metadata,Exact EP genre classification: altpop
+lanadelrey-paradise,chamberpop,https://www.albumoftheyear.org/album/4854-lana-del-rey-paradise.php,whole EP / metadata,Exact EP genre classification: chamberpop
+lanadelrey-paradise,artpop,https://www.albumoftheyear.org/album/4854-lana-del-rey-paradise.php,whole EP / metadata,Exact EP genre classification: artpop
+lanadelrey-paradise,dreampop,https://www.albumoftheyear.org/album/4854-lana-del-rey-paradise.php,whole EP / metadata,Exact EP genre classification: dreampop
+lanadelrey-paradise,baroquepop,https://en.wikipedia.org/wiki/Paradise_(Lana_Del_Rey_EP),whole EP / source genre classification,Baroque pop identified for Paradise EP
+lanadelrey-paradise,triphop,https://en.wikipedia.org/wiki/Paradise_(Lana_Del_Rey_EP),whole EP / source genre classification,Trip-hop identified for Paradise EP
+lanadelrey-paradise,contemporarysingersongwriter,https://www.allmusic.com/album/release/paradise-mr0004230772,whole EP / AllMusic style metadata,AllMusic assigns Contemporary Singer/Songwriter
+lanadelrey-paradise,adultalternativepoprock,https://www.metacritic.com/music/paradise-ep/lana-del-rey,whole EP / metadata,Metacritic broad Adult Alternative Pop/Rock taxonomy
+lanadelrey-paradise,alternativeindierock,https://www.metacritic.com/music/paradise-ep/lana-del-rey,whole EP / metadata,Metacritic broad Alternative/Indie Rock taxonomy
+lanadelrey-ultraviolence,psychedelicrock,https://www.albumoftheyear.org/album/15950-lana-del-rey-ultraviolence.php,whole album / genre metadata,Exact album style psychedelicrock in aggregation
+lanadelrey-ultraviolence,dreampop,https://www.albumoftheyear.org/album/15950-lana-del-rey-ultraviolence.php,whole album / genre metadata,Exact album style dreampop in aggregation
+lanadelrey-ultraviolence,neopsychedelia,https://www.albumoftheyear.org/album/15950-lana-del-rey-ultraviolence.php,whole album / genre metadata,Exact album style neopsychedelia in aggregation
+lanadelrey-ultraviolence,artpop,https://www.albumoftheyear.org/album/15950-lana-del-rey-ultraviolence.php,whole album / genre metadata,Exact album style artpop in aggregation
+lanadelrey-ultraviolence,chamberpop,https://www.albumoftheyear.org/album/15950-lana-del-rey-ultraviolence.php,whole album / genre metadata,Exact album style chamberpop in aggregation
+lanadelrey-ultraviolence,desertrock,https://www.nme.com/reviews/reviews-lana-del-rey-15401-308249,whole album / critic classification,NME describes guitars and ballads as desert rock
+lanadelrey-ultraviolence,slowcore,https://en.wikipedia.org/wiki/Ultraviolence_(album),whole album / critic context,Slow and depressive near-static song pacing; genre corroborated by album-level discographic classification
+lanadelrey-ultraviolence,rock,https://www.audiotechnology.com/features/mix-masters-robert-orton-on-lana-del-reys-ultraviolence,whole album / instrumentation,Guitar-led alternative rock sonic departure
+lanadelrey-ultraviolence,adultalternativepoprock,https://www.allmusic.com/album/ultraviolence-mw0002677059,whole album / metadata,AllMusic Adult Alternative Pop/Rock category
+lanadelrey-ultraviolence,alternativeindierock,https://www.allmusic.com/album/ultraviolence-mw0002677059,whole album / metadata,AllMusic Alternative/Indie Rock category
+lanadelrey-ultraviolence,contemporarysingersongwriter,https://www.allmusic.com/album/ultraviolence-mw0002677059,whole album / metadata,AllMusic Contemporary Singer/Songwriter category
+lanadelrey-ultraviolence,triphop,https://www.audiotechnology.com/features/mix-masters-robert-orton-on-lana-del-reys-ultraviolence,texture,Recording engineer coverage says trip-hop influences persist; not dominant
