@@ -179,7 +179,7 @@ const ROWS: Row[] = [
   ['mazzystar', 'Mazzy Star', '#6f5a7a', 'Fade into you', [['She Hangs Brightly', 1990], ['So Tonight That I Might See', 1993], ['Among My Swan', 1996], ['Seasons of Your Day', 2013]]],
   ['mgmt', 'MGMT', '#c95fa3', 'Kids, time to pretend', [['Oracular Spectacular', 2007], ['Congratulations', 2010], ['MGMT', 2013], ['Little Dark Age', 2018], ['Loss of Life', 2024]]],
   ['mika', 'MIKA', '#f0a03f', 'Colour, falsetto and Grace Kelly', [['Life in Cartoon Motion', 2007], ['The Boy Who Knew Too Much', 2009], ['The Origin of Love', 2012], ['No Place in Heaven', 2015], ['My Name Is Michael Holbrook', 2019], ['Que ta tête fleurisse toujours', 2023]]],
-  ['neworder', 'New Order', '#3f7fa8', 'Blue Monday every day', [['Movement', 1981], ['Power, Corruption & Lies', 1983], ['Low-Life', 1985], ['Brotherhood', 1986], ['Technique', 1989], ['Music Complete', 2015]]],
+  ['neworder', 'New Order', '#3f7fa8', 'Blue Monday every day', [['Movement', 1981], ['Power, Corruption & Lies', 1983], ['Low-Life', 1985], ['Brotherhood', 1986], ['Technique', 1989], ['Republic', 1993], ['Get Ready', 2001], ['Waiting for the Sirens’ Call', 2005], ['Lost Sirens', 2013], ['Music Complete', 2015]]],
   ['notwist', 'The Notwist', '#7a8f6a', 'Indietronica from Bavaria', [['Shrink', 1998], ['Neon Golden', 2002], ['The Devil, You + Me', 2008], ['Close to the Glass', 2014], ['Vertigo Days', 2021]]],
   ['olly', 'Olly Alexander', '#e0577a', 'Polari, pride and pop', [['Polari', 2025]]],
   ['yearsyears', 'Years & Years', '#4ab5c9', 'King, Starstruck and Night Call', [['Communion', 2015], ['Palo Santo', 2018], ['Night Call', 2022]]],

@@ -74,6 +74,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Dubliners', 'Girl Band', 'The Pogues', 'The Rolling Stones', 'The Beach Boys'],
     source: 'So Young Magazine 2018 ("Our influences include the Dubliners and Girl Band"; The Pogues, The Rolling Stones); Dork 2018 (The Beach Boys). Album-specific influences are in docs/descriptors/fontainesdc.csv',
   },
+  neworder: {
+    names: ['Kraftwerk', 'Giorgio Moroder', 'Donna Summer', 'Can', 'Neu!', 'The Velvet Underground'],
+    source: 'Stephen Morris (Julien\'s Auctions tribute to Florian Schneider; Electronic Beats "Tanks for the beats": Can, Neu!, Maureen Tucker); Bernard Sumner (The New European; 2015 interview: Kraftwerk, Neu!, Donna Summer); Peter Hook (Under the Radar: Moroder); Guardian 2023 Blue Monday inspirations',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

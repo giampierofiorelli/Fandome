@@ -1,0 +1,39 @@
+album_id,genre,source_url,scope,evidence
+neworder-movement,postpunk,https://www.albumoftheyear.org/album/6599-new-order-movement.php,whole album,Post-Punk album genre
+neworder-movement,gothicrock,https://www.albumoftheyear.org/album/6599-new-order-movement.php,whole album,Gothic Rock album genre
+neworder-movement,newwave,https://www.theshfl.com/album/Movement-1,whole album,Ned Raggett/SHFL explicitly tags this album new wave
+neworder-movement,coldwave,https://www.albumoftheyear.org/album/6599-new-order-movement.php,whole album,Coldwave album genre
+neworder-movement,synthpop,https://www.allmusic.com/album/movement-mw0000201258,some tracks,"AllMusic lists Synth Pop, but guitars dominate the original album"
+neworder-powercorruptionlies,synthpop,https://www.albumoftheyear.org/album/5331-new-order-power-corruption-lies.php,whole album,Synthpop album genre
+neworder-powercorruptionlies,postpunk,https://www.albumoftheyear.org/album/5331-new-order-power-corruption-lies.php,whole album,Post-Punk album genre
+neworder-powercorruptionlies,newwave,https://www.albumoftheyear.org/album/5331-new-order-power-corruption-lies.php,whole album,New Wave album genre
+neworder-powercorruptionlies,alternativedance,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,whole album,Alternative Dance album style
+neworder-powercorruptionlies,dancerock,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,whole album,Dance-Rock style
+neworder-powercorruptionlies,postdisco,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,texture,Post-Disco stylistic element
+neworder-powercorruptionlies,alternativeindierock,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,some tracks,"Alternative/Indie Rock style, notably guitar-led material"
+neworder-powercorruptionlies,collegerock,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,some tracks,"College Rock stylistic classification, editorial category"
+neworder-powercorruptionlies,electropop,https://www.qobuz.com/us-en/album/power-corruption-lies-new-order/0825646053803,some tracks,Qobuz describes track 5 8 6 as electro-pop
+neworder-powercorruptionlies,coldwave,https://www.qobuz.com/us-en/album/power-corruption-lies-new-order/0825646053803,some tracks,Qobuz describes Your Silent Face as synthetic cold wave
+neworder-lowlife,synthpop,https://www.albumoftheyear.org/album/6600-new-order-low-life.php,whole album,Synthpop album genre
+neworder-lowlife,alternativedance,https://www.allmusic.com/album/low-life-mw0000650557,whole album,Alternative Dance album style
+neworder-lowlife,postpunk,https://www.albumoftheyear.org/album/6600-new-order-low-life.php,some tracks,Post-Punk album genre; strongest in guitar-led songs
+neworder-lowlife,newwave,https://www.albumoftheyear.org/album/6600-new-order-low-life.php,whole album,New Wave album genre
+neworder-lowlife,dancepop,https://www.theshfl.com/album/LowLife,some tracks,SHFL explicitly tags 1985 Low-Life dance-pop
+neworder-lowlife,dancerock,https://www.allmusic.com/album/low-life-mw0000650557,whole album,Dance-Rock album style
+neworder-lowlife,alternativepoprock,https://www.allmusic.com/album/low-life-mw0000650557,some tracks,Alternative Pop/Rock album style
+neworder-lowlife,collegerock,https://www.allmusic.com/album/low-life-mw0000650557,some tracks,College Rock album style
+neworder-lowlife,rock,https://www.allmusic.com/album/low-life-mw0000650557,texture,Pop/Rock family classification and guitar arrangements
+neworder-brotherhood,synthpop,https://www.albumoftheyear.org/album/6601-new-order-brotherhood.php,whole album,Synthpop album style; particularly second side
+neworder-brotherhood,postpunk,https://www.albumoftheyear.org/album/6601-new-order-brotherhood.php,some tracks,Post-Punk album genre; mainly guitar side
+neworder-brotherhood,alternativedance,https://www.albumoftheyear.org/album/6601-new-order-brotherhood.php,some tracks,Alternative Dance album classification
+neworder-brotherhood,newwave,https://www.albumoftheyear.org/album/6601-new-order-brotherhood.php,whole album,New Wave album genre
+neworder-brotherhood,janglepop,https://www.albumoftheyear.org/album/6601-new-order-brotherhood.php,some tracks,Jangle Pop genre applies primarily to guitar-led songs
+neworder-brotherhood,dancerock,https://www.allmusic.com/album/brotherhood-mw0000191077,some tracks,Dance-Rock album style
+neworder-brotherhood,alternativepoprock,https://www.allmusic.com/album/brotherhood-mw0000191077,some tracks,Alternative Pop/Rock album style
+neworder-brotherhood,collegerock,https://www.allmusic.com/album/brotherhood-mw0000191077,some tracks,College Rock editorial style
+neworder-brotherhood,rock,https://www.allmusic.com/album/brotherhood-mw0000191077,texture,Pop/Rock umbrella classification; first-side instrumentation
+neworder-movement,rock,https://www.theshfl.com/album/Movement-1,texture,Ned Raggett SHFL tags album rock as broader family
+neworder-powercorruptionlies,pop,https://www.qobuz.com/us-en/album/power-corruption-lies-new-order/0825646053803,texture,Qobuz broader pop tag for original album
+neworder-powercorruptionlies,rock,https://www.allmusic.com/album/power-corruption-lies-mw0000195060,texture,AllMusic Pop/Rock umbrella for guitar-led album
+neworder-lowlife,pop,https://www.qobuz.com/us-en/album/low-life-new-order/0825646053193,texture,Qobuz album is categorized Pop
+neworder-brotherhood,pop,https://music.apple.com/us/album/brotherhood/1040972118,texture,Apple Music catalog categorizes Brotherhood as Pop

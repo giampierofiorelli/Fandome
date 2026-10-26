@@ -1,0 +1,11 @@
+album_id,artist_id,title,year,type,catalog_status,action,phase
+neworder-movement,neworder,Movement,1981,studio,present,keep existing catalogue album ID,01
+neworder-powercorruptionlies,neworder,"Power, Corruption & Lies",1983,studio,present,keep existing catalogue album ID,01
+neworder-lowlife,neworder,Low-Life,1985,studio,present,keep existing catalogue album ID,01
+neworder-brotherhood,neworder,Brotherhood,1986,studio,present,keep existing catalogue album ID,01
+neworder-technique,neworder,Technique,1989,studio,present,keep existing catalogue album ID,02
+neworder-republic,neworder,Republic,1993,studio,missing,add to catalog.ts,02
+neworder-getready,neworder,Get Ready,2001,studio,missing,add to catalog.ts,02
+neworder-waitingforthesirenscall,neworder,Waiting for the Sirens’ Call,2005,studio,missing,add to catalog.ts,02
+neworder-lostsirens,neworder,Lost Sirens,2013,studio,missing,add to catalog.ts,03
+neworder-musiccomplete,neworder,Music Complete,2015,studio,present,keep existing catalogue album ID,03
