@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,action,catalog_note
+pinkfloyd-atomheartmother,pinkfloyd,Atom Heart Mother,1970,studio,no,add to src/data/catalog.ts,New chronological studio/soundtrack album; retain 1970–72 original edition
+pinkfloyd-meddle,pinkfloyd,Meddle,1971,studio,no,add to src/data/catalog.ts,New chronological studio/soundtrack album; retain 1970–72 original edition
+pinkfloyd-obscuredbyclouds,pinkfloyd,Obscured by Clouds,1972,soundtrack,no,add to src/data/catalog.ts,New chronological studio/soundtrack album; retain 1970–72 original edition
+pinkfloyd-thedarksideofthemoon,pinkfloyd,The Dark Side of the Moon,1973,studio,yes,reuse exact existing id,Existing official catalogue title; exact slug pinkfloyd-thedarksideofthemoon
