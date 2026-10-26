@@ -223,3 +223,12 @@ describe('critical standing', () => {
     }
   })
 })
+
+describe('artist links weigh the whole career', () => {
+  it('one album’s influence does not lead the list; artists who name this one as an influence do (owner, Madonna)', () => {
+    const of = (id: string) => albums.filter((a) => a.artistId === id || (a.withArtists ?? []).includes(id)).map((a) => a.id)
+    const list = similarArtists('madonna', of, artists.map((a) => a.id)).map((s) => s.artistId)
+    expect(list.slice(0, 3)).not.toContain('mariah')
+    expect(list.slice(0, 3)).toContain('kylie')
+  })
+})

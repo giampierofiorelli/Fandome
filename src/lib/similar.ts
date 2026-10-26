@@ -707,16 +707,37 @@ export function similarArtists(
   // 17 albums) dilutes the overall profile, so the documented link is the stronger evidence.
   // Strongest first: influences the artist names for their whole work, then an album's documented
   // influences, then documented comparisons; within each, by score.
+  // A link found on one album says little about a whole career (Bedtime Stories drawing on Mariah Carey is one
+  // of Madonna's 17 albums): album-level links count for the artist only when they cover at least a quarter of
+  // their albums. Links work both ways: an artist who names this one as an influence (Kylie Minogue → Madonna)
+  // is documented kin too.
   const named = ARTIST_INFLUENCES[artistId]?.names ?? []
+  const SHARE = 0.25
+  const share = (albums: Profile[], has: (p: Profile) => boolean) => (albums.length ? albums.filter(has).length / albums.length : 0)
   const linkOf = (s: (typeof scored)[number]) => {
-    if (includesName(named, s.profile.artist)) return { rank: 0, reason: `Influenced by ${s.profile.artist}` }
-    const drew = myAlbums.find((a) => includesName(a.influencedBy, s.profile.artist))
-    if (drew) return { rank: 1, reason: `${drew.title} draws on ${s.profile.artist}` }
-    const like = myAlbums.find((a) => includesName(a.soundsLike, s.profile.artist))
-    if (like) return { rank: 2, reason: `${like.title} sounds like ${s.profile.artist}` }
+    const them = s.profile.artist
+    const theirAlbums = profilesOf(albumIdsOf(s.artistId))
+    if (includesName(named, them)) return { rank: 0, reason: `Influenced by ${them}` }
+    if (includesName(ARTIST_INFLUENCES[s.artistId]?.names ?? [], me.artist)) return { rank: 1, reason: `${them} names ${me.artist} as an influence` }
+    if (share(myAlbums, (a) => includesName(a.influencedBy, them)) >= SHARE) {
+      const drew = myAlbums.find((a) => includesName(a.influencedBy, them))!
+      return { rank: 2, reason: `${drew.title} draws on ${them}` }
+    }
+    if (share(theirAlbums, (b) => includesName(b.influencedBy, me.artist)) >= SHARE) {
+      const drew = theirAlbums.find((b) => includesName(b.influencedBy, me.artist))!
+      return { rank: 2, reason: `${drew.title} draws on ${me.artist}` }
+    }
+    if (share(myAlbums, (a) => includesName(a.soundsLike, them)) >= SHARE) {
+      const like = myAlbums.find((a) => includesName(a.soundsLike, them))!
+      return { rank: 3, reason: `${like.title} sounds like ${them}` }
+    }
+    if (share(theirAlbums, (b) => includesName(b.soundsLike, me.artist)) >= SHARE) {
+      const like = theirAlbums.find((b) => includesName(b.soundsLike, me.artist))!
+      return { rank: 3, reason: `${like.title} sounds like ${me.artist}` }
+    }
     return null
   }
-  const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link).sort((x, y) => x.link!.rank - y.link!.rank)
+  const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link).sort((x, y) => x.link!.rank - y.link!.rank || y.s.score - x.s.score)
   const reserved = linked.slice(0, 3).map(({ s, link }) => ({ ...s, reason: link!.reason }))
   const rest = scored.filter((s) => !reserved.some((r) => r.artistId === s.artistId))
   return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, ...s }) => s)
