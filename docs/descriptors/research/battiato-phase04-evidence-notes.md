@@ -88,3 +88,13 @@ Spanish 1987 LP lists **Pop, Latin, Ballad**: only **`pop|ballad|latin`** are en
 - All four `influenced_by` deliberately blank. Literary sources, sacred texts and soundalike critics' comparisons belong in notes, not that field. Refer to separate prior artist-influence package for historically documented general background.
 - Sonic similarity in `sounds_like` is an editorial comparison, not documentary influence; no evidence of producer transmission is asserted.
 - We have not edited GitHub. A CSV structure/type/token check is possible here; **the repository TypeScript validator and test suite must be run after catalogue/taxonomy updates by Claude**. Do not state it has been run here.
+
+## Revision of Nómadas (Oct 2026, owner: its suggestions were Spanish-language commercial pop)
+
+The phase 04 row had only pop|ballad|latin, no instruments and experimental 1. Further research:
+- Progarchives: re-recording with Spanish lyrics of songs from 1979-85 plus one new song (the title track, by Juri Camisasca). Tracks: Nómadas, Bandera blanca, Yo quiero verte danzar, Vía Láctea, La era del jabalí blanco, Perspectiva Nevski, Despertar en primavera, Mal de África, Otra vida.
+- Discogs: arranged by Battiato and Giusto Pio; the Spanish cassette is tagged New Wave, Synth-pop, the LP Ballad.
+- Rate Your Music: Singer-Songwriter, Pop / New Wave; a reviewer: pop with synth touches.
+- latin is AllMusic shelving, not the sound: kept last.
+
+Revised: genres newwave|synthpop|songwriter|pop|ballad|latin, instruments synth|keyboards, experimental 2 (as the 1985 Mondi lontanissimi, same arrangers).

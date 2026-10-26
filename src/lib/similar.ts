@@ -73,7 +73,7 @@ function buildAlbumProfile(d: Descriptor): Profile {
   const genres = new Map<string, number>()
   // Order matters: the main genres carry the album, the long tail (often one track) weighs little.
   d.genres.forEach((g, i) => genres.set(g, 1 / (i + 1)))
-  return {
+  return backoff(d, {
     id: d.albumId,
     artist: d.artist,
     title: d.title,
@@ -90,7 +90,36 @@ function buildAlbumProfile(d: Descriptor): Profile {
     soundsLike: d.soundsLike,
     influencedBy: d.influencedBy,
     confidence: CONFIDENCE[d.confidence],
+  })
+}
+
+// Backoff to the artist (shrinkage toward a prior): a thin descriptor, with few genres and no instruments or
+// production known, says too little to compare on its own (a re-recording filed as "pop, ballad, latin"
+// would match any pop ballad). It is completed with the artist's other albums, the closest in time weighing
+// most, in proportion to how little the album itself says. Its own genres, values and links stay first.
+const THIN = 6
+function backoff(d: Descriptor, p: Profile): Profile {
+  const evidence = d.genres.length + d.instruments.length + d.production.length
+  if (evidence >= THIN || d.instruments.length || d.production.length) return p
+  const others = Object.values(DESCRIPTORS).filter((x) => x.artist === d.artist && x.albumId !== d.albumId)
+  if (!others.length) return p
+  const k = 1 - evidence / THIN // how much is borrowed: 0.5 for an album with three genres only
+  const near = (x: Descriptor) => (x.year && d.year ? 1 / (1 + Math.abs(x.year - d.year) / 5) : 0.5)
+  const total = others.reduce((n, x) => n + near(x), 0)
+  const add = (into: Map<string, number>, list: (x: Descriptor) => string[]) => {
+    const sum = new Map<string, number>()
+    for (const x of others) list(x).forEach((g, i) => sum.set(g, (sum.get(g) ?? 0) + near(x) / (i + 1)))
+    for (const [g, v] of sum) into.set(g, Math.max(into.get(g) ?? 0, (k * v) / total))
+    return into
   }
+  const scales: Partial<Record<Scale, number>> = { ...p.scales }
+  for (const s of SCALES) {
+    const known = others.filter((x) => x.scales[s] !== undefined)
+    if (!known.length) continue
+    const mean = known.reduce((n, x) => n + near(x) * x.scales[s]!, 0) / known.reduce((n, x) => n + near(x), 0)
+    scales[s] = p.scales[s] === undefined ? mean : (1 - k) * p.scales[s]! + k * mean
+  }
+  return { ...p, genres: add(new Map(p.genres), (x) => x.genres), instruments: add(new Map(), (x) => x.instruments), production: add(new Map(), (x) => x.production), scales }
 }
 
 // Artist profile: albums averaged, defining (landmark) albums weigh 1.5×, so traits that come back
