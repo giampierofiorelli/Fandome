@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,catalog_action,descriptor_file_on_branch,evidence
+taylorswift-evermore,taylorswift,Evermore,2020,studio,yes,keep existing catalogue entry,no (404 on 2026-10-26),catalog.ts descriptors branch artist list
+taylorswift-midnights,taylorswift,Midnights,2022,studio,yes,keep existing catalogue entry,no (404 on 2026-10-26),catalog.ts descriptors branch artist list
+taylorswift-thetorturedpoetsdepartment,taylorswift,The Tortured Poets Department,2024,studio,yes,keep existing catalogue entry,no (404 on 2026-10-26),catalog.ts descriptors branch artist list
+taylorswift-thelifeofashowgirl,taylorswift,The Life of a Showgirl,2025,studio,yes,keep existing catalogue entry,no (404 on 2026-10-26),catalog.ts descriptors branch artist list
