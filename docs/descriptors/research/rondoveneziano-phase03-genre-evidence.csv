@@ -1,0 +1,16 @@
+﻿album_id,genre,source,scope,evidence_note
+rondoveneziano-concerto,baroquepop,https://it.wikipedia.org/wiki/Concerto_%28Rond%C3%B2_Veneziano%29,whole album,Explicit Italian album genre pop barocco
+rondoveneziano-concerto,pop,https://it.wikipedia.org/wiki/Concerto_%28Rond%C3%B2_Veneziano%29,whole album,Italian discographic genre pop
+rondoveneziano-masquerade,classicalcrossover,https://en.wikipedia.org/wiki/Masquerade_%28Rond%C3%B2_Veneziano_album%29,whole album,Explicit album label in secondary genre metadata
+rondoveneziano-masquerade,baroquepop,https://it.wikipedia.org/wiki/Masquerade_%28Rond%C3%B2_Veneziano%29,whole album,Explicit pop barocco classification; named period review confirms baroque musical flavour
+rondoveneziano-masquerade,easylistening,https://en.wikipedia.org/wiki/Masquerade_%28Rond%C3%B2_Veneziano_album%29,whole album,Explicit album label
+rondoveneziano-masquerade,pop,https://it.wikipedia.org/wiki/Masquerade_%28Rond%C3%B2_Veneziano%29,whole album,Italian album metadata says pop
+rondoveneziano-barocco,baroquepop,https://it.wikipedia.org/wiki/Barocco_%28Rond%C3%B2_Veneziano%29,whole album,Explicit pop barocco classification
+rondoveneziano-barocco,pop,https://it.wikipedia.org/wiki/Barocco_%28Rond%C3%B2_Veneziano%29,whole album,Italian page explicitly labels pop
+rondoveneziano-barocco,neoclassical,https://musicbase.net/barocco,whole album,Original CD record classified Neo-Classical by release database; metadata not a contemporary critic
+rondoveneziano-barocco,baroque,https://musicbase.net/barocco,whole album,Original discographic release categorised Baroque; not the same token as baroquepop
+rondoveneziano-barocco,classical,https://musicbase.net/barocco,whole album,Broader explicit Classical album category
+rondoveneziano-prestige,classicalcrossover,https://en.wikipedia.org/wiki/Prestige_%28Rond%C3%B2_Veneziano_album%29,whole album,Explicit classical crossover album genre
+rondoveneziano-prestige,baroquepop,https://it.wikipedia.org/wiki/Prestige_%28Rond%C3%B2_Veneziano%29,whole album,Explicit pop barocco album genre
+rondoveneziano-prestige,easylistening,https://en.wikipedia.org/wiki/Prestige_%28Rond%C3%B2_Veneziano_album%29,whole album,Explicit easy listening album genre
+rondoveneziano-prestige,pop,https://it.wikipedia.org/wiki/Prestige_%28Rond%C3%B2_Veneziano%29,whole album,Explicit Italian pop album genre
