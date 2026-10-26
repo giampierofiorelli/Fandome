@@ -8,6 +8,8 @@ import { useToast } from './components/Toast'
 import { DiscoLogo } from './components/DiscoLogo'
 import { IconGlobe, IconHeadphones, IconMic, IconHome, IconPlus, IconSearch, IconSend, IconUser } from './components/icons'
 import { seedPosts, seedUsers } from './data/seed'
+import { albumById, artistById, concertById } from './lib/util'
+import type { ComposeOpts } from './components/Composer'
 import { starterPack } from './lib/packs'
 import { spring } from './lib/motion'
 import Home from './pages/Home'
@@ -228,7 +230,7 @@ export default function App() {
         <Tab to="/" end icon={<IconHome size={22} />} label="Home" />
         <Tab to="/explore" icon={<IconSearch size={22} />} label="Explore" />
         <Tab to="/artists" icon={<IconMic size={22} />} label="Artists" />
-        <motion.button className="tabbar-plus" onClick={() => compose()} aria-label="New post" whileTap={{ scale: 0.88 }} transition={spring}>
+        <motion.button className="tabbar-plus" onClick={() => compose(composeContext(loc.pathname))} aria-label="New post" whileTap={{ scale: 0.88 }} transition={spring}>
           <IconPlus size={22} />
         </motion.button>
         <Tab to="/scenes" icon={<IconGlobe size={22} />} label="Scenes" />
@@ -237,4 +239,21 @@ export default function App() {
       </nav>
     </>
   )
+}
+
+// The "+" pre-tags what the page is about (editable in the composer):
+// an album page tags its artist and the album, an artist or concert page only the artist.
+function composeContext(path: string): ComposeOpts | undefined {
+  const [, kind, raw] = path.split('/')
+  const id = raw ? decodeURIComponent(raw) : ''
+  if (kind === 'album') {
+    const al = albumById(id)
+    return al ? { artistId: al.artistId, albumId: al.id } : undefined
+  }
+  if (kind === 'a') return artistById(id) ? { artistId: id } : undefined
+  if (kind === 'c') {
+    const c = concertById(id)
+    return c ? { artistId: c.artistId } : undefined
+  }
+  return undefined
 }
