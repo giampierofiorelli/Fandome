@@ -1,0 +1,4 @@
+album_id,artist,title,year,present_in_catalog,action,notes
+oasis-heathenchemistry,Oasis,Heathen Chemistry,2002,no,add_album_and_descriptor,Album missing in current catalog.ts despite being the fifth studio album. Add 2002 title before import.
+oasis-dontbelievethetruth,Oasis,Don’t Believe the Truth,2005,yes,descriptor_only,Catalog branch includes title/year; previous four Phase 01 album descriptors already imported.
+oasis-digoutyoursoul,Oasis,Dig Out Your Soul,2008,yes,descriptor_only,Catalog branch includes title/year; previous four Phase 01 album descriptors already imported.
