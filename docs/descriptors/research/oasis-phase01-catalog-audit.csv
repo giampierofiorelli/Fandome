@@ -1,0 +1,5 @@
+album_id,artist,title,year,present_in_catalog,action,notes
+oasis-definitelymaybe,Oasis,Definitely Maybe,1994,yes,descriptor_only,Matching artist and album title/year found in descriptors branch catalog.ts; descriptor CSV absent.
+oasis-whatsthestorymorningglory,Oasis,(What’s the Story) Morning Glory?,1995,yes,descriptor_only,Matching artist and album title/year found in descriptors branch catalog.ts; descriptor CSV absent.
+oasis-beherenow,Oasis,Be Here Now,1997,yes,descriptor_only,Matching artist and album title/year found in descriptors branch catalog.ts; descriptor CSV absent.
+oasis-standingontheshoulderofgiants,Oasis,Standing on the Shoulder of Giants,2000,yes,descriptor_only,Matching artist and album title/year found in descriptors branch catalog.ts; descriptor CSV absent.
