@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,evidence_url
+beyonce-beyonce,Beyoncé,2013,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-lemonade,Lemonade,2016,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-everythingislove,Everything Is Love,2018,studio,missing,add to catalogue; add coBilled credit The Carters,https://musicbrainz.org/release/37055326-02e0-4e6d-9b01-0ab860ca7559
