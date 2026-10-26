@@ -87,3 +87,10 @@ Sources: Wikipedia, Bedtime Stories (Madonna album), with its cited sources; Alb
 - influenced_by: the British club scene of Björk, Massive Attack and Soul II Soul (Björk's Debut led Madonna to ask her for "Bedtime Story"); Mariah Carey's "Dreamlover" among the records that shaped the sessions.
 - sounds_like (critics): Aaliyah, Xscape, Janet Jackson, Toni Braxton, Brandy.
 - landmark 1: over eight million copies, Grammy nomination for Best Pop Album, seen as the start of her "second career epoch" leading to Ray of Light.
+
+## Erotica: revision (Oct 2026, owner: the row needed enriching)
+Sources: Wikipedia, Erotica (album), with its cited sources (genres in the infobox: dance-pop, deep house, hip hop, R&B; composition: disco, modern house, techno, "scratchy trip-hop loops", jazzy undertone, reggae on "Why's It So Hard", flamenco guitar and castanets on "Deeper and Deeper", Middle Eastern sample of Fairuz on "Erotica"); The Quietus, 30 years of Erotica ("house, samples, jazz, trip-hop").
+- Instruments: synths, programmed drums, heavy bass lines, piano (swing and jazzy), wah-wah and flamenco guitars, strings and orchestral arrangements ("In This Life"), marimbas, castanets, wind chimes.
+- Production: samples (Kool & the Gang, Fairuz, LL Cool J, Gershwin, "Justify My Love"), drum and synth programming by Anthony Shimkin, vocals filtered "through an old-fashioned Victrola", deliberately raw lo-fi edge ("recorded in an alley in Harlem"), scratchy vinyl.
+- sounds_like (critics, track level): Donna Summer ("Deeper and Deeper"), Peter Gabriel ("Rain"), Blondie ("Thief of Hearts").
+- influenced_by left empty: "Fever" follows Peggy Lee's version, but a cover is not an influence (owner's rule).
