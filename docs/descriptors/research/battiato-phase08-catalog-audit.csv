@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog_ts,already_in_current_descriptors_csv,action,evidence
+battiato-diecistratagemmi,Dieci stratagemmi,2004,studio,no,no,ADD,Read-only `catalog.ts` battiato array ends with Gommalacca (1998); public `docs/descriptors/battiato.csv` currently 20 rows through Caffè de la Paix (1993). Earlier phase ZIP delivery does not imply import.
+battiato-ilvuoto,Il vuoto,2007,studio,no,no,ADD,Read-only `catalog.ts` battiato array ends with Gommalacca (1998); public `docs/descriptors/battiato.csv` currently 20 rows through Caffè de la Paix (1993). Earlier phase ZIP delivery does not imply import.
+battiato-fleurs2,Fleurs 2,2008,studio,no,no,ADD,Read-only `catalog.ts` battiato array ends with Gommalacca (1998); public `docs/descriptors/battiato.csv` currently 20 rows through Caffè de la Paix (1993). Earlier phase ZIP delivery does not imply import.
+battiato-inneresauge,Inneres Auge,2009,compilation,no,no,ADD,Read-only `catalog.ts` battiato array ends with Gommalacca (1998); public `docs/descriptors/battiato.csv` currently 20 rows through Caffè de la Paix (1993). Earlier phase ZIP delivery does not imply import.
