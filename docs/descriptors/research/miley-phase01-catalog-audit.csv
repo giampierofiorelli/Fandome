@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,catalog_status,found_in_catalog_ts,descriptor_previously_exists,action,source_url
+miley-bangerz,miley,Bangerz,2013,studio,exists,yes,no,keep existing catalogue id; add descriptor row,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+miley-mileycyrusherdeadpetz,miley,Miley Cyrus & Her Dead Petz,2015,studio,add,no,no,add album to catalogue before importing descriptor row,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+miley-youngernow,miley,Younger Now,2017,studio,exists,yes,no,keep existing catalogue id; add descriptor row,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+miley-sheiscoming,miley,She Is Coming,2019,ep,add,no,no,add album to catalogue before importing descriptor row,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts

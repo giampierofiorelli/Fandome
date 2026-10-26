@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,evidence_url
+beyonce-thelionkingthegift,The Lion King: The Gift,2019,soundtrack,missing,add 2019 soundtrack; preserve original Beyonce Presents film companion credit,https://pitchfork.com/news/listen-to-beyonces-new-album-the-lion-king-the-gift-with-jay-z-kendrick-blue-ivy-childish-gambino-more/
+beyonce-renaissance,Renaissance,2022,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
+beyonce-cowboycarter,Cowboy Carter,2024,studio,existing,none,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts
