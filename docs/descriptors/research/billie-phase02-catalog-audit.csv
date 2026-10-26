@@ -1,0 +1,3 @@
+album_id,title,year,type,catalog_status,catalog_current_title,action
+billie-guitarsongs,Guitar Songs,2022,ep,TO_ADD,,"Add defining 2-track original EP, although some streamers label it Single"
+billie-hitmehardandsoft,Hit Me Hard and Soft,2024,studio,EXISTS,Hit Me Hard and Soft,Preserve generated id: billie-hitmehardandsoft

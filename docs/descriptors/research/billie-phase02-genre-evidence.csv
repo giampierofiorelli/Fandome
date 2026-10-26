@@ -1,0 +1,33 @@
+album_id,genre,source,url,scope,what_it_supports
+billie-guitarsongs,indiefolk,epaoty,https://www.albumoftheyear.org/album/527956-billie-eilish-guitar-songs.php,whole album,Indie Folk named in critic-score aggregator metadata
+billie-guitarsongs,contemporaryfolk,epaoty,https://www.albumoftheyear.org/album/527956-billie-eilish-guitar-songs.php,whole album,Contemporary Folk listed genre; two spare acoustic songs
+billie-guitarsongs,songwriter,epaoty,https://www.albumoftheyear.org/album/527956-billie-eilish-guitar-songs.php,whole album,Singer-Songwriter classification (Fandome songwriter token)
+billie-guitarsongs,folkpop,epmbgrp,https://musicbrainz.org/release-group/9e29849f-8da8-4e3c-8287-9d86dda6fbf3,whole album,Folk pop release-group genre tag (community-provided; lower certainty)
+billie-guitarsongs,alt,epapple,https://music.apple.com/us/album/guitar-songs-single/1635388716,whole album,Alternative store category; not equated with altpop
+billie-hitmehardandsoft,altpop,alaoty,https://www.albumoftheyear.org/album/924853-billie-eilish-hit-me-hard-and-soft.php,whole album,Album-level Alt-Pop genre
+billie-hitmehardandsoft,pop,almbgrp,https://musicbrainz.org/release-group/02a544b3-0459-42c7-bd9c-047162e7b67a,whole album,Album-level Pop tag
+billie-hitmehardandsoft,artpop,almbgrp,https://musicbrainz.org/release-group/02a544b3-0459-42c7-bd9c-047162e7b67a,whole album,MusicBrainz Art Pop genre
+billie-hitmehardandsoft,indietronica,almbgrp,https://musicbrainz.org/release-group/02a544b3-0459-42c7-bd9c-047162e7b67a,whole album,MusicBrainz Indietronica genre; not interchanged with indieelectronic
+billie-hitmehardandsoft,indiepop,almbgrp,https://musicbrainz.org/release-group/02a544b3-0459-42c7-bd9c-047162e7b67a,whole album,MusicBrainz Indie Pop genre
+billie-hitmehardandsoft,leftfieldpop,alall,https://www.allmusic.com/album/hit-me-hard-and-soft-mw0004265561,whole album,AllMusic Left-Field Pop style
+billie-hitmehardandsoft,indieelectronic,alall,https://www.allmusic.com/album/hit-me-hard-and-soft-mw0004265561,whole album,AllMusic Indie Electronic style; not automatically indietronica
+billie-hitmehardandsoft,electropop,alaoty,https://www.albumoftheyear.org/album/924853-billie-eilish-hit-me-hard-and-soft.php,whole album,AlbumOfTheYear Electropop genre; separate from synthpop
+billie-hitmehardandsoft,bedroompop,albeach,https://www.beachboymusicreview.com/hit-me-hard-and-soft-review,texture,"Independent published review explicitly labels the album Alternative Pop / Bedroom Pop; secondary attribution, not inferred from home studio"
+billie-hitmehardandsoft,poprock,alaoty,https://www.albumoftheyear.org/album/924853-billie-eilish-hit-me-hard-and-soft.php,whole album,AOTY Pop Rock album genre; additional track evidence from Guardian/NME
+billie-hitmehardandsoft,alternativeindierock,alall,https://www.allmusic.com/album/hit-me-hard-and-soft-mw0004265561,some tracks,AllMusic Alternative/Indie Rock style; guitar crescendos mainly The Greatest
+billie-hitmehardandsoft,songwriter,alaoty,https://www.albumoftheyear.org/album/924853-billie-eilish-hit-me-hard-and-soft.php,whole album,Singer-Songwriter AOTY metadata; Fandome songwriter token
+billie-hitmehardandsoft,indiefolk,alaoty,https://www.albumoftheyear.org/album/924853-billie-eilish-hit-me-hard-and-soft.php,some tracks,"Indie Folk AOTY genre metadata; acoustic songs Wildflower, Skinny"
+billie-hitmehardandsoft,synthpop,alguardian2,https://www.theguardian.com/music/article/2024/may/19/billie-eilish-hit-me-hard-and-soft-review-could-have-hit-even-harder,some tracks,Guardian explicitly calls Lunch synth-pop; NME 80s synth pop on L’Amour
+billie-hitmehardandsoft,house,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,some tracks,Guardian identifies muted midtempo house pulse in Chihiro
+billie-hitmehardandsoft,electronica,alabc,https://www.abc.net.au/news/2024-05-17/billie-eilish-hit-me-hard-and-soft-album-interview/103856502,some tracks,ABC describes indie-sleaze era electronica sounds on 2024 album
+billie-hitmehardandsoft,softrock,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,some tracks,Guardian identifies soft rock in L’Amour de ma vie
+billie-hitmehardandsoft,rock,allat,https://www.latimes.com/entertainment-arts/music/story/2024-05-17/billie-eilish-hit-me-hard-and-soft-review,some tracks,LA Times identifies The Greatest as thrashing rock song
+billie-hitmehardandsoft,funk,alabc,https://www.abc.net.au/news/2024-05-17/billie-eilish-hit-me-hard-and-soft-album-interview/103856502,some tracks,ABC describes funk-driven bassline on Chihiro
+billie-hitmehardandsoft,trance,alabc,https://www.abc.net.au/news/2024-05-17/billie-eilish-hit-me-hard-and-soft-album-interview/103856502,texture,"Late 90s/early 00s trance invoked on the Over Now coda, not entire record"
+billie-hitmehardandsoft,hyperpop,alguardian2,https://www.theguardian.com/music/article/2024/may/19/billie-eilish-hit-me-hard-and-soft-review-could-have-hit-even-harder,some tracks,Guardian references hyperpop coda of L’Amour de ma vie
+billie-hitmehardandsoft,rave,allat,https://www.latimes.com/entertainment-arts/music/story/2024-05-17/billie-eilish-hit-me-hard-and-soft-review,some tracks,LA Times describes rave jam in second half of L’Amour
+billie-hitmehardandsoft,reggae,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,texture,Reggae-esque groove in The Diner; not predominant genre
+billie-hitmehardandsoft,ska,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,texture,Ska-inflected guitar specifically in Lunch; not album-wide ska
+billie-hitmehardandsoft,jazz,alabc,https://www.abc.net.au/news/2024-05-17/billie-eilish-hit-me-hard-and-soft-album-interview/103856502,texture,ABC calls original first half of L’Amour jazzy; subsidiary element
+billie-hitmehardandsoft,edm,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,texture,"EDM-inspired bass of Lunch, not an EDM album"
+billie-hitmehardandsoft,showtunes,alguardian,https://www.theguardian.com/music/article/2024/may/16/billie-eilish-hit-me-hard-and-soft-review,texture,Eerie show-tune quality of The Diner section
