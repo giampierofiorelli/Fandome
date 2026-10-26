@@ -1,0 +1,17 @@
+﻿album_id,genre,source,url,scope,evidence
+goblin-tenebre,electronic,wax,https://waxworkrecords.com/collections/all-1/products/tenebrae,whole album,Waxwork explicitly calls album heavily electronic; synths and electronic percussion foregrounded
+goblin-tenebre,electrorock,cryptic,https://crypticrock.com/interview-claudio-simonetti-of-goblin/,whole album,Simonetti expressly calls Tenebre electronic rock; convert exact hyphen-free genre to token
+goblin-tenebre,dance,official,https://www.goblinofficial.com/biography.php,whole album,Original Goblin official band bio calls Tenebre a fusion with dance
+goblin-tenebre,disco,wax,https://waxworkrecords.com/collections/all-1/products/tenebrae,whole album,Waxwork names disco among its album-scale genres
+goblin-tenebre,rock,wax,https://waxworkrecords.com/collections/all-1/products/tenebrae,whole album,"Waxwork: rock component mixed into electronic, dance and disco soundtrack"
+goblin-tenebre,prog,official,https://www.goblinofficial.com/biography.php,whole album,"Official Goblin bio explicitly retains progressive style in score),"
+goblin-tenebre,synthpop,tenreview,https://www.musiculturaonline.it/tenebre-original-soundtrack-di-simonetti-pignatelli-morante/,whole album,"2023 critic explicitly writes synth pop as an album style, unlike electropop"
+goblin-phenomena,electronic,phen-genre,https://winyle-online.pl/wydawnictwo/a794a271/goblin-phenomena-the-complete-original-instrumental-sound-track-album-cd-reedycja-remastering-caly-swiat-1997,whole album,1997 score-only issue categorized Electronic; genre does not come from separate heavy-metal songs
+goblin-phenomena,electro,phen-genre,https://winyle-online.pl/wydawnictwo/a794a271/goblin-phenomena-the-complete-original-instrumental-sound-track-album-cd-reedycja-remastering-caly-swiat-1997,whole album,1997 release data explicitly gives Electro; retain distinct from Electronic
+goblin-phenomena,ambient,phen-genre,https://winyle-online.pl/wydawnictwo/a794a271/goblin-phenomena-the-complete-original-instrumental-sound-track-album-cd-reedycja-remastering-caly-swiat-1997,some tracks,1997 release explicitly tags Ambient; slow atmospheric cues
+goblin-phenomena,experimental,phen-genre,https://winyle-online.pl/wydawnictwo/a794a271/goblin-phenomena-the-complete-original-instrumental-sound-track-album-cd-reedycja-remastering-caly-swiat-1997,some tracks,1997 release explicitly tags Experimental; unusual textures and sound design
+goblin-nonhosonno,prog,non-cinevox,https://www.beatrecords.it/en/catalogo/593/non-ho-sonno,whole album,Cinevox official distributor explicitly calls style Progressive Rock
+goblin-nonhosonno,rock,non-cinevox,https://www.beatrecords.it/en/catalogo/593/non-ho-sonno,whole album,Cinevox explicitly calls classic Rock major sound alongside prog
+goblin-nonhosonno,hardrock,non-allmusic,https://www.allmusic.com/album/nonhosonno-mw0000342685,some tracks,AllMusic classifies Hard Rock and OndaRock isolates Killer on the Train
+goblin-nonhosonno,electronic,non-onda,https://www.ondarock.it/monografie/goblin/,some tracks,OndaRock specifically identifies progressive rock / electronics as two signatures on album
+goblin-nonhosonno,progmetal,non-allmusic,https://www.allmusic.com/album/nonhosonno-mw0000342685,some tracks,"AllMusic reviewer calls the title cue Goblin prog-metal; secondary, track-limited"

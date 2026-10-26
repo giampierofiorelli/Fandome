@@ -1,0 +1,4 @@
+﻿album_id,title,year,type,in_catalog,catalog_action,source_url,notes
+goblin-tenebre,Tenebre,1982,soundtrack,no,add,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,"Original 1982 record is credited Simonetti / Pignatelli / Morante; add CO_BILLED exact credit, preserve Goblin artist-page association."
+goblin-phenomena,Phenomena,1997,soundtrack,no,add,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,1985 commercially released album was Various Artists. ADD 1997 Cinevox MDF 303 score-only album Phenomena instead; no Iron Maiden/Motorhead description leakage.
+goblin-nonhosonno,Non ho sonno,2000,soundtrack,no,add,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts,"Original recording and multiple original-release indices say 2000, film 2001; 2001/2002 issue records conflict; add 2000 with audit caveat."
