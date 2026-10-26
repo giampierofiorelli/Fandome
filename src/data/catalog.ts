@@ -251,7 +251,7 @@ const ROWS: Row[] = [
   ['matiabazar', 'Matia Bazar', '#c9709a', 'Italian synth-pop elegance', [['Aristocratica', 1984], ['Melò', 1987]]],
   ['bronskibeat', 'Bronski Beat', '#5a7ac9', 'Smalltown Boy, never forgotten', [['The Age of Consent', 1984], ['Truthdare Doubledare', 1986]]],
   ['carladalforno', 'Carla dal Forno', '#8a8f7a', 'Lo-fi, hazy and hypnotic', [['You Know What It’s Like', 2016], ['Look Up Sharp', 2019], ['Come Around', 2022]]],
-  ['carmenconsoli', 'Carmen Consoli', '#c9503f', 'The Sicilian songwriter with a guitar', [['Confusa e felice', 1997], ['Mediamente isterica', 1998], ['Stato di necessità', 2000], ['L’eccezione', 2002], ['Eva contro Eva', 2006], ['Elettra', 2009], ['Volevo fare la rockstar', 2021]]],
+  ['carmenconsoli', 'Carmen Consoli', '#c9503f', 'The Sicilian songwriter with a guitar', [['Due parole', 1996], ['Confusa e felice', 1997], ['Mediamente isterica', 1998], ['Stato di necessità', 2000], ['L’eccezione', 2002], ['Eva contro Eva', 2006], ['Elettra', 2009], ['Volevo fare la rockstar', 2021]]],
   ['caselli', 'Caterina Caselli', '#e0c04a', 'The golden helmet of Italian beat', []],
   ['cerrone', 'Cerrone', '#c93f6f', 'Supernature and French disco', [['Love in C Minor', 1976], ['Supernature (Cerrone III)', 1977], ['Cerrone IV: The Golden Touch', 1978]]],
   ['perrelli', 'Charlotte Perrelli', '#e0b5c9', 'Swedish pop and Eurovision glow', []],
