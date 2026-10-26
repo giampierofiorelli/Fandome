@@ -1,0 +1,36 @@
+album_id,genre,source,url,scope,what_source_says,evidence_strength
+fontainesdc-dogrel,postpunk,dogrel_pf,https://pitchfork.com/reviews/albums/fontaines-dc-dogrel/,whole album,Post-punk group and dominant musical identity,high
+fontainesdc-dogrel,postpunkrevival,dogrel_am,https://www.allmusic.com/album/dogrel-mw0003248275,whole album,Explicit New Wave/Post-Punk Revival style,high
+fontainesdc-dogrel,indierock,dogrel_am,https://www.allmusic.com/album/dogrel-mw0003248275,whole album,Alternative/Indie Rock styles,high
+fontainesdc-dogrel,rock,dogrel_pf,https://pitchfork.com/reviews/albums/fontaines-dc-dogrel/,whole album,Rock as main umbrella classification,high
+fontainesdc-dogrel,garagerock,dogrel_galway,https://www.advertiser.ie/galway/article/106955/album-review-fontaines-dc,some tracks,Garage rock identified on Boys in the Better Land,high
+fontainesdc-dogrel,punkrock,dogrel_guard,https://www.theguardian.com/music/2019/apr/12/fontaines-dc-dogrel-album-review-irish-punks-debut,some tracks,Punk band and driving punk songwriting,high
+fontainesdc-dogrel,surfpunk,dogrel_guard,https://www.theguardian.com/music/2019/apr/12/fontaines-dc-dogrel-album-review-irish-punks-debut,some tracks,Guardian calls some songs surf-punk hits,high
+fontainesdc-dogrel,newwave,dogrel_galway,https://www.advertiser.ie/galway/article/106955/album-review-fontaines-dc,some tracks,The Lotts described as new wave; also AllMusic classification,high
+fontainesdc-dogrel,surfrock,dogrel_pf,https://pitchfork.com/reviews/albums/fontaines-dc-dogrel/,texture,Surf idiom stated by critic in twin-guitar attack,high
+fontainesdc-dogrel,rockandroll,dogrel_pf,https://pitchfork.com/reviews/albums/fontaines-dc-dogrel/,texture,Early rock and roll idiom explicitly identified,high
+fontainesdc-dogrel,artpunk,dogrel_galway,https://www.advertiser.ie/galway/article/106955/album-review-fontaines-dc,some tracks,Hurricane Laughter identified as art-punk,high
+fontainesdc-dogrel,garagepsych,dogrel_loud,https://www.loudandquiet.com/reviews/fontaines-d-c-dogrel/,some tracks,Hurricane Laughter explicitly called garage-psych,medium
+fontainesdc-dogrel,britpop,dogrel_guard,https://www.theguardian.com/music/2019/apr/12/fontaines-dc-dogrel-album-review-irish-punks-debut,some tracks,Roy’s Tune called a Britpop ballad,high
+fontainesdc-aherosdeath,postpunk,hero_pf,https://pitchfork.com/reviews/albums/fontaines-dc-a-heros-death/,whole album,Post-punk language remains dominant,high
+fontainesdc-aherosdeath,indierock,hero_am,https://www.allmusic.com/album/a-heros-death-mw0003382942,whole album,Alternative/Indie Rock classification,high
+fontainesdc-aherosdeath,postpunkrevival,hero_am,https://www.allmusic.com/album/a-heros-death-mw0003382942,whole album,AllMusic explicit Post-Punk Revival style,high
+fontainesdc-aherosdeath,rock,hero_pf,https://pitchfork.com/reviews/albums/fontaines-dc-a-heros-death/,whole album,Main album-level Pitchfork genre,high
+fontainesdc-aherosdeath,gothicrock,hero_aoty,https://www.albumoftheyear.org/album/238991-fontaines-dc-a-heros-death.php,whole album,AOTY Gothic Rock album genre,medium
+fontainesdc-aherosdeath,neopsychedelia,hero_aoty,https://www.albumoftheyear.org/album/238991-fontaines-dc-a-heros-death.php,whole album,AOTY Neo-Psychedelia album genre,medium
+fontainesdc-aherosdeath,artpunk,hero_aoty,https://www.albumoftheyear.org/album/238991-fontaines-dc-a-heros-death.php,whole album,AOTY Art Punk album genre; Rolling Stone also art-punk,medium
+fontainesdc-aherosdeath,crankwave,hero_aoty,https://www.albumoftheyear.org/album/238991-fontaines-dc-a-heros-death.php,whole album,AOTY Crank Wave album genre,medium
+fontainesdc-aherosdeath,newwave,hero_am,https://www.allmusic.com/album/a-heros-death-mw0003382942,whole album,AllMusic New Wave/Post-Punk Revival umbrella,high
+fontainesdc-aherosdeath,artrock,hero_pf,https://pitchfork.com/reviews/albums/fontaines-dc-a-heros-death/,some tracks,Love Is the Main Thing has explicit art-rock feel,high
+fontainesdc-aherosdeath,punkblues,hero_pf,https://pitchfork.com/reviews/albums/fontaines-dc-a-heros-death/,some tracks,A Lucid Dream described in terms of Gun Club punk-blues,high
+fontainesdc-aherosdeath,noiserock,hero_deadpulpit,https://www.deadpulpit.com/2020/08/uk-fontaines-dc-heros-death-lp-2020.html?m=0,some tracks,Noise rock cited as a constituent sound,medium
+fontainesdc-aherosdeath,garagerock,hero_deadpulpit,https://www.deadpulpit.com/2020/08/uk-fontaines-dc-heros-death-lp-2020.html?m=0,some tracks,Garage rock cited as a constituent sound,medium
+fontainesdc-skintyfia,postpunk,skinty_pf,https://pitchfork.com/reviews/albums/fontaines-dc-skinty-fia/,whole album,Post-punk is album baseline despite stylistic expansion,high
+fontainesdc-skintyfia,indierock,skinty_aoty,https://www.albumoftheyear.org/album/456966-fontaines-dc-skinty-fia.php,whole album,AOTY Indie Rock genre classification,medium
+fontainesdc-skintyfia,rock,skinty_pf,https://pitchfork.com/reviews/albums/fontaines-dc-skinty-fia/,whole album,Main album level Pitchfork genre,high
+fontainesdc-skintyfia,gothicrock,skinty_aoty,https://www.albumoftheyear.org/album/456966-fontaines-dc-skinty-fia.php,whole album,AOTY Gothic Rock classification,medium
+fontainesdc-skintyfia,shoegaze,skinty_aoty,https://www.albumoftheyear.org/album/456966-fontaines-dc-skinty-fia.php,some tracks,AOTY album genre; Nabokov shoegaze in Guardian,medium
+fontainesdc-skintyfia,triphop,skinty_nme,https://www.nme.com/reviews/album/fontaines-d-c-skinty-fia-album-review-3208706,some tracks,NME explicitly identifies trip-hop on title track,high
+fontainesdc-skintyfia,gothgaze,skinty_pf,https://pitchfork.com/reviews/albums/fontaines-dc-skinty-fia/,some tracks,Bloomsday explicitly described as gothgaze,high
+fontainesdc-skintyfia,industrialfunk,skinty_pf,https://pitchfork.com/reviews/albums/fontaines-dc-skinty-fia/,some tracks,Title track described as industrial funk,high
+fontainesdc-skintyfia,jungle,skinty_pf,https://pitchfork.com/reviews/albums/fontaines-dc-skinty-fia/,texture,Jungle-patterned drums on opener; rhythmic texture only,high

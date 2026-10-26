@@ -1,0 +1,6 @@
+album_id,artist_id,title,year,type,catalogue_status,descriptor_status,phase,required_action,supporting_reference
+fontainesdc-dogrel,fontainesdc,Dogrel,2019,studio,missing_artist_and_album,no_existing_artist_csv,01,create artist room; add album to catalog.ts / seed.ts before validating rows,https://fontainesdc.com/pages/music
+fontainesdc-aherosdeath,fontainesdc,A Hero's Death,2020,studio,missing_artist_and_album,no_existing_artist_csv,01,create artist room; add album to catalog.ts / seed.ts before validating rows,https://fontainesdc.com/pages/music
+fontainesdc-skintyfia,fontainesdc,Skinty Fia,2022,studio,missing_artist_and_album,no_existing_artist_csv,01,create artist room; add album to catalog.ts / seed.ts before validating rows,https://fontainesdc.com/pages/music
+fontainesdc-romance,fontainesdc,Romance,2024,studio,missing_artist_and_album,no_existing_artist_csv,02,create artist room; add album to catalog.ts / seed.ts before validating rows,https://fontainesdc.com/pages/music
+fontainesdc-dopaminechamber,fontainesdc,Dopamine Chamber,2026,studio,missing_artist_and_album,no_existing_artist_csv,02,create artist room; add album to catalog.ts / seed.ts before validating rows,https://fontainesdc.com/pages/music
