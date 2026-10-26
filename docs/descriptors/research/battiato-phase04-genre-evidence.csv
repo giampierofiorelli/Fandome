@@ -1,0 +1,31 @@
+album_id,genre,source,url,scope,evidence_note,evidence_strength
+battiato-orizzontiperduti,synthpop,Original 1983 LP genre listing,https://musicbase.net/orizzonti-perduti,whole album,Original-release marketplace style explicitly synth-pop; melodic programmed pop,medium
+battiato-orizzontiperduti,electropop,DeBaser album overview,https://www.debaser.it/franco-battiato/orizzonti-perduti,whole album,Calls it pop-elettronico; normalized Italian phrase to electropop,medium
+battiato-orizzontiperduti,pop,Battiato official album essay,https://www.battiato.it/orizzonti-perduti/,whole album,Eight verse-and-chorus electronic songs; pop song structures,high
+battiato-orizzontiperduti,electronic,Official album essay,https://www.battiato.it/orizzonti-perduti/,whole album,Synthesizer sound dominates the arrangements,high
+battiato-orizzontiperduti,songwriter,OndaRock critical history,https://www.ondarock.it/monografie/francobattiato/,whole album,Period and this record described as more cantautorale,high
+battiato-orizzontiperduti,poprock,Original 1983 LP genre listing,https://musicbase.net/orizzonti-perduti,texture,Release classified Pop Rock but strong 1983 review denies guitar/drum-kit core; low weight,low
+battiato-orizzontiperduti,rock,Original 1983 LP release listing,https://musicbase.net/orizzonti-perduti,texture,Broad electronic/rock/pop retailer category; not evidence of guitar-led sound,low
+battiato-mondilontanissimi,synthpop,AOTY community album tags,https://www.albumoftheyear.org/album/350579-franco-battiato-mondi-lontanissimi.php,whole album,Synthpop specifically assigned to this album,medium
+battiato-mondilontanissimi,electropop,Metallized album review,https://www.metallized.it/recensione.php?id=18983,some tracks,Chanson Egocentrique explicitly called electro-pop; glossy electronic production elsewhere,high
+battiato-mondilontanissimi,pop,Metallized album review,https://www.metallized.it/recensione.php?id=18983,whole album,Review explicitly includes pop among album musical families,high
+battiato-mondilontanissimi,artpop,AOTY community album tags,https://www.albumoftheyear.org/album/350579-franco-battiato-mondi-lontanissimi.php,whole album,Art pop specifically tagged for this album; community level,medium
+battiato-mondilontanissimi,electronic,Metallized album review,https://www.metallized.it/recensione.php?id=18983,whole album,Review explicitly calls the record electronic among several styles,high
+battiato-mondilontanissimi,newwave,Metallized album review,https://www.metallized.it/recensione.php?id=18983,some tracks,Review explicitly names new wave in its album-level spectrum,high
+battiato-mondilontanissimi,songwriter,OndaRock critical history,https://www.ondarock.it/monografie/francobattiato/,some tracks,Risveglio di primavera and I treni di Tozeur named as songwriter pieces,high
+battiato-mondilontanissimi,europop,AllMusic album styles,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,whole album,Euro-Pop album style category,medium
+battiato-mondilontanissimi,classicalpop,AllMusic album styles,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,some tracks,Classical Pop album style applied; separate new token required,medium
+battiato-mondilontanissimi,neoclassical,AllMusic album styles,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,some tracks,Neo-Classical category likely denotes orchestral passages rather than album core,medium
+battiato-mondilontanissimi,worldmusic,Metallized album review,https://www.metallized.it/recensione.php?id=18983,some tracks,Explicit world music in album spectrum; track prevalence unquantified,medium
+battiato-mondilontanissimi,rock,Metallized album review,https://www.metallized.it/recensione.php?id=18983,texture,Broad rock in its summary; guitar secondary to synth arrangements,medium
+battiato-mondilontanissimi,easylistening,AllMusic album categories,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,texture,Easy Listening umbrella category; weak sonic discriminative force,low
+battiato-mondilontanissimi,newage,AllMusic album genre,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,texture,New Age listed as broad style / catalog umbrella; weak sonic attribution,low
+battiato-mondilontanissimi,poprock,AllMusic album genre,https://www.allmusic.com/album/mondi-lontanissimi-mw0000502948,texture,"Pop/Rock combined album category, placed near end of weights",low
+battiato-genesi,opera,Artist official Genesi work page,https://www.battiato.it/genesi/,whole album,Described as opera in three acts with named vocal parts,high
+battiato-genesi,classical,Rai Cultura,https://www.raicultura.it/filosofia/articoli/2019/01/Franco-Battiato-Genesi-4484de9d-8ebf-4e14-9e92-717be71de763.html,whole album,Classical/operatic symphonic work with Toscanini orchestra,high
+battiato-genesi,modernclassical,Rai Cultura,https://www.raicultura.it/filosofia/articoli/2019/01/Franco-Battiato-Genesi-4484de9d-8ebf-4e14-9e92-717be71de763.html,whole album,Contemporary opera; modern classical as controlled-taxonomy translation,medium
+battiato-genesi,electronic,Rai Cultura,https://www.raicultura.it/filosofia/articoli/2019/01/Franco-Battiato-Genesi-4484de9d-8ebf-4e14-9e92-717be71de763.html,some tracks,Electronics explicitly blended with orchestral scoring,high
+battiato-genesi,pop,Warner original-work reissue description,https://www.ibs.it/genesi-opera-in-tre-atti-cd-vari/e/5054197108532,some tracks,Pop elements explicitly named alongside electronics and symphonic orchestra,medium
+battiato-nomadas,pop,1987 EMI-Odeon original LP listing,https://www.todocoleccion.net/discos-vinilo/franco-battiato-nomadas-disco-vinilo-estado-vg-vg-1987~x366936561,whole album,Contemporaneous Spanish LP classified Pop,high
+battiato-nomadas,ballad,1987 EMI-Odeon original LP listing,https://www.todocoleccion.net/discos-vinilo/franco-battiato-nomadas-disco-vinilo-estado-vg-vg-1987~x366936561,some tracks,Ballad explicitly tagged as original LP style,high
+battiato-nomadas,latin,1987 EMI-Odeon original LP listing,https://www.todocoleccion.net/discos-vinilo/franco-battiato-nomadas-disco-vinilo-estado-vg-vg-1987~x366936561,texture,"Discogs-derived Latin market shelf genre, mainly language/market; not Latin rhythmic evidence",low
