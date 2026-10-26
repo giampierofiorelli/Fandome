@@ -1,0 +1,5 @@
+﻿album_id,title,year,in_catalog,in_existing_descriptors,action,catalog_artist_id,notes
+blur-leisure,Leisure,1991,yes,no,add descriptor only; no catalog change,blur,Catalog.ts confirms the exact original title and year; rows have not yet been imported.
+blur-modernlifeisrubbish,Modern Life Is Rubbish,1993,yes,no,add descriptor only; no catalog change,blur,Catalog.ts confirms the exact original title and year; rows have not yet been imported.
+blur-parklife,Parklife,1994,yes,no,add descriptor only; no catalog change,blur,Catalog.ts confirms the exact original title and year; rows have not yet been imported.
+blur-thegreatescape,The Great Escape,1995,yes,no,add descriptor only; no catalog change,blur,Catalog.ts confirms the exact original title and year; rows have not yet been imported.
