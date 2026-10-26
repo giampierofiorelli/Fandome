@@ -1,0 +1,5 @@
+album_id,title,year,type,already_in_catalog_ts,already_in_current_descriptors_csv,action,evidence
+battiato-messaarcaica,Messa arcaica,1994,studio,no,no,ADD,Original 1994 EMI Classics CD c1994 CiNii; recorded in studio 1993; artist official confirms 1993 premiere
+battiato-lombrelloelamacchinadacucire,L’ombrello e la macchina da cucire,1995,studio,no,no,ADD,Original 1995 EMI first issue; official artist discography and Qobuz original/reissue credits
+battiato-limboscata,L’imboscata,1996,studio,no,no,ADD,Original 1996 Mercury first issue; official biography MusicBrainz and original release sleeve
+battiato-gommalacca,Gommalacca,1998,studio,yes,no,KEEP EXISTING ID; ADD DESCRIPTOR ONLY,catalog.ts battiato listing includes Gommalacca (1998); current raw battiato.csv contains only Phase 01 four rows
