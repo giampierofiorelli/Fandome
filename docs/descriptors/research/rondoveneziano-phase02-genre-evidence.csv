@@ -1,0 +1,28 @@
+﻿album_id,genre,source,scope,evidence_note
+rondoveneziano-odisseaveneziana,classicalcrossover,https://en.wikipedia.org/wiki/Odissea_veneziana,whole album,Album explicitly classed as classical crossover; secondary reference
+rondoveneziano-odisseaveneziana,baroquepop,https://it.wikipedia.org/wiki/Odissea_veneziana,whole album,"Italian baroque pop genre, literally translated"
+rondoveneziano-odisseaveneziana,easylistening,https://en.wikipedia.org/wiki/Odissea_veneziana,whole album,Explicit easy-listening album classification
+rondoveneziano-odisseaveneziana,electronic,https://interrecords.net/rond-veneziano-odissea-veneziana-baby-records-disc4347548n1.html,whole album,"Original edition tagged Electronic, corroborated by album-specific description of expanded electronics"
+rondoveneziano-odisseaveneziana,pop,https://it.wikipedia.org/wiki/Odissea_veneziana,whole album,Explicit pop category
+rondoveneziano-odisseaveneziana,classical,https://interrecords.net/rond-veneziano-odissea-veneziana-baby-records-disc4347548n1.html,whole album,Original LP classed Classical
+rondoveneziano-odisseaveneziana,modernclassical,https://interrecords.net/rond-veneziano-odissea-veneziana-baby-records-disc4347548n1.html,whole album,Original LP tagged Modern Classical
+rondoveneziano-odisseaveneziana,disco,https://interrecords.net/rond-veneziano-odissea-veneziana-baby-records-disc4347548n1.html,texture,"Original LP metadata genre Disco, weak album-wide relevance; low-order late qualifier"
+rondoveneziano-odisseaveneziana,synthpop,https://interrecords.net/rond-veneziano-odissea-veneziana-baby-records-disc4347548n1.html,texture,"Original LP style Synth-pop, probably cross-genre tagging rather than defining whole album"
+rondoveneziano-casanova,classicalcrossover,https://en.wikipedia.org/wiki/Casanova_(Rond%C3%B2_Veneziano_album),whole album,Album explicitly categorized classical crossover
+rondoveneziano-casanova,baroquepop,https://it.wikipedia.org/wiki/Casanova_(Rond%C3%B2_Veneziano),whole album,Italian pop barocco label
+rondoveneziano-casanova,easylistening,https://en.wikipedia.org/wiki/Casanova_(Rond%C3%B2_Veneziano_album),whole album,Explicit easy listening
+rondoveneziano-casanova,pop,https://it.wikipedia.org/wiki/Casanova_(Rond%C3%B2_Veneziano),whole album,Explicit Italian pop label
+rondoveneziano-casanova,newage,https://it.wikipedia.org/wiki/Casanova_(Rond%C3%B2_Veneziano),whole album,Secondary genre designation New age; not proof of specific New Age instrumentation
+rondoveneziano-rapsodiaveneziana,classicalcrossover,https://en.wikipedia.org/wiki/Rapsodia_veneziana,whole album,Explicit original album genre
+rondoveneziano-rapsodiaveneziana,baroquepop,https://it.wikipedia.org/wiki/Rapsodia_veneziana,whole album,Italian pop barocco category
+rondoveneziano-rapsodiaveneziana,easylistening,https://en.wikipedia.org/wiki/Rapsodia_veneziana,whole album,Explicit album genre
+rondoveneziano-rapsodiaveneziana,pop,https://it.wikipedia.org/wiki/Rapsodia_veneziana,whole album,Explicit pop category
+rondoveneziano-rapsodiaveneziana,classical,https://www.chartsurfer.de/artist/rondo-veneziano/rapsodia-veneziana-album_ffeuvr.html,whole album,Original 1986 Italian LP genre Classical
+rondoveneziano-rapsodiaveneziana,baroque,https://www.chartsurfer.de/artist/rondo-veneziano/rapsodia-veneziana-album_ffeuvr.html,some tracks,"French 1986 vinyl style explicitly Baroque; preserve term as new token, avoid substituting baroquepop"
+rondoveneziano-rapsodiaveneziana,neoclassical,https://www.vinyl-minded.com/release/3337664/Rondo-Veneziano-Rapsodia-Veneziana,texture,"Seller metadata identifies Neo-Classical style, lower-confidence classification"
+rondoveneziano-arabesque,classicalcrossover,https://en.wikipedia.org/wiki/Arabesque_(Rond%C3%B2_Veneziano_album),whole album,Explicit crossover genre
+rondoveneziano-arabesque,baroquepop,https://it.wikipedia.org/wiki/Arabesque_(album),whole album,Italian album metadata pop barocco
+rondoveneziano-arabesque,easylistening,https://it.wikipedia.org/wiki/Arabesque_(album),whole album,Explicit easy listening
+rondoveneziano-arabesque,pop,https://it.wikipedia.org/wiki/Arabesque_(album),whole album,Explicit pop category
+rondoveneziano-arabesque,modernclassical,https://discjockeymusicstore.com/products/rondo-veneziano-arabesque-lp-album,whole album,Discogs-derived French 1987 LP style Modern Classical
+rondoveneziano-arabesque,electronic,https://discjockeymusicstore.com/products/rondo-veneziano-arabesque-lp-album,texture,Broad LP genre Electronic and album specifically credits synthesizers and keyboards; weaker album-wide claim

@@ -1,0 +1,11 @@
+﻿album_id,title,year,type,artist_in_catalog,album_in_catalog,action,evidence
+rondoveneziano-odisseaveneziana,Odissea veneziana,1984,studio,no,no,Add artist rondoveneziano if Phase 01 not yet imported; add this new album exactly once,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-casanova,Casanova,1985,studio,no,no,Add artist rondoveneziano if Phase 01 not yet imported; add this new album exactly once,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-rapsodiaveneziana,Rapsodia veneziana,1986,studio,no,no,Add artist rondoveneziano if Phase 01 not yet imported; add this new album exactly once,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+rondoveneziano-arabesque,Arabesque,1987,studio,no,no,Add artist rondoveneziano if Phase 01 not yet imported; add this new album exactly once,https://github.com/giampierofiorelli/Fandome/blob/descriptors/src/data/catalog.ts ; https://rondoveneziano.com/en/albums/
+,Odissea veneziana (German 1985 edition),1985,edition / audit,no,no,Do not create separate album; Casanova reissue incorporating Odissea 1984 tracks,https://www.estatica.it/it/musica/rondo-veneziano/disco/sasanova
+,L'Odyssée de Venise,1984,edition / audit,no,no,Do not duplicate original Odissea 1984; French edition contains additional tracks,https://it.wikipedia.org/wiki/Odissea_veneziana
+,Fantasia veneziana,1986,edition / audit,no,no,Do not duplicate Rapsodia veneziana 1986; German/Austrian same 13-track program,https://rondoveneziano.com/en/albums/fantasia-veneziana/
+,Lagune,1986,edition / audit,no,no,Do not duplicate Rapsodia veneziana; regional alternative editions,https://en.wikipedia.org/wiki/Rapsodia_veneziana
+,Misteriosa Venezia,1987,edition / audit,no,no,Do not duplicate Arabesque 1987; Germany variant with alternative/new tracks,https://en.wikipedia.org/wiki/Arabesque_(Rond%C3%B2_Veneziano_album)
+,Not Quite Jerusalem,1985,edition / audit,no,no,Separate film soundtrack; candidate for separate audited special release if original album identity and significance confirmed,https://musicbrainz.org/artist/940a5867-a2e5-4af5-ae05-91cf63bd0b52

@@ -485,7 +485,7 @@ const ROWS: Row[] = [
   ['alanis', 'Alanis Morissette', '#8f7a5a', 'Jagged little pill, you oughta know', [['Alanis', 1991], ['Now Is the Time', 1992], ['Jagged Little Pill', 1995], ['Supposed Former Infatuation Junkie', 1998]]],
   ['pulp', 'Pulp', '#c9a14a', 'Common people, Sheffield stories', [['It', 1983], ['Freaks', 1987], ['Separations', 1992], ['His ’n’ Hers', 1994], ['Different Class', 1995], ['This Is Hardcore', 1998], ['We Love Life', 2001], ['More', 2025]]],
   ['irama', 'Irama', '#d9634a', 'Pop-rap ballads and summer anthems', [['Irama', 2016], ['Plume', 2018], ['Giovani', 2018], ['Crepe', 2020], ['Il giorno in cui ho smesso di pensare', 2022], ['No Stress', 2023], ['Antologia della vita e della morte', 2025]]],
-  ['rondoveneziano', 'Rondò Veneziano', '#b08a4a', 'Baroque melodies with a modern rhythm section', [['Rondò Veneziano', 1980], ['La Serenissima', 1981], ['Scaramucce', 1982], ['Venezia 2000', 1983]]],
+  ['rondoveneziano', 'Rondò Veneziano', '#b08a4a', 'Baroque melodies with a modern rhythm section', [['Rondò Veneziano', 1980], ['La Serenissima', 1981], ['Scaramucce', 1982], ['Venezia 2000', 1983], ['Odissea veneziana', 1984], ['Casanova', 1985], ['Rapsodia veneziana', 1986], ['Arabesque', 1987]]],
 ]
 
 const slug = (s: string) =>

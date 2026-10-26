@@ -13,7 +13,7 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   // drums and percussion
   drums: 'Drums', timpani: 'Timpani', percussion: 'Percussion', snaredrum: 'Snare drum', castanets: 'Castanets', bells: 'Bells', tambourine: 'Tambourine', mallets: 'Vibraphone and marimba', glockenspiel: 'Glockenspiel', chimes: 'Chimes', sleighbells: 'Sleigh bells', steeldrums: 'Steel drums', handclaps: 'Handclaps', kalimba: 'Kalimba', tabla: 'Tabla', gobletdrum: 'Goblet drum (darbuka)',
   // winds
-  brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', panflute: 'Pan flute', ocarina: 'Ocarina', jawharp: 'Jaw harp', bawu: 'Bawu', clarinet: 'Clarinet', oboe: 'Oboe', englishhorn: 'English horn', bassoon: 'Bassoon', recorder: 'Recorder', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', whistle: 'Whistle', musicalsaw: 'Musical saw', kazoo: 'Kazoo',
+  brass: 'Brass', trumpet: 'Trumpet', cornet: 'Cornet', flugelhorn: 'Flugelhorn', trombone: 'Trombone', tuba: 'Tuba', saxophone: 'Saxophone', woodwinds: 'Woodwinds', flute: 'Flute', panflute: 'Pan flute', ocarina: 'Ocarina', jawharp: 'Jaw harp', bawu: 'Bawu', clarinet: 'Clarinet', oboe: 'Oboe', englishhorn: 'English horn', frenchhorn: 'French horn', bassoon: 'Bassoon', recorder: 'Recorder', harmonica: 'Harmonica', bagpipes: 'Bagpipes', uilleannpipes: 'Uilleann pipes', lowwhistle: 'Low whistle', whistle: 'Whistle', musicalsaw: 'Musical saw', kazoo: 'Kazoo',
 }
 export const INSTRUMENTS = new Set(Object.keys(INSTRUMENT_LABELS))
 export const instrumentLabel = (i: string) => INSTRUMENT_LABELS[i] ?? i
