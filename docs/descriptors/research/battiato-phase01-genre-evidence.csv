@@ -1,0 +1,32 @@
+album_id,genre,source,url,scope,evidence_note,evidence_strength
+battiato-fetus,prog,ItalianProg,https://www.italianprog.com/a_battiato.htm,whole album,Specialist explicitly categorizes debut as progressive.,high
+battiato-fetus,progressiveelectronic,The SHFL (Jon Dale),https://www.theshfl.com/album/Fetus,whole album,Critic tags the album progressive electronic.,high
+battiato-fetus,experimentalrock,AllMusic/TiVo via Qobuz,https://www.qobuz.com/us-en/album/fetus-franco-battiato/0743215855224,whole album,AllMusic/TiVo review labels music experimental rock.,high
+battiato-fetus,electronic,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-fetus-lp,whole album,Analog VCS3 central to arrangements and compositions.,high
+battiato-fetus,avantgarde,AllMusic/TiVo via Qobuz,https://www.qobuz.com/us-en/album/fetus-franco-battiato/0743215855224,whole album,Avant-garde minimalism and electronic experimentation.,high
+battiato-fetus,psychedelia,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Critic describes a psychedelic journey within concept.,high
+battiato-fetus,avantfolk,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-fetus-lp,texture,Label explicitly names avant-folk sensibilities across the first three LPs.,high
+battiato-fetus,folk,The SHFL (Jon Dale),https://www.theshfl.com/album/Fetus,some tracks,Reviewer identifies folksy melodies and acoustic-guitar miniatures.,high
+battiato-pollution,prog,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Explicitly called avant-garde progressive rock.,high
+battiato-pollution,experimentalrock,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Critic explicitly calls it experimental rock.,high
+battiato-pollution,progressiveelectronic,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Progressive structure with electronic sonics integral to record; specific token is an editorial cross-classification. (Not a verbatim style label.),medium
+battiato-pollution,electronic,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-pollution-lp,whole album,Electronics and tape effects essential to album sound.,high
+battiato-pollution,krautrock,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-pollution-lp,some tracks,Motorik rhythms and Ash Ra Tempel-style riffs; qualified stylistic analogy.,high
+battiato-pollution,psychedelia,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-pollution-lp,some tracks,Avant-psych / spacious rock textures; genre inference supported by review description.,medium
+battiato-pollution,avantgarde,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Review explicitly says progressive rock d’avanguardia.,high
+battiato-pollution,avantfolk,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-pollution-lp,texture,Label explicitly applies avant-folk sensibilities across first three releases.,high
+battiato-sullecordediaries,progressiveelectronic,Album of the Year,https://www.albumoftheyear.org/album/124203-franco-battiato-sulle-corde-di-aries.php,whole album,Album-level genre tag progressive electronic.,high
+battiato-sullecordediaries,experimentalelectronic,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Sophisticated electronic experimentation and repeating structures.,high
+battiato-sullecordediaries,prog,Album of the Year,https://www.albumoftheyear.org/album/124203-franco-battiato-sulle-corde-di-aries.php,whole album,Album-level progressive rock tagging.,high
+battiato-sullecordediaries,ambient,In Sheep’s Clothing,https://insheepsclothinghifi.com/album/battiato-sulle-corde-di-aries/,whole album,Specialist listening guide explicitly tags Ambient.,high
+battiato-sullecordediaries,avantgarde,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Review locates record in Battiato avant-garde shift.,high
+battiato-sullecordediaries,krautrock,AllMusic (Ned Raggett) via Qobuz,https://www.qobuz.com/us-en/album/sulle-corde-di-aries-franco-battiato/0743215855521,some tracks,AllMusic explicitly calls opening passage Krautrock-inspired.,high
+battiato-sullecordediaries,acidfolk,AllMusic (Ned Raggett) via Qobuz,https://www.qobuz.com/us-en/album/sulle-corde-di-aries-franco-battiato/0743215855521,some tracks,AllMusic describes acid-folk tribalism in later pieces.,high
+battiato-sullecordediaries,neoclassical,AllMusic (Ned Raggett) via Qobuz,https://www.qobuz.com/us-en/album/sulle-corde-di-aries-franco-battiato/0743215855521,some tracks,AllMusic discusses hints of neo-classical approaches.,high
+battiato-clic,experimentalelectronic,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Review explicitly categorizes record as experimental electronics.,high
+battiato-clic,ambient,Strawberry Bricks,https://strawberrybricks.com/guide/releases/clic,whole album,Progressive historian situates mood beyond ambient recordings of its era.,medium
+battiato-clic,musiqueconcrete,Strawberry Bricks,https://strawberrybricks.com/guide/releases/clic,whole album,Historic reviewer explicitly characterises tape-led record as musique concrète.,high
+battiato-clic,electronic,Superior Viaduct,https://www.superiorviaduct.com/products/franco-battiato-clic-lp,whole album,VCS3-led instrumental electronic compositions documented by reissue label.,high
+battiato-clic,avantgarde,OndaRock,https://www.ondarock.it/monografie/francobattiato/,whole album,Stockhausen-directed avant-garde sound collage.,high
+battiato-clic,krautrock,AllMusic (Ned Raggett) via Qobuz,https://www.qobuz.com/us-en/album/clic-franco-battiato/0888880768605,some tracks,AllMusic explicitly hears Krautrock touches.,high
+battiato-clic,prog,AllMusic (Ned Raggett) via Qobuz,https://www.qobuz.com/us-en/album/clic-franco-battiato/0888880768605,texture,AllMusic catalogue stylistic tag Prog-Rock; reviewer notes break from earlier avant-rock.,medium

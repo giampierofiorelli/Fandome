@@ -1,0 +1,10 @@
+album_id,title,year,type,catalog_status,action,notes
+battiato-fetus,Fetus,1972,studio,not in catalog.ts,add,The battiato catalog row currently lists only five later albums.
+battiato-pollution,Pollution,1973,studio,not in catalog.ts,add,The battiato catalog row currently lists only five later albums.
+battiato-sullecordediaries,Sulle corde di Aries,1973,studio,not in catalog.ts,add,The battiato catalog row currently lists only five later albums.
+battiato-clic,Clic,1974,studio,not in catalog.ts,add,The battiato catalog row currently lists only five later albums.
+battiato-lavocedelpadrone,La voce del padrone,1981,studio,already in catalog.ts,not in this phase,Descriptor not duplicated; retain catalogue ID when a future phase covers it.
+battiato-larcadinoe,L’arca di Noè,1982,studio,already in catalog.ts,not in this phase,Descriptor not duplicated; retain catalogue ID when a future phase covers it.
+battiato-orizzontiperduti,Orizzonti perduti,1983,studio,already in catalog.ts,not in this phase,Descriptor not duplicated; retain catalogue ID when a future phase covers it.
+battiato-fisiognomica,Fisiognomica,1988,studio,already in catalog.ts,not in this phase,Descriptor not duplicated; retain catalogue ID when a future phase covers it.
+battiato-gommalacca,Gommalacca,1998,studio,already in catalog.ts,not in this phase,Descriptor not duplicated; retain catalogue ID when a future phase covers it.
