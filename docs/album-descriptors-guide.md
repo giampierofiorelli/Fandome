@@ -83,6 +83,9 @@ Claude fills the columns in the artist's descriptor file without touching anythi
 
 ## Albums that aren't in Fandome yet
 
+Records an artist made under another name before their career under this one (Katy Hudson, 2001, before Katy Perry) are not part of their discography on Fandome (owner, Oct 2026): don't catalogue or describe them.
+
+
 Our list is incomplete: add every studio album of the artist (no live albums, compilations or EPs unless they are landmarks).
 
 - Existing albums: keep their `album_id` exactly (find them in `src/data/seed.ts` and `src/data/catalog.ts`).
