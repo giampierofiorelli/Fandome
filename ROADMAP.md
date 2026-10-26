@@ -22,6 +22,7 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 
 ## Product, later
 
+- **Past tours for artists who no longer tour (to decide, owner, Oct 2026).** Artists who passed away or split up (`touring: false`, the `LEGACY` list in `src/data/catalog.ts`) now show only "Past tours", and most are empty. Options: (a) fans add past tours and we review them (owner not convinced: moderation work, uneven quality); (b) we research them and add them to the data (setlist.fm has full tour histories, its API needs a key and allows non-commercial use; check terms). Also decide whether to mark every artist explicitly (alive/active) instead of the current list.
 - **Real listening parties** (today: one demo party hard-coded in `src/data/seed.ts`, always live in a loop, fake listeners, local-only chat).
   1. Create a party: host picks the artist, an album (track list and durations from MusicBrainz) or their own running order, and a start date/time.
   2. Announce it in the artist room and on Home with a countdown, "Remind me", and suggest-to-friends (like artist rooms).

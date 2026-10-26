@@ -169,7 +169,7 @@ export default function ArtistPage() {
       )}
       {suggest && <SuggestArtistSheet artistId={artist.id} onClose={() => setSuggest(false)} />}
 
-      {tab === 'shows' && <ShowsTab artistId={artist.id} />}
+      {tab === 'shows' && <ShowsTab artistId={artist.id} touring={artist.touring !== false} />}
 
       {tab === 'fans' && (
         <div className="glass-card list">
@@ -194,7 +194,8 @@ export default function ArtistPage() {
 
 // Upcoming: every show (that's what fans plan around). Past: just the tours,
 // which is how fans remember them (no per-date list for now).
-function ShowsTab({ artistId }: { artistId: string }) {
+// Artists who passed away or split up (touring: false) have no upcoming shows: only their past tours.
+function ShowsTab({ artistId, touring }: { artistId: string; touring: boolean }) {
   const { state, dispatch, me } = useStore()
   const toast = useToast()
   const all = concerts.filter((c) => c.artistId === artistId)
@@ -204,10 +205,12 @@ function ShowsTab({ artistId }: { artistId: string }) {
 
   return (
     <>
-      <div className="section-head">
-        <h2>Upcoming shows</h2>
-      </div>
-      {upcoming.length ? (
+      {(touring || upcoming.length > 0) && (
+        <div className="section-head">
+          <h2>Upcoming shows</h2>
+        </div>
+      )}
+      {!touring && !upcoming.length ? null : upcoming.length ? (
         <div className="show-grid">
           {upcoming.map((c) => {
             const d = new Date(c.date + 'T12:00:00')
@@ -285,13 +288,13 @@ export function groupTours(past: typeof concerts) {
 }
 
 // The sections of an artist's room, also shown on its album pages to move back between sections.
-export function roomTabs(artist: { feeds: { id: string; label: string }[] }, similar: boolean) {
+export function roomTabs(artist: { feeds: { id: string; label: string }[]; touring?: boolean }, similar: boolean) {
   return [
     { id: 'all', label: 'All' },
     ...artist.feeds.map((f) => ({ id: f.id, label: f.label })),
     { id: 'albums', label: 'Albums' },
     ...(similar ? [{ id: 'similar', label: 'Similar' }] : []),
-    { id: 'shows', label: 'Tours & shows' },
+    { id: 'shows', label: artist.touring === false ? 'Tours' : 'Tours & shows' },
     { id: 'fans', label: 'Fans' },
   ]
 }
