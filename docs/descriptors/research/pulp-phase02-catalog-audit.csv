@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,in_catalog,in_existing_descriptors,action,identity_note
+pulp-differentclass,pulp,Different Class,1995,no - artist pulp absent on checked branch,no,Add pulp artist if not already imported; add this album to catalog; append descriptor,Use original album not later deluxe/reissue extras
+pulp-thisishardcore,pulp,This Is Hardcore,1998,no - artist pulp absent on checked branch,no,Add pulp artist if not already imported; add this album to catalog; append descriptor,Use original album not later deluxe/reissue extras
+pulp-welovelife,pulp,We Love Life,2001,no - artist pulp absent on checked branch,no,Add pulp artist if not already imported; add this album to catalog; append descriptor,Use original album not later deluxe/reissue extras
+pulp-more,pulp,More,2025,no - artist pulp absent on checked branch,no,Add pulp artist if not already imported; add this album to catalog; append descriptor,Use original album not later deluxe/reissue extras

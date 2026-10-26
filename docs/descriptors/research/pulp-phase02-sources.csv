@@ -1,0 +1,33 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+pulp-differentclass,dcwiki,original-album credits / PulpWiki,https://pulpwiki.net/Pulp/DifferentClass,30 Oct 1995 UK release; Chris Thomas producer; exact band instruments and named synthesizers,high
+pulp-differentclass,dcsessions,recording-session evidence,https://pulpwiki.net/Pulp/DifferentClassLPSessions,"1995 Townhouse and AIR sessions, overdubs, Anne Dudley string orchestration; named devices",high
+pulp-differentclass,dcguide,specialist guitar criticism,https://guitar.com/reviews/album/the-genius-of-different-class-by-pulp/,"Three guitar players, synth and guitar instrumentation, 1995 breakthrough and Mercury Prize",high
+pulp-differentclass,dcpitch,qualified retrospective criticism,https://pitchfork.com/reviews/albums/22054-different-class/,"Britpop, social class and sex themes, synth-pop textures, show tune, disco; Common People 48-track overdubs; Davies comparisons",high
+pulp-differentclass,dcall,professional album criticism,https://www.allmusic.com/album/different-class-mw0000182602,"Alternative pop/rock, Britpop, pop, synths, new-wave and disco accents; theatrical delivery",high
+pulp-differentclass,dcmb,structured track-level credits,https://musicbrainz.org/release/065ff5e8-6658-4c18-8d33-3168047039f5/disc/1,"Anne Dudley strings, musicians, Matthew Vaughan programming, Chris Thomas producer",high
+pulp-thisishardcore,tihwiki,original album and sleeve credits,https://pulpwiki.net/Pulp/ThisIsHardcoreAlbum,"30 March 1998; Chris Thomas producer, original CD track list and programming personnel",high
+pulp-thisishardcore,tihsessions,original recording sessions,https://pulpwiki.net/Pulp/ThisIsHardcoreLPSessions,"1997–1998 sessions, piano and keyboards, guitars, sampled/programmed parts; avoids demo-only gear",high
+pulp-thisishardcore,tihmb,track-level discographic credits,https://musicbrainz.org/release/166b98b8-29f9-3df1-86c8-793c7456e874,"Chris Thomas producer, Anne Dudley piano, string arrangements, Neneh Cherry guest vocals, recording sites",high
+pulp-thisishardcore,tihall,professional album criticism,https://www.allmusic.com/album/this-is-hardcore-mw0000035589,Britpop and alternative rock styles; darker 1998 sound and disillusionment,high
+pulp-thisishardcore,tihshfl,expert critic and genre tags,https://www.theshfl.com/album/This-Is-Hardcore,"Art rock, chamber pop, glam rock, Britpop; Scott Walker influence and bleak ornate production",high
+pulp-thisishardcore,tihsalon,contemporary music criticism,https://www.salon.com/1998/04/15/sharps_138/,"Lounge xylophone and jazz groove textures, guitar music, social and sexual lyric motifs",high
+pulp-thisishardcore,tihsample,single credits / sample clearance,https://pulpwiki.net/Pulp/ThisIsHardcore,This Is Hardcore song embodies sample of Peter Thomas Bolero on the Moon Rocks; NOT global sampling,high
+pulp-thisishardcore,tihpitch,professional retrospective criticism,https://pitchfork.com/features/lists-and-guides/10045-the-50-best-britpop-albums/?page=3,"Lush art-rock, dark atmospheres, themes of fame and disillusionment",high
+pulp-welovelife,wlwiki,release history and original sleeve credits,https://pulpwiki.net/Pulp/WeLoveLife,"22 Oct 2001; Scott Walker producer, Peter Walsh co-producer/engineer; original songs",high
+pulp-welovelife,wlsessions,original recording sessions,https://pulpwiki.net/Pulp/WeLoveLifeLPSessions,"Acoustic and electric guitars; drum machines, samplers, glass harmonica, lap steel, 10 double basses, flutes, musical saw, choir, strings",high
+pulp-welovelife,wlpitch,contemporary specialist criticism,https://pitchfork.com/reviews/albums/6507-we-love-life/,"Baroque changes, acoustic dominance, guitars, string ostinato, trip-hop-like Weeds II, reflective tone",high
+pulp-welovelife,wlall,professional discographic credits,https://www.allmusic.com/album/r556334/review,"Strings, choir, double bass, programming and lap steel; Scott Walker and Peter Walsh producers",high
+pulp-welovelife,wlshfl,curated professional album styles,https://www.theshfl.com/album/We-Love-Life,"Art rock, chamber pop, pop rock, synthpop, rock album genre labels",high
+pulp-welovelife,wlaoty,secondary genre categorisation,https://www.albumoftheyear.org/genre/99-art-rock/all/spin/,Post-Britpop album tag; editorial/aggregator label rather than demonstrated unique sonic subgenre,medium
+pulp-more,moreofficial,primary artist / record-label statement,https://pulp.roughtraderecords.com/more?lang=en_US,First album since 2001; James Ford recorded late 2024 in Walthamstow; Richard Jones/Elysian strings; Eno-family backing vocals,high
+pulp-more,moreband,primary official release credits,https://pulpmusic.bandcamp.com/album/more,"6 June 2025, eleven tracks, dedicated to Steve Mackey, no AI used in record production",high
+pulp-more,moresessions,recording-session chronicle,https://pulpwiki.net/Pulp/MoreSessions,Orbb sessions and later strings and choral session; outtakes and singles NOT original album,high
+pulp-more,morewiki,reissue-independent album release information,https://pulpwiki.net/Pulp/More,"Original 2025 album tracklisting, release and James Ford producer",high
+pulp-more,moreall,professional review and album styles,https://www.allmusic.com/album/more-mw0004523152,"Alternative/indie rock, post-punk and pop/rock; mature slower themes and lyric contrasts",high
+pulp-more,morepitch,professional music criticism,https://pitchfork.com/reviews/albums/pulp-more/,"Baroque pop, prominent violins and strings, occasionally disco-like grooves; lower huskier voice",high
+pulp-more,moreobserver,qualified contemporary criticism,https://observer.co.uk/culture/music/article/album-review-pulp-more,"Northern soul stomper, disco, 1960s chanson, lush strings, adult relationship narratives",high
+pulp-more,moretheshfl,expert tags and review,https://www.theshfl.com/album/More-2,"Art rock, indie rock, alternative rock, post-punk and alternative production approaches",high
+pulp-more,moreskinny,professional review,https://www.theskinny.co.uk/music/reviews/albums/pulp-more,"Percussion, cinematic strings, disco grooves, bossa-nova rhythm on Tina, warm production",high
+pulp-more,moreaoty,secondary genre tags,https://www.albumoftheyear.org/genre/99-art-rock/2025/rolling-stone-uk/,"Art rock, alternative rock, post-Britpop, alternative dance and chamber pop",medium
+pulp-more,moreqobuz,digital album detailed performer credits,https://www.qobuz.com/us-en/album/more-pulp/opdofej4p29oa,"Session performers, James Ford producer, string and vocal ensemble; no co-billed album artist",high
+pulp-more,morecharts,official chart / discographic note,https://www.officialcharts.com/albums/pulp-more/,Eight studio album; release June 2025; James Ford producer and track list,high

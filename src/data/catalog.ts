@@ -483,7 +483,7 @@ const ROWS: Row[] = [
   ['gwenstefani', 'Gwen Stefani', '#e05f7f', 'Hollaback, harajuku and a holiday crooner', [['Love. Angel. Music. Baby.', 2004], ['The Sweet Escape', 2006], ['This Is What the Truth Feels Like', 2016], ['You Make It Feel Like Christmas', 2017]]],
   ['nodoubt', 'No Doubt', '#3f8fe0', 'Orange County ska, just a girl', [['No Doubt', 1992], ['The Beacon Street Collection', 1995], ['Tragic Kingdom', 1995], ['Return of Saturn', 2000]]],
   ['alanis', 'Alanis Morissette', '#8f7a5a', 'Jagged little pill, you oughta know', [['Alanis', 1991], ['Now Is the Time', 1992], ['Jagged Little Pill', 1995], ['Supposed Former Infatuation Junkie', 1998]]],
-  ['pulp', 'Pulp', '#c9a14a', 'Common people, Sheffield stories', [['It', 1983], ['Freaks', 1987], ['Separations', 1992], ['His ’n’ Hers', 1994]]],
+  ['pulp', 'Pulp', '#c9a14a', 'Common people, Sheffield stories', [['It', 1983], ['Freaks', 1987], ['Separations', 1992], ['His ’n’ Hers', 1994], ['Different Class', 1995], ['This Is Hardcore', 1998], ['We Love Life', 2001], ['More', 2025]]],
 ]
 
 const slug = (s: string) =>
