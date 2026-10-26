@@ -231,7 +231,7 @@ const ROWS: Row[] = [
   ['battisti', 'Lucio Battisti', '#8a9a5a', 'Emotions, song after song', [['Emozioni', 1970], ['Il mio canto libero', 1972], ['Anima latina', 1974], ['La batteria, il contrabbasso, eccetera', 1976], ['Una giornata uggiosa', 1980]]],
   ['dalla', 'Lucio Dalla', '#5a7a9a', 'Caruso, Piazza Grande and Bologna', [['Com’è profondo il mare', 1977], ['Lucio Dalla', 1979], ['Dalla', 1980], ['Cambio', 1990]]],
   ['pattypravo', 'Patty Pravo', '#c96fa3', 'The rebel doll of Italian pop', [['Patty Pravo', 1968], ['Pazza idea', 1973]]],
-  ['verve', 'The Verve', '#6a7a5a', 'Bitter sweet symphonies', [['A Storm in Heaven', 1993], ['A Northern Soul', 1995], ['Urban Hymns', 1997], ['Forth', 2008]]],
+  ['verve', 'The Verve', '#6a7a5a', 'Bitter sweet symphonies', [['Verve', 1992], ['A Storm in Heaven', 1993], ['A Northern Soul', 1995], ['Urban Hymns', 1997], ['Forth', 2008]]],
   ['villagers', 'Villagers', '#7a9a9a', 'Irish songs of quiet beauty', [['Becoming a Jackal', 2010], ['{Awayland}', 2013], ['Darling Arithmetic', 2015], ['The Art of Pretending to Swim', 2018], ['Fever Dreams', 2021], ['That Golden Time', 2024]]],
   ['yazoo', 'Yazoo', '#c95a8a', 'Only you, only synths', [['Upstairs at Eric’s', 1982], ['You and Me Both', 1983]]],
   ['zucchero', 'Zucchero', '#d9a03f', 'Italian-style blues', [['Blue’s', 1987], ['Oro incenso & birra', 1989], ['Miserere', 1992], ['Spirito DiVino', 1995], ['Black Cat', 2016], ['Discover', 2021]]],

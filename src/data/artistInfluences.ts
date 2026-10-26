@@ -82,6 +82,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Air', 'My Bloody Valentine', 'The Flaming Lips', 'Supertramp', 'The Doors', 'Blue Cheer', 'Bee Gees'],
     source: 'Kevin Parker: Guardian 2013 (Air, Talkie Walkie); Los Angeles Times 2010 (My Bloody Valentine, Blue Cheer); i-D and Jambands 2015 (The Flaming Lips, The Doors); Sound Opinions 2013 (Supertramp); NME 2015 (Bee Gees, Currents)',
   },
+  verve: {
+    names: ['Joy Division', 'John Martyn', 'The Durutti Column', 'Funkadelic', 'Richard Thompson', 'Television', 'Jimi Hendrix', 'Can', 'Public Image Ltd', 'Curtis Mayfield', 'Marvin Gaye', 'Sly and the Family Stone', 'The Beatles', 'Pink Floyd', 'The Stone Roses'],
+    source: 'Nick McCabe: Total Guitar 1998, Coney\'s Loft Q&A 2016, MusicRadar; Richard Ashcroft: 1997 interview (Stuber), Los Angeles Times 1998',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

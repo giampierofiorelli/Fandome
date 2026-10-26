@@ -1,0 +1,6 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,in_existing_descriptor,phase,action,notes
+verve-verve,verve,Verve,1992,ep,no,no,01,add to catalog,1992 release group Verve / marketed as The Verve E.P.
+verve-astorminheaven,verve,A Storm in Heaven,1993,studio,yes,no,01,keep existing catalog album id,Already in catalog; descriptor not yet present in GitHub branch as checked 2026-10-26.
+verve-anorthernsoul,verve,A Northern Soul,1995,studio,yes,no,01,keep existing catalog album id,Already in catalog; descriptor not yet present in GitHub branch as checked 2026-10-26.
+verve-urbanhymns,verve,Urban Hymns,1997,studio,yes,no,01,keep existing catalog album id,Already in catalog; descriptor not yet present in GitHub branch as checked 2026-10-26.
+verve-forth,verve,Forth,2008,studio,yes,no,02,keep existing catalog album id,Already in catalog; descriptor not yet present in GitHub branch as checked 2026-10-26.
