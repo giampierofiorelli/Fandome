@@ -1,0 +1,5 @@
+album_id,title,year,type,in_catalog,action,catalog_id,notes
+marina-thefamilyjewels,The Family Jewels,2010,studio,yes,keep existing album id,marina-thefamilyjewels,2010 original. UK and US track configurations differ.
+marina-electraheart,Electra Heart,2012,studio,yes,keep existing album id,marina-electraheart,Use original UK 12-track album; do not include later platinum editions.
+marina-froot,Froot,2015,studio,yes,keep existing album id,marina-froot,Original 2015 twelve-track album; exclude 2025 anniversary extras.
+marina-lovefear,Love + Fear,2019,studio,yes,keep existing album id,marina-lovefear,"Original sixteen-track album, billed MARINA without Diamonds."

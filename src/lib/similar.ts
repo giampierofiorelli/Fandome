@@ -7,6 +7,7 @@
 // Lists are then re-ranked for variety (MMR), push away what you said you don't like, and give a
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
+import { ARTIST_ALIASES } from '../data/artistAliases'
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
@@ -15,10 +16,16 @@ import { isLocalArtist, type Genre } from '../data/scenes'
 
 // Names are compared folded (accents, case, punctuation off); the same few hundred names come back
 // millions of times, so each is folded once.
+// Other credited names fold to the artist's main one (Marina and the Diamonds is MARINA).
 const folded = new Map<string, string>()
+const plainFold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9$]+/g, '').replace(/\$/g, 's')
+const ALIAS = new Map(ARTIST_ALIASES.flatMap(([main, ...others]) => others.map((o) => [plainFold(o), plainFold(main)] as const)))
 const fold = (s: string) => {
   let f = folded.get(s)
-  if (f === undefined) folded.set(s, (f = s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '')))
+  if (f === undefined) {
+    f = plainFold(s)
+    folded.set(s, (f = ALIAS.get(f) ?? f))
+  }
   return f
 }
 const and = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`)

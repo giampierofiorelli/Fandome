@@ -6,6 +6,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',
   },
+  marina: {
+    names: ['Kate Bush', 'PJ Harvey', 'Fiona Apple', 'The Distillers', 'Brody Dalle', 'The Dresden Dolls', 'Daniel Johnston', 'Madonna', 'Britney Spears', 'Emily Haines', 'The Shangri-Las', 'Röyksopp', 'Garbage', 'Shirley Manson', 'Patti Smith'],
+    source: 'ChatGPT influence audit (docs/descriptors/research/marina-phase01-chatgpt-import-notes.md): Glitter 2015, Irish Times 2012, Drowned in Sound 2012, Wonderland 2012, VICE 2015, The Line of Best Fit (Froot), Glamour',
+  },
   lanadelrey: {
     names: ['Nina Simone', 'Billie Holiday', 'Eagles', 'The Eagles', 'The Beach Boys', 'Bob Dylan', 'Lou Reed', 'Cat Power', 'Father John Misty', 'Frank Sinatra', 'Elvis Presley', 'Nirvana', 'Eminem', 'Joan Baez', 'Stevie Nicks', 'Britney Spears', 'Thomas Newman', 'Bruce Springsteen'],
     source: 'ChatGPT influence audit (docs/descriptors/research/lanadelrey-phase01-chatgpt-import-notes.md): Aftonbladet (Nina Simone, Billie Holiday); antiMusic 2014 (Eagles, Beach Boys); The FADER 2014 (Dylan, Lou Reed); NME (Cat Power, Father John Misty, Sinatra, Elvis, Nirvana, Eminem); Biography.com (Baez, Nicks, Britney Spears); Just Jared 2011 (Thomas Newman, Springsteen)',

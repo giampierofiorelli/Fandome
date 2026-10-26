@@ -1,0 +1,39 @@
+album_id,genre,source,scope,reason
+marina-thefamilyjewels,altpop,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names altpop
+marina-thefamilyjewels,artpop,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names artpop
+marina-thefamilyjewels,indiepop,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names indiepop
+marina-thefamilyjewels,electropop,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names electropop
+marina-thefamilyjewels,pianorock,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names pianorock
+marina-thefamilyjewels,chamberpop,https://www.albumoftheyear.org/album/2066-marina-the-family-jewels.php,whole album / catalogued classification,AOTY genre list explicitly names chamberpop
+marina-thefamilyjewels,leftfieldpop,https://www.allmusic.com/album/the-family-jewels-mw0001969735,whole album / AllMusic style,AllMusic assigns Left-Field Pop
+marina-thefamilyjewels,pop,https://www.allmusic.com/album/the-family-jewels-mw0001969735,whole album / AllMusic style,AllMusic assigns Pop
+marina-thefamilyjewels,poppunk,https://drownedinsound.com/releases/15105/reviews/4139001,some tracks: Girls,Drowned in Sound explicitly identifies pop-punk characteristics on Girls
+marina-thefamilyjewels,ska,https://drownedinsound.com/releases/15105/reviews/4139001,some tracks: Girls,"Drowned in Sound describes ska in Girls, not all tracks"
+marina-electraheart,electropop,https://www.albumoftheyear.org/album/3632-marina-electra-heart.php,whole album / catalogued classification,AOTY lists electropop
+marina-electraheart,dancepop,https://www.albumoftheyear.org/album/3632-marina-electra-heart.php,whole album / catalogued classification,AOTY lists dancepop
+marina-electraheart,altpop,https://www.albumoftheyear.org/album/3632-marina-electra-heart.php,whole album / catalogued classification,AOTY lists altpop
+marina-electraheart,synthpop,https://www.albumoftheyear.org/album/3632-marina-electra-heart.php,whole album / catalogued classification,AOTY lists synthpop
+marina-electraheart,poprock,https://www.albumoftheyear.org/album/3632-marina-electra-heart.php,whole album / catalogued classification,AOTY lists poprock
+marina-electraheart,pop,https://www.allmusic.com/album/electra-heart-mw0002328372,whole album / AllMusic style,AllMusic genre Pop
+marina-electraheart,adultalternativepoprock,https://www.metacritic.com/music/electra-heart/marina-and-the-diamonds/details,whole album / editorial metadata,Metacritic style category Adult Alternative Pop/Rock
+marina-froot,synthpop,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names synthpop
+marina-froot,poprock,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names poprock
+marina-froot,altpop,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names altpop
+marina-froot,dancepop,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names dancepop
+marina-froot,newwave,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names newwave
+marina-froot,electrodisco,https://www.albumoftheyear.org/album/25547-marina-froot.php,whole album / catalogued classification,AOTY explicitly names electrodisco
+marina-froot,indiepop,https://hifimagazine.net/blog/?os_album=marina-the-diamonds-froot,whole album / editorial classification,Independent review gives Indie Pop
+marina-froot,pop,https://www.allmusic.com/album/froot-mw0002788720,whole album / critic review,AllMusic album classified Pop
+marina-froot,disco,https://www.thelineofbestfit.com/features/longread/marina-and-the-diamonds-froot,"some tracks: Froot, Blue",Marina directly discusses disco licks and impulses in title track and Blue
+marina-froot,electropop,https://music.apple.com/us/album/froot/936941140,whole album / distributor editorial,Apple Music calls album propulsive electro-pop
+marina-froot,adultalternativepoprock,https://www.allmusic.com/album/froot-mw0002788720,whole album / AllMusic style,AllMusic classifies Adult Alternative Pop/Rock
+marina-froot,tango,https://www.allmusic.com/album/froot-mw0002788720,"one track: Froot, rhythmic inflection",AllMusic explicitly hears tango inflection on Froot; texture only
+marina-lovefear,electropop,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,whole album / catalogued classification,AOTY explicitly lists electropop
+marina-lovefear,synthpop,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,whole album / catalogued classification,AOTY explicitly lists synthpop
+marina-lovefear,dancepop,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,whole album / catalogued classification,AOTY explicitly lists dancepop
+marina-lovefear,altpop,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,whole album / catalogued classification,AOTY explicitly lists altpop
+marina-lovefear,pop,https://www.allmusic.com/album/love-fear-mw0003250955,whole album / AllMusic style,AllMusic Pop style
+marina-lovefear,indiepop,https://anydecentmusic.com/review/9868/Marina-Love-%2B-Fear.aspx,whole album / metadata,AnyDecentMusic describes album as indie pop
+marina-lovefear,tropicalhouse,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,some tracks / secondary classification,AOTY cites Tropical House as secondary album genre; not the principal sound
+marina-lovefear,adultalternativepoprock,https://www.allmusic.com/album/love-fear-mw0003250955,whole album / AllMusic style,AllMusic classifies Adult Alternative Pop/Rock
+marina-lovefear,afrobeats,https://www.albumoftheyear.org/album/139995-marina-love-fear.php,some tracks / secondary classification,AOTY secondary album style; lower confidence / cannot infer from one passage
