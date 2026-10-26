@@ -486,6 +486,7 @@ const ROWS: Row[] = [
   ['pulp', 'Pulp', '#c9a14a', 'Common people, Sheffield stories', [['It', 1983], ['Freaks', 1987], ['Separations', 1992], ['His ’n’ Hers', 1994], ['Different Class', 1995], ['This Is Hardcore', 1998], ['We Love Life', 2001], ['More', 2025]]],
   ['irama', 'Irama', '#d9634a', 'Pop-rap ballads and summer anthems', [['Irama', 2016], ['Plume', 2018], ['Giovani', 2018], ['Crepe', 2020], ['Il giorno in cui ho smesso di pensare', 2022], ['No Stress', 2023], ['Antologia della vita e della morte', 2025]]],
   ['rondoveneziano', 'Rondò Veneziano', '#b08a4a', 'Baroque melodies with a modern rhythm section', [['Rondò Veneziano', 1980], ['La Serenissima', 1981], ['Scaramucce', 1982], ['Venezia 2000', 1983], ['Odissea veneziana', 1984], ['Casanova', 1985], ['Rapsodia veneziana', 1986], ['Arabesque', 1987], ['Concerto', 1988], ['Masquerade', 1989], ['Barocco', 1990], ['Prestige', 1991], ['Stagioni di Venezia', 1992], ['Il mago di Venezia', 1994], ['Sinfonia di Natale', 1995], ['Marco Polo', 1997]]],
+  ['beberexha', 'Bebe Rexha', '#c96f9a', 'Songwriter behind the hooks, pop star in front', [['I Don’t Wanna Grow Up', 2015], ['All Your Fault, Pt. 1', 2017], ['All Your Fault, Pt. 2', 2017], ['Expectations', 2018], ['Better Mistakes', 2021], ['Bebe', 2023], ['Dirty Blonde', 2026]]],
 ]
 
 const slug = (s: string) =>

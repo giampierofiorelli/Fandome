@@ -1,0 +1,25 @@
+album_id,genre,source,scope,what_it_supports,evidence_strength
+beberexha-idontwannagrowup,pop,q15,whole album,Qobuz labels complete release Pop; five original tracks,high
+beberexha-idontwannagrowup,electropop,pc15,some tracks,PopCrush explicitly calls Pray electro-pop,high
+beberexha-idontwannagrowup,edm,ap15,some tracks,Associated Press calls I Can’t Stop Drinking About You EDM-flavored,medium
+beberexha-idontwannagrowup,gospel,pc15,texture,Pray contains gospel-like call-and-response; gospel is not the dominant EP style,medium
+beberexha-allyourfaultpt1,pop,apple17a,whole album,Apple Music labels EP Pop,high
+beberexha-allyourfaultpt1,dancepop,a17a,whole album,AllMusic style label Dance-Pop,high
+beberexha-allyourfaultpt1,edm,a17a,whole album,AllMusic style label EDM,high
+beberexha-allyourfaultpt1,trap,a17a,some tracks,AllMusic explicitly calls Bad Bitch a trap foray,high
+beberexha-allyourfaultpt2,pop,a17b,whole album,Apple Music labels EP Pop,high
+beberexha-allyourfaultpt2,electropop,oty17b,whole album,Album of the Year metadata categorizes release as electropop; supported by Qobuz synth review,medium
+beberexha-allyourfaultpt2,contemporaryrnb,oty17b,whole album,"Album of the Year metadata says contemporary R&B, secondary user-maintained categorization",low
+beberexha-allyourfaultpt2,dancepop,oty17b,whole album,Album of the Year genre metadata gives dance-pop,medium
+beberexha-allyourfaultpt2,poprap,oty17b,some tracks,"Genre metadata lists pop rap, consistent with rap guest features; no conclusion for entire EP",medium
+beberexha-allyourfaultpt2,hiphop,a17b,some tracks,Apple editorial describes hip-hop collaborations on That’s It and The Way I Are,high
+beberexha-allyourfaultpt2,dancehall,a17b,some tracks,Apple editorial explicitly describes Comfortable as dancehall duet,high
+beberexha-allyourfaultpt2,countrypop,a17b,some tracks,Apple editorial explicitly calls Meant to Be country-pop,high
+beberexha-expectations,pop,metro18,whole album,Metacritic lists Pop album genre,high
+beberexha-expectations,dancepop,metro18,whole album,Metacritic lists Dance-Pop,high
+beberexha-expectations,poprock,metro18,whole album,Metacritic lists Pop/Rock; cross-supported by guitar-rock descriptions in artist interviews,medium
+beberexha-expectations,rnb,rev18,some tracks,Entertainment Voice identifies R&B elements within the pop production,high
+beberexha-expectations,hiphop,rev18,some tracks,Entertainment Voice cites hip-hop beat on Steady; Bebe describes hip-hop influence in NME interview,high
+beberexha-expectations,countrypop,bul18,some tracks,The Bulletin explicitly calls Meant to Be country-pop,high
+beberexha-expectations,tropicalhouse,guard18,some tracks,Guardian explicitly labels I Got You tropical house,high
+beberexha-expectations,latin,guard18,some tracks,Guardian identifies Shining Star as the Latin-styled track,medium
