@@ -406,6 +406,7 @@ export interface Comparison {
   genre: number // genre similarity alone
   linked: boolean // a documented link (producer, influence, sounds-like…)
   opposite: boolean // at opposite ends of a sound scale (4+ apart out of 5)
+  evidence: number // separate things in common: each shared genre, each link, sound, themes, instruments, production
   reasons: string[]
 }
 
@@ -477,7 +478,8 @@ function buildComparison(a: Profile, b: Profile): Comparison {
 
   // Links overlap as evidence ("sounds like X" and "draws on X" often say the same thing): their total is capped.
   score = base + Math.min(LINK_CAP, score - base)
-  return { score: score * b.confidence, base, genre, linked: links.length > 0, opposite: oppositeEnds(a, b), reasons: reasons.slice(0, 2) }
+  const evidence = shared.length + links.length + (traits.length ? 1 : 0) + (themes.length >= 2 ? 1 : 0) + (sharedInstruments.length >= 2 ? 1 : 0) + (sharedProduction.length ? 1 : 0)
+  return { score: score * b.confidence, base, genre, linked: links.length > 0, opposite: oppositeEnds(a, b), evidence, reasons: reasons.slice(0, 2) }
 }
 
 export interface Similar {
@@ -503,6 +505,8 @@ const LINK_CAP = 0.3
 // albums researched with long genre lists (every genre a source names) are no longer penalised for it.
 // Minimum genre similarity for an album suggestion without a documented link (sound alone can mislead),
 // set between the highest bad (0.151) and the lowest good (0.188) owner-judged pair; re-check as judgments grow.
+// A suggestion needs at least two things in common: one shared genre and nothing else (a western score and
+// a pop album that are both "rock") is not enough.
 const MIN_GENRE = 0.17
 // Minimum score for an album suggestion, calibrated on the owner's judged pairs (docs/similarity-judgments.csv).
 const MIN_SCORE = 0.3
@@ -567,7 +571,7 @@ export function similarAlbums(
       const c = compareProfiles(a, b)
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
-      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: (Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite) || c.linked }
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid), reasons: c.reasons, newCountry: isNew ? to : undefined, fits: (Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence

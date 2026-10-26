@@ -22,5 +22,6 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'aguilera-burlesqueoriginalmotionpicturesoundtrack': { with: ['cher'], credit: 'Christina Aguilera & Cher' },
   'irama-nostress': { credit: 'Irama & Rkomi' },
   'battiato-joepattisexperimentalgroup': { credit: 'Franco Battiato & Pino “Pinaxa” Pischetola' },
+  'morricone-labattagliadialgeri': { credit: 'Ennio Morricone & Gillo Pontecorvo' },
   'battiato-torneremoancora': { credit: 'Franco Battiato & Royal Philharmonic Concert Orchestra' },
 }
