@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,in_catalog,action,catalog_note
+pinkfloyd-thepiperatthegatesofdawn,pinkfloyd,The Piper at the Gates of Dawn,1967,studio,yes,reuse exact existing id,Original UK album
+pinkfloyd-asaucerfulofsecrets,pinkfloyd,A Saucerful of Secrets,1968,studio,no,add to src/data/catalog.ts,"Original release, no bonus/reissue material"
+pinkfloyd-more,pinkfloyd,More,1969,soundtrack,no,add to src/data/catalog.ts,"Original release, no bonus/reissue material"
+pinkfloyd-ummagumma,pinkfloyd,Ummagumma,1969,studio,no,add to src/data/catalog.ts,Hybrid double album: one studio LP plus one live LP; schema type studio
