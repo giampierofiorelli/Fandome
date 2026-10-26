@@ -1,0 +1,4 @@
+album_id,title,year,type,catalog_status,audit_note,expected_id
+janet-20yo,20 Y.O.,2006,studio,add,"Not among the five listed Janet albums in catalog.ts (Control 1986 through All for You 2001); add ['20 Y.O.', 2006] before running validator.",janet-20yo
+janet-discipline,Discipline,2008,studio,add,"Not among the five listed Janet albums in catalog.ts (Control 1986 through All for You 2001); add ['Discipline', 2008] before running validator.",janet-discipline
+janet-unbreakable,Unbreakable,2015,studio,add,"Not among the five listed Janet albums in catalog.ts (Control 1986 through All for You 2001); add ['Unbreakable', 2015] before running validator.",janet-unbreakable
