@@ -1,0 +1,9 @@
+proposed_id,title,type,year,catalog_status,action
+beberexha,Bebe Rexha,artist,,present,Already present with canonical id beberexha; do NOT add or modify artist
+beberexha-idontwannagrowup,I Don't Wanna Grow Up,ep,2015,present,Already in catalog AND docs/descriptors/beberexha.csv (phase 01); DO NOT repeat
+beberexha-allyourfaultpt1,"All Your Fault, Pt. 1",ep,2017,present,Already in catalog AND docs/descriptors/beberexha.csv (phase 01); DO NOT repeat
+beberexha-allyourfaultpt2,"All Your Fault, Pt. 2",ep,2017,present,Already in catalog AND docs/descriptors/beberexha.csv (phase 01); DO NOT repeat
+beberexha-expectations,Expectations,studio,2018,present,Already in catalog AND docs/descriptors/beberexha.csv (phase 01); DO NOT repeat
+beberexha-bettermistakes,Better Mistakes,studio,2021,present,Already in catalog; new phase 02 descriptor row ONLY
+beberexha-bebe,Bebe,studio,2023,present,Already in catalog; new phase 02 descriptor row ONLY
+beberexha-dirtyblonde,DIRTY BLONDE,studio,2026,present,Already in catalog; new phase 02 descriptor row ONLY
