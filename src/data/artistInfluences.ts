@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  bronskibeat: {
+    names: ['Donna Summer', 'Giorgio Moroder', 'Talking Heads', 'Soft Cell', 'Simple Minds', 'Kraftwerk', 'David Bowie'],
+    source: 'Jimmy Somerville: The Quietus interview (Donna Summer, Talking Heads, Soft Cell, Simple Minds), DJ Mag (Moroder), Release Magazine (Kraftwerk, Bowie). Early vocal favourites Peggy Lee and Connie Francis left out (personal, not the band’s sound)',
+  },
   takethat: {
     names: ['Adam Ant', 'The Human League', 'Depeche Mode', 'Kraftwerk', 'Yellow Magic Orchestra', 'John Foxx', 'Gary Numan'],
     source: 'Gary Barlow, Norwich Theatre Q&A 2023 (Adam Ant, Human League, Depeche Mode); Howard Donald, podcast reported by The Independent 2021 (Kraftwerk, YMO, John Foxx, Human League, Gary Numan). Mark Owen’s childhood favourites (Madonna, Elvis) left out: liked, not named as influences',

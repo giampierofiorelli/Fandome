@@ -249,7 +249,7 @@ const ROWS: Row[] = [
   ['beachhouse', 'Beach House', '#a39ac9', 'Dream pop for slow nights', [['Beach House', 2006], ['Devotion', 2008], ['Teen Dream', 2010], ['Bloom', 2012], ['Depression Cherry', 2015], ['7', 2018], ['Once Twice Melody', 2022]]],
   ['billyocean', 'Billy Ocean', '#3fa3a3', 'When the going gets tough', [['Suddenly', 1984], ['Love Zone', 1986], ['Tear Down These Walls', 1988]]],
   ['matiabazar', 'Matia Bazar', '#c9709a', 'Italian synth-pop elegance', [['Aristocratica', 1984], ['Melò', 1987]]],
-  ['bronskibeat', 'Bronski Beat', '#5a7ac9', 'Smalltown Boy, never forgotten', [['The Age of Consent', 1984], ['Truthdare Doubledare', 1986]]],
+  ['bronskibeat', 'Bronski Beat', '#5a7ac9', 'Smalltown Boy, never forgotten', [['The Age of Consent', 1984], ['Hundreds & Thousands', 1985], ['Truthdare Doubledare', 1986], ['Rainbow Nation', 1995]]],
   ['carladalforno', 'Carla dal Forno', '#8a8f7a', 'Lo-fi, hazy and hypnotic', [['You Know What It’s Like', 2016], ['Look Up Sharp', 2019], ['Come Around', 2022]]],
   ['carmenconsoli', 'Carmen Consoli', '#c9503f', 'The Sicilian songwriter with a guitar', [['Due parole', 1996], ['Confusa e felice', 1997], ['Mediamente isterica', 1998], ['Stato di necessità', 2000], ['L’eccezione', 2002], ['Eva contro Eva', 2006], ['Elettra', 2009], ['Volevo fare la rockstar', 2021]]],
   ['caselli', 'Caterina Caselli', '#e0c04a', 'The golden helmet of Italian beat', []],

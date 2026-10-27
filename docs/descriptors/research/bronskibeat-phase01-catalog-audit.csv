@@ -1,0 +1,11 @@
+album_id,title,year,type,in_catalog,action,comment
+bronskibeat-theageofconsent,The Age of Consent,1984,studio,yes,descriptor in phase 01,Original 1984 UK ten-track LP
+bronskibeat-hundredsthousands,Hundreds & Thousands,1985,remix,no,ADD catalogue + phase 01 descriptor,Distinct early remix release; base six-track UK LP
+bronskibeat-truthdaredoubledare,Truthdare Doubledare,1986,studio,yes,descriptor in phase 01,"New vocalist John Jon, original nine-track LP"
+bronskibeat-rainbownation,Rainbow Nation,1995,studio,no,ADD catalogue + phase 01 descriptor,"1995 ZYX release, singer Jonathan Hellyer"
+bronskibeat-outabout,Out & About,2016,studio,no,DEFER phase 02; confirm first public release year,Recorded in 1987; was shelved and made available online around 2016 (conflicting sources)
+bronskibeat-theageofreason,The Age of Reason,2017,studio,no,DEFER phase 02,2017 new studio re-recording and new songs; not just reissue
+,Hundreds & Thousands anniversary reissues,2024,compilation,n/a,SKIP duplicate,Reissue programs are not original new albums
+,The Age of Remix,2018,remix,no,SKIP lower-priority remix project,Later mixes not selected in this phase
+,Forbidden Fruit: The Age of Consent Remixed,2025,remix,no,SKIP lower-priority remix project,2025 remixes not independently researched as landmark
+,The Album,1993,unknown,no,SKIP pending edition identity,Listed by AllMusic but may be a repackage; do not invent studio type
