@@ -805,7 +805,12 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .essential-pill { align-self: flex-start; height: 22px; padding: 0 9px; border-radius: 999px; display: inline-flex; align-items: center; font-family: var(--dot); font-weight: 800; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; background: var(--ink); color: var(--on-ink); }
 .essential-pill.defining, .essential-pill.key { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 .essential-pill.acclaimed { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--glass-edge); }
-.album-hero-essential { align-self: center; margin: 2px auto 6px; }
+.album-hero-essential { --neon: #ff2bd6, #ffe600, #39ff14, #00f0ff, #8a5cff, #ff2bd6; align-self: flex-start; margin: 4px 0 8px; height: 28px; padding: 0 12px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px; font-family: var(--dot); font-weight: 800; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); border: 2px solid transparent; background: linear-gradient(var(--bg), var(--bg)) padding-box, linear-gradient(90deg, var(--neon)) border-box; background-size: 100% 100%, 300% 100%; animation: neon-run 6s linear infinite; box-shadow: 0 0 14px -4px rgba(255, 43, 214, 0.55); }
+.album-hero-essential .neon-star { display: inline-block; background: linear-gradient(90deg, var(--neon)); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: neon-text 6s linear infinite, neon-pulse 2.4s ease-in-out infinite; }
+@keyframes neon-run { from { background-position: 0 0, 0% 0; } to { background-position: 0 0, 300% 0; } }
+@keyframes neon-text { from { background-position: 0% 0; } to { background-position: 300% 0; } }
+@keyframes neon-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.3) rotate(45deg); } }
+@media (prefers-reduced-motion: reduce) { .album-hero-essential, .album-hero-essential .neon-star { animation: none; } }
 .essential-pill.small { height: 20px; padding: 0 8px; font-size: 10px; margin: -2px 0 2px; }
 
 /* ---------- Score badge ---------- */
