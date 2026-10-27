@@ -393,13 +393,17 @@ const TRAITS: [Scale, 'high' | 'low', string][] = [
   ['theatrical', 'low', 'intimate'],
   ['experimental', 'high', 'experimental'],
 ]
+// "Not electronic" is not "acoustic": Nevermind and Ten are loud electric rock with no electronics. Acoustic only
+// when neither album leans on electric instruments; otherwise the shared trait is a live band, not programming.
+const ELECTRIC = ['electricguitar', 'electricbass', 'electricpiano', 'synth', 'organ', 'drummachine']
+const electric = (p: Profile) => ELECTRIC.some((x) => (p.instruments.get(x) ?? 0) >= 0.25)
 function sharedTraits(a: Profile, b: Profile) {
   return TRAITS.filter(([s, side]) => {
     const x = a.scales[s]
     const y = b.scales[s]
     if (x === undefined || y === undefined) return false
     return side === 'high' ? x >= 4 && y >= 4 : x <= 1 && y <= 1
-  }).map(([, , word]) => word)
+  }).map(([s, side, word]) => (s === 'electronic' && side === 'low' && (electric(a) || electric(b)) ? 'live-band' : word))
 }
 
 // Closest related pair when no genre is shared exactly, e.g. "deep house and house".

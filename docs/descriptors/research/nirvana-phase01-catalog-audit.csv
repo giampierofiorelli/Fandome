@@ -1,0 +1,9 @@
+title,year,type,catalog_status,album_id,decision
+Bleach,1989,studio,in catalog,nirvana-bleach,included phase 01
+Nevermind,1991,studio,in catalog,nirvana-nevermind,included phase 01
+Incesticide,1992,compilation,absent,nirvana-incesticide,"exclude; archival collection, not core studio album"
+In Utero,1993,studio,in catalog,nirvana-inutero,included phase 01
+MTV Unplugged in New York,1994,live,in catalog,nirvana-mtvunpluggedinnewyork,included phase 01; landmark live exception
+From the Muddy Banks of the Wishkah,1996,live,absent,nirvana-fromthemuddybanksofthewishkah,exclude; conventional posthumous live compilation
+Blew,1989,ep,absent,nirvana-blew,"exclude; minor early EP, not standalone landmark"
+Hormoaning,1992,ep,absent,nirvana-hormoaning,"exclude; limited regional EP, principally existing recordings"

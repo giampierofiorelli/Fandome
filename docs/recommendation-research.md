@@ -214,3 +214,5 @@ Owner on the scale (same day): mainstream is about the production, not the launc
 fake the record is versus quality commercial pop the artist crafts. Madonna: only Hard Candy, MDNA and Rebel Heart are
 high (5); Like a Prayer and the rest are 3. Applied to Madonna; the guide's definition changed. The other artists'
 values were scored with the earlier, launch-oriented definition and need a review under this one (ROADMAP).
+
+- "Similar sound: acoustic" no longer shown for loud electric rock with no electronics (Nevermind, Ten): low `electronic` reads "acoustic" only when neither album leans on electric instruments, otherwise "live-band" (Oct 2026).

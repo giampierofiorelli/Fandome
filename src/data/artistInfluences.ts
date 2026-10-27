@@ -122,6 +122,14 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  pearljam: {
+    names: ['Jimi Hendrix', 'Stevie Ray Vaughan', 'B.B. King', 'Iron Maiden', 'Judas Priest', 'Kiss', 'Aerosmith', 'Led Zeppelin', 'Simon & Garfunkel', 'The Stooges', 'Ramones', 'The Clash', 'Sex Pistols', 'The Who', 'The Beatles', 'The Band', 'Talking Heads', 'Sonic Youth', 'Fugazi', 'Neil Young'],
+    source: 'Mike McCready: Guitar World (Ten; Stevie Ray Vaughan); Stone Gossard: Stereogum; Jeff Ament: Guitar World, 12stringbass.net; Eddie Vedder: American Songwriter (with Springsteen), Louder (Neil Young, Merkin Ball)',
+  },
+  nirvana: {
+    names: ['Wipers', 'Pixies', 'The Vaselines', 'Melvins', 'The Jesus Lizard', 'The Breeders'],
+    source: 'Kurt Cobain: Rolling Stone 1994 (Pixies), Rolling Stone AU on Greg Sage (Wipers), Live Nirvana interviews (Vaselines; Breeders for In Utero), kurtcobain.com (Melvins); Dave Grohl: Live Nirvana 1993 (The Jesus Lizard, In Utero)',
+  },
   gnr: {
     names: ['Aerosmith', 'Led Zeppelin', 'The Rolling Stones', 'The Who', 'B.B. King', 'The Yardbirds', 'The Kinks', 'The Beatles', 'AC/DC', 'Black Sabbath', 'Cheap Trick', 'Queen', 'Elton John', 'The Stooges', 'New York Dolls', 'Sex Pistols', 'Black Flag'],
     source: 'Slash: Kerrang (Aerosmith, Rocks), zZounds interview (Led Zeppelin, The Who, B.B. King), Hot Press (Rolling Stones), The List via Blabbermouth (AC/DC, Sabbath, Cheap Trick); Steven Adler via Blabbermouth (Axl: Queen, Elton John; Izzy: Stooges, New York Dolls, Sex Pistols; Duff: Black Flag); MusicRadar (Elton John, November Rain)',

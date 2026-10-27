@@ -1,0 +1,22 @@
+album_id,genre,source,url,scope,what_it_supports
+nirvana-bleach,grunge,"AllMusic — Bleach, Stephen Thomas Erlewine","1989 date; grunge, alternative/indie and alternative pop/rock classification; murky sound, lower polish",whole album,AllMusic style
+nirvana-bleach,alternativeindierock,"AllMusic — Bleach, Stephen Thomas Erlewine","1989 date; grunge, alternative/indie and alternative pop/rock classification; murky sound, lower polish",whole album,AllMusic alternative/indie rock
+nirvana-bleach,alternativepoprock,"AllMusic — Bleach, Stephen Thomas Erlewine","1989 date; grunge, alternative/indie and alternative pop/rock classification; murky sound, lower polish",whole album,AllMusic alternative pop/rock
+nirvana-bleach,punkmetal,Loudwire — Louder Than Hell grunge chapter,Punk-metal hybrid classification of the album; Black Sabbath / Black Flag comparison,whole album,Loudwire book excerpt describes album as punk-metal hybrid
+nirvana-nevermind,grunge,"AllMusic — Nevermind, Stephen Thomas Erlewine",1991 date; grunge and alternative styles; contrast with raw Bleach and production polish,whole album,AllMusic genre
+nirvana-nevermind,alternativeindierock,"AllMusic — Nevermind, Stephen Thomas Erlewine",1991 date; grunge and alternative styles; contrast with raw Bleach and production polish,whole album,AllMusic alternative/indie rock
+nirvana-nevermind,alternativepoprock,"AllMusic — Nevermind, Stephen Thomas Erlewine",1991 date; grunge and alternative styles; contrast with raw Bleach and production polish,whole album,AllMusic alternative pop/rock
+nirvana-nevermind,punk,The Daily Beast — Interview with Butch Vig,"Vig describes hooks, punk aesthetic, guitar and vocal doubles",texture,Vig explicitly characterizes pop hooks with punk attitude
+nirvana-inutero,grunge,"AllMusic — In Utero, Stephen Thomas Erlewine",Grunge/alternative sound; album mood and contrast with Nevermind,whole album,AllMusic genre
+nirvana-inutero,noiserock,"SHFL — In Utero, Nate Patrin","Grunge/noise rock/alternative rock and dry drums, feedback guitars",whole album,Critic places album in noise rock
+nirvana-inutero,alternativerock,"SHFL — In Utero, Nate Patrin","Grunge/noise rock/alternative rock and dry drums, feedback guitars",whole album,Critic calls album alternative rock
+nirvana-inutero,posthardcore,Album of the Year — In Utero,"Genre listings grunge, noise rock, post-hardcore; external metadata not direct primary credit",whole album,Critical aggregator labels album post-hardcore
+nirvana-inutero,alternativeindierock,"AllMusic — In Utero, Stephen Thomas Erlewine",Grunge/alternative sound; album mood and contrast with Nevermind,whole album,AllMusic alternative/indie rock
+nirvana-inutero,alternativepoprock,"AllMusic — In Utero, Stephen Thomas Erlewine",Grunge/alternative sound; album mood and contrast with Nevermind,whole album,AllMusic alternative pop/rock
+nirvana-inutero,punk,"SHFL — In Utero, Nate Patrin","Grunge/noise rock/alternative rock and dry drums, feedback guitars",texture,Critic names punk in album taxonomy
+nirvana-mtvunpluggedinnewyork,acousticrock,Album of the Year — MTV Unplugged in New York,"Acoustic rock, alternative rock, folk rock, grunge style labels",whole album,Critical aggregator genre label acoustic rock
+nirvana-mtvunpluggedinnewyork,alternativerock,Album of the Year — MTV Unplugged in New York,"Acoustic rock, alternative rock, folk rock, grunge style labels",whole album,Critical aggregator genre label alternative rock
+nirvana-mtvunpluggedinnewyork,folkrock,Album of the Year — MTV Unplugged in New York,"Acoustic rock, alternative rock, folk rock, grunge style labels",some tracks,Critical aggregator labels folk rock; most clear on reinterpretations
+nirvana-mtvunpluggedinnewyork,grunge,AllMusic — MTV Unplugged in New York,"1994 release; grunge and alternative rock; sparse setting, performance character",repertoire / texture,AllMusic genre for record of Nirvana repertory
+nirvana-mtvunpluggedinnewyork,alternativeindierock,AllMusic — MTV Unplugged in New York,"1994 release; grunge and alternative rock; sparse setting, performance character",whole album,AllMusic style
+nirvana-mtvunpluggedinnewyork,alternativepoprock,AllMusic — MTV Unplugged in New York,"1994 release; grunge and alternative rock; sparse setting, performance character",whole album,AllMusic style

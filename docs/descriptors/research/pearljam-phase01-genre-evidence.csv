@@ -1,0 +1,24 @@
+album_id,genre,source,url,scope,what_it_supports,evidence_strength
+pearljam-ten,grunge,Allmusic Ten,https://www.allmusic.com/album/ten-mw0000265614,whole album,Album-level professional style classification,high
+pearljam-ten,alternativerock,Allmusic Ten,https://www.allmusic.com/album/ten-mw0000265614,whole album,Album-level professional style classification,high
+pearljam-ten,hardrock,Allmusic Ten,https://www.allmusic.com/album/ten-mw0000265614,whole album,Album-level professional style classification,high
+pearljam-ten,rock,Allmusic Ten,https://www.allmusic.com/album/ten-mw0000265614,whole album,General rock classification within Pop/Rock,high
+pearljam-vs,grunge,Allmusic Vs,https://www.allmusic.com/album/vs-mw0000620499,whole album,Album-level professional style classification,high
+pearljam-vs,alternativerock,Allmusic Vs,https://www.allmusic.com/album/vs-mw0000620499,whole album,Album-level professional style classification,high
+pearljam-vs,hardrock,Allmusic Vs,https://www.allmusic.com/album/vs-mw0000620499,whole album,Album-level professional style classification,high
+pearljam-vs,rock,Allmusic Vs,https://www.allmusic.com/album/vs-mw0000620499,whole album,General rock classification within Pop/Rock,high
+pearljam-vitalogy,grunge,Allmusic Vitalogy,https://www.allmusic.com/album/vitalogy-mw0000121446,whole album,Album-level professional style classification,high
+pearljam-vitalogy,alternativerock,Allmusic Vitalogy,https://www.allmusic.com/album/vitalogy-mw0000121446,whole album,Album-level professional style classification,high
+pearljam-vitalogy,hardrock,Allmusic Vitalogy,https://www.allmusic.com/album/vitalogy-mw0000121446,whole album,Album-level professional style classification,high
+pearljam-vitalogy,rock,Allmusic Vitalogy,https://www.allmusic.com/album/vitalogy-mw0000121446,whole album,General rock classification within Pop/Rock,high
+pearljam-nocode,grunge,Allmusic Nocode,https://www.allmusic.com/album/mw0000185938,whole album,Album-level professional style classification,high
+pearljam-nocode,alternativerock,Allmusic Nocode,https://www.allmusic.com/album/mw0000185938,whole album,Album-level professional style classification,high
+pearljam-nocode,hardrock,Allmusic Nocode,https://www.allmusic.com/album/mw0000185938,whole album,Album-level professional style classification,high
+pearljam-nocode,rock,Allmusic Nocode,https://www.allmusic.com/album/mw0000185938,whole album,General rock classification within Pop/Rock,high
+pearljam-vs,funkrock,Shfl Vs,https://www.theshfl.com/album/Vs-1,some tracks,Rats explicitly described as funk-rock; W.M.A. and Glorified G also groove-driven,high
+pearljam-vitalogy,folkrock,Pitchfork Vitalogy,https://pitchfork.com/reviews/albums/15263-vs-legacy-edition-vitalogy-legacy-edition-live-at-the-orpheum-theatre-boston/,some tracks,Nothingman and Better Man called folk-rock pillars,high
+pearljam-vitalogy,protopunk,Pitchfork Vitalogy,https://pitchfork.com/reviews/albums/15263-vs-legacy-edition-vitalogy-legacy-edition-live-at-the-orpheum-theatre-boston/,some tracks,Last Exit described through a proto-punk Stooges/MC5 groove,high
+pearljam-vitalogy,experimental,Allmusic Vitalogy,https://www.allmusic.com/album/vitalogy-mw0000121446,texture,"Review identifies collage, non-song experiments and unconventional interludes",high
+pearljam-nocode,folkrock,Guitar Nocode,https://guitar.com/reviews/album/the-genius-of-no-code-by-pearl-jam/,some tracks,Smile and Off He Goes described through Neil Young folk/roots rock idiom,high
+pearljam-nocode,worldmusic,Guitar Nocode,https://guitar.com/reviews/album/the-genius-of-no-code-by-pearl-jam/,texture,Irons rhythms on In My Tree described as world-music inspired,high
+pearljam-nocode,punk,Apple Nocode,https://music.apple.com/us/album/no-code/157478390,some tracks,Lukin explicitly described as punk,high

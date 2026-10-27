@@ -1,0 +1,16 @@
+album_id,title,year,type,in_catalog,in_this_phase,action,source_url,notes
+pearljam-ten,Ten,1991,studio,yes,yes,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-vs,Vs.,1993,studio,yes,yes,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-vitalogy,Vitalogy,1994,studio,yes,yes,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-nocode,No Code,1996,studio,yes,yes,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-yield,Yield,1998,studio,yes,no,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-binaural,Binaural,2000,studio,no,no,ADD TO catalog.ts BEFORE VALIDATION,https://pearljam.com/music/discography/,Missing studio album; future phase
+pearljam-riotact,Riot Act,2002,studio,no,no,ADD TO catalog.ts BEFORE VALIDATION,https://pearljam.com/music/discography/,Missing studio album; future phase
+pearljam-pearljam,Pearl Jam,2006,studio,no,no,ADD TO catalog.ts BEFORE VALIDATION,https://pearljam.com/music/discography/,Missing studio album; future phase
+pearljam-backspacer,Backspacer,2009,studio,no,no,ADD TO catalog.ts BEFORE VALIDATION,https://pearljam.com/music/discography/,Missing studio album; future phase
+pearljam-lightningbolt,Lightning Bolt,2013,studio,no,no,ADD TO catalog.ts BEFORE VALIDATION,https://pearljam.com/music/discography/,Missing studio album; future phase
+pearljam-gigaton,Gigaton,2020,studio,yes,no,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-darkmatter,Dark Matter,2024,studio,yes,no,none,https://pearljam.com/music/discography/,Already in Fandome
+pearljam-merkinball,Merkin Ball,1995,ep,no,no,REVIEW FOR A LATER NON-STUDIO SUPPLEMENT,https://pearljam.com/music/album/merkin-ball,Two-song companion single/EP to Young Mirror Ball; Neil Young guest; not treated as indispensable phase-01 album
+pearljam-mirrorball,Mirror Ball,1995,studio,no,no,DO NOT AUTO-ADD UNDER PEARL JAM,https://pearljam.com/music/album/neil-young-feat-pearl-jam-mirror-ball,Neil Young album featuring band as backing musicians; original billing not Pearl Jam co-lead; consider separate Neil Young research
+pearljam-lostdogs,Lost Dogs,2003,compilation,no,no,EXCLUDE,https://pearljam.com/music/discography/,"Non-studio B-sides compilation, excluded under current scope"
