@@ -272,3 +272,167 @@ New tokens
 - voice: Nico's low "cello" voice has no matching token, so only `spoken` (Reed) is given.
 ## New tokens
 - production `feedback` (feedback on "Heroin"); no parent needed (technique), or map near `distortion`.
+
+## Second batch: artists behind weak suggestion lists (Oct 2026)
+Found by checking every album's list (empty, or top suggestions with little genre in common) and counting which missing artists those albums cite. Claude's import fixes: Suicide's influences dropped (Alan Vega's general tastes, not this album); electronic rock mapped to the existing electrorock. James Last skipped: sources name Non Stop Dancing '65 as his breakthrough, not Classics up to Date; to decide. Richard Clayderman's debut is thin (sources describe the single), confidence low.
+
+## aphextwin-selectedambientworks8592
+
+# aphextwin-selectedambientworks8592: sources
+- https://en.wikipedia.org/wiki/Selected_Ambient_Works_85%E2%80%9392 — ambient techno, IDM, electronica, ambient; AllMusic (Tognazzini) draws on techno and acid house club rhythms (-> techno, acidhouse); producer Richard D. James; home-made synths and drum machines, cassette damaged (lofi, polish 1); samples probably from a Casio FZ-10M (casiofz10, hedged "probably"); Independent: homage to Philip Glass and Stockhausen; Murphy compares Xtal vocals to Seefeel and My Bloody Valentine; Reynolds "Satie-esque"; Melody Maker "Not since Kraftwerk…" (all as sounds_like, critics' words); moods "somnambulist dreamscape", "melodic melancholia", "oceanic beats"; AllMusic 5/5, Pitchfork 9.4, Q 5/5, Record Collector 5/5; Fact best album of the 90s, Pitchfork best IDM album, NME 500 #121; BPI Silver.
+- No influences documented by James himself (influenced_by empty). Doubt: Independent's "homage" could count as a critic-stated influence; kept in sounds_like per brief.
+
+## byrds-mrtambourineman
+
+# byrds-mrtambourineman: Mr. Tambourine Man (1965)
+- https://en.wikipedia.org/wiki/Mr._Tambourine_Man_(album): folk rock; producer Terry Melcher; McGuinn 12-string Rickenbacker, Clark tambourine, Hillman bass, Clarke drums; session men on two tracks (Leon Russell electric piano, Hal Blaine); themes: romance, missing a lover, a woman wronged, Welsh mining disaster (love/heartbreak/social); criss-crossing vocals (voice choral); critics cite the Animals, Searchers, Beatles as the elements combined (sounds_like); Billboard "folk material with pop-dance beat"; AllMusic 5/5, RS 500 #232/#287, Larkin #267, 1001; US #6, UK #7.
+- https://www.guitarplayer.com/guitarists/how-george-harrison-inspired-roger-mcguinn-s-invention-of-folk-rock and https://en.wikipedia.org/wiki/Jangle: McGuinn bought the Rickenbacker 12-string after seeing Harrison in A Hard Day's Night; the Byrds modelled their sound on the Beatles (influenced_by The Beatles).
+- Dylan and Pete Seeger songs are covers: not influences.
+- production empty: nothing sourced.
+
+## clayderman-richardclayderman
+
+# clayderman-richardclayderman: sources
+- Title: the 1977 debut is "Richard Clayderman" in en.wikipedia (Ballade pour Adeline page and artist discography); it is also issued as **"Ballade pour Adeline"** (Telefunken DE 1977, Sonet SE 1979, Union Square reissue; AllMusic bio and MusicBrainz release group 8fccefa2-7b0e-4d76-bf9b-0d656ebba008 use that title). Same record, 11 tracks, ~37 min.
+- https://en.wikipedia.org/wiki/Ballade_pour_Adeline: album Richard Clayderman (1977, Delphine Records/Delphine Studios); composer and producer Paul de Senneville; recording adds strings, keyboard, guitar, bass guitar and drums to the piano (→ instruments); "pop ballad", "pop instrumental" (→ ballad, pop); chart peaks and 22M sales of the single.
+- https://en.wikipedia.org/wiki/Richard_Clayderman: easy listening and "romantic" genre; "gentle piano ballad"; Toussaint and de Senneville auditioned 21 pianists (→ mainstream basis).
+- https://fr.wikipedia.org/wiki/Richard_Clayderman: "easy listening", "musique d'ascenseur" image (no album-level rating).
+- https://www.allmusic.com/artist/richard-clayderman-mn0000851272 (via search snippet): debut recorded 1977 at the urging of producers Olivier Toussaint and Paul de Senneville (→ producers), sold 20M+ in 38 countries (→ importance 5). AllMusic album page mw0000196543 tags: Easy Listening, New Age (→ newage).
+- https://musicbrainz.org (release 9bcb33c0-dacd-40f2-8eab-1d1ea3e44bc1): tracklist (Ballade pour Adeline piano & orchestre / piano seul, Lys River, Lyphard Melodie, Romantica Serenade...).
+- Values: energy 1, tempo 1, groove 1, experimental 0 from "gentle piano ballad"/easy-listening descriptions; electronic 1 (one keyboard part). mood, theatrical, polish left empty (no review of the album text found; nightfall.fr review blocked by Cloudflare). acclaim empty (no ratings found).
+- Confidence low: evidence mostly about the title single.
+
+## dinosaurjr-yourelivingalloverme
+
+# dinosaurjr-yourelivingalloverme: You're Living All Over Me (1987)
+- https://en.wikipedia.org/wiki/You%27re_Living_All_Over_Me: genres indie rock, alternative rock, noise rock, grunge (infobox); producer Wharton Tiers; personnel (Mascis guitar/percussion, Barlow bass/ukulele/tape, Murph drums, Ranaldo bv); NME "missing link between Hüsker Dü and R.E.M." (sounds_like); Pitchfork "hardcore punk blitz, heavy metal guitars"; reception table and lists; Mascis calls it their best.
+- https://www.clashmusic.com/features/youre-living-all-over-me-dinosaur-jr/: Pine Tracks + Fun City; Barlow's tape piece "Poledo" (tapeeffects); band listened to 60s/70s, hard rock, post-punk, Throbbing Gristle (general, not tied to the album).
+- https://diffuser.fm/dinosaur-jr-youre-living-all-over-me/: yearning, self-pitying romantic lyrics (love/introspection); indie rock/noise.
+- Mojo 2021 (pressreader, via search): Marshall stacks, Mascis loved the Zombies and Neil Young (general).
+- Doubts: influenced_by left EMPTY (only general band tastes found: Neil Young, Zombies, Black Sabbath per Decibel, Throbbing Gristle; none tied to this album). voice left empty (no source on Mascis's delivery). "grunge" is in the infobox but the text frames it as the album's influence on grunge.
+
+## elo-outoftheblue
+
+# elo-outoftheblue: sources
+- https://en.wikipedia.org/wiki/Out_of_the_Blue_(Electric_Light_Orchestra_album): genres (infobox progressive pop, orchestral pop, art rock; text: disco for Sweet Talkin' Woman, "driving rock and roll" for Turn to Stone, R&B feeling for Starlight); producer Jeff Lynne (Mack engineer, not listed); written in a Swiss chalet, recorded Musicland Munich; gear: Minimoog, Wurlitzer (Lynne), Yamaha CS-80, ARP 2600/Odyssey/Omni, Polymoog, Mellotron M400, clavinet, sequencers (Tandy), rototoms and gong (Bevan), violin, cellos, orchestra conducted by Louis Clark, orchestral and choral arrangements (→ choral, stringarrangements); "one of the first pop albums with extensive use of the vocoder"; Munich rain/thunder recordings (→ fieldrecordings); "endlessly overdubbed backing vocals" (→ layeredvocals, overdubbing); "dazzling falsetto harmonies" (→ falsetto). Themes: leaving home, homesickness, rain/sunshine, whaling and Greenpeace, the one happy love song (→ storytelling, love, nostalgia, social). Influence: Bev Bevan said Starlight was meant to feel "something like Al Green" (→ influenced_by Al Green). Critics' comparisons: Billy Altman (RS) hears Beatles, Beach Boys, Bee Gees (→ sounds_like). Reception: EPM 5/5, Pitchfork 8.1, AllMusic 3.5, RS Guide 3, Larkin #346, 1001 Albums, charts and certifications.
+- https://en.wikipedia.org/wiki/Mr._Blue_Sky: infobox progressive pop, experimental pop, symphonic rock (→ added after album genres); Guarisco "miniature pop symphony", Beatles pastiche (sounds_like); intro borrowed from the Kinks (a quotation, not listed).
+- https://americansongwriter.com/the-beatles-inspired-electric-light-orchestra-hit-that-jeff-lynne-still-has-some-regrets-about/: Lynne rejects the "carry on from the Beatles" line (Roy Wood's quote) → Beatles kept in sounds_like only.
+- Values: theatrical 4 and polish 5 ("baroque double album", orchestra + choir + heavy overdubs); mood 4 (Mr. Blue Sky, Sweet Is the Night vs. homesick songs); electronic 2 (synths and vocoder over band and orchestra); groove 2 (one disco-leaning single).
+## New tokens
+- instrument `rototoms` (parents: drums, percussion)
+
+## eno-musicforairports
+
+# eno-musicforairports: sources
+- https://en.wikipedia.org/wiki/Ambient_1:_Music_for_Airports — ambient, minimalist, electronic; producer Brian Eno; Eno synth, electric piano, vocals; Robert Wyatt acoustic piano; three German singers (wordless voices -> choral); "2/2" made on an ARP 2600 (arp2600); layered tape loops of different lengths (tapeloops); built on Erik Satie's furniture music (influenced_by); Eno: "deliberately austere and unemotional", "induce calm"; AllMusic 5/5, Uncut 10/10, Pitchfork 9.2 → 10 (2024), Pitchfork best ambient album (2016), Rolling Stone credits it with defining ambient, 1001 Albums; dissent Christgau B, Spin Alt. Guide 4/10.
+- Not listed: Ray Conniff Singers (named by Eno as an image for the voices, not clearly an influence); Reich/Glass (article says alignment came after the album).
+- Title kept as given ("Music for Airports"; official full title "Ambient 1: Music for Airports").
+
+## feelies-crazyrhythms
+
+# feelies-crazyrhythms: Crazy Rhythms (1980)
+- https://en.wikipedia.org/wiki/Crazy_Rhythms: art punk, post-punk, avant-pop, new wave; jangle pop fusion noted; producers Million, Mercer, Mark Abel; full percussion credits (claves, maracas, castanets, cowbell, tambourine, timbales, bells, keyboards); Mercer: cleaner guitars, experimenting with percussion; NME (Du Noyer) Jonathan Richman / Velvet Underground / Talking Heads, Sounds: Richman's "Roadrunner" and Television (sounds_like); ratings and lists.
+- https://lifeoftherecord.com/the-feelies-notes: Mo Tucker beat, VU vocal approach on "Forces at Work", Modern Lovers on "The Boy with Perpetual Nervousness", Fripp & Eno, Glass, Reich on "Loveless Love"/"Raised Eyebrows", the Byrds for clean guitar (influenced_by); guitars recorded direct, cymbals removed, percussion overdubbed in hallways/stairwells (roomambience), reverb pushed to extremes on percussion (heavyreverb); lyrics often about alienation (introspection).
+- https://thequietus.com/?p=256622: Reich in the "Raised Eyebrows" rimshots, "Here Come the Warm Jets vibe"; Modern Lovers "a big influence".
+- Doubt: voice empty (Mercer's delivery only described by a writer, not fetched). Stooges/MC5/Kraftwerk named as general favourites, left out.
+
+## johncarpenter-halloween
+
+# johncarpenter-halloween: sources
+- https://en.wikipedia.org/wiki/Halloween_(1978_soundtrack) — genres electronic, film score; Carpenter composition/performance, Dan Wyman synth programming, engineer Peter Bergren, Sound Arts LA, composed in three days; piano melody in 5/4 (10/8); Carpenter admitted music inspired by Argento's Suspiria (scored by Goblin) and Friedkin's The Exorcist (theme = Mike Oldfield's Tubular Bells); Berardinelli "relatively simple and unsophisticated" (experimental 1, polish 2); AllMusic 4/5.
+- https://faroutmagazine.co.uk/john-carpenter-halloween-theme-origins/ — Tubular Bells/Exorcist theme and Goblin as inspiration; Laurie's theme inspired by Bernard Herrmann; Carpenter quote on 5/4 bongo exercise.
+- https://online.berklee.edu/takenote/the-halloween-theme-what-makes-the-music-so-scary/ , https://www.theringer.com/2023/10/31/music/john-carpenter-film-scores-musician-halloween — synth score, grand piano + synth keyboard, recorded to click/stopwatch.
+- producers empty: no producer credited on the release (only composer/performer, programmer, engineer).
+- Doubt: Herrmann influence rests on Far Out only (secondary); no specific synth model documented for this score. Type soundtrack per list (brief said studio). Confidence medium.
+
+## mbv-loveless
+
+# mbv-loveless: Loveless (1991)
+- https://en.wikipedia.org/wiki/Loveless_(album): genres shoegaze, noise pop, dream pop, neo-psychedelia, avant-rock, noise rock; producers Shields, Ó Cíosóig; glide guitar via tremolo arm, no chorus/flanger; drums mostly samples of Ó Cíosóig, samples mostly feedback and Butcher's voice (sampler, sampling); vocals low in mix, dreamy, "me slowed down and me speeded up" on When You Sleep (layeredvocals, pitchedvocals); "Soon" swingbeat-influenced beat (groove 2); Shields' sampling informed by Public Enemy / Bomb Squad; 19 studios, ~2.5 years, largely mono; lyrics deliberately obscure (lyrics left empty); ratings and lists (Pitchfork 10, 90s #1, RS 500 #73, NME #18), UK #24, BPI Gold.
+- sounds_like empty: critics' comparisons (Pet Sounds, OK Computer) are about stature, not sound.
+- Possibly also "The Bomb Squad" in influenced_by (named together with Public Enemy); left out as a production team.
+## New tokens
+- genre `avantrock` (Wikipedia "avant-rock"; parents: experimentalrock, rock, avantgarde)
+
+## neu-neu
+
+# neu-neu: sources
+- https://en.wikipedia.org/wiki/Neu!_(album) — Krautrock, experimental rock, psychedelic rock; producers Conny Plank and Neu!; four nights Dec 1971 at Star Studio Hamburg; Rother electric guitar, bass, bowed bass; Dinger drums, electric guitar, taishōgoto (heavily treated on "Negativland" -> sonicmanipulation), vocals; motorik beat on Hallogallo/Negativland; NME "metallic scrapings, drifting space musik, unwinding drones", compares noise extremism to PiL and Einstürzende Neubauten (sounds_like); Pitchfork 9.7, Mojo 5/5, AllMusic 4.5/5, Q 4/5, NME 8/10; Fact #36 of 1970s; NYT "landmarks of German experimental rock"; ~35,000 sold in West Germany.
+- https://www.austinchronicle.com/music/record-reviews-11709691 — reissue review (3.5/5).
+- No documented influences found. Language left empty (one short vocal track, language not stated by the sources read).
+- New token: instrument `taishogoto` (Japanese taishōgoto; parent: koto/strings).
+
+## orbital-orbital2
+
+# orbital-orbital2: sources
+- https://en.wikipedia.org/wiki/Orbital_(1993_album) — techno, dance; produced by Orbital; Meat Beat Manifesto an influence (toured with them before recording); Fabio Paras remix of React 2 Rhythm's "I Know You Like It" inspired "Remind"; phasing on "Time Becomes" (Star Trek TNG speech sample, voice spoken); samples Withnail & I, Fantastic Planet; Sydney crossing alert + didgeridoo (fieldrecordings); aimed "more atmospheric"; reviews AllMusic 5/5, NME 9/10 ("intelligent ambience"), Q 4/5, RS Album Guide 4/5, Village Voice C+; 1001 Albums, Q 90s list, Mixmag #9 (1996); Tom Ewing calls it a progressive house album (-> progressivehouse).
+- https://www.mojo4music.com/articles/new-music/orbital-the-brown-album-reviewed/ — "1993 rave opus" (-> rave); Halcyon + On + On samples Opus III.
+- Not documented: specific synths/drum machines (instruments limited to sampler + didgeridoo); Steve Reich only named as origin of the phasing technique, so not listed as influence.
+- Doubt: Wikipedia gives UK peak 28 in lead, 13 in a chart table. Confidence medium (scales from review adjectives only).
+
+## p-actually
+
+# p-actually: sources
+- https://en.wikipedia.org/wiki/Actually_(album): genres synth-pop, electropop, dance-pop (AllMusic "melodic, detached dance-pop"); producers per credits Julian Mendelsohn, Stephen Hague, Andy Richards, Shep Pettibone, David Jacob (with Pet Shop Boys), Bobby Orlando (One More Chance); Fairlight CMI programmed by Blue Weaver, Andy Richards, J. J. Jeczalik, Badalamenti's orchestration programmed on Fairlight instead of an orchestra (→ fairlight, sampler, synthprogramming; no real strings listed); Dusty Springfield guest; themes Thatcherism/privatisation (Shopping, King's Cross), AIDS (It Couldn't Happen Here), unrequited love (I Want to Wake Up) (→ political, social, love, heartbreak); Shopping began as a joke (→ irony); "Hit Music" inspired by Mancini's Peter Gunn as covered by Art of Noise (→ influenced_by Art of Noise (In Visible Silence), the 1986 album with their Peter Gunn); Morricone chorus reuse = quotation, not listed; Grace Jones sleeve inspiration = visual, not listed. Reception: AllMusic 4.5, Spin 9/10, Q/Mojo/RS Guide 4, Q 80s #22, Slant 80s #88, RS 500 #435, 1001 Albums, UK #2, 3x Platinum.
+- https://en.wikipedia.org/wiki/It%27s_a_Sin: song genres synth-pop, dance-pop, disco, hi-NRG, new wave, post-disco (→ added after album genres); Fairlight choir, orchestra hits, NASA countdown sample, ambience recorded at Brompton Oratory and a sung Mass at Westminster Cathedral (→ sampling, fieldrecordings); Latin confession recited (→ spoken); Catholic guilt (→ spiritual); "dramatic and overblown", their most theatrical style (→ theatrical 4).
+- Left empty: sounds_like (no critic comparison found). Tennant's "heavy metal at heart" remark is about the song's urgency, not a documented influence.
+- Values: mood 2 (AIDS, Thatcherism, guilt under danceable surfaces); groove 4; electronic 4 (Fairlight-built, Dusty and live vocals).
+
+## slowdive-souvlaki
+
+# slowdive-souvlaki: Souvlaki (1993)
+- https://en.wikipedia.org/wiki/Souvlaki_(album): shoegaze, dream pop; produced by Slowdive (Ed Buller mixed, not listed); Eno keyboards/treatments on two songs (guest, not an influence); early songs influenced by Joy Division and Bowie's Berlin Trilogy (Low, "Heroes", Lodger); "Souvlaki Space Station" from Aphex Twin, dub, early drum and bass; lyrics about solitude in Wales and the breakup with Goswell (heartbreak/introspection); AllMusic "deepest delayed guitar sounds" (production delay); Pitchfork "pillowy-soft" (voice soft); ratings, Pitchfork #2 shoegaze, UK #51; initially panned (NME 6/10, Melody Maker).
+- sounds_like left empty: no critic comparison found.
+- Doubt: Berlin Trilogy influence is on early demos of the album sessions; listed as three Bowie albums.
+
+## specials-thespecials
+
+# specials-thespecials: The Specials (1979)
+- https://en.wikipedia.org/wiki/The_Specials_(album): ska, reggae, 2 Tone, punk rock, new wave; producer Elvis Costello; TW Studios; Dammers keyboards, Rico Rodriguez trombone; "concrete jungle" disaffection of UK youth (social/political); Record Mirror "Madness' older, more responsible brother" (sounds_like); covers of Toots & the Maytals, Prince Buster, Dandy Livingstone, Lloyd Charmers (covers: not influences); ratings (AllMusic 5, Pitchfork 9.3, Q 5, Uncut 10, RSAG 5), lists, UK #4 Gold.
+- https://en.wikipedia.org/wiki/The_Specials: ska/rocksteady with punk energy; anti-racist founding; political commentary.
+- https://www.theartsdesk.com/node/75067: "clanky sounding" Costello production (polish 1).
+- Pattaya Mail review (https://www.pattayamail.com/arts-entertainment/life-at-33-13-rough-and-punky-45406) via search: Costello recorded them virtually live (liverecording); barking singer, wheezing organ, reggae guitars, occasional brass.
+- Doubts: influenced_by EMPTY (only covers/reworkings, e.g. Gangsters from Prince Buster's Al Capone; no documented artist influence statement for the album). voice empty (Hall/Staple delivery not described by a fetched source).
+
+## suicide-suicide
+
+# suicide-suicide: Suicide (1977)
+- https://en.wikipedia.org/wiki/Suicide_(1977_album): genres (synth-punk, punk rock, electronic rock, synth-pop, minimalist, electronic); producers Craig Leon, Marty Thau; Eventide digital delay on vocals; four days at Ultima Sound; Vega names Elvis Presley, Roy Orbison, Jerry Lee Lewis as his influences; "Frankie Teardrop" news story, songs about street people, "Cheree" about a girlfriend (storytelling/social/love); vocals compared to Gene Vincent (sounds_like); reception table, RS 500, Pitchfork 70s #39, RS punk #66, 1001, no chart.
+- https://thequietus.com/?p=26801 (Blown Out '77): Seeburg Rhythm Prince drum machine, Farfisa through two Electro-Harmonix distortion pedals; live set recorded in performance order (~35 min); tape-delay slapback + Eventide delay; Thau's dub-style delay techniques (Lee Perry) -> dubeffects.
+- Clash "Keep Your Dreams" (clashmusic.com/?p=46382), via search: Rev says bulk done live.
+- Values: electronic 4 (no guitars, organ + rhythm box); polish 1 (primitive analog rig, "Rube Goldberg"); mood 1, experimental 4 from critics' "harshly hypnotic", "unnerving".
+- Doubt: influenced_by (Presley/Orbison/Lewis) is Vega's general statement quoted in the album article, not tied to a specific song; confidence medium. voice only "clear" (Gene Vincent croon comparison); screams on Frankie Teardrop not tagged.
+## New tokens
+- genre `synthpunk` (parents: punk, electropunk, electronic)
+- genre `electronicrock` (Wikipedia "electronic rock"; parents: rock, electronic; close to existing `electrorock` "Electro rock" — owner to decide if same)
+- production `seeburgrhythmprince` (Seeburg Rhythm Prince drum machine; Quietus ties it to this album)
+
+## tangerinedream-phaedra
+
+# tangerinedream-phaedra: sources
+- https://en.wikipedia.org/wiki/Phaedra_(album) — genres electronic, kosmische, ambient, space music, progressive electronic; influenced Berlin School; producer Edgar Froese; Moog modular + Franke's Moog sequencer as bass; personnel Froese (Mellotron, guitar, bass, VCS3, organ), Franke (Moog, VCS3), Baumann (organ, electric piano, VCS3, recorder); phasing device on "Mysterious Semblance", tape echo on "Sequent C'" (delay); AllMusic 5/5, AMG Electronica quote, 1001 Albums; UK #15, gold in seven countries.
+- https://ra.co/reviews/25006 (RA Rewind) — mood "melodic but weird… emotionally ambiguous", mystery; compares with Klaus Schulze and Kraftwerk (sounds_like); names krautrock, progressive rock (-> prog), Berlin School.
+- No documented influences found (influenced_by empty).
+- New token: genre `spacemusic` (Wikipedia "space music"; suggested parents ambient, electronic, newage, progressiveelectronic).
+
+## theorb-theorbsadventuresbeyondtheultraworld
+
+# theorb-theorbsadventuresbeyondtheultraworld: sources
+- https://en.wikipedia.org/wiki/The_Orb%27s_Adventures_Beyond_the_Ultraworld: genres (electronic, ambient house, dance, chill-out, ambient dub); producers Paterson, Weston, Falconer, Cauty; Steve Hillage co-producer of two tracks; Guy Pratt bass on Spanish Castles in Space; Casio CZ-101 on Outlands (→ casiocz101); segued double album built on samples and sound effects, Harry Nilsson drum loop (→ drumloop), Soviet fish-signal field recording and NASA audio (→ fieldrecordings), overdubbed layering (Paterson); Chicago house and dub as background; Slant: "loping house beats and shades of reggae-dub" (→ house, dub); NME: "Pink Floyd without the self-indulgent solos" (→ sounds_like Pink Floyd); reception table and rankings (AllMusic 5, EPM 5, Spin 9/10, NME 8/10, Slant #4 electronic, Muzik #7, Pitchfork 90s #100, UK #29 Silver).
+- https://classicpopmag.com/2022/04/making-the-orbs-adventures-beyond-the-ultraworld: Paterson's acknowledged debt to Brian Eno's Music for Airports (→ influenced_by); dub basslines central; beats stripped out of techno; US label wanted 3-minute versions (→ mainstream 1).
+- https://encyclopedia.com/education/news-wires-white-papers-and-books/orb: album homage to Pink Floyd (Battersea Power Station, "Back Side of the Moon"); Paterson called Pink Floyd and Eno "more than influential" (→ influenced_by Pink Floyd); Spin guide: "huge chunks of Brian Eno-like moods" (→ sounds_like Eno).
+- Samples (Minnie Riperton, Rickie Lee Jones, Steve Reich/Pat Metheny, Kraftwerk, Lee Perry, Morricone...) are NOT listed as influences.
+- Values: energy 1, tempo 1 (slowed-down house, "off the dance floor"); groove 2; experimental 4 (110-minute sample montage); voice instrumental|spoken (only speech samples); language and lyrics empty.
+## New tokens
+- genre `ambienthouse` (parents: ambient, house, electronic, chillout)
+- genre `ambientdub` (parents: ambient, dub, electronic)
+- production `casiocz101` (Casio CZ-101 synth; parent: synth)
+
+## vangelis-bladerunner
+
+# vangelis-bladerunner: sources
+- https://en.wikipedia.org/wiki/Blade_Runner_(soundtrack) — genres electronic/new-age/ambient; "draws on the jazz scores of classic film noir", neo-classical elements (-> jazz, neoclassical); Vangelis produced/recorded at Nemo Studios 1981–82, improvised to picture; instruments (Yamaha CS-80 main, Prophet-10, Roland Jupiter-4, CR-5000, VP-330, Yamaha GS1, E-mu Emulator, Steinway, CP-80, Rhodes, gamelan, glockenspiel, gong, snare, timpani, tubular bells; Dick Morrissey sax); 1994 release has dialogue samples on four tracks (voice spoken, production sampling); mood "bleak futurism"; AllMusic 5/5, NME 9/10; Pitchfork best film score (2019), Guardian, Future Music lists; UK #20, UK Gold.
+- https://musictech.com/2014/12/landmark-productions-vangelis-blade-runner-soundtrack/ , https://reverbmachine.com/blog/vangelis-blade-runner-synth-sounds-2022/ — CS-80 signature, Prophet 10 drones, GS-1 rhythms, VP-330.
+- Not found: documented influences, critics' sounds-like comparisons (left empty). Language left empty (instrumental + film dialogue).
+- New tokens: instrument `gamelan` (parent: percussion); production `prophet10`, `yamahags1`, `jupiter4` (synth models, like jupiter6/jupiter8).
+- Doubt: brief said type studio, but album list says soundtrack; used `soundtrack`. Demis Roussos vocal credited on one track; kept voice instrumental|spoken.
