@@ -134,6 +134,18 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Carmen Miranda'],
     source: 'Irene Cara, Megadiversities interview 2018 (Carmen Miranda “one of my first influences”). Celia Cruz, the Beatles, Michael Jackson, James Taylor, Joni Mitchell and Stevie Wonder left out: loved or enjoyed, not named as influences; Carole King, Valerie Simpson and Laura Nyro (Billboard 1984) not verified',
   },
+  europe: {
+    names: ['UFO', 'Thin Lizzy', 'Deep Purple', 'Rainbow', 'Whitesnake', 'Led Zeppelin', 'Iron Maiden', 'Def Leppard', 'Mott the Hoople', 'David Bowie'],
+    source: 'Joey Tempest: Über Röck and Metal Express Radio 2018 (UFO, Rainbow), Metal Rules 2018 (Thin Lizzy, Whitesnake), BBC via Blabbermouth 2023 (Iron Maiden, Def Leppard, Deep Purple), MusicRadar 2016 (Iron Maiden, UFO and Bowie behind The Final Countdown), Screamer Magazine (Mott the Hoople); europetheband.com biography (Led Zeppelin, Deep Purple)',
+  },
+  yazoo: {
+    names: ['Orchestral Manoeuvres in the Dark', 'The Human League', 'The Normal', 'Soft Cell', 'Muddy Waters', 'Howlin’ Wolf', 'Sonny Boy Williamson', 'Dr. Feelgood', 'Lew Lewis'],
+    source: 'Vince Clarke: MusicRadar and Synthtopia 2008 (OMD’s first album, early Human League, The Normal, Soft Cell); Alison Moyet: Rip It Up 1982 and The Quietus 2011 (Muddy Waters, Howlin’ Wolf, Sonny Boy Williamson, Dr. Feelgood, Lew Lewis)',
+  },
+  deadoralive: {
+    names: ['Sylvester', 'Divine', 'Patrick Cowley', 'Hazell Dean'],
+    source: 'Pete Burns, Windy City Times 2003 (Sylvester, Divine’s Native Love); producer Zeus B. Held, Electricity Club (Sylvester, Patrick Cowley); Mike Stock, Radio X 2021 (Hazell Dean’s Whatever I Do led Burns to Stock Aitken Waterman)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

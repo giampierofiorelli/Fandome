@@ -1,0 +1,17 @@
+﻿album_id,title,year,type,in_catalog,action,comment
+europe-europe,Europe,1983,studio,no,ADD,Research phase 01; no existing Europe artist/catalog rows
+europe-wingsoftomorrow,Wings of Tomorrow,1984,studio,no,ADD,Research phase 01; no existing Europe artist/catalog rows
+europe-thefinalcountdown,The Final Countdown,1986,studio,no,ADD,Research phase 01; no existing Europe artist/catalog rows
+europe-outofthisworld,Out of This World,1988,studio,no,ADD,Research phase 01; no existing Europe artist/catalog rows
+europe-prisonersinparadise,Prisoners in Paradise,1991,studio,no,ADD,"Research phase 02; original studio album, not described here"
+europe-startfromthedark,Start from the Dark,2004,studio,no,ADD,"Research phase 02; original studio album, not described here"
+europe-secretsociety,Secret Society,2006,studio,no,ADD,"Research phase 02; original studio album, not described here"
+europe-lastlookateden,Last Look at Eden,2009,studio,no,ADD,"Research phase 02; original studio album, not described here"
+europe-bagofbones,Bag of Bones,2012,studio,no,ADD,"Research phase 03; original studio album, not described here"
+europe-warofkings,War of Kings,2015,studio,no,ADD,"Research phase 03; original studio album, not described here"
+europe-walktheearth,Walk the Earth,2017,studio,no,ADD,"Research phase 03; original studio album, not described here"
+europe-comethismadness,Come This Madness,2026,studio,no,ADD,2026 album already released 25 Sep 2026; Silver Lining label confirms; Phase 03
+,1982–1992,,compilation,no,EXCLUDE,Greatest hits; excluded by policy
+,Almost Unplugged,,live,no,EXCLUDE,Live/rearranged performance; excluded by policy
+,The Final Countdown 30th Anniversary Show: Live at the Roundhouse,,live,no,EXCLUDE,Concert album; excluded
+,Force early demos,,pre-career,no,EXCLUDE,"Original band billed Force, not a Europe release"

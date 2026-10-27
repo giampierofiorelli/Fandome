@@ -1,0 +1,15 @@
+﻿artist_id,album_id,title,year,type,in_catalog,descriptor_exists,action,phase,notes
+deadoralive,deadoralive-sophisticatedboomboom,Sophisticated Boom Boom,1984,studio,no,no,ADD,01,Phase 01 studio album: this ZIP has its new descriptor; artist also needs to be added.
+deadoralive,deadoralive-youthquake,Youthquake,1985,studio,no,no,ADD,01,Phase 01 studio album: this ZIP has its new descriptor; artist also needs to be added.
+deadoralive,deadoralive-madbadanddangeroustoknow,"Mad, Bad and Dangerous to Know",1986,studio,no,no,ADD,01,Phase 01 studio album: this ZIP has its new descriptor; artist also needs to be added.
+deadoralive,deadoralive-nude,Nude,1988,studio,no,no,ADD,01,Phase 01 studio album: this ZIP has its new descriptor; artist also needs to be added.
+deadoralive,deadoralive-fantheflamepart1,Fan the Flame (Part 1),1990,studio,no,no,ADD / VERIFY FIRST ISSUE,02,Original 1990 Japanese-only studio album; initial UK/US catalogues omit it.
+deadoralive,deadoralive-nukleopatra,Nukleopatra,1995,studio,no,no,ADD / VERIFY FIRST ISSUE,02,"Original studio album, initial territory and edition may vary."
+deadoralive,deadoralive-fragile,Fragile,2000,studio,no,no,ADD / VERIFY FIRST ISSUE,02,Original studio album with some re-recorded material; preserve distinct new recordings.
+deadoralive,deadoralive-fantheflamepart2theresurrection,Fan the Flame (Part 2) (The Resurrection),2021,studio,no,no,ADD / VERIFY FIRST ISSUE,02,"1990-era previously unreleased studio material issued in 2021, not a newly recorded 2021 album."
+deadoralive,,Rip It Up,1987,remix,no,no,EXCLUDE / REVIEW ONLY,,"Compilation/remixed rework of earlier singles, not a new studio album."
+deadoralive,,Nude: Remade Remodelled,1989,remix,no,no,EXCLUDE / REVIEW ONLY,,"Follow-up remix package, repeats Nude recordings."
+deadoralive,,Evolution: The Hits,2003,compilation,no,no,EXCLUDE / REVIEW ONLY,,Greatest hits; excluded by owner policy.
+deadoralive,,Sophisticated Boom Box MMXVI,2016,compilation,no,no,EXCLUDE / REVIEW ONLY,,Career-spanning box; excludes previously described recordings.
+deadoralive,deadoralive-itsbeenhoursnow,It’s Been Hours Now,1982,ep,no,no,EXCLUDE / REVIEW ONLY,,"Early EP; consider only if independently historically significant, not in phase 01."
+deadoralive,deadoralive-nightmaresinwaxreleases,Nightmares in Wax releases,1980,studio,no,no,EXCLUDE / REVIEW ONLY,,Pre-Dead or Alive project under another name: exclude.

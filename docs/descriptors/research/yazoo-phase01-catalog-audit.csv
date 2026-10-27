@@ -1,0 +1,12 @@
+﻿artist_id,album_id,title,year,type,in_catalog,descriptor_exists,action,phase,notes
+yazoo,yazoo-upstairsaterics,Upstairs at Eric’s,1982,studio,yes,no,KEEP / IMPORT PHASE 01,01,Already in catalog.ts with exact original title/id. No pre-existing docs/descriptors/yazoo.csv.
+yazoo,yazoo-youandmeboth,You and Me Both,1983,studio,yes,no,KEEP / IMPORT PHASE 01,01,Already in catalog.ts with exact original title/id. No pre-existing docs/descriptors/yazoo.csv.
+yazoo,,Situation,1982,single,no,no,EXCLUDE,,Original UK LP did not include this B-side; later North American album editions do. No new album.
+yazoo,,The Other Side of Love,1982,single,no,no,EXCLUDE,,Single release (and/or bonuses); no standalone EP of new album material verified for canonical series.
+yazoo,,Only Yazoo: The Best of,1999,compilation,no,no,EXCLUDE,,"Hits compilation, not a new studio work."
+yazoo,,In Your Room,2008,compilation,no,no,EXCLUDE,,Box set/reissue combining the two studio albums with additional media.
+yazoo,,Reconnected Live,2010,live,no,no,EXCLUDE,,"Document of 2008 reunion shows, no new studio LP."
+yazoo,,Essential,2012,compilation,no,no,EXCLUDE,,Career anthology; new masters or reissues do not count as new studio albums.
+yazoo,,Four Pieces,2018,compilation,no,no,EXCLUDE,,"Reissue box with original LPs, BBC sessions and mixes."
+yazoo,,Three Pieces,2018,compilation,no,no,EXCLUDE,,"CD box with two LPs, bonus recordings and remixes."
+yazoo,,State Farm (US album substitution),1983,single,no,no,EXCLUDE,,"US replacement for Happy People on 1983 second LP, not an additional album."
