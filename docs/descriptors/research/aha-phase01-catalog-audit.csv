@@ -1,0 +1,12 @@
+album_id,title,year,type,in_catalog,action,comment
+aha-huntinghighandlow,Hunting High and Low,1985,studio,yes,descriptor in phase 01,First studio album; original 10 tracks
+aha-scoundreldays,Scoundrel Days,1986,studio,yes,descriptor in phase 01,Second studio album; original 10 tracks
+aha-stayontheseroads,Stay on These Roads,1988,studio,yes,descriptor in phase 01,Third studio album; original 10 tracks
+aha-eastofthesunwestofthemoon,"East of the Sun, West of the Moon",1990,studio,yes,descriptor in phase 01,Fourth studio album; original 11 tracks
+aha-memorialbeach,Memorial Beach,1993,studio,no,add in phase 02,Missing in catalog.ts despite original studio issue
+aha-minorearthmajorsky,Minor Earth Major Sky,2000,studio,yes,descriptor in phase 02,Existing catalogue row
+aha-lifelines,Lifelines,2002,studio,no,add in phase 02,Missing in catalog.ts
+aha-analogue,Analogue,2005,studio,no,add in phase 02,Missing in catalog.ts
+aha-footofthemountain,Foot of the Mountain,2009,studio,no,add in phase 03,Missing in catalog.ts
+aha-castinsteel,Cast in Steel,2015,studio,no,add in phase 03,Missing in catalog.ts
+aha-truenorth,True North,2022,studio,yes,descriptor in phase 03,Existing catalogue row; latest studio release as of Oct 2026

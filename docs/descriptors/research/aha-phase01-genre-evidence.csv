@@ -1,0 +1,20 @@
+album_id,genre,source,url,scope,evidence
+aha-huntinghighandlow,synthpop,AllMusic — Hunting High and Low,https://www.allmusic.com/album/mw0000188971,whole album,AllMusic explicitly lists Synth Pop as an album style.
+aha-huntinghighandlow,newwave,AllMusic — Hunting High and Low,https://www.allmusic.com/album/mw0000188971,whole album,AllMusic lists New Wave (with Punk/New Wave family label).
+aha-huntinghighandlow,dancerock,AllMusic — Hunting High and Low,https://www.allmusic.com/album/mw0000188971,whole album,AllMusic explicitly lists Dance-Rock; rhythmic pop singles prominent.
+aha-huntinghighandlow,contemporarypoprock,AllMusic — Hunting High and Low,https://www.allmusic.com/album/mw0000188971,whole album,AllMusic explicitly lists Contemporary Pop/Rock.
+aha-huntinghighandlow,poprock,AllMusic — Hunting High and Low,https://www.allmusic.com/album/mw0000188971,whole album,AllMusic parent genre is Pop/Rock; broad label ranked last.
+aha-scoundreldays,synthpop,AllMusic — Scoundrel Days,https://www.allmusic.com/album/scoundrel-days-r25,whole album,AllMusic explicitly lists Synth Pop.
+aha-scoundreldays,newwave,AllMusic — Scoundrel Days,https://www.allmusic.com/album/scoundrel-days-r25,whole album,AllMusic explicitly lists New Wave.
+aha-scoundreldays,dancerock,AllMusic — Scoundrel Days,https://www.allmusic.com/album/scoundrel-days-r25,some tracks,"AllMusic lists Dance-Rock; primarily energetic guitar-led tracks, not ballads."
+aha-scoundreldays,electronic,Chartsurfer — Scoundrel Days original LP/CD,https://www.chartsurfer.de/artist/a-ha/scoundrel-days-album_frpcrf.html,whole album,Original pressing taxonomies explicitly classify album Electronic; keys and programming in Qobuz credits.
+aha-scoundreldays,poprock,AllMusic — Scoundrel Days,https://www.allmusic.com/album/scoundrel-days-r25,whole album,AllMusic broad Pop/Rock album genre; kept lower than synth-pop.
+aha-stayontheseroads,synthpop,AllMusic — Stay on These Roads,https://www.allmusic.com/album/stay-on-these-roads-mw0000652293,whole album,AllMusic explicitly lists Synth Pop; dominates programmed arrangements.
+aha-stayontheseroads,newwave,Chartsurfer — Stay On These Roads,https://www.chartsurfer.de/artist/a-ha/stay-on-these-roads-album_frpgvc.html,whole album,Original European CD lists New Wave; AllMusic also Punk/New Wave.
+aha-stayontheseroads,poprock,AllMusic — Stay on These Roads,https://www.allmusic.com/album/stay-on-these-roads-mw0000652293,whole album,AllMusic parent Pop/Rock category; album broad umbrella.
+aha-stayontheseroads,electronic,Chartsurfer — Stay On These Roads,https://www.chartsurfer.de/artist/a-ha/stay-on-these-roads-album_frpgvc.html,whole album,1988 CD states Electronic at genre level; Qobuz documents drum and bass programming.
+aha-stayontheseroads,pop,Qobuz — Stay on These Roads,https://www.qobuz.com/us-en/album/stay-on-these-roads-a-ha/0075992573368,whole album,1988 original cassette lists Pop and Qobuz labels album Pop.
+aha-eastofthesunwestofthemoon,poprock,"Qobuz — East of the Sun, West of the Moon",https://www.qobuz.com/us-en/album/east-of-the-sun-west-of-the-moon-a-ha/0075992631464,whole album,Qobuz Pop/Rock album classification and original band-led material.
+aha-eastofthesunwestofthemoon,contemporarypoprock,"AllMusic — East of the Sun, West of the Moon",https://www.allmusic.com/album/east-of-the-sun-west-of-the-moon-mw0000313278,whole album,AllMusic explicitly lists Contemporary Pop/Rock.
+aha-eastofthesunwestofthemoon,synthpop,"AllMusic — East of the Sun, West of the Moon",https://www.allmusic.com/album/east-of-the-sun-west-of-the-moon-mw0000313278,some tracks,"AllMusic explicitly includes Synth Pop, although synth textures recede behind band sound."
+aha-eastofthesunwestofthemoon,pop,"Qobuz — East of the Sun, West of the Moon",https://www.qobuz.com/us-en/album/east-of-the-sun-west-of-the-moon-a-ha/0075992631464,whole album,Qobuz Pop classification and melodic song structures throughout.
