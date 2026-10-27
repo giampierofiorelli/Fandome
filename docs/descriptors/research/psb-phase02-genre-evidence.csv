@@ -1,0 +1,45 @@
+album_id,genre,source_url,scope,evidence
+p-very,synthpop,https://www.chartsurfer.de/artist/pet-shop-boys/very-album_frcncp.html,whole album,1993 original pressing style explicitly Synth-pop
+p-very,dancepop,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Band calls this a mega dance-pop record; retrospective account
+p-very,house,https://www.chartsurfer.de/artist/pet-shop-boys/very-album_frcncp.html,whole album,Original LP pressing classified House alongside Synth-pop
+p-very,hinrg,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Tennant describes it as very hi-energy; high-energy pop/dance identity
+p-very,alternativedance,https://www.allmusic.com/album/very-mw0000009778,whole album,AllMusic Alternative Dance style
+p-very,clubdance,https://www.allmusic.com/album/very-mw0000009778,whole album,AllMusic Club/Dance style
+p-very,dancerock,https://www.allmusic.com/album/very-mw0000009778,whole album,"AllMusic Dance-Rock style; a catalog category, not predominantly guitars"
+p-very,orchestralpop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,The Theatre and Liberation incorporate orchestra over pop arrangements
+p-very,breakbeat,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,The Theatre described as orchestral breakbeat
+p-very,rave,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,"A Different Point of View, Yesterday When I Was Mad engage with rave scene"
+p-very,eurobeat,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,one track,Yesterday When I Was Mad explicitly called full Eurobeat; **new genre token**
+p-very,edm,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,one track,Retrospective critic labels I Wouldn’t Normally Do This Kind Of Thing EDM pop; not a 1993 period label
+p-very,pop,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Tennant calls Very a pop album; generic umbrella follows specific styles
+p-very,hyperpop,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,retrospective texture,2025 critic calls Very hyperpop retrospectively; not contemporaneous 1993 scene tag
+psb-relentless,house,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Critic explicitly characterises six-track album as house
+psb-relentless,progressivehouse,https://djmag.com/news/pet-shop-boys-announce-30th-anniversary-edition-relentless,whole album,DJ Mag names progressive house
+psb-relentless,trance,https://djmag.com/news/pet-shop-boys-announce-30th-anniversary-edition-relentless,whole album,DJ Mag names trance; also Classic Pop
+psb-relentless,techno,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Classic Pop cites techno among the recording’s original electronic dance palette
+psb-relentless,synthpop,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-very/,whole album,Classic Pop calls the project synthpop dance
+psb-relentless,alternativedance,https://www.allmusic.com/album/relentless-mw0000915548,whole album,AllMusic Alternative Dance style
+psb-relentless,clubdance,https://www.allmusic.com/album/relentless-mw0000915548,whole album,AllMusic Club/Dance style
+psb-relentless,dancepop,https://www.allmusic.com/album/relentless-mw0000915548,whole album,AllMusic Dance-Pop metadata despite mostly instrumental actual character
+psb-relentless,dancerock,https://www.allmusic.com/album/relentless-mw0000915548,whole album,AllMusic Dance-Rock metadata despite no reliable rock-guitar evidence
+psb-relentless,breaks,https://djmag.com/news/pet-shop-boys-announce-30th-anniversary-edition-relentless,some tracks,DJ Mag explicitly calls tracks breaks-influenced; **new genre token**; not silently substituted with breakbeat
+psb-bilingual,synthpop,https://www.chartsurfer.de/artist/pet-shop-boys/bilingual-album_fruevp.html,whole album,1996 original pressing explicitly style Synth-pop
+psb-bilingual,dancepop,https://www.allmusic.com/album/bilingual-mw0000072678,whole album,AllMusic Dance-Pop style
+psb-bilingual,alternativedance,https://www.allmusic.com/album/bilingual-mw0000072678,whole album,AllMusic Alternative Dance style
+psb-bilingual,dancerock,https://www.allmusic.com/album/bilingual-mw0000072678,whole album,"AllMusic Dance-Rock style, only generic database genre"
+psb-bilingual,house,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Metamorphosis and Before described as house
+psb-bilingual,disco,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Saturday Night Forever disco-pop; Before also soft disco
+psb-bilingual,latinpop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Flamenco-tinged dance-pop/samba Latin pop context; album not fully Latin pop
+psb-bilingual,bossanova,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,one track,It Always Comes As a Surprise called a bossa nova track
+psb-bilingual,samba,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,"Single and Se a Vida É use samba rhythm, also SheBoom live drums"
+psb-bilingual,flamenco,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,one track,"Discoteca includes flamenco-tinged elements, not flamenco performance"
+psb-nightlife,synthpop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,whole album,Electronic keyboard-centered PSB pop contrasts with orchestral tracks
+psb-nightlife,dancepop,https://www.allmusic.com/album/nightlife-mw0000255194,whole album,AllMusic Dance-Pop style
+psb-nightlife,alternativedance,https://www.allmusic.com/album/nightlife-mw0000255194,whole album,AllMusic Alternative Dance style
+psb-nightlife,dancerock,https://www.allmusic.com/album/nightlife-mw0000255194,whole album,"AllMusic Dance-Rock style, generic classification"
+psb-nightlife,trance,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Contemporary/retrospective criticism identifies club-trance structures
+psb-nightlife,disco,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,New York City Boy disco throwback
+psb-nightlife,orchestralpop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Craig Armstrong strings and orchestral arrangements across quiet songs; album credits confirm
+psb-nightlife,downtempo,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,I Don’t Know What You Want... compared to downtempo electronica
+psb-nightlife,electronica,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,some tracks,Same song explicitly described as downtempo electronica
+psb-nightlife,contemporarypoprock,https://www.allmusic.com/album/nightlife-mw0000255194,whole album,"AllMusic Contemporary Pop/Rock style, generic taxonomy"

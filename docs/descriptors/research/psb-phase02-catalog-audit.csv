@@ -1,0 +1,25 @@
+year,title,album_id,type,in_seed_or_catalog,proposed_phase,action,verification_url,note
+1986,Please,psb-please,studio,no,01,add,https://www.petshopboys.co.uk/product/album/please,First LP
+1986,Disco,psb-disco,remix,no,01,add,https://www.petshopboys.co.uk/product/compilation/disco-the-remix-album,Discography page labels Compilation; musical format is remix; intentional exception
+1987,Actually,p-actually,studio,yes,SKIP,already described,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/docs/descriptors/psb.csv,Do not duplicate existing descriptor
+1988,Introspective,psb-introspective,studio,no,01,add,https://www.petshopboys.co.uk/product/album/introspective,Third studio album
+1990,Behaviour,p-behaviour,studio,yes,01,already listed; descriptor missing,https://www.petshopboys.co.uk/product/album/behaviour,Preserve short seed id
+1993,Very,p-very,studio,yes,02,already listed; descriptor missing,https://www.petshopboys.co.uk/product/album/very,Preserve short seed id
+1993,Relentless,psb-relentless,studio,no,02,add,https://www.petshopboys.co.uk/product/album/relentless,Original 1993 six-song companion album; 2023 remaster not a new work; no collection duplication
+1996,Bilingual,psb-bilingual,studio,no,02,add,https://www.petshopboys.co.uk/product/album/bilingual,1996 Latin-influenced pop album; preserve original 1996 year
+1999,Nightlife,psb-nightlife,studio,no,02,add,https://www.petshopboys.co.uk/product/album/nightlife,"1999 studio album; album-wide Pet Shop Boys billing, Kylie duet guest only"
+2001,Closer to Heaven,psb-closertoheaven,soundtrack,no,03,add,https://www.petshopboys.co.uk/product/album/closer-to-heaven,Original cast album; document cast billing and performances before importing
+2002,Release,psb-release,studio,no,03,add,https://www.petshopboys.co.uk/product,
+2006,Fundamental,psb-fundamental,studio,no,03,add,https://www.petshopboys.co.uk/product,
+2009,Yes,psb-yes,studio,no,04,add,https://www.petshopboys.co.uk/product,
+2011,The Most Incredible Thing,psb-themostincrediblething,soundtrack,no,04,add,https://www.petshopboys.co.uk/product/album/most-incredible-thing,Ballet score; not a live album
+2012,Elysium,psb-elysium,studio,no,04,add,https://www.petshopboys.co.uk/product,
+2013,Electric,psb-electric,studio,no,05,add,https://www.petshopboys.co.uk/product,
+2016,Super,psb-super,studio,no,05,add,https://www.petshopboys.co.uk/product,
+2019,Agenda,psb-agenda,ep,no,05,add,https://www.petshopboys.co.uk/product/album/agenda,Four new standalone tracks; political EP
+2019,Musik,psb-musik,ep,no,06,add,https://www.petshopboys.co.uk/product/collaboration/musik,Exact original billing: Frances Barber/Pet Shop Boys; Barber performs lead vocals
+2020,Hotspot,psb-hotspot,studio,no,06,add,https://www.petshopboys.co.uk/product,
+2020,My Beautiful Laundrette,psb-mybeautifullaundrette,soundtrack,no,06,add,https://www.petshopboys.co.uk/product/album/my-beautiful-laundrette,Stage incidental-score EP released CD in 2020
+2023,Lost,psb-lost,ep,no,07,add,https://www.petshopboys.co.uk/product/album/lost,Original EP of 2015 demos; not a compilation
+2024,Nonetheless,p-nonetheless,studio,yes,07,already listed; descriptor missing,https://www.petshopboys.co.uk/product,Preserve short seed id
+2026,A man from the future,psb-amanfromthefuture,studio,no,07,add,https://www.petshopboys.co.uk/news/2026-10-09/a-man-from-the-future-4,New studio-recorded concept work; recast as soundtrack only if catalogue policy decides
