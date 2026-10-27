@@ -1,0 +1,30 @@
+﻿album_id,genre,source,scope,url,evidence_note
+placebo-placebo,alternativerock,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,AllMusic style: alternative pop/rock; also Molko self-identifies as alternative band
+placebo-placebo,indierock,1996molko,whole album,https://www.vice.com/en/article/rank-your-records-brian-molko-skeptically-rates-placebos-eight-lps/,Molko directly calls debut the band’s indie-rock record
+placebo-placebo,neoglam,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,AllMusic genre style: neo-glam
+placebo-placebo,postpunk,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,Reviewer names post-punk elements
+placebo-placebo,artrock,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,Reviewer explicitly names art rock
+placebo-placebo,punkrock,1996molko,whole album,https://www.vice.com/en/article/rank-your-records-brian-molko-skeptically-rates-placebos-eight-lps/,Molko describes a fast punky alternative trio; borderline vs punk rock token
+placebo-placebo,poprock,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,AllMusic Pop/Rock broad classification
+placebo-placebo,rock,1996allmusic,whole album,https://www.allmusic.com/album/placebo-mw0000648920,AllMusic rock umbrella classification
+placebo-placebo,britpop,1996allmusic,texture,https://www.allmusic.com/album/placebo-mw0000648920,AllMusic style tag; Molko explicitly denies belonging to the Britpop movement
+placebo-withoutyouimnothing,alternativerock,1998allmusic,whole album,https://www.allmusic.com/album/without-you-im-nothing-r380605,AllMusic alternative pop/rock and alternative indie rock styles
+placebo-withoutyouimnothing,neoglam,1998allmusic,whole album,https://www.allmusic.com/album/without-you-im-nothing-r380605,AllMusic neo-glam
+placebo-withoutyouimnothing,glamrock,1998la,whole album,https://www.latimes.com/archives/la-xpm-1998-nov-28-ca-48385-story.html,Contemporary review explicitly calls album glam-rock rooted
+placebo-withoutyouimnothing,postpunk,1998jam,whole album,https://www.placeborussia.ru/press/press98-99/jammusicnov98,Molko explicitly calls his second album post-punk
+placebo-withoutyouimnothing,indierock,1998allmusic,whole album,https://www.allmusic.com/album/without-you-im-nothing-r380605,AllMusic alternative/indie rock
+placebo-withoutyouimnothing,electrorock,1998allmusic,some tracks,https://www.allmusic.com/album/without-you-im-nothing-r380605,"Brick Shithouse specifically called electro-rock, not applied to every track"
+placebo-withoutyouimnothing,punkrock,1998allmusic,texture,https://www.allmusic.com/album/without-you-im-nothing-r380605,AllMusic identifies 1970s punk references; not a full punk-rock album
+placebo-withoutyouimnothing,poprock,1998wash,whole album,https://www.washingtonpost.com/archive/lifestyle/1998/12/11/placebo-without-you-im-nothing-virgin/649be287-be09-42ab-ae71-86ee6112c0d9/,Washington Post explicitly calls it glam-inflected pop-rock
+placebo-withoutyouimnothing,britpop,1998allmusic,texture,https://www.allmusic.com/album/without-you-im-nothing-r380605,AllMusic style tag; noted as contentious with self-identified post-punk
+placebo-withoutyouimnothing,rock,1998allmusic,whole album,https://www.allmusic.com/album/without-you-im-nothing-r380605,Core parent rock idiom
+placebo-blackmarketmusic,alternativerock,2000allmusic,whole album,https://www.allmusic.com/album/black-market-music-r501078,AllMusic alternative pop/rock and alt/indie classification
+placebo-blackmarketmusic,neoglam,2000allmusic,whole album,https://www.allmusic.com/album/black-market-music-r501078,AllMusic neo-glam style
+placebo-blackmarketmusic,poppunk,2000allmusic,whole album,https://www.allmusic.com/album/black-market-music-r501078,AllMusic pop punk style
+placebo-blackmarketmusic,powerpop,2000pitchfork,whole album,https://pitchfork.com/reviews/albums/6327-black-market-music/,Pitchfork describes the band’s power-pop style on this release
+placebo-blackmarketmusic,indierock,2000allmusic,whole album,https://www.allmusic.com/album/black-market-music-r501078,AllMusic alt/indie rock style
+placebo-blackmarketmusic,punkrock,2000nme,some tracks,https://www.nme.com/news/music/placebo-43-1396767,NME reports the short sharp punk-pop direction on Special K and Days Before You Came
+placebo-blackmarketmusic,electrorock,2000dis,some tracks,https://www.drownedinsound.org/archive-album-review-placebo-black-market-music-13/,Review explicitly reports added electronics alongside guitars; umbrella reviewer description
+placebo-blackmarketmusic,rock,2000pitchfork,whole album,https://pitchfork.com/reviews/albums/6327-black-market-music/,Pitchfork lists genre rock
+placebo-blackmarketmusic,industrialfunk,2000pitchfork,some tracks,https://pitchfork.com/reviews/albums/6327-black-market-music/,Pitchfork describes Taste in Men industrial funk; does not establish instrument model
+placebo-blackmarketmusic,hiphop,2000dis,some tracks,https://www.drownedinsound.org/archive-album-review-placebo-black-market-music-13/,"Guest rap in Spite & Malice; hip hop is track-local, not album main sound"

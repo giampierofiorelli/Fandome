@@ -1,0 +1,11 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,notes
+placebo-placebo,Placebo,1996,studio,existing,none,Original album; no anniversary edition duplicate
+placebo-withoutyouimnothing,Without You I’m Nothing,1998,studio,existing,none,"Keep original release, not Bowie 1999 single as separate album"
+placebo-blackmarketmusic,Black Market Music,2000,studio,existing,none,"12-track original core album, different reissues and bonus tracks"
+placebo-sleepingwithghosts,Sleeping with Ghosts,2003,studio,existing,none,Future phase
+placebo-meds,Meds,2006,studio,existing,none,Future phase
+placebo-battleforthesun,Battle for the Sun,2009,studio,missing,add,Future phase 02; missing from Fandome catalog.ts
+placebo-loudlikelove,Loud Like Love,2013,studio,missing,add,Future phase 03; missing from Fandome catalog.ts
+placebo-neverletmego,Never Let Me Go,2022,studio,existing,none,Future phase 03
+placebo-placeborecreated,Placebo RE:CREATED,2026,remix,not included,exclude,Released 19 June 2026; reworks debut masters and the same songs; deliberately exclude to avoid recycled tracks
+,This Search For Meaning,2025,compilation,not included,exclude,Documentary package features existing Never Let Me Go and concert recordings; not a new studio soundtrack album

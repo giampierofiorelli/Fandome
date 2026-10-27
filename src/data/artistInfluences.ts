@@ -126,6 +126,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Otis Redding', 'John Coltrane', 'Burt Bacharach', 'Claude Debussy', 'Dmitri Shostakovich', 'Miles Davis', 'Gil Evans', 'John Cage', 'Maurice Ravel', 'Ornette Coleman', 'Olivier Messiaen', 'John Lee Hooker', 'Béla Bartók', 'Erik Satie', 'Darius Milhaud'],
     source: 'Mark Hollis: Guardian 2019 (1982 interviews); Pitchfork 2019; Jason Cowley, Out of Time (1998 interview); Classic Pop, The Colour of Spring',
   },
+  placebo: {
+    names: ['Sonic Youth', 'Pixies', 'PJ Harvey', 'David Bowie', 'Joy Division', 'The Cure', 'Nick Cave', 'Dead Kennedys', 'Iggy Pop', 'The Stooges'],
+    source: 'Brian Molko: Hot Press (Androgyny in the UK); The Independent (All made up with somewhere to go); Jam! Music 1998 interview (The Cure, Nick Cave, Dead Kennedys, PJ Harvey)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
