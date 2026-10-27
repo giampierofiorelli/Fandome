@@ -216,3 +216,13 @@ high (5); Like a Prayer and the rest are 3. Applied to Madonna; the guide's defi
 values were scored with the earlier, launch-oriented definition and need a review under this one (ROADMAP).
 
 - "Similar sound: acoustic" no longer shown for loud electric rock with no electronics (Nevermind, Ten): low `electronic` reads "acoustic" only when neither album leans on electric instruments, otherwise "live-band" (Oct 2026).
+
+### Documented collaborations as a reason on artist pages (Oct 2026)
+Owner asked for Battiato's foreign neighbours from local scenes, documented. Several are collaborations (Los Planetas'
+singer adapted Apriti sesamo into Spanish; Sepideh Raissadat sings on Fleurs 2; Hossam Ramzy plays on Caffè de la Paix),
+which the engine could not see: their catalogues sound far from Battiato's. New general rule: `src/data/collaborations.ts`
+lists documented collaborations (one worked on the other's record; covers and shared bills don't count), both ways.
+On "If you like this artist" a collaborator gets one of two extra places (beyond the three link places), even below the
+score cut, with the collaboration as the reason; a collaborator who makes the list on sound anyway keeps that place with
+the collaboration as its reason; collaborators from a local scene abroad come first (discovery rule). Pages without
+collaborations are unchanged (checked Madonna, RHCP).

@@ -7,6 +7,7 @@
 // Lists are then re-ranked for variety (MMR), push away what you said you don't like, and give a
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
+import { collaborationOf } from '../data/collaborations'
 import { ARTIST_ALIASES } from '../data/artistAliases'
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
@@ -748,7 +749,8 @@ export function similarArtists(
     const standingGap = mine === undefined ? 0 : Math.max(0, mine - (standing(theirAlbums) ?? 3) - 1)
     const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
     const why = best?.c.reasons[0] ?? c.reasons[0]
-    if (score < 0.3 || !why || !best) continue
+    // A documented collaboration is kept below the cut: it is a reason of its own (see linkOf).
+    if (!why || !best || (score < 0.3 && !collaborationOf(artistId, other))) continue
     const reason = /^(Both|Similar sound|Close genres)/.test(why) ? `${best.a.title} and ${best.b.title}: ${lowerFirst(why)}` : why
     // Same commercial rule as for albums, on the artists' averages; only a named influence can lift it (below).
     // An artist is a packaged act when their albums average mainstream 4.5+ and critics' standing below 4.5.
@@ -775,6 +777,8 @@ export function similarArtists(
     const them = s.profile.artist
     const theirAlbums = profilesOf(albumIdsOf(s.artistId))
     if (includesName(named, them)) return { rank: 0, reason: `Influenced by ${them}` }
+    const collab = collaborationOf(artistId, s.artistId)
+    if (collab) return { rank: 1, reason: collab.what }
     if (share(myAlbums, (a) => includesName(a.influencedBy, them)) >= SHARE) {
       const drew = myAlbums.find((a) => includesName(a.influencedBy, them))!
       return { rank: 2, reason: `${drew.title} draws on ${them}` }
@@ -790,8 +794,19 @@ export function similarArtists(
     return null
   }
   const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link && (!x.s.tooCommercial || x.link.rank < 3)).sort((x, y) => x.link!.rank - y.link!.rank || y.s.score - x.s.score)
-  const reserved = linked.slice(0, 3).map(({ s, link }) => ({ ...s, reason: link!.reason }))
-  const rest = scored.filter((s) => !s.tooCommercial && !reserved.some((r) => r.artistId === s.artistId))
+  // Documented collaborations (rank 1) get up to two places of their own on top of the three link places, so a
+  // meeting the sound alone would never surface stays visible (Battiato and Los Planetas, Sepideh Raissadat).
+  // Other links compete for the three places as before. Only collaborations may come from below the cut.
+  const isCollab = (x: (typeof linked)[number]) => x.link!.rank === 1
+  // A collaborator who makes the list on sound anyway keeps that place, with the collaboration as its reason.
+  const linkPlaces = linked.filter((x) => !isCollab(x) && x.s.score >= 0.3).slice(0, 3)
+  const bySound = scored.filter((s) => !s.tooCommercial && s.score >= 0.3 && !linkPlaces.some((r) => r.s.artistId === s.artistId))
+  const onSound = new Set(mmr(bySound, (x, y) => genreSim(x.profile, y.profile), limit - linkPlaces.length).map((s) => s.artistId))
+  // Discovery rule: a collaborator from a local scene in another country comes first.
+  const collabs = linked.filter(isCollab).sort((x, y) => Number(!x.s.newCountry) - Number(!y.s.newCountry) || y.s.score - x.s.score)
+  const reserved = [...linkPlaces, ...collabs.filter((x) => !onSound.has(x.s.artistId)).slice(0, 2)].map(({ s, link }) => ({ ...s, reason: link!.reason }))
+  const collabReason = new Map(collabs.map((x) => [x.s.artistId, x.link!.reason]))
+  const rest = bySound.filter((s) => !reserved.some((r) => r.artistId === s.artistId)).map((s) => (collabReason.has(s.artistId) ? { ...s, reason: collabReason.get(s.artistId)! } : s))
   return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, tooCommercial: _t, ...s }) => s)
 }
 

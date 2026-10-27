@@ -617,3 +617,155 @@ Sources
 - https://it.wikipedia.org/wiki/Armando_Trovajoli, https://en.wikipedia.org/wiki/Armando_Trovajoli: other works, jazz-based style.
 Doubts: instrumentation poorly documented (only whistle); language empty (wordless vocal group per the Swingle comparison).
 New token: `latinjazz` (parents: jazz, latin).
+
+## Fourth batch: foreign neighbours of Battiato from local scenes (owner, Oct 2026)
+Links checked by the research agent: Los Planetas (J co-adapted Apriti sesamo into Spanish, Ábrete sésamo 2013: Público, Página/12), Tom Zé and Serge Gainsbourg (Simon Reynolds, 4Columns 2017), Ash Ra Tempel (Battiato played supporting shows with Tangerine Dream and Ash Ra Tempel: OndaRock monograph), Sepideh Raissadat (sings on Fleurs 2, Il venait d'avoir 18 ans), Hossam Ramzy (percussion on Caffè de la Paix track 2, Fogh in Nakhal: Discogs EMI 1062409), Léo Ferré (Col tempo sai on Fleurs 3 is a cover of Avec le temps). Credits: Anwar is by Ensemble Marâghî feat. Sepideh Raissadat; Immortal Egypt by Phil Thornton & Hossam Ramzy (coBilled). Claude's fixes: Los Planetas' Beef and Robyn Hitchcock dropped (borrowed melodies); Anwar language fa|tr. Rejected: Circle, Acid Mothers Temple, Los Natas (they only covered Battiato on a tribute).
+
+## ashratempel-schwingungen
+
+# Ash Ra Tempel, Schwingungen (1972)
+
+## Link to Battiato (checked: holds, but the source differs)
+I could not find the Auralcrave article (search on auralcrave.com returned only a Tangerine Dream *Zeit* piece without Battiato). The fact itself is confirmed by OndaRock's Battiato monograph: https://ondarock.com/monographs/franco-battiato/: in the early 1970s Battiato played "shows supporting Brian Eno, Magma, Tangerine Dream, Ash Ra Tempel, John Cale and Nico". Note: OndaRock says supporting shows, not a joint tour. A reader comment elsewhere mentions a Feb 1974 Roundhouse date with Ash Ra Tempel (weak, not used). Cite OndaRock instead of Auralcrave.
+
+## Sources
+- en-Wikipedia: https://en.wikipedia.org/wiki/Schwingungen: second album, Ohr 1972; genres krautrock, psychedelic rock; producer Rolf-Ulrich Kaiser (Dieter Dierks engineer, not a producer); personnel Hartmut Enke (guitar, bass, electronics), Manuel Göttsching (guitar, organ, electronics, choir), Wolfgang Müller (drums, vibraphone), Uli Popp (bongos), Matthias Wehler (alto sax), John L. (vocals, jaw harp, percussion); AllMusic 4.5/5. Opening "Light" is "heavily inspired by Peter Green's playing on Fleetwood Mac's 'Albatross'" (David Stubbs, *Future Days: Krautrock and the Birth of a Revolutionary New Music*, 2015) → influenced_by Fleetwood Mac ("Albatross" was a non-album single, so no album in brackets).
+- George Starostin, Only Solitaire (2011): http://only-solitaire.blogspot.com/2011/08/ash-ra-tempel-schwingungen.html: John L.'s delivery owes a lot to Can's singers (Mooney, Suzuki); bluesy "we are all one" mantra recalls Eric Burdon & the Animals; part free-jazz, part cosmic jam; "space rock"; phasing and feedback; "Suche & Liebe" first half all chimes, bells and Mellotrons, then tribal drums and a "Pink Floydian" jam (→ sounds_like Can, Eric Burdon & the Animals, Pink Floyd; genres spacerock, freejazz; instruments mellotron, bells, chimes; production phasing, feedback). Vocals sung in English (→ language en; the brief suggested de, but the lyrics quoted are English).
+- ProgArchives (via search summary): https://www.progarchives.com/album.asp?id=3582: a reviewer compares the sound to Pink Floyd's *Meddle* era (→ "Pink Floyd (Meddle)"); "Suche" built on vibraphone and organ.
+- Julian Cope, *Krautrocksampler* (1995), quoted in MG.ART reissue notes: "Beware of Schwingungen!", side two as the sound of heaven, "a gift from the Gods".
+
+## Values
+- voice left empty (reviewers only say John L. yells and mutters, "off-key"). lyrics spiritual (the "we are all one" mantra; Cope's "sound of heaven"), low confidence.
+- No new tokens.
+
+## gainsbourg-histoiredemelodynelson
+
+# Serge Gainsbourg, Histoire de Melody Nelson (1971)
+
+## Link to Battiato (checked: holds)
+Same Reynolds piece: 4Columns, 2017, https://4columns.org/reynolds-simon/franco-battiato: "a better analogy might be with Brazil's Tom Zé or France's Serge Gainsbourg". Critic's comparison of the artists, not an influence.
+
+## Sources
+- en-Wikipedia: https://en.wikipedia.org/wiki/Histoire_de_Melody_Nelson: released 24 Mar 1971, Philips; recorded Marble Arch (London) and Studio des Dames (Paris); producer Jean-Claude Desmarty; arranged and co-written by Jean-Claude Vannier; genres French pop, avant-funk; funk-style electric guitar and bass, spoken word and Sprechgesang vocals, lush strings and choirs; Jean-Luc Ponty electric violin on track 6. Reception: Metacritic 96, AllMusic 5, Pitchfork 10, PopMatters 10 ("a blueprint for trip hop"), A.V. Club A, Pitchfork 70s #21, RS France #4. Story: narrator, a 14-year-old girl, sex, her death in a plane crash, cargo cult.
+- fr-Wikipedia: https://fr.wikipedia.org/wiki/Histoire_de_Melody_Nelson: genres pop, rock symphonique, art rock, jazz-rock, jazz-funk; Gainsbourg mostly narrates instead of singing; slowed-down funk bass and drums; ostinato; 2011 reissue research credits: Alan Parker (electric guitar), Dave Richmond (bass), Vannier (piano), Dougie Wright (drums, presumed), Marc Chantereau (timpani, track 7), Jean-Pierre Sabar (harmonium, track 7), Georges Barboteu (horn solo, track 4), Jeunesses musicales de France choir; strings recorded in Paris with Opéra de Paris players over the London rhythm sessions (→ `overdubbing`, `stringarrangements`). Vannier's account: Gainsbourg wrote the story after hearing the music and strings; homage to Nabokov; inspired by Heredia's sonnets (literary, not musical: not listed as influences). Gold 1983; commercial failure on release.
+- Europe 1 (influence on later artists): https://www.europe1.fr/culture/ce-que-vous-ne-savez-pas-sur-lalbum-histoire-de-melody-nelson-3000917
+- AVCesar review (10/10, French): https://www.avcesar.com/critique/serge-gainsbourg-histoire-de-melody-nelson-2701: funk bass, violins and choirs, spoken texts.
+
+## Values
+- mood 1 (Pitchfork: "the black spaces of a man's interior"; death and obsession), theatrical 4 (narrated concept suite, orchestra and choir), experimental 4 ("nothing else in rock"), groove 2 (slowed funk), lyrics storytelling|sensuality|love|heartbreak|spiritual (the final "spiritual quest" of Cargo culte, fr-Wikipedia).
+- influenced_by empty: no documented musical influence for this album. sounds_like empty: no source names a sonic peer.
+
+## New tokens
+- genres `frenchpop` (en-Wikipedia "French pop"; suggested parents: pop, chanson) and `jazzfunk` (fr-Wikipedia "jazz-funk"; parents: jazz, funk).
+
+## hossamramzy-immortalegypt
+
+# Hossam Ramzy, Immortal Egypt (1998)
+
+## Link to Battiato (VERIFIED: holds)
+Hossam Ramzy is credited on Battiato's *Caffè de la Paix* (EMI, 1993): **Percussion, track 2 only ("Fogh in Nakhal")**. Checked in the Discogs database (API, release 1062409, Italian EMI CD): "Hossam Ramzy | Percussion | tracks 2"; notes: recorded March 1993 at Real World Studios, Bath, and June 1993 at Morning Studio, Milan; track 2 adapted from a traditional Iraqi song (Nizar Ismail plays oud on it). https://www.discogs.com/release/1062409-Franco-Battiato-Caff%C3%A9-De-La-Paix. en-Wikipedia lists him among the album's collaborators: https://en.wikipedia.org/wiki/Caff%C3%A8_de_la_Paix. So the credit is real but limited to one track: he is a guest session player, not a collaborator.
+
+## Doubt: artist credit
+The album is credited to **Phil Thornton & Hossam Ramzy** (New World Music NWCD 455), all tracks composed, arranged and produced by both. Third album in their series after *Pharaoh* and *Eternal Egypt*.
+
+## Sources
+- Discogs (API, release 1531367 and 2005 reissue 3685832): https://www.discogs.com/release/1531367-Phil-Thornton-Hossam-Ramzy-Immortal-Egypt: full credits: Thornton keyboards, synths (vocoder, E-bow, electric guitars), didgeridoo, drum programming; Ramzy Egyptian/world percussion and drums; Mohamed Ali ney; Ahmed Abdel Fattah quarter-tone accordion; Abdalla Helmy kawala flute; Mahmoud Serour violin; Mamdouh El Gebaly and Chalf Hassan oud (Hassan also keyboards); Mohamed Baher mizmar; Sayed El Sha-Er and Shaker Abdullatif rebaba; Mohamed Abo El Khair vocals; Jan Thornton analog synth programming; Grant Young fretless and slap bass; Darren Green didgeridoo. Recorded in Sussex, Cairo and London; mixed Feb–Mar 1998. Discogs styles on the 2005 release: Tribal, Downtempo, Fusion.
+- Phil Thornton's site: https://www.philthornton.com/web/Albums/immortalegypt.php: Egyptian dance/Western contemporary theme; a week of overdubs in Cairo (Aug 1997), musicians improvising over short loops; further overdubs in London and Sussex; analog synth textures; per-track rhythms (saiidi, maqsoum-type, malfuf, zaar) → production `overdubbing|synthprogramming`.
+- AllMusic review by Adam Greenberg (reproduced on Fishpond): https://www.fishpond.com/Music/Immortal-Egypt-Thornton-Phil-Ramzy-Hossam-Recorded-By-Hossam-Ramzy-Recorded-By/0767715045527: "thoroughly groovable collection of dub work", "unbreakable beat", "standard world beat-type album... pretty good", not authentic (→ genres worldbeat, dub; groove 3). Store category New Age (→ newage, weak). Amazon editorial: probably too gentle for dance clubs.
+
+## Values
+- language empty: one vocalist credited, language undocumented; voice `instrumental` as the main mode. lyrics empty.
+- mood left empty. importance empty (no source on its place in Ramzy's career).
+
+## New tokens
+- instruments `ney` (also used for Anwar), `rebab` (Egyptian two-string fiddle; parent: strings), `mizmar` (Egyptian shawm; parent: woodwinds). Kawala entered as `flute`.
+
+## leoferre-amouranarchie
+
+# Léo Ferré, Amour Anarchie (1970)
+
+## Link to Battiato (checked: holds; a cover, not an influence)
+Battiato covered "Avec le temps" in Italian as "Col tempo sai" on *Fleurs 3* (Sony, 2002), track 5 (writers Léo Ferré, Enrico Medail, Gian Piero Simontacchi): https://en.wikipedia.org/wiki/Fleurs_3. Note: "Avec le temps" was recorded in October 1970 for vol. 2 but left off the original LP and released as a 1971 single; it was added to vol. 2 only in the 2013 and 2021 editions (leo-ferre.com, fr-Wikipedia).
+
+## Sources
+- fr-Wikipedia: https://fr.wikipedia.org/wiki/Amour_Anarchie: two volumes (May and Nov 1970), double album Dec 1970, Barclay; recorded Jan–Oct 1970, Studios Barclay; genre chanson française; Rolling Stone France 2010: 24th best French rock album; Les Inrocks 2017: 28th in the 100 best French albums. Musicians: Zoo on "Le Chien" and "La The Nana" (electric organ, piano, electric guitar, trombone, tenor/alto/soprano/baritone saxes, flute, electric violin, bass, drums); Lionel Gali solo violin and Danièle Licari voice on "L'Amour fou"; arrangements and musical direction Jean-Michel Defaye; supervision Richard Marsan.
+- Official site, vol. 1: https://leo-ferre.com/amour-anarchie: "Supervision & réalisation artistique: Richard Marsan" (→ producers); Alaric Perrolier (2022): love and revolution intertwined after May 68, crude, invective style, Apollinaire/Hugo/Baudelaire heritage (literary, not listed as musical influences), "coup de maître".
+- Official site, vol. 2: https://leo-ferre.com/amour-anarchie-vol-2: same team; Ferré broke the standard song length (Le Chien ~7 min, Psaume 151 12 min); Barclay pushed The Nana as the commercial single; vol. 1 sales broadened his audience; Avec le temps and L'Adieu (breakup songs) left off.
+- Nightfall review (via search snippet, page behind Cloudflare): https://fp.nightfall.fr/index_13163_leo-ferre-amour-anarchie-vol-1.html: "Le Chien" drops verse/chorus/rhyme; with Zoo "closer to progressive rock" (→ genre prog).
+
+## Values
+- voice spoken|powerful (declaimed "Le Chien", "cause et gueule comme un chien"); production stringarrangements (Defaye orchestra). Licari's solo voice on L'Amour fou is credited but its type is undocumented, so no vocal-production token.
+- lyrics love|sensuality|political|social|heartbreak.
+- No new tokens.
+
+## losplanetas-unasemanaenelmotordeunautobus
+
+# Los Planetas, Una semana en el motor de un autobús (1998)
+
+## Link to Battiato (checked: holds)
+J (Juan Ramón Rodríguez) helped adapt the Spanish lyrics of Battiato's *Apriti sesamo* (2012), released in Spanish as *Ábrete sésamo* (Mercury, 2013), with Manu Ferrón.
+- Público: https://www.publico.es/culturas/franco-battiato-enigma-revoluciono-musica.html (Spanish version adapted with the help of J of Los Planetas and Manu Ferrón)
+- Página/12, 8 June 2013: https://www.pagina12.com.ar/diario/suplementos/espectaculos/3-28874-2013-06-08.html (names J of Los Planetas as one of the translators and quotes his version of "Eri con me")
+- ProgArchives lists the 2013 Spanish CD: https://progarchives.com/album.asp?id=54109
+
+## Sources
+- es-Wikipedia (raw text read): https://es.wikipedia.org/wiki/Una_semana_en_el_motor_de_un_autob%C3%BAs: release date 13 Apr 1998, RCA-BMG, recorded at Zabriskie Point NYC (Jan 1998), producer Kurt Ralske (recorded and produced by him; mixing by Ángel Martos and Ralske, so only Ralske as producer). Infobox genres indie rock, shoegazing, psychedelic pop. Lineup J, Florent, Kieran Stephen (bass), Eric Jiménez (drums) + Banin (keyboards). Florent (via EFE/eldiario.es 2013): all instruments recorded at once, "symbiosis of melody and distortion... guitars, distortions and ambiences" → production `liverecording|distortion`. Reception: Rockdelux best of 1998, #2 of the 90s, #18 Spanish album of the 20th century; Babelia #11; charts.
+- Influences (es-Wikipedia, citing J's own radio show "Emisión telepática", Radio Gladys Palmera, 30 May 2013, songs that inspired the album): Magnetic Fields "Smoke Signals" (*Distant Plastic Trees*) → melody of Segundo premio; Hüsker Dü "All This I've Done for You" (*Candy Apple Grey*) → sound of Desaparecer; Sunny Day Real Estate "5/4" (second, self-titled album) → Parte de lo que me debes; Superchunk "Skip Steps 1 & 3" (*No Pocky for Kitty*) → Cumpleaños total; New Order "Bizarre Love Triangle" (*Brotherhood*) → melody of Línea 1; Robyn Hitchcock and the Egyptians "Glass" (*Fegmania!*) → melody of La copa de Europa; Beef "Rebelde sin caspa" (*Tongues*, 1995) → melody of Cumpleaños total.
+  - EXCLUDED as lyric quotations, not influences: Rain Parade (lyrics taken from "Kaleidoscope"), The Chills (phrases of "Rolling Moon"), Pale Saints ("Blue Flower" inspired part of the lyrics; borderline, left out). Beef and Hitchcock are "melody based on": kept because J lists them among the songs that inspired the record, but they are close to borrowings; drop them if the owner reads them as quotations.
+- LaFonoteca review (5/5): https://www.lafonoteca.net/disco/una-semana-en-el-motor-de-un-autobus: Segundo premio's final string-arrangement coda (→ `strings|stringarrangements`); Desaparecer "powerpopera", like Pavement or the Lemonheads; Parte de lo que me debes psychedelic, drinking from Chicago/Constellation post-rock; La copa de Europa in the line of Spiritualized (→ sounds_like and genres powerpop, postrock); themes heartbreak, summer love jealousy, inner search/rebirth, drugs (Laboratorio mágico, Toxicosmos). Also says Segundo premio's melody is copied from Étienne Daho's "Promesses" (critic's claim of borrowing, not used).
+- El País Tentaciones 2018 (via es-Wikipedia citation): "the most important album of Spanish indie".
+- Ratings in es-Wikipedia infobox: AllMusic 4/5, LaFonoteca 5/5, Mondosonoro 5/5.
+
+## Values
+- energy 3, mood 1 (bile, rage, "sinister" B-side; heartbreak), experimental 3 (post-rock and shoegaze textures, nine-minute closer), polish 3 (LaFonoteca: care for every sound detail, but live-band recording), groove 1.
+- voice left empty: no source describing J's voice on this record.
+- No new tokens.
+
+## sepideh-anwar
+
+# Sepideh Raissadat, Anwar (2010)
+
+## Link to Battiato (checked: holds)
+She sings with Battiato on track 9 of *Fleurs 2* (2008), "Il venait d'avoir 18 ans" (Pascal Auriat).
+- en-Wikipedia, Fleurs 2: https://en.wikipedia.org/wiki/Fleurs_2 (track 9 "with Sepideh Raissadat")
+- AllMusic review of Fleurs 2 names her among the five duet partners: https://www.allmusic.com/album/fleurs-2-mw0000811351
+- Tirgan biography: performances in Europe with Franco Battiato: https://tirgan.ca/b/2013/programs/music/sepideh-raissadat-.html
+
+## Doubt: artist credit
+The album is credited to **Ensemble Marâghî** (Apple Music, Deezer, Felmay), directed by Giovanni De Zorzi (ney), with Sepideh Raissadat (voice, setar), Giovanni Tufano (oud, frame drum), Francesco Clera (percussion / tombak, bendir). She is the featured singer, not the leading artist. Full title: *Anwâr. From Samarqand to Constantinople on the Footsteps of Marâghî*, Felmay FY 8172.
+
+## Sources
+- Deezer tracklist: https://www.deezer.com/us/album/3813381: Rast kâr and nakış beste by Abd ul-Qadir Marâghî; şarkı by Hafız Post; Ferahfeza pesrev and selâms by Dede Efendi; a Segâh ilâhi (hymn) → lyrics `spiritual` (Mevlevi selâms, ilâhi); Ottoman classical repertoire → genre.
+- Apple Music: https://music.apple.com/us/album/anwar-from-samarkand-to-constantinople-on-footsteps/398305971 (Felmay 2010; store genre "New Age", not used).
+- Giovanni De Zorzi, Ca' Foscari IRIS record: https://iris.unive.it/handle/10278/5000053 and maqamproject bio: https://www.maqamproject.uk/giovanni-de-zorzi/ (Ottoman and Central Asian classical/Sufi music; ney soloist with Ensemble Marâghî).
+- Felmay description and The Wire #321 (Nov 2010), via Amazon listing and search summaries (pages could not be fetched directly): a musical journey following Marâghî from Samarkand to Constantinople and the Ottoman tradition; Raissadat's "impressively strong and fluent singing" (→ voice `powerful`); formal, stately mood that loosens in the closing instrumental improvisation. Amazon: https://www.amazon.com/Anwar-Ensemble-Maraghi/dp/B0043YH2G4
+- Sepideh Raissadat, en-Wikipedia: https://en.wikipedia.org/wiki/Sepideh_Raissadat (Persian classical singer, setar; lists the album, Felmay, 1 Sept 2010).
+
+## Values / doubts
+- language fa as given in the brief, not verified: Marâghî's kârs and the Mevlevi selâms are in Persian, the Hafız Post şarkı is in Ottoman Turkish; it may be `fa|tr`. Confidence low.
+- mood and polish left empty; producers empty (De Zorzi is credited as musical director, not producer).
+
+## New tokens
+- genre `ottomanclassical` ("Ottoman classical music"; suggested parents: classical, middleeasternmusic).
+- instruments `ney` (end-blown flute; parent: woodwinds), `setar` (Persian lute; strings), `tombak` (Persian goblet drum; percussion), `framedrum` (bendir/frame drum; percussion).
+
+## tomze-estudandoosamba
+
+# Tom Zé, Estudando o Samba (1976)
+
+## Link to Battiato (checked: holds)
+Simon Reynolds, "Franco Battiato", 4Columns, 2017: https://4columns.org/reynolds-simon/franco-battiato. Reviewing the Superior Viaduct reissues of Battiato's early-1970s albums, he says Eno is a weak comparison and "a better analogy might be with Brazil's Tom Zé or France's Serge Gainsbourg", charismatic individualists between avant-garde and mainstream entertainment. This is a critic's comparison of the artists, not an influence.
+
+## Sources
+- en-Wikipedia: https://en.wikipedia.org/wiki/Estudando_o_Samba: concept album, genres MPB and samba, Continental; Rolling Stone Brasil 100 greatest Brazilian albums; David Byrne found it and relaunched Zé's career (Luaka Bop); cover (rope and barbed wire = dictatorship and samba-school rigidity).
+- pt-Wikipedia: https://pt.wikipedia.org/wiki/Estudando_o_Samba: Rolling Stone Brasil #35; "obra experimental" that further distanced him from the public; credits: production Heraldo do Monte; arrangements José Briamonte; violão (Heraldo, Edson, Vicente Barreto), drums Dirceu Medeiros, contrabaixo Cláudio, percussion Natal and Osvaldinho, surdo Branca de Neve, vocals and choir (Pessoal de Santana); Téo da Cuíca played "tambor d'água" and instruments of his own invention on A Felicidade; Élton Medeiros co-wrote songs.
+- Guilherme A. Freire, "A produção artística de Tom Zé na década de 1970..." Revista do IEB 68 (2017): https://revistas.usp.br/rieb/article/view/141522 (PDF read). Quotes Tárik de Souza (1976): the LP sounds like an assembly workshop; "Toc" is an instrumental collage with typewriter and transistor-radio solos (→ `typewriter`). Concrete-poetry syllable play; canonic, polyphonic choirs in Briamonte's arrangements (→ voice `choral`); "Dói" deals with heartbreak (dor de cotovelo). Says Zé applied avant-garde procedures learned at UFBA seminars from H. J. Koellreutter, Ernst Widmer and Jamary Oliveira (→ influenced_by Koellreutter, the best-documented teacher; Leonardo Bomfim's UNESP thesis also ties "Toc" to Koellreutter's ideas: https://acervodigital.unesp.br/handle/11449/110650). Walter Smetak is only "possibly" an influence: left out.
+- Christopher Dunn, "Tickling the traditions", Revista do IEB: https://journals.usp.br/rieb/article/view/149645: "disjunctive samba", experiments in rhythm, harmony and poetics combining innovation with social critique (→ lyrics `social`).
+- Songlines review, Brian Taylor, April 2019, 5/5: https://songlines.co.uk/review/estudando-o-samba: tropicália influence, experimental; groove-driven samba de roda trio pieces; blender on "Toc" (→ `blender`), samples of cries; "A Felicidade" contrasts with the carnival image of Brazil.
+
+## Values
+- groove 3 (samba de roda grooves alongside collage pieces), experimental 4, electronic 1 (tape/radio/noise sources, no synths documented). mood and polish left empty: no source.
+- sounds_like empty: Songlines names Gil and Caetano only as more successful contemporaries, not sonic comparisons.
+
+## New tokens
+- instruments `typewriter` (suggested label "Typewriter", percussion/found objects) and `blender` ("Blender", found objects). The Brazilian "viola" (Edson) is probably viola caipira, not the orchestral viola: not entered.
