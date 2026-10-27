@@ -124,7 +124,7 @@ export default function AlbumPage() {
         <>
           <div className="section-head">
             <h2>If you like this album</h2>
-            <Link to="/terms#feeds" className="muted small">
+            <Link to="/terms#similar" className="muted small">
               How it works
             </Link>
           </div>

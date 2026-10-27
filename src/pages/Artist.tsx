@@ -135,7 +135,7 @@ export default function ArtistPage() {
           </div>
           <p className="muted small suggest-why">
             From the sound of their albums, their producers and documented influences.{' '}
-            <Link to="/terms#feeds" className="link-btn">
+            <Link to="/terms#similar" className="link-btn">
               How it works
             </Link>
           </p>
