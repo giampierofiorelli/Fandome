@@ -255,6 +255,19 @@ const ROWS: Row[] = [
   ['caselli', 'Caterina Caselli', '#e0c04a', 'The golden helmet of Italian beat', []],
   ['cerrone', 'Cerrone', '#c93f6f', 'Supernature and French disco', [['Love in C Minor', 1976], ['Cerrone’s Paradise', 1977], ['Supernature (Cerrone III)', 1977], ['Cerrone IV: The Golden Touch', 1978]]],
   ['irenecara', 'Irene Cara', '#d4567a', 'Fame and Flashdance... What a Feeling', [['Anyone Can See', 1982], ['What a Feelin’', 1983], ['Carasmatic', 1987], ['Irene Cara Presents Hot Caramel', 2011]]],
+  ['cesaria', 'Cesária Évora', '#c9774a', 'The barefoot diva of Cape Verdean morna', [['Miss Perfumado', 1992]]],
+  ['ildolobo', 'Ildo Lobo', '#8a6f4e', 'Cape Verde’s great male morna voice', [['Nôs Morna', 1996]]],
+  ['lura', 'Lura', '#d0603f', 'Santiago’s batuku on the world stage', [['Di Korpu Ku Alma', 2004]]],
+  ['ferrogaita', 'Ferro Gaita', '#b8862b', 'Raw gaita-and-ferrinho funaná from Praia', [['Fundu Baxu', 1997]]],
+  ['dinodsantiago', 'Dino D’Santiago', '#4f7fb8', 'Futuristic funaná from creole Lisbon', [['Mundu Nôbu', 2018]]],
+  ['amalia', 'Amália Rodrigues', '#6b4a7a', 'The voice of fado', [['Busto', 1962]]],
+  ['mariza', 'Mariza', '#a33a4a', 'Fado from Mouraria to the world', [['Fado em Mim', 2001]]],
+  ['giselajoao', 'Gisela João', '#7a3b5c', 'A new great fado voice from Barcelos', [['Gisela João', 2013]]],
+  ['bonga', 'Bonga', '#c6893c', 'Angolan semba from exile', [['Angola 72', 1972]]],
+  ['burakasomsistema', 'Buraka Som Sistema', '#e0503a', 'Lisbon progressive kuduro', [['Black Diamond', 2008]]],
+  ['djmarfox', 'DJ Marfox', '#3d8a6b', 'The godfather of Lisbon batida', [['Eu Sei Quem Sou', 2011]]],
+  ['mahmoudguinia', 'Mahmoud Guinia', '#9a6a3a', 'Essaouira’s Gnawa master of the guembri', [['Colours of the Night', 2017]]],
+  ['wendycarlos', 'Wendy Carlos', '#5a7aa8', 'Moog pioneer of Switched-On Bach', [['Switched-On Bach', 1968]]],
   ['perrelli', 'Charlotte Perrelli', '#e0b5c9', 'Swedish pop and Eurovision glow', []],
   ['christine', 'Christine and the Queens', '#4a5a8f', 'Dance, identity and theatre', [['Chaleur humaine', 2014], ['Chris', 2018], ['Paranoïa, Angels, True Love', 2023]]],
   ['davena', 'Cristina D’Avena', '#f0a3c9', 'Cartoon theme songs for generations', []],
@@ -573,7 +586,7 @@ const slug = (s: string) =>
 
 // Artists no longer touring (passed away or split up): no concert lookup, so tribute
 // shows don't appear as their dates.
-const LEGACY = new Set(['irenecara', 'japan', 'scottwalker', 'trex', 'smiths', 'stoneroses', 'sexpistols', 'bacalov', 'rota', 'piccioni', 'nicolai', 'trovajoli', 'gainsbourg', 'leoferre', 'hossamramzy', 'vangelis', 'suicide', 'slystone', 'curtismayfield', 'jamesbrown', 'ibrahimferrer', 'celiacruz', 'sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
+const LEGACY = new Set(['irenecara', 'cesaria', 'ildolobo', 'amalia', 'mahmoudguinia', 'burakasomsistema', 'wendycarlos', 'japan', 'scottwalker', 'trex', 'smiths', 'stoneroses', 'sexpistols', 'bacalov', 'rota', 'piccioni', 'nicolai', 'trovajoli', 'gainsbourg', 'leoferre', 'hossamramzy', 'vangelis', 'suicide', 'slystone', 'curtismayfield', 'jamesbrown', 'ibrahimferrer', 'celiacruz', 'sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
 
 export const catalogArtists: Artist[] = ROWS.map(([id, name, color, tagline, albums]) => ({
   id,

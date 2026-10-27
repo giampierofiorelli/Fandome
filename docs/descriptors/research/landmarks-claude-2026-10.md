@@ -933,3 +933,241 @@ Doubts
 - https://www.loudersound.com/reviews/ultravox-vienna-deluxe-edition-review (via search snippet): album's debt to Kraftwerk, Tangerine Dream, Roxy Music -> sounds_like; MOJO Time Machine: Kraftwerk and Neu! -> sounds_like.
 - New production tokens: `yamahacp70` (electric grand; parent: electricpiano), `yamahass30` (string machine; like arpstringensemble). The "CS8Q" in Classic Pop is probably a CS-80 typo: NOT entered (yamahacs80 would need confirmation). ARP Odyssey only from a fan site: not entered.
 - Doubts: mood 2, theatrical 4, voice `clear` for Ure are judgment from the cinematic/epic descriptions.
+
+## amalia-busto
+
+# amalia-busto: Amália Rodrigues, Busto (1962)
+Artist: country PT; career start 1930s (first professional fado engagement 1939; first recordings 1945).
+Title: the record has no title on the cover; Wikipedia's article is "Amália Rodrigues (1962 album)", "also known as Busto and Asas Fechadas"; Best Ever Albums lists "Amália Rodrigues (Busto)". Year 1962 confirmed. Kept id and title "Busto" (commonly used).
+
+Sources
+- https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues_(1962_album): Columbia 1962, fado; first collaboration with Alain Oulman; José Nunes (Portuguese guitar), Castro Mota (viola = fado guitar, mapped to acousticguitar), Alain Oulman (piano); recorded Teatro Taborda, Lisbon; Blitz 2009 list of 50 greatest Portuguese albums of past 50 years, 2nd best of the 1960s; tracklist (Povo que lavas no rio, Maria Lisboa, Abandono, Estranha forma de vida).
+- https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues: Oulman "her main songwriter and musical producer" (general role, not an album credit: producers left empty); album established her signature songs.
+- https://museudofado.pt/en/fado/persolanity/alain-oulman-en: Busto 1962 as first work with Oulman, poems by Luís Macedo and David Mourão-Ferreira.
+- https://www.dn.pt/arquivo/diario-de-noticias/busto-o-primeiro-trabalho-de-amalia-com-alain-oulman-14357651.html: unlikely partnership that produced her biggest hits; importance of erudite poetry married to popular music.
+- Search summaries (reissue texts): "one of the greatest fado classics despite the critiques of the most purists"; "a truthful revolution" in fado (-> experimental 1, mainstream 3).
+
+Values: electronic 0 (guitar/viola/piano only); energy 1, tempo 1, groove 0, mood 1 for slow fado-canção with the sad repertoire (medium confidence). voice, lyrics, theatrical, polish left empty (no album-specific source).
+New token: instrument `portugueseguitar` (guitarra portuguesa; parent: guitars/strings group).
+
+## bonga-angola72
+
+# bonga-angola72 — Bonga, Angola 72 (1972)
+Sources
+- https://en.wikipedia.org/wiki/Bonga_(musician) — recorded in exile in Rotterdam; arrest warrant for seditious lyrics; Mona Ki Ngi Xica; dikanza among his instruments; folk/semba singer; born 1942 Kipiri, Bengo, Angola.
+- https://www.lusafrica.com/en/our-artists/bonga/ — Morabeza (Dutch), Cape Verdean musicians, "harrowing" debut, soundtrack of independence struggle.
+- https://www.forcedexposure.com/Catalog/bonga-angola-72-74-lusafrica-35th-anniversary-edition-2lp/LUS.86302LP.html (+ mvdb2b reissue notes, via search) — songs sad but lifted by upbeat tempos; semba; Bonga: chose acoustic guitar, dikanza and other percussion.
+- https://theboar.org/2026/01/african-sounds-from-the-past-angola-72 — student-paper review: Portuguese folk + semba + kizomba; Portuguese and Kimbundu; dikanza, mbira, congas, acoustic guitar, bass, trumpet; voice bluesy, soulful, raw; slow, passionate, melancholic, homesick; anticolonial, patriotic themes.
+- https://pan-african-music.com/en/wp-json/wp/v2/posts/100269 — Mona Ki Ngi Xica anthem of independence movement; album went gold.
+- https://songlines.co.uk/review/the-best-of-bonga (via search) — Martin Sinnock: first two albums stand out in musical quality and lyrical profundity (acclaim 4).
+- Qobuz artist page; Mail & Guardian (arrest warrant) via search.
+- Dustygroove (via search): spare, mostly acoustic guitar, bass, percussion (polish 2).
+New tokens: genres `semba` (parents: afro, folk) and `kizomba` (parents: afro, dance; maybe zouk-related); instruments `dikanza` (Angolan scraper, parent: percussion / like recoreco), `mbira` already exists. Language `kmb` (Kimbundu, ISO 639-2, no 2-letter code).
+Doubts: kizomba is named only by the student review and is anachronistic for 1972 (genre arose in the 1980s); kept per the "every genre a source names" rule but listed last — drop if the owner prefers. No producer credit found (Discogs blocked) → producers empty. No critic comparisons → sounds_like empty.
+
+## burakasomsistema-blackdiamond
+
+# burakasomsistema-blackdiamond — Buraka Som Sistema, Black Diamond (2008)
+Sources
+- https://en.wikipedia.org/wiki/Black_Diamond_(Buraka_Som_Sistema_album) — 2008, Fabric/Sony BMG; genres electro, kuduro, breakbeat; guests M.I.A., Kano, DJ Znobia, Deize Tigrona, Pongolove, Petty; AllMusic 4.5/5, Pitchfork 7.9, No Ripcord 9/10, Sputnik 4/5; PT #7, Billboard World #8; EBBA.
+- https://en.wikipedia.org/wiki/Buraka_Som_Sistema — Lisbon/Amadora (Buraca); members Branko, Riot, Conductor, Kalaf; progressive kuduro; formed 2006 (origins 2002).
+- https://www.popmatters.com/73338-buraka-som-sistema-black-diamond-2496023565.html — 8/10; kuduro + techno, hip-hop, Caribbean; "dance music album"; Portugal's answer to Daft Punk and Justice; tracks compared to Basshunter, Daft Punk, Vybz Kartel, Amadou & Mariam; tribal samples, distorted textures; relentless energy, angry/defiant then experimental; mostly Portuguese, one English track (Kano); production trio Lil' John (Branko), Riot, Conductor.
+- https://exclaim.ca/music/article/buraka_som_sistema-black_diamond — progressive kuduro; electronic; intense African percussion; grimy, pulsating; corruption in oil/diamond industries (lyrics social|political).
+- https://illinoisentertainer.com/2009/04/buraka-som-sistema-reviewed/ — mixed; "M.I.A.-fueled" wave (sounds_like M.I.A.).
+- https://redbullmusicacademy.com/lectures/buraka-som-sistema-rave-against-the-machine — Conductor on mixing Angolan rhythms, semba, kuduro (general, not album-specific → influenced_by empty).
+New tokens: genre `progressivekuduro` (parents: kuduro, electronic).
+Doubts: producers taken from PopMatters (no credits sheet); instruments thin (sampler|percussion only documented). Basshunter comparison is for one track; kept as source-named.
+
+## cesaria-missperfumado
+
+# cesaria-missperfumado: Cesária Évora, Miss Perfumado (1992)
+Artist: country CV (Cape Verde), began singing in Mindelo bars in the 1950s (decade: 1950s).
+
+Sources
+- https://en.wikipedia.org/wiki/Miss_Perfumado: 4th studio album, June 1992, Lusafrica, producer Paulino Vieira, recorded in Paris (Studio de la Madeleine, Music' Ange) May–June 1992; genre "morna and coladeira"; languages Portuguese and Cape Verdean Creole; "Sodade" = diaspora longing for home; >300,000 copies, 2x Gold France, FR #42, BE(Wa) #152; AllMusic 4.5/5.
+- https://spidey.kfjc.org/609/evora-cesaria-miss-perfumado-nonesuch/ (KFJC review): morna = melancholy song of nostalgia, sadness, love, longing; sparse arrangements, mostly acoustic guitar, cavaquinho, piano; "not as bleak as its subject"; compares Évora to Édith Piaf and Billie Holiday (-> sounds_like); blend of Portuguese, Brazilian and ragtime styles (not used as genres).
+- https://eng.caboverdeamusica.online/?p=4397 (Paulino Vieira profile, via search summary): Vieira brothers on string instruments and piano, Paulino producing; Malaquias Costa violin, Escabeche reco-reco.
+- https://dutchvinyl.com.au/collections/rca-records-record-label/products/cesaria-evora-miss-perfumado-189031: John Storm Roberts (Original Music): "Ravishing"; piano and string group; fado-like guitar runs; near-Brazilian rhythms.
+
+Values: electronic 0 (acoustic credits); energy 1 / mood 2 / theatrical 1 / tempo 2 / groove 2 from sparse acoustic morna (slow, melancholy) with some coladeiras, and KFJC "not as bleak". polish and voice left empty (no source).
+New tokens: genres `morna`, `coladeira` (parents: caboverde, worldmusic); instrument `cavaquinho` (parent: guitars/strings group, like ukulele). Language `kea` (Kabuverdianu, ISO 639-3) first as main singing language.
+
+## dinodsantiago-mundunobu
+
+# dinodsantiago-mundunobu: Dino D'Santiago, Mundu Nôbu (2018)
+Artist: country PT (Portuguese of Cape Verdean descent, born Quarteira 1982); career start 2000s (Operação Triunfo casting 2003; first album as Dino SoulMotion 2008).
+
+Sources
+- https://www.rollingstone.com/music/music-features/dino-dsantiago-mundu-nobo-como-seria-video-779901/ (via search summaries; page paywalled): "poised hybrid": traditional rhythms plus low end for modern dancefloors, hand-played instruments smoothed with gleaming electronics; lyrics in Creole and Portuguese; focus on batuku and funaná; Rusty Santos co-wrote/co-produced "Nôs Funaná", slowed to 90 bpm (funaná usually 134+); Paul Seiji key contributor; Best Album at first Portuguese Music Awards (Play); "Como Seria" among most-Shazamed songs in Portugal; intention "to show a new way" for Lusophone artists.
+- https://postal.pt/cultura/cultura-sul/cine-teatro-louletano-dino-dsantiago-apresenta-novo-disco-em-absoluta-estreia-algarvia/ (June 2018): "produzido por Kalaf & Seiji"; intricate sound, warm enveloping voice; everyday life, sensuality, joy mixed with melancholy; natural storyteller.
+- https://leffest.com/en/guests/dino-dsantiago-2: Mundu Nôbu = his signature sound, Afro-pop with futuristic funaná and electronic batuku.
+- https://www.musicinafrica.net/node/114096: Play Awards Best Album for Mundu Nôbu (2nd album); career bridges morna, batuku, funaná with R&B and club music; key influence on Madonna's Madame X.
+- https://www.timeout.pt/lisboa/pt/noticias/dez-anos-depois-como-soara-o-disco-que-nos-deu-dino-dsantiago-111923: released 2018; made him spokesman of a new sound, soundtrack of creole Lisbon.
+- https://pt.wikipedia.org/wiki/Dino_d%27Santiago: biography, 2018 discography.
+
+Values: electronic 3, polish 4, groove 3 (Rolling Stone); tempo 2 (funaná slowed to 90 bpm); mood 3 (joy and melancholy); experimental 2 ("futuristic"). energy, theatrical, voice, instruments left empty. No documented influences found.
+Note: English Wikipedia lists the album as 2019; Portuguese Wikipedia, Time Out, Postal (June 2018 premiere), Monocle say 2018: kept 2018.
+New tokens: genres `funana` (parents: caboverde, worldmusic, afropop), `batuque` (source spelling "batuku"; parents: caboverde, worldmusic). Language `kea|pt`.
+
+## djmarfox-euseiquemsou
+
+# DJ Marfox — Eu Sei Quem Sou (2011, EP)
+Artist: DJ Marfox (Marlon Silva, b. Lisbon 1988, São Tomé parents) · country PT · starting decade 2000 (DJ from 2002, DJs do Guetto 2005–06).
+Tagline: The godfather of Lisbon batida, who took the ghetto sound of Quinta do Mocho to the world.
+
+Choice: Marfox has no full-length studio album; his releases are EPs. Eu Sei Quem Sou is Príncipe's first release (P001) and the founding record of the label/scene; type `ep`. Alternative: Chapa Quente (2016 EP, Mixmag 9/10). Year: Príncipe Bandcamp lists 30 Nov 2011 (RA reviewed it Jan 2012; Marfox's Bandcamp gives Feb 2012 for the 12").
+
+Sources
+- https://ra.co/reviews/10337 — Philip Sherburne: four tracks (Eu Sei Quem Sou, BIT Binary, Mitologia, Pensamentos), ~140 BPM (tempo 4), tight looping hand drums, buzzing staccato/sawtooth synths, guiros on Bit Binary (instruments), weird modal scales and unsettling harmonies (experimental 4); tagged kuduro, "percussive house music".
+- https://www.factmag.com/2013/10/18/this-is-our-grime-dj-marfox-dj-nigga-fox-principe-records-and-the-sound-of-the-lisbon-ghettos/ — the debut 12" as a frenzied polyrhythmic hybrid of Angolan kuduro, batida and kizomba with house and techno (genres); Sherburne's "waist-windingest music" (groove 5); Fruity Loops learned from DJ Jesse (not tied to this record, so not entered).
+- https://en.wikipedia.org/wiki/DJ_Marfox — biography, discography, batida = kuduro/kizomba/funaná/tarraxinha + house/techno.
+- https://crackmagazine.net/article/long-reads/turning-points-dj-marfox/ — title as manifesto, kuduro roots, no named artist influences.
+- https://pan-african-music.com/en/principe-discos-the-highway-to-royalty/ — Príncipe launched 2011 with this EP.
+
+Doubts: no rating/score; producers left empty (self-produced but no credit seen); polish, mood empty; instrumental (no language).
+New token: genre `batida` — parents: kuduro, electronic, afro (also house/techno). `kizomba` is also new (not in scenes.ts; the sibling Bonga row uses it too) — parents: semba, afro, zouk-adjacent dance.
+
+## ferrogaita-fundubaxu
+
+# Ferro Gaita — Fundu Baxu (1997) — funaná pick
+
+Why this album (vs Bulimundo): Bulimundo (Katchás) electrified funaná in 1980–84, but its LPs are poorly documented and synth-era. Fundu Baxu is the most documented funaná landmark: best-selling CD in Cape Verde in 1997, ~40,000 copies in a country of ~400,000, "an earthquake" per national press, it led the late-90s return to acoustic gaita + ferrinho and changed the course of Cape Verdean music.
+
+Artist: display name Ferro Gaita; country CV; started 1990s (formed Praia 1996). Tagline: "Praia band that sent raw gaita-and-ferrinho funaná back to the top."
+
+## Sources
+- https://afropop.org/articles/pour-me-a-grog-the-funaná-revolt-in-1990s-cabo-verde — 1997 "heavy record of pure Badiu funaná" with "punk-rock energy" (energy 5), 40,000 copies, gaita + ferrinho, later drum kit + electric bass + percussion; "spirit of rebellion and catharsis".
+- https://www.okayafrica.com/cabo-verde-funana-revolt-1990s-ferro-gaita — "earthquake shook the country"; gaita (diatonic button accordion), ferrinho and bass guitar.
+- https://pan-african-music.com/en/ostinato-records-funana/ — "changed the entire trajectory of the country's music"; 40,000 copies.
+- https://worldmusiccentral.org/?p=62627 — founded 1996 Praia; Fundu Baxu (Cape Disco 1997) "presented funana in its original style" (experimental 1); highest-selling CD of the year; upbeat shows.
+- https://en.wikipedia.org/wiki/Funan%C3%A1 — Ferro Gaita "one of the leading bands" of the late-90s return to roots; "Moças di Mangui" from Fundu Baxu; traditional funaná = gaita (diatonic accordion) + ferrinho.
+- https://www.discogs.com/release/7129684 (API) — credits: Iduino vocals & gaita; Bino Branco vocals; Paulino vocals; Arlindo Delgado drums, cowbell; Jens Kerkhoff congas.
+- https://forbesafricalusofona.com/?p=175777 — founder and vocalist Bino Branco (recently died), ferrinho his defining instrument; group formed to revive traditional funaná against electronic instruments.
+- https://www.timeout.pt/lisboa/pt/noticias/carnaval-a-moda-de-cabo-verde-030219 — started with a knife, a piece of metal and an accordion; Fundu Baxu best-selling album of 1997.
+
+## New tokens
+- genre `funana` — parents: caboverde, folk, dance (worldmusic).
+- instrument `ferrinho` (metal scraper, iron bar struck/scraped with a knife) — group: percussion.
+
+## Doubts
+- No producer credit found; voice and lyrics left empty (no album-specific source). Mood 4, tempo 4, groove 5, polish 2 rest on the general descriptions of the record's raw dance energy; medium confidence.
+
+## giselajoao-giselajoao
+
+# Gisela João — Gisela João (2013)
+Artist: Gisela João · country PT · starting decade 2010 (debut 2013; sang in Barcelos fado houses from 2000).
+Tagline: The Barcelos fadista hailed as the best fado voice since Amália.
+
+Choice among Ana Moura, Carminho, Gisela João, Camané: this debut has the strongest documented critical consensus — Ípsilon/Público and Blitz record of the year 2013, unanimous Prémio José Afonso 2014, No. 1 in Portugal. Runner-up: Carminho "Fado" (2009), reportedly Songlines best album of 2011 (only artist/promoter bios confirm it).
+
+Sources
+- https://en.wikipedia.org/wiki/Gisela_Jo%C3%A3o — July 2013, Valentim de Carvalho, No. 1, Ípsilon/Público and Blitz record of the year (cites Público Jan 2014), platinum (Blitz).
+- https://www.dn.pt/arquivo/diario-de-noticias/gisela-joao-e-a-melhor-voz-que-apareceu-apos-amalia-3800598.html — José Afonso jury: unanimous; voice full and deep, flawless pitch in all registers (powerful|clear); lively and lyrical songs (mood 2 = mixed, leaning sad); produced by Frederico Pereira; "best voice since Amália" (sounds_like Amália Rodrigues).
+- https://www.dn.pt/arquivo/diario-de-noticias/gisela-joao-vai-estar-nua-hoje-no-coliseu-do-porto-5761473.html — Frederico Pereira also produced the first album; Sei finalmente (Amália), Sou tua (Flora Pereira), new song Vieste do fim do mundo.
+- https://www.museudofado.pt/index.php/en/fado/persolanity/gisela-joao-en — recorded Feb 2013 at Palácio Marquês de Pombal; return to fado's traditional roots, questions its mannerisms (experimental 1); deep powerful voice.
+- MusicBrainz release 7e87d72d-5c77-4803-b4d8-efa21343e2ff — 14 tracks; "Voltaste" credits Ricardo Parreira and Tiago Oliveira (Portuguese guitar), Francisco Gaspar (acoustic bass guitar) → portugueseguitar|bass; electronic 0.
+- Expresso (Miguel Cadete) and Jornal de Negócios (Manuel Falcão) quotes via https://www.sonicbids.com/band/giselajoao/ (artist press page).
+
+Doubts: viola (fado guitar) not credited in sources seen, so acousticguitar omitted; lyrics themes not sourced (empty). `portugueseguitar` follows the sibling Mariza/Amália rows (not in instruments.ts yet).
+
+## ildolobo-nosmorna
+
+# Ildo Lobo — Nôs Morna (1996) — second morna pick
+
+Why this artist/album (vs Bana): Bana, "King of Morna", left ~100 LPs/EPs with no single documented landmark and much of it compilations. Ildo Lobo (Os Tubarões' singer) is called one of the archipelago's greatest singers and "heir to a tradition shaped by Bana"; Nôs Morna, his solo debut made entirely of mornas, brought him international fame. Note: he was the singer of Os Tubarões, so if Os Tubarões is ever added it must not be linked as an influence (self-reference).
+
+Artist: display name Ildo Lobo; country CV; started 1970s (Os Tubarões, active 1975–2004; born Sal 1953, d. 2004). Tagline: "Os Tubarões' golden voice, Cape Verde's great male morna singer."
+
+Year 1996 (Wikipedia, World Music Central, Discogs 3400912); AllMusic gives a Feb 1997 edition.
+
+## Sources
+- https://en.wikipedia.org/wiki/Ildo_Lobo — solo debut 1996, produced by Mário Lúcio (Simentera), recorded at Lusafrica Paris; "rose to international fame with his first solo work"; "versatile and melodic voice".
+- https://lusafrica.com/?p=2180 — tribute to his father Antoninho Lobo (one of Cape Verde's great singers), composed entirely of mornas; heir to a tradition shaped by Bana (→ sounds_like Bana; influenced_by Antoninho Lobo, the tradition he inherited and the album honours).
+- https://worldmusiccentral.org/?p=62636 — same facts; recorded in Paris with Santiago's finest musicians.
+- https://www.discogs.com/release/24149426 (API) — credits: Pedro Rocha acoustic guitar; Kitas Lobo, Taninho classical guitar; Mário Lúcio classical & ten-string guitar, violin, bandolim (mandolin), harmonica, piano, percussion; Manuel de Novas ten-string guitar; Gil Duarte "ukulele" (likely cavaquinho) & bass; Manuel Espírito Santo violin. Discogs styles Folk / Ballad / Morna (→ folk|ballad). All-acoustic → electronic 0.
+- https://eng.caboverdeamusica.online/ildo-lobo/ — "sonorous, open, and powerful voice" → voice powerful|clear; an album of only mornas dedicated to his father.
+- https://www.muziekweb.nl/en/Link/HEX8744/Incondicional — artist-level praise (no one sang the morna more beautifully).
+
+## Doubts
+- No album review/rating found → acclaim empty; lyrics empty. Mood 2, tempo 1, groove 1 from morna-only, ballad-style acoustic record; afrik.com (unreadable, Cloudflare) reportedly says the mornas are joined by rhythm and dance.
+- `ukulele` kept as credited; switch to `cavaquinho` if you prefer (Cesária row uses cavaquinho).
+
+## New tokens
+- genre `morna` — parents: caboverde, folk, ballad (worldmusic).
+
+## lura-dikorpukualma
+
+# Lura — Di Korpu Ku Alma (2004) — batuque pick
+
+Why this album: the record that put batuku (batuque) on the international map in the 2000s. Orlando Pantera, the creator of the "new batuku", died in 2001 without a studio album, so his songs reached the world through this record (5 Pantera songs). Wikipedia "Music of Cape Verde" lists Pantera, Vadú, Tcheka, Mayra Andrade, Lura as main batuque artists; Lura is the one most widely credited with reviving it (Songlines calls her Cesária's "most potent successor as a global champion of traditional Cape Verdean styles").
+
+Artist: display name Lura; country CV (born Lisbon 1975 to Cape Verdean parents; Lisbon-based, sings Santiago styles; PT if you code by birthplace); started 1990s (career from 1992). Tagline: "Lisbon-born voice who brought Santiago's batuku to the world stage."
+
+Year: 2004 (Lusafrica ℗ 2004, Discogs release 22857245; AllMusic 8 June 2004). The 2005 edition (US Escondida, EU reissue with DVD and 4 extra songs) explains the 2005 dates elsewhere.
+
+## Sources
+- https://www.discogs.com/release/22857245 (API) — 2004 Lusafrica, producers Fernando Andrade & José da Silva, Pantera writing credits; Discogs styles African / Morna / Neo Soul.
+- https://www.discogs.com/release/13251381 (API, 2005 ed.) — musicians: Kako Alves acoustic 6/12-string & electric guitar; Virgilio Duarte acoustic bass guitar; Miroca Miranda percussion; Fernando Andrade piano, music director, arranger; Domingos Fernandes tenor sax → instruments.
+- https://worldmusiccentral.org/?p=3470 — batuku and funaná; Pantera wrote five batuku songs; Lura: "fell in love" with his music (influenced_by Pantera); Cesária Évora inspired "Tem Um Hora Pa Tude" (influenced_by Cesária); themes immigration, drought/rain, food imports, separated families → lyrics social|identity.
+- https://mg.co.za/article/2006-08-04-song-migrant — "most realised fusion of her earlier pop sensibilities" with accordion funaná and polyrhythmic batuku (experimental 2, mainstream 3); goal to bring back forgotten classic Cape Verdean music (identity).
+- https://www.straight.com/article-166184/cape-verdes-batuku-rhythms-lured-lura — "fast-paced Santiago rhythm called batuku" (tempo/groove), "beautifully-produced" (polish 4), "deep-voiced", sensual voice.
+- https://rambles.net/lura_dikorp05.html — contralto voice; African percussion + flamenco-style guitar; "good album".
+- https://songlines.co.uk/awards/2016/lura-best-artist-nominee — "husky-voiced" → voice raspy.
+- https://lusafrica.com/?p=1776 — first truly Cape Verdean record; 10+ countries; top seller in Italy; BBC World Music Awards nominee; Victoires de la Musique 2006 nominee; Independent quote.
+- https://siddharthamitter.com/2005/09/14/alluring-lura-goes-all-out (Boston Globe review reprint) — "terrific new CD"; batuku and fast funaná.
+- https://en.wikipedia.org/wiki/Lura_(singer) — born 1975 Lisbon, career from 1992.
+- worldmusic genre: nominated as Best World Music Album (Victoires) / BBC World Music Awards.
+
+## Doubts
+- No accordion credited in the Discogs musician list, so accordion is not in instruments though funaná tracks exist.
+- sounds_like left empty: critics explicitly distinguish her from Cesária (Tucson.com), no other comparison found.
+- theatrical 2, mood 3 are judgment calls from the mixed themes and intimate band; lower confidence.
+
+## New tokens
+- genre `batuque` — parents: caboverde, folk (worldmusic, afro). `funana`, `morna`: see the Ferro Gaita / Ildo Lobo notes.
+
+## mahmoudguinia-coloursofthenight
+
+# Mahmoud Guinia — Colours of the Night (2017)
+Artist: Mahmoud Guinia (also Maâlem Mahmoud Gania) · country MA · starting decade 1970 (recorded prolifically from the 1970s, The Attic).
+Tagline: Essaouira's Gnawa master, the king of the guembri.
+
+Choice: his landmark is usually The Trance of Seven Colors (1994, Axiom), but it is co-billed "Maleem Mahmoud Guinia with Pharoah Sanders", a live recording produced by Bill Laswell (AllMusic 3/5, All About Jazz 4/5). Per brief I chose his solo studio album: recorded 2013 at Studio Plein Les Oreilles, Casablanca, first issued on CD in Morocco (year undocumented), released internationally 2017 by Hive Mind (HMRLP001). Year 2017 = first documented release; flag if the Moroccan CD year is found.
+
+Sources
+- https://en.wikipedia.org/wiki/Colours_of_the_Night_(Maalem_Mahmoud_Gania_album) — studio album, genres Gnawa/folk/world music, personnel (guembri + lead vocals, chorus), The Wire Top 50 of 2017, The Attic 5/5.
+- https://songlines.co.uk/review/colours-of-the-night — 4/5; bluesy gimbri, polyrhythmic qaraqab played by chorus, aged but powerful voice, simple effective production (polish 2).
+- https://daily.bandcamp.com/2017/09/26/maalem-mahmoud-gania-colours-of-the-night-review/ — 8–11 min songs as one trance, call and response, much of it uptempo and made for moving, joyful devotion (energy/tempo/groove 3, mood 3).
+- https://theatticmag.com/reviews/2144/maalem-mahmoud-gania-_-colours-of-the-night.html — sintir/guembri, krakeb, hand clapping, hypnotic healing trance music.
+- https://monolithcocktail.com/tag/krakebs/ — rough soulful vocals (raspy), chorus of male and female singers (choral), synthesizer on one track (electronic 1), devotional lines (spiritual).
+- https://en.wikipedia.org/wiki/The_Trance_of_Seven_Colors — billing/live details of the alternative.
+
+Doubts: language left empty (no source states the song language; Gnawa is generally Moroccan Arabic with West African words → `ary` if a source is found). Producer not documented.
+New tokens: genre `gnawa` — parents: worldmusic, folk (also afro?/trance-ritual). Instruments `guembri` (three-string bass lute; aka gimbri, sintir) and `qraqeb` (iron castanets; aka krakeb) — new instrument tokens.
+
+## mariza-fadoemmim
+
+# mariza-fadoemmim — Mariza, Fado em Mim (2001)
+Sources
+- https://en.wikipedia.org/wiki/Fado_em_Mim — genres Fado, World Music; producers Jorge Fernando, Tiago Machado; personnel (Portuguese guitar Custódio Castelo, classical guitar/viola, acoustic bass, double bass, piano, cello, percussion on Barco Negro); AllMusic 4/5, BBC/PopMatters positive; EBBA 2004. (Gives April 2002 = international World Connection release.)
+- https://en.wikipedia.org/wiki/Mariza — 2001 release in text; 6x Platinum PT; born Maputo 1973, raised Mouraria; active from 1997.
+- https://rambles.net/mariza_fado01.html — World Connection 2001; 12-string Portuguese guitar, classical guitar, acoustic bass + piano, cello, percussion; fado themes passion/sorrow.
+- https://songlines.co.uk/features/mariza-every-album-reviewed — Michael Church: "superb"; voice as good as Amália; "new Amália"; Mísia as precedent; mood nostalgia; Barco Negro "deeply spooky" (sounds_like Amália Rodrigues, Mísia).
+- https://www.theglobeandmail.com/arts/when-fado-marries-europop/article1335587 — 3.5 stars; fado dressed in Europop, "pop-jazz chanson" on Poetas (genres europop, jazzpop, chanson); resemblance to Amália; Céline Dion comparison for one intro only (not used).
+- https://www.miaminewtimes.com/music/mariza-6351095/ (via search) — voice "gorgeous, otherworldly", saudade.
+- https://latinolife.co.uk/articles/mariza-interpreter-life , https://theartsdesk.com/new-music/theartsdesk-qa-mariza-diva-fado — Mariza: recorded it to thank her father; favourite singers Callas, Nina Simone, Billie Holiday (general, not tied to this album → influenced_by left empty). Critic hears tribute to Amália, Fernando Maurício, Carlos do Carmo (critic → not influence).
+- Britannica (via search): discovered by Jorge Fernando; PT release 2001, international acclaim 2002.
+Judgment: voice powerful|clear (critics: rich, vibrant, bursting from the heart); polish 3 normal studio; electronic 0 acoustic.
+New tokens: instrument `portugueseguitar` (parents: guitar; probably already proposed by the Amália batch).
+Doubt: "new fado" named by Church only as contrast — not added (`newfado`, parent fado, if wanted).
+
+## wendycarlos-switchedonbach
+
+# wendycarlos-switchedonbach — Wendy Carlos, Switched-On Bach (1968)
+Sources
+- https://en.wikipedia.org/wiki/Switched-On_Bach — Oct 1968, Columbia Masterworks; producers Carlos and Rachel Elkind; genres electronic, baroque; Moog synthesizer (monophonic, built one note at a time) with Benjamin Folkman; custom 8-track Ampex recorder in her apartment (overdubbing, analogtape); 3 Grammys 1970 incl. Best Classical Album and Best Engineered Classical Recording (polish 4); AllMusic 3.5/5; Glenn Gould praise; US #10, Billboard Classical #1 Jan 1969–Jan 1972; Platinum 1986; National Recording Registry 2005; influenced Moroder and Brian Wilson.
+- https://www.guitarguitar.co.uk/news/143018/ — legitimised the synth as an instrument.
+- Moog modular synthesizer = `moog` + `modularsynth` (production tokens existing).
+Genres: `classical` supported by the Grammy Best Classical Album and Billboard Classical chart.
+Left empty: energy, mood, theatrical, tempo (no source describes them), lyrics/language (instrumental), sounds_like and influenced_by (Bach is the repertoire, not an influence; no documented influences/critic comparisons found).
+New tokens: none. Country US, start 1960s.
