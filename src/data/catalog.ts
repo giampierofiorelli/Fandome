@@ -488,6 +488,7 @@ const ROWS: Row[] = [
   ['rondoveneziano', 'Rondò Veneziano', '#b08a4a', 'Baroque melodies with a modern rhythm section', [['Rondò Veneziano', 1980], ['La Serenissima', 1981], ['Scaramucce', 1982], ['Venezia 2000', 1983], ['Odissea veneziana', 1984], ['Casanova', 1985], ['Rapsodia veneziana', 1986], ['Arabesque', 1987], ['Concerto', 1988], ['Masquerade', 1989], ['Barocco', 1990], ['Prestige', 1991], ['Stagioni di Venezia', 1992], ['Il mago di Venezia', 1994], ['Sinfonia di Natale', 1995], ['Marco Polo', 1997]]],
   ['beberexha', 'Bebe Rexha', '#c96f9a', 'Songwriter behind the hooks, pop star in front', [['I Don’t Wanna Grow Up', 2015], ['All Your Fault, Pt. 1', 2017], ['All Your Fault, Pt. 2', 2017], ['Expectations', 2018], ['Better Mistakes', 2021], ['Bebe', 2023], ['Dirty Blonde', 2026]]],
   ['fontainesdc', 'Fontaines D.C.', '#5f7a6a', 'Dublin post-punk, poetry over guitars', [['Dogrel', 2019], ['A Hero’s Death', 2020], ['Skinty Fia', 2022], ['Romance', 2024], ['Dopamine Chamber', 2026]]],
+  ['joydivision', 'Joy Division', '#3a3a44', 'Manchester darkness, Hannett space', [['An Ideal for Living', 1978], ['Unknown Pleasures', 1979], ['Closer', 1980]]],
 ]
 
 const slug = (s: string) =>

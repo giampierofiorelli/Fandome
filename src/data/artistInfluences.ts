@@ -90,6 +90,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Roxy Music', 'Al Green', 'Smokey Robinson', 'Otis Redding', 'James Brown', 'Fela Kuti', 'Parliament', 'Funkadelic', 'Hamilton Bohannon'],
     source: 'Chris Frantz (Louder; The Quietus: Roxy Music, Al Green, Smokey Robinson, Otis Redding); David Byrne (Pitchfork 5-10-15-20: James Brown, Parliament, Funkadelic, Bohannon); Eno and Byrne (Guardian 2009) and GRAMMY.com 2020 on Fela Kuti',
   },
+  joydivision: {
+    names: ['Kraftwerk', 'Can', 'Faust', 'The Doors', 'The Velvet Underground', 'Iggy Pop', 'John Cale', 'David Bowie', 'Sex Pistols'],
+    source: 'Peter Hook (NME 2020: Kraftwerk, The Doors; Bristol24/7: Can, Faust; The Independent: Iggy Pop; Jon Savage, This Searing Light, Guardian 2019: The Velvet Underground, John Cale); Stephen Morris (Getintothis 2019: Jaki Liebezeit); Classic Pop (Berlin-era Bowie, secondary); Pitchfork 2007 (Sex Pistols, early DIY ethos)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

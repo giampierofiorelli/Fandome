@@ -1,0 +1,4 @@
+album_id,title,year,type,catalog_status,action,notes
+joydivision-anidealforliving,An Ideal for Living,1978,ep,missing,add artist room and album,No Joy Division artist row or album found in descriptors-branch catalog.ts or existing CSV; proposed artist ID joydivision.
+joydivision-unknownpleasures,Unknown Pleasures,1979,studio,missing,add artist room and album,No Joy Division artist row or album found in descriptors-branch catalog.ts or existing CSV; proposed artist ID joydivision.
+joydivision-closer,Closer,1980,studio,missing,add artist room and album,No Joy Division artist row or album found in descriptors-branch catalog.ts or existing CSV; proposed artist ID joydivision.
