@@ -130,6 +130,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Sonic Youth', 'Pixies', 'PJ Harvey', 'David Bowie', 'Joy Division', 'The Cure', 'Nick Cave', 'Dead Kennedys', 'Iggy Pop', 'The Stooges'],
     source: 'Brian Molko: Hot Press (Androgyny in the UK); The Independent (All made up with somewhere to go); Jam! Music 1998 interview (The Cure, Nick Cave, Dead Kennedys, PJ Harvey)',
   },
+  rem: {
+    names: ['Patti Smith', 'Television', 'The Velvet Underground', 'Big Star', 'The Byrds', 'Wire', 'The B-52’s'],
+    source: 'Michael Stipe: Pitchfork 5-10-15-20 (Patti Smith, Horses); Jon Savage interview, The Quietus (Television); Los Angeles Times 2021 (Velvet Underground); Rolling Stone Germany (B-52s); Mike Mills, Flagpole 2014 (Big Star); Peter Buck, NPR Fresh Air (The Byrds); The Independent (Wire, lower confidence)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

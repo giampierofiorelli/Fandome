@@ -1,0 +1,24 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,phase,notes
+rem-chronictown,Chronic Town,1982,ep,missing,create artist rem then add album,phase01,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-murmur,Murmur,1983,studio,missing,create artist rem then add album,phase01,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-reckoning,Reckoning,1984,studio,missing,create artist rem then add album,phase01,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-fablesofthereconstruction,Fables of the Reconstruction,1985,studio,missing,create artist rem then add album,phase01,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-lifesrichpageant,Lifes Rich Pageant,1986,studio,missing,create artist rem then add album,phase02,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-document,Document,1987,studio,missing,create artist rem then add album,phase02,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-green,Green,1988,studio,missing,create artist rem then add album,phase02,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-outoftime,Out of Time,1991,studio,missing,create artist rem then add album,phase02,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-automaticforthepeople,Automatic for the People,1992,studio,missing,create artist rem then add album,phase03,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-monster,Monster,1994,studio,missing,create artist rem then add album,phase03,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-newadventuresinhifi,New Adventures in Hi-Fi,1996,studio,missing,create artist rem then add album,phase03,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-up,Up,1998,studio,missing,create artist rem then add album,phase03,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-reveal,Reveal,2001,studio,missing,create artist rem then add album,phase04,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-aroundthesun,Around the Sun,2004,studio,missing,create artist rem then add album,phase04,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-accelerate,Accelerate,2008,studio,missing,create artist rem then add album,phase04,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+rem-collapseintonow,Collapse into Now,2011,studio,missing,create artist rem then add album,phase04,No R.E.M. artist room or album entries in branch catalog.ts at verification.
+,Dead Letter Office,1987,compilation,excluded,none,,B-sides and rereleased Chronic Town; duplicate previously released songs
+,Eponymous,1988,compilation,excluded,none,,Singles and alternate takes; no new studio album
+,In Time: The Best of R.E.M. 1988–2003,2003,compilation,excluded,none,,Retrospective; not independent studio album
+,R.E.M. Live,2007,live,excluded,none,,Live re-recordings; excluded by user
+,Live at the Olympia,2009,live,excluded,none,,Live versions and earlier compositions; excluded by user
+,Part Lies Part Heart Part Truth Part Garbage 1982–2011,2011,compilation,excluded,none,,Career overview with some new songs; excluded to avoid re-ranking catalogue
+,Unplugged 1991/2001: The Complete Sessions,2014,live,excluded,none,,Archive live performances of older material; excluded

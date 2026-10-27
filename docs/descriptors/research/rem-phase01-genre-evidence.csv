@@ -1,0 +1,35 @@
+﻿album_id,genre,source,scope,url,evidence_note
+rem-chronictown,janglepop,a_allmusic,whole album,https://www.allmusic.com/album/r16013,AllMusic applies jangle pop to original five-track EP.
+rem-chronictown,alternativerock,a_aoty,whole album,https://www.albumoftheyear.org/album/35732-rem-chronic-town.php,Album of the Year explicitly calls alternative rock.
+rem-chronictown,postpunk,a_aoty,whole album,https://www.albumoftheyear.org/album/35732-rem-chronic-town.php,AOTY explicitly labels post-punk.
+rem-chronictown,indierock,a_classic,whole album,https://www.loudersound.com/reviews/rems-chronic-town-enigmatic-jangle-rock-that-sounds-like-a-portal-to-the-ghost-dimension,Classic Rock/Louder explicitly calls this formative indie rock.
+rem-chronictown,alternativeindierock,a_allmusic,whole album,https://www.allmusic.com/album/r16013,"AllMusic merged style term Alternative/Indie Rock, preserved as its exact combined token."
+rem-chronictown,collegerock,a_allmusic,whole album,https://www.allmusic.com/album/r16013,AllMusic college rock style.
+rem-chronictown,americanunderground,a_allmusic,whole album,https://www.allmusic.com/album/r16013,AllMusic exact named American Underground style; scene-oriented nonstandard sound token (new).
+rem-chronictown,rock,a_classic,whole album,https://www.loudersound.com/reviews/rems-chronic-town-enigmatic-jangle-rock-that-sounds-like-a-portal-to-the-ghost-dimension,Classic Rock review explicitly calls jangle rock; broader rock umbrella.
+rem-murmur,janglepop,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic exact style jangle pop.
+rem-murmur,alternativepoprock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,"AllMusic style explicitly Alternative Pop/Rock; exact canonical token, not relabeled alternative rock."
+rem-murmur,folkrock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic describes album as part of American folk-rock tradition.
+rem-murmur,postpunk,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic specifically cites post-punk tradition in album review.
+rem-murmur,garagerock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic specifically describes garage rock tradition.
+rem-murmur,alternativeindierock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,Exact combined AllMusic style Alternative/Indie Rock.
+rem-murmur,collegerock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic college rock style.
+rem-murmur,americanunderground,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic exact American Underground stylistic tag.
+rem-murmur,rock,b_allmusic,whole album,https://www.allmusic.com/album/murmur-mw0000650666,AllMusic explicitly names rock traditions within album.
+rem-reckoning,janglepop,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,AllMusic jangle pop for whole LP.
+rem-reckoning,postpunk,c_aoty,whole album,https://www.albumoftheyear.org/album/6102-rem-reckoning.php,AOTY explicitly classifies Reckoning post-punk.
+rem-reckoning,alternativepoprock,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,AllMusic specifically labels Alternative Pop/Rock; exact token.
+rem-reckoning,alternativeindierock,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,Exact merged AllMusic Alternative/Indie Rock style.
+rem-reckoning,collegerock,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,AllMusic style college rock.
+rem-reckoning,garagepop,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,AllMusic reviewer specifically describes a return to garage pop origins; NEW token.
+rem-reckoning,americanunderground,c_allmusic,whole album,https://www.allmusic.com/album/reckoning-mw0000191497,"AllMusic American Underground style, new token."
+rem-reckoning,rock,c_guard,whole album,https://www.theguardian.com/music/2009/jul/31/rem-reckoning-review,"Guardian discusses this as guitar rock and notes its live, rocky hooks."
+rem-fablesofthereconstruction,janglepop,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,AllMusic jangle pop style.
+rem-fablesofthereconstruction,folkrock,d_christgau,whole album,https://www.robertchristgau.com/get_album.php?id=2917,"Christgau explicitly places album in folk-rock, prominently."
+rem-fablesofthereconstruction,psychedelicfolk,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,AllMusic describes the music as rustic psychedelic folk; token already in Fandome genre list.
+rem-fablesofthereconstruction,alternativepoprock,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,"AllMusic Alternative Pop/Rock style, preserved as exact token."
+rem-fablesofthereconstruction,alternativeindierock,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,Exact merged AllMusic Alternative/Indie Rock style.
+rem-fablesofthereconstruction,collegerock,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,AllMusic college rock style.
+rem-fablesofthereconstruction,blueeyedsoul,d_allmusic,some tracks,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,AllMusic uses blue-eyed soul only for Can’t Get There from Here; low weighting.
+rem-fablesofthereconstruction,americanunderground,d_allmusic,whole album,https://www.allmusic.com/album/fables-of-the-reconstruction-mw0000195395,"AllMusic exact American Underground tag, new token."
+rem-fablesofthereconstruction,rock,d_wpost,whole album,https://www.washingtonpost.com/archive/lifestyle/1985/06/13/records/b2a97ade-03fa-4e73-8bbb-e1fb14f21007/,Washington Post directly labels the release rock and folk rock.
