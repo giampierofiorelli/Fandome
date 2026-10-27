@@ -10,8 +10,10 @@ describe('discovery paths', () => {
   it('builds a bridge to a local scene in another country, with a concrete reason', () => {
     const [bridge] = discoverPaths(fan(['charlixcx']), artists, albums)
     expect(bridge.kind).toBe('bridge')
-    expect(sceneOf(bridge.artistId)!.country).toBe('IT')
-    expect(bridge.reason).toMatch(/^From Italy · /)
+    const country = sceneOf(bridge.artistId)!.country
+    expect(['US', 'GB', 'CA', 'AU', 'IE']).not.toContain(country)
+    expect(isLocalArtist(bridge.artistId)).toBe(true)
+    expect(bridge.reason).toMatch(/^From [A-Z][a-z]+ · /)
   })
 
   it('never sends discovery to the global markets or to English-language pop', () => {

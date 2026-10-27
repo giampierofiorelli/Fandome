@@ -673,6 +673,13 @@ export interface SimilarArtist {
   newCountry?: string
 }
 
+// An artist's critical standing: the average acclaim (0-5) of their described albums that have one.
+const STANDING_WEIGHT = 0.15
+function standing(albums: Profile[]) {
+  const xs = albums.map((p) => p.acclaim).filter((x): x is number => x !== undefined)
+  return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : undefined
+}
+
 // "If you like Madonna": artist profiles compared (computed from all their albums); the reason
 // names the closest pair of albums, so it stays concrete.
 export function similarArtists(
@@ -702,7 +709,12 @@ export function similarArtists(
     // Profile resemblance (repeated traits) and the best concrete album pair, half each.
     const to = opts.countryOf?.(other)
     const isNew = Boolean(from && to && from !== to && isLocalArtist(other))
-    const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid)
+    // Critical standing (owner, Oct 2026): an artist critics rate well below this one is a weaker suggestion,
+    // however close the genres (No Doubt for R.E.M.). Average acclaim of the described albums; an artist with
+    // no rated album counts as mixed (3), so having no reviews is no advantage.
+    const mine = standing(myAlbums)
+    const standingGap = mine === undefined ? 0 : Math.max(0, mine - (standing(theirAlbums) ?? 3) - 0.5)
+    const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
     const why = best?.c.reasons[0] ?? c.reasons[0]
     if (score < 0.3 || !why || !best) continue
     const reason = /^(Both|Similar sound|Close genres)/.test(why) ? `${best.a.title} and ${best.b.title}: ${lowerFirst(why)}` : why
