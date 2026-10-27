@@ -1,0 +1,18 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+marlenekuntz-catartica,Catartica,1994,studio,already_in_catalog,phase01,none
+marlenekuntz-ilvile,Il vile,1996,studio,already_in_catalog,phase01,none
+marlenekuntz-comedisdegno,Come di sdegno,1998,ep,add_to_catalog,phase01,add_original_release
+marlenekuntz-houccisoparanoia,Ho ucciso paranoia,1999,studio,already_in_catalog,phase01,none
+marlenekuntz-checosavedi,Che cosa vedi,2000,studio,add_to_catalog,phase02,add_original_release
+marlenekuntz-cometa,Cometa,2001,ep,candidate_research_before_inclusion,phase02_candidate,assess_ep
+marlenekuntz-senzapeso,Senza peso,2003,studio,add_to_catalog,phase02,add_original_release
+marlenekuntz-fingendolapoesia,Fingendo la poesia,2004,ep,candidate_research_before_inclusion,later_candidate,assess_ep
+marlenekuntz-biancosporco,Bianco sporco,2005,studio,add_to_catalog,phase02,add_original_release
+marlenekuntz-uno,Uno,2007,studio,add_to_catalog,later,add_original_release
+marlenekuntz-ricoverivirtualiesexysolitudini,Ricoveri virtuali e sexy solitudini,2010,studio,add_to_catalog,later,add_original_release
+marlenekuntz-nellatualuce,Nella tua luce,2013,studio,add_to_catalog,later,add_original_release
+marlenekuntz-lungaattesa,Lunga attesa,2016,studio,add_to_catalog,later,add_original_release
+marlenekuntz-karmaclima,Karma Clima,2022,studio,add_to_catalog,later,add_original_release
+,Spore,1999,compilation,exclude_as_deluxe_bonus_disc,none,exclude
+,H.U.P. Live in Catharsis,1999,live,excluded_live_nonlandmark,none,exclude
+,Pansonica,2014,compilation,excluded_demos_and_rarities,none,exclude

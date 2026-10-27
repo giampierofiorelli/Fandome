@@ -1,0 +1,23 @@
+﻿album_id,genre,source,scope,evidence,evidence_strength
+marlenekuntz-catartica,noiserock,https://www.ondarock.it/recensioni/pietremiliariitaliane/marlenekuntz_catartica/,whole album,OndaRock landmark review describes noise guitar identity and Sonic Youth texture.,high
+marlenekuntz-catartica,alternativerock,https://www.ondarock.it/recensioni/pietremiliariitaliane/marlenekuntz_catartica/,whole album,OndaRock categorizes Catartica as alt-rock; later independent reappraisal agrees.,high
+marlenekuntz-catartica,postgrunge,https://www.indieforbunnies.com/2024/05/13/oggi-catartica-dei-marlene-kuntz-compie-30-anni/,whole album (retrospective tag),"Indie for Bunnies lists post-grunge explicitly; scene-term is contested, downweighted.",medium
+marlenekuntz-catartica,grunge,https://it.wikipedia.org/wiki/Catartica,whole album (low-confidence secondary genre tag),Italian Wikipedia explicitly labels the album grunge; critics give stronger noise-rock than grunge emphasis.,low
+marlenekuntz-catartica,postpunk,https://www.ondarock.it/monografie/marlenekuntz/,some tracks / texture,OndaRock describes post-punk anger amid alternative/noise songwriting.,high
+marlenekuntz-catartica,rock,https://www.musiculturaonline.it/marlene-kuntz-catartica/,whole album (broad),MusiCulturA identifies original album as Italian rock.,high
+marlenekuntz-catartica,hardrock,https://www.musiculturaonline.it/marlene-kuntz-catartica/,some tracks,MusiCulturA uses hard rock for 1°2°3° only.,high
+marlenekuntz-ilvile,noiserock,https://www.musiculturaonline.it/marlene-kuntz-il-vile/,whole album,"MusiCulturA calls central sonics of 3 di 3 noise rock, with abrasive finale.",high
+marlenekuntz-ilvile,alternativerock,https://musicbrainz.org/release-group/3fde3f3f-7024-3c64-b003-3f16ee60850b,whole album,MusicBrainz explicitly tags release group alternative rock.,high
+marlenekuntz-ilvile,postgrunge,https://it.wikipedia.org/wiki/Il_vile,whole album (secondary genre tag),Italian Wikipedia explicitly tags Il vile post-grunge; review criticism emphasizes its noisier specifics.,low
+marlenekuntz-ilvile,indierock,https://musicbrainz.org/release-group/3fde3f3f-7024-3c64-b003-3f16ee60850b,whole album,MusicBrainz explicitly tags Il Vile indie rock.,medium
+marlenekuntz-ilvile,grunge,https://www.musiculturaonline.it/marlene-kuntz-il-vile/,some tracks,MusiCulturA says L’agguato introduces a grunge rhythmic phrase.,high
+marlenekuntz-ilvile,rock,https://www.musiculturaonline.it/marlene-kuntz-il-vile/,whole album (broad),MusiCulturA consistently treats record as rock.,high
+marlenekuntz-ilvile,metal,https://www.musiculturaonline.it/marlene-kuntz-il-vile/,some tracks,MusiCulturA explicitly describes metal tones on Cenere and Ape Regina.,high
+marlenekuntz-comedisdegno,noiserock,https://www.musiculturaonline.it/marlene-kuntz-come-di-sdegno/,some tracks / prevailing band language,MusiCulturA explicitly describes Donna L as noisy rock; EP includes remixes and jam so not uniform.,medium
+marlenekuntz-comedisdegno,rock,https://www.musiculturaonline.it/marlene-kuntz-come-di-sdegno/,whole EP (broad),"MusiCulturA calls release noisy rock, with largely guitar-based tracks and lengthy jam.",high
+marlenekuntz-houccisoparanoia,alternativerock,https://www.metallized.it/recensione.php?id=16139,whole album,Metallized explicitly identifies as Italian alternative-rock record.,high
+marlenekuntz-houccisoparanoia,noiserock,https://www.ondarock.it/monografie/marlenekuntz/,whole album (declining dominance),OndaRock contrasts noise-rock elements with growing melodic songwriting.,high
+marlenekuntz-houccisoparanoia,indierock,https://it.wikipedia.org/wiki/Ho_ucciso_paranoia,whole album (secondary genre tag),Italian Wikipedia explicitly labels the album indie rock; OndaRock contextualizes its Italian independent scene.,medium
+marlenekuntz-houccisoparanoia,postgrunge,https://it.wikipedia.org/wiki/Ho_ucciso_paranoia,whole album (secondary genre tag),"Italian Wikipedia explicitly tags post-grunge, but critical accounts center on alternative/noise songwriting.",low
+marlenekuntz-houccisoparanoia,rock,https://www.musiculturaonline.it/marlene-kuntz-ho-ucciso-paranoia/,whole album (broad),MusiCulturA identifies album as rock.,high
+marlenekuntz-houccisoparanoia,electrorock,https://www.musiculturaonline.it/marlene-kuntz-ho-ucciso-paranoia/,one track,MusiCulturA explicitly calls ending of L’odio migliore electro-rock; genre kept at end.,high

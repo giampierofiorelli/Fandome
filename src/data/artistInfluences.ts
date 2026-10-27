@@ -146,6 +146,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Bob Dylan', 'John Lennon', 'Van Morrison', 'Nina Simone', 'Buju Banton', 'Sizzla', 'R. H. Harris', 'The Soul Stirrers', 'Aretha Franklin'],
     source: 'Sinéad O’Connor: Paul Freeman interview 2002 (Dylan, Lennon, Van Morrison, Nina Simone, Buju Banton, Sizzla); Trouser Press 2007 (Dylan, R. H. Harris and the Soul Stirrers); NPR/WCMU 2014 (Idiot Wind; Aretha Franklin, album sequencing)',
   },
+  marlenekuntz: {
+    names: ['Sonic Youth', 'Nick Cave', 'Tom Waits', 'The Gun Club', 'Fugazi', 'Soundgarden', 'Big Black', 'Swans', 'Thin White Rope', 'Helmet', 'CCCP Fedeli alla linea', 'Leonard Cohen', 'Bob Dylan', 'Johnny Cash'],
+    source: 'Cristiano Godano: 1990 interview republished by Distorsioni (Sonic Youth, Nick Cave, Tom Waits, The Gun Club); OndaRock interview; SpazioRock 2017 (Fugazi, Soundgarden, Big Black, Swans, Thin White Rope, Helmet, CCCP for Sonica); la Repubblica 2026 (Soundgarden on Il vile); il Resto del Carlino (later: Cohen, Dylan, Cash)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
