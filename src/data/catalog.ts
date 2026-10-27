@@ -260,6 +260,7 @@ const ROWS: Row[] = [
   ['dieantwoord', 'Die Antwoord', '#e0e04a', 'Zef rave from Cape Town', [['$O$', 2009], ['Ten$Ion', 2012], ['Donker Mag', 2014], ['Mount Ninji and da Nice Time Kid', 2016]]],
   ['ditonellapiaga', 'ditonellapiaga', '#a3c95a', 'Witty, electronic Italian pop', [['Camouflage', 2022]]],
   ['rettore', 'Donatella Rettore', '#d94a8f', 'Kobra and Italian new wave', [['Ogni giorno si cantano canzoni d’amore', 1974], ['Donatella Rettore', 1977], ['Brivido divino', 1979], ['Magnifico delirio', 1980], ['Estasi clamorosa', 1981], ['Kamikaze Rock ’n’ Roll Suicide', 1982], ['Far West', 1983], ['Danceteria', 1985]]],
+  ['albertocamerini', 'Alberto Camerini', '#e0a03a', 'Milan’s rock’n’roll robot', [['Cenerentola e il pane quotidiano', 1976], ['Gelato metropolitano', 1977], ['Comici cosmetici', 1978], ['Alberto Camerini', 1980], ['Rudy e Rita', 1981], ['Rockmantico', 1982], ['Angeli in blue jeans', 1986], ['Dove l’arcobaleno arriva', 1995], ['Cyberclown', 2001], ['Kids Wanna Rock', 2005]]],
   ['modugno', 'Domenico Modugno', '#3f7ac9', 'Volare, the song the world sang', []],
   ['eivor', 'Eivør', '#5a8f9a', 'Faroese voice, northern skies', [['Slør', 2015], ['Segl', 2020], ['Enn', 2025]]],
   ['elisa', 'Elisa', '#9ac9d9', 'A voice between English and Italian', [['Pipes & Flowers', 1997], ['Asile’s World', 2000], ['Then Comes the Sun', 2001], ['Lotus', 2003], ['Pearl Days', 2004], ['Heart', 2009], ['Ivy', 2010], ['L’anima vola', 2013], ['On', 2016], ['Diari aperti', 2018], ['Ritorno al futuro/Back to the Future', 2022]]],

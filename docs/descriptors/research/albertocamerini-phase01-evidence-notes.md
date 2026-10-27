@@ -1,0 +1,37 @@
+# Alberto Camerini — Phase 01: researched evidence notes
+
+Scope: original studio albums, 1976–1980; the 1980 compilation named *Gelato metropolitano* is **not** this 1977 album. Every numeric descriptor is an editorial judgement on a 0–5 album-wide scale (not a source's numeric rating). Instrument and machine names come from album-specific credits or explicit musician testimony. `sounds_like` is editorial comparison only, **not** a documented historical influence.
+
+## Cenerentola e il pane quotidiano (1976)
+
+- **Genre:** Specialist OndaRock milestone review describes a prog-rock, jazz-rock, folk, country, rock’n’roll, beat and samba synthesis; the album-genre listing separately uses *folk rock*, *samba rock* and *fusion*. `sambarock` and `fusion` require newly created tokens and are not silently mapped to other terms. The dense prog/jazz-rock rhythmic shifts justify experimental **4**, and the band-and-keyboards blend yields electronic **2**, groove **3**.
+- **Instrumentation:** Original recording personnel transcribed in the album entry name electric/acoustic guitars, bass, drums, electric piano, sax, violin, synthesizers, percussion, and piano; OndaRock also identifies electric mandolin, jaw harp and strings in specific tracks. Specific model `moog` appears in personnel and `minimoog` on the long title track. These refer to different credit descriptions and should not be conflated.
+- **Production:** Album-level credit in OndaRock and the album entry is **Alberto Camerini, Eugenio Finardi, Massimo Villa**. An artist-wide biography instead mentions Paolo Tofani as a producer; it could conflate a guest/arranger with producer. Verify printed LP sleeve and do not append Tofani until confirmed. No general claim that the whole album was digitally recorded or sequenced.
+- **Influence:** Camerini himself told *Rolling Stone Italia* that the song “Cenerentola” was inspired by **Frank Zappa**. Specific first-person evidence supports `influenced_by`, unlike a critic's musical parallel. Political satire, media criticism and fractured fairy tales explain lyrics. OndaRock explicitly calls the debut a *pietra miliare*, hence landmark 1.
+
+## Gelato metropolitano (1977)
+
+- **Genre:** A much more acoustic album than the debut according to the album credits, IBS reissue commentary and DeBaser. Genres rank rock and Brazilian samba/songwriter music first. Latin-American colour and "poor electronics" documented by DeBaser justify lower-ranked `latin` and `electronic`; **do not treat it as full synth-pop**. Lower electronic **1**, moderate energy **3**, groove **3**. `poprock` reflects the early Brazilian-inflected rock/pop language described by OndaRock; it remains a qualified editorial broad tag.
+- **Instruments:** The album-specific personnel list names Camerini on guitar and Brazilian **reco-reco**, Ares Tavolazzi on bass/trombone/cello/guitar, percussion and drums, piano, violin, acoustic guitar, synthesizer, and **Minimoog**. `recoreco` is not currently canonical and must be added as an instrument with its true meaning (Brazilian scraped percussion).
+- **Producer conflict:** Album-specific credit names **Ares Tavolazzi** alone; Rockol and the municipal artist biography name **Ares Tavolazzi and Giulio Capiozzo** as producers. The album's personnel list does not even list Capiozzo playing drums. Preserve this discrepancy for a scan of the **original 1977 sleeve**. This draft lists Tavolazzi only rather than treating the second credit as proved. Donatella Bardi's sung duet “Bambulè” is **collaboration within a solo album**, not a co-billed album release.
+- **Edition:** Original 1977 LP has eight tracks. The newer IBS CD includes bonus “Pane quotidiano” and “Il diavolo in corpo”; do not assign their instruments to this album or change the 1977 release date. The *1980* same-title album is a separate compilation and is excluded from all phases.
+
+## Comici cosmetici (1978)
+
+- **Genre:** The concept album chronicles the clown **Neurox**. Original album description links *Divo divo* and *Poliziotto per favore* to punk and *Siamo tanti* / *Rock show* to folk. Rockol and the Bologna cultural site describe electronics and London punk; OndaRock reports wave experimentation. `glamrock` is cautiously last as **texture**: the biographical reference is to *glamour*, which may describe performance and makeup as much as music. High theatrical **5** refers to the song cycle's enacted characters and clown.
+- **Instruments:** Album personnel list guitars, bass, drums, percussion, piano, keyboards, **Aldo Banfi's Polymoog**, double bass and extensive strings. Camerini separately told *Rolling Stone Italia* that **Shel Shapiro used a Moog on “Neurox”**. Track-specific equipment justifies `polymoog|moog`; refrain from asserting that all tracks use both.
+- **Producer:** **Shel Shapiro** only. Ezio De Rosa is credited as sound engineer, not producer. Album recorded at Stone Castle Studios per compiled credits (needs original-sleeve validation). **Landmark 1** is an editorial designation of the important transition and concept, not a sourced claim of sales success.
+
+## Alberto Camerini (1980)
+
+- **Genre:** Original 12-track studio album, CBS, not any identically named career anthology. “Ska-tenati” is documented by **Rai Teche** as Jamaican-tinged **synth-pop** and by municipal cultural bio as ska. DeBaser's full album review sees pop melodies, punk spirit and electronics but is less enthusiastic about coherence. Thus ska and punk appear as some-tracks/texture, not a pure punk or ska LP.
+- **Instrumentation:** Track-level 1980 musician data identify synthesizers by Roberto, Giaso and Massimo Colombo, guitars, keyboard, piano and Fender Rhodes/electric piano, Flaviano Cuffari/Dario Rezzola drums and Paolo Donnarumma bass. **No exact Yamaha/Korg model** is credited specifically to these sessions; Camerini's retrospective interview mentions Roberto's machines generally. The `production` cell therefore stays **empty** rather than guessing drum-machine programming, sequencer, or specific synthesizer make.
+- **Producer:** Roberto Colombo is listed as producer for this LP, separately from engineers Mauro Cauchi and Piero Bravin and artistic director Valentino Maggioni. Colombo's own biography independently confirms productions for Camerini in this period.
+- **Influence:** Camerini said he delivered “Voglio te” specifically **in the manner of Cheap Trick**, directly supporting `influenced_by=Cheap Trick` for this album. His stated ambition to sound like Aerosmith and interest in Kraftwerk belong to general **ARTIST INFLUENCES**, not proof those artists directly formed any other album. *1980* does **not** contain “Rock'n'roll Robot”, which appears on *Rudy e Rita* (1981).
+
+## Evidence gaps / differences of judgement
+
+- Some encyclopedic pages carry self-declared insufficient sourcing, so personnel and producer credits require original jacket/label confirmation before marking as `reviewed`.
+- Genres are album-wide composites with track-level exceptions recorded separately in genre evidence. Neither songwriter influence nor stylistic similarity should be interpreted as a collaborator/producer credit.
+- No precise recording machines were assumed based on historical fashion or musical timbre.
+- All four rows remain `draft`; next phase is **Rudy e Rita** (1981), **Rockmantico** (1982), **Angeli in blue jeans** (1986).

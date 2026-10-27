@@ -1,0 +1,14 @@
+﻿artist_id,album_id,title,year,type,in_catalog,descriptor_exists,action,phase,notes
+albertocamerini,albertocamerini-cenerentolaeilpanequotidiano,Cenerentola e il pane quotidiano,1976,studio,no,no,ADD,01,Phase 01 row in current ZIP.
+albertocamerini,albertocamerini-gelatometropolitano,Gelato metropolitano,1977,studio,no,no,ADD,01,Phase 01 row in current ZIP.
+albertocamerini,albertocamerini-comicicosmetici,Comici cosmetici,1978,studio,no,no,ADD,01,Phase 01 row in current ZIP.
+albertocamerini,albertocamerini-albertocamerini,Alberto Camerini,1980,studio,no,no,ADD,01,Phase 01 row in current ZIP.
+albertocamerini,albertocamerini-rudyerita,Rudy e Rita,1981,studio,no,no,ADD,02,Not included in current ZIP.
+albertocamerini,albertocamerini-rockmantico,Rockmantico,1982,studio,no,no,ADD,02,Not included in current ZIP.
+albertocamerini,albertocamerini-angeliinbluejeans,Angeli in blue jeans,1986,studio,no,no,ADD,02,Not included in current ZIP.
+albertocamerini,albertocamerini-dovelarcobalenoarriva,Dove l'arcobaleno arriva,1995,studio,no,no,ADD,03,Not included in current ZIP.
+albertocamerini,albertocamerini-cyberclown,Cyberclown,2001,studio,no,no,ADD,03,Not included in current ZIP.
+albertocamerini,albertocamerini-kidswannarock,Kids Wanna Rock,2005,studio,no,no,ADD,03,Not included in current ZIP. MusicBrainz identifies Alberto Camerini & Skidsoplastix co-billing; verify record jacket.
+albertocamerini,,Gelato metropolitano (1980 compilation),1980,compilation,no,no,EXCLUDE,,"1980 retrospective / compilation, distinct from 1977 studio album."
+albertocamerini,,Arlecchino elettronico,1995,compilation,no,no,EXCLUDE,,Anthology/remix compilation excluded by owner policy.
+albertocamerini,,Rockmanticollection 1980-1986,1998,compilation,no,no,EXCLUDE,,Hits compilation excluded.
