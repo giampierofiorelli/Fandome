@@ -8,6 +8,9 @@ import { COUNTRY_NAMES, sceneOf } from '../data/scenes'
 
 const countryName = (code: string) => COUNTRY_NAMES[code] ?? code
 
+// Long names shortened as people say them (owner).
+const SHORT: Record<string, string> = { GB: 'UK', US: 'USA' }
+
 // Where every suggested artist comes from (owner: for everyone, not only discoveries): the country's name, as a
 // quiet tag next to the title.
 export function CountryTag({ code, discovery }: { code?: string; discovery?: boolean }) {
@@ -15,7 +18,7 @@ export function CountryTag({ code, discovery }: { code?: string; discovery?: boo
   const name = countryName(code)
   return (
     <span className="country-tag" title={discovery ? `From a local scene in ${name}` : `From ${name}`}>
-      {name}
+      {SHORT[code] ?? name}
     </span>
   )
 }
