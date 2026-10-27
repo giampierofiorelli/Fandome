@@ -1,0 +1,8 @@
+﻿album_id,artist,title,year,type,in_catalog,action,evidence,comment
+notwist-shrink,The Notwist,Shrink,1998,studio,yes,retain existing id,https://thenotwist.bandcamp.com/album/shrink,Already in catalog.ts; use as-is
+notwist-neongolden,The Notwist,Neon Golden,2002,studio,yes,retain existing id,https://thenotwist.bandcamp.com/album/neon-golden,Already in catalog.ts; use original 2002 album not 2003 US bonus edition
+notwist-thedevilyoume,The Notwist,"The Devil, You + Me",2008,studio,yes,retain existing id,https://thenotwist.bandcamp.com/album/the-devil-you-me,Already in catalog.ts; album is studio not live
+notwist-sturm,The Notwist,Sturm,2009,soundtrack,no,ADD in next phase,https://www.deutscher-filmpreis.de/film/sturm/,"2009 original film score for Sturm, 2010 German Film Award for Best Music"
+notwist-closetotheglass,The Notwist,Close to the Glass,2014,studio,yes,future phase,https://thenotwist.bandcamp.com/album/close-to-the-glass,Catalogued; not included in Phase 02
+notwist-vertigodays,The Notwist,Vertigo Days,2021,studio,yes,future phase,https://thenotwist.bandcamp.com/album/vertigo-days,Catalogued; not included in Phase 02
+notwist-newsfromplanetzombie,The Notwist,News from Planet Zombie,2026,studio,no,ADD in next phase,https://morrmusic.com/releases/news-from-planet-zombie,Released 13 March 2026; missing from catalog.ts as at 27 October 2026
