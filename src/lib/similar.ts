@@ -12,7 +12,8 @@ import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
-import { SCENES, isLocalArtist, type Genre } from '../data/scenes'
+import { SCENES, type Genre } from '../data/scenes'
+import { isLocalArtist } from './local'
 
 // Names are compared folded (accents, case, punctuation off); the same few hundred names come back
 // millions of times, so each is folded once.

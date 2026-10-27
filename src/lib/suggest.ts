@@ -4,7 +4,8 @@
 // sound (album descriptors: albums you rated highly, then the albums of artists you follow).
 import type { Album, Artist, User } from '../data/types'
 import { soundMatch, type AlbumSeed } from './similar'
-import { COUNTRY_NAMES, isLocalArtist, sceneOf } from '../data/scenes'
+import { COUNTRY_NAMES, sceneOf } from '../data/scenes'
+import { isLocalArtist } from './local'
 
 export interface ArtistSuggestion {
   artist: Artist

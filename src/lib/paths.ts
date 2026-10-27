@@ -7,7 +7,8 @@
 // Discovery targets are local-scene artists only: outside the global markets (US, UK, Canada,
 // Australia, Ireland) and singing mainly in their own language, not English.
 import type { Album, Artist, User } from '../data/types'
-import { COUNTRY_NAMES, GENRE_LABELS, fromCountry, isLocalArtist, sceneOf, type Genre } from '../data/scenes'
+import { COUNTRY_NAMES, GENRE_LABELS, fromCountry, sceneOf, type Genre } from '../data/scenes'
+import { isLocalArtist } from './local'
 import { genreListSimilarity, similarArtists } from './similar'
 
 export interface PathSuggestion {

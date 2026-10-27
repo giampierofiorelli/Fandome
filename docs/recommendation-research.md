@@ -183,3 +183,8 @@ discovery place (closest album from a local scene abroad) checked only the artis
 is her English-language crossover; and that place was always shown first, so it read as the best match. Rules now: an album
 counts as a local-scene discovery only if its main language is the scene's language; the discovery place keeps its slot but
 sits where its score puts it, after documented links. Catalogue effect: local-abroad share 21% → 20%, other metrics unchanged.
+Follow-up (owner): Shakira is an international star whatever language she sings in, and she kept turning up as the
+discovery place at the end of Italian lists (Elisa, Subsonica, Paola & Chiara, Rettore, Tiromancino…, 16 lists). New
+general rule in `src/lib/local.ts`: an artist with two or more key albums (importance ≥ 4, soundtracks excluded) sung mainly
+in English is a global crossover, not a local scene, everywhere discovery is used (album and artist suggestions, Bridge,
+scene paths, Artists). In today's catalogue it applies to Shakira only. Local-abroad share 20% → 19%; tests unchanged.

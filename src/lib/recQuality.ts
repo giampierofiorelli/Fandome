@@ -3,7 +3,8 @@
 import { DESCRIPTORS } from './descriptors'
 import { genreSimilarity, similarAlbums } from './similar'
 import { albums } from '../data/seed'
-import { GLOBAL_MARKETS, isLocalArtist, sceneOf } from '../data/scenes'
+import { GLOBAL_MARKETS, sceneOf } from '../data/scenes'
+import { isLocalArtist } from './local'
 
 export interface Quality {
   albums: number // albums with a description
