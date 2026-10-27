@@ -1,0 +1,46 @@
+﻿album_id,genre,source,scope,url,evidence_note
+rem-lifesrichpageant,janglepop,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic source style Jangle Pop.
+rem-lifesrichpageant,alternativerock,a_shfl,whole album,https://www.theshfl.com/album/Lifes-Rich-Pageant,The SHFL uses alternative rock as a whole-record genre label.
+rem-lifesrichpageant,folkrock,a_shfl,whole album,https://www.theshfl.com/album/Lifes-Rich-Pageant,The SHFL explicitly lists folk rock as an album style.
+rem-lifesrichpageant,collegerock,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic album style College Rock.
+rem-lifesrichpageant,alternativepoprock,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic exact category Alternative Pop/Rock; distinct from Alternative/Indie Rock.
+rem-lifesrichpageant,alternativeindierock,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic exact category Alternative/Indie Rock.
+rem-lifesrichpageant,adultalternativepoprock,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic exact category Adult Alternative Pop/Rock.
+rem-lifesrichpageant,contemporarypoprock,a_all,whole album,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic exact category Contemporary Pop/Rock.
+rem-lifesrichpageant,postpunk,a_pitch,whole album,https://pitchfork.com/reviews/albums/15625-lifes-rich-pageant-25th-anniversary-edition/,Pitchfork explicitly characterizes the sound as Southern post-punk.
+rem-lifesrichpageant,arenarock,a_shfl,whole album,https://www.theshfl.com/album/Lifes-Rich-Pageant,The SHFL lists arena rock with its album genre tags; a secondary lean.
+rem-lifesrichpageant,rock,a_la,whole album,https://www.latimes.com/archives/la-xpm-1986-07-27-ca-1324-story.html,Contemporary 1986 review directly describes straightforward rock and roll.
+rem-lifesrichpageant,americanunderground,a_all,scene,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic style American Underground; historical scene context rather than acoustic texture.
+rem-lifesrichpageant,garagerock,a_all,some tracks,https://www.allmusic.com/album/lifes-rich-pageant-mw0000191412,AllMusic calls the LP cover Superman a garage-rock obscurity; track-only.
+rem-document,janglepop,b_all,whole album,https://www.allmusic.com/album/r206832,AllMusic lists Jangle Pop and discusses slower jangle-pop pieces.
+rem-document,alternativerock,b_shfl,whole album,https://www.theshfl.com/album/Document,The SHFL directly labels album alternative rock.
+rem-document,alternativepoprock,b_all,whole album,https://www.allmusic.com/album/r206832,AllMusic exact Alternative Pop/Rock category.
+rem-document,alternativeindierock,b_all,whole album,https://www.allmusic.com/album/r206832,AllMusic exact Alternative/Indie Rock category.
+rem-document,collegerock,b_all,whole album,https://www.allmusic.com/album/r206832,AllMusic lists College Rock for the original 1987 album.
+rem-document,poprock,b_shfl,whole album,https://www.theshfl.com/album/Document,The SHFL directly identifies album as pop rock.
+rem-document,rock,b_shfl,whole album,https://www.theshfl.com/album/Document,The SHFL names rock; band-centered and riff-heavy arrangements.
+rem-green,alternativepoprock,c_all,whole album,https://www.allmusic.com/album/green-r16424,AllMusic exact album category Alternative Pop/Rock.
+rem-green,alternativeindierock,c_all,whole album,https://www.allmusic.com/album/green-r16424,AllMusic exact album category Alternative/Indie Rock.
+rem-green,collegerock,c_all,whole album,https://www.allmusic.com/album/green-r16424,AllMusic exact album category College Rock.
+rem-green,adultalternativepoprock,c_all,whole album,https://www.allmusic.com/album/green-r16424,AllMusic exact album category Adult Alternative Pop/Rock.
+rem-green,folkrock,c_pitch,some tracks,https://pitchfork.com/reviews/albums/18049-rem-green-25th-anniversary-deluxe-edition/,Pitchfork specifies fluttering folk rock amid contrasting styles.
+rem-green,rock,c_pitch,whole album,https://pitchfork.com/reviews/albums/18049-rem-green-25th-anniversary-deluxe-edition/,Pitchfork tags the album Rock and documents loud rock material.
+rem-green,pop,c_pitch,some tracks,https://pitchfork.com/reviews/albums/18049-rem-green-25th-anniversary-deluxe-edition/,Pitchfork explicitly discusses a sugary pop component including Stand and Pop Song 89.
+rem-green,contemporaryfolk,c_all,some tracks,https://www.allmusic.com/album/green-r16424,AllMusic calls You Are the Everything and The Wrong Child contemporary folk.
+rem-green,country,c_pitch,texture,https://pitchfork.com/reviews/albums/18049-rem-green-25th-anniversary-deluxe-edition/,Pitchfork explicitly names country flourishes; minor palette component.
+rem-green,bubblegum,c_all,some tracks,https://www.allmusic.com/album/green-r16424,"AllMusic uses bubblegum for Stand and Pop Song 89, not entire album."
+rem-outoftime,janglepop,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic classifies the original album Jangle Pop.
+rem-outoftime,alternativerock,d_aoty,whole album,https://www.albumoftheyear.org/album/5503-rem-out-of-time.php,AOTY original-album genre categorisation Alternative Rock.
+rem-outoftime,altcountry,d_aoty,whole album,https://www.albumoftheyear.org/album/5503-rem-out-of-time.php,AOTY exact Alternative Country/Alt-Country tag.
+rem-outoftime,poprock,d_aoty,whole album,https://www.albumoftheyear.org/album/5503-rem-out-of-time.php,AOTY lists Pop Rock as original-record style.
+rem-outoftime,chamberpop,d_magnet,whole album,https://magnetmagazine.com/2016/12/13/essential-new-music-r-e-m-s-out-of-time-25th-anniversary-edition/,MAGNET calls the album chamber pop and describes orchestration.
+rem-outoftime,alternativepoprock,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic exact category Alternative Pop/Rock.
+rem-outoftime,alternativeindierock,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic exact category Alternative/Indie Rock.
+rem-outoftime,adultalternativepoprock,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic exact Adult Alternative Pop/Rock category.
+rem-outoftime,collegerock,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic classifies original studio album College Rock.
+rem-outoftime,folk,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic describes overall album as folk and pop songs.
+rem-outoftime,pop,d_all,whole album,https://www.allmusic.com/album/r721637,AllMusic identifies an overall pop-song palette.
+rem-outoftime,country,d_crr,some tracks,https://www.classicrockreview.com/2011/08/1991-rem-out-of-time/,Classic Rock Review explicitly names country elements; do not infer country rock genre from that.
+rem-outoftime,funk,d_crr,some tracks,https://www.classicrockreview.com/2011/08/1991-rem-out-of-time/,"Review identifies funk, especially Radio Song; NOT whole-LP core."
+rem-outoftime,classical,d_crr,texture,https://www.classicrockreview.com/2011/08/1991-rem-out-of-time/,"Review names classical elements in the expanded orchestration; texture, not classical album."
+rem-outoftime,rap,d_all,some tracks,https://www.allmusic.com/album/r721637,"KRS-One raps on Radio Song, not a hip-hop album; specific track-only."
