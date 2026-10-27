@@ -497,6 +497,9 @@ const ROWS: Row[] = [
   ['kingsunnyade', 'King Sunny Adé', '#2f9e6e', 'Nigeria’s king of jùjú', [['Juju Music', 1982], ['Synchro System', 1983], ['Aura', 1984], ['E Dide (Get Up)', 1995], ['Odù', 1998], ['Seven Degrees North', 2000], ['Bábá Mo Túndé', 2010]]],
   ['youssoundour', 'Youssou N’Dour', '#e0a23a', 'Senegal’s voice of mbalax', [['Ndiadiane Ndiaye', 1982], ['Diongoma', 1983], ['Immigrés', 1984], ['Nelson Mandela', 1985], ['The Lion', 1989], ['Set', 1990], ['Eyes Open', 1992], ['The Guide (Wommat)', 1994], ['Lii', 1996], ['St. Louis', 1997], ['Rewmi', 1999], ['Joko: From Village to Town', 2000], ['Ba Tay', 2001], ['Nothing’s in Vain (Coono du réér)', 2002], ['Egypt', 2004], ['Alsaama Day', 2007], ['Rokku Mi Rokka', 2007], ['Dakar–Kingston', 2010], ['Mbalakh Dafay Wakh', 2011], ['Africa Rekk', 2016], ['Seeni Valeurs', 2017], ['History', 2019], ['Mbalax', 2021], ['Éclairer le monde – Light the World', 2025]]],
   ['buenavistasocialclub', 'Buena Vista Social Club', '#c8643c', 'Havana’s veterans revive son', [['Buena Vista Social Club', 1997]]],
+  ['ibrahimferrer', 'Ibrahim Ferrer', '#b8873a', 'The voice of the bolero, found again in Havana', [['Buena Vista Social Club Presents Ibrahim Ferrer', 1999]]],
+  ['celiacruz', 'Celia Cruz', '#d4483b', '¡Azúcar! The queen of salsa', [['Celia & Johnny', 1974]]],
+  ['rubenblades', 'Rubén Blades', '#3f6fa8', 'Salsa that tells the stories of the barrio', [['Siembra', 1978]]],
 ]
 
 const slug = (s: string) =>
@@ -508,7 +511,7 @@ const slug = (s: string) =>
 
 // Artists no longer touring (passed away or split up): no concert lookup, so tribute
 // shows don't appear as their dates.
-const LEGACY = new Set(['sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
+const LEGACY = new Set(['ibrahimferrer', 'celiacruz', 'sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
 
 export const catalogArtists: Artist[] = ROWS.map(([id, name, color, tagline, albums]) => ({
   id,

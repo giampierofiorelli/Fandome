@@ -202,3 +202,11 @@ Vol. 2 at 5), Björk's 1977 album (4), Moroder Top Gun/Déjà Vu (5), Michael Ja
 Maybe (4, Creation), Lorde Pure Heroine (3), and albums released after mid-2026 (scored from their credits).
 Also: Shakira's Oral Fixation, Vol. 2 loses `gospel` (no source names it); the global-crossover rule now also needs
 success abroad (`GLOBAL_HITS`: Shakira, Moroder, Daft Punk); scene membership (Scenes paths) stays by origin.
+Refinement (owner, same day): "with intelligence": commercial is not the problem, commercial without artistic quality is,
+and an interesting album that critics or cults overlooked must never be held back. The rule now blocks only a
+**packaged product**: mainstream 5 and acclaim below 5 (115 albums), when 2+ points above the page album. Acclaimed chart
+records (Thriller, Off the Wall, Rhythm Nation 1814, Control, Arrival, Future Nostalgia…: mainstream 5, acclaim 5) and
+artist-led chart records (mainstream 4: Oasis, Madonna) are no longer blocked. Artist pages: a packaged act averages
+mainstream ≥ 4.5 with critics' standing below 4.5. Shakira stays out of Tiromancino, Battiato and Elisa. Cuban gap filled
+(Ibrahim Ferrer, Celia & Johnny, Siembra): Buena Vista Social Club now leads to them, not to Shakira. Lists with no
+suggestion back to 15.

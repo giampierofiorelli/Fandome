@@ -602,9 +602,8 @@ export function similarAlbums(
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
       const gap = qualityGap(a, b)
-      // Never from a less commercial album to a much more commercial one (owner, Oct 2026: Tiromancino → Shakira),
-      // unless the album names that artist as an influence or names the record itself. The other way is fine.
-      const tooCommercial = commercialLift(a, b) >= COMMERCIAL_GAP && !includesName(a.influencedBy, d.artist)
+      // Never from an auteur or alternative album to a packaged chart product (see packaged below).
+      const tooCommercial = packaged(b) && commercialLift(a, b) >= COMMERCIAL_GAP && !includesName(a.influencedBy, d.artist)
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
@@ -748,8 +747,11 @@ export function similarArtists(
     if (score < 0.3 || !why || !best) continue
     const reason = /^(Both|Similar sound|Close genres)/.test(why) ? `${best.a.title} and ${best.b.title}: ${lowerFirst(why)}` : why
     // Same commercial rule as for albums, on the artists' averages; only a named influence can lift it (below).
-    const lift = commercialLift({ mainstream: meanOf(myAlbums.map((p) => p.mainstream)) }, { mainstream: meanOf(theirAlbums.map((p) => p.mainstream)) })
-    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them, tooCommercial: lift >= COMMERCIAL_GAP })
+    // An artist is a packaged act when their albums average mainstream 4.5+ and critics' standing below 4.5.
+    const theirs = { mainstream: meanOf(theirAlbums.map((p) => p.mainstream)), acclaim: standing(theirAlbums) }
+    const lift = commercialLift({ mainstream: meanOf(myAlbums.map((p) => p.mainstream)) }, theirs)
+    const packagedAct = (theirs.mainstream ?? 0) >= 4.5 && (theirs.acclaim ?? 0) < 4.5
+    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them, tooCommercial: packagedAct && lift >= COMMERCIAL_GAP })
   }
   scored.sort((x, y) => y.score - x.score)
   // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
@@ -797,15 +799,16 @@ export function genreListSimilarity(a: string[], b: string[]) {
 
 // ---------- critical standing ----------
 
-// How far below the album you're on a suggestion stands with critics (0-5 each, at release or later, whichever
-// stands today). Only when both are known. A well-regarded album doesn't lead to one critics panned: 2 points
-// lower pushes it down, 3 or more takes it out, even with a documented link.
 // ---------- how commercial ----------
 
 // Mainstream (0-5, reception file): 5 an industry-built global chart product, 3 a popular auteur record, 1 underground.
-// A suggestion 2 or more points more commercial than the album you're on is out: it is another world, whatever the
-// genre labels share (owner, Oct 2026). Only upward: from a chart record to an auteur one is a good lead.
+// Owner (Oct 2026): from an auteur or alternative record, a packaged chart product with no artistic standing is another
+// world, and embarrassing (Tiromancino → Shakira). Commercial is not the problem (Thriller, Rhythm Nation 1814, an artist-led
+// chart record from an indie one are fine leads), nor is a record critics overlooked: only the packaged product is out.
+// Packaged = mainstream 5 and not in the critics' canon (acclaim below 5); out when 2+ points more commercial than the
+// album you're on, unless that album names the artist as an influence. Only upward: Shakira can lead to Tiromancino.
 const COMMERCIAL_GAP = 2
+const packaged = (p: { mainstream?: number; acclaim?: number }) => p.mainstream === 5 && (p.acclaim ?? 0) < 5
 function commercialLift(a: { mainstream?: number }, b: { mainstream?: number }) {
   return a.mainstream === undefined || b.mainstream === undefined ? 0 : b.mainstream - a.mainstream
 }
@@ -814,6 +817,9 @@ const meanOf = (xs: (number | undefined)[]) => {
   return ys.length ? ys.reduce((n, x) => n + x, 0) / ys.length : undefined
 }
 
+// How far below the album you're on a suggestion stands with critics (0-5 each, at release or later, whichever
+// stands today). Only when both are known. A well-regarded album doesn't lead to one critics panned: 2 points
+// lower pushes it down, 3 or more takes it out, even with a documented link.
 function qualityGap(a: Profile, b: Profile) {
   return a.acclaim === undefined || b.acclaim === undefined ? 0 : a.acclaim - b.acclaim
 }
