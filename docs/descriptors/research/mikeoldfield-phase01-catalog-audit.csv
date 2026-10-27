@@ -1,0 +1,33 @@
+artist_id,album_id,title,year,type,present_in_catalog_ts,present_in_seed_ts,existing_descriptor_row,catalog_action,phase,evidence_or_caveat
+mikeoldfield,mikeoldfield-tubularbells,Tubular Bells,1973,studio,no,no,no,ADD,phase01,Core released studio album; official discography
+mikeoldfield,mikeoldfield-hergestridge,Hergest Ridge,1974,studio,no,no,no,ADD,phase01,Core released studio album; official discography
+mikeoldfield,mikeoldfield-ommadawn,Ommadawn,1975,studio,no,no,no,ADD,phase01,Core released studio album; official discography
+mikeoldfield,mikeoldfield-incantations,Incantations,1978,studio,no,no,no,ADD,phase01,Core released studio album; official discography
+mikeoldfield,mikeoldfield-platinum,Platinum,1979,studio,no,no,no,ADD,phase02,Core released studio album; official discography
+mikeoldfield,mikeoldfield-qe2,QE2,1980,studio,no,no,no,ADD,phase02,Core released studio album; official discography
+mikeoldfield,mikeoldfield-fivemilesout,Five Miles Out,1982,studio,no,no,no,ADD,phase02,Core released studio album; official discography
+mikeoldfield,mikeoldfield-crises,Crises,1983,studio,no,no,no,ADD,phase02,Core released studio album; official discography
+mikeoldfield,mikeoldfield-discovery,Discovery,1984,studio,no,no,no,ADD,phase03,Core released studio album; official discography
+mikeoldfield,mikeoldfield-thekillingfields,The Killing Fields,1984,soundtrack,no,no,no,ADD,phase03,Released feature-film score; soundtrack permitted by brief
+mikeoldfield,mikeoldfield-islands,Islands,1987,studio,no,no,no,ADD,phase03,Core released studio album; official discography
+mikeoldfield,mikeoldfield-earthmoving,Earth Moving,1989,studio,no,no,no,ADD,phase03,Core released studio album; official discography
+mikeoldfield,mikeoldfield-amarok,Amarok,1990,studio,no,no,no,ADD,phase04,Core released studio album; official discography
+mikeoldfield,mikeoldfield-heavensopen,Heaven's Open,1991,studio,no,no,no,ADD,phase04,Core released studio album; official discography
+mikeoldfield,mikeoldfield-tubularbellsii,Tubular Bells II,1992,studio,no,no,no,ADD,phase04,Core released studio album; official discography
+mikeoldfield,mikeoldfield-thesongsofdistantearth,The Songs of Distant Earth,1994,studio,no,no,no,ADD,phase04,Core released studio album; official discography
+mikeoldfield,mikeoldfield-voyager,Voyager,1996,studio,no,no,no,ADD,phase05,Core released studio album; official discography
+mikeoldfield,mikeoldfield-tubularbellsiii,Tubular Bells III,1998,studio,no,no,no,ADD,phase05,Core released studio album; official discography
+mikeoldfield,mikeoldfield-guitars,Guitars,1999,studio,no,no,no,ADD,phase05,Core released studio album; official discography
+mikeoldfield,mikeoldfield-themillenniumbell,The Millennium Bell,1999,studio,no,no,no,ADD,phase05,Core released studio album; official discography
+mikeoldfield,mikeoldfield-tr3slunas,Tr3s Lunas,2002,studio,no,no,no,ADD,phase06,Core released studio album; official discography
+mikeoldfield,mikeoldfield-tubularbells2003,Tubular Bells 2003,2003,studio,no,no,no,ADD,phase06,Core released studio album; official discography
+mikeoldfield,mikeoldfield-lightshade,Light + Shade,2005,studio,no,no,no,ADD,phase06,Core released studio album; official discography
+mikeoldfield,mikeoldfield-musicofthespheres,Music of the Spheres,2008,studio,no,no,no,ADD,phase07,Core released studio album; official discography
+mikeoldfield,mikeoldfield-manontherocks,Man on the Rocks,2014,studio,no,no,no,ADD,phase07,Core released studio album; official discography
+mikeoldfield,mikeoldfield-returntoommadawn,Return to Ommadawn,2017,studio,no,no,no,ADD,phase07,Core released studio album; official discography
+mikeoldfield,mikeoldfield-theorchestraltubularbells,The Orchestral Tubular Bells,1975,live,no,no,no,EXCLUDE_LIVE,,Special case: classed live recording; orchestra captured live in 1974; no studio-album row
+mikeoldfield,mikeoldfield-boxed,Boxed,1976,compilation,no,no,no,EXCLUDE_COMPILATION,,Box includes earlier material and remixes
+mikeoldfield,mikeoldfield-exposed,Exposed,1979,live,no,no,no,EXCLUDE_LIVE,,Concert recording
+mikeoldfield,mikeoldfield-tubularbeats,Tubular Beats,2013,remix,no,no,no,DEFER_REMIX,,Remix collaboration; not prioritised in phase plan
+mikeoldfield,mikeoldfield-thespacemovieoriginalsoundtrack,The Space Movie (Original Soundtrack),2015,soundtrack,no,no,no,DEFER_SOUNDTRACK,,Archival soundtrack issuance drawing on 1979 material; investigate unique material before inclusion
+mikeoldfield,mikeoldfield-opusone,Opus One,2023,compilation,no,no,no,EXCLUDE_ARCHIVE,,Archive/demo or reissue; not a 2023 new studio album

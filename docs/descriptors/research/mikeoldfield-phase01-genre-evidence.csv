@@ -1,0 +1,26 @@
+album_id,genre,source,url,scope,evidence
+mikeoldfield-tubularbells,prog,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,whole_album,AllMusic: Prog-Rock
+mikeoldfield-tubularbells,artrock,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,whole_album,AllMusic: Art Rock
+mikeoldfield-tubularbells,progressiveelectronic,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,whole_album,AllMusic: Progressive Electronic
+mikeoldfield-tubularbells,folk,Mike Oldfield official discography,https://www.mikeoldfieldofficial.com/discography/,whole_album,Official description explicitly cites the debut’s folk-based influences
+mikeoldfield-tubularbells,chambermusic,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,whole_album,AllMusic: Chamber Music
+mikeoldfield-tubularbells,classicalcrossover,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,whole_album,AllMusic: Classical Crossover
+mikeoldfield-tubularbells,experimentalelectronic,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,some_tracks,AllMusic: Experimental Electronic; one element of mixed sound
+mikeoldfield-tubularbells,newage,AllMusic — Tubular Bells,https://www.allmusic.com/album/tubular-bells-mw0000191174,retrospective_style,AllMusic retrospective New Age umbrella; not a 1973 contemporary label
+mikeoldfield-hergestridge,prog,AllMusic — Hergest Ridge,https://www.allmusic.com/album/hergest-ridge-mw0000195163,whole_album,AllMusic: Prog-Rock
+mikeoldfield-hergestridge,artrock,AllMusic — Hergest Ridge,https://www.allmusic.com/album/hergest-ridge-mw0000195163,whole_album,AllMusic: Art Rock
+mikeoldfield-hergestridge,progressiveelectronic,AllMusic — Hergest Ridge,https://www.allmusic.com/album/hergest-ridge-mw0000195163,whole_album,AllMusic: Progressive Electronic
+mikeoldfield-hergestridge,newage,AllMusic — Hergest Ridge,https://www.allmusic.com/album/hergest-ridge-mw0000195163,retrospective_style,AllMusic classifies New Age; retrospective genre
+mikeoldfield-ommadawn,progfolk,FOND/SOUND — Ommadawn review,https://www.fondsound.com/mike-oldfield-ommadawn-1975/,whole_album,FOND/SOUND explicitly: Progressive Folk
+mikeoldfield-ommadawn,prog,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,whole_album,AllMusic: Prog-Rock
+mikeoldfield-ommadawn,celtic,FOND/SOUND — Ommadawn review,https://www.fondsound.com/mike-oldfield-ommadawn-1975/,whole_album,FOND/SOUND explicitly describes Celtic elements
+mikeoldfield-ommadawn,ambient,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,some_tracks,AllMusic: Ambient
+mikeoldfield-ommadawn,artrock,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,whole_album,AllMusic: Art Rock
+mikeoldfield-ommadawn,progressiveelectronic,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,some_tracks,AllMusic: Progressive Electronic
+mikeoldfield-ommadawn,experimentalelectronic,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,some_tracks,AllMusic: Experimental Electronic
+mikeoldfield-ommadawn,newage,AllMusic — Ommadawn,https://www.allmusic.com/album/ommadawn-r129948,retrospective_style,AllMusic retrospective genre tag New Age; official site calls precursor
+mikeoldfield-incantations,prog,AllMusic — Incantations,https://www.allmusic.com/album/incantations-mw0000193927,whole_album,AllMusic: Prog-Rock
+mikeoldfield-incantations,artrock,AllMusic — Incantations,https://www.allmusic.com/album/incantations-mw0000193927,whole_album,AllMusic: Art Rock
+mikeoldfield-incantations,progressiveelectronic,AllMusic — Incantations,https://www.allmusic.com/album/incantations-mw0000193927,whole_album,AllMusic: Progressive Electronic
+mikeoldfield-incantations,minimalism,Mike Oldfield official — Incantations,https://www.mikeoldfieldofficial.com/releases-archive/incantations-deluxe-edition/,whole_album,Artist official notes call it a work of minimalism
+mikeoldfield-incantations,newage,AllMusic — Incantations,https://www.allmusic.com/album/incantations-mw0000193927,retrospective_style,AllMusic retrospective New Age categorisation

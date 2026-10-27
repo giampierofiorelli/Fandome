@@ -162,6 +162,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Blondie'],
     source: 'Samantha Fox, El País 2015 (Debbie Harry as her inspiration); The Guardian 2017 (a Debbie Harry-style video for Touch Me)',
   },
+  mikeoldfield: {
+    names: ['Terry Riley', 'TONTO’s Expanding Head Band', 'Bert Jansch', 'John Renbourn'],
+    source: 'Mike Oldfield: The Guardian 2014 (Terry Riley and TONTO behind Tubular Bells), Guitar Player 1978 (Bert Jansch, John Renbourn as formative acoustic guitar). Left out: the Beatles (liked), the Shadows (songs his early band covered), Ravel, Roedelius, Bartók, Stravinsky, Stevie Wonder, Led Zeppelin (listening, not named as influences)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
