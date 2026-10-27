@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  depeche: {
+    names: ['Kraftwerk', 'The Human League', 'Orchestral Manoeuvres in the Dark', 'David Bowie'],
+    source: 'Daniel Miller, MusicRadar (Kraftwerk); Vince Clarke, The Quietus 2013 and Tape Op #150; Martin Gore, Moogfest 2019 with Daniel Miller; Dave Gahan, Rolling Stone 2017 (Bowie)',
+  },
   pearljam: {
     names: ['Jimi Hendrix', 'Stevie Ray Vaughan', 'B.B. King', 'Iron Maiden', 'Judas Priest', 'Kiss', 'Aerosmith', 'Led Zeppelin', 'Simon & Garfunkel', 'The Stooges', 'Ramones', 'The Clash', 'Sex Pistols', 'The Who', 'The Beatles', 'The Band', 'Talking Heads', 'Sonic Youth', 'Fugazi', 'Neil Young'],
     source: 'Mike McCready: Guitar World (Ten; Stevie Ray Vaughan); Stone Gossard: Stereogum; Jeff Ament: Guitar World, 12stringbass.net; Eddie Vedder: American Songwriter (with Springsteen), Louder (Neil Young, Merkin Ball)',
