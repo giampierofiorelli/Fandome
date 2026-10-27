@@ -64,7 +64,7 @@ export default function AlbumPage() {
         <h1 className="hero-name album-hero-title">{album.title}</h1>
         {essential && artist && (
           <span className="album-hero-essential">
-            <span className="neon-star" aria-hidden="true">✦</span> {ESSENTIAL_LABEL[essential.kind]} · {artist.name}
+            <span className="neon-star" aria-hidden="true">✦</span> {ESSENTIAL_LABEL[essential.kind]}
           </span>
         )}
         {artist && (
