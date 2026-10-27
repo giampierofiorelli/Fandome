@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  takethat: {
+    names: ['Adam Ant', 'The Human League', 'Depeche Mode', 'Kraftwerk', 'Yellow Magic Orchestra', 'John Foxx', 'Gary Numan'],
+    source: 'Gary Barlow, Norwich Theatre Q&A 2023 (Adam Ant, Human League, Depeche Mode); Howard Donald, podcast reported by The Independent 2021 (Kraftwerk, YMO, John Foxx, Human League, Gary Numan). Mark Owen’s childhood favourites (Madonna, Elvis) left out: liked, not named as influences',
+  },
   duranduran: {
     names: ['Roxy Music', 'David Bowie', 'Chic', 'Sex Pistols', 'Giorgio Moroder', 'Japan', 'Kraftwerk', 'Ultravox', 'The Human League', 'T. Rex', 'Sparks', 'Siouxsie and the Banshees', 'The Cure', 'The Clash', 'The Damned'],
     source: 'duranduran.com interviews: Simon Le Bon 2012 (Roxy Music, Chic, Sex Pistols), Roger Taylor 2011-2012 (Bowie, Roxy Music, Japan, Kraftwerk, Ultravox), Nick Rhodes 2021-2022 (Moroder, Human League Reproduction); Vogue 2021 (T. Rex, Sparks, Siouxsie, The Cure, The Clash, The Damned)',

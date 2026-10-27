@@ -1,0 +1,36 @@
+album_id,genre,source,url,scope,what_it_supports
+takethat-takethatparty,dancepop,Take That & Party – AllMusic,https://www.allmusic.com/album/take-that-party-mw0000095856,whole album,Album styles list Dance-Pop
+takethat-takethatparty,pop,Apple Music – Take That and Party,https://music.apple.com/us/album/take-that-and-party/298556036,whole album,Pop editorial album genre
+takethat-takethatparty,europop,Take That & Party – AllMusic,https://www.allmusic.com/album/take-that-party-mw0000095856,whole album,Euro-Pop is an album-level style
+takethat-takethatparty,teenpop,Take That & Party – AllMusic,https://www.allmusic.com/album/take-that-party-mw0000095856,whole album,Teen Pop is an album-level style
+takethat-takethatparty,dance,Take That & Party – original album classification,https://en.wikipedia.org/wiki/Take_That_%26_Party,whole album,"Dance is included in album genres, alongside pop"
+takethat-takethatparty,house,Album of the Year – Take That & Party,https://www.albumoftheyear.org/album/24166-take-that-take-that-party.php,some tracks,"Community genre tag House, relegated behind AllMusic core styles"
+takethat-takethatparty,contemporaryrnb,Album of the Year – Take That & Party,https://www.albumoftheyear.org/album/24166-take-that-take-that-party.php,some tracks,Secondary community tag Contemporary R&B
+takethat-takethatparty,sophistipop,Album of the Year – Take That & Party,https://www.albumoftheyear.org/album/24166-take-that-take-that-party.php,some tracks,Secondary community tag Sophisti-Pop; lower confidence
+takethat-takethatparty,garagehouse,Album of the Year – Take That & Party,https://www.albumoftheyear.org/album/24166-take-that-take-that-party.php,some tracks,Secondary community tag Garage House; low confidence
+takethat-takethatparty,italohouse,Album of the Year – Take That & Party,https://www.albumoftheyear.org/album/24166-take-that-take-that-party.php,some tracks,Secondary community tag Italo House; low confidence
+takethat-takethatparty,disco,Take That official – Could It Be Magic,https://takethat.com/timeline/could-it-be-magic/,some tracks,Album dance cover modelled on Donna Summer/Giorgio Moroder disco arrangement
+takethat-everythingchanges,dancepop,Take That – Everything Changes on AllMusic,https://www.allmusic.com/album/everything-changes-mw0000372009,whole album,Dance-Pop style
+takethat-everythingchanges,europop,Take That – Everything Changes on AllMusic,https://www.allmusic.com/album/everything-changes-mw0000372009,whole album,Euro-Pop style
+takethat-everythingchanges,teenpop,Take That – Everything Changes on AllMusic,https://www.allmusic.com/album/everything-changes-mw0000372009,whole album,Teen Pop style
+takethat-everythingchanges,pop,Take That – Everything Changes on AllMusic,https://www.allmusic.com/album/everything-changes-mw0000372009,whole album,Pop style
+takethat-everythingchanges,adultcontemporary,Take That – Everything Changes on AllMusic,https://www.allmusic.com/album/everything-changes-mw0000372009,whole album,Adult Contemporary style
+takethat-everythingchanges,house,Relight My Fire – original Take That single,https://en.wikipedia.org/wiki/Relight_My_Fire,some tracks,The album recording Relight My Fire classed as house
+takethat-everythingchanges,disco,Now Music – Relight My Fire,https://www.nowmusicwiki.com/index.php/Take_That_featuring_Lulu_-_Relight_My_Fire,some tracks,Disco-style dance-pop cover of Dan Hartman on this album
+takethat-nobodyelse,pop,AllMusic – Nobody Else,https://www.allmusic.com/album/nobody-else-mw0000645119,whole album,Album genre/style Pop
+takethat-nobodyelse,dancepop,AllMusic – Nobody Else,https://www.allmusic.com/album/nobody-else-mw0000645119,whole album,Dance-Pop style
+takethat-nobodyelse,europop,AllMusic – Nobody Else,https://www.allmusic.com/album/nobody-else-mw0000645119,whole album,Euro-Pop style
+takethat-nobodyelse,teenpop,AllMusic – Nobody Else,https://www.allmusic.com/album/nobody-else-mw0000645119,whole album,Teen Pop style
+takethat-nobodyelse,rnb,The Independent – Nobody Else retrospective,https://www.independent.co.uk/arts-entertainment/music/features/take-that-nobody-else-album-split-robbie-williams-gary-barlow-jason-orange-a9509286.html,some tracks,Album targeted US R&B alongside ballads; Every Guy and Sunday to Saturday funk/R&B textures
+takethat-nobodyelse,funk,MusicBrainz – Nobody Else UK recording,https://musicbrainz.org/release/21235cb9-a523-4229-a50e-a8d29a69a05f,some tracks,"Syncopated live bass-led arrangements Every Guy, Sunday to Saturday; interpretive funk label"
+takethat-nobodyelse,house,MusicBrainz – Nobody Else UK recording,https://musicbrainz.org/release/21235cb9-a523-4229-a50e-a8d29a69a05f,some tracks,Hanging Onto Your Love produced and drum-programmed by house producer David Morales; substyle inference
+takethat-nobodyelse,adultcontemporary,The Independent – Nobody Else retrospective,https://www.independent.co.uk/arts-entertainment/music/features/take-that-nobody-else-album-split-robbie-williams-gary-barlow-jason-orange-a9509286.html,some tracks,Barlow piano-led mainstream power ballads; editorial category rather than explicitly named style
+takethat-beautifulworld,poprock,The Guardian – Alexis Petridis review,https://www.theguardian.com/music/2006/nov/24/popandrock3,whole album,Polished pop-rock record explicitly identified
+takethat-beautifulworld,pop,AllMusic – Beautiful World,https://www.allmusic.com/album/beautiful-world-mw0000741126,whole album,Pop style
+takethat-beautifulworld,contemporarypoprock,AllMusic – Beautiful World,https://www.allmusic.com/album/beautiful-world-mw0000741126,whole album,Contemporary Pop/Rock style
+takethat-beautifulworld,dancepop,AllMusic – Beautiful World,https://www.allmusic.com/album/beautiful-world-mw0000741126,whole album,Album-level Dance-Pop listed despite reduced dance focus
+takethat-beautifulworld,europop,AllMusic – Beautiful World,https://www.allmusic.com/album/beautiful-world-mw0000741126,whole album,Euro-Pop genre
+takethat-beautifulworld,aor,The Guardian – Alexis Petridis review,https://www.theguardian.com/music/2006/nov/24/popandrock3,texture,Producer association and adult-oriented rock comparison; weaker than pop-rock classification
+takethat-beautifulworld,folkpop,The Guardian – Alexis Petridis review,https://www.theguardian.com/music/2006/nov/24/popandrock3,some tracks,"Folky Wooden Boat track; editorial folk-pop mapping, not whole album"
+takethat-beautifulworld,psychedelicpop,The Guardian – Alexis Petridis review,https://www.theguardian.com/music/2006/nov/24/popandrock3,some tracks,What You Believe In has psychedelia touches; track-specific label
+takethat-beautifulworld,adultcontemporary,The Guardian – Alexis Petridis review,https://www.theguardian.com/music/2006/nov/24/popandrock3,texture,Adult-oriented mainstream ballad/pop-rock production; editorial classification
