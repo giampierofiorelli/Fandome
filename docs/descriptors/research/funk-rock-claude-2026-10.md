@@ -14,3 +14,8 @@ Chosen by how often they appear in the RHCP rows' `sounds_like`: Fishbone (6 alb
 - **Living Colour, Vivid (1988)**: Epic; Ed Stasium, Mick Jagger (two tracks, harmonica); genres named: hard rock, heavy metal, funk metal, alternative metal, funk rock, with soul, jazz, pop, rap, arena rock, punk, avant-garde jazz; critics compare Hendrix, Lynyrd Skynyrd, Roxy Music, Sly Stone, Led Zeppelin, Ornette Coleman's Prime Time. Source: en.wikipedia.
 - **Fishbone, Truth and Soul (1988)**: Columbia; David Kahne; horns (trombone, trumpet, saxophone), keyboards; genres named: funk rock, funk metal, hard rock, ska, punk, reggae, soul, funk, blues; socially conscious theme. Freddie's Dead is a Curtis Mayfield cover (not an influence). Source: en.wikipedia.
 New genre: `klezmer`.
+
+## Third batch (owner: complete the picture): the two direct influences the band names
+- **Gang of Four, Entertainment! (1979)**: EMI/Warner; producers Andy Gill, Jon King, Rob Warr; Gill (guitar), Allen (bass), Burnham (drums), King (vocals, melodica); genres named: post-punk, dance-punk, art punk, funk-punk, with funk, reggae and dub; lyrics: Situationism, Marx's alienation, the personal is political, subverted love songs. Flea: it changed how he looked at rock and sent him on his trip as a bass player. Andy Gill produced RHCP's debut. Source: en.wikipedia.
+- **James Brown, The Payback (1973)**: Polydor; Brown producer (vocals, electric piano, organ); Maceo Parker, St. Clair Pinckney, Fred Wesley, trumpets; Jimmy Nolen, Cheese Martin (guitar); Jabo Starks (drums); written for Hell Up in Harlem but not used; cyclic funk grooves plus two soul ballads. Live at the Apollo stays out (live album, owner's scope). Source: en.wikipedia.
+New genre: `funkpunk`.
