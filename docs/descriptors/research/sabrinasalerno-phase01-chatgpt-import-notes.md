@@ -42,3 +42,7 @@ Skip: **Something Special** (1988), **Super Remix** (1990) (compilations/old-tra
 - `CLAUDE_IMPORT.md`: this note.
 
 Claude should **retain** the two existing albums, **add** the two missing albums to `catalog.ts`, save the 27-column rows as `docs/descriptors/sabrinasalerno.csv`, save reception rows as `docs/descriptors/reception/sabrinasalerno.csv`, and then run `npx vite-node scripts/validate-descriptors.ts`. No GitHub data was modified directly.
+
+## Claude import note (27 Oct 2026)
+
+Credits checked on the original sleeves (Discogs API): Sabrina 1987 producers Cecchetto, Romani, Bonsanto, Rossi, with Rossi's synthesizers, sequencer and drum machine (Wikipedia personnel); Super Sabrina producers Giampiero Menzione (general producer), Stock Aitken Waterman (All of Me), Elvio Moratto (My Chico); Giorgio Moroder is credited as writer only on that album; Over the Pop adds Menzione, Peppe Vessicchio and Gianni Muciaccia. Reception researched by Claude.
