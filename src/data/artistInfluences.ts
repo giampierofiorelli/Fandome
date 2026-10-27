@@ -134,6 +134,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Patti Smith', 'Television', 'The Velvet Underground', 'Big Star', 'The Byrds', 'Wire', 'The B-52’s'],
     source: 'Michael Stipe: Pitchfork 5-10-15-20 (Patti Smith, Horses); Jon Savage interview, The Quietus (Television); Los Angeles Times 2021 (Velvet Underground); Rolling Stone Germany (B-52s); Mike Mills, Flagpole 2014 (Big Star); Peter Buck, NPR Fresh Air (The Byrds); The Independent (Wire, lower confidence)',
   },
+  pumpkins: {
+    names: ['Black Sabbath', 'My Bloody Valentine', 'The Cure', 'New Order', 'Bauhaus', 'Joy Division', 'Rush', 'The Who', 'Yes', 'Jethro Tull', 'Queen', 'Ramones', 'The Smiths'],
+    source: 'Billy Corgan: Pitchfork (Sabbath), NME (My Bloody Valentine on Gish; The Cure), Ultimate Classic Rock (Rush, Cherub Rock), MusicRadar (The Who, Tonight Tonight), Self-Titled (Yes, Jethro Tull, Queen, Ramones); Jimmy Chamberlin, Alternative Nation (New Order, Bauhaus, Joy Division; Iha and Johnny Marr)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

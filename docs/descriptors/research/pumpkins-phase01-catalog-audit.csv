@@ -1,0 +1,14 @@
+artist_id,album_id,title,year,type,catalog_status,phase,action
+pumpkins,pumpkins-gish,Gish,1991,studio,present,01,reuse existing Fandome ID
+pumpkins,pumpkins-siamesedream,Siamese Dream,1993,studio,present,01,reuse existing Fandome ID
+pumpkins,pumpkins-melloncollieandtheinfinitesadness,Mellon Collie and the Infinite Sadness,1995,studio,present,01,reuse existing Fandome ID
+pumpkins,pumpkins-adore,Adore,1998,studio,present,01,reuse existing Fandome ID
+pumpkins,pumpkins-machinathemachinesofgod,Machina/The Machines of God,2000,studio,present,later,reuse existing Fandome ID
+pumpkins,pumpkins-machinaiithefriendsenemiesofmodernmusic,Machina II/The Friends & Enemies of Modern Music,2000,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-zeitgeist,Zeitgeist,2007,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-oceania,Oceania,2012,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-monumentstoanelegy,Monuments to an Elegy,2014,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-shinyandohsobrightvol1lpnopastnofuturenosun,"Shiny and Oh So Bright, Vol. 1 / LP: No Past. No Future. No Sun.",2018,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-cyr,Cyr,2020,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-atumarockoperainthreeacts,Atum: A Rock Opera in Three Acts,2023,studio,missing,later,add before importing its eventual phase
+pumpkins,pumpkins-aghorimhorimei,Aghori Mhori Mei,2024,studio,present,later,reuse existing Fandome ID
