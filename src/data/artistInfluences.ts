@@ -86,6 +86,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Joy Division', 'John Martyn', 'The Durutti Column', 'Funkadelic', 'Richard Thompson', 'Television', 'Jimi Hendrix', 'Can', 'Public Image Ltd', 'Curtis Mayfield', 'Marvin Gaye', 'Sly and the Family Stone', 'The Beatles', 'Pink Floyd', 'The Stone Roses'],
     source: 'Nick McCabe: Total Guitar 1998, Coney\'s Loft Q&A 2016, MusicRadar; Richard Ashcroft: 1997 interview (Stuber), Los Angeles Times 1998',
   },
+  talkingheads: {
+    names: ['Roxy Music', 'Al Green', 'Smokey Robinson', 'Otis Redding', 'James Brown', 'Fela Kuti', 'Parliament', 'Funkadelic', 'Hamilton Bohannon'],
+    source: 'Chris Frantz (Louder; The Quietus: Roxy Music, Al Green, Smokey Robinson, Otis Redding); David Byrne (Pitchfork 5-10-15-20: James Brown, Parliament, Funkadelic, Bohannon); Eno and Byrne (Guardian 2009) and GRAMMY.com 2020 on Fela Kuti',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

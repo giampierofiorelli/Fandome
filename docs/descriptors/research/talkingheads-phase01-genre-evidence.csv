@@ -1,0 +1,47 @@
+﻿album_id,genre,source_url,scope,reasoning
+talkingheads-talkingheads77,newwave,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,AllMusic release-level style
+talkingheads-talkingheads77,artpunk,https://musicbrainz.org/release/57be3031-d63c-4c31-9be0-1d773a43eee9,whole album,MusicBrainz release-level tag; Pitchfork calls early band art-punks
+talkingheads-talkingheads77,newyorkpunk,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,AllMusic style / CBGB scene
+talkingheads-talkingheads77,punk,https://musicbrainz.org/release/57be3031-d63c-4c31-9be0-1d773a43eee9,whole album,MusicBrainz release tag / punk-rooted quartet
+talkingheads-talkingheads77,postpunk,https://musicbrainz.org/release/57be3031-d63c-4c31-9be0-1d773a43eee9,whole album,"Retrospective release-level tag, not 1977 self-description"
+talkingheads-talkingheads77,rock,https://pitchfork.com/reviews/albums/talking-heads-talking-heads-77/,whole album,Pitchfork album genre
+talkingheads-talkingheads77,americanpunk,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,Exact AllMusic American Punk metadata
+talkingheads-talkingheads77,punknewwave,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,Exact AllMusic Punk/New Wave style
+talkingheads-talkingheads77,albumrock,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,AllMusic metadata; secondary/broad
+talkingheads-talkingheads77,contemporarypoprock,https://www.allmusic.com/album/talking-heads-77-mw0000650867,whole album,Exact AllMusic Contemporary Pop/Rock style
+talkingheads-moresongsaboutbuildingsandfood,newwave,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic metadata
+talkingheads-moresongsaboutbuildingsandfood,postpunk,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic metadata
+talkingheads-moresongsaboutbuildingsandfood,dancerock,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic Dance-Rock style plus Pitchfork dance emphasis
+talkingheads-moresongsaboutbuildingsandfood,artrock,https://pitchfork.com/reviews/albums/talking-heads-more-songs-about-buildings-and-food/,whole album,Pitchfork identifies the art-rock/dance hybrid
+talkingheads-moresongsaboutbuildingsandfood,funk,https://pitchfork.com/reviews/albums/talking-heads-more-songs-about-buildings-and-food/,whole album,Pitchfork and group interviews emphasize funk grooves
+talkingheads-moresongsaboutbuildingsandfood,rock,https://pitchfork.com/reviews/albums/talking-heads-more-songs-about-buildings-and-food/,whole album,Pitchfork rock genre
+talkingheads-moresongsaboutbuildingsandfood,newyorkpunk,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic style
+talkingheads-moresongsaboutbuildingsandfood,alternativeindierock,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,Exact AllMusic Alternative/Indie Rock label
+talkingheads-moresongsaboutbuildingsandfood,punk,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic American Punk and Punk/New Wave labels
+talkingheads-moresongsaboutbuildingsandfood,americanpunk,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,Exact AllMusic American Punk style
+talkingheads-moresongsaboutbuildingsandfood,punknewwave,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,Exact AllMusic Punk/New Wave style
+talkingheads-moresongsaboutbuildingsandfood,albumrock,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,AllMusic broad metadata
+talkingheads-moresongsaboutbuildingsandfood,collegerock,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,Exact AllMusic College Rock style
+talkingheads-moresongsaboutbuildingsandfood,contemporarypoprock,https://www.allmusic.com/album/more-songs-about-buildings-and-food-mw0000650866,whole album,Exact AllMusic Contemporary Pop/Rock style
+talkingheads-moresongsaboutbuildingsandfood,disco,https://pitchfork.com/reviews/albums/talking-heads-more-songs-about-buildings-and-food/,texture,Album rhythm patterns; not predominant genre
+talkingheads-moresongsaboutbuildingsandfood,dub,https://pitchfork.com/reviews/albums/talking-heads-more-songs-about-buildings-and-food/,texture,"Dubby echoes/production touches, not central genre"
+talkingheads-fearofmusic,postpunk,https://pitchfork.com/reviews/albums/talking-heads-fear-of-music/,whole album,Pitchfork describes increasingly severe art-punk-to-post-punk transformation
+talkingheads-fearofmusic,newwave,https://www.electronicsound.co.uk/features/long-reads/summer-1978-new-yorks-new-wave-heatwave-talking-heads/,whole album,Electronic Sound places album in New York new-wave run
+talkingheads-fearofmusic,artrock,https://pitchfork.com/reviews/albums/talking-heads-fear-of-music/,whole album,Pitchfork experimental art-band studio album analysis
+talkingheads-fearofmusic,funk,https://pitchfork.com/reviews/albums/talking-heads-fear-of-music/,whole album,Funk guitar and grooves recurring across record
+talkingheads-fearofmusic,rock,https://pitchfork.com/reviews/albums/talking-heads-fear-of-music/,whole album,Pitchfork album genre
+talkingheads-fearofmusic,disco,https://cultfollowing.co.uk/2024/04/06/talking-heads-fear-of-music-review/,some tracks,Critic identifies disco-ready piano-based groove on Cities; album remains primarily post-punk
+talkingheads-fearofmusic,afrobeat,https://www.classicpopmag.com/features/talking-heads-remain-in-light/,some tracks,I Zimbra Afrobeat influence; do not extend to entire LP
+talkingheads-remaininlight,artrock,https://pitchfork.com/reviews/albums/talking-heads-remain-in-light/,whole album,Pitchfork names art-rock on title framing
+talkingheads-remaininlight,afrobeat,https://pitchfork.com/reviews/albums/talking-heads-remain-in-light/,whole album,"Album-wide rhythm foundation, corroborated by Frantz/Eno"
+talkingheads-remaininlight,funk,https://pitchfork.com/reviews/albums/talking-heads-remain-in-light/,whole album,Album-wide funk foundation and looping grooves
+talkingheads-remaininlight,postpunk,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic formal label
+talkingheads-remaininlight,newwave,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic formal label
+talkingheads-remaininlight,dancerock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic formal label; dance focus Pitchfork
+talkingheads-remaininlight,experimentalrock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic formal Experimental Rock label
+talkingheads-remaininlight,rock,https://pitchfork.com/reviews/albums/talking-heads-remain-in-light/,whole album,Pitchfork metadata
+talkingheads-remaininlight,alternativeindierock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic Alternative/Indie Rock label
+talkingheads-remaininlight,albumrock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic broad Album Rock metadata
+talkingheads-remaininlight,collegerock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic College Rock label
+talkingheads-remaininlight,contemporarypoprock,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic Contemporary Pop/Rock label
+talkingheads-remaininlight,punknewwave,https://www.allmusic.com/album/remain-in-light-mw0000192118,whole album,AllMusic Punk/New Wave label
