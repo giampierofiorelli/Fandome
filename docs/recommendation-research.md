@@ -210,3 +210,7 @@ artist-led chart records (mainstream 4: Oasis, Madonna) are no longer blocked. A
 mainstream ≥ 4.5 with critics' standing below 4.5. Shakira stays out of Tiromancino, Battiato and Elisa. Cuban gap filled
 (Ibrahim Ferrer, Celia & Johnny, Siembra): Buena Vista Social Club now leads to them, not to Shakira. Lists with no
 suggestion back to 15.
+Owner on the scale (same day): mainstream is about the production, not the launch or promotion: how formulaic and
+fake the record is versus quality commercial pop the artist crafts. Madonna: only Hard Candy, MDNA and Rebel Heart are
+high (5); Like a Prayer and the rest are 3. Applied to Madonna; the guide's definition changed. The other artists'
+values were scored with the earlier, launch-oriented definition and need a review under this one (ROADMAP).
