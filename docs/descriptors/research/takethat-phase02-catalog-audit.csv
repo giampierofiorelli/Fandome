@@ -1,0 +1,11 @@
+album_id,artist,title,year,type,in_catalog,action,phase
+takethat-takethatparty,Take That,Take That & Party,1992,studio,no,completed_phase01_do_not_import_again,01
+takethat-everythingchanges,Take That,Everything Changes,1993,studio,yes,completed_phase01_do_not_import_again,01
+takethat-nobodyelse,Take That,Nobody Else,1995,studio,yes,completed_phase01_do_not_import_again,01
+takethat-beautifulworld,Take That,Beautiful World,2006,studio,yes,completed_phase01_do_not_import_again,01
+takethat-thecircus,Take That,The Circus,2008,studio,yes,use_existing_phase02,02
+takethat-progress,Take That,Progress,2010,studio,yes,use_existing_phase02,02
+takethat-progressed,Take That,Progressed,2011,ep,no,add_to_catalogue_phase02,02
+takethat-iii,Take That,III,2014,studio,no,defer_to_phase03,03
+takethat-wonderland,Take That,Wonderland,2017,studio,no,defer_to_phase03,03
+takethat-thislife,Take That,This Life,2023,studio,yes,defer_to_phase03,03
