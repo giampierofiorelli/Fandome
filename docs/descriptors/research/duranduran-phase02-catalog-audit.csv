@@ -1,0 +1,17 @@
+album_id,artist,title,year,type,in_catalog,action,phase
+duranduran-duranduran,Duran Duran,Duran Duran,1981,studio,yes,use_existing,01
+duranduran-rio,Duran Duran,Rio,1982,studio,yes,use_existing,01
+duranduran-sevenandtheraggedtiger,Duran Duran,Seven and the Ragged Tiger,1983,studio,yes,use_existing,01
+duranduran-notorious,Duran Duran,Notorious,1986,studio,yes,use_existing,01
+duranduran-bigthing,Duran Duran,Big Thing,1988,studio,no,add_to_catalogue,02
+duranduran-liberty,Duran Duran,Liberty,1990,studio,no,add_to_catalogue,02
+duranduran-durandurantheweddingalbum,Duran Duran,Duran Duran (The Wedding Album),1993,studio,yes,use_existing,02
+duranduran-thankyou,Duran Duran,Thank You,1995,studio,no,add_to_catalogue,02
+duranduran-medazzaland,Duran Duran,Medazzaland,1997,studio,no,add_to_catalogue,03
+duranduran-poptrash,Duran Duran,Pop Trash,2000,studio,no,add_to_catalogue,03
+duranduran-astronaut,Duran Duran,Astronaut,2004,studio,no,add_to_catalogue,03
+duranduran-redcarpetmassacre,Duran Duran,Red Carpet Massacre,2007,studio,no,add_to_catalogue,03
+duranduran-allyouneedisnow,Duran Duran,All You Need Is Now,2010,studio,no,add_to_catalogue,04
+duranduran-papergods,Duran Duran,Paper Gods,2015,studio,no,add_to_catalogue,04
+duranduran-futurepast,Duran Duran,Future Past,2021,studio,yes,use_existing,04
+duranduran-dansemacabre,Duran Duran,Danse Macabre,2023,studio,yes,use_existing,04

@@ -1,0 +1,49 @@
+album_id,genre,source,url,scope,what_it_supports
+duranduran-bigthing,poprock,big_aoty,https://www.albumoftheyear.org/album/11524-duran-duran-big-thing.php,whole album,AOTY primary genre Pop Rock
+duranduran-bigthing,synthfunk,big_aoty,https://www.albumoftheyear.org/album/11524-duran-duran-big-thing.php,some tracks,AOTY names Synth Funk; first-side bass and syncopated dance tracks
+duranduran-bigthing,sophistipop,big_aoty,https://www.albumoftheyear.org/album/11524-duran-duran-big-thing.php,some tracks,AOTY names Sophisti-Pop; second-side urbane pop ballads
+duranduran-bigthing,bigmusic,big_rym,https://www.albumoftheyear.org/genre/6-electronic/all/rolling-stone/38/,texture,"Genre list metadata describes Big Music; stadium-scale choruses, weaker source"
+duranduran-bigthing,synthpop,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,whole album,AllMusic style Synth Pop; pressing confirms synth-pop
+duranduran-bigthing,dancerock,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,whole album,AllMusic Dance-Rock; LA Times identifies big-beat dance-rock half
+duranduran-bigthing,house,big_reissue,https://duranduran.com/2010/17169/,some tracks,Band label explicitly calls its house album; title song and two singles
+duranduran-bigthing,alternativedance,big_reissue,https://duranduran.com/2010/17169/,some tracks,House/rave crossover documented; music reference alternative-dance classification
+duranduran-bigthing,dancepop,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,some tracks,AllMusic Dance-Pop classification; prominent singles
+duranduran-bigthing,newwave,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,whole album,AllMusic New Wave style and contemporary lineage
+duranduran-bigthing,experimentalrock,big_lat,https://www.latimes.com/archives/la-xpm-1988-11-13-ca-58-story.html,some tracks,Reviewer highlights ambitious sound textures and techno-rock experimentation
+duranduran-bigthing,alternativerock,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,texture,AllMusic Alternative/Indie Rock style; mainly darker and guitar-led passages
+duranduran-bigthing,newromantic,big_am,https://www.allmusic.com/album/big-thing-mw0000197924,texture,"AllMusic stylistic tag reflects band lineage, not a single 1988 revival"
+duranduran-liberty,alternativedance,lib_aoty,https://www.albumoftheyear.org/album/11525-duran-duran-liberty.php,some tracks,AOTY lists Alternative Dance; dance-rock cuts
+duranduran-liberty,sophistipop,lib_aoty,https://www.albumoftheyear.org/album/11525-duran-duran-liberty.php,some tracks,AOTY Sophisti-Pop tag; polished ballads
+duranduran-liberty,dancepop,lib_aoty,https://www.albumoftheyear.org/album/11525-duran-duran-liberty.php,some tracks,AOTY Dance-Pop tag; glossy dance singles
+duranduran-liberty,poprock,lib_genres,https://www.herbmusic.net/album/duran-duran-liberty-9545,whole album,Herb Music identifies pop rock
+duranduran-liberty,dancerock,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,whole album,AllMusic Dance-Rock
+duranduran-liberty,synthpop,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,whole album,AllMusic Synth Pop and LP style
+duranduran-liberty,newwave,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,whole album,AllMusic genre and discussion of new wave elements
+duranduran-liberty,alternativerock,lib_genres,https://www.herbmusic.net/album/duran-duran-liberty-9545,texture,Herb Music alternative rock; guitar tracks lead this component
+duranduran-liberty,disco,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,some tracks,AllMusic directly identifies disco pieces
+duranduran-liberty,soul,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,some tracks,AllMusic Motown and Philly soul elements
+duranduran-liberty,phillysoul,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,texture,AllMusic explicitly says Philly soul elements
+duranduran-liberty,motown,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,texture,AllMusic explicitly calls out Motown elements
+duranduran-liberty,newromantic,lib_am,https://www.allmusic.com/album/liberty-mw0000690131,texture,AllMusic stylistic label with historical context
+duranduran-durandurantheweddingalbum,poprock,wed_aoty,https://www.albumoftheyear.org/album/5807-duran-duran-duran-duran.php,whole album,Album of the Year pop rock / MusicBrainz pop rock
+duranduran-durandurantheweddingalbum,dancepop,wed_am,https://www.allmusic.com/album/duran-duran-the-wedding-album-mw0000096047,whole album,AllMusic Dance-Pop and 90s dance-pop discussion
+duranduran-durandurantheweddingalbum,dancerock,wed_am,https://www.allmusic.com/album/duran-duran-the-wedding-album-mw0000096047,some tracks,AllMusic Dance-Rock; guitar/bass rhythm tracks
+duranduran-durandurantheweddingalbum,newwave,wed_am,https://www.allmusic.com/album/duran-duran-the-wedding-album-mw0000096047,texture,AllMusic New Wave lineage survives
+duranduran-durandurantheweddingalbum,synthpop,wed_am,https://www.allmusic.com/album/duran-duran-the-wedding-album-mw0000096047,texture,AllMusic Synth Pop; programmed keyboard passages
+duranduran-durandurantheweddingalbum,alternativedance,wed_aoty,https://www.albumoftheyear.org/album/5807-duran-duran-duran-duran.php,some tracks,Album of the Year alternative dance listing; Drowning Man
+duranduran-durandurantheweddingalbum,downtempo,wed_aoty,https://www.albumoftheyear.org/album/5807-duran-duran-duran-duran.php,some tracks,Album of the Year downtempo listing; Come Undone mood
+duranduran-durandurantheweddingalbum,softrock,wed_aoty,https://www.albumoftheyear.org/album/5807-duran-duran-duran-duran.php,some tracks,Album of the Year soft rock label; Ordinary World ballad
+duranduran-durandurantheweddingalbum,alternativerock,wed_mb,https://musicbrainz.org/release/0ffe5950-6c68-4b86-a7c3-0b8341cac732,texture,MusicBrainz release group alternate rock tags
+duranduran-durandurantheweddingalbum,triphop,wed_aoty,https://www.albumoftheyear.org/album/5807-duran-duran-duran-duran.php,some tracks,"Album of the Year trip hop classification, limited rhythmic texture"
+duranduran-durandurantheweddingalbum,rnb,wed_gen,https://duranduran.com/2018/tribute-celebrating-25-years-of-duran-durans-duran-duran-a-k-a-the-wedding-album/,some tracks,Retrospective explicitly notes album 1993 R&B elements
+duranduran-durandurantheweddingalbum,funk,wed_review,https://www.classicpopmag.com/features/duran-duran-albums/,some tracks,Classic Pop calls U.M.F Prince-inspired funk workout
+duranduran-durandurantheweddingalbum,bossanova,wed_review,https://www.classicpopmag.com/features/duran-duran-albums/,some tracks,Classic Pop bossa nova description of Breath After Breath
+duranduran-thankyou,downtempo,you_aoty,https://www.albumoftheyear.org/album/11526-duran-duran-thank-you.php,some tracks,AOTY explicitly lists Downtempo; slower covers Perfect Day and Crystal Ship
+duranduran-thankyou,poprock,you_label,https://musicstore.duranduran.com/products/thank-you-cd,whole album,Official record-store album categorizes band/record as pop rock; separate contemporary classifications
+duranduran-thankyou,alternativerock,you_aoty,https://www.albumoftheyear.org/album/11526-duran-duran-thank-you.php,whole album,AOTY specifically lists Alternative Rock genre
+duranduran-thankyou,dancerock,you_am,https://www.allmusic.com/album/thank-you-mw0000623309,some tracks,AllMusic Dance-Rock; guitar/rhythm driven versions White Lines etc.
+duranduran-thankyou,synthpop,you_am,https://www.allmusic.com/album/thank-you-mw0000623309,texture,AllMusic album styles include Synth Pop
+duranduran-thankyou,adultalternativepoprock,you_am,https://www.allmusic.com/album/thank-you-mw0000623309,whole album,AllMusic exact stylistic tag Adult Alternative Pop/Rock
+duranduran-thankyou,newwave,you_am,https://www.allmusic.com/album/thank-you-mw0000623309,texture,AllMusic Punk/New Wave lineage; only a secondary arrangement tag
+duranduran-thankyou,rock,you_lat,https://www.latimes.com/archives/la-xpm-1995-04-16-ca-55141-story.html,whole album,Contemporary LA Times describes rock/guitar anthem treatment of originals
+duranduran-thankyou,hiphop,you_lat,https://www.latimes.com/archives/la-xpm-1995-04-16-ca-55141-story.html,some tracks,Rap performed on White Lines and rap-song reinterpretation 911 Is a Joke
