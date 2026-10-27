@@ -1,0 +1,10 @@
+﻿album_id,title,year,type,in_catalog,action,comment
+bronskibeat-outabout,Out & About,2016,studio,no,ADD after date/master review; phase 02 low confidence,Recorded 1987; retrospective evidence first online 2016 (Independent) vs 2017 (Southbank Centre)
+bronskibeat-theageofreason,The Age of Reason,2017,studio,no,ADD catalogue + phase 02 descriptor,New studio re-recordings; first CD 28 July 2017; bonus remix disc distinct
+bronskibeat-theageofconsent,The Age of Consent,1984,studio,yes,SKIP already phase 01,Existing catalogue title
+bronskibeat-hundredsthousands,Hundreds & Thousands,1985,remix,no (as originally checked phase 01),SKIP already phase 01,Previous phase requested catalogue addition
+bronskibeat-truthdaredoubledare,Truthdare Doubledare,1986,studio,yes,SKIP already phase 01,Existing catalogue title
+bronskibeat-rainbownation,Rainbow Nation,1995,studio,no (as originally checked phase 01),SKIP already phase 01,Previous phase requested catalogue addition
+,The Age of Remix,2018,remix,no,SKIP lower-priority remix,Many remixes of existing songs; optional later
+,Forbidden Fruit: The Age of Consent Remixed,2025,remix,no,SKIP lower-priority remix,2025 remixes of early work
+,The Album,1993,,no,HOLD edition identity unverified,May be repackaged old recordings rather than unique studio work
