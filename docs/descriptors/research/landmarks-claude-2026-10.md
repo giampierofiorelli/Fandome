@@ -769,3 +769,167 @@ Simon Reynolds, "Franco Battiato", 4Columns, 2017: https://4columns.org/reynolds
 
 ## New tokens
 - instruments `typewriter` (suggested label "Typewriter", percussion/found objects) and `blender` ("Blender", found objects). The Brazilian "viola" (Edson) is probably viola caipira, not the orchestral viola: not entered.
+
+## Fifth batch: artists the latest imports cite (owner: 'tutti, soltanto gli album migliori', Oct 2026)
+One best album each for The Human League, OMD, Soft Cell, Gary Numan, Grace Jones, Japan, Ultravox, ABC, Sex Pistols, Siouxsie and the Banshees, T. Rex, Scott Walker, The Smiths, The Stone Roses. Claude's fixes: a borrowed riff, melody or lyric is not an influence (as for Los Planetas): Sex Pistols drop ABBA (SOS riff) and Richard Hell (Blank Generation line), T. Rex drops Howlin' Wolf (Jeepster from You'll Be Mine); marimba recorded as mallets.
+
+## abc-thelexiconoflove
+
+# abc-thelexiconoflove: sources
+- https://en.wikipedia.org/wiki/The_Lexicon_of_Love: genres (disco, pop, new wave, sophisti-pop, dance-pop, blue-eyed soul, synth-pop, lounge; New Pop movement -> scene); producer Trevor Horn (Steve Brown on original "Tears Are Not Enough"); personnel incl. Anne Dudley orchestrations, J.J. Jeczalik Fairlight CMI programming, David Palmer Linn LM-1, sax, trombone, trumpet, flugelhorn, harp, percussion; influences stated by Martin Fry: strings on Chic records, Earth, Wind & Fire's soundscape, fused with the Cure and Joy Division; emotional level "along the lines of Rodgers and Hammerstein or Cole Porter" (influenced_by). Numan/OMD admired but approach rejected -> not listed. Vocals "crooning", "histrionic flights", "candid camp"; "sumptuous kitsch", "melodramatic love songs" (theatrical 5, polish 5); "witty... very, very funky" (BBC; groove 4); themes love affairs, tender to bitterly ironic (love, heartbreak, irony). Reviews: AllMusic 5, Q 5, Larkin 5, RS 4, Christgau A-, Spin Alt 9/10; Record Mirror 80s #4, NME 80s #15 / all-time #117, Observer #42, 1001 Albums; UK #1.
+- https://www.allmusic.com/album/lexicon-of-love-mw0000649803 (search snippet): Fry "a Bryan Ferry fixation" -> sounds_like Bryan Ferry; Blender (quoted at richcain.substack.com) "schooled by Bowie and Ferry"; Christgau compares to Bowie/Ferry -> sounds_like David Bowie.
+- No new tokens.
+
+## gracejones-nightclubbing
+
+# gracejones-nightclubbing: sources
+- https://en.wikipedia.org/wiki/Nightclubbing_(Grace_Jones_album): genres (infobox: post-disco, new wave, disco, funk, reggae, dance, sophisti-pop, R&B; text: pop, rock, post-punk, electro, dub, art-pop); producers Chris Blackwell, Alex Sadkin; Compass Point Studios, band and singer recording together, songs dropped if not done by the third take (liverecording); personnel (Sly Dunbar drums + syndrums, Robbie Shakespeare bass, Badarou/Downie keyboards, Chung/Reynolds/Browne guitars, Sticky Thompson/Speller percussion, Jack Emblow accordion); Blackwell and Sadkin wanted the sound to take elements of Black Uhuru's *Sinsemilla* (influenced_by, stated by the producers); mood ("froideur", Q; "ice-water backdrop", NME; "blank-eyed alienation", Pitchfork; "languid reggae-influenced"); voice ("flat monotone speak-singing", Pitchfork; "chatting", Gardner); suggestive lyrics on Pull Up to the Bumper (sensuality); critics' comparisons: Lou Reed, Debbie Harry, Gil Scott-Heron (delivery), Bowie and Ian Curtis (BBC), Marlene Dietrich (Uncut) -> sounds_like (Blondie for Harry, Joy Division for Curtis); Bowie influence noted by Joe Muggs (Fact), a critic -> sounds_like only.
+- Reviews/lists (same page): AllMusic 4.5, Pitchfork 9.0 BNR, Mojo 5, Uncut 9/10, Q 4, RS Album Guide 3.5, Christgau B-; NME AOTY 1981 #1, Slant 80s #40, NME 500 #211, Hot Press #59; US R&B #9, Billboard 200 #32, UK #35.
+- Not used as influences: Wikipedia narration that Blackwell "realised new forms around" Pretenders "Private Life", Roxy Music "Love Is the Drug", The Normal "Warm Leatherette" (songs covered on the previous album; narration, not a quote). Covers on this album (Bowie/Iggy, Piazzolla, Bill Withers, Sting, Vanda & Young) not influences.
+- Doubts: energy/electronic/theatrical are my judgment from the descriptions; French verse on "Libertango" not listed as language (minor).
+
+## humanleague-dare
+
+# humanleague-dare — sources
+- https://en.wikipedia.org/wiki/Dare_(The_Human_League_album): genres synth-pop/electropop/new wave; producers Martin Rushent & the Human League; gear Linn LM-1, Roland MC-8, Jupiter-4, System 700, Yamaha CS-15, Korg 770, Korg Delta, Casio VL-1/M10; ratings (AllMusic 5, Pitchfork 9.1, Uncut 10, Q 5, RS Album Guide 3/5), best-of lists, UK #1, 3x Platinum; Paul Morley NME ABBA comparison (sounds_like ABBA).
+- https://www.soundonsound.com/techniques/classic-tracks-human-league-dont-you-want-me: Rushent "trying to make a new electronic Abba" (influenced_by ABBA); 24 layered analogue synths per line (synthprogramming, overdubbing); bass synths; mixed to work loud in clubs (groove 4).
+- https://ultimateclassicrock.com/human-league-dare/: "romantic sentimentality and emotional anxiety" (mood 3); lyrics: he-said-she-said relationship, JFK ("Seconds"), personal demons ("Darkness") → love|storytelling|introspection.
+- https://www.udiscovermusic.com (Oakey/Moroder story) quoting Record Mirror 1981: "we want to be like ABBA or Donna Summer" (influenced_by Donna Summer; writer adds "I Feel Love", not bracketed).
+- https://trouserpress.com/?p=2315: "Seconds" ambience; no comparisons.
+## New tokens (production): rolandmc8, yamahacs15, korg770, korgdelta, casiovl1, casiom10 (synth/sequencer models; parent: synth/sequencer).
+## Doubts: voice left empty (no source describes Oakey's/the singers' voices in list terms). Iggy Pop grunts borrowed on "Sound of the Crowd" = quotation, not listed. Oakey citing Flying Lizards, Stewart & Gaskin, Numan as chart models not listed.
+
+## japan-tindrum
+
+# japan-tindrum: sources
+- https://en.wikipedia.org/wiki/Tin_Drum_(album): genres (art pop, new wave, post-punk, avant-pop, synth-pop, art rock, electronica); producers Steve Nye and Japan (John Punter uncredited, left out); personnel (Sylvian keyboards/guitar/tapes, Karn fretless bass/African flute/dida, Jansen acoustic+electronic drums, keyboard percussion, Linn LM-1 programming, angklung; Barbieri keyboards; Simon House violin); synths Prophet-5, Oberheim OB-X, Roland System 700; Barbieri "an adventure in synth programming"; themes romance, melancholia, travel/escape, satirical Eastern undercurrent; reviews AllMusic 4.5 ("most unique, challenging"), Guardian/Uncut/RM/Larkin 4, Blender 3, Smash Hits 8/10; Sounds all-time #22 (1986); UK #12 Gold; Bryan Ferry vocal comparison (Record Mirror) -> sounds_like.
+- https://en.wikipedia.org/wiki/Ghosts_(Japan_song): Prophet-5, System 700, OB-X, Jansen's marimba (credits from Sound on Sound). Also says unsourced "influenced by Karlheinz Stockhausen" -> not used.
+- https://www.popmatters.com/japan-timeless-tin-drum-atr40: writer's comparisons (YMO, Bowie *Lodger*, Talking Heads *Remain in Light*, Kate Bush, Shriekback, Thompson Twins) -> sounds_like; backward-masked vocals (backmasking); Cultural Revolution / Mao propaganda theme (political, irony); "melancholic remorse" (mood 1).
+- https://zstereo.co.uk/2015/09/29/japan-tin-drum/: Sylvian "We only used a Prophet and an OBX and tried to emulate fictitious musical instruments" (electronic 4); only YMO's *BGM* sounded similar (sounds_like YMO (BGM)).
+- influenced_by left EMPTY: no band/producer statement of influences found (friendship with YMO/Sakamoto is context, not a stated influence). voice left EMPTY: no source characterises Sylvian's voice beyond the Ferry comparison.
+- New instrument tokens: `marimba` (parent: mallets/percussion), `dida` (Karn's credit; a clay drum -> percussion), `angklung` (Indonesian bamboo idiophone -> percussion).
+
+## numan-thepleasureprinciple
+
+# numan-thepleasureprinciple — sources
+- https://en.wikipedia.org/wiki/The_Pleasure_Principle_(album): genres synth-pop, electropop, new wave, electronica, post-punk; producer Gary Numan; Minimoog, Polymoog (Vox Humana), ARP Odyssey, Synare 3, viola/violin, no electric guitar; flanging, phasing, reverb; sci-fi/technology, isolation, songs from an android's view (storytelling|introspection); ratings AllMusic 4.5, Mojo 5, Uncut 9, Pitchfork 8.2, Christgau B; Record Mirror "repeated the formula from Replicas"; UK #1.
+- https://en.wikipedia.org/wiki/Gary_Numan: Numan cited Ultravox's Systems of Romance ("Slow Motion") as the blueprint for his electronic sound (influenced_by, Replicas/Pleasure Principle era); "a rock album with no guitars"; synths through effects for a "distorted, phased, metallic tone" (distortion).
+- https://en.wikipedia.org/wiki/Cars_(song): Minimoog/Polymoog parts; Numan wrote "Cars" aiming at a hit.
+- https://recordcollectormag.com/reviews/album/the-pleasure-principleexpanded-edition: Moog bass, digital beats, robotic vocals; "year zero" of synth-pop.
+- https://www.allmusic.com/profile/jimbola/reviews/5bbfa024347a56db202f5abf (AllMusic USER review, weak): main debt to Bowie, Station to Station and Low (sounds_like David Bowie (Low)); https://www.qobuz.com/it-it/interpreter/gary-numan/68370 and hk01: Kraftwerk + Bowie mix (sounds_like Kraftwerk, weak).
+- Uncut via pressreader: cold, distant, repetitive (mood 1).
+## Doubts: sounds_like rests on weak sources (user review, retailer bios); Ultravox influence is documented for the electronic turn (Replicas 1979), not this album alone. Voice empty ("robotic" not in list). Billy Currie (Ultravox) plays violin as a guest — not the basis for the influence.
+
+## omd-architecturemorality
+
+# omd-architecturemorality — sources
+- https://en.wikipedia.org/wiki/Architecture_%26_Morality: genres synth-pop/electropop (new wave lists); producers Richard Manwaring, OMD, Mike Howlett; personnel instruments (synths, Mellotron, piano, organ, guitar, bass, drums, acoustic/electronic percussion, bass synth, melodica, sax); manipulated choral samples (sampling); lengthy instrumental passages replacing choruses (experimental 3); themes Joan of Arc, religion, love songs; McCluskey: influence of "emotional power of religious music"; critic comparisons: Fricke RS "Pink Floyd-ian", Doran RC "Numanesque", Q "Kraftwerk and Brian Eno influences"; ratings AllMusic 5, Q 5, Pitchfork 8.7, 1001 Albums; UK #3, Platinum.
+- https://www.electricityclub.co.uk/?p=83159: McCluskey: Kraftwerk "hugely important" plus the "organic side" from Neu!, La Düsseldorf, Michael Rother (influenced_by); writer: album "tinged more with the spectre of La Düsseldorf than Kraftwerk" (sounds_like); Mellotron choir blocks; Pearl Syndrums (electronicdrums).
+- https://www.westword.com/music/andy-mcclusky-of-omd-on-dazzle-ships-the-influence-of-70s-krautrock-and-peter-saville-5675743/ : McCluskey on Kraftwerk → Neu! path.
+## Doubts: influences are McCluskey's general statements made in pieces about this album, not strictly album-specific; Michael Rother left out (solo records, unclear for this album). Voice left empty. "Sealand" nod to Neu! "Seeland" is a quotation (not used as basis alone).
+
+## scottwalker-scott4
+
+# scottwalker-scott4: sources
+- https://en.wikipedia.org/wiki/Scott_4 : infobox genres (orchestral pop, baroque pop, avant-garde); producer John Franz; Olympic Studios; orchestral accompaniment Peter Knight, Wally Stott (Angela Morley), Keith Roberts → orchestra, stringarrangements; AllMusic (via WP): less ornate, skeletal folk-inspired sound, more rhythm section → bass, drums, energy 2, polish 3; Engel: link lyrics by Sartre, Camus, Yevtushenko "to Bartok modal lines" → influenced_by Béla Bartók (Bergman film, Camus/Sartre are non-music sources, not listed); Mark Lager: "The Seventh Seal" an "Ennio Morriconesque epic" → sounds_like; "Get Behind Me" gospel choir + soulful vocals → choral; Old Man's Back Again (neo-Stalinism/Czechoslovakia) → political; Angels of Ashes spiritual (Rilke) → spiritual; existential lyrics → introspection; "fatalist sublimities" (Select) → mood 1. Ratings: AllMusic 4.5, Pitchfork 9.0, EPM 5, Select 5; 1001 Albums; Larkin #760; failed to chart.
+- https://therisingstorm.net/scott-walker-scott-4/ : "deep tenored and dramatic singer backed with a full orchestra and groovy rock combo", theatrical → voice powerful, theatrical 4.
+- https://www.progarchives.com/album.asp?id=77834 : orchestral credits Peter Knight, Angela Morley, Keith Roberts.
+Doubts: Jacques Brel not listed (no source ties him to this all-original album). Experimental 3 is a balance between "avant-garde" label and accessible orchestral-pop songs. No new tokens.
+
+## sexpistols-nevermindthebollocksheresthesexpistols
+
+# Sex Pistols – Never Mind the Bollocks, Here's the Sex Pistols (1977)
+
+Sources
+- https://en.wikipedia.org/wiki/Never_Mind_the_Bollocks,_Here%27s_the_Sex_Pistols: genres (punk rock, hard rock), producers Chris Thomas and Bill Price, Wessex Studios, Jones on guitar and most bass with long overdub sessions; Rotten's "sneering", "half-singing" delivery (voice raspy|spoken); Christgau on lyrics (global economics, Bodies); ratings, best-of lists, charts and certifications (reception). Charles M. Young (RS) names Nirvana as the closest comparison (sounds_like).
+- https://en.wikipedia.org/wiki/Pretty_Vacant: Matlock says the riff came from ABBA's "SOS" (on the album *ABBA*, 1975) and the lyric from Richard Hell's "Blank Generation" (Uncut 2022) → influenced_by.
+- https://diffuser.fm/sex-pistols-never-mind-the-bollocks/: God Save the Queen written "in the style of Eddie Cochran" (influenced_by); No Feelings a "Johnny Thunders styled riff"; Holidays in the Sun riff "not unlike" The Jam's "In the City" (sounds_like); "lots of layered guitars"; "heavy, but never metal".
+- https://mixdownmag.com.au/features/never-mind-the-bollocks-heres-steve-jones/: Jones: Chuck Berry double stops were "the only lead that I knew at the time" (influenced_by Chuck Berry); white Les Paul, Fender Twin, MXR Phase 90 on Anarchy (production phasing); "there was definitely overdubs".
+- https://punkncoffee.substack.com/p/never-mind-the-bollocks-a-single: "surprisingly well-produced", layer upon layer of guitars (polish 3, overdubbing).
+- https://www.vintageguitar.com/43185/sex-pistols/: Jones's "Faces-influenced swagger" (critic → sounds_like Faces).
+- Search snippets: Rotten's voice "ravaged", "non-singing" (raspy|spoken).
+
+Doubts
+- Stooges / New York Dolls comparisons appeared only in unverified search snippets: left out.
+- Jones's general influences (Faces, Bowie/Ronson, Mott) not tied to this album by a source I could open: not used as influences.
+- RS 500 2020 rank is inconsistent on Wikipedia (73 vs 80): cited as "top 100".
+- No new tokens.
+
+## siouxsie-juju
+
+# Siouxsie and the Banshees – Juju (1981)
+
+Sources
+- https://en.wikipedia.org/wiki/Juju_(Siouxsie_and_the_Banshees_album): genres post-punk, gothic rock (infobox; AllMusic post-punk), art rock (Guardian), dark wave (BBC Radio 4); Surrey Sound, co-produced by Nigel Gray and the band; guitar-based after Kaleidoscope; McGeoch's Gizmo on "Into the Light", EBow on "Sin in My Heart", acoustic guitar (Sounds); Budgie's prominent percussion; Severin: first "concept" album, darker elements; ratings, lists, UK #7, Silver.
+- https://www.loudersound.com/features/siouxsie-and-the-banshees-how-we-made-juju (Chris Roberts, 2018): "Night Shift" inspired by the Yorkshire Ripper and Led Zeppelin's "Kashmir" (on *Physical Graffiti*) → influenced_by; Monitor an Orwellian tale; Severin on overdubs; Nigel Gray's "crisp production"; Melody Maker "most influential".
+- https://www.udiscovermusic.com/stories/juju-siouxsie-and-the-banshees: song subjects (Arabian Knights: oppression of women; Monitor: surveillance; Voodoo Dolly: possession) → lyrics social|political|spiritual|storytelling; Budgie's spinning toms; synths/drum machines add to the sound (synth listed last).
+- https://faroutmagazine.co.uk/what-concept-siouxsie-and-the-banshees-juju/: concept from the African Juju statue, "tribal groove" (groove 2).
+- Search snippets: Smash Hits 1981 "high-priestess wail" (voice powerful); mvlteenvoice review hears Joy Division in McGeoch's guitar (weak → sounds_like Joy Division).
+
+New token
+- production `gizmotron` (the Gizmo / Gizmotron guitar device by Godley & Creme, used on "Into the Light"); could also be an instrument key. Suggested group: guitar effects (with `ebow`).
+
+Doubts
+- sounds_like rests on one minor review; the Kashmir influence is stated by the Louder writer, not in a direct band quote I could read.
+
+## smiths-thequeenisdead
+
+# smiths-thequeenisdead: sources
+- https://en.wikipedia.org/wiki/The_Queen_Is_Dead (and sources cited: Goddard 2009 "Mozipedia"/"Songs That Saved Your Life", Rogan 1994, Sound on Sound, PopMatters/Korber, Pitchfork/Reynolds, NME):
+  - genres indie rock, jangle pop, post-punk (infobox); "Vicar in a Tutu" music-hall elements and "rockabilly pastiche" (Korber) → musichall, rockabilly (last, track-level).
+  - producers Morrissey, Johnny Marr (Stephen Street/John Porter = engineers, not listed).
+  - personnel: Marr guitars, sampler (linked E-mu Emulator) → sampler + production emulator; marimba ("Boy with the Thorn") → mallets; Rourke bass; Joyce drums.
+  - production: Street's harmoniser pitch-shifting Morrissey ("Ann Coates") → harmonizer, pitchedvocals; tom-tom loop built with a sampler → sampling, drumloop; feedback line through wah-wah → wahwah, feedback.
+  - influences: Marr heavily influenced by the Stooges (Raw Power, "I Need Somebody") and the Rolling Stones (Hitch Hike cover for "There Is a Light"); title track influenced by the Velvet Underground; "Frankly, Mr. Shankly" an attempt to recreate Sandie Shaw's "Puppet on a String" vibe. New York Dolls excluded (lyric quotation).
+  - themes: anti-monarchism/UK criticism → political, social; surreal/black humour → irony; doomed love → love, heartbreak; misunderstood outsider, gender norms → identity, introspection; melancholy vs humour/anger/joy → mood 2; "Bigmouth" punk adrenaline → energy 3.
+  - ratings: Metacritic 99, Pitchfork 10, AllMusic/Mojo/Q/RS/Uncut 5; NME 500 #1; RS 500 #113; Pitchfork 80s #6; Larkin #10; UK #2, US #70.
+Doubts: voice left empty (no source describes Morrissey's vocal type here); sounds_like empty (only attitude comparisons: Christgau vs Johnny Rotten, Paste "British Invasion"). No new tokens.
+
+## softcell-nonstoperoticcabaret
+
+# softcell-nonstoperoticcabaret — sources
+- https://en.wikipedia.org/wiki/Non-Stop_Erotic_Cabaret: synth-pop/electropop; producer Mike Thorne; ReVox, borrowed Roland drum machine, Korg SB-100 Synthe Bass, Synclavier; concept narrative of suburban man in Soho (storytelling, sensuality); Christgau "camp cynicism" (irony); ratings AllMusic 4.5, Pitchfork 8.5, RS 3/5, NME negative; Out #66; 1001 Albums; UK #5, Platinum.
+- https://www.electricity-club.co.uk/?p=71545: Korg SB-100, Synare and Pearl Syncussion (electronicdrums, synare), Synclavier II, Roland TR-808, DeltaLab DL-4 delay; themes sleaze, vice, suburbia/bedsit life, lost innocence (social, heartbreak); band influences Throbbing Gristle, Suicide, Human League, Devo, Northern Soul.
+- https://thequietus.com/?p=30878 (oral history): Almond: "transgressive electronic punk band" akin to Suicide and Throbbing Gristle (influenced_by); Ball: sound "minimal and raw" (polish 2); camp, seaside trash (theatrical 4).
+- https://trouserpress.com/reviews/soft-cell/: Almond's vocals "breathy and insinuating" (voice soft); Ball's keyboards span electronic and acoustic sounds.
+## New tokens (production): korgsb100 (synth bass model; parent: synthbass).
+## Doubts: sounds_like left empty (Trouser Press's Kraftwerk line is a contrast; Sutherland's "traditional cabaret" is a genre). Human League/Devo named by Electricity Club as influences of the band generally, not for this album: left out. ARP 2600 (Daniel Miller's) not tied to album tracks: left out.
+
+## stoneroses-thestoneroses
+
+# stoneroses-thestoneroses: sources
+- https://en.wikipedia.org/wiki/The_Stone_Roses_(album) : genres Madchester, neo-psychedelia, indie rock, alternative rock; Batey: 1960s-inspired jangle pop, little dance influence → janglepop, groove 2; Erlewine: rhythm section "suggested" dance rhythms, Brown sang "dispassionately"/detached → voice soft; producers John Leckie, Peter Hook ("Elephant Stone"); Squire Strat/Twin Reverb, Mani Rickenbacker bass, Reni drums + piano ("She Bangs the Drums"); critics' comparisons: Unterberger (Beatles melodies, Byrds guitars, Smiths), Bob Stanley (Hendrix, Johnny Marr) → sounds_like; Bye Bye Badman = May 1968 Paris riots → political; ratings and lists (NME/Pitchfork/Spin 10, AllMusic/Mojo/Q/Uncut 5, RS 4; NME 500 #7, RS 500 #319, Larkin #11); dissent DeRogatis/Robinson.
+- https://www.radiox.co.uk/artists/stone-roses/making-of-debut-album-1989-songs-meaning/ : Reni (to Clash): "I Am the Resurrection" grew from Mani playing the "Taxman" riff backwards → influenced_by The Beatles (Revolver); "Don't Stop" = "Waterfall" backwards → backmasking.
+- https://faroutmagazine.co.uk/the-stone-roses-waterfall-reverse-dont-stop/ : Don't Stop reversed tape, Reni's new percussion overdubs, Brown re-sang → backmasking, overdubbing.
+- https://www.pastemagazine.com/music/the-stone-roses/30-years-on-the-stone-roses-debut-lp-still-shines : Byrds' chiming folk-pop, Kinks' English-summer pop, psychedelic funk → sounds_like The Byrds, The Kinks; Reni's bongos; buoyant, uplifting → mood 4; liberation/self-belief, romance, anti-monarchy satire → identity, love, political.
+New token: `madchester` (Wikipedia infobox genre). Suggested parents: indie, alt, rock, dance (close to existing `baggy`, `neopsychedelia`, `indiedance`).
+Doubts: Jimi Hendrix only in sounds_like; Guitar Player says Squire "made no secret of his love for Hendrix" but I couldn't read the article to tie it to this album, so not in influenced_by. "Fools Gold" (not on original UK LP) ignored; Squire's Johnny Cash remark refers to it. Mani's liking of the Dukes of Stratosphear explains Leckie's hiring, not listed as influence.
+
+## trex-electricwarrior
+
+# T. Rex – Electric Warrior (1971)
+
+Sources
+- https://en.wikipedia.org/wiki/Electric_Warrior: genres glam rock, boogie rock, blues rock; producer Tony Visconti (string arrangements); Trident, Advision, Wally Heider, Mediasound; Visconti's flanging, reverb, backwards guitars, tape loops, guitar overloading the console preamps (production flanging|backmasking|tapeloops|distortion|stringarrangements); Wakeman piano, Burt Collins flugelhorn, Ian McDonald sax, strings, Flo & Eddie; Bolan: songs personal and "erotic"; cars, women, boogie; BBC "four-to-the-floor rock 'n' roll"; ratings, RS 500, Pitchfork 70s #20, UK #1, Gold.
+- https://en.wikipedia.org/wiki/Get_It_On_(T._Rex_song): Bolan wrote it wanting to record Chuck Berry's "Little Queenie" (on *Chuck Berry Is on Top*, 1959), riff from it → influenced_by; Hammond organ, saxes.
+- https://en.wikipedia.org/wiki/Jeepster_(song): Bolan said he "lifted it from a Howlin' Wolf song" ("You'll Be Mine", on the 1962 *Howlin' Wolf* LP) → influenced_by.
+- https://guitar.com/reviews/album/the-genius-of-electric-warrior-by-t-rex/: strings doubling Bolan's parts, reversed solo on Cosmic Dancer, Bolan's "purr" (voice soft), Les Paul into Marshall.
+- https://faroutmagazine.co.uk/t-rex-album-electric-warrior/: "dazzlingly cool evocations of joy" with poignant moments (mood 4).
+- https://www.austinchronicle.com/music/phases-and-stages-11722719/ (via search): Cochran's chugging guitar figures behind Jeepster and Get It On → sounds_like Eddie Cochran.
+- https://www.treblezine.com/t-rex-electric-warrior-review/: "lean, balanced and bluesy".
+
+New token
+- genre `boogierock` (Wikipedia "boogie rock"; the existing `boogie` is the 80s post-disco style, so not used). Suggested parents: rock, bluesrock, hardrock.
+
+Doubts
+- Album for "You'll Be Mine" given from my knowledge (first LP: *Howlin' Wolf*, 1962); verify against the catalogue.
+
+## ultravox-vienna
+
+# ultravox-vienna: sources
+- https://en.wikipedia.org/wiki/Vienna_(album): genres (new wave, synth-pop, art pop, new romantic); producers Conny Plank, Ultravox; RAK Studios, mixed at Plank's studio; personnel (Cann drums/electronic percussion, lead vocal on "Mr. X"; Cross bass/synths; Currie piano/synths/viola/violin; Ure guitars/synths/vocals); Sounds: "Euro systems-rock, electronics, Can's fairground style" (sounds_like Can); "Mr. X" a Kraftwerk pastiche; reviews AllMusic 4.5, Sounds 4.5, Mojo 4, RSAG 4, Q 3 ("best album"), Uncut 7/10, RS 2, Christgau C ("dance music for the locked pelvis": groove 2); UK #3.
+- https://en.wikipedia.org/wiki/Vienna_(Ultravox_song): viola solo influenced by Max Reger (Guardian 2017; Cann/Currie wanted a late-19th-century romantic-composer feel) -> influenced_by Max Reger; grand piano, viola, violin, Minimoog bass, Roland CR-78 pattern by Cann; Walker Brothers "The Electrician" influence "said" by AllMusic (Dave Thompson), not by the band -> sounds_like The Walker Brothers (Nite Flights) only.
+- https://www.classicpopmag.com/?p=14094 (Making Vienna): gear "Roland CR-78, Yamaha CP70, Yamaha SS30 string machine, Yamaha CS8Q [sic] and a Minimoog"; "every track was for a movie that didn't exist" (Ure; storytelling, theatrical 4); "epic, cinematic feel"; "Mr X" robotic vocal (spoken); Vienna inspired by a holiday romance (love). Kraftwerk/Can named only as Ure/Egan's general influences, not album-specific -> not in influenced_by.
+- https://www.loudersound.com/reviews/ultravox-vienna-deluxe-edition-review (via search snippet): album's debt to Kraftwerk, Tangerine Dream, Roxy Music -> sounds_like; MOJO Time Machine: Kraftwerk and Neu! -> sounds_like.
+- New production tokens: `yamahacp70` (electric grand; parent: electricpiano), `yamahass30` (string machine; like arpstringensemble). The "CS8Q" in Classic Pop is probably a CS-80 typo: NOT entered (yamahacs80 would need confirmation). ARP Odyssey only from a fan site: not entered.
+- Doubts: mood 2, theatrical 4, voice `clear` for Ure are judgment from the cinematic/epic descriptions.
