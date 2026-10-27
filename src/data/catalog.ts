@@ -236,7 +236,7 @@ const ROWS: Row[] = [
   ['yazoo', 'Yazoo', '#c95a8a', 'Only you, only synths', [['Upstairs at Eric’s', 1982], ['You and Me Both', 1983]]],
   ['zucchero', 'Zucchero', '#d9a03f', 'Italian-style blues', [['Blue’s', 1987], ['Oro incenso & birra', 1989], ['Miserere', 1992], ['Spirito DiVino', 1995], ['Black Cat', 2016], ['Discover', 2021]]],
   ['bocelli', 'Andrea Bocelli', '#8a7aa8', 'Con te partirò, together', [['Il mare calmo della sera', 1994], ['Romanza', 1997], ['Sogno', 1999], ['Amore', 2006], ['Sì', 2018]]],
-  ['skunkanansie', 'Skunk Anansie', '#c93f5a', 'Skin, riffs and fierce live shows', [['Paranoid & Sunburnt', 1995], ['Stoosh', 1996], ['Post Orgasmic Chill', 1999], ['Wonderlustre', 2010], ['Black Traffic', 2012]]],
+  ['skunkanansie', 'Skunk Anansie', '#c93f5a', 'Skin, riffs and fierce live shows', [['Paranoid & Sunburnt', 1995], ['Stoosh', 1996], ['Post Orgasmic Chill', 1999], ['Wonderlustre', 2010], ['Black Traffic', 2012], ['Anarchytecture', 2016], ['The Painful Truth', 2025]]],
   ['sinead', 'Sinéad O’Connor', '#6f8f9e', 'Nothing compares, remembered together', [['The Lion and the Cobra', 1987], ['I Do Not Want What I Haven’t Got', 1990], ['Universal Mother', 1994], ['Faith and Courage', 2000]]],
   ['achillelauro', 'Achille Lauro', '#c9a35a', 'Glam provocations, Italian style', [['Pour l’amour', 2018], ['1969', 2019], ['1990', 2020], ['Lauro', 2021], ['Comuni mortali', 2025]]],
   ['celentano', 'Adriano Celentano', '#7a8f6a', 'The original Italian rock’n’roll showman', [['Il ragazzo della via Gluck', 1966], ['Soli', 1979], ['Io non so parlar d’amore', 1999]]],

@@ -138,6 +138,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Black Sabbath', 'My Bloody Valentine', 'The Cure', 'New Order', 'Bauhaus', 'Joy Division', 'Rush', 'The Who', 'Yes', 'Jethro Tull', 'Queen', 'Ramones', 'The Smiths'],
     source: 'Billy Corgan: Pitchfork (Sabbath), NME (My Bloody Valentine on Gish; The Cure), Ultimate Classic Rock (Rush, Cherub Rock), MusicRadar (The Who, Tonight Tonight), Self-Titled (Yes, Jethro Tull, Queen, Ramones); Jimmy Chamberlin, Alternative Nation (New Order, Bauhaus, Joy Division; Iha and Johnny Marr)',
   },
+  skunkanansie: {
+    names: ['Nirvana', 'Rage Against the Machine', 'The Smashing Pumpkins', 'Tool', 'The Prodigy', 'Led Zeppelin', 'Parliament', 'Sex Pistols', 'Blondie', 'Nina Simone'],
+    source: 'Skin: Louder 2015, Kerrang!, Radio X, Ticketmaster (Led Zeppelin, Nina Simone, Blondie); Mark Richardson, Renowned for Sound (Led Zeppelin, Parliament, Sex Pistols)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
