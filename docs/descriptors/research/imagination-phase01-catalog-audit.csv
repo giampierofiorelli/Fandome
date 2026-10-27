@@ -1,0 +1,9 @@
+artist_id,artist,album_id,title,year,type,in_catalog_ts,in_seed_ts,existing_descriptor,action,phase,notes
+imagination,Imagination,imagination-bodytalk,Body Talk,1981,studio,no,no,no,add artist and album,01,
+imagination,Imagination,imagination-intheheatofthenight,In the Heat of the Night,1982,studio,no,no,no,add artist and album,01,
+imagination,Imagination,imagination-nightdubbing,Night Dubbing,1983,remix,no,no,no,add artist and album,01,Original 8-remix album; qualifies on distinct historical remix significance
+imagination,Imagination,imagination-scandalous,Scandalous,1983,studio,no,no,no,add artist and album,01,"New Dimension is a retitled US edition, not a second studio album"
+imagination,Imagination,imagination-trilogy,Trilogy,1986,studio,no,no,no,add in later phase,02,
+imagination,Imagination,imagination-closer,Closer,1987,studio,no,no,no,add in later phase,02,First issue 1987; do not use 1988 single year
+imagination,Imagination,imagination-thefascinationofthephysical,The Fascination of the Physical,1992,studio,no,no,no,add in later phase,02,
+imagination,Imagination,imagination-retropia,Retropia,2016,studio,no,no,no,add in later phase,02,"Billing: Imagination feat. Leee John; official website catalogs 2017 release, MusicBrainz/AllMusic show 2016; verify original date before Phase 02"

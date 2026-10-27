@@ -1,0 +1,38 @@
+album_id,genre,source,url,scope,rationale
+imagination-bodytalk,postdisco,body_am,https://www.allmusic.com/album/r1384300,whole album,AllMusic identifies post-disco style.
+imagination-bodytalk,britfunk,body_wiki,https://en.wikipedia.org/wiki/Body_Talk_(Imagination_album),whole album,Album classified among early British funk-dance records.
+imagination-bodytalk,funk,body_wiki,https://en.wikipedia.org/wiki/Body_Talk_(Imagination_album),whole album,Funk in album genre metadata; bass and groove central.
+imagination-bodytalk,soul,body_wiki,https://en.wikipedia.org/wiki/Body_Talk_(Imagination_album),whole album,Album genre taxonomy and singing style.
+imagination-bodytalk,disco,body_lp,https://www.chartsurfer.de/artist/imagination/body-talk-album_ffvvph.html,whole album,Multiple original LP pressings explicitly classified as disco.
+imagination-bodytalk,downtempo,body_lp,https://www.chartsurfer.de/artist/imagination/body-talk-album_ffvvph.html,some tracks,Slow-building first two tracks and edition styles; not the entire album.
+imagination-bodytalk,rnb,body_am,https://www.allmusic.com/album/r1384300,whole album,AllMusic R&B album classification.
+imagination-bodytalk,electronic,body_lp,https://www.chartsurfer.de/artist/imagination/body-talk-album_ffvvph.html,whole album,Electronic label category and synth/keyboard textures.
+imagination-bodytalk,pop,body_am_full,https://www.allmusic.com/album/release/body-talk-mr0000471485,whole album,AllMusic says pop-oriented R&B in album review.
+imagination-bodytalk,electro,body_lp,https://www.chartsurfer.de/artist/imagination/body-talk-album_ffvvph.html,some tracks,1981/82 pressings label Electro; lower-ranked texture classification.
+imagination-intheheatofthenight,postdisco,heat_am,https://www.allmusic.com/album/r41257,whole album,AllMusic post-disco classification.
+imagination-intheheatofthenight,synthpop,heat_lp,https://www.chartsurfer.de/artist/imagination/in-the-heat-of-the-night-album_frpvpg.html,whole album,Contemporaneous 1982 pressings explicitly tag synth-pop.
+imagination-intheheatofthenight,disco,heat_lp,https://www.chartsurfer.de/artist/imagination/in-the-heat-of-the-night-album_frpvpg.html,whole album,Contemporaneous vinyls tag disco.
+imagination-intheheatofthenight,funk,heat_wiki,https://en.wikipedia.org/wiki/In_the_Heat_of_the_Night_(Imagination_album),whole album,"Funk among album genre descriptions, backbeat described by critic."
+imagination-intheheatofthenight,soul,heat_wiki,https://en.wikipedia.org/wiki/In_the_Heat_of_the_Night_(Imagination_album),whole album,Soul named on album summary and original Greek pressing.
+imagination-intheheatofthenight,boogie,heat_discog,https://rectangletriangle.com/products/in-the-heat-of-the-night-imagination,whole album,Canadian original edition tagged boogie.
+imagination-intheheatofthenight,rnb,heat_am,https://www.allmusic.com/album/r41257,whole album,AllMusic main genre R&B.
+imagination-intheheatofthenight,electronic,heat_lp,https://www.chartsurfer.de/artist/imagination/in-the-heat-of-the-night-album_frpvpg.html,whole album,Album category electronic and prominent synth bass.
+imagination-intheheatofthenight,downtempo,heat_lp,https://www.chartsurfer.de/artist/imagination/in-the-heat-of-the-night-album_frpvpg.html,some tracks,Original German and Greek pressings tag downtempo; softer moments among dance songs.
+imagination-nightdubbing,disco,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,whole album,Original UK/US pressings tag disco remixes.
+imagination-nightdubbing,dub,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,whole album,UK pressing genre/style Dub; production dub effects not dub-reggae repertoire.
+imagination-nightdubbing,postdisco,night_am,https://www.allmusic.com/album/night-dubbing-mw0000373251,whole album,Reuses early 1981-82 post-disco recordings as source tapes; original source-album genres.
+imagination-nightdubbing,electronic,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,whole album,Electronic genre on original pressings.
+imagination-nightdubbing,electro,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,some tracks,US 1983 pressing also tagged Electro.
+imagination-nightdubbing,synthpop,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,some tracks,"US 1983 pressing tagged Synth-pop, especially synth-led cuts."
+imagination-nightdubbing,funk,night_lp,https://www.chartsurfer.de/artist/imagination/night-dubbing-album_ffvurc.html,whole album,"US pressing Funk/Soul category, basis of the reworks."
+imagination-nightdubbing,soul,night_am,https://www.allmusic.com/album/night-dubbing-mw0000373251,whole album,"R&B-soul vocals remain on altered tracks, reviewer calls source Imagination soul material."
+imagination-nightdubbing,rnb,night_am,https://www.allmusic.com/album/night-dubbing-mw0000373251,whole album,AllMusic genre R&B for album.
+imagination-scandalous,postdisco,scandal_wiki,https://en.wikipedia.org/wiki/Scandalous_(album),whole album,Album genre metadata identifies post-disco.
+imagination-scandalous,synthpop,scandal_lp,https://www.chartsurfer.de/artist/imagination/scandalous-album_ffvugc.html,whole album,Contemporaneous 1983 Brazilian pressing tags synth-pop; US edition likewise.
+imagination-scandalous,disco,scandal_lp,https://www.chartsurfer.de/artist/imagination/scandalous-album_ffvugc.html,whole album,Original European and Brazilian editions tag disco.
+imagination-scandalous,funk,scandal_lp,https://www.chartsurfer.de/artist/imagination/scandalous-album_ffvugc.html,some tracks,Brazilian pressing Funk; critic calls out funky moments (Looking at Midnight and This Means War).
+imagination-scandalous,soul,scandal_wiki,https://en.wikipedia.org/wiki/Scandalous_(album),whole album,Album genre description soul; vocal focus.
+imagination-scandalous,rnb,scandal_am,https://www.allmusic.com/album/scandalous-mw0000233687,whole album,AllMusic genre R&B and contemporary R&B style.
+imagination-scandalous,electronic,scandal_lp,https://www.chartsurfer.de/artist/imagination/scandalous-album_ffvugc.html,whole album,"Vinyl catalogue Electronic class, sleeve lists synth/keyboards."
+imagination-scandalous,downtempo,scandal_lp,https://www.chartsurfer.de/artist/imagination/scandalous-album_ffvugc.html,some tracks,"1983 Brazilian edition tags Downtempo, including slower romantic tracks."
+imagination-scandalous,pop,scandal_am,https://www.allmusic.com/album/scandalous-mw0000233687,whole album,Pop-directed glossy arrangements noted by AllMusic; studio album rather than rock.
