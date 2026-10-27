@@ -1309,7 +1309,7 @@ body.story-open .modal-root { z-index: 100; }
 
 /* First-visit intro: the animated logo */
 .intro { position: fixed; inset: 0; z-index: 200; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; background: var(--bg); cursor: pointer; }
-.intro-logo { font-size: 44px; letter-spacing: 0.06em; color: var(--text); }
+.intro-logo { font-size: 44px; letter-spacing: 0.06em; padding-left: 0.17em; color: var(--text); } /* centred on the ink: letter-spacing trails the last letter and the dot font leaves an empty column right of the E */
 .intro-tag { margin: 0; font-size: 13px; color: var(--muted); }
 
 /* Rich link preview */
