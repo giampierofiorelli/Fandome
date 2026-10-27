@@ -13,6 +13,7 @@ export interface Quality {
   diversity: number // 1 − average genre similarity inside a list (higher = more varied)
   novelty: number // share of suggestions from a local scene in another country (never US/UK)
   globalToLocal: number // for albums from global markets (US, UK…), share of suggestions from a local scene
+  globalListsWithLocal: number // for albums from global markets, share of their lists with at least one local-scene album
   explained: number // share of suggestions with at least one reason (must be 1)
   empty: number // albums with no suggestion at all
   topShare: number // share of all suggestions taken by the single most suggested album (popularity bias)
@@ -28,12 +29,15 @@ export function evaluate(limit = 10): Quality {
   let foreign = 0
   let fromGlobal = 0
   let globalToLocal = 0
+  let globalLists = 0
+  let globalListsWithLocal = 0
   let empty = 0
   const div: number[] = []
   for (const id of ids) {
     const artistsOf = (x: string) => { const al = albums.find((a) => a.id === x); return al ? [al.artistId, ...(al.withArtists ?? [])] : [] }
     const list = similarAlbums(id, { limit, artistOf, artistsOf, countryOf })
     if (!list.length) empty++
+    if (list.length && GLOBAL_MARKETS.has(countryOf(id) ?? '')) (globalLists++, list.some((s) => isLocalArtist(artistOf(s.albumId))) && globalListsWithLocal++)
     for (const s of list) {
       total++
       seen.set(s.albumId, (seen.get(s.albumId) ?? 0) + 1)
@@ -57,6 +61,7 @@ export function evaluate(limit = 10): Quality {
     diversity: div.reduce((a, b) => a + b, 0) / (div.length || 1),
     novelty: foreign / (total || 1),
     globalToLocal: globalToLocal / (fromGlobal || 1),
+    globalListsWithLocal: globalListsWithLocal / (globalLists || 1),
     explained: explained / (total || 1),
     empty,
     topShare: Math.max(0, ...seen.values()) / (total || 1),

@@ -1,0 +1,10 @@
+album_id,title,year,type,already_in_catalog,catalog_location,action_notes,must_add
+alphaville-foreveryoung,Forever Young,1984,studio,yes,src/data/catalog.ts,original catalog id; add descriptor only,no
+alphaville-afternoonsinutopia,Afternoons in Utopia,1986,studio,yes,src/data/catalog.ts,original catalog id; add descriptor only,no
+alphaville-thebreathtakingblue,The Breathtaking Blue,1989,studio,yes,src/data/catalog.ts,original catalog id; add descriptor only,no
+alphaville-prostitute,Prostitute,1994,studio,no,not found,add new catalog album and descriptor,yes
+alphaville-salvation,Salvation,1997,studio,no,not found,1997 original DE release; US later,yes
+alphaville-crazyshow,CrazyShow,2003,studio_or_archive,no,not found,borderline original 4-CD album/websong box; human review,yes
+alphaville-catchingraysongiant,Catching Rays on Giant,2010,studio,no,not found,original title singular Giant,yes
+alphaville-strangeattractor,Strange Attractor,2017,studio,no,not found,new album; later phase,yes
+alphaville-eternallyyours,Eternally Yours,2022,studio_re_recording,no,not found,co-billed studio orchestral re-recordings; editorial decision,yes

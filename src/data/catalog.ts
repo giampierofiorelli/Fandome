@@ -126,7 +126,7 @@ const ROWS: Row[] = [
   ['aliciakeys', 'Alicia Keys', '#a8704a', 'Piano, soul and New York', [['Songs in A Minor', 2001], ['The Diary of Alicia Keys', 2003], ['As I Am', 2007], ['The Element of Freedom', 2009], ['Girl on Fire', 2012], ['Here', 2016], ['Alicia', 2020]]],
   ['goldfrapp', 'Goldfrapp', '#c9a85a', 'Glam electronics and pastoral dreams', [['Felt Mountain', 2000], ['Black Cherry', 2003], ['Supernature', 2005], ['Seventh Tree', 2008], ['Head First', 2010], ['Tales of Us', 2013], ['Silver Eye', 2017]]],
   ['alliex', 'Allie X', '#9fa3b5', 'Art pop with a twist', [['CollXtion II', 2017], ['Cape God', 2020], ['Girl with No Face', 2024]]],
-  ['alphaville', 'Alphaville', '#5a7fc9', 'Forever young, forever synth', [['Forever Young', 1984], ['Afternoons in Utopia', 1986], ['The Breathtaking Blue', 1989]]],
+  ['alphaville', 'Alphaville', '#5a7fc9', 'Forever young, forever synth', [['Forever Young', 1984], ['Afternoons in Utopia', 1986], ['The Breathtaking Blue', 1989], ['Prostitute', 1994], ['Salvation', 1997], ['Catching Rays on Giant', 2010], ['Strange Attractor', 2017]]],
   ['altj', 'alt-J', '#5a8f8a', 'Triangles, harmonies and riddles', [['An Awesome Wave', 2012], ['This Is All Yours', 2014], ['Relaxer', 2017], ['The Dream', 2022]]],
   ['annielennox', 'Annie Lennox', '#c94a5a', 'Diva, activist, icon', [['Diva', 1992], ['Medusa', 1995], ['Bare', 2003], ['Songs of Mass Destruction', 2007]]],
   ['arcadefire', 'Arcade Fire', '#a35a3f', 'Choirs of guitars and violins', [['Funeral', 2004], ['Neon Bible', 2007], ['The Suburbs', 2010], ['Reflektor', 2013], ['Everything Now', 2017], ['WE', 2022], ['Pink Elephant', 2025]]],

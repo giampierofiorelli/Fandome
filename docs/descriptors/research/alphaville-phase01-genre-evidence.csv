@@ -1,0 +1,33 @@
+album_id,genre,source_url,scope,reason
+alphaville-foreveryoung,synthpop,https://www.allmusic.com/album/mw0000206620,whole album,AllMusic foregrounds synth-pop across original LP
+alphaville-foreveryoung,electronic,https://musicbrainz.org/release-group/bd021fbe-fbe9-3564-96c7-14de208de37f,whole album,Album release-group genre electronic
+alphaville-foreveryoung,newwave,https://musicbrainz.org/release-group/bd021fbe-fbe9-3564-96c7-14de208de37f,whole album,Album release-group names new wave
+alphaville-foreveryoung,dancepop,https://musicbrainz.org/release-group/bd021fbe-fbe9-3564-96c7-14de208de37f,whole album,MusicBrainz album genre dance-pop
+alphaville-foreveryoung,alternativedance,https://musicbrainz.org/release-group/bd021fbe-fbe9-3564-96c7-14de208de37f,whole album,MusicBrainz album genre alternative dance
+alphaville-foreveryoung,clubdance,https://www.allmusic.com/album/mw0000206620,whole album,"AllMusic Club/Dance style; original album is dance-oriented, not remix-only"
+alphaville-foreveryoung,newromantic,https://www.allmusic.com/album/mw0000206620,whole album,AllMusic New Romantic album style
+alphaville-foreveryoung,dancerock,https://www.allmusic.com/album/mw0000206620,whole album,AllMusic Dance-Rock classification; not an assertion that guitars dominate
+alphaville-foreveryoung,sophistipop,https://musicbrainz.org/release/f42ad47d-cf1e-4234-99d8-16b05283ecfa,whole album,MusicBrainz album edition tag sophisti-pop; low priority
+alphaville-afternoonsinutopia,synthpop,https://musicbrainz.org/release-group/3f40b1ff-cfcd-3664-8d2e-1c59e9ecd0b3,whole album,Genre tag synth-pop
+alphaville-afternoonsinutopia,electronic,https://musicbrainz.org/release-group/3f40b1ff-cfcd-3664-8d2e-1c59e9ecd0b3,whole album,Album electronic genre tag
+alphaville-afternoonsinutopia,pop,https://musicbrainz.org/release-group/3f40b1ff-cfcd-3664-8d2e-1c59e9ecd0b3,whole album,Album pop genre tag
+alphaville-afternoonsinutopia,newwave,https://www.allmusic.com/album/afternoons-in-utopia-mw0000189063,whole album,"AllMusic Punk/New Wave compound label; new-wave component, not punk"
+alphaville-afternoonsinutopia,alternativedance,https://www.allmusic.com/album/afternoons-in-utopia-mw0000189063,whole album,AllMusic Alternative Dance style
+alphaville-afternoonsinutopia,clubdance,https://www.allmusic.com/album/afternoons-in-utopia-mw0000189063,whole album,AllMusic Club/Dance style
+alphaville-afternoonsinutopia,rock,https://musicbrainz.org/release-group/3f40b1ff-cfcd-3664-8d2e-1c59e9ecd0b3,texture/subset,MusicBrainz album rock tag; album has extensive live guitar and drums
+alphaville-afternoonsinutopia,experimental,https://musicbrainz.org/release-group/3f40b1ff-cfcd-3664-8d2e-1c59e9ecd0b3,texture/subset,MusicBrainz experimental tag; peripheral and not blanket experimental genre
+alphaville-afternoonsinutopia,alternativeindierock,https://www.allmusic.com/album/afternoons-in-utopia-mw0000189063,texture/subset,"AllMusic Alternative/Indie Rock classification; broad filing taxonomy, low weight"
+alphaville-thebreathtakingblue,synthpop,https://www.chartsurfer.de/artist/alphaville/the-breathtaking-blue-album_ffhvcg.html,whole album,Original pressing explicitly lists Synth-pop style
+alphaville-thebreathtakingblue,technopop,https://en.wikipedia.org/wiki/The_Breathtaking_Blue,whole album,Q magazine contemporary critic calls the record technopop
+alphaville-thebreathtakingblue,electronic,https://www.chartsurfer.de/artist/alphaville/the-breathtaking-blue-album_ffhvcg.html,whole album,Original pressing electronic genre
+alphaville-thebreathtakingblue,newwave,https://www.allmusic.com/album/r477,whole album,AllMusic Punk/New Wave style; only new wave component used
+alphaville-thebreathtakingblue,alternativedance,https://www.allmusic.com/album/r477,whole album,AllMusic Alternative Dance style
+alphaville-thebreathtakingblue,clubdance,https://www.allmusic.com/album/r477,whole album,"AllMusic Club/Dance style, peripheral to ballad and acoustic parts"
+alphaville-thebreathtakingblue,alternativeindierock,https://www.allmusic.com/album/r477,texture/subset,Broad AllMusic Alternative/Indie Rock; guitar-led cuts are a subset
+alphaville-prostitute,synthpop,https://www.allmusic.com/album/prostitute-mw0000532660,whole album,AllMusic Synth Pop 1994 style
+alphaville-prostitute,trance,https://www.allmusic.com/album/prostitute-mw0000532660,some tracks,AllMusic Trance style; secondary to exploratory pop
+alphaville-prostitute,alternativedance,https://www.allmusic.com/album/prostitute-mw0000532660,whole album,AllMusic Alternative Dance style
+alphaville-prostitute,clubdance,https://www.allmusic.com/album/prostitute-mw0000532660,some tracks,"AllMusic Club/Dance, album still has ballads and guitar pieces"
+alphaville-prostitute,newwave,https://www.allmusic.com/album/prostitute-mw0000532660,whole album,AllMusic compound Punk/New Wave genre taxonomy; newwave alone
+alphaville-prostitute,alternativeindierock,https://www.allmusic.com/album/prostitute-mw0000532660,some tracks,AllMusic Alternative/Indie Rock classification; several credited guitars
+alphaville-prostitute,pop,https://www.qobuz.com/us-en/album/prostitute-alphaville/0745099683665,whole album,Label distributor Pop genre
