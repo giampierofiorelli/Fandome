@@ -1,0 +1,21 @@
+album_id,genre,source,url,scope,evidence
+gazebo-gazebo,italodisco,Gazebo album — 1983 German vinyl liner transcription,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,whole_album,1983 German original LP styles Italo-Disco.
+gazebo-gazebo,synthpop,Gazebo album — 1983 German vinyl liner transcription,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,whole_album,1983 original German sleeve listing style Synth-pop.
+gazebo-gazebo,electro,Gazebo album — 1983 German vinyl liner transcription,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,whole_album,Original German LP pressing style Electro.
+gazebo-gazebo,electronic,Gazebo album — 1983 German vinyl liner transcription,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,whole_album,Genre Electronic on 1983 pressing.
+gazebo-telephonemama,synthpop,Telephone Mama — 1984 German LP sleeve transcription,https://tunnel.ru/post-gazebo-1984-telephone-mama,whole_album,1984 original LP labeled Synth-pop.
+gazebo-telephonemama,italodisco,Telephone Mama — 1984 German LP sleeve transcription,https://tunnel.ru/post-gazebo-1984-telephone-mama,whole_album,1984 original LP labeled Italo-Disco.
+gazebo-telephonemama,electro,Telephone Mama — 1984 German LP sleeve transcription,https://tunnel.ru/post-gazebo-1984-telephone-mama,whole_album,1984 original LP includes Electro.
+gazebo-telephonemama,electronic,Telephone Mama — 1984 German LP sleeve transcription,https://tunnel.ru/post-gazebo-1984-telephone-mama,whole_album,Original LP genre Electronic.
+gazebo-telephonemama,pop,Telephone Mama — contemporary LP listing,https://www.musik-sammler.de/release/gazebo-telephone-mama-lp-134614/,whole_album,Record catalog classification under Pop/Italo-Pop.
+gazebo-univision,synthpop,Univision — 1986 Italian vinyl archive,https://winyle-online.pl/wydawnictwo/0163fa37/gazebo-univision-winyl-lp-wlochy-1986,whole_album,Italian original LP catalog Synth-pop style.
+gazebo-univision,italodisco,Univision — vinyl/CD sleeve transcription,https://tunnel.ru/post-gazebo-1986-univision,whole_album,Sleeve transcription preserves original LP Italo-Disco tag.
+gazebo-univision,electro,Univision — vinyl/CD sleeve transcription,https://tunnel.ru/post-gazebo-1986-univision,whole_album,Original LP pressing style Electro.
+gazebo-univision,electronic,Univision — 1986 Italian vinyl archive,https://winyle-online.pl/wydawnictwo/0163fa37/gazebo-univision-winyl-lp-wlochy-1986,whole_album,Genre Electronic on Italian original LP.
+gazebo-univision,pop,Univision — German 1986 LP,https://www.musik-sammler.de/release/gazebo-univision-lp-30996/,whole_album,German 1986 LP catalog classifies as Pop.
+gazebo-therainbowtales,synthpop,The Rainbow Tales — original Italian LP sleeve transcription,https://tunnel.ru/post-gazebo-1988-the-rainbow-tales,whole_album,Original 1988 pressing states Synth-pop.
+gazebo-therainbowtales,pop,Gazebo official bio,https://www.gazebo.info/bio/,whole_album,Official artist biography explicitly calls this a turn towards pop and rock.
+gazebo-therainbowtales,rock,Gazebo official bio,https://www.gazebo.info/bio/,whole_album,Official artist biography explicitly calls this a turn towards pop and rock; secondary aspect.
+gazebo-therainbowtales,italodisco,The Rainbow Tales — original Italian LP sleeve transcription,https://tunnel.ru/post-gazebo-1988-the-rainbow-tales,whole_album,1988 Italian pressing style includes Italo-Disco; avoid treating it as only album genre.
+gazebo-therainbowtales,electro,The Rainbow Tales — original Italian LP sleeve transcription,https://tunnel.ru/post-gazebo-1988-the-rainbow-tales,whole_album,Original LP style Electro.
+gazebo-therainbowtales,electronic,The Rainbow Tales — original Italian LP sleeve transcription,https://tunnel.ru/post-gazebo-1988-the-rainbow-tales,whole_album,Original LP classified Electronic.

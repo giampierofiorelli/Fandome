@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,catalog_status,descriptor_status,required_action,evidence
+gazebo-gazebo,Gazebo,Gazebo,1983,studio,present,absent,ADD_DESCRIPTOR_ONLY,Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026; no gazebo.csv exists
+gazebo-telephonemama,Gazebo,Telephone Mama,1984,studio,present,absent,ADD_DESCRIPTOR_ONLY,Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026; no gazebo.csv exists
+gazebo-univision,Gazebo,Univision,1986,studio,missing,absent,ADD_TO_CATALOG_AND_DESCRIPTOR,Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026; no gazebo.csv exists
+gazebo-therainbowtales,Gazebo,The Rainbow Tales,1988,studio,missing,absent,ADD_TO_CATALOG_AND_DESCRIPTOR,Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026; no gazebo.csv exists

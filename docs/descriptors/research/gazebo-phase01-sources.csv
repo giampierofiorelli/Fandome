@@ -1,0 +1,31 @@
+album_id,source,source_type,url,what_it_supports,evidence_strength
+gazebo-gazebo,Gazebo official discography,artist_discography,https://www.gazebo.info/discography/,1983 debut and official chronological sequence,high
+gazebo-gazebo,Pierluigi Giombini — About Me,producer_first_person,https://giombinimusic.com/about-me/,1983 album commission and origin of the piano melody inspired by Chopin,high
+gazebo-gazebo,Gazebo album — 1983 German vinyl liner transcription,original_release_credits,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,"Oberheim OB-X, Minimoog, Oberheim DMX, Simmons, piano, violin, bass, production split",high
+gazebo-gazebo,Gazebo (album) — personnel and album history,credits_secondary,https://en.wikipedia.org/wiki/Gazebo_%28album%29,"Original track order, studio year and personnel",medium
+gazebo-gazebo,Gazebo — MusicBrainz release group,metadata,https://musicbrainz.org/release-group/690e61fe-66af-3f7d-8ed3-aa7cdb1f16c0,Album genre tags electronic/synth-pop/Italo disco,medium
+gazebo-gazebo,Gazebo — 1983  German pressing genre styles,pressing_metadata,https://www.chartsurfer.de/artist/gazebo/gazebo-album_frphnn.html,"Genre Electronic; styles Italo-Disco, Electro, Synth-pop",high
+gazebo-gazebo,Gazebo interview on early demos,artist_interview,https://italo-disco.net/HTML/HTML%20Interviews/Gazebo%20Interview.html,First album grew out of Gazebo/Giombini demo recordings,high
+gazebo-gazebo,Gazebo recording history — Vehlinggo,critical_article,https://vehlinggo.com/2015/03/02/the-beats-alive-gazebo-i-like-chopin-masterpiece/,"Early LP dynamics, pop atmosphere, production aesthetics",medium
+gazebo-gazebo,Gazebo artist recommendation — explore.band,secondary_artist_comparison,https://explore.band/en/artist/gazebo,Editorial sonic comparisons Savage and P. Lion; not evidence of influence,low
+gazebo-telephonemama,Gazebo official bio,artist_biography,https://www.gazebo.info/bio/,Album chronology and intentional musical departure from debut,high
+gazebo-telephonemama,Telephone Mama — 1984 German LP sleeve transcription,original_release_credits,https://tunnel.ru/post-gazebo-1984-telephone-mama,"1984 original album label, genre electronic; Italo-Disco/Electro/Synth-pop; Giombini keyboards/production",high
+gazebo-telephonemama,Telephone Mama — CD booklet track credits transcription,original_release_credits,https://vinyl.com.ua/cd/gazebo-telephone-mama-4-537131870-italo-disco-377623.html,"Marco Rinalduzzi guitar on title track, Gazebo guitar on Strategy, Giombini keyboards and production",high
+gazebo-telephonemama,Telephone Mama — contemporary LP listing,release_metadata,https://www.musik-sammler.de/release/gazebo-telephone-mama-lp-134614/,1984 studio album and track sequence,medium
+gazebo-telephonemama,Telephone Mama — CD listing style tags,release_metadata,https://www.musik-sammler.de/release/gazebo-telephone-mama-cd-1609962/,"Italo Disco, Synth Pop and release context",medium
+gazebo-telephonemama,Gazebo — artist on departing from his debut,artist_interview,https://www.tuttorock.com/gazebo-intervista-a-paul-mazzolini/,Gazebo describes the second album as deliberately very different,high
+gazebo-telephonemama,Japanese 1984 Telephone Mama CD credits,liner_transcription,https://www.oocities.org/sunsetstrip/disco/3779/italorar/italorar.html,Original eight-song 1984 album arranged and produced by Giombini,medium
+gazebo-univision,Gazebo official discography,artist_discography,https://www.gazebo.info/discography/,"1986 original release date, place in chronology",high
+gazebo-univision,Gazebo official bio,artist_biography,https://www.gazebo.info/bio/,First Lunatic project; final Giombini-era album,high
+gazebo-univision,Univision — vinyl/CD sleeve transcription,original_release_credits,https://tunnel.ru/post-gazebo-1986-univision,Vocal/keyboards/rhythm guitar Gazebo; Giombini keyboards and Linn; Pain co-produced by Gazebo,high
+gazebo-univision,Univision — 1986 original pressing credits,release_credits,https://recordsale.de/en/artists/gazebo/albums/univision,"1986 LP editions, track order, Giombini production, Lecci and Aluzzi recording",high
+gazebo-univision,Univision — 1986 Italian vinyl archive,pressing_genre,https://winyle-online.pl/wydawnictwo/0163fa37/gazebo-univision-winyl-lp-wlochy-1986,Original 1986 Italian pressing style Leftfield/Synth-pop and Electronic,medium
+gazebo-univision,Univision — Japan CD liner transcription,liner_transcription,https://www.oocities.org/sunsetstrip/disco/3779/italorar/italorar.html,Giombini production except Pain produced by Gazebo,high
+gazebo-univision,Univision — German 1986 LP,metadata,https://www.musik-sammler.de/release/gazebo-univision-lp-30996/,1986 release and Pop genre header,medium
+gazebo-therainbowtales,Gazebo official discography,artist_discography,https://www.gazebo.info/discography/,1988 original studio album and correct title,high
+gazebo-therainbowtales,Gazebo official bio,artist_biography,https://www.gazebo.info/bio/,Recorded at Lunatic; explicit shift toward pop and rock,high
+gazebo-therainbowtales,The Rainbow Tales — original Italian LP sleeve transcription,original_release_credits,https://tunnel.ru/post-gazebo-1988-the-rainbow-tales,"1988 LP genre/style labels, songwriters, original 10 tracks",high
+gazebo-therainbowtales,The Rainbow Tales — 1988 Japanese CD details,release_metadata,https://eil.com/shop/moreinfo.asp?catalogid=738197,1988 CBS/Sony 10-track Japanese release,medium
+gazebo-therainbowtales,The Rainbow Tales — LP/CD release group and track credits,release_credits,https://winyle-online.pl/album/gazebo/the-rainbow-tales-1988,"1988 release, Gazebo and Denis Haines producers; specified track-specific credits",high
+gazebo-therainbowtales,Gazebo — artist's biography re Haines,artist_biography,https://www.theaudiodb.com/artist/113973-Gazebo,Denis Haines co-production and progressive-pop background,medium
+gazebo-therainbowtales,Ordinary Life — comments on recorded synth effects,critical_listener,https://portuguesecharts.com/showitem.asp?cat=s&interpret=Gazebo&titel=Ordinary+Life,Track-level source for prominent synthetic timbres; low weight,low
