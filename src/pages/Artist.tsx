@@ -48,7 +48,7 @@ export default function ArtistPage() {
   const myAlbums = albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year)
   // Start here: the records that made the artist, for someone who doesn't know them yet.
   const essentials = essentialAlbums(myAlbums.map((a) => a.id))
-  const essentialIds = new Set(essentials.map((e) => e.id))
+  const essentialKinds = new Map(essentials.map((e) => [e.id, e.kind]))
   const shows = concerts.filter((c) => c.artistId === artist.id).sort((a, b) => b.date.localeCompare(a.date))
   const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
@@ -187,9 +187,9 @@ export default function ArtistPage() {
                     )}
                     <span className={mine ? 'album-score mine' : 'album-score'}>{mine ? fmtScore(toScore(mine)) : 'Rate'}</span>
                   </span>
-                  {essentialIds.has(al.id) && (
-                    <span className="essential-pill small" title="One of the records to start with">
-                      ✦ Essential
+                  {essentialKinds.has(al.id) && (
+                    <span className={`essential-pill small ${essentialKinds.get(al.id)}`} title="One of the records to start with">
+                      {ESSENTIAL_LABEL[essentialKinds.get(al.id)!]}
                     </span>
                   )}
                   <span className="album-title">{al.title}</span>
