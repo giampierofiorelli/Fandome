@@ -1,0 +1,10 @@
+﻿album_id,title,year,type,in_catalog_ts,descriptor_already_present,phase,action,audit_note
+gnr-livelikeasuicide,Live ?!*@ Like a Suicide,1986,ep,no,no,excluded,DO NOT import separately,"Historically important debut EP, but original 4 masters reappear on G N’ R Lies; no duplicate descriptor as per landmark-only EP rule; already covered by 1988 row."
+gnr-appetitefordestruction,Appetite for Destruction,1987,studio,yes,no,01,DESCRIBE,1987 original; not 2018 remaster box.
+gnr-gnrlies,G N’ R Lies,1988,studio,yes,no,01,DESCRIBE,"Hybrid EP-derived plus new acoustic studio tracks. Despite double EP construction, classified under studio discography; early tracks are faux-live."
+gnr-useyourillusioni,Use Your Illusion I,1991,studio,yes,no,01,DESCRIBE,One of two distinct simultaneously released 1991 albums; 2022 orchestral revision not original.
+gnr-useyourillusionii,Use Your Illusion II,1991,studio,yes,no,01,DESCRIBE,"Second simultaneous 1991 album, own separate catalogue id."
+gnr-thespaghettiincident,The Spaghetti Incident?,1993,studio,no,no,02,ADD TO CATALOG,Original 1993 covers studio album; not a compilation; original title includes question mark.
+gnr-chinesedemocracy,Chinese Democracy,2008,studio,yes,no,02,DESCRIBE,"Only 2008 original album, not deluxe/reissue."
+gnr-liveera8793,Live Era ’87–’93,1999,live,no,no,excluded,DO NOT import,"Official retrospective live set, not an exceptional creative landmark here; live albums excluded by user rule."
+gnr-hardskool,Hard Skool,2022,ep,no,no,excluded,DO NOT import,EP combines two singles and two live recordings; not a landmark new body of work.

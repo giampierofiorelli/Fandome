@@ -1,0 +1,22 @@
+﻿album_id,genre,source,url,scope,evidence_note
+gnr-appetitefordestruction,hardrock,allapp,https://www.allmusic.com/album/appetite-for-destruction-mw0000192878,whole album,Explicit AllMusic Hard Rock style
+gnr-appetitefordestruction,heavymetal,allapp,https://www.allmusic.com/album/appetite-for-destruction-mw0000192878,whole album,"Explicit AllMusic Heavy Metal style, secondary to hard rock"
+gnr-appetitefordestruction,albumrock,allapp,https://www.allmusic.com/album/appetite-for-destruction-mw0000192878,whole album,Explicit AllMusic Album Rock style
+gnr-appetitefordestruction,punk,grammyapp,https://live.grammy.com/news/guns-n-roses-appetite-destruction-record,texture,GRAMMY retrospect explicitly describes raw punk energy in this album
+gnr-appetitefordestruction,bluesrock,jakarta,https://www.thejakartapost.com/news/2018/09/28/album-review-appetite-destruction-gun-n-roses,some tracks,The Jakarta Post explicitly calls Mr. Brownstone a blues-rock shuffle; subsidiary track-level genre
+gnr-gnrlies,hardrock,alllies,https://www.allmusic.com/album/g-n-r-lies-mw0000244545,whole album,AllMusic lists Hard Rock; primarily first 1986 EP side
+gnr-gnrlies,heavymetal,alllies,https://www.allmusic.com/album/g-n-r-lies-mw0000244545,some tracks,AllMusic lists Heavy Metal; chiefly hard electrified half
+gnr-gnrlies,albumrock,alllies,https://www.allmusic.com/album/g-n-r-lies-mw0000244545,whole album,AllMusic lists Album Rock across hybrid issue
+gnr-useyourillusioni,hardrock,allui1,https://www.allmusic.com/album/use-your-illusion-i-mw0000598424,whole album,AllMusic Hard Rock style and uptempo electric tracks
+gnr-useyourillusioni,heavymetal,allui1,https://www.allmusic.com/album/use-your-illusion-i-mw0000598424,whole album,"AllMusic Heavy Metal style, less consistent than in debut"
+gnr-useyourillusioni,albumrock,allui1,https://www.allmusic.com/album/use-your-illusion-i-mw0000598424,whole album,AllMusic explicitly identifies Album Rock
+gnr-useyourillusioni,blues,classicrockui,https://www.classicrockreview.com/2011/07/1991-gnr-illusions/,some tracks,Qualified review explicitly discusses blues influence on I; Bad Obsession and The Garden
+gnr-useyourillusioni,country,classicrockui,https://www.classicrockreview.com/2011/07/1991-gnr-illusions/,some tracks,"Qualified review explicitly names country elements, especially You Ain’t the First"
+gnr-useyourillusioni,prog,classicrockui,https://www.classicrockreview.com/2011/07/1991-gnr-illusions/,some tracks,"Review specifically names progressive rock expansion, most evident on Coma"
+gnr-useyourillusioni,punk,classicrockui,https://www.classicrockreview.com/2011/07/1991-gnr-illusions/,some tracks,Review says Garden of Eden punk-influenced; not whole-record punk
+gnr-useyourillusionii,hardrock,allui2,https://www.allmusic.com/album/use-your-illusion-ii-mw0000035625,whole album,"AllMusic Hard Rock style, still dominant"
+gnr-useyourillusionii,heavymetal,allui2,https://www.allmusic.com/album/use-your-illusion-ii-mw0000035625,whole album,AllMusic Heavy Metal style
+gnr-useyourillusionii,albumrock,allui2,https://www.allmusic.com/album/use-your-illusion-ii-mw0000035625,whole album,AllMusic Album Rock style
+gnr-useyourillusionii,funkmetal,uDiscover,https://www.udiscovermusic.com/stories/guns-n-roses-use-your-illusion-review/,some tracks,Review explicitly describes Locomotive as funk-metal; add Fandome genre token
+gnr-useyourillusionii,industrial,uDiscover,https://www.udiscovermusic.com/stories/guns-n-roses-use-your-illusion-review/,some tracks,My World described with industrial styling; closing track only
+gnr-useyourillusionii,electronic,uDiscover,https://www.udiscovermusic.com/stories/guns-n-roses-use-your-illusion-review/,texture,My World described with electronic styling; one-track exception

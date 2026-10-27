@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  gnr: {
+    names: ['Aerosmith', 'Led Zeppelin', 'The Rolling Stones', 'The Who', 'B.B. King', 'The Yardbirds', 'The Kinks', 'The Beatles', 'AC/DC', 'Black Sabbath', 'Cheap Trick', 'Queen', 'Elton John', 'The Stooges', 'New York Dolls', 'Sex Pistols', 'Black Flag'],
+    source: 'Slash: Kerrang (Aerosmith, Rocks), zZounds interview (Led Zeppelin, The Who, B.B. King), Hot Press (Rolling Stones), The List via Blabbermouth (AC/DC, Sabbath, Cheap Trick); Steven Adler via Blabbermouth (Axl: Queen, Elton John; Izzy: Stooges, New York Dolls, Sex Pistols; Duff: Black Flag); MusicRadar (Elton John, November Rain)',
+  },
   talktalk: {
     names: ['Otis Redding', 'John Coltrane', 'Burt Bacharach', 'Claude Debussy', 'Dmitri Shostakovich', 'Miles Davis', 'Gil Evans', 'John Cage', 'Maurice Ravel', 'Ornette Coleman', 'Olivier Messiaen', 'John Lee Hooker', 'Béla Bartók', 'Erik Satie', 'Darius Milhaud'],
     source: 'Mark Hollis: Guardian 2019 (1982 interviews); Pitchfork 2019; Jason Cowley, Out of Time (1998 interview); Classic Pop, The Colour of Spring',
