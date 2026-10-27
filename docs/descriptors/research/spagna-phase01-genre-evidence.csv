@@ -1,0 +1,16 @@
+﻿album_id,genre,evidence,source_url,evidence_type
+spagna-dedicatedtothemoon,italodisco,1987 album release classified Italo disco; Call Me treated as defining single,https://en.wikipedia.org/wiki/Dedicated_to_the_Moon,direct-genre
+spagna-dedicatedtothemoon,synthpop,1987 album release classified synth-pop,https://en.wikipedia.org/wiki/Dedicated_to_the_Moon,direct-genre
+spagna-dedicatedtothemoon,pop,Qobuz treats album as pop within Pop/Rock category,https://www.qobuz.com/es-es/album/dedicated-to-the-moon-spagna/5099749102323,broad-catalogue
+spagna-dedicatedtothemoon,dance,Hit Parade Italia and contemporary description place original material in dance scene,https://www.hitparadeitalia.it/disco_old/spagnai_a.htm,scene-context
+spagna-youaremyenergy,italodisco,1988 LP original edition classified Italo disco,https://vinylzone.ru/catalog/net-v_nalichii/59032/,direct-genre
+spagna-youaremyenergy,synthpop,1988 LP original edition classified synth-pop,https://vinylzone.ru/catalog/net-v_nalichii/59032/,direct-genre
+spagna-youaremyenergy,pop,Apple Music lists album in pop category,https://music.apple.com/us/album/you-are-my-energy/288387108,broad-catalogue
+spagna-youaremyenergy,dance,Hit Parade Italia explicitly describes second album as a dance album,https://www.hitparadeitalia.it/disco_old/spagnai_a.htm,direct-genre
+spagna-nowayout,pop,AllMusic album is filed under Pop/Rock,https://www.allmusic.com/album/no-way-out-mw0000279012,broad-catalogue
+spagna-nowayout,dance,AllMusic names Club/Dance as an album style,https://www.allmusic.com/album/no-way-out-mw0000279012,direct-genre
+spagna-nowayout,hinrg,AllMusic names Hi-NRG as an album style,https://www.allmusic.com/album/no-way-out-mw0000279012,direct-genre
+spagna-nowayout,electronic,AllMusic has Electronic in genre listing,https://www.allmusic.com/album/no-way-out-mw0000279012,direct-genre
+spagna-matteroftime,pop,Original record tagged pop in release database; Qobuz genre Pop/Rock,https://musicbase.net/cs/matter-of-time-099f93r,catalogue-style
+spagna-matteroftime,europop,1993 original record release metadata names Europop,https://musicbase.net/cs/matter-of-time-099f93r,direct-genre
+spagna-matteroftime,disco,1993 original record release metadata names Disco,https://musicbase.net/cs/matter-of-time-099f93r,direct-genre

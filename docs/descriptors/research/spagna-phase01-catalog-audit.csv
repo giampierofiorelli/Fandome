@@ -1,0 +1,9 @@
+﻿album_id,artist_id,title,year,type,catalog_status_on_descriptors_branch,action,reason
+spagna-dedicatedtothemoon,spagna,Dedicated to the Moon,1987,studio,not_present,ADD_TO_CATALOG,New artist room and exact original album should be created before importing descriptors
+spagna-youaremyenergy,spagna,You Are My Energy,1988,studio,not_present,ADD_TO_CATALOG,New artist room and exact original album should be created before importing descriptors
+spagna-nowayout,spagna,No Way Out,1991,studio,not_present,ADD_TO_CATALOG,New artist room and exact original album should be created before importing descriptors
+spagna-matteroftime,spagna,Matter of Time,1993,studio,not_present,ADD_TO_CATALOG,New artist room and exact original album should be created before importing descriptors
+,spagna,Spagna & Spagna: Greatest Hits,1993,compilation,not_present,EXCLUDE,"Compilation, do not include"
+,spagna,E che mai sarà - Le mie più belle canzoni,1998,compilation,not_present,EXCLUDE,"Compilation, do not include"
+,spagna,Ballads,1997,compilation,not_present,EXCLUDE,"Compilation, do not include"
+,spagna,Dance Collection,1997,compilation,not_present,EXCLUDE,"Compilation, do not include"
