@@ -104,6 +104,7 @@ const baseAlbums: Album[] = [
   { id: 'depeche-somegreatreward', artistId: 'depeche', title: 'Some Great Reward', year: 1984 },
   { id: 'depeche-blackcelebration', artistId: 'depeche', title: 'Black Celebration', year: 1986 },
   { id: 'd-masses', artistId: 'depeche', title: 'Music for the Masses', year: 1987 },
+  { id: 'depeche-101', artistId: 'depeche', title: '101', year: 1989 },
   { id: 'd-violator', artistId: 'depeche', title: 'Violator', year: 1990 },
   { id: 'd-sofad', artistId: 'depeche', title: 'Songs of Faith and Devotion', year: 1993 },
   { id: 'depeche-ultra', artistId: 'depeche', title: 'Ultra', year: 1997 },
