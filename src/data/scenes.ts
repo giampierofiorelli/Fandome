@@ -53,7 +53,7 @@ const ROWS: Record<string, string> = {
   freddie: 'GB en 1980 rock,pop', bowie: 'GB en 1960 rock,alt', marley: 'JM en 1960 reggae', stones: 'GB en 1960 rock', aretha: 'US en 1960 soul',
   sinatra: 'US en 1940 jazz,pop', eltonjohn: 'GB en 1960 pop,rock', dylan: 'US en 1960 folk,songwriter', stevie: 'US en 1960 soul,funk', abba: 'SE en 1970 pop,disco',
   pinkfloyd: 'GB en 1960 prog,rock', hendrix: 'US en 1960 rock', ledzeppelin: 'GB en 1960 rock', piaf: 'FR fr 1930 songwriter', armstrong: 'US en 1920 jazz',
-  streisand: 'US en 1960 pop', dianaross: 'US en 1960 soul,pop', donnasummer: 'US en 1970 disco', marvingaye: 'US en 1960 soul', georgemichael: 'GB en 1980 pop', wham: 'GB en 1980 pop,dance', communards: 'GB en 1980 pop,dance', imagination: 'GB en 1980 funk,disco', fineyoungcannibals: 'GB en 1980 pop,soul', samanthafox: 'GB en 1980 pop,dance',
+  streisand: 'US en 1960 pop', dianaross: 'US en 1960 soul,pop', donnasummer: 'US en 1970 disco', marvingaye: 'US en 1960 soul', georgemichael: 'GB en 1980 pop', wham: 'GB en 1980 pop,dance', communards: 'GB en 1980 pop,dance', imagination: 'GB en 1980 funk,disco', fineyoungcannibals: 'GB en 1980 pop,soul', samanthafox: 'GB en 1980 pop,dance', spagna: 'IT it 1980 pop,dance',
   fleetwood: 'GB en 1960 rock,pop', acdc: 'AU en 1970 rock,metal', thewho: 'GB en 1960 rock', sabbath: 'GB en 1960 metal', metallica: 'US en 1980 metal',
   nirvana: 'US en 1980 alt,rock', thecure: 'GB en 1970 alt,rock', janet: 'US en 1980 pop,rnb', spicegirls: 'GB en 1990 pop', eminem: 'US en 1990 hiphop',
   daftpunk: 'FR en 1990 electronic,dance', moroder: 'IT en 1970 electronic,disco', rihanna: 'US en 2000 pop,rnb', amy: 'GB en 2000 soul,jazz', oasis: 'GB en 1990 rock',

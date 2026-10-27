@@ -1,0 +1,18 @@
+﻿album_id,genre,evidence,url,support_scope
+spagna-siamoindue,pop,Epic pop genre assigned to whole original album,https://www.qobuz.com/es-es/album/siamo-in-due-ivana-spagna/0888880526984,direct_album
+spagna-siamoindue,ballad,1995 CD tagged ballad; Italian melodic performance repeatedly described,https://musicbase.net/siamo-in-due,original_release_style
+spagna-siamoindue,europop,1995 first-press CD style metadata,https://musicbase.net/siamo-in-due,original_release_style
+spagna-siamoindue,synthpop,1995 first-press CD style metadata; album has documented electronic programming,https://musicbase.net/siamo-in-due,original_release_style
+spagna-lupisolitari,pop,1996 original discographic classification pop,https://it.wikipedia.org/wiki/Lupi_solitari,direct_album
+spagna-lupisolitari,ballad,Original CD style metadata labels ballad,https://musicbase.net/lupi-solitari,original_release_style
+spagna-lupisolitari,softrock,Original CD style metadata labels soft rock,https://musicbase.net/lupi-solitari,original_release_style
+spagna-lupisolitari,europop,Original CD style metadata labels Europop,https://musicbase.net/lupi-solitari,original_release_style
+spagna-lupisolitari,aor,Original CD style metadata labels AOR; secondary weight,https://musicbase.net/lupi-solitari,original_release_style
+spagna-indivisibili,pop,Album classed as pop in digital/original discography,https://music.apple.com/us/album/indivisibili/310258375,direct_album
+spagna-indivisibili,ballad,Professional retrospective specifically identifies Dov’eri and other melodic ballads,https://recensiamomusica.com/ivana-spagna-venticinque-anni-di-indivisibili/,track_to_album
+spagna-indivisibili,poprock,Acoustic rhythm-section recording of songs described as rhythmic pop; interpretive style assignment rather than a directly labeled genre,https://it.wikipedia.org/wiki/Indivisibili_%28album%29,editorial_inference
+spagna-domani,pop,Release explicitly listed as pop,https://www.coveralia.com/discos/spagna-domani.php,direct_album
+spagna-domani,ballad,"Archive describes Domani, Aspettavo te and Anche un momento as melodic ballads",https://www.fanclubivanaspagna.com/IvanaSpagna/musica_e_parole.htm,track_to_album
+spagna-domani,dance,Archive describes Un po’ d’amore as dance; do not extend to whole album,https://www.fanclubivanaspagna.com/IvanaSpagna/musica_e_parole.htm,track_to_album
+spagna-domani,latinpop,Archive hears Latin rhythmic features on Mi amor; no evidence for entire LP having a Latin identity,https://www.fanclubivanaspagna.com/IvanaSpagna/musica_e_parole.htm,track_to_album
+spagna-domani,orchestralpop,"Con il tuo nome described as orchestral pop; applies to key track, not entire LP",https://it.wikipedia.org/wiki/Con_il_tuo_nome,track_to_album
