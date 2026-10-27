@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  psb: {
+    names: ['Bobby Orlando', 'The Flirts', 'Soft Cell', 'Grandmaster Flash and the Furious Five', 'David Bowie', 'Giorgio Moroder', 'Phil Spector', 'The Beatles', 'Grace Jones', 'ABC', 'Art of Noise'],
+    source: 'Tennant and Lowe: Magnet 2016 (Bobby Orlando, Soft Cell), The Independent (The Flirts), This Is Not Retro 2004 (The Message), BBC This Cultural Life (Bowie), Classic Pop on Behaviour (Moroder) and on Introspective (Spector, Beatles, Grace Jones, ABC, Art of Noise)',
+  },
   rhcp: {
     names: ['Grandmaster Flash', 'Parliament', 'Funkadelic', 'Ohio Players', 'The Brothers Johnson', 'James Brown', 'Louis Armstrong', 'Jimi Hendrix', 'Jeff Beck', 'Gang of Four', 'Led Zeppelin', 'Earth, Wind & Fire'],
     source: 'Anthony Kiedis: CBS 60 Minutes 2023 (Grandmaster Flash), Washington Post 1990 (P-Funk); Flea: Guitar World 1991 (Parliament/Funkadelic, Ohio Players, Brothers Johnson, James Brown, Louis Armstrong), Mojo (Hendrix, Jeff Beck, Gang of Four via Hillel Slovak), Forbes 2022 (Led Zeppelin, Earth Wind & Fire); John Frusciante: MusicRadar (Hendrix)',

@@ -226,3 +226,5 @@ On "If you like this artist" a collaborator gets one of two extra places (beyond
 score cut, with the collaboration as the reason; a collaborator who makes the list on sound anyway keeps that place with
 the collaboration as its reason; collaborators from a local scene abroad come first (discovery rule). Pages without
 collaborations are unchanged (checked Madonna, RHCP).
+
+- A link that names an artist (influence, comparison) prefers their studio albums: compilations and live albums weigh 0.7 in the pick (Behaviour → Giorgio Moroder landed on the Innovisions compilation) (Oct 2026).

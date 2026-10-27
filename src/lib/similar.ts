@@ -625,7 +625,10 @@ export function similarAlbums(
   // A link names an artist, not a record: of that artist's close albums, the one that best stands for their sound
   // gets the place (closeness × how typical the album is of the artist), not just a near tie on genre labels.
   // A career-defining album (importance 0-5, when known) breaks near ties.
-  const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance)
+  // A compilation or a live album stands for an artist less than a record they made as such (Behaviour → Moroder
+  // should not land on the Innovisions compilation): they come after the studio albums.
+  const kindWeight = (id: string) => (['compilation', 'live'].includes(DESCRIPTORS[id]?.type ?? '') ? 0.7 : 1)
+  const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance) * kindWeight(s.albumId)
   const linked = scored
     .filter((s) => named(s.artist))
     // The record a source names comes first for its artist; then influences before comparisons; then the best fit.

@@ -1,0 +1,29 @@
+album_id,genre,source_url,scope,evidence
+psb-please,synthpop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,whole album,Synth-pop electronic keyboards and songs
+psb-please,dancepop,https://www.allmusic.com/album/please-r15123,whole album,AllMusic Dance-Pop style
+psb-please,alternativedance,https://www.allmusic.com/album/please-r15123,whole album,AllMusic Alternative Dance style
+psb-please,electropop,https://www.classicpopmag.com/features/album-by-album-pet-shop-boys/,whole album,Described as 1980s electropop duo with electro-pop instrumentation
+psb-please,clubdance,https://www.allmusic.com/album/please-r15123,whole album,AllMusic Club/Dance style
+psb-please,dancerock,https://www.allmusic.com/album/please-r15123,whole album,AllMusic Dance-Rock classification; weak literal-rock content
+psb-disco,synthpop,https://en.wikipedia.org/wiki/Disco_%28Pet_Shop_Boys_album%29,whole album,Original LP categorized synth-pop
+psb-disco,dancepop,https://www.allmusic.com/album/disco-mw0000191383,whole album,AllMusic Dance-Pop style
+psb-disco,alternativedance,https://www.allmusic.com/album/disco-mw0000191383,whole album,AllMusic Alternative Dance style
+psb-disco,dancerock,https://www.allmusic.com/album/disco-mw0000191383,whole album,"AllMusic Dance-Rock style, not necessarily guitar-led"
+psb-disco,house,https://www.allmusic.com/album/disco-mw0000191383,whole album,AllMusic house style retrospectively applied to extended remix collection
+psb-disco,disco,https://en.wikipedia.org/wiki/Disco_%28Pet_Shop_Boys_album%29,whole album,Album genre database lists disco; specialist commentary disputes literal disco sound
+psb-introspective,synthpop,https://musicbrainz.org/release-group/ea12e774-af8c-324d-b6d0-096282a6712a,whole album,MusicBrainz synth-pop
+psb-introspective,house,https://musicbrainz.org/release-group/ea12e774-af8c-324d-b6d0-096282a6712a,whole album,MusicBrainz house and AllMusic house textures
+psb-introspective,dancepop,https://www.allmusic.com/album/r15117,whole album,AllMusic Dance-Pop
+psb-introspective,alternativedance,https://www.allmusic.com/album/r15117,whole album,AllMusic Alternative Dance
+psb-introspective,clubdance,https://www.allmusic.com/album/r15117,whole album,AllMusic Club/Dance
+psb-introspective,disco,https://musicbrainz.org/release-group/ea12e774-af8c-324d-b6d0-096282a6712a,whole album,MusicBrainz disco / club extension
+psb-introspective,orchestralpop,https://www.petshopboys.co.uk/product/album/introspective-further-listening-1988-1989-2018,some tracks,Trevor Horn orchestral arrangements especially Left to My Own Devices
+psb-introspective,dancerock,https://www.allmusic.com/album/r15117,whole album,AllMusic Dance-Rock style
+psb-introspective,electrodisco,https://musicbrainz.org/release-group/ea12e774-af8c-324d-b6d0-096282a6712a,texture,MusicBrainz release-group electro-disco tag; synthesised club sound
+p-behaviour,synthpop,https://www.theshfl.com/album/Behaviour,whole album,Ned Raggett synth-pop tagging
+p-behaviour,sophistipop,https://www.theshfl.com/album/Behaviour,whole album,Ned Raggett sophisti-pop category
+p-behaviour,alternativedance,https://www.allmusic.com/album/behaviour-mw0000309937,whole album,AllMusic Alternative Dance
+p-behaviour,dancepop,https://www.allmusic.com/album/behaviour-mw0000309937,whole album,AllMusic Dance-Pop
+p-behaviour,dancerock,https://www.allmusic.com/album/behaviour-mw0000309937,whole album,AllMusic Dance-Rock; less rock-led in actual instrumentation
+p-behaviour,house,https://pitchfork.com/reviews/albums/22753-behaviour/,some tracks,Deep-house bassline Being Boring; house-influenced My October Symphony
+p-behaviour,orchestralpop,https://www.classicpopmag.com/features/classic-album/pet-shop-boys-behaviour/,some tracks,Badalamenti orchestral tracks and Balanescu Quartet string arrangements
