@@ -1,0 +1,34 @@
+﻿artist_id,album_id,title,year,type,in_catalog,descriptor_exists,action,phase,notes
+cerrone,cerrone-loveincminor,Love in C Minor,1976,studio,yes,no,KEEP,01,Original LP only; Phase 01 row in this ZIP. Existing catalog title and ID preserved.
+cerrone,cerrone-cerronesparadise,Cerrone's Paradise,1977,studio,no,no,ADD,01,Original LP only; Phase 01 row in this ZIP. Add studio album before importing descriptors.
+cerrone,cerrone-supernaturecerroneiii,Supernature (Cerrone III),1977,studio,yes,no,KEEP,01,Original LP only; Phase 01 row in this ZIP. Existing catalog title and ID preserved.
+cerrone,cerrone-cerroneivthegoldentouch,Cerrone IV: The Golden Touch,1978,studio,yes,no,KEEP,01,Original LP only; Phase 01 row in this ZIP. Existing catalog title and ID preserved.
+cerrone,cerrone-angelinacerronev,Angelina (Cerrone V),1979,studio,no,no,ADD / VERIFY TITLE,02,"Original fifth studio album; future phase, no descriptor in this ZIP"
+cerrone,cerrone-paniccerronevi,Panic (Cerrone VI),1980,studio,no,no,ADD / VERIFY TITLE,02,"Also catalogued as Cerrone VI or Portrait of a Modern Man; future phase, no descriptor in this ZIP"
+cerrone,cerrone-youaretheonecerronevii,You Are the One (Cerrone VII),1980,studio,no,no,ADD / VERIFY TITLE,02,"Some databases date this original release to 1981; check pressing; future phase, no descriptor in this ZIP"
+cerrone,cerrone-backtrackcerroneviii,Back Track (Cerrone VIII),1982,studio,no,no,ADD / VERIFY TITLE,02,"Original title/numbering may vary among editions; future phase, no descriptor in this ZIP"
+cerrone,cerrone-yourlovesurvivedcerroneix,Your Love Survived (Cerrone IX),1982,studio,no,no,ADD / VERIFY TITLE,03,"Some catalogues indicate 1983; original issue needs checking; future phase, no descriptor in this ZIP"
+cerrone,cerrone-whereareyounow,Where Are You Now,1983,studio,no,no,ADD / VERIFY TITLE,03,"Original studio album; future phase, no descriptor in this ZIP"
+cerrone,cerrone-thecollector,The Collector,1985,studio,no,no,ADD / VERIFY TITLE,03,"Concept/opera; some LP issue dates 1988; verify original release; future phase, no descriptor in this ZIP"
+cerrone,cerrone-wayin,Way In,1989,studio,no,no,ADD / VERIFY TITLE,03,"Date varies in catalogues; future phase, no descriptor in this ZIP"
+cerrone,cerrone-dream,Dream,1992,studio,no,no,ADD / VERIFY TITLE,04,"Check connection to 1992 stage musical Dreamtime; future phase, no descriptor in this ZIP"
+cerrone,cerrone-xxex,X-Xex,1993,studio,no,no,ADD / VERIFY TITLE,04,"Check variant X-XEX title; future phase, no descriptor in this ZIP"
+cerrone,cerrone-humannature,Human Nature,1994,studio,no,no,ADD / VERIFY TITLE,04,"Some references indicate 1993; future phase, no descriptor in this ZIP"
+cerrone,cerrone-hysteria,Hysteria,2002,studio,no,no,ADD / VERIFY TITLE,04,"Original studio album; future phase, no descriptor in this ZIP"
+cerrone,cerrone-celebrate,Celebrate!,2007,studio,no,no,ADD / VERIFY TITLE,05,"Original recordings to be distinguished from live album; future phase, no descriptor in this ZIP"
+cerrone,cerrone-cerronesymphonyvariationsofsupernature,Cerrone Symphony – Variations of Supernature,2010,studio,no,no,ADD / VERIFY TITLE,05,"Orchestral studio concept; verify against concert versions; future phase, no descriptor in this ZIP"
+cerrone,cerrone-redlips,Red Lips,2016,studio,no,no,ADD / VERIFY TITLE,05,"Check reworking/remix versus new studio programme; future phase, no descriptor in this ZIP"
+cerrone,cerrone-dna,DNA,2020,studio,no,no,ADD / VERIFY TITLE,05,"Original conceptual studio album; future phase, no descriptor in this ZIP"
+cerrone,cerrone-discosymphony,Disco Symphony,2025,studio,no,no,ADD / VERIFY TITLE,06,"New orchestral performances/rework; assess before import; future phase, no descriptor in this ZIP"
+cerrone,,Brigade Mondaine (original soundtrack),1978,soundtrack,no,no,REVIEW LATER,,"Not a studio number; genuinely original film scoring, consider dedicated soundtrack phase"
+cerrone,,Brigade Mondaine: La Secte de Marrakech,1979,soundtrack,no,no,REVIEW LATER,,"Original film score, evaluate significance independently"
+cerrone,,Brigade Mondaine III: Vaudou aux Caraïbes,1980,soundtrack,no,no,REVIEW LATER,,Original film score; defer pending scoring/credit audit
+cerrone,,Dancing Machine,1990,soundtrack,no,no,REVIEW LATER,,"Film score, not an ordinary Cerrone numbered studio album"
+cerrone,,Kongas,1974,studio,no,no,EXCLUDE / DEFER,,Pre-solo work released as group Kongas; not Cerrone artist album
+cerrone,,Africanism (Kongas),1977,studio,no,no,EXCLUDE / DEFER,,"Kongas band release; different billed artist, excluded"
+cerrone,,Anikana-O (Kongas),1978,studio,no,no,EXCLUDE / DEFER,,Group/band release rather than solo Cerrone
+cerrone,,In Concert,1979,live,no,no,EXCLUDE / DEFER,,Live releases excluded by Fandome policy
+cerrone,,"Cerrone I, II, III",2014,compilation,no,no,EXCLUDE / DEFER,,Three original LPs repackaged: do not duplicate descriptors
+cerrone,,Cerrone by Bob Sinclar,2001,remix,no,no,EXCLUDE / DEFER,,"Mix/rework project of existing material, not 2001 original studio album"
+cerrone,,Cerrone by Jamie Lewis,2009,remix,no,no,EXCLUDE / DEFER,,"Reworking project, not source studio material"
+cerrone,,Cerrone by Cerrone,2022,remix,no,no,EXCLUDE / DEFER,,Re-recorded/reworked anthology; avoid duplicating canonical originals

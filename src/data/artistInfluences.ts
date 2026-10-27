@@ -126,6 +126,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Frank Zappa', 'Jimi Hendrix', 'Kraftwerk', 'Cheap Trick', 'Aerosmith'],
     source: 'Alberto Camerini, Rolling Stone Italia interview 2021 (Zappa behind Cenerentola, Hendrix’s guitar, Kraftwerk for the synth turn, Cheap Trick for the Voglio te vocals, Aerosmith after the CBS move). Dylan and the Rolling Stones left out: songs he covered early on, not named as influences',
   },
+  cerrone: {
+    names: ['Barry White', 'Chicago', 'Isaac Hayes', 'Kraftwerk', 'Led Zeppelin', 'Deep Purple', 'Santana', 'Jimi Hendrix', 'Buddy Miles'],
+    source: 'Cerrone: Mixmag (Barry White strings, Chicago brass, Isaac Hayes’ Shaft wah-wah), MusicRadar 2022 (Barry White, Led Zeppelin, Deep Purple), FLOOD, Electronic Sound (Kraftwerk while making Supernature), La Face B and VUMETRE (Santana, Hendrix and Buddy Miles at the Olympia). The Rolling Stones left out: preferred to the Beatles, not named as an influence',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

@@ -253,7 +253,7 @@ const ROWS: Row[] = [
   ['carladalforno', 'Carla dal Forno', '#8a8f7a', 'Lo-fi, hazy and hypnotic', [['You Know What It’s Like', 2016], ['Look Up Sharp', 2019], ['Come Around', 2022]]],
   ['carmenconsoli', 'Carmen Consoli', '#c9503f', 'The Sicilian songwriter with a guitar', [['Due parole', 1996], ['Confusa e felice', 1997], ['Mediamente isterica', 1998], ['Stato di necessità', 2000], ['L’eccezione', 2002], ['Eva contro Eva', 2006], ['Elettra', 2009], ['Volevo fare la rockstar', 2021]]],
   ['caselli', 'Caterina Caselli', '#e0c04a', 'The golden helmet of Italian beat', []],
-  ['cerrone', 'Cerrone', '#c93f6f', 'Supernature and French disco', [['Love in C Minor', 1976], ['Supernature (Cerrone III)', 1977], ['Cerrone IV: The Golden Touch', 1978]]],
+  ['cerrone', 'Cerrone', '#c93f6f', 'Supernature and French disco', [['Love in C Minor', 1976], ['Cerrone’s Paradise', 1977], ['Supernature (Cerrone III)', 1977], ['Cerrone IV: The Golden Touch', 1978]]],
   ['perrelli', 'Charlotte Perrelli', '#e0b5c9', 'Swedish pop and Eurovision glow', []],
   ['christine', 'Christine and the Queens', '#4a5a8f', 'Dance, identity and theatre', [['Chaleur humaine', 2014], ['Chris', 2018], ['Paranoïa, Angels, True Love', 2023]]],
   ['davena', 'Cristina D’Avena', '#f0a3c9', 'Cartoon theme songs for generations', []],
