@@ -166,7 +166,10 @@ export default function ArtistPage() {
               </div>
             </section>
           )}
-          <p className="muted small center tab-hint">Tap an album to rate it and find similar music</p>
+          <div className="start-here-head">
+            <h2>{essentials.length > 0 ? 'All albums' : 'Albums'}</h2>
+            <span className="muted small">The whole discography, oldest first.</span>
+          </div>
           <div className="album-grid">
             {myAlbums.map((al) => {
               const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))

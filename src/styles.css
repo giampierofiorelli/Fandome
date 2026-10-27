@@ -796,7 +796,7 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .start-here { margin: 26px 0 18px; }
 .start-here-head { display: flex; flex-direction: column; gap: 4px; margin: 0 4px 10px; }
 .start-here-head h2 { margin: 0; font-size: 20px; letter-spacing: -0.03em; }
-.start-here-row { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; margin: 0 -16px; padding: 2px 16px 6px; }
+.start-here-row { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; margin: 0; padding: 2px 0 6px; }
 .start-here-row::-webkit-scrollbar { display: none; }
 .start-tile { flex: 0 0 min(44%, 200px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 4px; padding: 10px 10px 14px; border-radius: 26px; border: 1px solid var(--glass-edge); background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); color: inherit; min-width: 0; transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .start-tile:active { transform: scale(0.97); }
@@ -804,7 +804,7 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .start-tile .album-art .cover { width: 100% !important; height: auto !important; aspect-ratio: 1; box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.45); }
 .essential-pill { align-self: flex-start; height: 22px; padding: 0 9px; border-radius: 999px; display: inline-flex; align-items: center; font-family: var(--dot); font-weight: 800; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; background: var(--ink); color: var(--on-ink); }
 .essential-pill.defining, .essential-pill.key { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
-.essential-pill.acclaimed { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--glass-edge); }
+.essential-pill.acclaimed { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 .album-hero-essential { --neon: #ff2bd6, #ffe600, #39ff14, #00f0ff, #8a5cff, #ff2bd6; align-self: flex-start; margin: 4px 0 8px; height: 28px; padding: 0 12px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px; font-family: var(--dot); font-weight: 800; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); border: 2px solid transparent; background: linear-gradient(var(--bg), var(--bg)) padding-box, linear-gradient(90deg, var(--neon)) border-box; background-size: 100% 100%, 300% 100%; animation: neon-run 6s linear infinite; box-shadow: 0 0 14px -4px rgba(255, 43, 214, 0.55); }
 .album-hero-essential .neon-star { display: inline-block; background: linear-gradient(90deg, var(--neon)); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: neon-text 6s linear infinite, neon-pulse 2.4s ease-in-out infinite; }
 @keyframes neon-run { from { background-position: 0 0, 0% 0; } to { background-position: 0 0, 300% 0; } }
