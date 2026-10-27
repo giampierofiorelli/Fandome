@@ -154,6 +154,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Pink Floyd', 'The Chemical Brothers', 'Massive Attack', 'Casino Royale'],
     source: 'OndaRock monograph (Clara Martinelli, Claudio Fabretti): their background in Pink Floyd psychedelia, British electronica (Chemical Brothers), trip-hop (Massive Attack) and Casino Royale; biographical, not first-person',
   },
+  tiromancino: {
+    names: ['Pino Daniele', 'Lucio Battisti', 'Lucio Dalla', 'Eric Clapton', 'Jimi Hendrix'],
+    source: 'Federico Zampaglione: MyDreams 2019 (Pino Daniele); MadMass 2024 (Battisti, Dalla); Rolling Stone Italia 2021 (Clapton, Just One Night; Hendrix)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
