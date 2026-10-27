@@ -1,0 +1,13 @@
+﻿album_id,title,year,type,catalog_status,catalog_action,notes
+placebo-placebo,Placebo,1996,studio,existing,none,Phase 01; do not import this row in Phase 02
+placebo-withoutyouimnothing,Without You I’m Nothing,1998,studio,existing,none,Phase 01; do not import this row in Phase 02
+placebo-blackmarketmusic,Black Market Music,2000,studio,existing,none,Phase 01; do not import this row in Phase 02
+placebo-sleepingwithghosts,Sleeping with Ghosts,2003,studio,existing,none,Phase 02; preserve Fandome catalog-generated id
+placebo-meds,Meds,2006,studio,existing,none,Phase 02; preserve Fandome catalog-generated id
+placebo-battleforthesun,Battle for the Sun,2009,studio,missing,add,Phase 02; add original studio album to catalog before validator
+placebo-loudlikelove,Loud Like Love,2013,studio,missing,add,Phase 03; album not in branch catalog when checked
+placebo-neverletmego,Never Let Me Go,2022,studio,existing,none,Phase 03; preserve existing Fandome id
+placebo-placeborecreated,Placebo RE:CREATED,2026,remix,not included,exclude,"New mix/reinterpretation of prior studio debut songs, excluded to avoid duplicate catalogued songs"
+,Sleeping with Ghosts / Covers,2003,compilation,not included,exclude,Two-CD later issue includes covers originally released separately; no original Placebo studio album to add
+,Once More with Feeling,2004,compilation,not included,exclude,Singles retrospective; old recordings already indexed via studio records
+,MTV Unplugged,2015,live,not included,exclude,Live reinterpretations of previously released songs; user rule excludes live material

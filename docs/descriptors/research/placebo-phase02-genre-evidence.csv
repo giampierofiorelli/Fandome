@@ -1,0 +1,28 @@
+﻿album_id,genre,source,scope,url,evidence_note
+placebo-sleepingwithghosts,alternativerock,s_shfl,whole album,https://theshfl.com/album/Sleeping-With-Ghosts,"Shfl album genre alternative rock, corroborated by AllMusic alternative pop/rock"
+placebo-sleepingwithghosts,indierock,s_allmusic,whole album,https://www.allmusic.com/album/sleeping-with-ghosts-mw0000022493,AllMusic explicitly tags alternative/indie rock; map exact indie-rock umbrella while preserving alternative rock separately
+placebo-sleepingwithghosts,neoglam,s_allmusic,whole album,https://www.allmusic.com/album/sleeping-with-ghosts-mw0000022493,AllMusic tags neo-glam
+placebo-sleepingwithghosts,postpunkrevival,s_shfl,whole album,https://theshfl.com/album/Sleeping-With-Ghosts,Shfl expert album genre post-punk revival
+placebo-sleepingwithghosts,artrock,s_shfl,whole album,https://theshfl.com/album/Sleeping-With-Ghosts,Shfl expert genre art rock
+placebo-sleepingwithghosts,electronica,s_review,texture,https://www.theguardian.com/music/2003/mar/21/popandrock.artsfeatures4,Guardian critic expressly describes woozy electronica added to rock; Molko supports electronic nature
+placebo-sleepingwithghosts,poppunk,s_shfl,whole album,https://theshfl.com/album/Sleeping-With-Ghosts,Shfl genre pop punk and AllMusic style tag
+placebo-sleepingwithghosts,poprock,s_allmusic,whole album,https://www.allmusic.com/album/sleeping-with-ghosts-mw0000022493,AllMusic Pop/Rock overview of music; broad genre
+placebo-sleepingwithghosts,rock,s_shfl,whole album,https://theshfl.com/album/Sleeping-With-Ghosts,Shfl rock umbrella tag
+placebo-sleepingwithghosts,hardrock,s_review,some tracks,https://www.theguardian.com/music/2003/mar/21/popandrock.artsfeatures4,"Guardian explicitly describes hard-rock beats; limited track-level stylistic element, not album’s primary genre"
+placebo-meds,alternativerock,m_aoty,whole album,https://www.albumoftheyear.org/album/5307-placebo-meds.php,Album of the Year labels Meds alternative rock; original UK CD metadata agrees
+placebo-meds,postpunkrevival,m_aoty,whole album,https://www.albumoftheyear.org/album/5307-placebo-meds.php,Album of the Year assigns post-punk revival to Meds
+placebo-meds,artrock,m_aoty,whole album,https://www.albumoftheyear.org/album/5307-placebo-meds.php,Album of the Year labels Meds art rock (album-level)
+placebo-meds,indierock,m_allmusic,some tracks,https://www.allmusic.com/album/meds-single--mw0001037229,AllMusic tags title track Meds alternative/indie rock; album-level AOTY establishes alt-rock separately; scoped to a track
+placebo-meds,neoglam,m_allmusic,some tracks,https://www.allmusic.com/album/meds-single--mw0001037229,"AllMusic tags Meds title-track single neo-glam; applied only to some tracks, not presumed dominant across LP"
+placebo-meds,poprock,m_allmusic,whole album,https://www.allmusic.com/album/meds-single--mw0001037229,AllMusic Pop/Rock categorization of the Meds single; broad album-family classification
+placebo-meds,rock,m_charts,whole album,https://www.chartsurfer.de/artist/placebo/meds-album_frerfu.html,UK CD release classified as rock; supported by contemporary rock reviews
+placebo-battleforthesun,alternativerock,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic alternative pop/rock; original sleeve states alternative rock
+placebo-battleforthesun,indierock,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic specifically uses alternative/indie rock
+placebo-battleforthesun,neoglam,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic neo-glam style label
+placebo-battleforthesun,poppunk,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic pop punk style label
+placebo-battleforthesun,punkrevival,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic separately tags Punk Revival; token punkrevival is NOT in current Fandome Genre list
+placebo-battleforthesun,poprock,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic Pop/Rock broad classification
+placebo-battleforthesun,rock,b_allmusic,whole album,https://www.allmusic.com/album/battle-for-the-sun-mw0000815680,AllMusic rock umbrella
+placebo-battleforthesun,britpop,b_nme,some tracks,https://www.nme.com/reviews/reviews-placebo-10534-318741,"NME calls Kings of Medicine synthetic Britpop; Molko rejects band being Britpop, use late and track-scoped"
+placebo-battleforthesun,dixierock,b_nme,some tracks,https://www.nme.com/reviews/reviews-placebo-10534-318741,NME explicitly describes For What It’s Worth as Dixie-rock style; NEW token and a pejorative local comparison
+placebo-battleforthesun,mariachi,b_guardian,texture,https://www.theguardian.com/music/2009/jun/07/placebo-battle-for-the-sun,"Guardian critic explicitly identifies mariachi-flavoured conclusion of The Never-Ending Why, not actual mariachi recording"
