@@ -1,0 +1,13 @@
+album_id,title,year,type,in_catalog,action,phase,source,notes
+subsonica-subsonica,Subsonica,1997,studio,no,add_to_catalog,phase01,https://www.subsonica.it/discografia.asp,
+subsonica-microchipemozionale,Microchip emozionale,1999,studio,yes,retain_existing_id,phase01,https://www.subsonica.it/discografia.asp,
+subsonica-amorematico,Amorematico,2002,studio,yes,retain_existing_id,phase01,https://www.subsonica.it/discografia.asp,
+subsonica-terrestre,Terrestre,2005,studio,yes,retain_existing_id,phase01,https://www.subsonica.it/discografia.asp,
+subsonica-leclissi,L'eclissi,2007,studio,yes,retain_existing_id,phase02,https://www.subsonica.it/discografia.asp,
+subsonica-eden,Eden,2011,studio,yes,retain_existing_id,phase02,https://www.subsonica.it/discografia.asp,
+subsonica-unanaveinunaforesta,Una nave in una foresta,2014,studio,no,add_to_catalog,phase02,https://www.subsonica.it/discografia.asp,
+subsonica-8,8,2018,studio,no,add_to_catalog,phase02,https://www.subsonica.it/discografia.asp,
+subsonica-microchiptemporale,Microchip temporale,2019,studio,no,add_to_catalog,phase03,https://www.subsonica.it/discografia.asp,Re-recorded guest-version album; not a remix
+subsonica-mentalestrumentale,Mentale strumentale,2020,studio,no,add_to_catalog,phase03,https://www.subsonica.it/discografia.asp,"Recorded in 2004, first released 2020"
+subsonica-realtaaumentata,Realtà aumentata,2024,studio,no,add_to_catalog,phase03,https://www.subsonica.it/discografia.asp,
+subsonica-terrerare,Terre rare,2026,studio,no,add_to_catalog,phase03,https://www.subsonica.it/discografia.asp,Released by 27 Oct 2026

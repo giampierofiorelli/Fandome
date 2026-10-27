@@ -150,6 +150,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Sonic Youth', 'Nick Cave', 'Tom Waits', 'The Gun Club', 'Fugazi', 'Soundgarden', 'Big Black', 'Swans', 'Thin White Rope', 'Helmet', 'CCCP Fedeli alla linea', 'Leonard Cohen', 'Bob Dylan', 'Johnny Cash'],
     source: 'Cristiano Godano: 1990 interview republished by Distorsioni (Sonic Youth, Nick Cave, Tom Waits, The Gun Club); OndaRock interview; SpazioRock 2017 (Fugazi, Soundgarden, Big Black, Swans, Thin White Rope, Helmet, CCCP for Sonica); la Repubblica 2026 (Soundgarden on Il vile); il Resto del Carlino (later: Cohen, Dylan, Cash)',
   },
+  subsonica: {
+    names: ['Pink Floyd', 'The Chemical Brothers', 'Massive Attack', 'Casino Royale'],
+    source: 'OndaRock monograph (Clara Martinelli, Claudio Fabretti): their background in Pink Floyd psychedelia, British electronica (Chemical Brothers), trip-hop (Massive Attack) and Casino Royale; biographical, not first-person',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
