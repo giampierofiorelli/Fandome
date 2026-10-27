@@ -72,5 +72,5 @@ Do not import compilation *Decade*, *Greatest*, *Arena* (mostly live), or *The G
 
 
 ## Claude import note (Oct 2026)
-- sounds_like no longer repeats names already in influenced_by (Rio, Seven and the Ragged Tiger).
+- (Reverted) sounds_like keeps names that are also documented influences: both links add up (owner).
 - Artist influences: AC/DC left out (Andy Taylor's own background, not the band's).

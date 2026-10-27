@@ -94,5 +94,5 @@ Phase 03: *Closer to Heaven* (2001, cast soundtrack), *Release* (2002), *Fundame
 
 ## Claude import note (Oct 2026)
 - First delivery under the updated prompt: artist found in seed.ts, Actually skipped (already described), Behaviour kept as p-behaviour.
-- Introspective: Grace Jones and ABC removed from sounds_like (already documented influences).
+- Introspective: Grace Jones and ABC kept in both sounds_like and influenced_by (both documented; owner: they add up).
 - Disco imported as a landmark remix album (owner may drop it: remix compilations).

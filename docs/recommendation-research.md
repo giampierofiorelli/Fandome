@@ -228,3 +228,5 @@ the collaboration as its reason; collaborators from a local scene abroad come fi
 collaborations are unchanged (checked Madonna, RHCP).
 
 - A link that names an artist (influence, comparison) prefers their studio albums: compilations and live albums weigh 0.7 in the pick (Behaviour → Giorgio Moroder landed on the Innovisions compilation) (Oct 2026).
+
+- An artist both documented as an influence and named by critics as a likeness keeps both links (they add up, within the link cap): owner, Oct 2026. Earlier imports that dropped the duplicate were reverted (Duran Duran, Introspective, Pet Sounds).
