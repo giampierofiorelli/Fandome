@@ -21,6 +21,7 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'aguilera-burlesqueoriginalmotionpicturesoundtrack': { with: ['cher'], credit: 'Christina Aguilera & Cher' },
   'irama-nostress': { credit: 'Irama & Rkomi' },
   'battiato-joepattisexperimentalgroup': { credit: 'Franco Battiato & Pino “Pinaxa” Pischetola' },
+  'felakuti-musicofmanycolours': { credit: 'Roy Ayers & Fela Anikulapo Kuti' },
   'queen-thecosmosrocks': { credit: 'Queen + Paul Rodgers' },
   'beyonce-thelionkingthegift': { credit: 'Beyoncé presents The Lion King: The Gift (various artists)' },
   'beyonce-everythingislove': { credit: 'The Carters (Beyoncé & JAY-Z)' },

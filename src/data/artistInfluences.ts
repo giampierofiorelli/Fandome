@@ -94,6 +94,22 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Kraftwerk', 'Can', 'Faust', 'The Doors', 'The Velvet Underground', 'Iggy Pop', 'John Cale', 'David Bowie', 'Sex Pistols'],
     source: 'Peter Hook (NME 2020: Kraftwerk, The Doors; Bristol24/7: Can, Faust; The Independent: Iggy Pop; Jon Savage, This Searing Light, Guardian 2019: The Velvet Underground, John Cale); Stephen Morris (Getintothis 2019: Jaki Liebezeit); Classic Pop (Berlin-era Bowie, secondary); Pitchfork 2007 (Sex Pistols, early DIY ethos)',
   },
+  felakuti: {
+    names: ['James Brown'],
+    source: 'en.wikipedia, Fela Kuti (James Brown "an important American influence"); Okayplayer, How Fela Kuti channeled James Brown\'s funk',
+  },
+  tonyallen: {
+    names: ['Art Blakey', 'Max Roach', 'Guy Warren'],
+    source: 'Tony Allen in Clash (Art Blakey his idol); Afropop Worldwide, Remembering Tony Allen; Mail & Guardian 2020 (Max Roach); en.wikipedia (Guy Warren)',
+  },
+  femikuti: {
+    names: ['Fela Kuti', 'John Coltrane', 'Duke Ellington', 'Herbie Hancock'],
+    source: 'Femi Kuti, UK Jazz News interview, 24 Oct 2013',
+  },
+  kingsunnyade: {
+    names: ['Tunde Nightingale'],
+    source: 'en.wikipedia, King Sunny Adé (played with Nightingale and borrowed his so wa mbe jùjú style)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
