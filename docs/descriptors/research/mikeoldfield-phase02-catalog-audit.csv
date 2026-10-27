@@ -1,0 +1,5 @@
+artist_id,album_id,title,year,type,present_in_catalog_ts,present_in_seed_ts,existing_descriptor_row,catalog_action,phase,evidence_or_caveat
+mikeoldfield,mikeoldfield-platinum,Platinum,1979,studio,no,no,no,ADD,phase02,"1979 original UK album; Sally/Into Wonderland pressing substitution; Airborn is regional reissue, not new row"
+mikeoldfield,mikeoldfield-qe2,QE2,1980,studio,no,no,no,ADD,phase02,"Original studio release; no existing catalogue ID as of GitHub preflight, 27 October 2026"
+mikeoldfield,mikeoldfield-fivemilesout,Five Miles Out,1982,studio,no,no,no,ADD,phase02,"Original studio release; no existing catalogue ID as of GitHub preflight, 27 October 2026"
+mikeoldfield,mikeoldfield-crises,Crises,1983,studio,no,no,no,ADD,phase02,Original 1983 LP only; excludes 2013 bonus discs/live extras and regional bonus track

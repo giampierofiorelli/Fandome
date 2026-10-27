@@ -1,0 +1,28 @@
+album_id,genre,source,url,scope,evidence
+mikeoldfield-platinum,prog,AllMusic — Platinum album,https://www.allmusic.com/album/platinum-mw0000650590,whole_album,AllMusic: Prog-Rock.
+mikeoldfield-platinum,artrock,AllMusic — Platinum album,https://www.allmusic.com/album/platinum-mw0000650590,whole_album,AllMusic: Art Rock.
+mikeoldfield-platinum,progressiveelectronic,AllMusic — Platinum album,https://www.allmusic.com/album/platinum-mw0000650590,whole_album,AllMusic: Progressive Electronic.
+mikeoldfield-platinum,dancerock,Platinum album reference overview,https://en.wikipedia.org/wiki/Platinum_(Mike_Oldfield_album),partial_album,Album overview names dance-rock; especially rhythmic suite; secondary classification.
+mikeoldfield-platinum,poprock,Platinum album reference overview,https://en.wikipedia.org/wiki/Platinum_(Mike_Oldfield_album),partial_album,Album overview names pop rock; primarily song-oriented second side.
+mikeoldfield-platinum,disco,"Dave Thompson, AllMusic — Platinum song review",https://www.allmusic.com/song/platinum-mt0012116925,some_tracks,AllMusic Dave Thompson explicitly describes title suite movement as neo-disco; scope restricted.
+mikeoldfield-platinum,newage,AllMusic — Platinum album,https://www.allmusic.com/album/platinum-mw0000650590,retrospective_style,"AllMusic files the 1979 album under New Age; retrospective catch-all, not disco replacement."
+mikeoldfield-qe2,prog,AllMusic — QE2 album,https://www.allmusic.com/album/qe2-mw0000191286,whole_album,AllMusic: Prog-Rock.
+mikeoldfield-qe2,artrock,AllMusic — QE2 album,https://www.allmusic.com/album/qe2-mw0000191286,whole_album,AllMusic: Art Rock.
+mikeoldfield-qe2,progressiveelectronic,AllMusic — QE2 album,https://www.allmusic.com/album/qe2-mw0000191286,whole_album,AllMusic: Progressive Electronic.
+mikeoldfield-qe2,progressivepop,AllMusic — Mike Oldfield biography,https://www.allmusic.com/artist/mike-oldfield-mn0000489520,partial_album,AllMusic biography explicitly characterises the QE2 move as progressive pop.
+mikeoldfield-qe2,newage,AllMusic — QE2 album,https://www.allmusic.com/album/qe2-mw0000191286,retrospective_style,AllMusic genre New Age; album includes rock drums and horn parts as well.
+mikeoldfield-fivemilesout,prog,"Steven McDonald, AllMusic — Five Miles Out",https://www.allmusic.com/album/five-miles-out-mw0000195162,whole_album,AllMusic: Prog-Rock; the 25-minute Taurus II dominates the suite half.
+mikeoldfield-fivemilesout,artrock,"Steven McDonald, AllMusic — Five Miles Out",https://www.allmusic.com/album/five-miles-out-mw0000195162,whole_album,AllMusic: Art Rock.
+mikeoldfield-fivemilesout,progressiveelectronic,"Steven McDonald, AllMusic — Five Miles Out",https://www.allmusic.com/album/five-miles-out-mw0000195162,whole_album,AllMusic: Progressive Electronic.
+mikeoldfield-fivemilesout,electronica,Mike Oldfield official — Five Miles Out,https://www.mikeoldfieldofficial.com/releases-archive/five-miles-out/,partial_album,"Official label states rock and pop electronica; electronic pop side, not entire suite."
+mikeoldfield-fivemilesout,rock,Mike Oldfield official — Five Miles Out,https://www.mikeoldfieldofficial.com/releases-archive/five-miles-out/,some_tracks,Official album site explicitly identifies a rock direction and Family Man as a rock single.
+mikeoldfield-fivemilesout,pop,Mike Oldfield official — Five Miles Out,https://www.mikeoldfieldofficial.com/releases-archive/five-miles-out/,some_tracks,Official album description names pop electronica; compact vocal songs.
+mikeoldfield-fivemilesout,artpop,Acclaimed Music — Mike Oldfield,https://www.acclaimedmusic.net/artist/Mike%20Oldfield.htm,some_tracks,Acclaimed Music labels title song Art Pop; track-level only.
+mikeoldfield-fivemilesout,progressivepop,Acclaimed Music — Mike Oldfield,https://www.acclaimedmusic.net/artist/Mike%20Oldfield.htm,some_tracks,Acclaimed Music labels title song Progressive Pop; track-level only.
+mikeoldfield-fivemilesout,newage,"Steven McDonald, AllMusic — Five Miles Out",https://www.allmusic.com/album/five-miles-out-mw0000195162,retrospective_style,AllMusic New Age umbrella (and Album of the Year).
+mikeoldfield-crises,prog,"Jason Anderson, AllMusic — Crises",https://www.allmusic.com/album/crises-mw0000191172,whole_album,AllMusic: Prog-Rock; especially 20-minute title suite and Taurus 3.
+mikeoldfield-crises,artrock,"Jason Anderson, AllMusic — Crises",https://www.allmusic.com/album/crises-mw0000191172,whole_album,AllMusic: Art Rock.
+mikeoldfield-crises,progressiveelectronic,"Jason Anderson, AllMusic — Crises",https://www.allmusic.com/album/crises-mw0000191172,partial_album,"AllMusic: Progressive Electronic, strongest on the title suite."
+mikeoldfield-crises,progressivepop,Album of the Year — Crises,https://www.albumoftheyear.org/album/11934-mike-oldfield-crises.php,partial_album,"Album of the Year classification Progressive Pop, reflecting vocal songwriting side."
+mikeoldfield-crises,poprock,Album of the Year — Crises,https://www.albumoftheyear.org/album/11934-mike-oldfield-crises.php,partial_album,Album of the Year Pop Rock; also track evidence for Moonlight Shadow and Shadow on Wall from Acclaimed Music.
+mikeoldfield-crises,newage,"Jason Anderson, AllMusic — Crises",https://www.allmusic.com/album/crises-mw0000191172,retrospective_style,AllMusic New Age genre umbrella; not meant as style of individual radio singles.
