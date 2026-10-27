@@ -118,6 +118,14 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Dinosaur Jr.', 'Neil Young', 'Jerry’s Kids', 'Minor Threat', 'Rites of Spring', 'Moving Targets', 'Wipers', 'Pitchfork', 'Sonic Youth', 'Hüsker Dü', 'Talk Talk', 'Stereolab', 'Autechre', 'Can', 'Neu!', 'Gil Evans', 'Mike Oldfield', 'The Police', 'Billy Cobham'],
     source: 'Markus Acher: Pitchfork interview; 15 Questions; Los Angeles Times 2003; Rock Obrobje and The Skinny (late Talk Talk; Stereolab, Autechre, Can, Neu!, Gil Evans)',
   },
+  mgmt: {
+    names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
+    source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
+  },
+  talktalk: {
+    names: ['Otis Redding', 'John Coltrane', 'Burt Bacharach', 'Claude Debussy', 'Dmitri Shostakovich', 'Miles Davis', 'Gil Evans', 'John Cage', 'Maurice Ravel', 'Ornette Coleman', 'Olivier Messiaen', 'John Lee Hooker', 'Béla Bartók', 'Erik Satie', 'Darius Milhaud'],
+    source: 'Mark Hollis: Guardian 2019 (1982 interviews); Pitchfork 2019; Jason Cowley, Out of Time (1998 interview); Classic Pop, The Colour of Spring',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

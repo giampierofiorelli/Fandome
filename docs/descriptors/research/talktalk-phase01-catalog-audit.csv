@@ -1,0 +1,7 @@
+entity,id,artist,title,year,type,present_in_catalog,action,notes
+artist,talktalk,Talk Talk,,,,no,add,"New artist not currently listed. Do not confuse with talkingheads. Add SCENES row: talktalk: GB en 1980 synthpop,newwave,artrock; no touring (disbanded). Add to LEGACY for no concert lookup."
+album,talktalk-thepartysover,Talk Talk,The Party's Over,1982,studio,no,add,Requires new artist talktalk in catalog.ts first; ids are talktalk + slug(title).
+album,talktalk-itsmylife,Talk Talk,It's My Life,1984,studio,no,add,Requires new artist talktalk in catalog.ts first; ids are talktalk + slug(title).
+album,talktalk-thecolourofspring,Talk Talk,The Colour of Spring,1986,studio,no,add,Requires new artist talktalk in catalog.ts first; ids are talktalk + slug(title).
+future phase studio album,talktalk-spiritofeden,Talk Talk,Spirit of Eden,1988,studio,no,add in Phase 02 (not this CSV),No description included now; next phase only.
+future phase studio album,talktalk-laughingstock,Talk Talk,Laughing Stock,1991,studio,no,add in Phase 02 (not this CSV),No description included now; next phase only.

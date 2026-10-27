@@ -1,0 +1,7 @@
+album_id,artist,title,year,type,in_catalog,action,notes
+mgmt-timetopretend,MGMT,Time to Pretend,2005,ep,no,add album before descriptor import,Early 2005 EP with distinct versions of Kids and Time to Pretend
+mgmt-oracularspectacular,MGMT,Oracular Spectacular,2007,studio,yes,keep existing catalog ID,Album already listed in current descriptors branch catalog.ts
+mgmt-congratulations,MGMT,Congratulations,2010,studio,yes,keep existing catalog ID,Album already listed in current descriptors branch catalog.ts
+mgmt-mgmt,MGMT,MGMT,2013,studio,yes,keep existing catalog ID,Album already listed in current descriptors branch catalog.ts
+mgmt-littledarkage,MGMT,Little Dark Age,2018,studio,yes,next phase only,"Catalogued, deliberately not included in Phase 01 rows"
+mgmt-lossoflife,MGMT,Loss of Life,2024,studio,yes,next phase only,"Catalogued, deliberately not included in Phase 01 rows"

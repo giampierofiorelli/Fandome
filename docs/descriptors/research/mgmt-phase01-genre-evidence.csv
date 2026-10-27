@@ -1,0 +1,36 @@
+album_id,genre,source,source_url,scope,evidence
+mgmt-timetopretend,indietronica,ep-allmusic,https://www.allmusic.com/album/time-to-pretend-ep--mw0000812710,whole album,Early EP synthesizer-led indie electronic/pop framework
+mgmt-timetopretend,synthpop,ep-allmusic,https://www.allmusic.com/album/time-to-pretend-ep--mw0000812710,whole album,Early EP synthesizer-led indie electronic/pop framework
+mgmt-timetopretend,electronic,ep-dis,https://drownedinsound.com/in_depth/3016339-electric-feelers-out--mgmt-mysticise-the-uk,whole album,"VanWyngarden describes the EP as the more electronic, sarcastic period"
+mgmt-timetopretend,pop,ep-dis,https://drownedinsound.com/in_depth/3016339-electric-feelers-out--mgmt-mysticise-the-uk,whole album,"VanWyngarden describes the EP as the more electronic, sarcastic period"
+mgmt-oracularspectacular,indietronica,os-dork,https://www.albumoftheyear.org/album/785-mgmt-oracular-spectacular.php,whole album,Album of the Year music genre taxonomy
+mgmt-oracularspectacular,psychedelicpop,os-dork,https://www.albumoftheyear.org/album/785-mgmt-oracular-spectacular.php,whole album,Album of the Year music genre taxonomy
+mgmt-oracularspectacular,neopsychedelia,os-dork,https://www.albumoftheyear.org/album/785-mgmt-oracular-spectacular.php,whole album,Album of the Year music genre taxonomy
+mgmt-oracularspectacular,electropop,os-dork,https://www.albumoftheyear.org/album/785-mgmt-oracular-spectacular.php,whole album,Album of the Year music genre taxonomy
+mgmt-oracularspectacular,folktronica,os-dork,https://www.albumoftheyear.org/album/785-mgmt-oracular-spectacular.php,whole album,Album of the Year music genre taxonomy
+mgmt-oracularspectacular,synthpop,os-pfork,https://pitchfork.com/reviews/albums/10761-oracular-spectacular/,some tracks,"Pitchfork names disco, synth-pop, progressive-rock arrangements and Britpop idioms"
+mgmt-oracularspectacular,disco,os-pfork,https://pitchfork.com/reviews/albums/10761-oracular-spectacular/,some tracks,"Pitchfork names disco, synth-pop, progressive-rock arrangements and Britpop idioms"
+mgmt-oracularspectacular,prog,os-pfork,https://pitchfork.com/reviews/albums/10761-oracular-spectacular/,some tracks,"Pitchfork names disco, synth-pop, progressive-rock arrangements and Britpop idioms"
+mgmt-oracularspectacular,britpop,os-pfork,https://pitchfork.com/reviews/albums/10761-oracular-spectacular/,some tracks,"Pitchfork names disco, synth-pop, progressive-rock arrangements and Britpop idioms"
+mgmt-oracularspectacular,indiepop,os-allmusic,https://www.allmusic.com/album/oracular-spectacular-bonus-features-mw0000497677,whole album,AllMusic indie pop / indie electronic / alternative pop-rock style tags
+mgmt-oracularspectacular,electronic,os-allmusic,https://www.allmusic.com/album/oracular-spectacular-bonus-features-mw0000497677,whole album,AllMusic indie pop / indie electronic / alternative pop-rock style tags
+mgmt-oracularspectacular,rock,os-allmusic,https://www.allmusic.com/album/oracular-spectacular-bonus-features-mw0000497677,whole album,AllMusic indie pop / indie electronic / alternative pop-rock style tags
+mgmt-oracularspectacular,electrofunk,os-pfork,https://pitchfork.com/reviews/albums/10761-oracular-spectacular/,some tracks,Electric Feel explicitly identified as electro-funk
+mgmt-congratulations,neopsychedelia,con-allmusic,https://www.allmusic.com/album/congratulations-mw0001967848,whole album,AllMusic neo-psychedelia and indie pop style tags
+mgmt-congratulations,psychedelicpop,con-allmusic,https://www.allmusic.com/album/congratulations-mw0001967848,whole album,AllMusic neo-psychedelia and indie pop style tags
+mgmt-congratulations,indiepop,con-allmusic,https://www.allmusic.com/album/congratulations-mw0001967848,whole album,AllMusic neo-psychedelia and indie pop style tags
+mgmt-congratulations,psychedelicrock,con-pfork,https://pitchfork.com/reviews/albums/14122-congratulations/,whole album,"Pitchfork describes psych-pop, art-rock and prog orientation"
+mgmt-congratulations,artrock,con-pfork,https://pitchfork.com/reviews/albums/14122-congratulations/,whole album,"Pitchfork describes psych-pop, art-rock and prog orientation"
+mgmt-congratulations,prog,con-pfork,https://pitchfork.com/reviews/albums/14122-congratulations/,whole album,"Pitchfork describes psych-pop, art-rock and prog orientation"
+mgmt-congratulations,pop,con-mradar,https://www.musicradar.com/news/guitars/mgmt-congratulations-review-track-by-track-241466,whole album,"Core pop-rock idioms remain beneath psychedelia, guitar/drum band recording"
+mgmt-congratulations,rock,con-mradar,https://www.musicradar.com/news/guitars/mgmt-congratulations-review-track-by-track-241466,whole album,"Core pop-rock idioms remain beneath psychedelia, guitar/drum band recording"
+mgmt-congratulations,psychedelicfolk,con-pfork-int,https://pitchfork.com/features/interview/7791-mgmt/,some tracks,Interview editorial framing names psychedelic folk and acoustic moods
+mgmt-mgmt,neopsychedelia,self-criticdb,https://www.albumoftheyear.org/album/6676-mgmt-mgmt.php,whole album,Aggregated editorial genre tags for eponymous album
+mgmt-mgmt,psychedelicpop,self-criticdb,https://www.albumoftheyear.org/album/6676-mgmt-mgmt.php,whole album,Aggregated editorial genre tags for eponymous album
+mgmt-mgmt,artpop,self-criticdb,https://www.albumoftheyear.org/album/6676-mgmt-mgmt.php,whole album,Aggregated editorial genre tags for eponymous album
+mgmt-mgmt,noisepop,self-criticdb,https://www.albumoftheyear.org/album/6676-mgmt-mgmt.php,whole album,Aggregated editorial genre tags for eponymous album
+mgmt-mgmt,psychedelicrock,self-nme,https://www.nme.com/reviews/reviews-mgmt-14769-322481,whole album,NME review identifies psych-rock and more experimental pop arrangements
+mgmt-mgmt,experimentalpop,self-nme,https://www.nme.com/reviews/reviews-mgmt-14769-322481,whole album,NME review identifies psych-rock and more experimental pop arrangements
+mgmt-mgmt,electronic,self-guardian,https://www.theguardian.com/music/2013/sep/19/mgmt-mgmt-review,whole album,"Guardian describes electro blips, beats, synthesizers and production emphasis"
+mgmt-mgmt,rock,self-pfork,https://pitchfork.com/reviews/albums/18487-mgmt-mgmt/,whole album,Pitchfork rock categorisation and art-rock orientation
+mgmt-mgmt,psychedelicfolk,self-nme,https://www.nme.com/reviews/reviews-mgmt-14769-322481,some tracks,NME explicitly describes psych-folk on Introspection and surrounding textures
