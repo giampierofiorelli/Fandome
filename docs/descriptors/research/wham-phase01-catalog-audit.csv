@@ -1,0 +1,4 @@
+album_id,artist_id,title,year,type,in_catalog_ts,in_seed_ts,already_described,action,evidence_url
+wham-fantastic,wham,Fantastic,1983,studio,no,no,not found at docs/descriptors/wham.csv (404),add artist wham; add album,https://musicbrainz.org/artist/d570bb31-b9ca-45a4-a2d9-11b186d9c159
+wham-makeitbig,wham,Make It Big,1984,studio,no,no,not found at docs/descriptors/wham.csv (404),add artist wham; add album,https://musicbrainz.org/artist/d570bb31-b9ca-45a4-a2d9-11b186d9c159
+wham-musicfromtheedgeofheaven,wham,Music from the Edge of Heaven,1986,studio,no,no,not found at docs/descriptors/wham.csv (404),add artist wham; add album,https://musicbrainz.org/artist/d570bb31-b9ca-45a4-a2d9-11b186d9c159

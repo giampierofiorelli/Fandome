@@ -1,0 +1,33 @@
+album_id,genre,source,url,scope,evidence
+wham-fantastic,dancepop,fantasticaoty,https://www.albumoftheyear.org/album/18408-wham-fantastic.php,whole album,AOTY album genre
+wham-fantastic,britfunk,fantasticaoty,https://www.albumoftheyear.org/album/18408-wham-fantastic.php,whole album,AOTY album genre
+wham-fantastic,popfunk,fantasticapple,https://music.apple.com/us/album/fantastic/206896606,whole album,Apple Music editorial funk-pop characterization
+wham-fantastic,synthfunk,fantasticaoty,https://www.albumoftheyear.org/album/18408-wham-fantastic.php,some tracks,AOTY secondary album genre; synth and funk overlap
+wham-fantastic,postdisco,fantasticapple,https://music.apple.com/us/album/fantastic/206896606,some tracks,Apple explicitly characterizes Club Tropicana as post-disco
+wham-fantastic,pop,fantasticapple,https://music.apple.com/us/album/fantastic/206896606,whole album,Apple Pop release classification
+wham-fantastic,synthpop,fantasticcredits,https://www.chartsurfer.de/artist/wham/fantastic-album_frphcg.html,some tracks,Discogs pressing styles transcribed for 1983 album
+wham-fantastic,boogie,fantasticaoty,https://www.albumoftheyear.org/album/18408-wham-fantastic.php,some tracks,AOTY secondary style
+wham-fantastic,disco,fantasticall,https://www.allmusic.com/album/r21726/charts-awards,some tracks,AllMusic style + Motown-derived Love Machine cover
+wham-fantastic,poprap,fantasticcredits,https://www.chartsurfer.de/artist/wham/fantastic-album_frphcg.html,some tracks,Original LP/CD styles on Discogs-derived release credits; Wham Rap
+wham-fantastic,discorap,fantasticaoty,https://www.albumoftheyear.org/album/18408-wham-fantastic.php,some tracks,"AOTY secondary genre, chiefly Wham Rap"
+wham-fantastic,electronic,fantasticcredits,https://www.chartsurfer.de/artist/wham/fantastic-album_frphcg.html,texture,Original pressing broad electronic tag; not dominant instrument source
+wham-fantastic,newwave,fantasticall,https://www.allmusic.com/album/r21726/charts-awards,some tracks,AllMusic broad album style; less defining than funk
+wham-fantastic,europop,fantasticcredits,https://www.chartsurfer.de/artist/wham/fantastic-album_frphcg.html,some tracks,Spanish / Israeli / Dutch pressing style; low-weight regional style
+wham-makeitbig,popsoul,makeaoty,https://www.albumoftheyear.org/album/18406-wham-make-it-big.php,whole album,AOTY primary genre; AllMusic review pop-soul
+wham-makeitbig,dancepop,makeaoty,https://www.albumoftheyear.org/album/18406-wham-make-it-big.php,some tracks,"AOTY album style, anchored by dance singles"
+wham-makeitbig,blueeyedsoul,makeshfl,https://www.theshfl.com/album/Make-It-Big,whole album,Ned Raggett direct album classification
+wham-makeitbig,pop,makeshfl,https://www.theshfl.com/album/Make-It-Big,whole album,Ned Raggett primary label
+wham-makeitbig,sophistipop,makeaoty,https://www.albumoftheyear.org/album/18406-wham-make-it-big.php,some tracks,AOTY secondary album style; polished mid-tempo material
+wham-makeitbig,newwave,makeshfl,https://www.theshfl.com/album/Make-It-Big,some tracks,The Shfl direct album label; AllMusic also new wave
+wham-makeitbig,soul,makeshfl,https://www.theshfl.com/album/Make-It-Big,texture,The Shfl pop/soul framing; not a pure soul album
+wham-makeitbig,adultcontemporary,makeall,https://www.allmusic.com/album/make-it-big-mw0000192387,some tracks,AllMusic style reflecting smoother ballads
+wham-makeitbig,contemporarypoprock,makeall,https://www.allmusic.com/album/make-it-big-mw0000192387,whole album,AllMusic album style
+wham-musicfromtheedgeofheaven,pop,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,whole album,AOTY main genre; Apple album pop tag
+wham-musicfromtheedgeofheaven,dancepop,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,some tracks,Dance-pop singles The Edge of Heaven and I’m Your Man
+wham-musicfromtheedgeofheaven,newwave,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,some tracks,AOTY album style; AllMusic cross-check
+wham-musicfromtheedgeofheaven,synthfunk,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,some tracks,AOTY secondary genre; primarily upbeat synth rhythm songs
+wham-musicfromtheedgeofheaven,synthpop,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,some tracks,AOTY secondary genre; Last Christmas and electronic textures
+wham-musicfromtheedgeofheaven,sophistipop,edgeaoty,https://www.albumoftheyear.org/album/18409-wham-music-from-the-edge-of-heaven.php,some tracks,AOTY secondary style; smoother ballads
+wham-musicfromtheedgeofheaven,adultcontemporary,edgeall,https://www.allmusic.com/album/music-from-the-edge-of-heaven-mw0000196279,some tracks,"AllMusic genre style, chiefly ballad material"
+wham-musicfromtheedgeofheaven,contemporarypoprock,edgeall,https://www.allmusic.com/album/music-from-the-edge-of-heaven-mw0000196279,whole album,AllMusic album style
+wham-musicfromtheedgeofheaven,softrock,wherecover,https://storyofsong.com/story/where-did-your-heart-go/,some tracks,Where Did Your Heart Go? cover soft-rock ballad; evidence from arrangement analyses is secondary

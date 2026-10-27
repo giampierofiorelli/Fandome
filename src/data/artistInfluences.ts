@@ -146,6 +146,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Sylvester', 'Divine', 'Patrick Cowley', 'Hazell Dean'],
     source: 'Pete Burns, Windy City Times 2003 (Sylvester, Divine’s Native Love); producer Zeus B. Held, Electricity Club (Sylvester, Patrick Cowley); Mike Stock, Radio X 2021 (Hazell Dean’s Whatever I Do led Burns to Stock Aitken Waterman)',
   },
+  wham: {
+    names: ['Sylvester', 'Elton John', 'Stevie Wonder', 'Queen', 'David Bowie', 'Bee Gees', 'Elvis Costello', 'The B-52’s', 'David Cassidy'],
+    source: 'George Michael: ZigZag 1982 (Sylvester), Rolling Stone 1985 (Elton John, the duo’s shared start), Los Angeles Times 1990 (Stevie Wonder), Rock & Roll Hall of Fame essay (Queen, Bowie), Biofile interview (inspirations: Bee Gees, Elvis Costello, The B-52’s, David Cassidy). The Supremes left out: childhood listening, not named as an influence',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
