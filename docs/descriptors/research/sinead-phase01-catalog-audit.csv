@@ -1,0 +1,12 @@
+title,year,type,album_id,already_in_catalog,action_or_note
+The Lion and the Cobra,1987,studio,sinead-thelionandthecobra,yes,Existing catalogue row; keep exact slug
+I Do Not Want What I Haven’t Got,1990,studio,sinead-idonotwantwhatihaventgot,yes,Existing catalogue row; curly apostrophe slugs to idonotwantwhatihaventgot
+Am I Not Your Girl?,1992,studio,sinead-aminotyourgirl,no,Must add to catalog before validation
+Universal Mother,1994,studio,sinead-universalmother,yes,Existing catalogue row
+Gospel Oak,1997,ep,sinead-gospeloak,no,Assess/include in next phase as substantial original EP
+Faith and Courage,2000,studio,sinead-faithandcourage,yes,Existing catalogue row
+Sean-Nós Nua,2002,studio,sinead-seannosnua,no,Missing later studio album
+Throw Down Your Arms,2005,studio,sinead-throwdownyourarms,no,Missing later reggae covers studio album
+Theology,2007,studio,sinead-theology,no,Missing later studio album
+How About I Be Me (And You Be You)?,2012,studio,sinead-howaboutibemeandyoubeyou,no,Missing later studio album
+"I'm Not Bossy, I'm the Boss",2014,studio,sinead-imnotbossyimtheboss,no,Missing final studio album

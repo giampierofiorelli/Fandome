@@ -142,6 +142,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Nirvana', 'Rage Against the Machine', 'The Smashing Pumpkins', 'Tool', 'The Prodigy', 'Led Zeppelin', 'Parliament', 'Sex Pistols', 'Blondie', 'Nina Simone'],
     source: 'Skin: Louder 2015, Kerrang!, Radio X, Ticketmaster (Led Zeppelin, Nina Simone, Blondie); Mark Richardson, Renowned for Sound (Led Zeppelin, Parliament, Sex Pistols)',
   },
+  sinead: {
+    names: ['Bob Dylan', 'John Lennon', 'Van Morrison', 'Nina Simone', 'Buju Banton', 'Sizzla', 'R. H. Harris', 'The Soul Stirrers', 'Aretha Franklin'],
+    source: 'Sinéad O’Connor: Paul Freeman interview 2002 (Dylan, Lennon, Van Morrison, Nina Simone, Buju Banton, Sizzla); Trouser Press 2007 (Dylan, R. H. Harris and the Soul Stirrers); NPR/WCMU 2014 (Idiot Wind; Aretha Franklin, album sequencing)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
