@@ -436,3 +436,184 @@ Found by checking every album's list (empty, or top suggestions with little genr
 - Not found: documented influences, critics' sounds-like comparisons (left empty). Language left empty (instrumental + film dialogue).
 - New tokens: instrument `gamelan` (parent: percussion); production `prophet10`, `yamahags1`, `jupiter4` (synth models, like jupiter6/jupiter8).
 - Doubt: brief said type studio, but album list says soundtrack; used `soundtrack`. Demis Roussos vocal credited on one track; kept voice instrumental|spoken.
+
+## Third batch: Morricone and Battiato neighbours, James Last (Oct 2026, owner: 'fallo tu mirato')
+Italian film composers cited by the Morricone rows (Piccioni, Nicolai, Trovajoli, Rota, Bacalov; year = film year, several LPs came out later; Django's producers dropped as they are the 1985 LP's), the artists Battiato's rows cite most (Peter Gabriel, Alice, David Sylvian, Giuni Russo, De André), both James Last albums (owner). Battiato's Fetus, Pollution and Sulle corde di Aries gain Tom Zé and Serge Gainsbourg in sounds_like (Simon Reynolds, 4Columns, 2017).
+
+## alice-gioiellirubati
+
+# alice-gioiellirubati — Alice, Gioielli rubati (1985)
+- https://it.wikipedia.org/wiki/Gioielli_rubati — genres in infobox (Rock and roll, Musica leggera, Rock progressivo, Rock elettronico, Musica sperimentale); producer Angelo Carrara; arranger Roberto Cacciapaglia; mixed at Power Station NY; Aldo Banfi keyboards/programming, Michele Fedrigotti keyboards; charts IT 18, AT 12, CH 13, SE 15, DE 42; Targa Tenco 1985 best female interpreter. Page flagged as insufficiently sourced.
+- https://en.wikipedia.org/wiki/Gioielli_rubati — genres pop, rock; La Scala strings and woodwinds arranged/conducted by Cacciapaglia; Banfi "computers, keyboards, drum machines"; Luna indiana partly spoken; Prospettiva Nevski her best-selling solo single in Europe.
+- https://www.rollingstone.it/musica/classifiche-liste-musica/tutti-i-dischi-di-alice-dal-peggiore-al-migliore/942572/ — excludes covers albums, so no ranking for this one.
+- Battiato role: songwriter (with Giusto Pio; Messina/Jaeggy on two lyrics); NOT credited as producer (Carrara) → not in producers. sounds_like Franco Battiato because the album is entirely his songs (not an influence: covers excluded by rule).
+## Choices / doubts
+- "Rock elettronico" mapped to existing `electrorock` (same term contracted). "Rock and roll" in the it.wiki infobox left out: unsourced and contradicted by every description (strings + keyboards Battiato covers); owner may add `rockandroll` if he wants strict application.
+- voice and lyrics left empty: no source describes them for this album (only Luna indiana spoken). No critic scores found; acclaim 4 rests on the Targa Tenco (critics' jury) → confidence medium.
+
+## bacalov-django
+
+# bacalov-django — Luis Bacalov, Django (1966)
+Sources
+- https://en.wikipedia.org/wiki/Django_(1966_film): Bacalov's first western; more traditional than Morricone, especially brass and orchestral writing; "Latin and rock elements" (genres rock, latin); theme lyrics Migliacci/Mellin, Rocky Roberts (English, film) vs Roberto Fia (Italian, album/single) → language it; Movie Wave 5/5, Sputnikmusic 4/5; score among film's most praised elements; reused in Django Unchained.
+- https://it.wikipedia.org/wiki/Django_(film_1966): RCA Italiana album/single carried Roberto Fia's Italian version; theme reused by Tarantino and Sukiyaki Western Django.
+- https://theaudiophileman.com/django-bacalov/: piercing brass, flute with dramatic effects, frantic cello runs, rock-based bass lines (instruments); traditional template with avant-leaning touches (experimental 2); compared with mentor Morricone (sounds_like).
+- https://www.sputnikmusic.com/review/61544/Luis-Bacalov-Django/ (search snippet): Django his most enduring contribution (importance 5).
+- Discogs API, release of master 276501 (Intermezzo/General Music 1985): first full LP 1985, theme single Parade PRC 5001 in 1966; album produced for Intermezzo by Maurizio Buttazzoni and Sergio Bassetti (producers column — these are reissue-album producers; drop if you prefer original-session credits only).
+- https://it.wikipedia.org/wiki/Luis_Bacalov: other works list.
+Doubts: voice type of Roberto Fia not described → only `instrumental`. Year kept as film/single 1966 (full LP first issued 1985).
+
+## deandre-creuzadema
+
+# deandre-creuzadema — Fabrizio De André, Crêuza de mä (1984)
+- https://it.wikipedia.org/wiki/Crêuza_de_mä — genres Musica d'autore, folk rock, musica etnica, world music; producers Pagani & De André; full instrument credits (oud, saz, bouzouki, mandola, mandolino, violino, viola, synth, flute; Banfi/Martin synths; Bedel zarb; Arcari shanai; Mussida classical guitar; Kekes gaida); field recordings at Genoa fish market; Italy #7, gold; Targa Tenco; OndaRock pietra miliare, AllMusic 4.5, Scaruffi 7, Byrne, Musica e Dischi best of the 80s, RS Italia #4.
+- https://en.wikipedia.org/wiki/Cr%C3%AAuza_de_m%C3%A4 — genres folk, world music; Synclavier (Banfi), Yamaha GS-2 electric piano, goblet drum, Domna Samiou sample; lyric themes (sailors, Sidón war, prostitution, nostalgic lament); multitracked tenores-like vocals.
+- https://www.ondarock.it/pietremiliari_ita/deandre_creuza.htm (Giovanni Agnes) — world-music cornerstone placed before Peter Gabriel's Passion and Paul Simon's Graceland (→ sounds_like); gaida, oud, bouzouki; melancholic/fatalistic/sensual mood.
+- https://www.ilfattoquotidiano.it/2020/08/03/creuza-de-ma-ricantata-da-mina-e-vasco-per-linaugurazione-del-ponte-san-giorgio-quando-de-andre-nel-1984-disse-non-vendera-un-cao/5888823/ — De André expected it not to sell (mainstream basis).
+## New tokens
+- genre `ethnicmusic` (it.wiki "musica etnica"; parents: worldmusic, folk).
+- instruments `saz` (bağlama; parents: bouzouki/oud family), `shehnai` (oboe-like double reed; parent: woodwinds). Gaida entered as existing `bagpipes`.
+## Doubts
+- influenced_by empty: Sardinian vocal tradition and trips to Africa/Middle East are documented, but no artist. voice left empty (no descriptor beyond "expressive").
+
+## gabriel-petergabrielmelt
+
+# gabriel-petergabrielmelt — Peter Gabriel, Peter Gabriel (Melt) (1980)
+- https://en.wikipedia.org/wiki/Peter_Gabriel_(1980_album) — genres art rock, post-punk, post-progressive, progressive pop; text: "embracing post-punk and new wave"; producer Steve Lillywhite (Padgham engineer only); PAiA drum box, Roland CR-78, gated reverb / "gated room sound", early Fairlight CMI, cymbals banned; Chapman Stick, surdo; themes (decaying mind, assassinations, war, Biko); reviews AllMusic 5, Mojo 5, Classic Rock 10, Uncut 9, RS 4; lists RS 80s #46, Q 80s #29, Pitchfork 80s #125; UK #1; Charisma exec judged Fripp solos not radio-friendly.
+- https://en.wikipedia.org/wiki/Biko_(song) — Gabriel credits the Dingaka soundtrack LP with influencing the percussion; African rhythms; Larry Fast's harmonizer-detuned synth bagpipes.
+- https://en.wikipedia.org/wiki/Dingaka and Bertha Egnos page via search — Egnos music director of the Dingaka soundtrack (with Basil Gray, Eddie Domingo) → influenced_by `Bertha Egnos (Dingaka)`.
+- https://avclub.com/peter-gabriel-peter-gabriel-a-k-a-iii-melt-1798211014 — dense aggressive post-punk production; shares more with Talking Heads' Remain in Light and Fear of Music (→ sounds_like).
+- https://loudersound.com/features/david-longdon-reviews-peter-gabriel-s-melt — near-unanimous acclaim; tense, claustrophobic.
+## New tokens
+- instruments `chapmanstick` (parent: bass), `surdo` (parent: percussion).
+## Doubts
+- Gated reverb expressed as `noisegating|roomambience` (no gatedreverb token). voice left empty (no album-specific description). Dingaka credit could alternatively be "Basil Gray".
+
+## gabriel-so
+
+# gabriel-so — Peter Gabriel, So (1986)
+- https://en.wikipedia.org/wiki/So_(album) — genres art pop, art rock, progressive pop, worldbeat; text "fusing pop, soul, and art rock with elements of traditional world music, particularly African and Brazilian"; producers Gabriel & Daniel Lanois (Killen/Bascombe engineers); gear Fairlight CMI, Linn 9000, LinnDrum, Yamaha CS-80, Synclavier, Mitsubishi 32-track digital; personnel (Memphis horns, Shankar violin, Djalma Corrêa surdo/congas, shakuhachi intro, Chris Hughes electronic drums, Richard Tee piano); Sledgehammer horns inspired by Otis Redding (→ influenced_by); voice "throaty, gravelly", Pareles "grainy" (→ raspy); Mercy Street octave shadow vocal (→ layeredvocals); Buckley: Sledgehammer echoes Stevie Wonder's Superstition (Talking Book) and Bowie's Fame (Young Americans) (→ sounds_like); Chicago Tribune "funky rhythms", Petridis "cod-funk" (→ funk); themes (torture, unemployment, consumerism, obedience, devotion). Reception Pitchfork 9.1, AllMusic 4.5, RS Album Guide 5, RS 500 #187/#297, RS 80s #14, Slant #41; 5x Platinum US.
+## New tokens
+- instrument `shakuhachi` (parent: flute/woodwinds).
+## Doubts
+- Anne Sexton (Mercy Street) and Gaudí (In Your Eyes) are non-musical inspirations: left out of influenced_by. Youssou N'Dour is a guest, not an influence.
+
+## giunirusso-energie
+
+# giunirusso-energie — Giuni Russo, Energie (1981)
+- https://it.wikipedia.org/wiki/Energie_(Giuni_Russo) — genres Pop sperimentale, New wave (citing OndaRock); produttore Franco Battiato – Alberto Radius; arrangements Battiato & Giusto Pio; Battiato co-author of all tracks; musicians (Pio violin, Radius guitar, Destrieri keyboards, Capra Vaccina timpani, Colonna piano, Donnarumma bass, Scebran drums); 2019 LP FIMI #6; OndaRock "pietra miliare".
+- https://www.ondarock.it/artista/giuni-russo (Giuseppe D'Amato) — "pop sperimentale", "synth e violini", Crisi metropolitana mixes punk and spinta elettronica, Una vipera sarò a tango; near five-octave range, Yma Sumac comparison; Il sole di Austerlitz likened to Battiato's Prospettiva Nevskij (Patriots); Rettore parallel; themes war/history, urban alienation, exile, autobiography; most praised album.
+- https://www.ondarock.it/classifiche/anni80/ — Energie #2 among Italian 1980s albums (after La voce del padrone).
+- https://www.rollingstone.it/musica/classifiche-liste-musica/le-10-migliori-produzioni-di-franco-battiato/511885/ (Fabio Zuffanti, 2020) — #1 of Battiato's 10 best productions; Battiato "produttore e co-autore".
+- https://www.rollingstone.it/?p=550909 — Sisini: a record "sempre stato avanti".
+## Choices / doubts
+- Producers Battiato|Radius as credited; Giusto Pio is arranger only → not in producers.
+- Genres include `tango` and `punk` because OndaRock names them for single tracks; `electronic` from "elettronica spinta".
+- Rettore in sounds_like is a thematic parallel (Oriental themes) more than sonic; drop it if too loose.
+
+## jameslast-classicsuptodate
+
+# jameslast-classicsuptodate: James Last, Classics up to Date (1966)
+
+Sources
+- https://de.wikipedia.org/wiki/James_Last: Polydor International suggested the series after the Dreigroschenoper recording went well. Last took each work's main theme, used fewer instruments, rewrote string parts and laid a quiet rhythm underneath. The Bergedorfer Kammerchor (about 40 amateurs, led by Hellmut Wormsbächer) only hummed, with no text, to warm the strings. That supports voice choral, production wordlessvocals and stringarrangements, groove 1 and energy 2. Volumes sold over a million each over time and reached buyers outside classical music. The table possibly shows UK #67, but the layout made the row unclear, so it is not used.
+- https://en.wikipedia.org/wiki/James_Last: nine volumes of classical melodies arranged with strings, rhythm and wordless chorus. Norway #21 (1966). Genres big band and easy listening for the artist.
+- https://www.classicalmusicdaily.com/articles/l/j/james-last.htm: the series uses strings, wordless chorus and a beat.
+- Discogs master 163372 (https://www.discogs.com/master/163372): Polydor 1966. Genres Pop, Classical; styles Romantic, Easy Listening. James Last credited as conductor and arranger, with no producer credit. This is the source for the genres easylistening, classical and pop; "Romantic" refers to the period of the pieces and is not used. Tracks: Offenbach Barcarole, Verdi Nabucco chorus, Brahms Hungarian Dance 5 and Waltz op. 39/15, Bizet Toreador and Habanera, Grieg, Borodin Notturno, Tchaikovsky Romeo and Juliet, Ketèlbey In a Persian Market, Dvořák New World Largo, and the Bruch Violin Concerto 1 Adagio.
+
+Left empty
+- producers: none credited.
+- influenced_by: Mantovani was the model for Last's earlier Radio Bremen strings, but nothing ties him to this album.
+- sounds_like: no critic comparison found.
+- electronic, mood and polish: no evidence.
+- acclaim: no reviews found.
+- classicalcrossover: no source uses that term for this album, so it is not in the genres.
+
+New tokens
+- production `wordlessvocals` (humming or wordless choir used as texture). Suggested label "Wordless vocals". Nearest existing tokens: layeredvocals, and voice choral.
+
+## jameslast-nonstopdancing
+
+# jameslast-nonstopdancing: James Last, Non Stop Dancing (1965)
+
+Sources
+- https://en.wikipedia.org/wiki/Non_Stop_Dancing_65: Polydor 237.447, recorded 1965 at Polydor studios in Hamburg, engineer Peter Klemt. Producer: James Last (infobox). Genre: jazz (infobox). AllMusic 4/5. First of about 30 Non Stop Dancing albums. Personnel: trumpet, trombone, 2 sax, 2 guitars, bass, drums, piano and organ. Medleys of 1964–65 hits (Beatles, Orbison, Manfred Mann, Drafi Deutscher...).
+- https://en.wikipedia.org/wiki/James_Last: medley of short versions of pop songs held together by an insistent dance beat and crowd noise. "Happy music": big-band arrangements with a jaunty dance beat, heavy on bass and brass. Big hit that made him a European star. Spencer Leigh (The Independent): the series "paved the way for disco and dance mixes". Big band / easy listening; critics called him "king of elevator music". These support genres easylistening and bigband, mood, groove, tempo and the horn arrangements.
+- https://de.wikipedia.org/wiki/James_Last: DE #3, 15 months on the chart. Idea came from the party life at Holitzberg (Hamburg-Langenhorn). Polydor production head Heinz Voigt approved the LP; Voigt is not credited as producer, so he is not listed. Party noise was recorded at a party while the orchestra tape played, then mixed in (overdubbing, crowdnoise). The noise covered the joins, so the album runs without breaks. Three songs per medley to keep GEMA fees low. Last's sound started as an imitation of Bert Kaempfert's style, and the resulting "Happy Sound" was "already audible on Non Stop Dancing '65" (Peter Klemt account). That is the basis for influenced_by: Bert Kaempfert.
+- Discogs master 437332 / release 3531042 (https://www.discogs.com/master/437332): genres Rock, Pop, Folk/World/Country; styles Instrumental, Schlager, Easy Listening, Skiffle, Rock & Roll, Twist; "Potpourri". This is the only source for the genres pop, schlager, rockandroll, twist, skiffle and rock, and for voice: instrumental. It is user-contributed, so trim those genres if Discogs is not accepted.
+- https://www.thestranger.com/?p=201818 (obituary): contemporary pop with strings, horns and a "swinging backbeat", mixed with live-audience sound to make a "party record".
+
+Judgments
+- energy 3, mood 5, groove 5, tempo 4: these follow the sources' "insistent dance beat", "happy music" and "party record", and the album's purpose, non-stop dancing.
+- electronic 1: amplified guitars, bass and organ in an otherwise acoustic big band.
+- polish 3: a normal Polydor studio production, with no evidence for more.
+- sounds_like: left empty because no critic comparison was found.
+- language and lyrics: left empty because the album is instrumental.
+
+New tokens
+- production `crowdnoise` (party or audience noise recorded separately and mixed over the music). Suggested label "Crowd / party noise". Nearest existing token: overdubbing.
+
+## nicolai-lacodadelloscorpione
+
+# nicolai-lacodadelloscorpione — Bruno Nicolai, La coda dello scorpione (1971)
+Chosen because two Morricone rows citing Nicolai are gialli (L'uccello dalle piume di cristallo, Chi l'ha vista morire?) and this Sergio Martino score is called the crown jewel of his giallo work; it has the most standalone documentation (Digitmovies CD 2004, Death Waltz 2LP 2017 with review). Close alternative: Tutti i colori del buio (1972, sitar, Edda Dell'Orso on "Sabba", Rock and Roll Globe).
+Sources
+- http://giallo-fever.blogspot.com/2006/11/bruno-nicolai-in-giallo-ask-anyone.html: edgy percussion, strangled-sounding trumpet, menacing guitar in title theme, lush romantic themes "Foglie rosse"/"Vento d'autunno"; vocal closer "Shadows"; scores sound alike (acclaim 3).
+- https://www.horrordna.com/music/bruno-nicolai-the-case-of-the-scorpions-tail-original-motion-picture-soundtrack-album-lp-review: 3.5/5; strings, piano, bass, snare drum; tense vs kitschy melodramatic; "sleazy lounge" cue (lounge genre); "Shadows" sung in English by Audrey Stainton, crooning (voice soft, language en).
+- Discogs API: Digitmovies 2004 CD (first release), Death Waltz 2017; styles Soundtrack, Score, Easy Listening.
+- Search summary of Discogs "Bruno Nicolai In Giallo" box: Scorpion's Tail the crown jewel, "quintessential giallo scoring".
+- https://en.wikipedia.org/wiki/Bruno_Nicolai, https://it.wikipedia.org/wiki/Bruno_Nicolai, https://rockandrollglobe.com/soundtracks-and-film-scores/ten-underrated-italian-horror-soundtracks/: context and other works.
+Doubts: Nicolai's western scores (Adiós, Sabata; Corri uomo corri) would link the two Morricone westerns citing him; Il mercenario is a Morricone co-credit.
+
+## piccioni-camille2000
+
+# piccioni-camille2000 — Piero Piccioni, Camille 2000 (1969)
+Chosen because the Morricone rows citing Piccioni are lounge/jazz/erotic late-60s scores (Metti, una sera a cena; L'assoluto naturale; Il clan dei siciliani) and Camille 2000 is the Piccioni score most celebrated by critics/collectors in that field. Alternatives with more "institutional" weight: Salvatore Giuliano (Nastro d'Argento 1963), Travolti da un insolito destino (David 1975), Le mani sulla città (Morricone called it one of the most beautiful scores ever).
+Sources
+- Discogs API release 968128 (Easy Tempo ET 905, 1998): "never previously released"; composed/arranged/conducted 1969 for Radley Metzger's film; styles Soul-Jazz, Bossa Nova, Smooth Jazz, Easy Listening, Latin Jazz (genres; latinjazz and smoothjazz are new tokens). Blind Faith 2017 LP: recorded/mixed by Federico Savina.
+- http://www.colonnesonore.net/recensioni/cinema/5783-il-mondo-di-notte-camille-2000.html: soft jazz and psychedelic funk, brass ("monoliti in ottone"), tight rhythmic tapestries; called a capolavoro, rating 5.
+- Exclaim! (https://exclaim.ca/film/article/piero_piccioni-camille_2000, via search snippet): "masterpiece", futuristic funk and jazz romance (funk genre).
+- Search-result review snippet (source page not identified, likely AOTY/RYM user review): title track opens with bubbling organ; "Lovers" adds saxophone to bass and organ; Brazilian influence on "Tears in Brasil", "Brasil 2000" → organ, saxophone, bass. Flute from track title "Slow Flute Beat". Treat these as weaker evidence.
+- https://nostalgiaking.com/2017/03/20/piero-piccioni-camille-2000/: jazz/easy listening; unreleased at time of film.
+- https://www.letterboxd.com (search snippet): calm lo-fi jazz and tunes to groove to (groove 3).
+- RYM 3.75/5 from 709 ratings (search snippet).
+- https://it.wikipedia.org/wiki/Piero_Piccioni, https://en.wikipedia.org/wiki/Piero_Piccioni: other works.
+Doubts: album first issued 1998; year set to 1969 (composition/film), as for the other film-dated Italian scores. Weakest-documented of the five.
+New tokens: `latinjazz` (parents: jazz, latin), `smoothjazz` (parent: jazz).
+
+## rota-thegodfather
+
+# rota-thegodfather — Nino Rota, The Godfather (1972)
+Chosen over 8½: far better documented (dedicated en/it Wikipedia album pages, AllMusic 5/5, AFI #5, Grammy/Golden Globe/BAFTA, Billboard #21) and its Sicilian-tinged melancholic orchestral writing is closer to the Morricone rows citing Rota (Metello, La Califfa) than 8½'s circus marches. 8½ (1963) has almost no documentation of the album itself (it.wiki only notes the 1964 Nastro d'Argento).
+Sources
+- https://en.wikipedia.org/wiki/The_Godfather_(soundtrack): Paramount 1972; Carlo Savina conductor; cello and cornet solos; nostalgic, "dark, looming, and elegant" (AllMusic 5/5, Zach Curd); Grammy, Golden Globe, BAFTA; Oscar nomination withdrawn (Fortunella reuse); Al Martino sings "I Have But One Heart" (English) → language en.
+- https://it.wikipedia.org/wiki/Il_padrino_(colonna_sonora): Carmine Coppola's band pieces (Connie's Wedding); Fortunella controversy.
+- Discogs API master 64122: producer Tom Mack; tracklist; Carmine Coppola composed/conducted Connie's Wedding.
+- Search results: Billboard 200 #21 (Wikipedia/Nino Rota discography); AFI's 100 Years of Film Scores #5 (https://en.wikipedia.org/wiki/AFI%27s_100_Years_of_Film_Scores, Playbill).
+- Total Film (pressreader) / filmtracks via search: waltz opens on melancholy trumpet, accordion and mandolin for Sicilian tradition; mandolin, accordion, acoustic bass for Sicily scenes; solo trumpet bridges folk past and orchestra (genre folk, instruments). SFCV (Scott Terrell): accordion, mandolin and guitar make a café sound within the orchestra. https://theseventies.berkeley.edu/godfather/2018/06/30/the-sound-of-nostalgia-nino-rotas-godfather-theme (trumpet tied to Vito; nostalgia).
+Notes: Sibelius Symphony No. 1 resemblance is a quotation, not listed as influence; Fortunella is Rota's own work (self-reference). `waltz` genre from "The Godfather Waltz" being the main theme.
+
+## sylvian-secretsofthebeehive
+
+# sylvian-secretsofthebeehive — David Sylvian, Secrets of the Beehive (1987)
+- https://en.wikipedia.org/wiki/Secrets_of_the_Beehive — genres art rock, chamber rock; producer Steve Nye, Sylvian assistant producer; instruments (piano, acoustic/slide/electric guitar, organ, synths, treated piano, Sakamoto string/woodwind/brass arrangements, Danny Thompson double bass, Mark Isham flugelhorn/trumpet, Jansen drums, percussion); lyric theme: belonging to a society without fitting in; Fujii steered him to ECM jazz (a label, not an artist → not listed); reviews Pitchfork 9.1 (2019), Mojo 5, AllMusic 4.5, NME 9, Record Mirror 4.5 ("introspective", "melodic and mellow"); UK #37.
+- https://it.wikipedia.org/wiki/Secrets_of_the_Beehive — genres Art pop, Ambient pop.
+- https://musicaficionado.blog/2018/11/07/secrets-of-the-beehive-by-david-sylvian/ — sparse acoustic, melancholic; Sylvian's spiritual search (Buddhism, Gurdjieff) in the lyrics (→ spiritual).
+## New tokens
+- genre `chamberrock` (parents: artrock, chamberpop, rock).
+## Doubts
+- sounds_like empty: only blog-level links to Talk Talk's Spirit of Eden / This Mortal Coil, not a qualified critic. influenced_by empty (Holger Czukay link is speculative). voice empty. No best-of list placements found → acclaim 4, importance 4, confidence medium.
+
+## trovajoli-setteuominidoro
+
+# trovajoli-setteuominidoro — Armando Trovajoli, Sette uomini d'oro (1965)
+Chosen because the Morricone rows citing Trovajoli are late-60s lounge/jazz scores; this is his jazz/easy-listening landmark with an award (Nastro d'Argento 1966 Best Score) and an original CAM LP. Alternatives: La matriarca (1968, "L'amore dice ciao", his most popular song per en.wiki; LP only 2001), C'eravamo tanto amati, Profumo di donna (1974).
+Sources
+- https://en.wikipedia.org/wiki/Seven_Golden_Men and http://worldofsoundtrack.blogspot.com/2009/05/armando-trovajoli-sette-uomini-doro.html: Nastro d'Argento Best Score 1966.
+- Discogs API master 438968 / release 30947893: CAM LP 1965 (recorded 16-6-1965), I Cantori Moderni di Alessandroni vocals; styles Easy Listening, Latin Jazz (LP), Cool Jazz (7").
+- Discogs user review on release 6494984 (via search summary): jazz touches, whistled melodies, swing, vocal group styled after the Swingle Singers (sounds_like, swing, whistle).
+- https://www.qobuz.com/ie-en/album/sette-uomini-doro-armando-trovajoli-i-cantori-moderni-di-alessandroni/aftqeuzrdiatb: credits.
+- https://www.soundohm.com/product/il-grande-colpo-dei-7-uom: about the 1966 SEQUEL (bossa jazz, Swingle Singers + Schifrin) — NOT used for genres.
+- https://it.wikipedia.org/wiki/Armando_Trovajoli, https://en.wikipedia.org/wiki/Armando_Trovajoli: other works, jazz-based style.
+Doubts: instrumentation poorly documented (only whistle); language empty (wordless vocal group per the Swingle comparison).
+New token: `latinjazz` (parents: jazz, latin).
