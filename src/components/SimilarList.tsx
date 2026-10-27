@@ -4,14 +4,17 @@ import { albumById, artistById } from '../lib/util'
 import { AlbumCover } from './ui'
 import { IconSparkle, IconX } from './icons'
 import { useStore } from '../store/store'
-import { COUNTRY_NAMES } from '../data/scenes'
+import { COUNTRY_NAMES, sceneOf } from '../data/scenes'
 
 const countryName = (code: string) => COUNTRY_NAMES[code] ?? code
 
-// A suggestion from a local scene in another country: just the country's name, as a quiet tag next to the title.
-export function CountryTag({ name }: { name: string }) {
+// Where every suggested artist comes from (owner: for everyone, not only discoveries): the country's name, as a
+// quiet tag next to the title.
+export function CountryTag({ code, discovery }: { code?: string; discovery?: boolean }) {
+  if (!code) return null
+  const name = countryName(code)
   return (
-    <span className="country-tag" title={`From a local scene in ${name}`}>
+    <span className="country-tag" title={discovery ? `From a local scene in ${name}` : `From ${name}`}>
       {name}
     </span>
   )
@@ -33,7 +36,7 @@ export function SimilarList({ items, onHide }: { items: Similar[]; onHide?: (alb
               <span className="grow chart-row-info">
                 <span className="title-line">
                   <strong>{al.title}</strong>
-                  {s.newCountry && <CountryTag name={countryName(s.newCountry)} />}
+                  <CountryTag code={s.newCountry ?? sceneOf(al.artistId)?.country} discovery={Boolean(s.newCountry)} />
                 </span>
                 <span className="muted small block">
                   {al.credit ?? artistById(al.artistId)?.name} · {al.year}
