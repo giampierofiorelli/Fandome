@@ -1,0 +1,22 @@
+﻿album_id,genre,evidence,url,support_scope
+sabrinasalerno-sabrina,italodisco,1987 original Dutch/Italian editions use Italo-Disco style,https://www.chartsurfer.de/artist/sabrina-it/sabrina-album_ffeuep.html,original_album_style
+sabrinasalerno-sabrina,synthpop,1987 period original Dutch/Scandinavian editions use Synth-pop,https://www.chartsurfer.de/artist/sabrina-it/sabrina-album_ffeuep.html,original_album_style
+sabrinasalerno-sabrina,disco,1987 period original album editions styled Disco,https://www.chartsurfer.de/artist/sabrina-it/sabrina-album_ffeuep.html,original_album_style
+sabrinasalerno-sabrina,dancepop,AllMusic identifies Dance-Pop as Sabrina musical style; corroborated by dance singles on 1987 album,https://www.allmusic.com/artist/sabrina-mn0000274249,artist_context_plus_album
+sabrinasalerno-sabrina,pop,Scandinavian 1987 album genre Pop,https://www.chartsurfer.de/artist/sabrina-it/sabrina-album_ffeuep.html,original_album_style
+sabrinasalerno-sabrina,hinrg,Specialist dance label places original 1987 Boys on Hi-NRG dancefloors; applies only to one song,https://www.almightyrecords.com/store/p/almy423,track_only
+sabrinasalerno-supersabrina,italodisco,Original 1988 release group tagged Italo-Disco,https://musicbrainz.org/release-group/6f235645-cc73-32cd-8db7-7ca5ee343325,album_style
+sabrinasalerno-supersabrina,dancepop,"AllMusic identifies Dance-Pop as artist style, reflected in this original European singles-driven album",https://www.allmusic.com/artist/sabrina-mn0000274249,artist_context_plus_album
+sabrinasalerno-supersabrina,pop,MusicBrainz original release group genres include Pop,https://musicbrainz.org/release-group/6f235645-cc73-32cd-8db7-7ca5ee343325,album_style
+sabrinasalerno-supersabrina,disco,Rockol documents Giorgio Moroder-produced Like a Yo Yo disco single,https://www.rockol.it/news-720822/sabrina-salerno-icona-degli-anni-ottanta-le-canzoni-i-video,track_only
+sabrinasalerno-supersabrina,synthpop,1990 German CD of 1988 record categorized Synth-pop,https://www.chartsurfer.de/artist/sabrina-it/super-sabrina-album_ffeerr.html,reissue_style
+sabrinasalerno-supersabrina,electronic,MusicBrainz release group genre Electronic,https://musicbrainz.org/release-group/6f235645-cc73-32cd-8db7-7ca5ee343325,album_style
+sabrinasalerno-supersabrina,hinrg,Like a Yo Yo classified Italo disco and Hi-NRG,https://en.wikipedia.org/wiki/Like_a_Yo-Yo,track_only
+sabrinasalerno-overthepop,pop,Record company original 1991 label metadata tags Pop,https://www.qobuz.com/no-en/album/over-the-pop-sabrina-salerno/3614971525546,direct_album
+sabrinasalerno-overthepop,dancepop,Direct album description identifies dance-pop,https://en.wikipedia.org/wiki/Over_the_Pop,direct_album_secondary
+sabrinasalerno-overthepop,poprock,Direct album description identifies pop-rock,https://en.wikipedia.org/wiki/Over_the_Pop,direct_album_secondary
+sabrinasalerno-overthepop,electronic,Original 1991 Casablanca CD listed Pop/Electro,https://www.musik-sammler.de/release/sabrina-over-the-pop-cd-1372949/,original_issue_style
+sabrinasalerno-overthepop,eurodance,Original 1991 Casablanca CD style label Eurodance,https://www.musik-sammler.de/release/sabrina-over-the-pop-cd-1372949/,original_issue_style
+sabrinasalerno-maschiodovesei,poprock,Apple Music labels the original 1995 issue Pop/Rock,https://music.apple.com/us/album/maschio-dove-sei/1021554311,direct_album
+sabrinasalerno-maschiodovesei,rock,Artist describes new rock influence and guitar-band arrangements,https://www.sabrinasalerno.com/en/biografia/,artist_first_person
+sabrinasalerno-maschiodovesei,pop,"Album originally classified pop rock, a blend of pop and rock (broad parent)",https://it.wikipedia.org/wiki/Maschio_dove_sei,genre_family

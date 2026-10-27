@@ -1,0 +1,11 @@
+﻿album_id,artist_id,title,year,type,catalog_status_on_descriptors_branch,action,reason
+sabrinasalerno-sabrina,sabrinasalerno,Sabrina,1987,studio,present,KEEP_EXISTING_ALBUM_ID,Catalog already lists Sabrina 1987; add descriptor only; no duplicate catalog record
+sabrinasalerno-supersabrina,sabrinasalerno,Super Sabrina,1988,studio,present,KEEP_EXISTING_ALBUM_ID,Catalog already lists Super Sabrina 1988; add descriptor only
+sabrinasalerno-overthepop,sabrinasalerno,Over the Pop,1991,studio,missing,ADD_TO_CATALOG,Create 1991 album under existing sabrinasalerno artist ID
+sabrinasalerno-maschiodovesei,sabrinasalerno,Maschio dove sei,1995,studio,missing,ADD_TO_CATALOG,Original 1995 NAR Italian pressing takes precedence over some derivative 1996 discographies
+,sabrinasalerno,A Flower's Broken,1999,studio,missing,DEFER_PHASE_02,"New studio material, outside this phase"
+,sabrinasalerno,Erase/Rewind Official Remix,2008,remix,missing,RESEARCH_PHASE_02,Hybrid of previously released remix material and new recordings; evaluate original studio-disc classification before inclusion
+,sabrinasalerno,Something Special,1988,compilation,missing,EXCLUDE,Collection of earlier tracks/extended mixes
+,sabrinasalerno,Super Remix,1990,compilation,missing,EXCLUDE,Remix collection of earlier recordings; not an independent original studio album
+,sabrinasalerno,Numeri,1997,reissue,missing,EXCLUDE,Reissue of Maschio dove sei with additional title song
+,sabrinasalerno,Fatta... Rifatta,1999,reissue,missing,EXCLUDE,Reissue of Maschio dove sei; not separately described
