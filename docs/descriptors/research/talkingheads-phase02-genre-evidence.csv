@@ -1,0 +1,65 @@
+﻿album_id,genre,source_url,scope,reasoning
+talkingheads-speakingintongues,dancerock,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic album-wide Dance-Rock style; Pitchfork highlights danceable funk structure
+talkingheads-speakingintongues,funk,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,whole album,Pitchfork characterises basslines and album-wide funk grooves
+talkingheads-speakingintongues,newwave,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,whole album,Pitchfork identifies new-wave synth parts; AllMusic lists New Wave
+talkingheads-speakingintongues,artrock,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,whole album,Pitchfork expressly describes art-rock blended into funk and pop
+talkingheads-speakingintongues,pop,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,whole album,Pitchfork expressly identifies the pop component
+talkingheads-speakingintongues,rock,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,whole album,Pitchfork album-level genre metadata is Rock
+talkingheads-speakingintongues,afrobeat,https://pitchfork.com/reviews/albums/talking-heads-speaking-in-tongues/,texture,"Pitchfork says rhythms are Afrobeat-inspired, not whole album Afrobeat"
+talkingheads-speakingintongues,gospel,https://www.allmusic.com/album/release/speaking-in-tongues-mr0003118099,some tracks,AllMusic specifically singles out gospel call-and-response on Slippery People
+talkingheads-speakingintongues,blues,https://www.allmusic.com/album/release/speaking-in-tongues-mr0003118099,some tracks,AllMusic identifies John Lee Hooker-style blues on Swamp
+talkingheads-speakingintongues,albumrock,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic literal Album Rock style metadata
+talkingheads-speakingintongues,contemporarypoprock,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic literal Contemporary Pop/Rock style metadata
+talkingheads-speakingintongues,alternativeindierock,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic literal Alternative/Indie Rock style metadata
+talkingheads-speakingintongues,collegerock,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic College Rock catalogued style (previous phase token)
+talkingheads-speakingintongues,punknewwave,https://www.allmusic.com/album/speaking-in-tongues-mw0000196011,whole album,AllMusic Punk/New Wave literal style (previous phase token)
+talkingheads-littlecreatures,pop,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,whole album,Pitchfork explicitly presents Little Creatures as a pop album
+talkingheads-littlecreatures,poprock,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,whole album,Pitchfork describes a melodic accessible pop LP by a rock band; pop-rock synthesis
+talkingheads-littlecreatures,newwave,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic New Wave album style
+talkingheads-littlecreatures,dancerock,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Dance-Rock album style
+talkingheads-littlecreatures,rock,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,whole album,Pitchfork Rock album category
+talkingheads-littlecreatures,funk,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,some tracks,Pitchfork says funk survives in bass and rhythmic writing
+talkingheads-littlecreatures,country,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,some tracks,Pitchfork identifies country-western pedal steel on Creatures of Love
+talkingheads-littlecreatures,gospel,https://www.soundonsound.com/techniques/classic-tracks-talking-heads-road-nowhere,some tracks,Thorngren documents gospel singers/choral section Road to Nowhere
+talkingheads-littlecreatures,afrobeat,https://pitchfork.com/reviews/albums/talking-heads-little-creatures/,texture,Pitchfork describes lingering Afrobeat traces rather than an Afrobeat album
+talkingheads-littlecreatures,postpunk,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Post-Punk catalogued style
+talkingheads-littlecreatures,albumrock,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Album Rock album style
+talkingheads-littlecreatures,alternativeindierock,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Alternative/Indie Rock album style
+talkingheads-littlecreatures,collegerock,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic College Rock album style
+talkingheads-littlecreatures,contemporarypoprock,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Contemporary Pop/Rock album style
+talkingheads-littlecreatures,punknewwave,https://www.allmusic.com/album/little-creatures-mw0000191997,whole album,AllMusic Punk/New Wave album style
+talkingheads-truestories,newwave,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic New Wave album-wide style
+talkingheads-truestories,pop,https://music.apple.com/us/album/true-stories/1644461295,whole album,Apple Music original album category is Pop
+talkingheads-truestories,poprock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic umbrella category Pop/Rock is an album-wide format label
+talkingheads-truestories,rock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Pop/Rock umbrella
+talkingheads-truestories,country,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple editorial says country particularly prominent among US regional genres
+talkingheads-truestories,gospel,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple editorial names gospel; choir backed Puzzlin Evidence
+talkingheads-truestories,soul,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple editorial explicitly names soul music
+talkingheads-truestories,rnb,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple names New Orleans R&B as a style
+talkingheads-truestories,dancerock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic catalogued Dance-Rock style
+talkingheads-truestories,postpunk,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Post-Punk catalogued style
+talkingheads-truestories,texmex,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple editorial explicitly names Tex-Mex genre; new exact token
+talkingheads-truestories,neworleansrnb,https://music.apple.com/us/album/true-stories/1644461295,some tracks,Apple editorial explicitly names New Orleans R&B; new exact token
+talkingheads-truestories,albumrock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Album Rock metadata
+talkingheads-truestories,alternativeindierock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Alternative/Indie Rock metadata
+talkingheads-truestories,collegerock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic College Rock metadata
+talkingheads-truestories,contemporarypoprock,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Contemporary Pop/Rock metadata
+talkingheads-truestories,newyorkpunk,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic New York Punk retrospective style metadata
+talkingheads-truestories,americanpunk,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic American Punk retrospective style (Phase 01 new token)
+talkingheads-truestories,punknewwave,https://www.allmusic.com/album/true-stories-mw0000192119,whole album,AllMusic Punk/New Wave retrospective style (Phase 01 new token)
+talkingheads-naked,worldbeat,https://en.wikipedia.org/wiki/Naked_(Talking_Heads_album),whole album,"Explicit album-level worldbeat genre, corroborated by AllMusic career write-up"
+talkingheads-naked,funk,https://music.apple.com/us/album/naked/1644408228,whole album,Apple Music identifies pervasive funk elements and cross-cut rhythms
+talkingheads-naked,artpop,https://en.wikipedia.org/wiki/Naked_(Talking_Heads_album),whole album,Album-level art pop classification in secondary discography
+talkingheads-naked,pop,https://music.apple.com/us/album/naked/1644408228,whole album,Apple Music categorises original album as Pop
+talkingheads-naked,afrobeat,https://en.wikipedia.org/wiki/Naked_(Talking_Heads_album),texture,Secondary album overview explicitly names Afrobeat; Apple Music describes African music influence
+talkingheads-naked,latin,https://music.apple.com/us/album/naked/1644408228,some tracks,Apple describes pronounced Latin feel particularly horns
+talkingheads-naked,latinfunk,https://en.wikipedia.org/wiki/Naked_(Talking_Heads_album),some tracks,Secondary album overview explicitly uses Latin funk; new exact token
+talkingheads-naked,dancerock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic catalogued Dance-Rock
+talkingheads-naked,rock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Pop/Rock and album classification
+talkingheads-naked,postpunk,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Post-Punk
+talkingheads-naked,newwave,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic New Wave
+talkingheads-naked,albumrock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Album Rock
+talkingheads-naked,alternativeindierock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Alternative/Indie Rock
+talkingheads-naked,collegerock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic College Rock
+talkingheads-naked,contemporarypoprock,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Contemporary Pop/Rock
+talkingheads-naked,punknewwave,https://www.allmusic.com/album/naked-mw0000194659,whole album,AllMusic Punk/New Wave
