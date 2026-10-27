@@ -3,6 +3,7 @@ import judged from '../../docs/similarity-judgments.csv?raw'
 import { parseCsv } from './csv'
 import { DESCRIPTORS } from './descriptors'
 import { albums, artists } from '../data/seed'
+import { sceneOf } from '../data/scenes'
 import { compareAlbums, similarAlbums, similarArtists } from './similar'
 
 // Human judgments as ground truth (as in MIREX music-similarity evaluations): the engine is measured
@@ -25,7 +26,10 @@ describe('owner-judged album pairs', () => {
   })
 
   it('never suggests a pair judged bad', () => {
-    for (const p of bad) expect(similarAlbums(p.album_a).map((s) => s.albumId)).not.toContain(p.album_b)
+    // As on the album page: with countries, so the discovery place is checked too.
+    const artistOf = (id: string) => albums.find((a) => a.id === id)?.artistId
+    const countryOf = (id: string) => sceneOf(artistOf(id) ?? '')?.country
+    for (const p of bad) expect(similarAlbums(p.album_a, { artistOf, countryOf }).map((s) => s.albumId)).not.toContain(p.album_b)
   })
 })
 

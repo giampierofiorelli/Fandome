@@ -12,7 +12,7 @@ import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
-import { isLocalArtist, type Genre } from '../data/scenes'
+import { SCENES, isLocalArtist, type Genre } from '../data/scenes'
 
 // Names are compared folded (accents, case, punctuation off); the same few hundred names come back
 // millions of times, so each is folded once.
@@ -573,7 +573,13 @@ export function similarAlbums(
     avoid?: string[] // album ids you rated low or hid: similar albums are pushed down
   } = {},
 ): Similar[] {
-  const local = (id: string) => isLocalArtist(opts.artistOf?.(id))
+  // A local scene is heard in its own language (owner's rule): an album sung mainly in another language (Shakira's
+  // English-language Oral Fixation, Vol. 2) is that artist's crossover, not a discovery of their scene.
+  const local = (id: string) => {
+    const artist = opts.artistOf?.(id)
+    const main = DESCRIPTORS[id]?.language[0]
+    return isLocalArtist(artist) && (!main || !artist || main === SCENES[artist]?.lang)
+  }
   const { limit = 10, perArtist = 2, hide = [] } = opts
   const a = profileOf(albumId)
   if (!a) return []
@@ -628,6 +634,16 @@ export function similarAlbums(
   const rest = scored.filter((s) => s.fits && s.score >= MIN_SCORE && !reserved.some((r) => r.albumId === s.albumId))
   const sameArtist = (it: { albumId: string }, out: { albumId: string }[]) => out.filter((o) => artistOf(o.albumId) === artistOf(it.albumId)).length
   const picked = [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length, (it, out) => sameArtist(it, [...reserved, ...out]) < perArtist)]
+  // The discovery place is guaranteed, not the top spot: it sits where its score puts it among the sound matches,
+  // so the first suggestion is always the closest one (or a documented link).
+  const disc = picked.findIndex((p) => p === foreignLocal)
+  if (disc >= 0) {
+    const [d] = picked.splice(disc, 1)
+    const links = picked.filter((p) => reserved.includes(p) && p !== d).length
+    let at = links
+    while (at < picked.length && picked[at].score >= d.score) at++
+    picked.splice(at, 0, d)
+  }
   return picked.map(({ albumId: id, score, reasons, newCountry }) => ({ albumId: id, score, reasons, ...(newCountry ? { newCountry } : {}) }))
 }
 
