@@ -81,3 +81,7 @@ Each of these musicians/groups **was named by Gazebo** as a musical inspiration 
 4. *Reset* (2015) — studio
 
 Only those four in the next ZIP, not repeats; *Italo by Numbers* (2018) after those. No records unreleased by 27 October 2026.
+
+## Claude import note (27 Oct 2026)
+
+Enriched from the original sleeves and interviews: debut influenced_by adds Ultravox and The Human League (Gazebo on Masterpiece, 70-80.it 2024); sounds_like adds The Time and Giorgio Moroder (Vehlinggo 2015); lyric themes from Rolling Stone Italia and Gazebo's FAQ (Telephone Mama is a Cold War spy concept); Univision fretless bass and drums credited. Reception researched by Claude.

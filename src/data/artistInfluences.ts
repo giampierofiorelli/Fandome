@@ -167,8 +167,8 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     source: 'Mike Oldfield: The Guardian 2014 (Terry Riley and TONTO behind Tubular Bells), Guitar Player 1978 (Bert Jansch, John Renbourn as formative acoustic guitar). Left out: the Beatles (liked), the Shadows (songs his early band covered), Ravel, Roedelius, Bartók, Stravinsky, Stevie Wonder, Led Zeppelin (listening, not named as influences)',
   },
   gazebo: {
-    names: ['Genesis', 'Gentle Giant', 'Yes', 'Deep Purple', 'Led Zeppelin', 'Leonard Cohen', 'Premiata Forneria Marconi', 'Banco del Mutuo Soccorso', 'Chick Corea', 'Frank Zappa', 'Miles Davis', 'Béla Bartók', 'Edgard Varèse'],
-    source: 'Gazebo: Tuttorock (prog: Genesis, Gentle Giant; Ritchie Blackmore; Chick Corea, Zappa, Miles Davis; Bartók, Varèse), Velvet Music 2013 (Genesis’ Selling England by the Pound, Banco), Recensiamo Musica (Leonard Cohen, Led Zeppelin, PFM), cinquantamila (Yes). Left out: the Beatles, Bob Dylan, Simon & Garfunkel (songs he learned to play), Lucio Battisti (loved)',
+    names: ['Ultravox', 'The Human League', 'Genesis', 'Gentle Giant', 'Yes', 'Deep Purple', 'Led Zeppelin', 'Leonard Cohen', 'Premiata Forneria Marconi', 'Banco del Mutuo Soccorso', 'Chick Corea', 'Frank Zappa', 'Miles Davis', 'Béla Bartók', 'Edgard Varèse'],
+    source: 'Gazebo: 70-80.it 2024 (Ultravox and Human League behind Masterpiece), Tuttorock (prog: Genesis, Gentle Giant; Ritchie Blackmore; Chick Corea, Zappa, Miles Davis; Bartók, Varèse), Velvet Music 2013 (Genesis’ Selling England by the Pound, Banco), Recensiamo Musica (Leonard Cohen, Led Zeppelin, PFM), cinquantamila (Yes). Left out: the Beatles, Bob Dylan, Simon & Garfunkel (songs he learned to play), Lucio Battisti (loved)',
   },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
