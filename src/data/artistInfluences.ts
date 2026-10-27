@@ -158,6 +158,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Otis Redding', 'Marvin Gaye', 'Prince'],
     source: 'Roland Gift, Explore Liverpool (Otis Redding, Marvin Gaye, what the band listened to when it began); Gift and David Steele, The Guardian 2025 (Prince’s If I Was Your Girlfriend vocal technique on She Drives Me Crazy). Sam Cooke and Al Green left out: Classic Pop’s narrative, not the band’s words',
   },
+  samanthafox: {
+    names: ['Blondie'],
+    source: 'Samantha Fox, El País 2015 (Debbie Harry as her inspiration); The Guardian 2017 (a Debbie Harry-style video for Touch Me)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

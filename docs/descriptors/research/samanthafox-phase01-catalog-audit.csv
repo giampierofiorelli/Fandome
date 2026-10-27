@@ -1,0 +1,13 @@
+﻿action,artist_id,album_id,title,year,type,exists_in_catalog,exists_in_descriptors,reason
+ADD_ARTIST_AND_ALBUM,samanthafox,samanthafox-touchme,Touch Me,1986,studio,no,no,New 27-column description; no artist in catalog.ts or seed.ts
+ADD_ALBUM,samanthafox,samanthafox-samanthafox,Samantha Fox,1987,studio,no,no,New 27-column description; no artist in catalog.ts or seed.ts
+ADD_ALBUM,samanthafox,samanthafox-iwannahavesomefun,I Wanna Have Some Fun,1988,studio,no,no,New 27-column description; no artist in catalog.ts or seed.ts
+ADD_ALBUM,samanthafox,samanthafox-justonenight,Just One Night,1991,studio,no,no,New 27-column description; no artist in catalog.ts or seed.ts
+DEFER_PHASE02,samanthafox,,21st Century Fox,1997,studio,no,no,Later original album; phase 02; 1997 European/1998 US editions
+DEFER_PHASE02,samanthafox,,Watching You Watching Me,2002,studio,no,no,Later record billed to Sam Fox; verify recording/first issue in phase 02
+DEFER_PHASE02,samanthafox,,Angel with an Attitude,2005,studio,no,no,Later original studio album; phase 02
+EXCLUDE,samanthafox,,Greatest Hits,1992,compilation,no,no,Excluded greatest hits; not an original studio album
+EXCLUDE,samanthafox,,The Hits Album,1995,compilation,no,no,Excluded retrospective
+EXCLUDE,samanthafox,,"Play It Again, Sam: The Fox Box",2017,compilation,no,no,"Box-set compilation, not new studio record"
+EXCLUDE,samanthafox,,Live in Japan 1989,2010,live,no,no,Live album excluded
+EXCLUDE,samanthafox,,SFX early Lamborghini recordings,1983,single,no,no,"Pre-debut band recordings; deluxe bonus only, not standalone studio LP"
