@@ -1,0 +1,12 @@
+album_id,title,year,type,in_catalog,action,notes
+notwist-thenotwist,The Notwist,1991,studio,no,add,First studio LP; label Bandcamp lists 1991; AllMusic and Deutschlandfunk list 1990; editorial date decision recorded.
+notwist-nook,Nook,1992,studio,no,add,Second studio LP; missing from catalog.ts; no duplicate desc file.
+notwist-12,12,1995,studio,no,add,Third studio LP; bonus remix discs excluded.
+notwist-shrink,Shrink,1998,studio,yes,keep,Phase 02
+notwist-neongolden,Neon Golden,2002,studio,yes,keep,Phase 02
+notwist-thedevilyoume,"The Devil, You + Me",2008,studio,yes,keep,Phase 02; existing spelling verified
+notwist-sturm,Sturm,2009,soundtrack,no,review and add,"Original instrumental film score, not live or compilation; 2009 release documented."
+notwist-closetotheglass,Close to the Glass,2014,studio,yes,keep,Later phase
+notwist-themessierobjects,The Messier Objects,2015,soundtrack,no,review and add,"Stage and film/theatre score collection; 2014 first issue sometimes listed, later 2015 edition; verify original issue before import."
+notwist-vertigodays,Vertigo Days,2021,studio,yes,keep,Later phase
+notwist-newsfromplanetzombie,News from Planet Zombie,2026,studio,no,add,Morr Music gives 13 March 2026 release; include in later phase.

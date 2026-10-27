@@ -1,0 +1,23 @@
+album_id,genre,source,source_url,scope,evidence
+notwist-thenotwist,hardcorepunk,"The Notwist, official Bandcamp release and label reissue text",https://thenotwist.bandcamp.com/album/the-notwist,whole album,Band reissue describes punk/hardcore and explosive hardcore sections; term hardcore punk supported by band 2008 interviews
+notwist-thenotwist,punkrock,"The Notwist, official Bandcamp release and label reissue text",https://thenotwist.bandcamp.com/album/the-notwist,whole album,Label describes punk-heavy debut; AllMusic punk rock core
+notwist-thenotwist,hardrock,"James Mason, AllMusic, The Notwist album review",https://www.allmusic.com/album/the-notwist-mw0000037917,whole album,James Mason describes hard rock debut
+notwist-thenotwist,heavymetal,"James Mason, AllMusic, The Notwist album review",https://www.allmusic.com/album/the-notwist-mw0000037917,some tracks,"James Mason explicitly identifies heavy rock/metal, emphasising formative sound"
+notwist-thenotwist,posthardcore,"James Mason, AllMusic, The Notwist album review",https://www.allmusic.com/album/the-notwist-mw0000037917,whole album,AllMusic explicitly indexes post-hardcore
+notwist-thenotwist,indierock,"James Mason, AllMusic, The Notwist album review",https://www.allmusic.com/album/the-notwist-mw0000037917,some tracks,AllMusic explicitly indexes indie rock
+notwist-thenotwist,alternativeindierock,"James Mason, AllMusic, The Notwist album review",https://www.allmusic.com/album/the-notwist-mw0000037917,whole album,AllMusic alternative/indie rock label
+notwist-nook,indierock,"The Notwist, Nook, official Bandcamp release",https://thenotwist.bandcamp.com/album/nook,whole album,Band reissue defines album as metal/hardcore-influenced indie rock
+notwist-nook,posthardcore,"James Mason, AllMusic, Nook album review",https://www.allmusic.com/album/nook-mw0000598894,whole album,AllMusic post-hardcore genre category
+notwist-nook,hardrock,"James Mason, AllMusic, Nook album review",https://www.allmusic.com/album/nook-mw0000598894,whole album,AllMusic reviewer names persistent hard rock character
+notwist-nook,heavymetal,"Norman Records, Nook reissue commentary",https://www.normanrecords.com/records/145608-the-notwist-nook,some tracks,Norman Records explicitly mentions heavy metal elements
+notwist-nook,hardcore,"The Notwist, Nook, official Bandcamp release",https://thenotwist.bandcamp.com/album/nook,some tracks,Band release commentary explicitly cites hardcore influence
+notwist-nook,alternativeindierock,"James Mason, AllMusic, Nook album review",https://www.allmusic.com/album/nook-mw0000598894,whole album,AllMusic classification alternative/indie rock
+notwist-12,indierock,"The Washington Post, review of 12, 21 November 1997",https://www.washingtonpost.com/archive/lifestyle/1997/11/21/daniel-cartier-avenue-a-rocket/672228e8-9aa1-431c-bf3a-105b19259f92/,whole album,Contemporary Washington Post explicitly identifies early 1990s indie rock
+notwist-12,alternativeindierock,"John Bush, AllMusic, 12 album review",https://www.allmusic.com/album/12-mw0000025040,whole album,AllMusic alternative/indie rock label
+notwist-12,posthardcore,"John Bush, AllMusic, 12 album review",https://www.allmusic.com/album/12-mw0000025040,some tracks,AllMusic identifies post-hardcore despite new electronic textures
+notwist-12,postrock,"Musik-Sammler, 12 (1995) CD+mini-CD version and style index",https://www.musik-sammler.de/release/the-notwist-12-cd-mini-cd-ep-346940/,some tracks,"Contemporary-era edition is indexed as post-rock on discographic entry, with progression and jazz improvisation"
+notwist-12,noiserock,"Musik-Sammler, 12 (1995) CD+mini-CD version and style index",https://www.musik-sammler.de/release/the-notwist-12-cd-mini-cd-ep-346940/,some tracks,Release entry names noise rock; noisy guitars remain in recording
+notwist-12,dancepop,"John Bush, AllMusic, 12 album review",https://www.allmusic.com/album/12-mw0000025040,some tracks,"John Bush describes unconventional dance-pop approach, not conventional club pop"
+notwist-12,electronic,"JPC Germany, 12 reissue catalogue notes",https://www.jpc.de/jpcng/poprock/detail/-/art/the-notwist-12/hnum/11152197,texture,JPC confirms first electronic snippets within otherwise guitar-driven record
+notwist-12,techno,"The Notwist, 12, official Bandcamp issue with Adrien Begrand PopMatters review",https://thenotwist.bandcamp.com/album/12,texture,Adrien Begrand documents subtle techno backing specifically on Torture Day
+notwist-12,jazz,"The Notwist, 12, official Bandcamp issue with Adrien Begrand PopMatters review",https://thenotwist.bandcamp.com/album/12,some tracks,Begrand singles out improvisational jazz turn on closing title track

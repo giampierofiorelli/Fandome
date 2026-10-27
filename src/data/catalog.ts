@@ -180,7 +180,7 @@ const ROWS: Row[] = [
   ['mgmt', 'MGMT', '#c95fa3', 'Kids, time to pretend', [['Oracular Spectacular', 2007], ['Congratulations', 2010], ['MGMT', 2013], ['Little Dark Age', 2018], ['Loss of Life', 2024]]],
   ['mika', 'MIKA', '#f0a03f', 'Colour, falsetto and Grace Kelly', [['Life in Cartoon Motion', 2007], ['The Boy Who Knew Too Much', 2009], ['The Origin of Love', 2012], ['No Place in Heaven', 2015], ['My Name Is Michael Holbrook', 2019], ['Que ta tête fleurisse toujours', 2023]]],
   ['neworder', 'New Order', '#3f7fa8', 'Blue Monday every day', [['Movement', 1981], ['Power, Corruption & Lies', 1983], ['Low-Life', 1985], ['Brotherhood', 1986], ['Technique', 1989], ['Republic', 1993], ['Get Ready', 2001], ['Waiting for the Sirens’ Call', 2005], ['Lost Sirens', 2013], ['Music Complete', 2015]]],
-  ['notwist', 'The Notwist', '#7a8f6a', 'Indietronica from Bavaria', [['Shrink', 1998], ['Neon Golden', 2002], ['The Devil, You + Me', 2008], ['Close to the Glass', 2014], ['Vertigo Days', 2021]]],
+  ['notwist', 'The Notwist', '#7a8f6a', 'Indietronica from Bavaria', [['The Notwist', 1991], ['Nook', 1992], ['12', 1995], ['Shrink', 1998], ['Neon Golden', 2002], ['The Devil, You + Me', 2008], ['Sturm', 2009], ['Close to the Glass', 2014], ['Vertigo Days', 2021], ['News from Planet Zombie', 2026]]],
   ['olly', 'Olly Alexander', '#e0577a', 'Polari, pride and pop', [['Polari', 2025]]],
   ['yearsyears', 'Years & Years', '#4ab5c9', 'King, Starstruck and Night Call', [['Communion', 2015], ['Palo Santo', 2018], ['Night Call', 2022]]],
   ['mccartney', 'Paul McCartney', '#a38a5a', 'Band on the run, still running', [['McCartney', 1970], ['Ram', 1971], ['Band on the Run', 1973], ['Flaming Pie', 1997], ['Egypt Station', 2018], ['McCartney III', 2020]]],

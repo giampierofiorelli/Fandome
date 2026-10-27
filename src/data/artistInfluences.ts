@@ -114,6 +114,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Rolling Stones', 'The Beatles', 'Fleetwood Mac', 'Queen', 'Elvis Presley', 'Shania Twain', 'Savage Garden', 'Norah Jones'],
     source: 'Harry Styles, NPR interview on Fine Line (Feb 2020): the artists he grew up with',
   },
+  notwist: {
+    names: ['Dinosaur Jr.', 'Neil Young', 'Jerry’s Kids', 'Minor Threat', 'Rites of Spring', 'Moving Targets', 'Wipers', 'Pitchfork', 'Sonic Youth', 'Hüsker Dü', 'Talk Talk', 'Stereolab', 'Autechre', 'Can', 'Neu!', 'Gil Evans', 'Mike Oldfield', 'The Police', 'Billy Cobham'],
+    source: 'Markus Acher: Pitchfork interview; 15 Questions; Los Angeles Times 2003; Rock Obrobje and The Skinny (late Talk Talk; Stereolab, Autechre, Can, Neu!, Gil Evans)',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',
