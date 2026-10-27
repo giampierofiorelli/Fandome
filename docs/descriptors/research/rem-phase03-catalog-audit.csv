@@ -1,0 +1,5 @@
+album_id,title,year,type,catalog_status,catalog_action,phase,notes
+rem-automaticforthepeople,Automatic for the People,1992,studio,missing,add original album under artist rem,phase03,R.E.M. absent from descriptors branch catalog.ts at verification; do not create artist twice if earlier phases imported locally.
+rem-monster,Monster,1994,studio,missing,add original album under artist rem,phase03,R.E.M. absent from descriptors branch catalog.ts at verification; do not create artist twice if earlier phases imported locally.
+rem-newadventuresinhifi,New Adventures in Hi-Fi,1996,studio,missing,add original album under artist rem,phase03,R.E.M. absent from descriptors branch catalog.ts at verification; do not create artist twice if earlier phases imported locally.
+rem-up,Up,1998,studio,missing,add original album under artist rem,phase03,R.E.M. absent from descriptors branch catalog.ts at verification; do not create artist twice if earlier phases imported locally.
