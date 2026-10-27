@@ -122,6 +122,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Flaming Lips', 'Psychic TV', 'Chrome', 'Spiritualized', 'Spacemen 3', 'Suicide', 'Royal Trux', 'Television Personalities', 'Roxy Music', 'Neil Young', 'Skip Spence', 'Mayo Thompson', 'Phish'],
     source: 'MGMT: Song Exploder via Pitchfork (Flaming Lips); Caught in the Crossfire 2008; Pitchfork interview 2010; Electronic Beats 2013 (Skip Spence, Mayo Thompson); Relix/Jambands 2013 (Phish)',
   },
+  duranduran: {
+    names: ['Roxy Music', 'David Bowie', 'Chic', 'Sex Pistols', 'Giorgio Moroder', 'Japan', 'Kraftwerk', 'Ultravox', 'The Human League', 'T. Rex', 'Sparks', 'Siouxsie and the Banshees', 'The Cure', 'The Clash', 'The Damned'],
+    source: 'duranduran.com interviews: Simon Le Bon 2012 (Roxy Music, Chic, Sex Pistols), Roger Taylor 2011-2012 (Bowie, Roxy Music, Japan, Kraftwerk, Ultravox), Nick Rhodes 2021-2022 (Moroder, Human League Reproduction); Vogue 2021 (T. Rex, Sparks, Siouxsie, The Cure, The Clash, The Damned)',
+  },
   alphaville: {
     names: ['Orchestral Manoeuvres in the Dark', 'Tubeway Army', 'Gary Numan', 'David Bowie', 'Roxy Music', 'Kraftwerk', 'The Human League', 'Rupert Hine', 'Scott Walker', 'Steve Harley', 'Cockney Rebel', 'David Sylvian', 'Punishment of Luxury', 'Eyeless in Gaza', 'The Associates', 'Tim Curry', 'Brian Protheroe', 'Seventh Wave', 'Sex Pistols', 'The Clash', 'Queen', 'Freddie Mercury'],
     source: 'Marian Gold: Classic Pop 2025 (OMD, Tubeway Army, Gary Numan), harmony.fm 2024 (OMD Electricity, Freddie Mercury), Die Presse 2023 (Bowie, Sex Pistols, The Clash), 1999-2000 fan Q&A archive (Roxy Music, Kraftwerk, Human League, Rupert Hine, Scott Walker, Steve Harley, Sylvian and others), Berliner Zeitung',
