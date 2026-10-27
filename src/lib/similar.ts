@@ -260,7 +260,11 @@ function rarityOf(g: string) {
 // Genres that say what a record is for, not how it sounds (a soundtrack can be disco, orchestral, rock or a musical):
 // they barely count for similarity and are never given as a reason on their own.
 export const FORMAT_GENRES = new Set(['soundtrack', 'videogamemusic'])
-const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : 1)
+// Catalogue buckets, not sounds (owner, Oct 2026: R.E.M. and No Doubt matched only on these): AllMusic's broad
+// market styles and radio formats. They stay in the descriptors but weigh little, and are named as a reason
+// only when nothing more specific is shared.
+export const UMBRELLA_GENRES = new Set(['alternativepoprock', 'alternativeindierock', 'contemporarypoprock', 'adultalternativepoprock', 'albumrock', 'adultcontemporary', 'collegerock', 'americanunderground'])
+const soundWeight = (g: string) => (FORMAT_GENRES.has(g) ? 0.1 : UMBRELLA_GENRES.has(g) ? 0.3 : 1)
 const byRarity = (m: Map<string, number>) => new Map([...m].map(([g, w]) => [g, w * rarityOf(g) * soundWeight(g)]))
 
 const genreVectors = new WeakMap<Profile, Map<string, number>>()
@@ -474,7 +478,9 @@ function buildComparison(a: Profile, b: Profile): Comparison {
 
   // Shared genres, most important for both first; else the closest related pair.
   const weight = (g: string) => Math.min(a.genres.get(g)!, b.genres.get(g)!) * rarityOf(g)
-  const shared = [...a.genres.keys()].filter((g) => b.genres.has(g) && !FORMAT_GENRES.has(g)).sort((x, y) => weight(y) - weight(x))
+  const sharedAll = [...a.genres.keys()].filter((g) => b.genres.has(g) && !FORMAT_GENRES.has(g)).sort((x, y) => weight(y) - weight(x))
+  const specific = sharedAll.filter((g) => !UMBRELLA_GENRES.has(g))
+  const shared = specific.length ? specific : sharedAll
   const reasons = [...links]
   if (shared.length) reasons.push(`Both ${and(shared.slice(0, 3).map((g) => genreLabel(g).toLowerCase()))}`)
   else {
@@ -674,7 +680,7 @@ export interface SimilarArtist {
 }
 
 // An artist's critical standing: the average acclaim (0-5) of their described albums that have one.
-const STANDING_WEIGHT = 0.15
+const STANDING_WEIGHT = 0.2
 function standing(albums: Profile[]) {
   const xs = albums.map((p) => p.acclaim).filter((x): x is number => x !== undefined)
   return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : undefined
@@ -711,9 +717,10 @@ export function similarArtists(
     const isNew = Boolean(from && to && from !== to && isLocalArtist(other))
     // Critical standing (owner, Oct 2026): an artist critics rate well below this one is a weaker suggestion,
     // however close the genres (No Doubt for R.E.M.). Average acclaim of the described albums; an artist with
-    // no rated album counts as mixed (3), so having no reviews is no advantage.
+    // no rated album counts as mixed (3), so having no reviews is no advantage. Only downward and only past a
+    // full point: artists of similar standing, or rated higher, are not affected (owner).
     const mine = standing(myAlbums)
-    const standingGap = mine === undefined ? 0 : Math.max(0, mine - (standing(theirAlbums) ?? 3) - 0.5)
+    const standingGap = mine === undefined ? 0 : Math.max(0, mine - (standing(theirAlbums) ?? 3) - 1)
     const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
     const why = best?.c.reasons[0] ?? c.reasons[0]
     if (score < 0.3 || !why || !best) continue
