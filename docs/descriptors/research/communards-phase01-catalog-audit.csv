@@ -1,0 +1,3 @@
+album_id,artist_id,title,year,type,in_catalog_ts,in_seed_ts,already_described,action,evidence_url
+communards-communards,communards,Communards,1986,studio,no,no,no (docs/descriptors/communards.csv missing; 404),add artist and album,https://musicbrainz.org/artist/7696c8a8-f971-4b8a-820e-b8bd922bfa57
+communards-red,communards,Red,1987,studio,no,no,no (docs/descriptors/communards.csv missing; 404),add artist and album,https://musicbrainz.org/artist/7696c8a8-f971-4b8a-820e-b8bd922bfa57

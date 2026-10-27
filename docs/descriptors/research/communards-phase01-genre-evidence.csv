@@ -1,0 +1,18 @@
+album_id,genre,source,url,scope,evidence
+communards-communards,dancepop,debut_bandcamp,https://communards.bandcamp.com/album/communards,whole album,Label Bandcamp tags and AllMusic style
+communards-communards,synthpop,debut_bandcamp,https://communards.bandcamp.com/album/communards,whole album,Label Bandcamp genre tag and pressing corroboration
+communards-communards,alternativedance,debut_allmusic,https://www.allmusic.com/album/communards-mw0000193376,whole album,AllMusic album style; label Bandcamp calls alternative dance
+communards-communards,hinrg,label,https://londonrecords.co.uk/artists/the-communards/,some tracks,London Records specifically identifies high-energy disco in debut singles
+communards-communards,disco,debut_pressing,https://www.caprarecords.com/release/1460893/the-communards-communards,some tracks,Original LP pressing metadata; dance tracks and cover of Dont Leave Me This Way
+communards-communards,pop,debut_bandcamp,https://communards.bandcamp.com/album/communards,whole album,Label pop tag and album framing
+communards-communards,electronic,debut_pressing,https://www.caprarecords.com/release/1460893/the-communards-communards,texture,"Pressing genre Electronic: broad texture, not indication all instruments electronic"
+communards-communards,jazz,richard_2025,https://www.classicpopmag.com/features/richard-coles-communards/,some tracks,Richard Coles describes supper-club jazz; jazz standard Lover Man and LP arrangements
+communards-red,dancepop,red_bandcamp,https://communards.bandcamp.com/album/red,whole album,London Records Bandcamp label genre tag; AllMusic corroboration
+communards-red,synthpop,red_bandcamp,https://communards.bandcamp.com/album/red,whole album,Official tag and UK original pressing classification
+communards-red,alternativedance,red_allmusic,https://www.allmusic.com/album/red-mw0000651576,whole album,AllMusic album style and official release tags
+communards-red,disco,red_allmusic,https://www.allmusic.com/album/red-mw0000651576,some tracks,AllMusic calls poppy disco on album; German pressing disco style
+communards-red,hinrg,red_anniv,https://store.thecommunards.com/product/red-35th-anniversary-edition-colour?cur=GBP,some tracks,Official description identifies hi-NRG production and Never Can Say Goodbye
+communards-red,pop,red_aoty,https://www.albumoftheyear.org/album/33758-the-communards-red.php,whole album,Album of the Year genre and London Bandcamp label tag
+communards-red,eurodance,red_allmusic,https://www.allmusic.com/album/red-mw0000651576,whole album,AllMusic retrospective terms record late-1980s Euro-dance; not 1990s-period assertion
+communards-red,electronic,red_pressings,https://www.chartsurfer.de/artist/the-communards/red-album_ffhrhg.html,texture,Original LP pressing broad Electronic category alongside synthpop
+communards-red,ballad,red_la,https://www.latimes.com/archives/la-xpm-1988-03-06-ca-684-story.html,some tracks,"LA Times specifically notes Red ballads, especially For a Friend"
