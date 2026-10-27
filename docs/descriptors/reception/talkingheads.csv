@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-talkingheads-talkingheads77,4,5,"Debut, Psycho Killer | Rolling Stone 500 #290 (2003) | 1001 Albums | AllMusic 5/5 | Uncut 5/5 | Pazz & Jop 1977 #7"
-talkingheads-moresongsaboutbuildingsandfood,4,5,"Rolling Stone 500 (2020) #364 | Pitchfork 70s #45 | AllMusic 5/5 | Uncut 5/5 | Christgau A | Take Me to the River | RIAA Gold"
-talkingheads-fearofmusic,4,5,"Album of 1979 for NME, Melody Maker and LA Times | Pitchfork 70s list | AllMusic uneven but strong | US #21, RIAA Gold"
-talkingheads-remaininlight,5,5,"Rolling Stone 500 (2020) #39 | Pitchfork 80s #2 | AllMusic 5/5 | Pitchfork 10 | Album of 1980 for Sounds and Melody Maker | RIAA Gold"
-talkingheads-speakingintongues,5,4,"Commercial breakthrough, Burning Down the House (US #9) | Rolling Stone 80s #54 | Slant 80s #89 | US #15, RIAA Platinum"
-talkingheads-littlecreatures,4,4,"Pazz & Jop album of 1985 | best-selling studio album, RIAA 2x Platinum | mixed to positive reviews (AllMusic, Uncut, Spin favourable)"
-talkingheads-truestories,2,3,"AllMusic 2.5/5 | Uncut 8/10 | RS Album Guide 2/5 | Christgau B | UK #7, US #17, RIAA Gold"
-talkingheads-naked,2,3,"Rolling Stone 4/5 | NME 9.7/10 at release | AllMusic 3/5 | RS Album Guide 2/5 | UK #3, US #19, RIAA Gold | last album"
+album_id,importance,acclaim,mainstream,sources
+talkingheads-talkingheads77,4,5,2,"Debut, Psycho Killer | Rolling Stone 500 #290 (2003) | 1001 Albums | AllMusic 5/5 | Uncut 5/5 | Pazz & Jop 1977 #7 | mainstream: Sire; CBGB new-wave scene debut, cult band"
+talkingheads-moresongsaboutbuildingsandfood,4,5,2,"Rolling Stone 500 (2020) #364 | Pitchfork 70s #45 | AllMusic 5/5 | Uncut 5/5 | Christgau A | Take Me to the River | RIAA Gold | mainstream: Sire; Eno; new-wave art-punk, cult with minor hit"
+talkingheads-fearofmusic,4,5,2,"Album of 1979 for NME, Melody Maker and LA Times | Pitchfork 70s list | AllMusic uneven but strong | US #21, RIAA Gold | mainstream: Sire; Eno; art-punk, critics' band"
+talkingheads-remaininlight,5,5,3,Rolling Stone 500 (2020) #39 | Pitchfork 80s #2 | AllMusic 5/5 | Pitchfork 10 | Album of 1980 for Sounds and Melody Maker | RIAA Gold | mainstream: Sire; Eno; Afrobeat-influenced art-rock (brief anchor)
+talkingheads-speakingintongues,5,4,3,"Commercial breakthrough, Burning Down the House (US #9) | Rolling Stone 80s #54 | Slant 80s #89 | US #15, RIAA Platinum | mainstream: Sire; self-produced; Burning Down the House US hit, artist-led"
+talkingheads-littlecreatures,4,4,3,"Pazz & Jop album of 1985 | best-selling studio album, RIAA 2x Platinum | mixed to positive reviews (AllMusic, Uncut, Spin favourable) | mainstream: Sire; pop-leaning, radio singles but band's own vision"
+talkingheads-truestories,2,3,3,"AllMusic 2.5/5 | Uncut 8/10 | RS Album Guide 2/5 | Christgau B | UK #7, US #17, RIAA Gold | mainstream: Sire; companion to Byrne's film, artist-led pop"
+talkingheads-naked,2,3,3,"Rolling Stone 4/5 | NME 9.7/10 at release | AllMusic 3/5 | RS Album Guide 2/5 | UK #3, US #19, RIAA Gold | last album | mainstream: Sire; Steve Lillywhite; world-music art-rock, artist-led"

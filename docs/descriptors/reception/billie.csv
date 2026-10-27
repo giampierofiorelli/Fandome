@@ -1,6 +1,6 @@
-album_id,importance,acclaim,sources
-billie-dontsmileatme,4,3,"AllMusic 3.5/5 | Christgau B+ | US Billboard 200 #14 | RIAA Platinum"
-billie-whenweallfallasleepwheredowego,5,5,"Metacritic 82 | Rolling Stone 500 (2020) #397 | Grammy Album of the Year | US Billboard 200 #1"
-billie-happierthanever,4,5,"Metacritic 86 | Rolling Stone 250 Greatest Albums of 21st Century #155 | US Billboard 200 #1 | Grammy AOTY nominee"
-billie-guitarsongs,1,,"Did not chart as album | no critic ratings found"
-billie-hitmehardandsoft,4,5,"Metacritic 89"
+album_id,importance,acclaim,mainstream,sources
+billie-dontsmileatme,4,3,3,"AllMusic 3.5/5 | Christgau B+ | US Billboard 200 #14 | RIAA Platinum | mainstream: Darkroom/Interscope; Finneas home-made alt-pop EP, artist-led"
+billie-whenweallfallasleepwheredowego,5,5,3,"Metacritic 82 | Rolling Stone 500 (2020) #397 | Grammy Album of the Year | US Billboard 200 #1 | mainstream: Darkroom/Interscope; Finneas bedroom production, huge seller but auteur"
+billie-happierthanever,4,5,3,"Metacritic 86 | Rolling Stone 250 Greatest Albums of 21st Century #155 | US Billboard 200 #1 | Grammy AOTY nominee | mainstream: Darkroom/Interscope; siblings-written, self-produced, artist-led"
+billie-guitarsongs,1,,3,Did not chart as album | no critic ratings found | mainstream: Interscope two-song acoustic EP; artist-led
+billie-hitmehardandsoft,4,5,3,"Metacritic 89 | mainstream: Darkroom/Interscope; Finneas production, no pre-release singles, auteur"

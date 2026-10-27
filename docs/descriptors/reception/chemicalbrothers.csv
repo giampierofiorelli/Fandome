@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-chemicalbrothers-fourteenthcenturysky,2,,"Wikipedia: 1994 Dust Brothers EP, Chemical Beats (gave band its name); no reviews found"
-chemicalbrothers-exitplanetdust,4,4,"AllMusic 5/5 | NME 8/10 | Q 3/5 | RS Album Guide 3/5 | 1001 Albums | UK #9 Platinum"
-chemicalbrothers-digyourownhole,5,5,"AllMusic 5/5 | EW A | Pitchfork 8.4 | Spin 8/10 | UK #1, US #14 Gold"
-chemicalbrothers-surrender,4,4,"Guardian 5/5 | Pitchfork 9.0 | AllMusic 3/5 | NME 8/10 | UK #1, 2x Platinum"
+album_id,importance,acclaim,mainstream,sources
+chemicalbrothers-fourteenthcenturysky,2,,1,"Wikipedia: 1994 Dust Brothers EP, Chemical Beats (gave band its name); no reviews found | mainstream: Junior Boy's Own club EP; underground breakbeat"
+chemicalbrothers-exitplanetdust,4,4,2,AllMusic 5/5 | NME 8/10 | Q 3/5 | RS Album Guide 3/5 | 1001 Albums | UK #9 Platinum | mainstream: Freestyle Dust/Virgin; club big beat for dance scene
+chemicalbrothers-digyourownhole,5,5,3,"AllMusic 5/5 | EW A | Pitchfork 8.4 | Spin 8/10 | UK #1, US #14 Gold | mainstream: Freestyle Dust/Virgin; UK #1, 'Setting Sun', artist-led big beat"
+chemicalbrothers-surrender,4,4,3,"Guardian 5/5 | Pitchfork 9.0 | AllMusic 3/5 | NME 8/10 | UK #1, 2x Platinum | mainstream: Freestyle Dust/Virgin; UK #1, crossover singles, artist-led dance album"

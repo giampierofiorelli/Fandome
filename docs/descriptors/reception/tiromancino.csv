@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-tiromancino-tiromancyno,1,1,"Debut as Tiromancyno on RCA, about 3,000 copies, out of print (it.wikipedia) | ignored by critics and public, poor reviews (Rockol, orrorea33giri) | Zampaglione himself calls it one of the five worst records ever"
-tiromancino-insisto,2,,Early 90s period of 'relative fame' (it.wikipedia) | no rating found
-tiromancino-alonealieno,2,,Early 90s period (it.wikipedia) | no rating found
-tiromancino-rosaspinto,2,,Last album before the breakthrough with La descrizione di un attimo (it.wikipedia) | no rating found
-tiromancino-ladescrizionediunattimo,5,,"The breakthrough with Riccardo Sinigallia: Strade at Sanremo 2000, Due destini in Le fate ignoranti (it.wikipedia) | FIMI #10, Platinum | no critic rating found"
-tiromancino-incontinuomovimento,4,4,"Mucchio Extra '50 album fondamentali del rock italiano 2001-2010' (Federico Guglielmi) | FIMI #2, 200k+ sold"
-tiromancino-illusioniparallele,3,,"Amore impossibile | FIMI #3, Platinum (100k+) | no critic rating found"
-tiromancino-lalbadidomani,2,3,Rockol (Paolo Panzeri) coherent album vs DeBaser weaker chapter (research notes) | FIMI #12
+album_id,importance,acclaim,mainstream,sources
+tiromancino-tiromancyno,1,1,3,"Debut as Tiromancyno on RCA, about 3,000 copies, out of print (it.wikipedia) | ignored by critics and public, poor reviews (Rockol, orrorea33giri) | Zampaglione himself calls it one of the five worst records ever | mainstream: RCA debut; dance-pop leaning, major-label, but little chart impact"
+tiromancino-insisto,2,,2,"Early 90s period of 'relative fame' (it.wikipedia) | no rating found | mainstream: Independent-era Roman alternative pop, cult scene"
+tiromancino-alonealieno,2,,2,"Early 90s period (it.wikipedia) | no rating found | mainstream: Indie label, alternative/psychedelic pop, small audience"
+tiromancino-rosaspinto,2,,2,Last album before the breakthrough with La descrizione di un attimo (it.wikipedia) | no rating found | mainstream: Independent alternative pop on the margins of charts
+tiromancino-ladescrizionediunattimo,5,,3,"The breakthrough with Riccardo Sinigallia: Strade at Sanremo 2000, Due destini in Le fate ignoranti (it.wikipedia) | FIMI #10, Platinum | no critic rating found | mainstream: Brief anchor: Virgin; auteur pop with trip-hop textures, charted"
+tiromancino-incontinuomovimento,4,4,3,"Mucchio Extra '50 album fondamentali del rock italiano 2001-2010' (Federico Guglielmi) | FIMI #2, 200k+ sold | mainstream: Virgin/EMI; artist-led auteur pop, charted"
+tiromancino-illusioniparallele,3,,3,"Amore impossibile | FIMI #3, Platinum (100k+) | no critic rating found | mainstream: Virgin/EMI; Zampaglione-led auteur pop, top-10 charts"
+tiromancino-lalbadidomani,2,3,3,"Rockol (Paolo Panzeri) coherent album vs DeBaser weaker chapter (research notes) | FIMI #12 | mainstream: Virgin/EMI; artist-led pop, radio presence but auteur"

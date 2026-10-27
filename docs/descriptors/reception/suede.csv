@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-suede-suede,5,5,"Mercury Prize 1993 | AllMusic 5/5 | Pitchfork 8.4 | NME 500 #78 | Pitchfork Britpop #13 | UK #1"
-suede-dogmanstar,5,5,"AllMusic 4.5/5 | Pitchfork 8.9 | NME 500 #31 | Pitchfork Britpop #5 | Melody Maker top 100 #16 | UK #3"
-suede-comingup,4,4,"AllMusic 4/5 | Pitchfork 7.9 | NME 8/10 | UK #1 BPI Platinum, 5 top-10 singles"
-suede-headmusic,3,3,"AllMusic 3/5 | Pitchfork 7.4 | EW C- | RS 3/5 | UK #1 BPI Gold"
+album_id,importance,acclaim,mainstream,sources
+suede-suede,5,5,3,"Mercury Prize 1993 | AllMusic 5/5 | Pitchfork 8.4 | NME 500 #78 | Pitchfork Britpop #13 | UK #1 | mainstream: Nude/Sony; UK #1 indie debut, artist-led Britpop precursor"
+suede-dogmanstar,5,5,2,"AllMusic 4.5/5 | Pitchfork 8.9 | NME 500 #31 | Pitchfork Britpop #5 | Melody Maker top 100 #16 | UK #3 | mainstream: Nude; uncompromising grandiose record, commercial disappointment, cult"
+suede-comingup,4,4,4,"AllMusic 4/5 | Pitchfork 7.9 | NME 8/10 | UK #1 BPI Platinum, 5 top-10 singles | mainstream: Nude/Sony; Ed Buller; deliberately singles-driven pop album, five top-10 hits"
+suede-headmusic,3,3,3,"AllMusic 3/5 | Pitchfork 7.4 | EW C- | RS 3/5 | UK #1 BPI Gold | mainstream: Nude/Sony; Steve Osborne; band-led electronic-tinged, charting"

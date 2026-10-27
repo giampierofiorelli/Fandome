@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-cranberries-everybodyelseisdoingitsowhycantwe,5,4,"AllMusic 4.5/5 | Pitchfork 8.5 | Q 4/5 | Slant 4/5 | NME 6/10 | RIAA 5x Platinum | BPI 2x Platinum"
-cranberries-noneedtoargue,5,3,"Q 4/5 | Music Week 4/5 | EW B | NME 4/10 | Select 2/5 | RIAA 7x Platinum | SNEP Diamond"
-cranberries-tothefaithfuldeparted,3,3,"AllMusic 4/5 | EW A− | Rolling Stone 2/5 | Christgau C+ | Wall of Sound 62 | RIAA 2x Platinum"
-cranberries-burythehatchet,3,2,"AllMusic 4/5 | EW D | A.V. Club & Chicago Tribune unfavourable | LA Times 2/4 | Rolling Stone 3/5 | RIAA Gold"
+album_id,importance,acclaim,mainstream,sources
+cranberries-everybodyelseisdoingitsowhycantwe,5,4,3,"AllMusic 4.5/5 | Pitchfork 8.5 | Q 4/5 | Slant 4/5 | NME 6/10 | RIAA 5x Platinum | BPI 2x Platinum | mainstream: Island; Stephen Street; jangly indie roots, became crossover hit"
+cranberries-noneedtoargue,5,3,4,Q 4/5 | Music Week 4/5 | EW B | NME 4/10 | Select 2/5 | RIAA 7x Platinum | SNEP Diamond | mainstream: Island; Zombie; built on debut's success for rock radio
+cranberries-tothefaithfuldeparted,3,3,4,AllMusic 4/5 | EW A− | Rolling Stone 2/5 | Christgau C+ | Wall of Sound 62 | RIAA 2x Platinum | mainstream: Island; Bruce Fairbairn arena-rock production
+cranberries-burythehatchet,3,2,4,AllMusic 4/5 | EW D | A.V. Club & Chicago Tribune unfavourable | LA Times 2/4 | Rolling Stone 3/5 | RIAA Gold | mainstream: Island; Benedict Fenner; radio-oriented pop-rock

@@ -1,3 +1,3 @@
-album_id,importance,acclaim,sources
-chappell-schoolnights,1,,"Wikipedia discography: 2017 Atlantic debut EP, no reviews found"
-chappell-theriseandfallofamidwestprincess,5,5,"Metacritic 85 | AllMusic 4.5/5 | Pitchfork 7.2 | US #2, UK #1, US 2x Platinum"
+album_id,importance,acclaim,mainstream,sources
+chappell-schoolnights,1,,3,"Wikipedia discography: 2017 Atlantic debut EP, no reviews found | mainstream: Atlantic; Dan Nigro; low-key synth-pop EP, dropped by label"
+chappell-theriseandfallofamidwestprincess,5,5,4,"Metacritic 85 | AllMusic 4.5/5 | Pitchfork 7.2 | US #2, UK #1, US 2x Platinum | mainstream: Island/Amusement; Dan Nigro; camp pop built on viral singles"

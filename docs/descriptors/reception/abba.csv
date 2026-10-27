@@ -1,8 +1,8 @@
-album_id,importance,acclaim,sources
-abba-ringring,2,2,"AllMusic 2.5/5 | Spin Alt. Record Guide 4/10 | Encycl. Pop Music 2/5 | SWE #2"
-abba-waterloo,4,3,"AllMusic 3/5 | RS Album Guide 3/5 | Ondarock 5.5 | Eurovision breakthrough, SWE #1"
-abba-abba,4,4,"AllMusic 4/5 | RS Album Guide 4/5 | Ondarock 7 | SWE #1, ARIA 10x Platinum"
-abba-arrival,5,5,"AllMusic 4.5/5 | Pitchfork 8.6 | 1001 Albums | US National Recording Registry 2024 | UK #1, best-selling UK studio album"
-abba-thealbum,4,4,"AllMusic 4/5 | RS Album Guide 4/5 | NME 7/10 | Spin Alt. Guide 8/10 | UK #1, RIAA Platinum"
-abba-voulezvous,4,4,"Blender 5/5 | Uncut 4/5 | AllMusic 3.5/5 | RS Album Guide 3/5 | UK #1"
-abba-supertrouper,4,4,"AllMusic 4/5 | Blender 4/5 | RS Album Guide 4/5 | Record Mirror 5/5 | UK #1"
+album_id,importance,acclaim,mainstream,sources
+abba-ringring,2,2,4,"AllMusic 2.5/5 | Spin Alt. Record Guide 4/10 | Encycl. Pop Music 2/5 | SWE #2 | mainstream: Polar; Andersson/Ulvaeus/Stig Anderson pop aimed at Swedish charts, Eurovision attempt"
+abba-waterloo,4,3,5,"AllMusic 3/5 | RS Album Guide 3/5 | Ondarock 5.5 | Eurovision breakthrough, SWE #1 | mainstream: Polar/Epic/Atlantic; Eurovision winner, in-house hit factory built for global charts"
+abba-abba,4,4,5,"AllMusic 4/5 | RS Album Guide 4/5 | Ondarock 7 | SWE #1, ARIA 10x Platinum | mainstream: Polar/Epic; Andersson/Ulvaeus hit-crafted pop singles for global charts"
+abba-arrival,5,5,5,"AllMusic 4.5/5 | Pitchfork 8.6 | 1001 Albums | US National Recording Registry 2024 | UK #1, best-selling UK studio album | mainstream: Polar/Epic; 'Dancing Queen', global chart pop hit machine"
+abba-thealbum,4,4,5,"AllMusic 4/5 | RS Album Guide 4/5 | NME 7/10 | Spin Alt. Guide 8/10 | UK #1, RIAA Platinum | mainstream: Polar/Epic; global chart pop singles, format-shaped hit craft"
+abba-voulezvous,4,4,5,Blender 5/5 | Uncut 4/5 | AllMusic 3.5/5 | RS Album Guide 3/5 | UK #1 | mainstream: Polar/Epic; disco-pop singles built for global charts
+abba-supertrouper,4,4,5,"AllMusic 4/5 | Blender 4/5 | RS Album Guide 4/5 | Record Mirror 5/5 | UK #1 | mainstream: Polar/Epic; global chart pop product, singles-driven"

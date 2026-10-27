@@ -1,3 +1,3 @@
-album_id,importance,acclaim,sources
-gala-comeintomylife,5,2,"Her only hit album (Freed from Desire, Let a Boy Cry); SNEP Gold | AllMusic 1.5/5 | Sunday Mirror 7/10 | Planet Sound 3/5"
-gala-toughlove,1,,"Comeback album, little coverage (Qobuz); no reviews found"
+album_id,importance,acclaim,mainstream,sources
+gala-comeintomylife,5,2,4,"Her only hit album (Freed from Desire, Let a Boy Cry); SNEP Gold | AllMusic 1.5/5 | Sunday Mirror 7/10 | Planet Sound 3/5 | mainstream: Do It Yourself/Molto Bene; 'Freed from Desire' Eurodance product for clubs and charts"
+gala-toughlove,1,,2,"Comeback album, little coverage (Qobuz); no reviews found | mainstream: Independent comeback; dance-rock, small audience"

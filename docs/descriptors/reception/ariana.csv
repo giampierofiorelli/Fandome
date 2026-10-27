@@ -1,11 +1,11 @@
-album_id,importance,acclaim,sources
-ariana-yourstruly,4,4,"Metacritic 81 (9 reviews) | US #1 debut"
-ariana-myeverything,4,3,"Metacritic 64 | Grammy nom Best Pop Vocal Album | US #1, RIAA 4x Platinum"
-ariana-dangerouswoman,4,4,"Metacritic 76 | Grammy nom Best Pop Vocal Album | Billboard 2016 #22"
-ariana-sweetener,4,4,"Metacritic 81 | Grammy Best Pop Vocal Album | Billboard 2018 #1 | Pitchfork 2010s #100 | Billboard 2010s #38"
-ariana-thankunext,5,5,"Metacritic 86 | Rolling Stone & Billboard album of 2019 | RS 250 best of 21st century | Grammy AOTY nom"
-ariana-positions,3,3,"Metacritic 72 | Grammy nom Best Pop Vocal Album | US #1"
-ariana-eternalsunshine,4,4,"Metacritic 84 | Rolling Stone 2024 #8 | Billboard 2024 #6 | Grammy nom Best Pop Vocal Album"
-ariana-wickedthesoundtrack,3,4,"AllMusic 3.5/5 | Telegraph 4/5 | Grammy nom Compilation Soundtrack | US #2"
-ariana-wickedforgoodthesoundtrack,2,3,"AllMusic 3.5/5 | AP 3.5/5 | reviews mixed to positive | US #2"
-ariana-petal,3,3,"Metacritic 64 (11 reviews) | Pitchfork 6.5 | AP 3/5 | Attitude 5/5"
+album_id,importance,acclaim,mainstream,sources
+ariana-yourstruly,4,4,5,"Metacritic 81 (9 reviews) | US #1 debut | mainstream: Republic; Babyface, Harmony Samuels; teen-star retro R&B pop built for charts"
+ariana-myeverything,4,3,5,"Metacritic 64 | Grammy nom Best Pop Vocal Album | US #1, RIAA 4x Platinum | mainstream: Republic; Max Martin, Savan Kotecha; global chart pop product"
+ariana-dangerouswoman,4,4,5,"Metacritic 76 | Grammy nom Best Pop Vocal Album | Billboard 2016 #22 | mainstream: Republic; Max Martin, ILYA; superstar radio pop"
+ariana-sweetener,4,4,5,"Metacritic 81 | Grammy Best Pop Vocal Album | Billboard 2018 #1 | Pitchfork 2010s #100 | Billboard 2010s #38 | mainstream: Republic; Max Martin, Pharrell; global chart pop"
+ariana-thankunext,5,5,5,"Metacritic 86 | Rolling Stone & Billboard album of 2019 | RS 250 best of 21st century | Grammy AOTY nom | mainstream: Republic; Tommy Brown, Max Martin; streaming-record global chart product"
+ariana-positions,3,3,5,Metacritic 72 | Grammy nom Best Pop Vocal Album | US #1 | mainstream: Republic; Tommy Brown team; superstar R&B-pop for streaming charts
+ariana-eternalsunshine,4,4,5,"Metacritic 84 | Rolling Stone 2024 #8 | Billboard 2024 #6 | Grammy nom Best Pop Vocal Album | mainstream: Republic; Max Martin, ILYA; global No.1 superstar pop"
+ariana-wickedthesoundtrack,3,4,4,"AllMusic 3.5/5 | Telegraph 4/5 | Grammy nom Compilation Soundtrack | US #2 | mainstream: Republic; Broadway musical film cast album, mass-market blockbuster tie-in"
+ariana-wickedforgoodthesoundtrack,2,3,4,"AllMusic 3.5/5 | AP 3.5/5 | reviews mixed to positive | US #2 | mainstream: Republic; sequel film cast album, blockbuster tie-in"
+ariana-petal,3,3,4,"Metacritic 64 (11 reviews) | Pitchfork 6.5 | AP 3/5 | Attitude 5/5 | mainstream: Republic; Max Martin, ILYA; superstar album with darker, more experimental textures"

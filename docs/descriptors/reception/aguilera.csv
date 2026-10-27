@@ -1,11 +1,11 @@
-album_id,importance,acclaim,sources
-aguilera-christinaaguilera,5,3,"AllMusic 3.5/5 | Rolling Stone 2.5/5 | RIAA 9x Platinum, 14M+ worldwide | RRHOF Definitive 200 #127"
-aguilera-mireflejo,3,2,"Metacritic 56 | AllMusic 2.5/5 | Latin Grammy Best Female Pop Vocal Album | RIAA 6x Platinum (Latin)"
-aguilera-mykindofchristmas,1,2,"AllMusic 3/5 | EW C | Austin Chronicle 2/5 | Rolling Stone negative | RIAA Platinum"
-aguilera-stripped,5,4,"Metacritic 55 (2002) | AllMusic 4/5 (revised) | 1001 Albums | Billboard most important 2000s | RIAA 5x Platinum"
-aguilera-backtobasics,4,4,"Metacritic 69 | AllMusic 4.5/5 | 1001 Albums | EW best of 25 yrs #80 | US #1, RIAA 2x Platinum"
-aguilera-bionic,3,3,"Metacritic 56 | AllMusic 3.5/5 | later reappraised as cult favorite (Pitchfork 2018, Billboard 2020) | RIAA Gold"
-aguilera-burlesqueoriginalmotionpicturesoundtrack,3,3,"AllMusic 3/5 | Slant 3/5 | EW B | Grammy nom | Golden Globe nom Bound to You | RIAA Gold"
-aguilera-lotus,2,2,"Metacritic 56 | AllMusic 4/5 | AOTY critic 59 | RIAA Gold"
-aguilera-liberation,3,3,"Metacritic 71 | AllMusic 3.5/5 | NPR top 15 of 2018 #14 | US #6"
-aguilera-aguilera,3,4,"AllMusic 4/5 | Latin Grammy win Best Trad. Pop Vocal Album, AOTY nom | Grammy nom Best Latin Pop Album"
+album_id,importance,acclaim,mainstream,sources
+aguilera-christinaaguilera,5,3,5,"AllMusic 3.5/5 | Rolling Stone 2.5/5 | RIAA 9x Platinum, 14M+ worldwide | RRHOF Definitive 200 #127 | mainstream: RCA; teen pop hit-maker teams, global chart product"
+aguilera-mireflejo,3,2,5,Metacritic 56 | AllMusic 2.5/5 | Latin Grammy Best Female Pop Vocal Album | RIAA 6x Platinum (Latin) | mainstream: RCA/BMG; Rudy Pérez Spanish-language crossover product
+aguilera-mykindofchristmas,1,2,5,AllMusic 3/5 | EW C | Austin Chronicle 2/5 | Rolling Stone negative | RIAA Platinum | mainstream: RCA; seasonal holiday product
+aguilera-stripped,5,4,4,"Metacritic 55 (2002) | AllMusic 4/5 (revised) | 1001 Albums | Billboard most important 2000s | RIAA 5x Platinum | mainstream: RCA; Linda Perry, Scott Storch; artist-led but radio-aimed"
+aguilera-backtobasics,4,4,4,"Metacritic 69 | AllMusic 4.5/5 | 1001 Albums | EW best of 25 yrs #80 | US #1, RIAA 2x Platinum | mainstream: RCA; DJ Premier, Linda Perry; retro concept but chart-aimed"
+aguilera-bionic,3,3,5,"Metacritic 56 | AllMusic 3.5/5 | later reappraised as cult favorite (Pitchfork 2018, Billboard 2020) | RIAA Gold | mainstream: RCA; Polow da Don, Tricky Stewart; electropop chart push"
+aguilera-burlesqueoriginalmotionpicturesoundtrack,3,3,4,"AllMusic 3/5 | Slant 3/5 | EW B | Grammy nom | Golden Globe nom Bound to You | RIAA Gold | mainstream: RCA/Screen Gems; Hollywood musical soundtrack, Diane Warren"
+aguilera-lotus,2,2,5,"Metacritic 56 | AllMusic 4/5 | AOTY critic 59 | RIAA Gold | mainstream: RCA; Max Martin, Shellback; Voice-era chart pop"
+aguilera-liberation,3,3,4,"Metacritic 71 | AllMusic 3.5/5 | NPR top 15 of 2018 #14 | US #6 | mainstream: RCA; Kanye West, Anderson .Paak; artist-led but major pop"
+aguilera-aguilera,3,4,4,"AllMusic 4/5 | Latin Grammy win Best Trad. Pop Vocal Album, AOTY nom | Grammy nom Best Latin Pop Album | mainstream: Sony Latin; Federico Vindver; Latin pop/reggaeton for Latin markets"

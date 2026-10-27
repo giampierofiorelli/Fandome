@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-blur-leisure,3,3,"AllMusic 3/5 | RS Album Guide 2.5/5 | Q 4/5 | UK Gold"
-blur-modernlifeisrubbish,4,4,"AllMusic 4.5/5 | Pitchfork 7.8 | Uncut 9/10 | 1001 Albums | UK Gold"
-blur-parklife,5,5,"AllMusic 5/5 | Pitchfork 9.5 | RS Album Guide 4.5/5 | RS 500 Greatest | UK #1, 4x Platinum"
-blur-thegreatescape,4,4,"AllMusic 4.5/5 | Pitchfork 8.2 | Q 5/5 | Spin 6/10 | UK #1, Platinum"
-blur-blur,4,4,"AllMusic 4.5/5 | Pitchfork 8.1 | Rolling Stone 4/5 | 1001 Albums | UK #1, US Gold"
-blur-13,4,4,"Metacritic 79 | Pitchfork 9.1 | AllMusic 3.5/5 | NME 6/10 | UK #1, Platinum"
-blur-thinktank,3,4,"Metacritic 83 | Pitchfork 9.0 | AllMusic 2/5 | Uncut 5/5 | UK #1, Gold"
-blur-themagicwhip,3,4,"Metacritic 81 | AllMusic 4/5 | Pitchfork 7.0 | UK #1, Gold"
+album_id,importance,acclaim,mainstream,sources
+blur-leisure,3,3,3,"AllMusic 3/5 | RS Album Guide 2.5/5 | Q 4/5 | UK Gold | mainstream: Food/EMI; baggy-era debut with 'There's No Other Way' hit, artist-led"
+blur-modernlifeisrubbish,4,4,3,"AllMusic 4.5/5 | Pitchfork 7.8 | Uncut 9/10 | 1001 Albums | UK Gold | mainstream: Food/EMI; band-led Britpop blueprint, modest chart success"
+blur-parklife,5,5,4,"AllMusic 5/5 | Pitchfork 9.5 | RS Album Guide 4.5/5 | RS 500 Greatest | UK #1, 4x Platinum | mainstream: Food/EMI; Britpop chart phenomenon, radio singles, mainstream"
+blur-thegreatescape,4,4,4,"AllMusic 4.5/5 | Pitchfork 8.2 | Q 5/5 | Spin 6/10 | UK #1, Platinum | mainstream: Food/EMI; 'Country House' No.1, chart-aimed Britpop"
+blur-blur,4,4,3,"AllMusic 4.5/5 | Pitchfork 8.1 | Rolling Stone 4/5 | 1001 Albums | UK #1, US Gold | mainstream: Food/EMI; deliberate lo-fi US-indie turn despite 'Song 2'"
+blur-13,4,4,3,"Metacritic 79 | Pitchfork 9.1 | AllMusic 3.5/5 | NME 6/10 | UK #1, Platinum | mainstream: Food/EMI; William Orbit, experimental artist-led record, charted"
+blur-thinktank,3,4,3,"Metacritic 83 | Pitchfork 9.0 | AllMusic 2/5 | Uncut 5/5 | UK #1, Gold | mainstream: Parlophone; experimental, African/electronic textures, artist-led"
+blur-themagicwhip,3,4,3,"Metacritic 81 | AllMusic 4/5 | Pitchfork 7.0 | UK #1, Gold | mainstream: Parlophone reunion album; artist-led, Hong Kong sessions"

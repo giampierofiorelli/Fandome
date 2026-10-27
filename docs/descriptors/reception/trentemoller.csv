@@ -1,11 +1,11 @@
-album_id,importance,acclaim,sources
-trentemoller-thelastresort,5,5,"Resident Advisor 5/5, #28 of 2000s | Pitchfork 7.2 | AllMusic 4/5 | Politiken 5/6 | DK #5, Platinum | 2 Danish Music Awards"
-trentemoller-thetrentemllerchronicles,2,3,"Pitchfork 5.9 | NME 7/10 | compilation"
-trentemoller-intothegreatwideyonder,4,3,"DK #2 | Drowned in Sound 6/10 | Juno Daily, Igloo positive"
-trentemoller-reworkedremixed,1,2,"CityHub 2.5/5 | remix compilation"
-trentemoller-lost,4,3,"Metacritic 73 (15 reviews) | DK #2"
-trentemoller-lostreworks,1,3,"mxdwn, Cyclic Defrost favourable (unscored) | remix album"
-trentemoller-fixion,3,3,"DIY 3/5 | Treble negative | Exclaim mixed | DK #16"
-trentemoller-obverse,2,4,"HFN 8/10 | IMPALA Album of the Year nominee 2019 | Norman Records mixed"
-trentemoller-memoria,3,4,"PopMatters 8/10 | HFN 9/10 | mxdwn mixed"
-trentemoller-dreamweaver,3,4,"mxdwn, Sound and Vision, Arcana, XLR8R positive (unscored)"
+album_id,importance,acclaim,mainstream,sources
+trentemoller-thelastresort,5,5,2,"Resident Advisor 5/5, #28 of 2000s | Pitchfork 7.2 | AllMusic 4/5 | Politiken 5/6 | DK #5, Platinum | 2 Danish Music Awards | mainstream: Poker Flat; minimal techno/electronica, cult acclaim, club scene"
+trentemoller-thetrentemllerchronicles,2,3,2,Pitchfork 5.9 | NME 7/10 | compilation | mainstream: Audiomatique; remixes and rarities compilation for DJ/electronic scene
+trentemoller-intothegreatwideyonder,4,3,2,"DK #2 | Drowned in Sound 6/10 | Juno Daily, Igloo positive | mainstream: In My Room (own label); cinematic dark electronica, indie scale"
+trentemoller-reworkedremixed,1,2,2,"CityHub 2.5/5 | remix compilation | mainstream: In My Room; remix compilation, electronic scene audience"
+trentemoller-lost,4,3,2,"Metacritic 73 (15 reviews) | DK #2 | mainstream: In My Room; dark indie-electronica with guest singers, alternative"
+trentemoller-lostreworks,1,3,2,"mxdwn, Cyclic Defrost favourable (unscored) | remix album | mainstream: In My Room; remix album, niche electronic audience"
+trentemoller-fixion,3,3,2,"DIY 3/5 | Treble negative | Exclaim mixed | DK #16 | mainstream: In My Room; post-punk-tinged dark electronica, indie"
+trentemoller-obverse,2,4,1,"HFN 8/10 | IMPALA Album of the Year nominee 2019 | Norman Records mixed | mainstream: In My Room; darkest, most experimental shoegaze-electronica, small audience by design"
+trentemoller-memoria,3,4,2,"PopMatters 8/10 | HFN 9/10 | mxdwn mixed | mainstream: In My Room; dreamy indie-electronica, alternative scene"
+trentemoller-dreamweaver,3,4,2,"mxdwn, Sound and Vision, Arcana, XLR8R positive (unscored) | mainstream: In My Room; shoegaze/dream-pop electronica, indie"

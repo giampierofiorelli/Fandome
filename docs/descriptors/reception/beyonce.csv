@@ -1,11 +1,11 @@
-album_id,importance,acclaim,sources
-beyonce-dangerouslyinlove,5,3,"Metacritic 63 | US Billboard 200 #1 | solo debut"
-beyonce-bday,3,3,"Metacritic 70 | US Billboard 200 #1"
-beyonce-iamsashafierce,4,3,"Metacritic 62 | US Billboard 200 #1"
-beyonce-4,3,4,"Metacritic 73 | AOTY critic 80 | US Billboard 200 #1 | RIAA Platinum"
-beyonce-beyonce,5,5,"Metacritic 85 | US Billboard 200 #1"
-beyonce-lemonade,5,5,"Metacritic 92 | US Billboard 200 #1"
-beyonce-everythingislove,2,4,"Metacritic 80 | US Billboard 200 #2 (with Jay-Z)"
-beyonce-thelionkingthegift,2,4,"Metacritic 77 | NYT Critic's Pick | US Billboard 200 #2"
-beyonce-renaissance,4,5,"Metacritic 91 | US Billboard 200 #1"
-beyonce-cowboycarter,5,5,"Metacritic 91 | US Billboard 200 #1 | Grammy Album of the Year 2025"
+album_id,importance,acclaim,mainstream,sources
+beyonce-dangerouslyinlove,5,3,5,"Metacritic 63 | US Billboard 200 #1 | solo debut | mainstream: Columbia; Rich Harrison, Scott Storch, Jay-Z; superstar R&B built for global radio"
+beyonce-bday,3,3,5,"Metacritic 70 | US Billboard 200 #1 | mainstream: Columbia; Rodney Jerkins, Neptunes, Stargate; superstar R&B hit product"
+beyonce-iamsashafierce,4,3,5,"Metacritic 62 | US Billboard 200 #1 | mainstream: Columbia; The-Dream, Tricky Stewart, Stargate, Ryan Tedder; global chart singles"
+beyonce-4,3,4,4,"Metacritic 73 | AOTY critic 80 | US Billboard 200 #1 | RIAA Platinum | mainstream: Columbia; more artist-led R&B, still superstar chart record"
+beyonce-beyonce,5,5,4,Metacritic 85 | US Billboard 200 #1 | mainstream: Columbia surprise visual album; artist-led but superstar chart release
+beyonce-lemonade,5,5,4,"Metacritic 92 | US Billboard 200 #1 | mainstream: Parkwood/Columbia; auteur concept but superstar, many hit producers, chart-topping"
+beyonce-everythingislove,2,4,4,Metacritic 80 | US Billboard 200 #2 (with Jay-Z) | mainstream: Parkwood/Roc Nation; Carters joint superstar rap/R&B chart release
+beyonce-thelionkingthegift,2,4,4,"Metacritic 77 | NYT Critic's Pick | US Billboard 200 #2 | mainstream: Parkwood/Columbia; Disney tie-in, superstar curated afrobeats/pop"
+beyonce-renaissance,4,5,4,"Metacritic 91 | US Billboard 200 #1 | mainstream: Parkwood/Columbia; artist-led house concept, superstar chart record"
+beyonce-cowboycarter,5,5,4,"Metacritic 91 | US Billboard 200 #1 | Grammy Album of the Year 2025 | mainstream: Parkwood/Columbia; artist-led country concept, superstar chart-topping record"

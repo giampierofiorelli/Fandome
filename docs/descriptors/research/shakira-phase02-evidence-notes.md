@@ -70,3 +70,6 @@ Source identifiers below point to exact URLs in `shakira_phase02_sources.csv`; c
 - Rick Rubin is an executive producer only; Emilio Estefan's involvement on Laundry Service does not prove full album producer status.
 - Neither MTV Unplugged nor any greatest-hits collection is a descriptor row, regardless of commercial/award importance.
 - No content from Phase 01 has been recopied into the Phase 02 rows file.
+
+## Owner review (Oct 2026)
+- Oral Fixation, Vol. 2: `gospel` removed. No source names gospel: How Do You Do uses a Gregorian-style chant and the Lord's Prayer (Wikipedia, Songwriting Universe). Britpop, Euro disco, rock & roll and neo-disco stay: Erlewine (AllMusic) names them.

@@ -1,7 +1,7 @@
-album_id,importance,acclaim,sources
-troye-trxye,2,3,"AllMusic 3.5/5 | US #5 | debut major-label EP"
-troye-blueneighbourhood,5,4,"Metacritic 80 | AllMusic 4.5/5 | Guardian 5/5 | US #7, AUS #6 | RIAA Platinum, ARIA Platinum"
-troye-bloom,4,5,"Metacritic 85 | AnyDecentMusic 8.2 | Pitchfork 7.5 | Time #7, Slant #4 of 2018 | US #4, AUS #3"
-troye-inadream,2,4,"AllMusic 4/5 | Pitchfork 7.6 | Slant 3/5 | AUS #3"
-troye-somethingtogiveeachother,5,4,"Metacritic 84 | Pitchfork 8.0 | Billboard #3, NME #4 of 2023 | AUS #1 | first Grammy noms (Rush)"
-troye-shesthebest,3,4,"Metacritic 81 (13) | AnyDecentMusic 7.6 | Pitchfork 7.3 | AUS #2, US #22"
+album_id,importance,acclaim,mainstream,sources
+troye-trxye,2,3,4,AllMusic 3.5/5 | US #5 | debut major-label EP | mainstream: EMI Australia; YouTube star's major-label pop EP
+troye-blueneighbourhood,5,4,4,"Metacritic 80 | AllMusic 4.5/5 | Guardian 5/5 | US #7, AUS #6 | RIAA Platinum, ARIA Platinum | mainstream: EMI/Capitol; radio pop singles, Alex Hope, artist-led"
+troye-bloom,4,5,4,"Metacritic 85 | AnyDecentMusic 8.2 | Pitchfork 7.5 | Time #7, Slant #4 of 2018 | US #4, AUS #3 | mainstream: EMI/Capitol; Ariana Grande feature, Oscar Görres; radio pop"
+troye-inadream,2,4,4,AllMusic 4/5 | Pitchfork 7.6 | Slant 3/5 | AUS #3 | mainstream: EMI; Oscar Görres; major-label pop EP
+troye-somethingtogiveeachother,5,4,4,"Metacritic 84 | Pitchfork 8.0 | Billboard #3, NME #4 of 2023 | AUS #1 | first Grammy noms (Rush) | mainstream: EMI; Rush viral single, club-pop aimed at charts"
+troye-shesthebest,3,4,3,"Metacritic 81 (13) | AnyDecentMusic 7.6 | Pitchfork 7.3 | AUS #2, US #22 | mainstream: Experimental leftfield afterhours pop, artist-led despite hit producers"

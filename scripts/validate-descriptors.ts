@@ -68,7 +68,7 @@ for (const file of files) {
 }
 // Reception files (docs/descriptors/reception/<artist-id>.csv): how important an album is in the artist's career
 // and how highly critics rate it today (at release or later, whichever stands), 0-5 each.
-const REC_HEADER = 'album_id,importance,acclaim,sources'.split(',')
+const REC_HEADER = 'album_id,importance,acclaim,mainstream,sources'.split(',')
 let recFiles: string[] = []
 try {
   recFiles = readdirSync('docs/descriptors/reception').filter((f) => f.endsWith('.csv'))
@@ -87,7 +87,7 @@ for (const file of recFiles) {
     if (cells.length !== REC_HEADER.length) return say(where, `${cells.length} columns instead of ${REC_HEADER.length}`)
     const r = Object.fromEntries(REC_HEADER.map((h, i) => [h, cells[i].trim()]))
     if (!albumIds.has(r.album_id)) say(where, `album "${r.album_id}" is not in the catalogue`)
-    for (const k of ['importance', 'acclaim']) if (r[k] !== '' && !/^[0-5]$/.test(r[k])) say(where, `${k} "${r[k]}" (0-5 or empty)`)
+    for (const k of ['importance', 'acclaim', 'mainstream']) if (r[k] !== '' && !/^[0-5]$/.test(r[k])) say(where, `${k} "${r[k]}" (0-5 or empty)`)
     if (!r.sources) say(where, 'sources are required')
   })
   console.log(`reception/${file}: ${body.length} rows`)

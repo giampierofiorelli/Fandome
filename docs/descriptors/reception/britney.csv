@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-britney-babyonemoretime,5,3,"AllMusic 4/5 | Rolling Stone 2/5 | EW B+ | NME 1/10 | US #1, Canada Diamond, multi-Platinum"
-britney-oopsididitagain,4,3,"Metacritic 72 | AllMusic 4/5 | Rolling Stone 3.5/5 | US #1"
-britney-britney,3,3,"Metacritic 58 | AllMusic 4.5/5 | EW C | Q 3/5 | US #1"
-britney-inthezone,4,3,"Metacritic 66 | AllMusic 3/5 | Rolling Stone 3/5 | Guardian 4/5 | US #1 (Toxic)"
+album_id,importance,acclaim,mainstream,sources
+britney-babyonemoretime,5,3,5,"AllMusic 4/5 | Rolling Stone 2/5 | EW B+ | NME 1/10 | US #1, Canada Diamond, multi-Platinum | mainstream: Jive; Max Martin, Cheiron; teen pop built for global charts (anchor)"
+britney-oopsididitagain,4,3,5,"Metacritic 72 | AllMusic 4/5 | Rolling Stone 3.5/5 | US #1 | mainstream: Jive; Max Martin, Rami; teen pop chart product"
+britney-britney,3,3,5,"Metacritic 58 | AllMusic 4.5/5 | EW C | Q 3/5 | US #1 | mainstream: Jive; Neptunes, Max Martin, Rodney Jerkins; chart pop"
+britney-inthezone,4,3,5,"Metacritic 66 | AllMusic 3/5 | Rolling Stone 3/5 | Guardian 4/5 | US #1 (Toxic) | mainstream: Jive; Bloodshy & Avant, Neptunes; dance-pop chart product"

@@ -67,6 +67,7 @@ export interface Profile {
   confidence: number
   importance?: number // 0-5, career weight (albums only)
   acclaim?: number // 0-5, critical standing today (albums only)
+  mainstream?: number // 0-5, how commercial the record is (albums only)
 }
 
 const CONFIDENCE = { high: 1, medium: 0.9, low: 0.8 }
@@ -104,6 +105,7 @@ function buildAlbumProfile(d: Descriptor): Profile {
     confidence: CONFIDENCE[d.confidence],
     importance: d.importance,
     acclaim: d.acclaim,
+    mainstream: d.mainstream,
   })
 }
 
@@ -600,7 +602,10 @@ export function similarAlbums(
       const to = opts.countryOf?.(d.albumId)
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
       const gap = qualityGap(a, b)
-      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
+      // Never from a less commercial album to a much more commercial one (owner, Oct 2026: Tiromancino → Shakira),
+      // unless the album names that artist as an influence or names the record itself. The other way is fine.
+      const tooCommercial = commercialLift(a, b) >= COMMERCIAL_GAP && !includesName(a.influencedBy, d.artist)
+      return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence
@@ -717,7 +722,7 @@ export function similarArtists(
   const myAlbums = profilesOf(albumIdsOf(artistId))
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(artistId)
-  const scored: (SimilarArtist & { profile: Profile })[] = []
+  const scored: (SimilarArtist & { profile: Profile; tooCommercial: boolean })[] = []
   for (const other of candidates) {
     if (other === artistId || hide.includes(other)) continue
     const them = artistProfile(other, albumIdsOf(other))
@@ -742,7 +747,9 @@ export function similarArtists(
     const why = best?.c.reasons[0] ?? c.reasons[0]
     if (score < 0.3 || !why || !best) continue
     const reason = /^(Both|Similar sound|Close genres)/.test(why) ? `${best.a.title} and ${best.b.title}: ${lowerFirst(why)}` : why
-    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them })
+    // Same commercial rule as for albums, on the artists' averages; only a named influence can lift it (below).
+    const lift = commercialLift({ mainstream: meanOf(myAlbums.map((p) => p.mainstream)) }, { mainstream: meanOf(theirAlbums.map((p) => p.mainstream)) })
+    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them, tooCommercial: lift >= COMMERCIAL_GAP })
   }
   scored.sort((x, y) => y.score - x.score)
   // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
@@ -776,10 +783,10 @@ export function similarArtists(
     }
     return null
   }
-  const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link).sort((x, y) => x.link!.rank - y.link!.rank || y.s.score - x.s.score)
+  const linked = scored.map((s) => ({ s, link: linkOf(s) })).filter((x) => x.link && (!x.s.tooCommercial || x.link.rank < 3)).sort((x, y) => x.link!.rank - y.link!.rank || y.s.score - x.s.score)
   const reserved = linked.slice(0, 3).map(({ s, link }) => ({ ...s, reason: link!.reason }))
-  const rest = scored.filter((s) => !reserved.some((r) => r.artistId === s.artistId))
-  return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, ...s }) => s)
+  const rest = scored.filter((s) => !s.tooCommercial && !reserved.some((r) => r.artistId === s.artistId))
+  return [...reserved, ...mmr(rest, (x, y) => genreSim(x.profile, y.profile), limit - reserved.length)].map(({ profile: _p, tooCommercial: _t, ...s }) => s)
 }
 
 // Genre lists (main first) compared with families, e.g. two artists' scene genres from scenes.ts.
@@ -793,6 +800,20 @@ export function genreListSimilarity(a: string[], b: string[]) {
 // How far below the album you're on a suggestion stands with critics (0-5 each, at release or later, whichever
 // stands today). Only when both are known. A well-regarded album doesn't lead to one critics panned: 2 points
 // lower pushes it down, 3 or more takes it out, even with a documented link.
+// ---------- how commercial ----------
+
+// Mainstream (0-5, reception file): 5 an industry-built global chart product, 3 a popular auteur record, 1 underground.
+// A suggestion 2 or more points more commercial than the album you're on is out: it is another world, whatever the
+// genre labels share (owner, Oct 2026). Only upward: from a chart record to an auteur one is a good lead.
+const COMMERCIAL_GAP = 2
+function commercialLift(a: { mainstream?: number }, b: { mainstream?: number }) {
+  return a.mainstream === undefined || b.mainstream === undefined ? 0 : b.mainstream - a.mainstream
+}
+const meanOf = (xs: (number | undefined)[]) => {
+  const ys = xs.filter((x): x is number => x !== undefined)
+  return ys.length ? ys.reduce((n, x) => n + x, 0) / ys.length : undefined
+}
+
 function qualityGap(a: Profile, b: Profile) {
   return a.acclaim === undefined || b.acclaim === undefined ? 0 : a.acclaim - b.acclaim
 }

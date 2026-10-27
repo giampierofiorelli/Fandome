@@ -1,4 +1,4 @@
-album_id,importance,acclaim,sources
-blanco-bluceleste,5,4,"Rolling Stone Italia best Italian albums 2021 #7 | Ondarock 6/10 | FIMI #1 | FIMI 7x Platinum"
-blanco-innamorato,4,4,"All Music Italia 8.5/10 | Rockol 7.5/10 | Newsic 7/10 | Ondarock 6/10 | FIMI #1 | FIMI 2x Platinum"
-blanco-ma,3,,"FIMI #2 | FIMI Gold | no review score found"
+album_id,importance,acclaim,mainstream,sources
+blanco-bluceleste,5,4,4,Rolling Stone Italia best Italian albums 2021 #7 | Ondarock 6/10 | FIMI #1 | FIMI 7x Platinum | mainstream: Island/Universal; Michelangelo; streaming chart pop
+blanco-innamorato,4,4,4,All Music Italia 8.5/10 | Rockol 7.5/10 | Newsic 7/10 | Ondarock 6/10 | FIMI #1 | FIMI 2x Platinum | mainstream: Island/Universal; Michelangelo; chart-topping radio pop-rock
+blanco-ma,3,,4,"FIMI #2 | FIMI Gold | no review score found | mainstream: Universal; Michelangelo, d.whale; Italian mainstream pop"

@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-rettore-ognigiornosicantanocanzonidamore,1,,"Wikipedia IT: debut LP went largely unnoticed | OndaRock monograph: no rating"
-rettore-donatellarettore,1,,"Wikipedia IT: little commercial success | OndaRock monograph: no rating"
-rettore-brividodivino,5,4,"OndaRock Consigliato | breakthrough via Splendido splendente (300k+ singles, Festivalbar 1979 newcomer)"
-rettore-magnificodelirio,4,4,"OndaRock Consigliato | Italian gold disc | Kobra 2nd at Festivalbar 1980"
-rettore-estasiclamorosa,4,3,"OndaRock: less successful than predecessors | single Donatella won Festivalbar 1981 | gold/platinum (Wikipedia IT)"
-rettore-kamikazerocknrollsuicide,3,5,"OndaRock Pietra miliare (forgotten little masterpiece) | Italy #18, gold | OndaRock: far less success than predecessors"
-rettore-farwest,2,2,"Wikipedia IT: didn't match predecessors | OndaRock: post-Kamikaze records mediocre | Io ho te Festivalbar 1983 prize"
-rettore-danceteria,2,2,"Italy #19, modest sales (Wikipedia IT) | OndaRock: post-Kamikaze records mediocre"
+album_id,importance,acclaim,mainstream,sources
+rettore-ognigiornosicantanocanzonidamore,1,,3,"Wikipedia IT: debut LP went largely unnoticed | OndaRock monograph: no rating | mainstream: Polydor; early Italian pop debut, little success"
+rettore-donatellarettore,1,,3,"Wikipedia IT: little commercial success | OndaRock monograph: no rating | mainstream: Ariston; Italian pop-rock, artist co-written, modest"
+rettore-brividodivino,5,4,4,"OndaRock Consigliato | breakthrough via Splendido splendente (300k+ singles, Festivalbar 1979 newcomer) | mainstream: Ariston; Splendido splendente hit, new-wave pop for charts"
+rettore-magnificodelirio,4,4,4,"OndaRock Consigliato | Italian gold disc | Kobra 2nd at Festivalbar 1980 | mainstream: Ariston; Kobra hit, provocative chart new-wave pop"
+rettore-estasiclamorosa,4,3,4,"OndaRock: less successful than predecessors | single Donatella won Festivalbar 1981 | gold/platinum (Wikipedia IT) | mainstream: CGD; Donatella hit, chart-oriented new-wave pop"
+rettore-kamikazerocknrollsuicide,3,5,4,"OndaRock Pietra miliare (forgotten little masterpiece) | Italy #18, gold | OndaRock: far less success than predecessors | mainstream: CGD; Kamikaze hit, chart pop-rock"
+rettore-farwest,2,2,4,Wikipedia IT: didn't match predecessors | OndaRock: post-Kamikaze records mediocre | Io ho te Festivalbar 1983 prize | mainstream: CGD; chart-oriented pop-rock
+rettore-danceteria,2,2,4,"Italy #19, modest sales (Wikipedia IT) | OndaRock: post-Kamikaze records mediocre | mainstream: Dance-pop record aimed at radio"

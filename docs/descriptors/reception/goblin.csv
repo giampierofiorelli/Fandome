@@ -1,8 +1,8 @@
-album_id,importance,acclaim,sources
-goblin-profondorosso,5,4,"Breakthrough; title track #1 in Italy | OndaRock 8/10 | AllMusic 4/5"
-goblin-roller,3,4,"Non-soundtrack prog album | OndaRock 7.5/10"
-goblin-suspiria,5,5,"Most popular album, Simonetti's 'masterpiece' (Fact) | OndaRock 8.5/10 ""capolavoro"" | AllMusic 4.5/5"
-goblin-ilfantasticoviaggiodelbagarozzomark,2,3,"OndaRock 6/10, 'first real commercial fiasco'"
-goblin-tenebre,3,4,"Electronic turn (Simonetti-Pignatelli-Morante) | OndaRock 8/10 | AllMusic 2.5/5"
-goblin-phenomena,2,3,"OndaRock 7/10"
-goblin-nonhosonno,2,3,"Reunion score | OndaRock 6.5/10 ('manca qualcosa')"
+album_id,importance,acclaim,mainstream,sources
+goblin-profondorosso,5,4,3,"Breakthrough; title track #1 in Italy | OndaRock 8/10 | AllMusic 4/5 | mainstream: Cinevox; Argento film score, Italian chart no.1 single"
+goblin-roller,3,4,2,"Non-soundtrack prog album | OndaRock 7.5/10 | mainstream: Cinevox; instrumental prog rock, cult"
+goblin-suspiria,5,5,2,"Most popular album, Simonetti's 'masterpiece' (Fact) | OndaRock 8.5/10 ""capolavoro"" | AllMusic 4.5/5 | mainstream: Cinevox; horror score, cult experimental prog"
+goblin-ilfantasticoviaggiodelbagarozzomark,2,3,2,"OndaRock 6/10, 'first real commercial fiasco' | mainstream: Cinevox; Italian-sung prog concept album, cult"
+goblin-tenebre,3,4,2,"Electronic turn (Simonetti-Pignatelli-Morante) | OndaRock 8/10 | AllMusic 2.5/5 | mainstream: Cinevox; Simonetti/Pignatelli/Morante horror synth score, cult"
+goblin-phenomena,2,3,2,"OndaRock 7/10 | mainstream: Cinevox; horror score, cult"
+goblin-nonhosonno,2,3,2,"Reunion score | OndaRock 6.5/10 ('manca qualcosa') | mainstream: Cinevox; reunion Argento score, cult horror audience"

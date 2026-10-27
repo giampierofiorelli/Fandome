@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-prodigy-experience,3,4,"AllMusic 5/5 | Select 5/5 | Spin 9/10 | EW B | UK #12, BPI Plat"
-prodigy-musicforthejiltedgeneration,4,5,"AllMusic 5/5 | Christgau A | NME 9/10 | Mercury nom | UK #1, BPI 2x Plat | Spin 90s #60"
-prodigy-thefatoftheland,5,4,"AllMusic 4.5/5 | Q 5/5 | Pitchfork 7.9 (rev. 5.9) | UK/US #1 | 10M sold | Grammy nom"
-prodigy-prodigypresentthedirtchambersessionsvolumeone,2,4,"AllMusic 4/5 | Mojo 4/5 | NME 7/10 | EW C+ | Muzik comps of 1999 #9"
+album_id,importance,acclaim,mainstream,sources
+prodigy-experience,3,4,3,"AllMusic 5/5 | Select 5/5 | Spin 9/10 | EW B | UK #12, BPI Plat | mainstream: XL; rave chart hits like Charly, Liam Howlett self-produced"
+prodigy-musicforthejiltedgeneration,4,5,3,"AllMusic 5/5 | Christgau A | NME 9/10 | Mercury nom | UK #1, BPI 2x Plat | Spin 90s #60 | mainstream: XL; self-produced breakbeat/techno, chart album, artist-led"
+prodigy-thefatoftheland,5,4,3,"AllMusic 4.5/5 | Q 5/5 | Pitchfork 7.9 (rev. 5.9) | UK/US #1 | 10M sold | Grammy nom | mainstream: XL/Maverick; big beat, Firestarter #1, but self-produced, artist-led"
+prodigy-prodigypresentthedirtchambersessionsvolumeone,2,4,2,"AllMusic 4/5 | Mojo 4/5 | NME 7/10 | EW C+ | Muzik comps of 1999 #9 | mainstream: XL; DJ mix album, club/cult release"

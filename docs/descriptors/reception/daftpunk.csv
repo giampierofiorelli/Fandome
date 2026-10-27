@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-daftpunk-homework,5,5,"AllMusic 5/5 | Pitchfork 9.2 (2018) | Muzik 10/10 | Guardian 4/5 | Q 4/5 | BPI Platinum"
-daftpunk-discovery,5,5,"Rolling Stone 500 (2020) #236 | AllMusic 5/5 | Q 5/5 | Mixmag 5/5 | Metacritic 74 (at release) | BPI 2x Platinum"
-daftpunk-daftclub,1,2,"AllMusic 3/5 | Pitchfork 1.3 | EW C− | Blender 2/5 | Guardian 3/5"
-daftpunk-humanafterall,3,3,"Metacritic 57 | Pitchfork 4.9 | Mojo 4/5 | NME 7/10 | later partial reappraisal via Alive 2007 (Wikipedia) | Grammy nom"
+album_id,importance,acclaim,mainstream,sources
+daftpunk-homework,5,5,3,"AllMusic 5/5 | Pitchfork 9.2 (2018) | Muzik 10/10 | Guardian 4/5 | Q 4/5 | BPI Platinum | mainstream: Virgin; self-produced French house, chart singles, artist-led"
+daftpunk-discovery,5,5,3,"Rolling Stone 500 (2020) #236 | AllMusic 5/5 | Q 5/5 | Mixmag 5/5 | Metacritic 74 (at release) | BPI 2x Platinum | mainstream: Virgin; self-produced disco-house, chart hits, artist-led"
+daftpunk-daftclub,1,2,2,AllMusic 3/5 | Pitchfork 1.3 | EW C− | Blender 2/5 | Guardian 3/5 | mainstream: Virgin; remix album for club scene
+daftpunk-humanafterall,3,3,3,"Metacritic 57 | Pitchfork 4.9 | Mojo 4/5 | NME 7/10 | later partial reappraisal via Alive 2007 (Wikipedia) | Grammy nom | mainstream: Virgin; raw self-produced album, artist-led, mixed reception"

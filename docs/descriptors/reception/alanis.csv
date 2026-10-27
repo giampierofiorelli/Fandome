@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-alanis-alanis,2,2,"Rolling Stone 'fairly generic' | reviews mixed (Daily Vault C+) | Juno Most Promising Female Vocalist | Canada Platinum"
-alanis-nowisthetime,1,2,"Rock and Roll Rarity mixed | Time unimpressed | Canada-only release, Gold | withdrawn after 1995"
-alanis-jaggedlittlepill,5,5,"AllMusic 4.5/5 | Rolling Stone 500 #69 (2020) | Pitchfork 90s #51 | Grammy Album of the Year | 33M worldwide"
-alanis-supposedformerinfatuationjunkie,4,4,"AllMusic 4/5 | Rolling Stone 4/5 | Village Voice A- | Uncut 4/5 | US #1, RIAA 3x Platinum"
+album_id,importance,acclaim,mainstream,sources
+alanis-alanis,2,2,4,Rolling Stone 'fairly generic' | reviews mixed (Daily Vault C+) | Juno Most Promising Female Vocalist | Canada Platinum | mainstream: MCA Canada; Leslie Howe; teen dance-pop built for Canadian radio
+alanis-nowisthetime,1,2,4,"Rock and Roll Rarity mixed | Time unimpressed | Canada-only release, Gold | withdrawn after 1995 | mainstream: MCA Canada; Leslie Howe; dance-pop ballads for radio"
+alanis-jaggedlittlepill,5,5,4,"AllMusic 4.5/5 | Rolling Stone 500 #69 (2020) | Pitchfork 90s #51 | Grammy Album of the Year | 33M worldwide | mainstream: Maverick; Glen Ballard co-writer; radio alt-rock, mainstream smash"
+alanis-supposedformerinfatuationjunkie,4,4,3,"AllMusic 4/5 | Rolling Stone 4/5 | Village Voice A- | Uncut 4/5 | US #1, RIAA 3x Platinum | mainstream: Maverick; Ballard; introspective, less radio-shaped, artist-led"

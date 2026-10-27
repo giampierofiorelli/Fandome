@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-paolachiara-cichiamanobambine,3,,"FIMI #28 | Platino (150k+) | after Sanremo 1997 Nuove Proposte win | no reviews found"
-paolachiara-giornatastorica,2,,"not charted (FIMI) | Wikipedia: disappointing sales | no reviews found"
-paolachiara-television,5,,"FIMI #23 | Platino | ~800k sold in Europe | 'Vamos a bailar' Festivalbar, intl hit | no rating found"
-paolachiara-festival,4,,"FIMI #13 | Oro | Rockit: peak of their popularity | no reviews found"
-paolachiara-blu,2,,"FIMI #27 | Wikipedia: below expectations | no reviews found"
-paolachiara-winthegame,2,,"FIMI #40, one week | 'Second Life' #4 single | no reviews found"
-paolachiara-milleluci,2,,"FIMI #19 | no reviews found"
-paolachiara-giungla,2,,"FIMI #13 | last album before split | no reviews found"
+album_id,importance,acclaim,mainstream,sources
+paolachiara-cichiamanobambine,3,,4,"FIMI #28 | Platino (150k+) | after Sanremo 1997 Nuove Proposte win | no reviews found | mainstream: Columbia/Sony; Sanremo Giovani winners, radio teen pop aimed at Italian charts"
+paolachiara-giornatastorica,2,,4,not charted (FIMI) | Wikipedia: disappointing sales | no reviews found | mainstream: Columbia/Sony; radio-oriented Italian teen pop
+paolachiara-television,5,,4,"FIMI #23 | Platino | ~800k sold in Europe | 'Vamos a bailar' Festivalbar, intl hit | no rating found | mainstream: Columbia/Sony; mainstream Italian pop, chart singles"
+paolachiara-festival,4,,4,"FIMI #13 | Oro | Rockit: peak of their popularity | no reviews found | mainstream: Columbia/Sony; 'Vamos a bailar' summer dance-pop hit, chart-built"
+paolachiara-blu,2,,4,FIMI #27 | Wikipedia: below expectations | no reviews found | mainstream: Columbia/Sony; Italian dance-pop chart record
+paolachiara-winthegame,2,,4,"FIMI #40, one week | 'Second Life' #4 single | no reviews found | mainstream: Sony; English dance-pop aimed at clubs and charts"
+paolachiara-milleluci,2,,4,"FIMI #19 | no reviews found | mainstream: Sony; mainstream Italian pop, radio singles"
+paolachiara-giungla,2,,4,FIMI #13 | last album before split | no reviews found | mainstream: Sony/RCA; summer dance-pop reunion aimed at radio

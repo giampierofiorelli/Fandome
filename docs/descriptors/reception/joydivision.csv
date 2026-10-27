@@ -1,4 +1,4 @@
-album_id,importance,acclaim,sources
-joydivision-anidealforliving,1,3,"Self-financed debut EP | AllMusic 3/5 | Trouser Press: skilful but unexceptional | Melody Maker favourable 1978"
-joydivision-unknownpleasures,5,5,"Near-unanimous retrospective praise | 1001 Albums | NME all-time lists | Paste post-punk #5 | iconic Saville cover | UK Platinum"
-joydivision-closer,5,5,"NME Album of the Year 1980 | Rolling Stone 500 #157 (2003), #309 (2020) | Pitchfork 80s #10 | AllMusic 5/5, Pitchfork 10 | UK #6, BPI Gold"
+album_id,importance,acclaim,mainstream,sources
+joydivision-anidealforliving,1,3,1,"Self-financed debut EP | AllMusic 3/5 | Trouser Press: skilful but unexceptional | Melody Maker favourable 1978 | mainstream: Enigma (self-released); DIY punk EP, tiny pressing"
+joydivision-unknownpleasures,5,5,2,"Near-unanimous retrospective praise | 1001 Albums | NME all-time lists | Paste post-punk #5 | iconic Saville cover | UK Platinum | mainstream: Factory; Martin Hannett; cult post-punk, built for a scene (anchor)"
+joydivision-closer,5,5,2,"NME Album of the Year 1980 | Rolling Stone 500 #157 (2003), #309 (2020) | Pitchfork 80s #10 | AllMusic 5/5, Pitchfork 10 | UK #6, BPI Gold | mainstream: Factory; Martin Hannett; cult post-punk, posthumous chart but scene record"

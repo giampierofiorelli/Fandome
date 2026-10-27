@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-subsonica-subsonica,3,4,"Debut | OndaRock Pietra miliare, 7.5/10"
-subsonica-microchipemozionale,5,5,"Rolling Stone Italia: their masterpiece, the most representative record of the Italian 90s | Platinum, ~100k sold (Rockol 2002) | Sanremo 2000 | OndaRock 7/10"
-subsonica-amorematico,4,3,"Nuova ossessione | OndaRock 5/10 | Rolling Stone favourable (per research notes)"
-subsonica-terrestre,3,2,"OndaRock 4/10: short of ideas, leaning to Italian nu metal | move to EMI"
+album_id,importance,acclaim,mainstream,sources
+subsonica-subsonica,3,4,2,"Debut | OndaRock Pietra miliare, 7.5/10 | mainstream: Mescal indie; Turin electronic rock scene"
+subsonica-microchipemozionale,5,5,3,"Rolling Stone Italia: their masterpiece, the most representative record of the Italian 90s | Platinum, ~100k sold (Rockol 2002) | Sanremo 2000 | OndaRock 7/10 | mainstream: Mescal; Sanremo 2000, charting, self-produced"
+subsonica-amorematico,4,3,3,"Nuova ossessione | OndaRock 5/10 | Rolling Stone favourable (per research notes) | mainstream: Mescal/EMI; chart-topping, self-produced auteur band"
+subsonica-terrestre,3,2,3,"OndaRock 4/10: short of ideas, leaning to Italian nu metal | move to EMI | mainstream: EMI; chart-topping, self-produced"

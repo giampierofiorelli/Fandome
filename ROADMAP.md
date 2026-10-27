@@ -22,6 +22,7 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 
 ## Product, later
 
+- **Suggestions, open points (owner, Oct 2026).** (1) Buena Vista Social Club has no Cuban/son neighbour in the catalogue, so its list falls back on Latin pop: add 2–3 key son/salsa/bolero albums. (2) The `mainstream` score (0–5, reception files) was first filled from knowledge by Claude (Oct 2026): review the albums released after mid-2026 and the borderline calls listed in `docs/recommendation-research.md` with sources. (3) New artists from local scenes who record in English: check the success-abroad condition (`GLOBAL_HITS` in `src/lib/local.ts`).
 - **Past tours for artists who no longer tour (to decide, owner, Oct 2026).** Artists who passed away or split up (`touring: false`, the `LEGACY` list in `src/data/catalog.ts`) now show only "Past tours", and most are empty. Options: (a) fans add past tours and we review them (owner not convinced: moderation work, uneven quality); (b) we research them and add them to the data (setlist.fm has full tour histories, its API needs a key and allows non-commercial use; check terms). Also decide whether to mark every artist explicitly (alive/active) instead of the current list.
 - **Real listening parties** (today: one demo party hard-coded in `src/data/seed.ts`, always live in a loop, fake listeners, local-only chat).
   1. Create a party: host picks the artist, an album (track list and durations from MusicBrainz) or their own running order, and a start date/time.

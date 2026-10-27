@@ -2,8 +2,7 @@
 // knowledge level. Everything is computed on the device from what you did: follows, album ratings,
 // "New to me", "I listened" and posts. No streaks, no points for time, progress never goes down.
 import type { Album, Artist, Post, User } from '../data/types'
-import { GENRE_LABELS, SCENES, type Genre } from '../data/scenes'
-import { isLocalArtist } from './local'
+import { GENRE_LABELS, SCENES, isLocalArtist, type Genre } from '../data/scenes'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { genreListSimilarity, similarArtists } from './similar'
 import { DESCRIPTORS, genreLabel, type Descriptor } from './descriptors'

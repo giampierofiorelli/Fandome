@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-sinead-thelionandthecobra,4,5,"Debut | Pitchfork 9.1 | AllMusic 4.5/5 | Pitchfork 80s #44 | Christgau A- | Grammy nom | ~2.5M sold"
-sinead-idonotwantwhatihaventgot,5,5,"Nothing Compares 2 U | #1 in US, UK and many countries, 7M+ sold | Grammy Best Alternative Album | EW album of 1990 | Rolling Stone 500 (2020) #457"
-sinead-aminotyourgirl,2,2,"Little acclaim or success (Wikipedia) | AllMusic 2/5, Rolling Stone 2/5, Select 1/5 | NME 9/10 | UK #6"
-sinead-universalmother,3,3,"Generally favourable | Q and Rolling Stone 4/5 | AllMusic 3/5 | Christgau B- | UK #19, US #36"
+album_id,importance,acclaim,mainstream,sources
+sinead-thelionandthecobra,4,5,3,"Debut | Pitchfork 9.1 | AllMusic 4.5/5 | Pitchfork 80s #44 | Christgau A- | Grammy nom | ~2.5M sold | mainstream: Ensign/Chrysalis; self-produced, artist-led, charted"
+sinead-idonotwantwhatihaventgot,5,5,3,"Nothing Compares 2 U | #1 in US, UK and many countries, 7M+ sold | Grammy Best Alternative Album | EW album of 1990 | Rolling Stone 500 (2020) #457 | mainstream: Ensign/Chrysalis; global #1 via Prince cover, still auteur-led"
+sinead-aminotyourgirl,2,2,3,"Little acclaim or success (Wikipedia) | AllMusic 2/5, Rolling Stone 2/5, Select 1/5 | NME 9/10 | UK #6 | mainstream: Ensign/Chrysalis; jazz standards covers, artist's own project"
+sinead-universalmother,3,3,3,"Generally favourable | Q and Rolling Stone 4/5 | AllMusic 3/5 | Christgau B- | UK #19, US #36 | mainstream: Ensign/Chrysalis; personal auteur record, modest charts"

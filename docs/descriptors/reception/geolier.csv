@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-geolier-emanuele,4,,"Debut breakthrough; FIMI #2, 4x Platinum, in year-end charts 2019-23; no rated reviews found"
-geolier-ilcoraggiodeibambini,5,4,"FIMI #1, best-selling album of 2023 in Italy, 8x Platinum | Sorrisi ""capolavoro"" | Rockit: very high quality"
-geolier-diolosa,4,3,"FIMI #1, 8x Platinum (Sanremo 2nd place era) | Rockol, Fanpage positive | Rockit critical"
-geolier-tuttoepossibile,3,4,"FIMI #1, 4x Platinum (2026) | Open ""stupendo"", most mature | Rockol: more compact | Rolling Stone Italia positive"
+album_id,importance,acclaim,mainstream,sources
+geolier-emanuele,4,,4,"Debut breakthrough; FIMI #2, 4x Platinum, in year-end charts 2019-23; no rated reviews found | mainstream: Columbia/Sony; Poison Beatz; Neapolitan rap that topped charts, streaming-built"
+geolier-ilcoraggiodeibambini,5,4,4,"FIMI #1, best-selling album of 2023 in Italy, 8x Platinum | Sorrisi ""capolavoro"" | Rockit: very high quality | mainstream: Warner/Columbia; Sfera, Lazza, Ultimo guests; record-breaking streaming chart product"
+geolier-diolosa,4,3,4,"FIMI #1, 8x Platinum (Sanremo 2nd place era) | Rockol, Fanpage positive | Rockit critical | mainstream: Sanremo-linked repack, chart-topping streaming rap-pop"
+geolier-tuttoepossibile,3,4,4,"FIMI #1, 4x Platinum (2026) | Open ""stupendo"", most mature | Rockol: more compact | Rolling Stone Italia positive | mainstream: Major label; many producers, Lazza; Neapolitan melodic rap aimed at charts"

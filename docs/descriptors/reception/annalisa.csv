@@ -1,10 +1,10 @@
-album_id,importance,acclaim,sources
-annalisa-nali,4,,"FIMI #2, Platinum | 19th best-selling album Italy 2011 | no critic ratings found"
-annalisa-mentretuttocambia,2,,"FIMI #9 | Premio Lunezia special mention | no critic ratings found"
-annalisa-nonsoballare,3,3,"Rockol 7/10 | Rockol Awards 2013 best Italian album 2nd | FIMI #6"
-annalisa-splende,3,3,"Rockol 7/10 | FIMI #7, Gold"
-annalisa-seavessiuncuore,3,4,"All Music Italia 8/10 | Rockol 7/10 | OndaRock reviewed favourably | FIMI #4"
-annalisa-byebye,4,3,"All Music Italia 6.5/10 | Rockol 6/10 | FIMI #2, Platinum | Sanremo 2018 3rd"
-annalisa-nuda,3,2,"OndaRock 4/10 | Rockol 5/10 | All Music Italia ~6 | Corriere positive | FIMI #2, Platinum"
-annalisa-epoisiamofinitinelvortice,5,3,"Rockol 7/10 | OndaRock 6/10 | All Music Italia 6/10 | Rolling Stone Italia best 2023 #30 | FIMI #1, 3x Platinum"
-annalisa-maiosonofuoco,4,3,"All Music Italia 7.5/10 | Rockol 7/10 | Newsic 7/10 | OndaRock 5/10 | FIMI #1, Platinum"
+album_id,importance,acclaim,mainstream,sources
+annalisa-nali,4,,4,"FIMI #2, Platinum | 19th best-selling album Italy 2011 | no critic ratings found | mainstream: Warner; Amici talent show debut, radio pop"
+annalisa-mentretuttocambia,2,,4,FIMI #9 | Premio Lunezia special mention | no critic ratings found | mainstream: Warner; Sanremo-oriented Italian radio pop
+annalisa-nonsoballare,3,3,4,"Rockol 7/10 | Rockol Awards 2013 best Italian album 2nd | FIMI #6 | mainstream: Warner; Italian radio pop, Amici/Sanremo audience"
+annalisa-splende,3,3,4,"Rockol 7/10 | FIMI #7, Gold | mainstream: Warner; Sanremo, Kekko Silvestre; chart pop"
+annalisa-seavessiuncuore,3,4,4,All Music Italia 8/10 | Rockol 7/10 | OndaRock reviewed favourably | FIMI #4 | mainstream: Warner; Sanremo 2016; Italian radio pop
+annalisa-byebye,4,3,4,"All Music Italia 6.5/10 | Rockol 6/10 | FIMI #2, Platinum | Sanremo 2018 3rd | mainstream: Warner; Sanremo 2018; Italian chart pop"
+annalisa-nuda,3,2,4,"OndaRock 4/10 | Rockol 5/10 | All Music Italia ~6 | Corriere positive | FIMI #2, Platinum | mainstream: Warner; Dardust, Michele Canova; radio-oriented pop"
+annalisa-epoisiamofinitinelvortice,5,3,4,"Rockol 7/10 | OndaRock 6/10 | All Music Italia 6/10 | Rolling Stone Italia best 2023 #30 | FIMI #1, 3x Platinum | mainstream: Warner; Zef/Paolo Antonacci; chart dance-pop (brief anchor)"
+annalisa-maiosonofuoco,4,3,4,"All Music Italia 7.5/10 | Rockol 7/10 | Newsic 7/10 | OndaRock 5/10 | FIMI #1, Platinum | mainstream: Warner; Italian chart dance-pop, radio singles"

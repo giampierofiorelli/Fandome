@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-lanadelrey-lanadelray,1,,"Wikipedia EN: digital-only debut withdrawn from sale three months after release; no professional ratings listed"
-lanadelrey-borntodie,5,3,"Metacritic 62 | AllMusic 2.5/5 | Pitchfork 5.5 | NME 8/10 | Guardian 4/5 | multi-Platinum, Diamond certifications (Wikipedia)"
-lanadelrey-paradise,3,3,"Metacritic 64 | AllMusic 2.5/5 | Rolling Stone 3/5 | Drowned in Sound 8/10 | Platinum (Wikipedia)"
-lanadelrey-ultraviolence,4,4,"Metacritic 74 | AllMusic 4/5 | Pitchfork 7.1 | EW A | Guardian 4/5 | Spin 8/10 | #1 US/UK (Wikipedia)"
+album_id,importance,acclaim,mainstream,sources
+lanadelrey-lanadelray,1,,2,"Wikipedia EN: digital-only debut withdrawn from sale three months after release; no professional ratings listed | mainstream: 5 Points Records indie; David Kahne; withdrawn, cult"
+lanadelrey-borntodie,5,3,4,"Metacritic 62 | AllMusic 2.5/5 | Pitchfork 5.5 | NME 8/10 | Guardian 4/5 | multi-Platinum, Diamond certifications (Wikipedia) | mainstream: Brief anchor: Interscope/Polydor, radio-aimed Emile Haynie production"
+lanadelrey-paradise,3,3,4,"Metacritic 64 | AllMusic 2.5/5 | Rolling Stone 3/5 | Drowned in Sound 8/10 | Platinum (Wikipedia) | mainstream: Interscope; Born to Die extension, Rick Nowels"
+lanadelrey-ultraviolence,4,4,3,"Metacritic 74 | AllMusic 4/5 | Pitchfork 7.1 | EW A | Guardian 4/5 | Spin 8/10 | #1 US/UK (Wikipedia) | mainstream: Interscope; Dan Auerbach, deliberately anti-radio auteur record"

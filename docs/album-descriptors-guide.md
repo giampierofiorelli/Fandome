@@ -109,11 +109,12 @@ Our list is incomplete: add every studio album of the artist (no live albums, co
 
 ## Reception: career importance and critical standing (Oct 2026, owner)
 
-One file per artist, `docs/descriptors/reception/<artist-id>.csv`, header `album_id,importance,acclaim,sources`, one row per album:
+One file per artist, `docs/descriptors/reception/<artist-id>.csv`, header `album_id,importance,acclaim,mainstream,sources`, one row per album:
 
 - `importance` 0–5: how much the album counts in the artist's career (5 = career-defining, the record that made or remade them; 3 = a solid regular album; 1 = minor, contractual or overlooked).
 - `acclaim` 0–5: how highly critics rate it today, whether the praise came at release or later (5 = acclaimed, in best-of lists; 3 = mixed; 1 = panned, then and since).
-- `sources`: what supports both values (reviews, retrospective rankings, Metacritic/AOTY critic scores, sales and charts), separated by `|`. Leave a value empty if it can't be supported.
+- `mainstream` 0–5: how commercial the record is in conception and positioning, not quality or sales alone (5 = industry-built global chart product: Shakira *Oral Fixation, Vol. 2*, Katy Perry *Teenage Dream*; 4 = mainstream chart record: Madonna *Like a Prayer*, Oasis *Morning Glory*; 3 = popular auteur record: Tiromancino *La descrizione di un attimo*, Battiato *La voce del padrone*, Radiohead *OK Computer*; 2 = alternative/indie/cult: Marlene Kuntz *Catartica*, Joy Division; 1 = underground/experimental: Talk Talk *Laughing Stock*; 0 = avant-garde). Huge sales don't lift an auteur record above 3; a radio-built flop stays 4–5. Evidence: label and marketing, outside hit-makers vs. the artist, single strategy, critics' words ("radio-friendly", "uncompromising", "cult").
+- `sources`: what supports the values (reviews, retrospective rankings, Metacritic/AOTY critic scores, sales and charts), separated by `|`. Leave a value empty if it can't be supported.
 
-How they're used: when a documented link names an artist (not a record), the place goes to that artist's close album that best stands for them, and a career-defining album breaks near ties. A well-regarded album never leads to one critics panned: 2 points lower pushes the suggestion down, 3 or more removes it. Missing values change nothing.
+How they're used: when a documented link names an artist (not a record), the place goes to that artist's close album that best stands for them, and a career-defining album breaks near ties. A well-regarded album never leads to one critics panned: 2 points lower pushes the suggestion down, 3 or more removes it. An album never leads to one 2 or more points more `mainstream` (another world, owner): only a documented influence of the album can lift that; the other way round is fine. Missing values change nothing.
 

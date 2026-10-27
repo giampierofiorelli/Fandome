@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-labionda-fratellilabiondasrl,1,,"Wikipedia IT/EN: early acoustic folk LP (Ricordi), far from the later disco success; no critic ratings found"
-labionda-ognivoltachetutenevai,1,,"Wikipedia EN/IT discography: pre-disco acoustic period; no chart or critic data found"
-labionda-tuttovabene,2,,"Wikipedia EN: acoustic ballads album recorded at Apple Studios with Nicky Hopkins; no critic ratings found"
-labionda-labionda,5,,"Wikipedia EN: contains worldwide hit One for You One for Me (#1 Wallonia) | Germany #10, Austria #19, NL #30, Sweden #33; no critic ratings found"
-labionda-bandido,3,,"Wikipedia EN/IT: one of three 1979–80 albums credited with ushering in Italo disco; title single; no critic ratings found"
-labionda-highenergy,3,,"Wikipedia EN/IT: 1979 Baby Records disco LP, part of the Italo disco run; no critic ratings found"
-labionda-iwannabeyourlover,4,,"Wikipedia IT: title track an innovative cult electropop song (sampled by Caparezza, covered by Il Genio); no critic ratings found"
-labionda-inbeatween,1,,"Wikipedia IT discography: 1998 Universal CD, late comeback; no chart or critic data found"
+album_id,importance,acclaim,mainstream,sources
+labionda-fratellilabiondasrl,1,,3,"Wikipedia IT/EN: early acoustic folk LP (Ricordi), far from the later disco success; no critic ratings found | mainstream: Ricordi; early Italian pop-cantautore record, major label"
+labionda-ognivoltachetutenevai,1,,3,"Wikipedia EN/IT discography: pre-disco acoustic period; no chart or critic data found | mainstream: Italian pop songs on major label, modest charting"
+labionda-tuttovabene,2,,3,"Wikipedia EN: acoustic ballads album recorded at Apple Studios with Nicky Hopkins; no critic ratings found | mainstream: Italian pop-rock, major label, artist-written"
+labionda-labionda,5,,4,"Wikipedia EN: contains worldwide hit One for You One for Me (#1 Wallonia) | Germany #10, Austria #19, NL #30, Sweden #33; no critic ratings found | mainstream: Baby Records; Italo-disco built for dancefloors and charts"
+labionda-bandido,3,,4,Wikipedia EN/IT: one of three 1979–80 albums credited with ushering in Italo disco; title single; no critic ratings found | mainstream: Baby Records; disco singles for European charts
+labionda-highenergy,3,,4,"Wikipedia EN/IT: 1979 Baby Records disco LP, part of the Italo disco run; no critic ratings found | mainstream: Disco album aimed at European charts and clubs"
+labionda-iwannabeyourlover,4,,4,"Wikipedia IT: title track an innovative cult electropop song (sampled by Caparezza, covered by Il Genio); no critic ratings found | mainstream: Euro-disco chart singles, English-language"
+labionda-inbeatween,1,,4,"Wikipedia IT discography: 1998 Universal CD, late comeback; no chart or critic data found | mainstream: Euro-house reworks with guest singers for club/charts"

@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-portishead-dummy,5,5,"AllMusic 5/5 | Pitchfork 9.5 | Mercury Prize 1995 | RS500 (2020) #131 | Pitchfork 90s #11"
-portishead-portishead,4,4,"AllMusic 4.5/5 | Pitchfork 8.2 | Q 5/5 | RS 3/5 | UK #2, BPI Plat"
-portishead-roselandnyclive,2,4,"AllMusic 3/5 | Uncut 5/5 | Record Collector 5/5 | NME 8/10 | Pitchfork 7.6 | UK #40"
-portishead-third,4,5,"Metacritic 85 | Pitchfork 8.8 (2008 #2) | Guardian 21st century #45 | UK #2, US #7"
+album_id,importance,acclaim,mainstream,sources
+portishead-dummy,5,5,3,"AllMusic 5/5 | Pitchfork 9.5 | Mercury Prize 1995 | RS500 (2020) #131 | Pitchfork 90s #11 | mainstream: Go! Beat/London; Mercury Prize trip-hop crossover, artist-led (like Mezzanine)"
+portishead-portishead,4,4,3,"AllMusic 4.5/5 | Pitchfork 8.2 | Q 5/5 | RS 3/5 | UK #2, BPI Plat | mainstream: Go! Beat; darker, deliberately less accessible but UK #2, artist-led"
+portishead-roselandnyclive,2,4,2,"AllMusic 3/5 | Uncut 5/5 | Record Collector 5/5 | NME 8/10 | Pitchfork 7.6 | UK #40 | mainstream: Go! Beat; live orchestral album, fan audience"
+portishead-third,4,5,2,"Metacritic 85 | Pitchfork 8.8 (2008 #2) | Guardian 21st century #45 | UK #2, US #7 | mainstream: Island/Go! Beat; abrasive experimental return (anchor)"

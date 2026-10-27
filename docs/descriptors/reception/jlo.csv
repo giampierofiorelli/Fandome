@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-jlo-onthe6,4,3,"Debut (If You Had My Love) | AllMusic 4/5 | Rolling Stone 3/5 | EW C | RS Album Guide 2/5"
-jlo-jlo,5,2,"Billboard 200 #1, her best-selling album (3.8M US) | Metacritic 52 | AllMusic 3/5 | NME 3/10"
-jlo-jtothalotheremixes,3,2,"Billboard 200 #1, one of best-selling remix albums | AllMusic 2.5/5 | EW D+ | RS Album Guide 2/5"
-jlo-thisismethen,4,2,"Jenny from the Block; 2.6M US | Metacritic 52 | AllMusic 4/5 | Rolling Stone 2/5"
+album_id,importance,acclaim,mainstream,sources
+jlo-onthe6,4,3,5,"Debut (If You Had My Love) | AllMusic 4/5 | Rolling Stone 3/5 | EW C | RS Album Guide 2/5 | mainstream: Work/Epic; Cory Rooney, Rodney Jerkins, Emilio Estefan; built for radio"
+jlo-jlo,5,2,5,"Billboard 200 #1, her best-selling album (3.8M US) | Metacritic 52 | AllMusic 3/5 | NME 3/10 | mainstream: Epic; Cory Rooney, Troy Oliver; Love Dont Cost a Thing radio product"
+jlo-jtothalotheremixes,3,2,5,"Billboard 200 #1, one of best-selling remix albums | AllMusic 2.5/5 | EW D+ | RS Album Guide 2/5 | mainstream: Epic; Ja Rule, Irv Gotti remixes for radio and clubs"
+jlo-thisismethen,4,2,5,"Jenny from the Block; 2.6M US | Metacritic 52 | AllMusic 4/5 | Rolling Stone 2/5 | mainstream: Epic; Cory Rooney, Trackmasters; Jenny from the Block chart product"

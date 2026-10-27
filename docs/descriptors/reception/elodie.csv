@@ -1,7 +1,7 @@
-album_id,importance,acclaim,sources
-elodie-unaltravita,2,,"Amici debut | FIMI Gold | no critic reviews found"
-elodie-tuttacolpamia,2,3,"Rockol 7/10"
-elodie-thisiselodie,4,3,"Rockol 7/10 | All Music Italia 7.5/10 | Newsic 7/10 | Ondarock 5.5/10 | FIMI 2x Platinum | Andromeda Sanremo 2020"
-elodie-okrespira,4,3,"Rockol 7.5/10 | Ondarock 6.5/10 | Newsic 6.75/10 | FIMI 2x Platinum | Due 4x Platinum (Sanremo 2023)"
-elodie-miamimiodi,3,3,"Rockol 6/10 | Ondarock 5/10 | Newsic 6.75/10 | Vanity Fair Italia mixed-positive | FIMI Platinum"
-elodie-redlight,2,3,"Ondarock 7/10 | Rockol 6.5/10 | Newsic 6.75/10"
+album_id,importance,acclaim,mainstream,sources
+elodie-unaltravita,2,,4,"Amici debut | FIMI Gold | no critic reviews found | mainstream: Universal; Amici talent-show debut, Emma-produced radio pop"
+elodie-tuttacolpamia,2,3,4,"Rockol 7/10 | mainstream: Universal; Sanremo pop, radio-oriented"
+elodie-thisiselodie,4,3,4,"Rockol 7/10 | All Music Italia 7.5/10 | Newsic 7/10 | Ondarock 5.5/10 | FIMI 2x Platinum | Andromeda Sanremo 2020 | mainstream: Universal; Dardust, Mahmood; Italian chart/streaming pop"
+elodie-okrespira,4,3,4,"Rockol 7.5/10 | Ondarock 6.5/10 | Newsic 6.75/10 | FIMI 2x Platinum | Due 4x Platinum (Sanremo 2023) | mainstream: Island/Universal; Sanremo, Italian chart electropop"
+elodie-miamimiodi,3,3,4,"Rockol 6/10 | Ondarock 5/10 | Newsic 6.75/10 | Vanity Fair Italia mixed-positive | FIMI Platinum | mainstream: Island; Dardust, Wolvs; Italian mainstream chart pop/R&B"
+elodie-redlight,2,3,4,Ondarock 7/10 | Rockol 6.5/10 | Newsic 6.75/10 | mainstream: Island; Italian mainstream dance-pop for charts

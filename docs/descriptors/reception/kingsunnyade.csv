@@ -1,2 +1,2 @@
-album_id,importance,acclaim,sources
-kingsunnyade-jujumusic,5,5,"Pitchfork 10/10, AllMusic 4.5/5, Christgau A-, Rolling Stone 4/5 (all via Wikipedia); NME top ten 1982; The Wire 100 Records That Set the World on Fire; NYT: launched World Beat in the US; first worldwide release (Wikipedia)"
+album_id,importance,acclaim,mainstream,sources
+kingsunnyade-jujumusic,5,5,3,"Pitchfork 10/10, AllMusic 4.5/5, Christgau A-, Rolling Stone 4/5 (all via Wikipedia); NME top ten 1982; The Wire 100 Records That Set the World on Fire; NYT: launched World Beat in the US; first worldwide release (Wikipedia) | mainstream: Island; Chris Blackwell international world-music launch, Martin Meissonnier"

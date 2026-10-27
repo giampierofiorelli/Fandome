@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-massiveattack-bluelines,5,5,"Rolling Stone 500 | 1001 Albums | AllMusic 5/5 | Pitchfork 9.0 | Guardian 5/5 | NME 10/10 | RS Album Guide 5/5"
-massiveattack-protection,4,4,"1001 Albums | AllMusic 4/5 | Rolling Stone 4/5 | Christgau A- | NME 8/10 | Select 5/5"
-massiveattack-noprotection,2,4,"Mad Professor remix album | AllMusic 4/5 | Rolling Stone 4/5 | Select 4/5 | Village Voice A-"
-massiveattack-mezzanine,5,5,"Rolling Stone 500 | AllMusic 5/5 | Pitchfork 9.3 (reissue) | Guardian 5/5 | Uncut 5/5 | UK #1, multi-Platinum"
+album_id,importance,acclaim,mainstream,sources
+massiveattack-bluelines,5,5,3,"Rolling Stone 500 | 1001 Albums | AllMusic 5/5 | Pitchfork 9.0 | Guardian 5/5 | NME 10/10 | RS Album Guide 5/5 | mainstream: Wild Bunch/Virgin; trip-hop founder, artist-led, charted"
+massiveattack-protection,4,4,3,"1001 Albums | AllMusic 4/5 | Rolling Stone 4/5 | Christgau A- | NME 8/10 | Select 5/5 | mainstream: Wild Bunch/Virgin; artist-led trip-hop, charted"
+massiveattack-noprotection,2,4,2,Mad Professor remix album | AllMusic 4/5 | Rolling Stone 4/5 | Select 4/5 | Village Voice A- | mainstream: Mad Professor dub remix of Protection; niche
+massiveattack-mezzanine,5,5,3,"Rolling Stone 500 | AllMusic 5/5 | Pitchfork 9.3 (reissue) | Guardian 5/5 | Uncut 5/5 | UK #1, multi-Platinum | mainstream: Brief anchor: Virgin; dark auteur trip-hop, UK No.1"

@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-carmenconsoli-dueparole,2,3,"OndaRock monografia: no badge, 'immaturità' | debut"
-carmenconsoli-confusaefelice,5,5,"OndaRock Pietra miliare | Rolling Stone Italia 100 dischi #32 | FIMI Platino, primo grande successo"
-carmenconsoli-mediamenteisterica,4,4,"OndaRock Consigliato | Rockit positive review | Disco d'oro (~80k), fan favourite (Wikipedia IT)"
-carmenconsoli-statodinecessita,5,4,"OndaRock Consigliato | Corriere: 10 dischi italiani 2000-09 | 3x Platino, best-selling (Wikipedia IT)"
+album_id,importance,acclaim,mainstream,sources
+carmenconsoli-dueparole,2,3,3,"OndaRock monografia: no badge, 'immaturità' | debut | mainstream: Cyclope/Polydor; cantautrice debut, Sanremo, artist-led"
+carmenconsoli-confusaefelice,5,5,3,"OndaRock Pietra miliare | Rolling Stone Italia 100 dischi #32 | FIMI Platino, primo grande successo | mainstream: Cyclope/Polydor; artist-written rock, charted"
+carmenconsoli-mediamenteisterica,4,4,3,"OndaRock Consigliato | Rockit positive review | Disco d'oro (~80k), fan favourite (Wikipedia IT) | mainstream: Polydor/Universal; auteur rock, critically acclaimed, charted"
+carmenconsoli-statodinecessita,5,4,3,"OndaRock Consigliato | Corriere: 10 dischi italiani 2000-09 | 3x Platino, best-selling (Wikipedia IT) | mainstream: Polydor/Universal; Sanremo 2000, popular but auteur"

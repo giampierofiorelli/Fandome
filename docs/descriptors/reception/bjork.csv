@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-bjork-bjork,1,1,"AllMusic 1.5/5 | childhood juvenilia excluded from official discography (Wikipedia)"
-bjork-glingglo,2,3,"AllMusic 2.5/5 | Rolling Stone 3/5 | All About Jazz 3.5/5 | Iceland Gold"
-bjork-debut,5,5,"AllMusic 5/5 | NME 500 Greatest #46 | NME album of 1993 #1 | RIAA Platinum | ~4.7M sold"
-bjork-post,4,5,"AllMusic 5/5 | Pitchfork 10/10 (retrospective) | Far Out ranking #1 | UK #2 | RIAA Platinum"
-bjork-telegram,2,3,"AllMusic 4/5 | Pitchfork 7.9 | Guardian 4/5 | Rolling Stone 3/5 | LA Times 2.5/5 | Select 1/5"
-bjork-homogenic,5,5,"AllMusic 5/5 | Rolling Stone 500 (2020) #202 | Pitchfork 90s #21 | Slant 90s #1"
-bjork-selmasongs,3,4,"Metacritic 76 | AllMusic 3.5/5 | Oscar nomination (I've Seen It All)"
-bjork-vespertine,4,5,"Metacritic 88 | AllMusic 4.5/5 | Pitchfork 2000s #92 | Rolling Stone 2000s #67"
+album_id,importance,acclaim,mainstream,sources
+bjork-bjork,1,1,4,"AllMusic 1.5/5 | childhood juvenilia excluded from official discography (Wikipedia) | mainstream: Fálkinn; children's covers of hits, commercial novelty for Icelandic market"
+bjork-glingglo,2,3,2,"AllMusic 2.5/5 | Rolling Stone 3/5 | All About Jazz 3.5/5 | Iceland Gold | mainstream: Smekkleysa (Bad Taste) indie; Icelandic jazz standards, local niche"
+bjork-debut,5,5,3,"AllMusic 5/5 | NME 500 Greatest #46 | NME album of 1993 #1 | RIAA Platinum | ~4.7M sold | mainstream: One Little Indian; Nellee Hooper; club-crossover singles, artist-led"
+bjork-post,4,5,3,"AllMusic 5/5 | Pitchfork 10/10 (retrospective) | Far Out ranking #1 | UK #2 | RIAA Platinum | mainstream: One Little Indian; charting singles, artist-led eclectic electronica"
+bjork-telegram,2,3,2,"AllMusic 4/5 | Pitchfork 7.9 | Guardian 4/5 | Rolling Stone 3/5 | LA Times 2.5/5 | Select 1/5 | mainstream: One Little Indian; remix album, club/experimental audience"
+bjork-homogenic,5,5,3,"AllMusic 5/5 | Rolling Stone 500 (2020) #202 | Pitchfork 90s #21 | Slant 90s #1 | mainstream: Brief anchor; One Little Indian, auteur electronic-strings record"
+bjork-selmasongs,3,4,3,"Metacritic 76 | AllMusic 3.5/5 | Oscar nomination (I've Seen It All) | mainstream: One Little Indian; Dancer in the Dark score, auteur soundtrack"
+bjork-vespertine,4,5,3,"Metacritic 88 | AllMusic 4.5/5 | Pitchfork 2000s #92 | Rolling Stone 2000s #67 | mainstream: One Little Indian; Matmos, intimate microbeats, charted but auteur"

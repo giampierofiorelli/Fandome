@@ -1,4 +1,4 @@
-album_id,importance,acclaim,sources
-lorde-theloveclubep,3,3,"Debut EP with Royals, multi-Platinum NZ/AU (Wikipedia) | AllMusic 3/5 | NZ Herald 5/5"
-lorde-pureheroine,5,4,"Metacritic 79 | Pitchfork 7.3 | Rolling Stone 4/5 | Guardian 4/5 | AllMusic 3/5 | breakthrough, multi-Platinum (Wikipedia)"
-lorde-melodrama,5,5,"Metacritic 91 | Pitchfork 8.8 | AllMusic 5/5 | NME 5/5 | Rolling Stone 500 (2020) | 1001 Albums (Wikipedia)"
+album_id,importance,acclaim,mainstream,sources
+lorde-theloveclubep,3,3,3,"Debut EP with Royals, multi-Platinum NZ/AU (Wikipedia) | AllMusic 3/5 | NZ Herald 5/5 | mainstream: Universal NZ; Joel Little; minimal alt-pop EP, artist-led"
+lorde-pureheroine,5,4,3,"Metacritic 79 | Pitchfork 7.3 | Rolling Stone 4/5 | Guardian 4/5 | AllMusic 3/5 | breakthrough, multi-Platinum (Wikipedia) | mainstream: Universal/Lava; Joel Little; minimalist art-pop, huge hit but auteur"
+lorde-melodrama,5,5,3,"Metacritic 91 | Pitchfork 8.8 | AllMusic 5/5 | NME 5/5 | Rolling Stone 500 (2020) | 1001 Albums (Wikipedia) | mainstream: Universal/Lava; Jack Antonoff; auteur pop, critical acclaim"

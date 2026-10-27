@@ -1,4 +1,4 @@
-album_id,importance,acclaim,sources
-spicegirls-spice,5,3,"AllMusic 4.5/5 | NME 8/10 | Pitchfork 6.8 | RS 1.5/5 | reviews mixed (en.wiki) | 23M sold, US/UK #1"
-spicegirls-spiceworld,4,3,"AllMusic 4.5/5 | RS 3/5 | Guardian 3/5 | NME 3/10 | 14M sold UK #1"
-spicegirls-forever,2,2,"Metacritic 45 | AllMusic 2/5 | RS 2.5/5 | UK #2 US #39"
+album_id,importance,acclaim,mainstream,sources
+spicegirls-spice,5,3,5,"AllMusic 4.5/5 | NME 8/10 | Pitchfork 6.8 | RS 1.5/5 | reviews mixed (en.wiki) | 23M sold, US/UK #1 | mainstream: Virgin; Biff Stannard, Absolute; manager-assembled group built for global charts (anchor)"
+spicegirls-spiceworld,4,3,5,"AllMusic 4.5/5 | RS 3/5 | Guardian 3/5 | NME 3/10 | 14M sold UK #1 | mainstream: Virgin; Stannard, Absolute; film tie-in global chart product"
+spicegirls-forever,2,2,5,"Metacritic 45 | AllMusic 2/5 | RS 2.5/5 | UK #2 US #39 | mainstream: Virgin; Jam & Lewis, Rodney Jerkins; US R&B hit-makers for charts"

@@ -1,8 +1,8 @@
-album_id,importance,acclaim,sources
-oasis-definitelymaybe,5,5,"AllMusic 5/5 | Pitchfork 8.8 | RS500 (2020) #217 | NME greatest British #3 | BPI 10x Plat"
-oasis-whatsthestorymorningglory,5,5,"AllMusic 5/5 | Pitchfork 8.9 | RS500 (2020) #157 | 22M sold | BPI 19x Plat"
-oasis-beherenow,4,3,"Metacritic 57 (2016 reissue) | AllMusic 3.5/5 | Q 5/5 at release | UK #1, BPI 7x Plat"
-oasis-standingontheshoulderofgiants,2,3,"AllMusic 3/5 | Q 4/5 | Guardian 2/5 | Louder: ranked last | BPI 2x Plat"
-oasis-heathenchemistry,2,2,"Metacritic 55 | AllMusic 3/5 | Pitchfork 1.2 | BPI 4x Plat"
-oasis-dontbelievethetruth,3,3,"Metacritic 64 | AllMusic 4/5 | Pitchfork 4.7 | BPI 3x Plat"
-oasis-digoutyoursoul,3,3,"Metacritic 66 | AllMusic 4.5/5 | Pitchfork 4.9 | US #5 | BPI 2x Plat"
+album_id,importance,acclaim,mainstream,sources
+oasis-definitelymaybe,5,5,4,"AllMusic 5/5 | Pitchfork 8.8 | RS500 (2020) #217 | NME greatest British #3 | BPI 10x Plat | mainstream: Creation/Sony; Britpop guitar anthems, chart singles, rapid #1"
+oasis-whatsthestorymorningglory,5,5,4,AllMusic 5/5 | Pitchfork 8.9 | RS500 (2020) #157 | 22M sold | BPI 19x Plat | mainstream: Creation; Owen Morris; anthemic Britpop radio record (brief anchor)
+oasis-beherenow,4,3,4,"Metacritic 57 (2016 reissue) | AllMusic 3.5/5 | Q 5/5 at release | UK #1, BPI 7x Plat | mainstream: Creation; bloated stadium Britpop, chart-record product"
+oasis-standingontheshoulderofgiants,2,3,4,"AllMusic 3/5 | Q 4/5 | Guardian 2/5 | Louder: ranked last | BPI 2x Plat | mainstream: Big Brother; mainstream rock aimed at charts, Go Let It Out"
+oasis-heathenchemistry,2,2,4,"Metacritic 55 | AllMusic 3/5 | Pitchfork 1.2 | BPI 4x Plat | mainstream: Big Brother; mainstream Britpop, radio singles"
+oasis-dontbelievethetruth,3,3,4,"Metacritic 64 | AllMusic 4/5 | Pitchfork 4.7 | BPI 3x Plat | mainstream: Big Brother; Dave Sardy; chart rock, radio singles"
+oasis-digoutyoursoul,3,3,4,"Metacritic 66 | AllMusic 4.5/5 | Pitchfork 4.9 | US #5 | BPI 2x Plat | mainstream: Big Brother; Dave Sardy; chart rock, radio singles"

@@ -1,8 +1,8 @@
-album_id,importance,acclaim,sources
-beberexha-idontwannagrowup,1,,"Did not chart (Wikipedia) | no critic ratings found"
-beberexha-allyourfaultpt1,2,,"US Billboard 200 #51 | only review found: Idolator 4.5/5"
-beberexha-allyourfaultpt2,4,,"US Billboard 200 #33 | Meant to Be: Hot 100 #2 | Music Canada Platinum | no critic ratings found"
-beberexha-expectations,5,3,"Metacritic 65 | US Billboard 200 #13 | RIAA Platinum"
-beberexha-bettermistakes,2,3,"Clash 7/10 | PopMatters critical | US Billboard 200 #140"
-beberexha-bebe,2,4,"AllMusic 4/5 | PopMatters 7/10 | Jenesaispop 3/5 | US Billboard 200 #132"
-beberexha-dirtyblonde,3,3,"AllMusic 3.5/5 | Jenesaispop 7/10 | PopMatters 5/10 | Stereoboard 3/5 | US Billboard 200 #43"
+album_id,importance,acclaim,mainstream,sources
+beberexha-idontwannagrowup,1,,5,"Did not chart (Wikipedia) | no critic ratings found | mainstream: Warner; hit-songwriter EP, EDM-pop radio product"
+beberexha-allyourfaultpt1,2,,5,"US Billboard 200 #51 | only review found: Idolator 4.5/5 | mainstream: Warner; outside hit-maker writers, streaming-chart pop EP"
+beberexha-allyourfaultpt2,4,,5,"US Billboard 200 #33 | Meant to Be: Hot 100 #2 | Music Canada Platinum | no critic ratings found | mainstream: Warner; companion EP, hit-maker writers, chart pop"
+beberexha-expectations,5,3,5,"Metacritic 65 | US Billboard 200 #13 | RIAA Platinum | mainstream: Warner; Meant to Be, hit-maker teams, radio pop"
+beberexha-bettermistakes,2,3,5,"Clash 7/10 | PopMatters critical | US Billboard 200 #140 | mainstream: Warner; hit-maker producers, chart-aimed pop"
+beberexha-bebe,2,4,5,AllMusic 4/5 | PopMatters 7/10 | Jenesaispop 3/5 | US Billboard 200 #132 | mainstream: Warner; dance-pop for streaming and radio
+beberexha-dirtyblonde,3,3,5,"AllMusic 3.5/5 | Jenesaispop 7/10 | PopMatters 5/10 | Stereoboard 3/5 | US Billboard 200 #43 | mainstream: Hit-maker producers (DJ Snake, Hit-Boy, Shift K3y); club-pop for charts"

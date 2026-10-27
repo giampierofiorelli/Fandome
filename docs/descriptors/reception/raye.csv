@@ -1,4 +1,4 @@
-album_id,importance,acclaim,sources
-raye-euphoricsadsongs,2,3,"Guardian 3/5 | debut mini-album, UK downloads #71 | single Secrets UK #6"
-raye-my21stcenturyblues,5,4,"Metacritic 82 | AllMusic 4/5 | Independent 5/5 | Pitchfork 6.6 | Brit Award British Album of the Year 2024 | UK #2"
-raye-thismusicmaycontainhope,4,5,"Metacritic 86 | NME 5/5 | Independent 5/5 | Rolling Stone 4.5/5 | Pitchfork 6.9 | UK #1, US #11"
+album_id,importance,acclaim,mainstream,sources
+raye-euphoricsadsongs,2,3,4,"Guardian 3/5 | debut mini-album, UK downloads #71 | single Secrets UK #6 | mainstream: Polydor; label-era dance-pop mini-album aimed at charts"
+raye-my21stcenturyblues,5,4,3,"Metacritic 82 | AllMusic 4/5 | Independent 5/5 | Pitchfork 6.6 | Brit Award British Album of the Year 2024 | UK #2 | mainstream: Human Re Sources independent; artist-led soul/pop, Brit-sweeping crossover"
+raye-thismusicmaycontainhope,4,5,3,"Metacritic 86 | NME 5/5 | Independent 5/5 | Rolling Stone 4.5/5 | Pitchfork 6.9 | UK #1, US #11 | mainstream: Human Re Sources independent; artist-led orchestral jazz-pop, UK #1"

@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-pumpkins-gish,3,4,"Debut | AllMusic 4.5/5 | Pitchfork 8.3 | Pitchfork 25 best grunge albums of the 90s | CMJ #1 | RIAA Platinum"
-pumpkins-siamesedream,5,5,"Rolling Stone 500 (2020) #341 | Metacritic 96 (deluxe) | Pitchfork 10 | Pitchfork 90s #18 | 1001 Albums | RIAA 7x Platinum"
-pumpkins-melloncollieandtheinfinitesadness,5,5,"US #1 | Time album of 1995 | 7 Grammy noms (1 win) | Rolling Stone 500 (2003) #487 | Larkin #76 | 1001 Albums | RIAA Diamond"
-pumpkins-adore,3,4,"Pitchfork 8.1, 8.5 (2014) | Guardian 4/5, NME 5/10 | US #2, RIAA Platinum, sales well below the previous two | later cult following"
+album_id,importance,acclaim,mainstream,sources
+pumpkins-gish,3,4,2,"Debut | AllMusic 4.5/5 | Pitchfork 8.3 | Pitchfork 25 best grunge albums of the 90s | CMJ #1 | RIAA Platinum | mainstream: Caroline indie debut; Butch Vig, alternative scene"
+pumpkins-siamesedream,5,5,3,"Rolling Stone 500 (2020) #341 | Metacritic 96 (deluxe) | Pitchfork 10 | Pitchfork 90s #18 | 1001 Albums | RIAA 7x Platinum | mainstream: Virgin; Butch Vig, Corgan-led alt-rock, charted"
+pumpkins-melloncollieandtheinfinitesadness,5,5,3,"US #1 | Time album of 1995 | 7 Grammy noms (1 win) | Rolling Stone 500 (2003) #487 | Larkin #76 | 1001 Albums | RIAA Diamond | mainstream: Virgin; ambitious Corgan double album, huge seller but auteur"
+pumpkins-adore,3,4,3,"Pitchfork 8.1, 8.5 (2014) | Guardian 4/5, NME 5/10 | US #2, RIAA Platinum, sales well below the previous two | later cult following | mainstream: Virgin; electronic gothic turn, artist-led, lower sales"

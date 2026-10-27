@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-verve-verve,2,4,"Early EP | AllMusic 4.5/5 | NME 8/10 | no chart data"
-verve-astorminheaven,3,4,"Mixed at release (Q 2/5, NME 8/10), reappraised: Record Collector 5/5, DiS 10/10, AllMusic 4/5 | NME 500 #473 | Pitchfork shoegaze #6 | UK #27, BPI Gold"
-verve-anorthernsoul,3,4,"Mixed-to-positive at release, praised later | NME 500 Greatest | 1995 year-end lists | UK #13, BPI Gold"
-verve-urbanhymns,5,5,"Brit Award Best Album 1998 | NME 500 Greatest | Larkin Top 1000 | Pitchfork Britpop list | UK #1, 11x Platinum | Bitter Sweet Symphony, The Drugs Don't Work"
+album_id,importance,acclaim,mainstream,sources
+verve-verve,2,4,2,Early EP | AllMusic 4.5/5 | NME 8/10 | no chart data | mainstream: Hut Recordings EP; psych-shoegaze indie
+verve-astorminheaven,3,4,2,"Mixed at release (Q 2/5, NME 8/10), reappraised: Record Collector 5/5, DiS 10/10, AllMusic 4/5 | NME 500 #473 | Pitchfork shoegaze #6 | UK #27, BPI Gold | mainstream: Hut; John Leckie; psychedelic indie, cult"
+verve-anorthernsoul,3,4,2,"Mixed-to-positive at release, praised later | NME 500 Greatest | 1995 year-end lists | UK #13, BPI Gold | mainstream: Hut; Owen Morris; indie psych-rock on chart margins"
+verve-urbanhymns,5,5,4,"Brit Award Best Album 1998 | NME 500 Greatest | Larkin Top 1000 | Pitchfork Britpop list | UK #1, 11x Platinum | Bitter Sweet Symphony, The Drugs Don't Work | mainstream: Hut/Virgin; Britpop anthems, UK #1 singles, radio-oriented"

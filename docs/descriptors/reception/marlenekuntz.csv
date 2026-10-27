@@ -1,5 +1,5 @@
-album_id,importance,acclaim,sources
-marlenekuntz-catartica,5,5,"OndaRock Pietra miliare: 'disco-rivelazione del nuovo rock italiano' | Rolling Stone Italia 30th-anniversary retrospective | debut"
-marlenekuntz-ilvile,4,5,"Rolling Stone Italia 100 best Italian albums (via concert preview) | OndaRock Consigliato: 'altro lavoro fondamentale del rock alternativo italiano degli anni 90'"
-marlenekuntz-comedisdegno,2,,"EP: two new songs, a remix, a live take, a 24-minute improvisation (it.wikipedia, OndaRock) | no rating found"
-marlenekuntz-houccisoparanoia,3,4,"OndaRock Consigliato | compromise between melodic and restless sides (OndaRock)"
+album_id,importance,acclaim,mainstream,sources
+marlenekuntz-catartica,5,5,2,OndaRock Pietra miliare: 'disco-rivelazione del nuovo rock italiano' | Rolling Stone Italia 30th-anniversary retrospective | debut | mainstream: Consorzio Produttori Indipendenti; Italian alt-rock scene (anchor)
+marlenekuntz-ilvile,4,5,2,Rolling Stone Italia 100 best Italian albums (via concert preview) | OndaRock Consigliato: 'altro lavoro fondamentale del rock alternativo italiano degli anni 90' | mainstream: CPI; Gianni Maroccolo; Italian alternative rock
+marlenekuntz-comedisdegno,2,,2,"EP: two new songs, a remix, a live take, a 24-minute improvisation (it.wikipedia, OndaRock) | no rating found | mainstream: CPI/Polygram; alternative rock, scene-based"
+marlenekuntz-houccisoparanoia,3,4,2,"OndaRock Consigliato | compromise between melodic and restless sides (OndaRock) | mainstream: Virgin/CPI; alt-rock, margins of the charts"

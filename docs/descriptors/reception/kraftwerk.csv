@@ -1,9 +1,9 @@
-album_id,importance,acclaim,sources
-kraftwerk-kraftwerk,2,3,"AllMusic 3/5 | Treble 6/10 | Spin Alt. Record Guide 7/10 | EPM 2/5"
-kraftwerk-kraftwerk2,1,3,"Disowned ('archaeology'), never reissued | Treble 7.5/10 | NME ranking near bottom"
-kraftwerk-ralfundflorian,2,4,"AllMusic 4/5 | Tom Hull B"
-kraftwerk-autobahn,5,5,"Breakthrough | AllMusic 5/5 | Uncut 5/5 | Spin Alt. Record Guide 9/10 | Mojo 4/5"
-kraftwerk-radioactivity,3,4,"AllMusic 4/5 | Mojo 4/5 | Q 4/5 | Uncut 4/5 | RS Album Guide 2/5"
-kraftwerk-transeuropeexpress,5,5,"Rolling Stone 500 #253 | AllMusic 5/5 | Mojo 5/5 | Q 5/5 | Uncut 5/5 | Christgau A-"
-kraftwerk-themanmachine,4,5,"NME 500 Greatest #57 | AllMusic 4.5/5 | Mojo 5/5 | Select 5/5"
-kraftwerk-computerworld,4,5,"AllMusic 4.5/5 | Q 5/5 | Uncut 5/5 | DiS 10/10 | Slant best of 80s #25"
+album_id,importance,acclaim,mainstream,sources
+kraftwerk-kraftwerk,2,3,1,"AllMusic 3/5 | Treble 6/10 | Spin Alt. Record Guide 7/10 | EPM 2/5 | mainstream: Philips; krautrock improvisation, Conny Plank, experimental, tiny audience"
+kraftwerk-kraftwerk2,1,3,1,"Disowned ('archaeology'), never reissued | Treble 7.5/10 | NME ranking near bottom | mainstream: Philips; experimental krautrock, home-made, small audience"
+kraftwerk-ralfundflorian,2,4,2,"AllMusic 4/5 | Tom Hull B | mainstream: Philips; transitional electronic, cult krautrock audience"
+kraftwerk-autobahn,5,5,3,"Breakthrough | AllMusic 5/5 | Uncut 5/5 | Spin Alt. Record Guide 9/10 | Mojo 4/5 | mainstream: Vertigo/Philips; surprise hit single, conceptual auteur electronics"
+kraftwerk-radioactivity,3,4,3,"AllMusic 4/5 | Mojo 4/5 | Q 4/5 | Uncut 4/5 | RS Album Guide 2/5 | mainstream: Kling Klang/EMI; conceptual auteur electronic record, charted in Europe"
+kraftwerk-transeuropeexpress,5,5,3,"Rolling Stone 500 #253 | AllMusic 5/5 | Mojo 5/5 | Q 5/5 | Uncut 5/5 | Christgau A- | mainstream: Kling Klang/EMI; auteur conceptual electronics, influential, modest charts"
+kraftwerk-themanmachine,4,5,3,"NME 500 Greatest #57 | AllMusic 4.5/5 | Mojo 5/5 | Select 5/5 | mainstream: Kling Klang/EMI; 'The Model' later UK #1, still auteur concept"
+kraftwerk-computerworld,4,5,3,"AllMusic 4.5/5 | Q 5/5 | Uncut 5/5 | DiS 10/10 | Slant best of 80s #25 | mainstream: Kling Klang/EMI; auteur concept album, charted, not radio-shaped"

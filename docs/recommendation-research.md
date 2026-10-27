@@ -188,3 +188,17 @@ discovery place at the end of Italian lists (Elisa, Subsonica, Paola & Chiara, R
 general rule in `src/lib/local.ts`: an artist with two or more key albums (importance ≥ 4, soundtracks excluded) sung mainly
 in English is a global crossover, not a local scene, everywhere discovery is used (album and artist suggestions, Bridge,
 scene paths, Artists). In today's catalogue it applies to Shakira only. Local-abroad share 20% → 19%; tests unchanged.
+
+### Mainstream score: never from a less commercial album to a much more commercial one (Oct 2026)
+Owner: Tiromancino's *La descrizione di un attimo* and Shakira's *Oral Fixation, Vol. 2* are two worlds; a fan landing on
+a packaged global chart product from an auteur record laughs, and that hurts the site. Critics' acclaim can't catch it
+(Metacritic 74). New reception column `mainstream` (0–5, scale in the guide), filled for all 780 albums by Claude from
+knowledge (label, producers/songwriters, marketing, critics' words), with the basis in `sources`. Rule: an album or artist
+2+ points more mainstream than the one you're on is never suggested, unless the album documents that artist as an
+influence; the other direction is free (Shakira can lead to Tiromancino). Artist pages use the average of the albums.
+Effect: local-abroad share 19% → 17%, lists with no suggestion 15 → 19 (e.g. Buena Vista Social Club, which has no Cuban
+neighbour yet); all judged pairs and quality tests pass. Borderline calls to review: Shakira Fijación Oral Vol. 1 (4 vs
+Vol. 2 at 5), Björk's 1977 album (4), Moroder Top Gun/Déjà Vu (5), Michael Jackson's Motown albums (5), Oasis Definitely
+Maybe (4, Creation), Lorde Pure Heroine (3), and albums released after mid-2026 (scored from their credits).
+Also: Shakira's Oral Fixation, Vol. 2 loses `gospel` (no source names it); the global-crossover rule now also needs
+success abroad (`GLOBAL_HITS`: Shakira, Moroder, Daft Punk); scene membership (Scenes paths) stays by origin.

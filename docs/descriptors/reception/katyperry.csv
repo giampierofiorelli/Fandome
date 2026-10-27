@@ -1,7 +1,7 @@
-album_id,importance,acclaim,sources
-katyperry-oneoftheboys,4,2,"Breakthrough (I Kissed a Girl) | Metacritic 47 | AllMusic 3.5/5 | Rolling Stone 2/5"
-katyperry-teenagedream,5,4,"12M sold, RIAA Diamond | Rolling Stone 250 Best of 21st Century #134 | AllMusic 5/5 | Metacritic 52 at release"
-katyperry-prism,4,3,"IFPI 6th best-selling album of 2013 | Metacritic 61 | AllMusic 3.5/5"
-katyperry-witness,2,2,"Billboard #1 but called a commercial failure | Metacritic 53 | AllMusic 2/5 | Pitchfork 4.8"
-katyperry-smile,2,2,"Commercial failure (Pitchfork) | Metacritic 58 | AllMusic 3/5 | Pitchfork 5.7"
-katyperry-143,2,1,"Commercial disappointment | Metacritic 37 | AllMusic 1.5/5 | Rolling Stone 1.5/5 | Telegraph 1/5"
+album_id,importance,acclaim,mainstream,sources
+katyperry-oneoftheboys,4,2,5,"Breakthrough (I Kissed a Girl) | Metacritic 47 | AllMusic 3.5/5 | Rolling Stone 2/5 | mainstream: Capitol; Dr. Luke, Max Martin, Glen Ballard; 'I Kissed a Girl' built for charts"
+katyperry-teenagedream,5,4,5,"12M sold, RIAA Diamond | Rolling Stone 250 Best of 21st Century #134 | AllMusic 5/5 | Metacritic 52 at release | mainstream: Brief anchor: Capitol; Dr. Luke, Max Martin; global chart product"
+katyperry-prism,4,3,5,"IFPI 6th best-selling album of 2013 | Metacritic 61 | AllMusic 3.5/5 | mainstream: Capitol; Dr. Luke, Max Martin; superstar radio pop"
+katyperry-witness,2,2,5,"Billboard #1 but called a commercial failure | Metacritic 53 | AllMusic 2/5 | Pitchfork 4.8 | mainstream: Capitol; Max Martin, Jack Garratt, Duke Dumont; superstar pop"
+katyperry-smile,2,2,5,"Commercial failure (Pitchfork) | Metacritic 58 | AllMusic 3/5 | Pitchfork 5.7 | mainstream: Capitol; hit-maker teams, radio pop"
+katyperry-143,2,1,5,"Commercial disappointment | Metacritic 37 | AllMusic 1.5/5 | Rolling Stone 1.5/5 | Telegraph 1/5 | mainstream: Capitol; Dr. Luke, Stargate; chart-aimed dance-pop"
