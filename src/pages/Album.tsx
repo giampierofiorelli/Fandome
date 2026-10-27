@@ -18,6 +18,7 @@ import { artistGenres, similarAlbumsStable } from '../lib/similar'
 import { roomTabs } from './Artist'
 import { avoidAlbums } from '../lib/suggest'
 import { albums } from '../data/seed'
+import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 
 // One page per album: reached from albums linked in posts. Rate it, and read what fans say.
@@ -30,6 +31,10 @@ export default function AlbumPage() {
   const album = albumById(albumId)
   if (!album) return <Navigate to="/explore" replace />
   const artist = artistById(album.artistId)
+  // One of the records to start with for this artist (same list as "Start here" on the artist page).
+  const essential = artist
+    ? essentialAlbums(albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year).map((a) => a.id)).find((e) => e.id === album.id)
+    : undefined
   const scores = state.users.filter((u) => typeof u.ratings[album.id] === 'number').map((u) => toScore(u.ratings[album.id]))
   const avg = scores.length ? Math.round((scores.reduce((a, b) => a + b, 0) / scores.length) * 10) / 10 : 0
   const mine = me?.ratings[album.id]
@@ -57,6 +62,11 @@ export default function AlbumPage() {
           {releaseLabel(album.id)} · {album.year}
         </div>
         <h1 className="hero-name album-hero-title">{album.title}</h1>
+        {essential && artist && (
+          <span className={`essential-pill album-hero-essential ${essential.kind}`}>
+            ✦ {ESSENTIAL_LABEL[essential.kind]} · {artist.name}
+          </span>
+        )}
         {artist && (
           <div className="album-hero-artists">
             {[artist, ...(album.withArtists ?? []).map((id) => artistById(id)).filter(Boolean)].map((a) => (

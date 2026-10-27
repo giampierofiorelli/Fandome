@@ -6,6 +6,7 @@ import { albums, artists, concerts, parties } from '../data/seed'
 import { artistGenres, similarArtistsStable } from '../lib/similar'
 import { avoidAlbums } from '../lib/suggest'
 import { genreLabel } from '../lib/descriptors'
+import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { SuggestedArtist } from '../components/SuggestedArtist'
 import { SceneBack } from '../components/SceneBack'
 import { starterPack } from '../lib/packs'
@@ -45,6 +46,9 @@ export default function ArtistPage() {
   const joined = Boolean(me?.fanSince[artist.id])
   const fans = state.users.filter((u) => u.fanSince[artist.id])
   const myAlbums = albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year)
+  // Start here: the records that made the artist, for someone who doesn't know them yet.
+  const essentials = essentialAlbums(myAlbums.map((a) => a.id))
+  const essentialIds = new Set(essentials.map((e) => e.id))
   const shows = concerts.filter((c) => c.artistId === artist.id).sort((a, b) => b.date.localeCompare(a.date))
   const pack = starterPack(state.posts, state.users, artist.id)
   const party = parties.find((p) => p.artistId === artist.id)
@@ -139,6 +143,29 @@ export default function ArtistPage() {
       )}
       {tab === 'albums' && (
         <>
+          {essentials.length > 0 && (
+            <section className="start-here" aria-labelledby="start-here-title">
+              <div className="start-here-head">
+                <h2 id="start-here-title" className="dotmatrix">START HERE</h2>
+                <span className="muted small">New to {artist.name}? The records that made them.</span>
+              </div>
+              <div className="start-here-row">
+                {essentials.map(({ id, kind }) => {
+                  const al = myAlbums.find((a) => a.id === id)!
+                  return (
+                    <Link key={id} to={`/album/${id}`} className="start-tile">
+                      <span className="album-art">
+                        <AlbumCover album={al} size={180} />
+                      </span>
+                      <span className={`essential-pill ${kind}`}>{ESSENTIAL_LABEL[kind]}</span>
+                      <span className="album-title">{al.title}</span>
+                      <span className="muted small">{al.year}</span>
+                    </Link>
+                  )
+                })}
+              </div>
+            </section>
+          )}
           <p className="muted small center tab-hint">Tap an album to rate it and find similar music</p>
           <div className="album-grid">
             {myAlbums.map((al) => {
@@ -157,6 +184,11 @@ export default function ArtistPage() {
                     )}
                     <span className={mine ? 'album-score mine' : 'album-score'}>{mine ? fmtScore(toScore(mine)) : 'Rate'}</span>
                   </span>
+                  {essentialIds.has(al.id) && (
+                    <span className="essential-pill small" title="One of the records to start with">
+                      ✦ Essential
+                    </span>
+                  )}
                   <span className="album-title">{al.title}</span>
                   <span className="muted small">
                     {al.year} · {avg ? `fans ${fmtScore(Math.round(avg * 10) / 10)}` : 'no ratings yet'}

@@ -792,6 +792,22 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .album-score.mine { background: var(--ink); color: var(--on-ink); border-color: transparent; }
 .album-title { font-weight: 500; letter-spacing: -0.02em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
+/* Start here: the essential records of an artist, first thing on the Albums tab. */
+.start-here { margin: 4px 0 18px; }
+.start-here-head { display: flex; flex-direction: column; gap: 4px; margin: 0 4px 10px; }
+.start-here-head h2 { margin: 0; font-size: 17px; }
+.start-here-row { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; margin: 0 -16px; padding: 2px 16px 6px; }
+.start-here-row::-webkit-scrollbar { display: none; }
+.start-tile { flex: 0 0 min(44%, 200px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 4px; padding: 10px 10px 14px; border-radius: 26px; border: 1px solid var(--glass-edge); background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); color: inherit; min-width: 0; transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.start-tile:active { transform: scale(0.97); }
+.start-tile .album-art { margin-bottom: 8px; }
+.start-tile .album-art .cover { width: 100% !important; height: auto !important; aspect-ratio: 1; box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.45); }
+.essential-pill { align-self: flex-start; height: 22px; padding: 0 9px; border-radius: 999px; display: inline-flex; align-items: center; font-family: var(--dot); font-weight: 800; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; background: var(--ink); color: var(--on-ink); }
+.essential-pill.defining, .essential-pill.key { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.essential-pill.acclaimed { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--glass-edge); }
+.album-hero-essential { align-self: center; margin: 2px auto 6px; }
+.essential-pill.small { height: 20px; padding: 0 8px; font-size: 10px; margin: -2px 0 2px; }
+
 /* ---------- Score badge ---------- */
 .score-badge { display: inline-flex; align-items: baseline; gap: 1px; font-weight: 300; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1; }
 .score-badge small { font-size: 0.5em; opacity: 0.55; font-weight: 400; margin-left: 1px; }
@@ -1123,7 +1139,7 @@ body.story-open .modal-root { z-index: 100; }
 .modal-backdrop { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(10, 12, 16, 0.42); }
 @media (max-width: 640px) {
   .modal.sheet { backdrop-filter: none; -webkit-backdrop-filter: none; background: color-mix(in srgb, var(--bg) 70%, #fff); }
-  .post, .card, .glass-card, .tile, .coll-tile, .album-tile, .share-story, .report-reason { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .post, .card, .glass-card, .tile, .coll-tile, .album-tile, .start-tile, .share-story, .report-reason { backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
 @media (max-width: 640px) and (prefers-color-scheme: dark) {
   .modal.sheet { background: color-mix(in srgb, var(--bg) 88%, #fff); }
