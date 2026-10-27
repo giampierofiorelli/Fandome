@@ -1,0 +1,37 @@
+album_id,genre,source,url,scope,what_it_supports
+depechemode-violator,synthpop,v_aoty,https://www.albumoftheyear.org/album/5347-depeche-mode-violator.php,whole album,Primary AOTY album genre
+depechemode-violator,alternativedance,v_aoty,https://www.albumoftheyear.org/album/5347-depeche-mode-violator.php,whole album,AOTY subgenre; driving studio rhythms across several tracks
+depechemode-violator,darkwave,v_aoty,https://www.albumoftheyear.org/album/5347-depeche-mode-violator.php,whole album,Retrospective darkwave label for album palette
+depechemode-violator,electropop,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,whole album,"Distinct source-tagged electropop, not inferred from synthpop"
+depechemode-violator,alternativerock,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,whole album,Album genre index lists alternative rock
+depechemode-violator,gothicrock,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,some tracks,Cataloguer gothic-rock label for darker rock-edged moments
+depechemode-violator,dance,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,whole album,Source names dance; album maintains high rhythmic profile
+depechemode-violator,electro,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,some tracks,"Electro named by source, chiefly rhythmic texture"
+depechemode-violator,electronic,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,whole album,Electronic classified explicitly as separate broad genre
+depechemode-violator,rock,v_allformusic,https://www.allformusic.fr/albums/71f1482e-e63f-3b2c-811b-939f62708f2a,some tracks,"Source names rock, primarily guitar-accented tracks"
+depechemode-violator,dancerock,v_world,https://www.allmusic.com/album/world-in-my-eyes-mw0000528793,some tracks,AllMusic expressly tags the album track World In My Eyes as dance-rock
+depechemode-violator,collegerock,v_world,https://www.allmusic.com/album/world-in-my-eyes-mw0000528793,some tracks,AllMusic tags album track World In My Eyes as college-rock
+depechemode-violator,alternativepoprock,v_world,https://www.allmusic.com/album/world-in-my-eyes-mw0000528793,some tracks,AllMusic tags album track World In My Eyes as alternative pop/rock
+depechemode-songsoffaithanddevotion,alternativerock,s_aoty,https://www.albumoftheyear.org/album/5343-depeche-mode-songs-of-faith-and-devotion.php,whole album,Dominant AOTY genre; guitars/performance forward
+depechemode-songsoffaithanddevotion,alternativedance,s_allmusic,https://www.allmusic.com/album/songs-mw0000618113,whole album,AllMusic album style label
+depechemode-songsoffaithanddevotion,alternativepoprock,s_allmusic,https://www.allmusic.com/album/songs-mw0000618113,whole album,AllMusic explicitly calls album alternative pop/rock
+depechemode-songsoffaithanddevotion,alternativeindierock,s_allmusic,https://www.allmusic.com/album/songs-mw0000618113,whole album,AllMusic alternative/indie rock style
+depechemode-songsoffaithanddevotion,dancerock,s_allmusic,https://www.allmusic.com/album/songs-mw0000618113,whole album,AllMusic dance-rock style
+depechemode-songsoffaithanddevotion,collegerock,s_allmusic,https://www.allmusic.com/album/songs-mw0000618113,whole album,AllMusic college rock label
+depechemode-songsoffaithanddevotion,industrialrock,s_classic,https://www.classicpopmag.com/features/classic-album/album-spotlight-depeche-mode-ultra/,some tracks,Classic Pop describes heavier 1993 album as industrial-rock powered
+depechemode-songsoffaithanddevotion,gospel,s_latimes,https://www.latimes.com/archives/la-xpm-1993-03-21-ca-13324-story.html,some tracks,Contemporary critic explicitly names gospel in Condemnation/Get Right With Me
+depechemode-ultra,alternativerock,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,whole album,AOTY primary genre
+depechemode-ultra,synthpop,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,whole album,AOTY co-primary album genre
+depechemode-ultra,triphop,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,some tracks,Secondary tag; trip-hop especially Sister of Night
+depechemode-ultra,industrialrock,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,some tracks,"Heavier passages, not a uniform industrial rock album"
+depechemode-ultra,ambientpop,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,some tracks,"Airy and atmospheric songs, secondary style"
+depechemode-ultra,downtempo,u_aoty,https://www.albumoftheyear.org/album/5344-depeche-mode-ultra.php,some tracks,Slower pieces and instrumentals
+depechemode-ultra,alternativedance,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,whole album,AllMusic style
+depechemode-ultra,alternativepoprock,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,whole album,AllMusic style
+depechemode-ultra,alternativeindierock,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,whole album,AllMusic style
+depechemode-ultra,dancerock,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,some tracks,"AllMusic style, uneven groove across album"
+depechemode-ultra,collegerock,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,whole album,AllMusic radio style
+depechemode-ultra,punknewwave,u_allmusic,https://www.allmusic.com/album/ultra-mw0000098008,texture,"AllMusic heritage umbrella style, not core 1997 sound"
+depechemode-ultra,blues,u_original,https://www.depmode.com/Depeche_Mode_Ultra.php,some tracks,Original Mute press release explicitly cites blues elements
+depechemode-ultra,gospel,u_original,https://www.depmode.com/Depeche_Mode_Ultra.php,some tracks,Original Mute press release cites gospel influences as musical texture
+depechemode-ultra,country,u_original,https://www.depmode.com/Depeche_Mode_Ultra.php,some tracks,Original Mute press release cites country; pedal steel on Bottom Line
