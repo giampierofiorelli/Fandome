@@ -1,0 +1,19 @@
+﻿album_id,title,year,type,in_catalog_ts,action,phase,note
+tiromancino-tiromancyno,Tiromancyno,1992,studio,no,add to catalog.ts,01,1992 original Tiromancyno spelling; site later calls it Tiromancino
+tiromancino-insisto,Insisto,1994,studio,no,add to catalog.ts,01,
+tiromancino-alonealieno,Alone alieno,1995,studio,no,add to catalog.ts,01,
+tiromancino-rosaspinto,Rosa spinto,1997,studio,no,add to catalog.ts,01,1997 official year; some sources list 1998
+tiromancino-ladescrizionediunattimo,La descrizione di un attimo,2000,studio,yes,keep existing id,02,2000 original album; not 2025 anniversary issue
+tiromancino-incontinuomovimento,In continuo movimento,2002,studio,yes,keep existing id,02,Original 2002 album; producer credits from label metadata
+tiromancino-illusioniparallele,Illusioni parallele,2004,studio,no,add to catalog.ts,02,"2004 original, missing from current catalog; add before validation"
+tiromancino-lalbadidomani,L’alba di domani,2007,soundtrack,yes,keep existing id,02,Original 2007 hybrid album / Nero bifamiliare score; source classified here as soundtrack (Wikipedia calls studio); press reports 23 Mar versus Wikipedia 11 May
+tiromancino-lessenziale,L’essenziale,2010,studio,no,add to catalog.ts,03,
+tiromancino-indaginesuunsentimento,Indagine su un sentimento,2014,studio,no,add to catalog.ts,03,
+tiromancino-nelrespirodelmondo,Nel respiro del mondo,2016,studio,no,add to catalog.ts,03,
+tiromancino-finoaqui,Fino a qui,2018,studio,no,add to catalog.ts,03,2018 hybrid of re-recorded catalogue and four original songs; verify display classification
+tiromancino-hocambiatotantecase,Ho cambiato tante case,2021,studio,no,add to catalog.ts,04,
+tiromancino-quandomenomeloaspetto,Quando meno me lo aspetto,2026,studio,no,add to catalog.ts,04,2026 album released 6 Feb 2026
+,95-05,2005,compilation,no,exclude from descriptors,,Excluded: retrospective collection
+,Il suono dei chilometri,2008,live,no,exclude from descriptors,,Excluded: live; no independently documented landmark status
+,Le origini,2008,compilation,no,exclude from descriptors,,Excluded: archival compilation/reissue of Tiromancyno material
+,La descrizione di un attimo (25th Anniversary),2025,compilation,no,exclude from descriptors,,"Excluded: anniversary edition, not new studio album"
