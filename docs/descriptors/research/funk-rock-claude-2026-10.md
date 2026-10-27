@@ -7,3 +7,10 @@ Owner asked for 2-3 key funk-rock albums so that Red Hot Chili Peppers' records 
 - **Faith No More, The Real Thing (1989)**: Slash/Reprise; Matt Wallace and the band producers; Mike Patton's first album; Billy Gould on E-mu Emax for Epic; genres named: alternative metal, funk metal, rap metal; lyrics around murder, darkly comic (Q). Source: en.wikipedia (AllMusic, Kerrang!, Q, Pitchfork, Billboard).
 
 New genres: `psychedelicfunk`, `progressivesoul`, `rapmetal`. Wurlitzer recorded as `electricpiano`, Echoplex as `delay`.
+
+## Second batch (owner: artists that emerge from the Red Hot Chili Peppers analysis)
+Chosen by how often they appear in the RHCP rows' `sounds_like`: Fishbone (6 albums), Jane's Addiction (3), Living Colour (3).
+- **Jane's Addiction, Ritual de lo habitual (1990)**: Warner; Dave Jerden and Perry Farrell; Navarro (later in RHCP for One Hot Minute), Avery, Perkins; violin (Charlie Bisharat), strings; genres named: alternative rock, alternative metal, funk metal, hard rock, progressive-rock influence, klezmer influence (Of Course); Q compares Stop! to RHCP, Select credits a Led Zeppelin revival; themes: stealing, anti-racism, grief (Xiola Blue). Source: en.wikipedia.
+- **Living Colour, Vivid (1988)**: Epic; Ed Stasium, Mick Jagger (two tracks, harmonica); genres named: hard rock, heavy metal, funk metal, alternative metal, funk rock, with soul, jazz, pop, rap, arena rock, punk, avant-garde jazz; critics compare Hendrix, Lynyrd Skynyrd, Roxy Music, Sly Stone, Led Zeppelin, Ornette Coleman's Prime Time. Source: en.wikipedia.
+- **Fishbone, Truth and Soul (1988)**: Columbia; David Kahne; horns (trombone, trumpet, saxophone), keyboards; genres named: funk rock, funk metal, hard rock, ska, punk, reggae, soul, funk, blues; socially conscious theme. Freddie's Dead is a Curtis Mayfield cover (not an influence). Source: en.wikipedia.
+New genre: `klezmer`.
