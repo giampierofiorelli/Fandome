@@ -4,9 +4,18 @@ import { albumById, artistById } from '../lib/util'
 import { AlbumCover } from './ui'
 import { IconSparkle, IconX } from './icons'
 import { useStore } from '../store/store'
-import { COUNTRY_NAMES, fromCountry } from '../data/scenes'
+import { COUNTRY_NAMES } from '../data/scenes'
 
 const countryName = (code: string) => COUNTRY_NAMES[code] ?? code
+
+// A suggestion from a local scene in another country: just the country's name, as a quiet tag next to the title.
+export function CountryTag({ name }: { name: string }) {
+  return (
+    <span className="country-tag" title={`From a local scene in ${name}`}>
+      {name}
+    </span>
+  )
+}
 
 // Albums suggested by the descriptor engine, each with the reason it is shown.
 // "Not for me" hides one for good (only on this device).
@@ -22,10 +31,12 @@ export function SimilarList({ items, onHide }: { items: Similar[]; onHide?: (alb
             <Link to={`/album/${al.id}`} className="chart-row similar-row">
               <AlbumCover album={al} size={52} />
               <span className="grow chart-row-info">
-                <strong>{al.title}</strong>
+                <span className="title-line">
+                  <strong>{al.title}</strong>
+                  {s.newCountry && <CountryTag name={countryName(s.newCountry)} />}
+                </span>
                 <span className="muted small block">
                   {al.credit ?? artistById(al.artistId)?.name} · {al.year}
-                  {s.newCountry && ` · ${fromCountry(countryName(s.newCountry))}`}
                 </span>
                 <span className="small block similar-why">{s.reasons.join(' · ')}</span>
               </span>

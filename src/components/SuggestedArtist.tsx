@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useStore } from '../store/store'
 import { artistById } from '../lib/util'
-import { COUNTRY_NAMES, fromCountry } from '../data/scenes'
+import { COUNTRY_NAMES } from '../data/scenes'
+import { CountryTag } from './SimilarList'
 import { ArtistDisc } from './ui'
 import { IconCheck, IconSparkle, IconX } from './icons'
 
@@ -18,11 +19,11 @@ export function SuggestedArtist({ artistId, reason, newCountry, kicker }: { arti
         <ArtistDisc id={a.id} size={44} />
         <span className="grow">
           {kicker && <span className="suggest-kicker">{kicker}</span>}
-          <strong>{a.name}</strong>
-          <span className="muted small block">
-            {reason}
-            {newCountry && ` · ${fromCountry(COUNTRY_NAMES[newCountry] ?? newCountry)}`}
+          <span className="title-line">
+            <strong>{a.name}</strong>
+            {newCountry && <CountryTag name={COUNTRY_NAMES[newCountry] ?? newCountry} />}
           </span>
+          <span className="muted small block">{reason}</span>
         </span>
       </Link>
       {me && (
