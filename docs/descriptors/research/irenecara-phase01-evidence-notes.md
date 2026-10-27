@@ -1,0 +1,63 @@
+# Irene Cara — Phase 01: evidence and decisions
+
+Research date: 27 October 2026. These four album-wide numeric scales are original Fandome research judgments. Genre-evidence file specifies where a source describes the **entire album**, just **some tracks** or a **texture**. Credits are drawn from album listings and transcription of release sleeves; all `status` fields are `draft`.
+
+## Discography boundary and the childhood album
+
+- The professional artist id `irenecara` does not appear in Fandome `src/data/catalog.ts` or `src/data/seed.ts` (branch `descriptors`). The descriptor path `docs/descriptors/irenecara.csv` is absent. Nothing has already been described.
+- **1968 *Esta es Irene* should not be in this Irene Cara import.** The Gema original is billed as **Irene Escalera**, an earlier name. MusicBrainz's actual Gema 1968 label catalogue lists `Esta es Irene | Irene Escalera | LPG-3054`, while other physical discography transcriptions mention catalogue `LPG-3063`, already associated by MusicBrainz with a **different** Gema record (*Latin Power*). Some online summaries claim 1967. The named-artist boundary is firmer than year or catalogue number. Research under Irene Escalera only if separately requested. Sources: https://musicbrainz.org/label/b1a8f8d7-3592-4fd9-b25e-39cf2fc1722d and https://www.allformusic.fr/albums/6e24f685-295a-4eaf-9cdc-986aac9cf072. Earlier under-name exclusion follows the supplied Fandome research brief.
+- The ***Fame* and *Flashdance* film soundtracks** contain prominent Irene Cara performances but are credited to multiple artists. They are not new Irene Cara studio albums; the *Flashdance* hit occurs on *What a Feelin’* as well.
+- *All My Heart* (1996) is an extended multi-remix release of one song, not a complete studio project (https://musicbrainz.org/release/4c09327f-044c-4247-bca8-ff7f5b74d9dc).
+
+## Anyone Can See (1982)
+
+- **Discography**: First full adult-era solo studio album, original 10-track release. US Network label issue January 1982. Explicit 1982 chronology at MusicBrainz and AllMusic. *Fame* film theme is not on this album; Four Tops' **Reach Out (I'll Be There)** is a **cover**, not evidence that Four Tops influenced the recording artist generally.
+- **Genres**: AllMusic explicitly says strong **R&B**, **adult contemporary** and **soft rock**; original LP classified electronic/funk/soul, MusicBrainz release group tags **pop, disco, soul**. More energetic tracks balance the ballad-heavy side, so `groove=3`, `tempo=3`, `mood=3`. `electronic=2` reflects keyboards/synth alongside live drummers, without claiming synthetic grooves predominate. Earliest genres at the start of the field weigh most.
+- **Instrument details**: AllMusic detailed personnel include Irene Cara **piano**, Hiram Bullock **clavinet**, Joe Caro **guitar**, bassists Francisco Centeno, Will Lee, John Siegler, drummers Chris Parker and Andy Newmark, and conga/percussion by Mike Carabello and Jimmy Maelen; Fender Rhodes and synthesizer are in album instrumental credit categories. `electricpiano` maps Fender Rhodes. Not all instruments play in every track.
+- **Production**: **Ron Dante** only album-credited producer. His collaboration as backing singer does not change producer identity. No specific drum machine, vocal effect or recorder model can be established for this album: therefore `production` is deliberately blank.
+- **Voice and comparison**: Justin Kantor explicitly compares the timbral range to **Bonnie Tyler** and **Deniece Williams**, but this is `sounds_like`, not influence. Song reviewer mentions emotional power/ballad subtlety; `powerful|clear|soft` covers vocal range across the album. The `landmark=1` indicates Cara's important adult-era debut (not the level of 1983 breakthrough).
+- **Lyrics**: Several ballads address love and heartbreak; introspection is less prominent. A recording of the Four Tops is a song *covered* here, not artist influence.
+
+## What a Feelin' (1983)
+
+- **Edition is critical**: Original US vinyl often **10 tracks** (including 'You Were Made for Me' but often lacking 'The Dream'); various 1983 European LPs feature **11**. The digital 15-track package includes **extended remixes, dance remixes and instrumental edits**. All descriptions characterize the 1983 core recordings; no `remixing` or `remastering` descriptor is assigned because those are reissue properties.
+- **Producers**: **Giorgio Moroder** produced the main original recordings. Original credits and MusicBrainz specify **James Newton Howard** produced 'You Were Made for Me'. These two (and only these two) qualify for album-level `producers`. Irene Cara, Keith Forsey and Pete Bellotte being composers/lyricists does not make them album producers.
+- **Electronic texture**: Sessiondays' detailed original LP personnel list **Arthur Barrow** keyboards/bass, **Richie Zito** guitars/**programmed drums**, **Keith Forsey** drum kit on Flashdance, **Sylvester Levay** keyboards and **James Newton Howard** piano and synth. `drumprogramming` is directly documented on multiple original tracks. **Do not guess** LinnDrum, DX7, PPG Wave, Synclavier or Prophet-5 from the producer's general studio equipment; model not substantiated for these tracks.
+- **Genres/scales**: Moroder-driven dance-pop and Eurodisco dominate; European 1983 sleeve classified Electro/Synth-Pop/Disco as well. AllMusic identifies contemporary pop/rock, adult contemporary and soft rock secondary to the dance core. `energy=5`, `groove=5`, `polish=5`, `electronic=4`; lower-energy ballad explains `mood=4` (not 5) and `tempo=4` despite the singles' urgency.
+- **Themes**: Self-belief, movement/dance and interpersonal love; title song is about fulfilment through artistic ambition. Song's presence on *Flashdance* does not turn a full studio LP into type `soundtrack`.
+- **Influences**: Cara stated in interviews that she liked Donna Summer but initially feared comparison with her because of Moroder, **not** that Summer shaped this recording: Donna Summer enters `sounds_like`, not `influenced_by`.
+
+## Carasmatic (1987)
+
+- **Album original**: Nine tracks. AllMusic lists Adult Contemporary/Soft Rock. The original Elektra CD issue is filed under Electronic / Funk-Soul / Pop, with synth-pop and ballad types. Interpret broad *electronic* as recording texture; synth and drums coexist with live rhythm instruments.
+- **Producers (track allocation from original LP transcription)**: George Johnson (1,8), **George Duke** (2,3,4,6,7 according to published liner transcriptions; specific online reproductions differ on 7), **John Farrar** (5), **William 'Bill' Seidman** (9) and **Irene Cara** as actual *co-producer* on (1,9). Cara's separate **executive producer** credit is insufficient by itself, but the *co-producer* credit qualifies her. `Bill Seidman` is the common credit identity; do not create separate William Seidman record unless importer requires mapping.
+- **Instruments**: track-by-track credits confirm George Duke/John Farrar **Synclavier**, Duke/Sembello programmed or electronic drums, Randy Kerber acoustic piano/synth, Harvey Mason and JR Robinson drums, George Johnson/Paul Jackson Jr guitar, synthetic and electric bass, horn and string arrangements. `synclavier` is explicit; **Linn** is only credited generically as 'Drums (Linn)' in one transcription: exact LM-1 vs LinnDrum model is **not identified**, so no `linndrum` or `linnlm1` claim. **Vocoder** by John Farrar is specifically on 'Say Goodnight Irene', a single-track production detail, not a pervasive style.
+- **Sound**: pop rock and softer adult contemporary balanced with funk/soul and synthesised textures. Multi-producer approach explains episodic variety `experimental=2`, polish 5 and mood 3. Horn/strings used on several songs, not an orchestral record throughout.
+- **Similarity vs guests**: Luther Vandross, Carole King, Bonnie Raitt, Syreeta Wright, James Ingram and Michael Bolton appear as **collaborators, writers or backing singers**, never as automatic `influenced_by`. Contemporary reviews were divided: AllMusic negative on much of the material, Cash Box positive about the session players.
+- **Marking**: `landmark=0` because important transition and unusual production is not itself among Cara's defining titles compared with the first two.
+
+## Irene Cara Presents Hot Caramel (2011)
+
+- **Identity**: full two-CD original studio project with **24 tracks** released **4 April 2011**. Some catalogues credit **Hot Caramel** as primary artist, others `Irene Cara` main plus Hot Caramel featured, and original packaging says **Irene Cara Presents Hot Caramel**. A Fandome `coBilled.ts` entry must preserve this billing rather than treating Hot Caramel as a guest vocalist on every song.
+- **Genre evidence**: In a first-person interview, Cara describes group's actual sound as R&B, rock, jazz, Latin, dance, hip-hop and soul. A contemporary 2008 project preview adds acid jazz and adult-contemporary material; 2011 trade press explicitly calls it *hip-pop* (separate allowed token `hippop`), and AllMusic labels the album R&B. Genres cover diverse **individual songs**, not a claim that the entire 100-minute album sounds like each genre simultaneously. Covers of Petula Clark's *Downtown* and Eagles' *Life in the Fast Lane* support rock/pop variety, but cover artists are not `influenced_by`.
+- **Instruments**: A reused album press biography lists named guest **piano** (Takana Miyamoto), **saxophone** (Karolyn Kafer), **trombone** (Mike Bogle), **acoustic guitar** (Manny Lopez). This appears in an album-community transcript, **not an original scanned booklet**. Those four specific instrument categories are plausible, independently consistent with featured credits from distributor Qobuz; verify original liner pages before marking `reviewed`. Do not infer a particular synthesizer/drum machine from contemporary R&B style.
+- **Producer**: Accessible sources establish Cara was project leader and that the female ensemble included producers, but **do not supply a clear album-level or track-level credited producer list**. `producers` and `production` therefore blank, deliberately, rather than inventing Irene Cara or Gary Haase's production role (Haase is documented as a *composer* on individual tracks). Discogs original 2011 two-CD page could not be opened due to automated-access restrictions; revisit original packaging later.
+- **Lyrics and vocals**: It is a multivocalist ensemble that includes romance songs, interludes, performance/theatrical songs and R&B dance songs. `voice` reflects multiple singing styles, not Irene Cara exclusively handling every lead. `groove=3` is an album-wide judgement: not a uniform dance album.
+- **Landmark**: `0` under Fandome's definition of most defining discography records, although it merits description as her final big recorded ensemble project. Confidence `medium` specifically due to scarce authoritative original liner details. Later **2013 five-track Bandcamp subset** is not a second album.
+
+## Artist influences and warnings
+
+### Independently self-reported artist listening and inspirations
+
+2018 direct interview: https://megadiversities.com/index.php?Itemid=55&catid=36%3Aentrevues-&id=387%3Aexclusive-interview-with-the-oscar-and-grammy-winning-afro-latina-entertainer-irene-cara&option=com_content&view=article
+
+- **Carmen Miranda**: Cara explicitly calls her an early influence for introducing Brazilian samba to a wider audience.
+- **Celia Cruz**: named as beloved Cuban singer in childhood listening.
+- **The Beatles**: named among music she enjoyed.
+- **The Jackson 5** and **Michael Jackson**: singled out as favourites within Motown-era music.
+- **Stevie Wonder**: named as admired songwriter.
+- **James Taylor** and **Joni Mitchell**: named as admired songwriting models.
+
+1984 contemporary interview in Billboard mentions **Carole King**, **Valerie Simpson** and **Laura Nyro** as idols. The scan cannot be fully verified through the research tool today; pending direct archival verification, their names should be treated as **secondary/research candidates only**, not album-level `influenced_by`. Cara's admiration for Barbra Streisand and Donna Summer as artists who controlled their careers is distinct from proof they musically influenced any of these four albums. Influences in the individual descriptor rows are therefore **empty**; there is no justified album-specific attribution in the cited sources.
+
+No speculative producer gear, no film soundtrack duplicate, no compilation, no unreleased album, no album with a previously used short ID was silently added. The exact reissue track counts and *Irene Escalera* first name are flagged for validation.

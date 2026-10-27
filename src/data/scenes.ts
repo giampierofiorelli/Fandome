@@ -84,7 +84,7 @@ const ROWS: Record<string, string> = {
   skunkanansie: 'GB en 1990 rock,alt', sinead: 'IE en 1980 alt,pop', achillelauro: 'IT it 2010 pop,rock', celentano: 'IT it 1950 rock,pop', dalida: 'FR fr 1950 pop,disco',
   agnes: 'SE en 2000 pop,disco', angelinamango: 'IT it 2020 pop', mango: 'IT it 1980 pop,songwriter', arisa: 'IT it 2000 pop', austra: 'CA en 2010 electronic,synthpop',
   beachhouse: 'US en 2000 indie,alt', billyocean: 'GB en 1970 pop,soul', matiabazar: 'IT it 1970 pop,synthpop', bronskibeat: 'GB en 1980 synthpop', carladalforno: 'AU en 2010 electronic,alt',
-  carmenconsoli: 'IT it 1990 rock,songwriter', caselli: 'IT it 1960 pop', cerrone: 'FR en 1970 disco', perrelli: 'SE en 1990 pop', christine: 'FR fr 2010 pop,electronic',
+  carmenconsoli: 'IT it 1990 rock,songwriter', caselli: 'IT it 1960 pop', cerrone: 'FR en 1970 disco', irenecara: 'US en 1980 pop,rnb', perrelli: 'SE en 1990 pop', christine: 'FR fr 2010 pop,electronic',
   davena: 'IT it 1980 pop', dieantwoord: 'ZA en 2000 hiphop,electronic', ditonellapiaga: 'IT it 2020 pop,electronic', rettore: 'IT it 1970 pop,rock', modugno: 'IT it 1950 pop,songwriter',
   eivor: 'FO en 2000 folk,electronic', elisa: 'IT en 1990 pop,rock', emma: 'IT it 2010 pop,rock', deandre: 'IT it 1960 songwriter,folk', mannoia: 'IT it 1980 pop,songwriter',
   battiato: 'IT it 1970 songwriter,electronic', gabriellaferri: 'IT it 1960 folk', gazebo: 'IT en 1980 synthpop,disco', geolier: 'IT it 2010 hiphop,trap', georgeezra: 'GB en 2010 pop,folk',

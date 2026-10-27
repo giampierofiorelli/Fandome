@@ -1,0 +1,13 @@
+﻿artist_id,album_id,title,year,type,original_credit,in_catalog,existing_descriptor,action,phase,notes
+irenecara,irenecara-anyonecansee,Anyone Can See,1982,studio,Irene Cara,no,no,ADD,01,Original adult-era studio album.
+irenecara,irenecara-whatafeelin,What a Feelin',1983,studio,Irene Cara,no,no,ADD,01,Original adult-era studio album.
+irenecara,irenecara-carasmatic,Carasmatic,1987,studio,Irene Cara,no,no,ADD,01,Original adult-era studio album.
+irenecara,irenecara-irenecarapresentshotcaramel,Irene Cara Presents Hot Caramel,2011,studio,Irene Cara Presents Hot Caramel,no,no,ADD,01,Co-billed original with ensemble Hot Caramel: add credit to coBilled.ts; review artist page association.
+irenecara,,Esta es Irene,1968,studio,Irene Escalera,no,no,EXCLUDE — EARLIER NAME,,"Recorded and originally issued as Irene Escalera, before the Irene Cara professional identity; music databases disagree 1967/1968; Gema catalogue lists 1968 Irene Escalera. Do not create on Irene Cara page."
+irenecara,,Fame (Original Motion Picture Soundtrack),1980,soundtrack,Various artists,no,no,EXCLUDE / HOLD,,Various artists original soundtrack; multiple Irene performances but she is not the sole billed soundtrack artist; original Michael Gore production; only include later if soundtracks separately researched.
+irenecara,,Flashdance (Original Soundtrack From the Motion Picture),1983,soundtrack,Various artists,no,no,EXCLUDE / HOLD,,Various artists; title song appears on What a Feelin; skip to avoid duplicate canonical recording.
+irenecara,,D.C. Cab (Original Motion Picture Soundtrack),1983,soundtrack,Various artists,no,no,EXCLUDE / HOLD,,Various artists; The Dream is sometimes present on some LP versions of What a Feelin.
+irenecara,,All My Heart,1996,remix,Irene Cara,no,no,EXCLUDE / HOLD,,Single track and remix/dub package rather than a studio album; MusicBrainz labels Album mechanically.
+irenecara,,Precarious 90s,1990,compilation,Irene Cara,no,no,EXCLUDE / HOLD,,Reported selection of Eurodance singles; uncertain precise date; not an original full studio album.
+irenecara,,Fame,1988,compilation,Irene Cara,no,no,EXCLUDE / HOLD,,Generic late soundtrack-derived repackagings/re-recordings under artist title; avoid duplicate.
+irenecara,,Irene Cara Presents Hot Caramel (5-track Bandcamp issue),2013,ep,Irene Cara,no,no,EXCLUDE / HOLD,,Subset posted to Bandcamp in 2013; not a second 2011 album or fresh discography entry.

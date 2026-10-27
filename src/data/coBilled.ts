@@ -22,6 +22,7 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'sepideh-anwar': { credit: 'Ensemble Marâghî feat. Sepideh Raissadat' },
   'hossamramzy-immortalegypt': { credit: 'Phil Thornton & Hossam Ramzy' },
   'aguilera-burlesqueoriginalmotionpicturesoundtrack': { with: ['cher'], credit: 'Christina Aguilera & Cher' },
+  'irenecara-irenecarapresentshotcaramel': { credit: 'Irene Cara Presents Hot Caramel' },
   'irama-nostress': { credit: 'Irama & Rkomi' },
   'battiato-joepattisexperimentalgroup': { credit: 'Franco Battiato & Pino “Pinaxa” Pischetola' },
   'felakuti-musicofmanycolours': { credit: 'Roy Ayers & Fela Anikulapo Kuti' },
