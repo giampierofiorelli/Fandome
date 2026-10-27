@@ -206,6 +206,7 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .section-head.center { justify-content: center; margin-top: 22px; }
 /* Section tabs (artist room, moderation) stay on top while the page scrolls. */
 .tabs-sticky { position: sticky; top: calc(env(safe-area-inset-top) + 8px); z-index: 30; }
+.tabs-sticky .seg-wrap { padding: 0 16px 20px; margin: 0 -16px -20px; max-width: calc(100% + 32px); } /* room for the pill's shadow: a scrolling row clips it into square corners */
 .tabs-sticky .seg { background: color-mix(in srgb, var(--bg) 92%, #fff 8%); box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.35); }
 
 /* Big light numerals */
