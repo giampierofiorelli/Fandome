@@ -146,7 +146,7 @@ export default function ArtistPage() {
           {essentials.length > 0 && (
             <section className="start-here" aria-labelledby="start-here-title">
               <div className="start-here-head">
-                <h2 id="start-here-title" className="dotmatrix">START HERE</h2>
+                <h2 id="start-here-title">Start here</h2>
                 <span className="muted small">New to {artist.name}? The records that made them.</span>
               </div>
               <div className="start-here-row">

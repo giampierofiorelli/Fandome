@@ -793,9 +793,9 @@ a.row-item:hover::before, a.row-item:hover + .row-item::before { opacity: 0; }
 .album-title { font-weight: 500; letter-spacing: -0.02em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Start here: the essential records of an artist, first thing on the Albums tab. */
-.start-here { margin: 4px 0 18px; }
+.start-here { margin: 26px 0 18px; }
 .start-here-head { display: flex; flex-direction: column; gap: 4px; margin: 0 4px 10px; }
-.start-here-head h2 { margin: 0; font-size: 17px; }
+.start-here-head h2 { margin: 0; font-size: 20px; letter-spacing: -0.03em; }
 .start-here-row { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; margin: 0 -16px; padding: 2px 16px 6px; }
 .start-here-row::-webkit-scrollbar { display: none; }
 .start-tile { flex: 0 0 min(44%, 200px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 4px; padding: 10px 10px 14px; border-radius: 26px; border: 1px solid var(--glass-edge); background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); color: inherit; min-width: 0; transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1); }
