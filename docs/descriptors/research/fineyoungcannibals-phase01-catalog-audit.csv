@@ -1,0 +1,6 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,in_seed_ts,already_described,action,evidence_url
+fineyoungcannibals-fineyoungcannibals,fineyoungcannibals,Fine Young Cannibals,1985,studio,no,no,"no (docs/descriptors/fineyoungcannibals.csv not found, 404)",add artist and studio album,https://londonrecords.co.uk/artists/fine-young-cannibals/
+fineyoungcannibals-therawandthecooked,fineyoungcannibals,The Raw & the Cooked,1989,studio,no,no,"no (docs/descriptors/fineyoungcannibals.csv not found, 404)",add artist and studio album,https://londonrecords.co.uk/artists/fine-young-cannibals/
+,fineyoungcannibals,The Raw & the Remix,1990,remix,no,no,not applicable,exclude: assembled pre-existing 12-inch mixes; classified Compilation by AllMusic,https://www.allmusic.com/album/release/the-raw-the-remix-mr0000111537
+,fineyoungcannibals,The Finest,1996,compilation,no,no,not applicable,exclude: greatest-hits collection (includes new tracks),https://londonrecords.co.uk/artists/fine-young-cannibals/
+,fineyoungcannibals,FYC40,2025,compilation,no,no,not applicable,exclude: 40-year retrospective and compilation,https://www.fineyoungcannibals.net/

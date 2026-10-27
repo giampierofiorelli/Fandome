@@ -154,6 +154,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Fats Waller', 'Art Tatum', 'Count Basie', 'Arturo Benedetti Michelangeli', 'Donna Summer', 'Sylvester', 'Diana Ross', 'The Temptations', 'Nina Simone', 'Nina Hagen', 'Dolly Parton', 'Dusty Springfield', 'Doris Day', 'Peggy Lee', 'Connie Francis', 'Talking Heads', 'Simple Minds', 'Soft Cell'],
     source: 'Richard Coles, International Musician & Recording World 1986 (Fats Waller, Art Tatum, Count Basie, Benedetti Michelangeli); Jimmy Somerville, Equality365 (influences growing up: Donna Summer, Sylvester, Diana Ross, The Temptations, Nina Simone, Nina Hagen, Dolly Parton), BUTT (Dusty Springfield, Doris Day), The Quietus (Peggy Lee and Connie Francis, kept here for the Communards’ jazz standards; Talking Heads, Simple Minds, Soft Cell). Records he only bought or loved as a boy (Gloria Gaynor, Village People, El Coco, George McCrae, Harry Thumann) left out',
   },
+  fineyoungcannibals: {
+    names: ['Otis Redding', 'Marvin Gaye', 'Prince'],
+    source: 'Roland Gift, Explore Liverpool (Otis Redding, Marvin Gaye, what the band listened to when it began); Gift and David Steele, The Guardian 2025 (Prince’s If I Was Your Girlfriend vocal technique on She Drives Me Crazy). Sam Cooke and Al Green left out: Classic Pop’s narrative, not the band’s words',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

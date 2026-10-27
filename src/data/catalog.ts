@@ -253,6 +253,7 @@ const ROWS: Row[] = [
   ['bronskibeat', 'Bronski Beat', '#5a7ac9', 'Smalltown Boy, never forgotten', [['The Age of Consent', 1984], ['Hundreds & Thousands', 1985], ['Truthdare Doubledare', 1986], ['Rainbow Nation', 1995], ['The Age of Reason', 2017]]],
   ['communards', 'The Communards', '#b8323f', 'Jimmy Somerville and Richard Coles: falsetto disco and political pop', [['Communards', 1986], ['Red', 1987]]],
   ['imagination', 'Imagination', '#7a4fa8', 'Leee John’s falsetto and British post-disco', [['Body Talk', 1981], ['In the Heat of the Night', 1982], ['Night Dubbing', 1983], ['Scandalous', 1983], ['Trilogy', 1986], ['Closer', 1987], ['The Fascination of the Physical', 1992]]],
+  ['fineyoungcannibals', 'Fine Young Cannibals', '#c0453a', 'Roland Gift’s voice and British soul-pop', [['Fine Young Cannibals', 1985], ['The Raw & the Cooked', 1989]]],
   ['carladalforno', 'Carla dal Forno', '#8a8f7a', 'Lo-fi, hazy and hypnotic', [['You Know What It’s Like', 2016], ['Look Up Sharp', 2019], ['Come Around', 2022]]],
   ['carmenconsoli', 'Carmen Consoli', '#c9503f', 'The Sicilian songwriter with a guitar', [['Due parole', 1996], ['Confusa e felice', 1997], ['Mediamente isterica', 1998], ['Stato di necessità', 2000], ['L’eccezione', 2002], ['Eva contro Eva', 2006], ['Elettra', 2009], ['Volevo fare la rockstar', 2021]]],
   ['caselli', 'Caterina Caselli', '#e0c04a', 'The golden helmet of Italian beat', []],
