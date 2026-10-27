@@ -170,6 +170,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Ultravox', 'The Human League', 'Genesis', 'Gentle Giant', 'Yes', 'Deep Purple', 'Led Zeppelin', 'Leonard Cohen', 'Premiata Forneria Marconi', 'Banco del Mutuo Soccorso', 'Chick Corea', 'Frank Zappa', 'Miles Davis', 'Béla Bartók', 'Edgard Varèse'],
     source: 'Gazebo: 70-80.it 2024 (Ultravox and Human League behind Masterpiece), Tuttorock (prog: Genesis, Gentle Giant; Ritchie Blackmore; Chick Corea, Zappa, Miles Davis; Bartók, Varèse), Velvet Music 2013 (Genesis’ Selling England by the Pound, Banco), Recensiamo Musica (Leonard Cohen, Led Zeppelin, PFM), cinquantamila (Yes). Left out: the Beatles, Bob Dylan, Simon & Garfunkel (songs he learned to play), Lucio Battisti (loved)',
   },
+  novecento: {
+    names: ['Billy Cobham', 'Al Jarreau', 'Eumir Deodato', 'Brian Auger', 'Genesis', 'Peter Gabriel', 'Stevie Wonder', 'Elton John'],
+    source: 'Pino Nicolosi, Il Sussidiario 2014 (idols the band grew up on: Billy Cobham, Al Jarreau, Deodato, Brian Auger; Genesis and Peter Gabriel); Lino Nicolosi, Billboard 1996 (Stevie Wonder, Elton John, Al Jarreau). Chaka Khan and Pink Floyd left out: Jazzitalia biography, not the band’s words',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

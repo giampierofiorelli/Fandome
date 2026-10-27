@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_catalog,action,evidence
+novecento-novecento,Novecento,Novecento,1984,studio,no,add_artist_and_album,"Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026: no Novecento, no existing descriptor"
+novecento-dreamland,Novecento,Dreamland,1986,studio,no,add_album,"Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026: no Novecento, no existing descriptor"
+novecento-shine,Novecento,Shine,1988,studio,no,add_album,"Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026: no Novecento, no existing descriptor"
+novecento-leavingnow,Novecento,Leaving Now,1991,studio,no,add_album,"Fandome descriptors branch catalog.ts and seed.ts checked 27 Oct 2026: no Novecento, no existing descriptor"
