@@ -1,0 +1,36 @@
+album_id,genre,source,source_url,scope,evidence
+harrystyles-harrystyles,poprock,a2017,https://www.albumoftheyear.org/album/77297-harry-styles-harry-styles.php,whole album,Explicit Pop Rock album classification; rock-driven solo debut
+harrystyles-harrystyles,softrock,a2017,https://www.albumoftheyear.org/album/77297-harry-styles-harry-styles.php,whole album,Soft Rock genre classification; frequent gentler guitar tracks
+harrystyles-harrystyles,rock,pf2017,https://pitchfork.com/reviews/albums/23204-harry-styles/,whole album,"Rock music focus spans ballads, guitar-driven tracks and hard-rock songs"
+harrystyles-harrystyles,britpop,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,some tracks,Review explicitly attributes Britpop to 2017 debut lead single
+harrystyles-harrystyles,glamrock,a2017,https://www.albumoftheyear.org/album/77297-harry-styles-harry-styles.php,some tracks,Glam Rock classification; theatrical rock gestures
+harrystyles-harrystyles,folkpop,a2017,https://www.albumoftheyear.org/album/77297-harry-styles-harry-styles.php,some tracks,Folk Pop classification; acoustically led parts
+harrystyles-harrystyles,hardrock,pf2017,https://pitchfork.com/reviews/albums/23204-harry-styles/,some tracks,Only Angel and Kiwi described as hard rock
+harrystyles-harrystyles,pop,a2017,https://www.albumoftheyear.org/album/77297-harry-styles-harry-styles.php,whole album,Pop-centered songwriting present inside 1970s rock references
+harrystyles-harrystyles,psychedelia,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,texture,Retrospective calls debut psychedelia-influenced
+harrystyles-harrystyles,altcountry,pf2017,https://pitchfork.com/reviews/albums/23204-harry-styles/,some tracks,Pitchfork calls Two Ghosts and Ever Since New York alt-country turns
+harrystyles-fineline,poprock,pf2019,https://pitchfork.com/reviews/albums/harry-styles-fine-line/,whole album,Review explicitly describes mystic pop-rock record
+harrystyles-fineline,pop,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,whole album,Album folds old rock textures into contemporary pop songwriting
+harrystyles-fineline,psychedelicpop,pf2019,https://pitchfork.com/reviews/albums/harry-styles-fine-line/,whole album,Pitchfork uses psychedelic pop for the record
+harrystyles-fineline,softrock,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,some tracks,Lights Up and other tracks described with soft-rock elements
+harrystyles-fineline,powerpop,pf2019,https://pitchfork.com/reviews/albums/harry-styles-fine-line/,some tracks,1970s power pop expressly named among album influences
+harrystyles-fineline,folkrock,pf2019,https://pitchfork.com/reviews/albums/harry-styles-fine-line/,some tracks,Laurel Canyon folk-rock explicitly named as musical element
+harrystyles-fineline,funk,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,some tracks,"Review identifies funk in rhythmic tracks, notably Watermelon Sugar"
+harrystyles-fineline,indiepop,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,some tracks,NME calls Golden indie-pop
+harrystyles-fineline,soul,n2019,https://www.nme.com/reviews/album/harry-styles-fine-line-review-packed-with-personality-and-charm-and-saucy-lyrics-2584779,some tracks,NME describes soul influence in Lights Up
+harrystyles-fineline,rock,pf2019,https://pitchfork.com/reviews/albums/harry-styles-fine-line/,some tracks,Acoustic rock and band-led sounds directly described
+harrystyles-fineline,americana,am2019,https://www.allmusic.com/album/fine-line-mw0003333652,some tracks,AllMusic describes Canyon Moon as rustic Americana
+harrystyles-harryshouse,pop,pf2022,https://pitchfork.com/reviews/albums/harry-styles-harrys-house/,whole album,Third album framed squarely as modern pop
+harrystyles-harryshouse,synthpop,sl2022,https://www.slantmagazine.com/music/harry-styles-harrys-house-album-review/,whole album,Slant explicitly describes album’s 1980s new wave and synth-pop aspects
+harrystyles-harryshouse,popfunk,pa2022,https://popalbumreviews.com/albums/harry-styles/harrys-house/review,some tracks,Album review expressly names pop-funk while stronger critics name pop and funk independently
+harrystyles-harryshouse,funk,pf2022,https://pitchfork.com/reviews/albums/harry-styles-harrys-house/,some tracks,Pitchfork identifies funk as recurring album strand
+harrystyles-harryshouse,newwave,gr2022,https://www.grammy.com/news/harry-styles-new-album-harrys-house-review-fine-line-as-it-was-takeaways-2022/,some tracks,Recording Academy directly identifies new wave touches
+harrystyles-harryshouse,disco,n2022,https://www.nme.com/reviews/harry-styles-new-album-harrys-house-3226209,some tracks,NME describes Cinema and other songs in disco idiom
+harrystyles-harryshouse,soul,n2022,https://www.nme.com/reviews/harry-styles-new-album-harrys-house-3226209,some tracks,NME explicitly cites soul; horns and vocal phrasing
+harrystyles-harryshouse,poprock,a2022,https://www.allmusic.com/album/harrys-house-mw0003696194,whole album,AllMusic Pop/Rock classification
+harrystyles-harryshouse,rnb,n2022,https://www.nme.com/reviews/harry-styles-new-album-harrys-house-3226209,some tracks,NME explicitly describes Daylight as R&B
+harrystyles-harryshouse,folk,n2022,https://www.nme.com/reviews/harry-styles-new-album-harrys-house-3226209,some tracks,"Folky Matilda, Boyfriends and Keep Driving"
+harrystyles-harryshouse,yachtrock,g2022,https://www.theguardian.com/music/2022/may/16/harry-styles-harrys-house-review,some tracks,Guardian directly labels Cinema yacht-rock funk
+harrystyles-harryshouse,altpop,gr2022,https://www.grammy.com/news/harry-styles-new-album-harrys-house-review-fine-line-as-it-was-takeaways-2022/,some tracks,Recording Academy specifically names alt-pop touches
+harrystyles-harryshouse,softrock,gg2022,https://www.theguardian.com/music/2022/sep/07/harrys-house-2022-mercury-prize-harry-styles,some tracks,Guardian 2022 essay explicitly lists soft rock among the album styles
+harrystyles-harryshouse,citypop,pa2022,https://popalbumreviews.com/albums/harry-styles/harrys-house/review,texture,Album review explicitly calls out Japanese city-pop as a stylistic texture; lower evidence strength

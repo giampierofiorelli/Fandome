@@ -7,7 +7,7 @@ type Row = [id: string, name: string, color: string, tagline: string, albums: [t
 
 const ROWS: Row[] = [
   ['sombr', 'sombr', '#6f7fa8', 'Bedroom heartbreak, stadium choruses', [['in another life', 2023], ['I Barely Know Her', 2025]]],
-  ['harrystyles', 'Harry Styles', '#e0705a', 'Treat people with kindness, talk about the setlist', [['Harry Styles', 2017], ['Fine Line', 2019], ['Harry’s House', 2022]]],
+  ['harrystyles', 'Harry Styles', '#e0705a', 'Treat people with kindness, talk about the setlist', [['Harry Styles', 2017], ['Fine Line', 2019], ['Harry’s House', 2022], ['Kiss All the Time. Disco, Occasionally.', 2026]]],
   ['ariana', 'Ariana Grande', '#b98ad6', 'High notes and higher ponytails', [['Yours Truly', 2013], ['My Everything', 2014], ['Dangerous Woman', 2016], ['Sweetener', 2018], ['thank u, next', 2019], ['Positions', 2020], ['Eternal Sunshine', 2024], ['Wicked: The Soundtrack', 2024], ['Wicked: For Good – The Soundtrack', 2025], ['petal', 2026]]],
   ['beyonce', 'Beyoncé', '#d4a537', 'Every era a world of its own', [['Dangerously in Love', 2003], ['B’Day', 2006], ['I Am… Sasha Fierce', 2008], ['4', 2011], ['Beyoncé', 2013], ['Lemonade', 2016], ['Everything Is Love', 2018], ['The Lion King: The Gift', 2019], ['Renaissance', 2022], ['Cowboy Carter', 2024]]],
   ['sabrina', 'Sabrina Carpenter', '#f08bb0', 'Short, sweet and very quotable', [['Eyes Wide Open', 2015], ['EVOLution', 2016], ['Singular: Act I', 2018], ['Singular: Act II', 2019], ['emails i can’t send', 2022], ['Short n’ Sweet', 2024], ['Man’s Best Friend', 2025]]],

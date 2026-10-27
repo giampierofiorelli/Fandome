@@ -110,6 +110,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Tunde Nightingale'],
     source: 'en.wikipedia, King Sunny Adé (played with Nightingale and borrowed his so wa mbe jùjú style)',
   },
+  harrystyles: {
+    names: ['The Rolling Stones', 'The Beatles', 'Fleetwood Mac', 'Queen', 'Elvis Presley', 'Shania Twain', 'Savage Garden', 'Norah Jones'],
+    source: 'Harry Styles, NPR interview on Fine Line (Feb 2020): the artists he grew up with',
+  },
   spicegirls: {
     names: ['Madonna', 'Michael Jackson'],
     source: 'Geri Halliwell, memoir excerpt in Marie Claire ("pop music like early Madonna and Michael Jackson"); Melanie C, Interview magazine',

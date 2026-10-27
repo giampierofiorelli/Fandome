@@ -1,0 +1,5 @@
+album_id,artist,title,year,type,in_catalog,catalog_title,action,notes
+harrystyles-harrystyles,Harry Styles,Harry Styles,2017,studio,yes,Harry Styles,retain existing id,"Found in src/data/catalog.ts, descriptors branch."
+harrystyles-fineline,Harry Styles,Fine Line,2019,studio,yes,Fine Line,retain existing id,"Found in src/data/catalog.ts, descriptors branch."
+harrystyles-harryshouse,Harry Styles,Harry’s House,2022,studio,yes,Harry’s House,retain existing id,"Found in src/data/catalog.ts, descriptors branch."
+harrystyles-kissallthetimediscooccasionally,Harry Styles,"Kiss All the Time. Disco, Occasionally.",2026,studio,no,,add before phase 02 import,Released 6 March 2026; source: Sony Music Canada.
