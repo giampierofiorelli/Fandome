@@ -1,0 +1,4 @@
+album_id,title,year,type,in_catalog,action,catalog_source,release_source
+u2-rattleandhum,Rattle and Hum,1988,soundtrack,no,add_before_validator,src/data/catalog.ts (descriptors; U2 row audited 27 Oct 2026),https://www.u2.com/products/rattle-and-hum
+u2-achtungbaby,Achtung Baby,1991,studio,yes,keep_existing_id,src/data/catalog.ts (descriptors; U2 row audited 27 Oct 2026),https://www.u2.com/products/achtung-baby
+u2-zooropa,Zooropa,1993,studio,yes,keep_existing_id,src/data/catalog.ts (descriptors; U2 row audited 27 Oct 2026),https://www.u2.com/products/u2-zooropa

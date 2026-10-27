@@ -1,0 +1,60 @@
+album_id,genre,source,url,scope,what_it_supports
+u2-rattleandhum,poprock,Album of the Year — Rattle and Hum,https://www.albumoftheyear.org/album/4435-u2-rattle-and-hum.php,whole album,AOTY primary Pop Rock
+u2-rattleandhum,bluesrock,Album of the Year — Rattle and Hum,https://www.albumoftheyear.org/album/4435-u2-rattle-and-hum.php,some tracks,AOTY Blues Rock; roots-focused studio material and guest B.B. King
+u2-rattleandhum,heartlandrock,Album of the Year — Rattle and Hum,https://www.albumoftheyear.org/album/4435-u2-rattle-and-hum.php,some tracks,AOTY names Heartland Rock; token already requested in phase 02
+u2-rattleandhum,alternativerock,Album of the Year — Rattle and Hum,https://www.albumoftheyear.org/album/4435-u2-rattle-and-hum.php,whole album,AOTY Alternative Rock
+u2-rattleandhum,rootsrock,Album of the Year — Rattle and Hum,https://www.albumoftheyear.org/album/4435-u2-rattle-and-hum.php,whole album,AOTY explicitly names Roots Rock: NEW TOKEN
+u2-rattleandhum,rock,Apple Music — 1988 Rattle and Hum editorial,https://music.apple.com/us/album/rattle-and-hum/1442801732,whole album,Apple Music classifies LP Rock
+u2-rattleandhum,albumrock,AllMusic — Rattle and Hum original LP,https://www.allmusic.com/album/rattle-and-hum-mw0000375268,whole album,AllMusic Album Rock
+u2-rattleandhum,alternativepoprock,AllMusic — Rattle and Hum original LP,https://www.allmusic.com/album/rattle-and-hum-mw0000375268,whole album,AllMusic Alternative Pop/Rock
+u2-rattleandhum,alternativeindierock,AllMusic — Rattle and Hum original LP,https://www.allmusic.com/album/rattle-and-hum-mw0000375268,whole album,AllMusic Alternative/Indie Rock
+u2-rattleandhum,contemporarypoprock,AllMusic — Rattle and Hum original LP,https://www.allmusic.com/album/rattle-and-hum-mw0000375268,whole album,AllMusic Contemporary Pop/Rock
+u2-rattleandhum,rockandroll,AllMusic — Rattle and Hum original LP,https://www.allmusic.com/album/rattle-and-hum-mw0000375268,some tracks,AllMusic Rock & Roll style
+u2-rattleandhum,arenarock,"Winnipeg Free Press, 12 Oct 1988 review",https://www.u2songs.com/news/u2_explores_american_musical_traditions_in_rattle_and_hum,some tracks,Contemporary reviewer identifies U2 arena rock material included on concert tracks
+u2-rattleandhum,soul,Knight-Ridder contemporary double-LP review,https://www.u2songs.com/news/u2s_rattle_much_much_more_than_a_soundtrack,some tracks,1988 review explicitly names Memphis soul on Angel of Harlem
+u2-rattleandhum,memphissoul,Knight-Ridder contemporary double-LP review,https://www.u2songs.com/news/u2s_rattle_much_much_more_than_a_soundtrack,some tracks,1988 critic calls Angel of Harlem Memphis soul: NEW TOKEN
+u2-rattleandhum,folk,Knight-Ridder contemporary double-LP review,https://www.u2songs.com/news/u2s_rattle_much_much_more_than_a_soundtrack,some tracks,1988 review notes Irish and American folk passages on Van Diemen’s Land / Love Rescue Me
+u2-rattleandhum,blues,Knight-Ridder contemporary double-LP review,https://www.u2songs.com/news/u2s_rattle_much_much_more_than_a_soundtrack,some tracks,1988 review explicitly names blues cuts with B.B. King and concert material
+u2-rattleandhum,gospel,Knight-Ridder contemporary double-LP review,https://www.u2songs.com/news/u2s_rattle_much_much_more_than_a_soundtrack,some tracks,1988 review names gospel on Hawkmoon 269 and choir-backed I Still Haven’t Found
+u2-achtungbaby,alternativerock,Album of the Year — Achtung Baby,https://www.albumoftheyear.org/album/4432-u2-achtung-baby.php,whole album,AOTY primary Alternative Rock
+u2-achtungbaby,poprock,Album of the Year — Achtung Baby,https://www.albumoftheyear.org/album/4432-u2-achtung-baby.php,whole album,AOTY Pop Rock
+u2-achtungbaby,alternativedance,Album of the Year — Achtung Baby,https://www.albumoftheyear.org/album/4432-u2-achtung-baby.php,some tracks,AOTY Alternative Dance; rhythm-forward songs
+u2-achtungbaby,baggy,Album of the Year — Achtung Baby,https://www.albumoftheyear.org/album/4432-u2-achtung-baby.php,some tracks,AOTY explicitly lists Baggy secondary album style
+u2-achtungbaby,dancerock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic Dance-Rock
+u2-achtungbaby,albumrock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic Album Rock
+u2-achtungbaby,alternativepoprock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic Alternative Pop/Rock
+u2-achtungbaby,alternativeindierock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic Alternative/Indie Rock
+u2-achtungbaby,contemporarypoprock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic Contemporary Pop/Rock
+u2-achtungbaby,collegerock,AllMusic — Achtung Baby,https://www.allmusic.com/album/achtung-baby-mw0000202435,whole album,AllMusic College Rock
+u2-achtungbaby,industrial,Stereogum — Zooropa Turns 20,https://stereogum.com/1398731/zooropa-turns-20/reviews/the-anniversary,texture,Stereogum explicitly names industrial music aesthetics on Achtung Baby
+u2-achtungbaby,shoegaze,Stereogum — Zooropa Turns 20,https://stereogum.com/1398731/zooropa-turns-20/reviews/the-anniversary,texture,Stereogum describes strains of shoegaze; Irish Times corroborates
+u2-achtungbaby,glamrock,"The New Yorker — Me2, February 1992",https://www.newyorker.com/magazine/1992/02/17/1992-02-17-075-tny-cards-000145798,texture,The New Yorker names glam-rock alongside feedback-oriented guitar textures
+u2-achtungbaby,funk,"The New Yorker — Me2, February 1992",https://www.newyorker.com/magazine/1992/02/17/1992-02-17-075-tny-cards-000145798,some tracks,The New Yorker names funk in the album sound
+u2-achtungbaby,heavymetal,"The New Yorker — Me2, February 1992",https://www.newyorker.com/magazine/1992/02/17/1992-02-17-075-tny-cards-000145798,texture,"The New Yorker describes heavy-metal effects, not a fully metal album"
+u2-achtungbaby,rock,Spokane Public Library — Achtung Baby original sleeve MARC,https://catalog.spokanelibrary.org/catalog/Record/d81568b1-20e6-55ec-8083-8c869c5316d7,whole album,Library MARC catalog classifies the 1991 record Rock music
+u2-achtungbaby,experimental,Music Waves — Achtung Baby review,https://www.musicwaves.org/frmReview.aspx?ID=3963,texture,Music Waves tags Experimental; supported by recording-method interview
+u2-achtungbaby,electro,Music Waves — Achtung Baby review,https://www.musicwaves.org/frmReview.aspx?ID=3963,texture,"Music Waves explicitly tags Electro; weak as a full-album genre, listed late"
+u2-zooropa,alternativerock,Album of the Year — Zooropa,https://www.albumoftheyear.org/album/4431-u2-zooropa.php,whole album,AOTY Alternative Rock
+u2-zooropa,artpop,Album of the Year — Zooropa,https://www.albumoftheyear.org/album/4431-u2-zooropa.php,whole album,AOTY Art Pop; electronic and conceptual song design
+u2-zooropa,alternativedance,Album of the Year — Zooropa,https://www.albumoftheyear.org/album/4431-u2-zooropa.php,some tracks,AOTY Alternative Dance
+u2-zooropa,artrock,Album of the Year — Zooropa,https://www.albumoftheyear.org/album/4431-u2-zooropa.php,some tracks,AOTY Art Rock
+u2-zooropa,baggy,Album of the Year — Zooropa,https://www.albumoftheyear.org/album/4431-u2-zooropa.php,some tracks,AOTY explicitly names Baggy secondary
+u2-zooropa,electronic,Chartsurfer — original Zooropa LP/cassette/CD credits,https://www.chartsurfer.de/artist/u2/zooropa-album_frcgnn.html,whole album,1993 original album editions list Electronic as one of the musical genres
+u2-zooropa,synthpop,Chartsurfer — original Zooropa LP/cassette/CD credits,https://www.chartsurfer.de/artist/u2/zooropa-album_frcgnn.html,some tracks,Original cassette editions style Synth-pop; no remap to electropop
+u2-zooropa,poprock,Chartsurfer — original Zooropa LP/cassette/CD credits,https://www.chartsurfer.de/artist/u2/zooropa-album_frcgnn.html,some tracks,Original LP / cassette style Pop Rock
+u2-zooropa,experimental,Chartsurfer — original Zooropa LP/cassette/CD credits,https://www.chartsurfer.de/artist/u2/zooropa-album_frcgnn.html,whole album,Original 1993 discography style Experimental
+u2-zooropa,albumrock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,whole album,"AllMusic Album Rock, broad umbrella only"
+u2-zooropa,alternativepoprock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,whole album,AllMusic Alternative Pop/Rock
+u2-zooropa,alternativeindierock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,whole album,AllMusic Alternative/Indie Rock
+u2-zooropa,contemporarypoprock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,whole album,AllMusic Contemporary Pop/Rock
+u2-zooropa,dancerock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,some tracks,AllMusic Dance-Rock
+u2-zooropa,collegerock,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,whole album,AllMusic College Rock
+u2-zooropa,postpunk,AllMusic — Zooropa album,https://www.allmusic.com/album/zooropa-mw0000098950,some tracks,AllMusic Post-Punk style
+u2-zooropa,industrial,"Newsweek contemporary Zooropa review (1993), U2 archive",https://www.u2.com/news/title/newsweek__zooropa_1107,some tracks,1993 Newsweek review explicitly names industrial on Numb
+u2-zooropa,disco,"Stephen Thomas Erlewine, AllMusic — Zooropa review",https://www.allmusic.com/album/r183482,some tracks,AllMusic explicitly refers to German disco in Lemon
+u2-zooropa,industrialrock,Sputnikmusic — Zooropa album review (2014),https://www.sputnikmusic.com/review/64063/U2-Zooropa/,some tracks,Independent review specifies industrial rock in some arrangements; weak source
+u2-zooropa,techno,"Music & Media, 10 July 1993 — Numb notice",https://worldradiohistory.com/UK/Music-and-Media/90s/1993/MM-1993-07-10.pdf,some tracks,1993 trade review associates Numb specifically with electro and techno
+u2-zooropa,electro,"Music & Media, 10 July 1993 — Numb notice",https://worldradiohistory.com/UK/Music-and-Media/90s/1993/MM-1993-07-10.pdf,some tracks,1993 trade review applies electro to Numb specifically
+u2-zooropa,edm,Sputnikmusic — Zooropa album review (2014),https://www.sputnikmusic.com/review/64063/U2-Zooropa/,some tracks,Independent 2014 review names electronic dance music as a strand; weak and modern tag
+u2-zooropa,abstract,Chartsurfer — original Zooropa LP/cassette/CD credits,https://www.chartsurfer.de/artist/u2/zooropa-album_frcgnn.html,texture,1993 cassette Discogs style lists Abstract: NEW TOKEN
+u2-zooropa,rock,"Peyton Thomas, Pitchfork (2020) — Zooropa",https://pitchfork.com/reviews/albums/u2-zooropa/,whole album,Pitchfork labels the album Rock

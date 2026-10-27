@@ -1,0 +1,4 @@
+album_id,artist,title,year,type,in_catalog,action,notes
+u2-originalsoundtracks1,U2,Original Soundtracks 1,1995,studio,no,add,Billed as Passengers; co-billed Brian Eno; fictitious soundtracks are recorded studio compositions
+u2-pop,U2,Pop,1997,studio,no,add,U2 record absent from 2026-10-27 branch descriptors catalog; add before validator
+u2-allthatyoucantleavebehind,U2,All That You Can’t Leave Behind,2000,studio,yes,keep,Existing seed title uses curly apostrophe; preserve u2-allthatyoucantleavebehind id

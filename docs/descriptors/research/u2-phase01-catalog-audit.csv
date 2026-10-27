@@ -1,0 +1,4 @@
+album_id,title,year,type,in_catalog,action,catalog_source
+u2-boy,Boy,1980,studio,yes,keep_existing_id,catalog.ts U2 row
+u2-october,October,1981,studio,no,add_before_validator,U2.com / AllMusic
+u2-war,War,1983,studio,yes,keep_existing_id,catalog.ts U2 row

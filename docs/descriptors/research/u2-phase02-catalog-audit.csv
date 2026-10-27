@@ -1,0 +1,4 @@
+album_id,title,year,type,in_catalog,action,catalog_source,release_source
+u2-underabloodredsky,Under a Blood Red Sky,1983,live,no,add_before_validator,catalog.ts U2 row,https://www.u2.com/products/under-a-blood-red-sky
+u2-theunforgettablefire,The Unforgettable Fire,1984,studio,no,add_before_validator,catalog.ts U2 row,https://www.u2.com/products/the-unforgettable-fire
+u2-thejoshuatree,The Joshua Tree,1987,studio,yes,keep_existing_id,catalog.ts U2 row,https://www.u2.com/products/u2-the-joshua-tree
