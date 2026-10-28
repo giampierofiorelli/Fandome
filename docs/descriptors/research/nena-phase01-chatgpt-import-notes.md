@@ -69,3 +69,10 @@ Check whether any important early-1990s non-rock album explicitly requested by p
 - New genre token `baroquerock` (parents rock, baroquepop).
 - Artist added with band and solo studio albums (15 titles, 1983–2020); scene DE de 1980 pop,rock,synthpop (a local scene singing in German). Still active.
 - Artist influences from Nena's own words; Eric Burdon and The Animals filed as The Animals.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/nena.csv`.
+- Nena (1983): Connie Francis confirmed (AllMusic, Alan Severa: "Her vocal style, remarkably reminiscent of early-'60s Connie Francis").
+- ? (Fragezeichen): the "'70s Baroque rock" remark confirmed in Severa's AllMusic review; no artist named.
+- It's All in the Game: ABBA added (Trouser Press: "the record's general resemblance to mid-period Abba"); Pat Benatar and Stevie Nicks kept (AllMusic, Erlewine, on Woman on Fire).
