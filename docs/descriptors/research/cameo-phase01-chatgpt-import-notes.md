@@ -75,3 +75,4 @@ CSV encoding UTF-8 with BOM, RFC-style quoted fields where necessary, and CRLF n
 
 - 4 rows imported; catalogue 17 studio albums 1977-2000. New genres discosoul, discofunk.
 - Scene US en 1970 funk,rnb,soul. Artist influences Sly and the Family Stone, James Brown, Ohio Players (group named after them); Sam Cooke and Jackie Wilson left out (seen at the Apollo, no musical debt stated).
+- Enriched from Discogs (186723, 479704, 948393, 388862): hornarrangements on all four (Nathan Leftenant; The Tity Brothers; Sammy Lowe), stringarrangements and strings on Ugly Ego (Johnny Pate, Michael Goldberg), timbales on Secret Omen. Voice left empty: no source describes it. Reception researched by Claude.
