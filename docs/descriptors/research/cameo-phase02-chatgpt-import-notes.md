@@ -68,3 +68,4 @@ CSV: UTF-8 with BOM, quoted comma-containing fields, CRLF records. The ZIP holds
 
 - 4 rows appended as delivered; no new tokens; albums already in the catalogue.
 - Reception and missing comparisons researched by Claude.
+- sounds_like added from critics: Feel Me Wendy Carlos, The Spinners (Christgau); Style Slave (Christgau); She's Strange Grace Jones, Sly and Robbie, Talking Heads, George Benson (BBC, Easlea 2011); Alligator Woman The B-52's (Christgau, title hit).
