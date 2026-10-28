@@ -8,3 +8,7 @@ Owner flagged Cowboy Carter suggested from Dire Straits' debut on "rock" alone a
 - influenced_by stays empty (Linda Martell is a guest; Tharpe and Chuck Berry are sampled).
 - polish 5 to 4 (Beyonce kept songs raw, Sony; 'gutbucket', Pitchfork); experimental 4 to 3 (genre-hopping but accessible).
 - Evidence row for rockandroll corrected: the Sony release does not say roots rock.
+
+## Generic rock (owner, Oct 2026)
+
+Owner: plain "rock" only when sources call the whole album a rock record; otherwise the precise subgenre. Cowboy Carter keeps rockandroll, countryrock, softrock, surfrock and drops plain rock; Lemonade drops plain rock (bluesrock stays). Shakira: Spanish-language albums get rockenespanol (Billboard: Pies Descalzos a milestone for Latin rock; Rolling Stone: Dónde Están los Ladrones among essential rock en español albums of 1999); Oral Fixation Vol. 2 gets arenarock (AllMusic: "arena-rock force"); Laundry Service and Shakira (2014) drop plain rock (pop rock stays).
