@@ -1,0 +1,18 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+direstraits-brothersinarms,poprock,aoty_b,https://www.albumoftheyear.org/album/7626-dire-straits-brothers-in-arms.php,whole album,Album of the Year lists pop rock as a primary genre; AllMusic describes more concise pop-oriented songwriting.,high
+direstraits-brothersinarms,albumrock,allmusic_b,https://www.allmusic.com/album/mw0000650079,whole album,AllMusic lists Album Rock among stylistic classifications.,high
+direstraits-brothersinarms,softrock,aoty_b,https://www.albumoftheyear.org/album/7626-dire-straits-brothers-in-arms.php,whole album,Secondary genre index lists Soft Rock; reflective ballads occupy considerable album space.,medium
+direstraits-brothersinarms,bluesrock,aoty_b,https://www.albumoftheyear.org/album/7626-dire-straits-brothers-in-arms.php,whole album,Blues Rock given as core genre by Album of the Year.,medium
+direstraits-brothersinarms,heartlandrock,aoty_b,https://www.albumoftheyear.org/album/7626-dire-straits-brothers-in-arms.php,whole album,Heartland Rock listed as a secondary style in genre index.,medium
+direstraits-brothersinarms,rockandroll,allmusic_b,https://www.allmusic.com/album/mw0000650079,whole album,AllMusic explicitly includes Rock & Roll under styles.,high
+direstraits-brothersinarms,jazzrock,allmusic_b,https://www.allmusic.com/album/mw0000650079,some tracks,AllMusic identifies atmospheric jazz-rock carryover from Love Over Gold; Your Latest Trick has jazzy horns.,medium
+direstraits-brothersinarms,rock,pitchfork,https://pitchfork.com/reviews/albums/dire-straits-the-studio-albums-1978-1991/,whole album,"Pitchfork categorises group and box-set as rock, apt broad context of the album.",medium
+direstraits-oneverystreet,albumrock,allmusic_o,https://www.allmusic.com/album/on-every-street-r5894,whole album,AllMusic classifies the 1991 album as album rock.,high
+direstraits-oneverystreet,poprock,aoty_o,https://www.albumoftheyear.org/album/18347-dire-straits-on-every-street.php,whole album,AOTY lists pop rock as main genre; contemporaneous 1991 review identifies catchy pop content.,high
+direstraits-oneverystreet,countryrock,aoty_o,https://www.albumoftheyear.org/album/18347-dire-straits-on-every-street.php,whole album,Genre index identifies country rock; album-level Nashville palette documented by Ainlay.,high
+direstraits-oneverystreet,rootsrock,aoty_o,https://www.albumoftheyear.org/album/18347-dire-straits-on-every-street.php,whole album,Roots rock explicitly listed by genre index.,medium
+direstraits-oneverystreet,bluesrock,aoty_o,https://www.albumoftheyear.org/album/18347-dire-straits-on-every-street.php,whole album,Blues rock explicitly listed; blues element in critic reviews.,medium
+direstraits-oneverystreet,rockandroll,allmusic_o,https://www.allmusic.com/album/on-every-street-r5894,whole album,AllMusic lists Rock & Roll among album styles.,high
+direstraits-oneverystreet,rockabilly,allmusic_o,https://www.allmusic.com/album/on-every-street-r5894,some tracks,AllMusic identifies The Bug as rockabilly; track-only contribution placed below core genres.,high
+direstraits-oneverystreet,folk,allmusic_o,https://www.allmusic.com/album/on-every-street-r5894,some tracks,AllMusic explicitly calls Iron Hand a folk song; track-only style.,high
+direstraits-oneverystreet,rock,a1991,https://www.csmonitor.com/1991/1011/11171.html,whole album,Contemporary Christian Science Monitor review says rock is a key style.,high

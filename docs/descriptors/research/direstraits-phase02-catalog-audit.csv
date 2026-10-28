@@ -1,0 +1,3 @@
+﻿album_id,artist_id,artist,title,year,type,catalog_status,descriptor_status,catalog_action,notes
+direstraits-brothersinarms,direstraits,Dire Straits,Brothers in Arms,1985,studio,present,absent at lookup (2026-10-28),none,Existing 1985 entry in src/data/catalog.ts; phase 02 adds only its descriptor row.
+direstraits-oneverystreet,direstraits,Dire Straits,On Every Street,1991,studio,present,absent at lookup (2026-10-28),none,Existing 1991 entry in src/data/catalog.ts; final Dire Straits studio album.
