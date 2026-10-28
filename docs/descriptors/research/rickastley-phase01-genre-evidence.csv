@@ -1,0 +1,22 @@
+album_id,genre,source,source_type,url,scope,evidence_note
+rickastley-wheneveryouneedsomebody,dancepop,AllMusic — Whenever You Need Somebody review and styles,professional_review,https://www.allmusic.com/album/r941,whole album,AllMusic explicitly lists dance-pop
+rickastley-wheneveryouneedsomebody,adultcontemporary,AllMusic — Whenever You Need Somebody review and styles,professional_review,https://www.allmusic.com/album/r941,whole album,AllMusic style
+rickastley-wheneveryouneedsomebody,clubdance,AllMusic — Whenever You Need Somebody review and styles,professional_review,https://www.allmusic.com/album/r941,whole album,AllMusic club/dance style
+rickastley-wheneveryouneedsomebody,pop,AllMusic — Whenever You Need Somebody review and styles,professional_review,https://www.allmusic.com/album/r941,whole album,"AllMusic Pop/Rock umbrella, pop-dominant arrangement"
+rickastley-wheneveryouneedsomebody,softrock,AllMusic — Whenever You Need Somebody review and styles,professional_review,https://www.allmusic.com/album/r941,some tracks,AllMusic soft rock style; ballad subset
+rickastley-holdmeinyourarms,dancepop,AllMusic — Hold Me in Your Arms review and styles,professional_review,https://www.allmusic.com/album/r942,whole album,AllMusic album style
+rickastley-holdmeinyourarms,adultcontemporary,AllMusic — Hold Me in Your Arms review and styles,professional_review,https://www.allmusic.com/album/r942,whole album,AllMusic album style
+rickastley-holdmeinyourarms,pop,AllMusic — Hold Me in Your Arms review and styles,professional_review,https://www.allmusic.com/album/r942,whole album,AllMusic Pop/Rock umbrella; primary pop
+rickastley-holdmeinyourarms,soulpop,MusicBrainz — Hold Me in Your Arms 1988 release credits,original_release_credits,https://musicbrainz.org/release/80c5f2d3-a257-4a62-ab68-c7f0016618a0,some tracks,Editorial synthesis: soul-inflected phrasing and softer self-written pop songs
+rickastley-holdmeinyourarms,rnb,MusicBrainz — Hold Me in Your Arms 1988 release credits,original_release_credits,https://musicbrainz.org/release/80c5f2d3-a257-4a62-ab68-c7f0016618a0,some tracks,Ain’t Too Proud to Beg is a Motown R&B cover; localized track genre only
+rickastley-free,adultcontemporary,AllMusic — Free 1991 review and genre discussion,professional_review,https://www.allmusic.com/album/release/free-mr0000107565,whole album,AllMusic explicit adult contemporary pivot
+rickastley-free,pop,AllMusic — Free 1991 review and genre discussion,professional_review,https://www.allmusic.com/album/release/free-mr0000107565,whole album,AllMusic calls it pop/R&B
+rickastley-free,rnb,AllMusic — Free 1991 review and genre discussion,professional_review,https://www.allmusic.com/album/release/free-mr0000107565,whole album,AllMusic explicitly describes pop/R&B
+rickastley-free,softrock,AllMusic — Free 1991 review and genre discussion,professional_review,https://www.allmusic.com/album/release/free-mr0000107565,some tracks,Editorial interpretation of understated pop-rock and ballads
+rickastley-free,poprock,AllMusic — Free 1991 review and genre discussion,professional_review,https://www.allmusic.com/album/release/free-mr0000107565,some tracks,AllMusic names a rock-influenced track Is This Really Love
+rickastley-bodysoul,adultcontemporary,AllMusic — Body & Soul 1993 review and styles,professional_review,https://www.allmusic.com/album/body-soul-mw0000102260,whole album,AllMusic explicit style
+rickastley-bodysoul,dancepop,AllMusic — Body & Soul 1993 review and styles,professional_review,https://www.allmusic.com/album/body-soul-mw0000102260,whole album,AllMusic explicit style
+rickastley-bodysoul,pop,AllMusic — Body & Soul 1993 review and styles,professional_review,https://www.allmusic.com/album/body-soul-mw0000102260,whole album,AllMusic Pop/Rock umbrella; pop-dominant sound
+rickastley-bodysoul,rnb,Original RCA US CD transcription — Body & Soul credits,original_release_credits,https://musicbase.net/body-soul-3n4pdp9,some tracks,"Editorial style assessment of soul/R&B arrangements and singing, not a catalog tag"
+rickastley-bodysoul,electronic,Original RCA US CD transcription — Body & Soul credits,original_release_credits,https://musicbase.net/body-soul-3n4pdp9,texture,"Synths, programmed drums and synth bass credited; electronic arrangement texture"
+rickastley-bodysoul,soulpop,Original RCA US CD transcription — Body & Soul credits,original_release_credits,https://musicbase.net/body-soul-3n4pdp9,some tracks,"Editorial synthesis of soulful vocal arrangements, not explicit catalog tag"

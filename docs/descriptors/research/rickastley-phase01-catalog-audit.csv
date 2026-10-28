@@ -1,0 +1,5 @@
+artist_id,album_id,artist,title,year,type,in_catalog,in_existing_descriptors,action,notes
+rickastley,rickastley-wheneveryouneedsomebody,Rick Astley,Whenever You Need Somebody,1987,studio,no,no,add artist and album to catalog.ts,Both catalog.ts and seed.ts checked; no preexisting descriptor file
+rickastley,rickastley-holdmeinyourarms,Rick Astley,Hold Me in Your Arms,1988,studio,no,no,add artist and album to catalog.ts,Both catalog.ts and seed.ts checked; no preexisting descriptor file
+rickastley,rickastley-free,Rick Astley,Free,1991,studio,no,no,add artist and album to catalog.ts,Both catalog.ts and seed.ts checked; no preexisting descriptor file
+rickastley,rickastley-bodysoul,Rick Astley,Body & Soul,1993,studio,no,no,add artist and album to catalog.ts,Both catalog.ts and seed.ts checked; no preexisting descriptor file
