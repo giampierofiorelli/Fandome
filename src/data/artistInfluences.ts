@@ -258,6 +258,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Marvin Gaye', 'Elton John', 'James Brown', 'Stevie Wonder', 'Smokey Robinson', 'Holland–Dozier–Holland', 'The Beatles', 'Billy Joel', 'Paul McCartney'],
     source: 'Lionel Richie: Forbes 2017 (his biggest influences: Marvin Gaye, Elton John, James Brown); Hebb On Air (Motown songwriting models: Gaye, Wonder, Robinson, Holland–Dozier–Holland); 13th Floor (Beatles, Billy Joel, McCartney as the pop direction he wanted). Parents’ records and college listening left out',
   },
+  omd: {
+    names: ['Kraftwerk', 'Neu!', 'La Düsseldorf', 'Brian Eno', 'Roxy Music', 'David Bowie', 'The Velvet Underground', 'Joy Division'],
+    source: 'Andy McCluskey: Buzz Magazine and The Arts Desk (Kraftwerk, the 1975 concert; Neu!, Eno, Roxy Music, Bowie), ERR News (La Düsseldorf, Velvet Underground), The Scotsman (Joy Division on Organisation)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

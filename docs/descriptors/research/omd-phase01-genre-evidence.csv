@@ -1,0 +1,26 @@
+﻿album_id,genre,source,url,scope,evidence,evidence_strength
+omd-orchestralmanoeuvresinthedark,synthpop,debut-all,https://www.allmusic.com/album/orchestral-manoeuvres-in-the-dark-mw0000202497,whole_album,Explicit AllMusic synth-pop style,high
+omd-orchestralmanoeuvresinthedark,electropop,debut-w,https://en.wikipedia.org/wiki/Orchestral_Manoeuvres_in_the_Dark_(album),whole_album,Electropop included in album genre sources,medium
+omd-orchestralmanoeuvresinthedark,newwave,debut-all,https://www.allmusic.com/album/orchestral-manoeuvres-in-the-dark-mw0000202497,whole_album,AllMusic lists new wave,high
+omd-orchestralmanoeuvresinthedark,postpunk,debut-all,https://www.allmusic.com/album/orchestral-manoeuvres-in-the-dark-mw0000202497,whole_album,AllMusic names post-punk,high
+omd-orchestralmanoeuvresinthedark,minimalsynth,debut-style,https://www.albumoftheyear.org/album/9199-orchestral-manoeuvres-in-the-dark-orchestral-manoeuvres-in-the-dark.php,whole_album,Album of the Year metadata labels minimal synth,medium
+omd-orchestralmanoeuvresinthedark,coldwave,debut-style,https://www.albumoftheyear.org/album/9199-orchestral-manoeuvres-in-the-dark-orchestral-manoeuvres-in-the-dark.php,whole_album,Album of the Year metadata labels coldwave,medium
+omd-organisation,synthpop,org-all,https://www.allmusic.com/album/organisation-mw0000198493,whole_album,AllMusic synth-pop style,high
+omd-organisation,newwave,org-all,https://www.allmusic.com/album/organisation-mw0000198493,whole_album,AllMusic new wave style,high
+omd-organisation,postpunk,org-all,https://www.allmusic.com/album/organisation-mw0000198493,whole_album,AllMusic post-punk style,high
+omd-organisation,electronic,org-vinyl,https://www.chartsurfer.de/artist/orchestral-manoeuvres-in-the-dark/organisation-album_fhvnnp.html,whole_album,Original UK pressing electronic classification,high
+omd-organisation,experimental,org-vinyl,https://www.chartsurfer.de/artist/orchestral-manoeuvres-in-the-dark/organisation-album_fhvnnp.html,whole_album,Original UK pressing lists experimental style,high
+omd-dazzleships,synthpop,dazzle-p,https://pitchfork.com/reviews/albums/11363-dazzle-ships/,whole_album,Pitchfork describes synth-pop collage,high
+omd-dazzleships,musiqueconcrete,dazzle-p,https://pitchfork.com/reviews/albums/11363-dazzle-ships/,whole_album,Explicit musique concrète approach,high
+omd-dazzleships,electronic,dazzle-w,https://en.wikipedia.org/wiki/Dazzle_Ships_(album),whole_album,Album-level electronic genre,high
+omd-dazzleships,avantpop,dazzle-w,https://en.wikipedia.org/wiki/Dazzle_Ships_(album),whole_album,Album-level avant-pop genre,high
+omd-dazzleships,newwave,dazzle-all,https://www.allmusic.com/album/dazzle-ships-mw0000652994,whole_album,AllMusic new-wave style,high
+omd-dazzleships,experimental,dazzle-w,https://en.wikipedia.org/wiki/Dazzle_Ships_(album),whole_album,Album-level experimental genre,high
+omd-dazzleships,artpop,dazzle-aoty,https://www.albumoftheyear.org/album/9202-orchestral-manoeuvres-in-the-dark-dazzle-ships.php,whole_album,Listed as art pop by album genre database,medium
+omd-junkculture,synthpop,junk-all,https://www.allmusic.com/album/junk-culture-mw0000191164,whole_album,AllMusic synth-pop style,high
+omd-junkculture,electropop,junk-emm,https://www.muzines.benhall.co.uk/articles/junk-culture/7890,whole_album,Contemporary electronics magazine describes electropop repertoire,high
+omd-junkculture,newwave,junk-all,https://www.allmusic.com/album/junk-culture-mw0000191164,whole_album,AllMusic new-wave style,high
+omd-junkculture,pop,junk-all,https://www.allmusic.com/album/junk-culture-mw0000191164,whole_album,AllMusic characterises accessible pop-oriented record,high
+omd-junkculture,reggae,junk-all,https://www.allmusic.com/album/junk-culture-mw0000191164,some_tracks,Title track uses reggae rhythms; explicit artist comment about electric reggae,high
+omd-junkculture,calypso,junk-ud,https://www.udiscovermusic.com/stories/omd-junk-culture-album/,some_tracks,Montserrat calypso influence led to Locomotion rhythm,high
+omd-junkculture,soca,junk-interview,https://pennyblackmusic.co.uk/Home/Details?id=22842,some_tracks,"Artist confirms soca influence on the album, particularly Locomotion",high

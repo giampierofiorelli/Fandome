@@ -1,0 +1,15 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,already_described,in_this_phase,action,note
+omd-orchestralmanoeuvresinthedark,omd,Orchestral Manoeuvres in the Dark,1980,studio,yes,no,yes,import_phase01_row,Catalog entry already exists
+omd-organisation,omd,Organisation,1980,studio,yes,no,yes,import_phase01_row,Catalog entry already exists
+omd-architecturemorality,omd,Architecture & Morality,1981,studio,yes,yes,no,skip_existing_descriptor,Existing landmark descriptor in docs/descriptors/omd.csv: do not import another row
+omd-dazzleships,omd,Dazzle Ships,1983,studio,yes,no,yes,import_phase01_row,Catalog entry already exists
+omd-junkculture,omd,Junk Culture,1984,studio,yes,no,yes,import_phase01_row,Catalog entry already exists
+omd-crush,omd,Crush,1985,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-thepacificage,omd,The Pacific Age,1986,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-sugartax,omd,Sugar Tax,1991,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-liberator,omd,Liberator,1993,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-universal,omd,Universal,1996,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-historyofmodern,omd,History of Modern,2010,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-englishelectric,omd,English Electric,2013,studio,yes,no,no,no_change,Catalog entry already exists
+omd-thepunishmentofluxury,omd,The Punishment of Luxury,2017,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
+omd-bauhausstaircase,omd,Bauhaus Staircase,2023,studio,no,no,no,add_to_catalog,Original studio album missing from catalog.ts
