@@ -1,0 +1,22 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+simpleminds,simpleminds-lifeinaday,Life in a Day,1979,studio,missing,"phase 01 delivered offline, not yet imported",do not import in this phase,previous phase 01
+simpleminds,simpleminds-realtorealcacophony,Real to Real Cacophony,1979,studio,missing,"phase 01 delivered offline, not yet imported",do not import in this phase,previous phase 01
+simpleminds,simpleminds-empiresanddance,Empires and Dance,1980,studio,missing,"phase 01 delivered offline, not yet imported",do not import in this phase,previous phase 01
+simpleminds,simpleminds-sonsandfascination,Sons and Fascination,1981,studio,missing,"phase 01 delivered offline, not yet imported",do not import in this phase,previous phase 01
+simpleminds,simpleminds-sisterfeelingscall,Sister Feelings Call,1981,studio,missing,phase 02 draft,add album before importing phase 02,current phase 02
+simpleminds,simpleminds-newgolddream81828384,New Gold Dream (81-82-83-84),1982,studio,missing,phase 02 draft,add album before importing phase 02,current phase 02
+simpleminds,simpleminds-sparkleintherain,Sparkle in the Rain,1984,studio,missing,phase 02 draft,add album before importing phase 02,current phase 02
+simpleminds,simpleminds-onceuponatime,Once Upon a Time,1985,studio,missing,phase 02 draft,add album before importing phase 02,current phase 02
+simpleminds,simpleminds-streetfightingyears,Street Fighting Years,1989,studio,missing,pending,do not import in this phase,future phase 03
+simpleminds,simpleminds-reallife,Real Life,1991,studio,missing,pending,do not import in this phase,future phase 03
+simpleminds,simpleminds-goodnewsfromthenextworld,Good News from the Next World,1995,studio,missing,pending,do not import in this phase,future phase 03
+simpleminds,simpleminds-neapolis,Neapolis,1998,studio,missing,pending,do not import in this phase,future phase 04
+simpleminds,simpleminds-neonlights,Neon Lights,2001,studio,missing,pending,do not import in this phase,future phase 04; covers
+simpleminds,simpleminds-cry,Cry,2002,studio,missing,pending,do not import in this phase,future phase 04
+simpleminds,simpleminds-oursecretsarethesame,Our Secrets Are the Same,2004,studio,missing,pending,do not import in this phase,future phase 04; recorded 1999; date caveat
+simpleminds,simpleminds-blackwhite050505,Black & White 050505,2005,studio,missing,pending,do not import in this phase,future phase 05
+simpleminds,simpleminds-graffitisoul,Graffiti Soul,2009,studio,missing,pending,do not import in this phase,future phase 05
+simpleminds,simpleminds-bigmusic,Big Music,2014,studio,missing,pending,do not import in this phase,future phase 05
+simpleminds,simpleminds-acoustic,Acoustic,2016,studio,missing,pending,do not import in this phase,optional; studio re-recordings
+simpleminds,simpleminds-walkbetweenworlds,Walk Between Worlds,2018,studio,missing,pending,do not import in this phase,future phase 06
+simpleminds,simpleminds-directionoftheheart,Direction of the Heart,2022,studio,missing,pending,do not import in this phase,future phase 06
