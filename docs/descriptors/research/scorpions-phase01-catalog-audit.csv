@@ -1,0 +1,22 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+scorpions,Scorpions,scorpions-lonesomecrow,Lonesome Crow,1972,studio,01,no,no,no,add_artist_and_album,Checked descriptors branch: no Scorpions in catalog.ts or seed.ts; descriptors/scorpions.csv absent.
+scorpions,Scorpions,scorpions-flytotherainbow,Fly to the Rainbow,1974,studio,01,no,no,no,add_artist_and_album,Checked descriptors branch: no Scorpions in catalog.ts or seed.ts; descriptors/scorpions.csv absent.
+scorpions,Scorpions,scorpions-intrance,In Trance,1975,studio,01,no,no,no,add_artist_and_album,Checked descriptors branch: no Scorpions in catalog.ts or seed.ts; descriptors/scorpions.csv absent.
+scorpions,Scorpions,scorpions-virginkiller,Virgin Killer,1976,studio,01,no,no,no,add_artist_and_album,Checked descriptors branch: no Scorpions in catalog.ts or seed.ts; descriptors/scorpions.csv absent.
+scorpions,Scorpions,scorpions-takenbyforce,Taken by Force,1977,studio,02,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-lovedrive,Lovedrive,1979,studio,02,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-animalmagnetism,Animal Magnetism,1980,studio,02,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-blackout,Blackout,1982,studio,02,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-loveatfirststing,Love at First Sting,1984,studio,03,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-savageamusement,Savage Amusement,1988,studio,03,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-crazyworld,Crazy World,1990,studio,03,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-facetheheat,Face the Heat,1993,studio,03,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-pureinstinct,Pure Instinct,1996,studio,04,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-eyeiieye,Eye II Eye,1999,studio,04,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-momentofglory,Moment of Glory,2000,soundtrack,04,no,no,no,future_phase_research,Important: 2000 Moment of Glory credited Scorpions & Berliner Philharmoniker; reconcile coBilled.ts on that phase.
+scorpions,Scorpions,scorpions-unbreakable,Unbreakable,2004,studio,04,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-humanityhouri,Humanity: Hour I,2007,studio,05,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-stinginthetail,Sting in the Tail,2010,studio,05,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-comeblack,Comeblack,2011,studio,05,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-returntoforever,Return to Forever,2015,studio,05,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."
+scorpions,Scorpions,scorpions-rockbeliever,Rock Believer,2022,studio,06,no,no,no,future_phase_research,"Unresearched future album; ID provisional, must check catalogue again before its phase."

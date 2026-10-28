@@ -1,0 +1,23 @@
+﻿album_id,genre,source,source_url,scope,what_it_supports
+scorpions-takenbyforce,hardrock,www.allmusic.com,https://www.allmusic.com/album/taken-by-force-mw0000231794,whole album,AllMusic Hard Rock album style.
+scorpions-takenbyforce,heavymetal,www.allmusic.com,https://www.allmusic.com/album/taken-by-force-mw0000231794,whole album,"AllMusic Heavy Metal album style; live band, not sampled/electronic."
+scorpions-takenbyforce,albumrock,www.allmusic.com,https://www.allmusic.com/album/taken-by-force-mw0000231794,whole album / retrospective,AllMusic Album Rock historical metadata.
+scorpions-takenbyforce,arenarock,www.allmusic.com,https://www.allmusic.com/album/taken-by-force-mw0000231794,whole album / retrospective,"AllMusic Arena Rock retrospective label, not a studio technique."
+scorpions-takenbyforce,flamenco,www.eonmusic.co.uk,https://www.eonmusic.co.uk/interviews/uli-jon-roth-reveals-the-scorpions-songs-he-played-all-the-guitars-on-chat-his-solo-works,one signature track,Roth himself identifies flamenco guitar influence on The Sails of Charon; the record is not an entire flamenco album.
+scorpions-lovedrive,hardrock,www.allmusic.com,https://www.allmusic.com/album/lovedrive-mw0000191636,whole album,AllMusic Hard Rock main album-wide category.
+scorpions-lovedrive,heavymetal,www.allmusic.com,https://www.allmusic.com/album/lovedrive-mw0000191636,whole album,AllMusic Heavy Metal album style.
+scorpions-lovedrive,albumrock,www.allmusic.com,https://www.allmusic.com/album/lovedrive-mw0000191636,whole album / retrospective,AllMusic Album Rock metadata.
+scorpions-lovedrive,arenarock,www.allmusic.com,https://www.allmusic.com/album/lovedrive-mw0000191636,whole album / retrospective,AllMusic Arena Rock: melodic riff-driven choruses.
+scorpions-lovedrive,reggae,www.metalmusicarchives.com,https://www.metalmusicarchives.com/review/lovedrive/250127,one track,The critic calls Is There Anybody There? a reggae-metal ballad; genre correctly demoted to long tail.
+scorpions-animalmagnetism,hardrock,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,whole album,AllMusic Hard Rock album style.
+scorpions-animalmagnetism,heavymetal,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,whole album,AllMusic Heavy Metal album style.
+scorpions-animalmagnetism,albumrock,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,whole album / retrospective,AllMusic Album Rock general tag.
+scorpions-animalmagnetism,arenarock,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,whole album / retrospective,AllMusic Arena Rock style label.
+scorpions-animalmagnetism,hairmetal,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,retrospective taxonomy,"AllMusic Hair Metal retro-tag, not proof the group used this label in 1980."
+scorpions-animalmagnetism,popmetal,www.allmusic.com,https://www.allmusic.com/album/animal-magnetism-mw0000191635,retrospective taxonomy / NEW token,AllMusic uses Pop-Metal; literal genre needs registering in Fandome taxonomy.
+scorpions-blackout,hardrock,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,whole album,AllMusic Hard Rock style.
+scorpions-blackout,heavymetal,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,whole album,AllMusic Heavy Metal style.
+scorpions-blackout,albumrock,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,whole album / retrospective,AllMusic Album Rock category.
+scorpions-blackout,arenarock,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,whole album / retrospective,AllMusic Arena Rock category.
+scorpions-blackout,contemporarypoprock,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,retrospective album-wide label,AllMusic Contemporary Pop/Rock genre; no automatic poprock substitute.
+scorpions-blackout,hairmetal,www.allmusic.com,https://www.allmusic.com/album/blackout-mw0000191756,retrospective album-wide label,AllMusic Hair Metal label; period/style caution in notes.

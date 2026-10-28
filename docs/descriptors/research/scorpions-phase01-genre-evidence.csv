@@ -1,0 +1,24 @@
+﻿album_id,genre,source,source_url,scope,what_it_supports
+scorpions-lonesomecrow,hardrock,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26469-scorpions-lonesome-crow.php,whole album,AOTY enumerates Hard Rock among four original-style descriptors.
+scorpions-lonesomecrow,psychedelicrock,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26469-scorpions-lonesome-crow.php,whole album,Named genre; confirmed by Klaus Meine recollections of early psychedelic material.
+scorpions-lonesomecrow,prog,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26469-scorpions-lonesome-crow.php,whole album,The metadata explicitly says progressive rock; converted to the established Fandome genre token prog.
+scorpions-lonesomecrow,krautrock,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26469-scorpions-lonesome-crow.php,whole album,"Retrospective style label, strongly disputed by the band; debated classification, not self-identity."
+scorpions-lonesomecrow,albumrock,www.allmusic.com,https://www.allmusic.com/album/lonesome-crow-mw0000201217,whole album,AllMusic applies Album Rock retrospectively; less diagnostic than psych/prog identity.
+scorpions-flytotherainbow,hardrock,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26470-scorpions-fly-to-the-rainbow.php,whole album,Principal rock style; the single Speedy’s Coming is hard rock.
+scorpions-flytotherainbow,prog,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26470-scorpions-fly-to-the-rainbow.php,whole album,Progressive rock cited by AOTY; long-form title track especially prominent.
+scorpions-flytotherainbow,psychedelicrock,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26470-scorpions-fly-to-the-rainbow.php,multiple tracks,The genre remains central to Drifting Sun and the extended title track.
+scorpions-flytotherainbow,heavymetal,www.allmusic.com,https://www.allmusic.com/album/fly-to-the-rainbow-mw0000199910,some tracks,"AllMusic lists Heavy Metal; primarily faster, heavier guitar-driven tracks."
+scorpions-flytotherainbow,krautrock,en.wikipedia.org,https://en.wikipedia.org/wiki/Fly_to_the_Rainbow,texture / historic,"The 1974 record retains residual German psych-rock texture, not a full Krautrock identity; cross-reference 1974 genre overview."
+scorpions-flytotherainbow,albumrock,www.allmusic.com,https://www.allmusic.com/album/fly-to-the-rainbow-mw0000199910,whole album,AllMusic Album Rock retrospective category.
+scorpions-flytotherainbow,folkrock,www.metal-archives.com,https://www.metal-archives.com/reviews/Scorpions/Fly_to_the_Rainbow/35051/,some tracks,Review explicitly characterises Far Away as a folk-rock number with acoustic guitars.
+scorpions-flytotherainbow,flamenco,www.metalmusicarchives.com,https://www.metalmusicarchives.com/album/scorpions/fly-to-the-rainbow,texture / some tracks,Reviews identify flamenco-like motifs in They Need a Million; not a flamenco LP.
+scorpions-intrance,hardrock,www.allmusic.com,https://www.allmusic.com/album/in-trance-mw0000204919,whole album,Primary style from AllMusic and contemporary album overview.
+scorpions-intrance,heavymetal,www.allmusic.com,https://www.allmusic.com/album/in-trance-mw0000204919,whole album,AllMusic and AOTY identify heavy metal; faster riff songs lead the transition.
+scorpions-intrance,albumrock,www.allmusic.com,https://www.allmusic.com/album/in-trance-mw0000204919,whole album,"Exact AllMusic tag, retrospective not original record-company classification."
+scorpions-intrance,bluesrock,www.metalmusicarchives.com,https://www.metalmusicarchives.com/review/in-trance/337622,some tracks,Specialist reviewer identifies blues-rock passages alongside metal and ballads.
+scorpions-intrance,arenarock,www.allmusic.com,https://www.allmusic.com/album/in-trance-mw0000204919,whole album,AllMusic retrospective style tag; weaker historical fit in 1975.
+scorpions-virginkiller,hardrock,www.allmusic.com,https://www.allmusic.com/album/virgin-killer-r17519,whole album,AllMusic and official band editorial emphasise harder riff-driven music.
+scorpions-virginkiller,heavymetal,www.albumoftheyear.org,https://www.albumoftheyear.org/album/26472-scorpions-virgin-killer.php,whole album,AOTY genre metadata agrees with AllMusic on early heavy metal.
+scorpions-virginkiller,albumrock,www.allmusic.com,https://www.allmusic.com/album/virgin-killer-r17519,whole album,"AllMusic Album Rock label, retrospective cross-era database category."
+scorpions-virginkiller,arenarock,www.allmusic.com,https://www.allmusic.com/album/virgin-killer-r17519,whole album,AllMusic Arena Rock retrospective tag; not an arena production assumption.
+scorpions-virginkiller,psychedelicrock,www.the-scorpions.com,https://www.the-scorpions.com/album/virgin-killer-4/,some tracks / legacy,Official band note calls the record part of the transition away from psychedelic rock; minor residual texture only.
