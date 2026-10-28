@@ -1,0 +1,9 @@
+album_id,title,year,type,catalog_ts,seed_ts,existing_descriptor,action,planned_phase,evidence_url
+tracychapman-tracychapman,Tracy Chapman,1988,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,01,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-crossroads,Crossroads,1989,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,01,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-mattersoftheheart,Matters of the Heart,1992,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,01,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-newbeginning,New Beginning,1995,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,01,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-tellingstories,Telling Stories,2000,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,02,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-letitrain,Let It Rain,2002,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,02,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-whereyoulive,Where You Live,2005,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,02,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93
+tracychapman-ourbrightfuture,Our Bright Future,2008,studio,absent,artist absent,none found (tracychapman.csv 404),add artist and album before validation,02,https://musicbrainz.org/artist/1129817c-488a-4096-80c1-77fc1b107c93

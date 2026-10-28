@@ -242,6 +242,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Bob Dylan', 'J.J. Cale', 'The Shadows', 'Hank Marvin', 'Chet Atkins'],
     source: 'Mark Knopfler: Guitar Player 1984 (Dylan as a teenager); reprinted interview (J.J. Cale while his style developed); Guardian 1979 and Guitar Player 2024 (The Shadows, Hank Marvin); Guitar Player 2022 (Chet Atkins, a major influence)',
   },
+  tracychapman: {
+    names: ['Joni Mitchell', 'Simon & Garfunkel', 'Bob Dylan'],
+    source: 'Tracy Chapman, Der Spiegel 2017: the quiet songs of Joni Mitchell, Simon & Garfunkel and Dylan influenced her writing (in 2006 she said Dylan was not formative in her upbringing)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

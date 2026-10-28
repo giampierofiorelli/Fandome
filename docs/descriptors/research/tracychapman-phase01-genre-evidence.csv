@@ -1,0 +1,30 @@
+album_id,genre,source,url,scope,evidence
+tracychapman-tracychapman,folkrock,corey_debut,https://corey.recordtribe.com/albums/tracy-chapman-tracy-chapman/,whole album,Record is filed as Folk Rock.
+tracychapman-tracychapman,contemporaryfolk,am_debut,https://www.allmusic.com/album/tracy-chapman-mw0000199023,whole album,AllMusic album-level style Contemporary Folk.
+tracychapman-tracychapman,alternativefolk,am_debut,https://www.allmusic.com/album/tracy-chapman-mw0000199023,whole album,AllMusic album-level style Alternative Folk.
+tracychapman-tracychapman,folksoul,wp_debut,https://www.washingtonpost.com/archive/lifestyle/1988/04/20/among-the-popular-folk/ad607949-697b-4cf9-b101-769f74223579/,whole album,"Geoffrey Himes describes folk-soul style, not simply folk."
+tracychapman-tracychapman,adultalternativepoprock,am_debut,https://www.allmusic.com/album/tracy-chapman-mw0000199023,whole album,AllMusic album style.
+tracychapman-tracychapman,alternativeindierock,am_debut,https://www.allmusic.com/album/tracy-chapman-mw0000199023,whole album,AllMusic uses the combined Alternative/Indie Rock tag.
+tracychapman-tracychapman,collegerock,am_debut,https://www.allmusic.com/album/tracy-chapman-mw0000199023,whole album,AllMusic lists College Rock; period/scene category.
+tracychapman-crossroads,folkrock,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,Reviewer calls Chapman a folk-rocker; folk-rock evident on the record.
+tracychapman-crossroads,alternativefolk,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,AllMusic album style.
+tracychapman-crossroads,contemporarysingersongwriter,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,AllMusic album style Contemporary Singer/Songwriter.
+tracychapman-crossroads,adultalternativepoprock,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,AllMusic album style.
+tracychapman-crossroads,alternativeindierock,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,AllMusic album style.
+tracychapman-crossroads,collegerock,am_cross,https://www.allmusic.com/album/crossroads-mw0000200241,whole album,"AllMusic album style, period/scene context."
+tracychapman-crossroads,blues,boston_cross,https://www.about-tracy-chapman.net/1989-crossroads/,some tracks,Boston Globe specifically describes Subcity in a bluesy setting.
+tracychapman-mattersoftheheart,folkrock,rhino_matters,https://www.rhino.com/aod/matters-of-the-heart-tracy-chapman,whole album,Rhino Records lists Folk Rock.
+tracychapman-mattersoftheheart,contemporaryfolk,aoty_matters,https://www.albumoftheyear.org/album/35208-tracy-chapman-matters-of-the-heart.php,whole album,Album of the Year genre label Contemporary Folk.
+tracychapman-mattersoftheheart,folkpop,aoty_matters,https://www.albumoftheyear.org/album/35208-tracy-chapman-matters-of-the-heart.php,whole album,Album of the Year genre label Folk Pop.
+tracychapman-mattersoftheheart,adultalternativepoprock,am_matters,https://www.allmusic.com/album/matters-of-the-heart-mw0000269211,whole album,AllMusic style.
+tracychapman-mattersoftheheart,alternativeindierock,am_matters,https://www.allmusic.com/album/matters-of-the-heart-mw0000269211,whole album,AllMusic combined style Alternative/Indie Rock.
+tracychapman-mattersoftheheart,blues,rhino_matters,https://www.rhino.com/aod/matters-of-the-heart-tracy-chapman,some tracks,Rhino reports stylistic touches of blues.
+tracychapman-mattersoftheheart,jazz,rhino_matters,https://www.rhino.com/aod/matters-of-the-heart-tracy-chapman,some tracks,"Rhino notes touches of jazz, not a full jazz album."
+tracychapman-mattersoftheheart,worldmusic,rhino_matters,https://www.rhino.com/aod/matters-of-the-heart-tracy-chapman,some tracks,Rhino notes world-music elements only.
+tracychapman-newbeginning,folkrock,aoty_new,https://www.albumoftheyear.org/album/20242-tracy-chapman-new-beginning.php,whole album,Album of the Year identifies Folk Rock.
+tracychapman-newbeginning,blues,aoty_new,https://www.albumoftheyear.org/album/20242-tracy-chapman-new-beginning.php,whole album,Album of the Year assigns Blues; Give Me One Reason prominent.
+tracychapman-newbeginning,songwriter,aoty_new,https://www.albumoftheyear.org/album/20242-tracy-chapman-new-beginning.php,whole album,Album of the Year lists Singer-Songwriter.
+tracychapman-newbeginning,adultalternativepoprock,new_allmusic,https://www.allmusic.com/album/new-beginning-mw0000177840,whole album,AllMusic style.
+tracychapman-newbeginning,alternativeindierock,new_allmusic,https://www.allmusic.com/album/new-beginning-mw0000177840,whole album,AllMusic style.
+tracychapman-newbeginning,country,sluggish_new,https://www.slugmag.com/archived/record-reviews-december-1995/,some tracks,1995 SLUG review identifies country accents in album collection.
+tracychapman-newbeginning,reggae,sluggish_new,https://www.slugmag.com/archived/record-reviews-december-1995/,some tracks,1995 SLUG review identifies title track as reggae.
