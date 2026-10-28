@@ -230,6 +230,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Bill Withers', 'Al Green', 'Luther Vandross', 'Marvin Gaye'],
     source: 'Rick Astley, Ticketmaster UK interview 2026: the Black American singers who taught him to sing (a documented vocal model)',
   },
+  bonnietyler: {
+    names: ['Tina Turner', 'Janis Joplin'],
+    source: 'Bonnie Tyler, bonnietyler.com (women in music) and Goldmine interview: the powerful, soulful singers who shaped her voice',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
