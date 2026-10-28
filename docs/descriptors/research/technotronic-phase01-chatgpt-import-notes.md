@@ -69,3 +69,4 @@ A contemporaneous *Musician* interview mentions complex classical music and gear
 - 4 rows imported (3 studio + the 1990 remix album). New genre newbeat (parents ebm, acidhouse).
 - Body to Body: instruments drums changed to drummachine (the source documents programmed drums only).
 - Scene BE en 1980 dance,electronic (sung in English, not a local discovery). No artist influences (none named).
+- Body to Body and Recall: credits name no instruments or gear (Discogs 596796, 849024, 2067293, 2600459); recorded at I.C.P. Brussels, programming by Bogaert and De Meyer, sampled vocals on two Body to Body tracks: consistent with the rows. Reception researched by Claude.
