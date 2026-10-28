@@ -80,3 +80,10 @@ Only musicians explicitly described as influences by a band member are listed; d
 - Liverpool keeps plain `rock`: sources describe the whole record as the band's rock turn (MusicRadar, Wikipedia "pop-rock"/heavier rock sound); poprock stays first.
 - Producers as in the rows: Horn alone for 1984 (Lipson additional), Lipson alone for 1986 (Horn executive producer).
 - Artist added to the catalogue (2 studio albums), scene GB en 1980 synthpop,dance,rock, not touring (LEGACY). Bang! (compilation) left out.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/frankiegoestohollywood.csv` (Pitchfork, AllMusic, Mojo, Record Mirror, Rolling Stone, Christgau, BBC, certifications).
+- Welcome to the Pleasuredome sounds_like: Eurythmics removed (The Quietus names Be Yourself Tonight only as 1985 rockism, not as a comparison); Heaven 17 added with Soft Cell (The Quietus: Frankie's "precursors"); Pet Shop Boys and Erasure added (The Quietus compares their archness/querulousness to Frankie; Pitchfork: paved the way for Erasure).
+- Liverpool sounds_like: Def Leppard removed (no source found); It Bites and Suede added (Moving the River, 30th anniversary: tracks "wouldn't have sounded out of place on It Bites' debut", "a distinctly Suede-like ballad"); Propaganda (A Secret Wish) confirmed by the same piece.
+- Liverpool production from Sound On Sound (Nov 1986, muzines.co.uk): TR-808 triggering samples, Linn, Sequential Drumtraks, Emulator II (replaces generic emulator), Juno-106, JX-8P, Fairlight and Synclavier in sections.
