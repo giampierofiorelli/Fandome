@@ -66,3 +66,11 @@ CSV files are UTF-8 with BOM for Excel/Numbers compatibility, with CRLF record s
 
 - 4 rows imported as delivered; catalogue 8 studio albums 1989-2018 (Swing soundtrack 1999 left for a later decision). No new tokens.
 - Scene GB en 1980 soul,pop,rnb. Artist influences from her interviews.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows from AllMusic, Rolling Stone, EW, Q, Christgau, NME, chart peaks and BPI/RIAA certifications (`docs/descriptors/reception/lisastansfield.csv`).
+- Affection: Discogs (master 106579, release 84630) credits Devaney/Morris with "Instruments [All], Programmed By" and only names trumpet, so instruments stay as they are; production adds `remixing` (Coldcut's track 1) and `stringarrangements` (Rolling Stone: "the elegant string sections of the Seventies"). sounds_like adds Teena Marie (Rolling Stone, Amy Linden), Martha Reeves and Teddy Pendergrass (Christgau).
+- Real Love: sounds_like adds Barry White (Rolling Stone, Holden: "textures of Barry White and his Love Unlimited Orchestra"; EW "Barry White-like"), Gladys Knight (Rolling Stone on "All Woman"), Stevie Wonder (CD Universe on "Soul Deep" keyboards).
+- Lisa Stansfield (1997): sounds_like from Houston Press (David Cantwell, Oct 1997): The Staple Singers ("The Line"), Babyface and TLC ("Footsteps"). Barry White not added (she covers his song there).
+- So Natural: no critic comparison found beyond Barry White.
