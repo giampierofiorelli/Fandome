@@ -1,0 +1,5 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+nena,Nena,nena-nena,Nena,1983,studio,01,no (2026-10-28),no (2026-10-28),no (nena.csv absent),add_artist_and_album_if_absent,Strictly incremental first-phase original album entry; retain proposed artist ID if still unclaimed.
+nena,Nena,nena-fragezeichen,? (Fragezeichen),1984,studio,01,no (2026-10-28),no (2026-10-28),no (nena.csv absent),add_artist_and_album_if_absent,Strictly incremental first-phase original album entry; retain proposed artist ID if still unclaimed.
+nena,Nena,nena-feuerundflamme,Feuer und Flamme,1985,studio,01,no (2026-10-28),no (2026-10-28),no (nena.csv absent),add_artist_and_album_if_absent,Strictly incremental first-phase original album entry; retain proposed artist ID if still unclaimed.
+nena,Nena,nena-itsallinthegame,It's All in the Game,1985,studio,01,no (2026-10-28),no (2026-10-28),no (nena.csv absent),add_artist_and_album_if_absent,Strictly incremental first-phase original album entry; retain proposed artist ID if still unclaimed.

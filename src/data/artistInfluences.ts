@@ -298,6 +298,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Elvis Presley', 'Little Richard', 'Jerry Lee Lewis', 'The Rolling Stones', 'The Beatles', 'The Pretty Things', 'Led Zeppelin', 'The Who', 'Taste', 'Colosseum', 'Jimi Hendrix', 'Eric Clapton', 'Jeff Beck', 'Bee Gees'],
     source: 'Rudolf Schenker: Music Insider (Elvis, Little Richard, Jerry Lee Lewis, Stones, Beatles, The Pretty Things), Vice (Meine’s Beatles and Bee Gees background); Klaus Meine: The Circle (Led Zeppelin, The Who, Stones, Beatles, Taste, Colosseum); Uli Jon Roth: Rock Music Star 2019 (Hendrix, Clapton, Jeff Beck)',
   },
+  nena: {
+    names: ['Black Sabbath', 'The Rolling Stones', 'Neil Young', 'Bob Dylan', 'David Bowie', 'Pink Floyd', 'Ramones', 'Blondie', 'The Pretenders', 'The Animals'],
+    source: 'Nena: I Con Vs I Con 2016 (Black Sabbath’s Paranoid her first single, the Stones’ Angie, Neil Young, Dylan, Bowie, Pink Floyd, Ramones, Blondie, The Pretenders, an Eric Burdon and The Animals concert), The Berliner (Sabbath, Stones, Bowie)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
