@@ -81,3 +81,5 @@ Exclude live records, greatest-hits packages and albums recorded as other artist
 - Catalog: full studio discography added (1980-2025), incl. the Spirit soundtrack (2002) and the covers album Tracks of My Years (2014); live and compilations excluded.
 - Scene CA en 1980 rock,pop (Canada: a global market, never a discovery target).
 - Artist influences added to artistInfluences.ts from Adams's own interviews.
+- Cuts Like a Knife: Foreigner removed from sounds_like (Lou Gramm sings backing vocals on 8 tracks); production jvcdigital (liner notes: "mixed with the JVC Digital System", Discogs 3533115), new token.
+- Reception researched by Claude (Wikipedia ratings boxes, charts, certifications, Discogs credits).
