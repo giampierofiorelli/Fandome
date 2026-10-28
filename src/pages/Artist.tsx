@@ -16,7 +16,8 @@ import { FeedList } from '../components/FeedList'
 import { AlbumCover, artistPhoto, Avatar, PhotoCredit, photoPos, Tabs } from '../components/ui'
 import { motion } from 'motion/react'
 import { useToast } from '../components/Toast'
-import { sceneLine, sceneOf } from '../data/scenes'
+import { GENRE_LABELS, sceneLine, sceneOf } from '../data/scenes'
+import { CountryTag } from '../components/SimilarList'
 import { fmtScore, toScore } from '../components/AlbumRater'
 import { topicFeed } from '../lib/feed'
 import { albumHasArtist, artistById, isUpcoming } from '../lib/util'
@@ -70,7 +71,16 @@ export default function ArtistPage() {
         <div className="hero-kicker">Fan room · independent</div>
         <h1 className="hero-name">{artist.name}</h1>
         <p className="hero-tagline">{artist.tagline}</p>
-        {sceneLine(artist.id) && <p className="hero-scene">{sceneLine(artist.id)}</p>}
+        {sceneOf(artist.id) && (
+          // Country as the same tag the suggestion lists show; then decade and genres as quiet chips.
+          <div className="hero-tags" aria-label={sceneLine(artist.id) ?? undefined}>
+            <CountryTag code={sceneOf(artist.id)!.country} />
+            <span className="scene-tag">{sceneOf(artist.id)!.since}s</span>
+            {sceneOf(artist.id)!.genres.map((g) => (
+              <span key={g} className="scene-tag">{GENRE_LABELS[g]}</span>
+            ))}
+          </div>
+        )}
         <div className="hero-stats">
           <div>
             <div className="bignum">{fans.length}</div>

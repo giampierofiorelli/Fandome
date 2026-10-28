@@ -38,3 +38,7 @@ Created 27 October 2026. GitHub `descriptors` branch read-only; unmerged draft. 
 6. `CLAUDE_IMPORT.md` — import notes, new tokens, influences, cautions.
 
 **Next phase:** None: entire confirmed Snap! studio album discography delivered. A dedicated remix/EP phase only if separately requested.
+
+## Claude import note (28 Oct 2026)
+
+Producers named (Michael Münzing, Luca Anzilotti, credited as Snap!). Lyric themes from Wikipedia, EW, Boston Globe and TranceCritic; The Madman's Return sounds_like adds Giorgio Moroder and Donna Summer (Record Mirror and Juha Soininen on Rhythm Is a Dancer). Reception researched by Claude.
