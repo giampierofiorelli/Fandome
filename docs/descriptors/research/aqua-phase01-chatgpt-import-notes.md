@@ -45,3 +45,4 @@ No phase 02 for current studio albums. If later asked to cover EPs, notable remi
 - New genre bubblegumdance (parents eurodance, bubblegumpop); new production token rolandjv2080.
 - Scene DK en 1990 dance,pop: sung in English, so never a local discovery.
 - No artist influences entry: the oral history names what members listened to as teenagers or played as DJs, not influences.
+- Reception researched by Claude (Wikipedia ratings boxes, Danish press, Discogs 3818374, 3140894). rolandjv2080 checked: uDiscover Music, 'The Roland JV-2080 synth ... was all over Aquarium'.
