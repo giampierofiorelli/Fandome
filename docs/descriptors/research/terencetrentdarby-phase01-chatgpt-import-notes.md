@@ -82,3 +82,4 @@ All studio albums below are absent from the currently checked Fandome files and 
 - Plain rock removed from Neither Fish nor Flesh (AllMusic: rock 'in the overall mix'; psychedelic funk/pop cover it) and Vibrator (poprock, funkrock cover it), per the owner's rule.
 - piccolo mapped to flute; scratching moved to the instrument turntables (no new tokens).
 - Scene US en 1980 soul,rnb,funk. Artist influences from his interviews (2003-2024).
+- Reception researched by Claude.
