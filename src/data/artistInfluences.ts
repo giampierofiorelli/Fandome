@@ -290,6 +290,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Beatles', 'The Beach Boys', 'Burt Bacharach', 'The Everly Brothers', 'Elvis Presley', 'Johnny Cash', 'The Ventures'],
     source: 'Jim Peterik: Louder Than War (the three Bs: Beatles, Beach Boys, Bacharach; Everly Brothers, Elvis, Johnny Cash), New Jersey Stage 2021 (Beatles, Beach Boys, The Ventures)',
   },
+  matthewwilder: {
+    names: ['The Beatles', 'The Rolling Stones', 'James Taylor', 'Carole King', 'Seals and Crofts', 'Culture Club', 'Thompson Twins', 'Men at Work'],
+    source: 'Matthew Wilder: Recording Academy 2020 (grew up on the Beatles and the Stones; James Taylor, Carole King, Seals and Crofts; Men at Work and the new wave), CultureSonar 2020 (Culture Club and Thompson Twins behind Break My Stride)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

@@ -1,0 +1,17 @@
+﻿album_id,genre,source,source_url,scope,what_it_supports
+matthewwilder-idontspeakthelanguage,newwave,www.allmusic.com,https://www.allmusic.com/album/i-dont-speak-the-language-mw0000196324,whole album,AllMusic style New Wave; artist calls the 1982-83 shift new wave.
+matthewwilder-idontspeakthelanguage,synthpop,en.wikipedia.org,https://en.wikipedia.org/wiki/I_Don%27t_Speak_the_Language,whole album,Album overview explicitly tags synth-pop; synthesizers credited throughout.
+matthewwilder-idontspeakthelanguage,contemporarypoprock,www.allmusic.com,https://www.allmusic.com/album/i-dont-speak-the-language-mw0000196324,whole album,AllMusic contemporary Pop/Rock style exact normalized token.
+matthewwilder-idontspeakthelanguage,pop,www.qobuz.com,https://www.qobuz.com/us-en/album/i-dont-speak-the-language-matthew-wilder/0884977526424,whole album,General label genre Pop/Rock; broad pop context corroborated by new-wave coverage.
+matthewwilder-bouncinoffthewalls,newwave,www.allmusic.com,https://www.allmusic.com/album/bouncin-off-the-walls-mw0001050698/credits,whole album,AllMusic labels this as New Wave.
+matthewwilder-bouncinoffthewalls,synthpop,vinylpursuit.com,https://vinylpursuit.com/products/matthew-wilder-bouncin-off-the-walls,whole album,Original LP shop tags Synth-pop; synth model inventory corroborates.
+matthewwilder-bouncinoffthewalls,contemporarypoprock,www.allmusic.com,https://www.allmusic.com/album/bouncin-off-the-walls-mw0001050698/credits,whole album,AllMusic album style Contemporary Pop/Rock.
+matthewwilder-bouncinoffthewalls,poprock,vinylpursuit.com,https://vinylpursuit.com/products/matthew-wilder-bouncin-off-the-walls,whole album,LP edition descriptor Pop Rock.
+matthewwilder-bouncinoffthewalls,aor,labibledelawestcoast.blogspot.com,https://labibledelawestcoast.blogspot.com/2012/08/matthew-wilder-bouncin-off-walls-1984.html,whole album / specialist classification,"Source labels High Tech AOR; outside general classifications, placed after primary styles."
+matthewwilder-bouncinoffthewalls,pop,music.apple.com,https://music.apple.com/us/album/bouncin-off-the-walls/359713241,whole album,Apple Music files the album under Pop.
+matthewwilder-mulan,soundtrack,disney.go.com,https://disney.go.com/disneyrecords/mulan/index.html,whole album / format,Official Disney soundtrack of 1998 film.
+matthewwilder-mulan,musicaltheatre,en.wikipedia.org,https://en.wikipedia.org/wiki/Mulan_%281998_soundtrack%29,songs / substantial section,Album explicitly tagged Musical Theatre; film has multiple theatrical numbers.
+matthewwilder-mulan,pop,en.wikipedia.org,https://en.wikipedia.org/wiki/Mulan_%281998_soundtrack%29,songs and pop versions,Source names Pop for film album; end credits pop versions part of original LP.
+matthewwilder-mulan,operaticpop,en.wikipedia.org,https://en.wikipedia.org/wiki/Mulan_%281998_soundtrack%29,songs / texture,"Source calls genre Operatic Pop, which is absent from current Fandome tokens."
+matthewwilder-mulan,modernclassical,musicbase.net,https://musicbase.net/disneys-mulan-an-original-walt-disney-records-soundtrack,orchestral score portion,Album edition tags Modern Classical; principally applies to Goldsmith score.
+matthewwilder-especiallyonbirthdays,soundtrack,thepaperboats.org,https://thepaperboats.org/birthdays/,whole album / format,Original music written for non-verbal theatrical work; commercially issued 2021.

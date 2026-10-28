@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_catalog_ts,in_seed_ts,existing_descriptor_row,action,notes
+matthewwilder-idontspeakthelanguage,Matthew Wilder,I Don't Speak the Language,1983,studio,no,no,no,add artist and album,Proposed artist ID matthewwilder; exact album ID proposed.
+matthewwilder-bouncinoffthewalls,Matthew Wilder,Bouncin' Off the Walls,1984,studio,no,no,no,add album,"1984 verified by label and physical issues, not 1985 reissues."
+matthewwilder-mulan,Matthew Wilder,Mulan: An Original Walt Disney Records Soundtrack,1998,soundtrack,no,no,no,add co-billed album,MusicBrainz alternative bills Wilder/Goldsmith and Wilder/Goldsmith/Zippel; reconcile original edition in coBilled.ts.
+matthewwilder-especiallyonbirthdays,Matthew Wilder,Especially on Birthdays,2021,soundtrack,no,no,no,add album (provisional descriptor),Original musical score created for children’s theatre; do not call it a standard solo pop LP.

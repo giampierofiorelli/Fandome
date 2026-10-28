@@ -2,6 +2,7 @@
 // the album shows on each of their pages. `credit` is the billing as printed on the record.
 // When a co-billed artist gets a room, add their id to `with`.
 export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
+  'matthewwilder-mulananoriginalwaltdisneyrecordssoundtrack': { credit: 'Matthew Wilder & David Zippel / Jerry Goldsmith' },
   'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
   'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
   'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },
