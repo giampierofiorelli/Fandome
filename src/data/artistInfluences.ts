@@ -194,6 +194,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Peter Gabriel', 'Talking Heads', 'Brian Eno', 'Robert Wyatt', 'The Blue Nile', 'The Beatles', 'The Jam', 'Madness', 'Blur'],
     source: 'Roland Orzabal, SuperDeluxeEdition (Peter Gabriel 3 as the drum model for The Hurting; I Am the Walrus behind Sowing the Seeds of Love, with Dave Bascombe, also Classic Pop); Pitchfork on Songs from the Big Chair (Talking Heads, Brian Eno, Robert Wyatt on I Believe, Curt Smith on the Blue Nile); This Is Not Retro 2004 (The Jam, Madness, Blur for the reunion album)',
   },
+  roxette: {
+    names: ['The Kinks', 'The Beatles', 'The Who', 'David Bowie', 'T. Rex', 'Ramones', 'Patti Smith', 'Tom Petty and the Heartbreakers', 'Herman’s Hermits', 'ABBA', 'The Monkees', 'Joni Mitchell', 'Leonard Cohen', 'John Cale', 'Aretha Franklin', 'Led Zeppelin'],
+    source: 'Per Gessle: City Code (Kinks, Beatles, Who; Bowie, T. Rex, Ramones, Patti Smith, Tom Petty), Fireworks 2021 (Herman’s Hermits, ABBA, the Monkees; Joni Mitchell, Leonard Cohen, John Cale; Marie Fredriksson’s Aretha Franklin and Led Zeppelin). Left out: Blondie, the Romantics and Billie Holiday (secondary biography), producer Clarence Öfwerman’s prog listening',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
