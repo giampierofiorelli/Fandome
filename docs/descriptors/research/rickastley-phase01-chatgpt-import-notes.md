@@ -43,3 +43,4 @@ In the [2026 Ticketmaster UK interview](https://discover.ticketmaster.co.uk/inte
 - Free: Michael McDonald and The Doobie Brothers removed from sounds_like: McDonald sings on the album (a guest and his band). Kept on Body & Soul, where he does not appear.
 - Artist influences: Bill Withers, Al Green, Luther Vandross, Marvin Gaye (the singers Astley says taught him to sing: a documented vocal model).
 - Scene GB en 1980 pop,dance.
+- Reception researched by Claude.
