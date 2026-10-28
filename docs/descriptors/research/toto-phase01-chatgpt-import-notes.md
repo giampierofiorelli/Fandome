@@ -74,3 +74,4 @@ Do not repeat phase 01 rows in future ZIPs. Do not include live albums or compil
 - Toto IV influenced_by kept: Rosanna's drum pattern modelled on Led Zeppelin and Steely Dan (Lukather), Africa's vocal layering on the Beach Boys and Beatles (Paich): documented technique models.
 - Catalogue: Turn Back added, and the later studio albums plus the Dune soundtrack (1984).
 - Artist influences: Yes, ELP, Genesis, Pink Floyd, Gentle Giant.
+- Turn Back enriched: production roomambience (Gift with a Golden Gun cut 'with a lot of room sound') and overdubbing (Lukather overdubbed guitars on drums-and-piano takes), Music UK 1983 (Rosen); instruments piano, guitarsynth (Roland guitar synth on Turn Back). Recorded at Cherokee Studios (Discogs 2907957). No critic comparison found. Reception researched by Claude.
