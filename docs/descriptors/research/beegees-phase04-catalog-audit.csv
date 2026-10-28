@@ -1,0 +1,9 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+beegees,beegees-maincourse,Main Course,1975,studio,present in catalog.ts,not yet present in docs/descriptors/beegees.csv at inspection,import draft descriptor only,Phase 04 only; do not duplicate prior phases
+beegees,beegees-childrenoftheworld,Children of the World,1976,studio,present in catalog.ts,not yet present in docs/descriptors/beegees.csv at inspection,import draft descriptor only,Phase 04 only; do not duplicate prior phases
+beegees,beegees-spiritshavingflown,Spirits Having Flown,1979,studio,present in catalog.ts,not yet present in docs/descriptors/beegees.csv at inspection,import draft descriptor only,Phase 04 only; do not duplicate prior phases
+beegees,beegees-livingeyes,Living Eyes,1981,studio,present in catalog.ts,not yet present in docs/descriptors/beegees.csv at inspection,import draft descriptor only,Phase 04 only; do not duplicate prior phases
+beegees,beegees-esp,E.S.P.,1987,studio,present in catalog.ts,future phase 05,do not import now,Verify exact ID and current descriptor state during Phase 05
+beegees,beegees-one,One,1989,studio,present in catalog.ts,future phase 05,do not import now,Verify exact ID and current descriptor state during Phase 05
+beegees,beegees-highcivilization,High Civilization,1991,studio,present in catalog.ts,future phase 05,do not import now,Verify exact ID and current descriptor state during Phase 05
+beegees,beegees-sizeisnteverything,Size Isn't Everything,1993,studio,present in catalog.ts,future phase 05,do not import now,Verify exact ID and current descriptor state during Phase 05

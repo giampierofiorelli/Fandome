@@ -1,0 +1,33 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+beegees-trafalgar,softrock,Album of the Year: Trafalgar,https://www.albumoftheyear.org/album/15054-bee-gees-trafalgar.php,album,The album index explicitly uses soft rock; much of the set is slow and ballad-led,medium
+beegees-trafalgar,baroquepop,AllMusic: Trafalgar,https://www.allmusic.com/album/r1602,album,AllMusic explicitly lists Baroque Pop as album style,high
+beegees-trafalgar,ampop,AllMusic: Trafalgar,https://www.allmusic.com/album/r1602,album,AllMusic explicitly lists AM Pop,high
+beegees-trafalgar,poprock,Album of the Year: Trafalgar,https://www.albumoftheyear.org/album/15054-bee-gees-trafalgar.php,album,The album index explicitly names Pop Rock,medium
+beegees-trafalgar,psychedelicpop,AllMusic: Trafalgar,https://www.allmusic.com/album/r1602,minor album facet,AllMusic indexes Psychedelic Pop; minor relative to ballad style,high
+beegees-trafalgar,prog,AllMusic: Trafalgar,https://www.allmusic.com/album/r1602,minor album facet,"AllMusic indexes Prog-Rock, stylistic facet rather than a full progressive-rock LP",high
+beegees-trafalgar,pop,Album of the Year: Trafalgar,https://www.albumoftheyear.org/album/15054-bee-gees-trafalgar.php,album broad,Broad pop tag from album index,medium
+beegees-towhomitmayconcern,baroquepop,Album of the Year: To Whom It May Concern,https://www.albumoftheyear.org/album/15055-bee-gees-to-whom-it-may-concern.php,album,Album of the Year identifies Baroque Pop,medium
+beegees-towhomitmayconcern,softrock,AllMusic: To Whom It May Concern,https://www.allmusic.com/album/mw0000074608,album,AllMusic lists Soft Rock,high
+beegees-towhomitmayconcern,poprock,To Whom It May Concern (Bee Gees album),https://en.wikipedia.org/wiki/To_Whom_It_May_Concern_%28Bee_Gees_album%29,album,Discography lists Pop Rock; distorted guitar feature in Bad Bad Dreams corroborates,medium
+beegees-towhomitmayconcern,progressivepop,Album of the Year: To Whom It May Concern,https://www.albumoftheyear.org/album/15055-bee-gees-to-whom-it-may-concern.php,album,Album genre metadata explicitly includes Progressive Pop,medium
+beegees-towhomitmayconcern,psychedelicpop,Album of the Year: To Whom It May Concern,https://www.albumoftheyear.org/album/15055-bee-gees-to-whom-it-may-concern.php,album and final track,Album genre tag plus official psychedelic closer Sweet Song of Summer,medium
+beegees-towhomitmayconcern,ampop,AllMusic: To Whom It May Concern,https://www.allmusic.com/album/mw0000074608,album,AllMusic identifies AM Pop,high
+beegees-towhomitmayconcern,country,Bee Gees official album archive: To Whom It May Concern,https://www.beegees.com/releases-archive/to-whom-it-may-concern/,one track,Official discography singles out Road to Alaska as the only country song,high
+beegees-lifeinatincan,softrock,AllMusic: Life in a Tin Can,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Av7ivad1kv8wj,album,AllMusic explicitly classifies the album as Soft Rock,high
+beegees-lifeinatincan,poprock,Album of the Year: Life in a Tin Can,https://www.albumoftheyear.org/album/15056-bee-gees-life-in-a-tin-can.php,album,Album of the Year genre Pop Rock,medium
+beegees-lifeinatincan,folkpop,Album of the Year: Life in a Tin Can,https://www.albumoftheyear.org/album/15056-bee-gees-life-in-a-tin-can.php,album,Album of the Year genre Folk Pop,medium
+beegees-lifeinatincan,countrypop,Album of the Year: Life in a Tin Can,https://www.albumoftheyear.org/album/15056-bee-gees-life-in-a-tin-can.php,album,Album of the Year genre Country Pop,medium
+beegees-lifeinatincan,countryrock,Life in a Tin Can album discography,https://en.wikipedia.org/wiki/Life_in_a_Tin_Can,album,Discographic genre attribution Country Rock and country instrumentation,medium
+beegees-lifeinatincan,ampop,AllMusic: Life in a Tin Can,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Av7ivad1kv8wj,album,AllMusic indexes AM Pop,high
+beegees-lifeinatincan,baroquepop,Apple Music: Life in a Tin Can album editorial,https://music.apple.com/us/album/life-in-a-tin-can/1443312739,residual texture,"Apple Music hears baroque-esque arrangements in Method to My Madness, not prevailing album genre",medium
+beegees-lifeinatincan,powerpop,Apple Music: Life in a Tin Can album editorial,https://music.apple.com/us/album/life-in-a-tin-can/1443312739,one track,Apple Music calls South Dakota Morning melancholic power pop,medium
+beegees-lifeinatincan,soul,Bee Gees official album archive: Life in a Tin Can,https://www.beegees.com/releases-archive/life-tin-can/,one track,Official page calls final track Method to My Madness soulful,high
+beegees-mrnatural,blueeyedsoul,Album of the Year: Mr. Natural,https://www.albumoftheyear.org/album/15057-bee-gees-mr-natural.php,album,Album of the Year explicitly classifies Blue-Eyed Soul,medium
+beegees-mrnatural,popsoul,Album of the Year: Mr. Natural,https://www.albumoftheyear.org/album/15057-bee-gees-mr-natural.php,album,Album of the Year explicitly lists Pop Soul,medium
+beegees-mrnatural,soul,Mr. Natural (Bee Gees album),https://en.wikipedia.org/wiki/Mr._Natural_%28Bee_Gees_album%29,album,Discographic sources identify soul as an album genre,medium
+beegees-mrnatural,rnb,Bee Gees official album archive: Mr. Natural,https://www.beegees.com/releases-archive/mr-natural/,album,Official Bee Gees source describes first major shift toward R&B,high
+beegees-mrnatural,phillysoul,Album of the Year: Mr. Natural,https://www.albumoftheyear.org/album/15057-bee-gees-mr-natural.php,album facet,Album of the Year identifies Philly Soul,medium
+beegees-mrnatural,poprock,Album of the Year: Mr. Natural,https://www.albumoftheyear.org/album/15057-bee-gees-mr-natural.php,album,Album of the Year explicitly lists Pop Rock,medium
+beegees-mrnatural,softrock,AllMusic: Mr. Natural,https://www.allmusic.com/album/mr-natural-mw0000611445,album,AllMusic identifies Soft Rock,high
+beegees-mrnatural,rock,Bee Gees official album archive: Mr. Natural,https://www.beegees.com/releases-archive/mr-natural/,album,Official page identifies multiple rock songs with guitars and bass,high
+beegees-mrnatural,gospel,Bee Gees official album archive: Mr. Natural,https://www.beegees.com/releases-archive/mr-natural/,one track,Official page describes Give a Hand Take a Hand as gospel-tinged,high

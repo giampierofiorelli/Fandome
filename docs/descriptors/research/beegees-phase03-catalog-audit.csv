@@ -1,0 +1,9 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+beegees,beegees-trafalgar,Trafalgar,1971,studio,present in catalog.ts,not in docs/descriptors/beegees.csv on 2026-10-28,import draft descriptor only,No catalogue duplication; this row belongs to phase 03
+beegees,beegees-towhomitmayconcern,To Whom It May Concern,1972,studio,present in catalog.ts,not in docs/descriptors/beegees.csv on 2026-10-28,import draft descriptor only,No catalogue duplication; this row belongs to phase 03
+beegees,beegees-lifeinatincan,Life in a Tin Can,1973,studio,present in catalog.ts,not in docs/descriptors/beegees.csv on 2026-10-28,import draft descriptor only,No catalogue duplication; this row belongs to phase 03
+beegees,beegees-mrnatural,Mr. Natural,1974,studio,present in catalog.ts,not in docs/descriptors/beegees.csv on 2026-10-28,import draft descriptor only,No catalogue duplication; this row belongs to phase 03
+beegees,beegees-maincourse,Main Course,1975,studio,present in catalog.ts,"phase 04, not here",future phase 04 only,Do not import Phase 04 rows now
+beegees,beegees-childrenoftheworld,Children of the World,1976,studio,present in catalog.ts,"phase 04, not here",future phase 04 only,Do not import Phase 04 rows now
+beegees,beegees-spiritshavingflown,Spirits Having Flown,1979,studio,present in catalog.ts,"phase 04, not here",future phase 04 only,Do not import Phase 04 rows now
+beegees,beegees-livingeyes,Living Eyes,1981,studio,present in catalog.ts,"phase 04, not here",future phase 04 only,Do not import Phase 04 rows now

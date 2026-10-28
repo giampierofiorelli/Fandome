@@ -1,0 +1,28 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+beegees-maincourse,disco,Album of the Year: Main Course,https://www.albumoftheyear.org/album/15058-bee-gees-main-course.php,album,Album of the Year explicitly indexes Disco for Main Course,medium
+beegees-maincourse,popsoul,Album of the Year: Main Course,https://www.albumoftheyear.org/album/15058-bee-gees-main-course.php,album,AOTY explicitly indexes Pop Soul,medium
+beegees-maincourse,rnb,Main Course discography: genres,https://en.wikipedia.org/wiki/Main_Course,album,"R&B is identified as part of the original LP style, with official artist page also describing its pop/R&B turn",medium
+beegees-maincourse,funk,Main Course discography: genres,https://en.wikipedia.org/wiki/Main_Course,album,Discography explicitly names funk on this album,medium
+beegees-maincourse,poprock,Album of the Year: Main Course,https://www.albumoftheyear.org/album/15058-bee-gees-main-course.php,album,AOTY explicitly indexes Pop Rock,medium
+beegees-maincourse,soul,Album of the Year: Main Course,https://www.albumoftheyear.org/album/15058-bee-gees-main-course.php,album,AOTY explicitly indexes Soul,medium
+beegees-maincourse,phillysoul,Apple Music editorial: Main Course,https://music.apple.com/us/album/main-course/1442433679,album,Apple Music review explicitly hears Philly soul in the 1975 approach,medium
+beegees-maincourse,countrypop,Album of the Year: Main Course,https://www.albumoftheyear.org/album/15058-bee-gees-main-course.php,secondary track facet,AOTY lists Country Pop; official band site locates country style on Come On Over,medium
+beegees-maincourse,psychedelic,Bee Gees official: Main Course,https://www.beegees.com/releases-archive/main-course/,one track,"Official band archive calls Edge of the Universe a psychedelic turn, not the album’s main genre",high
+beegees-childrenoftheworld,disco,Album of the Year: Children of the World,https://www.albumoftheyear.org/album/15059-bee-gees-children-of-the-world.php,album,"AOTY expressly indexes disco, also evidenced by You Should Be Dancing",medium
+beegees-childrenoftheworld,funk,Album of the Year: Children of the World,https://www.albumoftheyear.org/album/15059-bee-gees-children-of-the-world.php,album,AOTY expressly indexes Funk,medium
+beegees-childrenoftheworld,blueeyedsoul,Album of the Year: Children of the World,https://www.albumoftheyear.org/album/15059-bee-gees-children-of-the-world.php,album,AOTY expressly indexes Blue-Eyed Soul,medium
+beegees-childrenoftheworld,rnb,Children of the World original album genre,https://en.wikipedia.org/wiki/Children_of_the_World,album,R&B listed as an original album genre; direct 1976 Barry interview discusses R&B,medium
+beegees-childrenoftheworld,pop,Bee Gees official: Children of the World,https://www.beegees.com/releases-archive/children-of-the-world/,album broad,Official site describes synth-heavy pop and multiple light-hearted pop tracks,high
+beegees-childrenoftheworld,soul,Bee Gees official: Children of the World,https://www.beegees.com/releases-archive/children-of-the-world/,some tracks,Love So Right and Love Me are the softer soul-ballad counterpart to four-to-the-floor dance cuts,high
+beegees-spiritshavingflown,disco,Album of the Year: Spirits Having Flown,https://www.albumoftheyear.org/album/15060-bee-gees-spirits-having-flown.php,album,AOTY lists Disco; official discography singles out Tragedy and Search Find as dance tracks,medium
+beegees-spiritshavingflown,pop,Album of the Year: Spirits Having Flown,https://www.albumoftheyear.org/album/15060-bee-gees-spirits-having-flown.php,album broad,AOTY explicitly indexes Pop,medium
+beegees-spiritshavingflown,funk,Album of the Year: Spirits Having Flown,https://www.albumoftheyear.org/album/15060-bee-gees-spirits-having-flown.php,album,AOTY lists Funk,medium
+beegees-spiritshavingflown,popsoul,Album of the Year: Spirits Having Flown,https://www.albumoftheyear.org/album/15060-bee-gees-spirits-having-flown.php,album,AOTY lists Pop Soul,medium
+beegees-spiritshavingflown,softrock,AllMusic: Spirits Having Flown,https://www.allmusic.com/album/spirits-having-flown-mw0000200924,ballads / album facet,AllMusic explicitly indexes Soft Rock; tracks Reaching Out and Stop Think Again are ballads,high
+beegees-spiritshavingflown,dancerock,AllMusic: Spirits Having Flown,https://www.allmusic.com/album/spirits-having-flown-mw0000200924,several tracks,"AllMusic describes Tragedy and others as pounding dance-rock, not entire LP",high
+beegees-livingeyes,softrock,AllMusic: Living Eyes,https://www.allmusic.com/album/r1620/charts-awards,album,AllMusic explicitly indexes Soft Rock,high
+beegees-livingeyes,adultcontemporary,AllMusic: Living Eyes,https://www.allmusic.com/album/r1620/charts-awards,album,AllMusic explicitly indexes Adult Contemporary,high
+beegees-livingeyes,contemporarypoprock,AllMusic: Living Eyes,https://www.allmusic.com/album/r1620/charts-awards,album,AllMusic explicitly indexes Contemporary Pop/Rock,high
+beegees-livingeyes,poprock,1981 Living Eyes original LP credits,https://musicbase.net/living-eyes-3n3g472,album,Original LP metadata classifies the album as Pop Rock,medium
+beegees-livingeyes,artrock,Living Eyes discography,https://en.wikipedia.org/wiki/Living_Eyes_(Bee_Gees_album),album marginal,Album discography lists art rock; subordinate to the much stronger soft-rock emphasis,medium
+beegees-livingeyes,pop,Bee Gees official: Living Eyes,https://www.beegees.com/releases-archive/living-eyes/,album broad,"Official track list and subsequent 1981 Bee Gees studio recording; broad pop classification, subordinate to specific styles",high
