@@ -57,3 +57,4 @@ Phase 02: *Break of Hearts* (1989), *Pet the Tiger* (1991), *Edge of the Land* (
 - Catalogue: 9 studio albums 1983-1997; Shock Horror! (as The Waves) left out. Added to LEGACY (disbanded 1999).
 - Scene GB en 1980 rock,pop. Artist influences from Alex Cooper and Katrina Leskanich (labels Motown/Stax left out).
 - 1985 album: Wham! (Make It Big) kept as influence: Scott Litt modelled the Walking on Sunshine rework rhythm on Wake Me Up Before You Go-Go (a documented technique model).
+- Reception researched by Claude.
