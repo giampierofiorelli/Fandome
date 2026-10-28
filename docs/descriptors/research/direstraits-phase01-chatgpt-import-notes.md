@@ -59,7 +59,7 @@ If the catalogue acquires a previously researched landmark descriptor for either
 ## Claude import note
 
 - 4 rows imported. Communiqué id is direstraits-communique (the catalogue slug folds the accent to e, not drops the letter).
-- vibraphone mapped to mallets.
+- vibraphone and marimba mapped to mallets.
 - Making Movies: Bruce Springsteen removed from sounds_like: Roy Bittan of his E Street Band plays keyboards on the album (a guest's band).
 - Artist influences: Dylan, J.J. Cale, The Shadows / Hank Marvin, Chet Atkins (Knopfler).
 - Reception researched by Claude.
