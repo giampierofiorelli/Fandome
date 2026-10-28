@@ -1171,3 +1171,313 @@ Sources
 Genres: `classical` supported by the Grammy Best Classical Album and Billboard Classical chart.
 Left empty: energy, mood, theatrical, tempo (no source describes them), lyrics/language (instrumental), sounds_like and influenced_by (Bach is the repertoire, not an influence; no documented influences/critic comparisons found).
 New tokens: none. Country US, start 1960s.
+
+
+# Batch 2 (28 Oct 2026): artists most cited in sounds_like/influences without a described album
+
+Owner: 'Lavora tu su di loro'. One landmark album each. Claude's import fixes: vibraphone/marimba to mallets, fiddle to violin, piccolo to flute, doubletracking and closeharmony to layeredvocals. 17 new genres (calypso, torchsong, artfolk, technorock, sampledelia, alternativehiphop, exotica, oldschoolrap, latinsoul, undergroundhiphop, modaljazz, systemsmusic, postmodern, tulsasound, swamprock, ambientdance, paisleyunderground).
+
+## algreen-letsstaytogether
+
+# algreen-letsstaytogether: sources
+- https://en.wikipedia.org/wiki/Let%27s_Stay_Together_(Al_Green_album): soul (infobox), Willie Mitchell producer, Royal Studios Memphis, Hi Rhythm Section (Hodges brothers: organ/piano, guitar, bass; drums Howard Grimes, Al Jackson Jr.), horns (trumpet, saxes, trombone; James Mitchell arrangements); ratings AllMusic 5, RS 5, EPM 5, Pitchfork 8.7, Christgau A-; Guinness/Q/Virgin lists; US #8, soul #1 10 weeks.
+- https://www.hhv-mag.com/feature/records-revisited-al-green-lets-stay-together-1972-2/?lang=en: soul/R&B; velvety smooth, organic open production, horns, strings on "How Can You Mend a Broken Heart" (stringarrangements), driving drums; themes love/romance.
+- Search snippet (Under the Radar 50th anniversary): "quintessential exercise in the city's game-changing style" -> memphissoul.
+- https://en.wikipedia.org/wiki/Al_Green: career influences (Sam Cooke, Wilson Pickett, James Brown, Jackie Wilson) are not album-specific, so influenced_by left empty.
+- voice left EMPTY: no reliable source describing his vocals on this album (falsetto claims only on low-quality pages). Bee Gees not listed (covered song).
+
+## bangles-differentlight
+
+# bangles-differentlight — The Bangles, Different Light (1986)
+- https://en.wikipedia.org/wiki/Different_Light: pop rock, Top 40 departure from 60s-style roots; Slant: 60s pop melodies, early-80s new wave/rock rhythms; Classic Pop: Paisley Underground influence; producer David Kahne (engineers/mixer excluded); credits: guitars, bass, drums, Mitchell Froom keyboards, Kahne keyboards and LinnDrum programming, harp, electric sitar, extra drums; covers/outside writers (Jules Shear, Big Star, Prince, Liam Sternberg) excluded from sounds_like/influences; ratings AllMusic 3, Slant 4, Classic Pop 4, RSAG 2.5, Spin 6; US #2, UK #3, 3x Platinum.
+- https://rockandrollglobe.com/?p=43452 : Billboard "lusher, more layered vocal sound" (layeredvocals); jangly 60s roots, guitar-laden, upbeat infectious pop (mood 4); Debbi Peterson: rushed, more outside songs (mainstream 4).
+- Search summary (Slant, AllMusic): slicker, more commercial move; AllMusic: less cohesive than the debut, production and outside musicians part of the problem.
+- sounds_like, influenced_by, lyrics left empty: no source gives a sonic comparison (only scene peers Rain Parade/Three O'Clock and the Go-Go's as a commercial model) or themes.
+- NEW TOKEN: `paisleyunderground` (Classic Pop "Paisley Underground"; the list has `paisleypop`, a different name); suggested parents: rock, indie, alt (with janglepop, psychedelicrock).
+
+## basementjaxx-remedy
+
+# basementjaxx-remedy — Basement Jaxx, Remedy (1999)
+- https://en.wikipedia.org/wiki/Remedy_(Basement_Jaxx_album): genres house, disco; producers Felix Buxton, Simon Ratcliffe; violin (Stop 4 Love), keyboards (Bingo Bango); samples (Locksmith, KRS-One, Selecter, Bolivar); guest vocalists (excluded from sounds_like); Metacritic 88, AllMusic 5 (compared to Daft Punk Homework), NME 9, AP 5, Pitchfork 3.5; 1001 Albums, RS EDM #13; UK #4, Platinum.
+- https://stereogum.com/2043219/basement-jaxx-remedy-turns-20/reviews/the-anniversary : deep house / garage; Spanish acoustic guitar on Rendez-Vu; joyous "remedy" for late-90s gloom (mood 5, lyrics party); comparisons Daft Punk, Chemical Brothers, Fatboy Slim.
+- https://tinnitist.com/2024/08/05/classic-album-review-basement-jaxx-remedy : electronica, funky house; inventive samples; Chemical Brothers comparison.
+- https://www.scaruffi.com/vol6/basement.html : Latin (Bingo Bango), hip-hop (Jump N' Shout), soul-pop (Red Alert), flamenco-like (Rendez-Vu), derivative of garage house.
+- Search summary (RA bio, URB 1999): "polished roughness" (polish 3); aim to recapture Chicago/NY house feel — a scene, no artist named for this album, so influenced_by empty.
+
+## beck-odelay
+
+# Beck — Odelay (1996)
+- https://en.wikipedia.org/wiki/Odelay — infobox alternative rock, sampledelia, alternative hip hop, experimental rock, folk rock, neo-psychedelia; Erlewine (AllMusic): folk, country, garage rock, electro, exotica, old-school rap, noise rock; Sheffield (RS): punk rock, bossa nova, Latin soul, mainstream R&B; producers; Beck: guitars, bass, harmonica, organ, Moog, thumb piano (kalimba), turntables; Greg Leisz pedal steel, Charlie Haden upright bass, Joey Waronker drums, trumpet/sax on Where It's At; Dust Brothers layered sample approach; ratings, Grammys, lists, certs.
+- https://rulefortytwo.com/articles-essays/music/beck-on-odelay/ — "a lot of Odelay was played, not sampled"; early Pro Tools; pawn-shop Moogs; Wurlitzer organ; slide guitar and harmonicas; Them organ sample (sample, not influence).
+- https://www.udiscovermusic.com/behind-the-albums/beck-odelay/ — Mark Kemp (RS 1996): "Like the Beasties…" → sounds_like Beastie Boys (not a producer's band).
+- lyrics left empty (no source characterises the album's lyrics; many were placeholders). influenced_by empty (Paul's Boutique link is critics' / producers' CV, not a Beck statement).
+- New tokens: `sampledelia` (parents electronic, hiphop, psychedelia), `alternativehiphop` (hiphop, alt), `exotica` (lounge, easylistening, spaceagepop), `oldschoolrap` (hiphop, rap), `latinsoul` (latin, soul).
+
+## billieholiday-ladyinsatin
+
+# billieholiday-ladyinsatin: sources
+- https://en.wikipedia.org/wiki/Lady_in_Satin: vocal jazz; producer Irving Townsend (Fred Plaut engineer, Ray Ellis arranger/conductor - not producers); 40-piece orchestra with horns, strings, reeds and 3-voice choir; soloists Mel Davis (trumpet), Urbie Green and J.J. Johnson (trombone); rhythm Mal Waldron (piano), Barry Galbraith (guitar), Milt Hinton (bass), Osie Johnson (drums); voice "a fragile, raspy sound" (voice raspy); Great American Songbook and classic pop material (standards, traditionalpop); Holiday admired Sinatra's In the Wee Small Hours and wanted a setting in the vein of Sinatra or Ella Fitzgerald's Song Books (influenced_by); Townsend: she wanted "a pretty album, something delicate"; reception AllMusic 4.5, Penguin 3/4, RS Jazz Guide unfavourable; Grammy HoF 2000; RS 500 #317 (2020).
+- lyrics heartbreak|love: from the torch-song repertoire (I'm a Fool to Want You, You Don't Know What Love Is) and Penguin's "beaten woman" reading; medium.
+- Ray Ellis not in sounds_like/influenced_by (arranger/collaborator).
+
+## bluenile-hats
+
+# bluenile-hats — The Blue Nile, Hats (1989)
+- https://en.wikipedia.org/wiki/Hats_(album): genres (sophisti-pop, art pop, electropop, synth-pop), self-produced by the trio, credits (synths, keyboards, guitar, bass), Castlesound/Calum Malcolm (engineer, so not a producer), ratings (Q 5, Uncut 10, Mojo 5, NME 9, Pitchfork 8.8, RS lukewarm), lists (MM #8, NME #18, Q British #92, Q 80s #38), UK #12.
+- https://www.electricityclub.co.uk/?p=4596: more synths and drum machines than the debut, piano, guitar, sampled trumpet (instruments, sampling); comparisons OMD (Architecture & Morality), David Sylvian, Tom Waits and Sinatra in the vocal (sounds_like); love songs of loss and fragile hope; "4 am" mood (mood 1, tempo 1).
+- https://www.stereogum.com/2061426/blue-nile-hats-30th-anniversary-review/ : nocturnal, slow, melancholic; lyrics of failing relationships and searching (introspection).
+- https://rockandrollglobe.com/new-wave/the-blue-niles-sophisticated-pop-classic-hats-turns-30/ : "blue-eyed soul" approach (genre blueeyedsoul), critic says they seem affected by Talk Talk's Spirit of Eden (a critic's guess, so sounds_like, not influenced_by); velvet, soulful voice (soft).
+- https://en.wikipedia.org/wiki/The_Blue_Nile_(band): formed Glasgow 1981; effectively split 2005, Moore 2022: no reunion.
+- influenced_by left empty: no band statement found. No gear models documented.
+
+## cars-thecars
+
+# The Cars (1978): sources
+- https://en.wikipedia.org/wiki/The_Cars_(album) : genres new wave, power pop, electronic rock; producer Roy Thomas Baker; personnel (Hawkes keyboards/sax/percussion, Robinson drums/Syndrums); irony and sarcasm in Ocasek's lyrics; ratings AllMusic 5, Christgau B+, RS 1978 ("lacquered sound"); RS 500 #282/#284/#353; Larkin #384; NRR 2024; US #18, 6x Platinum.
+- https://www.mixonline.com/recording/classic-tracks-the-cars-just-what-i-needed : Vox Continental + Farfisa organs (organ, farfisa), small old Moog (moog), no programmable synths; Syndrum/Synare (electronicdrums); gated snare (noisegating); 9-track stacked background harmonies (layeredvocals); band tracks with most parts replaced by overdubs (overdubbing); stacked vocals recall Queen -> sounds_like Queen.
+- https://ultimateclassicrock.com/the-cars-debut-track-by-track/ : flanged toms (flanging); stacked chorus vocals; "Moving in Stereo" shows early Roxy Music influence (critic's view -> sounds_like Roxy Music); breakup/love themes, rock-star parody.
+- Left empty: voice, influenced_by (Velvet Underground "Sister Ray" nod is a quotation; Ocasek's favourite bands are career-wide, not documented for this album). Prophet-5/miniKorg claims only on forums: not used.
+
+## dollyparton-jolene
+
+# dollyparton-jolene (Dolly Parton, Jolene, 1974)
+- https://en.wikipedia.org/wiki/Jolene_(album): genre country; producer Bob Ferguson; RCA Studio B Nashville; personnel (guitars, pedal steel Pete Drake/Stu Basore, banjo Buck Trent, fiddle Mack Magaha/Johnny Gimble -> violin, piano Hargus Robbins/David Briggs, harmonica Onie Wheeler, bass, drums, Nashville Edition backing vocals); reviews AllMusic 3.5, Christgau B-, EPM 4, Pitchfork 5.8 (2007), Uncut 5; two country #1 singles; US country albums #6.
+- https://consequence.net/2023/09/dolly-parton-jolene-review/1: understated, gentle and largely acoustic, carried by storytelling, simply structured; Jolene on hand-picked guitar (acousticguitar); themes fear of losing love, farewell to Wagoner.
+- https://highwayqueens.com/2018/10/06/dolly-partons-discography-jolene/: River of Happiness has bluegrass influences (one track -> tail genre); classically country arrangements; speak-sung verses, warm tone, vibrato; heartbreak/longing/love themes; title track dark and menacing.
+- https://americansongwriter.com/on-this-day-1974-dolly-parton-released-album-helped-make-her-country-icon/: her breakthrough/most popular album (importance 5).
+Scales: electronic 0 (acoustic), mood 2 (pleading, longing, some jaunty songs), groove 1.
+sounds_like EMPTY (Whitney Houston/Linda Ronstadt only as later covers; Charley Pride/Glen Campbell named as contrast). influenced_by empty.
+Doubt: acclaim 4 vs 3 (Uncut 5/5 and EPM 4/5 vs Pitchfork 5.8 and Christgau B-).
+No new tokens.
+
+## ericclapton-slowhand
+
+# ericclapton-slowhand (Eric Clapton, Slowhand, 1977)
+- https://en.wikipedia.org/wiki/Slowhand: genres rock, blues, country; producer Glyn Johns (Olympic Studios, May 1977; Johns disliked jamming); personnel (Clapton vocals/guitars, George Terry guitars, Dick Sims keyboards, Carl Radle bass, Jamie Oldaker drums/percussion, Mel Collins sax on The Core, Marcy Levy/Yvonne Elliman vocals); covers of J.J. Cale, Don Williams, John Martyn, Arthur Crudup; reviews AllMusic 4.5 (with 461 his best), RS Album Guide 5, EPM 4, Christgau C+, Kot 2.5; RS 500 #325 (2003); US #2, 3x Platinum.
+- https://en.wikipedia.org/wiki/Lay_Down_Sally: lead single = country blues, roots rock, country rock (allowed in top genres as biggest hit; put after infobox genres); Dick Sims electric piano; Billboard: low-key earthy vocal. Clapton credits his Tulsa bandmates (members, so not influences).
+- https://bestclassicbands.com/eric-clapton-slowhand-review-12-11-19/: beyond electric blues to pop, country, reggae; editorial economy; organ figures; breezy shuffle, languid ballad; themes: Wonderful Tonight love tribute, Cocaine anti-drug warning (social), Next Time You See Her jealousy, May You Never friendship.
+Scales: energy 2/tempo 2 (medium tempo, laid-back), polish 3 (normal studio, economical), voice soft (low key, mellow).
+sounds_like EMPTY: the only critic comparison is J.J. Cale (Lay Down Sally "in the style of"), but he is the original of a covered song (Cocaine) -> excluded by the rule. influenced_by empty.
+No new tokens.
+
+## everlybrothers-itseverlytime
+
+# The Everly Brothers — It's Everly Time (1960)
+- https://en.wikipedia.org/wiki/It%27s_Everly_Time — genre rock and roll; Nashville sessions 8–24 March 1960; personnel (Don/Phil guitar, Chet Atkins & Hank Garland electric guitar, James Clayton steel guitar, bass, Floyd Cramer piano, Buddy Harman drums); mostly Boudleaux & Felice Bryant songs; AllMusic 4.5/5 ("one of their very best"), EPM 3/5; UK #2, US mono #9. No producer credited on the page: producers left empty.
+- https://onlysolitaire.substack.com/p/review-the-everly-brothers-its-everly — blend of rock and roll, pop, country, folk, country-pop and one blues-tinged track; harmonies the main draw; heartbreak ("So Sad") and teen romance; comparisons Hank Williams, Buddy Holly (sounds_like); Ray Charles/Fats Domino = covered originals, excluded.
+- New token: production `closeharmony` (close two-part vocal harmony; near layeredvocals). Voice left empty (no source for a voice type).
+
+## garbage-garbage
+
+# Garbage — Garbage (1995)
+- https://en.wikipedia.org/wiki/Garbage_(album) — infobox alternative rock, dance-rock, power pop; Metro Weekly electronic pop + trip-hop beats + electronica; Kaufman trip-hop, jungle; Wood post-grunge; A.V. Club pop-rock; Grierson "techno-rock"; producer credit Garbage; Smart Studios; samples/loops, Vig's "Wall of Sound", 48 tracks of loops; personnel (guitars, bass, six-string bass, fuzz bass, keyboards, samples, loops, drums; Stubblefield drums, Thimmig clarinet, Ryan percussion); Newsweek acoustic+electric guitars, keyboards; lyrics voyeurism, hedonism, obsession, self-destruction; Erlewine "thin, airy voice", glossy production; Inglis (Sound on Sound) production "owed as much to Public Enemy as Led Zeppelin"; Christgau "Whale without Tricky"; ratings/lists/certs.
+- https://faroutmagazine.co.uk/shirley-manson-album-great-sex-cry-your-eyes-out/ — Vig named Debbie Harry, Patti Smith, Chrissie Hynde, Siouxsie as models in the singer search (not album influences; left out).
+- influenced_by empty: Wikipedia says the approach grew out of the band's remix work (U2, Depeche Mode, NIN) — remixing, not documented musical influence; not listed. Clash/Single Gun Theory/Headless Chickens are samples.
+- New token: `technorock` — parents rock, techno.
+
+## gogos-beautyandthebeat
+
+# Beauty and the Beat (1981): sources
+- https://en.wikipedia.org/wiki/Beauty_and_the_Beat_(The_Go-Go%27s_album) : genres new wave, pop rock, power pop, surf rock; producers Richard Gottehrer and Rob Freeman; personnel (Caffey guitar + keyboards, Schock drums/percussion); ratings AllMusic 4.5, Pitchfork 8.3, Spin 10, RS 4; RS 500 #413/#414/#400; Spin Alt #91; 1001 Albums; NRR 2026; US #1, 2x Platinum; NPR: perfected pop-punk (poppunk).
+- https://www.wamc.org/2020-08-05/how-the-go-gos-perfected-pop-punk (NPR, Hilary Hughes): Carlisle "modeled ourselves on" Buzzcocks and the Clash; Caffey's reverb surf guitar from her Beach Boys fandom -> influenced_by Buzzcocks|The Clash|The Beach Boys; Gottehrer slowed songs, Carlisle says her voice was sped up (varispeed); Wiedlin's darker lyrics on mental health (introspection), mocking/Hollywood songs (irony).
+- https://en.wikipedia.org/wiki/We_Got_the_Beat : re-recorded slower at Gottehrer's direction; Caffey horrified by sped-up vocals.
+- https://albumreviews.blog/reviews/punk-and-new-wave-reviews/the-go-gos-album-reviews/ and https://en.debaser.it/go-gos/beauty-and-the-beat/review : hints of Blondie, The Cars, Adam Ant -> sounds_like (smaller outlets; confidence medium).
+- Excluded: Shangri-Las (covered), Terry Hall (co-writer), Ramones/Richard Hell (producer/engineer credits, not a sound comparison).
+
+## heart-heart
+
+# Heart (1985): sources
+- https://en.wikipedia.org/wiki/Heart_(Heart_album) : genres rock, pop; producer Ron Nevison; personnel (Nancy Wilson guitars/acoustic/mandolin, Leese guitar/keyboards/mandolin, Peter Wolf synths + acoustic piano, Holly Knight keyboards); outside writers; ratings AllMusic 4.5, Kerrang 3, RS Album Guide 2.5, RS unfavourable; US #1, 5x Platinum.
+- https://ultimateclassicrock.com/heart-1985-album/ : hard rocker (hardrock), power ballad (powerballad), AC ballad (adultcontemporary); Capitol required agreed material -> outside songwriters, managed image, sisters felt stifled (mainstream 5); Nancy: "auditioning snare samples all day" (production sampling); Nevison kept Nancy's cracked/raspy take (voice raspy).
+- https://www.classicrockreview.com/2015/08/1985-heart/ : mainstream pop/rock (poprock), synths and fake strings, electric piano; "Nothin' at All" like 80s Journey -> sounds_like Journey.
+- https://www.udiscovermusic.com/stories/heart-1985-classic-album/ : leaner mainstream rock, radio-friendly polish, stilted keyboards; revenge/woman scorned (heartbreak), romantic ballads (love).
+- Stereogum (search snippet, Number Ones column): "These Dreams" is straight-up 80s synthpop -> synthpop (long tail).
+- https://www.songfacts.com/facts/heart/these-dreams : raspy cold vocal kept.
+- Excluded: Grace Slick/Mickey Thomas (guests), Toronto (original of a cover), Robert Plant comparison (one vocal, not album sound).
+
+## hollies-butterfly
+
+# The Hollies — Butterfly (1967)
+- https://en.wikipedia.org/wiki/Butterfly_(Hollies_album) — genres psychedelic pop, experimental pop ("pop-oriented approach to psychedelia"); producer Ron Richards, Nash led sessions; EMI/Abbey Road Aug–Oct 1967; Hicks lead guitar + electric sitar ("Maker"), Nash rhythm guitar + harmonium ("Dear Eloise"), Clarke harmonica, Calvert bass/keyboards, Elliott drums; John Scott string and brass arrangements; ratings AllMusic 2.5, Q 3, EPM 4, Sounds 4, Uncut 7/10; last album with Nash.
+- https://www.highresaudio.com/album/view/yzidsf/the-hollies-butterfly-remaster — "modest adjustments to the psychedelic era", sitar, trippy studio effects, "pleasant enough, not essential".
+- Thin evidence: lyrics, voice, sounds_like, influenced_by empty (no Sgt. Pepper link found in sources). Confidence low. Note: "King Midas in Reverse" is on the US version only, not this UK album.
+
+## jjcale-naturally
+
+# jjcale-naturally (J.J. Cale, Naturally)
+Note: released 25 Oct 1971 (Wikipedia); year kept as given (1972, US Shelter release date in some listings).
+- https://en.wikipedia.org/wiki/Naturally_(J._J._Cale_album): genre country rock; framework of the Tulsa sound; delicate drums, deep limited-range vocals, guitar mixing country chords/blues/jazz harmony; electric drum machine on Crazy Mama and Call Me the Breeze, demo-like; full personnel (Karl Himmel/Chuck Browning drums, Radle/Drummond/Putnam bass, Wilson/Briggs/Whitehurst piano, Briggs organ, Myrick steel, Spicher/Lavender fiddle -> violin, Haynes dobro, Gayden slide, Colis harmonica); producer Audie Ashworth; reviews (Landau RS, Christgau B, AllMusic 3.5, Owens: lazy rolling boogie contradicting commercial styles); Crazy Mama #22; UK silver.
+- https://en.wikipedia.org/wiki/JJ_Cale: whispery vocals buried in mix, early drum machine use, Tulsa sound (blues, rockabilly, country, jazz); LA Times hybrid of blues, folk and jazz. Died 2013. Only named influence (Mose Allison) is tied to "Cocaine" (1976), so NOT used for this album.
+- https://thevinyldistrict.com/storefront/graded-on-a-curve-jj-cale-naturally: blues/country/rockabilly/jazz, swamp rock; quiet sleepy whisper vocals; drowsy, low-key mood; shuffle tempo; horn section, piano, harmonica; storytelling (smuggling story, woman left in New Orleans); comparison Randy Newman (understatement) -> sounds_like. (Velvet Underground comparison is for one track only, not used.)
+- https://hypercritic.org/collection/jj-cale-naturally-1971-review: "classic of the blues-rock genre"; vocals almost talked (spoken); low tempo; mellow/sad/chilled; horns on Woman I Love, strings on Clyde; loneliness theme.
+Scales: energy 1/tempo 1 (low tempo, no momentum), mood 2 (world-weary, sad/chilled), polish 2 (spare, demo-like), groove 2 (rolling boogie/shuffle), electronic 1 (drum machine on two tracks).
+New genre tokens: `tulsasound` (parents: rock, blues, country), `swamprock` (parents: rock, blues).
+Doubts: swamprock/rockabilly/jazz/folk are named for Cale's style in album reviews, put at tail. influenced_by empty (nothing documented for this album).
+
+## jonimitchell-blue
+
+# Joni Mitchell — Blue (1971)
+- https://en.wikipedia.org/wiki/Blue_(Joni_Mitchell_album) — genre folk; AllMusic (Ankeny) "quintessential confessional singer/songwriter album", "confessional folk-pop"; Peter Reilly: torch-song tradition; "Carey" calypso-influenced, Hinton rock and roll (tail genres); producer Joni Mitchell, A&M Studios, engineer Henry Lewy; Mitchell acoustic guitar, Appalachian dulcimer, piano; Stills bass/guitar, Sneaky Pete Kleinow pedal steel, Russ Kunkel drums/percussion, James Taylor guitar; themes: romance, breakup, homesickness, Vietnam, adoption ("Little Green"); Kearns compares "My Old Man" to Carole King's "It's Too Late" (Tapestry) and "This Flight Tonight" to Led Zeppelin's "Friends" (Led Zeppelin III) → sounds_like; reception: AllMusic 5, Pitchfork 10, Christgau A, RS 500 #3, NME #63, NPR; UK #3, US #15, platinum.
+- https://lithub.com/anatomy-of-a-perfect-album-on-joni-mitchells-blue/ — "pure-toned" voice (clear), Hinton "startlingly intimate" (soft); sparse dulcimer/piano/guitar, pedal steel interjections, hand percussion; jazz-torch phrasing.
+- Guests (Taylor, Stills) not in sounds_like. influenced_by empty: no documented musical influence for this album.
+- New token: genre `torchsong` (parents: jazz, pop). `calypso` as above (latin, folk).
+
+## kesha-animal
+
+# kesha-animal — Kesha, Animal (2010)
+- https://en.wikipedia.org/wiki/Animal_(Kesha_album): electropop, dance-pop, electro elements, R&B hints (Blah Blah Blah), pop-rock ballad; producers (Dr. Luke, Benny Blanco, Max Martin, Shellback, Ammo, Greg Kurstin, David Gamson, Tom Neville, Oliver Leiber); Auto-Tune, vocoder, samples, drum machines, few guitars, credits accordion/cowbell/whistle/trumpet/sax; sing-speak and spoken rap verses (voice spoken|rap); themes party, boys, heartbreak, lusty Boots & Boys, empowerment; comparisons Lady Gaga, Uffie, Katy Perry, Britney Spears, INXS (Suicide Blonde); Metacritic 54, Pitchfork 7.3, AllMusic 3, Guardian 2, Slant 1.5; US #1, 4x Platinum.
+- https://www.interviewmagazine.com/music/kesha (Matt Diehl, March 2010): "I wrote my album a little bit in homage to the Beastie Boys' Licensed to Ill" (influenced_by). She also says she loves the Velvet Underground but not tied to the album, so not included.
+- mainstream 5: Dr. Luke/Max Martin hit-factory production, the reference case of a packaged trend record (cf. Teenage Dream anchor).
+
+## kinks-thekinksarethevillagegreenpreservationsociety
+
+# The Kinks — The Kinks Are the Village Green Preservation Society (1968)
+- https://en.wikipedia.org/wiki/The_Kinks_Are_the_Village_Green_Preservation_Society — genres (infobox: pop, rock, baroque pop, folk-pop; text: music hall, folk, blues, psychedelia, calypso, raga rock, acid rock); producer Ray Davies (+ Shel Talmy on "Village Green"); Nicky Hopkins piano/harpsichord/Mellotron; Whitaker strings, oboe, cello, viola, piccolo; congas, tambourine, handclaps; Ray double-tracked most lead vocals; overdubs on Pye 4-track; "unassuming"/demo-like production (polish 2); critics' comparisons: Zombies Odessey and Oracle, Love Forever Changes, Left Banke; Ray cites Motown groups (Four Tops, Temptations) for "Starstruck" (influenced_by); themes: nostalgia, preservation, character studies, cynicism; reception scores and lists; no chart in 1968, UK gold 2018.
+- https://guitar.com/review/album/the-genius-of-the-kinks-are-the-village-green-preservation-society-by-the-kinks — acoustic-guitar dominated (Fender Malibu, 12-string), harmonium, Dave's electric guitars; vaudeville, calypso-like, ska-like; "Phenomenal Cat" near Pink Floyd (sounds_like).
+- Not used as influences: Howlin' Wolf ("Smokestack Lightning" riff = quotation), Phil Spector (journalist's reading of Ray's method on "Picture Book", not Ray's statement), writers (Dylan Thomas, Orwell, Blake...).
+- New tokens: genre `calypso` (parents: latin, folk); production `doubletracking` (double-tracked vocals; near layeredvocals); instrument `piccolo` (woodwind, near flute).
+- Voice left empty: no source describing Ray's vocal type.
+
+## laurabranigan-branigan
+
+# laurabranigan-branigan (Laura Branigan, Branigan, 1982)
+- https://en.wikipedia.org/wiki/Branigan_(album): producer Jack White, co-producer Greg Mathieson; Rusk Sound, Hollywood; personnel (Lukather/Landau/Veitch guitars, Mathieson & Boddicker keyboards/synths, Sklar/Glaub bass, Carlos Vega drums); Gloria = Umberto Tozzi song, its "Eurodisco" version Grammy-nominated; reviews: Billboard positive (voice explodes with fury), AllMusic middling, production bogs down ballads, powerful voice; US #34, Gold US/CA/AU.
+- https://theseconddisc.com/2014/07/30/calling-gloria-laura-branigans-debut-album-gets-expanded-reissue/: contemporary pop with big sleek 80s sound; adult contemporary ballads, rock and dance tracks; Down Like a Rock new wave gloss (tail genre); powerful resonant alto with grit; Latin percussion on When, piano on I Wish We Could Be Alone; Living a Lie could put her in competition with Pat Benatar or Debbie Harry -> sounds_like; Atlantic enlisted White/Mathieson after failed singles to establish her in the pop mainstream (mainstream 4); themes romantic longing, lost love.
+- https://sessiondays.com/2014/09/1982-laura-branigan-branigan/: pop-rock (Please Stay, Go Away), straight-ahead rock (Living a Lie), ballads; full credits.
+- https://laurabraniganonline.com/news/blog/branigan-album-40th-anniversary: four up-tempo tracks among five ballads (groove 2, tempo 3); four-octave powerful voice.
+Excluded from sounds_like: Umberto Tozzi (original of a covered song), Burt Bacharach (one chord quotation), Toto (Lukather is a guest). influenced_by empty.
+New tokens: none (`ballad`, `adultcontemporary`, `eurodisco`, `newwave` already in the list).
+Doubt: acclaim 3 rests on one lukewarm AllMusic review plus positive Billboard; importance 4 because Self Control (1984) is arguably her other defining record.
+
+## lindaronstadt-heartlikeawheel
+
+# lindaronstadt-heartlikeawheel (Linda Ronstadt, Heart Like a Wheel, 1974)
+- https://en.wikipedia.org/wiki/Heart_Like_a_Wheel: genres country rock, pop rock, soft rock; producer Peter Asher (Andrew Gold arrangements help); full personnel (pedal steel Sneaky Pete Kleinow, fiddle David Lindley -> violin, banjo Herb Pedersen, harmonica Jimmie Fadden, ukulele/piano/electric piano/drums Gold, strings arranged by Gregory Rose and David Campbell, viola, cello, double bass, tambourine, cowbell); reviews AllMusic 5 (landmark of 70s mainstream pop/rock), Christgau A-, Pitchfork 8.5, RS Album Guide 5; RS 500 #490 (2020); US #1, 2x Platinum; National Recording Registry 2013; Grammy HoF 2018; Grammy for Best Country Vocal Performance (country genre).
+- https://ronstadt-linda.com/revhear3.htm (Stephen Holden, Rolling Stone 1975): honey-coloured soprano with a throbbing edge, soulful wail (powerful/clear); heartbroken yet resilient (heartbreak/love); full, distinctive settings with imaginative instrumentation (polish 4); title track as a formal chamber piece (stringarrangements); cross-blend of pop and country.
+sounds_like EMPTY: no critic comparison found that isn't a guest (Eagles members, Emmylou Harris, Maria Muldaur, JD Souther) or an original of a covered song (Betty Everett, Everly Brothers, Little Feat, Hank Williams, James Taylor, Buddy Holly). influenced_by empty.
+No new tokens. Confidence high on facts, scales are judgement from Holden/Wikipedia.
+
+## maryjblige-mylife
+
+# maryjblige-mylife: sources
+- https://en.wikipedia.org/wiki/My_Life_(Mary_J._Blige_album): genre (contemporary R&B), producers, themes (depression, addiction, abusive relationship), samples (Ayers, Mayfield, Al Green, Hayes...), reviews (AllMusic 4/5, Pitchfork 7.0), RS 500 ranks, Time, Blender, Apple 100, Registry 2025, charts and certifications.
+- https://daily.redbullmusicacademy.com/2014/11/key-tracks-mary-j-blige-my-life: MPC-60 as hub, Roland JV-1080/D-50, Studer tape, 1176, "vocal flies" layered backing vocals; session players Paul Pesco (guitar), Victor Bailey (bass), Regina Carter (violin), Mark Ledford (trumpet); Alexander on tenor sax/piccolo/flute; Thompson cites go-go.
+- https://soulculture.com/?p=50425 (Chucky Thompson interview): influences Rare Essence, Dr. Dre ("acted like I was Dr. Dre" on I Love You), Pete Rock (King of Rock remix vibe for Be With You). Roy Ayers he "used to love" but sampled, so left out (sample rule). Rose Royce = cover, left out.
+- https://www.udiscovermusic.com/stories/mary-j-blige-my-life-album/ and https://www.udiscovermusic.com/?p=2567413: hip-hop soul, R&B, soul; raw, rough-edged conversational voice (voice raspy); 70s soul loops; themes infidelity, bad love, faith.
+- Search snippets (AllMusic-style review on retail page, udiscover): "quiet storm" ballads, hip-hop subdued in favour of '70s soul (quietstorm genre, medium).
+- sounds_like empty: no critic sonic comparison found (Aretha is a framing quote, not a comparison).
+- Doubt: RBMA gear list may be specific to "I'm Goin' Down" sessions. Mainstream 3 (artist-written, Bad Boy hit producers).
+
+## milesdavis-kindofblue
+
+# Kind of Blue (Miles Davis, 1959): sources
+- https://en.wikipedia.org/wiki/Kind_of_Blue : genre modal jazz (infobox); departure from hard bop; producer Irving Townsend (Teo Macero only produced the 1987 reissue); personnel (trumpet, alto/tenor sax, piano, double bass, drums); three-track tape at 30th Street Studio, two sessions, little rehearsal, band taped live in studio from scale sketches (liverecording, analogtape); George Russell's Lydian Chromatic Concept as the theoretical road to modal jazz (influenced_by); "relaxed quality" (energy/mood); Freddie Freeloader and All Blues are 12-bar blues (blues, long tail); ratings: AllMusic 5, Pitchfork 10, Penguin 4 stars + crown, RS Album Guide 5; RS 500 #12/#31; Larkin Top 100 Jazz #1; National Recording Registry; RIAA 5x Platinum.
+- https://jazzmusicarchives.com/review/kind-of-blue/253049 : filed under Cool Jazz (cooljazz).
+- Not used: Bill Evans, Coltrane, Adderley, Wynton Kelly are on the album (not influences, not sounds_like). Brubeck's Time Out / Giant Steps are only "recommended alongside", not a sonic comparison: sounds_like left empty. Davis's autobiography reportedly names Les Ballets Africains' thumb piano and Arkansas church gospel as inspirations, not verified here: left out.
+## New tokens
+- `modaljazz` (genre): parents jazz, cooljazz.
+
+## ninasimone-pastelblues
+
+# ninasimone-pastelblues: sources
+- https://en.wikipedia.org/wiki/Pastel_Blues: producer Hal Mooney; personnel Simone (piano, vocals), Al Schackman (guitar, harmonica), Rudy Stevenson (guitar, flute), Lisle Atkinson (double bass), Bobby Hamilton (drums); Pitchfork: blues as urban protest music; AllMusic (Unterberger): more subdued, piano-focused, Sinnerman standout; ratings AllMusic 3.5, Pitchfork 8.7, Record Mirror 4/5, Tom Hull B+; Pitchfork 60s #21; US #139, R&B #8.
+- Norman Records listing: "Be My Husband" voice, handclaps and hi-hat (handclaps).
+- Sputnik Music review / retail blurbs: jazz, blues, gospel (gospel/jazz genres; weaker sources -> medium).
+- Strange Fruit and "Tell Me More..." are Billie Holiday songs: Holiday not in sounds_like (originals rule). No documented album influences.
+- voice left empty: no source describing her voice on this album.
+
+## patbenatar-crimesofpassion
+
+# Crimes of Passion (1980): sources
+- https://en.wikipedia.org/wiki/Crimes_of_Passion_(Pat_Benatar_album) : genres hard rock, pop rock; producer Keith Olsen; personnel (Giraldo guitars + keyboards, Sheets guitar, Capps bass, Grombacher drums); covers (Young Rascals, Kate Bush: excluded from sounds_like/influences); ratings AllMusic 4.5, MusicHound 4, RS Album Guide 3, EPM 3, RS mixed; US #2, 4x Platinum; Grammy.
+- https://en.wikipedia.org/wiki/Hell_Is_for_Children : anti-child-abuse song from NYT articles -> lyrics social.
+- https://bestclassicbands.com/pat-benatar-crimes-passion-review-10-18-19/ : "garage-rock polished to a high sheen" (polish 4), "Hit Me" as power pop (powerpop, lead hit), guitar-led sound, wailing simmer-and-burst vocals (powerful); Olsen's pop/AOR blend likened to his Journey/Heart work -> sounds_like Heart|Journey (weak: comparison via the producer's past work).
+- https://www.loudersound.com/features/the-pat-benatar-albums-you-should-definitely-own (search snippet): pop songs given arena-rock edge (arenarock); her definitive record and biggest seller (importance 5).
+- Left empty: tempo, production, influenced_by (no documented influence found).
+
+## philipglass-glassworks
+
+# Glassworks (Philip Glass, 1982): sources
+- https://en.wikipedia.org/wiki/Glassworks_(composition) : style postmodern, minimalist, systems music (citing NME, 10 Apr 1982); chamber music form; movement scoring (piano, flutes, soprano/tenor saxophones, horns, bass clarinet, clarinet, viola, cello, synthesizer); pop-oriented, "Walkman-suitable", short accessible studio pieces for a general audience (Glass quote); Floe borrows a Sibelius theme (quotation, so NOT an influence); AllMusic 4.5/5; commercial success and name recognition. Its Pitchfork 9.5 is for the Complete Sony Recordings box, not this album: not used in acclaim.
+- https://thequietus.com/articles/08659-philip-glass-glassworks : Munkacsi's separate Walkman mix; minimalism; pop/classical meeting; AllMusic's John Young compares Opening to Erik Satie (sounds_like).
+- https://www.qobuz.com/gb-en/album/glassworks-philip-glass-ensemble/5099708796822 : producers Kurt Munkacsi and Philip Glass; Riesman keyboards/conductor, Glass organ; violas, cellos, French horns, soprano/tenor sax, clarinet, bass clarinet, piccolo.
+- https://www.wnyc.org/story/231895-top-10-essential-philip-glass-recordings : essential recordings list; NYT "footnote" remark (via search results).
+- Production left empty: the separate LP / cassette (Walkman) mixes are documented but no token fits (could become `walkmanmix`).
+## New tokens
+- `systemsmusic` (genre): parents minimalism, classical.
+- `postmodern` (genre, "postmodern music"): parents classical, contemporaryclassical.
+
+## primalscream-screamadelica
+
+# Primal Scream — Screamadelica (1991)
+- https://en.wikipedia.org/wiki/Screamadelica — infobox alternative rock, alternative dance, neo-psychedelia, Madchester, dance-rock, acid house (+ baggy in text); Pitchfork (Cardew): house, blues, soul, dub, ambient, rave, psychedelic rock; producers Weatherall, Nicolson, The Orb, Hypnotone, Jimmy Miller; personnel (guitars, keyboards/piano, bass, drums/percussion; synths, gospel singers, strings, slide guitars); Loaded = Weatherall remix with drum loop; samples (Can, Sly Stone, Vangelis, Eno, Dr. John); Gillespie "listened to [The Marble Index] all the time" while making it; songs got softer after Pet Sounds; Mercury Prize; ratings, lists, certs.
+- https://albumism.com/features/primal-scream-screamadelica-album-anniversary — Movin' On Up gospel vocals "call to mind" the Stones' Gimme Shelter (→ The Rolling Stones (Let It Bleed)); piano/acoustic guitar on Damaged; themes drug euphoria, spiritual, escapism, heartbreak, tender love song; Gillespie "warbling" vocals.
+- Excluded from sounds_like: The Orb (producer), Jah Wobble/PiL (guest), 13th Floor Elevators (covered original). General band influences (MC5, Love, Stooges, Siouxsie...) not album-specific, left out.
+
+## ronettes-presentingthefabulousronettesfeaturingveronica
+
+# The Ronettes — Presenting the Fabulous Ronettes Featuring Veronica (1964)
+- https://en.wikipedia.org/wiki/Presenting_the_Fabulous_Ronettes — only studio album, collects 1963–64 singles; genre pop; producer Phil Spector, arranger Jack Nitzsche, engineer Larry Levine, Gold Star; session credits (pianos, bass, drums, guitars, horns = saxophonists Steve Douglas/Jay Migliori, percussion); Record Mirror 4/5; RS 500 #422 (2003), #494 (2023); songwriters Barry/Greenwich, Mann/Weil, Poncia/Andreoli + Spector.
+- https://en.wikipedia.org/wiki/Be_My_Baby (lead single, opens side two) — Wall of Sound, full orchestra (strings), castanets, handclaps, tambourine, heavy drum reverb; Ronnie's lead overdubbed; Nitzsche on her vibrato; labelled pop and R&B (rnb in 2nd place via the lead single rule).
+- Voice, sounds_like, influenced_by left empty: no source found for this album (Ronnie's Frankie Lymon model is artist-level, not album-documented).
+- mainstream 4: production-line singles (Brill Building writers, Wrecking Crew, producer-driven), though Spector's style is itself auteur — debatable 3–4.
+
+## saintetienne-foxbasealpha
+
+# saintetienne-foxbasealpha — Saint Etienne, Foxbase Alpha (1991)
+- https://en.wikipedia.org/wiki/Foxbase_Alpha: infobox genres indie pop, ambient dance, sophisti-pop, synth-pop, techno; house/club culture and 60s pop; produced by Saint Etienne, Ian Catt engineer and co-producer (Kiss and Make Up versions); liner-note gear: Roland Jupiter-4, Korg M1 (Stanley), Prophet-5, E-mu Emax sampler, bongos (Wiggs), Catt guitars/programming, tambourine, bass; samples (Dusty Springfield, Wilson Pickett, Youthman riddim, House of Games dialogue) — samples NOT used as influences; OMD Dazzle Ships named by the band as an influence; ratings and lists (Pitchfork 8.7, Observer 5, Mercury shortlist, 1001, Pitchfork indie-pop 90s, AllMusic 3.5, RSAG 3), UK #34.
+- https://www.vice.com/en/article/26-years-later-the-story-behind-saint-etiennes-genre-bending-debut-foxbase-alpha : influences De La Soul, PM Dawn, house and techno; Cracknell cites Elizabeth Fraser (Cocteau Twins) for voice as instrument; covers of Neil Young and The Field Mice (excluded); Simon Reynolds compares it to Primal Scream's Screamadelica (sounds_like); hip-hop, acid house genres; untrained vocals, recorded at home (polish 2).
+- Search summary (Guardian/Michael Hann via inkl, blocked): Stanley calls it a scrapbook of house, disco, dub, folk, pop (genres disco, dub, folk). Stanley 2009: too uncommercial (mainstream 2).
+- lyrics left empty: no source discusses album themes.
+- NEW TOKEN: `ambientdance` (infobox "ambient dance"); suggested parents: electronic, dance, ambient.
+
+## springsteen-borntorun
+
+# Born to Run (1975): sources
+- https://en.wikipedia.org/wiki/Born_to_Run : genres (rock and roll, pop rock, R&B, folk rock); producers Springsteen/Appel/Landau (Iovine, Lahav engineers, excluded); personnel and instruments (Bittan piano/glockenspiel/harpsichord/organ, Federici organ, Clemons sax, Sancious Fender Rhodes and possible synth, Brecker/Sanborn horns, Suki Lahav violin, Calello strings, Richard Davis double bass); wall-of-sound, 72-to-16-track overdubbing; Springsteen's stated influences (Duane Eddy, Roy Orbison, Elvis, Phil Spector, Beach Boys, Dylan) -> influenced_by; Frank Rose's girl-group comparison (Shirelles, Ronettes, Shangri-Las) and Chuck Berry comparison -> sounds_like; themes (escape, loneliness, working-class, nostalgia, religious searching); Christgau "white-soul-at-the-opera-house" -> theatrical 5.
+- Reception (same page, ratings tables): AllMusic 5, RS Album Guide 5, Q 5, Christgau A, Pitchfork 10 (30th anniv.), RS 500 #18/#18/#21, Larkin #20, Pazz & Jop #3, NRR 2003, US #3, 7x Platinum.
+- Left out: Stax / Bo Diddley beat (track-level borrowing/comparison), Jimmy Iovine (engineer).
+
+## tlc-crazysexycool
+
+# tlc-crazysexycool: sources
+- https://en.wikipedia.org/wiki/CrazySexyCool: genres R&B, hip-hop soul (infobox); text cites new jack swing, funk; AllMusic (Erlewine) "smooth, seductive collection of contemporary soul", compares to Philly soul (and Prince); Rolling Stone ties Waterfalls to Memphis soul; RS 500 entry: most soulful girl-group R&B since the Supremes (sounds_like The Supremes). Producers; personnel: guitars, horns (horn arrangements on Waterfalls), keyboards incl. Wurlitzer, drum programming, bass, MIDI/sound design, scratching (turntables). Left Eye raps. Themes: sexuality, romance, coming of age; Waterfalls on drugs and HIV. Ratings and lists, charts, 12x Platinum.
+- Prince NOT in sounds_like: the Prince comparison is tied to the cover "If I Was Your Girlfriend" (original of covered song rule). Guests (Phife Dawg, Cee-Lo, Busta etc.) not listed.
+- influenced_by empty: no documented influences found.
+- Doubt: mainstream 3 vs 4 (roster of hitmaker producers); chose 3 given critics' "rebellious" reading.
+
+## toriamos-littleearthquakes
+
+# Tori Amos — Little Earthquakes (1992)
+- https://en.wikipedia.org/wiki/Little_Earthquakes — producers (Amos, Rosse, Sigerson, Stanley); personnel (piano, Yamaha CP-80/grand, guitar, bass, drums, mandolin, ukulele, dulcimer, violin, oboe, saw, sampled strings; orchestra arr./cond. Nick DeCaro); themes (guilt, failed relationships, sexual alienation, childhood trauma); comparisons Kate Bush, Jane Siberry (RS "artfolk"), Siouxsie Sioux (vocal holler), Mary Margaret O'Hara (LA Times); RS "subtly progressive song cycle" (prog); "Leather" a "Kurt Weill-meets-Queen cabaret act" (cabaret, one track, tail); AllMusic "female singer/songwriter" template; ratings and lists (AllMusic 5, Pitchfork 8.6, RS 500 #233, Q #66, Larkin #73, 1001); certs.
+- Older Wikipedia infobox snapshot (mirror): alternative rock, piano rock. Irish Times genre "Singer/Songwriter".
+- https://tunetempest.co.uk/?p=9890 (weak blog) — baroque pop hints (tail).
+- https://www.slantmagazine.com/music/tori-amos-little-earthquakes-retrospective-review/ — "high-art, prog-rock fashions".
+- influenced_by left empty: no album-specific influence found (Keyboard 1994 Led Zeppelin is general childhood; Crucify EP covers are not influences).
+- New token: `artfolk` (RS "artfolk") — parents folk, songwriter.
+
+## tricky-maxinquaye
+
+# Tricky — Maxinquaye (1995)
+- https://en.wikipedia.org/wiki/Maxinquaye — infobox trip hop, experimental, dub, electronic, R&B, post-rock, British hip hop; text hip hop, soul, rock, ambient techno, reggae, electronica, underground hip hop; Walsh (Independent) soul, rock, punk...; producers Tricky, Mark Saunders, Howie B, Kevin Petrie; gear Akai S1000, Atari 1040 (ST) + Logic, Alesis ADAT, Mackie 1604; guitars (Saunders, Stevenson), bass (Briquette), drums (FTV); dub-influenced methods, kept glitches and crackles, Christgau "lo-fi"; Topley-Bird soft-spoken, single takes; Tricky whispered/drawled raps; themes cultural decline, dysfunctional sex, drugs, mother; ratings, polls, certs.
+- https://reynoldsretro.blogspot.com/2018/07 (Simon Reynolds, Spin 1999 / Village Voice / Melody Maker 1995) — Tricky listened to Billie Holiday and the Geto Boys while making the album (influenced_by, medium); Reynolds links it to Sly Stone's There's a Riot Goin' On, Ponderosa percussion to Tom Waits' Swordfishtrombones, method to King Tubby (sounds_like).
+- Excluded: Massive Attack (Tricky's own former band), Public Enemy (Black Steel is a cover), Isaac Hayes (sample), Martina Topley-Bird (vocalist).
+- New token: `undergroundhiphop` — parents hiphop, alt.
+
+## ub40-labouroflove
+
+# Labour of Love (UB40, 1983): sources
+- https://en.wikipedia.org/wiki/Labour_of_Love : infobox genres reggae, post-punk; producers UB40 and Ray "Pablo" Falconer; covers of 1969-72 reggae songs the band loved; recorded 1982-83 (Manor Mobile, own Abattoir studio); LinnDrums and synthesised basslines (drummachine, synthbass, linndrum); members' instruments (drums, guitars, bass, percussion, saxophone, keyboards, Astro's toasting); NME: "honey-smooth", "gentle, sometimes caressing, a shallow groove" (polish, energy, groove); Kurt Loder "buoyant period spirit" (mood); Ali Campbell: covers were a radio compromise, "we commercialize our music all the time" and Mojo on reliance on surefire-hit cover albums (mainstream 4); ratings AllMusic 4.5, RS 4, Mojo 4, Q 3, Christgau A-; RS 100 Greatest of the 80s #98; UK #1, 2x Platinum, US #14 (1988).
+- Lyrics love/heartbreak/social come from the covered songs' content (Red Red Wine, Cherry Oh Baby, Johnny Too Bad): medium confidence.
+- sounds_like and influenced_by empty: originals of the covers (Eric Donaldson, Tony Tribe, Jimmy Cliff, The Melodians...) are excluded; Melody Maker's Bowie Pin Ups / Ferry These Foolish Things comparison is about the covers concept, not the sound. voice left empty (no source describes Ali Campbell's voice; Astro's toasting only on some tracks).
+## New tokens
+- none.
+
+## yes-closetotheedge
+
+# Close to the Edge (Yes, 1972): sources
+- https://en.wikipedia.org/wiki/Close_to_the_Edge : genre progressive rock; producers Yes + Eddy Offord (co-producer); personnel/instruments (Howe electric/acoustic guitars, Coral electric sitar, sitar, pedal steel; Wakeman pianos, Hammond, Minimoog, Mellotron, harpsichord, pipe organ; Squire bass; Bruford drums/percussion); 40-ft tape loop with water/birdsong (tapeloops, fieldrecordings); spliced master tape, audible edit (analogtape); wooden stage for live resonance, swung mic for Doppler effect (roomambience); folk-infused And You and I (folk, long tail), hymn-like / search for truth (lyrics spiritual, love); Siddhartha-based metaphorical lyrics (spiritual, introspection); scat vocal harmonies (choral); influences stated by Anderson/Howe: Sibelius Symphonies 6-7, Wendy Carlos Sonic Seasonings, Mahavishnu Orchestra (opening), Stravinsky (Khatru coda). Ratings: AllMusic 5, Pitchfork 9.0, RS Record Guide 5, RS Album Guide 4, Christgau C+, NME 1972 mixed; RS 500 (2020), RS prog #5, Prog #1, Larkin #130, 1001 Albums; US #3, UK #4; Platinum US/UK/CA.
+- https://www.sputnikmusic.com/review/75995/Yes-Close-to-the-Edge : sets Yes against Pink Floyd, Genesis, Jethro Tull (sounds_like; semi-pro source, weak).
+- Not used: King Crimson (Bruford's next band), Tolkien/Hesse (books, not artists).
+## New tokens
+- none (pipe organ and Hammond -> `organ`).

@@ -314,6 +314,38 @@ const ROWS: Row[] = [
   ['bonnietyler', 'Bonnie Tyler', '#b5523a', 'Total Eclipse of the Heart and a husky rock voice', [['The World Starts Tonight', 1977], ['Natural Force', 1978], ['Diamond Cut', 1979], ['Goodbye to the Island', 1981], ['Faster Than the Speed of Night', 1983], ['Secret Dreams and Forbidden Fire', 1986], ['Hide Your Heart', 1988], ['Bitterblue', 1991], ['Angel Heart', 1992], ['Silhouette in Red', 1993], ['Free Spirit', 1995], ['All in One Voice', 1998], ['Heart Strings', 2003], ['Simply Believe', 2004], ['Wings', 2005], ['Rocks and Honey', 2013], ['Between the Earth and the Stars', 2019], ['The Best Is Yet to Come', 2021]]],
   ['kimcarnes', 'Kim Carnes', '#9a6fb0', 'Bette Davis Eyes and a smoky rasp', [['Rest on Me', 1971], ['Kim Carnes', 1975], ['Sailin’', 1976], ['St. Vincent’s Court', 1979], ['Romance Dance', 1980], ['Mistaken Identity', 1981], ['Voyeur', 1982], ['Café Racers', 1983], ['Barking at Airplanes', 1985], ['Light House', 1986], ['View from the House', 1988], ['Checkin’ Out the Ghosts', 1991], ['Chasin’ Wild Trains', 2004]]],
   ['katrinaandthewaves', 'Katrina and the Waves', '#f0a830', 'Walking on Sunshine and Love Shine a Light', [['Walking on Sunshine', 1983], ['Katrina and the Waves 2', 1984], ['Katrina and the Waves', 1985], ['Waves', 1986], ['Break of Hearts', 1989], ['Pet the Tiger', 1991], ['Edge of the Land', 1993], ['Turnaround', 1994], ['Walk on Water', 1997]]],
+  ['maryjblige', 'Mary J. Blige', '#7a4fa0', 'Queen of hip-hop soul', [['My Life', 1994]]],
+  ['tlc', 'TLC', '#d1503a', 'CrazySexyCool and Waterfalls', [['CrazySexyCool', 1994]]],
+  ['algreen', 'Al Green', '#c88a3a', 'Let’s Stay Together and Memphis soul', [['Let’s Stay Together', 1972]]],
+  ['ninasimone', 'Nina Simone', '#5a3a6a', 'High priestess of soul', [['Pastel Blues', 1965]]],
+  ['billieholiday', 'Billie Holiday', '#8a6a9a', 'Lady Day', [['Lady in Satin', 1958]]],
+  ['kinks', 'The Kinks', '#b54a3a', 'Ray Davies’ English songbook', [['The Kinks Are the Village Green Preservation Society', 1968]]],
+  ['ronettes', 'The Ronettes', '#c03a6a', 'Be My Baby and the wall of sound', [['Presenting the Fabulous Ronettes Featuring Veronica', 1964]]],
+  ['hollies', 'The Hollies', '#5a8ac0', 'Three-part harmony beat pop', [['Butterfly', 1967]]],
+  ['everlybrothers', 'The Everly Brothers', '#9a7a4a', 'Close-harmony rock and roll', [['It’s Everly Time', 1960]]],
+  ['jonimitchell', 'Joni Mitchell', '#4a7aa8', 'Blue and open-tuned confessions', [['Blue', 1971]]],
+  ['springsteen', 'Bruce Springsteen', '#a8463a', 'Born to Run and the E Street Band', [['Born to Run', 1975]]],
+  ['patbenatar', 'Pat Benatar', '#c0304a', 'Hit Me with Your Best Shot', [['Crimes of Passion', 1980]]],
+  ['heart', 'Heart', '#b0405a', 'The Wilson sisters’ hard rock', [['Heart', 1985]]],
+  ['cars', 'The Cars', '#3a5a8a', 'New wave hooks from Boston', [['The Cars', 1978]]],
+  ['gogos', 'The Go-Go’s', '#e0608a', 'Beauty and the Beat', [['Beauty and the Beat', 1981]]],
+  ['jjcale', 'J.J. Cale', '#8a7a4a', 'The laid-back Tulsa sound', [['Naturally', 1972]]],
+  ['ericclapton', 'Eric Clapton', '#6a5a4a', 'Slowhand', [['Slowhand', 1977]]],
+  ['lindaronstadt', 'Linda Ronstadt', '#b0705a', 'Heart Like a Wheel and country rock', [['Heart Like a Wheel', 1974]]],
+  ['dollyparton', 'Dolly Parton', '#e0a0b0', 'Jolene and Smoky Mountain country', [['Jolene', 1974]]],
+  ['laurabranigan', 'Laura Branigan', '#c05a8a', 'Gloria and Self Control', [['Branigan', 1982]]],
+  ['toriamos', 'Tori Amos', '#c06a3a', 'Little Earthquakes at the piano', [['Little Earthquakes', 1992]]],
+  ['garbage', 'Garbage', '#3a3a5a', 'Shirley Manson’s techno-rock', [['Garbage', 1995]]],
+  ['beck', 'Beck', '#7a9a4a', 'Odelay’s sampledelic collage', [['Odelay', 1996]]],
+  ['tricky', 'Tricky', '#4a4a4a', 'Maxinquaye and Bristol trip-hop', [['Maxinquaye', 1995]]],
+  ['primalscream', 'Primal Scream', '#c0403a', 'Screamadelica', [['Screamadelica', 1991]]],
+  ['bluenile', 'The Blue Nile', '#3a5a7a', 'Hats and Glasgow night drives', [['Hats', 1989]]],
+  ['saintetienne', 'Saint Etienne', '#d08a9a', 'Foxbase Alpha indie dance', [['Foxbase Alpha', 1991]]],
+  ['basementjaxx', 'Basement Jaxx', '#d06a2a', 'Remedy and Brixton house', [['Remedy', 1999]]],
+  ['kesha', 'Kesha', '#c0a030', 'Animal and party pop', [['Animal', 2010]]],
+  ['milesdavis', 'Miles Davis', '#2a4a7a', 'Kind of Blue', [['Kind of Blue', 1959]]],
+  ['philipglass', 'Philip Glass', '#6a8a9a', 'Glassworks minimalism', [['Glassworks', 1982]]],
+  ['yes', 'Yes', '#4a8a6a', 'Close to the Edge', [['Close to the Edge', 1972]]],
   ['geolier', 'Geolier', '#3f5a8a', 'Naples rap that fills stadiums', [['Emanuele', 2019], ['Il coraggio dei bambini', 2023], ['Dio lo sa', 2024], ['Tutto è possibile', 2026]]],
   ['georgeezra', 'George Ezra', '#d9a35a', 'Feel-good songs and road trips', [['Wanted on Voyage', 2014], ['Staying at Tamara’s', 2018], ['Gold Rush Kid', 2022]]],
   ['ghali', 'Ghali', '#e0a03f', 'Milan rap with a global heart', [['Album', 2017], ['DNA', 2020], ['Sensazione ultra', 2022], ['Pizza Kebab Vol. 1', 2024]]],
@@ -616,7 +648,7 @@ const slug = (s: string) =>
 
 // Artists no longer touring (passed away or split up): no concert lookup, so tribute
 // shows don't appear as their dates.
-const LEGACY = new Set(['katrinaandthewaves', 'beegees', 'inxs', 'roxette', 'nickkamen', 'falco', 'moderntalking', 'communards', 'wham', 'deadoralive', 'irenecara', 'cesaria', 'ildolobo', 'amalia', 'mahmoudguinia', 'burakasomsistema', 'wendycarlos', 'japan', 'scottwalker', 'trex', 'smiths', 'stoneroses', 'sexpistols', 'bacalov', 'rota', 'piccioni', 'nicolai', 'trovajoli', 'gainsbourg', 'leoferre', 'hossamramzy', 'vangelis', 'suicide', 'slystone', 'curtismayfield', 'jamesbrown', 'ibrahimferrer', 'celiacruz', 'sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
+const LEGACY = new Set(['ninasimone', 'billieholiday', 'kinks', 'ronettes', 'everlybrothers', 'cars', 'gogos', 'jjcale', 'laurabranigan', 'bluenile', 'milesdavis', 'katrinaandthewaves', 'beegees', 'inxs', 'roxette', 'nickkamen', 'falco', 'moderntalking', 'communards', 'wham', 'deadoralive', 'irenecara', 'cesaria', 'ildolobo', 'amalia', 'mahmoudguinia', 'burakasomsistema', 'wendycarlos', 'japan', 'scottwalker', 'trex', 'smiths', 'stoneroses', 'sexpistols', 'bacalov', 'rota', 'piccioni', 'nicolai', 'trovajoli', 'gainsbourg', 'leoferre', 'hossamramzy', 'vangelis', 'suicide', 'slystone', 'curtismayfield', 'jamesbrown', 'ibrahimferrer', 'celiacruz', 'sabbath', 'fleetwood', 'prince', 'mj', 'whitney', 'tinaturner', 'beatles', 'elvis', 'freddie', 'bowie', 'marley', 'aretha', 'sinatra', 'hendrix', 'ledzeppelin', 'piaf', 'armstrong', 'donnasummer', 'marvingaye', 'georgemichael', 'nirvana', 'daftpunk', 'amy', 'pinkfloyd', 'pavarotti', 'gaber', 'tenco', 'pinodaniele', 'milva', 'giunirusso', 'lunapop', 'gazosa', 'thegiornalisti', 'lacrus', 'marilia', 'werenoi', 'tupac', 'biggie', 'sinead', 'celentano', 'dalida', 'mango', 'deandre', 'battiato', 'gabriellaferri', 'modugno', 'miamartini', 'rinogaetano', 'robertmiles', 'caselli', 'avicii', 'boneym', 'cranberries', 'direstraits', 'doors', 'morricone', 'mina', 'eurythmics', 'jeffbuckley', 'lennon', 'katebush', 'cohen', 'liza', 'ella', 'maccabees', 'philcollins', 'police', 'carra', 'supertramp', 'talkingheads', 'timbuckley', 'battisti', 'dalla', 'verve', 'yazoo', 'joydivision', 'talktalk', 'felakuti', 'tonyallen', 'rem'])
 
 export const catalogArtists: Artist[] = ROWS.map(([id, name, color, tagline, albums]) => ({
   id,
