@@ -262,6 +262,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Kraftwerk', 'Neu!', 'La Düsseldorf', 'Brian Eno', 'Roxy Music', 'David Bowie', 'The Velvet Underground', 'Joy Division'],
     source: 'Andy McCluskey: Buzz Magazine and The Arts Desk (Kraftwerk, the 1975 concert; Neu!, Eno, Roxy Music, Bowie), ERR News (La Düsseldorf, Velvet Underground), The Scotsman (Joy Division on Organisation)',
   },
+  cameo: {
+    names: ['Sly and the Family Stone', 'James Brown', 'Ohio Players'],
+    source: 'Larry Blackmon: Washington Post 1995 (Sly Stone’s impact on Cameo; the New York City Players named after the Ohio Players), Broward Palm Beach New Times 2015 (James Brown at the Apollo)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

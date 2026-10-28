@@ -1,0 +1,20 @@
+﻿album_id,genre,source,url,scope,evidence,evidence_strength
+cameo-cardiacarrest,funk,all_card,https://www.allmusic.com/album/cardiac-arrest-mw0000112836,whole_album,Album-wide hard-driving funk; primary style,high
+cameo-cardiacarrest,rnb,all_card,https://www.allmusic.com/album/cardiac-arrest-mw0000112836,whole_album,AllMusic R&B parent genre,high
+cameo-cardiacarrest,soul,all_card,https://www.allmusic.com/album/cardiac-arrest-mw0000112836,whole_album,AllMusic soulful material and ballads,high
+cameo-cardiacarrest,quietstorm,all_card,https://www.allmusic.com/album/cardiac-arrest-mw0000112836,some_tracks,AllMusic style; mainly quiet material,high
+cameo-cardiacarrest,discosoul,all_card,https://www.allmusic.com/album/cardiac-arrest-mw0000112836,one_track,"Alex Henderson explicitly calls Find My Way disco-soul; preserve precise phrase, add new token",high
+cameo-weallknowwhoweare,funk,all_who,https://www.allmusic.com/album/we-all-know-who-we-are-mw0000036609,whole_album,AllMusic classifies the album as funk,high
+cameo-weallknowwhoweare,rnb,all_who,https://www.allmusic.com/album/we-all-know-who-we-are-mw0000036609,whole_album,AllMusic R&B genre,high
+cameo-weallknowwhoweare,soul,jrs,https://jazzrocksoul.com/artists/cameo/,some_tracks,Soulful sections described by specialist release essay,high
+cameo-weallknowwhoweare,quietstorm,all_who,https://www.allmusic.com/album/we-all-know-who-we-are-mw0000036609,one_track,Why Have I Lost You characterized as quiet storm,high
+cameo-weallknowwhoweare,discofunk,all_who,https://www.allmusic.com/album/we-all-know-who-we-are-mw0000036609,one_track,It’s Serious explicitly called disco-funk; new genre token,high
+cameo-uglyego,funk,all_ugly,https://www.allmusic.com/album/ugly-ego-mw0000467212,whole_album,AllMusic album style and critics identify primary funk,high
+cameo-uglyego,soul,all_ugly,https://www.allmusic.com/album/ugly-ego-mw0000467212,whole_album,AllMusic style and soulful ballads,high
+cameo-uglyego,rnb,all_ugly,https://www.allmusic.com/album/ugly-ego-mw0000467212,whole_album,AllMusic parent category,high
+cameo-uglyego,ballad,all_ugly,https://www.allmusic.com/album/ugly-ego-mw0000467212,some_tracks,Several slow love ballads explicitly discussed; tail style not the entire album,high
+cameo-secretomen,funk,all_omen,https://www.allmusic.com/album/secret-omen-mw0000189241,whole_album,AllMusic identifies horn-led funk as primary sound,high
+cameo-secretomen,rnb,all_omen,https://www.allmusic.com/album/secret-omen-mw0000189241,whole_album,AllMusic R&B category,high
+cameo-secretomen,soul,all_omen,https://www.allmusic.com/album/secret-omen-mw0000189241,some_tracks,AllMusic lists soul and praises Sparkle as a soul ballad,high
+cameo-secretomen,quietstorm,all_omen,https://www.allmusic.com/album/secret-omen-mw0000189241,some_tracks,AllMusic explicitly lists quiet-storm style,high
+cameo-secretomen,disco,all_omen,https://www.allmusic.com/album/secret-omen-mw0000189241,one_track,Long remake of Find My Way is specifically disco-oriented,high

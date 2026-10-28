@@ -1,0 +1,18 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,already_described,in_this_phase,action,note
+cameo-cardiacarrest,cameo,Cardiac Arrest,1977,studio,no,no,yes,add_to_catalog_and_import_phase01_row,Original studio release. Catalogue artist cameo also absent.
+cameo-weallknowwhoweare,cameo,We All Know Who We Are,1978,studio,no,no,yes,add_to_catalog_and_import_phase01_row,Original studio release. Catalogue artist cameo also absent.
+cameo-uglyego,cameo,Ugly Ego,1978,studio,no,no,yes,add_to_catalog_and_import_phase01_row,Original studio release. Catalogue artist cameo also absent.
+cameo-secretomen,cameo,Secret Omen,1979,studio,no,no,yes,add_to_catalog_and_import_phase01_row,Original studio release. Catalogue artist cameo also absent.
+cameo-cameosis,cameo,Cameosis,1980,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-feelme,cameo,Feel Me,1980,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-knightsofthesoundtable,cameo,Knights of the Sound Table,1981,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-alligatorwoman,cameo,Alligator Woman,1982,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-style,cameo,Style,1983,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-shesstrange,cameo,She's Strange,1984,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-singlelife,cameo,Single Life,1985,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-wordup,cameo,Word Up!,1986,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-machismo,cameo,Machismo,1988,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-realmenwearblack,cameo,Real Men Wear Black,1990,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-emotionalviolence,cameo,Emotional Violence,1991,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-inthefaceoffunk,cameo,In the Face of Funk,1994,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
+cameo-sexysweetthing,cameo,Sexy Sweet Thing,2000,studio,no,no,no,add_to_catalog_future_phase,Future phase; original studio release.
