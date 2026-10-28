@@ -88,3 +88,11 @@ Only artist/member/producer statements are included here. These are **not automa
 - One Step Beyond... influenced_by keeps Prince Buster only (Suggs on this album, The Guardian 2014). Kilburn and the High Roads, The Kinks and Deaf School are band-wide formative influences, not documented for this album: they are in the artist influences, not repeated on the album.
 - Artist added to the catalogue with the full studio discography (12 albums). The Madness (1988, post-split billing) left out for now; to decide in phase 02. Still active, so not marked as not touring.
 - Scene GB en 1970 pop,reggae,rock (base genres only: ska maps to reggae).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/madness.csv` (AllMusic, Christgau, Rolling Stone, Mojo, Record Mirror, NME, 1001 Albums, BPI).
+- One Step Beyond... sounds_like confirmed: Classic Pop ("Chas and Dave-esque"; singalongs "heavily indebted to musical hero Ian Dury").
+- Absolutely: Elvis Costello removed from sounds_like (no critic comparison found; Suggs's own words on Embarrassment keep him in influenced_by). The Blues Brothers confirmed (Greil Marcus, Rolling Stone).
+- 7: The Kinks and ABBA confirmed (Classic Pop: Kinks the "dominant musical influence", Shut Up "ABBA-meets-spaghetti western"). Credits confirmed from Wikipedia personnel and Seven Ragged Men (Barson vibes/marimba/tubular bells, Foreman sitar, Woodgate congas, Compass Point Nassau July–August 1981, partly redone in London); confidence stays medium until the sleeve is checked.
+- The Rise & Fall: Ian Dury removed from sounds_like (no critic source; stays in influenced_by); Blur (Parklife) added (AllMusic, Erlewine, with Village Green); Sgt. Pepper confirmed (Classic Pop: "the 2-Tone revival's answer to Sgt. Pepper"). David Bedford brass/string arrangements confirmed.
