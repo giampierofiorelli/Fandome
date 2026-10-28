@@ -274,6 +274,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['David Bowie', 'T. Rex', 'Lou Reed'],
     source: 'Holly Johnson: Electronic Beats (Bowie a role model, the Frankie persona his take on Ziggy Stardust), The Queer Review 2021 (T. Rex and Marc Bolan in his teens), LCR Pride 2024 (Lou Reed’s Transformer); Paul Rutherford, Penny Black Music (Bowie)',
   },
+  madness: {
+    names: ['Prince Buster', 'Kilburn and the High Roads', 'Ian Dury', 'The Kinks', 'Deaf School', 'Roxy Music', 'Sensational Alex Harvey Band', 'Elvis Presley', 'John Lennon', 'Bob Marley'],
+    source: 'Suggs: The Guardian 2014 and 2016 (Prince Buster), Seven Ragged Men (Kilburn and the High Roads’ Handsome, Ian Dury, Ray Davies, Deaf School, Alex Harvey, Lennon, Marley); Chris Foreman, madness.co.uk (Kilburns, Roxy Music, Alex Harvey, Elvis); Barson and Chas Smash, John Lewis/Uncut (The Kinks)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
