@@ -1,0 +1,5 @@
+artist_id,album_id,title,year,type,catalog_status,descriptor_status,action
+kimcarnes,kimcarnes-barkingatairplanes,Barking at Airplanes,1985,studio,add_if_missing,new_phase03_only,"Check latest descriptors branch, add album to catalog if missing; do not overwrite Phase 01/02"
+kimcarnes,kimcarnes-lighthouse,Light House,1986,studio,add_if_missing,new_phase03_only,"Check latest descriptors branch, add album to catalog if missing; do not overwrite Phase 01/02"
+kimcarnes,kimcarnes-viewfromthehouse,View from the House,1988,studio,add_if_missing,new_phase03_only,"Check latest descriptors branch, add album to catalog if missing; do not overwrite Phase 01/02"
+kimcarnes,kimcarnes-checkinouttheghosts,Checkin' Out the Ghosts,1991,studio,add_if_missing,new_phase03_only,"Check latest descriptors branch, add album to catalog if missing; do not overwrite Phase 01/02"
