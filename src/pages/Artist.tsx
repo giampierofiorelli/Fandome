@@ -76,9 +76,15 @@ export default function ArtistPage() {
           <div className="hero-tags" aria-label={sceneLine(artist.id) ?? undefined}>
             <CountryTag code={sceneOf(artist.id)!.country} />
             <span className="scene-tag">{sceneOf(artist.id)!.since}s</span>
-            {sceneOf(artist.id)!.genres.map((g) => (
-              <span key={g} className="scene-tag">{GENRE_LABELS[g]}</span>
-            ))}
+            {/* One genre list (owner): the sound across their described albums; the broad scene genres
+                only for artists with no described album yet. */}
+            {soundGenres.length
+              ? soundGenres.map((g) => (
+                  <span key={g} className="scene-tag">{genreLabel(g)}</span>
+                ))
+              : sceneOf(artist.id)!.genres.map((g) => (
+                  <span key={g} className="scene-tag">{GENRE_LABELS[g]}</span>
+                ))}
           </div>
         )}
         <div className="hero-stats">
@@ -127,14 +133,6 @@ export default function ArtistPage() {
 
       {tab === 'similar' && (
         <>
-          <p className="muted small center tab-hint">The sound across their albums</p>
-          <div className="sound-genres artist-sound">
-            {soundGenres.map((g) => (
-              <span key={g} className="chip">
-                {genreLabel(g)}
-              </span>
-            ))}
-          </div>
           <div className="section-head">
             <h2>If you like {artist.name}</h2>
           </div>

@@ -1344,7 +1344,6 @@ a.link-rich:active { transform: scale(0.985); }
 .suggest-tools { display: inline-flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
 .not-for-me.on { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .suggest-kicker { display: block; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
-.artist-sound { padding: 0 2px 4px; }
 .similar-why { margin-top: 3px; color: var(--text-2); }
 
 /* Scenes */
