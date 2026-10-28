@@ -282,6 +282,14 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Stevie Wonder', 'Donny Hathaway', 'Michael Jackson', 'George Michael', 'The Jackson 5', 'Prince', 'The Police', 'Frank Sinatra', 'Nat King Cole', 'Perry Como', 'War', 'Parliament', 'Genesis', 'Ian Dury'],
     source: 'Matt Goss: What’s My Scene (Stevie Wonder, Donny Hathaway, Michael Jackson, George Michael), UK Music Reviews (Hathaway, Sinatra, Nat King Cole, Perry Como); Luke Goss, The Action Elite (Prince, The Police); the Goss brothers, Jim Shelley 1989 (Jackson 5, War, Parliament, Genesis, Ian Dury)',
   },
+  buggles: {
+    names: ['Kraftwerk', '10cc', 'Electric Light Orchestra', 'ABBA', 'Earth, Wind & Fire', 'Steely Dan'],
+    source: 'Trevor Horn: MusicRadar and The Guardian 2018 (Kraftwerk’s The Man-Machine); Geoff Downes: Louder (10cc, ELO, ABBA as forerunners; Earth, Wind & Fire and Steely Dan). Yes left out: Horn and Downes later joined the band',
+  },
+  survivor: {
+    names: ['The Beatles', 'The Beach Boys', 'Burt Bacharach', 'The Everly Brothers', 'Elvis Presley', 'Johnny Cash', 'The Ventures'],
+    source: 'Jim Peterik: Louder Than War (the three Bs: Beatles, Beach Boys, Bacharach; Everly Brothers, Elvis, Johnny Cash), New Jersey Stage 2021 (Beatles, Beach Boys, The Ventures)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

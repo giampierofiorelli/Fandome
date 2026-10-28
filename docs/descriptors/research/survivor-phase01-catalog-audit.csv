@@ -1,0 +1,9 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+survivor,Survivor,survivor-survivor,Survivor,1979,studio,01,no,no,no,add_artist_and_album,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-premonition,Premonition,1981,studio,01,no,no,no,add_artist_and_album,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-eyeofthetiger,Eye of the Tiger,1982,studio,01,no,no,no,add_artist_and_album,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-caughtinthegame,Caught in the Game,1983,studio,01,no,no,no,add_artist_and_album,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-vitalsigns,Vital Signs,1984,studio,02,no,no,no,future_phase_pending_review,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-whensecondscount,When Seconds Count,1986,studio,02,no,no,no,future_phase_pending_review,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-toohottosleep,Too Hot to Sleep,1988,studio,02,no,no,no,future_phase_pending_review,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.
+survivor,Survivor,survivor-reach,Reach,2006,studio,02,no,no,no,future_phase_pending_review,Absent from checked catalog.ts and seed.ts on descriptors branch; proposed new ID; confirm during import.

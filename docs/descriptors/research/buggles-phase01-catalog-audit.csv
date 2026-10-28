@@ -1,0 +1,3 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+buggles,The Buggles,buggles-theageofplastic,The Age of Plastic,1980,studio,01,no,no,no,add_artist_and_album_then_descriptor,Artist absent from catalog.ts and seed.ts (branch descriptors checked 28 October 2026); proposed id buggles.
+buggles,The Buggles,buggles-adventuresinmodernrecording,Adventures in Modern Recording,1981,studio,01,no,no,no,add_artist_and_album_then_descriptor,1981 original release; do not use reissue 1982 date; verify new IDs before merge.
