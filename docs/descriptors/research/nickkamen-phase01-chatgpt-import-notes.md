@@ -38,3 +38,7 @@ No new genre/instrument/production token is proposed. All used tokens are from c
 
 ## Next phase
 **None. Nick Kamen's four original studio albums are covered in this phase.**
+
+## Claude import note (28 Oct 2026)
+
+Credits checked on the sleeves (Discogs API). Us: Fairlight credited (J.J. Jeczalik tracks); LinnDrum not on the sleeve, removed. Debut sounds_like adds the Bee Gees (Billboard 1986 on the vocals). Whatever, Whenever: dreampop and shoegaze touches, EMF, Happy Mondays and the Beatles (Rolling Stone Italia 2021). Move Until We Fly has no musician credits on any edition. Reception researched by Claude.
