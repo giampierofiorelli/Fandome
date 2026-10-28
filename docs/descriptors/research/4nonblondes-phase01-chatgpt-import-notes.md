@@ -47,3 +47,4 @@ No Phase 02 yet: only one 4 Non Blondes studio album has been **released** by 28
 - 1 row imported as delivered; no new tokens. Unreleased second album not listed.
 - Scene US en 1990 rock,alt (a global market, never a discovery target).
 - Artist influences from Linda Perry (Karen Carpenter, Tracey Thorn, The Who).
+- Reception researched by Claude.
