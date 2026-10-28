@@ -1,0 +1,10 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+madness,Madness,madness-keepmoving,Keep Moving,1984,studio,02,no,no,no,add_album,Absent from publicly checked catalog and seed; new phase 02 descriptor row.
+madness,Madness,madness-madnotmad,Mad Not Mad,1985,studio,02,no,no,no,add_album,Absent from publicly checked catalog and seed; new phase 02 descriptor row.
+madness,Madness,madness-wonderful,Wonderful,1999,studio,02,no,no,no,add_album,Absent from publicly checked catalog and seed; new phase 02 descriptor row.
+madness,Madness,madness-thedangermensessionsvol1,The Dangermen Sessions Vol. 1,2005,studio,02,no,no,no,add_album,Absent from publicly checked catalog and seed; new phase 02 descriptor row.
+themadness,The Madness,themadness-themadness,The Madness,1988,studio,excluded,no,no,no,different_artist,"Credited to The Madness, not Madness; post-breakup offshoot; never import as madness-themadness. ID is a proposal only for a separate future artist."
+madness,Madness,madness-thelibertyofnortonfolgate,The Liberty of Norton Folgate,2009,studio,03,no,no,no,future_phase_only,No row in this phase; planned for next chronological phase.
+madness,Madness,madness-ouiouisisijajadada,Oui Oui Si Si Ja Ja Da Da,2012,studio,03,no,no,no,future_phase_only,No row in this phase; planned for next chronological phase.
+madness,Madness,madness-canttouchusnow,Can't Touch Us Now,2016,studio,03,no,no,no,future_phase_only,No row in this phase; planned for next chronological phase.
+madness,Madness,madness-theatreoftheabsurdpresentscestlavie,Theatre of the Absurd Presents C'est La Vie,2023,studio,03,no,no,no,future_phase_only,No row in this phase; planned for next chronological phase.
