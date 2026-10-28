@@ -1,0 +1,8 @@
+album_id,artist_id,title,year,type,in_catalog_ts,in_current_phase,action,catalogue_source
+tff-thehurting,tff,The Hurting,1983,studio,yes,yes,keep existing ID,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-songsfromthebigchair,tff,Songs from the Big Chair,1985,studio,yes,yes,keep existing ID,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-theseedsoflove,tff,The Seeds of Love,1989,studio,yes,yes,keep existing ID,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-elemental,tff,Elemental,1993,studio,no,yes,add to catalog.ts,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-raoulandthekingsofspain,tff,Raoul and the Kings of Spain,1995,studio,no,no,add to catalog.ts,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-everybodylovesahappyending,tff,Everybody Loves a Happy Ending,2004,studio,no,no,add to catalog.ts,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts
+tff-thetippingpoint,tff,The Tipping Point,2022,studio,yes,no,keep existing ID,https://raw.githubusercontent.com/giampierofiorelli/Fandome/descriptors/src/data/catalog.ts

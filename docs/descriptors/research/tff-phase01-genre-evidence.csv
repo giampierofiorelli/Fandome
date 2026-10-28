@@ -1,0 +1,32 @@
+album_id,genre,source,scope,what_it_supports
+tff-thehurting,synthpop,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic genre style Synth Pop
+tff-thehurting,newwave,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic style New Wave
+tff-thehurting,poprock,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic Pop/Rock and Contemporary Pop/Rock
+tff-thehurting,darkwave,https://pitchfork.com/reviews/albums/tears-for-fears-songs-from-the-big-chair/,whole album,Pitchfork describes debut as dark wave
+tff-thehurting,alternativerock,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic style Alternative/Indie Rock
+tff-thehurting,collegerock,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic College Rock
+tff-thehurting,punknewwave,https://www.allmusic.com/album/the-hurting-mw0000650875,whole album,AllMusic Punk/New Wave
+tff-songsfromthebigchair,poprock,https://pitchfork.com/reviews/albums/tears-for-fears-songs-from-the-big-chair/,whole album,Pitchfork identifies pop-rock
+tff-songsfromthebigchair,newwave,https://www.allmusic.com/album/r19757,whole album,AllMusic New Wave
+tff-songsfromthebigchair,synthpop,https://pitchfork.com/reviews/albums/tears-for-fears-songs-from-the-big-chair/,whole album,Pitchfork identifies synth-pop foundation carried over from debut
+tff-songsfromthebigchair,artrock,https://pitchfork.com/reviews/albums/tears-for-fears-songs-from-the-big-chair/,some tracks,Pitchfork discusses progressive art-rock in I Believe and Listen
+tff-songsfromthebigchair,prog,https://pitchfork.com/reviews/albums/tears-for-fears-songs-from-the-big-chair/,some tracks,Pitchfork calls the multisection structures akin to prog-rock
+tff-songsfromthebigchair,collegerock,https://www.allmusic.com/album/r19757,whole album,AllMusic College Rock
+tff-songsfromthebigchair,alternativerock,https://www.allmusic.com/album/r19757,whole album,AllMusic Alternative/Indie Rock
+tff-theseedsoflove,poprock,https://en.wikipedia.org/wiki/The_Seeds_of_Love,whole album,Album genre pop rock
+tff-theseedsoflove,neopsychedelia,https://en.wikipedia.org/wiki/The_Seeds_of_Love,whole album,Album genre neo-psychedelia; also discussed in Pitchfork
+tff-theseedsoflove,progressivepop,https://en.wikipedia.org/wiki/The_Seeds_of_Love,whole album,Album genre progressive pop
+tff-theseedsoflove,sophistipop,https://en.wikipedia.org/wiki/The_Seeds_of_Love,whole album,Album genre sophisti-pop
+tff-theseedsoflove,soul,https://pitchfork.com/reviews/albums/tears-for-fears-the-seeds-of-love-super-deluxe-edition/,whole album,Pitchfork describes a soul and neo-psychedelia hybrid
+tff-theseedsoflove,jazzrock,https://en.wikipedia.org/wiki/The_Seeds_of_Love,some tracks,"Album genre jazz rock, stylistically uneven across tracks"
+tff-theseedsoflove,psychedelicsoul,https://pitchfork.com/reviews/albums/tears-for-fears-the-seeds-of-love-super-deluxe-edition/,whole album,Pitchfork explicitly characterises neo-psychedelic soul hybrid
+tff-theseedsoflove,europop,https://www.allmusic.com/album/the-seeds-of-love-mw0000205746,whole album,AllMusic Euro-Pop
+tff-theseedsoflove,alternativerock,https://www.allmusic.com/album/the-seeds-of-love-mw0000205746,some tracks,AllMusic Alternative Pop/Rock and Alternative/Indie Rock
+tff-elemental,poprock,https://www.albumoftheyear.org/album/38781-tears-for-fears-elemental.php,whole album,Album of the Year Pop Rock
+tff-elemental,sophistipop,https://www.albumoftheyear.org/album/38781-tears-for-fears-elemental.php,whole album,Album of the Year Sophisti-Pop
+tff-elemental,alternativerock,https://www.allmusic.com/album/elemental-mw0000097688/awards,whole album,AllMusic Alternative Pop/Rock
+tff-elemental,artpop,https://www.albumoftheyear.org/album/38781-tears-for-fears-elemental.php,whole album,Album of the Year Art Pop
+tff-elemental,progressivepop,https://www.albumoftheyear.org/album/38781-tears-for-fears-elemental.php,whole album,Album of the Year Progressive Pop
+tff-elemental,newwave,https://www.chartsurfer.de/artist/tears-for-fears/elemental-album_frcgcg.html,some tracks,Album-era new wave sensibility; secondary discography agrees on genre
+tff-elemental,synthpop,https://www.chartsurfer.de/artist/tears-for-fears/elemental-album_frcgcg.html,some tracks,Discogs-style classifications for 1993 editions: Synth-pop
+tff-elemental,pop,https://www.herbmusic.net/album/tears-for-fears-elemental-20124,whole album,Herb Music Pop
