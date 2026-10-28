@@ -1,0 +1,35 @@
+album_id,genre,source,url,scope,evidence
+toto-isolation,aor,aotyiso,https://www.albumoftheyear.org/album/14345-toto-isolation.php,whole album,"Album of the Year main tag, commercial melodic AOR despite heavy-guitar arrangement."
+toto-isolation,hardrock,aotyiso,https://www.albumoftheyear.org/album/14345-toto-isolation.php,whole album,AOTY main tag and AllMusic review notes guitar-forward hard-rock musicianship.
+toto-isolation,poprock,aotyiso,https://www.albumoftheyear.org/album/14345-toto-isolation.php,whole album,Album of the Year main tag.
+toto-isolation,arenarock,wikiIso,https://en.wikipedia.org/wiki/Isolation_(Toto_album),whole album,"Album genre label for the bigger guitar-and-voice style, backed by AllMusic hard-rock comparison."
+toto-isolation,albumrock,alliso,https://www.allmusic.com/album/isolation-mw0000196109,whole album,AllMusic album rock catalog category.
+toto-isolation,contemporarypoprock,alliso,https://www.allmusic.com/album/isolation-mw0000196109,whole album,AllMusic contemporary pop/rock category.
+toto-isolation,softrock,chartsurf,https://www.chartsurfer.de/artist/toto/isolation-album_frpugp.html,some tracks,Original LP style soft rock plus softer How Does It Feel and Holyanna material.
+toto-isolation,adultcontemporary,alliso,https://www.allmusic.com/album/isolation-mw0000196109,whole album,AllMusic broad adult-contemporary category is peripheral to heavy main sound.
+toto-dune,symphonicrock,wikiDune,https://en.wikipedia.org/wiki/Dune_(1984_soundtrack),whole album,Original genre attributed as symphonic rock; dominant orchestral film score plus band players.
+toto-dune,modernclassical,musicbrainzdune,https://musicbrainz.org/release/840470ef-050c-4c67-8748-baa710642d67,whole album,MusicBrainz style tag; contemporary scored orchestral themes; non-classical band elements also present.
+toto-dune,electronic,musicbrainzdune,https://musicbrainz.org/release/840470ef-050c-4c67-8748-baa710642d67,some tracks,MusicBrainz tag corroborated by synth elements of Eno Prophecy Theme and Toto keyboards.
+toto-dune,ambient,pitchfork,https://pitchfork.com/thepitch/the-unlikely-story-of-totos-soundtrack-for-david-lynchs-infamous-dune-adaptation/,some tracks,Eno Prophecy Theme described as separate ambient/sound design addition; not a Toto score-wide style.
+toto-dune,downtempo,musicbrainzdune,https://musicbrainz.org/release/840470ef-050c-4c67-8748-baa710642d67,texture,MusicBrainz tag; some slow/ominous passages consistent with Lynch low-and-slow musical direction.
+toto-dune,soundtrack,alldune,https://www.allmusic.com/album/dune-original-motion-picture-soundtrack-mw0000098243,whole album,"AllMusic stage/screen soundtrack category; this marks function, alongside genuine sonic styles."
+toto-fahrenheit,aor,aotyfahr,https://www.albumoftheyear.org/album/14346-toto-fahrenheit.php,whole album,Album of the Year main genre AOR.
+toto-fahrenheit,poprock,aotyfahr,https://www.albumoftheyear.org/album/14346-toto-fahrenheit.php,whole album,Album of the Year main pop rock tag.
+toto-fahrenheit,softrock,aotyfahr,https://www.albumoftheyear.org/album/14346-toto-fahrenheit.php,whole album,"AOTY soft-rock style, especially Ill Be Over You and Lea."
+toto-fahrenheit,contemporarypoprock,allfahr,https://www.allmusic.com/album/fahrenheit-mw0000192223,whole album,AllMusic broad contemporary pop/rock style.
+toto-fahrenheit,rnb,wikiFahr,https://en.wikipedia.org/wiki/Fahrenheit_(Toto_album),whole album,Album-level R&B genre attribution; member source also explicitly says most soulful/funky album.
+toto-fahrenheit,albumrock,allfahr,https://www.allmusic.com/album/fahrenheit-mw0000192223,whole album,AllMusic album rock category.
+toto-fahrenheit,adultcontemporary,allfahr,https://www.allmusic.com/album/fahrenheit-mw0000192223,whole album,AllMusic adult contemporary category for lighter radio material.
+toto-fahrenheit,funk,lukfahr,https://www.stevelukather.com/music/fahrenheit,some tracks,Member discography explicitly calls this the groups most soulful and funky album.
+toto-fahrenheit,jazz,revfahrjazz,https://somethingelsereviews.com/2017/04/11/toto-dont-stop-me-now-fahrenheit/,some tracks,Critic describes Dont Stop Me Now as straight jazz with Davis muted trumpet and bass/piano.
+toto-fahrenheit,technopop,latimes,https://www.latimes.com/archives/la-xpm-1986-09-07-ca-12101-story.html,some tracks,1986 Los Angeles Times mentions an ultramodern techno-pop feel on some pieces; only tail genre.
+toto-theseventhone,aor,aotyseventh,https://www.albumoftheyear.org/album/14347-toto-the-seventh-one.php,whole album,"AOTY major tag, corroborated by Music Waves A.O.R. review."
+toto-theseventhone,poprock,aotyseventh,https://www.albumoftheyear.org/album/14347-toto-the-seventh-one.php,whole album,AOTY major pop rock tag.
+toto-theseventhone,yachtrock,aotyseventh,https://www.albumoftheyear.org/album/14347-toto-the-seventh-one.php,whole album,AOTY stylistic category for smoother studio rock.
+toto-theseventhone,softrock,allseventh,https://www.allmusic.com/album/the-seventh-one-mw0000194552,whole album,AllMusic album-level soft rock; romantic songs form prominent first-half.
+toto-theseventhone,albumrock,allseventh,https://www.allmusic.com/album/the-seventh-one-mw0000194552,whole album,AllMusic broad album rock style.
+toto-theseventhone,contemporarypoprock,allseventh,https://www.allmusic.com/album/the-seventh-one-mw0000194552,whole album,AllMusic contemporary pop/rock style.
+toto-theseventhone,adultcontemporary,allseventh,https://www.allmusic.com/album/the-seventh-one-mw0000194552,whole album,AllMusic adult contemporary category for the smoother material.
+toto-theseventhone,arenarock,wikiSeventh,https://en.wikipedia.org/wiki/The_Seventh_One,some tracks,Genre cited in discography and supported by Home of the Brave and end-of-album anthems.
+toto-theseventhone,hardrock,wikiSeventh,https://en.wikipedia.org/wiki/The_Seventh_One,some tracks,"Secondary genre for louder guitar-led second half, as AllMusic review describes."
+toto-theseventhone,easylistening,wm7,https://www.musicwaves.org/frmReview.aspx?ID=4444&REF=TOTO,whole album,Music Waves directly tags record easy-listening; secondary low-weight description.
