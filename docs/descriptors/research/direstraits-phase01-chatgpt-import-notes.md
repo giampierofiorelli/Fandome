@@ -63,3 +63,4 @@ If the catalogue acquires a previously researched landmark descriptor for either
 - Making Movies: Bruce Springsteen removed from sounds_like: Roy Bittan of his E Street Band plays keyboards on the album (a guest's band).
 - Artist influences: Dylan, J.J. Cale, The Shadows / Hank Marvin, Chet Atkins (Knopfler).
 - Reception researched by Claude.
+- Claude review (owner flagged Dire Straits → Cowboy Carter, Oct 2026): debut genres reordered by evidence strength. rootsrock rests only on a MusicBrainz user tag (medium), so it moved from 2nd to 5th, after the AllMusic styles (rock, rock and roll, album rock). Its weight had tied the album to Americana records.

@@ -629,7 +629,7 @@ export function similarAlbums(
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
       const gap = qualityGap(a, b)
       // Never from an auteur or alternative album to a packaged chart product (see packaged below).
-      const tooCommercial = packaged(b) && commercialLift(a, b) >= COMMERCIAL_GAP && !includesName(a.influencedBy, d.artist)
+      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist)
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
@@ -781,7 +781,7 @@ export function similarArtists(
     const theirs = { mainstream: meanOf(theirAlbums.map((p) => p.mainstream)), acclaim: standing(theirAlbums) }
     const lift = commercialLift({ mainstream: meanOf(myAlbums.map((p) => p.mainstream)) }, theirs)
     const packagedAct = (theirs.mainstream ?? 0) >= 4.5 && (theirs.acclaim ?? 0) < 4.5
-    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them, tooCommercial: packagedAct && lift >= COMMERCIAL_GAP })
+    scored.push({ artistId: other, score, reason, newCountry: isNew ? to : undefined, profile: them, tooCommercial: packagedAct && tooFarUp(lift, mine === undefined || theirs.acclaim === undefined ? 0 : mine - theirs.acclaim) })
   }
   scored.sort((x, y) => y.score - x.score)
   // Same rule as for albums: an artist named as a documented influence (or comparison) of one of this
@@ -851,6 +851,10 @@ export function genreListSimilarity(a: string[], b: string[]) {
 // Packaged = mainstream 5 and not in the critics' canon (acclaim below 5); out when 2+ points more commercial than the
 // album you're on, unless that album names the artist as an influence. Only upward: Shakira can lead to Tiromancino.
 const COMMERCIAL_GAP = 2
+// One point up is enough when the packaged product also stands 2+ points lower with critics (owner, Oct 2026:
+// Kylie's Tension II → Katy Perry's Smile, Kim Carnes's Mistaken Identity → Bonnie Tyler's Bitterblue). One point up
+// to a record critics rate about the same stays a fine lead (Renaissance → Chromatica).
+const tooFarUp = (lift: number, criticsGap: number) => lift >= COMMERCIAL_GAP || (lift >= 1 && criticsGap >= 2)
 const packaged = (p: { mainstream?: number; acclaim?: number }) => p.mainstream === 5 && (p.acclaim ?? 0) < 5
 function commercialLift(a: { mainstream?: number }, b: { mainstream?: number }) {
   return a.mainstream === undefined || b.mainstream === undefined ? 0 : b.mainstream - a.mainstream
