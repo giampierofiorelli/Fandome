@@ -60,3 +60,8 @@ The remaining four studio albums: **Vital Signs (1984)**, **When Seconds Count (
 
 - Rows imported as delivered; plain `rock` kept last (whole-album rock records by a rock band, after the precise subgenres).
 - Artist added with the full 8-album studio discography (phase 02: Vital Signs, When Seconds Count, Too Hot to Sleep, Reach). Scene US en 1970 rock.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/survivor.csv`.
+- sounds_like checked album by album: Journey removed everywhere (no critic found, only reader comments and fan sites). Survivor (1979): Foreigner kept (weak support: shop listing and user review). Premonition: REO Speedwagon (Schlockmania: "Like REO Speedwagon in their pre-ballad success era"; no Cronin credit on this album). Eye of the Tiger: Foreigner and Led Zeppelin confirmed (AllMusic, Greg Prato). Caught in the Game: Foreigner removed (not found), REO Speedwagon removed (Kevin Cronin sings backing vocals: a guest's band); left empty.
