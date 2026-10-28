@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,artist_in_catalog,album_in_catalog,required_action
+kimcarnes-romancedance,Kim Carnes,Romance Dance,1980,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-mistakenidentity,Kim Carnes,Mistaken Identity,1981,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-voyeur,Kim Carnes,Voyeur,1982,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-caferacers,Kim Carnes,Café Racers,1983,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
