@@ -61,3 +61,8 @@ Later phases cover the remainder. The 2000 *Moment of Glory* album involves the 
 - Fly to the Rainbow: Rainbow removed from sounds_like (the evidence notes themselves find no source for it); producers Frank Bornemann only (the band's own credit dropped).
 - Artist added with the full studio discography (21 albums, Moment of Glory and Comeblack included; co-billing for Moment of Glory to be set when it is described). Scene DE en 1970 rock,metal; still touring.
 - Artist influences from Schenker, Meine and Roth; Roger Daltrey folded into The Who.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows in `docs/descriptors/reception/scorpions.csv`.
+- sounds_like checked: Lonesome Crow's Black Sabbath, Led Zeppelin, Rolling Stones confirmed (AllMusic, Barry Weber); Fly to the Rainbow's Hendrix confirmed (AllMusic, Rivadavia; Ultimate Classic Rock); In Trance's Hendrix kept (Sputnikmusic contributor); Virgin Killer adds Jimi Hendrix (Sputnikmusic: "an intriguing meeting of Hendrix and Anatolia"); Lovedrive adds Van Halen (AllMusic), AC/DC and Aerosmith (Classic Rock/Louder), Led Zeppelin (Apple Music: Holiday "a sort of Stairway to Heaven"); Animal Magnetism's Boston confirmed (Apple Music); Blackout adds Iron Maiden (Apple Music on Dynamite). UFO and MSG excluded (members' bands); Eleanor Rigby interpolation is borrowed material.

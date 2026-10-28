@@ -55,3 +55,8 @@ Research date: **28 October 2026**. Repository `giampierofiorelli/Fandome`, bran
 ## Claude import note (Oct 2026)
 
 - New genre token `popmetal` (parents heavymetal, pop). Rows imported as delivered.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows in `docs/descriptors/reception/scorpions.csv`.
+- sounds_like checked: Lonesome Crow's Black Sabbath, Led Zeppelin, Rolling Stones confirmed (AllMusic, Barry Weber); Fly to the Rainbow's Hendrix confirmed (AllMusic, Rivadavia; Ultimate Classic Rock); In Trance's Hendrix kept (Sputnikmusic contributor); Virgin Killer adds Jimi Hendrix (Sputnikmusic: "an intriguing meeting of Hendrix and Anatolia"); Lovedrive adds Van Halen (AllMusic), AC/DC and Aerosmith (Classic Rock/Louder), Led Zeppelin (Apple Music: Holiday "a sort of Stairway to Heaven"); Animal Magnetism's Boston confirmed (Apple Music); Blackout adds Iron Maiden (Apple Music on Dynamite). UFO and MSG excluded (members' bands); Eleanor Rigby interpolation is borrowed material.
