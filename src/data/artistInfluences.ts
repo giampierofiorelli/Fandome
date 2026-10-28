@@ -234,6 +234,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Tina Turner', 'Janis Joplin'],
     source: 'Bonnie Tyler, bonnietyler.com (women in music) and Goldmine interview: the powerful, soulful singers who shaped her voice',
   },
+  katrinaandthewaves: {
+    names: ['The Rolling Stones', 'The Beatles', 'Etta James', 'Eagles', 'Steve Miller', 'Linda Ronstadt', 'The Mamas & the Papas', 'Elvis Presley', 'Carole King', 'Cher', 'Karla Bonoff', 'Emmylou Harris', 'Heart', 'Pat Benatar', 'The Shirelles', 'The Crystals', 'The Shangri-Las', 'The Velvet Underground', 'Patti Smith', 'Rare Earth', 'The Partridge Family', 'The Osmonds'],
+    source: 'Alex Cooper, Reverb 2018 (Stones, Beatles, Etta James, Eagles, Steve Miller, Linda Ronstadt; also Motown and Stax, labels left out); Katrina Leskanich, Rediscover the 80s 2012 (the rest, her formative influences)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
