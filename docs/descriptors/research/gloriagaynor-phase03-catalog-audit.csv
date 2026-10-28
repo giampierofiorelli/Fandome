@@ -1,0 +1,17 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+gloriagaynor,gloriagaynor-nevercansaygoodbye,Never Can Say Goodbye,1975,studio,not found in public descriptors branch,delivered phase 01,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-experiencegloriagaynor,Experience Gloria Gaynor,1975,studio,not found in public descriptors branch,delivered phase 01,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-ivegotyou,I've Got You,1976,studio,not found in public descriptors branch,delivered phase 01,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-glorious,Glorious,1977,studio,not found in public descriptors branch,delivered phase 01,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-gloriagaynorsparkavenuesound,Gloria Gaynor's Park Avenue Sound,1978,studio,not found in public descriptors branch,delivered phase 02,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-lovetracks,Love Tracks,1978,studio,not found in public descriptors branch,delivered phase 02,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-ihavearight,I Have a Right,1979,studio,not found in public descriptors branch,delivered phase 02,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-stories,Stories,1980,studio,not found in public descriptors branch,delivered phase 02,"preserve, do not re-import",Phase 03 does not include this previous row; check actual branch before import.
+gloriagaynor,gloriagaynor-ikindalikeme,I Kinda Like Me,1981,studio,not found in public descriptors branch,NEW phase 03 draft,add if absent; import row,Chronologically new studio record.
+gloriagaynor,gloriagaynor-gloriagaynor,Gloria Gaynor,1982,studio,not found in public descriptors branch,NEW phase 03 draft,add if absent; import row,Chronologically new studio record.
+gloriagaynor,gloriagaynor-iamgloriagaynor,I Am Gloria Gaynor,1984,studio,not found in public descriptors branch,NEW phase 03 draft,add if absent; import row,Chronologically new studio record.
+gloriagaynor,gloriagaynor-thepower,The Power,1986,studio,not found in public descriptors branch,NEW phase 03 draft,add if absent; import row,Use title The Power as first-edition name; do not create duplicate under alias.
+gloriagaynor,gloriagaynor-gloriagaynor90,Gloria Gaynor '90,1990,studio?,not verified,not in this ZIP,verify original status before future phase,"Candidate only, not a phase03 descriptor."
+gloriagaynor,gloriagaynor-loveaffair,Love Affair,1992,studio?,not verified,not in this ZIP,verify original status before future phase,"Candidate only, not a phase03 descriptor."
+gloriagaynor,gloriagaynor-iwishyoulove,I Wish You Love,2002,studio?,not verified,not in this ZIP,verify original status before future phase,"Candidate only, not a phase03 descriptor."
+gloriagaynor,gloriagaynor-testimony,Testimony,2019,studio?,not verified,not in this ZIP,verify original status before future phase,"Candidate only, not a phase03 descriptor."
