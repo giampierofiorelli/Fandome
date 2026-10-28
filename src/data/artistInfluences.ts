@@ -218,6 +218,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Everly Brothers', 'The Mills Brothers', 'The Beatles', 'The Hollies', 'Otis Redding', 'Neil Sedaka'],
     source: 'Barry Gibb, The Independent 2021 (Everly Brothers, Mills Brothers as harmony models); Chicago Sun-Times 2016 (Beatles); The Joy of the Bee Gees documentary via British Heritage (Hollies, Otis Redding; Maurice: Neil Sedaka)',
   },
+  '4nonblondes': {
+    names: ['Karen Carpenter', 'Tracey Thorn', 'The Who'],
+    source: 'Linda Perry on Matt Pinfield’s podcast (2023), discussing her influences',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
