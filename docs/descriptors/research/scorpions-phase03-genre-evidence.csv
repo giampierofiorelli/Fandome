@@ -1,0 +1,24 @@
+﻿album_id,genre,source,source_url,scope,what_it_supports
+scorpions-loveatfirststing,hardrock,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-loveatfirststing,heavymetal,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-loveatfirststing,albumrock,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-loveatfirststing,arenarock,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-loveatfirststing,contemporarypoprock,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-loveatfirststing,hairmetal,AllMusic,https://www.allmusic.com/album/love-at-first-sting-mw0000195649,whole album / retrospective taxonomy,AllMusic style term; latter tags retrospective to 1984 album
+scorpions-savageamusement,hardrock,AllMusic,https://www.allmusic.com/album/savage-amusement-mw0000195133,whole album / style taxonomy,AllMusic explicitly names Pop-Metal; retain exact popmetal token even if missing from repo
+scorpions-savageamusement,heavymetal,AllMusic,https://www.allmusic.com/album/savage-amusement-mw0000195133,whole album / style taxonomy,AllMusic explicitly names Pop-Metal; retain exact popmetal token even if missing from repo
+scorpions-savageamusement,albumrock,AllMusic,https://www.allmusic.com/album/savage-amusement-mw0000195133,whole album / style taxonomy,AllMusic explicitly names Pop-Metal; retain exact popmetal token even if missing from repo
+scorpions-savageamusement,arenarock,AllMusic,https://www.allmusic.com/album/savage-amusement-mw0000195133,whole album / style taxonomy,AllMusic explicitly names Pop-Metal; retain exact popmetal token even if missing from repo
+scorpions-savageamusement,popmetal,AllMusic,https://www.allmusic.com/album/savage-amusement-mw0000195133,whole album / style taxonomy,AllMusic explicitly names Pop-Metal; retain exact popmetal token even if missing from repo
+scorpions-savageamusement,hairmetal,Apple Music editorial,https://music.apple.com/us/album/savage-amusement/1440766479,retrospective whole-album commentary,"Apple Music says album is more susceptible to hair-metal tropes, but not its sole sound"
+scorpions-crazyworld,hardrock,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,heavymetal,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,albumrock,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,arenarock,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,contemporarypoprock,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,hairmetal,AllMusic,https://www.allmusic.com/album/crazy-world-mw0000309561,whole album / retrospective taxonomy,AllMusic whole-album style labels
+scorpions-crazyworld,popmetal,Crazy World genre overview,https://en.wikipedia.org/wiki/Crazy_World_%28Scorpions_album%29,whole-album overview (secondary),Original album infobox includes Pop metal; weaker than AllMusic taxonomy but explicitly named
+scorpions-facetheheat,hardrock,AllMusic,https://www.allmusic.com/album/face-the-heat-r189267,whole album,AllMusic four album-wide styles; do not extrapolate glam or grunge genre from 1993 date
+scorpions-facetheheat,heavymetal,AllMusic,https://www.allmusic.com/album/face-the-heat-r189267,whole album,AllMusic four album-wide styles; do not extrapolate glam or grunge genre from 1993 date
+scorpions-facetheheat,albumrock,AllMusic,https://www.allmusic.com/album/face-the-heat-r189267,whole album,AllMusic four album-wide styles; do not extrapolate glam or grunge genre from 1993 date
+scorpions-facetheheat,arenarock,AllMusic,https://www.allmusic.com/album/face-the-heat-r189267,whole album,AllMusic four album-wide styles; do not extrapolate glam or grunge genre from 1993 date
