@@ -1,0 +1,7 @@
+﻿album_id,artist,title,year,type,in_catalog,in_descriptors,action,phase,notes
+sade-diamondlife,Sade,Diamond Life,1984,studio,no,no,add album to src/data/catalog.ts and descriptors CSV,01,Entirely new Sade artist room; include new artist id sade before importing album descriptors
+sade-promise,Sade,Promise,1985,studio,no,no,add album to src/data/catalog.ts and descriptors CSV,01,Entirely new Sade artist room; include new artist id sade before importing album descriptors
+sade-strongerthanpride,Sade,Stronger Than Pride,1988,studio,no,no,add album to src/data/catalog.ts and descriptors CSV,01,Entirely new Sade artist room; include new artist id sade before importing album descriptors
+sade-lovedeluxe,Sade,Love Deluxe,1992,studio,no,no,add album to src/data/catalog.ts and descriptors CSV,01,Entirely new Sade artist room; include new artist id sade before importing album descriptors
+sade-loversrock,Sade,Lovers Rock,2000,studio,no,no,add to catalogue; research in phase 02,02,Not part of phase01 rows
+sade-soldieroflove,Sade,Soldier of Love,2010,studio,no,no,add to catalogue; research in phase 02,02,Not part of phase01 rows

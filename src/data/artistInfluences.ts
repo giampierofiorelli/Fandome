@@ -186,6 +186,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Beach Boys', 'The Beatles', 'Phil Spector'],
     source: 'Belinda Carlisle: The Guardian 2021 (the Beach Boys, Pet Sounds played constantly), American Songwriter 2025 (the Beatles and Phil Spector as formative influences). Left out: the Runaways (a career inspiration, proof an all-female band could work), the Animals and Cat Stevens (grew up listening)',
   },
+  sade: {
+    names: ['Marvin Gaye', 'Gil Scott-Heron', 'Nina Simone', 'Ray Charles', 'Billie Holiday', 'Curtis Mayfield', 'Al Green'],
+    source: 'Producer Robin Millar, DJ Mag 2024 (the records the band referenced in the Diamond Life sessions: Marvin Gaye, Gil Scott-Heron, Nina Simone, Ray Charles, Billie Holiday); Stuart Matthewman (Curtis Mayfield, Al Green). Timmy Thomas left out: a song they covered',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
