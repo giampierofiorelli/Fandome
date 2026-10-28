@@ -246,6 +246,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Joni Mitchell', 'Simon & Garfunkel', 'Bob Dylan'],
     source: 'Tracy Chapman, Der Spiegel 2017: the quiet songs of Joni Mitchell, Simon & Garfunkel and Dylan influenced her writing (in 2006 she said Dylan was not formative in her upbringing)',
   },
+  terencetrentdarby: {
+    names: ['The Beatles', 'Stevie Wonder', 'Sam Cooke', 'Rod Stewart', 'The Rolling Stones', 'James Brown', 'Jimi Hendrix', 'Prince', 'Sly and the Family Stone', 'Miles Davis', 'The Beach Boys', 'Steely Dan', 'Aretha Franklin', 'The Jackson 5', 'Bruce Springsteen', 'Frank Sinatra', 'Bob Dylan', 'Led Zeppelin', 'Otis Redding', 'Donny Hathaway', 'Todd Rundgren', 'Jackie Wilson', 'Buddy Holly', 'Marvin Gaye', 'Bob Marley'],
+    source: 'Sananda Maitreya: Songwriting Magazine 2015, This Is Not Retro 2003, The Guardian 2024 (Rod Stewart’s soul-rock showed him a path), It’s Psychedelic Baby 2024 (Miles Davis a mentor), Antakly Projects 2021',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
