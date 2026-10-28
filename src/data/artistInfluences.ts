@@ -302,6 +302,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Black Sabbath', 'The Rolling Stones', 'Neil Young', 'Bob Dylan', 'David Bowie', 'Pink Floyd', 'Ramones', 'Blondie', 'The Pretenders', 'The Animals'],
     source: 'Nena: I Con Vs I Con 2016 (Black Sabbath’s Paranoid her first single, the Stones’ Angie, Neil Young, Dylan, Bowie, Pink Floyd, Ramones, Blondie, The Pretenders, an Eric Burdon and The Animals concert), The Berliner (Sabbath, Stones, Bowie)',
   },
+  kcandthesunshineband: {
+    names: ['Stevie Wonder', 'Marvin Gaye', 'The Supremes', 'The Temptations', 'Gladys Knight', 'Joe Cocker', 'James Brown', 'Chicago', 'Blood, Sweat & Tears'],
+    source: 'Harry Wayne Casey: Music Feeds 2017 (Motown — Stevie Wonder, Marvin Gaye, The Supremes, The Temptations, Gladys Knight — plus Joe Cocker, James Brown, Chicago, Blood, Sweat & Tears); Recording Academy (Bahamian Junkanoo, a tradition, not an artist)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
