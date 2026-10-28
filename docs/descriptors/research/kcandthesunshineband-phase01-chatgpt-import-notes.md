@@ -64,3 +64,9 @@ Casey also names *Motown*, a label and artist network, as his primary formative 
 
 - Rows imported as delivered. The Sound of Sunshine stays in the band's room with the printed credit "The Sunshine Band" (coBilled.ts).
 - Artist added with the studio discography through Feeling You! The 60s (2015); Space Cadet Solo Flight (1981) left out pending its billing check. Scene US en 1970 disco,funk; still touring.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/kcandthesunshineband.csv` (no RIAA certification found for these albums; TK's own awards left out).
+- KC and the Sunshine Band (1975) sounds_like: Ohio Players (AllMusic, Alex Henderson: "more in common with the Ohio Players than Silver Convention or Donna Summer"). No critic comparison found for the other three.
+- Discogs credits only producers, bass, drums and vocals; Wikipedia personnel confirms the keyboards/guitar/bass/drums/percussion/trumpet/saxophone core already in the rows.
