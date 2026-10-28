@@ -48,3 +48,7 @@ Explicitly **unverified**: online biographical summaries sometimes attribute the
 6. `CLAUDE_IMPORT.md`: this document.
 
 **Phase 02 (strict next 4):** *Romantic Warriors* (1987), *In the Garden of Venus* (1987), *Back for Good* (1998), *Alone* (1999). Phase 03 should cover *2000 – Year of the Dragon* (2000), *America* (2001), *Victory* (2002), *Universe* (2003), subject to original title verification. All studio album chronology is supported by Hung Medien and AllMusic.
+
+## Claude import note (28 Oct 2026)
+
+Fox the Fox added to The 1st Album's influenced_by: Wikipedia reports Dieter Bohlen naming the falsetto chorus of Precious Little Diamond as his model. ABBA and the Bee Gees added to sounds_like of the first two albums (Der Spiegel 46/1985: a sound crossed from the Bee Gees and ABBA). Reception researched by Claude: mainstream 5 (Bohlen admitted the hits sound very similar and singles were chosen to sound like the previous one, Der Spiegel 3/1989).
