@@ -63,3 +63,10 @@ Skip 1983 US *Madness* compilation, greatest hits, live sets and the 1988 LP fro
 - sounds_like: Scritti Politti removed from Mad Not Mad (The Sweetest Girl is a cover; a covered artist is not a comparison), Ian Dury removed from Wonderful (he guests on Drip Fed Fred), Prince Buster removed from The Dangermen Sessions (covered songs). UB40 (Labour of Love) kept (AllMusic).
 - The Dangermen Sessions producers: Dennis Bovell, Steve Dub, Segs; the band's own credit dropped (not a link to other acts).
 - The Madness (1988) stays out of the Madness catalogue, as phase 02 confirms it is billed to a separate act.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/madness.csv`.
+- Mad Not Mad sounds_like: Bryan Ferry (Trouser Press: "sounding a bit like Bryan Ferry in more than one spot").
+- Wonderful sounds_like: The Kinks replaced by XTC (no source for Kinks on this album; Trouser Press: "'Lovestruck' could almost be the Great Lost XTC Single").
+- The Dangermen Sessions: UB40 (Labour of Love) confirmed by Trouser Press. Keep Moving: Bowie kept from Classic Pop (vocals on Michael Caine), not found elsewhere.
