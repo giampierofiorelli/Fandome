@@ -70,3 +70,4 @@ Later phases continue chronologically. Omit compilation *Best of Bee Gees* (1969
 - Scene GB en 1960 pop,disco,rock (British-born, started in Australia).
 - 1965 album kept as studio (discographies count it) though 9 of 14 tracks are earlier singles: flagged to the owner.
 - Everly Brothers, Beatles, Hollies are both artist influences and editorial likenesses: kept in both.
+- Reception researched by Claude (Wikipedia ratings boxes, charts, Discogs). 1965 album: Festival Studio Sydney, mono LP; no production technique stated, column left empty.
