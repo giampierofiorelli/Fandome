@@ -1,0 +1,41 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+beegees-idea,baroquepop,AllMusic: Idea (Bruce Eder),https://www.allmusic.com/album/idea-mw0000199150,album,AllMusic style index,high
+beegees-idea,psychedelicpop,AllMusic: Idea (Bruce Eder),https://www.allmusic.com/album/idea-mw0000199150,album,AllMusic style index,high
+beegees-idea,poprock,Album of the Year: Idea,https://www.albumoftheyear.org/album/15050-bee-gees-idea.php,album,AOTY style list; more rock-oriented than predecessors per AllMusic,medium
+beegees-idea,softrock,Idea (1968 album),https://en.wikipedia.org/wiki/Idea_%28album%29,album,Discography genre summary,medium
+beegees-idea,artrock,Idea (1968 album),https://en.wikipedia.org/wiki/Idea_%28album%29,album,Discography genre summary,medium
+beegees-idea,psychedelicrock,Idea (1968 album),https://en.wikipedia.org/wiki/Idea_%28album%29,album,Discography genre summary,medium
+beegees-idea,ampop,AllMusic: Idea (Bruce Eder),https://www.allmusic.com/album/idea-mw0000199150,album,AllMusic AM pop style,high
+beegees-idea,progressivepop,Album of the Year: Idea,https://www.albumoftheyear.org/album/15050-bee-gees-idea.php,album,AOTY progressive-pop category,medium
+beegees-idea,folkpop,Album of the Year: Idea,https://www.albumoftheyear.org/album/15050-bee-gees-idea.php,album,AOTY folk-pop tag; lower-weight genre,medium
+beegees-idea,countrypop,Album of the Year: Idea,https://www.albumoftheyear.org/album/15050-bee-gees-idea.php,album,AOTY country-pop tag; lower-weight genre,medium
+beegees-odessa,baroquepop,AllMusic: Odessa style classification,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Adxk0ikp6bbo9,album,AllMusic album style; epic orchestration,high
+beegees-odessa,chamberpop,"Odessa, Bee Gees studio album",https://en.wikipedia.org/wiki/Odessa_%28Bee_Gees_album%29,album,Discography genre designation with orchestral ballads,medium
+beegees-odessa,progressivepop,"Odessa, Bee Gees studio album",https://en.wikipedia.org/wiki/Odessa_%28Bee_Gees_album%29,album,Album genre classification,medium
+beegees-odessa,orchestralpop,"Elsewhere, Graham Reid: Odessa considered",https://www.elsewhere.co.nz/albumconsidered/9321/the-bee-gees-odessa-considered-1969-all-at-sea-in-separate-lifeboats/,album,Critical description: densely orchestrated pop,high
+beegees-odessa,prog,AllMusic: Odessa style classification,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Adxk0ikp6bbo9,album,"AllMusic prog-rock style, especially title track and suites",high
+beegees-odessa,psychedelicpop,AllMusic: Odessa style classification,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Adxk0ikp6bbo9,album,AllMusic psychedelic pop style,high
+beegees-odessa,pop,"Odessa, Bee Gees studio album",https://en.wikipedia.org/wiki/Odessa_%28Bee_Gees_album%29,album,Discography overall classification,medium
+beegees-odessa,country,Bee Gees official discography: Odessa,https://www.beegees.com/releases-archive/odessa/,selected tracks,Marley Purt Drive and Give Your Best identified as country,high
+beegees-odessa,countryrock,AllMusic: Odessa (Bruce Eder),https://www.allmusic.com/album/r1598,selected tracks,Marley Purt Drive country rock in review,high
+beegees-odessa,bluegrass,AllMusic: Odessa (Bruce Eder),https://www.allmusic.com/album/r1598,one track,Give Your Best described as bluegrass number,high
+beegees-odessa,rock,"Pitchfork, Bob Stanley: Odessa reissue review",https://pitchfork.com/reviews/albums/12655-odessa/,album,Pitchfork lists Rock as genre; rock-oriented songs,high
+beegees-cucumbercastle,baroquepop,Album of the Year: Cucumber Castle,https://www.albumoftheyear.org/album/15052-bee-gees-cucumber-castle.php,album,AOTY album genre list and AllMusic style,medium
+beegees-cucumbercastle,folkrock,Album of the Year: Cucumber Castle,https://www.albumoftheyear.org/album/15052-bee-gees-cucumber-castle.php,album,AOTY and discography genre,medium
+beegees-cucumbercastle,poprock,Album of the Year: Cucumber Castle,https://www.albumoftheyear.org/album/15052-bee-gees-cucumber-castle.php,album,AOTY pop-rock genre,medium
+beegees-cucumbercastle,ampop,AllMusic: Cucumber Castle (Michael Ofjord),https://www.allmusic.com/album/cucumber-castle-mw0000203147,album,AllMusic AM pop style,high
+beegees-cucumbercastle,countryfolk,Cucumber Castle (Bee Gees),https://en.wikipedia.org/wiki/Cucumber_Castle,album,"Album genre classification, distinct from country pop",medium
+beegees-cucumbercastle,country,Bee Gees official discography: Cucumber Castle,https://www.beegees.com/releases-archive/cucumber-castle/,selected tracks,Official site describes country influence and Don’t Forget to Remember,high
+beegees-cucumbercastle,softrock,Bee Gees official discography: Cucumber Castle,https://www.beegees.com/releases-archive/cucumber-castle/,album,"Officially described as soft, sentimental melody and orchestral ballads",high
+beegees-cucumbercastle,rock,Bee Gees official discography: Cucumber Castle,https://www.beegees.com/releases-archive/cucumber-castle/,one track,I.O.I.O described by official site as upbeat rock,high
+beegees-cucumbercastle,gospel,AllMusic: Cucumber Castle (Michael Ofjord),https://www.allmusic.com/album/cucumber-castle-mw0000203147,one track,Bury Me Down by the River has gospel influence,high
+beegees-cucumbercastle,jazz,AllMusic: Cucumber Castle (Michael Ofjord),https://www.allmusic.com/album/cucumber-castle-mw0000203147,one track,My Thing described as light jazz,high
+beegees-cucumbercastle,prog,AllMusic: Cucumber Castle (Michael Ofjord),https://www.allmusic.com/album/cucumber-castle-mw0000203147,album metadata,AllMusic lists prog-rock; lower rank than baroque and folk rock,high
+beegees-2yearson,baroquepop,Album of the Year: 2 Years On,https://www.albumoftheyear.org/album/15053-bee-gees-2-years-on.php,album,AOTY genre index,medium
+beegees-2yearson,softrock,Album of the Year: 2 Years On,https://www.albumoftheyear.org/album/15053-bee-gees-2-years-on.php,album,AOTY genre index,medium
+beegees-2yearson,poprock,Album of the Year: 2 Years On,https://www.albumoftheyear.org/album/15053-bee-gees-2-years-on.php,album,AOTY genre index and album details,medium
+beegees-2yearson,progressivepop,Album of the Year: 2 Years On,https://www.albumoftheyear.org/album/15053-bee-gees-2-years-on.php,album,AOTY genre index,medium
+beegees-2yearson,ampop,AllMusic: 2 Years On,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ab9n8b5m4tsq4,album,AllMusic AM pop style,high
+beegees-2yearson,prog,AllMusic: 2 Years On,https://www.allmusic.com/cg/amg.dll?p=amg&sql=10%3Ab9n8b5m4tsq4,album,AllMusic prog-rock style; stylistic low weight,high
+beegees-2yearson,country,Bee Gees official discography: 2 Years On,https://www.beegees.com/releases-archive/2-years-on/,one track,Lay It on Me described as country-flavoured,high
+beegees-2yearson,blues,Bee Gees official discography: 2 Years On,https://www.beegees.com/releases-archive/2-years-on/,one track,"Every Second, Every Minute described as bluesy",high

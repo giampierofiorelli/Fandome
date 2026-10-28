@@ -1,0 +1,9 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+beegees,beegees-idea,Idea,1968,studio,not present in catalog.ts / seed.ts,not present in docs/descriptors/beegees.csv,add catalogue album and import draft,UK and US original differ on one track
+beegees,beegees-odessa,Odessa,1969,studio,not present in catalog.ts / seed.ts,not present in docs/descriptors/beegees.csv,add catalogue album and import draft,1969 original double LP; no demo bonus disc
+beegees,beegees-cucumbercastle,Cucumber Castle,1970,studio,not present in catalog.ts / seed.ts,not present in docs/descriptors/beegees.csv,add catalogue album and import draft,recorded during group split; Barry & Maurice only
+beegees,beegees-2yearson,2 Years On,1970,studio,not present in catalog.ts / seed.ts,not present in docs/descriptors/beegees.csv,add catalogue album and import draft,track-level Robin/Maurice producer credits also documented
+beegees,beegees-trafalgar,Trafalgar,1971,studio,check before phase 03,not included in phase 02,future phase 03 only,Do not import Phase 03 rows now
+beegees,beegees-towhomitmayconcern,To Whom It May Concern,1972,studio,check before phase 03,not included in phase 02,future phase 03 only,Do not import Phase 03 rows now
+beegees,beegees-lifeinatincan,Life in a Tin Can,1973,studio,check before phase 03,not included in phase 02,future phase 03 only,Do not import Phase 03 rows now
+beegees,beegees-mrnatural,Mr. Natural,1974,studio,check before phase 03,not included in phase 02,future phase 03 only,Do not import Phase 03 rows now
