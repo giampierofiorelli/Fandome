@@ -1,0 +1,18 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,already_described_in_repo,delivered_phase,in_this_phase,action,note
+cameo-cardiacarrest,cameo,Cardiac Arrest,1977,studio,no,no,01,no,handled_in_phase01_do_not_reimport,Delivered in phase 01; NOT part of this incremental ZIP. Check phase 01 import status.
+cameo-weallknowwhoweare,cameo,We All Know Who We Are,1978,studio,no,no,01,no,handled_in_phase01_do_not_reimport,Delivered in phase 01; NOT part of this incremental ZIP. Check phase 01 import status.
+cameo-uglyego,cameo,Ugly Ego,1978,studio,no,no,01,no,handled_in_phase01_do_not_reimport,Delivered in phase 01; NOT part of this incremental ZIP. Check phase 01 import status.
+cameo-secretomen,cameo,Secret Omen,1979,studio,no,no,01,no,handled_in_phase01_do_not_reimport,Delivered in phase 01; NOT part of this incremental ZIP. Check phase 01 import status.
+cameo-cameosis,cameo,Cameosis,1980,studio,no,no,02,yes,add_album_then_import_phase02_row,This phase 02; catalogue artist missing in checked branch.
+cameo-feelme,cameo,Feel Me,1980,studio,no,no,02,yes,add_album_then_import_phase02_row,This phase 02; catalogue artist missing in checked branch.
+cameo-knightsofthesoundtable,cameo,Knights of the Sound Table,1981,studio,no,no,02,yes,add_album_then_import_phase02_row,This phase 02; catalogue artist missing in checked branch.
+cameo-alligatorwoman,cameo,Alligator Woman,1982,studio,no,no,02,yes,add_album_then_import_phase02_row,This phase 02; catalogue artist missing in checked branch.
+cameo-style,cameo,Style,1983,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-shesstrange,cameo,She's Strange,1984,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-singlelife,cameo,Single Life,1985,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-wordup,cameo,Word Up!,1986,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-machismo,cameo,Machismo,1988,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-realmenwearblack,cameo,Real Men Wear Black,1990,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-emotionalviolence,cameo,Emotional Violence,1991,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-inthefaceoffunk,cameo,In the Face of Funk,1994,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.
+cameo-sexysweetthing,cameo,Sexy Sweet Thing,2000,studio,no,no,,no,add_in_future_phase,Unprocessed original studio album; not included in phase 02.

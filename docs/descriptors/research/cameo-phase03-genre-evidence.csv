@@ -1,0 +1,31 @@
+﻿album_id,genre,source,url,scope,evidence,evidence_strength
+cameo-style,funk,style_all,https://www.allmusic.com/album/style-mw0000841067,whole_album,AllMusic explicitly describes main content as funk songs and cites several examples,high
+cameo-style,rnb,style_all,https://www.allmusic.com/album/style-mw0000841067,whole_album,AllMusic album genre R&B; review anchors Cameo in R&B change,high
+cameo-style,synthfunk,style_all,https://www.allmusic.com/album/style-mw0000841067,whole_album,AllMusic describes keyboard-led synth-funk transition across the LP,high
+cameo-style,electrofunk,style_all,https://www.allmusic.com/album/style-mw0000841067,whole_album,AllMusic directly contrasts former horn-funk with electro-funk; applies emerging electronic arrangements,medium
+cameo-style,ballad,style_all,https://www.allmusic.com/album/style-mw0000841067,one_track,Can't Help Falling in Love is a ballad; album also contains uptempo funk,high
+cameo-shesstrange,funk,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,whole_album,AllMusic lists Funk in styles and reviews several funk tracks,high
+cameo-shesstrange,rnb,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,whole_album,AllMusic primary genre R&B,high
+cameo-shesstrange,contemporaryrnb,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,whole_album,AllMusic lists Contemporary R&B style,high
+cameo-shesstrange,synthfunk,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,whole_album,Review explains contemporary high-tech funk and electronic arrangements,high
+cameo-shesstrange,hiphop,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,some_tracks,Critic says the two major rap-focused tracks respond to hip-hop popularity,high
+cameo-shesstrange,rap,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,some_tracks,AllMusic explicitly identifies rapping on title track and Talkin Out the Side of Your Neck,high
+cameo-shesstrange,reggae,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,one_track,"Tribute to Bob Marley is explicitly a reggae performance, not an album-wide genre",high
+cameo-shesstrange,quietstorm,strange_all,https://www.allmusic.com/album/shes-strange-mw0000649948,one_track,Hangin Downtown explicitly characterized as quiet-storm oriented,high
+cameo-singlelife,synthfunk,single_all,https://www.allmusic.com/album/single-life-mw0000189389,whole_album,AllMusic states synthesizers and electric bass are central to this trio album,high
+cameo-singlelife,funk,single_all,https://www.allmusic.com/album/single-life-mw0000189389,whole_album,AllMusic lists Funk and identifies multiple funk songs,high
+cameo-singlelife,rnb,single_all,https://www.allmusic.com/album/single-life-mw0000189389,whole_album,AllMusic main album genre R&B,high
+cameo-singlelife,contemporaryrnb,single_all,https://www.allmusic.com/album/single-life-mw0000189389,whole_album,AllMusic lists Contemporary R&B among album styles,high
+cameo-singlelife,electrofunk,single_all,https://www.allmusic.com/album/single-life-mw0000189389,whole_album,AllMusic review explicitly references electro-funk audience shift,high
+cameo-singlelife,quietstorm,single_all,https://www.allmusic.com/album/single-life-mw0000189389,some_tracks,AllMusic lists Quiet Storm and discusses soft love songs,high
+cameo-singlelife,reggae,single_all,https://www.allmusic.com/album/single-life-mw0000189389,one_track,Little Boys Dangerous Toys explicitly called political reggae,high
+cameo-singlelife,rap,single_all,https://www.allmusic.com/album/single-life-mw0000189389,one_track,"Urban Warrior explicitly called rap song, contextualized to world peace",high
+cameo-singlelife,ballad,single_all,https://www.allmusic.com/album/single-life-mw0000189389,some_tracks,A Good-Bye described as rock ballad; I'll Never Look for Love a love-song duet,high
+cameo-wordup,funk,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,AllMusic review identifies funk as the defining album sound,high
+cameo-wordup,synthfunk,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,Electronic-programmed funk throughout mid-1980s record; supporting original synth/drum credits,medium
+cameo-wordup,electrofunk,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,High-tech electro-funk vocabulary in original era; instrumental/electronic support from vinyl sleeve,medium
+cameo-wordup,rnb,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,AllMusic album genre R&B,high
+cameo-wordup,contemporaryrnb,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,AllMusic explicitly lists Contemporary R&B style,high
+cameo-wordup,soul,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,whole_album,AllMusic explicitly lists Soul in album styles,high
+cameo-wordup,quietstorm,word_all,https://www.allmusic.com/album/word-up%21-mw0000193157,some_tracks,AllMusic lists Quiet Storm style; tied to album softer romantic tracks,high
+cameo-wordup,electro,word_vinyl,https://rectangletriangle.com/products/word-up-cameo-2,some_tracks,1986 physical-disc style listing explicitly includes Electro; secondary LP metadata,medium

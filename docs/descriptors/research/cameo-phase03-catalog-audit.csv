@@ -1,0 +1,18 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,already_described_in_repo,delivered_phase,in_this_phase,action,note
+cameo-cardiacarrest,cameo,Cardiac Arrest,1977,studio,no,no,01,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-weallknowwhoweare,cameo,We All Know Who We Are,1978,studio,no,no,01,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-uglyego,cameo,Ugly Ego,1978,studio,no,no,01,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-secretomen,cameo,Secret Omen,1979,studio,no,no,01,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-cameosis,cameo,Cameosis,1980,studio,no,no,02,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-feelme,cameo,Feel Me,1980,studio,no,no,02,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-knightsofthesoundtable,cameo,Knights of the Sound Table,1981,studio,no,no,02,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-alligatorwoman,cameo,Alligator Woman,1982,studio,no,no,02,no,prior_phase_delivered_do_not_repeat,Current descriptor branch has neither Cameo artist nor cameo.csv; phases 01/02 delivered previously but import not confirmed.
+cameo-style,cameo,Style,1983,studio,no,no,03,yes,add_album_then_import_phase03_row,"New row; create album before import, once artist exists."
+cameo-shesstrange,cameo,She's Strange,1984,studio,no,no,03,yes,add_album_then_import_phase03_row,"New row; create album before import, once artist exists."
+cameo-singlelife,cameo,Single Life,1985,studio,no,no,03,yes,add_album_then_import_phase03_row,"New row; create album before import, once artist exists."
+cameo-wordup,cameo,Word Up!,1986,studio,no,no,03,yes,add_album_then_import_phase03_row,"New row; create album before import, once artist exists."
+cameo-machismo,cameo,Machismo,1988,studio,no,no,,no,future_phase_not_this_zip,Remaining studio album for future phase.
+cameo-realmenwearblack,cameo,Real Men Wear Black,1990,studio,no,no,,no,future_phase_not_this_zip,Remaining studio album for future phase.
+cameo-emotionalviolence,cameo,Emotional Violence,1991,studio,no,no,,no,future_phase_not_this_zip,Remaining studio album for future phase.
+cameo-inthefaceoffunk,cameo,In the Face of Funk,1994,studio,no,no,,no,future_phase_not_this_zip,Remaining studio album for future phase.
+cameo-sexysweetthing,cameo,Sexy Sweet Thing,2000,studio,no,no,,no,future_phase_not_this_zip,Remaining studio album for future phase.

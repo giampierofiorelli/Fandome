@@ -1,0 +1,19 @@
+﻿album_id,genre,source,url,scope,evidence,evidence_strength
+cameo-cameosis,funk,all_cameosis,https://www.allmusic.com/album/cameosis-mw0000312967,whole_album,AllMusic labels record funk and describes rhythmic band numbers,high
+cameo-cameosis,rnb,all_cameosis,https://www.allmusic.com/album/cameosis-mw0000312967,whole_album,AllMusic main album genre is R&B,high
+cameo-cameosis,contemporaryrnb,all_cameosis,https://www.allmusic.com/album/cameosis-mw0000312967,whole_album,AllMusic style explicitly Contemporary R&B,high
+cameo-cameosis,smoothsoul,cameosis_aoty,https://www.albumoftheyear.org/album/51734-cameo-cameosis.php,some_tracks,Album of the Year genre labels smooth soul; supported by AllMusic ballad descriptions,medium
+cameo-cameosis,ballad,all_cameosis,https://www.allmusic.com/album/cameosis-mw0000312967,some_tracks,I Care for You and Why Have I Lost You are slow romantic vocal showcases,high
+cameo-feelme,funk,all_feel,https://www.allmusic.com/album/feel-me-mw0000838513,whole_album,"AllMusic album style Funk, including Keep It Hot",high
+cameo-feelme,rnb,all_feel,https://www.allmusic.com/album/feel-me-mw0000838513,whole_album,AllMusic album main genre R&B,high
+cameo-feelme,soul,feel_credits,https://en.wikipedia.org/wiki/Feel_Me_(album),some_tracks,Genre soul recorded in album discography and evidenced by multiple long vocal ballads,medium
+cameo-feelme,ballad,all_feel,https://www.allmusic.com/album/feel-me-mw0000838513,some_tracks,Feel Me and Better Days explicitly named ballads,high
+cameo-knightsofthesoundtable,funk,all_knights,https://www.allmusic.com/album/knights-of-the-sound-table-mw0000097779,whole_album,"AllMusic explicitly names funk, and review emphasizes powerful funk roots",high
+cameo-knightsofthesoundtable,rnb,all_knights,https://www.allmusic.com/album/knights-of-the-sound-table-mw0000097779,whole_album,AllMusic main album genre is R&B,high
+cameo-knightsofthesoundtable,contemporaryrnb,all_knights,https://www.allmusic.com/album/knights-of-the-sound-table-mw0000097779,whole_album,AllMusic style explicitly Contemporary R&B,high
+cameo-knightsofthesoundtable,ballad,all_knights,https://www.allmusic.com/album/knights-of-the-sound-table-mw0000097779,some_tracks,Reviewer describes I Never Knew and I’ll Always Stay as ballads,high
+cameo-knightsofthesoundtable,disco,all_knights,https://www.allmusic.com/album/knights-of-the-sound-table-mw0000097779,one_track,"The Sound Table described by AllMusic as a disco-oriented track, not full album",high
+cameo-alligatorwoman,funk,all_alligator,https://www.allmusic.com/album/alligator-woman-mw0001878982,whole_album,AllMusic explicitly discusses heavy/old-school deep funk across album,high
+cameo-alligatorwoman,rnb,all_alligator,https://www.allmusic.com/album/alligator-woman-mw0001878982,whole_album,AllMusic main album genre R&B,high
+cameo-alligatorwoman,pop,all_alligator,https://www.allmusic.com/album/alligator-woman-mw0001878982,one_track,AllMusic identifies the single Flirt as pop-oriented in otherwise funk set,high
+cameo-alligatorwoman,ballad,all_alligator,https://www.allmusic.com/album/alligator-woman-mw0001878982,some_tracks,Secrets of Time and For You described as ballads,high
