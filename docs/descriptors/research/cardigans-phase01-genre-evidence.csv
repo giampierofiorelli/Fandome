@@ -1,0 +1,33 @@
+﻿album_id,genre,source,url,scope,evidence_strength,notes
+cardigans-emmerdale,indiepop,"John Bush, AllMusic, Emmerdale review and styles",https://www.allmusic.com/album/emmerdale-mw0000242045,whole_album,high,AllMusic: indie pop style
+cardigans-emmerdale,tweepop,"Album of the Year, Emmerdale genre metadata and critic index",https://www.albumoftheyear.org/album/24472-the-cardigans-emmerdale.php,whole_album,high,Album metadata: twee pop
+cardigans-emmerdale,neoacoustic,"Album of the Year, Emmerdale genre metadata and critic index",https://www.albumoftheyear.org/album/24472-the-cardigans-emmerdale.php,whole_album,high,Album metadata: neo-acoustic
+cardigans-emmerdale,chamberpop,"Album of the Year, Emmerdale genre metadata and critic index",https://www.albumoftheyear.org/album/24472-the-cardigans-emmerdale.php,whole_album,high,Album metadata: chamber pop
+cardigans-emmerdale,sophistipop,"Album of the Year, Emmerdale genre metadata and critic index",https://www.albumoftheyear.org/album/24472-the-cardigans-emmerdale.php,whole_album,high,Album metadata: sophisti-pop
+cardigans-emmerdale,lounge,"Album of the Year, Emmerdale genre metadata and critic index",https://www.albumoftheyear.org/album/24472-the-cardigans-emmerdale.php,whole_album,high,Album metadata: lounge
+cardigans-emmerdale,dreampop,"John Bush, AllMusic, Emmerdale review and styles",https://www.allmusic.com/album/emmerdale-mw0000242045,whole_album,high,AllMusic: dream pop
+cardigans-emmerdale,ambientpop,"John Bush, AllMusic, Emmerdale review and styles",https://www.allmusic.com/album/emmerdale-mw0000242045,whole_album,high,AllMusic: ambient pop
+cardigans-emmerdale,indierock,"John Bush, AllMusic, Emmerdale review and styles",https://www.allmusic.com/album/emmerdale-mw0000242045,whole_album,high,AllMusic: indie rock style
+cardigans-life,indiepop,"John Bush, AllMusic, Life review/styles",https://www.allmusic.com/album/life-mw0000647292,whole_album,high,AllMusic: indie pop
+cardigans-life,tweepop,"John Bush, AllMusic, Life review/styles",https://www.allmusic.com/album/life-mw0000647292,whole_album,high,AllMusic: twee pop
+cardigans-life,lounge,Life (The Cardigans album): editions and release metadata,https://en.wikipedia.org/wiki/Life_(The_Cardigans_album),whole_album,high,Album genre metadata: lounge
+cardigans-life,easylistening,Life (The Cardigans album): editions and release metadata,https://en.wikipedia.org/wiki/Life_(The_Cardigans_album),whole_album,high,Album genre metadata: easy listening
+cardigans-life,dreampop,"John Bush, AllMusic, Life review/styles",https://www.allmusic.com/album/life-mw0000647292,whole_album,high,AllMusic: dream pop
+cardigans-life,ambientpop,"John Bush, AllMusic, Life review/styles",https://www.allmusic.com/album/life-mw0000647292,whole_album,high,AllMusic: ambient pop
+cardigans-life,poprock,Life (The Cardigans album): editions and release metadata,https://en.wikipedia.org/wiki/Life_(The_Cardigans_album),whole_album,high,Album genre metadata: pop rock
+cardigans-life,indierock,"John Bush, AllMusic, Life review/styles",https://www.allmusic.com/album/life-mw0000647292,whole_album,high,AllMusic: indie rock
+cardigans-firstbandonthemoon,indiepop,"John Bush, AllMusic, First Band on the Moon review/styles",https://www.allmusic.com/album/first-band-on-the-moon-mw0000073750,whole_album,high,AllMusic: indie pop
+cardigans-firstbandonthemoon,tweepop,"John Bush, AllMusic, First Band on the Moon review/styles",https://www.allmusic.com/album/first-band-on-the-moon-mw0000073750,whole_album,high,AllMusic: twee pop
+cardigans-firstbandonthemoon,dreampop,"John Bush, AllMusic, First Band on the Moon review/styles",https://www.allmusic.com/album/first-band-on-the-moon-mw0000073750,whole_album,high,AllMusic: dream pop
+cardigans-firstbandonthemoon,poprock,First Band on the Moon: genre and album identity,https://en.wikipedia.org/wiki/First_Band_on_the_Moon,whole_album,high,Album genre metadata: pop rock
+cardigans-firstbandonthemoon,powerpop,First Band on the Moon: genre and album identity,https://en.wikipedia.org/wiki/First_Band_on_the_Moon,whole_album,high,Album genre metadata: power pop
+cardigans-firstbandonthemoon,electropop,First Band on the Moon: genre and album identity,https://en.wikipedia.org/wiki/First_Band_on_the_Moon,whole_album,high,Album genre metadata: electropop
+cardigans-firstbandonthemoon,indierock,"John Bush, AllMusic, First Band on the Moon review/styles",https://www.allmusic.com/album/first-band-on-the-moon-mw0000073750,whole_album,high,AllMusic: indie rock
+cardigans-firstbandonthemoon,adultalternativepoprock,"John Bush, AllMusic, First Band on the Moon review/styles",https://www.allmusic.com/album/first-band-on-the-moon-mw0000073750,whole_album,high,AllMusic: adult alternative pop/rock
+cardigans-granturismo,alternativepoprock,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,high,AllMusic: alternative pop/rock
+cardigans-granturismo,indiepop,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,high,AllMusic: indie pop
+cardigans-granturismo,adultalternativepoprock,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,high,AllMusic: adult alternative pop/rock
+cardigans-granturismo,alternativerock,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,medium,"AllMusic: alternative/indie rock, editorial token normalization"
+cardigans-granturismo,electronica,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,high,Album review: electronica experiments
+cardigans-granturismo,triphop,"Trouser Press, Cardigans: Gran Turismo review",https://trouserpress.com/reviews/cardigans/,some_tracks,high,Trouser Press: slower tracks approach trip-hop; intentionally low rank
+cardigans-granturismo,indierock,"Stephen Thomas Erlewine, AllMusic, Gran Turismo review/styles",https://www.allmusic.com/album/gran-turismo-mw0000043830,whole_album,high,AllMusic: alternative/indie rock

@@ -222,6 +222,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Karen Carpenter', 'Tracey Thorn', 'The Who'],
     source: 'Linda Perry on Matt Pinfield’s podcast (2023), discussing her influences',
   },
+  cardigans: {
+    names: ['The Sundays', 'The Smiths', 'The Stone Roses', 'Depeche Mode', 'Radiohead'],
+    source: 'Nina Persson, The New World and Write Wyatt 2018 (Sundays, Smiths, Stone Roses as early influences); Magnus Sveningsson, Albumism (Depeche Mode and Radiohead on Gran Turismo)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

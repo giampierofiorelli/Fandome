@@ -1,0 +1,7 @@
+﻿album_id,title,year,type,current_catalog_status,action,notes
+cardigans-emmerdale,Emmerdale,1994,studio,not_found,add,Artist absent from catalog.ts and seed.ts; no descriptor file as of 2026-10-28
+cardigans-life,Life,1995,studio,not_found,add,Artist absent from catalog.ts and seed.ts; no descriptor file as of 2026-10-28
+cardigans-firstbandonthemoon,First Band on the Moon,1996,studio,not_found,add,Artist absent from catalog.ts and seed.ts; no descriptor file as of 2026-10-28
+cardigans-granturismo,Gran Turismo,1998,studio,not_found,add,Artist absent from catalog.ts and seed.ts; no descriptor file as of 2026-10-28
+cardigans-longgonebeforedaylight,Long Gone Before Daylight,2003,studio,not_found,add_in_phase_02,Remaining studio album; not described in this phase
+cardigans-superextragravity,Super Extra Gravity,2005,studio,not_found,add_in_phase_02,Remaining studio album; not described in this phase

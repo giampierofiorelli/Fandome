@@ -309,6 +309,7 @@ const ROWS: Row[] = [
   ['aqua', 'Aqua', '#3fb6d9', 'Barbie Girl and Danish bubblegum dance', [['Aquarium', 1997], ['Aquarius', 2000], ['Megalomania', 2011]]],
   ['aceofbase', 'Ace of Base', '#e0b13c', 'All That She Wants and Swedish reggae-pop', [['Happy Nation', 1992], ['The Bridge', 1995], ['Flowers', 1998], ['Da Capo', 2002], ['The Golden Ratio', 2010]]],
   ['4nonblondes', '4 Non Blondes', '#c4683a', 'What’s Up? and Linda Perry’s voice', [['Bigger, Better, Faster, More!', 1992]]],
+  ['cardigans', 'The Cardigans', '#d77a9a', 'Lovefool and Swedish indie pop', [['Emmerdale', 1994], ['Life', 1995], ['First Band on the Moon', 1996], ['Gran Turismo', 1998], ['Long Gone Before Daylight', 2003], ['Super Extra Gravity', 2005]]],
   ['geolier', 'Geolier', '#3f5a8a', 'Naples rap that fills stadiums', [['Emanuele', 2019], ['Il coraggio dei bambini', 2023], ['Dio lo sa', 2024], ['Tutto è possibile', 2026]]],
   ['georgeezra', 'George Ezra', '#d9a35a', 'Feel-good songs and road trips', [['Wanted on Voyage', 2014], ['Staying at Tamara’s', 2018], ['Gold Rush Kid', 2022]]],
   ['ghali', 'Ghali', '#e0a03f', 'Milan rap with a global heart', [['Album', 2017], ['DNA', 2020], ['Sensazione ultra', 2022], ['Pizza Kebab Vol. 1', 2024]]],
