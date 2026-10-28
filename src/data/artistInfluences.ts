@@ -254,6 +254,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Yes', 'Emerson, Lake & Palmer', 'Genesis', 'Pink Floyd', 'Gentle Giant'],
     source: 'David Paich and Steve Lukather, AXS TV 2026 (from the 2015 Toto XIV interviews): they studied Yes and ELP records, Genesis and Pink Floyd inspired them, the vocal harmonies drew on Gentle Giant; Paich, MusicRadar (Keith Emerson)',
   },
+  lionelrichie: {
+    names: ['Marvin Gaye', 'Elton John', 'James Brown', 'Stevie Wonder', 'Smokey Robinson', 'Holland–Dozier–Holland', 'The Beatles', 'Billy Joel', 'Paul McCartney'],
+    source: 'Lionel Richie: Forbes 2017 (his biggest influences: Marvin Gaye, Elton John, James Brown); Hebb On Air (Motown songwriting models: Gaye, Wonder, Robinson, Holland–Dozier–Holland); 13th Floor (Beatles, Billy Joel, McCartney as the pop direction he wanted). Parents’ records and college listening left out',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
