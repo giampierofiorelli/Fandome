@@ -54,3 +54,8 @@ The **next phase** should cover **Pure Instinct (1996)**, **Eye II Eye (1999)** 
 
 - Rows imported as delivered; the band's own co-producer credit dropped (Crazy World: Keith Olsen; Face the Heat: Bruce Fairbairn). `popmetal` already registered in phase 02.
 - Moment of Glory (2000) stays in the catalogue but is not scheduled for descriptors (officially a compilation of rearranged material).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows in `docs/descriptors/reception/scorpions.csv`.
+- Savage Amusement: Def Leppard confirmed (Ultimate Classic Rock, Rivadavia: "a pale imitation" of Hysteria; Media Overkill "a shameless Hysteria wannabe"). No critic comparison found for the other three (Keith Olsen's and Bruce Fairbairn's other clients excluded): left empty.
