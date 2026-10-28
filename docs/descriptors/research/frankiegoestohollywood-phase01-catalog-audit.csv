@@ -1,0 +1,3 @@
+﻿artist_id,artist,album_id,title,year,type,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+frankiegoestohollywood,Frankie Goes to Hollywood,frankiegoestohollywood-welcometothepleasuredome,Welcome to the Pleasuredome,1984,studio,no,no,no,add_artist_and_album,Not in catalog.ts or seed.ts; proposed artist id; descriptor URL returned 404
+frankiegoestohollywood,Frankie Goes to Hollywood,frankiegoestohollywood-liverpool,Liverpool,1986,studio,no,no,no,add_artist_and_album,Second and final studio album; not in catalog.ts or seed.ts
