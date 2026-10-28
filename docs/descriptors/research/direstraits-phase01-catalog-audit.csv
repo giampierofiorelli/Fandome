@@ -1,0 +1,5 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action
+direstraits,direstraits-direstraits,Dire Straits,1978,studio,existing,new_phase01_only,Keep existing catalogue entry; import only this new descriptor row; no duplicate album
+direstraits,direstraits-communiqu,Communiqué,1979,studio,existing,new_phase01_only,Keep existing catalogue entry; import only this new descriptor row; no duplicate album
+direstraits,direstraits-makingmovies,Making Movies,1980,studio,existing,new_phase01_only,Keep existing catalogue entry; import only this new descriptor row; no duplicate album
+direstraits,direstraits-loveovergold,Love over Gold,1982,studio,existing,new_phase01_only,Keep existing catalogue entry; import only this new descriptor row; no duplicate album

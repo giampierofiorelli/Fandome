@@ -238,6 +238,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Rolling Stones', 'The Beatles', 'Etta James', 'Eagles', 'Steve Miller', 'Linda Ronstadt', 'The Mamas & the Papas', 'Elvis Presley', 'Carole King', 'Cher', 'Karla Bonoff', 'Emmylou Harris', 'Heart', 'Pat Benatar', 'The Shirelles', 'The Crystals', 'The Shangri-Las', 'The Velvet Underground', 'Patti Smith', 'Rare Earth', 'The Partridge Family', 'The Osmonds'],
     source: 'Alex Cooper, Reverb 2018 (Stones, Beatles, Etta James, Eagles, Steve Miller, Linda Ronstadt; also Motown and Stax, labels left out); Katrina Leskanich, Rediscover the 80s 2012 (the rest, her formative influences)',
   },
+  direstraits: {
+    names: ['Bob Dylan', 'J.J. Cale', 'The Shadows', 'Hank Marvin', 'Chet Atkins'],
+    source: 'Mark Knopfler: Guitar Player 1984 (Dylan as a teenager); reprinted interview (J.J. Cale while his style developed); Guardian 1979 and Guitar Player 2024 (The Shadows, Hank Marvin); Guitar Player 2022 (Chet Atkins, a major influence)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
