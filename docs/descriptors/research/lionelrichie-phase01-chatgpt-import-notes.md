@@ -61,3 +61,4 @@ Import and validate with `scripts/validate-descriptors.ts` after creating the ar
 
 - 4 rows imported as delivered; catalogue 11 solo studio albums 1982-2012 (Commodores not included). New genre contemporarycountry (parent country).
 - Scene US en 1980 pop,soul,rnb. Artist influences from his interviews; parents' records and college listening left out.
+- Reception researched by Claude.
