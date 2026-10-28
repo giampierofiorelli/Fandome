@@ -1,0 +1,9 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+beegees,beegees-thebeegeessingandplay14barrygibbsongs,The Bee Gees Sing and Play 14 Barry Gibb Songs,1965,studio,not found in catalog.ts or seed.ts,no existing docs/descriptors/beegees.csv,add album; import Phase 01 draft,1965 multi-year earlier singles; curator review
+beegees,beegees-spicksandspecks,Spicks and Specks,1966,studio,not found in catalog.ts or seed.ts,no existing docs/descriptors/beegees.csv,add album; import Phase 01 draft,"Studio original, not deluxe reissue"
+beegees,beegees-beegees1st,Bee Gees' 1st,1967,studio,not found in catalog.ts or seed.ts,no existing docs/descriptors/beegees.csv,add album; import Phase 01 draft,"Studio original, not deluxe reissue"
+beegees,beegees-horizontal,Horizontal,1968,studio,not found in catalog.ts or seed.ts,no existing docs/descriptors/beegees.csv,add album; import Phase 01 draft,"Studio original, not deluxe reissue"
+beegees,beegees-idea,Idea,1968,studio,not found in catalog.ts or seed.ts,not phase 01,future Phase 02 candidate,No descriptor row included; do not prefill Phase 02
+beegees,beegees-odessa,Odessa,1969,studio,not found in catalog.ts or seed.ts,not phase 01,future Phase 02 candidate,No descriptor row included; do not prefill Phase 02
+beegees,beegees-cucumbercastle,Cucumber Castle,1970,studio,not found in catalog.ts or seed.ts,not phase 01,future Phase 02 candidate,No descriptor row included; do not prefill Phase 02
+beegees,beegees-2yearson,2 Years On,1970,studio,not found in catalog.ts or seed.ts,not phase 01,future Phase 02 candidate,No descriptor row included; do not prefill Phase 02
