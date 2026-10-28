@@ -174,6 +174,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Billy Cobham', 'Al Jarreau', 'Eumir Deodato', 'Brian Auger', 'Genesis', 'Peter Gabriel', 'Stevie Wonder', 'Elton John'],
     source: 'Pino Nicolosi, Il Sussidiario 2014 (idols the band grew up on: Billy Cobham, Al Jarreau, Deodato, Brian Auger; Genesis and Peter Gabriel); Lino Nicolosi, Billboard 1996 (Stevie Wonder, Elton John, Al Jarreau). Chaka Khan and Pink Floyd left out: Jazzitalia biography, not the band’s words',
   },
+  moderntalking: {
+    names: ['Bee Gees', 'Barry Manilow'],
+    source: 'Detlef Wiedeke (studio choir), Kreiszeitung Wochenblatt: the falsetto choruses modelled on the Bee Gees; Thomas Anders, KISS FM 2022 (Barry Manilow inspired him as a singer). Fox the Fox left out: claimed only in unsigned summaries',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

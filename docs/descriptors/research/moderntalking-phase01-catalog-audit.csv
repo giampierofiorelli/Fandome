@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,already_in_catalog,action,notes
+moderntalking-the1stalbum,Modern Talking,The 1st Album,1985,studio,no,ADD,No Modern Talking artist or album in seed.ts/catalog.ts as checked on 27 Oct 2026; register artist id moderntalking first.
+moderntalking-letstalkaboutlove,Modern Talking,Let's Talk About Love,1985,studio,no,ADD,No Modern Talking artist or album in seed.ts/catalog.ts as checked on 27 Oct 2026; register artist id moderntalking first.
+moderntalking-readyforromance,Modern Talking,Ready for Romance,1986,studio,no,ADD,No Modern Talking artist or album in seed.ts/catalog.ts as checked on 27 Oct 2026; register artist id moderntalking first.
+moderntalking-inthemiddleofnowhere,Modern Talking,In the Middle of Nowhere,1986,studio,no,ADD,No Modern Talking artist or album in seed.ts/catalog.ts as checked on 27 Oct 2026; register artist id moderntalking first.

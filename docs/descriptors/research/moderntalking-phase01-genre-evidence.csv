@@ -1,0 +1,30 @@
+﻿album_id,genre,source_url,scope,evidence
+moderntalking-the1stalbum,eurodisco,https://en.wikipedia.org/wiki/The_1st_Album_(Modern_Talking_album),whole_album,Genre explicitly listed as Eurodisco.
+moderntalking-the1stalbum,synthpop,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic album style Synth Pop.
+moderntalking-the1stalbum,dancepop,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic album style Dance-Pop.
+moderntalking-the1stalbum,europop,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic album style Euro-Pop.
+moderntalking-the1stalbum,eurodance,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic retrospective label Euro-Dance; do not mistake for later 1990s Eurodance sound.
+moderntalking-the1stalbum,disco,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic album style Disco.
+moderntalking-the1stalbum,clubdance,https://www.allmusic.com/album/1st-album-mw0000739813,whole_album,AllMusic album style Club/Dance.
+moderntalking-the1stalbum,pop,https://vinyl.bertelsmann.com/en/records/view/L1774,whole_album,Record-archive parent genre Pop/Rock; broad pop token is editorial extraction from category.
+moderntalking-the1stalbum,rnb,https://www.allmusic.com/album/1st-album-mw0000739813,catalog_only,AllMusic genre shelf R&B; low-weight listing; not a claim of R&B dominating musical sound.
+moderntalking-letstalkaboutlove,eurodisco,https://en.wikipedia.org/wiki/Let%27s_Talk_About_Love_(Modern_Talking_album),whole_album,Album genre Eurodisco.
+moderntalking-letstalkaboutlove,dancepop,https://www.allmusic.com/album/lets-talk-about-love-mw0000458171,whole_album,AllMusic style Dance-Pop.
+moderntalking-letstalkaboutlove,synthpop,https://www.allmusic.com/album/lets-talk-about-love-mw0000458171,whole_album,AllMusic Synth Pop.
+moderntalking-letstalkaboutlove,europop,https://www.allmusic.com/album/lets-talk-about-love-mw0000458171,whole_album,AllMusic Euro-Pop.
+moderntalking-letstalkaboutlove,eurodance,https://www.allmusic.com/album/lets-talk-about-love-mw0000458171,whole_album,AllMusic retrospective Euro-Dance.
+moderntalking-letstalkaboutlove,clubdance,https://www.allmusic.com/album/lets-talk-about-love-mw0000458171,whole_album,AllMusic Club/Dance.
+moderntalking-letstalkaboutlove,pop,https://vinyl.bertelsmann.com/en/records/view/L1689,whole_album,Bertelsmann classification Pop/Rock; broad pop shorthand.
+moderntalking-readyforromance,eurodisco,https://en.wikipedia.org/wiki/Ready_for_Romance,whole_album,Album tagged Eurodisco.
+moderntalking-readyforromance,dancepop,https://www.allmusic.com/album/ready-for-romance-mw0000453558,whole_album,AllMusic style Dance-Pop.
+moderntalking-readyforromance,synthpop,https://www.allmusic.com/album/ready-for-romance-mw0000453558,whole_album,AllMusic style Synth Pop.
+moderntalking-readyforromance,europop,https://www.allmusic.com/album/ready-for-romance-mw0000453558,whole_album,AllMusic style Euro-Pop.
+moderntalking-readyforromance,eurodance,https://www.allmusic.com/album/ready-for-romance-mw0000453558,whole_album,AllMusic retrospective style Euro-Dance.
+moderntalking-readyforromance,clubdance,https://www.allmusic.com/album/ready-for-romance-mw0000453558,whole_album,AllMusic style Club/Dance.
+moderntalking-readyforromance,pop,https://vinyl.bertelsmann.com/en/records/view/L1625,whole_album,Bertelsmann broad Pop/Rock classification.
+moderntalking-inthemiddleofnowhere,eurodisco,https://en.wikipedia.org/wiki/In_the_Middle_of_Nowhere,whole_album,Album genre Eurodisco.
+moderntalking-inthemiddleofnowhere,dancepop,https://www.allmusic.com/album/in-the-middle-of-nowhere-mw0000470188,whole_album,AllMusic style Dance-Pop.
+moderntalking-inthemiddleofnowhere,europop,https://www.allmusic.com/album/in-the-middle-of-nowhere-mw0000470188,whole_album,AllMusic style Euro-Pop.
+moderntalking-inthemiddleofnowhere,eurodance,https://www.allmusic.com/album/in-the-middle-of-nowhere-mw0000470188,whole_album,"AllMusic Euro-Dance, in a retrospective broad genre sense."
+moderntalking-inthemiddleofnowhere,clubdance,https://www.allmusic.com/album/in-the-middle-of-nowhere-mw0000470188,whole_album,AllMusic style Club/Dance.
+moderntalking-inthemiddleofnowhere,pop,https://music.apple.com/us/album/in-the-middle-of-nowhere/269769139,whole_album,Apple Music genre Pop.
