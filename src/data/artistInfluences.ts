@@ -178,6 +178,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Bee Gees', 'Fox the Fox', 'Barry Manilow'],
     source: 'Detlef Wiedeke (studio choir), Kreiszeitung Wochenblatt: the falsetto choruses modelled on the Bee Gees; Thomas Anders, KISS FM 2022 (Barry Manilow inspired him as a singer); Dieter Bohlen named the falsetto chorus of Fox the Fox’s Precious Little Diamond as his model (Wikipedia)',
   },
+  falco: {
+    names: ['David Bowie', 'Jaco Pastorius'],
+    source: 'Falco on Bowie as his idol and Heroes (Die Presse), confirmed by label founder Markus Spiegel (falco.net 2008); Thomas Rabitsch on Falco emulating Jaco Pastorius on bass (Wiener 2007). Klaus Nomi left out: a stage-persona model, not a musical influence',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

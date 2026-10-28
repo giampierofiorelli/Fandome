@@ -1,0 +1,35 @@
+﻿album_id,genre,source_url,scope,evidence
+falco-einzelhaft,newwave,https://www.allmusic.com/album/einzelhaft-mw0000389198,whole_album,Album style New Wave in AllMusic
+falco-einzelhaft,synthpop,https://musicbrainz.org/release-group/0f936c1c-9c56-3232-9e17-c3c2309a6d4b,whole_album,Release-group synth-pop genre tag
+falco-einzelhaft,dancepop,https://www.allmusic.com/album/einzelhaft-mw0000389198,whole_album,Album style Dance-Pop
+falco-einzelhaft,neuedeutschewelle,https://musicbrainz.org/release-group/0f936c1c-9c56-3232-9e17-c3c2309a6d4b,whole_album,Release-group Neue Deutsche Welle tag; NEW TOKEN
+falco-einzelhaft,electronic,https://musicbrainz.org/release-group/0f936c1c-9c56-3232-9e17-c3c2309a6d4b,whole_album,Electronic release-group tag; synth and programmed drum foundation
+falco-einzelhaft,funk,https://trouserpress.com/reviews/falco/,some_tracks,Critic notes pseudo-funk of Der Kommissar and Maschine Brennt
+falco-einzelhaft,rock,https://trouserpress.com/reviews/falco/,some_tracks,Review explicitly discusses rock elements on Einzelhaft
+falco-einzelhaft,hiphop,https://daily.redbullmusicacademy.com/2017/01/falco-peter-kruder-interview/,some_tracks,"Peter Kruder interview explicitly describes Falco as introducing hip-hop influence in his pop; album-level hybrid, track-specific rap"
+falco-jungeroemer,newwave,https://www.allmusic.com/album/junge-roemer-mw0000367238,whole_album,AllMusic assigns New Wave album style
+falco-jungeroemer,pop,https://de.wikipedia.org/wiki/Junge_Roemer,whole_album,German album infobox explicitly labels pop
+falco-jungeroemer,synthpop,https://en.wikipedia.org/wiki/Junge_Roemer,whole_album,English album infobox explicitly labels synth-pop
+falco-jungeroemer,funk,https://de.wikipedia.org/wiki/Junge_Roemer,whole_album,German album infobox explicitly labels funk; corroborated by period synth/brass arrangement review
+falco-jungeroemer,dancepop,https://www.allmusic.com/album/junge-roemer-mw0000367238,whole_album,AllMusic album style Dance-Pop
+falco-jungeroemer,rock,https://de.wikipedia.org/wiki/Junge_Roemer,some_tracks,German album infobox labels rock as component
+falco-jungeroemer,phillysoul,https://trouserpress.com/reviews/falco/,texture,"Critic compares the record tonal palette to Philly soul; texture only, not a documented Philly soul scene"
+falco-falco3,poprock,https://www.chartsurfer.de/artist/falco/falco-3-album_frpehu.html,whole_album,1985 pressing described with Pop Rock style
+falco-falco3,newwave,https://www.allmusic.com/album/falco-3-mw0000189829,whole_album,AllMusic lists New Wave
+falco-falco3,dancepop,https://www.allmusic.com/album/falco-3-mw0000189829,whole_album,AllMusic lists Dance-Pop
+falco-falco3,synthpop,https://www.chartsurfer.de/artist/falco/falco-3-album_frpehu.html,whole_album,1985 pressing described with Synth-pop style
+falco-falco3,pop,https://laut.de/Falco/Alben/Falco-3-26201,whole_album,Album is labeled Pop by laut.de
+falco-falco3,rock,https://laut.de/Falco/Alben/Falco-3-26201,some_tracks,Album is also labelled Rock by laut.de
+falco-falco3,germanrap,https://en.wikipedia.org/wiki/Falco_3,some_tracks,"Album genre German rap explicitly named; NEW TOKEN, rapped/spoken vocal elements"
+falco-falco3,countryblues,https://www.latimes.com/archives/la-xpm-1986-04-06-ca-24741-story.html,some_tracks,Critic describes Bob Dylan cover in acoustic country-blues style; single song only
+falco-emotional,pop,https://music.apple.com/us/album/emotional/355932017,whole_album,Apple Music identifies album Pop
+falco-emotional,newwave,https://www.allmusic.com/album/r7100,whole_album,AllMusic genre style New Wave
+falco-emotional,dancepop,https://www.allmusic.com/album/r7100,whole_album,AllMusic style Dance-Pop
+falco-emotional,synthpop,https://www.chartsurfer.de/artist/falco/emotional-album_frpcru.html,whole_album,1986 original pressing style Synth-pop
+falco-emotional,poprock,https://www.chartsurfer.de/artist/falco/emotional-album_frpcru.html,whole_album,Original pressing style Pop Rock
+falco-emotional,soul,https://rockmefalco.wordpress.com/en/translations/album-en/emotional-en/,some_tracks,Specialist analysis characterises Emotional and Star Of Moon And Sun as soul/blues
+falco-emotional,blues,https://rockmefalco.wordpress.com/en/translations/album-en/emotional-en/,some_tracks,Same analysis explicitly describes blues on specific tracks
+falco-emotional,swing,https://falco-compendium.at/musik/emotional/crime-time/,some_tracks,Crime Time is described as swing / big-band
+falco-emotional,jazz,https://falco-compendium.at/musik/emotional/crime-time/,some_tracks,Crime Time described as jazz arrangement
+falco-emotional,funk,https://rockmefalco.wordpress.com/en/translations/album-en/emotional-en/,some_tracks,The Sound Of Musik explicitly described as funky
+falco-emotional,electronic,https://rockmefalco.wordpress.com/en/translations/album-en/emotional-en/,some_tracks,Kamikaze Cappa and Cowboyz And Indianz described as electronic

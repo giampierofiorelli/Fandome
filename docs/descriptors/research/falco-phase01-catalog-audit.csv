@@ -1,0 +1,11 @@
+﻿album_id,artist,title,year,type,already_in_catalog,already_described,phase,action,notes
+falco-einzelhaft,Falco,Einzelhaft,1982,studio,no,no,01,ADD,No Falco artist in catalog.ts or seed.ts; first register artist id falco.
+falco-jungeroemer,Falco,Junge Roemer,1984,studio,no,no,01,ADD,Add as part of phase 01
+falco-falco3,Falco,Falco 3,1985,studio,no,no,01,ADD,Add as part of phase 01
+falco-emotional,Falco,Emotional,1986,studio,no,no,01,ADD,Add as part of phase 01
+falco-wienerblut,Falco,Wiener Blut,1988,studio,no,no,02,ADD,Add in next phase.
+falco-datadegroove,Falco,Data de Groove,1990,studio,no,no,02,ADD,Add in next phase.
+falco-nachtflug,Falco,Nachtflug,1992,studio,no,no,02,ADD,Add in next phase.
+falco-outofthedarkintothelight,Falco,Out of the Dark (Into the Light),1998,studio,no,no,02,ADD,Add in next phase.
+falco-verdammtwirlebennoch,Falco,Verdammt wir leben noch,1999,compilation,no,no,excluded,SKIP,"Specialist discography classes it under compiled albums, not studio; despite some new tracks."
+falco-thespiritneverdies,Falco,The Spirit Never Dies,2009,compilation,no,no,excluded,SKIP,"Specialist discography classes it under compiled albums, not a new studio LP."
