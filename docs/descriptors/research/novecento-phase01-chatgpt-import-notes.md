@@ -48,3 +48,7 @@ None: `italodisco`, `synthpop`, `funk`, `pop`, `poprock`, `dance`, `ballad`, `el
 - `novecento_phase01_evidence-notes.md` — album-specific audit trail / disputed dates and credits.
 - `novecento_phase01_catalog-audit.csv` — add rows/artist.
 - `CLAUDE_IMPORT.md` — these instructions.
+
+## Claude import note (28 Oct 2026)
+
+Debut credits checked on the sleeve (Discogs API): Pino Nicolosi on keyboards and Crumar Bit One, Max Costa programming drums and synthesizers, saxophone by Claudio Pascoli (German edition). Leaving Now's sleeves list no musicians or gear, so its instruments stay empty. No critic reviews found for any of the four albums: acclaim empty. Reception researched by Claude.
