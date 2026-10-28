@@ -1,0 +1,10 @@
+﻿album_id,artist_id,title,year,type,in_catalog_ts,in_seed_ts,descriptor_file_in_repo,phase,in_this_zip,action,note
+lisastansfield-affection,lisastansfield,Affection,1989,studio,no,no,no,01,yes,add_artist_and_album_before_import,Original solo studio album.
+lisastansfield-reallove,lisastansfield,Real Love,1991,studio,no,no,no,01,yes,add_artist_and_album_before_import,Original solo studio album.
+lisastansfield-sonatural,lisastansfield,So Natural,1993,studio,no,no,no,01,yes,add_artist_and_album_before_import,Original solo studio album.
+lisastansfield-lisastansfield,lisastansfield,Lisa Stansfield,1997,studio,no,no,no,01,yes,add_artist_and_album_before_import,Original solo studio album.
+lisastansfield-swing,lisastansfield,Swing,1999,soundtrack,no,no,no,future,no,review_soundtrack_significance_before_adding,Not yet listed; keep soundtrack separate from standard studio chronology.
+lisastansfield-faceup,lisastansfield,Face Up,2001,studio,no,no,no,future,no,future_studio_album_to_add,Original solo studio album.
+lisastansfield-themoment,lisastansfield,The Moment,2004,studio,no,no,no,future,no,future_studio_album_to_add,Original solo studio album.
+lisastansfield-seven,lisastansfield,Seven,2014,studio,no,no,no,future,no,future_studio_album_to_add,Original solo studio album.
+lisastansfield-deeper,lisastansfield,Deeper,2018,studio,no,no,no,future,no,future_studio_album_to_add,Original solo studio album.

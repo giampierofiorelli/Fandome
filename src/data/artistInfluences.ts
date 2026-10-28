@@ -266,6 +266,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Sly and the Family Stone', 'James Brown', 'Ohio Players'],
     source: 'Larry Blackmon: Washington Post 1995 (Sly Stone’s impact on Cameo; the New York City Players named after the Ohio Players), Broward Palm Beach New Times 2015 (James Brown at the Apollo)',
   },
+  lisastansfield: {
+    names: ['Diana Ross', 'Marvin Gaye', 'Chaka Khan', 'Gladys Knight', 'Dionne Warwick', 'Barry White', 'Luther Vandross', 'Tammi Terrell'],
+    source: 'Lisa Stansfield: lisastansfield.net 2014 (Diana Ross her first inspiration, with Marvin Gaye), Los Angeles Times 1990 (Ross, Chaka Khan, Gladys Knight, Dionne Warwick, Barry White, Luther Vandross), Boston Globe 2018 (Tammi Terrell, on her voice)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

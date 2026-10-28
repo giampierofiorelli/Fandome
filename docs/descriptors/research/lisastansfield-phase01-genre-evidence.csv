@@ -1,0 +1,33 @@
+﻿album_id,genre,source,scope,evidence,evidence_strength
+lisastansfield-affection,soul,https://www.allmusic.com/album/affection-mw0000654618,whole_album,AllMusic: 1970s-style soul arrangements dominate,high
+lisastansfield-affection,rnb,https://www.allmusic.com/album/affection-mw0000654618,whole_album,AllMusic primary R&B genre,high
+lisastansfield-affection,contemporaryrnb,https://www.allmusic.com/album/affection-mw0000654618,whole_album,AllMusic Contemporary R&B album style,high
+lisastansfield-affection,dancepop,https://www.allmusic.com/album/affection-mw0000654618,whole_album,AllMusic Dance-Pop album style,high
+lisastansfield-affection,house,https://www.allmusic.com/album/affection-mw0000654618,some_tracks,Critic explicitly notes house-music elements; weighted behind soul,high
+lisastansfield-affection,newjackswing,https://en.wikipedia.org/wiki/Affection_(Lisa_Stansfield_album),some_tracks,Genre listed by the secondary album discography; not assumed from genre family,medium
+lisastansfield-affection,adultcontemporary,https://www.allmusic.com/album/affection-mw0000654618,whole_album,AllMusic Adult Contemporary album style,high
+lisastansfield-affection,phillysoul,https://en.wikipedia.org/wiki/Affection_(Lisa_Stansfield_album),texture,Rolling Stone characterises Philly soul swing in original reception; texture not whole formal identity,medium
+lisastansfield-affection,disco,https://www.allmusic.com/album/affection-mw0000654618,some_tracks,AllMusic calls This Is the Right Time a disco track,high
+lisastansfield-affection,downtempo,https://www.chartsurfer.de/artist/lisa-stansfield/affection-album_frpneu.html,some_tracks,Contemporary LP pressing indexed as Downtempo/Soul by source derived from physical release,medium
+lisastansfield-reallove,rnb,https://www.allmusic.com/album/real-love-mw0000270157,whole_album,AllMusic main R&B classification,high
+lisastansfield-reallove,soul,https://www.washingtonpost.com/archive/lifestyle/style/1991/12/22/pop-recordings/50e88af8-2db5-4b59-b1a0-f64303790326/,whole_album,Washington Post hears classical US soul throughout,high
+lisastansfield-reallove,contemporaryrnb,https://www.allmusic.com/album/real-love-mw0000270157,whole_album,AllMusic style,high
+lisastansfield-reallove,dancepop,https://www.allmusic.com/album/real-love-mw0000270157,some_tracks,AllMusic dance-pop style; title and Change among brighter tracks,high
+lisastansfield-reallove,adultcontemporary,https://www.allmusic.com/album/real-love-mw0000270157,whole_album,AllMusic style; many intimate ballads,high
+lisastansfield-reallove,pop,https://www.washingtonpost.com/archive/lifestyle/style/1991/12/22/pop-recordings/50e88af8-2db5-4b59-b1a0-f64303790326/,whole_album,Contemporary Washington Post pop review explicitly frames crossover album,high
+lisastansfield-reallove,disco,https://www.washingtonpost.com/archive/lifestyle/style/1991/12/22/pop-recordings/50e88af8-2db5-4b59-b1a0-f64303790326/,some_tracks,Critic explicitly evokes 70s dance/disco traditions in songs; minor weight,high
+lisastansfield-sonatural,contemporaryrnb,https://www.allmusic.com/album/so-natural-mw0000459115,whole_album,AllMusic contemporary R&B style,high
+lisastansfield-sonatural,rnb,https://www.allmusic.com/album/so-natural-mw0000459115,whole_album,AllMusic primary genre R&B,high
+lisastansfield-sonatural,soul,https://www.allmusic.com/album/so-natural-mw0000459115,whole_album,Review describes the soul/R&B sound and lush arranging,high
+lisastansfield-sonatural,adultcontemporary,https://www.allmusic.com/album/so-natural-mw0000459115,whole_album,AllMusic Adult Contemporary style; ballad-heavy,high
+lisastansfield-sonatural,dancepop,https://www.allmusic.com/album/so-natural-mw0000459115,some_tracks,AllMusic Dance-Pop style; critic explicitly notes limited upbeat tracks,high
+lisastansfield-sonatural,downtempo,https://musicbase.net/so-natural,whole_album,1993 physical-release music styles include Downtempo; consistent with slow album,medium
+lisastansfield-sonatural,swingbeat,https://musicbase.net/so-natural,some_tracks,Discography source transcribes Swingbeat style on 1993 CD; lower-weight classification,medium
+lisastansfield-lisastansfield,rnb,https://www.allmusic.com/album/lisa-stansfield-mw0000071133,whole_album,AllMusic album primary genre R&B,high
+lisastansfield-lisastansfield,soul,https://en.wikipedia.org/wiki/Lisa_Stansfield_(album),whole_album,Album genre listings soul; AllMusic describes blue-eyed soul,high
+lisastansfield-lisastansfield,contemporaryrnb,https://www.allmusic.com/album/lisa-stansfield-mw0000071133,whole_album,AllMusic style Contemporary R&B,high
+lisastansfield-lisastansfield,dancepop,https://www.allmusic.com/album/lisa-stansfield-mw0000071133,whole_album,AllMusic hears disco-inflected dance-pop,high
+lisastansfield-lisastansfield,disco,https://www.allmusic.com/album/lisa-stansfield-mw0000071133,some_tracks,"AllMusic describes disco-inflected arrangements, not a pure disco LP",high
+lisastansfield-lisastansfield,funk,https://www.scmp.com/article/190929/lisa-stansfield,some_tracks,Contemporary critic singles out The Line as funky; album genre listing includes funk,high
+lisastansfield-lisastansfield,pop,https://en.wikipedia.org/wiki/Lisa_Stansfield_(album),whole_album,Original album genre metadata names pop,high
+lisastansfield-lisastansfield,adultcontemporary,https://www.allmusic.com/album/lisa-stansfield-mw0000071133,whole_album,AllMusic style Adult Contemporary,high
