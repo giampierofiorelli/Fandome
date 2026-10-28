@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,catalog_status,descriptor_status,action,evidence
+belindacarlisle-belinda,belindacarlisle,Belinda,1986,studio,ADD_NEW,NEW_PHASE_01,"Add album to catalog.ts, then import descriptor row",https://www.austriancharts.at/showinterpret.asp?interpret=Belinda+Carlisle
+belindacarlisle-heavenonearth,belindacarlisle,Heaven on Earth,1987,studio,ADD_NEW,NEW_PHASE_01,"Add album to catalog.ts, then import descriptor row",https://www.austriancharts.at/showinterpret.asp?interpret=Belinda+Carlisle
+belindacarlisle-runawayhorses,belindacarlisle,Runaway Horses,1989,studio,ADD_NEW,NEW_PHASE_01,"Add album to catalog.ts, then import descriptor row",https://www.austriancharts.at/showinterpret.asp?interpret=Belinda+Carlisle
+belindacarlisle-liveyourlifebefree,belindacarlisle,Live Your Life Be Free,1991,studio,ADD_NEW,NEW_PHASE_01,"Add album to catalog.ts, then import descriptor row",https://www.austriancharts.at/showinterpret.asp?interpret=Belinda+Carlisle

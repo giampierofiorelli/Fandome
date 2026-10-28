@@ -182,6 +182,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['David Bowie', 'Jaco Pastorius'],
     source: 'Falco on Bowie as his idol and Heroes (Die Presse), confirmed by label founder Markus Spiegel (falco.net 2008); Thomas Rabitsch on Falco emulating Jaco Pastorius on bass (Wiener 2007). Klaus Nomi left out: a stage-persona model, not a musical influence',
   },
+  belindacarlisle: {
+    names: ['The Beach Boys', 'The Beatles', 'Phil Spector'],
+    source: 'Belinda Carlisle: The Guardian 2021 (the Beach Boys, Pet Sounds played constantly), American Songwriter 2025 (the Beatles and Phil Spector as formative influences). Left out: the Runaways (a career inspiration, proof an all-female band could work), the Animals and Cat Stevens (grew up listening)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
