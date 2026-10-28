@@ -294,6 +294,7 @@ const ROWS: Row[] = [
   ['gabriellaferri', 'Gabriella Ferri', '#a3705a', 'The voice of Roman song', []],
   ['gazebo', 'Gazebo', '#5a8fd9', 'I like Chopin and Italo disco', [['Gazebo', 1983], ['Telephone Mama', 1984], ['Univision', 1986], ['The Rainbow Tales', 1988], ['Sweet Life', 1989], ['Scenes from the News Broadcast', 1991], ['The Syndrone', 2008], ['Reset', 2015], ['Italo by Numbers', 2018]]],
   ['novecento', 'Novecento', '#8a6fb8', 'The Nicolosi family’s jazz-funk Italo pop', [['Novecento', 1984], ['Dreamland', 1986], ['Shine', 1988], ['Leaving Now', 1991], ['Necessary', 1992], ['C’è un mondo che...', 1997]]],
+  ['snap', 'Snap!', '#e0b23a', 'The Power and Rhythm Is a Dancer', [['World Power', 1990], ['The Madman’s Return', 1992], ['Welcome to Tomorrow', 1994]]],
   ['geolier', 'Geolier', '#3f5a8a', 'Naples rap that fills stadiums', [['Emanuele', 2019], ['Il coraggio dei bambini', 2023], ['Dio lo sa', 2024], ['Tutto è possibile', 2026]]],
   ['georgeezra', 'George Ezra', '#d9a35a', 'Feel-good songs and road trips', [['Wanted on Voyage', 2014], ['Staying at Tamara’s', 2018], ['Gold Rush Kid', 2022]]],
   ['ghali', 'Ghali', '#e0a03f', 'Milan rap with a global heart', [['Album', 2017], ['DNA', 2020], ['Sensazione ultra', 2022], ['Pizza Kebab Vol. 1', 2024]]],

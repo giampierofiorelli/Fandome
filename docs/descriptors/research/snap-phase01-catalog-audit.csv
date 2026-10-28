@@ -1,0 +1,4 @@
+﻿album_id,artist,title,year,type,existing_in_catalog,existing_descriptor,action,reason
+snap-worldpower,Snap!,World Power,1990,studio,no,no,add_artist_and_album,Snap! not in catalog.ts or seed.ts; no descriptor snap.csv; three authentic studio titles
+snap-themadmansreturn,Snap!,The Madman's Return,1992,studio,no,no,add_album,Snap! not in catalog.ts or seed.ts; no descriptor snap.csv; three authentic studio titles
+snap-welcometotomorrow,Snap!,Welcome to Tomorrow,1994,studio,no,no,add_album,Snap! not in catalog.ts or seed.ts; no descriptor snap.csv; three authentic studio titles
