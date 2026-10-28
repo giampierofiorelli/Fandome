@@ -82,3 +82,4 @@ Discography checked against MusicBrainz: https://musicbrainz.org/artist/1129817c
 - 4 rows imported; catalogue 8 studio albums 1988-2008. Scene US en 1980 folk,songwriter.
 - New genres alternativefolk, folksoul; new instrument smallpipes.
 - Artist influences: Joni Mitchell, Simon & Garfunkel, Bob Dylan (Spiegel 2017). Soul names left out (she only 'possibly' drew on them); country names were her mother's records (listening, not influence).
+- Thin rows enriched: Matters of the Heart sounds_like Joni Mitchell (Trouser Press); New Beginning Joan Baez, Odetta (Christgau). Hootie & the Blowfish / Huey Lewis left out (bands of producer Don Gehman). Reception researched by Claude.
