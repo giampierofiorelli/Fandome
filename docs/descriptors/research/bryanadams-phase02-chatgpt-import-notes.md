@@ -57,3 +57,4 @@ Excluded: *So Far So Good* (1993), *The Best of Me* (1999), both compilations; *
 - 4 rows appended as delivered; no new tokens; catalogue already had all four albums.
 - Def Leppard / Foreigner kept in sounds_like: Mutt Lange produced them but is not a member.
 - Reception researched by Claude.
+- Into the Fire: production liverecording|analogtape (Wikipedia: band recorded together across rooms of Cliffhanger Studios, Adams's house; CD SPARS code ADD, Discogs 1205314/1536223).
