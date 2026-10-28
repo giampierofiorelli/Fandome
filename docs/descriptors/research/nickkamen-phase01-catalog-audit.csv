@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_catalog,in_descriptors,action,phase,notes
+nickkamen-nickkamen,Nick Kamen,Nick Kamen,1987,studio,no,no,create artist and add 1992-chronological album in catalog; import new descriptor row,01,"Verified absent from seed/catalog, four album studio discography."
+nickkamen-us,Nick Kamen,Us,1988,studio,no,no,create artist and add 1992-chronological album in catalog; import new descriptor row,01,"Verified absent from seed/catalog, four album studio discography."
+nickkamen-moveuntilwefly,Nick Kamen,Move Until We Fly,1990,studio,no,no,create artist and add 1992-chronological album in catalog; import new descriptor row,01,"Verified absent from seed/catalog, four album studio discography."
+nickkamen-whateverwhenever,Nick Kamen,"Whatever, Whenever",1992,studio,no,no,create artist and add 1992-chronological album in catalog; import new descriptor row,01,"Verified absent from seed/catalog, four album studio discography."
