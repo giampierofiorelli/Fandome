@@ -1,0 +1,44 @@
+album_id,genre,source,url,scope,evidence
+toto-toto,aor,aoty0,https://www.albumoftheyear.org/album/14341-toto-toto.php,whole album,Album of the Year classifies debut as AOR.
+toto-toto,poprock,aoty0,https://www.albumoftheyear.org/album/14341-toto-toto.php,whole album,Album of the Year main pop rock tag.
+toto-toto,yachtrock,aoty0,https://www.albumoftheyear.org/album/14341-toto-toto.php,whole album,Album of the Year listed stylistic category.
+toto-toto,progressiverock,aoty0,https://www.albumoftheyear.org/album/14341-toto-toto.php,whole album,"Explicit progressive rock tag, notably Child’s Anthem and Girl Goodbye."
+toto-toto,softrock,wiki0,https://en.wikipedia.org/wiki/Toto_(album),whole album,Original release metadata calls the album soft rock; softer songs contrast with hard riffs.
+toto-toto,hardrock,sea0,https://www.seaoftranquility.org/reviews.php?id=9097&op=showcontent,some tracks,Girl Goodbye and Hold the Line feature hard-rock attack.
+toto-toto,funkrock,wiki0,https://en.wikipedia.org/wiki/Toto_(album),some tracks,Original album genre list includes funk rock; rock/funk crossover.
+toto-toto,rnb,allrelease0,https://www.allmusic.com/album/release/toto-mr0000354227,some tracks,AllMusic critic explicitly calls out funky R&B; Georgy Porgy.
+toto-toto,jazzrock,wiki0,https://en.wikipedia.org/wiki/Toto_(album),some tracks,"Listed as jazz rock in release genre summary, supported by cross-style arrangements."
+toto-toto,arenarock,wiki0,https://en.wikipedia.org/wiki/Toto_(album),some tracks,The album genre summary names arena rock.
+toto-toto,albumrock,alls0,https://www.allmusic.com/album/toto-r20319/charts-awards/billboard-single,whole album,AllMusic album-level style (broad editorial metadata).
+toto-toto,contemporarypoprock,alls0,https://www.allmusic.com/album/toto-r20319/charts-awards/billboard-single,whole album,AllMusic contemporary pop/rock style.
+toto-toto,adultcontemporary,alls0,https://www.allmusic.com/album/toto-r20319/charts-awards/billboard-single,whole album,"AllMusic adult contemporary style, generic broad categorization."
+toto-toto,disco,sea0,https://www.seaoftranquility.org/reviews.php?id=9097&op=showcontent,some tracks,"Review identifies some disco texture amid multiple styles, not whole-album disco."
+toto-hydra,aor,aoty1,https://www.albumoftheyear.org/album/14342-toto-hydra.php,whole album,Album of the Year AOR main genre.
+toto-hydra,poprock,aoty1,https://www.albumoftheyear.org/album/14342-toto-hydra.php,whole album,Album of the Year pop rock main genre.
+toto-hydra,progressiverock,aoty1,https://www.albumoftheyear.org/album/14342-toto-hydra.php,whole album,Listed progressive rock; Hydra and fantasy-themed suite extend prog.
+toto-hydra,hardrock,aoty1,https://www.albumoftheyear.org/album/14342-toto-hydra.php,whole album,"Listed hard rock, e.g. White Sister / St George."
+toto-hydra,yachtrock,aoty1,https://www.albumoftheyear.org/album/14342-toto-hydra.php,whole album,"Album of the Year yacht rock category, especially smooth 99."
+toto-hydra,softrock,alls1,https://www.allmusic.com/album/hydra-mw0000196514,whole album,AllMusic soft rock style; 99 and Lorraine softer side.
+toto-hydra,albumrock,alls1,https://www.allmusic.com/album/hydra-mw0000196514,whole album,AllMusic album rock style.
+toto-hydra,contemporarypoprock,alls1,https://www.allmusic.com/album/hydra-mw0000196514,whole album,AllMusic contemporary pop/rock style.
+toto-hydra,adultcontemporary,alls1,https://www.allmusic.com/album/hydra-mw0000196514,whole album,AllMusic adult contemporary tag.
+toto-hydra,rnb,sea1,https://www.seaoftranquility.org/reviews.php?id=9098&op=showcontent,some tracks,Professional review identifies Boz Scaggs-style R&B in softer tracks.
+toto-hydra,punk,sea1,https://www.seaoftranquility.org/reviews.php?id=9098&op=showcontent,some tracks,"Reviewer describes isolated punk-like elements, not whole-album punk."
+toto-hydra,funk,sea1,https://www.seaoftranquility.org/reviews.php?id=9098&op=showcontent,some tracks,Funk groove singled out on Mama.
+toto-turnback,aor,aoty2,https://www.albumoftheyear.org/album/14343-toto-turn-back.php,whole album,AOR genre assigned by Album of the Year.
+toto-turnback,hardrock,aoty2,https://www.albumoftheyear.org/album/14343-toto-turn-back.php,whole album,Hard rock main style; louder guitar-centred album.
+toto-turnback,poprock,aoty2,https://www.albumoftheyear.org/album/14343-toto-turn-back.php,whole album,Album of the Year pop rock category.
+toto-turnback,arenarock,lukather2,https://www.stevelukather.com/music/turn-back,whole album,Steve Lukather explicitly says album was an attempt at arena rock.
+toto-turnback,albumrock,alls2,https://www.allmusic.com/album/turn-back-mw0000192224,whole album,AllMusic generic album rock style.
+toto-turnback,contemporarypoprock,alls2,https://www.allmusic.com/album/turn-back-mw0000192224,whole album,AllMusic generic contemporary pop/rock style.
+toto-turnback,softrock,alls2,https://www.allmusic.com/album/turn-back-mw0000192224,whole album,"AllMusic soft rock style, chiefly slower songs; conflicts with hard-rock emphasis."
+toto-turnback,adultcontemporary,alls2,https://www.allmusic.com/album/turn-back-mw0000192224,whole album,"AllMusic adult-contemporary metadata, peripheral relative to arena rock."
+toto-totoiv,aor,aoty3,https://www.albumoftheyear.org/album/14344-toto-toto-iv.php,whole album,Album of the Year AOR main genre.
+toto-totoiv,poprock,aoty3,https://www.albumoftheyear.org/album/14344-toto-toto-iv.php,whole album,Album of the Year pop rock main genre.
+toto-totoiv,softrock,aoty3,https://www.albumoftheyear.org/album/14344-toto-toto-iv.php,whole album,Album of the Year soft rock genre; major ballads and Africa.
+toto-totoiv,yachtrock,aoty3,https://www.albumoftheyear.org/album/14344-toto-toto-iv.php,whole album,Album of the Year yacht rock genre; refined studio pop groove.
+toto-totoiv,albumrock,alls3,https://www.allmusic.com/album/toto-iv-mw0000100642,whole album,AllMusic broad album rock style.
+toto-totoiv,contemporarypoprock,alls3,https://www.allmusic.com/album/toto-iv-mw0000100642,whole album,AllMusic contemporary pop/rock.
+toto-totoiv,adultcontemporary,alls3,https://www.allmusic.com/album/toto-iv-mw0000100642,whole album,AllMusic adult contemporary for softer material.
+toto-totoiv,powerballad,allrelease3,https://www.allmusic.com/album/release/toto-iv-mr0001252695,some tracks,AllMusic explicitly identifies the power-ballad pace of softer tracks.
+toto-totoiv,hardrock,musicwaves,https://www.musicwaves.org/frmReview.aspx?ID=4441&REF=TOTO,some tracks,Music Waves reviewer identifies Afraid of Love as nearly hard rock; subsidiary track-level style.

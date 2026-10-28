@@ -250,6 +250,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Beatles', 'Stevie Wonder', 'Sam Cooke', 'Rod Stewart', 'The Rolling Stones', 'James Brown', 'Jimi Hendrix', 'Prince', 'Sly and the Family Stone', 'Miles Davis', 'The Beach Boys', 'Steely Dan', 'Aretha Franklin', 'The Jackson 5', 'Bruce Springsteen', 'Frank Sinatra', 'Bob Dylan', 'Led Zeppelin', 'Otis Redding', 'Donny Hathaway', 'Todd Rundgren', 'Jackie Wilson', 'Buddy Holly', 'Marvin Gaye', 'Bob Marley'],
     source: 'Sananda Maitreya: Songwriting Magazine 2015, This Is Not Retro 2003, The Guardian 2024 (Rod Stewart’s soul-rock showed him a path), It’s Psychedelic Baby 2024 (Miles Davis a mentor), Antakly Projects 2021',
   },
+  toto: {
+    names: ['Yes', 'Emerson, Lake & Palmer', 'Genesis', 'Pink Floyd', 'Gentle Giant'],
+    source: 'David Paich and Steve Lukather, AXS TV 2026 (from the 2015 Toto XIV interviews): they studied Yes and ELP records, Genesis and Pink Floyd inspired them, the vocal harmonies drew on Gentle Giant; Paich, MusicRadar (Keith Emerson)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

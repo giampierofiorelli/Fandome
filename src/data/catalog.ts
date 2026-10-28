@@ -221,7 +221,7 @@ const ROWS: Row[] = [
   ['baglioni', 'Claudio Baglioni', '#7a9ac9', 'Songs of a little big love', [['Songs of a little big love', 1972], ['Strada facendo', 1981], ['La vita è adesso', 1985], ['Oltre', 1990]]],
   ['venditti', 'Antonello Venditti', '#c9504a', 'Rome, piano and big choirs', [['Lilly', 1975], ['Sotto la pioggia', 1982], ['Cuore', 1984], ['Benvenuti in paradiso', 1991]]],
   ['annaoxa', 'Anna Oxa', '#9a5ac9', 'Transformations and Sanremo', []],
-  ['toto', 'Toto', '#c98a3f', 'Africa, Rosanna and session legends', [['Toto', 1978], ['Hydra', 1979], ['Toto IV', 1982], ['Isolation', 1984], ['Fahrenheit', 1986]]],
+  ['toto', 'Toto', '#c98a3f', 'Africa, Rosanna and session legends', [['Toto', 1978], ['Hydra', 1979], ['Turn Back', 1981], ['Toto IV', 1982], ['Isolation', 1984], ['Dune', 1984], ['Fahrenheit', 1986], ['The Seventh One', 1988], ['Kingdom of Desire', 1992], ['Tambu', 1995], ['Mindfields', 1999], ['Through the Looking Glass', 2002], ['Falling in Between', 2006], ['Toto XIV', 2015], ['Old Is New', 2018]]],
   ['trst', 'TR/ST', '#4a3f5a', 'Dark synth from Toronto', [['TRST', 2012], ['Joyland', 2014], ['The Destroyer – 1', 2019], ['The Destroyer – 2', 2019]]],
   ['travis', 'Travis', '#5a9ac9', 'Why does it always rain on us?', [['Good Feeling', 1997], ['The Man Who', 1999], ['The Invisible Band', 2001], ['12 Memories', 2003], ['L.A. Times', 2024]]],
   ['trentemoller', 'Trentemøller', '#3f5a6f', 'Danish electronic shadows', [['The Last Resort', 2006], ['The Trentemøller Chronicles', 2007], ['Into the Great Wide Yonder', 2010], ['Reworked / Remixed', 2011], ['Lost', 2013], ['Lost Reworks', 2014], ['Fixion', 2016], ['Obverse', 2019], ['Memoria', 2022], ['Dreamweaver', 2024]]],
