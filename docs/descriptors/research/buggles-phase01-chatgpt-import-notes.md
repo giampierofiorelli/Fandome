@@ -67,3 +67,9 @@ Next phase: **none**. Two studio albums complete as of 28 October 2026.
 - New production token `korgminipopsjunior` (Korg MiniPops Junior) added to production.ts, the guide and the prompt.
 - Adventures in Modern Recording sounds_like: Yes (Drama) and Art of Noise removed (Horn and Downes were members of Yes; Horn of Art of Noise: an artist's own bands are not comparisons). 10cc kept.
 - Artist added (2 studio albums), not touring; scene GB en 1970 synthpop,pop,prog. Yes left out of the artist influences for the same reason.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/buggles.csv`.
+- The Age of Plastic sounds_like: 10cc and ELO confirmed (The Spectator, Berkmann 2010; Rock and Roll Globe, Kopp), Kraftwerk confirmed (Pienemmät purot 2025; Spin 2012); Sparks removed (not found); added Godley & Creme (Audio 1980, "reminiscent of" Consequences), Roxy Music (Rock and Roll Globe on Astroboy), Elton John (Rock and Roll Globe), ABBA and The Alan Parsons Project (Pienemmät purot).
+- Adventures in Modern Recording sounds_like: 10cc removed (not found); added XTC (Record Collector, Staunton 2010), Queen (BBC Music, Roberts 2010: Bohemian Rhapsody), The Knife (The Quietus, Stannard 2010).
