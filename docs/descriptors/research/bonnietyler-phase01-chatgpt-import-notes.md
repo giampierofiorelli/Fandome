@@ -57,3 +57,4 @@ Different releases titled *It's a Heartache*, *Natural Force* reissues, and comp
 - 4 rows imported as delivered; no new tokens. Catalogue: 18 studio albums 1977-2021.
 - Scene GB en 1970 rock,pop,country (Welsh).
 - Artist influences: Tina Turner, Janis Joplin (vocal models she names).
+- Reception researched by Claude (Wikipedia, Classic Pop and We Are Cult 2019 RCA Years reviews, Discogs 1720414, 7051760). mainstream 5: managers Scott and Wolfe wrote and produced, she was the voice.
