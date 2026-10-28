@@ -63,3 +63,4 @@ Skip *The Other Side of the Moon* (1997), *Best Of* (2008), concert albums and o
 - Scene SE en 1990 pop,indie: sung in English, never a local discovery.
 - Artist influences: Sundays, Smiths, Stone Roses (Persson), Depeche Mode, Radiohead (Sveningsson).
 - The Sundays are both influence and likeness: kept in both.
+- Emmerdale: bells and trumpet added to instruments (Discogs 1602253 credits). Analog tape confirmed: Tambourine Studios ran an MCI 16-track 2-inch recorder (Sound On Sound 1999). Reception researched by Claude.
