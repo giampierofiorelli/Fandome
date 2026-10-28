@@ -210,6 +210,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Nat King Cole', 'Frank Sinatra', 'Ella Fitzgerald', 'Barbra Streisand', 'Nancy Wilson', 'Gloria Lynne', 'Marvin Gaye', 'Stevie Wonder'],
     source: 'Gloria Gaynor: Bustle 2025 (Nat King Cole for diction, Sinatra for phrasing, Ella Fitzgerald and Streisand for range, Nancy Wilson, Gloria Lynne), Pride Index 2005 (Marvin Gaye, Stevie Wonder as later influences)',
   },
+  bryanadams: {
+    names: ['The Beatles', 'Buddy Holly', 'The Everly Brothers', 'Simon & Garfunkel', 'Led Zeppelin', 'David Bowie', 'Elton John'],
+    source: 'Bryan Adams, Time Out Hong Kong interview (Beatles, Buddy Holly and the Crickets, Everlys, Simon & Garfunkel, Led Zeppelin, Bowie, Elton John); Tidal 2022 (Beatles first influence); Hollywood Reporter India 2025 (Led Zeppelin)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
