@@ -148,3 +148,14 @@ Owner: plain `rock` only when sources call the whole album a rock record; on pop
 - trentemoller-reworkedremixed: REMOVE → electronic|house|electro|indie|techno|techhouse|ambient|breakbeat|synthpop|postrock|electrorock|industrial|experimental|pop|shoegaze|neofolk. official notes: electro-rock source material - already electrorock (plus postrock, shoegaze)
 - tricky-maxinquaye: REMOVE → triphop|experimental|dub|electronic|rnb|postrock|ukhiphop|hiphop|soul|ambienttechno|reggae|electronica|undergroundhiphop|punk. rock only as one ingredient of the blend (Independent: soul, rock, punk, hip hop...) and Black Steel 'rock version'; already postrock (Philadelphia Inquirer) and punk
 - whitney-thebodyguardoriginalsoundtrackalbum: REPLACE → pop|rnb|adultcontemporary|powerballad|dancepop|gospel|disco|hardrock|soundtrack. Queen of the Night: 'silly stab at hard-rock' (LA Times, Willman), 'hard-rocking' (Rolling Stone 101 Greatest Soundtracks)
+
+## Rettore, refined (owner: 'Fai ricerche per raffinare')
+
+No serious source calls any Rettore album a rock record: plain rock came from unsourced it.wikipedia infoboxes or the Pop/Rock umbrella. Sources: OndaRock (Bassi monograph; Fabretti, Kamikaze 'pietra miliare'), Rolling Stone Italia (Zuffanti 2022; '10 dischi deludenti'), HitParadeItalia, Discogs masters 719022, 110806, 295699, 717983, 110807, 1030352, 1374629, 1754385, DeBaser, Saifam.
+- Donatella Rettore (1977): rock to folkrock (Discogs 'Folk Rock, Ballad'; HitParadeItalia 'atmosfere cantautorali'); ballad added.
+- Brivido divino (1979): rock removed (poprock covers it: HitParadeItalia 'pop-rock con contaminazioni disco'); synthpop (Discogs), funkrock and funk (DeBaser 'gusto funky-rock') added.
+- Magnifico delirio (1980): rock removed (OndaRock hears pop with electronics and orchestral arrangements); funk, ballad added (Discogs).
+- Estasi clamorosa (1981): rock removed (Discogs Pop Rock, Synth-pop, Disco).
+- Kamikaze Rock'n'Roll Suicide (1982): rock to poprock (Discogs), punk to punknewwave (OndaRock 'cadenze punk-wave'; header new wave).
+- Far West (1983): rock removed (Discogs Pop Rock); synthpop added for the hit Io ho te (Discogs).
+- Danceteria (1985): rock removed (Discogs Synth-pop; Saifam 'sonorità synth-pop').
