@@ -277,10 +277,27 @@ const genreVec = (p: Profile) => {
   if (!v) genreVectors.set(p, (v = byRarity(expandGenres(p.genres))))
   return v
 }
-const genreSim = (a: Profile, b: Profile) => weightedJaccard(genreVec(a), genreVec(b))
+// The long tail of a genre list: 4th place on (weight ≤ 1/4), often one track.
+const TAIL = 0.25
+// A genre in the long tail of both albums (the flamenco guitar of one single on a pop-rock album and on a dance-pop
+// one) counts for the two by its place only, without the rarity bonus: a rare genre heard once on each must not
+// match them like a shared main genre (owner, Oct 2026: 18 til I Die and Paola & Chiara's Festival, on flamenco).
+// A rare genre that is main for at least one of the two keeps its full weight.
+function pairVecs(a: Profile, b: Profile): [Map<string, number>, Map<string, number>] {
+  let wa = genreVec(a), wb = genreVec(b)
+  const tails = [...a.genres.keys()].filter((g) => b.genres.has(g) && a.genres.get(g)! <= TAIL && b.genres.get(g)! <= TAIL)
+  if (!tails.length) return [wa, wb]
+  wa = new Map(wa), wb = new Map(wb)
+  for (const g of tails) {
+    const cut = Math.min(1, rarityOf(g)) / (rarityOf(g) || 1)
+    wa.set(g, wa.get(g)! * cut), wb.set(g, wb.get(g)! * cut)
+  }
+  return [wa, wb]
+}
+const genreSim = (a: Profile, b: Profile) => weightedJaccard(...pairVecs(a, b))
 // Share of the first album's genre weight that the second album covers (asymmetric).
 function genreCover(a: Profile, b: Profile) {
-  const wa = genreVec(a), wb = genreVec(b)
+  const [wa, wb] = pairVecs(a, b)
   let shared = 0, total = 0
   for (const [g, w] of wa) (total += w), (shared += Math.min(w, wb.get(g) ?? 0))
   return total ? shared / total : 0
@@ -486,7 +503,11 @@ function buildComparison(a: Profile, b: Profile): Comparison {
 
   // Shared genres, most important for both first; else the closest related pair.
   const weight = (g: string) => Math.min(a.genres.get(g)!, b.genres.get(g)!) * rarityOf(g)
-  const sharedAll = [...a.genres.keys()].filter((g) => b.genres.has(g) && !FORMAT_GENRES.has(g)).sort((x, y) => weight(y) - weight(x))
+  // A genre in the long tail of both lists (4th place on: often one track, like the flamenco guitar of one single on
+  // a pop-rock album) still adds to the genre score, but is not a thing in common on its own (owner, Oct 2026:
+  // 18 til I Die matched Paola & Chiara's Festival only on flamenco).
+  const bothTail = (g: string) => a.genres.get(g)! <= TAIL && b.genres.get(g)! <= TAIL
+  const sharedAll = [...a.genres.keys()].filter((g) => b.genres.has(g) && !FORMAT_GENRES.has(g) && !bothTail(g)).sort((x, y) => weight(y) - weight(x))
   const specific = sharedAll.filter((g) => !UMBRELLA_GENRES.has(g))
   const shared = specific.length ? specific : sharedAll
   const reasons = [...links]
