@@ -198,6 +198,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Kinks', 'The Beatles', 'The Who', 'David Bowie', 'T. Rex', 'Ramones', 'Patti Smith', 'Tom Petty and the Heartbreakers', 'Herman’s Hermits', 'ABBA', 'The Monkees', 'Joni Mitchell', 'Leonard Cohen', 'John Cale', 'Aretha Franklin', 'Led Zeppelin'],
     source: 'Per Gessle: City Code (Kinks, Beatles, Who; Bowie, T. Rex, Ramones, Patti Smith, Tom Petty), Fireworks 2021 (Herman’s Hermits, ABBA, the Monkees; Joni Mitchell, Leonard Cohen, John Cale; Marie Fredriksson’s Aretha Franklin and Led Zeppelin). Left out: Blondie, the Romantics and Billie Holiday (secondary biography), producer Clarence Öfwerman’s prog listening',
   },
+  inxs: {
+    names: ['Roxy Music', 'Television', 'AC/DC', 'The Beatles', 'The Rolling Stones', 'Talking Heads', 'XTC', 'Blondie'],
+    source: 'Tim Farriss, Washington Post 1988 (Roxy Music, Television, AC/DC); Andrew Farriss, Song Diving podcast and Trouser Press (studying the Beatles’ and the Rolling Stones’ songs; Blondie and Talking Heads around The Swing, uDiscover 2017); producer Nick Launay, Tape Op (Talking Heads and XTC influenced The Swing). The Monkees left out: a song he liked as a child',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

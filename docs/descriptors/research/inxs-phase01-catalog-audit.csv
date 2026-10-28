@@ -1,0 +1,13 @@
+artist_id,album_id,artist,title,year,type,catalog_status,descriptor_status,evidence
+inxs,inxs-inxs,INXS,INXS,1980,studio,ADD — not in public catalog.ts or seed.ts,NEW in Phase 01,https://www.inxs.com/music/inxs/
+inxs,inxs-underneaththecolours,INXS,Underneath the Colours,1981,studio,ADD — not in public catalog.ts or seed.ts,NEW in Phase 01,https://www.inxs.com/music/underneath-the-colours/
+inxs,inxs-shaboohshoobah,INXS,Shabooh Shoobah,1982,studio,ADD — not in public catalog.ts or seed.ts,NEW in Phase 01,https://www.inxs.com/music/shabooh-shoobah/
+inxs,inxs-theswing,INXS,The Swing,1984,studio,ADD — not in public catalog.ts or seed.ts,NEW in Phase 01,https://www.inxs.com/music/the-swing/
+inxs,inxs-listenlikethieves,INXS,Listen Like Thieves,1985,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 02,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-kick,INXS,Kick,1987,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 02,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-x,INXS,X,1990,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 02,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-welcometowhereveryouare,INXS,Welcome to Wherever You Are,1992,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 02,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-fullmoondirtyhearts,INXS,"Full Moon, Dirty Hearts",1993,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 03,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-elegantlywasted,INXS,Elegantly Wasted,1997,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 03,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-switch,INXS,Switch,2005,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 03,https://www.allmusic.com/artist/inxs-mn0000768321
+inxs,inxs-originalsin,INXS,Original Sin,2010,studio,ADD — not in public catalog.ts or seed.ts,PLANNED Phase 04,https://www.allmusic.com/artist/inxs-mn0000768321
