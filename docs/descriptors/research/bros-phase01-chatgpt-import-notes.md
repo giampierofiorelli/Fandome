@@ -67,3 +67,10 @@ Avoid assuming cover performers, remixers, associated album guests or comparativ
 
 - Rows imported as delivered. Artist added (3 studio albums), scene GB en 1980 pop,dance.
 - Artist influences from the Goss brothers' own statements; T. Rex left out (only a journalist's report).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/bros.csv`.
+- Push sounds_like: Michael Jackson (Q, Chris Heath 1988, on Matt Goss's singing). Credits confirmed on Discogs (Andy Richards, Fairlight Series III; Nicky Graham programming and keyboards).
+- The Time sounds_like: Michael Jackson (Q, Lloyd Bradley, not AllMusic), Wham! (NME, Simon Williams), Stevie Wonder (Record Mirror, Tim Southwell).
+- Changing Faces: George Michael confirmed (Q, Jimmy Nichol 1991). Discogs credits no drum programming (Luke Goss plays drums), so production is left empty; credits verified, confidence raised to high.
