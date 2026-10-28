@@ -57,3 +57,4 @@ Four albums in chronological order, none repeated: **Kingdom of Desire** (1992),
 - Same self-reference rule as Boz Scaggs in phase 01: The Tubes (The Completion Backward Principle) removed from Isolation (Lukather co-wrote and played on that record) and Michael Jackson removed from Fahrenheit (Toto members played on and wrote for Thriller).
 - Dune influenced_by Shostakovich kept: Paich says Lynch played him two Shostakovich symphonies as the brief.
 - Reception researched by Claude.
+- The Seventh One sounds_like: Starship, Journey, Boston (LA Times, Boehm 1988); Yes left out (Jon Anderson sings on Stop Loving You).
