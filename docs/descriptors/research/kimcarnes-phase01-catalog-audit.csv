@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,artist_in_catalog,album_in_catalog,required_action
+kimcarnes-restonme,Kim Carnes,Rest on Me,1971,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-kimcarnes,Kim Carnes,Kim Carnes,1975,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-sailin,Kim Carnes,Sailin',1976,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
+kimcarnes-stvincentscourt,Kim Carnes,St. Vincent's Court,1979,studio,no,no,Add artist kimcarnes and album to catalog.ts; then import row
