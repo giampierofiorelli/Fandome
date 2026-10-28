@@ -1,0 +1,6 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+aqua,aqua-aquarium,Aquarium,1997,studio,missing in catalog.ts and seed.ts at inspection,aqua.csv missing,"add artist, add album, then import draft row",Original studio album; only phase needed
+aqua,aqua-aquarius,Aquarius,2000,studio,missing in catalog.ts and seed.ts at inspection,aqua.csv missing,"add artist, add album, then import draft row",Original studio album; only phase needed
+aqua,aqua-megalomania,Megalomania,2011,studio,missing in catalog.ts and seed.ts at inspection,aqua.csv missing,"add artist, add album, then import draft row",Original studio album; only phase needed
+aqua,,Cartoon Heroes: The Best of Aqua,2002,compilation,exclude,not applicable,do not add in this phase,greatest-hits compilation
+aqua,,Greatest Hits,2009,compilation,exclude,not applicable,do not add in this phase,compilation with some new material; not a distinct studio album
