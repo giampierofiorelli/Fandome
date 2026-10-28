@@ -322,6 +322,7 @@ const ROWS: Row[] = [
   ['lisastansfield', 'Lisa Stansfield', '#a0405a', 'All Around the World and Rochdale soul', [['Affection', 1989], ['Real Love', 1991], ['So Natural', 1993], ['Lisa Stansfield', 1997], ['Face Up', 2001], ['The Moment', 2004], ['Seven', 2014], ['Deeper', 2018]]],
   ['frankiegoestohollywood', 'Frankie Goes to Hollywood', '#b8322e', 'Relax, Two Tribes and the ZTT pleasuredome', [['Welcome to the Pleasuredome', 1984], ['Liverpool', 1986]]],
   ['madness', 'Madness', '#2f2f2f', 'Nutty Boys, Camden ska and Our House', [['One Step Beyond...', 1979], ['Absolutely', 1980], ['7', 1981], ['The Rise & Fall', 1982], ['Keep Moving', 1984], ['Mad Not Mad', 1985], ['Wonderful', 1999], ['The Dangermen Sessions Vol. 1', 2005], ['The Liberty of Norton Folgate', 2009], ['Oui Oui Si Si Ja Ja Da Da', 2012], ['Can\'t Touch Us Now', 2016], ['Theatre of the Absurd Presents C\'est La Vie', 2023]]],
+  ['bros', 'Bros', '#3a5fa0', 'When Will I Be Famous? and Brosettes', [['Push', 1988], ['The Time', 1989], ['Changing Faces', 1991]]],
   ['maryjblige', 'Mary J. Blige', '#7a4fa0', 'Queen of hip-hop soul', [['My Life', 1994]]],
   ['tlc', 'TLC', '#d1503a', 'CrazySexyCool and Waterfalls', [['CrazySexyCool', 1994]]],
   ['algreen', 'Al Green', '#c88a3a', 'Let’s Stay Together and Memphis soul', [['Let’s Stay Together', 1972]]],

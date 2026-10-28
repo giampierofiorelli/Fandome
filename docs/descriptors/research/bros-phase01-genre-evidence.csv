@@ -1,0 +1,21 @@
+﻿album_id,genre,source,scope,evidence
+bros-push,dancepop,https://www.allmusic.com/album/push-mw0000200270,whole album,AllMusic album style Dance-Pop; danceable singles
+bros-push,teenpop,https://www.allmusic.com/album/push-mw0000200270,whole album,AllMusic album style Teen Pop
+bros-push,synthpop,https://www.kupindo.com/Ploce/13525289_Push,whole album,Original CBS pressing marketed/styled synth-pop
+bros-push,poprock,https://musicbrainz.org/release/b993ef7e-4e23-4b11-adbb-dfe99bb1f0de,whole album,MusicBrainz release-group style tag pop rock; secondary evidence only
+bros-push,pop,https://www.kupindo.com/Ploce/13525289_Push,whole album,Original pressing electronic and pop category
+bros-push,rnb,https://www.allmusic.com/album/i-owe-you-nothing-the-best-of-the-bros-mw0002102455,some tracks,AllMusic singles retrospective identifies faux-R&B on Ten Out Of Ten only
+bros-thetime,dancepop,https://www.allmusic.com/album/the-time-mw0000654353,whole album,AllMusic original album genre/style Dance-Pop
+bros-thetime,synthpop,https://www.chartsurfer.de/artist/bros/the-time-album_ffhhuu.html,whole album,Original CBS LP/CD style Synth-pop
+bros-thetime,teenpop,https://www.allmusic.com/album/the-time-mw0000654353,whole album,AllMusic original album style Teen Pop
+bros-thetime,pop,https://en.wikipedia.org/wiki/The_Time_(Bros_album),whole album,Album described as pop and dance-pop
+bros-thetime,acidhouse,https://www.allmusic.com/album/i-owe-you-nothing-the-best-of-the-bros-mw0002102455,some tracks,"AllMusic explicitly describes Madly In Love as acid-house-inspired, not the entire record"
+bros-thetime,discofunk,https://poprescue.com/2020/02/14/review-the-time-by-bros-vinyl-1989/,some tracks,"Pop Rescue calls Madly In Love reminiscent of disco-funk, limited to this song"
+bros-changingfaces,poprock,https://www.chartsurfer.de/artist/bros/changing-faces-album_fhernp.html,whole album,Original Columbia pressings catalogue style Pop Rock
+bros-changingfaces,synthpop,https://www.chartsurfer.de/artist/bros/changing-faces-album_fhernp.html,whole album,Original Columbia pressings catalogue style Synth-pop
+bros-changingfaces,dancepop,https://www.allmusic.com/album/changing-faces-mw0000869334,whole album,AllMusic album style Dance-Pop
+bros-changingfaces,teenpop,https://www.allmusic.com/album/changing-faces-mw0000869334,whole album,AllMusic album style Teen Pop
+bros-changingfaces,pop,https://en.wikipedia.org/wiki/Changing_Faces_(Bros_album),whole album,Album genre pop/dance-pop
+bros-changingfaces,funk,https://en.wikipedia.org/wiki/Changing_Faces_(Bros_album),some tracks,1991 Melody Maker review describes record as partly funk; critical value judgment not genre-wide
+bros-changingfaces,powerballad,https://www.allmusic.com/album/i-owe-you-nothing-the-best-of-the-bros-mw0002102455,some tracks,AllMusic calls Are You Mine a power ballad
+bros-changingfaces,gospel,https://www.allmusic.com/album/i-owe-you-nothing-the-best-of-the-bros-mw0002102455,some tracks,AllMusic calls Try an attempt at gospel; a song-level descriptor

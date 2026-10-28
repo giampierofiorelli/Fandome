@@ -1,0 +1,9 @@
+﻿artist_id,artist,album_id,title,year,type,phase,in_catalog_ts,in_seed_ts,already_described,import_action,notes
+bros,Bros,bros-push,Push,1988,studio,01,no,no,no,add_artist_and_album_then_descriptor,Public descriptors branch checked 28 October 2026; proposed artist and IDs; recheck before import.
+bros,Bros,bros-thetime,The Time,1989,studio,01,no,no,no,add_artist_and_album_then_descriptor,Public descriptors branch checked 28 October 2026; proposed artist and IDs; recheck before import.
+bros,Bros,bros-changingfaces,Changing Faces,1991,studio,01,no,no,no,add_artist_and_album_then_descriptor,Public descriptors branch checked 28 October 2026; proposed artist and IDs; recheck before import.
+bros,Bros,,The Best of Bros,,compilation/remix,excluded,not checked,not checked,not applicable,do_not_import,Compilation / retrospective or remix release; excluded from this research run.
+bros,Bros,,I Owe You Nothing: The Best of Bros,,compilation/remix,excluded,not checked,not checked,not applicable,do_not_import,Compilation / retrospective or remix release; excluded from this research run.
+bros,Bros,,12 Inch Mixes,,compilation/remix,excluded,not checked,not checked,not applicable,do_not_import,Compilation / retrospective or remix release; excluded from this research run.
+bros,Bros,,The Best Remixes,,compilation/remix,excluded,not checked,not checked,not applicable,do_not_import,Compilation / retrospective or remix release; excluded from this research run.
+bros,Bros,,Gold,,compilation/remix,excluded,not checked,not checked,not applicable,do_not_import,Compilation / retrospective or remix release; excluded from this research run.
