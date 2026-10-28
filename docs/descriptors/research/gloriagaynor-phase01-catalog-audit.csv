@@ -1,0 +1,9 @@
+﻿artist_id,album_id,title,year,type,catalog_status,descriptor_status,action,note
+gloriagaynor,gloriagaynor-nevercansaygoodbye,Never Can Say Goodbye,1975,studio,missing,not described on descriptors branch,add artist + album,phase01; new Fandome row; proposed ID
+gloriagaynor,gloriagaynor-experiencegloriagaynor,Experience Gloria Gaynor,1975,studio,missing,not described on descriptors branch,add album,phase01; new Fandome row; proposed ID
+gloriagaynor,gloriagaynor-ivegotyou,I've Got You,1976,studio,missing,not described on descriptors branch,add album,phase01; new Fandome row; proposed ID
+gloriagaynor,gloriagaynor-glorious,Glorious,1977,studio,missing,not described on descriptors branch,add album,phase01; new Fandome row; proposed ID
+gloriagaynor,gloriagaynor-gloriagaynorsparkavenuesound,Gloria Gaynor's Park Avenue Sound,1978,studio,missing,not described on descriptors branch,add album,future phases; future album; check exact original sleeve title/date before importing
+gloriagaynor,gloriagaynor-lovetracks,Love Tracks,1978,studio,missing,not described on descriptors branch,add album,future phases; future album; check exact original sleeve title/date before importing
+gloriagaynor,gloriagaynor-ihavearight,I Have a Right,1979,studio,missing,not described on descriptors branch,add album,future phases; future album; check exact original sleeve title/date before importing
+gloriagaynor,gloriagaynor-stories,Stories,1980,studio,missing,not described on descriptors branch,add album,future phases; future album; check exact original sleeve title/date before importing

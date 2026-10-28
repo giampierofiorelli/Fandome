@@ -1,0 +1,19 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+gloriagaynor-gloriagaynorsparkavenuesound,disco,AllMusic,https://www.allmusic.com/album/mw0000851999,whole album,Describes a disco-soul LP and a dance-oriented adaptation of Motown material.,high
+gloriagaynor-gloriagaynorsparkavenuesound,soul,AllMusic,https://www.allmusic.com/album/mw0000851999,whole album,Explicit soul-disco characterization and Philadelphia R&B session influence.,high
+gloriagaynor-gloriagaynorsparkavenuesound,rnb,AllMusic,https://www.allmusic.com/album/mw0000851999,whole album / parent category,Album labeled R&B and reviewer specifically hears Philadelphia R&B.,high
+gloriagaynor-gloriagaynorsparkavenuesound,phillysoul,AllMusic / JazzRockSoul,https://www.allmusic.com/album/mw0000851999,"dominant regional arrangement influence, not every track",Review describes Philadelphia R&B arranging and players Harris/Eli/Kersey; recorded at Sigma Sound.,high
+gloriagaynor-lovetracks,disco,AllMusic,https://www.allmusic.com/album/love-tracks-mw0000851136,whole album / dominant uptempo side,Disco styling and club-oriented I Will Survive and Anybody Wanna Party.,high
+gloriagaynor-lovetracks,soul,AllMusic / Qobuz,https://www.qobuz.com/us-en/album/love-tracks-gloria-gaynor/jq04x2rbe4p5a,whole album / slower tracks,Please Be There soul ballad; Motown-rooted cover selections.,high
+gloriagaynor-lovetracks,rnb,AllMusic,https://www.allmusic.com/album/love-tracks-mw0000851136,whole album / parent category,Professional album classification as R&B.,high
+gloriagaynor-lovetracks,northernsoul,AllMusic,https://www.allmusic.com/album/love-tracks-mw0000851136,some tracks / stylistic roots,AllMusic explicitly ties the Substitute arrangement to the earlier Northern soul tradition.,medium
+gloriagaynor-lovetracks,funk,AllMusic,https://www.allmusic.com/album/love-tracks-mw0000851136,some tracks / Anybody Wanna Party,AllMusic singles out the funky club hit Anybody Wanna Party.,high
+gloriagaynor-ihavearight,disco,AllMusic,https://www.allmusic.com/album/i-have-a-right-mw0000849634,whole album / main upbeat material,"Disco styling, Midnight Rocker and Dont Stop Us dance tracks.",high
+gloriagaynor-ihavearight,soul,AllMusic,https://www.allmusic.com/album/i-have-a-right-mw0000849634,whole album / slow and dance songs,Soul style label and disco-soul songs in review.,high
+gloriagaynor-ihavearight,rnb,AllMusic,https://www.allmusic.com/album/i-have-a-right-mw0000849634,whole album / parent category,Explicit R&B genre classification.,high
+gloriagaynor-ihavearight,northernsoul,AllMusic,https://www.allmusic.com/album/i-have-a-right-mw0000849634,some tracks / Say Somethin,Review calls Say Somethin 1960s-flavored Northern soul.,high
+gloriagaynor-stories,disco,AllMusic,https://www.allmusic.com/album/stories-mw0000863259,"some tracks / Make Me Yours, All My Life",AllMusic lists Disco style and discusses fast dance selections.,high
+gloriagaynor-stories,soul,AllMusic,https://www.allmusic.com/album/stories-mw0000863259,whole album / fast and slow,AllMusic describes soul slow jams and Motown-rooted vocal material.,high
+gloriagaynor-stories,rnb,AllMusic,https://www.allmusic.com/album/stories-mw0000863259,whole album / parent category,Album listed under R&B.,high
+gloriagaynor-stories,northernsoul,AllMusic,https://www.allmusic.com/album/stories-mw0000863259,"some tracks / I Let Love Slip, Luckiest Girl",Both slower songs identified as Northern soul.,high
+gloriagaynor-stories,popsoul,Billboard period review (secondarily quoted),https://en.wikipedia.org/wiki/Stories_(Gloria_Gaynor_album),whole album / secondary interpretation,Period Billboard review reportedly describes classic pop-soul songs; original newspaper review remains to be checked.,low

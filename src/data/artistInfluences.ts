@@ -206,6 +206,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Roxy Music', 'David Bowie', 'Kraftwerk', 'Brian Eno', 'Donna Summer', 'Giorgio Moroder', 'Neu!', 'Cabaret Voltaire', 'Magazine', 'XTC', 'Chic', 'Grace Jones', 'Genesis'],
     source: 'Jim Kerr: Louder 2004 (Roxy Music, Bowie, Kraftwerk, Eno, Donna Summer), The Scotsman (Moroder), Louder “How prog were Simple Minds” (Magazine, XTC, Genesis); Kerr and Charlie Burchill, Guardian 2023 (Chic, Grace Jones, Donna Summer in the clubs before Empires and Dance); simpleminds.com history (Neu!, Cabaret Voltaire, Kraftwerk)',
   },
+  gloriagaynor: {
+    names: ['Nat King Cole', 'Frank Sinatra', 'Ella Fitzgerald', 'Barbra Streisand', 'Nancy Wilson', 'Gloria Lynne', 'Marvin Gaye', 'Stevie Wonder'],
+    source: 'Gloria Gaynor: Bustle 2025 (Nat King Cole for diction, Sinatra for phrasing, Ella Fitzgerald and Streisand for range, Nancy Wilson, Gloria Lynne), Pride Index 2005 (Marvin Gaye, Stevie Wonder as later influences)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

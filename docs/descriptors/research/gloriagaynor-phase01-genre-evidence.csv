@@ -1,0 +1,18 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+gloriagaynor-nevercansaygoodbye,disco,AllMusic — Never Can Say Goodbye,https://www.allmusic.com/album/never-can-say-goodbye-1975--mw0000374885,whole album / dominant on side A,Album style Disco; continuous first side.,high
+gloriagaynor-nevercansaygoodbye,soul,AllMusic — Never Can Say Goodbye,https://www.allmusic.com/album/never-can-say-goodbye-1975--mw0000374885,whole album / side B focus,AllMusic album style Soul and side B Northern soul.,high
+gloriagaynor-nevercansaygoodbye,rnb,AllMusic — Never Can Say Goodbye,https://www.allmusic.com/album/never-can-say-goodbye-1975--mw0000374885,whole album / broad parent,AllMusic classifies the album under R&B.,high
+gloriagaynor-nevercansaygoodbye,northernsoul,AllMusic — Never Can Say Goodbye,https://www.allmusic.com/album/never-can-say-goodbye-1975--mw0000374885,some tracks / side B,Reviewer describes the second LP side as Northern soul-oriented.,high
+gloriagaynor-nevercansaygoodbye,downtempo,Chartsurfer — Never Can Say Goodbye UK pressing,https://www.chartsurfer.de/artist/gloria-gaynor/never-can-say-goodbye-album_fffefn.html,some tracks / LP secondary style,UK LP is indexed with Downtempo style. Not a claim about whole first disco side.,medium
+gloriagaynor-experiencegloriagaynor,disco,AllMusic — Experience,https://www.allmusic.com/album/experience-mw0000540301,whole album / side A dominant,Genre style Disco and continuous medley.,high
+gloriagaynor-experiencegloriagaynor,soul,AllMusic — Experience,https://www.allmusic.com/album/experience-mw0000540301,whole album / second side,AllMusic style Soul; its review describes slower soul ballads.,high
+gloriagaynor-experiencegloriagaynor,rnb,AllMusic — Experience,https://www.allmusic.com/album/experience-mw0000540301,whole album / parent,AllMusic assigns R&B genre to the record.,high
+gloriagaynor-experiencegloriagaynor,northernsoul,AllMusic — Experience,https://www.allmusic.com/album/experience-mw0000540301,some tracks / side B,AllMusic explicitly describes Northern soul items on second side.,high
+gloriagaynor-ivegotyou,disco,AllMusic — I've Got You,https://www.allmusic.com/album/ive-got-you-mw0000844687,whole album / dominant on side A,"AllMusic describes original album as disco-soul, with continuous disco medley.",high
+gloriagaynor-ivegotyou,soul,AllMusic — I've Got You,https://www.allmusic.com/album/ive-got-you-mw0000844687,whole album / side B,Disco-soul plus five Northern soul-oriented second-side songs.,high
+gloriagaynor-ivegotyou,rnb,AllMusic — I've Got You,https://www.allmusic.com/album/ive-got-you-mw0000844687,whole album / parent,AllMusic groups album in R&B.,high
+gloriagaynor-ivegotyou,northernsoul,AllMusic — I've Got You,https://www.allmusic.com/album/ive-got-you-mw0000844687,some tracks / side B,Explicit Northern soul designation for the original second side.,high
+gloriagaynor-glorious,disco,AllMusic — Glorious,https://www.allmusic.com/album/glorious-mw0000844422,whole album,AllMusic assigns Disco and discusses disco-soul tracks.,high
+gloriagaynor-glorious,rnb,AllMusic — Glorious,https://www.allmusic.com/album/glorious-mw0000844422,whole album / parent,R&B is AllMusic album genre.,high
+gloriagaynor-glorious,soul,AllMusic — Glorious,https://www.allmusic.com/album/glorious-mw0000844422,whole album / non-dance cuts,Reviewer explicitly calls several album songs disco-soul.,high
+gloriagaynor-glorious,dance,Glorious — Wikipedia metadata,https://en.wikipedia.org/wiki/Glorious_(Gloria_Gaynor_album),whole album / broad secondary,"Secondary album genre Dance, ranked after disco and R&B/soul.",medium
