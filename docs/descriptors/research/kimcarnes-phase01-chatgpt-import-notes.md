@@ -55,3 +55,4 @@ Confirm all album IDs are unique and present in the updated catalogue, row count
 
 - 4 rows imported; vibraphone mapped to mallets. Catalogue: 13 studio albums 1971-2004.
 - Scene US en 1970 rock,pop. No artist influences (none confirmed).
+- Rest on Me: countryrock added last (Discogs styles, release 2775273). Reception researched by Claude.
