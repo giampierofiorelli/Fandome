@@ -63,3 +63,4 @@ No live and compilation releases in phase 02. The Golden Ratio lineup change mus
 - New genre reggaepop (parents reggae, pop).
 - Scene SE en 1990 pop,dance,reggae: sung in English, never a local discovery.
 - No artist influences entry: Ekberg says he and Jonas were Depeche Mode fans, which is taste, not a named influence; the reggae neighbours are unnamed.
+- Happy Nation, The Bridge: drums added to instruments (credited additional drums, Discogs MRCD 3206, 3295). Gear of the US-only track The Sign (E-mu Vintage Keys, Korg M1, Yamaha TG77) not used: not on Happy Nation. Reception researched by Claude.
