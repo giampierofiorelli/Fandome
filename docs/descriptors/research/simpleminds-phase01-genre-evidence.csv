@@ -1,0 +1,34 @@
+﻿album_id,genre,source,source_url,scope,evidence,evidence_strength
+simpleminds-lifeinaday,newwave,AllMusic — Life in a Day,https://www.allmusic.com/album/r18039/review,whole album,AllMusic album-specific style,high
+simpleminds-lifeinaday,postpunk,AllMusic — Life in a Day,https://www.allmusic.com/album/r18039/review,whole album,AllMusic album-specific style,high
+simpleminds-lifeinaday,artrock,Trouser Press — Simple Minds,https://trouserpress.com/reviews/simple-minds/,whole album,Trouser Press describes debut arty Roxy-like rock,high
+simpleminds-lifeinaday,dancerock,AllMusic — Life in a Day,https://www.allmusic.com/album/r18039/review,whole album,AllMusic album-specific style; less dominant than later LPs,high
+simpleminds-lifeinaday,punknewwave,AllMusic — Life in a Day,https://www.allmusic.com/album/r18039/review,whole album,AllMusic punk/new wave style taxonomy,high
+simpleminds-lifeinaday,alternativeindierock,AllMusic — Life in a Day,https://www.allmusic.com/album/r18039/review,whole album,"AllMusic style taxonomy, retrospective label",high
+simpleminds-lifeinaday,pop,Trouser Press — Simple Minds,https://trouserpress.com/reviews/simple-minds/,some tracks,Trouser Press calls Chelsea Girl sixties pop and the songs pop-like,medium
+simpleminds-lifeinaday,psychedelia,Trouser Press — Simple Minds,https://trouserpress.com/reviews/simple-minds/,some tracks,Trouser Press says occasional psychedelic touches,medium
+simpleminds-realtorealcacophony,postpunk,"The SHFL — Real to Real Cacophony, Sasha Frere-Jones",https://www.theshfl.com/album/Real-to-Real-Cacophony,whole album,AllMusic; SHFL; Pitchfork,high
+simpleminds-realtorealcacophony,artrock,"The SHFL — Real to Real Cacophony, Sasha Frere-Jones",https://www.theshfl.com/album/Real-to-Real-Cacophony,whole album,SHFL album tags and experimental art-rock characterization,high
+simpleminds-realtorealcacophony,newwave,"The SHFL — Real to Real Cacophony, Sasha Frere-Jones",https://www.theshfl.com/album/Real-to-Real-Cacophony,whole album,SHFL album genre tags,high
+simpleminds-realtorealcacophony,synthpop,"The SHFL — Real to Real Cacophony, Sasha Frere-Jones",https://www.theshfl.com/album/Real-to-Real-Cacophony,some tracks,SHFL album genre tags; Changeling synth hook,medium
+simpleminds-realtorealcacophony,dancerock,AllMusic — Real to Real Cacophony,https://www.allmusic.com/album/real-to-real-cacophony-mw0000195259,some tracks,AllMusic album-specific style,medium
+simpleminds-realtorealcacophony,experimental,Pitchfork — Real to Real / Empires and Dance,https://pitchfork.com/reviews/albums/11840-reel-to-real-cacophony-empires-and-dance/,whole album,Pitchfork describes soundscape experimentation,high
+simpleminds-realtorealcacophony,electronic,Pitchfork — Real to Real / Empires and Dance,https://pitchfork.com/reviews/albums/11840-reel-to-real-cacophony-empires-and-dance/,whole album,Pitchfork describes electronic/rock mixture,high
+simpleminds-realtorealcacophony,funk,"The SHFL — Real to Real Cacophony, Sasha Frere-Jones",https://www.theshfl.com/album/Real-to-Real-Cacophony,some tracks,SHFL calls out cold white funk on Changeling,medium
+simpleminds-empiresanddance,postpunk,AllMusic — Empires and Dance reissue review,https://www.allmusic.com/album/release/empires-and-dance-mr0000236563,whole album,AllMusic style; Pitchfork,high
+simpleminds-empiresanddance,dancerock,AllMusic — Empires and Dance reissue review,https://www.allmusic.com/album/release/empires-and-dance-mr0000236563,whole album,AllMusic album style and strong dance grooves,high
+simpleminds-empiresanddance,eurodisco,AllMusic — Simple Minds biography,https://www.allmusic.com/artist/simple-minds-mn0000049374/biography,whole album,AllMusic biography names minimalist Euro-disco,high
+simpleminds-empiresanddance,newwave,Trouser Press — Simple Minds,https://trouserpress.com/reviews/simple-minds/,whole album,1980 band new-wave context corroborated by the album retrospective,high
+simpleminds-empiresanddance,artrock,Simple Minds official — History,https://www.simpleminds.com/history-simple-minds/,whole album,Experimental European art-rock context,high
+simpleminds-empiresanddance,electronic,Simple Minds official — History,https://www.simpleminds.com/history-simple-minds/,whole album,Pitchfork electronics and band account of synthetic sounds,high
+simpleminds-empiresanddance,synthpop,Simple Minds official — History,https://www.simpleminds.com/history-simple-minds/,some tracks,I Travel and Thirty Frames a Second synthesizer driven sections,medium
+simpleminds-empiresanddance,krautrock,Simple Minds official — History,https://www.simpleminds.com/history-simple-minds/,texture,Neu!/Kraftwerk motorik rhythmic model cited as explicit inspiration,medium
+simpleminds-empiresanddance,funk,Simple Minds official — History,https://www.simpleminds.com/history-simple-minds/,some tracks,Band and producer describe club funk reference points and bass groove,medium
+simpleminds-sonsandfascination,newwave,AllMusic — Sons and Fascination,https://www.allmusic.com/album/sons-and-fascination-mw0000853581,whole album,AllMusic album-specific style,high
+simpleminds-sonsandfascination,postpunk,AllMusic — Sons and Fascination,https://www.allmusic.com/album/sons-and-fascination-mw0000853581,whole album,AllMusic album-specific style,high
+simpleminds-sonsandfascination,dancerock,AllMusic — Sons and Fascination,https://www.allmusic.com/album/sons-and-fascination-mw0000853581,whole album,AllMusic album style,high
+simpleminds-sonsandfascination,synthpop,Trouser Press — Simple Minds,https://trouserpress.com/reviews/simple-minds/,whole album,Original 1981 LP collector classification,high
+simpleminds-sonsandfascination,punknewwave,AllMusic — Sons and Fascination,https://www.allmusic.com/album/sons-and-fascination-mw0000853581,whole album,AllMusic album style taxonomy,high
+simpleminds-sonsandfascination,alternativeindierock,AllMusic — Sons and Fascination,https://www.allmusic.com/album/sons-and-fascination-mw0000853581,whole album,"AllMusic style taxonomy, retrospective label",high
+simpleminds-sonsandfascination,artrock,Musical Urbanism — Sound in 70 cities,https://pages.vassar.edu/musicalurbanism/2013/08/06/sound-in-70-cities-the-european-urbanism-of-simple-minds/,texture,Musicological account of ambitious extended 1981 soundscapes,medium
+simpleminds-sonsandfascination,funk,Louder — Jim Kerr interview (2004),https://www.loudersound.com/features/simple-minds-jim-kerr-interview-2004,some tracks,Trouser Press and Kerr note semi-funky bass-led arrangements,medium

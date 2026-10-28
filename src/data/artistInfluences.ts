@@ -202,6 +202,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Roxy Music', 'Television', 'AC/DC', 'The Beatles', 'The Rolling Stones', 'Talking Heads', 'XTC', 'Blondie'],
     source: 'Tim Farriss, Washington Post 1988 (Roxy Music, Television, AC/DC); Andrew Farriss, Song Diving podcast and Trouser Press (studying the Beatles’ and the Rolling Stones’ songs; Blondie and Talking Heads around The Swing, uDiscover 2017); producer Nick Launay, Tape Op (Talking Heads and XTC influenced The Swing). The Monkees left out: a song he liked as a child',
   },
+  simpleminds: {
+    names: ['Roxy Music', 'David Bowie', 'Kraftwerk', 'Brian Eno', 'Donna Summer', 'Giorgio Moroder', 'Neu!', 'Cabaret Voltaire', 'Magazine', 'XTC', 'Chic', 'Grace Jones', 'Genesis'],
+    source: 'Jim Kerr: Louder 2004 (Roxy Music, Bowie, Kraftwerk, Eno, Donna Summer), The Scotsman (Moroder), Louder “How prog were Simple Minds” (Magazine, XTC, Genesis); Kerr and Charlie Burchill, Guardian 2023 (Chic, Grace Jones, Donna Summer in the clubs before Empires and Dance); simpleminds.com history (Neu!, Cabaret Voltaire, Kraftwerk)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
