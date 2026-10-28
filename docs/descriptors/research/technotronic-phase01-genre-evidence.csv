@@ -1,0 +1,27 @@
+album_id,genre,source,url,scope,evidence
+technotronic-pumpupthejamthealbum,hiphouse,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,Alex Henderson expressly calls the record hip-house and highlights rapper-over-house approach.
+technotronic-pumpupthejamthealbum,house,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,AllMusic lists house as an album style.
+technotronic-pumpupthejamthealbum,dancepop,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,AllMusic lists dance-pop as an album style.
+technotronic-pumpupthejamthealbum,acidhouse,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,AllMusic album style; not equated with house generically.
+technotronic-pumpupthejamthealbum,clubdance,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,AllMusic album style Club/Dance.
+technotronic-pumpupthejamthealbum,eurodance,firstinsom,https://www.insomniac.com/music/technotronic-pump-up-the-jam/,period texture / single-led,Insomniac describes emerging Eurodance idiom in the breakout single.
+technotronic-pumpupthejamthealbum,electronic,firstall,https://www.allmusic.com/album/pump-up-the-jam-the-album-mw0000203369,whole album,AllMusic Electronic parent category.
+technotronic-pumpupthejamthealbum,newbeat,firstinsom,https://www.insomniac.com/music/technotronic-pump-up-the-jam/,single-led texture,Belgian new beat reference is sonic context of album hit; not an album-wide definitive tag.
+technotronic-triponthistheremixes,clubdance,remixall,https://www.allmusic.com/album/trip-on-this%21-the-remixes-mw0000310453,whole release,AllMusic styles Club/Dance for remix set.
+technotronic-triponthistheremixes,dancepop,remixall,https://www.allmusic.com/album/trip-on-this%21-the-remixes-mw0000310453,whole release,AllMusic styles Dance-Pop for remix set.
+technotronic-triponthistheremixes,house,remixmb,https://musicbrainz.org/release/02e54341-de68-3ecb-a07e-6e7c40b9fbd2,multiple tracks,Original house/hip-house cuts rebuilt by US/UK house remixers; track-level remit.
+technotronic-triponthistheremixes,eurohouse,remixdisc,https://interrecords.net/technotronic-trip-on-this-remix-album-bcm-records-disc1256453n1.html,whole release,BCM 1990 LP pressing style Euro House.
+technotronic-triponthistheremixes,hiphouse,remixmb,https://musicbrainz.org/release/02e54341-de68-3ecb-a07e-6e7c40b9fbd2,some tracks,MC Eric and Ya Kid K raps retained in several remixes of hip-house originals.
+technotronic-triponthistheremixes,electronic,remixall,https://www.allmusic.com/album/trip-on-this%21-the-remixes-mw0000310453,whole release,AllMusic overarching Electronic genre.
+technotronic-bodytobody,eurohouse,bodycredits,https://www.chartsurfer.de/artist/technotronic/body-to-body-album_ffhegg.html,whole album,Original ARS pressings classified Euro House.
+technotronic-bodytobody,house,bodycredits,https://www.chartsurfer.de/artist/technotronic/body-to-body-album_ffhegg.html,whole album,Original ARS cassette/LP classified House.
+technotronic-bodytobody,hiphouse,bodycredits,https://www.chartsurfer.de/artist/technotronic/body-to-body-album_ffhegg.html,some tracks,Original Belgian LP styles explicitly Hip-House; Colt 45 rap notably on Cold Chillin and title track.
+technotronic-bodytobody,dancepop,bodyreview,https://www.djcentrum.com/technotronic-body-to-body--the-2nd-album-/,whole album,DJ centrum album-specific write-up explicitly names electronic dance-pop.
+technotronic-bodytobody,electronic,bodycredits,https://www.chartsurfer.de/artist/technotronic/body-to-body-album_ffhegg.html,whole album,Original pressing electronic parent category.
+technotronic-bodytobody,newbeat,bodycredits,https://www.chartsurfer.de/artist/technotronic/body-to-body-album_ffhegg.html,some tracks / local context,"Belgian vinyl style New Beat, not treated as dominant album-wide form."
+technotronic-recall,eurohouse,recallinterview,https://www.sanfransys.com/homepages/technotronic_recall_japanese_interview.htm,whole album / producer stated,Jo Bogaert says he and Patrick de Meyer intended euro house with Belgian flavour.
+technotronic-recall,eurodance,recallgen,https://generation.dance/en/artists/technotronic/,whole album,Dance-specialist discography explicitly describes contemporary Eurodance vein.
+technotronic-recall,dancepop,recallall,https://www.allmusic.com/album/recall-mw0000124560,whole album,AllMusic styles Dance-Pop.
+technotronic-recall,clubdance,recallall,https://www.allmusic.com/album/recall-mw0000124560,whole album,AllMusic styles Club/Dance.
+technotronic-recall,electronic,recallall,https://www.allmusic.com/album/recall-mw0000124560,whole album,AllMusic broad Electronic genre.
+technotronic-recall,newbeat,recallinterview,https://www.sanfransys.com/homepages/technotronic_recall_japanese_interview.htm,texture / stylistic origin,"Producer names Belgian new beat as inspiration, not a primary 1995 album genre."

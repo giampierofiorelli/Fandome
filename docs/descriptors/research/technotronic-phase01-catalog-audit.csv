@@ -1,0 +1,11 @@
+album_id,title,year,type,artist_id,in_catalog_ts,in_seed_ts,descriptor_exists,action,phase,source_url
+technotronic-pumpupthejamthealbum,Pump Up the Jam: The Album,1989,studio,technotronic,no,no,no,"add artist and album, then import phase01 row",01,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+technotronic-triponthistheremixes,Trip on This! The Remixes,1990,remix,technotronic,no,no,no,"add artist and album, then import phase01 row",01,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+technotronic-bodytobody,Body to Body,1991,studio,technotronic,no,no,no,"add artist and album, then import phase01 row",01,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+technotronic-recall,Recall,1995,studio,technotronic,no,no,no,"add artist and album, then import phase01 row",01,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,Pump Up the Jam (reissues/remasters),,excluded,technotronic,no,no,n/a,reissue duplicates the 1989 studio album,excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,This Beat Is Technotronic (alternate marketing title),,excluded,technotronic,no,no,n/a,"verify as territorial title/edition, not additional studio album",excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,Greatest Hits (1993),,excluded,technotronic,no,no,n/a,compilation excluded,excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,Pump Up the Hits (1998),,excluded,technotronic,no,no,n/a,compilation excluded,excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,Best of Technotronic (2012),,excluded,technotronic,no,no,n/a,compilation excluded,excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
+,The Best Remixes (1991),,excluded,technotronic,no,no,n/a,compilation/overlap with 1990 remix album; excluded,excluded,https://musicbrainz.org/artist/62173ce5-37ef-41b1-86cd-45401a8955fc
