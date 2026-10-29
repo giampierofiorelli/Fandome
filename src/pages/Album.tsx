@@ -71,7 +71,7 @@ function LegacyBox({ albumId }: { albumId: string }) {
   const legacy = legacyOf(albumId)
   if (!legacy || legacy.legacy < 3) return null
   const trace = traceOf(albumId)
-  const spread = trace?.spread.slice(0, 3) ?? []
+  const spread = trace?.spread.slice(0, 4) ?? []
   const pct = (x: number) => `${Math.round(100 * x)}%`
   return (
     <>
@@ -91,10 +91,26 @@ function LegacyBox({ albumId }: { albumId: string }) {
           </div>
         </div>
         {spread.length > 0 && (
+          <div className="sound-row legacy-headline">
+            <div className="sound-label">{spread[0].trait} in {trace!.field.join(' and ').toLowerCase()}, before it and after</div>
+            <div className="legacy-jump">
+              <span className="bignum">{pct(spread[0].before)}</span>
+              <span className="legacy-arrow" aria-hidden="true">→</span>
+              <span className="bignum">{pct(spread[0].after)}</span>
+            </div>
+            <div className="muted small">of the albums we describe, from the 6 years before to {spread[0].when}–{String(spread[0].when + 2).slice(-2)}</div>
+            {trace!.followers.total > 0 && (
+              <div className="small legacy-followers">
+                <b>{trace!.followers.linked} of {trace!.followers.total}</b> albums that took up its new sound are documented as linked to {artistById(albumById(albumId)!.artistId)?.name}: a critic's comparison, an influence they name, or the same producers.
+              </div>
+            )}
+          </div>
+        )}
+        {spread.length > 1 && (
           <div className="sound-row">
-            <div className="sound-label">After it, in {trace!.field.join(' and ').toLowerCase()}</div>
+            <div className="sound-label">Also spread after it, in {trace!.field.join(' and ').toLowerCase()}</div>
             <div className="sound-value">
-              {spread.map((s) => (
+              {spread.slice(1).map((s) => (
                 <span key={s.trait} className="sound-cover">
                   <b>{s.trait}</b> <span className="muted">from {pct(s.before)} to {pct(s.after)} of the albums we describe, by {s.when + 2}</span>
                 </span>

@@ -8,6 +8,7 @@ import { sceneOf } from '../data/scenes'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
 import { albumProfile, compareProfiles } from './similar'
+import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { parseCsv } from './csv'
 
 // Legacy from sources: docs/descriptors/legacy/<artist-id>.csv (album_id,legacy,sources), 0-5: how much the album
@@ -34,6 +35,9 @@ export interface Trace {
   // spreading traits before most albums of its area did, and the later albums that took them up sound more like it
   // than like the other albums of its time that had them too.
   pioneer: boolean
+  // The later albums of the area that took up the spreading traits, and how many of them are documented as linked to
+  // this artist: a critic's comparison, an influence they name, or one of this album's producers.
+  followers: { linked: number; total: number }
   first: number // share of the area's albums with the album's spreading traits in the 3 years around it that came no earlier
   closer: number // how much more the later adopters resemble this album than its contemporaries with the same traits
   spread: Spread[] // the album's new traits that spread, most first
@@ -113,5 +117,13 @@ function computeTrace(albumId: string): Trace | null {
   const toThem = peersThen.length ? mean(adopters.map((x) => mean(peersThen.map((y) => sim(x, y))))) : toMe
   const closer = toMe - toThem
   const pioneer = keys.length > 0 && lift >= 0.3 && first >= 0.8 && closer >= 0.05 && adopters.length >= MIN_FIELD
-  return { field: [...field].map((g) => genreLabel(g)), spread, lift, pioneer, first, closer }
+  const fold = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
+  const me = fold(d.artist)
+  const mine2 = new Set(d.producers.map(fold).filter((p) => p !== me))
+  const linked = (x: Descriptor) =>
+    [...x.influencedBy, ...x.soundsLike].some((n) => fold(n) === me) ||
+    x.producers.some((p) => mine2.has(fold(p))) ||
+    (ARTIST_INFLUENCES[artistOf.get(x.albumId) ?? '']?.names ?? []).some((n) => fold(n) === me)
+  const followers = { linked: adopters.filter(linked).length, total: adopters.length }
+  return { field: [...field].map((g) => genreLabel(g)), spread, lift, pioneer, first, closer, followers }
 }
