@@ -350,6 +350,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Stevie Wonder', 'Shep and the Limelites', 'Gladys Knight & the Pips', 'Marvin Gaye', 'Curtis Mayfield'],
     source: 'Lauryn Hill, Academy of Achievement interview (her mother’s Songs in the Key of Life, the 45s of Shep and the Limelites and Gladys Knight & the Pips, side one of What’s Going On; Curtis Mayfield’s message)',
   },
+  fugees: {
+    names: ['The Beatles', 'Pink Floyd', 'Bob Marley', 'Bob Dylan', 'The Police', 'Jimi Hendrix', 'Marvin Gaye', 'Johnny Cash', 'Boukman Eksperyans', 'Shep and the Limelites'],
+    source: 'Wyclef Jean: Death Wish Coffee podcast (Sgt. Pepper and The Wall as blueprints for The Score), NY1/AP 2026 (Exodus, early Dylan, Synchronicity), Big Think (Hendrix, Marvin Gaye, Johnny Cash, Boukman Eksperyans, Marley); Lauryn Hill, Mixmag 1996 (Shep and the Limelites)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

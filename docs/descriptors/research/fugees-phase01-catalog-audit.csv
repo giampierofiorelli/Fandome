@@ -1,0 +1,6 @@
+album_id,title,year,type,catalog_ts,seed_ts,existing_descriptor,phase,action,notes
+fugees-bluntedonreality,Blunted on Reality,1994,studio,absent,absent,absent,01,ADD_ARTIST_CATALOG_AND_DESCRIBE,Proposed new artist id fugees; add new 1994 studio album and descriptor; title sometimes credited to Fugees (Tranzlator Crew).
+fugees-thescore,The Score,1996,studio,absent,absent,absent,01,ADD_CATALOG_AND_DESCRIBE,Original 1996 studio program; avoid duplicating 1996 remixes and later reissues.
+,Bootleg Versions,1996,remix,absent,absent,absent,EXCLUDE,SKIP_REMIX,1996 collection of remixes/alternate tracks; owner prioritises original studio albums.
+,Greatest Hits,2003,compilation,absent,absent,absent,EXCLUDE,SKIP_COMPILATION,Compilation with pre-existing recordings; no new studio LP row.
+,The Miseducation of Lauryn Hill,1998,studio,absent,absent,absent,EXCLUDE,SKIP_OTHER_ARTIST,"Lauryn Hill solo album; maintain separate artist ID laurynhill, as researched previously."

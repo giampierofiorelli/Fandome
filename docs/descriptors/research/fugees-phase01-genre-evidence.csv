@@ -1,0 +1,23 @@
+album_id,genre,source,url,scope,evidence
+fugees-bluntedonreality,hiphop,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,whole album,Pitchfork describes an early-1990s hip-hop record with rappers exchanging rapid verses
+fugees-bluntedonreality,rap,allmusic_debut,https://www.allmusic.com/album/blunted-on-reality-mw0000110303,whole album,AllMusic classifies this original album as Rap
+fugees-bluntedonreality,alternativerap,allmusic_debut,https://www.allmusic.com/album/blunted-on-reality-mw0000110303,whole album,AllMusic style entry Alternative Rap on the original 1994 album
+fugees-bluntedonreality,alternativehiphop,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,whole album,Pitchfork calls the album a sampler of early-1990s alternative hip-hop
+fugees-bluntedonreality,eastcoastrap,allmusic_debut,https://www.allmusic.com/album/blunted-on-reality-mw0000110303,whole album / regional style,AllMusic specifically says East Coast Rap; recorded in New Jersey; not silently renamed to East Coast Hip Hop
+fugees-bluntedonreality,boombap,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,multiple tracks / rhythm,Pitchfork explicitly situates the album on boom-bap margins
+fugees-bluntedonreality,jazzrap,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,selected tracks / texture,Pitchfork explicitly cites jazz rap as one of the album’s margins
+fugees-bluntedonreality,reggae,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,selected tracks / vocal rhythm,Pitchfork explicitly describes reggae-flecked tracks in its debut analysis
+fugees-bluntedonreality,reggaefusion,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,selected tracks / crossover texture,Pitchfork uses the phrase reggae fusion alongside boom-bap and jazz rap
+fugees-bluntedonreality,raggarap,pitchfork_debut,https://pitchfork.com/reviews/albums/22566-blunted-on-reality/,selected tracks / rhythmic delivery,Pitchfork characterizes it as a largely croon-free ragga rap record
+fugees-thescore,hiphop,pitchfork_score,https://pitchfork.com/reviews/albums/fugees-the-score/,whole album,Pitchfork identifies the record as a socially conscious mainstream-reaching hip-hop LP
+fugees-thescore,alternativehiphop,allmusic_score,https://www.allmusic.com/album/mw0000646570,whole album,AllMusic calls The Score a catalyst in the resurgence of alternative hip-hop
+fugees-thescore,conscioushiphop,aoty_score,https://www.albumoftheyear.org/album/6996-fugees-the-score.php,whole album / thematic style,Album of the Year classifies original album as Conscious Hip Hop
+fugees-thescore,eastcoasthiphop,aoty_score,https://www.albumoftheyear.org/album/6996-fugees-the-score.php,whole album / regional style,Album of the Year explicitly lists East Coast Hip Hop
+fugees-thescore,boombap,aoty_score,https://www.albumoftheyear.org/album/6996-fugees-the-score.php,multiple tracks / rhythmic base,Album of the Year lists Boom Bap; Pitchfork describes boom-bap breakbeat sonics
+fugees-thescore,rap,allmusic_score,https://www.allmusic.com/album/mw0000646570,whole album,AllMusic catalogues The Score under Rap
+fugees-thescore,rnb,pitchfork_score,https://pitchfork.com/reviews/albums/fugees-the-score/,prominent songs / sung crossover,"Pitchfork documents pronounced R&B elements, notably major sung hits"
+fugees-thescore,contemporaryrnb,allmusic_score,https://www.allmusic.com/album/mw0000646570,prominent songs / stylistic crossover,AllMusic explicit Contemporary R&B genre tag
+fugees-thescore,soul,pitchfork_score,https://pitchfork.com/reviews/albums/fugees-the-score/,prominent sung songs,Pitchfork calls out Lauryn Hill’s soul vocal influence and 1970s soul references
+fugees-thescore,reggae,aoty_score,https://www.albumoftheyear.org/album/6996-fugees-the-score.php,prominent singles / selected tracks,Album of the Year explicitly tags Reggae; Wyclef performs No Woman No Cry
+fugees-thescore,neosoul,aoty_score,https://www.albumoftheyear.org/album/6996-fugees-the-score.php,selected vocals / texture,Album of the Year explicitly tags Neo-Soul; mainly Lauryn Hill’s sung material
+fugees-thescore,alternativerap,allmusic_score,https://www.allmusic.com/album/mw0000646570,whole album / critical label,AllMusic explicitly lists Alternative Rap as a style; 1996 interview records Pras rejecting the term
