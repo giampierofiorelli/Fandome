@@ -792,7 +792,8 @@ export function similarArtists(
   artistId: string,
   albumIdsOf: (artistId: string) => string[],
   candidates: string[],
-  opts: { limit?: number; countryOf?: (artistId: string) => string | undefined; hide?: string[]; avoid?: string[] } = {},
+  // years: suggestions for one period of the career (src/lib/eras.ts); a collaboration counts only if it happened then.
+  opts: { limit?: number; countryOf?: (artistId: string) => string | undefined; hide?: string[]; avoid?: string[]; years?: [number, number] } = {},
 ): SimilarArtist[] {
   const { limit = 10, hide = [] } = opts
   const me = artistProfile(artistId, albumIdsOf(artistId))
@@ -800,6 +801,13 @@ export function similarArtists(
   const myAlbums = profilesOf(albumIdsOf(artistId))
   const avoid = profilesOf(opts.avoid)
   const from = opts.countryOf?.(artistId)
+  // A collaboration names its year ("… Caffè de la Paix (1993)"): for one period, only those of that period.
+  const collabNow = (x: string, y: string) => {
+    const c = collaborationOf(x, y)
+    if (!c || !opts.years) return c
+    const year = Number([...c.what.matchAll(/\b(19|20)\d{2}\b/g)].pop()?.[0])
+    return !year || (year >= opts.years[0] && year <= opts.years[1]) ? c : undefined
+  }
   const scored: (SimilarArtist & { profile: Profile; tooCommercial: boolean })[] = []
   for (const other of candidates) {
     if (other === artistId || hide.includes(other)) continue
@@ -829,7 +837,7 @@ export function similarArtists(
     const score = 0.5 * c.score + 0.5 * bestScore + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
     const why = best?.c.reasons[0] ?? c.reasons[0]
     // A documented collaboration is kept below the cut: it is a reason of its own (see linkOf).
-    if (!why || !best || (score < 0.3 && !collaborationOf(artistId, other))) continue
+    if (!why || !best || (score < 0.3 && !collabNow(artistId, other))) continue
     const reason = /^(Both|Similar sound|Close genres)/.test(why) ? `${best.a.title} and ${best.b.title}: ${lowerFirst(why)}` : why
     // Same commercial rule as for albums, on the artists' averages; only a named influence can lift it (below).
     // An artist is a packaged act when their albums average mainstream 4.5+ and critics' standing below 4.5.
@@ -857,7 +865,7 @@ export function similarArtists(
     const them = s.profile.artist
     const theirAlbums = profilesOf(albumIdsOf(s.artistId))
     if (includesName(named, them)) return { rank: 0, reason: `Influenced by ${them}` }
-    const collab = collaborationOf(artistId, s.artistId)
+    const collab = collabNow(artistId, s.artistId)
     if (collab) return { rank: 1, reason: collab.what }
     if (share(myAlbums, (a) => weightOf(a, 'influencedBy', them)) >= SHARE) {
       const drew = myAlbums.find((a) => wholeAlbum(a, 'influencedBy', them)) ?? myAlbums.find((a) => includesName(a.influencedBy, them))!

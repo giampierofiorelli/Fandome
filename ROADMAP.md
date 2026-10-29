@@ -103,3 +103,5 @@ Things we agreed on but deliberately postponed. Check this list before planning 
 ## Needs a backend (move off GitHub Pages)
 
 Everything is stored only in each visitor's browser today (IndexedDB). A backend is needed for: real accounts and login, shared posts/messages/stories between devices, real anonymous link-click totals, moderation shared across moderators, reports reaching the team, the admin role as a server-side permission, collection and story media storage.
+
+- **Periods of long careers (done, Oct 2026):** the Similar tab of an artist with a long career that changed sound has one list per period (`src/lib/eras.ts`, `docs/eras-guide.md`). Next: research the documented period names (`docs/eras/<artist-id>.csv`) for the artists that get periods.

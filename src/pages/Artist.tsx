@@ -4,6 +4,7 @@ import { useRef, useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import { albums, artists, concerts, parties } from '../data/seed'
 import { artistGenres, similarArtistsStable } from '../lib/similar'
+import { artistEras, eraYears } from '../lib/eras'
 import { avoidAlbums } from '../lib/suggest'
 import { genreLabel } from '../lib/descriptors'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
@@ -42,6 +43,7 @@ export default function ArtistPage() {
     if (y < 0) window.scrollTo({ top: window.scrollY + y })
   }
   const [suggest, setSuggest] = useState(false)
+  const [eraIndex, setEraIndex] = useState(-1) // -1: the whole career
   if (!artist) return <Navigate to="/explore" replace />
 
   const joined = Boolean(me?.fanSince[artist.id])
@@ -57,9 +59,14 @@ export default function ArtistPage() {
   // "If you like this artist": computed from the descriptions of their albums.
   const albumIdsOf = (id: string) => albums.filter((a) => albumHasArtist(a, id)).map((a) => a.id)
   const soundGenres = artistGenres(albumIdsOf(artist.id), 8)
-  const likeThem = soundGenres.length
-    ? similarArtistsStable(artist.id, albumIdsOf, artists.map((a) => a.id), { countryOf: (id) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
-    : []
+  const similarOpts = { countryOf: (id: string) => sceneOf(id)?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) }
+  const likeThem = soundGenres.length ? similarArtistsStable(artist.id, albumIdsOf, artists.map((a) => a.id), similarOpts) : []
+  // Long careers that changed sound: the same suggestions for each period (owner, Oct 2026).
+  const eras = artistEras(artist.id, albumIdsOf(artist.id))
+  const era = eras?.[eraIndex]
+  const likeThemNow = era
+    ? similarArtistsStable(artist.id, (id) => (id === artist.id ? era.albumIds : albumIdsOf(id)), artists.map((a) => a.id), { ...similarOpts, years: [era.from, era.to] })
+    : likeThem
 
   const tabs = roomTabs(artist, likeThem.length > 0)
 
@@ -136,13 +143,27 @@ export default function ArtistPage() {
           <div className="section-head">
             <h2>If you like {artist.name}</h2>
           </div>
+          {eras && (
+            <div className="filter-row era-row" role="group" aria-label="Period of the career">
+              <button className={eraIndex === -1 ? 'chip filter on' : 'chip filter'} aria-pressed={eraIndex === -1} onClick={() => setEraIndex(-1)}>
+                Whole career
+              </button>
+              {eras.map((e, i) => (
+                <button key={e.from} className={eraIndex === i ? 'chip filter on' : 'chip filter'} aria-pressed={eraIndex === i} onClick={() => setEraIndex(i)}>
+                  <span className="era-years">{eraYears(e)}</span> {e.label}
+                </button>
+              ))}
+            </div>
+          )}
           <div className="glass-card list">
-            {likeThem.map((s) => (
+            {likeThemNow.map((s) => (
               <SuggestedArtist key={s.artistId} artistId={s.artistId} reason={s.reason} newCountry={s.newCountry} />
             ))}
           </div>
           <p className="muted small suggest-why">
-            From the sound of their albums, their producers and documented influences.{' '}
+            {era
+              ? `From the ${era.albumIds.length === 1 ? 'album' : `${era.albumIds.length} albums`} of ${eraYears(era)}${era.named ? '' : ', a period found where the sound changes'}. `
+              : 'From the sound of their albums, their producers and documented influences. '}
             <Link to="/terms#similar" className="link-btn">
               How it works
             </Link>

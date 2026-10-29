@@ -1412,6 +1412,8 @@ a.link-rich:active { transform: scale(0.985); }
 .filter-row::-webkit-scrollbar { display: none; }
 .chip.filter { flex-shrink: 0; border: 1px solid var(--glass-line); cursor: pointer; font: inherit; font-size: 13px; }
 .chip.filter.on { background: var(--ink); color: var(--on-ink); border-color: transparent; }
+.era-row { margin-bottom: 4px; }
+.era-years { font-family: var(--dot); font-weight: 800; font-size: 11px; letter-spacing: 0.04em; opacity: 0.75; }
 .artists-count { margin: 6px 2px 10px; }
 a.rooms-more { display: block; text-align: center; text-decoration: none; }
 
