@@ -1,0 +1,18 @@
+artist_id,album_id,title,year,type,catalog_ts,seed_ts,descriptor_file,action,phase,notes
+publicenemy,publicenemy-yobumrushtheshow,Yo! Bum Rush the Show,1987,studio,absent,absent,absent,ADD album and artist to catalogue,phase01,Original release
+publicenemy,publicenemy-ittakesanationofmillionstoholdusback,It Takes a Nation of Millions to Hold Us Back,1988,studio,absent,absent,absent,ADD album and artist to catalogue,phase01,Original release
+publicenemy,publicenemy-fearofablackplanet,Fear of a Black Planet,1990,studio,absent,absent,absent,ADD album and artist to catalogue,phase01,Original release
+publicenemy,publicenemy-apocalypse91theenemystrikesblack,Apocalypse 91... The Enemy Strikes Black,1991,studio,absent,absent,absent,ADD album and artist to catalogue,phase01,Original release
+publicenemy,publicenemy-musesicknhourmessage,Muse Sick-n-Hour Mess Age,1994,studio,absent,absent,absent,ADD album and artist to catalogue,phase02,Original release
+publicenemy,publicenemy-hegotgame,He Got Game,1998,soundtrack,absent,absent,absent,ADD album and artist to catalogue,phase02,Soundtrack also treated as studio-era album; classify soundtrack
+publicenemy,publicenemy-theresapoisongoinon,There's a Poison Goin' On,1999,studio,absent,absent,absent,ADD album and artist to catalogue,phase02,Original release
+publicenemy,publicenemy-revolverlution,Revolverlution,2002,studio,absent,absent,absent,ADD album and artist to catalogue,phase02,Original release
+publicenemy,publicenemy-newwhirlodor,New Whirl Odor,2005,studio,absent,absent,absent,ADD album and artist to catalogue,phase03,Original release
+publicenemy,publicenemy-rebirthofanation,Rebirth of a Nation,2006,studio,absent,absent,absent,ADD album and artist to catalogue,phase03,Credited Public Enemy featuring Paris; full Paris production
+publicenemy,publicenemy-howyousellsoultoasoullesspeoplewhosoldtheirsoul,How You Sell Soul to a Soulless People Who Sold Their Soul???,2007,studio,absent,absent,absent,ADD album and artist to catalogue,phase03,Original release
+publicenemy,publicenemy-mostofmyheroesstilldontappearonnostamp,Most of My Heroes Still Don't Appear on No Stamp,2012,studio,absent,absent,absent,ADD album and artist to catalogue,phase04,Original release
+publicenemy,publicenemy-theevilempireofeverything,The Evil Empire of Everything,2012,studio,absent,absent,absent,ADD album and artist to catalogue,phase04,Original release
+publicenemy,publicenemy-manplansgodlaughs,Man Plans God Laughs,2015,studio,absent,absent,absent,ADD album and artist to catalogue,phase04,Original release
+publicenemy,publicenemy-nothingisquickinthedesert,Nothing Is Quick in the Desert,2017,studio,absent,absent,absent,ADD album and artist to catalogue,phase05,Original release
+publicenemy,publicenemy-whatyougonnadowhenthegridgoesdown,What You Gonna Do When the Grid Goes Down?,2020,studio,absent,absent,absent,ADD album and artist to catalogue,phase05,Original release
+publicenemy,publicenemy-blackskyovertheprojectsapartment2025,Black Sky Over the Projects: Apartment 2025,2025,studio,absent,absent,absent,ADD album and artist to catalogue,phase05,Original release

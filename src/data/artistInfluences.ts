@@ -322,6 +322,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Kurtis Blow', 'Grandmaster Flash and the Furious Five', 'Melle Mel', 'Afrika Bambaataa & Soulsonic Force', 'The Cold Crush Brothers', 'The Beatles', 'The Rolling Stones', 'Led Zeppelin', 'Harry Chapin', 'Jim Croce', 'Creedence Clearwater Revival', 'Janis Joplin'],
     source: 'Darryl McDaniels (D.M.C.): NJ Arts (Kurtis Blow, Grandmaster Flash, Melle Mel, Afrika Bambaataa), Library of Congress interview (Cold Crush Brothers; Beatles, Stones, Led Zeppelin, Harry Chapin, Jim Croce), Hypebeast 2019 (also CCR, Janis Joplin); Larry Smith, Brian Coleman 2006 (It’s Like That answering Planet Rock)',
   },
+  publicenemy: {
+    names: ['The Last Poets', 'Gil Scott-Heron', "The O'Jays", 'The Clash', 'James Brown', 'Bob Marley'],
+    source: 'Chuck D: The Progressive (The Last Poets, Gil Scott-Heron, the O’Jays and the Philadelphia International sound, The Clash), Entertainment Weekly 2023 (James Brown, Bob Marley, The Clash)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
