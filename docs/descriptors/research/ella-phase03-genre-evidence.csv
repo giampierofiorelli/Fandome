@@ -1,0 +1,27 @@
+album_id,genre,source,url,scope,evidence
+ella-likesomeoneinlove,vocaljazz,like_qobuz,https://www.qobuz.com/gb-en/album/like-someone-in-love-ella-fitzgerald/hjdmqrnh5guqa,whole album,Qobuz album genre Vocal Jazz
+ella-likesomeoneinlove,jazz,like_allmusic,https://www.allmusic.com/album/like-someone-in-love-mw0000272518,whole album,AllMusic album genre Jazz
+ella-likesomeoneinlove,standards,like_jazzjournal,https://jazzjournal.co.uk/2019/09/19/ella-fitzgerald-like-someone-in-love/,whole album,Jazz Journal calls these familiar song standards in original LP
+ella-likesomeoneinlove,traditionalpop,like_jazzjournal,https://jazzjournal.co.uk/2019/09/19/ella-fitzgerald-like-someone-in-love/,whole album,"Orchestral ballad / traditional pop standard repertoire, critic describes lush pop-jazz arrangement"
+ella-porgyandbess,vocaljazz,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,whole album,AllMusic named style Vocal Jazz
+ella-porgyandbess,standards,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,whole album,AllMusic named style Standards
+ella-porgyandbess,traditionalpop,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,whole album,AllMusic named style Traditional Pop
+ella-porgyandbess,jazz,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,whole album,Expert review describes big band jazz setting of opera songs
+ella-porgyandbess,bigband,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,large-ensemble sound,AllMusic explicitly describes brassy big-band sections; not the complete project
+ella-porgyandbess,americanpopularsong,porgy_allmusic,https://www.allmusic.com/album/porgy-bess-mw0000191821,repertoire label,Named AllMusic style American Popular Song; treat as repertoire label if Fandome policy chooses
+ella-ellafitzgeraldsingstheirvingberlinsongbook,vocaljazz,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,whole album,AllMusic named style Vocal Jazz
+ella-ellafitzgeraldsingstheirvingberlinsongbook,jazz,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,whole album,AllMusic names Jazz genre
+ella-ellafitzgeraldsingstheirvingberlinsongbook,standards,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,whole album,AllMusic names Standards style
+ella-ellafitzgeraldsingstheirvingberlinsongbook,traditionalpop,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,whole album,AllMusic names Traditional Pop style
+ella-ellafitzgeraldsingstheirvingberlinsongbook,swing,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,multiple songs,AllMusic names Swing style and active swing performances
+ella-ellafitzgeraldsingstheirvingberlinsongbook,americanpopularsong,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,repertoire label,Named AllMusic style American Popular Song
+ella-ellafitzgeraldsingstheirvingberlinsongbook,bop,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,long tail,AllMusic explicitly names Bop style; secondary texture only
+ella-ellafitzgeraldsingstheirvingberlinsongbook,earlyjazzvocals,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,long tail,AllMusic named style Early Jazz Vocals; retrospective vocal classification
+ella-ellafitzgeraldsingstheirvingberlinsongbook,blues,berlin_allmusic,https://www.allmusic.com/album/sings-the-irving-berlin-song-book-mw0000312795,long tail,AllMusic lists Blues among album genres; do not overstate prevalence
+ella-ellaswingslightly,vocaljazz,lightly_allmusic,https://www.allmusic.com/album/ella-swings-lightly-mw0000199730,whole album,AllMusic named style Vocal Jazz
+ella-ellaswingslightly,standards,lightly_allmusic,https://www.allmusic.com/album/ella-swings-lightly-mw0000199730,whole album,AllMusic named style Standards
+ella-ellaswingslightly,traditionalpop,lightly_allmusic,https://www.allmusic.com/album/ella-swings-lightly-mw0000199730,whole album,AllMusic named style Traditional Pop
+ella-ellaswingslightly,jazz,lightly_jazzlibrary,https://www.allaboutjazz.com/ella-fitzgerald-ella-fitzgerald-by-mathew-bahl/,whole album,Jazz critics describe swing small-band jazz
+ella-ellaswingslightly,swing,lightly_jazzlibrary,https://www.allaboutjazz.com/ella-fitzgerald-ella-fitzgerald-by-mathew-bahl/,whole album,"All About Jazz calls these swing-era standards, arranged by Paich"
+ella-ellaswingslightly,americanpopularsong,lightly_allmusic,https://www.allmusic.com/album/ella-swings-lightly-mw0000199730,repertoire label,AllMusic named style American Popular Song
+ella-ellaswingslightly,earlyjazzvocals,lightly_allmusic,https://www.allmusic.com/album/ella-swings-lightly-mw0000199730,long tail,AllMusic named style Early Jazz Vocals; retrospective classification

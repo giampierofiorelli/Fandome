@@ -1,0 +1,19 @@
+album_id,artist,title,year,type,catalog_action,notes
+ella-likesomeoneinlove,Ella Fitzgerald,Like Someone in Love,1957,studio,ADD_NEW_PHASE_03,DeVol studio orchestra and original 15-track LP; not expanded 1991 CD
+ella-porgyandbess,Ella Fitzgerald & Louis Armstrong,Porgy and Bess,1958,studio,ADD_NEW_PHASE_03_COBILL,"Use Verve/AllMusic 1958 as original, despite official recording-year 1957 and other 1959 discographies; CO_BILLED with armstrong"
+ella-ellafitzgeraldsingstheirvingberlinsongbook,Ella Fitzgerald,Ella Fitzgerald Sings the Irving Berlin Song Book,1958,studio,ADD_NEW_PHASE_03,Original 32-track double-LP Verve 1958 not separate Volume 1 and 2 reissue albums
+ella-ellaswingslightly,Ella Fitzgerald,Ella Swings Lightly,1959,studio,ADD_NEW_PHASE_03_YEAR_DISPUTE,"Sessions Nov 1958; Jazzdisco/AllMusic label original LP 1959, some pressing sources 1958. Preserve issue discrepancy for review."
+,Ella Fitzgerald,Ella Sings Gershwin,1950,,PRIOR_PHASE_01,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Songs in a Mellow Mood,1954,,PRIOR_PHASE_01,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Sweet and Hot,1955,,PRIOR_PHASE_01_CLASSIFICATION_HOLD,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella Fitzgerald Sings the Cole Porter Song Book,1956,,PRIOR_PHASE_01,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella and Louis,1956,,PRIOR_PHASE_02_EXISTING_ARMSTRONG_ID,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella Fitzgerald Sings the Rodgers and Hart Song Book,1956,,PRIOR_PHASE_02,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella Fitzgerald Sings the Duke Ellington Song Book,1957,,PRIOR_PHASE_02,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella and Louis Again,1957,,PRIOR_PHASE_02,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella at the Opera House,1957,,EXCLUDE_LIVE,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella Fitzgerald Sings Sweet Songs for Swingers,1959,,NEXT_PHASE_04_YEAR_CHECK,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella Fitzgerald Sings the George and Ira Gershwin Song Book,1959,,NEXT_PHASE_04,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Get Happy!,1959,,NEXT_PHASE_04,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,Ella in Berlin: Mack the Knife,1960,,EXCLUDE_LIVE,Not part of this ZIP; no previous rows duplicated
+,Ella Fitzgerald,At Newport,1958,,EXCLUDE_LIVE,Not part of this ZIP; no previous rows duplicated

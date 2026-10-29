@@ -9,6 +9,7 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'armstrong-ellaandlouis': { with: ['ella'], credit: 'Ella Fitzgerald & Louis Armstrong' },
   'ella-ellaandlouisagain': { with: ['armstrong'], credit: 'Ella Fitzgerald & Louis Armstrong' },
   'ella-ellafitzgeraldsingsthedukeellingtonsongbook': { credit: 'Ella Fitzgerald with Duke Ellington and His Orchestra' },
+  'ella-porgyandbess': { with: ['armstrong'], credit: 'Ella Fitzgerald & Louis Armstrong' },
   'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
   'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
   'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },
