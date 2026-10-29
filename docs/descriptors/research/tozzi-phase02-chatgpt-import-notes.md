@@ -46,3 +46,9 @@ Once all four new `tozzi` catalogue albums are added and only the four new descr
 ## Claude import note (Oct 2026)
 
 - Rows imported as delivered; the four albums added to the catalogue row.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/tozzi.csv` (hitparadeitalia.it charts, Moretti, Rockol, Vice Italia "Italian Folgorati").
+- sounds_like confirmed by Vice Italia: Notte rosa (Visage, the new romantics, "predilezione per Duran Duran e Units"), Eva (Con la testa sui binari "praticamente sono i Chrome se fossero nati in Italia"), Hurrah! (challenges Giorgio Moroder on his own ground; Thomas Dolby). Toto added to Notte rosa (Moretti: the melodies recall Toto).
+- Eva credits on Discogs r2678667: Synclavier II (Aldo Banfi), LinnDrum (Walter Calloni); confidence high. Hurrah! credits on Discogs r1533821: Joe Vescovi keyboards and programming, Simmons drums (Maurizio Granata), strings arranged by Maurizio Fabrizio; confidence high.
