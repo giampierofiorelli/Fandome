@@ -54,3 +54,9 @@ These three tokens are not yet in the checked `src/data/scenes.ts`. Add them to 
 ## Claude import note (Oct 2026)
 
 - New genre tokens eastcoastrap (eastcoasthiphop, rap), reggaefusion (reggae, pop), raggarap (ragga, hiphop). Artist added (2 studio albums), not touring; scene US en 1990 hiphop,reggae.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/fugees.csv`.
+- Blunted on Reality sounds_like: A Tribe Called Quest and Digable Planets kept (artist bio: "traded rhymes in a method akin to A Tribe Called Quest, Poor Righteous Teachers, and Digable Planets"); De La Soul and Main Source removed (not found).
+- The Score: A Tribe Called Quest confirmed (LA Times, Cheo Hodari Coker: "as fluid a rap group since A Tribe Called Quest"); De La Soul kept on weak support (Soul in Stereo: "an extension of De La Soul").
