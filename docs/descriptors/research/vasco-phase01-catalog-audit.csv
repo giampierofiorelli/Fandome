@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+vasco-macosavuoichesiaunacanzone,...Ma cosa vuoi che sia una canzone...,1978,studio,"MISSING in src/data/catalog.ts (descriptors branch, 2026-10-29)",phase01,"ADD ['...Ma cosa vuoi che sia una canzone...', 1978] under 'vasco'; append descriptor after validator check"
+vasco-nonsiamomicagliamericani,Non siamo mica gli americani!,1979,studio,"MISSING in src/data/catalog.ts (descriptors branch, 2026-10-29)",phase01,"ADD ['Non siamo mica gli americani!', 1979] under 'vasco'; append descriptor after validator check"
+vasco-colpadalfredo,Colpa d'Alfredo,1980,studio,"MISSING in src/data/catalog.ts (descriptors branch, 2026-10-29)",phase01,"ADD ['Colpa d\'Alfredo', 1980] under 'vasco'; append descriptor after validator check"
+vasco-siamosolonoi,Siamo solo noi,1981,studio,"MISSING in src/data/catalog.ts (descriptors branch, 2026-10-29)",phase01,"ADD ['Siamo solo noi', 1981] under 'vasco'; append descriptor after validator check"

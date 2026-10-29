@@ -1,0 +1,31 @@
+﻿album_id,genre,source,scope,evidence
+vasco-vadoalmassimo,rock,https://musicbrainz.org/release-group/d54ae310-ff52-38d7-a66a-0f8cdc95733d,whole album,Release group lists rock; reviews regard it as a full-band rock record.
+vasco-vadoalmassimo,poprock,https://musicbrainz.org/release-group/d54ae310-ff52-38d7-a66a-0f8cdc95733d,whole album,Release-group community genre pop rock; less abrasive songs than 1981.
+vasco-vadoalmassimo,canzonedautore,https://www.treccani.it/enciclopedia/vasco-rossi_%28Lessico-del-XXI-Secolo%29/,whole album songwriter dimension,Treccani explicitly locates this record in Vasco’s Italian rock cantautorato.
+vasco-vadoalmassimo,reggae,https://www.rockol.it/news-743777/vasco-rossi-anniversario-album-vado-al-massimo-recensione-canzoni,title track only,Rockol calls Vado al massimo a reggae with a rock chorus.
+vasco-vadoalmassimo,ballad,https://www.rockol.it/news-743777/vasco-rossi-anniversario-album-vado-al-massimo-recensione-canzoni,several tracks,"Canzone, Ogni volta and La noia explicitly discussed as ballads."
+vasco-vadoalmassimo,pop,https://musicbrainz.org/release-group/d54ae310-ff52-38d7-a66a-0f8cdc95733d,album’s accessible songs,MusicBrainz release-group has pop tag; this is subordinate to pop-rock.
+vasco-vadoalmassimo,hardrock,https://musicbrainz.org/release-group/d54ae310-ff52-38d7-a66a-0f8cdc95733d,album texture / community tagging,"Release group lists hard rock, but critical album review describes softening from 1981."
+vasco-vadoalmassimo,italodisco,https://www.rockol.it/news-743777/vasco-rossi-anniversario-album-vado-al-massimo-recensione-canzoni,one track only: Splendida giornata,Rockol calls song sounds almost Italo disco; long-tail only.
+vasco-bollicine,rock,https://www.ondarock.it/recensioni/pietremiliariitaliane/1983-vasco-rossi-bollicine/,whole album,"OndaRock main headline genre rock, vocal/guitar-driven band album."
+vasco-bollicine,newwave,https://www.ondarock.it/recensioni/pietremiliariitaliane/1983-vasco-rossi-bollicine/,two songs; textural influence,OndaRock names Ultimo domicilio conosciuto and Mi piaci perché as new wave.
+vasco-bollicine,poprock,https://www.45cat.com/vinyl/album/cln25101,whole album,"Original original vinyl classified Pop Rock, alongside Rock and Pop; subgenre of commercial rock."
+vasco-bollicine,canzonedautore,https://www.treccani.it/enciclopedia/vasco-rossi_%28Lessico-del-XXI-Secolo%29/,whole album songwriting,Treccani identifies Bollicine as key record of his cantautorato rock.
+vasco-bollicine,italianpop,https://www.allmusic.com/album/bollicine-mw0000743387,whole album metadata,AllMusic exact style Italian Pop.
+vasco-bollicine,contemporarysingersongwriter,https://www.allmusic.com/album/bollicine-mw0000743387,whole album metadata,AllMusic exact Contemporary Singer/Songwriter.
+vasco-bollicine,yachtrock,https://www.ondarock.it/recensioni/pietremiliariitaliane/1983-vasco-rossi-bollicine/,one track only: Giocala,"OndaRock explicitly uses yacht rock for Giocala, not entire LP."
+vasco-bollicine,ballad,https://www.ondarock.it/monografie/vascorossi/,selected: Vita spericolata / Una canzone per te,"Critical discussion describes affectionate slow song in the album, placed last."
+vasco-cosasuccedeincitta,poprock,https://www.rsi.ch/cultura/musica/speciali/Quando-Vasco-ha-chiuso-con-la-vita-spericolata--3367863.html,whole album,RSI explicitly calls post-1984 album an accessible pop-rock turn.
+vasco-cosasuccedeincitta,rock,https://it.wikipedia.org/wiki/Cosa_succede_in_citt%C3%A0,whole album,Listed as rock and pop rock; rock tracks remain prominent.
+vasco-cosasuccedeincitta,funk,https://www.ondarock.it/monografie/vascorossi/,"rhythm sections, some songs",OndaRock identifies characteristic funk rhythms in the record.
+vasco-cosasuccedeincitta,canzonedautore,https://www.rsi.ch/cultura/musica/speciali/Quando-Vasco-ha-chiuso-con-la-vita-spericolata--3367863.html,whole album lyrics/style,RSI names reflective cantautorato rock dimension in the work.
+vasco-cosasuccedeincitta,italianpop,https://www.allmusic.com/album/cosa-succede-in-citta-mw0000476015,whole album metadata,AllMusic explicitly labels Italian Pop; do not map to itpop.
+vasco-cosasuccedeincitta,contemporarysingersongwriter,https://www.allmusic.com/album/cosa-succede-in-citta-mw0000476015,whole album metadata,AllMusic style Contemporary Singer/Songwriter.
+vasco-cosasuccedeincitta,ballad,https://www.ondarock.it/monografie/vascorossi/,two or three tracks,OndaRock explicitly notes recurring ballads on the 1985 LP.
+vasco-cosasuccedeincitta,hardrock,https://www.rsi.ch/cultura/musica/speciali/Quando-Vasco-ha-chiuso-con-la-vita-spericolata--3367863.html,opener Cosa c’è only,RSI calls opener a rock gallop and says most of rest moves away from hard rock.
+vasco-cechidiceno,rock,https://ardisc.it/ce-chi-dice-no/,whole album,Critical review consistently calls album and its main singles rock.
+vasco-cechidiceno,poprock,https://www.allmusic.com/album/ce-chi-dice-no-mw0000468625,whole album,AllMusic labels Pop/Rock and production is polished; Fandome uses poprock as hybrid subtype.
+vasco-cechidiceno,canzonedautore,https://www.ondarock.it/monografie/vascorossi/,whole album reflective songwriting,Critical review identifies shift to introspective singer-songwriter work over rock.
+vasco-cechidiceno,italianpop,https://www.allmusic.com/album/ce-chi-dice-no-mw0000468625,whole album metadata,AllMusic explicitly uses Italian Pop style.
+vasco-cechidiceno,contemporarysingersongwriter,https://www.allmusic.com/album/ce-chi-dice-no-mw0000468625,whole album metadata,AllMusic exact Contemporary Singer/Songwriter label.
+vasco-cechidiceno,ballad,https://www.ondarock.it/monografie/vascorossi/,several tracks,OndaRock explicitly identifies Ridere di te as a ballad and others as reflective songs.

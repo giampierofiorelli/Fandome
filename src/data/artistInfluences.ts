@@ -362,6 +362,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Ray Charles', 'Otis Redding', 'Aretha Franklin', 'Sam & Dave', 'Wilson Pickett', 'The Beatles', 'The Rolling Stones', 'Joe Cocker'],
     source: 'Zucchero, NPR 2017 (Ray Charles, Otis Redding, Aretha Franklin); Write On Music 2014 interview (Sam & Dave, Wilson Pickett); PRI The World 2017 (Beatles, Rolling Stones). La Voce di New York 2014 interview (Joe Cocker: "mi colpì ai tempi di Woodstock"; Ray Charles "il mio idolo")',
   },
+  vasco: {
+    names: ['Fabrizio De André'],
+    source: 'Vasco Rossi, Rolling Stone Italia, January 2026 ("Fabrizio De André mi ha insegnato a mettere in discussione i maestri"). A long list of rock influences from an undated interview reposted on a blog left out (provenance not verified)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

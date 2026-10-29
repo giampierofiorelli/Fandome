@@ -1,0 +1,25 @@
+﻿album_id,genre,source,scope,evidence
+vasco-macosavuoichesiaunacanzone,canzonedautore,https://it.wikipedia.org/wiki/...Ma_cosa_vuoi_che_sia_una_canzone...,whole album,Original genre musica d’autore; mapped to Fandome canzonedautore
+vasco-macosavuoichesiaunacanzone,poprock,https://it.wikipedia.org/wiki/...Ma_cosa_vuoi_che_sia_una_canzone...,whole album,Italian music discography explicitly assigns pop rock
+vasco-macosavuoichesiaunacanzone,italianpop,https://www.allmusic.com/album/ma-cosa-vuoi-che-sia-una-canzone-mw0000516226,whole album AllMusic metadata,AllMusic exact Italian Pop style
+vasco-macosavuoichesiaunacanzone,contemporarysingersongwriter,https://www.allmusic.com/album/ma-cosa-vuoi-che-sia-una-canzone-mw0000516226,whole album AllMusic metadata,AllMusic exact Contemporary Singer/Songwriter style
+vasco-nonsiamomicagliamericani,poprock,https://en.wikipedia.org/wiki/Non_siamo_mica_gli_americani%21,whole album,"Album pop rock classification, hybrid of pop hooks and rock band"
+vasco-nonsiamomicagliamericani,rock,https://www.rockol.it/news-729812/vasco-rossi-anniversario-album-non-siamo-mica-gli-americani-recensione,whole album,Rockol explicitly describes emergence of a rock-centred approach
+vasco-nonsiamomicagliamericani,canzonedautore,https://www.rockol.it/news-729812/vasco-rossi-anniversario-album-non-siamo-mica-gli-americani-recensione,album songwriting component,"Rockol documents cantautorato-to-provocateur continuum, still present in Albachiara"
+vasco-nonsiamomicagliamericani,punkrock,https://www.debaser.it/vasco-rossi/non-siamo-mica-gli-americani/recensione-jployrow3,several passages; strongest Fegato outro,Reviewer names punk; comparison to a Sex Pistols quotation is not an influence
+vasco-nonsiamomicagliamericani,ballad,https://www.debaser.it/vasco-rossi/non-siamo-mica-gli-americani,some tracks; Albachiara,Listener retrospective identifies Albachiara as a ballad
+vasco-nonsiamomicagliamericani,vaudeville,https://www.debaser.it/vasco-rossi/non-siamo-mica-gli-americani/recensione-jployrow3,some tracks,Reviewer explicitly identifies vaudeville across album’s stylistic collage
+vasco-nonsiamomicagliamericani,blues,https://www.debaser.it/vasco-rossi/non-siamo-mica-gli-americani/recensione-viva-li,some tracks / texture,Reader describes the record’s blues mode alongside rock and vaudeville
+vasco-nonsiamomicagliamericani,dance,https://www.debaser.it/vasco-rossi/non-siamo-mica-gli-americani/recensione-jployrow3,some tracks,Reader explicitly includes dance within varied record; low-weight long-tail style
+vasco-colpadalfredo,rock,https://www.rockol.it/news-718295/vasco-rossi-colpa-d-alfredo-40-anni-storia-e-critiche-intervista,whole album,Production team and critics call 1980 the full rock pivot
+vasco-colpadalfredo,poprock,https://en.wikipedia.org/wiki/Colpa_d%27Alfredo,whole album,Discography specifically lists pop rock
+vasco-colpadalfredo,punkrock,https://en.wikipedia.org/wiki/Colpa_d%27Alfredo,select songs / rebellious texture,"Album genre lists punk rock, under rock as secondary mode"
+vasco-colpadalfredo,canzonedautore,https://www.treccani.it/enciclopedia/vasco-rossi_%28Lessico-del-XXI-Secolo%29/,whole album / writing,Treccani calls the 1980-83 formula cantautorato rock
+vasco-colpadalfredo,italianpop,https://www.allmusic.com/album/colpa-dalfredo-mw0000759764,whole album AllMusic metadata,AllMusic style Italian Pop; lower priority than rock
+vasco-siamosolonoi,rock,https://www.rockol.it/news-719882/vasco-rossi-siamo-solo-noi-usciva-giusto-40-anni-fa,whole album,Contemporary retrospective places whole album in Italian rock identity
+vasco-siamosolonoi,poprock,https://en.wikipedia.org/wiki/Siamo_solo_noi,whole album,Genre documented as pop rock
+vasco-siamosolonoi,aor,https://www.debaser.it/vasco-rossi/siamo-solo-noi,listener-metadata whole album; weak,AOR explicitly appears in a DeBaser review style tag; subjective; Claude to review
+vasco-siamosolonoi,hardrock,https://www.debaser.it/vasco-rossi/siamo-solo-noi/recensione-donsanfelice,some tracks; Ieri ho sgozzato mio figlio,Described as brushing hard rock; limited to some songs
+vasco-siamosolonoi,ballad,https://www.debaser.it/vasco-rossi/siamo-solo-noi,some tracks,Romantic ballads explicitly distinguished from rock songs
+vasco-siamosolonoi,blues,https://www.debaser.it/vasco-rossi/siamo-solo-noi,some songs / texture,"Listener retrospective names blues coloration, not main album genre"
+vasco-siamosolonoi,reggae,https://www.debaser.it/vasco-rossi/siamo-solo-noi/recensione-donsanfelice,one track; Voglio andare al mare,Specific song explicitly identified as reggae-influenced

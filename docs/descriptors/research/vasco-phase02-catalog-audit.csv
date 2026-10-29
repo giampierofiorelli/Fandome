@@ -1,0 +1,6 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+vasco-vadoalmassimo,Vado al massimo,1982,studio,present,02,Keep existing id; add only descriptor row
+vasco-bollicine,Bollicine,1983,studio,present,02,Keep existing id; add only descriptor row
+vasco-cosasuccedeincitta,Cosa succede in città,1985,studio,missing,02,Add to catalog.ts artist vasco album list before import
+vasco-cechidiceno,C’è chi dice no,1987,studio,present,02,Keep existing id; add only descriptor row
+vasco-vabenevabenecosi,"Va bene, va bene così",1984,live,excluded_live,02,Do not import: live album
