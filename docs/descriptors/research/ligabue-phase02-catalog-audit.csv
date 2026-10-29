@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+ligabue-buoncompleannoelvis,Buon compleanno Elvis,1995,studio,EXISTS,phase02,Keep existing row and id; append only descriptor.
+ligabue-missmondo,Miss Mondo,1999,studio,EXISTS,phase02,Keep existing row and id; append only descriptor.
+ligabue-fuoricomeva,Fuori come va?,2002,studio,MISSING,phase02,"Add ['Fuori come va?', 2002] to src/data/catalog.ts, then merge descriptor; retain original spelling/slug."
+ligabue-nomeecognome,Nome e cognome,2005,studio,MISSING,phase02,"Add ['Nome e cognome', 2005] to src/data/catalog.ts, then merge descriptor; retain original spelling/slug."

@@ -1,0 +1,30 @@
+﻿album_id,genre,source,scope,reason
+ligabue-buoncompleannoelvis,rock,https://www.ondarock.it/monografie/ligabue/,whole album,Full record framed as direct 1970s rock with a newly cohesive guitar band
+ligabue-buoncompleannoelvis,contemporarypoprock,https://www.allmusic.com/album/buon-compleanno-elvis-1995-2025-mw0000530157,whole album,AllMusic categorises the original album within contemporary pop/rock
+ligabue-buoncompleannoelvis,rockandroll,https://www.allmusic.com/album/buon-compleanno-elvis-1995-2025-mw0000530157,whole album and prominent title track,AllMusic style and OndaRock discussion of title song
+ligabue-buoncompleannoelvis,alternativerock,https://www.allmusic.com/album/buon-compleanno-elvis-1995-2025-mw0000530157,whole album broad style,AllMusic alternative/indie rock; token maps to existing broader alternative rock
+ligabue-buoncompleannoelvis,alternativecountryrock,https://www.allmusic.com/album/buon-compleanno-elvis-1995-2025-mw0000530157,whole album style,"AllMusic explicitly uses Alternative Country-Rock; new exact combined token, needs genre family entry"
+ligabue-buoncompleannoelvis,blues,https://www.ondarock.it/monografie/ligabue/,one short original track,Rane a Rubiera blues precedes Certe notti on original 14-track issue
+ligabue-buoncompleannoelvis,ballad,https://www.ondarock.it/monografie/ligabue/,several tracks,Viva! and other quieter songs contrast with riff-led rock
+ligabue-missmondo,poprock,https://it.wikipedia.org/wiki/Miss_Mondo_%28album%29,whole album,Original 1999 album classed pop-rock
+ligabue-missmondo,alternativerock,https://www.musicistireggiani.it/album/miss-mondo/,whole album,Musicisti Reggiani lists rock alternativo
+ligabue-missmondo,contemporarypoprock,https://www.allmusic.com/album/miss-mondo-mw0000531673,whole album broad style,AllMusic lists contemporary pop/rock
+ligabue-missmondo,italianpop,https://www.allmusic.com/album/miss-mondo-mw0000531673,whole album broad style,AllMusic also lists Italian pop
+ligabue-missmondo,popsoul,https://groups.google.com/g/it.arti.musica.rockitalia/c/1ZVvpy8178c,one track: Almeno credo,Ligabue calls this particular song his attempt at white pop-soul
+ligabue-missmondo,blues,https://www.ondarock.it/monografie/ligabue/,one track: E,OndaRock explicitly refers to the blues texture of E
+ligabue-missmondo,texmex,https://groups.google.com/g/it.arti.musica.rockitalia/c/1ZVvpy8178c,one song: La porta dei sogni,Ligabue describes the final song as unusually Tex-Mex
+ligabue-missmondo,folk,https://groups.google.com/g/it.arti.musica.rockitalia/c/1ZVvpy8178c,one song: Kay è stata qui,Acoustic folk texture explicitly described by Ligabue
+ligabue-missmondo,ballad,https://groups.google.com/g/it.arti.musica.rockitalia/c/1ZVvpy8178c,several slower songs,Una vita da mediano and Da adesso in poi identified as ballads/piano-led songs
+ligabue-missmondo,waltz,https://groups.google.com/g/it.arti.musica.rockitalia/c/1ZVvpy8178c,one song: Kay è stata qui,Ligabue describes its melodramatic six-eight waltz feel
+ligabue-fuoricomeva,rock,https://www.rockol.it/news-712190/ligabue-album-riascoltare-coronavirus-fuori-come-va-recensione,whole album,Original Rockol review explicitly identifies the album as rock
+ligabue-fuoricomeva,poprock,https://it.wikipedia.org/wiki/Fuori_come_va,whole album,Original album classified pop rock
+ligabue-fuoricomeva,alternativepoprock,https://www.allmusic.com/album/fuori-come-va--mw0000413096,whole album,AllMusic Alternative Pop/Rock tag is a direct match to an existing canonical token
+ligabue-fuoricomeva,alternativeindierock,https://www.allmusic.com/album/fuori-come-va--mw0000413096,whole album,AllMusic Alternative/Indie Rock tag
+ligabue-fuoricomeva,ballad,https://www.rockol.it/news-712190/ligabue-album-riascoltare-coronavirus-fuori-come-va-recensione,several tracks,Ti sento and more tempered melodic passages distinguished from driving rock
+ligabue-fuoricomeva,rockandroll,https://www.rockol.it/news-712190/ligabue-album-riascoltare-coronavirus-fuori-come-va-recensione,two tracks: In pieno rock n roll and Chissa se in cielo passano gli Who,Contemporary critic highlights the rock-and-roll/Who-themed album closing pair
+ligabue-nomeecognome,rock,https://content.suono.it/recensione-musica/ligabue-nome-e-cognome/,whole album,Contemporary review and direct artist quotes frame the record as straightforward rock
+ligabue-nomeecognome,poprock,https://www.ondarock.it/recensioni/2005_ligabue/,whole album,Contemporary critic calls out explicit pop-rock songs and polished stadium-oriented guitar rock
+ligabue-nomeecognome,contemporarypoprock,https://www.allmusic.com/album/nome-e-cognome-mw0000531674,whole album,AllMusic style Contemporary Pop/Rock
+ligabue-nomeecognome,italianpop,https://www.allmusic.com/album/nome-e-cognome-mw0000531674,whole album broad style,"AllMusic style Italian Pop, weak stylistic distinction"
+ligabue-nomeecognome,ballad,https://www.ondarock.it/recensioni/2005_ligabue/,two or more tracks,L amore conta and Cosa vuoi che sia described as ballads
+ligabue-nomeecognome,pop,https://shop.warnermusic.it/products/nome-e-cognome-cd,retailer shelf only; last position,Warner store classifies record as Pop; not evidence of dominating album sound
