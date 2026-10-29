@@ -1,0 +1,18 @@
+album_id,artist,title,year,type,catalog_status,evidence
+,Ella Fitzgerald,Souvenir Album,1947 / 1949,compilation,EXCLUDE,Recorded 1940-41; early pre-LP multi-disc anthology rather than new 1947 studio sessions
+ella-ellasingsgershwin,Ella Fitzgerald,Ella Sings Gershwin,1950,studio,NEW_PHASE_01,Decca original eight-song 10-inch LP; do not use 1959 expanded MCA edition
+ella-songsinamellowmood,Ella Fitzgerald,Songs in a Mellow Mood,1954,studio,NEW_PHASE_01,Decca original March 1954 twelve-song Ellis Larkins album; AllMusic sometimes dates later reissue 1955
+,Ella Fitzgerald,Lullabies of Birdland,1955,compilation,EXCLUDE,"Tracks range from 1945 to 1955, collected earlier issued sides; not a coherent new studio album"
+,Ella Fitzgerald,For Sentimental Reasons,1955,compilation,EXCLUDE,Decca singles repackaging; original recording dates/album category need authoritative resolution
+,Ella Fitzgerald,Miss Ella Fitzgerald & Mr Gordon Jenkins Invite You to Listen and Relax,1958,compilation,EXCLUDE,"Decca collected older 1949-54 singles; public issue-date accounts conflict, exclude until session provenance checked"
+ella-sweetandhot,Ella Fitzgerald,Sweet and Hot,1955,studio,NEW_PHASE_01_PROVISIONAL,"Classed 1955 original studio LP in canonical discographies, assembled from multiple 1952-55 sessions, some 1953 broadcast; potential compilation-edge case for editorial review"
+,Ella Fitzgerald,The First Lady of Song,1955,compilation,EXCLUDE,Retrospective compilation of older Decca recordings
+,Ella Fitzgerald,Songs from 'Pete Kelly’s Blues',1955,soundtrack,EXCLUDE,Soundtrack/multi-artist material; not a standalone core studio album for this pass
+ella-ellafitzgeraldsingsthecoleportersongbook,Ella Fitzgerald,Ella Fitzgerald Sings the Cole Porter Song Book,1956,studio,EXISTING_IN_CATALOG_NEW_DESCRIPTOR_PHASE_01,"Verve original studio double album already listed in catalog.ts, not yet present in ella descriptor CSV"
+,Ella Fitzgerald,Ella and Louis,1956,studio,NEXT_PHASE_02,"Co-billed studio album with Louis Armstrong, add co-billed credit; verify exact catalog title"
+,Ella Fitzgerald,Ella Fitzgerald Sings the Rodgers and Hart Song Book,1956,studio,NEXT_PHASE_02,Verve studio Songbook
+,Ella Fitzgerald,Ella Fitzgerald Sings the Duke Ellington Song Book,1957,studio,NEXT_PHASE_02,Verve Songbook with Duke Ellington; collaborate and record credits
+,Ella Fitzgerald,Ella and Louis Again,1957,studio,NEXT_PHASE_02,Second Ella and Louis studio collaboration
+,Ella Fitzgerald,Like Someone in Love,1957,studio,LATER_PHASE,1957 Verve studio album; release ordering vs other 1957 albums to verify
+,Ella Fitzgerald,Ella Fitzgerald Sings the George and Ira Gershwin Song Book,1959,studio,EXISTING_IN_CATALOG_LATER_PHASE,Listed in catalog.ts; do not duplicate in present phase
+,Ella Fitzgerald,Ella in Berlin: Mack the Knife,1960,live,EXCLUDE_LIVE,Present in catalog.ts but recorded live; no descriptor row under current project rules

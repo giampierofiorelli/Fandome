@@ -334,6 +334,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Salt-N-Pepa', 'Miles Davis', 'John Coltrane', 'Wayne Shorter', 'Weather Report', 'Dinah Washington', 'Sarah Vaughan', 'Billie Holiday', 'Nancy Wilson'],
     source: 'Queen Latifah: Los Angeles Times 1991 (Salt-N-Pepa inspired her to rap), The Boombox (her father’s jazz: Miles Davis, Coltrane, Wayne Shorter, Weather Report; the vocal inflections of Dinah Washington, Sarah Vaughan, Billie Holiday, Nancy Wilson)',
   },
+  ella: {
+    names: ['Connee Boswell', 'Louis Armstrong', 'Bing Crosby'],
+    source: 'Ella Fitzgerald, first-person reminiscence in a US education biography (ERIC ED439031: she loved Connee Boswell’s record and tried to imitate her; early listening to Louis Armstrong and Bing Crosby); official biography and Library of Congress (a Boswell song at the Apollo amateur night)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
