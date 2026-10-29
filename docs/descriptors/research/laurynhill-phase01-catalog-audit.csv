@@ -1,0 +1,4 @@
+album_id,title,year,type,artist_id,artist_in_catalog,album_in_catalog,already_described,action,notes
+laurynhill-themiseducationoflaurynhill,The Miseducation of Lauryn Hill,1998,studio,laurynhill,no,no,no,add artist and album to src/data/catalog.ts; add descriptor; then validate,Proposed new artist ID laurynhill; verified absent in both catalog.ts and seed.ts (29 Oct 2026).
+,MTV Unplugged No. 2.0,2002,live,laurynhill,no,no,no,exclude,"Live recording for MTV, despite having previously unreleased material; not a studio album."
+,The Score (Fugees),1996,studio,fugees,no,no,no,exclude from this artist; treat as separate Fugees catalogue research,Fugees work is not a Lauryn Hill solo LP; artist record also not present in both files checked.
