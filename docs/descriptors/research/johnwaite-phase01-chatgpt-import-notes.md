@@ -48,3 +48,10 @@ These are artist-wide autobiographical musical references from interviews, **not
 - Producers: John Waite dropped as self-credit.
 - sounds_like emptied (Pat Benatar, Rick Springfield, Bryan Adams, Foreigner, Starship): ChatGPT calls them "provisional, human-judgment similarities". Pat Benatar would also be a producer link (Neil Giraldo, her guitarist, produced Ignition). The reception pass looks for critics' comparisons.
 - Artist influences from his own words: Neil Young, The Beatles, Hank Williams, Marty Robbins, Nina & Frederik, The Shadows, Otis Redding, Etta James, Tina Turner, Jimi Hendrix.
+
+## Claude enrichment
+
+- Reception from en.wikipedia (charts), RIAA, AllMusic (Erlewine, via Qobuz), Cash Box 1982–85, Billboard 1985 and 1987, Washington Post 1984, Stereogum 2020, Pop Rescue.
+- No album-level critic comparison found: sounds_like stays empty. Track-level only: Missing You vs The Police's Every Breath You Take (Washington Post, Stereogum) and Journey (Stereogum).
+- Producers confirmed (Discogs 6384247, 10985363, 2179234, 899789): Neil Giraldo; David Thoener and Gary Gersh; Stephen Galfas; Frank Filipetti, Desmond Child (track A1), Rick Nowels (B1–B2).
+- Ignition: saxophone added (Uptown Horns). Mask of Smiles: brass removed (the Borneo Horns are saxophones), hard rock added (Cash Box). Rover's Return: arena rock and soft rock removed (ChatGPT's own "editorial" tags, no source).
