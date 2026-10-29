@@ -318,6 +318,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['John Coltrane', 'Miles Davis', 'James Brown'],
     source: 'Robert “Kool” Bell: Cryptic Rock and a 2003 interview (Coltrane, Miles Davis and James Brown formative in the jazz/R&B years; their funk grew out of James Brown and Motown material)',
   },
+  rundmc: {
+    names: ['Kurtis Blow', 'Grandmaster Flash and the Furious Five', 'Melle Mel', 'Afrika Bambaataa & Soulsonic Force', 'The Cold Crush Brothers', 'The Beatles', 'The Rolling Stones', 'Led Zeppelin', 'Harry Chapin', 'Jim Croce', 'Creedence Clearwater Revival', 'Janis Joplin'],
+    source: 'Darryl McDaniels (D.M.C.): NJ Arts (Kurtis Blow, Grandmaster Flash, Melle Mel, Afrika Bambaataa), Library of Congress interview (Cold Crush Brothers; Beatles, Stones, Led Zeppelin, Harry Chapin, Jim Croce), Hypebeast 2019 (also CCR, Janis Joplin); Larry Smith, Brian Coleman 2006 (It’s Like That answering Planet Rock)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
