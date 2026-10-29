@@ -37,3 +37,11 @@ Four unique ids, ordered years, exactly 27 descriptor columns, valid scale/voice
 ## Claude import note (Oct 2026)
 
 - Band self-credits dropped from producers (K. & G. Productions; Celebrate!'s "in association with" the band); member credits kept (George Brown, Robert Bell, Dennis Thomas).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/koolandthegang.csv`.
+- The Force sounds_like: Ohio Players, Commodores, Cameo, Earth, Wind & Fire (Soul Express, Ismo Tenkanen: "much closer to Ohio Players/Commodores-type 70s funk", "influenced by Earth Wind & Fire's soul/funk sound"), Sly and the Family Stone (Globe and Mail 1978); The J.B.s removed. Credits verified on Discogs r337047: confidence high.
+- Everybody's Dancin': no critic comparison found (EWF, Trammps, Ohio Players removed); producers per the Discogs insert (Ronald Bell, Robert Bell, Dennis Thomas); confidence high (Discogs r6766809).
+- Ladies' Night: Chic and Bee Gees (Apple Music editorial: "poppier and less hypnotic than Chic, but Blacker than the Bee Gees"); EWF and Commodores removed (only the band explaining why it hired a singer).
+- Celebrate!: no sound comparison found (Stereogum's Chic line is about lyrics): emptied.
