@@ -1,0 +1,34 @@
+﻿album_id,genre,source,scope,evidence
+ligabue-ligabue,poprock,https://www.allmusic.com/album/ligabue-mw0000461645,whole album,AllMusic Contemporary Pop/Rock; studio-pop rock with guitars
+ligabue-ligabue,rock,https://www.musicistireggiani.it/album/ligabue/,whole album,Musicisti Reggiani lists Rock for the record
+ligabue-ligabue,italianpop,https://www.allmusic.com/album/ligabue-mw0000461645,whole album metadata,AllMusic style Italian Pop
+ligabue-ligabue,contemporarypoprock,https://www.allmusic.com/album/ligabue-mw0000461645,whole album metadata,Exact AllMusic Contemporary Pop/Rock style
+ligabue-ligabue,canzonedautore,https://www.ligabue.com/biografia/,album songwriting,Official biography: narrative singer-songwriter sensibility within the rock debut
+ligabue-ligabue,bluesrock,https://www.ondarock.it/monografie/ligabue/,one track: Bar Mario,OndaRock explicitly describes Bar Mario as blues-rock
+ligabue-ligabue,rockandroll,https://www.ondarock.it/monografie/ligabue/,one track: Marlon Brando è sempre lui,OndaRock calls this track direct rock and roll
+ligabue-ligabue,countryfolk,https://www.ondarock.it/monografie/ligabue/,one track: Non è tempo per noi,OndaRock calls the song folk-country; token normalised to countryfolk
+ligabue-ligabue,punkrock,https://www.ondarock.it/monografie/ligabue/,one track: Figlio d’un cane,OndaRock likens its sound to punk; conservative long-tail use
+ligabue-lambruscocoltellirosepopcorn,poprock,https://it.wikipedia.org/wiki/Lambrusco_coltelli_rose_%26_pop_corn,whole album,Album classified as pop-rock
+ligabue-lambruscocoltellirosepopcorn,rock,https://www.musicistireggiani.it/album/lambrusco-coltelli-rose-pop-corn/,whole album,Rock listed for the full record
+ligabue-lambruscocoltellirosepopcorn,hardrock,https://www.debaser.it/luciano-ligabue/lambrusco-coltelli-rose-and-popcorn/recensione,one prominent track: Urlando contro il cielo,Reviewer explicitly calls this hit hard rock; only a subset of album
+ligabue-lambruscocoltellirosepopcorn,blues,https://www.debaser.it/luciano-ligabue/lambrusco-coltelli-rose-and-popcorn/recensione,one track: Camera con vista sul deserto,Reviewer identifies the track as blues
+ligabue-lambruscocoltellirosepopcorn,countryfolk,https://www.ondarock.it/monografie/ligabue/,several tracks,"OndaRock names a folk-country palette across Camera, Ti chiamerò Sam and Regalami"
+ligabue-lambruscocoltellirosepopcorn,ballad,https://www.ondarock.it/monografie/ligabue/,several tracks,OndaRock names slower ballads and folk-country ballad Camera
+ligabue-lambruscocoltellirosepopcorn,jazz,https://www.ondarock.it/monografie/ligabue/,one track: Camera con vista sul deserto,OndaRock calls jazz colours tentative; one-track texture only
+ligabue-lambruscocoltellirosepopcorn,rockandroll,https://it.wikipedia.org/wiki/Lambrusco_%26_pop_corn,one single: Lambrusco & pop corn,Genre attributed to title single; not full album
+ligabue-lambruscocoltellirosepopcorn,grunge,https://www.debaser.it/luciano-ligabue/lambrusco-coltelli-rose-and-popcorn/recensione,critical comparison / texture,"A listener reviewer describes attempt to absorb the nascent grunge, uncorroborated"
+ligabue-sopravvissutiesopravviventi,poprock,https://it.wikipedia.org/wiki/Sopravvissuti_e_sopravviventi,whole album,Album classified pop-rock
+ligabue-sopravvissutiesopravviventi,rock,https://www.ondarock.it/monografie/ligabue/,whole album,OndaRock identifies a much harder guitar-rock palette
+ligabue-sopravvissutiesopravviventi,grunge,https://www.ondarock.it/monografie/ligabue/,"several songs, not whole album","OndaRock explicitly says grunge on Dove fermano i treni, influence on early sound"
+ligabue-sopravvissutiesopravviventi,italianpop,https://www.allmusic.com/album/sopravvissuti-e-sopravviventi-mw0000539974,whole album metadata,AllMusic style Italian Pop
+ligabue-sopravvissutiesopravviventi,contemporarypoprock,https://www.allmusic.com/album/sopravvissuti-e-sopravviventi-mw0000539974,whole album metadata,AllMusic Contemporary Pop/Rock style
+ligabue-sopravvissutiesopravviventi,blues,https://www.ondarock.it/monografie/ligabue/,one track: Ho messo via,OndaRock calls song a blues arranged with bottleneck and piano
+ligabue-sopravvissutiesopravviventi,ballad,https://www.allmusic.com/album/sopravvissuti-e-sopravviventi-mw0000539974,several tracks,AllMusic cites Walter il mago and Ho messo via as beloved ballads
+ligabue-sopravvissutiesopravviventi,canzonedautore,https://www.ligabue.com/biografia/,whole album lyric approach,Official career biography describes early storyteller/singer-songwriter approach
+ligabue-acheoraelafinedelmondo,alternativerock,https://www.musicistireggiani.it/album/a-che-ora-e-la-fine-del-mondo/,whole album classification,Musicisti Reggiani calls record alternative rock
+ligabue-acheoraelafinedelmondo,poprock,https://it.wikipedia.org/wiki/A_che_ora_%C3%A8_la_fine_del_mondo,whole album classification,Album original metadata includes pop-rock
+ligabue-acheoraelafinedelmondo,raprock,https://www.ondarock.it/monografie/ligabue/,single/title track: biggest hit,OndaRock calls title adaptation rap-rock; prominent single promoted to third position
+ligabue-acheoraelafinedelmondo,rock,https://www.musicistireggiani.it/album/a-che-ora-e-la-fine-del-mondo/,album guitar-driven tracks,Broader rock identity of selected historic sessions; not implied from artist alone
+ligabue-acheoraelafinedelmondo,italianpop,https://www.allmusic.com/album/a-che-ora-%EF%BF%BD-la-fine-del-mondo--mw0000539971,whole album metadata,AllMusic style Italian Pop for its 1999 listing
+ligabue-acheoraelafinedelmondo,europop,https://www.allmusic.com/album/a-che-ora-%EF%BF%BD-la-fine-del-mondo--mw0000539971,whole album metadata; lower weight,AllMusic applies Euro-Pop label to its later reissue metadata
+ligabue-acheoraelafinedelmondo,ballad,https://www.ondarock.it/monografie/ligabue/,one track: Cerca nel cuore,OndaRock names Cerca nel cuore an acoustic ballad

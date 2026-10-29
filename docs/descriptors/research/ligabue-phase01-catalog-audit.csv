@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+ligabue-ligabue,Ligabue,1990,studio,EXISTS in src/data/catalog.ts; descriptors absent,phase01,Keep pre-existing catalog record and exact id.
+ligabue-lambruscocoltellirosepopcorn,Lambrusco coltelli rose & pop corn,1991,studio,MISSING in src/data/catalog.ts; descriptors absent,phase01,"Add ['Lambrusco coltelli rose & pop corn', 1991] to artist 'ligabue' in src/data/catalog.ts, preserve year/title and generated id."
+ligabue-sopravvissutiesopravviventi,Sopravvissuti e sopravviventi,1993,studio,MISSING in src/data/catalog.ts; descriptors absent,phase01,"Add ['Sopravvissuti e sopravviventi', 1993] to artist 'ligabue' in src/data/catalog.ts, preserve year/title and generated id."
+ligabue-acheoraelafinedelmondo,A che ora è la fine del mondo?,1994,studio,MISSING in src/data/catalog.ts; descriptors absent,phase01,"Add ['A che ora è la fine del mondo?', 1994] to artist 'ligabue' in src/data/catalog.ts, preserve year/title and generated id."

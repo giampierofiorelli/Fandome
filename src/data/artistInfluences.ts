@@ -366,6 +366,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Fabrizio De André'],
     source: 'Vasco Rossi, Rolling Stone Italia, January 2026 ("Fabrizio De André mi ha insegnato a mettere in discussione i maestri"). A long list of rock influences from an undated interview reposted on a blog left out (provenance not verified)',
   },
+  ligabue: {
+    names: ['Bruce Springsteen', 'Lucio Battisti', 'Francesco Guccini', 'Genesis'],
+    source: 'Ligabue, Il Fatto Quotidiano 2024 (Jungleland as a revelation at 15; "battistiano convinto"); Il Napolista 2021 (learning Guccini\'s L\'avvelenata as a teenager); Rolling Stone Italia (Nursery Cryme, Foxtrot, Selling England by the Pound "una rivelazione")',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

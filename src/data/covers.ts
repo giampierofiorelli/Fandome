@@ -13,6 +13,7 @@ export const COVERS: Cover[] = [
   { song: 'Ti amo', original: 'tozzi-enellariatiamo', cover: 'laurabranigan-selfcontrol', source: 'Self Control (Atlantic 1984) credits: Tozzi, Bigazzi, English lyrics Diane Warren' },
   { song: 'Self Control', original: 'raf-raf', cover: 'laurabranigan-selfcontrol', source: 'Self Control (Atlantic 1984) credits: Raf (Raffaele Riefoli), Giancarlo Bigazzi, Steve Piccolo' },
   { song: 'Der Kommissar (as Deep in the Dark)', original: 'falco-einzelhaft', cover: 'laurabranigan-branigan2', source: 'Branigan 2 (Atlantic 1983): Deep in the Dark set to the music of Der Kommissar (Falco, Robert Ponger)' },
+  { song: 'It’s the End of the World as We Know It (as A che ora è la fine del mondo?)', original: 'rem-document', cover: 'ligabue-acheoraelafinedelmondo', source: 'A che ora è la fine del mondo? (WEA 1994): Italian adaptation by Ligabue of the R.E.M. song (Berry, Buck, Mills, Stipe)' },
 ]
 
 // A cover leads one way, like an influence: from the record with the cover to the original (owner, Oct 2026).
