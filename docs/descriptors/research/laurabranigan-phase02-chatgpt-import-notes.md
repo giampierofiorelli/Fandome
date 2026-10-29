@@ -50,3 +50,9 @@ Run `npx vite-node scripts/validate-descriptors.ts` and relevant project tests a
 ## Claude import note (Oct 2026)
 
 - marimba mapped to the existing instrument token mallets. Her own production credit dropped (1990, 1993).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/laurabranigan.csv`.
+- Touch: Celine Dion confirmed (AllMusic/TiVo, Bryan Buss: her voice equal to Dion's "in terms of power, beauty, and distinction"); Pet Shop Boys removed (the Rhino comparison could not be found).
+- Laura Branigan (1990) and Over My Heart: credits confirmed (Wikipedia), confidence raised to high; no critic comparison (Estefan, Bolton, Gessle appear only as songwriters).
