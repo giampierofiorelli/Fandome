@@ -1,0 +1,17 @@
+﻿title,year,type,album_id,catalog_status,notes
+Cuori agitati,1985,studio,eros-cuoriagitati,ADD,Phase 01: first studio album not in catalog.ts
+Nuovi eroi,1986,studio,eros-nuovieroi,ADD,Phase 01: original studio album not in catalog.ts
+In certi momenti,1987,studio,eros-incertimomenti,EXISTS,Phase 01: listed exactly under artist eros
+Musica è,1988,studio,eros-musicae,EXISTS,Phase 01: original Italian five-track mini album
+In ogni senso,1990,studio,eros-inognisenso,EXISTS,Phase 02
+Tutte storie,1993,studio,eros-tuttestorie,EXISTS,Phase 02
+Dove c’è musica,1996,studio,eros-dovecemusica,EXISTS,Phase 02
+Stilelibero,2000,studio,eros-stilelibero,EXISTS,Phase 02
+9,2003,studio,eros-9,EXISTS,Phase 03
+Calma apparente,2005,studio,eros-calmaapparente,ADD,Later phase
+Ali e radici,2009,studio,eros-alieradici,ADD,Later phase
+Noi,2012,studio,eros-noi,ADD,Later phase
+Perfetto,2015,studio,eros-perfetto,ADD,Later phase
+Vita ce n’è,2018,studio,eros-vitacene,ADD,Later phase
+Battito infinito,2022,studio,eros-battitoinfinito,ADD,Later phase
+UNA STORIA IMPORTANTE,2025,studio,eros-unastoriaimportante,ADD,Later phase; re-recordings and new tracks; confirm how to classify before import

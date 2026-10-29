@@ -518,7 +518,7 @@ const ROWS: Row[] = [
   ['oruam', 'Oruam', '#3f4a6f', 'Rio trap’s new voice', []],
   ['hugoguilherme', 'Hugo & Guilherme', '#8a9a6f', 'Sertanejo duo for heartbreak songs', []],
   ['renatozero', 'Renato Zero', '#b55ac9', 'Glitter, theatre and devoted sorcini', [['Zerofobia', 1977], ['Zerolandia', 1978], ['EroZero', 1979], ['Amore dopo amore', 1998]]],
-  ['eros', 'Eros Ramazzotti', '#3f7ac9', 'Italian pop for the whole world', [['In certi momenti', 1987], ['Musica è', 1988], ['In ogni senso', 1990], ['Tutte storie', 1993], ['Dove c’è musica', 1996], ['Stilelibero', 2000], ['9', 2003]]],
+  ['eros', 'Eros Ramazzotti', '#3f7ac9', 'Italian pop for the whole world', [['Cuori agitati', 1985], ['Nuovi eroi', 1986], ['In certi momenti', 1987], ['Musica è', 1988], ['In ogni senso', 1990], ['Tutte storie', 1993], ['Dove c’è musica', 1996], ['Stilelibero', 2000], ['9', 2003]]],
   ['pavarotti', 'Luciano Pavarotti', '#8a6f4a', 'The tenor who brought opera to stadiums', []],
   ['gaber', 'Giorgio Gaber', '#6f6f7a', 'Theatre-song and sharp irony', []],
   ['ginopaoli', 'Gino Paoli', '#5a7a9a', 'Genoa’s songwriting gentleman', []],

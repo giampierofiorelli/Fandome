@@ -1,0 +1,29 @@
+﻿album_id,source,source_type,url,what_it_supports,evidence_strength
+eros-cuoriagitati,official c,artist_discography,https://ramazzotti.com/album/cuori-agitati/,Official track list and album identity,strong
+eros-cuoriagitati,c disc,original_vinyl_credits,https://musicbase.net/cuori-agitati,1985 original nine-track vinyl; instrumentation and Piero Cassano producer,strong
+eros-cuoriagitati,c qobuz,label_digital_credits,https://www.qobuz.com/us-en/album/cuori-agitati-eros-ramazzotti/4007192568147,"1985 track-by-track guitar, bass, drums, sax and keyboards; earlier Terra promessa producer separately",strong
+eros-cuoriagitati,c sens,album_genre_catalogue,https://www.senscritique.com/album/cuori_agitati/5844409,"Pop, rock, pop rock and synth-pop are identified as album styles",strong
+eros-cuoriagitati,c all,music_reference,https://www.allmusic.com/album/cuori-agitati-mw0000767798,Italian Pop style and musician credits,strong
+eros-cuoriagitati,voice all,music_biography,https://www.allmusic.com/artist/eros-ramazzotti-mn0000601079/biography,Ramazzotti gritty/reedy tenor; voice descriptor contextual only,strong
+eros-cuoriagitati,genre eras,critic_review,https://www.allmusic.com/album/release/eros-mr0001386227,Retrospective contrasts early bombastic synth-pop with later sleek pop-rock,strong
+eros-nuovieroi,official n,artist_discography,https://ramazzotti.com/album/nuovi-eroi/,13-track digital edition; distinguishes original 9-track LP,strong
+eros-nuovieroi,n charts,vinyl_catalogue_credits,https://www.chartsurfer.de/artist/eros-ramazzotti/nuovi-eroi-album_ffvnee.html,"1986 nine-track LP, genres pop rock and synth-pop, producer Piero Cassano, some session credits",strong
+eros-nuovieroi,n all,music_reference,https://www.allmusic.com/album/nuovi-eroi-mw0000422795,Maurizio Bassi/Leandro Fairlight and Prophet-5; Melotti Linn and Simmons; instrumentation,strong
+eros-nuovieroi,n qobuz,label_digital_credits,https://www.qobuz.com/gb-en/album/nuovi-eroi-eros-ramazzotti/0884977901146,"Track-level new and recycled tracks, singer, instruments, producer",strong
+eros-nuovieroi,n wiki,discography_reference,https://it.wikipedia.org/wiki/Nuovi_eroi,Nine-track LP vs thirteen-track CD; original release year,strong
+eros-nuovieroi,n lyrics,licensed_lyric_metadata,https://www.angolotesti.it/E/testi_canzoni_eros_ramazzotti_111/testo_canzone_nuovi_eroi_6265.html,"Youth, struggle, solidarity topics on title track",strong
+eros-nuovieroi,voice all,music_biography,https://www.allmusic.com/artist/eros-ramazzotti-mn0000601079/biography,Gritty reedy tenor characterization,strong
+eros-incertimomenti,official i,artist_discography,https://ramazzotti.com/album/in-certi-momenti/,Official track list and Patsy Kensit feature,strong
+eros-incertimomenti,i charts,vinyl_catalogue_credits,https://www.chartsurfer.de/artist/eros-ramazzotti/in-certi-momenti-album_ffhrug.html,"Synth-pop/pop rock genre, two arrangers, Fairlight II, Emulator II, Emax, session credits",strong
+eros-incertimomenti,i mb,recording_database_credits,https://musicbrainz.org/release/85cb0d46-22a0-4a25-b420-016827839aa7,"Song-level drum programming, sample programming, venues and guitars",strong
+eros-incertimomenti,i qobuz,label_digital_credits,https://www.qobuz.com/at-de/album/in-certi-momenti-eros-ramazzotti/4007192587414,"Documented brass, congas, fretless bass, piano and instrumental lineup",strong
+eros-incertimomenti,i wiki,discography_reference,https://it.wikipedia.org/wiki/In_certi_momenti,1987 original 10-track Italian version and 14-track Spanish variant,strong
+eros-incertimomenti,voice el pais,contemporary_criticism,https://elpais.com/diario/1988/10/07/cultura/592182006_850215.html?outputType=amp,1988 contemporary assessment of occasionally rough vocal timbre,strong
+eros-musicae,m orig,transcribed_original_liner_notes,https://www.estatica.it/it/musica/eros-ramazzotti/disco/musica-e,"Original five-track mini-album, band musicians, orchestral title track, equipment and studios",strong
+eros-musicae,m charts,vinyl_catalogue_credits,https://www.chartsurfer.de/artist/eros-ramazzotti/musica-album_frpguu.html,Five-track Italian pressing; international 7/8-track configurations; synth-pop/pop rock/europop; equipment,strong
+eros-musicae,m all,music_reference,https://www.allmusic.com/album/musica-%EF%BF%BD-mw0000541906,Italian pop style and studio recording locations,strong
+eros-musicae,m itwiki,discography_reference,https://it.wikipedia.org/wiki/Musica_%C3%A8,Mini album and Italian vs international edition timings,strong
+eros-musicae,m musicbase,catalogue_genre_index,https://musicbase.net/eros-ramazzotti,"Contemporary styles ballad, synth-pop, pop rock and easy listening; edition-dependent",strong
+eros-musicae,m apple,label_streaming_metadata,https://music.apple.com/us/album/musica-%C3%A8/1510558886,Digital eight-track edition dated June 1988,strong
+eros-musicae,influence genesis,artist_interview,https://www.corriere.it/sette/incontri/22_luglio_29/eros-ramazzotti-finisce-l-amore-non-desiderio-che-sia-felice-chi-hai-amato-6abe0d74-0b15-11ed-9f77-5a61f2af535a.shtml,Ramazzotti explicitly cites love of Genesis and desire to write a long suite,strong
+eros-musicae,voice all,music_biography,https://www.allmusic.com/artist/eros-ramazzotti-mn0000601079/biography,Gritty/reedy voice description,strong

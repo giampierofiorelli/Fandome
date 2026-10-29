@@ -370,6 +370,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Bruce Springsteen', 'Lucio Battisti', 'Francesco Guccini', 'Genesis'],
     source: 'Ligabue, Il Fatto Quotidiano 2024 (Jungleland as a revelation at 15; "battistiano convinto"); Il Napolista 2021 (learning Guccini\'s L\'avvelenata as a teenager); Rolling Stone Italia (Nursery Cryme, Foxtrot, Selling England by the Pound "una rivelazione")',
   },
+  eros: {
+    names: ['Ray Charles', 'Stevie Wonder', 'Steve Winwood', 'Sting', 'Genesis', 'Lucio Battisti'],
+    source: 'Eros Ramazzotti, Planet Interview 2013 (singing inspirations: Ray Charles, Stevie Wonder, Steve Winwood, Sting); Corriere della Sera Sette 2022 (his love for Genesis behind the Musica è suite); Radio Italia (Battisti a maestro, identifying with his writing)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

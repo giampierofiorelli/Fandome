@@ -1,0 +1,21 @@
+﻿album_id,genre,source,url,scope,evidence_notes
+eros-cuoriagitati,poprock,c_sens,https://www.senscritique.com/album/cuori_agitati/5844409,whole album,SensCritique lists pop rock among album genres
+eros-cuoriagitati,synthpop,c_sens,https://www.senscritique.com/album/cuori_agitati/5844409,whole album,SensCritique identifies synth-pop style
+eros-cuoriagitati,italianpop,c_all,https://www.allmusic.com/album/cuori-agitati-mw0000767798,whole album,AllMusic lists Italian Pop as style
+eros-cuoriagitati,pop,c_sens,https://www.senscritique.com/album/cuori_agitati/5844409,whole album,SensCritique lists Pop genre
+eros-nuovieroi,poprock,n_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/nuovi-eroi-album_ffvnee.html,whole album,1986 LP lists Pop Rock
+eros-nuovieroi,synthpop,n_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/nuovi-eroi-album_ffvnee.html,whole album,1986 LP lists Synth-pop
+eros-nuovieroi,italianpop,n_all,https://www.allmusic.com/album/nuovi-eroi-mw0000422795,whole album,AllMusic lists Italian Pop
+eros-nuovieroi,pop,n_wiki,https://it.wikipedia.org/wiki/Nuovi_eroi,whole album,Italian discography lists Pop
+eros-incertimomenti,poprock,i_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/in-certi-momenti-album_ffhrug.html,whole album,1987 LP and CD list Pop Rock
+eros-incertimomenti,synthpop,i_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/in-certi-momenti-album_ffhrug.html,whole album,1987 LP and CD list Synth-pop
+eros-incertimomenti,italianpop,i_all,https://www.allmusic.com/album/in-certi-momenti-mw0000767800,whole album,AllMusic album listing styles Italian Pop
+eros-incertimomenti,pop,i_wiki,https://it.wikipedia.org/wiki/In_certi_momenti,whole album,1987 Italian discography lists Pop
+eros-incertimomenti,europop,m_musicbase,https://musicbase.net/eros-ramazzotti,some tracks,1987 single Ma che bello questo amore appears as Europop; lower-weight track evidence
+eros-musicae,poprock,m_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/musica-album_frpguu.html,whole album,European 1988 editions list Pop Rock
+eros-musicae,synthpop,m_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/musica-album_frpguu.html,whole album,European 1988 editions list Synth-pop
+eros-musicae,italianpop,m_all,https://www.allmusic.com/album/musica-%EF%BF%BD-mw0000541906,whole album,AllMusic styles Italian Pop
+eros-musicae,europop,m_charts,https://www.chartsurfer.de/artist/eros-ramazzotti/musica-album_frpguu.html,whole album,Original 1988 Italian five-track picture disc lists Europop
+eros-musicae,ballad,m_musicbase,https://musicbase.net/eros-ramazzotti,whole album,1988 genre index labels an edition Ballad
+eros-musicae,easylistening,m_musicbase,https://musicbase.net/eros-ramazzotti,whole album,1988 genre index labels an edition Easy Listening
+eros-musicae,pop,m_itwiki,https://it.wikipedia.org/wiki/Musica_%C3%A8,whole album,Italian discography lists Pop
