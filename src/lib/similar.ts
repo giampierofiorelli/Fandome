@@ -165,8 +165,15 @@ function backoff(d: Descriptor, p: Profile): Profile {
   return { ...p, genres: add(new Map(p.genres), (x) => x.genres), instruments: add(new Map(), (x) => x.instruments), production: add(new Map(), (x) => x.production), scales }
 }
 
-// Artist profile: albums averaged, defining (landmark) albums weigh 1.5×, so traits that come back
-// across the catalogue weigh more than a one-off.
+// How much an album stands for its artist across a long career (owner, Oct 2026: the important albums should
+// count more). The career weight from the reception file (importance 0-5) when known: 0.5 for a minor record up
+// to 1.75 for a career-defining one; else 1.5 for a landmark and 1 for the others. Compilations and live albums
+// stand for an artist less than the records they made as such.
+export const careerWeight = (d: { importance?: number; landmark?: boolean; type?: string }) =>
+  (d.importance !== undefined ? 0.5 + 0.25 * d.importance : d.landmark ? 1.5 : 1) * (['compilation', 'live'].includes(d.type ?? '') ? 0.7 : 1)
+
+// Artist profile: albums averaged by career weight, so the records that defined the artist and the traits
+// that come back across the catalogue weigh more than a minor album or a one-off.
 const artistProfiles = new Map<string, Profile | null>()
 export function artistProfile(id: string, albumIds: string[]): Profile | null {
   const key = `${id}:${albumIds.join(',')}`
@@ -188,7 +195,7 @@ function buildArtistProfile(id: string, albumIds: string[]): Profile | null {
   let total = 0
   let conf = 0
   for (const d of ds) {
-    const w = (d.landmark ? 1.5 : 1) * CONFIDENCE[d.confidence]
+    const w = careerWeight(d) * CONFIDENCE[d.confidence]
     total += w
     conf += CONFIDENCE[d.confidence]
     d.genres.forEach((g, i) => genres.set(g, (genres.get(g) ?? 0) + w / (i + 1)))
@@ -801,9 +808,14 @@ export function similarArtists(
     const c = compareProfiles(me, them)
     const theirAlbums = profilesOf(albumIdsOf(other))
     let best: { a: Profile; b: Profile; c: Comparison } | null = null
+    // The concrete pair weighs the two albums' place in their careers (importance 0-5, when known: ±15%), so the
+    // match and its reason come from the records that define the two artists, not a minor album of a long career.
+    const stand = (p: Profile) => (p.importance === undefined ? 1 : 0.85 + 0.06 * p.importance)
+    let bestScore = 0
     for (const a of myAlbums) for (const b of theirAlbums) {
       const pc = compareProfiles(a, b)
-      if (!best || pc.score > best.c.score) best = { a, b, c: pc }
+      const v = pc.score * Math.sqrt(stand(a) * stand(b))
+      if (!best || v > bestScore) (best = { a, b, c: pc }), (bestScore = v)
     }
     // Profile resemblance (repeated traits) and the best concrete album pair, half each.
     const to = opts.countryOf?.(other)
@@ -814,7 +826,7 @@ export function similarArtists(
     // full point: artists of similar standing, or rated higher, are not affected (owner).
     const mine = standing(myAlbums)
     const standingGap = mine === undefined ? 0 : Math.max(0, mine - (standing(theirAlbums) ?? 3) - 1)
-    const score = 0.5 * c.score + 0.5 * (best?.c.score ?? 0) + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
+    const score = 0.5 * c.score + 0.5 * bestScore + (isNew ? DISCOVERY : 0) - avoidPenalty(them, avoid) - STANDING_WEIGHT * standingGap
     const why = best?.c.reasons[0] ?? c.reasons[0]
     // A documented collaboration is kept below the cut: it is a reason of its own (see linkOf).
     if (!why || !best || (score < 0.3 && !collaborationOf(artistId, other))) continue

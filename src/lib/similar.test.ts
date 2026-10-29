@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { DESCRIPTORS, parseDescriptors, releaseLabel } from './descriptors'
-import { artistGenres, compareAlbums, genreSimilarity, scaleSimilarity, similarAlbums, similarArtists } from './similar'
+import { artistGenres, careerWeight, compareAlbums, genreSimilarity, scaleSimilarity, similarAlbums, similarArtists } from './similar'
 import { albums, artists } from '../data/seed'
 import { suggestArtists } from './suggest'
 import type { User } from '../data/types'
@@ -80,6 +80,15 @@ describe('similar albums', () => {
 
   it('returns nothing for albums without descriptors', () => {
     expect(similarAlbums('no-such-album')).toEqual([])
+  })
+})
+
+describe('career weight in artist profiles', () => {
+  it('lets the albums that defined a long career count more than minor ones (owner)', () => {
+    expect(careerWeight({ importance: 5 })).toBeGreaterThan(careerWeight({ importance: 3 }))
+    expect(careerWeight({ importance: 3 })).toBeGreaterThan(careerWeight({ importance: 1 }))
+    expect(careerWeight({ landmark: true })).toBeGreaterThan(careerWeight({}))
+    expect(careerWeight({ importance: 4, type: 'compilation' })).toBeLessThan(careerWeight({ importance: 4 }))
   })
 })
 
