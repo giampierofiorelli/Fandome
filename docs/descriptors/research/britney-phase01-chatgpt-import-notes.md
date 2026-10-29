@@ -58,3 +58,7 @@ Then *Glory* (2016) in Phase 03; assess significant remix projects only if indep
 - `britney_phase01_catalog-audit.csv` — already in catalog vs to add.
 
 Claude should add tokens, import the rows, then run `npx vite-node scripts/validate-descriptors.ts` plus project tests.
+
+## Ray of Light link (Oct 2026)
+
+- In the Zone: sounds_like now names the records, Madonna (Bedtime Stories)|Madonna (Ray of Light) (AllMusic, Stephen Thomas Erlewine: the album "sounds like cuts from 1993 or Madonna's Bedtime Stories and Ray of Light"; en.wikipedia In the Zone). Madonna removed from influenced_by: she is a guest on Me Against the Music (guests are never influences); the Matrix comparing their sessions to Ray of Light is not tied to a known number of tracks.
