@@ -45,3 +45,11 @@ Import catalogue additions before appending rows, then run `scripts/validate-des
 - Producers: Laura Pausini dropped as self-credit; Alfredo Cerruti dropped (executive producer on the sleeves). From the Inside's long AllMusic producer list kept pending the track-by-track check.
 - sounds_like emptied except on From the Inside, where AllMusic names Céline Dion, Michael Bolton and Backstreet Boys (to confirm in the reception pass).
 - Io canto: covers of Italian songs; the originals whose albums are on Fandome go in `src/data/covers.ts` after the tracklist check.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it and FIMI year-end, en/it.wikipedia, AllMusic (via mirrors), Blender, Musica e dischi, la Repubblica 2000 and 2004.
+- Producers checked track by track on the original releases (Discogs 407617, 406052, 369370, 845227): Tra te e il mare adds Andreas Carlsson (co-producer, track 3) and Nigel Rush, Pam Sheyne, Ben Robbins (The Extra Mile); From the Inside adds Peter Zizzo (vocal producer, track 4) and Ghost (Ulf Lindström, Johan Ekhé, track 10), "Daniel Chase" corrected to Dan Chase; Resta in ascolto drops Cesare Chiodo (musician only); Io canto adds Paolo Carta (co-producer, tracks 7 and 11).
+- From the Inside: sounds_like Céline Dion only (AllMusic, Christina Fuoco: "Pausini is clearly influenced by Dion… Her voice doesn't soar to the heights that Dion reaches, but she comes close"); Michael Bolton and Backstreet Boys dropped (named only as the easy-listening audience). latin pop removed (all-English album, market shelf only).
+- Tra te e il mare: harp added (Lucy Wakeford); landmark 0. Io canto: organ removed (not in credits).
+- Io canto: 8 of its 16 covers link to original albums on Fandome in `src/data/covers.ts` (Battisti, Grignani, Ramazzotti, Zucchero, Bersani, Vasco Rossi, Tiziano Ferro, Baglioni). Not on Fandome yet: Cocciante's ...E io canto, Raf's Cannibali, Buonocore, Zarrillo, Fossati, Renato Zero's L'imperfetto, Antonacci's Il mucchio, Pino Daniele's Sotto 'o sole.
