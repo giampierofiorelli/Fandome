@@ -694,7 +694,7 @@ export function similarAlbums(
   // A credited cover links the two records, one way like an influence: from the cover to the original record,
   // which comes first, up to two places of its own. Never back from the original (owner, Oct 2026).
   for (const s of scored) {
-    const c = coverFrom(albumId, s.albumId)
+    const c = opts.avoid?.includes(s.albumId) ? undefined : coverFrom(albumId, s.albumId)
     if (!c || reserved.length >= 2) continue
     const why = `${a.title} covers ${s.artist}’s ${c.song}`
     reserved.push({ ...s, reasons: [why, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) })
@@ -705,6 +705,8 @@ export function similarAlbums(
     // The record a source names comes first for its artist; then influences before comparisons; then the best fit.
     .sort((x, y) => Number(!wholeAlbum(a, 'influencedBy', x.artist)) - Number(!wholeAlbum(a, 'influencedBy', y.artist)) || Number(namedAlbum(y)) - Number(namedAlbum(x)) || pick(y) - pick(x))
   for (const s of linked) {
+    // A record you rated low or hid never takes a place at the top, however strong its link.
+    if (opts.avoid?.includes(s.albumId)) continue
     if (reserved.length - covered >= 3 || reserved.some((r) => r.artist === s.artist)) continue
     const link = wholeAlbum(a, 'influencedBy', s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
     const reasons = namedAlbum(s) ? [`${link} (${s.profile.title})`, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) : s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2)

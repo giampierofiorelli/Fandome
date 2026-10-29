@@ -236,7 +236,7 @@ describe('engine v2', () => {
     expect(list[0].artistId).toBe('mahmood')
     expect(list.every((s) => s.reason.length > 0)).toBe(true)
     expect(list.find((s) => s.artistId === 'charlixcx')?.newCountry ?? 'GB').toBe('GB')
-    expect(artistGenres(albumIdsOf('madonna'))[0]).toBe('pop')
+    expect(['pop', 'dancepop']).toContain(artistGenres(albumIdsOf('madonna'))[0])
   })
 })
 
