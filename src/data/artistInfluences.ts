@@ -330,6 +330,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Big Daddy Kane', 'Ice Cube', 'Charlie Parker', 'Cannonball Adderley', 'Ella Fitzgerald'],
     source: 'Easy Mo Bee, Rapchive (Biggie told him he loved and studied Big Daddy Kane; Ice Cube); Suif “C Gutta” Jackson in Biggie: I Got a Story to Tell, 2021 (Kane his favourite rapper); Donald Harrison, The Guardian 2010 (taught him Charlie Parker, Cannonball Adderley, Ella Fitzgerald). Biggie himself denied rap influences (Los Angeles Times, 1995)',
   },
+  queenlatifah: {
+    names: ['Salt-N-Pepa', 'Miles Davis', 'John Coltrane', 'Wayne Shorter', 'Weather Report', 'Dinah Washington', 'Sarah Vaughan', 'Billie Holiday', 'Nancy Wilson'],
+    source: 'Queen Latifah: Los Angeles Times 1991 (Salt-N-Pepa inspired her to rap), The Boombox (her father’s jazz: Miles Davis, Coltrane, Wayne Shorter, Weather Report; the vocal inflections of Dinah Washington, Sarah Vaughan, Billie Holiday, Nancy Wilson)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

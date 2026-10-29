@@ -1,0 +1,27 @@
+album_id,genre,source,url,scope,evidence
+queenlatifah-allhailthequeen,hiphop,loc_1989,https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/,whole album,Library of Congress describes album as hip-hop
+queenlatifah-allhailthequeen,house,loc_1989,https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/,several songs / album stylistic mix,Library of Congress lists house among debut hybrid genres
+queenlatifah-allhailthequeen,reggae,loc_1989,https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/,several songs,Library of Congress and AllMusic name reggae/dancehall facets
+queenlatifah-allhailthequeen,jazz,loc_1989,https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/,stylistic blend,Library of Congress names jazz elements; not all songs are jazz
+queenlatifah-allhailthequeen,hiphouse,allmusic_debut,https://www.allmusic.com/album/all-hail-the-queen-mw0000654588,prominent single,AllMusic expressly calls Come Into My House hip-house
+queenlatifah-allhailthequeen,dancehall,allmusic_debut,https://www.allmusic.com/album/all-hail-the-queen-mw0000654588,selected songs / vocal toasting,Reggae/dancehall toasting on Princess of the Posse / The Pros; also JazzTimes first-person
+queenlatifah-natureofasista,hiphop,allmusic_nature,https://www.allmusic.com/album/nature-of-a-sista-mw0000265077,whole album,AllMusic classifies Nature of a Sista as rap
+queenlatifah-natureofasista,poprap,allmusic_nature,https://www.allmusic.com/album/nature-of-a-sista-mw0000265077,whole album,AllMusic lists Pop-Rap among album styles
+queenlatifah-natureofasista,rnb,albumism_nature_2026,https://albumism.com/features/queen-latifah-nature-of-a-sista-album-anniversary,major part of album,Albumism describes R&B-sung songs and swing-led crossover
+queenlatifah-natureofasista,funk,albumism_nature_2026,https://albumism.com/features/queen-latifah-nature-of-a-sista-album-anniversary,several tracks,Albumism explicitly describes funk within album sound
+queenlatifah-natureofasista,reggae,albumism_nature_2026,https://albumism.com/features/queen-latifah-nature-of-a-sista-album-anniversary,selected tracks,Albumism describes reggae in set-wide stylistic mix
+queenlatifah-natureofasista,dance,albumism_nature_2026,https://albumism.com/features/queen-latifah-nature-of-a-sista-album-anniversary,several tracks,Albumism explicitly calls it a dance crossover
+queenlatifah-natureofasista,jazz,albumism_nature_2026,https://albumism.com/features/queen-latifah-nature-of-a-sista-album-anniversary,selected tracks / piano texture,Jazz heard particularly in How Do I Love Thee and Fly Girl; not a straight jazz LP
+queenlatifah-natureofasista,dancehall,washpost_nature_1991,https://www.washingtonpost.com/archive/lifestyle/1991/09/27/rapping-not-only-about-opposite-sex/6b42833f-1762-4fae-b4f8-b7d788b8cf05/,single track,Washington Post singles out dancehall groove on Sexy Fancy
+queenlatifah-blackreign,hiphop,allmusic_black,https://www.allmusic.com/album/black-reign-mw0000107284,whole album,AllMusic categorizes album as rap
+queenlatifah-blackreign,eastcoasthiphop,black_genre,https://en.wikipedia.org/wiki/Black_Reign_%28album%29,whole album / movement,Published album genre lists East Coast hip hop
+queenlatifah-blackreign,poprap,allmusic_black,https://www.allmusic.com/album/black-reign-mw0000107284,whole album / crossover material,AllMusic Pop-Rap style
+queenlatifah-blackreign,alternativerap,allmusic_black,https://www.allmusic.com/album/black-reign-mw0000107284,whole album / critical style,AllMusic calls this Alternative Rap; exact new alternativerap token
+queenlatifah-blackreign,jazzrap,glide_unity_2026,https://glidemagazine.com/324723/golden-age-thursday-samples-the-crusaders-a-message-from-the-inner-city-1972-becomes-jazzy-hip-hop-via-queen-latifah-1993-juggaknots-1996/,prominent single,Glide describes U.N.I.T.Y. as jazzy hip-hop built with Crusaders recording
+queenlatifah-blackreign,reggae,washpost_black_1994,https://www.washingtonpost.com/archive/lifestyle/style/1994/03/13/pop-recordings/2ee1a6e3-66d3-442c-9284-7f32c7772554/,selected tracks,Washington Post expressly describes reggae duet Weekend Love featuring Tony Rebel
+queenlatifah-blackreign,jazz,washpost_black_1994,https://www.washingtonpost.com/archive/lifestyle/style/1994/03/13/pop-recordings/2ee1a6e3-66d3-442c-9284-7f32c7772554/,selected tracks / jazz-focused finale,Washington Post expressly calls Winki’s Theme a jazz experiment
+queenlatifah-orderinthecourt,hiphop,apple_order,https://music.apple.com/us/album/order-in-the-court/1443222996,whole album,Apple Music classifies album Hip-Hop/Rap
+queenlatifah-orderinthecourt,poprap,allmusic_order,https://www.allmusic.com/album/order-in-the-court-mw0000598590,whole album,AllMusic lists Pop-Rap
+queenlatifah-orderinthecourt,rnb,allmusic_order,https://www.allmusic.com/album/order-in-the-court-mw0000598590,several tracks / crossover,AllMusic describes R&B integration and singing-led songs
+queenlatifah-orderinthecourt,soul,allmusic_order,https://www.allmusic.com/album/order-in-the-court-mw0000598590,some tracks / texture,Review explicitly describes soul flourishes on hip-hop base
+queenlatifah-orderinthecourt,alternativerap,allmusic_order,https://www.allmusic.com/album/order-in-the-court-mw0000598590,whole album / AllMusic style,"AllMusic genre style is exactly Alternative Rap; no exact existing token, request alternativerap"

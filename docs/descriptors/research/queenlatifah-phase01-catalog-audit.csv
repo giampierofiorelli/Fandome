@@ -1,0 +1,11 @@
+album_id,artist,title,year,type,catalog_status,evidence
+queenlatifah-allhailthequeen,Queen Latifah,All Hail the Queen,1989,studio,ADD_ARTIST_AND_ALBUM,Catalog.ts/seed.ts currently contain no Queen Latifah entry; proposed new id queenlatifah; every album requires catalogue insertion.
+queenlatifah-natureofasista,Queen Latifah,Nature of a Sista',1991,studio,ADD_ARTIST_AND_ALBUM,Catalog.ts/seed.ts currently contain no Queen Latifah entry; proposed new id queenlatifah; every album requires catalogue insertion.
+queenlatifah-blackreign,Queen Latifah,Black Reign,1993,studio,ADD_ARTIST_AND_ALBUM,Catalog.ts/seed.ts currently contain no Queen Latifah entry; proposed new id queenlatifah; every album requires catalogue insertion.
+queenlatifah-orderinthecourt,Queen Latifah,Order in the Court,1998,studio,ADD_ARTIST_AND_ALBUM,Catalog.ts/seed.ts currently contain no Queen Latifah entry; proposed new id queenlatifah; every album requires catalogue insertion.
+,Queen Latifah,Queen Latifah and the Original Flavor Unit,1996,compilation,EXCLUDE,"1996 credited Various Artists compilation of Flavor Unit archival material, not solo studio album"
+,Queen Latifah,The Dana Owens Album,2004,studio,NEXT_PHASE_02,"Jazz, pop and soul standards album"
+,Queen Latifah,Trav'lin' Light,2007,studio,NEXT_PHASE_02,Jazz/soul second standards album
+,Queen Latifah,Persona,2009,studio,NEXT_PHASE_02,Hip-hop/R&B return
+,Queen Latifah,She's a Queen: A Collection of Hits,2002,compilation,EXCLUDE,Greatest-hits compilation
+,Queen Latifah,20th Century Masters: The Millennium Collection,2005,compilation,EXCLUDE,Best-of compilation
