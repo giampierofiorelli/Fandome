@@ -65,6 +65,11 @@ function CoverLines({ albumId }: { albumId: string }) {
   )
 }
 
+// The sources shown under the legacy score: professional ones only (owner, Oct 2026: never Wikipedia; when only
+// Wikipedia supports it, the score shows without a source line). Links are left out.
+const shownSources = (text: string) =>
+  text.split(/\s+\|\s+/).filter((x) => !/wikipedia/i.test(x)).map((x) => x.replace(/\s*https?:\/\/\S+/g, '').trim()).filter(Boolean).join(' | ')
+
 // What the album left behind: the legacy score from sources, and, next to it, how its new traits spread in the
 // albums we describe from its area afterwards (a trace in the data, not a proof of cause).
 function LegacyBox({ albumId }: { albumId: string }) {
@@ -87,7 +92,7 @@ function LegacyBox({ albumId }: { albumId: string }) {
                 <span key={i} className={i <= legacy.legacy ? 'on' : ''} />
               ))}
             </span>
-            <span className="muted small legacy-source">{legacy.sources.replace(/\s*https?:\/\/\S+/g, '')}</span>
+            {shownSources(legacy.sources) && <span className="muted small legacy-source">{shownSources(legacy.sources)}</span>}
           </div>
         </div>
         {spread.length > 0 && (
