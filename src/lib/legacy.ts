@@ -78,15 +78,31 @@ function computeTrace(albumId: string): Trace | null {
   if (!fresh.length || !windows.length) return null
   // Each new trait on its own: how common it became in the field's albums after (a trait that spread by at least
   // 10 points counts).
-  const spread = fresh.map((t) => {
-    const shares = windows.map((w) => count(w.xs, t))
+  // Combined traits: two of the album's traits that were each common but rare together before (Ray of Light's strings
+  // with electronica). They are written "a+b" and counted on albums that have both.
+  // A pair has at least one common trait (a new trait with a common one: Electronica + Strings).
+  const list = [...mine]
+  const pairs: string[] = []
+  for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
+    const [a, b] = [list[i], list[j]]
+    if (fresh.includes(a) && fresh.includes(b)) continue
+    if (a.startsWith('g:') && b.startsWith('g:')) continue // two genres together say little
+    const both = (x: Descriptor) => traitsOf(x).has(a) && traitsOf(x).has(b)
+    if (before.filter(both).length / before.length < RARE) pairs.push(`${a}+${b}`)
+  }
+  const hasAll = (x: Descriptor, t: string) => t.split('+').every((u) => traitsOf(x).has(u))
+  const share2 = (xs: Descriptor[], t: string) => (xs.length ? xs.filter((x) => hasAll(x, t)).length / xs.length : 0)
+  const labelOf = (t: string) => t.split('+').map(label).join(' + ')
+  const spread = [...fresh, ...pairs].map((t) => {
+    const shares = windows.map((w) => share2(w.xs, t))
     const k = shares.indexOf(Math.max(...shares))
-    return { trait: label(t), before: count(before, t), after: shares[k], when: windows[k].from }
+    return { trait: labelOf(t), before: share2(before, t), after: shares[k], when: windows[k].from }
   }).filter((x) => x.after - x.before >= 0.1).sort((x, y) => y.after - y.before - (x.after - x.before))
-  const lift = spread.reduce((n, x) => n + x.after - x.before, 0)
+  // The five strongest spreads make the score, so many small pairs cannot inflate it.
+  const lift = spread.slice(0, 5).reduce((n, x) => n + x.after - x.before, 0)
   // Pioneer test, on the traits that spread.
-  const keys = fresh.filter((t) => spread.some((x) => x.trait === label(t)))
-  const has = (x: Descriptor) => keys.some((t) => traitsOf(x).has(t))
+  const keys = [...fresh, ...pairs].filter((t) => spread.some((x) => x.trait === labelOf(t)))
+  const has = (x: Descriptor) => keys.some((t) => hasAll(x, t))
   const around = inYears(d.year - 1, d.year + 1).filter(has)
   const first = around.length ? around.filter((x) => x.year! >= d.year!).length / around.length : 1
   const peersThen = around.filter((x) => x.year === d.year)
