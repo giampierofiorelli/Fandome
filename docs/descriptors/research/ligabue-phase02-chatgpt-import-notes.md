@@ -59,3 +59,12 @@ This is phase 02: artist-wide influences were provided only in phase 01; **do no
 - Miss Mondo: influenced_by kept (Brian Eno, Robert Fripp, Beck, John Hiatt (Bring the Family), R.E.M.: Ligabue's own words on the album's songs, Musica! 1999, transcription to be verified). sounds_like emptied: John Hiatt and R.E.M. there came from the same interview, not from a critic.
 - Fuori come va?: The Who removed from sounds_like (Rockol notes two songs referencing The Who, a reference, not a comparison of the sound).
 - Buon compleanno Elvis: Springsteen and Iggy Pop (OndaRock) to be checked in the reception pass.
+
+## Claude enrichment
+
+- Reception from OndaRock (monografia and Nome e cognome review), Rolling Stone Italia's 100 best Italian albums (Elvis No. 11), hitparadeitalia.it and FIMI year-end, AllMusic via it.wikipedia, Rockit, Mescalina, Scanner, Il Giornale.
+- Buon compleanno Elvis: sounds_like Bruce Springsteen|Iggy Pop confirmed at album level (OndaRock: "Il sound di Buon compleanno Elvis… è Iggy Pop e Bruce Springsteen senza U2 e The Police").
+- Miss Mondo: influenced_by emptied. The Musica! 1999 quotes are first-person but each names an artist for one song (Eno on Si viene e si va and Miss Mondo '99, Fripp on Si viene e si va, Beck on Baby, è un mondo super, John Hiatt on Da adesso in poi, R.E.M. on Forse mi trovo), the same rule as other one-track influences. "Harpsichord" corrected to tambourine (the credit's "cembalo" is the percussion instrument); slide guitar added (bottleneck on track 5).
+- Fuori come va?: added sampling and programming (official credits: Stefano Cesca samples, Davide Roveri keyboard programming; OndaRock: "arricchito da inserti elettronici"), electronic 1, arena rock (OndaRock: "un rock da arena"). The Who stays out (one track, In pieno rock'n'roll).
+- Nome e cognome: sounds_like U2 (Rockol, Gianni Sibilla 2005: "un suono più tagliente, che in più di un'occasione ricorda quello degli U2"; read from a search extract, Rockol blocks direct access). Added arena rock (OndaRock).
+- Producers confirmed by the official site and Discogs: Barbacci (Elvis, Fuori come va?), Barbacci and Pernici (Nome e cognome); Miss Mondo produced by Ligabue alone.
