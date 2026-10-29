@@ -54,3 +54,9 @@ The following are named as formative by group members or in a music-history inst
 ## Claude import note (Oct 2026)
 
 - New genre token `eastcoasthiphop` (parent hiphop). Artist added with the five studio albums; scene US en 1980 hiphop,rnb.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/saltnpepa.csv`.
+- sounds_like checked: no critic comparison found for Hot, Cool & Vicious (Roxanne Shanté stays in influenced_by from Salt's own words; Doug E. Fresh is the target of an answer record, not a sound match) or A Salt with a Deadly Pepa (L'Trimm, Kid 'n Play, Shanté unsupported): emptied. Blacks' Magic: Kid 'n Play removed (they guest on I Don't Know), Queen Latifah and MC Lyte removed (stance and peers only); Janet Jackson added (SoulBounce 2010: Do You Want Me "a danceable hip-hop version of Janet Jackson's Let's Wait Awhile"). Very Necessary: Queen Latifah and TLC kept (Pitchfork, Lobenfeld 2017, as peers in themes and sound of 1993); Neneh Cherry removed (not found); En Vogue guest, never a comparison.
+- A Salt with a Deadly Pepa instruments: percussion, bass, piano, trumpet added from E.U.'s go-go playing on Shake Your Thang (NME, Ben Thompson 1988); confidence stays medium (no other instrument credits on 25 Discogs versions).
