@@ -73,3 +73,10 @@ These are **career-wide named inspirations**, not assertions of direct influence
 ## Claude import note (Oct 2026)
 
 - Tu (1978) added to the catalogue. Artist influences: The Beatles, Elvis Presley, The Rolling Stones (his own words, 2022).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/tozzi.csv` (hitparadeitalia.it charts and Daniele Moretti's monograph; Rolling Stone Italia 2012 list for Gloria; no AllMusic/OndaRock/Rockol reviews exist).
+- È nell'aria… ti amo: instruments from it.wikipedia personnel (Tozzi slide and 12-string guitar, synth; Roberto Zanaboni piano, Fender Rhodes, synth, accordion, Hammond; Claudio Pascoli sax) and Moretti (strings on Dimentica dimentica); electronic raised to 1. Moretti's Eagles remark ("ispirazione sospetta") points to a borrowing, not a sound comparison: not used.
+- Tu: strings added (Moretti on the title track); credits confirmed on Discogs (CGD 20058): confidence high. Donna amante mia credits confirmed on Discogs (CGD 81333): confidence high.
+- Gloria: Discogs confirms the row (Barry Morgan drums, Münchner Philharmoniker strings); Moretti notes Greg Mathieson brought a West Coast sound, but names no artist.
