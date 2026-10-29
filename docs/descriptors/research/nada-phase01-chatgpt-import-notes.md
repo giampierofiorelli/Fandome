@@ -54,3 +54,7 @@ Import only `nada_phase01_rows_ONLY.csv` into descriptor store. Validate genre s
 - Credits confirmed from Discogs (5636022, 3857367, 3151765, 3155872): Franco Migliacci (1969, 1970), Piero Ciampi and Gianni Marchetti (1973; Roberto Gianolio's "realizzazione" left out), Henryk Topel Cabanes (1975). The 1975 sleeve bills Nada alone: no co-billing with Reale Accademia di Musica. 1975 is the right year.
 - 1973: sounds_like Pink Floyd (VICE 2019: "Quel disco ha degli aspetti che ricordano anche la psichedelia. Per essere precisi, i Pink Floyd"); psychedelic pop added (VICE 2014: "arrangiamenti orchestrali psichedelici di Gianni Marchetti"). Nada's own Pink Floyd statement (The Dark Side of the Moon behind Esisto anch'io) is about one track: not in influenced_by.
 - 1975: R&B added at the tail (Kalporz: "passaggi r'n'b"; "non è un disco prog").
+
+## Owner rule on song-level influences (Oct 2026)
+
+- Ho scoperto che esisto anch'io: influenced_by Pink Floyd (The Dark Side of the Moon) [1/10]. Nada's own words (VICE 2019: she brought The Dark Side of the Moon to the arranger and "venne fuori… Esisto anch'io, che è una citazione"), one song of the album's ten: it counts a tenth.

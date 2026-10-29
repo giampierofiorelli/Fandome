@@ -10,7 +10,7 @@ import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { collaborationOf } from '../data/collaborations'
 import { coverFrom } from '../data/covers'
 import { ARTIST_ALIASES } from '../data/artistAliases'
-import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
+import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Part, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
@@ -39,6 +39,29 @@ const includesName = (names: string[], name: string) => {
   if (!set) nameSets.set(names, (set = new Set(names.map(fold))))
   return set.has(fold(name))
 }
+const foldParts = (r: Record<string, Part> = {}) => new Map(Object.entries(r).map(([n, p]) => [fold(n), p]))
+// For an artist, a link counts whole if one album has it whole; otherwise with its largest share.
+function artistParts(ds: Descriptor[], col: 'soundsLike' | 'influencedBy') {
+  const out = new Map<string, Part>()
+  const whole = new Set<string>()
+  for (const d of ds) for (const n of d[col]) {
+    const k = fold(n)
+    const p = d.parts?.[col]?.[n]
+    if (!p) whole.add(k)
+    else if (!out.has(k) || p.songs / p.of > out.get(k)!.songs / out.get(k)!.of) out.set(k, p)
+  }
+  for (const k of whole) out.delete(k)
+  return out
+}
+// How much a link holds for the whole record: 1 for the album, songs/of when it is documented on some songs only.
+const partOf = (p: Profile, col: 'soundsLike' | 'influencedBy', name: string) => (includesName(p[col], name) ? p.parts?.[col].get(fold(name)) : undefined)
+const weightOf = (p: Profile, col: 'soundsLike' | 'influencedBy', name: string) => {
+  if (!includesName(p[col], name)) return 0
+  const part = partOf(p, col, name)
+  return part ? Math.min(1, part.songs / part.of) : 1
+}
+const wholeAlbum = (p: Profile, col: 'soundsLike' | 'influencedBy', name: string) => weightOf(p, col, name) === 1
+const onSongs = (part?: Part) => (part ? ` on ${part.songs === 1 ? 'one song' : `${part.songs} songs`}` : '')
 const intersect = (xs: string[], ys: string[], skip: string[]) => xs.filter((x) => includesName(ys, x) && !includesName(skip, x))
 const jaccard = (a: Set<string>, b: Set<string>) => {
   if (!a.size || !b.size) return null
@@ -66,6 +89,7 @@ export interface Profile {
   soundsLike: string[]
   influencedBy: string[]
   namedAlbums?: { artist: string; title: string }[]
+  parts?: { soundsLike: Map<string, Part>; influencedBy: Map<string, Part> } // links documented on some songs only
   confidence: number
   importance?: number // 0-5, career weight (albums only)
   acclaim?: number // 0-5, critical standing today (albums only)
@@ -104,6 +128,7 @@ function buildAlbumProfile(d: Descriptor): Profile {
     soundsLike: d.soundsLike,
     influencedBy: d.influencedBy,
     namedAlbums: d.namedAlbums,
+    parts: { soundsLike: foldParts(d.parts?.soundsLike), influencedBy: foldParts(d.parts?.influencedBy) },
     confidence: CONFIDENCE[d.confidence],
     importance: d.importance,
     acclaim: d.acclaim,
@@ -202,6 +227,7 @@ function buildArtistProfile(id: string, albumIds: string[]): Profile | null {
     producers: uniq(ds.flatMap((d) => d.producers)),
     soundsLike: uniq(ds.flatMap((d) => d.soundsLike)),
     influencedBy: uniq(ds.flatMap((d) => d.influencedBy)),
+    parts: { soundsLike: artistParts(ds, 'soundsLike'), influencedBy: artistParts(ds, 'influencedBy') },
     confidence: conf / ds.length,
   }
 }
@@ -480,23 +506,27 @@ function buildComparison(a: Profile, b: Profile): Comparison {
   const fit = 0.25 + 0.75 * closeness
   const direct = 0.25 * fit
   const show = closeness >= 0.5
-  if (includesName(a.soundsLike, b.artist)) (score += direct), show && links.push(`${a.title} sounds like ${b.artist}`)
-  else if (includesName(b.soundsLike, a.artist)) (score += direct), show && links.push(`${b.title} sounds like ${a.artist}`)
+  // A link documented on some songs only weighs its share of the album (1 song of 10 = a tenth).
+  if (includesName(a.soundsLike, b.artist)) (score += direct * weightOf(a, 'soundsLike', b.artist)), show && links.push(`${a.title} sounds like ${b.artist}${onSongs(partOf(a, 'soundsLike', b.artist))}`)
+  else if (includesName(b.soundsLike, a.artist)) (score += direct * weightOf(b, 'soundsLike', a.artist)), show && links.push(`${b.title} sounds like ${a.artist}${onSongs(partOf(b, 'soundsLike', a.artist))}`)
   // An influence leads one way, from the album to the artist it draws on: an album that names this album's
   // artist as an influence is no reason to suggest it here (Katy Perry drawing on Queen).
-  if (includesName(a.influencedBy, b.artist)) (score += direct), show && links.push(`${a.title} was influenced by ${b.artist}`)
+  if (includesName(a.influencedBy, b.artist)) (score += direct * weightOf(a, 'influencedBy', b.artist)), show && links.push(`${a.title} was influenced by ${b.artist}${onSongs(partOf(a, 'influencedBy', b.artist))}`)
   // An artist credited as producer of the other album worked on it (Prince co-produced Like a Prayer).
   if (includesName(a.producers, b.artist)) (score += direct), show && links.push(`${b.artist} worked on ${a.title}`)
   else if (includesName(b.producers, a.artist)) (score += direct), show && links.push(`${a.artist} worked on ${b.title}`)
 
   const artists = [a.artist, b.artist]
   // Shared influences, producers and comparisons also need close genres (a producer can make very different records).
+  // Shared links count by the smaller share of the two albums; only whole-album ones are named as a reason.
+  const both = (col: 'soundsLike' | 'influencedBy', xs: string[]) => xs.reduce((n, x) => n + Math.min(weightOf(a, col, x), weightOf(b, col, x)), 0)
+  const whole = (col: 'soundsLike' | 'influencedBy', xs: string[]) => xs.filter((x) => wholeAlbum(a, col, x) && wholeAlbum(b, col, x))
   const infl = intersect(a.influencedBy, b.influencedBy, artists)
-  if (infl.length && fit > 0) (score += Math.min(0.24, 0.12 * infl.length) * fit), show && links.push(`Both draw on ${and(infl.slice(0, 2))}`)
+  if (infl.length && fit > 0) (score += Math.min(0.24, 0.12 * both('influencedBy', infl)) * fit), show && whole('influencedBy', infl).length && links.push(`Both draw on ${and(whole('influencedBy', infl).slice(0, 2))}`)
   const prod = intersect(a.producers, b.producers, artists)
   if (prod.length && fit > 0) (score += Math.min(0.2, 0.1 * prod.length) * fit), show && links.push(`Both produced by ${and(prod.slice(0, 2))}`)
   const like = intersect(a.soundsLike, b.soundsLike, artists)
-  if (like.length && fit > 0) (score += Math.min(0.16, 0.08 * like.length) * fit), show && links.push(`Both sound like ${and(like.slice(0, 2))}`)
+  if (like.length && fit > 0) (score += Math.min(0.16, 0.08 * both('soundsLike', like)) * fit), show && whole('soundsLike', like).length && links.push(`Both sound like ${and(whole('soundsLike', like).slice(0, 2))}`)
   if (!links.length) {
     const path = twoStep(a, b) ?? twoStep(b, a)
     if (path) (score += 0.06 * fit), show && links.push(path)
@@ -631,7 +661,7 @@ export function similarAlbums(
       const gap = qualityGap(a, b)
       // Never from an auteur or alternative album to a packaged chart product (see packaged below).
       // A credited cover between the two records is a fact about them, like a named influence (owner, Oct 2026).
-      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist) && !coverFrom(albumId, d.albumId)
+      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !wholeAlbum(a, 'influencedBy', d.artist) && !coverFrom(albumId, d.albumId)
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
@@ -639,11 +669,12 @@ export function similarAlbums(
     // on its own, so the closest album of that artist has a lower cut.
     // A record the source names (a song's album) is the strongest evidence of all: no cut, only the critics' one.
     // So is a song one of the two records covers from the other (Laura Branigan's Self Control and Raf's Raf).
-    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && (namedAlbum(s) || coverFrom(albumId, s.albumId))))
+    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && wholeAlbum(a, 'influencedBy', s.artist)))) || (!s.panned && (namedAlbum(s) || coverFrom(albumId, s.albumId))))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
-  const named = (n: string) => includesName(a.influencedBy, n) || includesName(a.soundsLike, n)
+  // A link documented on some songs only adds its share to the score, but never takes a reserved place.
+  const named = (n: string) => wholeAlbum(a, 'influencedBy', n) || wholeAlbum(a, 'soundsLike', n)
   // Up to three places (of ten); documented influences before comparisons, then by score.
   const reserved: typeof scored = []
   // A link names an artist, not a record: of that artist's close albums, the one that best stands for their sound
@@ -665,10 +696,10 @@ export function similarAlbums(
   const linked = scored
     .filter((s) => named(s.artist))
     // The record a source names comes first for its artist; then influences before comparisons; then the best fit.
-    .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || Number(namedAlbum(y)) - Number(namedAlbum(x)) || pick(y) - pick(x))
+    .sort((x, y) => Number(!wholeAlbum(a, 'influencedBy', x.artist)) - Number(!wholeAlbum(a, 'influencedBy', y.artist)) || Number(namedAlbum(y)) - Number(namedAlbum(x)) || pick(y) - pick(x))
   for (const s of linked) {
     if (reserved.length - covered >= 3 || reserved.some((r) => r.artist === s.artist)) continue
-    const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
+    const link = wholeAlbum(a, 'influencedBy', s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
     const reasons = namedAlbum(s) ? [`${link} (${s.profile.title})`, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) : s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2)
     reserved.push({ ...s, reasons })
   }
@@ -808,23 +839,24 @@ export function similarArtists(
   // ("sounds like") is a likeness, so it counts both ways.
   const named = ARTIST_INFLUENCES[artistId]?.names ?? []
   const SHARE = 0.25
-  const share = (albums: Profile[], has: (p: Profile) => boolean) => (albums.length ? albums.filter(has).length / albums.length : 0)
+  // Each album counts by how much of it carries the link (a link on one song of ten counts a tenth).
+  const share = (albums: Profile[], has: (p: Profile) => number) => (albums.length ? albums.reduce((n, p) => n + has(p), 0) / albums.length : 0)
   const linkOf = (s: (typeof scored)[number]) => {
     const them = s.profile.artist
     const theirAlbums = profilesOf(albumIdsOf(s.artistId))
     if (includesName(named, them)) return { rank: 0, reason: `Influenced by ${them}` }
     const collab = collaborationOf(artistId, s.artistId)
     if (collab) return { rank: 1, reason: collab.what }
-    if (share(myAlbums, (a) => includesName(a.influencedBy, them)) >= SHARE) {
-      const drew = myAlbums.find((a) => includesName(a.influencedBy, them))!
+    if (share(myAlbums, (a) => weightOf(a, 'influencedBy', them)) >= SHARE) {
+      const drew = myAlbums.find((a) => wholeAlbum(a, 'influencedBy', them)) ?? myAlbums.find((a) => includesName(a.influencedBy, them))!
       return { rank: 2, reason: `${drew.title} draws on ${them}` }
     }
-    if (share(myAlbums, (a) => includesName(a.soundsLike, them)) >= SHARE) {
-      const like = myAlbums.find((a) => includesName(a.soundsLike, them))!
+    if (share(myAlbums, (a) => weightOf(a, 'soundsLike', them)) >= SHARE) {
+      const like = myAlbums.find((a) => wholeAlbum(a, 'soundsLike', them)) ?? myAlbums.find((a) => includesName(a.soundsLike, them))!
       return { rank: 3, reason: `${like.title} sounds like ${them}` }
     }
-    if (share(theirAlbums, (b) => includesName(b.soundsLike, me.artist)) >= SHARE) {
-      const like = theirAlbums.find((b) => includesName(b.soundsLike, me.artist))!
+    if (share(theirAlbums, (b) => weightOf(b, 'soundsLike', me.artist)) >= SHARE) {
+      const like = theirAlbums.find((b) => wholeAlbum(b, 'soundsLike', me.artist)) ?? theirAlbums.find((b) => includesName(b.soundsLike, me.artist))!
       return { rank: 3, reason: `${like.title} sounds like ${me.artist}` }
     }
     return null

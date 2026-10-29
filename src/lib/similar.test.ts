@@ -83,6 +83,25 @@ describe('similar albums', () => {
   })
 })
 
+describe('links documented on some songs only', () => {
+  it('weigh their share of the album and say so (owner: one song of ten counts a tenth)', () => {
+    const [whole, part, other] = parseDescriptors(
+      [
+        HEAD,
+        row('p-whole', 'Pi', 'house|pop|disco', '5,5,4,3,2,4,4,5', ',,,Beta'),
+        row('p-part', 'Pi', 'house|pop|disco', '5,5,4,3,2,4,4,5', ',,,Beta [1/10]'),
+        row('b-two', 'Beta', 'house|dance|disco', '5,4,4,3,2,4,4,5'),
+      ].join('\n'),
+    )
+    expect(part.influencedBy).toEqual(['Beta'])
+    expect(part.namedAlbums).toEqual([])
+    const w = compareAlbums(whole, other)
+    const p = compareAlbums(part, other)
+    expect(p.score).toBeLessThan(w.score)
+    expect(p.reasons[0]).toBe('p-part was influenced by Beta on one song')
+  })
+})
+
 describe('covers in suggestions', () => {
   it('puts the album a record covers at the top, one way only: never back from the original (owner)', () => {
     const top = similarAlbums('laurabranigan-selfcontrol').slice(0, 2)

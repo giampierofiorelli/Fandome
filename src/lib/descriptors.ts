@@ -25,6 +25,8 @@ export interface Descriptor {
   influencedBy: string[]
   // Records a source names, written "Artist (Album)" in sounds_like or influenced_by: the link leads to that album.
   namedAlbums: { artist: string; title: string }[]
+  // Links documented on some songs only, written "Pink Floyd [1/10]" (1 song of 10): they weigh that share.
+  parts: { soundsLike: Record<string, Part>; influencedBy: Record<string, Part> }
   landmark: boolean
   importance?: number // 0-5: how much the album counts in the artist's career (reception file)
   acclaim?: number // 0-5: how highly critics rate it today, at release or later (reception file)
@@ -34,14 +36,26 @@ export interface Descriptor {
   notes: string
 }
 
+export interface Part { songs: number; of: number }
 const list = (s: string) => s.split('|').map((x) => x.trim()).filter(Boolean)
+// "Pink Floyd [1/10]": the link holds for 1 song of the album's 10 (owner, Oct 2026: a link found on one song
+// counts only for its share of the record).
+const PART = /\s*\[(\d+)\s*\/\s*(\d+)\]\s*$/
+const bare = (x: string) => x.replace(PART, '')
 // "Mina (Il cielo in una stanza)": the artist, plus the record the source names.
 const WORK = /^(.+?)\s*\((.+)\)$/
-const names = (s: string) => list(s).map((x) => x.match(WORK)?.[1] ?? x)
+const nameOf = (x: string) => bare(x).match(WORK)?.[1] ?? bare(x)
+const names = (s: string) => list(s).map(nameOf)
+// Only a record named for the whole album leads to that record (a link on one song is too little for that).
 const works = (...cols: string[]) => cols.flatMap(list).flatMap((x) => {
+  if (PART.test(x)) return []
   const m = x.match(WORK)
   return m ? [{ artist: m[1], title: m[2] }] : []
 })
+const parts = (s: string): Record<string, Part> => Object.fromEntries(list(s).flatMap((x) => {
+  const m = x.match(PART)
+  return m && Number(m[2]) > 0 ? [[nameOf(x), { songs: Number(m[1]), of: Number(m[2]) }]] : []
+}))
 
 export function parseDescriptors(text: string): Descriptor[] {
   const [head, ...rows] = parseCsv(text)
@@ -68,6 +82,7 @@ export function parseDescriptors(text: string): Descriptor[] {
       soundsLike: names(r.sounds_like),
       influencedBy: names(r.influenced_by),
       namedAlbums: works(r.sounds_like, r.influenced_by),
+      parts: { soundsLike: parts(r.sounds_like), influencedBy: parts(r.influenced_by) },
       landmark: r.landmark === '1',
       confidence: (r.confidence || 'low') as Descriptor['confidence'],
       status: (r.status || 'draft') as Descriptor['status'],

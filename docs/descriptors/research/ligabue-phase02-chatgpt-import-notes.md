@@ -68,3 +68,7 @@ This is phase 02: artist-wide influences were provided only in phase 01; **do no
 - Fuori come va?: added sampling and programming (official credits: Stefano Cesca samples, Davide Roveri keyboard programming; OndaRock: "arricchito da inserti elettronici"), electronic 1, arena rock (OndaRock: "un rock da arena"). The Who stays out (one track, In pieno rock'n'roll).
 - Nome e cognome: sounds_like U2 (Rockol, Gianni Sibilla 2005: "un suono più tagliente, che in più di un'occasione ricorda quello degli U2"; read from a search extract, Rockol blocks direct access). Added arena rock (OndaRock).
 - Producers confirmed by the official site and Discogs: Barbacci (Elvis, Fuori come va?), Barbacci and Pernici (Nome e cognome); Miss Mondo produced by Ligabue alone.
+
+## Owner rule on song-level influences (Oct 2026)
+
+- Miss Mondo (14 songs): influenced_by restored with each song's share, from Ligabue's own words (Musica! 1999): Brian Eno [2/14] (Si viene e si va, Miss Mondo '99), Robert Fripp [1/14], Beck [1/14], John Hiatt (Bring the Family) [1/14], R.E.M. [1/14].

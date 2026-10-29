@@ -47,6 +47,11 @@ for (const file of files) {
     }
     if (!/^\d{4}$/.test(r.year)) say(where, `year "${r.year}"`)
     if (!TYPES.has(r.type)) say(where, `type "${r.type}"`)
+    // A link on some songs only is written "Name [songs/of]" (Pink Floyd [1/10]).
+    for (const col of ['sounds_like', 'influenced_by'] as const) for (const x of (r[col] ?? '').split('|')) {
+      const m = x.match(/\[(.*)\]\s*$/)
+      if (m && !(/^\d+\/\d+$/.test(m[1].replace(/\s/g, '')) && Number(m[1].split('/')[0]) >= 1 && Number(m[1].split('/')[0]) <= Number(m[1].split('/')[1]))) say(where, `${col} "${x.trim()}": write songs as [songs/of], e.g. [1/10]`)
+    }
     const genres = r.genres.split('|').filter(Boolean)
     if (!genres.length || genres.some((g) => !GENRES.has(g))) say(where, `genres "${r.genres}"`)
     for (const s of SCALES) if (r[s] !== '' && !/^[0-5]$/.test(r[s])) say(where, `${s} "${r[s]}" (0–5 or empty)`)
