@@ -86,3 +86,12 @@ After adding the missing albums and `pianoblues`, run the Fandome descriptor val
 - Rispetto influenced_by "Joe Cocker" left empty for now: it comes from a Wikipedia account of a song, not a confirmed first-person statement. Joe Cocker also left out of artist-level influences pending a first-person source.
 - Artist influences from his own interviews: Ray Charles, Otis Redding, Aretha Franklin, Sam & Dave, Wilson Pickett, The Beatles, The Rolling Stones.
 - sounds_like (Joe Cocker, Ray Charles) to be checked against critics in the reception pass.
+
+## Claude enrichment
+
+- Reception: it.wikipedia, en.wikipedia discography, Estatica (Rispetto 7.3/10), Panorama and Onda Musicale (Blue’s), soundlite.it (Corrado Rustici interview). Acclaim empty where no professional review exists (1983, 1985).
+- sounds_like: Joe Cocker kept only on Blue’s (Onda Musicale: "Zucchero pare Joe Cocker più di Cocker stesso"; Panorama: "un evidente omaggio al suo nume tutelare Joe Cocker"). Removed from 1985 and Rispetto (no critic comparison of those albums). Ray Charles removed from Blue’s (his idol, not a critic's comparison).
+- Rispetto influenced_by stays empty: the "idol" wording is Wikipedia's and journalists'. Joe Cocker added to artist-level influences from Zucchero's own words (La Voce di New York, 2014).
+- 1985: added rnb, popsoul, reggae (it.wikipedia: "rhythm and blues, alla musica soul e al reggae", infobox pop soul).
+- Producers confirmed: 1983 only self-credited (Vince Tempera arranger), 1985 Corrado Rustici, Rispetto Rustici and Michele Torpedine (Qobuz, it.wikipedia), Blue’s Rustici (Qobuz; Torpedine executive producer).
+- Track-level critic comparisons on Blue’s (Procol Harum organ, Pink Floyd atmosphere on Dune mosse, Beatles piano) not added: one track each.

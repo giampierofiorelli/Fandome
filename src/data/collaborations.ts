@@ -6,6 +6,7 @@ import { catalogAlbums, catalogArtists } from './catalog'
 // foreign neighbours). Works both ways. Keep the source; a cover or a shared concert bill is not a collaboration,
 // but a cover credited on the record (src/data/covers.ts) is treated the same way (owner, Oct 2026: Raf and Laura Branigan).
 export const COLLABORATIONS: { a: string; b: string; what: string; source: string }[] = [
+  { a: 'raf', b: 'tozzi', what: 'Umberto Tozzi plays guitar on Raf’s Svegliarsi un anno fa (1988)', source: 'Discogs, CGD 20835 credits; it.wikipedia, Svegliarsi un anno fa' },
   { a: 'battiato', b: 'losplanetas', what: 'J of Los Planetas adapted Battiato’s Apriti sesamo into Spanish (Ábrete sésamo, 2013)', source: 'Público; Página/12 (Battiato interview, 2013)' },
   { a: 'battiato', b: 'sepideh', what: 'Sepideh Raissadat sings on Battiato’s Fleurs 2 (2008)', source: 'it.wikipedia, Fleurs 2; AllMusic credits' },
   { a: 'battiato', b: 'hossamramzy', what: 'Hossam Ramzy plays percussion on Battiato’s Caffè de la Paix (1993)', source: 'Discogs, EMI release 1062409 (track Fogh in Nakhal)' },

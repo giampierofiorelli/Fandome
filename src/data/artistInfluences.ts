@@ -359,8 +359,8 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     source: 'Umberto Tozzi: Corriere della Sera 2022 (listening to the Beatles and Anglo-American music shaped his melodies and sound), Krone 2022 (Elvis Presley, the Rolling Stones)',
   },
   zucchero: {
-    names: ['Ray Charles', 'Otis Redding', 'Aretha Franklin', 'Sam & Dave', 'Wilson Pickett', 'The Beatles', 'The Rolling Stones'],
-    source: 'Zucchero, NPR 2017 (Ray Charles, Otis Redding, Aretha Franklin); Write On Music 2014 interview (Sam & Dave, Wilson Pickett); PRI The World 2017 (Beatles, Rolling Stones). Joe Cocker left out until a first-person source is found',
+    names: ['Ray Charles', 'Otis Redding', 'Aretha Franklin', 'Sam & Dave', 'Wilson Pickett', 'The Beatles', 'The Rolling Stones', 'Joe Cocker'],
+    source: 'Zucchero, NPR 2017 (Ray Charles, Otis Redding, Aretha Franklin); Write On Music 2014 interview (Sam & Dave, Wilson Pickett); PRI The World 2017 (Beatles, Rolling Stones). La Voce di New York 2014 interview (Joe Cocker: "mi colpì ai tempi di Woodstock"; Ray Charles "il mio idolo")',
   },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],

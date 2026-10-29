@@ -24,3 +24,10 @@ Files:
 ## Claude import note (Oct 2026)
 
 - Sogni... è tutto quello che c'è: Eros Ramazzotti removed from sounds_like (he duets on the album: a guest is not a comparison); Raf's own production credit dropped. Four albums added to the catalogue row.
+
+## Claude enrichment
+
+- Reception from chart runs (hitparadeitalia.it), Sanremo/Festivalbar results and credits; no professional review found for any of the four, so acclaim is empty.
+- Svegliarsi un anno fa: "Umberto Tozzi" removed from sounds_like (no critic comparison; Tozzi plays guitar on the album, Discogs CGD 20835). Recorded instead as a collaboration in `src/data/collaborations.ts`.
+- Raf (1984): Celso Valli removed from producers (not credited; Discogs 1901380 credits Giancarlo Bigazzi).
+- Sogni…: Eros Ramazzotti stays out (duet guest).
