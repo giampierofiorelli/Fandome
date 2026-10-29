@@ -38,3 +38,11 @@ Prepared **2026-10-29**, repository `giampierofiorelli/Fandome`, branch **`descr
 ## Claude import note (Oct 2026)
 
 - Artist added (4 studio albums, complete), not touring; scene US en 1970 disco,funk. No artist-level influences documented.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/lippsinc.csv`.
+- Mouth to Mouth sounds_like: Silver Convention (Christgau: "Silver Convention homage"), Giorgio Moroder (Stereogum, Breihan; The Vinyl District), Kraftwerk (Stereogum: funky "the same way that Kraftwerk is funky"), Donna Summer (Mono & Stereo: a sequencer echoing I Feel Love); production adds vocoder (the Funkytown intro, Stereogum). Prince explicitly not (Stereogum: "sounds absolutely nothing like Prince").
+- Pucker Up: Moroder confirmed (AllMusic, Amy Hanson); clavinet (Ricky Peterson) and flugelhorn added from Discogs r444913.
+- Designer Music: credits verified on Discogs r970136 (Greenberg, Rafowitz and Dumas synths, Herb Pilhofer strings), confidence raised to high.
+- 4: Discogs r356611 adds Moog (Roger Dumas, Funk 108) and organ; Matt Fink and David Eiland are guests. Margie Cox's voice undescribed: voice stays empty, confidence medium.
