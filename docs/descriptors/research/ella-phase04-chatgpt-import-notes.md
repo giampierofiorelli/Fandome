@@ -38,3 +38,8 @@ Research 1960 original non-live studio albums: *Ella Wishes You a Swinging Chris
 ## Claude import note (Oct 2026)
 
 - Get Happy! not imported: assembled from previously unissued 1957-59 sessions, a compilation in practice (same call as Sweet and Hot). Two rows imported; Sweet Songs for Swingers added to the catalogue (the Gershwin Song Book id was already there).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/ella.csv`.
+- sounds_like emptied on both: no critic compares them to Sarah Vaughan or Sinatra (Hasse links Riddle to Sinatra only as his arranger, and contrasts the singers).
