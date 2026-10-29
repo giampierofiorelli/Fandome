@@ -1,0 +1,22 @@
+﻿album_id,genre,source,scope,evidence
+johnwaite-ignition,albumrock,whole album,AllMusic — Ignition,AllMusic explicit Album Rock album style
+johnwaite-ignition,contemporarypoprock,whole album,AllMusic — Ignition,AllMusic explicit Contemporary Pop/Rock style
+johnwaite-ignition,poprock,whole album,Musicbase — Donnie Nossov original discography,Original 1982 vinyl Pop Rock; companion AllMusic calls it mainstream commercial rock
+johnwaite-ignition,softrock,"album style, mainly ballads",AllMusic — Ignition,AllMusic explicit Soft Rock style
+johnwaite-ignition,newwave,"production texture, not genre claim for all tracks",AllMusic — Ignition,Review calls its early-1980s processed-guitar production a new-wave sheen
+johnwaite-nobrakes,albumrock,whole album,AllMusic — No Brakes,Explicit Album Rock
+johnwaite-nobrakes,contemporarypoprock,whole album,AllMusic — No Brakes,Explicit Contemporary Pop/Rock
+johnwaite-nobrakes,softrock,whole album/ballads,AllMusic — No Brakes,Explicit Soft Rock; especially Missing You
+johnwaite-nobrakes,poprock,whole album,Musicbase — Donnie Nossov original albums,Original 1984 vinyl Pop Rock
+johnwaite-nobrakes,aor,whole album,Heavy Harmonies — No Brakes pressing,Release genre AOR and rock radio sound
+johnwaite-nobrakes,hardrock,"selected driving tracks, tail",Musicbase — Donnie Nossov original albums,Original vinyl also tagged Hard Rock; avoid blanket claim
+johnwaite-maskofsmiles,albumrock,whole album,AllMusic — Mask of Smiles,Explicit Album Rock
+johnwaite-maskofsmiles,contemporarypoprock,whole album,AllMusic — Mask of Smiles,Explicit Contemporary Pop/Rock
+johnwaite-maskofsmiles,poprock,whole album,Musicbase — original Mask Of Smiles LP styles via Nossov credits,1985 vinyl tagged Pop Rock
+johnwaite-maskofsmiles,synthpop,selected tracks/production texture,Musicbase — original Mask Of Smiles LP styles via Nossov credits,Original vinyl Synth-pop tag; AllMusic review describes prominent synthesizers
+johnwaite-maskofsmiles,aor,retrospective edition style (lower weight),Musicbase — 2001 combined 2-LP reissue,"2001 reissue labelled AOR: retrospective broad style, not verified separate original LP tag"
+johnwaite-roversreturn,contemporarypoprock,whole album,AllMusic — Rover's Return,Explicit Contemporary Pop/Rock
+johnwaite-roversreturn,poprock,whole album,Musicbase — Rover’s Return original LP,Original 1987 vinyl Pop Rock
+johnwaite-roversreturn,aor,whole album,Heavy Harmonies — Rover’s Return original CD,Explicit AOR
+johnwaite-roversreturn,arenarock,"radio-rock tracks, editorial descriptor",AllMusic — Rover's Return,"Review calls opening track radio rock; high-impact choruses; arena-rock is editorial, not source taxonomy"
+johnwaite-roversreturn,softrock,"ballads, editorial descriptor",AllMusic — Rover's Return,"Soft-rock tonal variation for the romantic ballads, not an explicit album tag"

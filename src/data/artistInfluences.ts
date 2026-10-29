@@ -382,6 +382,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Led Zeppelin', 'Pink Floyd', 'King Crimson', 'Janis Joplin', 'The Velvet Underground', 'Piero Ciampi'],
     source: 'Nada, Rolling Stone Italia 2022 (the rock she started listening to in the seventies: Led Zeppelin, Pink Floyd, King Crimson, Janis Joplin, Velvet Underground); Il Fatto Quotidiano 2025 and a 2014 interview (Piero Ciampi helped her find her own language as an author)',
   },
+  johnwaite: {
+    names: ['Neil Young', 'The Beatles', 'Hank Williams', 'Marty Robbins', 'Nina & Frederik', 'The Shadows', 'Otis Redding', 'Etta James', 'Tina Turner', 'Jimi Hendrix'],
+    source: 'John Waite in interviews: johnwaiteworldwide.com (Neil Young made him want to sing); Songwriting Magazine (The Beatles; Nina & Frederik minor-key records); xsrock.com (Hank Williams, Marty Robbins); Suncoast Post (The Shadows); HuffPost 2011 via trafficbeat.net (Otis Redding, Etta James, Tina Turner); iconvsicon.com 2013 (Hendrix at art school)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
