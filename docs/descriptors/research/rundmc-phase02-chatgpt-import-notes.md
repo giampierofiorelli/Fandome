@@ -57,3 +57,10 @@ None of the three original LPs is co-billed as an album; featured collaborators 
 - New genre token `jazzrap` (parents hiphop, jazz).
 - The group's own production credit dropped on all three.
 - Crown Royal sounds_like emptied: Kid Rock, Sugar Ray and Third Eye Blind (Stephan Jenkins) are guests, Limp Bizkit is co-producer DJ Lethal's band. Down with the King: Naughty by Nature removed (producer Kay Gee's group).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/rundmc.csv`.
+- Back from Hell sounds_like: Teddy Riley (Pierznik: Pause and Faces "capitalize on the hot sound of New Jack Swing"), N.W.A (The Quietus: "the Bomb Squad's productions and NWA's streetwise sermonising"); Public Enemy and Ice Cube left out (Chuck D and Ice Cube guest on the title-track remix).
+- Down with the King: Onyx removed (guests on Get Open), Kris Kross removed (video cameo only); Das EFX confirmed (RapReviews) and Cypress Hill added (Washington Post, Gil Griffin, on 3 in the Head).
+- Crown Royal: no non-guest sound comparison (Rob Base's It Takes Two is an appropriation); genre alternativerock replaced by numetal (Wikipedia: hip hop, rap rock, nu metal, rap metal). Year 2001 confirmed (Arista, 3 April 2001).
