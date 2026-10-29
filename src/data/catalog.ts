@@ -185,7 +185,7 @@ const ROWS: Row[] = [
   ['olly', 'Olly Alexander', '#e0577a', 'Polari, pride and pop', [['Polari', 2025]]],
   ['yearsyears', 'Years & Years', '#4ab5c9', 'King, Starstruck and Night Call', [['Communion', 2015], ['Palo Santo', 2018], ['Night Call', 2022]]],
   ['mccartney', 'Paul McCartney', '#a38a5a', 'Band on the run, still running', [['McCartney', 1970], ['Ram', 1971], ['Band on the Run', 1973], ['Flaming Pie', 1997], ['Egypt Station', 2018], ['McCartney III', 2020]]],
-  ['paulyoung', 'Paul Young', '#7a8fb5', 'Every time you go away', [['No Parlez', 1983], ['The Secret of Association', 1985], ['Between Two Fires', 1986]]],
+  ['paulyoung', 'Paul Young', '#7a8fb5', 'Every time you go away', [['No Parlez', 1983], ['The Secret of Association', 1985], ['Between Two Fires', 1986], ['Other Voices', 1990], ['The Crossing', 1993], ['Reflections', 1994], ['Paul Young', 1997], ['Rock Swings', 2006], ['Good Thing', 2016]]],
   ['peaches', 'Peaches', '#e04a8f', 'Electro provocations', [['The Teaches of Peaches', 2000], ['Fatherfucker', 2003], ['Impeach My Bush', 2006], ['I Feel Cream', 2009], ['Rub', 2015]]],
   ['perfumegenius', 'Perfume Genius', '#a37a9a', 'Fragile, fierce and beautiful', [['Too Bright', 2014], ['No Shape', 2017], ['Set My Heart on Fire Immediately', 2020], ['Glory', 2025]]],
   ['gabriel', 'Peter Gabriel', '#5a8a8f', 'Sledgehammers and solsbury hills', [['Peter Gabriel (Melt)', 1980], ['So', 1986], ['Us', 1992], ['Up', 2002], ['i/o', 2023]]],

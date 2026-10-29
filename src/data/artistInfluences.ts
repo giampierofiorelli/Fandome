@@ -306,6 +306,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Stevie Wonder', 'Marvin Gaye', 'The Supremes', 'The Temptations', 'Gladys Knight', 'Joe Cocker', 'James Brown', 'Chicago', 'Blood, Sweat & Tears'],
     source: 'Harry Wayne Casey: Music Feeds 2017 (Motown — Stevie Wonder, Marvin Gaye, The Supremes, The Temptations, Gladys Knight — plus Joe Cocker, James Brown, Chicago, Blood, Sweat & Tears); Recording Academy (Bahamian Junkanoo, a tradition, not an artist)',
   },
+  paulyoung: {
+    names: ['Free', 'James Taylor', 'Stevie Wonder', 'The Who', 'Small Faces', 'Faces', 'Patto', 'Dire Straits', 'Robert Palmer', 'The Stranglers', 'Junior Walker', 'Joe Tex', 'Otis Redding', 'Sam Cooke', 'Wilson Pickett', 'Garnet Mimms', 'Chuck Jackson', 'Johnnie Taylor', 'Talking Heads', 'Soft Cell'],
+    source: 'Paul Young: Rediscover the 80s (2011 interview, republished 2019), by period: Free/Paul Rodgers, James Taylor, Stevie Wonder; The Who, Small Faces, Faces, Patto, Dire Straits, Robert Palmer, The Stranglers; the Q-Tips soul era (Junior Walker, Joe Tex, Otis Redding, Sam Cooke, Wilson Pickett); around the solo debut Garnet Mimms, Chuck Jackson, Johnnie Taylor, Talking Heads, Soft Cell',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

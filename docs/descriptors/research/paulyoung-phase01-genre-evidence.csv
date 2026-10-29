@@ -1,0 +1,23 @@
+album_id,genre,source,url,scope,evidence
+paulyoung-noparlez,blueeyedsoul,nop_wiki,https://en.wikipedia.org/wiki/No_Parlez,whole album,Album-level blue-eyed soul classification.
+paulyoung-noparlez,soul,classic,https://www.classicpopmag.com/features/paul-young-no-parlez-interview/,whole album,2025 retrospective describes album spanning soul; singer and musicians explain arrangement approach.
+paulyoung-noparlez,newwave,nop_all,https://www.allmusic.com/album/no-parlez-mw0000651012,whole album,AllMusic style New Wave; supported by contemporary synth and ensemble setting.
+paulyoung-noparlez,pop,nop_wiki,https://en.wikipedia.org/wiki/No_Parlez,whole album,Album-level pop category.
+paulyoung-noparlez,artpop,classic,https://www.classicpopmag.com/features/paul-young-no-parlez-interview/,selected tracks,Classic Pop describes Bowiesque art-pop aspect; lower-weight long-tail descriptor.
+paulyoung-noparlez,contemporarypoprock,nop_all,https://www.allmusic.com/album/no-parlez-mw0000651012,whole album,AllMusic Contemporary Pop/Rock style classification.
+paulyoung-thesecretofassociation,blueeyedsoul,sec_wiki,https://en.wikipedia.org/wiki/The_Secret_of_Association,whole album,Album infobox classification.
+paulyoung-thesecretofassociation,poprock,sec_wiki,https://en.wikipedia.org/wiki/The_Secret_of_Association,whole album,Album-level pop-rock classification.
+paulyoung-thesecretofassociation,soul,allbio,https://www.allmusic.com/artist/paul-young-mn0000034382/biography,whole album,AllMusic describes the album and early Young recordings as blue-eyed/new-wave soul.
+paulyoung-thesecretofassociation,newwave,sec_all,https://www.allmusic.com/album/the-secret-of-association-mw0000192541,whole album,AllMusic styles include New Wave.
+paulyoung-thesecretofassociation,adultcontemporary,sec_all,https://www.allmusic.com/album/the-secret-of-association-mw0000192541,whole album,AllMusic styles explicitly include Adult Contemporary.
+paulyoung-thesecretofassociation,contemporarypoprock,sec_all,https://www.allmusic.com/album/the-secret-of-association-mw0000192541,whole album,AllMusic styles include Contemporary Pop/Rock.
+paulyoung-betweentwofires,poprock,bet_wiki,https://en.wikipedia.org/wiki/Between_Two_Fires_(album),whole album,Album-level pop-rock credit.
+paulyoung-betweentwofires,soul,bet_wiki,https://en.wikipedia.org/wiki/Between_Two_Fires_(album),whole album,Album-level soul category; AllMusic notes less soul than prior albums.
+paulyoung-betweentwofires,contemporarypoprock,bet_all,https://www.allmusic.com/album/between-two-fires-mw0000192441,whole album,AllMusic Contemporary Pop/Rock style.
+paulyoung-betweentwofires,newwave,bet_all,https://www.allmusic.com/album/between-two-fires-mw0000192441,whole album,AllMusic New Wave listed style; lower weight than pop-rock.
+paulyoung-othervoices,poprock,oth_wiki,https://en.wikipedia.org/wiki/Other_Voices_(Paul_Young_album),whole album,Album-level pop-rock classification.
+paulyoung-othervoices,soul,oth_genre,https://musicbase.net/other-voices-0rzjesp,whole album,Original CD metadata lists soul as style alongside pop-rock.
+paulyoung-othervoices,blueeyedsoul,oth_review,https://labibledelawestcoast.blogspot.com/2020/04/paul-young-other-voices-1990-blue-eyed.html,whole album,Specialist retrospective explicitly calls album blue-eyed soul.
+paulyoung-othervoices,synthpop,oth_genre,https://musicbase.net/other-voices-0rzjesp,some tracks,CD discographic style synth-pop; supported by documented programming and synths.
+paulyoung-othervoices,pop,oth_genre,https://musicbase.net/other-voices-0rzjesp,whole album,Record category pop; used as broad umbrella.
+paulyoung-othervoices,contemporarypoprock,oth_all,https://www.allmusic.com/album/other-voices-mw0000315291,whole album,AllMusic styles include Contemporary Pop/Rock.

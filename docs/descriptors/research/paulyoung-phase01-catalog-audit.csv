@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,type,already_in_catalog,descriptor_already_in_repository,action,evidence
+paulyoung-noparlez,paulyoung,No Parlez,1983,studio,yes,no,add descriptor row using existing album ID,catalog.ts branch descriptors inspected 2026-10-29; docs/descriptors/paulyoung.csv not found
+paulyoung-thesecretofassociation,paulyoung,The Secret of Association,1985,studio,yes,no,add descriptor row using existing album ID,catalog.ts branch descriptors inspected 2026-10-29; docs/descriptors/paulyoung.csv not found
+paulyoung-betweentwofires,paulyoung,Between Two Fires,1986,studio,yes,no,add descriptor row using existing album ID,catalog.ts branch descriptors inspected 2026-10-29; docs/descriptors/paulyoung.csv not found
+paulyoung-othervoices,paulyoung,Other Voices,1990,studio,no,no,add album to catalog.ts then import new descriptor row,catalog.ts branch descriptors inspected 2026-10-29; docs/descriptors/paulyoung.csv not found
