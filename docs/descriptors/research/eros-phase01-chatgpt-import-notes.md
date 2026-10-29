@@ -58,3 +58,11 @@ Live albums and compilations (including the 1997 *Eros* compilation, even though
 - sounds_like emptied on all four (Raf, Umberto Tozzi, Riccardo Cocciante): ChatGPT calls them "editorial comparisons, not direct quoted comparisons". The reception pass looks for critics' ones.
 - Musica è: influenced_by Genesis kept (his own words on the title suite, Corriere della Sera Sette 2022).
 - Artist influences from his own words: Ray Charles, Stevie Wonder, Steve Winwood, Sting, Genesis, Lucio Battisti.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it year-end charts, it/en/de.wikipedia (certifications, European peaks), Music & Media 1987–88, l'Unità (1987, 1988). No album review found for Cuori agitati or Nuovi eroi (acclaim empty).
+- No critic comparison of any of the four albums found: sounds_like stays empty.
+- Musica è: Genesis confirmed ("Volevo da sempre fare una suite, amando i Genesis", Corriere della Sera Sette 2022). Added classical crossover (it.wikipedia on the title-track single), last. Kept as studio (5 new recordings; Discogs calls the cassette a mini-album).
+- Producers confirmed as Piero Cassano on all four (Discogs original LPs). Celso Valli and Maurizio Bassi are arrangers; Renato Brioschi produced only the 1984 single Terra promessa; Adelio Cogliati is "Producer [Assistant]".
+- Nuovi eroi: Prophet-5 and Simmons drums removed (not on the original LP credits or Qobuz; Fairlight and drum programming are).
