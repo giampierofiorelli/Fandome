@@ -354,6 +354,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Beatles', 'Pink Floyd', 'Bob Marley', 'Bob Dylan', 'The Police', 'Jimi Hendrix', 'Marvin Gaye', 'Johnny Cash', 'Boukman Eksperyans', 'Shep and the Limelites'],
     source: 'Wyclef Jean: Death Wish Coffee podcast (Sgt. Pepper and The Wall as blueprints for The Score), NY1/AP 2026 (Exodus, early Dylan, Synchronicity), Big Think (Hendrix, Marvin Gaye, Johnny Cash, Boukman Eksperyans, Marley); Lauryn Hill, Mixmag 1996 (Shep and the Limelites)',
   },
+  tozzi: {
+    names: ['The Beatles', 'Elvis Presley', 'The Rolling Stones'],
+    source: 'Umberto Tozzi: Corriere della Sera 2022 (listening to the Beatles and Anglo-American music shaped his melodies and sound), Krone 2022 (Elvis Presley, the Rolling Stones)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

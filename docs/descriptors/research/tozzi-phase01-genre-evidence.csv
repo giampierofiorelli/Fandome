@@ -1,0 +1,20 @@
+album_id,genre,source,url,scope,evidence
+tozzi-donnaamantemia,pop,d_apple,https://music.apple.com/us/album/donna-amante-mia/1564229165,whole album,Original Sugar/Apple Music album classified Pop
+tozzi-donnaamantemia,poprock,d_earlycomp,https://tuttosutozzi.com/1978-2/1978-discografia/1978-discografia-tozzi/prima-o-poi/,1976 album tracks reissued within a two-album compilation; inferred partial scope,1978 compilation explicitly contains several first-album tracks and is labelled Pop Rock; weaker than original album genre attribution
+tozzi-donnaamantemia,softrock,d_earlycomp,https://tuttosutozzi.com/1978-2/1978-discografia/1978-discografia-tozzi/prima-o-poi/,1976 album tracks reissued within a two-album compilation; inferred partial scope,"Soft Rock classification refers to a combined 1976/77 repertoire collection, not an original LP"
+tozzi-donnaamantemia,ballad,d_earlycomp,https://tuttosutozzi.com/1978-2/1978-discografia/1978-discografia-tozzi/prima-o-poi/,several romantic 1976 compositions,Original-era collection includes Donna amante mia and Mi manca and is tagged Ballad; not a whole-record formal style credit
+tozzi-donnaamantemia,italianpop,d_allmusic,https://www.allmusic.com/artist/umberto-tozzi-mn0000217761,artist/regional contemporary style applied to this 1976 pop LP,AllMusic describes Tozzi as Italian Pop; Apple verifies this original Italian pop album
+tozzi-enellariatiamo,pop,e_qobuz,https://www.qobuz.com/it-it/album/e-nell-ariati-amo-umberto-tozzi/hwzqf0f5ajicc,whole album,Sugar/Qobuz original record categorized Pop
+tozzi-enellariatiamo,poprock,e_original,https://vinylzone.ru/catalog/net-v-nalichii/22144/,whole LP style,Original 1977 82124 LP listed Rock / Pop Rock
+tozzi-enellariatiamo,ballad,e_original,https://vinylzone.ru/catalog/net-v-nalichii/22144/,original 1977 LP style / romantic tracks,Original LP tagged Ballad; title hit Ti amo slower romantic pop-rock
+tozzi-enellariatiamo,softrock,e_earlycomp,https://tuttosutozzi.com/1978-2/1978-discografia/1978-discografia-tozzi/prima-o-poi/,historical 1977 songs on two-album compilation,"1978 compilation includes Ti amo, Tu piccolo and Dimentica dimentica, styled Soft Rock; derived weaker support"
+tozzi-enellariatiamo,italianpop,e_qobuz,https://www.qobuz.com/it-it/album/e-nell-ariati-amo-umberto-tozzi/hwzqf0f5ajicc,whole album Italian pop identity,"Italian 1977 pop album with Italian lyrics, contextual Italian Pop style also in AllMusic biography"
+tozzi-tu,poprock,t_original,https://www.chartsurfer.de/artist/umberto-tozzi/tu-album_ffhghn.html,whole album,CGD 1978 Italian LP listed Rock / Pop Rock
+tozzi-tu,pop,t_italopop,https://www.musik-sammler.de/release/umberto-tozzi-tu-lp-336355/,whole album,Contemporary 1978 album classified Italian Pop
+tozzi-tu,italianpop,t_italopop,https://www.musik-sammler.de/release/umberto-tozzi-tu-lp-336355/,whole album,Original CBS/CGD LP style explicitly recorded as Italo-Pop
+tozzi-tu,ballad,t_love,https://www.chartsurfer.de/artist/umberto-tozzi/tu-song_uheu.html,selected romantic tracks / weakest reach,"Historic Tu/Gloria pairing tagged Ballad, relevant chiefly to Perdendo Anna and other slower material; not dominant"
+tozzi-gloria,pop,g_apple,https://music.apple.com/us/album/gloria/1567867703,whole album,Sugar/Apple Music original 1979 nine-song album classified Pop
+tozzi-gloria,poprock,g_lpstyle,https://www.chartsurfer.de/artist/umberto-tozzi/gloria-album_ffhggh.html,whole album,Original Gloria LP style explicitly Pop Rock
+tozzi-gloria,softrock,g_lpstyle,https://www.chartsurfer.de/artist/umberto-tozzi/gloria-album_ffhggh.html,whole album,Original Gloria LP style explicitly Soft Rock
+tozzi-gloria,ballad,g_lpstyle,https://www.chartsurfer.de/artist/umberto-tozzi/gloria-album_ffhggh.html,some original 1979 LP tracks,Original album styled Ballad alongside pop rock; not dominant on the single Gloria
+tozzi-gloria,italianpop,g_qobuz,https://www.qobuz.com/us-en/album/gloria-umberto-tozzi/yjpnbxbpsyxga,whole album Italian pop identity,"Sugar original Italian-language pop album; Italian Pop is contextually an artist style, not a separate discographic subgenre"
