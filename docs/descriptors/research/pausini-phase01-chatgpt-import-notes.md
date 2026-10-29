@@ -64,3 +64,10 @@ After adding the missing phase 01 catalogue item, run Fandome's existing `script
 - Producers: Laura Pausini dropped as self-credit; Marco Marati dropped from the 1993 album (executive producer per the label's track records and the 1994 sleeve).
 - Collaborations recorded in `src/data/collaborations.ts`: Raf sings on Mi rubi l'anima (1993); Phil Collins wrote Looking for an Angel (La mia risposta, 1998).
 - Artist influences from her own words: Aretha Franklin, Whitney Houston, George Michael, Sade, Phil Collins, Lucio Battisti, Claudio Baglioni, Ornella Vanoni, Mina, Jethro Tull.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it year-end charts, en/it.wikipedia, l'Unità archive (1993, 1994, 1996, 1997, 1998), Music & Media 1993–94, Billboard 1998, La Stampa 1998, Folha 1997.
+- Credits from the original sleeves (Discogs 407527, 407532, 407566, 407584): 1993 Angelo Valsiglio and Marco Marati restored (both "Producer [Artistic Production]"; Music & Media 1993 agrees); 1994 Valsiglio only (Marati executive); 1996 Alfredo Cerruti and Dado Parisini; 1998 Cerruti and Parisini. Raf on Mi rubi l'anima and Phil Collins as writer of Looking for an Angel confirmed.
+- sounds_like: 1993 Gigliola Cinquetti (Music & Media, Robbert Tilli 1993: "Pausini's style is very reminiscent of Cinquetti"); 1998 Backstreet Boys|Eros Ramazzotti (l'Unità, Diego Perugini 1998: "suoni levigati, moderni, americani… un occhio ai Backstreet Boys e uno a Eros Ramazzotti").
+- Laura (1994): added soft rock and pop rock (Discogs styles); landmark 0 (no source marks it a turning point). Le cose che vivi: added easy listening (l'Unità 1997). La mia risposta: groove and electronic raised to 3 (Billboard: "groove-pop", label: "arrangements are electronic instead of orchestral"); landmark 1 (La Stampa: "metamorfosi"; label: "a marked change of direction"; first Italian No. 1).
