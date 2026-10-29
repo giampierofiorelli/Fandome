@@ -48,3 +48,10 @@ For each, add an appropriate `[title,year]` pair in existing `tlc` array in `src
 ## Claude import note (Oct 2026)
 
 - Four rows appended to tlc.csv (CrazySexyCool untouched); albums added to the catalogue row. Artist influences: Michael Jackson, Prince.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/tlc.csv`.
+- FanMail: Janet Jackson removed (Vibe's "Control moment" is about theme); Prince added (NME, Roger Morton, on its cyber concept and electronic funk).
+- TLC (2017): Cherrelle (High Priority) removed (neither a sample nor a critic comparison); the only interpolations are Bobby Hebb and Earth, Wind & Fire (sampled, excluded). Credits confirmed (852 Musiq, 30 June 2017): confidence high.
+- Ooooooohhh and 3D: no reliable critic comparison found.
