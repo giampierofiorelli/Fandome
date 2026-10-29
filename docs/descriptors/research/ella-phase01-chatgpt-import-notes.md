@@ -60,3 +60,8 @@ Proposed next four studio albums, subject to original issue-order and co-billing
 - Sweet and Hot (1955) not imported: assembled from 1952, 1953 and 1955 sessions, earlier 78s and broadcast takes, so it is a compilation in practice (owner's scope: compilations not a priority). Three rows imported.
 - New genre token `bop` (parent jazz). Ella Sings Gershwin (1950) and Songs in a Mellow Mood (1954) added to the catalogue row.
 - Artist influences: Connee Boswell (her own words), Louis Armstrong and Bing Crosby (early listening).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/ella.csv`.
+- sounds_like emptied on all three: no critic compares these albums to Billie Holiday, Sarah Vaughan or Sinatra's Songs for Swingin' Lovers! (only "an art song recital" for the Larkins duets; Friedwald's Riddle comparison is about arrangers).
