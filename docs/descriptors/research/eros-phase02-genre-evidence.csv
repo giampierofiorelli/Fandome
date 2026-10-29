@@ -1,0 +1,24 @@
+﻿album_id,genre,source,url,scope,evidence
+eros-inognisenso,softrock,I vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/in-ogni-senso-album_frpnnv.html,whole album,1990 original LP styles; principal guitar-and-ballad orientation
+eros-inognisenso,poprock,I vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/in-ogni-senso-album_frpnnv.html,whole album,1990 Yugoslav and Spanish originals list pop rock
+eros-inognisenso,adultcontemporary,I review,https://www.allmusic.com/album/in-ogni-senso-mw0000264770,whole album,AllMusic review explicitly likens album to American adult-contemporary radio
+eros-inognisenso,ballad,I vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/in-ogni-senso-album_frpnnv.html,whole album,"Original German LP styles ballad, 1990"
+eros-inognisenso,italianpop,I review,https://www.allmusic.com/album/in-ogni-senso-mw0000264770,whole album,Italian pop described in AllMusic review and artist discography
+eros-tuttestorie,poprock,T vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/tutte-storie-album_frcgvc.html,whole album,Original 1993 Italian LP styles pop rock
+eros-tuttestorie,softrock,T vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/tutte-storie-album_frcgvc.html,whole album,Original 1993 Italian LP styles soft rock
+eros-tuttestorie,italianpop,T all,https://www.allmusic.com/album/tutte-storie-mw0000550317,whole album,AllMusic explicitly lists Italian Pop
+eros-tuttestorie,europop,T vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/tutte-storie-album_frcgvc.html,whole album,Original 1993 Italian LP styles Europop
+eros-tuttestorie,adultcontemporary,T all,https://www.allmusic.com/album/tutte-storie-mw0000550317,whole album,AllMusic style Adult Contemporary
+eros-tuttestorie,adultalternativepoprock,T all,https://www.allmusic.com/album/tutte-storie-mw0000550317,taxonomy only,"AllMusic style Adult Alternative Pop/Rock; contextual, weaker than pressing"
+eros-tuttestorie,alternativerock,T all,https://www.allmusic.com/album/tutte-storie-mw0000550317,taxonomy only,AllMusic Alternative/Indie Rock; surprising relative to pressing and arrangements; review carefully
+eros-tuttestorie,latinpop,T all,https://www.allmusic.com/album/tutte-storie-mw0000550317,taxonomy only,"AllMusic genre label; likely Spanish-language distribution connection, not proved by Italian original music"
+eros-dovecemusica,poprock,D vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/dove-c-e-musica-album_frufgc.html,whole album,1996 European CD style pop rock
+eros-dovecemusica,softrock,D vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/dove-c-e-musica-album_frufgc.html,whole album,1996 European CD style soft rock
+eros-dovecemusica,italianpop,D all,https://www.allmusic.com/album/dove-ce-musica-mw0000183454,whole album,AllMusic lists Italian Pop
+eros-dovecemusica,pop,D apple,https://music.apple.com/us/album/dove-c%C3%A8-musica/1719234104,whole album,Apple original 12-song album classified Pop
+eros-stilelibero,poprock,S musicbase,https://musicbase.net/stilelibero,whole album,2000 Italian CD edition genre/style pop rock
+eros-stilelibero,softrock,S vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/stilelibero-album_frfgvu.html,whole album,2000 original Netherlands CD style soft rock
+eros-stilelibero,europop,S vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/stilelibero-album_frfgvu.html,whole album,2000 Brazilian/other editions style Europop
+eros-stilelibero,ballad,S vinyl,https://www.chartsurfer.de/artist/eros-ramazzotti/stilelibero-album_frfgvu.html,some tracks,Original-era CD styles ballad; album contains multiple ballads
+eros-stilelibero,pop,S all,https://www.allmusic.com/album/release/stilelibero-mr0001221735,whole album,AllMusic review says definite pop feel
+eros-stilelibero,eurodance,S all,https://www.allmusic.com/album/release/stilelibero-mr0001221735,some tracks,AllMusic review calls opener L’ombra del gigante Euro-dance-leaning; TRACK-level only

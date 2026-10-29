@@ -1,0 +1,9 @@
+﻿album_id,title,year,type,catalog_status,in_catalog,add_to_catalog,scope
+eros-inognisenso,In ogni senso,1990,studio,already_in_catalog,YES,NO,phase02
+eros-tuttestorie,Tutte storie,1993,studio,already_in_catalog,YES,NO,phase02
+eros-dovecemusica,Dove c’è musica,1996,studio,already_in_catalog,YES,NO,phase02
+eros-stilelibero,Stilelibero,2000,studio,already_in_catalog,YES,NO,phase02
+eros-9,9,2003,studio,not_in_catalog,NO,YES,phase03_audit_only
+eros-calmaapparente,Calma apparente,2005,studio,not_in_catalog,NO,YES,phase03_audit_only
+eros-alieradici,Ali e radici,2009,studio,not_in_catalog,NO,YES,phase03_audit_only
+eros-noi,Noi,2012,studio,not_in_catalog,NO,YES,phase03_audit_only
