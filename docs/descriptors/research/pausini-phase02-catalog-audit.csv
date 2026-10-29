@@ -1,0 +1,16 @@
+﻿artist_id,album_id,title,year,type,catalogue_status,descriptor_status,notes
+pausini,pausini-laurapausini,Laura Pausini,1993,studio,EXISTS,PHASE_01,
+pausini,pausini-laura,Laura,1994,studio,ADD,PHASE_01,
+pausini,pausini-lecosechevivi,Le cose che vivi,1996,studio,EXISTS,PHASE_01,
+pausini,pausini-lamiarisposta,La mia risposta,1998,studio,EXISTS,PHASE_01,
+pausini,pausini-trateeilmare,Tra te e il mare,2000,studio,ADD,PHASE_02_NEW,
+pausini,pausini-fromtheinside,From the Inside,2002,studio,ADD,PHASE_02_NEW,
+pausini,pausini-restainascolto,Resta in ascolto,2004,studio,EXISTS,PHASE_02_NEW,
+pausini,pausini-iocanto,Io canto,2006,studio,ADD,PHASE_02_NEW,Studio covers; newly recorded performances (not compilation).
+pausini,pausini-primaverainanticipo,Primavera in anticipo,2008,studio,ADD,FUTURE_PHASE,
+pausini,pausini-inedito,Inedito,2011,studio,ADD,FUTURE_PHASE,
+pausini,pausini-simili,Simili,2015,studio,ADD,FUTURE_PHASE,
+pausini,pausini-lauraxmas,Laura Xmas,2016,studio,ADD,FUTURE_PHASE,Studio covers; newly recorded performances (not compilation).
+pausini,pausini-fattisentire,Fatti sentire,2018,studio,EXISTS,FUTURE_PHASE,
+pausini,pausini-animeparallele,Anime parallele,2023,studio,EXISTS,FUTURE_PHASE,
+pausini,pausini-iocanto2,Io canto 2,2026,studio,ADD,FUTURE_PHASE,Studio covers; newly recorded performances (not compilation).
