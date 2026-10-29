@@ -52,10 +52,15 @@ const works = (...cols: string[]) => cols.flatMap(list).flatMap((x) => {
   const m = x.match(WORK)
   return m ? [{ artist: m[1], title: m[2] }] : []
 })
-const parts = (s: string): Record<string, Part> => Object.fromEntries(list(s).flatMap((x) => {
-  const m = x.match(PART)
-  return m && Number(m[2]) > 0 ? [[nameOf(x), { songs: Number(m[1]), of: Number(m[2]) }]] : []
-}))
+// A name also linked for the whole album ("Madonna" next to "Madonna (Confessions on a Dance Floor) [1/15]") keeps
+// its full weight.
+const parts = (s: string): Record<string, Part> => {
+  const whole = new Set(list(s).filter((x) => !PART.test(x)).map(nameOf))
+  return Object.fromEntries(list(s).flatMap((x) => {
+    const m = x.match(PART)
+    return m && Number(m[2]) > 0 && !whole.has(nameOf(x)) ? [[nameOf(x), { songs: Number(m[1]), of: Number(m[2]) }]] : []
+  }))
+}
 
 export function parseDescriptors(text: string): Descriptor[] {
   const [head, ...rows] = parseCsv(text)

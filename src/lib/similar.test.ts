@@ -109,6 +109,11 @@ describe('links documented on some songs only', () => {
     expect(p.score).toBeLessThan(w.score)
     expect(p.reasons[0]).toBe('p-part was influenced by Beta on one song')
   })
+
+  it('keep the full weight when the same artist is also linked for the whole album', () => {
+    const [both] = parseDescriptors([HEAD, row('p-both', 'Pi', 'house|pop|disco', '5,5,4,3,2,4,4,5', ',,,Beta|Beta (Two) [1/10]')].join('\n'))
+    expect(both.parts.influencedBy).toEqual({})
+  })
 })
 
 describe('covers in suggestions', () => {

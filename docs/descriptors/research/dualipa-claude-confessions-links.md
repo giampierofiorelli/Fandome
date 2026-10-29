@@ -1,0 +1,3 @@
+# Claude enrichment (Oct 2026): dualipa-futurenostalgia
+
+sounds_like: "Madonna" made "Madonna (Confessions on a Dance Floor)" (whole album). The Jakarta Post 2020: Confessions "an obvious influence on Future Nostalgia" https://www.thejakartapost.com/life/2020/03/31/dua-lipas-future-nostalgia-songs-for-the-end-of-the-world-as-we-know-it-and-its-fine.html ; Vocal Girls: "most obviously to Madonna's magic 'Confessions on a Dancefloor' era" https://www.vocalgirls.com/content/dua-lipa-future-nostalgia ; PopMatters (Hallucinate) https://www.popmatters.com/dua-lipa-future-nostalgia-review-2645577176.html ; AllMusic (Neil Z. Yeung, via Wikipedia). influenced_by unchanged: the "influenced by Madonna" line is her manager's, not hers.

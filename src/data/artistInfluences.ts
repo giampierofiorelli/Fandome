@@ -390,6 +390,26 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Stevie Nicks', 'Heart', 'Fleetwood Mac', 'Led Zeppelin', 'Janis Joplin'],
     source: 'Tiffany in interviews: eonmusic 2019 and Fox News (Stevie Nicks an early inspiration; Heart, Led Zeppelin); Classic Pop (Heart; Fleetwood Mac in a cousin\'s records drew her from country to rock); Tucson Weekly (Led Zeppelin); American Songwriter (wanting to sing like Nicks or Joplin)',
   },
+  adele: {
+    names: ['Amy Winehouse', 'Etta James', 'Ella Fitzgerald', 'Karen Dalton', 'Jeff Buckley'],
+    source: 'Adele in interviews (i-D 2015 via HuffPost UK: "If it wasn\'t for Amy and Frank… I wouldn\'t have picked up a guitar"; others in docs/descriptors/research/adele-claude-notes.md)',
+  },
+  williamorbit: {
+    names: ['Tangerine Dream'],
+    source: 'William Orbit, 2000 interview on Pieces in a Modern Style ("Totally… I went to see them three times"); Pärt and Górecki left out (covered composers)',
+  },
+  mirwais: {
+    names: ['Jimi Hendrix', 'The Doors', 'The Velvet Underground', 'The Stooges', 'The Rolling Stones', 'Magazine', 'The Stranglers', 'Kraftwerk', 'Devo', 'Blondie'],
+    source: 'Mirwais in interviews (quotes and URLs in docs/descriptors/research/mirwais-claude-notes.md)',
+  },
+  melaniec: {
+    names: ['Madonna', 'Annie Lennox'],
+    source: 'Melanie C in interviews (Express 2010: "My biggest influence is... Madonna"; The Quietus, Bakers\' Dozen: Annie Lennox; quotes in docs/descriptors/research/melaniec-claude-notes.md)',
+  },
+  nellyfurtado: {
+    names: ['Mariah Carey'],
+    source: 'Nelly Furtado, Billboard 2006: "I used to write R&B songs in my bedroom that sounded like Mariah Carey songs"',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
