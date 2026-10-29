@@ -47,3 +47,12 @@ Import instructions: (1) refresh GitHub branch state; (2) add three missing cata
 - Added Calma apparente (2005), Ali e radici (2009) and Noi (2012) to the catalogue.
 - sounds_like emptied on all four (Richard Marx, Bryan Adams, Laura Pausini, Tiziano Ferro): ChatGPT calls them an "editorial similarity assessment". The reception pass looks for critics' comparisons.
 - Producers: Eros Ramazzotti dropped as self-credit. Paul Buckmaster (Ali e radici, one track, which one disputed) kept pending the credit check.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it and FIMI year-end, it/en.wikipedia, AllMusic (via snippets and en.wikipedia), Rockol, Suono, laut.de, Panorama, Music & Media 2003.
+- No critic comparison and no album-specific influence found for any of the four: sounds_like and influenced_by stay empty. Phil Collins added to his artist-level influences (Miami New Times 2020: one of his "absolute" idols).
+- Producers confirmed from booklet credits (Discogs 1387052, 2980011, 4034701, 4047455): 9 Claudio Guidetti, Celso Valli (co-producer on all tracks); Calma apparente Guidetti, Valli (tracks 1–3, 10, 11); Ali e radici Guidetti (1–4, 8), Michele Canova Iorfida (5–7, 9–11), Paul Buckmaster (co-producer of track 4, L'orizzonte); Noi Luca Chiaravalli (Jeremy Wheatley mixing only). Canova is not a producer on 9 or Calma apparente.
+- Added: 9 reggae, calypso (Mamarà: Eros, "una sonorità tra il reggae e il calypso"), drum machine, drum loops; Calma apparente latin (Discogs, AllMusic), gospel (La nostra vita, Musica e Dischi), bouzouki, backwards tape, loops, tremolo; Ali e radici orchestral pop, electronic (Discogs genre), drum programming, backwards tape.
+- Noi: voice reduced to the lead (raspy, powerful): rap, spoken and choral were the guests.
+- Landmark set to 0 on all four (no source calls them defining; AllMusic groups Stilelibero, 9 and Calma apparente as one adult-oriented trilogy).

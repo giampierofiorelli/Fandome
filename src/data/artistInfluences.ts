@@ -371,8 +371,8 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     source: 'Ligabue, Il Fatto Quotidiano 2024 (Jungleland as a revelation at 15; "battistiano convinto"); Il Napolista 2021 (learning Guccini\'s L\'avvelenata as a teenager); Rolling Stone Italia (Nursery Cryme, Foxtrot, Selling England by the Pound "una rivelazione")',
   },
   eros: {
-    names: ['Ray Charles', 'Stevie Wonder', 'Steve Winwood', 'Sting', 'Genesis', 'Lucio Battisti'],
-    source: 'Eros Ramazzotti, Planet Interview 2013 (singing inspirations: Ray Charles, Stevie Wonder, Steve Winwood, Sting); Corriere della Sera Sette 2022 (his love for Genesis behind the Musica è suite); Radio Italia (Battisti a maestro, identifying with his writing)',
+    names: ['Ray Charles', 'Stevie Wonder', 'Steve Winwood', 'Sting', 'Genesis', 'Lucio Battisti', 'Phil Collins'],
+    source: 'Eros Ramazzotti, Planet Interview 2013 (singing inspirations: Ray Charles, Stevie Wonder, Steve Winwood, Sting); Corriere della Sera Sette 2022 (his love for Genesis behind the Musica è suite); Radio Italia (Battisti a maestro, identifying with his writing); Miami New Times 2020 (Phil Collins one of his absolute idols)',
   },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
