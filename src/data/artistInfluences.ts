@@ -374,6 +374,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Ray Charles', 'Stevie Wonder', 'Steve Winwood', 'Sting', 'Genesis', 'Lucio Battisti', 'Phil Collins'],
     source: 'Eros Ramazzotti, Planet Interview 2013 (singing inspirations: Ray Charles, Stevie Wonder, Steve Winwood, Sting); Corriere della Sera Sette 2022 (his love for Genesis behind the Musica è suite); Radio Italia (Battisti a maestro, identifying with his writing); Miami New Times 2020 (Phil Collins one of his absolute idols)',
   },
+  pausini: {
+    names: ['Aretha Franklin', 'Whitney Houston', 'George Michael', 'Sade', 'Phil Collins', 'Lucio Battisti', 'Claudio Baglioni', 'Ornella Vanoni', 'Mina', 'Jethro Tull'],
+    source: 'Laura Pausini, Folha de S.Paulo 1997 (Aretha Franklin, Whitney Houston among her influences); Messenger of Saint Anthony 2009 (learned from Whitney Houston, George Michael, Sade, Phil Collins, Battisti, Baglioni, Vanoni, Mina); Grammy.com 2022 (Jethro Tull made her take up the flute and shaped her voice)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

@@ -7,6 +7,8 @@ import { catalogAlbums, catalogArtists } from './catalog'
 // but a cover credited on the record (src/data/covers.ts) is treated the same way, one way only: on the page of the
 // artist who made the cover, never back from the original (owner, Oct 2026: Laura Branigan → Raf, not Raf → Branigan).
 export const COLLABORATIONS: { a: string; b: string; what: string; source: string }[] = [
+  { a: 'pausini', b: 'raf', what: 'Raf sings with Laura Pausini on Mi rubi l’anima (Laura Pausini, 1993)', source: 'it.wikipedia, Laura Pausini (album); CGD 1993 credits' },
+  { a: 'pausini', b: 'philcollins', what: 'Phil Collins wrote Looking for an Angel for Laura Pausini’s La mia risposta (1998)', source: 'it.wikipedia, La mia risposta; CGD East West 1998 credits' },
   { a: 'raf', b: 'tozzi', what: 'Umberto Tozzi plays guitar on Raf’s Svegliarsi un anno fa (1988)', source: 'Discogs, CGD 20835 credits; it.wikipedia, Svegliarsi un anno fa' },
   { a: 'battiato', b: 'losplanetas', what: 'J of Los Planetas adapted Battiato’s Apriti sesamo into Spanish (Ábrete sésamo, 2013)', source: 'Público; Página/12 (Battiato interview, 2013)' },
   { a: 'battiato', b: 'sepideh', what: 'Sepideh Raissadat sings on Battiato’s Fleurs 2 (2008)', source: 'it.wikipedia, Fleurs 2; AllMusic credits' },
