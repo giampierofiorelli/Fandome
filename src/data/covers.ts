@@ -15,6 +15,11 @@ export const COVERS: Cover[] = [
   { song: 'Der Kommissar (as Deep in the Dark)', original: 'falco-einzelhaft', cover: 'laurabranigan-branigan2', source: 'Branigan 2 (Atlantic 1983): Deep in the Dark set to the music of Der Kommissar (Falco, Robert Ponger)' },
 ]
 
+// The credited cover between two albums, in either direction (the first album may be the cover or the original).
+export const coverBetween = (x: string, y: string) => COVERS.find((c) => (c.cover === x && c.original === y) || (c.cover === y && c.original === x))
+// A cover between two artists' albums (artist ids are the album ids' prefix).
+export const coverBetweenArtists = (x: string, y: string) => COVERS.find((c) => { const from = c.cover.split('-')[0], to = c.original.split('-')[0]; return (from === x && to === y) || (from === y && to === x) })
+
 export const coversOf = (albumId: string) => ({
   covers: COVERS.filter((c) => c.cover === albumId),
   coveredBy: COVERS.filter((c) => c.original === albumId),

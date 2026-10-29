@@ -83,6 +83,24 @@ describe('similar albums', () => {
   })
 })
 
+describe('covers in suggestions', () => {
+  it('puts the album a record covers, and the record that covers it, at the top, both ways', () => {
+    const top = similarAlbums('laurabranigan-selfcontrol').slice(0, 2)
+    expect(top.map((s) => s.albumId).sort()).toEqual(['raf-raf', 'tozzi-enellariatiamo'])
+    expect(top.find((s) => s.albumId === 'raf-raf')!.reasons[0]).toBe('Self Control covers Raf’s Self Control')
+    const back = similarAlbums('raf-raf')[0]
+    expect(back.albumId).toBe('laurabranigan-selfcontrol')
+    expect(back.reasons[0]).toBe('Laura Branigan covered Self Control from Raf')
+    expect(similarAlbums('tozzi-gloria')[0].reasons[0]).toBe('Laura Branigan covered Gloria, the title track')
+  })
+
+  it('counts a cover between two artists as a reason on the artist pages', () => {
+    const ids = (id: string) => albums.filter((a) => a.artistId === id).map((a) => a.id)
+    const s = similarArtists('raf', ids, artists.map((a) => a.id))
+    expect(s.find((x) => x.artistId === 'laurabranigan')?.reason).toBe('Laura Branigan covered Raf’s Self Control (Raf, 1984)')
+  })
+})
+
 describe('artist suggestions by sound', () => {
   const fan = (fans: string[], ratings: Record<string, number> = {}) =>
     ({ id: 'me', name: 'Me', kind: 'person', fanSince: Object.fromEntries(fans.map((f) => [f, 2020])), following: [], ratings }) as unknown as User

@@ -8,6 +8,7 @@
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { collaborationOf } from '../data/collaborations'
+import { coverBetween } from '../data/covers'
 import { ARTIST_ALIASES } from '../data/artistAliases'
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
@@ -629,14 +630,16 @@ export function similarAlbums(
       const isNew = Boolean(from && to && from !== to && local(d.albumId))
       const gap = qualityGap(a, b)
       // Never from an auteur or alternative album to a packaged chart product (see packaged below).
-      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist)
+      // A credited cover between the two records is a fact about them, like a named influence (owner, Oct 2026).
+      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist) && !coverBetween(albumId, d.albumId)
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
     // An influence the album documents (the artist's own words, a credited source) is strong evidence
     // on its own, so the closest album of that artist has a lower cut.
     // A record the source names (a song's album) is the strongest evidence of all: no cut, only the critics' one.
-    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && namedAlbum(s)))
+    // So is a song one of the two records covers from the other (Laura Branigan's Self Control and Raf's Raf).
+    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && (namedAlbum(s) || coverBetween(albumId, s.albumId))))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
@@ -650,12 +653,20 @@ export function similarAlbums(
   // should not land on the Innovisions compilation): they come after the studio albums.
   const kindWeight = (id: string) => (['compilation', 'live'].includes(DESCRIPTORS[id]?.type ?? '') ? 0.7 : 1)
   const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance) * kindWeight(s.albumId)
+  // A credited cover links the two records themselves: the other record comes first, up to two places of its own.
+  for (const s of scored) {
+    const c = coverBetween(albumId, s.albumId)
+    if (!c || reserved.length >= 2) continue
+    const why = c.cover === albumId ? `${a.title} covers ${s.artist}’s ${c.song}` : `${s.artist} covered ${c.song}${plainFold(c.song) === plainFold(a.title) ? ', the title track' : ` from ${a.title}`}`
+    reserved.push({ ...s, reasons: [why, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) })
+  }
+  const covered = reserved.length
   const linked = scored
     .filter((s) => named(s.artist))
     // The record a source names comes first for its artist; then influences before comparisons; then the best fit.
     .sort((x, y) => Number(!includesName(a.influencedBy, x.artist)) - Number(!includesName(a.influencedBy, y.artist)) || Number(namedAlbum(y)) - Number(namedAlbum(x)) || pick(y) - pick(x))
   for (const s of linked) {
-    if (reserved.length >= 3 || reserved.some((r) => r.artist === s.artist)) continue
+    if (reserved.length - covered >= 3 || reserved.some((r) => r.artist === s.artist)) continue
     const link = includesName(a.influencedBy, s.artist) ? `${a.title} draws on ${s.artist}` : `${a.title} sounds like ${s.artist}`
     const reasons = namedAlbum(s) ? [`${link} (${s.profile.title})`, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) : s.reasons[0]?.includes(s.artist) ? s.reasons : [link, ...s.reasons].slice(0, 2)
     reserved.push({ ...s, reasons })

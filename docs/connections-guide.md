@@ -31,7 +31,7 @@ Rules:
 
 ## Covers between albums on Fandome
 
-When both the original and the cover are albums in the catalogue, the cover goes in `src/data/covers.ts` (song, original album id, cover album id, credit source) instead of the CSV: album pages then show "Covers …, first recorded on …" and "… was covered on …", and the cover counts as a `covered` connection for Scenes. Only covers credited on the record. A cover is never a sound comparison or an influence in the descriptors.
+When both the original and the cover are albums in the catalogue, the cover goes in `src/data/covers.ts` (song, original album id, cover album id, credit source) instead of the CSV: album pages then show "Covers …, first recorded on …" and "… was covered on …", and the cover counts as a `covered` connection for Scenes. In suggestions, the two records lead each other's "If you like this album" list (up to two places, both ways, past the usual cut), and the two artists get it as a reason on their pages ("Laura Branigan covered Raf’s Self Control"). Only covers credited on the record. A cover is never a sound comparison or an influence in the descriptors.
 
 ## Example
 
