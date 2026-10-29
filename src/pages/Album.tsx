@@ -21,6 +21,7 @@ import { albums } from '../data/seed'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
+import { legacyOf, traceOf } from '../lib/legacy'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -60,6 +61,48 @@ function CoverLines({ albumId }: { albumId: string }) {
           ))}
         </SoundRow>
       )}
+    </>
+  )
+}
+
+// What the album left behind: the legacy score from sources, and, next to it, how its new traits spread in the
+// albums we describe from its area afterwards (a trace in the data, not a proof of cause).
+function LegacyBox({ albumId }: { albumId: string }) {
+  const legacy = legacyOf(albumId)
+  if (!legacy || legacy.legacy < 3) return null
+  const trace = traceOf(albumId)
+  const spread = trace?.spread.slice(0, 3) ?? []
+  const pct = (x: number) => `${Math.round(100 * x)}%`
+  return (
+    <>
+      <div className="section-head">
+        <h2>What it left behind</h2>
+      </div>
+      <div className="sound-facts glass-card">
+        <div className="sound-row">
+          <div className="sound-label">Legacy</div>
+          <div className="sound-value">
+            <span className="legacy-dots" aria-label={`${legacy.legacy} out of 5`}>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <span key={i} className={i <= legacy.legacy ? 'on' : ''} />
+              ))}
+            </span>
+            <span className="muted small legacy-source">{legacy.sources.replace(/\s*https?:\/\/\S+/g, '')}</span>
+          </div>
+        </div>
+        {spread.length > 0 && (
+          <div className="sound-row">
+            <div className="sound-label">After it, in {trace!.field.join(' and ').toLowerCase()}</div>
+            <div className="sound-value">
+              {spread.map((s) => (
+                <span key={s.trait} className="sound-cover">
+                  <b>{s.trait}</b> <span className="muted">from {pct(s.before)} to {pct(s.after)} of the albums we describe, by {s.when + 2}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </>
   )
 }
@@ -174,6 +217,7 @@ export default function AlbumPage() {
           </div>
         </div>
       )}
+      <LegacyBox albumId={album.id} />
       {(similar.length > 0 || sound) && (
         <>
           <div className="section-head">

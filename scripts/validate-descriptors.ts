@@ -97,6 +97,28 @@ for (const file of recFiles) {
   })
   console.log(`reception/${file}: ${body.length} rows`)
 }
+// Legacy files (docs/descriptors/legacy/<artist-id>.csv): how much an album changed the music after it, 0-5.
+let legacyFiles: string[] = []
+try {
+  legacyFiles = readdirSync('docs/descriptors/legacy').filter((f) => f.endsWith('.csv'))
+} catch {
+  legacyFiles = []
+}
+for (const file of legacyFiles) {
+  const [head, ...body] = parse(readFileSync(`docs/descriptors/legacy/${file}`, 'utf8'))
+  const say = (where: string, msg: string) => (problems++, console.log(`legacy/${file} ${where}: ${msg}`))
+  if (!head || head.join(',') !== 'album_id,legacy,sources') {
+    say('header', 'expected album_id,legacy,sources')
+    continue
+  }
+  body.forEach((cells, n) => {
+    const [id, legacy, sources] = cells.map((c) => c.trim())
+    if (!albumIds.has(id)) say(`row ${n + 2}`, `album "${id}" is not in the catalogue`)
+    if (!/^[0-5]$/.test(legacy ?? '')) say(`row ${n + 2}`, `legacy "${legacy}" (0-5)`)
+    if (!sources) say(`row ${n + 2}`, 'sources are required')
+  })
+  console.log(`legacy/${file}: ${body.length} rows`)
+}
 // Connection files (docs/connections/*.csv, format in docs/connections-guide.md).
 const CONN_HEADER = 'from_artist,to_artist,type,work,year,source,url,confidence,notes'.split(',')
 const CONN_TYPES = new Set(['influenced', 'soundslike', 'sampled', 'covered', 'collaborated', 'produced'])
