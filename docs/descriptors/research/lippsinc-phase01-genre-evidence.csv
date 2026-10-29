@@ -1,0 +1,17 @@
+album_id,genre,source,url,scope,evidence
+lippsinc-mouthtomouth,disco,AllMusic: Mouth to Mouth,https://www.allmusic.com/album/mouth-to-mouth-mw0000843781,whole album,AllMusic original album style Disco
+lippsinc-mouthtomouth,funk,Wikipedia: Mouth to Mouth,https://en.wikipedia.org/wiki/Mouth_to_Mouth_(Lipps_Inc._album),whole album,1979 debut album genre identified as funk alongside disco
+lippsinc-mouthtomouth,electronic,Mouth to Mouth original LP metadata,https://www.chartsurfer.de/artist/lipps-inc/mouth-to-mouth-album_frpfvv.html,whole album / instrumentation,Casablanca LP catalogues Electronic and documents synthesizers plus Roger Dumas programming
+lippsinc-puckerup,disco,AllMusic / Amy Hanson: Pucker Up,https://www.allmusic.com/album/pucker-up-mw0000853010,whole album,AllMusic style Disco and original LP labels disco
+lippsinc-puckerup,funk,AllMusic / Amy Hanson: Pucker Up,https://www.allmusic.com/album/pucker-up-mw0000853010,whole album,AllMusic Funk tag; reviewer notes funk riffs
+lippsinc-puckerup,contemporaryrnb,AllMusic / Amy Hanson: Pucker Up,https://www.allmusic.com/album/pucker-up-mw0000853010,whole album / retrospective label,AllMusic categorises as Contemporary R&B; retrospective genre vocabulary
+lippsinc-puckerup,jazz,AllMusic / Amy Hanson: Pucker Up,https://www.allmusic.com/album/pucker-up-mw0000853010,"single track, long tail","Amy Hanson describes the track Tight Pair as jazz-influenced; listed fourth, not dominant"
+lippsinc-designermusic,postdisco,Wikipedia: Designer Music,https://en.wikipedia.org/wiki/Designer_Music,"whole album, lower-certainty",Reference compilation names post-disco (verify against stronger review if required)
+lippsinc-designermusic,synthpop,Wikipedia: Designer Music,https://en.wikipedia.org/wiki/Designer_Music,"whole album, lower-certainty",Reference compilation names synthpop; avoid merging with electropop
+lippsinc-designermusic,newwave,Wikipedia: Designer Music,https://en.wikipedia.org/wiki/Designer_Music,"whole album, lower-certainty",Reference compilation names new wave; not automatically equivalent to synthpop
+lippsinc-designermusic,disco,AllMusic: Designer Music,https://www.allmusic.com/album/designer-music-mw0000843653,whole album,AllMusic explicitly calls album disco
+lippsinc-designermusic,funk,AllMusic: Designer Music,https://www.allmusic.com/album/designer-music-mw0000843653,whole album,AllMusic explicitly calls album funk
+lippsinc-designermusic,electronic,Original 1981 Designer Music pressing and sleeve,https://rectangletriangle.com/products/designer-music-lipps-inc,whole album / original release genre,Original edition listed Electronic with synthesizers in musician credits
+lippsinc-4,funk,1983 Casablanca 4 LP listing with track credits,https://www.etsy.com/listing/1028214836/lipps-4-album-lp-casablanca-records-1983,whole album / original LP style,1983 LP edition specifically lists Funk
+lippsinc-4,disco,1983 Casablanca 4 LP listing with track credits,https://www.etsy.com/listing/1028214836/lipps-4-album-lp-casablanca-records-1983,whole album / original LP style,1983 LP edition specifically lists Disco
+lippsinc-4,electronic,1983 Casablanca 4 LP listing with track credits,https://www.etsy.com/listing/1028214836/lipps-4-album-lp-casablanca-records-1983,whole album / original LP genre,Original LP listed Electronic; synthesizer credit specific to Funk 108
