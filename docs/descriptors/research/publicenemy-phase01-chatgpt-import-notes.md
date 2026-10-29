@@ -88,3 +88,11 @@ Further phases, planned chronological 3–4 albums each:
 
 - New genre tokens: politicalrap, politicalhiphop, conscioushiphop, experimentalhiphop, thrashmetal (Bring tha Noize only). New production token akais900.
 - Artist added with 17 albums (He Got Game a soundtrack; Rebirth of a Nation co-billed "Public Enemy featuring Paris"); scene US en 1980 hiphop.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/publicenemy.csv`.
+- Yo! Bum Rush the Show: Run-D.M.C. kept and LL Cool J added (The Boombox 30th anniversary: Raise the Roof most like mid-80s Run-D.M.C. and LL).
+- It Takes a Nation of Millions: Run-D.M.C. removed (not found). freejazz and musiqueconcrete confirmed (Christgau: "post-Coleman/Coltrane ear-wrench"; Wikipedia: funk and musique concrète).
+- Fear of a Black Planet: Beastie Boys (Paul's Boutique) confirmed (Amanda Sewell 2014), Sonic Youth confirmed (Apple Music: "like a hip-hop Sonic Youth"); added Sly and the Family Stone (There's a Riot Goin' On) and Miles Davis (On the Corner) (Simon Reynolds, on its claustrophobic density).
+- Apocalypse 91: no critic sound comparison found.
