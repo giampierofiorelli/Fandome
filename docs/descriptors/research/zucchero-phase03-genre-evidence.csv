@@ -1,0 +1,33 @@
+﻿album_id,genre,source,scope,evidence
+zucchero-bluesugar,poprock,https://www.musicistireggiani.it/album/bluesugar/,whole album,Italian music archive describes clearer pop-rock core than earlier blues work
+zucchero-bluesugar,modernelectricblues,https://www.allmusic.com/album/blue-sugar-mw0000473721,source whole-album style,AllMusic Modern Electric Blues; exact token not yet in repository genre enum
+zucchero-bluesugar,folkpop,https://it.wikipedia.org/wiki/Bluesugar,whole album secondary classification,Album secondary discography identifies folk-pop; less strongly supported than pop-rock
+zucchero-bluesugar,italianpop,https://www.allmusic.com/album/blue-sugar-mw0000473721,whole album metadata,AllMusic Italian Pop tag
+zucchero-bluesugar,blues,https://www.muziekweb.nl/en/Link/JK93658/Blue-sugar,some tracks,Review hears blues particularly on Blue/Blu; not dominant over pop-rock
+zucchero-bluesugar,electronic,https://www.musicistireggiani.it/album/bluesugar/,album texture / some songs,Musicisti Reggiani notes electronic incursions and deliberate Anglo-American sonic experiment
+zucchero-bluesugar,dance,https://www.muziekweb.nl/en/Link/JK93658/Blue-sugar,some tracks,Dance influences on U Make Me Feel Loved and (Temporaneamente) X Sempre Tuo
+zucchero-bluesugar,politicalfolk,https://www.allmusic.com/album/blue-sugar-mw0000473721,database tag only / low confidence,AllMusic labels Political Folk; no verified political-folk movement provenance; needs human review
+zucchero-shake,bluesrock,https://en.wikipedia.org/wiki/Shake_%28Zucchero_album%29,whole album,Standard album genre; consistent with Rustici guitars and southern-blues collaboration
+zucchero-shake,poprock,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,whole album / 2001 pressing,Original Italian CD metadata identifies Pop Rock
+zucchero-shake,soul,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,whole album / 2001 pressing,Original CD metadata explicitly identifies Soul
+zucchero-shake,louisianablues,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,whole album / 2001 pressing,Original Italian CD style is Louisiana Blues (new precise token)
+zucchero-shake,funk,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,whole album / category,Original release groups Funk / Soul alongside blues rock and pop
+zucchero-shake,disco,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,album metadata / dancing songs,Disco listed on original Italian CD styles; especially applicable to Baila
+zucchero-shake,softrock,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,2002 edition classification,Later UK-EU release has Soft Rock; ballad-heavy songs also in original
+zucchero-shake,ballad,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,2002 edition / many tracks,Later UK-EU 2CD metadata Ballad style; content original Italian songs unchanged
+zucchero-shake,blues,https://www.chartsurfer.de/artist/zucchero/shake-album_frvcvu.html,whole album generic category,Original Italian disc categorised Blues
+zucchero-fly,bluesrock,https://www.allmusic.com/album/fly-mw0000735348,whole album,AllMusic Blues-Rock style and 2006 press blues roots
+zucchero-fly,poprock,https://www.musik-sammler.de/album/zucchero-fly-84284/,whole album,Pressing metadata original Pop-Rock
+zucchero-fly,italianpop,https://www.allmusic.com/album/fly-mw0000735348,whole album,AllMusic Italian Pop style
+zucchero-fly,adultcontemporary,https://www.allmusic.com/album/fly-mw0000735348,whole album,AllMusic Adult Contemporary style
+zucchero-fly,funk,https://content.suono.it/recensione-musica/zucchero-fly/,single / major hit,Contemporary review calls lead single Bacco Perbacco very funky
+zucchero-fly,ballad,https://www.chartsurfer.de/artist/zucchero/fly-album_freecc.html,many tracks / original album,Pressing metadata records Ballad style; several slower songs
+zucchero-chocabeck,folkrock,https://www.musicistireggiani.it/en/album/chocabeck/,whole album,Folk rock is a listed genre for original studio album; supported by artist description
+zucchero-chocabeck,folk,https://archivio.zucchero.it/press/?act=scheda&id_rassegnastampa=417448,whole album,Zucchero explicitly calls album folk/roots with banjo mandolin arpeggiated guitars
+zucchero-chocabeck,bluesrock,https://www.allmusic.com/album/chocabeck-mw0002062582,album database style / secondary,"AllMusic Blues-Rock tag, despite mostly quieter acoustic sound"
+zucchero-chocabeck,poprock,https://musicbase.net/chocabeck,whole album pressing,Original CD metadata includes Pop Rock
+zucchero-chocabeck,modernelectricblues,https://www.allmusic.com/album/chocabeck-mw0002062582,album database style / secondary,AllMusic Modern Electric Blues; secondary to folk character
+zucchero-chocabeck,ballad,https://musicbase.net/chocabeck,whole album / many tracks,Original CD metadata Ballad style; slow opening suite emphasised by AllMusic
+zucchero-chocabeck,gospel,https://www.zucchero.it/eng/chocabeck/,some tracks / backing vocals,Official credits gospel choir; gospel sound element rather than album-wide form
+zucchero-chocabeck,dance,https://archivio.zucchero.it/press/?act=scheda&id_rassegnastampa=417448,one track only,Zucchero calls Vedo nero quasi-dance; late genre tail
+zucchero-chocabeck,politicalfolk,https://www.allmusic.com/album/chocabeck-mw0002062582,database tag only / low confidence,AllMusic Political Folk style tag; unclear fit to idyllic concept; request human review

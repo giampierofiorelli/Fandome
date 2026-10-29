@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+zucchero-bluesugar,Bluesugar,1998,studio,missing on descriptors branch 2026-10-29,phase03,"ADD ['Bluesugar', 1998] to 'zucchero' ROWS in src/data/catalog.ts before import"
+zucchero-shake,Shake,2001,studio,missing on descriptors branch 2026-10-29,phase03,"ADD ['Shake', 2001] to 'zucchero' ROWS in src/data/catalog.ts before import"
+zucchero-fly,Fly,2006,studio,missing on descriptors branch 2026-10-29,phase03,"ADD ['Fly', 2006] to 'zucchero' ROWS in src/data/catalog.ts before import"
+zucchero-chocabeck,Chocabeck,2010,studio,missing on descriptors branch 2026-10-29,phase03,"ADD ['Chocabeck', 2010] to 'zucchero' ROWS in src/data/catalog.ts before import"
