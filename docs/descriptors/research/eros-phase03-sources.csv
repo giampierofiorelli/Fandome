@@ -1,0 +1,31 @@
+﻿album_id,source,source_type,url,what_it_supports,evidence_strength
+eros-9,9 ARTIST,artist_official_discography,https://ramazzotti.com/album/9/,"Italian edition original 13 tracks, title/year",strong
+eros-9,9 ORIG,original_release_credit_transcription,https://www.chartsurfer.de/artist/eros-ramazzotti/9-album_frvrnf.html,Original 2003 pressing styles soft rock; producers Guidetti and Ramazzotti; co-producer Celso Valli,strong
+eros-9,9 QOBUZ,label_track_level_credits,https://www.qobuz.com/ie-en/album/9-eros-ramazzotti/0828765204521,"Producer/co-producer exact roles; song list, studio musicians by track",strong
+eros-9,9 ALL,professional_music_reference,https://www.allmusic.com/album/9-italian--mw0000033875,"Italian pop, adult contemporary, adult alternative pop/rock, Latin pop taxonomic styles, full musician and production credits",strong
+eros-9,9 ROCKOL,contemporary_criticism,https://www.rockol.it/recensioni-musicali/album/2516/eros-ramazzotti-9,"Ballads, personal/introspective material, band/recording detail",strong
+eros-9,9 SUONO,contemporary_criticism,https://content.suono.it/recensione-musica/eros-ramazzotti-9/,Explicit melodic pop-rock and electronic textures; June 2003,strong
+eros-9,9 MB,music_database_tags,https://musicbrainz.org/release-group/cac87020-c1a5-3ed4-9be4-7fec447242a5,"AOR, Europop, Latin Pop genre tags; genre database is less reliable than sleeve",medium
+eros-calmaapparente,C ARTIST,artist_official_discography,https://ramazzotti.com/album/calma-apparente/,Italian 13-track original and Anastacia duet,strong
+eros-calmaapparente,C ROCKOL,contemporary_music_reporting,https://www.rockol.it/news-74364/da-venerdi-28-ottobre-nei-negozi-calma-apparente-di-eros-ramazzotti,28 Oct 2005 album inediti; produced by artist with Guidetti and Valli arrangements,strong
+eros-calmaapparente,C MUSICBASE,original_cd_credit_transcription,https://musicbase.net/calma-apparente,Specific production tracks; Pro Tools editors; 2005 original CD genre tags and musicians,medium
+eros-calmaapparente,C QOBUZ,label_track_credits,https://www.qobuz.com/be-fr/album/calma-apparente-eros-ramazzotti/0828767306025,Tracks and actual track-level producers including Celso Valli (not just arranging),strong
+eros-calmaapparente,C ALL,professional_music_reference,https://www.allmusic.com/album/calma-apparente-mw0000355658,"Italian Pop, Adult Contemporary, Adult Alternative Pop/Rock; producer Valli and musician instruments; E-bow, digital editing",strong
+eros-calmaapparente,C MB,music_database_tags,https://musicbrainz.org/release-group/ca12fea2-61eb-3bee-971e-0ecc3e2d977e,"Ballad, Europop, Pop, Pop Rock tags",medium
+eros-calmaapparente,C SONY,record_label_history,https://legacyrecordings.it/album/calma-apparente/,"2005 release history and original track-list, autobiographical songs",strong
+eros-alieradici,A ARTIST,artist_official_discography,https://ramazzotti.com/album/ali-e-radici/,Artist site lists 12 tracks including bonus Linda e il mare; not proof it was on original CD,strong
+eros-alieradici,A CD,original_2009_cd_listing,https://www.bengans.com/eros-ramazzotti-ali-e-radici-2,The original physical CD contains 11 tracks,medium
+eros-alieradici,A PRESS,contemporary_artist_interview,https://www.rockol.it/news-100929/eros-ramazzotti-ali-e-radici-io-come-un-pittore,Eros distinguishes classic Roots with Guidetti from modern Wings with Canova; producer intentions,strong
+eros-alieradici,A ALL,professional_album_review_and_credits,https://www.allmusic.com/album/ali-e-radici-mw0000817393,"11 original album songs; symphonic strings, electro-rock on Non possiamo chiudere gli occhi, power ballad, detailed musician and producer credits",strong
+eros-alieradici,A MUSICBASE,original_cd_credit_transcription,https://musicbase.net/ali-e-radici,"CD styles Soft Rock, Pop Rock, Electronic and co-producer Buckmaster, track allocation differs from Qobuz",medium
+eros-alieradici,A QOBUZ,label_track_credits,https://www.qobuz.com/ca-en/album/ali-e-radici-eros-ramazzotti/0884977121216,Original 11-track digital transfer and track-specific Buckmaster co-production; differs in numbering from Musicbase,strong
+eros-alieradici,A ORIGINAL,original_cd_credit_transcription,https://www.grooves-inc.fr/ramazzotti-eros-ali-radici-sony-music-cd-pZZa1-1895994804.html,"Instrument credits by tracks: guitars, organ, Rhodes/Wurlitzer, piano, bass, orchestration, percussion, synth programming, modular synth",medium
+eros-alieradici,A BONUS,retrospective_music_reporting,https://www.allmusicitalia.it/news/eros-ramazzotti-arriva-il-cofanetto-eros-30-tra-hits-e-rarita.html,"Linda e il mare appeared on later CD reissue, not part of 2009 standard physical CD",medium
+eros-noi,N ARTIST,artist_official_discography,https://ramazzotti.com/album/noi/,The 14-track Italian edition songs and collaborations,strong
+eros-noi,N UNIVERSAL,contemporary_record_label_press_release,https://www.universalmusic.it/popular-music/news/noi-il-nuovo-album-di-eros-ramazzotti-disponibile-in-tutti-i-negozi-e-negli-store-digitali_4625/,"13 Nov 2012 release, original 14 tracks, Eros and Chiaravalli producing, song topics, Nicole singing, Club Dogo rap, Giannini Italian vs Andy Garcia international",strong
+eros-noi,N ROCKOL,contemporary_music_reporting,https://www.rockol.it/news-430735/eros-ramazzotti-da-club-dogo-a-hooverphonic-ecco-le-collaborazioni-di-noi,Guest performer roster and sound formats on songs,strong
+eros-noi,N QOBUZ,record_label_track_credits,https://www.qobuz.com/us-en/album/noi-eros-ramazzotti/0060253721024,"14 tracks, producer roles Eros and Chiaravalli, international digital edition",strong
+eros-noi,N ORIGINAL,original_cd_credit_transcription,https://www.chartsurfer.de/artist/eros-ramazzotti/noi-album_fvrnrv.html,Original CD genres Soft Rock and Ballad; original personnel production roles,strong
+eros-noi,N ALL,professional_music_reference,https://www.allmusic.com/album/noi-mw0002450345,Italian pop stylistic category and correct original guests,strong
+eros-noi,N MB,music_database_tags,https://musicbrainz.org/release-group/bd96d1b6-7036-45d5-a8cb-edff2c8ab152,"Pop, ballad, pop rock and soft rock genre database tags",medium
+eros-noi,N PERSONNEL,secondary_personnel_transcription,https://it.wikipedia.org/wiki/Noi_(Eros_Ramazzotti),Instrument credits from session musician list; primary booklet still desirable,medium

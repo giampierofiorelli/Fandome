@@ -1,0 +1,5 @@
+﻿album_id,title,year,type,catalog_status,in_catalog,add_to_catalog,scope
+eros-9,9,2003,studio,already_in_catalog,YES,NO,phase03
+eros-calmaapparente,Calma apparente,2005,studio,missing_add_before_import,NO,YES,phase03
+eros-alieradici,Ali e radici,2009,studio,missing_add_before_import,NO,YES,phase03
+eros-noi,Noi,2012,studio,missing_add_before_import,NO,YES,phase03

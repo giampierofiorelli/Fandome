@@ -1,0 +1,34 @@
+﻿album_id,genre,source,url,scope,evidence
+eros-9,poprock,9 SUONO,https://content.suono.it/recensione-musica/eros-ramazzotti-9/,whole album,Contemporary Suono review explicitly identifies melodic pop-rock basis
+eros-9,softrock,9 ORIG,https://www.chartsurfer.de/artist/eros-ramazzotti/9-album_frvrnf.html,whole album,Original 2003 European pressing genre Soft Rock
+eros-9,italianpop,9 ALL,https://www.allmusic.com/album/9-italian--mw0000033875,whole album,AllMusic style Italian Pop
+eros-9,adultcontemporary,9 ALL,https://www.allmusic.com/album/9-italian--mw0000033875,whole album,AllMusic style Adult Contemporary
+eros-9,ballad,9 ROCKOL,https://www.rockol.it/recensioni-musicali/album/2516/eros-ramazzotti-9,prominent songs,Rockol review emphasizes dramatic melodic ballads
+eros-9,aor,9 MB,https://musicbrainz.org/release-group/cac87020-c1a5-3ed4-9be4-7fec447242a5,database taxonomy,"MusicBrainz release-group tag AOR, weaker than contemporary criticism"
+eros-9,europop,9 MB,https://musicbrainz.org/release-group/cac87020-c1a5-3ed4-9be4-7fec447242a5,database taxonomy,MusicBrainz tag Europop; broad scene descriptor
+eros-9,adultalternativepoprock,9 ALL,https://www.allmusic.com/album/9-italian--mw0000033875,database taxonomy,"AllMusic Adult Alternative Pop/Rock style, not evidence of alternative-rock arrangements"
+eros-9,latinpop,9 ALL,https://www.allmusic.com/album/9-italian--mw0000033875,database taxonomy,"AllMusic Latin Pop tag probably reflects international marketing, use low weight"
+eros-calmaapparente,poprock,C MUSICBASE,https://musicbase.net/calma-apparente,whole album,Original 2005 CD styles Pop Rock
+eros-calmaapparente,softrock,C MUSICBASE,https://musicbase.net/calma-apparente,whole album,Original CD styles Soft Rock
+eros-calmaapparente,italianpop,C ALL,https://www.allmusic.com/album/calma-apparente-mw0000355658,whole album,AllMusic Italian Pop
+eros-calmaapparente,adultcontemporary,C ALL,https://www.allmusic.com/album/calma-apparente-mw0000355658,whole album,AllMusic Adult Contemporary style
+eros-calmaapparente,aor,C MUSICBASE,https://musicbase.net/calma-apparente,whole album,Original CD styles AOR
+eros-calmaapparente,adultalternativepoprock,C ALL,https://www.allmusic.com/album/calma-apparente-mw0000355658,database taxonomy,AllMusic adult alternative pop-rock sub-style
+eros-calmaapparente,pop,C MB,https://musicbrainz.org/release-group/ca12fea2-61eb-3bee-971e-0ecc3e2d977e,database taxonomy,MusicBrainz Pop genre label
+eros-calmaapparente,ballad,C MB,https://musicbrainz.org/release-group/ca12fea2-61eb-3bee-971e-0ecc3e2d977e,some tracks,MusicBrainz Ballad label; ballads throughout but some faster songs
+eros-calmaapparente,europop,C MB,https://musicbrainz.org/release-group/ca12fea2-61eb-3bee-971e-0ecc3e2d977e,database taxonomy,"MusicBrainz Europop tag, not evidence for dance production"
+eros-alieradici,poprock,A MUSICBASE,https://musicbase.net/ali-e-radici,whole album,2009 original CD genres Pop Rock
+eros-alieradici,softrock,A MUSICBASE,https://musicbase.net/ali-e-radici,whole album,Original CD genre Soft Rock
+eros-alieradici,italianpop,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,whole album,AllMusic Italian Pop style
+eros-alieradici,adultcontemporary,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,whole album,AllMusic Adult Contemporary style
+eros-alieradici,adultalternativepoprock,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,database taxonomy,"AllMusic category Adult Alternative Pop/Rock, weaker than its actual review"
+eros-alieradici,latinpop,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,database taxonomy,AllMusic Latin Pop stylistic tag may be market-related
+eros-alieradici,electrorock,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,one track,AllMusic calls Non possiamo chiudere gli occhi edgy electro-rock; lower-weight tail
+eros-alieradici,symphonicrock,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,one track,"AllMusic calls Bucaneve symphonic rock, not whole album"
+eros-alieradici,powerballad,A ALL,https://www.allmusic.com/album/ali-e-radici-mw0000817393,one track,AllMusic names title track Ali e radici a power ballad
+eros-noi,poprock,N MB,https://musicbrainz.org/release-group/bd96d1b6-7036-45d5-a8cb-edff2c8ab152,whole album,MusicBrainz release-group tag pop rock; aligns original CD guitar production
+eros-noi,softrock,N ORIGINAL,https://www.chartsurfer.de/artist/eros-ramazzotti/noi-album_fvrnrv.html,whole album,Original 2012 CD styles Soft Rock
+eros-noi,italianpop,N ALL,https://www.allmusic.com/album/noi-mw0002450345,whole album,AllMusic Italian Pop styles
+eros-noi,ballad,N ORIGINAL,https://www.chartsurfer.de/artist/eros-ramazzotti/noi-album_fvrnrv.html,whole album / prominent songs,Original 2012 CD styles Ballad
+eros-noi,pop,N QOBUZ,https://www.qobuz.com/us-en/album/noi-eros-ramazzotti/0060253721024,whole album,Universal label Qobuz genre Pop
+eros-noi,rap,N UNIVERSAL,https://www.universalmusic.it/popular-music/news/noi-il-nuovo-album-di-eros-ramazzotti-disponibile-in-tutti-i-negozi-e-negli-store-digitali_4625/,one guest track,Universal explicitly describes Club Dogo rap on Testa o cuore; last position to downweight
