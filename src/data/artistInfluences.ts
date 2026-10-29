@@ -410,6 +410,14 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Mariah Carey'],
     source: 'Nelly Furtado, Billboard 2006: "I used to write R&B songs in my bedroom that sounded like Mariah Carey songs"',
   },
+  roisinmurphy: {
+    names: ['Sonic Youth', 'Grace Jones', 'Matthew Herbert'],
+    source: 'Róisín Murphy, Electronic Sound, Under the Influence: "The first one that really changed me was Sonic Youth"; Grace Jones live; Matthew Herbert "taught me that with discipline comes freedom" https://www.electronicsound.co.uk/features/under-the-influence/roisin-murphy/',
+  },
+  steps: {
+    names: ['ABBA'],
+    source: 'Pete Waterman, who formed and first produced Steps, Official Charts: "To me, it was ABBA on speed" https://officialcharts.com/chart-news/pete-waterman-interview-i-want-bananarama-played-at-my-funeral__20922',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

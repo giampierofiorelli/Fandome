@@ -6,10 +6,10 @@ Owner (Oct 2026): some albums changed the music after them (pop was never the sa
 
 ```csv
 album_id,legacy,sources
-m-ray,5,"en.wikipedia Ray of Light (Legacy): credited with bringing electronica into mainstream pop https://en.wikipedia.org/wiki/Ray_of_Light"
+m-ray,4,"The New York Observer (Daryl Deino, 2017): ""a risk-taking album that helped define mainstream electronic dance music"" https://observer.com/2017/07/best-albums-of-the-1990s/"
 ```
 
-0-5, how much the album changed the music that came after it (not sales, not quality, not the artist's career): 5 changed music history broadly (most-influential lists, critics saying so), 4 shaped a genre or a generation, 3 clear influence on a scene or several artists, 2 some, 1 little, 0 none documented. Local scenes are judged on their own scene. Claude researches it.
+0-5, how much the album changed the music that came after it (not sales, not quality, not the artist's career): 5 changed music history broadly (most-influential lists, critics saying so), 4 shaped a genre or a generation, 3 clear influence on a scene or several artists, 2 some, 1 little, 0 none documented. Local scenes are judged on their own scene. Claude researches it. Sources are professional: magazines, critics, books, best-of lists, registries (National Recording Registry, Grammy Hall of Fame). Never Wikipedia (owner, Oct 2026): use it only to find the original source it cites, open that, and cite it; the validator refuses Wikipedia in rows of 3 or more, which the album page shows.
 
 ## Trace (from our data): `src/lib/legacy.ts`
 
