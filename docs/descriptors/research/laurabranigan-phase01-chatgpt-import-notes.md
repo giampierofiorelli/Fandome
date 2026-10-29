@@ -46,3 +46,9 @@ Check again for already-imported rows before starting. Once this ZIP is imported
 ## Claude import note (Oct 2026)
 
 - Three rows appended (Branigan 1982 untouched); studio discography added to the catalogue row. Artist influences not added: Gladys Knight, Aretha Franklin, Stevie Nicks come only from an obituary (The Independent), not her own words.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/laurabranigan.csv`.
+- Hold Me: Donna Summer kept (AllMusic: her aim was to be "a white, '80s Donna Summer"). Pat Benatar and Bonnie Tyler removed from Branigan 2, Self Control and Hold Me (the only Benatar comparison concerns the 1982 debut; Tyler not found); Donna Summer removed from Self Control (no direct quote).
+- Branigan 2 credits confirmed on Discogs master 102009 (Jack White producer, Robbie Buchanan associate producer/arranger/keyboards): confidence high.
