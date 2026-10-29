@@ -62,3 +62,12 @@ Keep existing albums, including **Buon compleanno Elvis (1995)**. Confirm slug g
 - Producers: Ligabue dropped as self-credit on all four; Angelo Carrara (executive) not added. Producers empty pending the reception pass.
 - sounds_like and influenced_by emptied: every comparison is about one song (Neil Young, The Smiths, U2 on 1990 tracks; Springsteen, Guns N' Roses on 1991 tracks; The Doors on one coda in 1993), and the Simple Minds influence is the coda of one song. R.E.M. on the 1994 album is the adapted title song: recorded as a cover in `src/data/covers.ts` (Document), not a comparison.
 - Artist influences from his own words: Bruce Springsteen, Lucio Battisti, Francesco Guccini, Genesis.
+
+## Claude enrichment
+
+- Reception from OndaRock monografia (Federico Piccioni: 7, 6.5, 7.5, 5.5), AllMusic (via it.wikipedia and Qobuz), hitparadeitalia.it year-end charts, l'Unità archive (1991, 1993, 1994), Rockit 2023, RSI 2025.
+- sounds_like, album-level critic comparisons: 1990 Bruce Springsteen|U2|Bryan Adams|Bon Jovi (Rockit, Simone Stefanini 2023: "prendesse a piene mani da Bruce Springsteen quanto da Bryan Adams… la via degli U2… le sonorità dei Bon Jovi"; l'Unità, Roberto Giallo 1993: "il Ligabue dei primi dischi, che guardava senza finzioni a Springsteen e agli U2"). 1991 Bruce Springsteen|U2 (RSI, Patrizio Ruviglioni 2025: "rock all'americana… il maestro è Springsteen"; l'Unità 1993 as above).
+- 1991: Simple Minds stays out (OndaRock, about the ending of one song; no first-person source found). grunge removed (only a Debaser reader); blues rock added (Discogs style).
+- 1993: influenced_by Grand Funk Railroad (l'Unità, Roberto Giallo, 17 Jan 1993, at the album's release: Ligabue "confessa di aver sentito molti vecchi dischi, come quelli dei Grand Funk Railroad, in cerca di ispirazione e soluzioni sonore"; reported speech, medium strength). Added violin, viola, double bass (strings on the theme), clear voice (l'Unità: "la sua voce pulita"); tambourine removed (no source).
+- 1994: studio kept (official site, Discogs, it.wikipedia call it an album; 8 tracks, one live, one outtake, one cover). Fabrizio Barbacci added as producer (artistic production of L'han detto anche gli Stones, Discogs 5517180). Added soul (Male non farà, Bertoncelli).
+- Producers of 1990–1993: no producer besides Ligabue; Angelo Carrara's sleeve credit is explained as executive production (official site, fan-club transcriptions).
