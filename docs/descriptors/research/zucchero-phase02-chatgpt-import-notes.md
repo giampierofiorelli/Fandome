@@ -54,3 +54,11 @@ Claude should add the new album to `catalog.ts`, the two new tokens (`modernelec
 - New tokens: genre `modernelectricblues` (parent blues), instrument `synthaxe` (SynthAxe, kept as its own instrument, not mapped to guitarsynth).
 - Producers: Zucchero dropped as self-credit (Oro incenso & birra).
 - Snack Bar Budapest sounds_like (Vangelis, Jan Hammer, Éric Serra) comes from a critic's review (KQEK, Mark R. Hasan 2013). The other sounds_like lists are editorial and are checked against critics in the reception pass.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it year-end charts, en.wikipedia (sales, certifications), Rolling Stone Italia's 100 best Italian albums (Oro No. 26), l'Unità archive reviews (1989, 1992), Sorrisi, Stereoplay, AllMusic (Spirito DiVino 3/5), KQEK (Snack Bar).
+- Snack Bar Budapest: Vangelis, Jan Hammer and Éric Serra removed from sounds_like: KQEK compares single tracks (Dune mosse; one version of Something's Strong), not the album. Producers reordered David Sancious|Corrado Rustici (Sancious produces 13 of 15 tracks on the 1988 LP, Discogs 2228437).
+- Oro incenso & birra: sounds_like Joe Cocker|Steve Winwood (Sorrisi 2019 sets the album against Winwood's 80s albums and Cocker's A Night of Sin: "L'allievo aveva giustamente superato i maestri"); Clapton left out (guest); Ray Charles removed (no critic comparison). Luciano Luisi removed from producers (only 2019 remaster metadata for one track; the 1989 LP credits Rustici alone).
+- Miserere: Michele Torpedine removed (executive producer on the 1992 LP, Discogs 1219277). Joe Cocker and Peter Gabriel removed (no critic comparison). SynthAxe confirmed (Rustici on Anna Solatia and Miserere). Added organ (Peter John Vettese, Hammond), electric piano (David Sancious, Wurlitzer), Minimoog and Farfisa (LP credits), modern electric blues (Discogs style), psychedelic rock (l'Unità 1992: "strane tentazioni rock psichedeliche").
+- Spirito DiVino: Joe Cocker and Dr. John removed (no critic comparison; Leo Nocentelli is a guest). Added holophonics (CD credit "Effects [Holophonic]: Studio Umbi") and synth (Erlewine: "synthesized productions").
