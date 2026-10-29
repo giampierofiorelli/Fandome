@@ -76,3 +76,9 @@ These are *self-named musical influences*, not critics' sound-alike suggestions 
 - Raising Hell: The Knack removed from sounds_like (It's Tricky quotes My Sharona: a quotation is not a comparison). influenced_by keeps the album-specific names (Cold Crush Brothers, Doug E. Fresh, Slick Rick); The Beatles, Stones, Led Zeppelin, Harry Chapin, Jim Croce are D.M.C.'s general influences and go in the artist influences.
 - Tougher Than Leather producers: Davy D, Rick Rubin (the group's own credit dropped).
 - Artist added (7 studio albums), not touring; scene US en 1980 hiphop,rock.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/rundmc.csv`.
+- sounds_like confirmed: Grandmaster Flash and the Furious Five (Pitchfork, Breihan 2005: It's Like That "a vanilla version of Melle Mel's rap on The Message"); AC/DC and Duran Duran (Pitchfork on King of Rock and Can You Rock It Like This); Run the Jewels (Apple Music on Darryl and Joe); The Coasters (Library of Congress, Bill Adler: You Be Illin' "reminiscent of ... The Coasters's Charlie Brown"); Marley Marl (Pitchfork); Slick Rick and Dana Dane (Albumism, one story rhyme). Mantronix is D.M.C.'s own comparison of the drums (AllHipHop), kept as a sound reference.
+- Raising Hell mainstream 4 is not "packaged" (that needs mainstream 5), so the reception rule does not block links to it.
