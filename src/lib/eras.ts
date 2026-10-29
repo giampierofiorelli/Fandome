@@ -11,6 +11,7 @@ export interface Era {
   albumIds: string[]
   label: string // "Berlin trilogy" when a source names it, else "Prog, progressive electronic"
   named: boolean
+  spans?: [number, number][] // a documented period that returns later (Confessions 2005 and Confessions II 2026)
 }
 
 // Only long careers: at least 8 described albums of their own over at least 15 years.
@@ -115,8 +116,16 @@ function fromSources(ds: Descriptor[], periods: { from: number; to: number; name
     if (k < 0) k = Math.max(0, sorted.filter((p) => p.from <= d.year!).length - 1)
     groups[k].push(d)
   }
-  const eras = sorted.flatMap((p, k) => (groups[k].length ? [{ from: groups[k][0].year!, to: groups[k][groups[k].length - 1].year!, albumIds: groups[k].map((d) => d.albumId), label: p.name, named: true }] : []))
+  const parts = sorted.flatMap((p, k) => (groups[k].length ? [{ from: groups[k][0].year!, to: groups[k][groups[k].length - 1].year!, albumIds: groups[k].map((d) => d.albumId), label: p.name, named: true }] : []))
+  // Rows with the same name are one period that comes back later in the career: their albums are listed together.
+  const eras: Era[] = []
+  for (const x of parts) {
+    const same = eras.find((e) => e.label === x.label)
+    if (!same) eras.push({ ...x, spans: [[x.from, x.to]] })
+    else (same.albumIds.push(...x.albumIds), same.spans!.push([x.from, x.to]), (same.to = x.to))
+  }
   return eras.length >= 2 ? eras : null
 }
 
-export const eraYears = (e: Era) => (e.from === e.to ? `${e.from}` : `${e.from}–${String(e.to).slice(-2)}`)
+const yearsOf = ([from, to]: [number, number]) => (from === to ? `${from}` : `${from}–${String(to).slice(-2)}`)
+export const eraYears = (e: Era) => (e.spans ?? [[e.from, e.to]]).map(yearsOf).join(', ')

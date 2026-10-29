@@ -19,6 +19,6 @@ from,to,name,source
 1977,1979,Berlin trilogy,"AllMusic biography: 'the so-called Berlin trilogy of Low, Heroes and Lodger'"
 ```
 
-- `from`, `to`: years of the period; an album outside every period joins the one before it.
+- `from`, `to`: years of the period; an album outside every period joins the one before it. Two rows with the same name are one period that returns later in the career (its albums are listed together).
 - `name`: the name critics use (Berlin trilogy, Blue period); a period without a documented name can be named by its main style.
 - `source`: who names it, with a short quote. Only names used by critics or the artist, not invented ones.
