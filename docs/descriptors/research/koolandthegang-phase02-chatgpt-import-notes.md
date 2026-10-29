@@ -31,3 +31,8 @@ After this phase, the chronological candidates are *The Force* (1977), *Everybod
 ## Claude import note (Oct 2026)
 
 - Band self-credits dropped from producers (K. & G. Productions is the band's company); Open Sesame keeps George Brown. Love & Understanding kept as studio (3 of 8 tracks live, flagged with concertrecording).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/koolandthegang.csv`.
+- sounds_like (ChatGPT's editorial hypotheses) checked: only Earth, Wind & Fire on Light of Worlds has support (Apple Music editorial: "Even as Earth, Wind & Fire married rock-inspired funk to jazz-informed playing, Kool & the Gang… an even harder amalgam of similar styles"). The J.B.s, Sly, James Brown, War, The Meters, Ohio Players not found for these albums: removed.
