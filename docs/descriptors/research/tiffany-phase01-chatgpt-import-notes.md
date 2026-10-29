@@ -57,3 +57,11 @@ Avoid live recordings, greatest hits and retrospective compilations until separa
 - New artist `tiffany` (catalogue, scene US en 1980 pop), four studio albums 1987–1993.
 - sounds_like emptied (Stevie Nicks, New Kids on the Block, Mariah Carey): "editorial proposals". New Kids on the Block would also be a producer link (Maurice Starr produced them). Stevie Nicks stays as an artist-level influence from her own words.
 - Artist influences from her own words: Stevie Nicks, Heart, Fleetwood Mac, Led Zeppelin, Janis Joplin.
+
+## Claude enrichment
+
+- Reception from en.wikipedia (charts, certifications, ratings box), RIAA, AllMusic (via Qobuz), Robert Christgau, Rolling Stone, Entertainment Weekly, Music & Media 1990.
+- sounds_like: Tiffany (1987) Stevie Nicks ("vocal style and the album's material were strongly influenced by Stevie Nicks", Wisconsin State Journal and The Morning Call 1987 via en.wikipedia); Hold an Old Friend's Hand Stevie Nicks (John Milward, Knight-Ridder 1989: the new styling "makes her sound even more like Stevie Nicks"). New Inside and Dreams Never Die stay empty (Janet Jackson/Paula Abdul only for the New Inside single).
+- influenced_by Stevie Nicks on the 1987 album: Tiffany told the Wisconsin State Journal (1987) that she and George Tobin tried songs in several styles, including a "Stevie Nicks sound".
+- Producers confirmed (Discogs 1643963, 3694921, 1643961, 732939): George Tobin (1987, 1988, 1993; John Duarte arranger); New Inside Phillip Damien (9 tracks), Maurice Starr (2), Kevin Grady added (co-producer of It's You).
+- Hold an Old Friend's Hand: landmark 0; country pop (en.wikipedia) and electronic drums ("heavy Simmons drums") added; digital recording confirmed (sleeve). New Inside: rap removed from voice (the rap is the guest's, credited "Dennis Cheese").
