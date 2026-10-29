@@ -45,3 +45,11 @@
 - No catalogue changes (all four albums already listed).
 - sounds_like emptied on all four (Richard Marx, Umberto Tozzi, Raf, Laura Pausini, Bryan Adams): ChatGPT calls them "our editorial approximation". The reception pass looks for critics' comparisons.
 - Producers: Eros Ramazzotti dropped as self-credit (Dove c'è musica, now without producer). Adelio Cogliati on Tutte storie kept pending the credit check (co-producer on one pressing, assistant producer on others).
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it and FIMI year-end, it/en.wikipedia, AllMusic (via en.wikipedia and Qobuz), l'Unità archive (1990, 1993, 1996), Music Week, Rockol, Sky TG24.
+- No album-level critic comparison found: sounds_like stays empty (Battisti only for Quasi amore on Dove c'è musica, l'Unità 1996). Eros naming Lenny Kravitz and Aerosmith as what he was listening to at the Tutte storie launch is not tied to the album: not added.
+- Producers: Adelio Cogliati removed from Tutte storie (Estatica transcription: "assistenza alla produzione"; Discogs entries disagree with themselves). Dove c'è musica produced by Eros alone (Celso Valli arranger and "realizzazione"). Stilelibero producers confirmed by track (Discogs 5602609).
+- Added from credits and reviews: In ogni senso fretless bass (Pino Palladino), acoustic guitar; Tutte storie soul (Perugini: "ballata… in chiave soul"), Chapman Stick (Tony Levin), strings, string arrangements, drum programming; Dove c'è musica soul-pop, country, salsa, mambo (new token, parent latin), latin (l'Unità 1996; Discogs), sampling, string and horn arrangements, strings, synth bass, electric piano; Stilelibero accordion (replacing harmonica: Fio Zanotti plays accordion), autoharp, baritone guitar, electric piano, synth bass, fretless bass, electronic drums, orchestra, Pro Tools, string arrangements, soul, latin. Organ removed from Stilelibero (no credit).
+- Stilelibero landmark set to 0 (no source calls it defining; Eros himself: "fatto di corsa").
