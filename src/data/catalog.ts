@@ -356,7 +356,7 @@ const ROWS: Row[] = [
   ['ericclapton', 'Eric Clapton', '#6a5a4a', 'Slowhand', [['Slowhand', 1977]]],
   ['lindaronstadt', 'Linda Ronstadt', '#b0705a', 'Heart Like a Wheel and country rock', [['Heart Like a Wheel', 1974]]],
   ['dollyparton', 'Dolly Parton', '#e0a0b0', 'Jolene and Smoky Mountain country', [['Jolene', 1974]]],
-  ['laurabranigan', 'Laura Branigan', '#c05a8a', 'Gloria and Self Control', [['Branigan', 1982]]],
+  ['laurabranigan', 'Laura Branigan', '#c05a8a', 'Gloria and Self Control', [['Branigan', 1982], ['Branigan 2', 1983], ['Self Control', 1984], ['Hold Me', 1985], ['Touch', 1987], ['Laura Branigan', 1990], ['Over My Heart', 1993]]],
   ['toriamos', 'Tori Amos', '#c06a3a', 'Little Earthquakes at the piano', [['Little Earthquakes', 1992]]],
   ['garbage', 'Garbage', '#3a3a5a', 'Shirley Manson’s techno-rock', [['Garbage', 1995]]],
   ['beck', 'Beck', '#7a9a4a', 'Odelay’s sampledelic collage', [['Odelay', 1996]]],

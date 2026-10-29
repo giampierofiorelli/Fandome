@@ -1,0 +1,23 @@
+album_id,genre,source,url,scope,evidence
+laurabranigan-branigan2,pop,b2_qobuz,https://www.qobuz.com/gb-en/album/branigan-2-laura-branigan/0075678005268,whole album,Qobuz explicitly places original album in Pop
+laurabranigan-branigan2,poprock,b2_allmusic,https://www.allmusic.com/album/branigan-2-mw0000189325,whole album,AllMusic explicitly calls the album Contemporary Pop/Rock
+laurabranigan-branigan2,synthpop,b2_musicbase,https://musicbase.net/branigan-2-1v0qwt9,whole album / sonic style,Original pressing style tag explicitly Synth-pop; synth player credits in liner notes
+laurabranigan-branigan2,softrock,b2_musicbase,https://musicbase.net/branigan-2-1v0qwt9,whole album / ballad crossover,Original pressing carries Soft Rock style tag
+laurabranigan-branigan2,ballad,b2_musicbase,https://musicbase.net/branigan-2-1v0qwt9,album ballad tracks,Original pressing carries Ballad style tag; standout romantic hit How Am I Supposed to Live Without You
+laurabranigan-branigan2,adultcontemporary,general_official,https://laurabraniganonline.com/biography,single / album crossover (lower weight),Official biography documents adult-contemporary success of How Am I Supposed to Live Without You; not genre claim for every track
+laurabranigan-selfcontrol,pop,s_musicbrainz,https://musicbrainz.org/release-group/70706fd9-e724-37ed-8be5-243ff0dc5ab1,whole album,MusicBrainz genre tag pop
+laurabranigan-selfcontrol,dancepop,s_allmusic,https://www.allmusic.com/album/self-control-mw0000189209,whole album,AllMusic explicitly labels Dance-Pop / Club-Dance
+laurabranigan-selfcontrol,poprock,s_allmusic,https://www.allmusic.com/album/self-control-mw0000189209,whole album,AllMusic labels Contemporary Pop/Rock
+laurabranigan-selfcontrol,synthpop,s_aoty,https://www.albumoftheyear.org/album/51343-laura-branigan-self-control.php,whole album,Album of the Year explicitly lists Synthpop; AllMusic reviews synthesizer-driven material
+laurabranigan-selfcontrol,adultcontemporary,s_allmusic,https://www.allmusic.com/album/self-control-mw0000189209,whole album / ballads,AllMusic labels Adult Contemporary
+laurabranigan-selfcontrol,disco,s_musicbrainz,https://musicbrainz.org/release-group/70706fd9-e724-37ed-8be5-243ff0dc5ab1,whole album / dance tracks,MusicBrainz explicitly lists disco
+laurabranigan-selfcontrol,ballad,s_allmusic,https://www.allmusic.com/album/self-control-mw0000189209,album ballads,AllMusic discusses prominent dramatic and affecting ballads across record
+laurabranigan-selfcontrol,electronic,s_musicbrainz,https://musicbrainz.org/release-group/70706fd9-e724-37ed-8be5-243ff0dc5ab1,album synthesizer texture,"MusicBrainz explicitly lists electronic, supported by recorded synthesizers"
+laurabranigan-holdme,pop,h_qobuz,https://www.qobuz.com/us-en/album/hold-me-laura-branigan/zzzubeh5uvhgb,whole album,Qobuz explicitly classifies album as Pop
+laurabranigan-holdme,dancepop,h_allmusic,https://www.allmusic.com/album/hold-me-mw0000193094,whole album,AllMusic explicitly labels Dance-Pop
+laurabranigan-holdme,poprock,h_allmusic,https://www.allmusic.com/album/hold-me-mw0000193094,whole album,AllMusic explicitly labels Contemporary Pop/Rock
+laurabranigan-holdme,adultcontemporary,h_allmusic,https://www.allmusic.com/album/hold-me-mw0000193094,whole album / ballads,AllMusic lists Adult Contemporary
+laurabranigan-holdme,synthpop,h_chartsurfer,https://www.chartsurfer.de/artist/laura-branigan/hold-me-album_ffvgvg.html,whole album original pressing,Original Japan release metadata explicitly labels Synth-pop
+laurabranigan-holdme,eurodisco,h_allmusic,https://www.allmusic.com/album/hold-me-mw0000193094,dance-heavy repertoire,AllMusic album review explicitly calls the uptempo material Eurodisco; mixed album
+laurabranigan-holdme,ballad,h_chartsurfer,https://www.chartsurfer.de/artist/laura-branigan/hold-me-album_ffvgvg.html,album ballads,Original US edition tag Ballad; Foolish Lullaby and I Found Someone foreground it
+laurabranigan-holdme,electronic,h_chartsurfer,https://www.chartsurfer.de/artist/laura-branigan/hold-me-album_ffvgvg.html,whole album / synth-heavy production,Pressing labels album Electronic and credits programming and synthesizer work

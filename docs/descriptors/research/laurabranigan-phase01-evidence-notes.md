@@ -1,0 +1,49 @@
+# Laura Branigan — Phase 01 evidence notes
+
+**Scope:** original studio albums only, newly described: *Branigan 2* (1983), *Self Control* (1984), *Hold Me* (1985). This batch is incremental. *Branigan* (1982) already has an entry (`laurabranigan-branigan`) and has deliberately been excluded. All other original studio albums are reserved for Phase 02. All values are draft judgments; numeric scales apply to the whole album, not its lead single. Research date: 29 October 2026.
+
+## `laurabranigan-branigan2` (1983)
+
+- **Dates / identity:** The official site lists 16 March 1983; Qobuz lists 1 March for its digital catalogue. Use original **1983** year, not a day-level resolution. Original 10 tracks, not expanded releases. [b2_official; b2_qobuz]
+- **Genres:** AllMusic describes a contemporary pop/rock record; the pressing tags Synth-pop, Soft Rock and Ballad. Qobuz files the album under Pop. `adultcontemporary` is lower-ranked because it is strongly linked to the single *How Am I Supposed to Live Without You* rather than every cut. [b2_allmusic; b2_musicbase; b2_official]
+- **Scales:** energy 3, tempo 3 and groove 2 express a predominantly measured pop-rock/romantic-ballad balance; electronic 2 recognises credited synths alongside the live rhythm section; mood 3 spans upbeat and wounded songs; theatrical 4 and polish 4 follow the exceptionally full, dramatic vocal performance and arranged studio sound; experimental 1 reflects conventional song forms. These are editorial album-level assessments anchored in AllMusic review, mood descriptions and personnel. [b2_allmusic; b2_session]
+- **Voice:** `powerful|clear` based on the review's description of a full expressive vocalist, prominent over the band. [b2_allmusic]
+- **Instruments:** Robbie Buchanan and Michael Boddicker synth/keys; Carlos Vega, Doane Perry drums; Dennis Belfield bass; Michael Landau and Marty Walsh guitars; Lenny Castro percussion. These are explicit liner credits, not inferred instrumentation. [b2_session; b2_allmusic]
+- **Production:** blank because no specific named method or hardware model is documented by the checked sources; synthesizer credits are not proof of synthesizer programming. Producer field retains Jack White and Robbie Buchanan because Sessiondays transcribes Buchanan as *co-producer*, although the official site calls him *associate producer*. Note this role discrepancy. [b2_session; b2_official]
+- **Lyrics:** `love|heartbreak|storytelling` from relationship ballads and narrative singles. `storytelling` is secondary, primarily the ballads and *Solitaire*. [b2_official; b2_allmusic]
+- **Sounds like:** Pat Benatar / Bonnie Tyler are editorial sonic comparators for broad, dramatic vocal pop-rock, **not declared influences**. Covers of Martine Clémenceau, Falco, Pete Townshend and Umberto Tozzi are repertoire, not `influenced_by`. [b2_official; b2_allmusic]
+- **Landmark:** 0. Successful second album, but the signature album in the artist's legacy is *Self Control*. [general_official]
+
+## `laurabranigan-selfcontrol` (1984)
+
+- **Dates / editions:** 1 April 1984 original release on official site. Album of the Year says 31 March; the *year* is secure. Exclude 2013 and 2020 expanded editions and alternate mixes. [s_official; s_aoty; s_session]
+- **Genres:** AllMusic calls album dance-pop, pop-rock, club/dance and adult-contemporary. MusicBrainz album tags add disco, electronic and pop; Album of the Year explicitly tags synthpop. `ballad` is an album texture documented in the review, not just the title song. Do not equate all European dance-pop with Italo-disco: the title song covers Raf and *Ti Amo* covers Tozzi, and covered writers are not `influenced_by`. [s_allmusic; s_musicbrainz; s_aoty; s_qobuz]
+- **Scales:** energy 4, groove 4, electronic 3, tempo 3: high-impact dance singles and synth textures balanced against midtempo ballads and live bass/guitars/drums. mood 3 is mixed: nocturnal sensuality and heartbreak; theatrical 4 for soaring delivery and big choruses; polish 4 for large commercial studio production; experimental 1 for familiar verse-chorus and ballad structures. [s_allmusic; s_session]
+- **Voice:** `powerful|clear|soft`: predominantly emphatic, with softer ballad singing. [s_allmusic; s_qobuz]
+- **Instruments:** Robbie Buchanan piano/synth, Harold Faltermeyer synth, Nathan East bass, Carlos Vega and John Robinson drums, Dann Huff/Michael Landau/Paul Jackson Jr guitars, Larry Williams sax. Only actual credited instruments included. [s_session; s_qobuz]
+- **Production:** left empty deliberately. The checked credits document arrangements, mixing and synthesizers, but do not establish a specific named production process or machine model. [s_official; s_session]
+- **Producer conflict:** Official album page calls Jack White *executive producer* and Robbie Buchanan *producer*; session liner-note transcript calls both producers, in addition to White's executive credit. MusicBrainz independently credits both on the title recording. Both are retained as credited working producers, **not** because of an executive-only role. Harold Faltermeyer is arranger/engineer and is not added as producer. [s_official; s_session; s_musicbrainz_credit]
+- **Lyrics:** relationships, sensual nocturnal encounters, emotional tension, vulnerability and self-observation from album material. `introspection` is lower weight than love. [s_allmusic]
+- **Sounds like:** Donna Summer (dance-pop blend with big lead voice), Pat Benatar (guitar-edged power vocal delivery) are editorial sound-alikes, not confirmed influences. [s_allmusic]
+- **Landmark:** 1. The artist's official biography identifies this as her largest-selling album and one of her signature recordings. [general_official]
+
+## `laurabranigan-holdme` (1985)
+
+- **Date / editions:** Official page records 15 July 1985, 10 songs. Don't split foreign pressings or remixes into separate records. [h_official; h_chartsurfer]
+- **Genres:** AllMusic labels Pop/Rock, Adult Contemporary, Dance-Pop and specifically describes Eurodisco content; original Japan release lists Synth-pop and a US issue lists Ballad and Europop; Qobuz lists Pop. `eurodisco` belongs to the strong dance component but the album also contains ballads. [h_allmusic; h_chartsurfer; h_qobuz]
+- **Scales:** energy 3 (not every song a high-energy club track), electronic 4 (heavy synthesizers, programmable electronic rhythm and bass), groove 4 (dance singles), tempo 3 (mixed), mood 3 (romantic and restless), theatrical 4 (large arrangements and high-impact singing), experimental 1 (pop format), polish 4 (dense multi-studio sheen). [h_allmusic; h_session]
+- **Voice:** powerful, clear, softer on ballads; sources discuss dramatic and romantic delivery. [h_allmusic; h_session]
+- **Instruments:** Synthesizers/keyboards and explicitly electronic bass/drums in original press credits; electric bass Nathan East/Larry Ball; guitars Huff, Landau and Cooper; sax Herbig/Russo; percussion Malouf, Spiro, Alford; Jerry Hey flugelhorn on *When I'm with You* and horns on *Tenderness*. `flugelhorn` and `brass` are true but song-specific and included after dominant instruments. **No acoustic drum kit is claimed** without credit. [h_session; h_chartsurfer]
+- **Production:** `programming` is a literal album musician credit; `synthprogramming` is supported by explicit synthesizer-programming credit in original pressings; `hornarrangements` concerns the track *Tenderness* specifically, not all ten songs. Do not infer particular synth models. [h_session; h_chartsurfer]
+- **Producers:** White produced tracks 1–9; Faltermeyer produced 1 and 7; Spiro produced track 10 and co-produced 2, 3, 6 and 9. Spiro was also billed an *associate producer* in the official anniversary; the named track producer/co-producer credits justify keeping him in the producer column. [h_session; h_official; h_anniv]
+- **Lyrics:** relationship songs, separation, urban story in *Spanish Eddie*, looking backward in *Forever Young*. The latter is a cover of Alphaville's song and **not evidence of musical influence**. *I Found Someone* is a recorded composition by Bolton/Mangold, not evidence of their influence on her artistry. [h_official; h_qobuz]
+- **Sounds like:** Donna Summer is an explicit **critic's comparison** in the AllMusic review, not an influence. Bonnie Tyler is a secondary editorial sonic parallel based on melodramatic pop-rock vocal ballads; exclude her from `influenced_by`. [h_allmusic]
+- **Landmark:** 0. Contains recognisable singles but does not exceed *Self Control* as her signature long-form record. [general_official]
+
+## Artist-wide influence research (not attached to albums)
+
+Pierre Perrone's obituary in *The Independent* reports **Gladys Knight, Aretha Franklin and Stevie Nicks** as inspirations for Branigan's singing approach. This is a credible contemporary secondary biographical account, but it does **not** reproduce a first-person quote in which Branigan individually names them. Keep the three in the `CLAUDE_IMPORT.md` as *reported artistic inspirations; verification of a direct artist statement pending*. They must not automatically populate any album's `influenced_by`. A weak AI-written summary attributing Billy Joel and Edith Piaf was rejected; no original interview can be authenticated from it.
+
+## Scope and differences
+
+Genre taxonomies differ: MusicBrainz uses general `electronic` and `disco`, AllMusic uses the narrower `dancepop`/`adultcontemporary`, record-market listings include `synthpop`/`softrock`/`ballad`. No styles are equated solely because they sound similar; album-specific source scope appears in `genre_evidence.csv`. Release dates in database reissues can differ from the official original dates. All rows have `draft` status; no unverified instrument model, deliberate producer-executive-only confusion, or inferred personal influence.

@@ -1,0 +1,8 @@
+album_id,title,year,type,catalog_ts,existing_descriptor,action,notes
+laurabranigan-branigan,Branigan,1982,studio,present,present,SKIP_ALREADY_DESCRIBED,In existing docs/descriptors/laurabranigan.csv. Do not import or overwrite; originally in catalogue.
+laurabranigan-branigan2,Branigan 2,1983,studio,absent,absent,ADD_TO_CATALOG_AND_DESCRIBE,Official 1983 second album; no previous descriptor row.
+laurabranigan-selfcontrol,Self Control,1984,studio,absent,absent,ADD_TO_CATALOG_AND_DESCRIBE,Original 1984 10 tracks; exclude expanded reissue and remixes as separate albums.
+laurabranigan-holdme,Hold Me,1985,studio,absent,absent,ADD_TO_CATALOG_AND_DESCRIBE,Original 1985 10 tracks; track-level producer distinctions in notes.
+laurabranigan-touch,Touch,1987,studio,absent,absent,PHASE_02,Original studio release; not in phase 01.
+laurabranigan-laurabranigan,Laura Branigan,1990,studio,absent,absent,PHASE_02,Later eponymous studio album; distinct from debut Branigan.
+laurabranigan-overmyheart,Over My Heart,1993,studio,absent,absent,PHASE_02,"Final studio album, not this batch."
