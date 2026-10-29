@@ -52,3 +52,10 @@
 
 - Added Cosa succede in città (1985) to the catalogue; Va bene, va bene così (1984, live) excluded.
 - sounds_like emptied: Loredana Bertè (Bandabertè) on Vado al massimo and David Bowie (Low) on Bollicine are comparisons of a single track; Enzo Jannacci on Cosa succede in città compares the songwriting, not the sound. The reception pass looks for album-level comparisons.
+
+## Claude enrichment
+
+- Vado al massimo: Guido Elmi only (Maurizio Biancani was assistant producer, his own site). Bertè comparison is about the title track only.
+- Bollicine: influenced_by Killing Joke from producer Guido Elmi's own words (Rockit 2016: "ai tempi ascoltavo i Killing Joke, certe cose della new wave e la prima dance anni '80"). Added punk rock (Rockol 2023: "rock, new wave e punk"). Bowie (Low) stays out: one track. Prophet-5 and Minimoog kept from ChatGPT's sleeve transcription (45cat), not independently verified.
+- Cosa succede in città: landmark set to 0 (Rolling Stone Italia No. 10 of 18, "schiacciato" between Bollicine and C'è chi dice no per OndaRock).
+- C'è chi dice no: Emulator II and programming removed: the cited page (ardisc.it) has no such credit and nothing else confirms it.

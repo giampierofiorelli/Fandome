@@ -76,3 +76,12 @@ Claude should check current GitHub, add the four catalogue tuples, merge only th
 - Producers: Vasco Rossi dropped as self-credit (Colpa d'Alfredo); Guido Elmi kept pending the reception pass.
 - sounds_like emptied on all four rows: ChatGPT calls them "tentative editorial neighbors", with no critic's comparison of the sound. The reception pass looks for real ones.
 - Artist influences: only Fabrizio De André, from Vasco's own words (Rolling Stone Italia, January 2026). The long list from a blog repost of an undated interview is left out (provenance not verified).
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it year-end charts, Rolling Stone Italia's ranking of his 18 albums (Luca Garrò 2022), OndaRock (monografia and pietre miliari), Rockit interview with Guido Elmi (2016).
+- 1978: sounds_like Rino Gaetano|Francesco De Gregori (Rolling Stone Italia, Patrizio Ruviglioni 2018: "Musicalmente siamo in un'intersezione fra Rino Gaetano e De Gregori"). Producer Alan Taylor (it.wikipedia infobox; Sky TG24: "un produttore che aveva creduto in lui").
+- 1979: producer stays empty (Alan Taylor credited for executive production, supervision, mixing). Added funk rock, glam rock, jazz (OndaRock pietra miliare: "ritmo funk-rock", "glam dei T. Rex", "talking jazz in salsa dixieland") and harpsichord (Solieri's cembalo). Track-level comparisons (Jannacci, Battisti, T. Rex, Judas Priest) not added.
+- 1980: Guido Elmi confirmed as producer in his own words (Rockit 2016).
+- 1981: Guido Elmi kept; Mario Rapallo (label owner) left out. Bennato and Nannini found nowhere. Jannacci's Quelli che shaped the title song's lyric form (Vasco, Panorama 2021): songwriting, not added.
+- 1981: aor removed: its only source is a Debaser reader tag, not a critic, and it made Bryan Adams lead the suggestions. Other Debaser-only genres (vaudeville, dance on 1979; hardrock, ballad on 1981) kept low in the list for now.

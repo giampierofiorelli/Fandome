@@ -52,3 +52,12 @@ No new genre, instrument or production tokens expected; all tokens used belong t
 
 - Added Canzoni per me (1998) to the catalogue.
 - Producers: Vasco Rossi dropped as self-credit on all four (Liberi liberi is left with no producer). Dave Stewart kept on Gli spari sopra (one track, Hai ragione tu); Celso Valli kept on Nessun pericolo… per te pending the reception check.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it year-end charts, Rolling Stone Italia's ranking of his 18 albums (2022), OndaRock monografia, Sorrisi, Exitwell, Music & Media 1993, Targa Tenco 1998.
+- Credits confirmed (Discogs API releases 563809, 958968, 1260795, 1454007): Liberi liberi produced by Vasco alone (Terry Balls executive); Gli spari sopra Guido Elmi, Dave Stewart on Hai ragione tu only (Maurizio Lolli, Music & Media 1993); Nessun pericolo… per te Guido Elmi, Celso Valli "Producer [Realizzazione]" on Sally and Marea (Andrea Braido pre-production only, left out); Canzoni per me Celso Valli (Guido Elmi art direction only).
+- Removed genres resting only on Debaser readers: country (Gli spari sopra), aor (Nessun pericolo… per te). Added canzone d'autore to Liberi liberi (Sorrisi: "un disco molto cantautorale") and soft rock to Canzoni per me (Discogs styles).
+- Removed unverified credits: drum programming (Liberi liberi: MIDI drums are played), timbales and electric piano (Gli spari sopra), tambourine (Nessun pericolo).
+- sounds_like stays empty: the only critic comparisons are track-level (Liberi liberi: The Police's Synchronicity on Ormai è tardi, Sammy Hagar on Vivere senza te, Sorrisi 2019).
+- Zucchero as homage on La favola antica (Canzoni per me) is in it.wikipedia without a source: not added.
