@@ -1,0 +1,8 @@
+album_id,title,year,type,catalog_ts,existing_descriptor,action,notes
+laurabranigan-branigan,Branigan,1982,studio,present,present,SKIP_ALREADY_DESCRIBED,Original album already described in project; no new row.
+laurabranigan-branigan2,Branigan 2,1983,studio,present,present,SKIP_PHASE01,Phase 01 descriptor already merged; do not duplicate.
+laurabranigan-selfcontrol,Self Control,1984,studio,present,present,SKIP_PHASE01,Phase 01 descriptor already merged; do not duplicate.
+laurabranigan-holdme,Hold Me,1985,studio,present,present,SKIP_PHASE01,Phase 01 descriptor already merged; do not duplicate.
+laurabranigan-touch,Touch,1987,studio,present,absent,IMPORT_THIS_PHASE,Original album in catalog with no descriptor row.
+laurabranigan-laurabranigan,Laura Branigan,1990,studio,present,absent,IMPORT_THIS_PHASE,Self-titled 1990 album; distinct from 1982 Branigan.
+laurabranigan-overmyheart,Over My Heart,1993,studio,present,absent,IMPORT_THIS_PHASE,"Original final studio LP/CD, not any remaster or compilation."

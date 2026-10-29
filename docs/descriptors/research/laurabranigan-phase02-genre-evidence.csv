@@ -1,0 +1,22 @@
+album_id,genre,source,url,scope,evidence
+laurabranigan-touch,pop,t_musicbrainz,https://musicbrainz.org/release-group/740c3f7a-e23d-3d3e-baf1-88df6cc2d6a4,whole album,MusicBrainz labels the 1987 original album pop
+laurabranigan-touch,adultcontemporary,t_allmusic,https://www.allmusic.com/album/touch-mw0000196637,"whole album, leading style",AllMusic places the record in Adult Contemporary and reviews predominant ballads
+laurabranigan-touch,poprock,t_allmusic,https://www.allmusic.com/album/touch-mw0000196637,whole album,AllMusic contemporary pop/rock style
+laurabranigan-touch,dancepop,t_allmusic,https://www.allmusic.com/album/touch-mw0000196637,several tracks including lead single,AllMusic explicitly lists Dance-Pop; label Rhino describes SAW track Shattered Glass
+laurabranigan-touch,synthpop,t_chartsurfer,https://www.chartsurfer.de/artist/laura-branigan/touch-album_ffeuhg.html,whole LP style,Original 1987 UK and Canadian LP styles include Synth-pop
+laurabranigan-touch,electronic,t_musicbrainz,https://musicbrainz.org/release-group/740c3f7a-e23d-3d3e-baf1-88df6cc2d6a4,whole-album electronic texture,MusicBrainz album tagged electronic; synth-heavy Qobuz/Buss review corroborates
+laurabranigan-touch,ballad,t_allmusic,https://www.allmusic.com/album/touch-mw0000196637,predominant slow tracks,AllMusic emphasizes numerous ballads including Over Love and Meaning of the Word
+laurabranigan-touch,disco,t_chartsurfer,https://www.chartsurfer.de/artist/laura-branigan/touch-album_ffeuhg.html,CD style / lower weight,"Original US CD style marked Disco, unlike primarily pop-rock/synth-pop LP tag"
+laurabranigan-laurabranigan,pop,b90_qobuz,https://www.qobuz.com/gb-en/album/laura-branigan-laura-branigan/0075678208669,whole album,Atlantic/Qobuz album category Pop
+laurabranigan-laurabranigan,poprock,b90_allmusic,https://www.allmusic.com/album/laura-branigan-mw0000207836,whole album,AllMusic contemporary pop/rock style
+laurabranigan-laurabranigan,synthpop,b90_musiksammler,https://www.musik-sammler.de/release/laura-branigan-laura-branigan-lp-285608/,whole LP style,Contemporary original LP classified Synth Pop
+laurabranigan-laurabranigan,disco,b90_musiksammlercd,https://www.musik-sammler.de/release/laura-branigan-laura-branigan-cd-367466/,some dance cuts; original CD style,CD classified Disco; Turn the Beat Around is remake of disco hit
+laurabranigan-laurabranigan,hinrg,b90_session,https://sessiondays.com/2017/03/29/1990-laura-branigan-laura-branigan/,"several dance songs, especially Moonlight on Water",Sessiondays identifies return to Hi-NRG dance charts with Moonlight on Water
+laurabranigan-laurabranigan,adultcontemporary,b90_session,https://sessiondays.com/2017/03/29/1990-laura-branigan-laura-branigan/,slower cuts; second single,Sessiondays describes Never in a Million Years as adult-contemporary hit
+laurabranigan-overmyheart,pop,omh_apple,https://music.apple.com/us/album/over-my-heart/360731519,whole album,Apple Music/Atlantic files the record under Pop
+laurabranigan-overmyheart,poprock,omh_allmusic,https://www.allmusic.com/album/over-my-heart-mw0000619618,whole album,AllMusic explicitly lists Contemporary Pop/Rock
+laurabranigan-overmyheart,adultcontemporary,omh_allmusic,https://www.allmusic.com/album/over-my-heart-mw0000619618,most ballads; marketing direction,AllMusic addresses the record as adult-contemporary ballad repertoire
+laurabranigan-overmyheart,ballad,omh_musicbase,https://musicbase.net/over-my-heart,many tracks; predominant,"Original CD pressing style Ballad, also documented by DeGagne review"
+laurabranigan-overmyheart,electronic,omh_musicbase,https://musicbase.net/over-my-heart,"original CD electronic texture, lower weight",Original CD described Electronic; less dominant than previous LPs
+laurabranigan-overmyheart,downtempo,omh_musicbase,https://musicbase.net/over-my-heart,slower tracks; pressing style,"Original CD style tag Downtempo, consistent with numerous measured ballads"
+laurabranigan-overmyheart,house,omh_musicbase,https://musicbase.net/over-my-heart,"small dance-oriented tail, not entire album",Original CD style tag House; place last as dance element not dominant sound
