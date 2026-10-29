@@ -1,0 +1,15 @@
+album_id,artist,title,year,type,catalog_status,evidence
+ella-ellasingsgershwin,Ella Fitzgerald,Ella Sings Gershwin,1950,studio,PHASE_01_ALREADY_DELIVERED,"Phase 01 descriptor, do not duplicate here; catalog add pending"
+ella-songsinamellowmood,Ella Fitzgerald,Songs in a Mellow Mood,1954,studio,PHASE_01_ALREADY_DELIVERED,"Phase 01 descriptor, do not duplicate here"
+ella-sweetandhot,Ella Fitzgerald,Sweet and Hot,1955,studio,PHASE_01_CLASSIFICATION_HOLD,Prior batch provisional due to 1952-55 archive sessions; NOT REPEATED
+ella-ellafitzgeraldsingsthecoleportersongbook,Ella Fitzgerald,Ella Fitzgerald Sings the Cole Porter Song Book,1956,studio,PHASE_01_ALREADY_DELIVERED,"Already catalogued by Ella; previous descriptor delivered, no duplicate"
+armstrong-ellaandlouis,Ella Fitzgerald & Louis Armstrong,Ella and Louis,1956,studio,EXISTING_ARMSTRONG_ID_ADD_ELLA_LINK_PHASE_02,Already in Fandome catalog under artist armstrong as armstrong-ellaandlouis; DO NOT CREATE ella-ellaandlouis duplicate; add CO_BILLED with ella
+ella-ellafitzgeraldsingstherodgersandhartsongbook,Ella Fitzgerald,Ella Fitzgerald Sings the Rodgers and Hart Song Book,1956,studio,ADD_NEW_PHASE_02,Official Ella discography and 1956 Verve copyright versus AllMusic 1957 retrospective date
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,Ella Fitzgerald with Duke Ellington and His Orchestra,Ella Fitzgerald Sings the Duke Ellington Song Book,1957,studio,ADD_NEW_PHASE_02,Original 1957 studio 3-LP project with 1957 Ellington orchestra and small combo recordings; Duke has no current catalog room
+ella-ellaandlouisagain,Ella Fitzgerald & Louis Armstrong,Ella and Louis Again,1957,studio,ADD_NEW_PHASE_02_COBILL,Original 1957 two-LP 19-track studio album; new Ella ID; CO_BILLED with armstrong; not later 1-LP edited reissue
+,Ella Fitzgerald,Ella at the Opera House,1957,live,EXCLUDE_LIVE,Official discography categorises live; exclude for Fandome now
+,Ella Fitzgerald,Like Someone in Love,1957,studio,NEXT_PHASE_03,1957 Verve studio album; arrange next batch
+,Ella Fitzgerald,Ella Fitzgerald Sings the Irving Berlin Song Book,1958,studio,NEXT_PHASE_03,Next original Verve Song Book (not a reissue)
+,Ella Fitzgerald & Louis Armstrong,Porgy and Bess,1958,studio,NEXT_PHASE_03,"Original 1958 studio collaboration, not a soundtrack or live compilation; check co-billed ID"
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,Ella Fitzgerald,Ella Fitzgerald Sings the George and Ira Gershwin Song Book,1959,studio,EXISTING_CATALOG_LATER_PHASE,Already in Ella catalogue; not included in this ZIP
+ella-ellainberlinmacktheknife,Ella Fitzgerald,Ella in Berlin: Mack the Knife,1960,live,EXCLUDE_LIVE_CATALOG,Already in catalog but originally recorded live; no descriptors

@@ -1,0 +1,31 @@
+album_id,genre,source,url,scope,evidence
+armstrong-ellaandlouis,vocaljazz,allmusic_ella_louis,https://www.allmusic.com/album/r138694,whole album,AllMusic Vocal Jazz style; duets
+armstrong-ellaandlouis,jazz,allmusic_ella_louis,https://www.allmusic.com/album/r138694,whole album,AllMusic genre jazz
+armstrong-ellaandlouis,standards,allmusic_ella_louis,https://www.allmusic.com/album/r138694,whole album,AllMusic Standards and 11 Great American Songbook songs
+armstrong-ellaandlouis,traditionalpop,allmusic_ella_louis,https://www.allmusic.com/album/r138694,whole album,AllMusic Traditional Pop style
+armstrong-ellaandlouis,swing,apple_ella_louis,https://music.apple.com/us/album/ella-and-louis/1469584174,multiple tracks,Album editorial specifies midtempo swingers with acoustic quartet
+armstrong-ellaandlouis,bop,allmusic_ella_louis,https://www.allmusic.com/album/r138694,low-weight named style,AllMusic Bop style; retain as lower-ranked texture not a bebop instrumental suite
+armstrong-ellaandlouis,earlyjazzvocals,allmusic_ella_louis,https://www.allmusic.com/album/r138694,low-weight Armstrong vocal style,AllMusic explicitly names Early Jazz Vocals for album; new token
+armstrong-ellaandlouis,americanpopularsong,allmusic_ella_louis,https://www.allmusic.com/album/r138694,whole album repertoire,AllMusic style American Popular Song; use distinct new token
+ella-ellafitzgeraldsingstherodgersandhartsongbook,vocaljazz,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,whole album,AllMusic Vocal Jazz style; jazz phrasing
+ella-ellafitzgeraldsingstherodgersandhartsongbook,jazz,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,whole album,AllMusic Jazz genre
+ella-ellafitzgeraldsingstherodgersandhartsongbook,traditionalpop,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,whole album,AllMusic Traditional Pop style; orchestral songbook sound
+ella-ellafitzgeraldsingstherodgersandhartsongbook,standards,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,whole album,AllMusic Standards style and 34 Rodgers/Hart songs
+ella-ellafitzgeraldsingstherodgersandhartsongbook,swing,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,multiple medium-tempo songs,Scott Yanow describes swinging medium-tempo numbers
+ella-ellafitzgeraldsingstherodgersandhartsongbook,bigband,jazz_times_granz,https://www.jazztimes.com/features/ella-fitzgerald-norman-granz-she-was-his-star/,"some tracks, prominent",Norman Granz retrospective explicitly identifies big-band settings
+ella-ellafitzgeraldsingstherodgersandhartsongbook,americanpopularsong,allmusic_rodgers,https://www.allmusic.com/album/sings-the-rodgers-and-hart-songbook-mw0000691511,whole album repertoire,AllMusic American Popular Song style; new token
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,vocaljazz,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole album,AllMusic Vocal Jazz named
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,jazz,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole album,AllMusic Jazz genre
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,swing,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole album,AllMusic Swing; Duke band and rhythmic standards
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,bigband,jazz_times_duke,https://www.jazztimes.com/features/special-feature/ellington-unprepared-meeting-the-first-lady-of-song-and-the-chairman-of-the-board/,substantial portion with orchestra,Duke Ellington and his orchestra perform on prominent part; not the entire album
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,standards,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole album,AllMusic Standards style; Ellington songbook repertoire
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,traditionalpop,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole album,AllMusic Traditional Pop listed
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,bop,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,low-weight named style,AllMusic Bop is an explicit style; not all tracks bebop
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,blues,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,some tracks and genre field,AllMusic lists Blues in album genre; several Ellington songs blues-based
+ella-ellafitzgeraldsingsthedukeellingtonsongbook,americanpopularsong,allmusic_duke,https://www.allmusic.com/album/song-book-mw0000602272,whole repertoire,"AllMusic American Popular Song style, new token"
+ella-ellaandlouisagain,vocaljazz,allmusic_ella_again,https://www.allmusic.com/album/ella-louis-again-mw0000188027,whole album,AllMusic Vocal Jazz style
+ella-ellaandlouisagain,jazz,allmusic_ella_again,https://www.allmusic.com/album/ella-louis-again-mw0000188027,whole album,AllMusic Jazz genre
+ella-ellaandlouisagain,standards,allmusic_ella_again,https://www.allmusic.com/album/ella-louis-again-mw0000188027,whole album,19 American Songbook standards
+ella-ellaandlouisagain,traditionalpop,allmusic_ella_again,https://www.allmusic.com/album/ella-louis-again-mw0000188027,whole album,AllMusic Traditional Pop style
+ella-ellaandlouisagain,swing,apple_ella_again,https://music.apple.com/us/album/ella-and-louis-again/1442955474,numerous swinging duets,"Apple highlights jazz scat, swinging sections and Oscar Peterson trio"
+ella-ellaandlouisagain,americanpopularsong,allmusic_ella_again,https://www.allmusic.com/album/ella-louis-again-mw0000188027,whole album repertoire,AllMusic American Popular Song style; new token
