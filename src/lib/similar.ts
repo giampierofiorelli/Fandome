@@ -166,11 +166,11 @@ function backoff(d: Descriptor, p: Profile): Profile {
 }
 
 // How much an album stands for its artist across a long career (owner, Oct 2026: the important albums should
-// count more). The career weight from the reception file (importance 0-5) when known: 0.5 for a minor record up
-// to 1.75 for a career-defining one; else 1.5 for a landmark and 1 for the others. Compilations and live albums
+// count more). The career weight from the reception file (importance 0-5) when known: 0.25 for a minor record up
+// to 2 for a career-defining one (eight times as much); else 1.6 for a landmark and 1 for the others. Compilations and live albums
 // stand for an artist less than the records they made as such.
 export const careerWeight = (d: { importance?: number; landmark?: boolean; type?: string }) =>
-  (d.importance !== undefined ? 0.5 + 0.25 * d.importance : d.landmark ? 1.5 : 1) * (['compilation', 'live'].includes(d.type ?? '') ? 0.7 : 1)
+  (d.importance !== undefined ? 0.25 + 0.35 * d.importance : d.landmark ? 1.6 : 1) * (['compilation', 'live'].includes(d.type ?? '') ? 0.7 : 1)
 
 // Artist profile: albums averaged by career weight, so the records that defined the artist and the traits
 // that come back across the catalogue weigh more than a minor album or a one-off.
@@ -808,9 +808,9 @@ export function similarArtists(
     const c = compareProfiles(me, them)
     const theirAlbums = profilesOf(albumIdsOf(other))
     let best: { a: Profile; b: Profile; c: Comparison } | null = null
-    // The concrete pair weighs the two albums' place in their careers (importance 0-5, when known: ±15%), so the
+    // The concrete pair weighs the two albums' place in their careers (importance 0-5, when known: ±30%), so the
     // match and its reason come from the records that define the two artists, not a minor album of a long career.
-    const stand = (p: Profile) => (p.importance === undefined ? 1 : 0.85 + 0.06 * p.importance)
+    const stand = (p: Profile) => (p.importance === undefined ? 1 : 0.7 + 0.12 * p.importance)
     let bestScore = 0
     for (const a of myAlbums) for (const b of theirAlbums) {
       const pc = compareProfiles(a, b)
