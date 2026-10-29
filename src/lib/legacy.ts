@@ -7,6 +7,7 @@ import { albums } from '../data/seed'
 import { sceneOf } from '../data/scenes'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
+import { albumProfile, compareProfiles } from './similar'
 import { parseCsv } from './csv'
 
 // Legacy from sources: docs/descriptors/legacy/<artist-id>.csv (album_id,legacy,sources), 0-5: how much the album
@@ -29,6 +30,12 @@ export interface Spread {
 }
 export interface Trace {
   field: string[] // the area compared (the artist's base genres: Pop, Dance)
+  // A pioneer, not a trend of its time (owner, Oct 2026: the data can show what the press missed): the album had its
+  // spreading traits before most albums of its area did, and the later albums that took them up sound more like it
+  // than like the other albums of its time that had them too.
+  pioneer: boolean
+  first: number // share of the area's albums with the album's spreading traits in the 3 years around it that came no earlier
+  closer: number // how much more the later adopters resemble this album than its contemporaries with the same traits
   spread: Spread[] // the album's new traits that spread, most first
   lift: number // how far the new sound spread: the gains of the traits that spread, added up
 }
@@ -76,5 +83,19 @@ function computeTrace(albumId: string): Trace | null {
     const k = shares.indexOf(Math.max(...shares))
     return { trait: label(t), before: count(before, t), after: shares[k], when: windows[k].from }
   }).filter((x) => x.after - x.before >= 0.1).sort((x, y) => y.after - y.before - (x.after - x.before))
-  return { field: [...field].map((g) => genreLabel(g)), spread, lift: spread.reduce((n, x) => n + x.after - x.before, 0) }
+  const lift = spread.reduce((n, x) => n + x.after - x.before, 0)
+  // Pioneer test, on the traits that spread.
+  const keys = fresh.filter((t) => spread.some((x) => x.trait === label(t)))
+  const has = (x: Descriptor) => keys.some((t) => traitsOf(x).has(t))
+  const around = inYears(d.year - 1, d.year + 1).filter(has)
+  const first = around.length ? around.filter((x) => x.year! >= d.year!).length / around.length : 1
+  const peersThen = around.filter((x) => x.year === d.year)
+  const adopters = inYears(d.year + 1, d.year + 10).filter(has)
+  const sim = (x: Descriptor, y: Descriptor) => compareProfiles(albumProfile(x), albumProfile(y)).base
+  const mean = (xs: number[]) => (xs.length ? xs.reduce((n, v) => n + v, 0) / xs.length : 0)
+  const toMe = mean(adopters.map((x) => sim(x, d)))
+  const toThem = peersThen.length ? mean(adopters.map((x) => mean(peersThen.map((y) => sim(x, y))))) : toMe
+  const closer = toMe - toThem
+  const pioneer = keys.length > 0 && lift >= 0.3 && first >= 0.8 && closer >= 0.05 && adopters.length >= MIN_FIELD
+  return { field: [...field].map((g) => genreLabel(g)), spread, lift, pioneer, first, closer }
 }
