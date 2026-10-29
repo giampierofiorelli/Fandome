@@ -1,0 +1,7 @@
+album_id,title,year,type,catalog_ts,seed_ts,existing_descriptors,phase,action,notes
+biggie-readytodie,Ready to Die,1994,studio,present,not present,absent,01,DESCRIBE EXISTING CATALOGUE ALBUM,Exact artist id biggie; original 1994 full studio LP
+biggie-lifeafterdeath,Life After Death,1997,studio,present,not present,absent,01,DESCRIBE EXISTING CATALOGUE ALBUM,Exact artist id biggie; double album released after artist death but complete in his lifetime
+biggie-thekingi,The King & I,2017,studio,absent,not present,absent,01,ADD CATALOGUE ALBUM + CO_BILLED entry,"Faith Evans & The Notorious B.I.G. officially co-billed 2017 studio-assembled duets. Old Biggie vocals, NOT new co-recording; proposed biggie id"
+biggie-bornagain,Born Again,1999,compilation,absent,not present,absent,excluded,SKIP,"Posthumously assembled demos/outtakes and recycled verses; editorial compilation, not a new lifetime studio recording"
+biggie-duetsthefinalchapter,Duets: The Final Chapter,2005,remix,absent,not present,absent,excluded,SKIP,Posthumous archive-vocal reworkings / remix project; not a defining original studio album
+juniormafia-conspiracy,Conspiracy,1995,studio,not checked under Junior M.A.F.I.A.,not checked under Junior M.A.F.I.A.,not checked,outside artist,DO NOT IMPORT FOR BIGGIE,1995 LP billed to Junior M.A.F.I.A.; B.I.G. is involved but not primary co-billed artist

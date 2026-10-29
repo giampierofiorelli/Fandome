@@ -1,0 +1,23 @@
+album_id,genre,source,url,scope,evidence
+biggie-readytodie,hiphop,mb_ready_rg,https://musicbrainz.org/release-group/5afcfeac-118a-35e6-af0d-35ec9003354d,whole album,MusicBrainz hip-hop tag and AllMusic rap categorization
+biggie-readytodie,eastcoasthiphop,allmusic_ready,https://www.allmusic.com/album/ready-to-die-r203800/review,whole album,AllMusic East Coast Rap style; exact East Coast hip-hop movement context
+biggie-readytodie,gangstarap,allmusic_ready,https://www.allmusic.com/album/ready-to-die-r203800/review,whole album,AllMusic Gangsta Rap style; new exact gangstarap token
+biggie-readytodie,hardcorehiphop,mb_ready_rg,https://musicbrainz.org/release-group/5afcfeac-118a-35e6-af0d-35ec9003354d,whole album,MusicBrainz genre explicitly hardcore hip hop
+biggie-readytodie,boombap,mb_ready_rg,https://musicbrainz.org/release-group/5afcfeac-118a-35e6-af0d-35ec9003354d,significant tracks / fundamental style,MusicBrainz boom bap genre tag; early rugged beat foundation
+biggie-readytodie,gfunk,aoty_ready,https://www.albumoftheyear.org/album/4247-the-notorious-big-ready-to-die.php,some tracks / crossover texture,AlbumOfTheYear G-Funk subgenre and Pitchfork West Coast synth remarks on Big Poppa
+biggie-lifeafterdeath,hiphop,songsuey_life,https://songsuey.com/artist/notorious-big/life-after-death/,whole album,Hip-hop classification for entire double album
+biggie-lifeafterdeath,eastcoasthiphop,allmusic_life,https://www.allmusic.com/album/life-after-death-mw0000176659,whole album,AllMusic East Coast Rap style
+biggie-lifeafterdeath,gangstarap,allmusic_life,https://www.allmusic.com/album/life-after-death-mw0000176659,whole album,AllMusic Gangsta Rap style and continued street themes
+biggie-lifeafterdeath,poprap,allmusic_life,https://www.allmusic.com/album/life-after-death-mw0000176659,multiple prominent singles,"AllMusic Pop-Rap style; Hypnotize, Mo Money Mo Problems and Sky’s the Limit"
+biggie-lifeafterdeath,hardcorehiphop,songsuey_life,https://songsuey.com/artist/notorious-big/life-after-death/,multiple tracks,SongSuey album-level Hardcore Hip Hop and 1997 reviews on hardcore moments
+biggie-lifeafterdeath,mafiosorap,hiphophistory_life,https://www.hiphopmusichistory.com/platinum-era/,some tracks / lyrical mode,Hip Hop Music History explicitly says mafioso; indicates narrative character of some songs
+biggie-lifeafterdeath,boombap,hiphophistory_life,https://www.hiphopmusichistory.com/platinum-era/,some tracks,Specific boom-bap production on old-school hard tracks rather than glossy singles
+biggie-lifeafterdeath,rnb,rapreviews_life,https://www.rapreviews.com/1997/03/the-notorious-b-i-g-life-after-death/,some tracks / crossover texture,"RapReviews and AllMusic describe R&B duet / crossover tracks, subordinate as a genre"
+biggie-thekingi,rnb,rhino_king_press,https://media.rhino.com/press-release/faith-evans-and-notorious-big-king-i-available-may-19,whole album,Faith Evans brings a substantial sung R&B role; label markets hip-hop/R&B duets
+biggie-thekingi,contemporaryrnb,allmusic_king,https://www.allmusic.com/album/the-king-i-mw0003019055/credits,whole album,AllMusic explicitly Contemporary R&B
+biggie-thekingi,hiphop,rhino_king_product,https://www.rhino.com/product/the-king-i,whole album,Official label places release within hip-hop and R&B repertoire
+biggie-thekingi,eastcoasthiphop,allmusic_king,https://www.allmusic.com/album/the-king-i-mw0003019055/credits,whole album / rap segments,AllMusic explicitly East Coast Rap for Biggie archive sections
+biggie-thekingi,gangstarap,allmusic_king,https://www.allmusic.com/album/the-king-i-mw0003019055/credits,rap segments,AllMusic Gangsta Rap as preserved within reused verses
+biggie-thekingi,hardcorehiphop,allmusic_king,https://www.allmusic.com/album/the-king-i-mw0003019055/credits,rap segments,AllMusic Hardcore Rap as secondary in archive verse elements
+biggie-thekingi,boombap,pitchfork_king,https://pitchfork.com/reviews/albums/23279-the-king-i/,some tracks,Pitchfork specifically calls some Salaam Remi work boom-bap throwback
+biggie-thekingi,newjackswing,pitchfork_king,https://pitchfork.com/reviews/albums/23279-the-king-i/,some tracks,Pitchfork calls new-jack-swing style on some Salaam Remi productions

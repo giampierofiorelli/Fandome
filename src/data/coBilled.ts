@@ -5,6 +5,7 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'matthewwilder-mulananoriginalwaltdisneyrecordssoundtrack': { credit: 'Matthew Wilder & David Zippel / Jerry Goldsmith' },
   'kcandthesunshineband-thesoundofsunshine': { credit: 'The Sunshine Band' },
   'publicenemy-rebirthofanation': { credit: 'Public Enemy featuring Paris' },
+  'biggie-thekingi': { credit: 'Faith Evans & The Notorious B.I.G.' },
   'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
   'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
   'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },

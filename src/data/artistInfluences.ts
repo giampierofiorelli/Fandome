@@ -326,6 +326,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Last Poets', 'Gil Scott-Heron', "The O'Jays", 'The Clash', 'James Brown', 'Bob Marley'],
     source: 'Chuck D: The Progressive (The Last Poets, Gil Scott-Heron, the O’Jays and the Philadelphia International sound, The Clash), Entertainment Weekly 2023 (James Brown, Bob Marley, The Clash)',
   },
+  biggie: {
+    names: ['Big Daddy Kane', 'Ice Cube', 'Charlie Parker', 'Cannonball Adderley', 'Ella Fitzgerald'],
+    source: 'Easy Mo Bee, Rapchive (Biggie told him he loved and studied Big Daddy Kane; Ice Cube); Suif “C Gutta” Jackson in Biggie: I Got a Story to Tell, 2021 (Kane his favourite rapper); Donald Harrison, The Guardian 2010 (taught him Charlie Parker, Cannonball Adderley, Ella Fitzgerald). Biggie himself denied rap influences (Los Angeles Times, 1995)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
