@@ -1,0 +1,5 @@
+﻿album_id,artist,title,year,type,in_artist_catalog,in_descriptors,action,note
+nada-nada1976,Nada,Nada,1976,studio,no,no,add artist if phase01 not yet imported; add original studio album,"RCA 1976 first issue, 1977 commercial reissue NOT separate"
+nada-nada1979,Nada,Nada,1979,studio,no,no,add artist if phase01 not yet imported; add original studio album,Distinct 1979 Polydor LP; not the 1969/1976 eponymous albums
+nada-smalto,Nada,Smalto,1983,studio,no,no,add artist if phase01 not yet imported; add original studio album,Original eight-track 1983 studio LP
+nada-noinoncresceremomai,Nada,Noi non cresceremo mai,1984,studio,no,no,add artist if phase01 not yet imported; add original studio album,Original eight-track 1984 studio LP; not 1985

@@ -1,0 +1,20 @@
+﻿album_id,genre,source,scope,evidence
+nada-nada1976,canzonedautore,Nada (1976) — historical record page,whole album / explicit genre,"The original LP is classified as musica d’autore; Conte, Ciampi, Zenobi and Tenco repertory."
+nada-nada1976,italianpop,Estatica — Nada discography,whole album / contextual editorial,"Italian-language album recorded by a mainstream singer, but using songwriter repertoire; contextual not an explicit genre tag."
+nada-nada1976,musicaleggera,"Nada — biography, Festival delle Musiche",whole album / contextual editorial,Crossover from 1960s musica leggera to seventies songwriters; contextual secondary classification.
+nada-nada1976,ballad,Nada (1976) — historical record page,several songs / editorial song-form inference,"L’amore è tutto qui and Lontano lontano are slow romantic songs; taxonomy based on documented song repertoire, not a critic quotation."
+nada-nada1979,disco,Nada (1979) — original album history,whole album / explicitly described,"1979 LP described as disco, rock and funk, plus the artist confirms disco direction in 2019 interview."
+nada-nada1979,funk,Nada 2019 direct interview — VICE,whole album / explicitly described,Nada specifically describes the 1979 phase as disco and funky.
+nada-nada1979,pop,Nada (1979) — original album history,whole album / explicitly described,"Critic/discography describes a return to modern pop, with 1979 singles."
+nada-nada1979,rock,Nada (1979) — original album history,whole album / explicitly listed genre,Source explicitly lists rock for the record; not inferred simply from electric guitars.
+nada-nada1979,countryrock,Nada (1979) — original album history,"one track / explicitly described, tail genre","Country-rock guitar texture is specifically identified for Anche se fosse, placed last."
+nada-smalto,poprock,Rockol — 33 giri Italian Masters profile,whole album / pop-and-rock blend,Nada and collaborators join rock and pop in 1983 studio recordings; source emphasizes these two domains.
+nada-smalto,italianpop,Sky Arte — Smalto album special,whole album / historical context,Italian-language mainstream hit with band-rock arrangements.
+nada-smalto,newwave,Nada 2019 direct interview — VICE,1983 period / artist firsthand context,Nada associates the Amore disperato/Smalto period with punk and new wave; not a claim every song is new wave.
+nada-smalto,pop,Smalto (1983) — source credits and discography,whole album / catalogue and overview,Original 1983 LP is categorized as pop; production by Gerry Manzoli.
+nada-smalto,ballad,Orrore a 33 giri — Smalto album review,some tracks / editorial song-form inference,Per aspettare te and the romantic songs are ballad-like in pace/emotional tone; not a published taxonomic label.
+nada-noinoncresceremomai,electronic,Nada 2019 direct interview — VICE,whole album / explicit firsthand,"Nada herself says entire album was electronic, using rented machines."
+nada-noinoncresceremomai,synthpop,Noi non cresceremo mai — 1984 album and personnel,whole album / instrumentation-based editorial,"Keyboards, electronic arrangements and programming documented; synth-pop is a precise editorial classification, not a quoted external genre."
+nada-noinoncresceremomai,italianpop,Noi non cresceremo mai — 1984 album and personnel,whole album / sung language and pop framework,Eight new Italian-language compositions on original EMI LP; singing and song forms remain pop.
+nada-noinoncresceremomai,newwave,Digicult — Elettronica sanremese?,album period / electronic-wave context,Article places Nada’s electronic album in early-80s new-wave/electronic-pop crossover; related editorial classification.
+nada-noinoncresceremomai,pop,Noi non cresceremo mai — 1984 album and personnel,whole album / mainstream melodic context,Italian musica leggera framing alongside electronic sound design; general pop remains relevant.

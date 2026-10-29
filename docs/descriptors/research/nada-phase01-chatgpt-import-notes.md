@@ -47,3 +47,10 @@ Import only `nada_phase01_rows_ONLY.csv` into descriptor store. Validate genre s
 - New artist `nada` (catalogue, scene IT it 1960 pop,songwriter) with the four 1969–1975 studio albums.
 - sounds_like emptied on 1973: Piero Ciampi is the album's producer and songwriter, not a comparison.
 - Artist influences from her own words: Led Zeppelin, Pink Floyd, King Crimson, Janis Joplin, The Velvet Underground (from the seventies on), Piero Ciampi.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it, it.wikipedia, OndaRock (Piero Ciampi monografia), Tomtomrock, Rockit, Rolling Stone Italia, VICE Italia (2014, 2019), Kalporz, italianprog.com.
+- Credits confirmed from Discogs (5636022, 3857367, 3151765, 3155872): Franco Migliacci (1969, 1970), Piero Ciampi and Gianni Marchetti (1973; Roberto Gianolio's "realizzazione" left out), Henryk Topel Cabanes (1975). The 1975 sleeve bills Nada alone: no co-billing with Reale Accademia di Musica. 1975 is the right year.
+- 1973: sounds_like Pink Floyd (VICE 2019: "Quel disco ha degli aspetti che ricordano anche la psichedelia. Per essere precisi, i Pink Floyd"); psychedelic pop added (VICE 2014: "arrangiamenti orchestrali psichedelici di Gianni Marchetti"). Nada's own Pink Floyd statement (The Dark Side of the Moon behind Esisto anch'io) is about one track: not in influenced_by.
+- 1975: R&B added at the tail (Kalporz: "passaggi r'n'b"; "non è un disco prog").

@@ -122,7 +122,7 @@ const ROWS: Row[] = [
   ['suede', 'Suede', '#7a5a8f', 'Glamour, guitars and Brett’s hips', [['Suede', 1993], ['Dog Man Star', 1994], ['Coming Up', 1996], ['Head Music', 1999], ['Bloodsports', 2013], ['Autofiction', 2022], ['Antidepressants', 2025]]],
   ['lenemarlin', 'Lene Marlin', '#8fa6c2', 'Quiet songs from Tromsø', [['Playing My Game', 1999], ['Another Day', 2003], ['Lost in a Moment', 2005], ['Twist the Truth', 2009]]],
   ['gruppoitaliano', 'Gruppo Italiano', '#e8b04a', 'Tropicana and the Milan summer', [['Maccherock', 1982], ['Tapioca manioca', 1984], ['Surf in Italy', 1985]]],
-  ['nada', 'Nada', '#c4485a', 'From Gabbro to Piero Ciampi and beyond', [['Nada', 1969], ["Io l'ho fatto per amore", 1970], ["Ho scoperto che esisto anch'io", 1973], ['1930: Il domatore delle scimmie', 1975]]],
+  ['nada', 'Nada', '#c4485a', 'From Gabbro to Piero Ciampi and beyond', [['Nada', 1969], ["Io l'ho fatto per amore", 1970], ["Ho scoperto che esisto anch'io", 1973], ['1930: Il domatore delle scimmie', 1975], ['Nada', 1976], ['Nada', 1979], ['Smalto', 1983], ['Noi non cresceremo mai', 1984], ['Baci rossi', 1986], ["L'anime nere", 1992], ['Dove sei sei', 1999], ["L'amore è fortissimo e il corpo no", 2001]]],
   ['aha', 'a-ha', '#4f8fc9', 'Take on me, take on this room', [['Hunting High and Low', 1985], ['Scoundrel Days', 1986], ['Stay on These Roads', 1988], ['East of the Sun, West of the Moon', 1990], ['Minor Earth Major Sky', 2000], ['True North', 2022]]],
   ['agnesobel', 'Agnes Obel', '#7f9aa8', 'Piano, strings and quiet wonder', [['Philharmonics', 2010], ['Aventine', 2013], ['Citizen of Glass', 2016], ['Myopia', 2020]]],
   ['air', 'Air', '#8fb5d9', 'French electronic daydreams', [['Premiers Symptômes', 1997], ['Moon Safari', 1998], ['The Virgin Suicides', 2000], ['10 000 Hz Legend', 2001], ['Talkie Walkie', 2004], ['Pocket Symphony', 2007]]],
@@ -688,4 +688,13 @@ export const catalogArtists: Artist[] = ROWS.map(([id, name, color, tagline, alb
   ],
 }))
 
-export const catalogAlbums: Album[] = ROWS.flatMap(([id, , , , albums]) => albums.map(([title, year]) => ({ id: `${id}-${slug(title) || year}`, artistId: id, title, year })))
+// Two albums of one artist with the same title (Nada's three albums called Nada): the later ones add the year.
+export const catalogAlbums: Album[] = ROWS.flatMap(([id, , , , albums]) => {
+  const used = new Set<string>()
+  return albums.map(([title, year]) => {
+    let key = slug(title) || String(year)
+    if (used.has(key)) key = `${key}${year}`
+    used.add(key)
+    return { id: `${id}-${key}`, artistId: id, title, year }
+  })
+})
