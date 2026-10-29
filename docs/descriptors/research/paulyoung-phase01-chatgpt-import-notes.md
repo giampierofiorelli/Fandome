@@ -49,3 +49,9 @@ Proposed chronologically from the artist's official album history: *The Crossing
 - Other Voices: Steve Winwood removed from sounds_like (he plays on the album: a guest is not a comparison).
 - Catalogue row extended with Other Voices (1990) and the later studio albums through Good Thing (2016); Acoustic Paul Young (1994) left out pending its format check.
 - Artist influences added from Paul Young's own interview (Free filed for Free / Paul Rodgers).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/paulyoung.csv`.
+- sounds_like (ChatGPT's were unsourced hypotheses) checked album by album: No Parlez → Jeffrey Osborne (Christgau: "aligns him neatly with urban contemporaries in the Jeffrey Osborne mold"); The Style Council, Robert Palmer, Spandau Ballet removed (not found). The Secret of Association → Boz Scaggs (Christgau 1985: "Young is Boz Scaggs for the '80s"); Hall & Oates removed (covered song), Simply Red removed (only an artist-level remark in AllMusic's bio). Between Two Fires and Other Voices: no critic comparison found, left empty.
+- Personnel confirmed from Wikipedia (Between Two Fires: Palladino bass, Bolton sitar, Kewley Hammond, Palmer drum programming; Other Voices: Anne Dudley strings, Guy Barker flugelhorn, guests Stevie Wonder harmonica, Winwood Hammond): fretless bass added to Between Two Fires, confidence raised to high on both.
