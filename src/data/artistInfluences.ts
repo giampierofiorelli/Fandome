@@ -378,6 +378,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Aretha Franklin', 'Whitney Houston', 'George Michael', 'Sade', 'Phil Collins', 'Lucio Battisti', 'Claudio Baglioni', 'Ornella Vanoni', 'Mina', 'Jethro Tull'],
     source: 'Laura Pausini, Folha de S.Paulo 1997 (Aretha Franklin, Whitney Houston among her influences); Messenger of Saint Anthony 2009 (learned from Whitney Houston, George Michael, Sade, Phil Collins, Battisti, Baglioni, Vanoni, Mina); Grammy.com 2022 (Jethro Tull made her take up the flute and shaped her voice)',
   },
+  nada: {
+    names: ['Led Zeppelin', 'Pink Floyd', 'King Crimson', 'Janis Joplin', 'The Velvet Underground', 'Piero Ciampi'],
+    source: 'Nada, Rolling Stone Italia 2022 (the rock she started listening to in the seventies: Led Zeppelin, Pink Floyd, King Crimson, Janis Joplin, Velvet Underground); Il Fatto Quotidiano 2025 and a 2014 interview (Piero Ciampi helped her find her own language as an author)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

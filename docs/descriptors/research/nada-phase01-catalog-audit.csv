@@ -1,0 +1,5 @@
+﻿album_id,artist_id,title,year,type,artist_in_catalog,album_in_catalog,action,catalog_reference,notes
+nada-nada,nada,Nada,1969,studio,no,no,add artist and original studio album,branch descriptors: src/data/catalog.ts and src/data/seed.ts checked 2026-10-29,1969 first eponymous release; later 1976/1979 albums called Nada need year suffix
+nada-iolhofattoperamore,nada,Io l'ho fatto per amore,1970,studio,no,no,add artist and original studio album,branch descriptors: src/data/catalog.ts and src/data/seed.ts checked 2026-10-29,"Original LP, not later expanded reissues"
+nada-hoscopertocheesistoanchio,nada,Ho scoperto che esisto anch'io,1973,studio,no,no,add artist and original studio album,branch descriptors: src/data/catalog.ts and src/data/seed.ts checked 2026-10-29,"Original LP, not later expanded reissues"
+nada-1930ildomatoredellescimmie,nada,1930: Il domatore delle scimmie,1975,studio,no,no,add artist and original studio album,branch descriptors: src/data/catalog.ts and src/data/seed.ts checked 2026-10-29,"May 1975 original RCA TPL1-1157, not 1974 (secondary biographies disagree)"
