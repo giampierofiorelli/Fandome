@@ -48,3 +48,11 @@ No guest artist of any album is co-billed at album level; do not add album-level
 - All four studio albums added; Here We Are (2013 compilation) excluded.
 - sounds_like kept for now: each rests on a named critic review (Pop Rescue 2015, musicOMH 2003, Lollipop 2005, South China Morning Post 2005); quotes to confirm in the reception pass, Twist the Truth's in particular.
 - No artist influences: none stated in her own words (Magnet was what she was listening to in 2003; Joni Mitchell a meeting, not an influence).
+
+## Claude enrichment
+
+- Reception from en/no.wikipedia, NRK, VG, Dagbladet, Nettavisen, Bergens Tidende, musicOMH, Counterculture, Sputnikmusic, Pop Rescue.
+- sounds_like, album-level critic comparisons only: Playing My Game Alanis Morissette|Natalie Imbruglia|Dido (Pop Rescue: "amongst the ranks of Alanis, Natalie Imbruglia, and perhaps even Dido"; The Corrs dropped, about the opener only); Another Day Dido|Norah Jones (Lollipop: "as heartfelt and noteworthy as anything by Dido or Norah Jones"; The Cranberries dropped, one track); Lost in a Moment Dido (musicOMH: "a Dido LP with different chords, louder guitars"; Suzanne Vega and Imbruglia dropped, SCMP quote not readable); Twist the Truth emptied (The Corrs line was about the 1999 single; Vega unsourced).
+- Producers confirmed (Qobuz, Discogs 420199, 2294902): Renate Engevold removed from Twist the Truth (producer of one track only).
+- Twist the Truth: added americana (Dagbladet: "en vellykket, subtil americanadreining"); landmark 0.
+- Legacy: no concerts or releases since 2009 (Songkick; en.wikipedia), only TV mentoring on The Voice Norway.
