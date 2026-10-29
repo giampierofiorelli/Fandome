@@ -30,3 +30,8 @@ The 1969 debut is referenced as 1970 in some modern accounts, but official artis
 ## Claude import note (Oct 2026)
 
 - The band's own production credit dropped (Music Is the Message, Good Times, Wild and Peaceful). Artist added with the studio discography (23 albums, holiday and remix albums left out); scene US en 1960 funk,soul,jazz; still touring.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/koolandthegang.csv`.
+- sounds_like checked: 1969 → James Brown (NJ Arts, Jay Lustig: the title track "very easily might mistake it for a James Brown track"); Blood, Sweat & Tears and The J.B.s removed everywhere (not found). Music Is the Message: The Meters and J.B.s removed (only band-level or contrast mentions); jazzfunk added (Discogs style) and confidence raised to high (Discogs r497305 confirms Ricky West's ARP and Assunta Dell'Aquila's harp). Good Times → Curtis Mayfield (AllMusic, John Bush: Father, Father "social-message soul along the lines of Curtis Mayfield"); genres soul, rnb, jazzfunk added (Bush; Qobuz; Jazz Music Archives). Wild and Peaceful: no critic comparison for this album (James Brown stays in influenced_by from Robert Bell).
