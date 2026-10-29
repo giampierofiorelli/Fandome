@@ -1,0 +1,5 @@
+﻿album_id,artist_id,album_title,year,present_in_catalog,present_in_descriptors,action,caveat
+weathergirls-success,weathergirls,Success,1983,no,no,add artist and studio album,1983-88 original lineup; 1993 reformed lineup
+weathergirls-biggirlsdontcry,weathergirls,Big Girls Don't Cry,1985,no,no,add artist and studio album,1983-88 original lineup; 1993 reformed lineup
+weathergirls-theweathergirls,weathergirls,The Weather Girls,1988,no,no,add artist and studio album,1983-88 original lineup; 1993 reformed lineup
+weathergirls-doubletonsoffun,weathergirls,Double Tons of Fun,1993,no,no,add artist and studio album,Izora Armstead + Dynelle Rhodes; do not merge with the early Two Tons o Fun catalogue

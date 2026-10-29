@@ -12,6 +12,8 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'ella-porgyandbess': { with: ['armstrong'], credit: 'Ella Fitzgerald & Louis Armstrong' },
   'zucchero-zuccherotherandyjacksonband': { credit: 'Zucchero & The Randy Jackson Band' },
   'pausini-lauraxmas': { credit: 'Laura Pausini with the Patrick Williams Orchestra' },
+  'weathergirls-twotonsofun': { credit: 'Two Tons o’ Fun' },
+  'weathergirls-backatcha': { credit: 'Two Tons o’ Fun' },
   'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
   'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
   'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },

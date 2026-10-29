@@ -1,0 +1,20 @@
+﻿album_id,genre,weight,source_ids,rationale,status
+weathergirls-success,disco,central,S09|S10,disco named explicitly by genre database and contemporary critic,supported
+weathergirls-success,hinrg,central,S09,Hi-NRG named by album genre listing,supported
+weathergirls-success,popsoul,secondary,S09,Pop Soul listed for whole album,supported
+weathergirls-success,gospel,secondary,S08|S10,"gospel vocal roots documented; musical style evidence, not pure gospel LP",supported stylistic component
+weathergirls-success,soul,secondary,S08|S07,"soul and gospel-inflected vocal delivery, R&B classification",supported
+weathergirls-success,pop,tail,S07|S09,crossover pop element; subordinate to dance and soul,supported
+weathergirls-biggirlsdontcry,popsoul,central,S12|S14,pop-soul explicitly in published review,supported
+weathergirls-biggirlsdontcry,soul,central,S12|S14,soul arrangements and repertoire,supported
+weathergirls-biggirlsdontcry,dance,secondary,S12|S13,dance material named by reviews/summary,supported
+weathergirls-biggirlsdontcry,pop,tail,S12|S13,mainstream pop structures and covers,supported
+weathergirls-theweathergirls,synthpop,central,S17|S19,synth-pop explicitly named on record metadata,supported
+weathergirls-theweathergirls,disco,central,S17|S19,disco explicitly named on LP metadata,supported
+weathergirls-theweathergirls,electronic,secondary,S17|S19,electronic is release-level genre,supported
+weathergirls-theweathergirls,soul,secondary,S28,original group described as a gospel-soul and dance vocal duo; stylistic continuity,supported with caution
+weathergirls-doubletonsoffun,eurohouse,central,S24,Euro House explicitly listed for physical 1993 disc,supported
+weathergirls-doubletonsoffun,discohouse,secondary,S24,Disco House explicitly listed for physical 1993 disc,supported
+weathergirls-doubletonsoffun,disco,secondary,S23|S24,Disco styling and original record listing,supported
+weathergirls-doubletonsoffun,pop,tail,S23,Physical release marked funk/soul and pop,supported
+weathergirls-doubletonsoffun,soul,tail,S23,Physical release marked funk/soul and pop,supported
