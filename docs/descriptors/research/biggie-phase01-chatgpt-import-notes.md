@@ -72,3 +72,8 @@ Import through Fandome's normal catalog and co-billing workflow, update genre to
 - The King & I added to the catalogue, co-billed "Faith Evans & The Notorious B.I.G." (coBilled.ts); Faith Evans removed from its sounds_like (the co-billed artist is not a comparison).
 - Life After Death: Biggie's own co-production credit dropped from producers.
 - Artist influences added from Easy Mo Bee, C Gutta and Donald Harrison, with Biggie's 1995 denial recorded in the source.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/biggie.csv`.
+- sounds_like emptied on all three: Nas (Illmatic, It Was Written), Wu-Tang Clan, 2Pac (All Eyez on Me) and Mary J. Blige are era/scene peers in the sources, never critics' comparisons of these albums' sound (Wu-Tang also excluded on Life After Death, RZA produced a track). Credits of The King & I confirmed (Rhino; producers as in the row); instruments undocumented, confidence stays medium.
