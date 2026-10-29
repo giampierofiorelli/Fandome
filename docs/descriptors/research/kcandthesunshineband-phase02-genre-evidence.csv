@@ -1,0 +1,21 @@
+﻿album_id,genre,source,source_url,scope,what_it_supports
+kcandthesunshineband-whodoyalove,discofunk,AllMusic Alex Henderson,https://www.allmusic.com/album/who-do-ya-love-mw0000355305,whole album / dominant,Review explicitly calls LP disco-funk
+kcandthesunshineband-whodoyalove,discosoul,AllMusic Alex Henderson,https://www.allmusic.com/album/who-do-ya-love-mw0000355305,whole album / recurrent,Review explicitly calls LP disco-soul
+kcandthesunshineband-whodoyalove,disco,AllMusic album taxonomy,https://www.allmusic.com/album/who-do-ya-love-mw0000355305,whole album / retrospective,Album labelled Disco
+kcandthesunshineband-whodoyalove,dancepop,AllMusic album taxonomy,https://www.allmusic.com/album/who-do-ya-love-mw0000355305,whole album / retrospective,Dance-Pop album style
+kcandthesunshineband-whodoyalove,rnb,AllMusic album taxonomy,https://www.allmusic.com/album/who-do-ya-love-mw0000355305,whole album / umbrella,R&B genre category
+kcandthesunshineband-doyouwannagoparty,disco,AllMusic album review and taxonomy,https://www.allmusic.com/album/do-you-wanna-go-party--mw0000838986,whole album,Professional album disco style
+kcandthesunshineband-doyouwannagoparty,funk,AllMusic album review,https://www.allmusic.com/album/do-you-wanna-go-party--mw0000838986,whole album / song-led,Critic calls it disco/funk/soul; title track particularly funk-heavy
+kcandthesunshineband-doyouwannagoparty,dancepop,AllMusic taxonomy,https://www.allmusic.com/album/do-you-wanna-go-party--mw0000838986,whole album / retrospective,Dance-Pop style
+kcandthesunshineband-doyouwannagoparty,rnb,AllMusic album taxonomy,https://www.allmusic.com/album/do-you-wanna-go-party--mw0000838986,whole album / umbrella,R&B album genre
+kcandthesunshineband-thepainter,soul,"Geoffrey Himes, Washington Post (1982)",https://www.washingtonpost.com/archive/lifestyle/1982/02/11/up-from-disco/7464ea83-7c0a-4d1a-991b-18408dab4979/,whole album / direction,Review explicitly identifies a return to mainstream soul
+kcandthesunshineband-thepainter,rnb,AllMusic album taxonomy,https://www.allmusic.com/album/the-painter-mw0000840270,whole album,"R&B album genre, corroborated by contemporary soul review"
+kcandthesunshineband-thepainter,disco,AllMusic album taxonomy,https://www.allmusic.com/album/the-painter-mw0000840270,whole album / residual,Disco still listed even though review emphasizes transition away from 4/4 beats
+kcandthesunshineband-thepainter,dancepop,AllMusic album taxonomy,https://www.allmusic.com/album/the-painter-mw0000840270,whole album / retrospective,Dance-Pop style retained
+kcandthesunshineband-thepainter,pop,Original album genre summary,https://en.wikipedia.org/wiki/The_Painter_%28KC_and_the_Sunshine_Band_album%29,whole album,"Pop named as album genre, not inferred from commercial intent"
+kcandthesunshineband-thepainter,funk,MusicBrainz release group,https://musicbrainz.org/release-group/38d904c6-0296-438c-a1b4-164d8cd360c7,whole album / secondary,1981 album tagged funk alongside disco
+kcandthesunshineband-allinanightswork,disco,Original album genre summary,https://en.wikipedia.org/wiki/All_in_a_Night%27s_Work,whole album / core,Album explicitly listed disco
+kcandthesunshineband-allinanightswork,funk,Pop Rescue track-by-track review,https://poprescue.com/2022/06/24/review-all-in-a-nights-work-by-kc-the-sunshine-band-vinyl-1982/,whole album / recurrent,Reviewer identifies recurring funk bass and percussion; original genre summary lists funk
+kcandthesunshineband-allinanightswork,rnb,AllMusic 1982 album taxonomy,https://www.allmusic.com/album/all-in-a-nights-work-mw0002845107,whole album / broad,AllMusic genre R&B
+kcandthesunshineband-allinanightswork,synthpop,Original album genre summary and reviews,https://en.wikipedia.org/wiki/All_in_a_Night%27s_Work,whole album / secondary,"1982 LP explicitly tagged synth-pop, synth-heavy tracks described in retrospective; not claiming pure electronic"
+kcandthesunshineband-allinanightswork,dancepop,Pop Rescue retrospective,https://poprescue.com/2022/06/24/review-all-in-a-nights-work-by-kc-the-sunshine-band-vinyl-1982/,whole album / editorial,Disco-pop/dance-pop tracks and Give It Up; treat as dance-pop editorial classification not exact review keyword
