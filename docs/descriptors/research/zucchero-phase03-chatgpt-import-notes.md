@@ -65,3 +65,12 @@ Please append/merge, add catalogue rows and reviewed genre tokens, then run the 
 - New genre tokens: `louisianablues` (parent blues), `politicalfolk` (parent folk). Political folk is kept, last, because AllMusic names it for both albums (owner's rule: every genre a source names goes in); it weighs little in last place.
 - Producers: Zucchero dropped as self-credit (Chocabeck).
 - sounds_like lists are editorial; checked against critics in the reception pass.
+
+## Claude enrichment
+
+- Reception from it/en.wikipedia (charts, certifications), AllMusic (Fly 3/5, Chocabeck 4/5), Rockol, Rolling Stone Germany, PopMatters, SUONO.
+- Bluesugar: Joe Cocker removed from sounds_like (Muziekweb's "the Joe Cocker of Italy" is about him in general, not this album). influenced_by Robert Johnson|Radiohead from Zucchero's own words (Billboard, Mark Dezzani, Nov 1998: "This album is more British in its feel and includes influences from Robert Johnson to Radiohead").
+- Shake: Joe Cocker and Dr. John removed (no critic comparison). Added AllMusic styles adult contemporary, Italian pop, Latin pop; gospel (Muziekweb: spirituals and gospel songs); sampling (Rockol 2001). Fatboy Slim not added: Zucchero compares his sampling method to Fatboy Slim's (Rockol interview), not an influence named for the album.
+- Fly: sounds_like Procol Harum|Vanilla Fudge|The Mamas & the Papas (Il Messaggero, Marco Molendini 2006: "chitarre alla Mamas and Papas, organi alla Procol Harum o alla Vanilla fudge") and Peter Gabriel (AllMusic, Marisa Brown: the ballads, most of the record, "all sound like something Peter Gabriel would write if he were Italian"). Joe Cocker removed. Added Mellotron and Wurlitzer (en.wikipedia; vinyl credits) and gospel (Muziekweb: Let It Shine "onvervalst gospelnummer"). Procol Harum not added to influenced_by: "Sono cresciuto ascoltando Bach e i Procol Harum" (Il Tempo 2006) is childhood listening, not an influence named for the album.
+- Chocabeck: Francesco De Gregori removed (AllMusic compares one track, Soldati nella mia città) and Joe Cocker removed. Johnny Cash (American VI) not added: it.wikipedia attributes it to his autobiography without a footnote; to verify.
+- Political Folk confirmed on AllMusic's album pages (it is also an AllMusic artist-level style); kept last.
