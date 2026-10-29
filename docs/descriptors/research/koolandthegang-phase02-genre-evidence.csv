@@ -1,0 +1,19 @@
+﻿album_id,genre,source,url,scope,evidence
+koolandthegang-lightofworlds,jazzfunk,Light of Worlds (album),https://en.wikipedia.org/wiki/Light_of_Worlds,whole album,Album infobox names jazz-funk; specialist critics describe prominent jazz harmonies and funk rhythm.
+koolandthegang-lightofworlds,jazzfunk,"Nate Patrin/Harold Heath, The Shfl",https://www.theshfl.com/album/Light-of-Worlds,whole album,Reviews explicitly describe the blend as jazz-funk.
+koolandthegang-lightofworlds,funk,"Nate Patrin/Harold Heath, The Shfl",https://www.theshfl.com/album/Light-of-Worlds,whole album,Both assessments refer to the record as funk with strong bass/guitar groove.
+koolandthegang-lightofworlds,soul,"Qobuz, Light of Worlds",https://www.qobuz.com/ie-en/album/light-of-worlds-kool-the-gang/0060251773024,whole album,Streaming retailer genre category is Soul and editorial text explicitly mentions soul.
+koolandthegang-lightofworlds,rnb,"Apple Music, Light of Worlds",https://music.apple.com/us/album/light-of-worlds/1443798401,whole album,R&B/Soul service designation; lower-weighted than specific jazz-funk and funk.
+koolandthegang-spiritoftheboogie,funk,"AllMusic, Spirit of the Boogie",https://www.allmusic.com/album/r42569/review,whole album,Review and styles explicitly name funk; dominant album character.
+koolandthegang-spiritoftheboogie,soul,"AllMusic, Spirit of the Boogie",https://www.allmusic.com/album/r42569/review,whole album,Soul is named as a category and describes melodic material amid funk workouts.
+koolandthegang-spiritoftheboogie,rnb,"AllMusic, Spirit of the Boogie",https://www.allmusic.com/album/r42569/review,whole album,AllMusic lists overarching R&B category.
+koolandthegang-spiritoftheboogie,jazzfunk,"Album of the Year, Spirit of the Boogie",https://www.albumoftheyear.org/album/63221-kool-the-gang-spirit-of-the-boogie.php,whole album,Album is specifically labelled Jazz-Funk in detail record.
+koolandthegang-spiritoftheboogie,discofunk,"Sean Trane, jazzmusicarchives",https://www.jazzmusicarchives.com/review/spirit-of-the-boogie/234141,"whole album, minority critic label","Reviewer explicitly calls album disco-funk. AllMusic conversely frames it as before full disco transition. Low-weight genre, last."
+koolandthegang-loveunderstanding,funk,"Amy Hanson, AllMusic",https://www.allmusic.com/album/love-understanding-mw0000036946,whole album,AllMusic style identifies Funk and discusses driving band funk in both recording environments.
+koolandthegang-loveunderstanding,soul,"Amy Hanson, AllMusic",https://www.allmusic.com/album/love-understanding-mw0000036946,whole album,AllMusic explicitly lists Soul style.
+koolandthegang-loveunderstanding,rnb,"Amy Hanson, AllMusic",https://www.allmusic.com/album/love-understanding-mw0000036946,whole album,Album is categorised R&B.
+koolandthegang-opensesame,funk,Open Sesame album discography,https://en.wikipedia.org/wiki/Open_Sesame_%28Kool_%26_the_Gang_album%29,whole album,Album-wide genre infobox includes funk; AllMusic likewise identifies funk.
+koolandthegang-opensesame,disco,Open Sesame album discography,https://en.wikipedia.org/wiki/Open_Sesame_%28Kool_%26_the_Gang_album%29,whole album,Album-wide disco genre corroborated by contemporary Cash Box review of title single.
+koolandthegang-opensesame,disco,"Cash Box single review, October 1976",https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-10-09.pdf,lead single,Contemporary trade review explicitly calls the title single disco. Weight high as title-track hit.
+koolandthegang-opensesame,soul,"AllMusic, Open Sesame",https://www.allmusic.com/album/r2157566,whole album,Style field includes Soul and discusses slower songs.
+koolandthegang-opensesame,rnb,"AllMusic, Open Sesame",https://www.allmusic.com/album/r2157566,whole album,Album category is R&B; ranked after more specific funk and disco.
