@@ -386,6 +386,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Neil Young', 'The Beatles', 'Hank Williams', 'Marty Robbins', 'Nina & Frederik', 'The Shadows', 'Otis Redding', 'Etta James', 'Tina Turner', 'Jimi Hendrix'],
     source: 'John Waite in interviews: johnwaiteworldwide.com (Neil Young made him want to sing); Songwriting Magazine (The Beatles; Nina & Frederik minor-key records); xsrock.com (Hank Williams, Marty Robbins); Suncoast Post (The Shadows); HuffPost 2011 via trafficbeat.net (Otis Redding, Etta James, Tina Turner); iconvsicon.com 2013 (Hendrix at art school)',
   },
+  tiffany: {
+    names: ['Stevie Nicks', 'Heart', 'Fleetwood Mac', 'Led Zeppelin', 'Janis Joplin'],
+    source: 'Tiffany in interviews: eonmusic 2019 and Fox News (Stevie Nicks an early inspiration; Heart, Led Zeppelin); Classic Pop (Heart; Fleetwood Mac in a cousin\'s records drew her from country to rock); Tucson Weekly (Led Zeppelin); American Songwriter (wanting to sing like Nicks or Joplin)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

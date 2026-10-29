@@ -1,0 +1,5 @@
+album_id,artist_id,artist,title,year,type,in_catalog,in_existing_descriptors,action,evidence
+tiffany-tiffany,tiffany,Tiffany,Tiffany,1987,studio,no,no,add artist (once) and album entry to src/data/catalog.ts; import new descriptor,https://www.tiffany.org/music/discography.html
+tiffany-holdanoldfriendshand,tiffany,Tiffany,Hold an Old Friend's Hand,1988,studio,no,no,add artist (once) and album entry to src/data/catalog.ts; import new descriptor,https://www.tiffany.org/music/discography.html
+tiffany-newinside,tiffany,Tiffany,New Inside,1990,studio,no,no,add artist (once) and album entry to src/data/catalog.ts; import new descriptor,https://www.tiffany.org/music/discography.html
+tiffany-dreamsneverdie,tiffany,Tiffany,Dreams Never Die,1993,studio,no,no,add artist (once) and album entry to src/data/catalog.ts; import new descriptor,https://www.tiffany.org/music/discography.html
