@@ -44,3 +44,9 @@ Existing artist IDs: `ella` and `armstrong` in `src/data/catalog.ts`. All four a
 ## Claude import note (Oct 2026)
 
 - Rows imported as delivered (tokens already registered in phases 01-02). Porgy and Bess co-billed with Armstrong (coBilled.ts).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/ella.csv`.
+- sounds_like emptied on all four: no critic compares them to Sarah Vaughan, Julie London, Sinatra, Doris Day, Louis Prima & Keely Smith or Anita O'Day. Mel Tormé (the Marty Paich Dek-tette was first assembled for him) and Ray Charles & Cleo Laine (another Porgy and Bess) are not sound comparisons: left out.
+- Ella Swings Lightly personnel confirmed (Wikipedia: Fagerquist, Porcino, Enevoldsen, DeRosa, Shank, Holman, Flory, Levy, Mondragon, Mel Lewis); confidence raised to high.
