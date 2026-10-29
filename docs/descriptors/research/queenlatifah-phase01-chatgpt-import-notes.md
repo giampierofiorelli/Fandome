@@ -60,3 +60,9 @@ Once catalog/genre changes are applied, run `npx vite-node scripts/validate-desc
 ## Claude import note (Oct 2026)
 
 - New genre token `alternativerap` (hiphop, alt). Her own production credit dropped from producers. Artist added with 7 studio albums; scene US en 1980 hiphop,rnb.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/queenlatifah.csv`.
+- sounds_like emptied: De La Soul are guests on All Hail the Queen (Mama Gave Birth to the Soul Children); Jungle Brothers only share the Native Tongues scene; the "B.D.P.-esque" remark points to KRS-One's own act (a guest and producer); Missy Elliott on Order in the Court is only a 1998 commercial peer (Albumism). No critic compares any of the four to another artist's sound.
+- Order in the Court credits confirmed (Motown/Flavor Unit, 16 June 1998, Albumism's "15-producer pileup"); confidence stays medium (EW and Rolling Stone texts not read).
