@@ -59,3 +59,11 @@ No new genre, instrument or production tokens are proposed. **Always compare tok
 - Added Primavera in anticipo (2008), Inedito (2011), Simili (2015) and Laura Xmas (2016) to the catalogue. Laura Xmas co-billed as "Laura Pausini with the Patrick Williams Orchestra" (no room for the orchestra).
 - Producers: Laura Pausini dropped as self-credit. Nick Ingman (Inedito) kept pending the sleeve check.
 - sounds_like emptied on Primavera in anticipo and Simili (editorial). Inedito (Céline Dion, Snow Patrol, Evanescence) and Laura Xmas (Frank Sinatra, Michael Bublé) kept pending the critic check. Laura Xmas influenced_by Frank Sinatra (her own words on this album).
+
+## Claude enrichment
+
+- Reception from FIMI year-end and en.wikipedia, AllMusic (via Qobuz), Musica e dischi, Panorama, Velvet Music, Rockol, Georgia Straight.
+- Credits from Discogs (1573960, 3216021, 7624693, 9302576): Nick Ingman removed from Inedito (arranger and conductor of the Royal Philharmonic only); Simili producers confirmed by track (Rik Simpson additional production, excluded); Laura Xmas produced by Patrick Williams (Paolo Carta vocal production, Jason Lee associate, excluded).
+- Inedito: sounds_like Céline Dion (AllMusic, Jon O'Brien: the big ballads "fill the Celine Dion-shaped hole"); Snow Patrol and Evanescence removed (one track each). Added power ballad (album-wide), indie rock and pop metal (one track each, AllMusic). Pan flute corrected to flute. Landmark 0.
+- Simili: folk and chamber music removed (no reachable source); added flamenco ("flamenco-inspired dance cut", AllMusic) and power ballad; rap voice removed (no credit); pipe organ added. Landmark 0. Coldplay stays out (link only through Coldplay's collaborators among the producers).
+- Laura Xmas: Frank Sinatra and Michael Bublé removed from sounds_like (critics mention them only as Patrick Williams's past work); influenced_by Sinatra removed (only Rockol's paraphrase; in her own words she names Sinatra only through Williams).
