@@ -1,0 +1,18 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+zucchero-unpodizucchero,Un po' di Zucchero,1983,studio,missing,phase01,add to catalog.ts before validation
+zucchero-zuccherotherandyjacksonband,Zucchero & The Randy Jackson Band,1985,studio,missing,phase01,add to catalog.ts before validation
+zucchero-rispetto,Rispetto,1986,studio,missing,phase01,add to catalog.ts before validation
+zucchero-blues,Blue’s,1987,studio,existing,phase01,reuse exact existing ID
+zucchero-snackbarbudapestoriginalmoviesoundtrack,Snack Bar Budapest Original Movie Soundtrack,1988,soundtrack,missing,phase02_candidate,add to catalog.ts before validation
+zucchero-oroincensobirra,Oro incenso & birra,1989,studio,existing,phase02,reuse exact existing ID
+zucchero-miserere,Miserere,1992,studio,existing,phase02,reuse exact existing ID
+zucchero-spiritodivino,Spirito DiVino,1995,studio,existing,phase02,reuse exact existing ID
+zucchero-bluesugar,Bluesugar,1998,studio,missing,phase03,add to catalog.ts before validation
+zucchero-shake,Shake,2001,studio,missing,phase03,add to catalog.ts before validation
+zucchero-fly,Fly,2006,studio,missing,phase03,add to catalog.ts before validation
+zucchero-chocabeck,Chocabeck,2010,studio,missing,phase03,add to catalog.ts before validation
+zucchero-lasesioncubana,La sesión cubana,2012,studio,missing,later,add to catalog.ts before validation
+zucchero-blackcat,Black Cat,2016,studio,existing,later,reuse exact existing ID
+zucchero-doc,D.O.C.,2019,studio,missing,later,add to catalog.ts before validation
+zucchero-discover,Discover,2021,studio,existing,later,reuse exact existing ID
+zucchero-discoverii,Discover II,2024,studio,missing,later,add to catalog.ts before validation

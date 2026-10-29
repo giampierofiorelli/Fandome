@@ -358,6 +358,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['The Beatles', 'Elvis Presley', 'The Rolling Stones'],
     source: 'Umberto Tozzi: Corriere della Sera 2022 (listening to the Beatles and Anglo-American music shaped his melodies and sound), Krone 2022 (Elvis Presley, the Rolling Stones)',
   },
+  zucchero: {
+    names: ['Ray Charles', 'Otis Redding', 'Aretha Franklin', 'Sam & Dave', 'Wilson Pickett', 'The Beatles', 'The Rolling Stones'],
+    source: 'Zucchero, NPR 2017 (Ray Charles, Otis Redding, Aretha Franklin); Write On Music 2014 interview (Sam & Dave, Wilson Pickett); PRI The World 2017 (Beatles, Rolling Stones). Joe Cocker left out until a first-person source is found',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
