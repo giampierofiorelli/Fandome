@@ -310,6 +310,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Free', 'James Taylor', 'Stevie Wonder', 'The Who', 'Small Faces', 'Faces', 'Patto', 'Dire Straits', 'Robert Palmer', 'The Stranglers', 'Junior Walker', 'Joe Tex', 'Otis Redding', 'Sam Cooke', 'Wilson Pickett', 'Garnet Mimms', 'Chuck Jackson', 'Johnnie Taylor', 'Talking Heads', 'Soft Cell'],
     source: 'Paul Young: Rediscover the 80s (2011 interview, republished 2019), by period: Free/Paul Rodgers, James Taylor, Stevie Wonder; The Who, Small Faces, Faces, Patto, Dire Straits, Robert Palmer, The Stranglers; the Q-Tips soul era (Junior Walker, Joe Tex, Otis Redding, Sam Cooke, Wilson Pickett); around the solo debut Garnet Mimms, Chuck Jackson, Johnnie Taylor, Talking Heads, Soft Cell',
   },
+  saltnpepa: {
+    names: ['Roxanne Shanté', 'Run-D.M.C.', 'Marvin Gaye', 'Led Zeppelin', 'DJ Jazzy Jeff', 'DJ Scratch'],
+    source: 'Salt (Cheryl James): HotNewHipHop (inspired by Roxanne Shanté); Pepa: inkl (Run-D.M.C.); Spinderella: Mount Airy (Jazzy Jeff, DJ Scratch, Jam Master Jay); Rock & Roll Hall of Fame Library (Marvin Gaye, Led Zeppelin)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
