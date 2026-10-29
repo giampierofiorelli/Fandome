@@ -1,0 +1,13 @@
+album_id,title,year,type,catalog_ts,seed_ts,existing_descriptors,phase,action,notes
+tupac-2pacalypsenow,2Pacalypse Now,1991,studio,present,absent,absent,01,DESCRIBE EXISTING,catalog.ts existing 1991 album; no tupac.csv
+tupac-strictly4myniggaz,Strictly 4 My N.I.G.G.A.Z.,1993,studio,absent,absent,absent,01,ADD CATALOGUE ALBUM,Add Tupac 1993 sophomore album to catalog.ts before import
+tupac-meagainsttheworld,Me Against the World,1995,studio,present,absent,absent,01,DESCRIBE EXISTING,catalog.ts existing 1995 album
+tupac-alleyzonme,All Eyez on Me,1996,studio,present,absent,absent,01,DESCRIBE EXISTING,original 27-track 1996 double LP; no bonus tracks
+tupac-thedonkilluminatithe7daytheory,The Don Killuminati: The 7 Day Theory,1996,studio,present,absent,absent,02,DEFER PHASE 02,"Recorded under Makaveli alias, released after Tupac death; canonical Tupac studio album"
+tupac-rustilldownrememberme,R U Still Down? (Remember Me),1997,studio (posthumously assembled),absent,absent,absent,review,HOLD / REVIEW,Archival and reworked studio recordings; review against Fandome compilation exclusion rule
+tupac-stillirise,Still I Rise,1999,studio (co-billed archival),absent,absent,absent,review,HOLD / REVIEW,2Pac and Outlawz posthumous archive collaboration; evaluate before addition
+tupac-untiltheendoftime,Until the End of Time,2001,studio (posthumously assembled),absent,absent,absent,review,HOLD / REVIEW,Posthumous productions from existing vocals; evaluate instead of automatically treating as new studio
+tupac-betterdayz,Better Dayz,2002,studio (posthumously assembled),absent,absent,absent,review,HOLD / REVIEW,Posthumous assembled demos and outtakes
+tupac-loyaltothegame,Loyal to the Game,2004,studio (posthumous remixes),absent,absent,absent,review,HOLD / REVIEW,Remixed archival vocals by Eminem and guests
+tupac-pacslife,Pac’s Life,2006,studio (posthumously assembled),absent,absent,absent,review,HOLD / REVIEW,Posthumous archival material and new collaborators
+thuglife-thuglifevolume1,Thug Life: Volume 1,1994,studio (group),outside Tupac solo artist,not checked,not checked,outside,DO NOT IMPORT SOLO,"Album billed to Thug Life group, not standalone solo 2Pac album"

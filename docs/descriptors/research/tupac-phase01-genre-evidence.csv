@@ -1,0 +1,27 @@
+album_id,genre,source,url,scope,evidence
+tupac-2pacalypsenow,hiphop,allmusic_debut,https://www.allmusic.com/album/2pacalypse-now-mw0000676677/credits,whole album,AllMusic classifies rap; 2Pac primary hip-hop release
+tupac-2pacalypsenow,westcoasthiphop,allmusic_debut,https://www.allmusic.com/album/2pacalypse-now-mw0000676677/credits,whole album,AllMusic West Coast and Bay Area style labels
+tupac-2pacalypsenow,politicalrap,allmusic_debut,https://www.allmusic.com/album/2pacalypse-now-mw0000676677/credits,whole album,AllMusic Political Rap style and artist discussion of social problems
+tupac-2pacalypsenow,hardcorehiphop,allmusic_debut,https://www.allmusic.com/album/2pacalypse-now-mw0000676677/credits,whole album,AllMusic Hardcore Rap style
+tupac-2pacalypsenow,gangstarap,allmusic_debut,https://www.allmusic.com/album/2pacalypse-now-mw0000676677/credits,whole album; specific tracks,AllMusic Gangsta Rap descriptor within an overtly political album
+tupac-2pacalypsenow,conscioushiphop,mlinusson_conscious,https://www.mlinusson.com/rec2/genre.php?genre=125,whole album,Album named in conscious hip-hop genre taxonomy; artist interview confirms the album-level focus
+tupac-strictly4myniggaz,hiphop,allmusic_strict,https://www.allmusic.com/album/strictly-4-my-niggaz-mw0000093637,whole album,AllMusic identifies Rap
+tupac-strictly4myniggaz,westcoasthiphop,allmusic_strict,https://www.allmusic.com/album/strictly-4-my-niggaz-mw0000093637,whole album,AllMusic West Coast style
+tupac-strictly4myniggaz,hardcorehiphop,allmusic_strict,https://www.allmusic.com/album/strictly-4-my-niggaz-mw0000093637,whole album,AllMusic Hardcore Rap style
+tupac-strictly4myniggaz,gangstarap,allmusic_strict,https://www.allmusic.com/album/strictly-4-my-niggaz-mw0000093637,whole album,AllMusic Gangsta Rap style
+tupac-strictly4myniggaz,politicalhiphop,mlinusson_conscious,https://www.mlinusson.com/rec2/genre.php?genre=125,whole album; secondary,Specialist taxonomy explicitly classifies record as Political Hip-Hop; protest tracks support it
+tupac-strictly4myniggaz,conscioushiphop,mlinusson_conscious,https://www.mlinusson.com/rec2/genre.php?genre=125,whole album; secondary,Album appears under conscious hip-hop alongside political and gangsta labels
+tupac-strictly4myniggaz,poprap,poprap_retail_genre,https://business.walmart.com/ip/2Pac-Strictly-4-My-Niggaz-Music-Performance-CD/55692034?classType=REGULAR,whole album; low-confidence shelving term; tail,Retail record tags album as pop rap/hip-hop; most relevant to crossover singles
+tupac-meagainsttheworld,hiphop,allmusic_matw,https://www.allmusic.com/album/me-against-the-world-mw0000625486,whole album,AllMusic Rap classification
+tupac-meagainsttheworld,westcoasthiphop,allmusic_matw,https://www.allmusic.com/album/me-against-the-world-mw0000625486,whole album,AllMusic West Coast Rap
+tupac-meagainsttheworld,gangstarap,allmusic_matw,https://www.allmusic.com/album/me-against-the-world-mw0000625486,whole album,AllMusic Gangsta Rap style despite changed themes
+tupac-meagainsttheworld,gfunk,allmusic_matw,https://www.allmusic.com/album/me-against-the-world-mw0000625486,whole album; select tracks,AllMusic G-Funk style
+tupac-meagainsttheworld,conscioushiphop,aoty_conscious,https://www.albumoftheyear.org/album/5768-2pac-me-against-the-world.php,whole album,Album of the Year identifies Conscious Hip Hop
+tupac-meagainsttheworld,boombap,aoty_conscious,https://www.albumoftheyear.org/album/5768-2pac-me-against-the-world.php,secondary album style; tail,Album of the Year lists Boom Bap as a subordinate album style
+tupac-alleyzonme,hiphop,allmusic_alleyez,https://www.allmusic.com/album/all-eyez-on-me-mw0000183802,whole album,AllMusic Rap
+tupac-alleyzonme,westcoasthiphop,allmusic_alleyez,https://www.allmusic.com/album/all-eyez-on-me-mw0000183802,whole album,AllMusic West Coast Rap
+tupac-alleyzonme,gfunk,allmusic_alleyez,https://www.allmusic.com/album/all-eyez-on-me-mw0000183802,whole album,AllMusic G-Funk
+tupac-alleyzonme,gangstarap,allmusic_alleyez,https://www.allmusic.com/album/all-eyez-on-me-mw0000183802,whole album,AllMusic Gangsta Rap
+tupac-alleyzonme,hardcorehiphop,allmusic_alleyez,https://www.allmusic.com/album/all-eyez-on-me-mw0000183802,whole album,AllMusic Hardcore Rap
+tupac-alleyzonme,poprap,mb_release_group,https://musicbrainz.org/release-group/e2621417-9236-36b4-9f9e-376c416dc4b0,album-wide genre tag; lead singles,MusicBrainz release-group lists Pop Rap explicitly; crossover singles support it
+tupac-alleyzonme,rnb,pitchfork_alleyez,https://pitchfork.com/reviews/albums/2pac-all-eyez-on-me/,some tracks; tail,K-Ci & JoJo and Nate Dogg melodic tracks provide R&B-style hooks; not an album-wide R&B classification

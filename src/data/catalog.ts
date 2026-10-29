@@ -391,7 +391,7 @@ const ROWS: Row[] = [
   ['santifrancesi', 'Santi Francesi', '#5a6f8f', 'Indie duo with an electronic soul', []],
   ['settembre', 'Settembre', '#a38f6f', 'A new voice from Sanremo', []],
   ['subsonica', 'Subsonica', '#3f8f8a', 'Turin’s electronic rock', [['Subsonica', 1997], ['Microchip emozionale', 1999], ['Amorematico', 2002], ['Terrestre', 2005], ['L’eclissi', 2007], ['Eden', 2011], ['Una nave in una foresta', 2014], ['8', 2018], ['Microchip temporale', 2019], ['Mentale strumentale', 2020], ['Realtà aumentata', 2024], ['Terre rare', 2026]]],
-  ['tupac', 'Tupac Shakur', '#8a6f4a', 'Poet, rebel, legend', [['2Pacalypse Now', 1991], ['Me Against the World', 1995], ['All Eyez on Me', 1996], ['The Don Killuminati: The 7 Day Theory', 1996]]],
+  ['tupac', 'Tupac Shakur', '#8a6f4a', 'Poet, rebel, legend', [['2Pacalypse Now', 1991], ['Strictly 4 My N.I.G.G.A.Z.', 1993], ['Me Against the World', 1995], ['All Eyez on Me', 1996], ['The Don Killuminati: The 7 Day Theory', 1996]]],
   ['biggie', 'The Notorious B.I.G.', '#5a5a6f', 'Brooklyn’s finest storyteller', [['Ready to Die', 1994], ['Life After Death', 1997], ['The King & I', 2017]]],
   ['oliviadean', 'Olivia Dean', '#d9a36f', 'Warm soul for modern hearts', [['Messy', 2023], ['The Art of Loving', 2025]]],
   ['lolayoung', 'Lola Young', '#c95a6f', 'Messy, honest and loud', [['My Mind Wanders and Sometimes Leaves Completely', 2024], ['This Wasn’t Meant for You Anyway', 2024]]],

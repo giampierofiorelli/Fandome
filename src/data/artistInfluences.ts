@@ -338,6 +338,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Connee Boswell', 'Louis Armstrong', 'Bing Crosby'],
     source: 'Ella Fitzgerald, first-person reminiscence in a US education biography (ERIC ED439031: she loved Connee Boswell’s record and tried to imitate her; early listening to Louis Armstrong and Bing Crosby); official biography and Library of Congress (a Boswell song at the Apollo amateur night)',
   },
+  tupac: {
+    names: ['Don McLean'],
+    source: 'Tupac Shakur, Los Angeles Times (Chuck Philips, 25 Oct 1995): Vincent moved him and he wanted songs like Dear Mama to have that effect. Marvin Gaye (Vibe 1995) is an affinity, not a stated influence; the Tracy Chapman transcript is unverified',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
