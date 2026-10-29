@@ -1,0 +1,8 @@
+artist,artist_id,album_id,title,year,type,in_artist_catalogue,in_seed,already_described,action,phase,source
+Run-D.M.C.,rundmc,rundmc-rundmc,Run-D.M.C.,1984,studio,no (phase 01 snapshot),no (phase 01 snapshot),"yes, phase 01 delivered",DO NOT REIMPORT phase 01 row,01,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-kingofrock,King of Rock,1985,studio,no (phase 01 snapshot),no (phase 01 snapshot),"yes, phase 01 delivered",DO NOT REIMPORT phase 01 row,01,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-raisinghell,Raising Hell,1986,studio,no (phase 01 snapshot),no (phase 01 snapshot),"yes, phase 01 delivered",DO NOT REIMPORT phase 01 row,01,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-tougherthanleather,Tougher Than Leather,1988,studio,no (phase 01 snapshot),no (phase 01 snapshot),"yes, phase 01 delivered",DO NOT REIMPORT phase 01 row,01,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-backfromhell,Back from Hell,1990,studio,no (phase 01 snapshot),no (phase 01 snapshot),no in phase 01,ADD album if phase 01 was not imported,02,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-downwiththeking,Down with the King,1993,studio,no (phase 01 snapshot),no (phase 01 snapshot),no in phase 01,ADD album if phase 01 was not imported,02,phase 01 GitHub audit + original release discography
+Run-D.M.C.,rundmc,rundmc-crownroyal,Crown Royal,2001,studio,no (phase 01 snapshot),no (phase 01 snapshot),no in phase 01,ADD album if phase 01 was not imported,02,phase 01 GitHub audit + original release discography
