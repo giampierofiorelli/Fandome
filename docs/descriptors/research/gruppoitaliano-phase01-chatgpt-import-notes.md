@@ -48,3 +48,11 @@ Run the Fandome descriptor validator in the GitHub project after adding the arti
 - New artist `gruppoitaliano` (catalogue, scene IT it 1980 pop,dance, legacy: no longer touring). Three studio albums; the 2002 compilation excluded.
 - Producers as given (Oscar Prudente, Chicco Santulli) pending the credit check; sounds_like and influenced_by empty (none sourced).
 - Maccherock and Surf in Italy include covers of Italian songs: originals on Fandome to be linked in `src/data/covers.ts` after the tracklist check.
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it (charts, song pages), open.online 2023, faremusic.it (Alberto Salerno), canzoncine.it, Music Map, Il Cittadino 2024 (Chicco Santulli interview). No period album review found.
+- Producers: Oscar Prudente confirmed on Maccherock and Tapioca manioca (Discogs 3240176, 6166277). Surf in Italy has no credits on any pressing; Chicco Santulli kept from canzoncine.it ("prodotto artisticamente da Chicco Santulli") and his credit on the 1985 single Sole d'agosto, medium confidence.
+- Maccherock: disco added (Discogs style). Tapioca manioca: latin removed (Santulli: "non definirei il gruppo un sodalizio di musica latina"); brass added (Claudio Pascoli arranged the horns). Surf in Italy: pop rock added (Discogs style), landmark 0, note corrected (covers range from 1940 to 1985).
+- Covers: none of the originals is on Fandome yet (Eddie Cochran, Shocking Blue, Little Eva, Ian & Sylvia, CCR, The Troggs, Donovan, Equipe 84 on Maccherock; Los Hermanos Rigual, Caterina Caselli, Nico Fidenco, Carlo Buti, The Rokes, Rita Pavone, Fausto Leali, Righeira on Surf in Italy). Whether Tropicana on Surf in Italy is the 1983 master is unresolved.
+- No album-level comparison; track-level only: Anni ruggenti vs The Beatles' When I'm Sixty-Four.
