@@ -8,7 +8,7 @@
 // small bonus to other countries. Every suggestion says why; nothing is paid or sponsored.
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { collaborationOf } from '../data/collaborations'
-import { coverBetween } from '../data/covers'
+import { coverFrom } from '../data/covers'
 import { ARTIST_ALIASES } from '../data/artistAliases'
 import { DESCRIPTORS, SCALES, genreLabel, type Descriptor, type Scale } from './descriptors'
 import { GENRE_PARENTS } from '../data/genreFamilies'
@@ -631,7 +631,7 @@ export function similarAlbums(
       const gap = qualityGap(a, b)
       // Never from an auteur or alternative album to a packaged chart product (see packaged below).
       // A credited cover between the two records is a fact about them, like a named influence (owner, Oct 2026).
-      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist) && !coverBetween(albumId, d.albumId)
+      const tooCommercial = packaged(b) && tooFarUp(commercialLift(a, b), qualityGap(a, b)) && !includesName(a.influencedBy, d.artist) && !coverFrom(albumId, d.albumId)
       return { albumId: d.albumId, artist: d.artist, profile: b, score: c.score + (isNew ? DISCOVERY : 0) - avoidPenalty(b, avoid) - 0.05 * Math.max(0, gap - 1), reasons: c.reasons, newCountry: isNew ? to : undefined, panned: gap >= 3 || tooCommercial, fits: ((Math.sqrt(c.genre * genreCover(a, b)) >= MIN_GENRE && !c.opposite && c.evidence >= 2) || c.linked) && gap < 3 }
     })
     // Below the cut nothing is shown, even if the list ends up empty: no suggestion beats a bad one.
@@ -639,7 +639,7 @@ export function similarAlbums(
     // on its own, so the closest album of that artist has a lower cut.
     // A record the source names (a song's album) is the strongest evidence of all: no cut, only the critics' one.
     // So is a song one of the two records covers from the other (Laura Branigan's Self Control and Raf's Raf).
-    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && (namedAlbum(s) || coverBetween(albumId, s.albumId))))
+    .filter((s) => (s.reasons.length && !s.panned && (s.score >= MIN_SCORE || (s.score >= MIN_INFLUENCE_SCORE && includesName(a.influencedBy, s.artist)))) || (!s.panned && (namedAlbum(s) || coverFrom(albumId, s.albumId))))
     .sort((x, y) => y.score - x.score)
   // A documented influence or comparison naming a described artist is the strongest evidence we have:
   // that artist's closest album (still above the cut) gets a place, with the link as the reason.
@@ -653,11 +653,12 @@ export function similarAlbums(
   // should not land on the Innovisions compilation): they come after the studio albums.
   const kindWeight = (id: string) => (['compilation', 'live'].includes(DESCRIPTORS[id]?.type ?? '') ? 0.7 : 1)
   const pick = (s: (typeof scored)[number]) => s.score * (1 + typicality(s.profile)) * (s.profile.importance === undefined ? 1 : 0.85 + 0.06 * s.profile.importance) * kindWeight(s.albumId)
-  // A credited cover links the two records themselves: the other record comes first, up to two places of its own.
+  // A credited cover links the two records, one way like an influence: from the cover to the original record,
+  // which comes first, up to two places of its own. Never back from the original (owner, Oct 2026).
   for (const s of scored) {
-    const c = coverBetween(albumId, s.albumId)
+    const c = coverFrom(albumId, s.albumId)
     if (!c || reserved.length >= 2) continue
-    const why = c.cover === albumId ? `${a.title} covers ${s.artist}’s ${c.song}` : `${s.artist} covered ${c.song}${plainFold(c.song) === plainFold(a.title) ? ', the title track' : ` from ${a.title}`}`
+    const why = `${a.title} covers ${s.artist}’s ${c.song}`
     reserved.push({ ...s, reasons: [why, ...s.reasons.filter((r) => !r.includes(s.artist))].slice(0, 2) })
   }
   const covered = reserved.length

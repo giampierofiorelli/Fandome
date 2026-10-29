@@ -1,0 +1,9 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+zucchero-snackbarbudapestoriginalmoviesoundtrack,Snack Bar Budapest Original Movie Soundtrack,1988,soundtrack,missing,phase02,"ADD to catalog.ts; separate co-billed note: multi-performer soundtrack, original LP bills Zucchero Sugar Fornaciari"
+zucchero-oroincensobirra,Oro incenso & birra,1989,studio,existing,phase02,KEEP existing title and album id exactly
+zucchero-miserere,Miserere,1992,studio,existing,phase02,KEEP existing title and album id exactly
+zucchero-spiritodivino,Spirito DiVino,1995,studio,existing,phase02,KEEP existing title and album id exactly
+zucchero-bluesugar,Bluesugar,1998,studio,missing,phase03,ADD before phase03 import
+zucchero-shake,Shake,2001,studio,missing,phase03,ADD before phase03 import
+zucchero-fly,Fly,2006,studio,missing,phase03,ADD before phase03 import
+zucchero-chocabeck,Chocabeck,2010,studio,missing,phase03,ADD before phase03 import

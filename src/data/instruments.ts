@@ -7,7 +7,7 @@ export const INSTRUMENT_LABELS: Record<string, string> = {
   // electronic
   synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin', stylophone: 'Stylophone',
   // guitars and strings
-  guitar: 'Guitar', baritoneguitar: 'Baritone guitar', acousticguitar: 'Acoustic guitar', electricguitar: 'Electric guitar', guitarsynth: 'Guitar synthesizer', bass: 'Bass guitar', fretlessbass: 'Fretless bass', synthbass: 'Synth bass', doublebass: 'Double bass',
+  guitar: 'Guitar', baritoneguitar: 'Baritone guitar', acousticguitar: 'Acoustic guitar', electricguitar: 'Electric guitar', guitarsynth: 'Guitar synthesizer', synthaxe: 'SynthAxe', bass: 'Bass guitar', fretlessbass: 'Fretless bass', synthbass: 'Synth bass', doublebass: 'Double bass',
   steelguitar: 'Steel guitar', resonatorguitar: 'Resonator guitar', slideguitar: 'Slide guitar', dobro: 'Dobro', mandolin: 'Mandolin', charango: 'Charango', laud: 'Laúd', tres: 'Tres', balalaika: 'Balalaika', sixstringbass: 'Six-string bass', mandola: 'Mandola', bouzouki: 'Bouzouki', requinto: 'Requinto guitar', banjo: 'Banjo', ukulele: 'Ukulele', banjoukulele: 'Banjo ukulele', sitar: 'Sitar', electricsitar: 'Electric sitar', tambura: 'Tambura', qanun: 'Qanun', oud: 'Oud', sarod: 'Sarod', koto: 'Koto', coralsitar: 'Coral electric sitar', sarangi: 'Sarangi', harp: 'Harp', lyre: 'Lyre', kora: 'Kora', autoharp: 'Autoharp', hammereddulcimer: 'Hammered dulcimer', cimbalom: 'Cimbalom', hurdygurdy: 'Hurdy-gurdy', dulcimer: 'Dulcimer',
   strings: 'Strings', violin: 'Violin', viola: 'Viola', cello: 'Cello', orchestra: 'Orchestra',
   // drums and percussion

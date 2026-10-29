@@ -1,10 +1,11 @@
-import { coverBetweenArtists } from './covers'
+import { coverFromArtist } from './covers'
 import { catalogAlbums, catalogArtists } from './catalog'
 // Documented collaborations between artists with a room (one worked on the other's record: sang, played, wrote
 // or adapted). Used by "If you like this artist": a documented collaboration is a reason of its own, shown even
 // when the two catalogues sound far apart, because it is how the artists actually met (owner, Oct 2026: Battiato's
 // foreign neighbours). Works both ways. Keep the source; a cover or a shared concert bill is not a collaboration,
-// but a cover credited on the record (src/data/covers.ts) is treated the same way (owner, Oct 2026: Raf and Laura Branigan).
+// but a cover credited on the record (src/data/covers.ts) is treated the same way, one way only: on the page of the
+// artist who made the cover, never back from the original (owner, Oct 2026: Laura Branigan → Raf, not Raf → Branigan).
 export const COLLABORATIONS: { a: string; b: string; what: string; source: string }[] = [
   { a: 'raf', b: 'tozzi', what: 'Umberto Tozzi plays guitar on Raf’s Svegliarsi un anno fa (1988)', source: 'Discogs, CGD 20835 credits; it.wikipedia, Svegliarsi un anno fa' },
   { a: 'battiato', b: 'losplanetas', what: 'J of Los Planetas adapted Battiato’s Apriti sesamo into Spanish (Ábrete sésamo, 2013)', source: 'Público; Página/12 (Battiato interview, 2013)' },
@@ -14,9 +15,9 @@ export const COLLABORATIONS: { a: string; b: string; what: string; source: strin
   { a: 'battiato', b: 'giunirusso', what: 'Battiato produced and co-wrote Giuni Russo’s Energie (1981)', source: 'it.wikipedia, Energie; Rolling Stone Italia' },
 ]
 
-// A credited cover between the two artists' albums counts as a collaboration too (Laura Branigan covered Raf).
+// x covered y on a record (Laura Branigan covered Raf): a reason on x's page only.
 const coverAsCollaboration = (x: string, y: string) => {
-  const c = coverBetweenArtists(x, y)
+  const c = coverFromArtist(x, y)
   if (!c) return undefined
   const name = (id: string) => catalogArtists.find((a) => a.id === id.split('-')[0])?.name ?? id
   const album = (id: string) => catalogAlbums.find((a) => a.id === id)
