@@ -342,6 +342,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Don McLean'],
     source: 'Tupac Shakur, Los Angeles Times (Chuck Philips, 25 Oct 1995): Vincent moved him and he wanted songs like Dear Mama to have that effect. Marvin Gaye (Vibe 1995) is an affinity, not a stated influence; the Tracy Chapman transcript is unverified',
   },
+  tlc: {
+    names: ['Michael Jackson', 'Prince'],
+    source: 'T-Boz, Essence (Thriller the album that influenced TLC most; Jackson made her want to perform); Lifetime TLC retrospective (Prince among their major influences)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

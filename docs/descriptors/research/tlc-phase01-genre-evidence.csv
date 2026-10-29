@@ -1,0 +1,33 @@
+album_id,genre,source,url,scope,evidence
+tlc-ooooooohhhonthetlctip,rnb,apple_tip,https://music.apple.com/us/album/ooooooohhh-on-the-tlc-tip/258594540,whole album,Apple Music groups album as R&B / Soul and urban-soul debut
+tlc-ooooooohhhonthetlctip,newjackswing,allmusic_tip,https://www.allmusic.com/album/ooooooohhhon-the-tlc-tip-mw0000678115,whole album,AllMusic explicitly classifies album as New Jack Swing
+tlc-ooooooohhhonthetlctip,contemporaryrnb,allmusic_tip,https://www.allmusic.com/album/ooooooohhhon-the-tlc-tip-mw0000678115,whole album,AllMusic explicit Contemporary R&B genre
+tlc-ooooooohhhonthetlctip,hiphopsoul,aoty_tip,https://www.albumoftheyear.org/album/20725-tlc-ooooooohhh-on-the-tlc-tip.php,whole album / crossover,AOTY lists Hip Hop Soul genre; R&B songs have rap and beat samples
+tlc-ooooooohhhonthetlctip,poprap,aoty_tip,https://www.albumoftheyear.org/album/20725-tlc-ooooooohhh-on-the-tlc-tip.php,selected prominent tracks / album secondary style,AOTY lists Pop Rap; Ain’t 2 Proud 2 Beg and other rap-forward songs
+tlc-ooooooohhhonthetlctip,hiphop,apple_tip,https://music.apple.com/us/album/ooooooohhh-on-the-tlc-tip/258594540,selected tracks / central texture,Apple identifies hip-hop call-and-response and breakbeat samples
+tlc-ooooooohhhonthetlctip,southernhiphop,aoty_tip,https://www.albumoftheyear.org/album/20725-tlc-ooooooohhh-on-the-tlc-tip.php,secondary era/region taxonomy,AOTY explicitly Southern Hip Hop; Atlanta trio with region-specific production
+tlc-fanmail,rnb,allmusic_fan,https://www.allmusic.com/album/r381985,whole album,AllMusic R&B classification
+tlc-fanmail,contemporaryrnb,aoty_fan,https://www.albumoftheyear.org/album/20726-tlc-fanmail.php,whole album,AOTY Contemporary R&B album genre
+tlc-fanmail,hiphopsoul,aoty_fan,https://www.albumoftheyear.org/album/20726-tlc-fanmail.php,whole album,AOTY explicitly labels Hip Hop Soul
+tlc-fanmail,dancepop,allmusic_fan,https://www.allmusic.com/album/r381985,whole album,AllMusic lists Dance-Pop for album
+tlc-fanmail,electronic,aoty_fan,https://www.albumoftheyear.org/album/20726-tlc-fanmail.php,significant synthesized/digital textures,AOTY explicitly electronic genre; Pitchfork documents digitized sound design
+tlc-fanmail,glitchpop,aoty_fan,https://www.albumoftheyear.org/album/20726-tlc-fanmail.php,secondary stylistic taxonomy,"AOTY tags Glitch Pop; pitched interruptions, Vic-E artificial voice"
+tlc-fanmail,pop,pitchfork_fan,https://pitchfork.com/features/article/8827-tlc/,album-level pop context,Pitchfork calls FanMail a pop record and documents Y2K pop aesthetics
+tlc-fanmail,drumandbass,billboard_oral,https://tlc-army.com/2019/02/22/tlc-reflect-on-fanmail-track-by-track-20-years-on/,title track / tail,Dallas Austin says he incorporated drum and bass inspiration on title song; NOT whole-LP DnB
+tlc-3d,rnb,qobuz_3d,https://www.qobuz.com/us-en/album/3d-tlc/0888880333520,whole album,Qobuz original master classified R&B
+tlc-3d,contemporaryrnb,allmusic_3d,https://www.allmusic.com/album/r609851.html,whole album,AllMusic specifically lists contemporary R&B
+tlc-3d,dancepop,allmusic_3d,https://www.allmusic.com/album/r609851.html,whole album / dance cuts,AllMusic lists Dance-Pop as album style
+tlc-3d,pop,aoty_3d,https://www.albumoftheyear.org/album/20727-tlc-3d.php,whole album / crossover,AOTY lists Pop album style
+tlc-3d,hiphop,aoty_3d,https://www.albumoftheyear.org/album/20727-tlc-3d.php,rap passages / secondary,AOTY explicitly lists hip hop subgenre; some Left Eye verses
+tlc-3d,poprap,aoty_3d,https://www.albumoftheyear.org/album/20727-tlc-3d.php,secondary / selected tracks,AOTY explicitly lists Pop Rap as secondary style
+tlc-3d,soul,qobuz_3d,https://www.qobuz.com/us-en/album/3d-tlc/0888880333520,R&B/soul texture,"Qobuz shelving Soul/Funk/R&B distinguishes soul side; tail, not soul-first"
+tlc-tlc,rnb,allmusic_tlc17,https://www.allmusic.com/album/tlc-mw0003051816,whole album,AllMusic R&B classification
+tlc-tlc,contemporaryrnb,allmusic_tlc17,https://www.allmusic.com/album/tlc-mw0003051816,whole album,AllMusic Contemporary R&B style
+tlc-tlc,adultcontemporaryrnb,allmusic_tlc17,https://www.allmusic.com/album/tlc-mw0003051816,whole album,AllMusic explicitly Adult Contemporary R&B
+tlc-tlc,pop,pitchfork_tlc17,https://pitchfork.com/reviews/albums/tlc-tlc/,album crossover,Pitchfork categorises Pop/R&B
+tlc-tlc,soul,qobuz_tlc17review,https://www.qobuz.com/no-en/album/tlc-tlc/0040232606649,whole album stylistic mix,"Qobuz calls music blend R&B, soul, pop and hip-hop"
+tlc-tlc,hiphop,qobuz_tlc17review,https://www.qobuz.com/no-en/album/tlc-tlc/0040232606649,some tracks / featured guest,Qobuz cites hip-hop on Way Back and album-wide stylistic mix
+tlc-tlc,disco,standard_tlc17,https://www.standard.co.uk/culture/music/tlc-tlc-review-one-of-the-year-s-great-comebacks-a3577246.html,one prominent track,Evening Standard calls It’s Sunny uplifting disco; not whole album
+tlc-tlc,gfunk,qobuz_tlc17review,https://www.qobuz.com/no-en/album/tlc-tlc/0040232606649,lead single only,Qobuz specifically calls Way Back G-funk with Snoop Dogg
+tlc-tlc,trap,guardian_tlc17b,https://www.theguardian.com/music/2017/jun/30/tlc-tlc-review-cooking-vinyl,production touches / secondary,Guardian acknowledges modern trap nods; limited to some parts
+tlc-tlc,folk,qobuz_tlc17review,https://www.qobuz.com/no-en/album/tlc-tlc/0040232606649,single ballad only,Qobuz identifies Start a Fire as folk ballad; minority style tail

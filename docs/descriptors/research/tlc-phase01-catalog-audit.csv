@@ -1,0 +1,9 @@
+album_id,title,year,type,catalog_ts,seed_ts,existing_descriptor,phase,action,notes
+tlc-ooooooohhhonthetlctip,Ooooooohhh... On the TLC Tip,1992,studio,absent,absent,absent,01,ADD_CATALOG_AND_DESCRIBE,Original 1992 studio debut. Add album to existing tlc catalog artist; do not add duplicate artist.
+tlc-crazysexycool,CrazySexyCool,1994,studio,present,absent,present,SKIP,SKIP_ALREADY_DESCRIBED,Existing docs/descriptors/tlc.csv row tlc-crazysexycool; DO NOT import a replacement or duplicate.
+tlc-fanmail,FanMail,1999,studio,absent,absent,absent,01,ADD_CATALOG_AND_DESCRIBE,Do not turn interludes into separate albums.
+tlc-3d,3D,2002,studio,absent,absent,absent,01,ADD_CATALOG_AND_DESCRIBE,"Recorded partly before death of Left Eye; 2002 release, original studio album; some retailers have differing exact release dates."
+tlc-tlc,TLC,2017,studio,absent,absent,absent,01,ADD_CATALOG_AND_DESCRIBE,"Original duo studio album, not bonus/remaster deluxe tracks; extended Way Back is an alternate version."
+,Now & Forever: The Hits,2003,compilation,absent,absent,absent,EXCLUDE,SKIP_COMPILATION,Greatest hits record; no new original-studio catalogue row.
+,20,2013,compilation,absent,absent,absent,EXCLUDE,SKIP_COMPILATION,Anniversary greatest hits/film-era set; not original studio album.
+,CrazySexyCool (30th Anniversary Edition),2024,reissue,absent,absent,absent,EXCLUDE,SKIP_REISSUE,Original 1994 album already represented by existing tlc-crazysexycool.

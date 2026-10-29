@@ -336,7 +336,7 @@ const ROWS: Row[] = [
   ['publicenemy', 'Public Enemy', '#2b2b2b', 'Fight the Power and the Bomb Squad', [['Yo! Bum Rush the Show', 1987], ['It Takes a Nation of Millions to Hold Us Back', 1988], ['Fear of a Black Planet', 1990], ['Apocalypse 91... The Enemy Strikes Black', 1991], ['Muse Sick-n-Hour Mess Age', 1994], ['He Got Game', 1998], ['There\'s a Poison Goin\' On', 1999], ['Revolverlution', 2002], ['New Whirl Odor', 2005], ['Rebirth of a Nation', 2006], ['How You Sell Soul to a Soulless People Who Sold Their Soul???', 2007], ['Most of My Heroes Still Don\'t Appear on No Stamp', 2012], ['The Evil Empire of Everything', 2012], ['Man Plans God Laughs', 2015], ['Nothing Is Quick in the Desert', 2017], ['What You Gonna Do When the Grid Goes Down?', 2020], ['Black Sky Over the Projects: Apartment 2025', 2025]]],
   ['queenlatifah', 'Queen Latifah', '#7a3fa0', 'Ladies First, U.N.I.T.Y. and the Flavor Unit', [['All Hail the Queen', 1989], ["Nature of a Sista'", 1991], ['Black Reign', 1993], ['Order in the Court', 1998], ['The Dana Owens Album', 2004], ["Trav'lin' Light", 2007], ['Persona', 2009]]],
   ['maryjblige', 'Mary J. Blige', '#7a4fa0', 'Queen of hip-hop soul', [['My Life', 1994]]],
-  ['tlc', 'TLC', '#d1503a', 'CrazySexyCool and Waterfalls', [['CrazySexyCool', 1994]]],
+  ['tlc', 'TLC', '#d1503a', 'CrazySexyCool and Waterfalls', [['Ooooooohhh... On the TLC Tip', 1992], ['CrazySexyCool', 1994], ['FanMail', 1999], ['3D', 2002], ['TLC', 2017]]],
   ['algreen', 'Al Green', '#c88a3a', 'Let’s Stay Together and Memphis soul', [['Let’s Stay Together', 1972]]],
   ['ninasimone', 'Nina Simone', '#5a3a6a', 'High priestess of soul', [['Pastel Blues', 1965]]],
   ['billieholiday', 'Billie Holiday', '#8a6a9a', 'Lady Day', [['Lady in Satin', 1958]]],
