@@ -45,3 +45,9 @@ These are **people Lauryn Hill herself identified as musical teachers/records th
 ## Claude import note (Oct 2026)
 
 - Artist added (one solo studio album); scene US en 1990 rnb,soul,hiphop. Her own production credit dropped from producers. influenced_by kept (Curtis Mayfield, The Temptations, Roberta Flack, as Hill told Michael A. Gonzales, TIDAL).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception row: `docs/descriptors/reception/laurynhill.csv`.
+- sounds_like confirmed and extended: Stevie Wonder (A.V. Club, Steven Hyden: Songs in the Key of Life its "most obvious precursor"; NPR, Tom Moon), Aretha Franklin and Marvin Gaye (NPR), Joni Mitchell and Carly Simon (BBC, Lloyd Bradley), Minnie Riperton (critics on Ex-Factor). Bob Marley left out (Forgive Them Father reworks Concrete Jungle).
+- influenced_by adds Donny Hathaway (Hill named Roberta Flack and Donny Hathaway as the inspiration for Nothing Even Matters).
