@@ -1,6 +1,6 @@
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { useStore } from '../store/store'
@@ -22,6 +22,16 @@ import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
 
+// One fact of the sound section: a small dot-matrix label, then the value.
+function SoundRow({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="sound-row">
+      <div className="sound-label">{label}</div>
+      <div className="sound-value">{children}</div>
+    </div>
+  )
+}
+
 // Covers credited on the record, in both directions: what this album covers, and who covered its songs.
 function CoverLines({ albumId }: { albumId: string }) {
   const { covers, coveredBy } = coversOf(albumId)
@@ -32,16 +42,24 @@ function CoverLines({ albumId }: { albumId: string }) {
   }
   return (
     <>
-      {covers.map((c) => (
-        <p key={`c-${c.song}`} className="small sound-line">
-          Covers {c.song}, first recorded on {link(c.original)}
-        </p>
-      ))}
-      {coveredBy.map((c) => (
-        <p key={`b-${c.song}-${c.cover}`} className="small sound-line">
-          {c.song} was covered on {link(c.cover)}
-        </p>
-      ))}
+      {covers.length > 0 && (
+        <SoundRow label="Covers">
+          {covers.map((c) => (
+            <span key={`c-${c.song}`} className="sound-cover">
+              <b>{c.song}</b> <span className="muted">first recorded on</span> {link(c.original)}
+            </span>
+          ))}
+        </SoundRow>
+      )}
+      {coveredBy.length > 0 && (
+        <SoundRow label="Covered by">
+          {coveredBy.map((c) => (
+            <span key={`b-${c.song}-${c.cover}`} className="sound-cover">
+              <b>{c.song}</b> <span className="muted">on</span> {link(c.cover)}
+            </span>
+          ))}
+        </SoundRow>
+      )}
     </>
   )
 }
@@ -139,17 +157,21 @@ export default function AlbumPage() {
                 </span>
               ))}
             </div>
-            {sound.scene && <p className="small sound-line">{sound.scene}</p>}
-            {sound.instruments.length > 0 && <p className="small sound-line">Instruments: {sound.instruments.map(instrumentLabel).join(', ')}</p>}
-            {sound.production.length > 0 && <p className="small sound-line">Production: {sound.production.map(productionLabel).join(', ')}</p>}
-            {sound.producers.length > 0 && <p className="muted small sound-line">Produced by {sound.producers.join(', ')}</p>}
-            <CoverLines albumId={album.id} />
+            <div className="sound-facts glass-card">
+              {sound.scene && <SoundRow label="Scene">{sound.scene}</SoundRow>}
+              {sound.instruments.length > 0 && <SoundRow label="Instruments">{sound.instruments.map(instrumentLabel).join(' · ')}</SoundRow>}
+              {sound.production.length > 0 && <SoundRow label="Production">{sound.production.map(productionLabel).join(' · ')}</SoundRow>}
+              {sound.producers.length > 0 && <SoundRow label="Produced by">{sound.producers.join(' · ')}</SoundRow>}
+              <CoverLines albumId={album.id} />
+            </div>
           </div>
         </>
       )}
       {!sound && (covers.covers.length > 0 || covers.coveredBy.length > 0) && (
         <div className="album-sound">
-          <CoverLines albumId={album.id} />
+          <div className="sound-facts glass-card">
+            <CoverLines albumId={album.id} />
+          </div>
         </div>
       )}
       {(similar.length > 0 || sound) && (

@@ -1334,6 +1334,15 @@ a.link-rich:active { transform: scale(0.985); }
 .album-sound { padding: 0 2px; }
 .sound-genres { display: flex; flex-wrap: wrap; }
 .sound-line { margin: 10px 0 0; }
+.sound-facts { margin-top: 14px; padding: 4px 16px; }
+.sound-facts:empty { display: none; }
+.sound-row { padding: 12px 0; }
+.sound-row + .sound-row { border-top: 1px solid var(--glass-line); }
+.sound-label { font-family: var(--dot); font-weight: 800; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+.sound-value { font-size: 15px; line-height: 1.45; }
+.sound-cover { display: block; }
+.sound-cover + .sound-cover { margin-top: 4px; }
+.sound-cover b { font-weight: 600; }
 .similar-item { position: relative; display: flex; align-items: center; }
 .similar-item > .chart-row { flex: 1; min-width: 0; }
 .similar-item + .similar-item > .chart-row::before { content: ''; position: absolute; top: 0; left: 70px; right: 4px; height: 1px; background: var(--glass-line); }
