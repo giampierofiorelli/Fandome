@@ -55,3 +55,8 @@ Import the missing 1993 catalogue album, validate six-file ZIP's CSVs against re
 - All Eyez on Me sounds_like emptied: Dr. Dre (The Chronic) is a producer's own album, Tha Dogg Pound is producer Daz Dillinger's group, Snoop Dogg guests on the album.
 - 2Pac's own production credit dropped. Strictly 4 My N.I.G.G.A.Z. (1993) added to the catalogue. Artist influence: Don McLean (his own words).
 - Album id corrected to tupac-alleyezonme (the delivered row had tupac-alleyzonme).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows: `docs/descriptors/reception/tupac.csv`.
+- sounds_like emptied on all four: Public Enemy is sampled on 2Pacalypse Now and Ice Cube appears only as a lineage of lyrics (uDiscover); Ice Cube guests on Strictly (Last Wordz) and Greg Tate's "worthy of Fear of a Black Planet" is about quality, not sound; MC Ren, Scarface (The Diary) and Nas (Illmatic) not found as critics' comparisons.
