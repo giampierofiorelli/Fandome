@@ -47,3 +47,8 @@ Two possible new explicit AllMusic genre/style tokens here: `americanpopularsong
 
 - New genre tokens `earlyjazzvocals` (vocaljazz) and `americanpopularsong` (standards, traditionalpop): AllMusic style labels, kept literally (owner's rule: every genre a source names goes in).
 - Ella and Louis keeps the existing id `armstrong-ellaandlouis` (row in ella.csv); co-billed with Ella. Ella and Louis Again co-billed with Armstrong; the Duke Ellington Song Book carries the printed credit "with Duke Ellington and His Orchestra" (Ellington has no room yet).
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/ella.csv`.
+- sounds_like emptied on all four: no critic compares them to Louis Prima & Keely Smith, Sarah Vaughan, Sinatra, Doris Day, Count Basie or Anita O'Day.
