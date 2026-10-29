@@ -31,3 +31,11 @@ Fandome artist `nada` was not in checked `src/data/catalog.ts`, and `docs/descri
 
 - Added the four albums to the catalogue. Nada dropped from producers as self-credit (Baci rossi, L'anime nere, L'amore è fortissimo e il corpo no).
 - sounds_like Lou Reed (Dove sei sei) and Loredana Bertè (L'amore è fortissimo…) kept pending the critic check.
+
+## Claude enrichment
+
+- Reception from l'Unità (1986, 1999, 2001), la Repubblica 1999, Rockit 2001, AllMusic biography, it.wikipedia.
+- Baci rossi: influenced_by Prince (Nada on this album, VICE 2019: "Ero impazzita per Prince"); rock (l'Unità 1986) and industrial (VICE interviewer) added. Producer Gerry Manzoli confirmed (Discogs 3129209).
+- L'anime nere: producers Gerry Manzoli and Varo Venturi (credited as Hipnos, Discogs 3226461; it.wikipedia). hitparadeitalia.it's entry mixes in the Nada Trio album, not used. Harmonica the only credited instrument; rock added (Nada: "abbastanza rock").
+- Dove sei sei: sounds_like Lou Reed confirmed (la Repubblica, Felice Liperi 1999: "un'ironica lettura alla Lou Reed" on four songs incl. the title track and the Sanremo single). Added rock, blues, folk (l'Unità 1999: "suoni in bilico fra rock e blues"; Liperi on La famiglia), distortion, spoken voice, MIDI guitar.
+- L'amore è fortissimo e il corpo no: Loredana Bertè removed (the source, Gay.it, is unreadable and nothing else makes the comparison). Added jazz (l'Unità: "produzione elegantemente jazzata"), groovebox as drum machine, sound design (Maurizio Martusciello).

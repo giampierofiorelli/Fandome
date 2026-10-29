@@ -35,3 +35,11 @@ The existing Fandome `src/data/catalog.ts` on branch `descriptors` still has no 
 
 - Added the four albums to the catalogue. The two later albums titled Nada get the year in their id (nada-nada1976, nada-nada1979): a general catalogue rule for repeated titles by one artist.
 - Noi non cresceremo mai: influenced_by Kraftwerk|Yazoo kept (Nada's own words on this album, VICE 2019; to confirm in the reception pass).
+
+## Claude enrichment
+
+- Reception from hitparadeitalia.it, it/en.wikipedia, AllMusic biography (Aurelio Pasini), OndaRock, l'Unità (1983, 1986), VICE 2019, Digicult 2005.
+- Nada (1976): year kept at the first (promo) pressing, December 1976; the official issue is winter 1977. Producer Gianni Marchetti confirmed (Discogs 3157915).
+- Nada (1979): producers Cesare Gigli (hitparadeitalia.it, it.wikipedia) plus Alessandro Centofanti and Walter Martino (credited "Mixed By, Producer" on the sleeve, Discogs 3160913).
+- Smalto: lyricon added (new instrument token; Claudio Pizzale, Discogs 2830893); rock and canzone d'autore added (l'Unità 1983); new wave moved last (only Nada describing the period).
+- Noi non cresceremo mai: Kraftwerk and Yazoo confirmed about the whole album (VICE 2019: "Era tutto elettronico… io ero impazzita per i Kraftwerk e gli Yazoo. Così ho fatto un disco tutto marchingegni"). Added drum machine, Oberheim DMX ("Programmed By [D.M.X.]"), drum and synth programming (Discogs 3255012).
