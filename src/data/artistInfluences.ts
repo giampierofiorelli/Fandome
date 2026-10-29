@@ -314,6 +314,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Roxanne Shanté', 'Run-D.M.C.', 'Marvin Gaye', 'Led Zeppelin', 'DJ Jazzy Jeff', 'DJ Scratch'],
     source: 'Salt (Cheryl James): HotNewHipHop (inspired by Roxanne Shanté); Pepa: inkl (Run-D.M.C.); Spinderella: Mount Airy (Jazzy Jeff, DJ Scratch, Jam Master Jay); Rock & Roll Hall of Fame Library (Marvin Gaye, Led Zeppelin)',
   },
+  koolandthegang: {
+    names: ['John Coltrane', 'Miles Davis', 'James Brown'],
+    source: 'Robert “Kool” Bell: Cryptic Rock and a 2003 interview (Coltrane, Miles Davis and James Brown formative in the jazz/R&B years; their funk grew out of James Brown and Motown material)',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
