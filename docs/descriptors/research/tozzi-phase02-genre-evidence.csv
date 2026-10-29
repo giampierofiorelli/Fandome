@@ -1,0 +1,20 @@
+﻿album_id,genre,source,url,scope,evidence
+tozzi-tozzi,poprock,t_original,https://akerrecords.com/listing/umberto-tozzi-tozzi-g-plus-234385,whole album,1980 original LP pressing specifies Pop Rock.
+tozzi-tozzi,pop,t_original,https://akerrecords.com/listing/umberto-tozzi-tozzi-g-plus-234385,whole album,"Original LP categorised Pop alongside Rock, with vocal pop repertoire."
+tozzi-tozzi,ballad,t_original,https://akerrecords.com/listing/umberto-tozzi-tozzi-g-plus-234385,some tracks,Original LP style Ballad; not every track is slow.
+tozzi-tozzi,italianpop,disc_rockol,https://www.rockol.it/artista/umberto-tozzi,scene/contextual,"Italian-language early-1980s pop from Italian artist discography; contextual tag, not formal pressing style."
+tozzi-notterosa,poprock,n_single,https://tuttosutozzi.com/1981-2/1981-discografia/discografia-tozzi/1981-notte-rosa-45-giri/,title single and several guitar-driven tracks,Original CGD title single explicitly styled Pop Rock; management also calls entire album rock-driven.
+tozzi-notterosa,pop,n_qobuz,https://www.qobuz.com/it-it/album/notte-rosa-umberto-tozzi/arfhkgojrvjsc,whole album,Label categorises entire original LP under Pop.
+tozzi-notterosa,ballad,n_original,https://musicbase.net/notte-rosa,some tracks,Original LP style Ballad; slower songs Per Angela and Amico pianoforte.
+tozzi-notterosa,newromantic,n_press,https://www.vice.com/it/article/italian-folgorati-tozzi/,album texture; especially Barbara and title track,"Music criticism links 1981 sound to new romantic, synth/wave and guitar-driven pop; no artist influence claimed."
+tozzi-notterosa,italianpop,n_presse,https://www.musik-sammler.de/release/umberto-tozzi-notte-rosa-lp-838043/,whole album / regional style,German original LP catalogue explicitly specifies Italo-Pop.
+tozzi-eva,pop,e_qobuz,https://www.qobuz.com/us-en/album/eva-umberto-tozzi/kzpds0moh86jc,whole album,Label categorizes original release Pop.
+tozzi-eva,poprock,e_qobuz,https://www.qobuz.com/us-en/album/eva-umberto-tozzi/kzpds0moh86jc,whole album,Qobuz original record category Pop/Rock Pop.
+tozzi-eva,electronic,e_review,https://www.vice.com/it/article/italian-folgorati-tozzi/,"many tracks, signature album texture","Critic hears synths, drum machines and electronic production across several tracks, not only lead single."
+tozzi-eva,newwave,e_review,https://www.vice.com/it/article/italian-folgorati-tozzi/,some tracks / sonic character,"Review explicitly describes experimental 1982 synthetic/wave elements; a texture-level critical inference, not full orthodox new-wave classification."
+tozzi-eva,italianpop,disc_rockol,https://www.rockol.it/artista/umberto-tozzi,scene/contextual,Italian-language album within Italian pop discography; contextual genre and weaker than label source.
+tozzi-hurrah,europop,h_original,https://akerrecords.com/listing/umberto-tozzi-hurrah-vg-234383,whole album,Original 1984 LP pressing categorizes Europop.
+tozzi-hurrah,poprock,h_original,https://akerrecords.com/listing/umberto-tozzi-hurrah-vg-234383,whole album,Original LP pressing categorizes Pop Rock.
+tozzi-hurrah,pop,h_original,https://akerrecords.com/listing/umberto-tozzi-hurrah-vg-234383,whole album,Original LP top-level Pop category.
+tozzi-hurrah,electronic,h_original,https://akerrecords.com/listing/umberto-tozzi-hurrah-vg-234383,whole album / partial blend,Original LP top-level Electronic category; reviewer details electronic rhythm and synth-bass.
+tozzi-hurrah,dance,h_critic,https://www.vice.com/it/article/italian-folgorati-tozzi/,"title single only, secondary","Critic calls the title track high-tempo electronic dance, not an album-wide dance record."

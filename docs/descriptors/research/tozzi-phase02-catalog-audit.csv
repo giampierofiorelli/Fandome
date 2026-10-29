@@ -1,0 +1,14 @@
+﻿album_id,artist,title,year,type,catalog_status,descriptor_status,phase,action,notes
+tozzi-tozzi,Umberto Tozzi,Tozzi,1980,studio,missing,missing,02,"ADD to tozzi artist in catalog.ts, then import descriptor row","Original solo studio LP confirmed by Rockol, MusicBrainz and original LP; no existing duplicate as of this batch."
+tozzi-notterosa,Umberto Tozzi,Notte rosa,1981,studio,missing,missing,02,"ADD to tozzi artist in catalog.ts, then import descriptor row","Original solo studio LP confirmed by Rockol, MusicBrainz and original LP; no existing duplicate as of this batch."
+tozzi-eva,Umberto Tozzi,Eva,1982,studio,missing,missing,02,"ADD to tozzi artist in catalog.ts, then import descriptor row","Original solo studio LP confirmed by Rockol, MusicBrainz and original LP; no existing duplicate as of this batch."
+tozzi-hurrah,Umberto Tozzi,Hurrah!,1984,studio,missing,missing,02,"ADD to tozzi artist in catalog.ts, then import descriptor row","Original solo studio LP confirmed by Rockol, MusicBrainz and original LP; no existing duplicate as of this batch."
+tozzi-inconcerto,Umberto Tozzi,In concerto,1980,live,not part of this phase,not researched,future/exclusion,do not import in phase02,live; exclude
+tozzi-mama,Umberto Tozzi,Mama,1984,unresolved,not part of this phase,not researched,future/exclusion,do not import in phase02,release variant; MusicBrainz lists separately; do not auto-add as independent original album
+tozzi-nellariac,Umberto Tozzi,Nell’aria c’è,1983,unresolved,not part of this phase,not researched,future/exclusion,do not import in phase02,single; appears within Hurrah! track list
+tozzi-invisibile,Umberto Tozzi,Invisibile,1987,studio,not part of this phase,not researched,future/exclusion,do not import in phase02,future original studio candidate
+tozzi-glialtrisiamonoi,Umberto Tozzi,Gli altri siamo noi,1991,studio,not part of this phase,not researched,future/exclusion,do not import in phase02,future original studio candidate
+tozzi-equivocando,Umberto Tozzi,Equivocando,1994,studio,not part of this phase,not researched,future/exclusion,do not import in phase02,future original studio candidate
+tozzi-ilgrido,Umberto Tozzi,Il grido,1996,studio,not part of this phase,not researched,future/exclusion,do not import in phase02,future original studio candidate
+tozzi-royalalberthall,Umberto Tozzi,Royal Albert Hall,1988,live,not part of this phase,not researched,future/exclusion,do not import in phase02,live; exclude
+tozzi-minutidiuneternit,Umberto Tozzi,Minuti di un’eternità,1987,compilation,not part of this phase,not researched,future/exclusion,do not import in phase02,compilation; exclude

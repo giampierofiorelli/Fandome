@@ -527,7 +527,7 @@ const ROWS: Row[] = [
   ['pinodaniele', 'Pino Daniele', '#3f8fb5', 'Naples blues, forever', [['Pino Daniele', 1979], ['Nero a metà', 1980], ['Vai mò', 1981], ['Bella ’mbriana', 1982]]],
   ['vecchioni', 'Roberto Vecchioni', '#7a8a6a', 'The professor of Italian song', [['Samarcanda', 1977], ['Robinson, come salvarsi la vita', 1979], ['Il cielo capovolto', 1995]]],
   ['cocciante', 'Riccardo Cocciante', '#c95a5a', 'Passionate voice, timeless ballads', [['Concerto per Margherita', 1976], ['Cervo a primavera', 1980]]],
-  ['tozzi', 'Umberto Tozzi', '#e0a03f', 'Gloria and Ti amo, sung everywhere', [['Donna amante mia', 1976], ['È nell’aria… ti amo', 1977], ['Tu', 1978], ['Gloria', 1979]]],
+  ['tozzi', 'Umberto Tozzi', '#e0a03f', 'Gloria and Ti amo, sung everywhere', [['Donna amante mia', 1976], ['È nell’aria… ti amo', 1977], ['Tu', 1978], ['Gloria', 1979], ['Tozzi', 1980], ['Notte rosa', 1981], ['Eva', 1982], ['Hurrah!', 1984]]],
   ['milva', 'Milva', '#c94a3f', 'La Rossa, voice of theatre and song', []],
   ['giunirusso', 'Giuni Russo', '#5ab5c9', 'Un’estate al mare and a five-octave voice', [['Energie', 1981]]],
   ['ritapavone', 'Rita Pavone', '#e07a5a', 'The teenage star of the sixties', []],
