@@ -1,0 +1,8 @@
+﻿album_id,title,year,type,catalog_status,phase,action
+vasco-liberiliberi,Liberi liberi,1989,studio,EXISTS,03,KEEP existing album_id; append descriptor only
+vasco-glisparisopra,Gli spari sopra,1993,studio,EXISTS,03,KEEP existing album_id; append descriptor only
+vasco-nessunpericoloperte,Nessun pericolo… per te,1996,studio,EXISTS,03,KEEP existing album_id; append descriptor only
+vasco-canzoniperme,Canzoni per me,1998,studio,MISSING,03,ADD to src/data/catalog.ts before import
+,Fronte del palco,1990,live,EXCLUDED,03,Exclude live album
+,Vasco live 10.7.90 San Siro,1991,live,EXCLUDED,03,Exclude live album
+,Rewind,1999,live,EXCLUDED,03,Exclude live album; separate song Rewind belongs on Canzoni per me

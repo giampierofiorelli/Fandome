@@ -1,0 +1,24 @@
+﻿album_id,genre,source,scope,evidence
+vasco-liberiliberi,poprock,https://www.chartsurfer.de/artist/vasco-rossi/liberi-liberi-album_ffeeru.html,whole record,Original EMI LP category Rock / Pop Rock.
+vasco-liberiliberi,rock,https://musicbrainz.org/release-group/8f0d49a7-10b0-3d27-bbf8-62ae78aac776,whole record,MusicBrainz rock tag; Rossi describes an unusually hard and raw record.
+vasco-liberiliberi,hardrock,https://musicbrainz.org/release-group/8f0d49a7-10b0-3d27-bbf8-62ae78aac776,album community tag / rock numbers,Hard rock tag appears on release group; rock songs rather than dominant record-wide style.
+vasco-liberiliberi,pop,https://www.ondarock.it/monografie/vascorossi/,multiple tracks,OndaRock points to accessible pop songs; subordinate to the album rock style.
+vasco-liberiliberi,ballad,https://shop.universalmusic.it/products/vasco-rossi-liberi-liberi-vinile,multiple reflective songs,"Label foregrounds melancholy and reflection, notably Liberi liberi and Dillo alla luna; genre editorial assessment."
+vasco-glisparisopra,rock,https://shop.universalmusic.it/products/vasco-rossi-gli-spari-sopra-doppio-vinile,whole record,Label documents aggressive guitar rock contrasted with melancholic pieces.
+vasco-glisparisopra,hardrock,https://it.wikipedia.org/wiki/Gli_spari_sopra,multiple songs / album,Italian album genre includes hard rock; heavy material on Lo show and title track.
+vasco-glisparisopra,poprock,https://www.chartsurfer.de/artist/vasco-rossi/gli-spari-sopra-album_ffegfp.html,whole record,1993 original edition style is Pop Rock.
+vasco-glisparisopra,ballad,https://www.debaser.it/vasco-rossi/gli-spari-sopra,several tracks,"Reviews foreground Vivere, Gabri and Stupendo as contrasting emotional ballads."
+vasco-glisparisopra,country,https://en.debaser.it/vasco-rossi/gli-spari-sopra/review-jployrow2,"one track, Occhi blu","Critic says almost country on Occhi blu; tentative last-place country genre, track-level only."
+vasco-nessunpericoloperte,rock,https://it.wikipedia.org/wiki/Nessun_pericolo..._per_te,whole record,Album-wide rock designation and guitar-driven ensemble.
+vasco-nessunpericoloperte,poprock,https://musicbase.net/nessun-pericolo-per-te,whole record,Original white LP labels style Pop Rock.
+vasco-nessunpericoloperte,hardrock,https://www.debaser.it/vasco-rossi/nessun-pericolo-per-te,many rock tracks,"Reception describes hard, guitar-forward songs such as Un gran bel film."
+vasco-nessunpericoloperte,ballad,https://musicbase.net/nessun-pericolo-per-te,several tracks,Original release styles include Ballad; Sally and Gli angeli are major examples.
+vasco-nessunpericoloperte,bluesrock,https://www.debaser.it/vasco-rossi/nessun-pericolo-per-te/recensione-paolos,one song title track,Contemporary reviewer explicitly describes slow blues-rock for title song only.
+vasco-nessunpericoloperte,aor,https://www.debaser.it/vasco-rossi/nessun-pericolo-per-te,album context / some reviews,"DeBaser contributor category AOR (Album Oriented Rock), lower-weight contextual label."
+vasco-canzoniperme,rock,https://it.wikipedia.org/wiki/Canzoni_per_me,whole record,Rock is the original discography genre despite a softer album.
+vasco-canzoniperme,poprock,https://www.debaser.it/vasco-rossi/canzoni-per-me,whole record,DeBaser classifies Italian Pop Rock and compares acoustic and pop material.
+vasco-canzoniperme,acousticrock,https://www.debaser.it/vasco-rossi/canzoni-per-me/recensione-let-there-be-rock,many songs,Reviewer explicitly discusses rock/acustico and acoustic guitars on several songs.
+vasco-canzoniperme,blues,https://shop.universalmusic.it/products/vasco-rossi-canzoni-per-me-vinile,some tracks,Official label describes sonorities ranging from blues to dance.
+vasco-canzoniperme,dance,https://shop.universalmusic.it/products/vasco-rossi-canzoni-per-me-vinile,one track mainly Rewind,Label references dance; Rewind is singled out as dance-pop outlier by critics.
+vasco-canzoniperme,ballad,https://www.debaser.it/vasco-rossi/canzoni-per-me,multiple songs,Intimate ballad-like songs praised by reviewers; genre editorial label rather than exact source token.
+vasco-canzoniperme,canzonedautore,https://www.rockol.it/recensioni-musicali/album/3/vasco-rossi-canzoni-per-me?amp=1,album writing focus,Contemporary reviewer emphasizes autobiographical songs and stories; songwriting genre is interpretive.
