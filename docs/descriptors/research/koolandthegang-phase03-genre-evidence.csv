@@ -1,0 +1,20 @@
+﻿album_id,genre,source,url,scope,evidence
+koolandthegang-theforce,funk,AllMusic,https://www.allmusic.com/album/the-force-mw0000841563,whole album,AllMusic names funk as album style.
+koolandthegang-theforce,soul,Original De-Lite LP genre listing,https://rectangletriangle.com/products/the-force-kool-the-gang,whole album,Original pressing catalogued as soul within Funk/Soul.
+koolandthegang-theforce,rnb,AllMusic,https://www.allmusic.com/album/the-force-mw0000841563,whole album,AllMusic overarching album genre R&B.
+koolandthegang-theforce,disco,Original De-Lite LP genre listing,https://rectangletriangle.com/products/the-force-kool-the-gang,whole album,Original pressing listed with a disco style; less prominent than funk.
+koolandthegang-everybodysdancin,disco,Everybody’s Dancin’ album discography,https://en.wikipedia.org/wiki/Everybody%27s_Dancin%27,whole album,Album genre specifically disco; the LP title suite reinforces direction.
+koolandthegang-everybodysdancin,funk,Everybody’s Dancin’ album discography,https://en.wikipedia.org/wiki/Everybody%27s_Dancin%27,whole album,Funk listed alongside disco; Qobuz and JazzMusicArchives concur.
+koolandthegang-everybodysdancin,soul,Qobuz metadata,https://www.qobuz.com/gb-en/album/everybodys-dancin-kool-the-gang/0060253738701,whole album broad category,Retail genre family Soul/Funk/R&B: less precise than disco and funk.
+koolandthegang-everybodysdancin,rnb,Qobuz metadata,https://www.qobuz.com/gb-en/album/everybodys-dancin-kool-the-gang/0060253738701,whole album broad category,Retail R&B genre family: low-weight broad category.
+koolandthegang-ladiesnight,disco,Ladies’ Night album discography,https://en.wikipedia.org/wiki/Ladies%27_Night_%28album%29,whole album,Explicit disco genre; also consistent with professional reviews of dance-club direction.
+koolandthegang-ladiesnight,rnb,Ladies’ Night album discography,https://en.wikipedia.org/wiki/Ladies%27_Night_%28album%29,whole album,Explicit R&B album classification also supported by Qobuz and Apple Music.
+koolandthegang-ladiesnight,synthfunk,Ladies’ Night album discography,https://en.wikipedia.org/wiki/Ladies%27_Night_%28album%29,whole album,Specific synth-funk category named; synth models not assigned without evidence.
+koolandthegang-ladiesnight,soul,Amy Hanson / AllMusic,https://www.allmusic.com/album/release/ladies-night-mr0001659216,"album, key ballad",Review explicitly characterizes Too Hot as soul; service also gives Soul as album category.
+koolandthegang-ladiesnight,pop,Apple Music editorial,https://music.apple.com/us/album/ladies-night/1426967393,whole album,Direct editorial and Ronald Bell testimony describe conscious transition to pop arrangements.
+koolandthegang-celebrate,disco,Amy Hanson / AllMusic,https://www.allmusic.com/album/r11185/review,whole album,Review explicitly names disco as central genre and recurring club grooves.
+koolandthegang-celebrate,funk,Amy Hanson / AllMusic,https://www.allmusic.com/album/r11185/review,whole album,Review states funk as part of album blend and specifically discusses funk rhythm work.
+koolandthegang-celebrate,popsoul,Album of the Year metadata,https://www.albumoftheyear.org/album/51366-kool-the-gang-celebrate.php,whole album,Album listed as Pop Soul as well as Funk and Disco.
+koolandthegang-celebrate,rnb,AllMusic,https://www.allmusic.com/album/r11185/review,whole album broad category,AllMusic R&B is overarching category.
+koolandthegang-celebrate,postdisco,Ed Hogan / AllMusic on Celebration,https://www.allmusic.com/song/celebration-mt0058397618,lead single only,Celebration is explicit post-disco; placed fifth to reflect major hit rather than blanket LP claim.
+koolandthegang-celebrate,dancepop,Ed Hogan / AllMusic on Celebration,https://www.allmusic.com/song/celebration-mt0058397618,lead single only,Celebration is explicit dance-pop; placed sixth so track-level tagging is not over-weighted.
