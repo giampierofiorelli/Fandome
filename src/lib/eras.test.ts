@@ -21,7 +21,7 @@ describe('periods of a long career', () => {
 
   it('leaves short careers, and careers that kept one sound, as one list', () => {
     expect(eras('blanco')).toBeNull()
-    expect(eras('vasco')?.length ?? 1).toBeLessThanOrEqual(2)
+    expect(eras('eros')?.length ?? 1).toBeLessThanOrEqual(2)
   })
 
   it('suggests for one period from its albums only, with collaborations of those years', () => {

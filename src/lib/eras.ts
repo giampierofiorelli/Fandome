@@ -16,10 +16,9 @@ export interface Era {
 // Only long careers: at least 8 described albums of their own over at least 15 years.
 const MIN_ALBUMS = 8
 const MIN_SPAN = 15
-// A period needs three albums, or one key album (career weight 4+ or a landmark) that stands apart on its own:
-// an artist who changed with almost every record (Madonna's Ray of Light) gets that record as a period.
+// A period needs three albums, or one album that sounds unlike the records around it (an artist who changed
+// with almost every record, like Madonna, gets such records as periods of their own).
 const MIN_PERIOD = 3
-const keyAlbum = (d: Descriptor) => (d.importance !== undefined ? d.importance >= 4 : d.landmark)
 // Cost of opening a new period: the higher, the fewer periods. Set on Battiato, Madonna, Bowie, U2 and
 // Pink Floyd, whose periods critics agree on.
 const NEW_PERIOD = 0.25
@@ -49,14 +48,25 @@ function computeEras(artistId: string, albumIds: string[]): Era[] | null {
   if (n < MIN_ALBUMS || ds[n - 1].year! - ds[0].year! < MIN_SPAN) return null
   const documented = DOCUMENTED.get(artistId)
   if (documented?.length) return fromSources(ds, documented)
-  const sim = ds.map((a) => ds.map((b) => compareProfiles(albumProfile(a), albumProfile(b)).base))
+  // Sound kinship between two records: half the engine's comparison, half the share of all their genres in common
+  // (every genre a source names counts the same here, so Madame X's fado and kuduro set it apart from MDNA's EDM
+  // even though both open with pop).
+  const all = (d: Descriptor) => new Set(d.genres)
+  const overlap = (a: Descriptor, b: Descriptor) => {
+    const x = all(a), y = all(b)
+    let n = 0
+    for (const g of x) if (y.has(g)) n++
+    return n / (x.size + y.size - n || 1)
+  }
+  const sim = ds.map((a) => ds.map((b) => (compareProfiles(albumProfile(a), albumProfile(b)).base + overlap(a, b)) / 2))
   // A period's cost: for each album, how far it is from the others in the same period.
-  // A key album on its own costs what an ordinary album costs in a period of this artist (one minus the usual
-  // similarity between neighbouring records): it stands alone only when it sounds unlike the records around it.
+  // An album on its own costs a little less than an ordinary album in a period of this artist (one minus the usual
+  // similarity between neighbouring records): it stands alone only when it sounds unlike the records around it
+  // (Madonna's Madame X, Lady Gaga's Cheek to Cheek).
   const adjacent = ds.slice(1).map((_, k) => sim[k][k + 1]).sort((a, b) => a - b)
   const usual = adjacent[Math.floor(adjacent.length / 2)]
   const cost = (i: number, j: number) => {
-    if (i === j) return 1 - usual
+    if (i === j) return 0.85 * (1 - usual)
     let c = 0
     for (let x = i; x <= j; x++) {
       let s = 0
@@ -65,7 +75,7 @@ function computeEras(artistId: string, albumIds: string[]): Era[] | null {
     }
     return c
   }
-  const allowed = (i: number, j: number) => j - i + 1 >= MIN_PERIOD || (i === j && keyAlbum(ds[i]))
+  const allowed = (i: number, j: number) => j - i + 1 >= MIN_PERIOD || i === j
   // The cheapest split into periods (dynamic programming over the album sequence).
   const best: number[] = Array(n + 1).fill(Infinity)
   const cut: number[] = Array(n + 1).fill(0)

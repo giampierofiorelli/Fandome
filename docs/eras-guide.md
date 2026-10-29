@@ -5,7 +5,7 @@ On an artist's "Similar" tab, long careers that changed sound get one list per p
 ## Computed periods
 
 - Only artists with at least 8 described albums of their own over at least 15 years (compilations, live and holiday albums left out).
-- Albums in order of release are split where the sound changes (album descriptions compared with the same engine as the suggestions). A period has three albums, or one key album (career weight 4+ or a landmark) that sounds unlike the records around it: an artist who changed with almost every record gets that record as a period.
+- Albums in order of release are split where the sound changes (album descriptions compared with the same engine as the suggestions). A period has three albums, or a single album that sounds unlike the records around it (all its genres compared, not only the first ones): an artist who changed with almost every record gets those records as periods of their own.
 - No split found, no periods: the page keeps one list.
 - Label: the years and the two genres that set the period apart from the others.
 - Each period's suggestions use only its albums, weighted by career weight like the whole-career list; collaborations count only if they happened in those years.
