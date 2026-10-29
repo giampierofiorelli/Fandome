@@ -30,3 +30,8 @@ No GitHub changes were made while preparing this package. A successful ZIP integ
 
 - Band self-credit dropped from producers (In the Heart, Emergency keep Ronald Bell and Jim Bonnefond).
 - New production token `oberheimxpander` added (documented on Emergency's credits) to production.ts, the guide and the prompt.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/koolandthegang.csv`.
+- sounds_like (ChatGPT's editorial lists) checked: no critic compares any of the four albums to EWF, Commodores, Chic, Gap Band, Shalamar, Prince or the Pointer Sisters; only a personal review site (warr.org) names Stevie Wonder, Marvin Gaye and Cameo for single tracks, not used. All four emptied.
