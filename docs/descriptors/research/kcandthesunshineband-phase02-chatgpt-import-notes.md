@@ -41,3 +41,9 @@ Sources are in `kcandthesunshineband_phase02_sources.csv` and detailed reasoning
 ## Claude import note (Oct 2026)
 
 - Rows imported as delivered. KC Ten (1983) removed from the band's catalogue row: originally credited to KC alone, like Space Cadet: Solo Flight.
+
+## Claude enrichment (reception pass, Oct 2026)
+
+- Reception rows appended to `docs/descriptors/reception/kcandthesunshineband.csv`.
+- All in a Night's Work: landmark set to 0 (carried by Give It Up; the album peaked at UK #46 and no source calls it a landmark).
+- No critic sound comparison found for any of the four (Christgau's Ramones line is about hooks, not sound; Pop Rescue's Hucknall/Rod Stewart remark is a blog on one vocal): sounds_like left empty.
