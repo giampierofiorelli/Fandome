@@ -1,0 +1,21 @@
+album_id,artist,title,year,type,catalog_action,notes
+ella-ellafitzgeraldsingssweetsongsforswingers,Ella Fitzgerald,Ella Fitzgerald Sings Sweet Songs for Swingers,1959,studio,ADD_NEW_PHASE_04,Not in catalog.ts or existing ella.csv on 29 October 2026. Original 12-track Verve MGV-4032; do not split 1958 and 1959 sessions.
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,Ella Fitzgerald,Ella Fitzgerald Sings the George and Ira Gershwin Song Book,1959,studio,DESCRIBE_EXISTING_CATALOG_ROW,"Present under ella in catalog.ts; no existing row in ella.csv. One original 1959 five-LP work (53 original songs), do not split five volumes or add 1998/2017 expanded editions."
+ella-gethappy,Ella Fitzgerald,Get Happy!,1959,studio,ADD_NEW_PHASE_04_YEAR_DISPUTE,"Original 12-track assembled studio LP, not a greatest hits. Official Ella/AllMusic/MusicBrainz 1959; jazzdiscography/jazzdisco/45cat earliest Verve US issue 1960. Year provisional, review before import."
+,Ella Fitzgerald,Ella Sings Gershwin,,,PRIOR_PHASE_01,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Songs in a Mellow Mood,,,PRIOR_PHASE_01,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Sweet and Hot,,,PRIOR_PHASE_01,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Fitzgerald Sings the Cole Porter Song Book,,,PRIOR_PHASE_01,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella and Louis,,,PRIOR_PHASE_02,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Fitzgerald Sings the Rodgers and Hart Song Book,,,PRIOR_PHASE_02,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Fitzgerald Sings the Duke Ellington Song Book,,,PRIOR_PHASE_02,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella and Louis Again,,,PRIOR_PHASE_02,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Like Someone in Love,,,PRIOR_PHASE_03,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Porgy and Bess,,,PRIOR_PHASE_03,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Fitzgerald Sings the Irving Berlin Song Book,,,PRIOR_PHASE_03,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Swings Lightly,,,PRIOR_PHASE_03,Already handled in earlier phase; do not reimport. Some catalog entries from these phases have already been merged.
+,Ella Fitzgerald,Ella Wishes You a Swinging Christmas,1960,studio,FUTURE_PHASE_VERIFY_ORIGINAL_ISSUE,Not included in phase 04; requires separate source research.
+,Ella Fitzgerald,"Hello, Love",1960,studio,FUTURE_PHASE_VERIFY_ORIGINAL_ISSUE,Not included in phase 04; requires separate source research.
+,Ella Fitzgerald,Ella Fitzgerald Sings Songs from Let No Man Write My Epitaph,1960,studio,FUTURE_PHASE_VERIFY_ORIGINAL_ISSUE,Not included in phase 04; requires separate source research.
+,Ella Fitzgerald,Ella Fitzgerald Sings the Harold Arlen Song Book,1961,studio,FUTURE_PHASE_VERIFY_ORIGINAL_ISSUE,Not included in phase 04; requires separate source research.
+ella-ellainberlinmacktheknife,Ella Fitzgerald,Ella in Berlin: Mack the Knife,1960,live,EXCLUDE_LIVE,Already appears in the Fandome catalog; never create a descriptor row because live albums excluded.

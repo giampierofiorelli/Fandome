@@ -1,0 +1,23 @@
+album_id,genre,source,url,scope,evidence
+ella-ellafitzgeraldsingssweetsongsforswingers,vocaljazz,sweet_qobuz,https://www.qobuz.com/us-en/album/sings-sweet-songs-for-swingers-ella-fitzgerald/khgzozpt9ct1a,whole album,Qobuz/Verve album genre Vocal Jazz
+ella-ellafitzgeraldsingssweetsongsforswingers,jazz,sweet_allmusic,https://www.allmusic.com/album/sings-sweet-songs-for-swingers-mw0000041001,whole album,AllMusic album jazz classification and Scott Yanow critique
+ella-ellafitzgeraldsingssweetsongsforswingers,standards,sweet_allmusic,https://www.allmusic.com/album/sings-sweet-songs-for-swingers-mw0000041001,whole album,AllMusic style Standards and repertoire of jazz standards
+ella-ellafitzgeraldsingssweetsongsforswingers,traditionalpop,sweet_allmusic,https://www.allmusic.com/album/sings-sweet-songs-for-swingers-mw0000041001,whole album,AllMusic style Traditional Pop for midcentury standard repertoire
+ella-ellafitzgeraldsingssweetsongsforswingers,swing,sweet_allmusic,https://www.allmusic.com/album/sings-sweet-songs-for-swingers-mw0000041001,whole album,Yanow expressly distinguishes swingers from ballad interpretations; DeVol orchestra
+ella-ellafitzgeraldsingssweetsongsforswingers,americanpopularsong,sweet_allmusic,https://www.allmusic.com/album/sings-sweet-songs-for-swingers-mw0000041001,whole album,"AllMusic lists American Popular Song as a style; repertoire tag, not a separate electronic sound"
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,vocaljazz,gersh_qobuz,https://www.qobuz.com/us-en/album/ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book-ella-fitzgerald/wqs2ftctry0ea,whole album,Qobuz/Verve category Vocal Jazz
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,jazz,gersh_apple,https://music.apple.com/us/album/ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book/1469619207,whole album,Apple editorial locates overall approach in jazz alongside orchestral songbook pop
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,standards,gersh_allmusic,https://www.allmusic.com/album/r355611,whole album,AllMusic lists Standards
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,traditionalpop,gersh_allmusic,https://www.allmusic.com/album/r355611,whole album,AllMusic lists Traditional Pop
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,swing,gersh_review,https://www.albumoftheyear.org/album/66206-ella-fitzgerald-ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book.php,many tracks,Genre guide describes the album as swing as well as orchestral songbook; not every track swings
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,bigband,gersh_review,https://www.albumoftheyear.org/album/66206-ella-fitzgerald-ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book.php,many tracks,Big Band listed explicitly by album genre profile; Riddle brass arrangements
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,americanpopularsong,gersh_allmusic,https://www.allmusic.com/album/r355611,whole album,AllMusic explicitly lists American Popular Song as repertoire style
+ella-ellafitzgeraldsingsthegeorgeandiragershwinsongbook,earlyjazzvocals,gersh_allmusic,https://www.allmusic.com/album/r355611,tag/category,Exact AllMusic taxonomy tag; avoid implying the 1959 recording predates 1940
+ella-gethappy,vocaljazz,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,whole album,AllMusic explicitly calls Vocal Jazz
+ella-gethappy,jazz,get_jazzcodex,https://jazzcodex.com/albums/ella-fitzgerald-get-happy/,whole album,Jazz LP from Verve studio Ella sessions and jazz critics; acoustic orchestra
+ella-gethappy,standards,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,whole album,AllMusic lists Standards
+ella-gethappy,traditionalpop,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,whole album,AllMusic lists Traditional Pop
+ella-gethappy,swing,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,many tracks,Yanow highlights scat Blue Skies and buoyant swing songs; this is a style of several tracks
+ella-gethappy,americanpopularsong,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,whole album,AllMusic explicitly uses American Popular Song style
+ella-gethappy,earlyjazzvocals,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,tag/category,"AllMusic lists Early Jazz Vocals as a category, not recording date"
+ella-gethappy,blues,get_allmusic,https://www.allmusic.com/album/get-happy%21-mw0000044909,some tracks,"St. Louis Blues is one specific blues performance, placed at end of genres"
