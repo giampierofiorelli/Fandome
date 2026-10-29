@@ -1,0 +1,5 @@
+﻿artist_id,album_id,title,year,type,catalogue_status,descriptor_status,notes
+gruppoitaliano,gruppoitaliano-maccherock,Maccherock,1982,studio,ADD,NO_EXISTING_ROW,"Propose new artist ID gruppoitaliano; absent catalog.ts, seed.ts and descriptor files on descriptors branch"
+gruppoitaliano,gruppoitaliano-tapiocamanioca,Tapioca manioca,1984,studio,ADD,NO_EXISTING_ROW,"Propose new artist ID gruppoitaliano; absent catalog.ts, seed.ts and descriptor files on descriptors branch"
+gruppoitaliano,gruppoitaliano-surfinitaly,Surf in Italy,1985,studio,ADD,NO_EXISTING_ROW,"Propose new artist ID gruppoitaliano; absent catalog.ts, seed.ts and descriptor files on descriptors branch"
+gruppoitaliano,,I Grandi Successi Originali,2002,compilation,EXCLUDE,EXCLUDED_COMPILATION,"2002 retrospective compilation, excluded under Fandome policy"
