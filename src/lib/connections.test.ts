@@ -3,6 +3,7 @@ import { allConnections, describe, rootsAndHeirs, yourConnections } from './conn
 import { buildScene, listenFor, startWith } from './scenePath'
 import { albums, artists, seedUsers } from '../data/seed'
 import type { User } from '../data/types'
+import { COVERS } from '../data/covers'
 
 const name = (id: string) => artists.find((a) => a.id === id)?.name ?? id
 const fan = (fans: string[]) => ({ id: 'me', name: 'Me', fanSince: Object.fromEntries(fans.map((f) => [f, 2020])), following: [], ratings: {} }) as unknown as User
@@ -12,6 +13,17 @@ group('connections', () => {
     const list = allConnections(artists)
     expect(list.some((c) => c.from === 'madonna' && c.to === 'moroder' && c.type === 'influenced')).toBe(true)
     expect(list.some((c) => c.from === 'blanco' && c.to === 'mahmood' && c.type === 'soundslike')).toBe(true)
+  })
+
+  it('counts credited covers as connections, and every cover points to real albums', () => {
+    const list = allConnections(artists)
+    expect(list.some((c) => c.from === 'laurabranigan' && c.to === 'tozzi' && c.type === 'covered' && c.work === 'Gloria')).toBe(true)
+    expect(list.some((c) => c.from === 'laurabranigan' && c.to === 'raf' && c.type === 'covered')).toBe(true)
+    const ids = new Set(albums.map((a) => a.id))
+    for (const c of COVERS) {
+      expect(ids.has(c.original), c.original).toBe(true)
+      expect(ids.has(c.cover), c.cover).toBe(true)
+    }
   })
 
   it('tells your connection in plain words', () => {

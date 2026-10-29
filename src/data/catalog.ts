@@ -535,7 +535,7 @@ const ROWS: Row[] = [
   ['giorgia', 'Giorgia', '#c97a9a', 'Italy’s great soul voice', [['Mangio troppa cioccolata', 1997], ['Senza ali', 2001], ['Ladra di vento', 2003], ['Dietro le apparenze', 2011], ['Oronero', 2016]]],
   ['jovanotti', 'Jovanotti', '#e0b53f', 'Joy, rhythm and big beach parties', [['Lorenzo 1992', 1992], ['Lorenzo 1994', 1994], ['L’albero', 1997], ['Buon sangue', 2005], ['Safari', 2008], ['Ora', 2011], ['Oh, vita!', 2017]]],
   ['ligabue', 'Ligabue', '#8a5a3f', 'Rock from Correggio to the stadiums', [['Ligabue', 1990], ['Buon compleanno Elvis', 1995], ['Miss Mondo', 1999], ['Arrivederci, mostro!', 2010]]],
-  ['raf', 'Raf', '#5a8a9a', 'Self Control and Italian pop classics', []],
+  ['raf', 'Raf', '#5a8a9a', 'Self Control and Italian pop classics', [['Raf', 1984], ['Svegliarsi un anno fa', 1988], ['Cosa resterà...', 1989], ["Sogni... è tutto quello che c'è", 1991]]],
   ['masini', 'Marco Masini', '#4a6a8a', 'Intense ballads from Florence', [['Marco Masini', 1990], ['Malinconoia', 1991], ['T’innamorerai', 1993]]],
   ['pezzali', 'Max Pezzali', '#e05a5a', 'Songs of the Italian province, sung by everyone', [['Il mondo insieme a te', 2004], ['Time Out', 2007], ['Astronave Max', 2015]]],
   ['cremonini', 'Cesare Cremonini', '#5a9ae0', 'Bologna pop, grown up', [['Bagus', 2002], ['Maggese', 2005], ['Logico', 2014], ['Possibili scenari', 2017], ['Alaska Baby', 2024]]],

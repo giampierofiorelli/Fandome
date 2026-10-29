@@ -20,6 +20,31 @@ import { avoidAlbums } from '../lib/suggest'
 import { albums } from '../data/seed'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
+import { coversOf } from '../data/covers'
+
+// Covers credited on the record, in both directions: what this album covers, and who covered its songs.
+function CoverLines({ albumId }: { albumId: string }) {
+  const { covers, coveredBy } = coversOf(albumId)
+  const link = (id: string) => {
+    const a = albumById(id)
+    const who = a ? artistById(a.artistId)?.name : undefined
+    return a ? <Link to={`/album/${a.id}`}>{who ? `${who}, ` : ''}{a.title} ({a.year})</Link> : id
+  }
+  return (
+    <>
+      {covers.map((c) => (
+        <p key={`c-${c.song}`} className="small sound-line">
+          Covers {c.song}, first recorded on {link(c.original)}
+        </p>
+      ))}
+      {coveredBy.map((c) => (
+        <p key={`b-${c.song}-${c.cover}`} className="small sound-line">
+          {c.song} was covered on {link(c.cover)}
+        </p>
+      ))}
+    </>
+  )
+}
 
 // One page per album: reached from albums linked in posts. Rate it, and read what fans say.
 export default function AlbumPage() {
@@ -40,6 +65,7 @@ export default function AlbumPage() {
   const mine = me?.ratings[album.id]
   const items = albumFeed(state.posts, album.id)
   const sound = descriptorOf(album.id)
+  const covers = coversOf(album.id)
   const artistOfAlbum = (id: string) => albumById(id)?.artistId
   const similar = similarAlbumsStable(album.id, { artistOf: artistOfAlbum, artistsOf: (id) => { const x = albumById(id); return x ? albumArtistIds(x) : [] }, countryOf: (id) => sceneOf(artistOfAlbum(id) ?? '')?.country, hide: me?.notForMe, avoid: avoidAlbums(me, albums) })
 
@@ -117,8 +143,14 @@ export default function AlbumPage() {
             {sound.instruments.length > 0 && <p className="small sound-line">Instruments: {sound.instruments.map(instrumentLabel).join(', ')}</p>}
             {sound.production.length > 0 && <p className="small sound-line">Production: {sound.production.map(productionLabel).join(', ')}</p>}
             {sound.producers.length > 0 && <p className="muted small sound-line">Produced by {sound.producers.join(', ')}</p>}
+            <CoverLines albumId={album.id} />
           </div>
         </>
+      )}
+      {!sound && (covers.covers.length > 0 || covers.coveredBy.length > 0) && (
+        <div className="album-sound">
+          <CoverLines albumId={album.id} />
+        </div>
       )}
       {(similar.length > 0 || sound) && (
         <>

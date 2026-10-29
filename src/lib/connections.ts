@@ -4,6 +4,7 @@
 // Used by Scenes to show "your connection" to a scene's artist and its roots and heirs.
 import { parseCsv } from './csv'
 import { DESCRIPTORS } from './descriptors'
+import { COVERS } from '../data/covers'
 import type { Artist } from '../data/types'
 
 export type ConnectionType = 'influenced' | 'soundslike' | 'sampled' | 'covered' | 'collaborated' | 'produced'
@@ -39,6 +40,8 @@ export function allConnections(artists: Artist[]): Connection[] {
     for (const n of d.soundsLike) { const to = idOf(n); if (to) add({ from, to, type: 'soundslike', work: d.title }) }
     for (const n of d.producers) { const to = idOf(n); if (to) add({ from, to, type: 'produced', work: d.title }) }
   }
+  // Covers credited on the records (src/data/covers.ts): the cover's artist covered the original's artist.
+  for (const c of COVERS) add({ from: c.cover.split('-')[0], to: c.original.split('-')[0], type: 'covered', work: c.song, source: c.source })
   for (const text of Object.values(files)) {
     const [head, ...rows] = parseCsv(text)
     if (!head) continue

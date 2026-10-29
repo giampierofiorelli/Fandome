@@ -1,0 +1,5 @@
+album_id,artist_id,title,year,artist_exists,album_exists_in_catalog,descriptor_exists,action,special_notes
+raf-raf,raf,Raf,1984,yes,no,no,Add studio album to artist raf in src/data/catalog.ts with exact displayed title/year and resulting slug ID. Do not add distinct Self Control/Change Your Mind album; they are reissues or regional titles.,1984 original 9-song LP; extended 11-track 1987 reissue excluded.
+raf-svegliarsiunannofa,raf,Svegliarsi un anno fa,1988,yes,no,no,Add studio album to artist raf in src/data/catalog.ts with exact displayed title/year and resulting slug ID.,First Italian-language studio album; no 1987 compilation.
+raf-cosarestera,raf,Cosa resterà...,1989,yes,no,no,Add studio album to artist raf in src/data/catalog.ts with exact displayed title/year and resulting slug ID.,English-language track Do I Need Your Love; preserve album as predominantly Italian.
+raf-sognietuttoquellochece,raf,Sogni... è tutto quello che c'è,1991,yes,no,no,Add studio album to artist raf in src/data/catalog.ts with exact displayed title/year and resulting slug ID.,Album title punctuation and accent must match CSV to keep ID slug stable.

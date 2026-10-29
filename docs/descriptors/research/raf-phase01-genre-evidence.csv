@@ -1,0 +1,22 @@
+album_id,genre,scope,source,url,evidence,confidence
+raf-raf,italodisco,album,Raf debut discography,https://it.wikipedia.org/wiki/Raf_%28album_1984%29,1984 LP described as Italo-disco.,medium
+raf-raf,synthpop,album,Change Your Mind 1984 single,https://www.chartsurfer.de/artist/raff-it/change-your-mind-song_crcf.html,1984 original Change Your Mind labelled Synth-pop; broader album electronic sound.,medium
+raf-raf,electronic,album,Change Your Mind 1984 single,https://www.chartsurfer.de/artist/raff-it/change-your-mind-song_crcf.html,1984 single style electronic; supported by synthesizer/programming album credits.,medium
+raf-raf,pop,album,Raf debut discography,https://it.wikipedia.org/wiki/Raf_%28album_1984%29,Melodic pop conventions; label genre from licensed 1984 digital album.,medium
+raf-raf,eurodisco,lead single,Wired Italia interview,https://www.wired.it/article/self-control-raf-anniversario-concerto-forum-intervista-storia/,Self Control built around four-on-floor disco pulse; Eurodisco secondary interpretation.,medium
+raf-svegliarsiunannofa,pop,album,Svegliarsi original tracklist,https://it.wikipedia.org/wiki/Svegliarsi_un_anno_fa,Original LP identified as Pop.,medium
+raf-svegliarsiunannofa,poprock,album,Svegliarsi original vinyl credits,https://musicbase.net/svegliarsi-un-anno-fa,Original LP credited Pop Rock and band guitars.,high
+raf-svegliarsiunannofa,europop,album,Svegliarsi original vinyl credits,https://musicbase.net/svegliarsi-un-anno-fa,Original LP tagged Europop.,high
+raf-svegliarsiunannofa,ballad,album,Svegliarsi original vinyl credits,https://musicbase.net/svegliarsi-un-anno-fa,"Original LP tagged Ballad, e.g. Inevitabile follia.",high
+raf-svegliarsiunannofa,italianpop,album,Svegliarsi original tracklist,https://it.wikipedia.org/wiki/Svegliarsi_un_anno_fa,Italian-language mainstream pop singer-songwriter album; broader national category.,medium
+raf-cosarestera,pop,album,Cosa resterà original vinyl credits,https://musicbase.net/cosa-restera,Original release credited Pop.,high
+raf-cosarestera,europop,album,Cosa resterà original vinyl credits,https://musicbase.net/cosa-restera,Original release labelled Europop.,high
+raf-cosarestera,italodisco,album,Cosa resterà original vinyl credits,https://musicbase.net/cosa-restera,LP style lists Italo-Disco; less central than straight pop.,high
+raf-cosarestera,electronic,album,Cosa resterà original vinyl credits,https://musicbase.net/cosa-restera,Electronic is listed on the vinyl release; drum programming in credits.,high
+raf-cosarestera,italianpop,album,Cosa resterà album overview,https://it.wikipedia.org/wiki/Cosa_rester%C3%A0...,Italian-language 1989 pop studio record; broad geographic category.,medium
+raf-sognietuttoquellochece,pop,album,Sogni licensed digital edition,https://www.qobuz.com/it-it/album/sogni-e-tutto-quello-che-ce-raf/sh2zakn5e9p5a,Licensed Qobuz release lists Pop.,high
+raf-sognietuttoquellochece,europop,album,Sogni original CD credits,https://www.vinileria.it/negozio/cd/raf-5-%E2%80%8E-sogni-e-tutto-quello-che-ce/,Original 1991 CD style Europop.,high
+raf-sognietuttoquellochece,synthpop,album,Sogni original CD credits,https://www.vinileria.it/negozio/cd/raf-5-%E2%80%8E-sogni-e-tutto-quello-che-ce/,Original 1991 CD style Synth-pop.,high
+raf-sognietuttoquellochece,italodisco,album,Sogni original CD credits,https://www.vinileria.it/negozio/cd/raf-5-%E2%80%8E-sogni-e-tutto-quello-che-ce/,Original CD lists Italo-Disco; secondary rather than dominant.,high
+raf-sognietuttoquellochece,electronic,album,Sogni original CD credits,https://www.vinileria.it/negozio/cd/raf-5-%E2%80%8E-sogni-e-tutto-quello-che-ce/,Original CD genre Electronic plus instrumental programming credits.,high
+raf-sognietuttoquellochece,ballad,featured song,Sogni album overview,https://it.wikipedia.org/wiki/Sogni..._%C3%A8_tutto_quello_che_c%27%C3%A8,Oggi un Dio non ho and Anche tu are ballads; append after central album genres.,medium

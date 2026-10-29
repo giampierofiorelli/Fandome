@@ -29,6 +29,10 @@ Rules:
 - Both directions count: Italian artists influenced by others, and **others influenced by Italian artists** (the second matters most for discovery).
 - Claude checks the file with `npx vite-node scripts/validate-descriptors.ts`.
 
+## Covers between albums on Fandome
+
+When both the original and the cover are albums in the catalogue, the cover goes in `src/data/covers.ts` (song, original album id, cover album id, credit source) instead of the CSV: album pages then show "Covers …, first recorded on …" and "… was covered on …", and the cover counts as a `covered` connection for Scenes. Only covers credited on the record. A cover is never a sound comparison or an influence in the descriptors.
+
 ## Example
 
 ```csv
