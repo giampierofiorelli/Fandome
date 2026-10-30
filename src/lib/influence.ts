@@ -144,7 +144,15 @@ function computeNetwork() {
     const disruption = refs.size && ni + nj + nk ? (ni - nj) / (ni + nj + nk) : undefined
     result.set(id, { citedBy: (citedBy.get(id) ?? []).sort((a, b) => b.weight - a.weight || Number(b.how.endsWith('-album')) - Number(a.how.endsWith('-album'))), score: s, percentile, disruption })
   }
+  drawsOnMap = new Map([...out].map(([later, m]) => [later, [...m.values()].sort((a, b) => b.weight - a.weight)]))
   return result
+}
+
+// What each album draws on (earlier albums, strongest first): the way back to its roots.
+let drawsOnMap: Map<string, Citation[]> = new Map()
+export function drawsOnOf(albumId: string): Citation[] {
+  network ??= computeNetwork()
+  return drawsOnMap.get(albumId) ?? []
 }
 
 let network: Map<string, Influence> | undefined

@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { influenceOf } from './influence'
 import { DESCRIPTORS } from './descriptors'
-import { storedInfluence } from './findings'
+import { rootsPath, storedInfluence, storedRoots } from './findings'
+import { drawsOnOf } from './influence'
 
 describe('influence network', () => {
   it('links later albums to the records they draw on, named records first', () => {
@@ -26,5 +27,13 @@ describe('influence network', () => {
 
   it('is stored up to date in src/data/influence.json (npm run findings)', () => {
     for (const id of ['m-confessions', 'm-ray', 'beatles-revolver']) expect(storedInfluence(id)?.n).toBe(influenceOf(id)!.citedBy.filter((c) => c.weight >= 0.25).length)
+  })
+
+  it('walks back to the roots, never through the same album twice, stored up to date (npm run findings)', () => {
+    for (const id of ['m-confessions', 'beatles-revolver', 'madonna-madamex']) {
+      expect(storedRoots(id).map(([a]) => a)).toEqual(drawsOnOf(id).filter((c) => c.weight >= 0.25 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3).map((c) => c.albumId))
+      const path = rootsPath(id)
+      expect(new Set([id, ...path.map((s) => s.to)]).size).toBe(path.length + 1)
+    }
   })
 })

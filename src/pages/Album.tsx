@@ -24,7 +24,7 @@ import { coversOf } from '../data/covers'
 import { FORCES_LABELS, FORM_LABELS, HARMONY_LABELS, VOICE_TYPE_LABELS } from '../data/workFields'
 import { borrowedAlbum, borrowedBy, borrowingsOf } from '../lib/borrowings'
 import { legacyOf, traceOf } from '../lib/legacy'
-import { DESCRIBED_ALBUMS, storedFinding, storedInfluence, storedLate } from '../lib/findings'
+import { DESCRIBED_ALBUMS, rootsPath, storedFinding, storedInfluence, storedLate } from '../lib/findings'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -119,6 +119,49 @@ const shownSources = (text: string) =>
 // Why a later album is counted as drawing on this one.
 const howLabel = (how: string, artist?: string) =>
   ({ 'influence-album': 'names this album as an influence', influence: `names ${artist} as an influence`, 'critic-album': 'a critic compares it to this album', critic: `a critic compares it to ${artist}`, producer: 'same producer', artist: `${artist} is among its artist’s influences`, 'borrows-album': 'it samples, quotes or covers this', borrows: `it samples, quotes or covers ${artist}` })[how] ?? how
+// Roots (owner, Oct 2026): the way back from this album, one strongest documented step at a time (an influence its
+// artist names, a critic's comparison, a borrowing, a shared producer), so a modern record leads to the older ones it
+// drew on, and on to jazz or the classics.
+const ROOT_LABEL: Record<string, string> = {
+  'influence-album': 'named as an influence',
+  influence: 'its artist named as an influence',
+  'critic-album': 'a critic hears it',
+  critic: 'a critic hears its artist',
+  producer: 'same producer',
+  artist: 'among the artist’s influences',
+  'borrows-album': 'sampled, quoted or covered',
+  borrows: 'its artist sampled, quoted or covered',
+}
+function RootsBox({ albumId }: { albumId: string }) {
+  const path = rootsPath(albumId)
+  if (!path.length) return null
+  return (
+    <>
+      <div className="section-head">
+        <h2>Where its sound comes from</h2>
+      </div>
+      <div className="glass-card roots-path">
+        {path.map((s) => {
+          const a = albumById(s.to)
+          return (
+            <div key={s.to} className="roots-step">
+              <span className="muted small">{ROOT_LABEL[s.how] ?? s.how}</span>
+              {a ? (
+                <Link to={`/album/${a.id}`}>
+                  <b>{a.title}</b> <span className="muted">{artistById(a.artistId)?.name} · {a.year}</span>
+                </Link>
+              ) : (
+                s.to
+              )}
+            </div>
+          )
+        })}
+        <p className="muted small data-method">Each step is the strongest documented link of the record above it: an influence its artist named, a critic's comparison, or a piece it sampled, quoted or covered.</p>
+      </div>
+    </>
+  )
+}
+
 function LegacyBox({ albumId }: { albumId: string }) {
   const legacy = legacyOf(albumId)
   const finding = storedFinding(albumId)
@@ -348,6 +391,7 @@ export default function AlbumPage() {
           </div>
         </div>
       )}
+      <RootsBox albumId={album.id} />
       <LegacyBox albumId={album.id} />
       {(similar.length > 0 || sound) && (
         <>

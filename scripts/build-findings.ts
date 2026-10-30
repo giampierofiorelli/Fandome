@@ -4,7 +4,7 @@ import { writeFileSync } from 'node:fs'
 import { albums } from '../src/data/seed'
 import { findingOf } from '../src/lib/legacy'
 import { DESCRIPTORS } from '../src/lib/descriptors'
-import { influenceOf } from '../src/lib/influence'
+import { drawsOnOf, influenceOf } from '../src/lib/influence'
 import { lateRecognition, nicheToMainstream, revivals } from '../src/lib/patterns'
 
 const list = albums.flatMap((a) => {
@@ -32,3 +32,14 @@ for (const id of Object.keys(DESCRIPTORS)) {
 }
 writeFileSync('src/data/influence.json', JSON.stringify(influence) + '\n')
 console.log(`${Object.keys(influence).length} albums drawn on, written to src/data/influence.json`)
+
+// Roots (owner, Oct 2026): what each album clearly draws on (links of weight 0.25 or more), strongest three, so its
+// page can walk back step by step: a modern record, the older one it drew on, and so on to jazz or the classics.
+const roots: Record<string, [string, string][]> = {}
+for (const id of Object.keys(DESCRIPTORS)) {
+  // A shared producer or an artist's career-wide influence says little about where this record's sound comes from.
+  const on = drawsOnOf(id).filter((c) => c.weight >= 0.25 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3)
+  if (on.length) roots[id] = on.map((c) => [c.albumId, c.how])
+}
+writeFileSync('src/data/roots.json', JSON.stringify(roots) + '\n')
+console.log(`${Object.keys(roots).length} albums with roots, written to src/data/roots.json`)

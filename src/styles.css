@@ -1452,3 +1452,7 @@ a.rooms-more { display: block; text-align: center; text-decoration: none; }
 .title-line { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; }
 .title-line > strong { min-width: 0; }
 .country-tag { display: inline-flex; flex: none; align-items: center; height: 18px; padding: 0 7px; border-radius: 999px; vertical-align: 2px; font-size: 11px; font-weight: 500; letter-spacing: 0.01em; color: var(--muted, inherit); box-shadow: inset 0 0 0 1px currentColor; opacity: 0.85; white-space: nowrap; }
+/* Roots: the way back from an album, one documented step at a time. */
+.roots-path { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; }
+.roots-step { display: flex; flex-direction: column; gap: 2px; padding-left: 14px; border-left: 2px solid var(--glass-line); }
+.roots-step a { color: inherit; text-decoration: none; }

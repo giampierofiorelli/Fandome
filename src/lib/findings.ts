@@ -2,6 +2,7 @@
 // over the whole catalogue takes seconds, too slow for a page).
 import data from '../data/findings.json'
 import influence from '../data/influence.json'
+import roots from '../data/roots.json'
 
 export interface StoredFinding { albumId: string; year: number; trait: string; before: number; after: number; when: number; field: string[] }
 export const FINDINGS: StoredFinding[] = data.findings
@@ -21,3 +22,21 @@ export const storedFinding = (albumId: string) => byAlbum.get(albumId)
 export interface StoredInfluence { n: number; top: [string, string][]; pct: number; dis?: number }
 const INFLUENCE = influence as unknown as Record<string, StoredInfluence>
 export const storedInfluence = (albumId: string): StoredInfluence | undefined => INFLUENCE[albumId]
+
+// Roots: what an album clearly draws on (strongest first), and the way back from it, one strongest step at a time,
+// never through the same album twice.
+const ROOTS = roots as unknown as Record<string, [string, string][]>
+export const storedRoots = (albumId: string): [string, string][] => ROOTS[albumId] ?? []
+export function rootsPath(albumId: string, steps = 4): { from: string; to: string; how: string }[] {
+  const path: { from: string; to: string; how: string }[] = []
+  const seen = new Set([albumId])
+  let at = albumId
+  for (let i = 0; i < steps; i++) {
+    const next = storedRoots(at).find(([id]) => !seen.has(id))
+    if (!next) break
+    path.push({ from: at, to: next[0], how: next[1] })
+    seen.add(next[0])
+    at = next[0]
+  }
+  return path
+}
