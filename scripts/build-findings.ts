@@ -38,7 +38,8 @@ console.log(`${Object.keys(influence).length} albums drawn on, written to src/da
 const roots: Record<string, [string, string][]> = {}
 for (const id of Object.keys(DESCRIPTORS)) {
   // A shared producer or an artist's career-wide influence says little about where this record's sound comes from.
-  const on = drawsOnOf(id).filter((c) => c.weight >= 0.25 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3)
+  // A link to an artist in general is shared among its key records: a share from 0.15 still shows the way back.
+  const on = drawsOnOf(id).filter((c) => c.weight >= 0.15 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3)
   if (on.length) roots[id] = on.map((c) => [c.albumId, c.how])
 }
 writeFileSync('src/data/roots.json', JSON.stringify(roots) + '\n')

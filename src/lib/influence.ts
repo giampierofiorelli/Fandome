@@ -59,19 +59,20 @@ function computeNetwork() {
   }
   // The earlier albums a link to an artist leads to, with their share: the named record, else the three that sound
   // most like it, weighted by likeness (squared) and career weight.
-  const targets = (later: Descriptor, artistId: string, title?: string): [Descriptor, number][] => {
+  const targets = (later: Descriptor, artistId: string, title?: string): [Descriptor, number, boolean][] => {
     const before = (byArtist.get(artistId) ?? []).filter((x) => x.year! < later.year!)
     if (title) {
+      // A record we describe under another title (or not at all) still leads to its artist.
       const t = before.find((x) => foldTitle(x.title) === foldTitle(title))
-      return t ? [[t, 1]] : []
+      if (t) return [[t, 1, true]]
     }
     const scored = before.map((x) => [x, Math.max(0, sim(later, x)) ** 2 * careerWeight(x)] as [Descriptor, number]).sort((a, b) => b[1] - a[1]).slice(0, 3)
     const total = scored.reduce((n, [, v]) => n + v, 0)
-    if (total) return scored.map(([x, v]) => [x, v / total])
+    if (total) return scored.map(([x, v]) => [x, v / total, false])
     // Nothing alike (e.g. a pop album naming a composer): the artist's key records, by weight in the career.
     const key = before.map((x) => [x, careerWeight(x)] as [Descriptor, number]).sort((a, b) => b[1] - a[1]).slice(0, 3)
     const sum = key.reduce((n, [, v]) => n + v, 0)
-    return sum ? key.map(([x, v]) => [x, v / sum]) : before.slice(-1).map((x) => [x, 1])
+    return sum ? key.map(([x, v]) => [x, v / sum, false]) : before.slice(-1).map((x) => [x, 1, false])
   }
   for (const d of own) {
     const me = artistOf.get(d.albumId)!
@@ -82,7 +83,7 @@ function computeNetwork() {
         if (!a || a === me) continue
         const part = parts[n]
         const title = part ? undefined : named.get(foldName(n))
-        for (const [t, share] of targets(d, a, title)) add(d, t, weight * share * (part ? part.songs / part.of : 1), title ? `${how}-album` : how)
+        for (const [t, share, exact] of targets(d, a, title)) add(d, t, weight * share * (part ? part.songs / part.of : 1), exact ? `${how}-album` : how)
       }
     }
     cite(d.influencedBy, d.parts.influencedBy, 1, 'influence')
@@ -93,7 +94,7 @@ function computeNetwork() {
     for (const b of borrowingsOf(d.albumId)) {
       const a = nameOfArtist.get(foldName(b.artist))
       if (!a || a === me) continue
-      for (const [t, share] of targets(d, a, b.title)) add(d, t, 0.5 * share * (b.part ? b.part.songs / b.part.of : 1), b.title ? 'borrows-album' : 'borrows')
+      for (const [t, share, exact] of targets(d, a, b.title)) add(d, t, 0.5 * share * (b.part ? b.part.songs / b.part.of : 1), exact ? 'borrows-album' : 'borrows')
     }
     // Covers credited between two albums we describe (covers.ts) are borrowings too.
     for (const c of COVERS) if (c.cover === d.albumId && DESCRIPTORS[c.original]) add(d, DESCRIPTORS[c.original], 0.5, 'borrows-album')
