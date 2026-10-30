@@ -7,4 +7,5 @@ export const ARTIST_ALIASES: string[][] = [
   ['Miley Cyrus', 'Miley'],
   ['The Carters', 'Beyoncé & JAY-Z'],
   ['Eagles', 'The Eagles'],
+  ['The Stooges', 'Iggy and the Stooges', 'Iggy & the Stooges'],
 ]

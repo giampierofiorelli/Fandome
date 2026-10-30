@@ -1,6 +1,19 @@
 {
- "described": 1745,
+ "described": 1800,
  "findings": [
+  {
+   "albumId": "koolandthegang-koolandthegang",
+   "year": 1969,
+   "trait": "Funk",
+   "before": 0,
+   "after": 0.8260869565217391,
+   "when": 1979,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
+   ]
+  },
   {
    "albumId": "nickdrake-fiveleavesleft",
    "year": 1969,
@@ -14,23 +27,35 @@
    ]
   },
   {
-   "albumId": "bowie-hunkydory",
+   "albumId": "pinkfloyd-more",
+   "year": 1969,
+   "trait": "Prog",
+   "before": 0.05,
+   "after": 0.5151515151515151,
+   "when": 1973,
+   "field": [
+    "Prog",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "pinkfloyd-meddle",
    "year": 1971,
-   "trait": "Pop rock + Electric guitar",
-   "before": 0.07547169811320754,
-   "after": 0.4423076923076923,
+   "trait": "Bass guitar + Synthesizers",
+   "before": 0.05172413793103448,
+   "after": 0.6041666666666666,
    "when": 1981,
    "field": [
-    "Rock",
-    "Alternative"
+    "Prog",
+    "Rock"
    ]
   },
   {
    "albumId": "koolandthegang-musicisthemessage",
    "year": 1972,
    "trait": "Funk + Percussion",
-   "before": 0,
-   "after": 0.8095238095238095,
+   "before": 0.06666666666666667,
+   "after": 0.782608695652174,
    "when": 1979,
    "field": [
     "Funk",
@@ -39,11 +64,23 @@
    ]
   },
   {
+   "albumId": "carra-felicitatata",
+   "year": 1974,
+   "trait": "Disco",
+   "before": 0.017857142857142856,
+   "after": 0.6326530612244898,
+   "when": 1978,
+   "field": [
+    "Pop",
+    "Disco"
+   ]
+  },
+  {
    "albumId": "kcandthesunshineband-doitgood",
    "year": 1974,
    "trait": "Disco",
-   "before": 0,
-   "after": 0.7894736842105263,
+   "before": 0.027777777777777776,
+   "after": 0.8,
    "when": 1978,
    "field": [
     "Disco",
@@ -51,11 +88,48 @@
    ]
   },
   {
+   "albumId": "kraftwerk-autobahn",
+   "year": 1974,
+   "trait": "Synth-pop + Synthesizers",
+   "before": 0,
+   "after": 0.9032258064516129,
+   "when": 1981,
+   "field": [
+    "Electronic",
+    "Synth-pop"
+   ]
+  },
+  {
+   "albumId": "nada-1930ildomatoredellescimmie",
+   "year": 1975,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.046875,
+   "after": 0.4852941176470588,
+   "when": 1985,
+   "field": [
+    "Pop",
+    "Singer-songwriter"
+   ]
+  },
+  {
+   "albumId": "springsteen-borntorun",
+   "year": 1975,
+   "trait": "Pop rock + Synthesizers",
+   "before": 0.052083333333333336,
+   "after": 0.4576271186440678,
+   "when": 1982,
+   "field": [
+    "Rock",
+    "Singer-songwriter",
+    "Folk"
+   ]
+  },
+  {
    "albumId": "blondie-blondie",
    "year": 1976,
    "trait": "New wave",
    "before": 0,
-   "after": 0.5,
+   "after": 0.5094339622641509,
    "when": 1980,
    "field": [
     "Rock",
@@ -63,23 +137,10 @@
    ]
   },
   {
-   "albumId": "koolandthegang-loveunderstanding",
-   "year": 1976,
-   "trait": "Funk + Synthesizers",
-   "before": 0.11764705882352941,
-   "after": 0.7727272727272727,
-   "when": 1980,
-   "field": [
-    "Funk",
-    "Soul",
-    "Jazz"
-   ]
-  },
-  {
    "albumId": "cerrone-cerronesparadise",
    "year": 1977,
    "trait": "Disco + Synthesizers",
-   "before": 0.12903225806451613,
+   "before": 0.11764705882352941,
    "after": 0.7058823529411765,
    "when": 1981,
    "field": [
@@ -89,9 +150,9 @@
   {
    "albumId": "koolandthegang-theforce",
    "year": 1977,
-   "trait": "Disco + Synthesizers",
-   "before": 0.045454545454545456,
-   "after": 0.5217391304347826,
+   "trait": "Soul + Synthesizers",
+   "before": 0.07407407407407407,
+   "after": 0.5416666666666666,
    "when": 1981,
    "field": [
     "Funk",
@@ -103,8 +164,8 @@
    "albumId": "talkingheads-talkingheads77",
    "year": 1977,
    "trait": "New wave",
-   "before": 0.019230769230769232,
-   "after": 0.5,
+   "before": 0.015384615384615385,
+   "after": 0.5185185185185185,
    "when": 1981,
    "field": [
     "Alternative",
@@ -112,23 +173,35 @@
    ]
   },
   {
-   "albumId": "kraftwerk-themanmachine",
+   "albumId": "battisti-unadonnaperamico",
    "year": 1978,
-   "trait": "Synth-pop + Synthesizers",
+   "trait": "New wave",
    "before": 0,
-   "after": 0.8787878787878788,
+   "after": 0.47619047619047616,
    "when": 1982,
    "field": [
-    "Electronic",
-    "Synth-pop"
+    "Singer-songwriter",
+    "Pop"
+   ]
+  },
+  {
+   "albumId": "blondie-parallellines",
+   "year": 1978,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.05555555555555555,
+   "after": 0.6086956521739131,
+   "when": 1985,
+   "field": [
+    "Rock",
+    "Punk"
    ]
   },
   {
    "albumId": "rettore-brividodivino",
    "year": 1979,
    "trait": "Synth-pop",
-   "before": 0,
-   "after": 0.3793103448275862,
+   "before": 0.00909090909090909,
+   "after": 0.375,
    "when": 1986,
    "field": [
     "Pop",
@@ -136,11 +209,22 @@
    ]
   },
   {
+   "albumId": "tozzi-gloria",
+   "year": 1979,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.10526315789473684,
+   "after": 0.5344827586206896,
+   "when": 1986,
+   "field": [
+    "Pop"
+   ]
+  },
+  {
    "albumId": "buggles-theageofplastic",
    "year": 1980,
-   "trait": "Synth-pop + Keyboards",
-   "before": 0.012987012987012988,
-   "after": 0.5054945054945055,
+   "trait": "Synth-pop",
+   "before": 0.08641975308641975,
+   "after": 0.5760869565217391,
    "when": 1984,
    "field": [
     "Synth-pop",
@@ -149,11 +233,23 @@
    ]
   },
   {
+   "albumId": "inxs-inxs",
+   "year": 1980,
+   "trait": "Alternative/indie rock",
+   "before": 0.01904761904761905,
+   "after": 0.29411764705882354,
+   "when": 1990,
+   "field": [
+    "Rock",
+    "Funk"
+   ]
+  },
+  {
    "albumId": "ultravox-vienna",
    "year": 1980,
    "trait": "Drum machine",
-   "before": 0.04285714285714286,
-   "after": 0.42857142857142855,
+   "before": 0.05,
+   "after": 0.4230769230769231,
    "when": 1984,
    "field": [
     "Synth-pop",
@@ -172,11 +268,22 @@
    ]
   },
   {
+   "albumId": "yazoo-upstairsaterics",
+   "year": 1982,
+   "trait": "Dance-pop + Keyboards",
+   "before": 0,
+   "after": 0.42857142857142855,
+   "when": 1986,
+   "field": [
+    "Synth-pop"
+   ]
+  },
+  {
    "albumId": "tff-thehurting",
    "year": 1983,
    "trait": "Programming",
-   "before": 0.043010752688172046,
-   "after": 0.5227272727272727,
+   "before": 0.0425531914893617,
+   "after": 0.5333333333333333,
    "when": 1993,
    "field": [
     "Synth-pop",
@@ -184,34 +291,107 @@
    ]
   },
   {
-   "albumId": "u2-theunforgettablefire",
+   "albumId": "frankiegoestohollywood-welcometothepleasuredome",
    "year": 1984,
-   "trait": "Alternative pop/rock",
-   "before": 0.01098901098901099,
-   "after": 0.5757575757575758,
-   "when": 1994,
+   "trait": "Drum programming + Keyboards",
+   "before": 0.06060606060606061,
+   "after": 0.3125,
+   "when": 1985,
+   "field": [
+    "Synth-pop",
+    "Dance",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "queen-theworks",
+   "year": 1984,
+   "trait": "Drum programming + Keyboards",
+   "before": 0.010638297872340425,
+   "after": 0.26666666666666666,
+   "when": 1985,
    "field": [
     "Rock"
+   ]
+  },
+  {
+   "albumId": "tff-songsfromthebigchair",
+   "year": 1985,
+   "trait": "Pop rock + Drum programming",
+   "before": 0.031007751937984496,
+   "after": 0.3246753246753247,
+   "when": 1986,
+   "field": [
+    "Synth-pop",
+    "Pop"
+   ]
+  },
+  {
+   "albumId": "smiths-thequeenisdead",
+   "year": 1986,
+   "trait": "Indie rock",
+   "before": 0.009708737864077669,
+   "after": 0.3235294117647059,
+   "when": 1996,
+   "field": [
+    "Indie",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "u2-thejoshuatree",
+   "year": 1987,
+   "trait": "Alternative rock",
+   "before": 0.041666666666666664,
+   "after": 0.5517241379310345,
+   "when": 1997,
+   "field": [
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "samanthafox-iwannahavesomefun",
+   "year": 1988,
+   "trait": "House",
+   "before": 0.007633587786259542,
+   "after": 0.2549019607843137,
+   "when": 1995,
+   "field": [
+    "Pop",
+    "Dance"
+   ]
+  },
+  {
+   "albumId": "lisastansfield-affection",
+   "year": 1989,
+   "trait": "Dance-pop + Strings",
+   "before": 0.09722222222222222,
+   "after": 0.4444444444444444,
+   "when": 1999,
+   "field": [
+    "Soul",
+    "Pop",
+    "R&B"
+   ]
+  },
+  {
+   "albumId": "massiveattack-bluelines",
+   "year": 1991,
+   "trait": "Trip-hop",
+   "before": 0,
+   "after": 0.47368421052631576,
+   "when": 2001,
+   "field": [
+    "Electronic",
+    "Alternative"
    ]
   },
   {
    "albumId": "nirvana-nevermind",
    "year": 1991,
    "trait": "Alternative/indie rock + Electric guitar",
-   "before": 0.10714285714285714,
+   "before": 0.10588235294117647,
    "after": 0.43902439024390244,
-   "when": 1995,
-   "field": [
-    "Alternative",
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "pumpkins-gish",
-   "year": 1991,
-   "trait": "Alternative rock + Electric guitar",
-   "before": 0.11764705882352941,
-   "after": 0.45,
    "when": 1995,
    "field": [
     "Alternative",
@@ -222,7 +402,7 @@
    "albumId": "u2-achtungbaby",
    "year": 1991,
    "trait": "Alternative/indie rock + Electric guitar",
-   "before": 0.08571428571428572,
+   "before": 0.08450704225352113,
    "after": 0.5161290322580645,
    "when": 1995,
    "field": [
@@ -230,45 +410,33 @@
    ]
   },
   {
-   "albumId": "moby-moby",
-   "year": 1992,
-   "trait": "Electronica",
-   "before": 0.0625,
-   "after": 0.6666666666666666,
-   "when": 1996,
-   "field": [
-    "Electronic"
-   ]
-  },
-  {
    "albumId": "portishead-dummy",
    "year": 1994,
    "trait": "Trip-hop",
-   "before": 0.03571428571428571,
-   "after": 0.46153846153846156,
-   "when": 2004,
+   "before": 0.03508771929824561,
+   "after": 0.47368421052631576,
+   "when": 2001,
    "field": [
     "Electronic",
     "Alternative"
    ]
   },
   {
-   "albumId": "gwenstefani-loveangelmusicbaby",
-   "year": 2004,
-   "trait": "Electropop",
-   "before": 0.09090909090909091,
-   "after": 0.4722222222222222,
-   "when": 2008,
+   "albumId": "moby-everythingiswrong",
+   "year": 1995,
+   "trait": "Electronica + Synthesizers",
+   "before": 0.06666666666666667,
+   "after": 0.5555555555555556,
+   "when": 1996,
    "field": [
-    "Pop",
-    "Dance"
+    "Electronic"
    ]
   }
  ],
  "late": [
   {
    "albumId": "sinatra-songsforswinginlovers",
-   "n": 9,
+   "n": 10,
    "early": 1,
    "medianLag": 58
   },
@@ -289,6 +457,12 @@
    "n": 6,
    "early": 1,
    "medianLag": 55
+  },
+  {
+   "albumId": "ettajames-atlast",
+   "n": 7,
+   "early": 0,
+   "medianLag": 46
   },
   {
    "albumId": "otisredding-otisblueotisreddingsingssoul",
@@ -327,6 +501,12 @@
    "medianLag": 22
   },
   {
+   "albumId": "ettajames-tellmama",
+   "n": 7,
+   "early": 0,
+   "medianLag": 38
+  },
+  {
    "albumId": "byrds-sweetheartoftherodeo",
    "n": 11,
    "early": 1,
@@ -334,9 +514,9 @@
   },
   {
    "albumId": "scottwalker-scott2",
-   "n": 10,
+   "n": 11,
    "early": 0,
-   "medianLag": 30
+   "medianLag": 27
   },
   {
    "albumId": "dusty-dustyinmemphis",
@@ -346,21 +526,21 @@
   },
   {
    "albumId": "neilyoung-everybodyknowsthisisnowhere",
-   "n": 8,
+   "n": 10,
    "early": 0,
    "medianLag": 31
   },
   {
    "albumId": "scottwalker-scott3",
-   "n": 10,
+   "n": 11,
    "early": 0,
-   "medianLag": 29
+   "medianLag": 26
   },
   {
    "albumId": "scottwalker-scott4",
-   "n": 10,
+   "n": 11,
    "early": 0,
-   "medianLag": 29
+   "medianLag": 26
   },
   {
    "albumId": "felakuti-felaransomekutiandhiskoolalobitos",
@@ -369,22 +549,40 @@
    "medianLag": 30
   },
   {
+   "albumId": "minnieriperton-cometomygarden",
+   "n": 9,
+   "early": 0,
+   "medianLag": 38
+  },
+  {
    "albumId": "jonimitchell-blue",
    "n": 9,
    "early": 0,
    "medianLag": 26
   },
   {
-   "albumId": "algreen-letsstaytogether",
-   "n": 7,
-   "early": 1,
-   "medianLag": 18
+   "albumId": "steelydan-cantbuyathrill",
+   "n": 9,
+   "early": 0,
+   "medianLag": 41
   },
   {
    "albumId": "curtismayfield-superfly",
    "n": 10,
    "early": 1,
    "medianLag": 26
+  },
+  {
+   "albumId": "stooges-rawpower",
+   "n": 6,
+   "early": 0,
+   "medianLag": 24
+  },
+  {
+   "albumId": "minnieriperton-perfectangel",
+   "n": 9,
+   "early": 0,
+   "medianLag": 34
   },
   {
    "albumId": "dollyparton-jolene",
@@ -403,6 +601,12 @@
    "n": 9,
    "early": 0,
    "medianLag": 42
+  },
+  {
+   "albumId": "steelydan-aja",
+   "n": 9,
+   "early": 1,
+   "medianLag": 36
   },
   {
    "albumId": "suicide-suicide",
@@ -430,7 +634,7 @@
   },
   {
    "albumId": "d-masses",
-   "n": 19,
+   "n": 20,
    "early": 1,
    "medianLag": 26
   }
@@ -441,11 +645,11 @@
    "label": "R&B",
    "peak": [
     1974,
-    0.2839506172839506
+    0.2808988764044944
    ],
    "low": [
     1986,
-    0.13114754098360656
+    0.13008130081300814
    ],
    "back": [
     2016,
@@ -459,11 +663,11 @@
    "label": "Synth-pop",
    "peak": [
     1980,
-    0.319672131147541
+    0.30952380952380953
    ],
    "low": [
     1995,
-    0.0673076923076923
+    0.06542056074766354
    ],
    "back": [
     2022,
@@ -477,11 +681,11 @@
    "label": "Funk",
    "peak": [
     1968,
-    0.09230769230769231
+    0.12
    ],
    "low": [
     2010,
-    0.03773584905660377
+    0.037037037037037035
    ],
    "back": [
     2022,
@@ -495,11 +699,11 @@
    "label": "Disco",
    "peak": [
     1974,
-    0.2716049382716049
+    0.2696629213483146
    ],
    "low": [
     1998,
-    0.08139534883720931
+    0.08045977011494253
    ],
    "back": [
     2022,
@@ -513,11 +717,11 @@
    "label": "Soul",
    "peak": [
     1974,
-    0.2839506172839506
+    0.30337078651685395
    ],
    "low": [
     1995,
-    0.10576923076923077
+    0.102803738317757
    ],
    "back": [
     2016,
@@ -531,11 +735,11 @@
    "label": "Contemporary R&B",
    "peak": [
     2001,
-    0.22641509433962265
+    0.23636363636363636
    ],
    "low": [
     2010,
-    0.09433962264150944
+    0.09259259259259259
    ],
    "back": [
     2016,
@@ -545,11 +749,47 @@
    "newArtists": 0.6875
   },
   {
+   "genre": "reggae",
+   "label": "Reggae",
+   "peak": [
+    1977,
+    0.08403361344537816
+   ],
+   "low": [
+    1986,
+    0.024390243902439025
+   ],
+   "back": [
+    2004,
+    0.18
+   ],
+   "gap": 27,
+   "newArtists": 0.8888888888888888
+  },
+  {
+   "genre": "rock",
+   "label": "Rock",
+   "peak": [
+    1968,
+    0.22666666666666666
+   ],
+   "low": [
+    1974,
+    0.11235955056179775
+   ],
+   "back": [
+    2007,
+    0.26666666666666666
+   ],
+   "gap": 39,
+   "newArtists": 1
+  },
+  {
    "genre": "dance",
    "label": "Dance",
    "peak": [
     1989,
-    0.08823529411764706
+    0.08737864077669903
    ],
    "low": [
     2016,
@@ -563,21 +803,21 @@
    "newArtists": 1
   },
   {
-   "genre": "rock",
-   "label": "Rock",
+   "genre": "blues",
+   "label": "Blues",
    "peak": [
-    1968,
-    0.26153846153846155
+    1965,
+    0.19607843137254902
    ],
    "low": [
-    2004,
-    0.12
+    1974,
+    0.033707865168539325
    ],
    "back": [
     2007,
-    0.26666666666666666
+    0.17777777777777778
    ],
-   "gap": 39,
+   "gap": 42,
    "newArtists": 1
   },
   {
@@ -585,7 +825,7 @@
    "label": "New wave",
    "peak": [
     1977,
-    0.16071428571428573
+    0.15966386554621848
    ],
    "low": [
     2001,
@@ -599,39 +839,21 @@
    "newArtists": 1
   },
   {
-   "genre": "blues",
-   "label": "Blues",
-   "peak": [
-    1965,
-    0.2
-   ],
-   "low": [
-    1974,
-    0.037037037037037035
-   ],
-   "back": [
-    2007,
-    0.17777777777777778
-   ],
-   "gap": 42,
-   "newArtists": 1
-  },
-  {
    "genre": "jazz",
    "label": "Jazz",
    "peak": [
     1965,
-    0.16
+    0.1568627450980392
    ],
    "low": [
     1983,
-    0.015151515151515152
+    0.014925373134328358
    ],
    "back": [
-    2013,
-    0.14285714285714285
+    2001,
+    0.14545454545454545
    ],
-   "gap": 48,
+   "gap": 36,
    "newArtists": 1
   },
   {
@@ -639,10 +861,10 @@
    "label": "Gospel",
    "peak": [
     1968,
-    0.1076923076923077
+    0.10666666666666667
    ],
    "low": [
-    1977,
+    1980,
     0
    ],
    "back": [
@@ -657,7 +879,7 @@
    "label": "Singer-songwriter",
    "peak": [
     1971,
-    0.10989010989010989
+    0.10891089108910891
    ],
    "low": [
     2001,
@@ -675,7 +897,7 @@
    "label": "Folk",
    "peak": [
     1965,
-    0.28
+    0.29411764705882354
    ],
    "low": [
     2004,
@@ -692,8 +914,8 @@
    "genre": "ambient",
    "label": "Ambient",
    "peak": [
-    1995,
-    0.125
+    1992,
+    0.08181818181818182
    ],
    "low": [
     2007,
@@ -703,7 +925,7 @@
     2022,
     0.1111111111111111
    ],
-   "gap": 27,
+   "gap": 30,
    "newArtists": 1
   },
   {
@@ -711,7 +933,7 @@
    "label": "Country",
    "peak": [
     1968,
-    0.15384615384615385
+    0.14666666666666667
    ],
    "low": [
     1980,
@@ -725,33 +947,15 @@
    "newArtists": 0.8333333333333334
   },
   {
-   "genre": "italianpop",
-   "label": "Italian pop",
-   "peak": [
-    1974,
-    0.12345679012345678
-   ],
-   "low": [
-    1989,
-    0.058823529411764705
-   ],
-   "back": [
-    2004,
-    0.16
-   ],
-   "gap": 30,
-   "newArtists": 1
-  },
-  {
    "genre": "dancerock",
    "label": "Dance-rock",
    "peak": [
     1977,
-    0.125
+    0.11764705882352941
    ],
    "low": [
     2001,
-    0.018867924528301886
+    0.01818181818181818
    ],
    "back": [
     2004,
@@ -783,11 +987,11 @@
    "label": "Soft rock",
    "peak": [
     1974,
-    0.09876543209876543
+    0.10112359550561797
    ],
    "low": [
     1992,
-    0.037383177570093455
+    0.03636363636363636
    ],
    "back": [
     2007,
@@ -797,39 +1001,39 @@
    "newArtists": 1
   },
   {
-   "genre": "ballad",
-   "label": "Ballad",
+   "genre": "punk",
+   "label": "Punk",
    "peak": [
-    1974,
-    0.1728395061728395
+    1977,
+    0.09243697478991597
    ],
    "low": [
-    1986,
-    0.08196721311475409
-   ],
-   "back": [
-    2007,
-    0.17777777777777778
-   ],
-   "gap": 33,
-   "newArtists": 1
-  },
-  {
-   "genre": "bluesrock",
-   "label": "Blues rock",
-   "peak": [
-    1965,
-    0.08
-   ],
-   "low": [
-    1998,
+    1983,
     0
    ],
    "back": [
-    2007,
-    0.08888888888888889
+    1995,
+    0.09345794392523364
    ],
-   "gap": 42,
+   "gap": 18,
+   "newArtists": 1
+  },
+  {
+   "genre": "dreampop",
+   "label": "Dream pop",
+   "peak": [
+    1992,
+    0.08181818181818182
+   ],
+   "low": [
+    2001,
+    0
+   ],
+   "back": [
+    2019,
+    0.08771929824561403
+   ],
+   "gap": 27,
    "newArtists": 1
   },
   {
@@ -837,7 +1041,7 @@
    "label": "Techno",
    "peak": [
     1992,
-    0.12149532710280374
+    0.11818181818181818
    ],
    "low": [
     2016,
@@ -869,33 +1073,15 @@
    "newArtists": 0.6666666666666666
   },
   {
-   "genre": "artrock",
-   "label": "Art rock",
-   "peak": [
-    1965,
-    0.08
-   ],
-   "low": [
-    1989,
-    0.029411764705882353
-   ],
-   "back": [
-    2001,
-    0.09433962264150944
-   ],
-   "gap": 36,
-   "newArtists": 1
-  },
-  {
    "genre": "contemporarypoprock",
    "label": "Contemporary pop/rock",
    "peak": [
     1980,
-    0.14754098360655737
+    0.14285714285714285
    ],
    "low": [
     2001,
-    0.05660377358490566
+    0.05454545454545454
    ],
    "back": [
     2004,
@@ -923,19 +1109,37 @@
    "newArtists": 0.8333333333333334
   },
   {
+   "genre": "artrock",
+   "label": "Art rock",
+   "peak": [
+    1968,
+    0.14666666666666667
+   ],
+   "low": [
+    1989,
+    0.02912621359223301
+   ],
+   "back": [
+    2001,
+    0.09090909090909091
+   ],
+   "gap": 33,
+   "newArtists": 1
+  },
+  {
    "genre": "heavymetal",
    "label": "Heavy metal",
    "peak": [
     1974,
-    0.09876543209876543
+    0.0898876404494382
    ],
    "low": [
     1980,
-    0.03278688524590164
+    0.031746031746031744
    ],
    "back": [
     1989,
-    0.08823529411764706
+    0.08737864077669903
    ],
    "gap": 15,
    "newArtists": 0.8888888888888888
@@ -945,7 +1149,7 @@
    "label": "Electronica",
    "peak": [
     1995,
-    0.16346153846153846
+    0.1588785046728972
    ],
    "low": [
     2016,
@@ -975,22 +1179,15 @@
    "lag": 27
   },
   {
-   "genre": "pop",
-   "label": "Pop",
-   "niche": 1968,
-   "mainstream": 1971,
-   "lag": 3
-  },
-  {
-   "genre": "countryrock",
-   "label": "Country rock",
-   "niche": 1968,
-   "mainstream": 1971,
-   "lag": 3
-  },
-  {
    "genre": "funk",
    "label": "Funk",
+   "niche": 1968,
+   "mainstream": 1971,
+   "lag": 3
+  },
+  {
+   "genre": "pop",
+   "label": "Pop",
    "niche": 1968,
    "mainstream": 1971,
    "lag": 3
@@ -1003,29 +1200,8 @@
    "lag": 45
   },
   {
-   "genre": "country",
-   "label": "Country",
-   "niche": 1968,
-   "mainstream": 2013,
-   "lag": 45
-  },
-  {
    "genre": "rock",
    "label": "Rock",
-   "niche": 1968,
-   "mainstream": 1980,
-   "lag": 12
-  },
-  {
-   "genre": "songwriter",
-   "label": "Singer-songwriter",
-   "niche": 1968,
-   "mainstream": 1971,
-   "lag": 3
-  },
-  {
-   "genre": "albumrock",
-   "label": "Album rock",
    "niche": 1968,
    "mainstream": 1980,
    "lag": 12
@@ -1045,13 +1221,6 @@
    "lag": 6
   },
   {
-   "genre": "disco",
-   "label": "Disco",
-   "niche": 1974,
-   "mainstream": 1974,
-   "lag": 0
-  },
-  {
    "genre": "heavymetal",
    "label": "Heavy metal",
    "niche": 1974,
@@ -1059,11 +1228,25 @@
    "lag": 12
   },
   {
+   "genre": "disco",
+   "label": "Disco",
+   "niche": 1974,
+   "mainstream": 1974,
+   "lag": 0
+  },
+  {
    "genre": "italianpop",
    "label": "Italian pop",
    "niche": 1974,
    "mainstream": 1992,
    "lag": 18
+  },
+  {
+   "genre": "albumrock",
+   "label": "Album rock",
+   "niche": 1974,
+   "mainstream": 1980,
+   "lag": 6
   },
   {
    "genre": "dancerock",
@@ -1106,13 +1289,6 @@
    "niche": 1983,
    "mainstream": 2007,
    "lag": 24
-  },
-  {
-   "genre": "worldmusic",
-   "label": "World music",
-   "niche": 1983,
-   "mainstream": 1995,
-   "lag": 12
   },
   {
    "genre": "alternativepoprock",

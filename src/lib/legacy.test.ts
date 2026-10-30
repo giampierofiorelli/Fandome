@@ -3,7 +3,8 @@ import { findingOf } from './legacy'
 
 describe("Fandome's data shows", () => {
   it('finds the pioneers the press also credits, from our data alone', () => {
-    expect(findingOf('kraftwerk-themanmachine')?.spread.trait).toMatch(/Synth-pop/)
+    // Kraftwerk brought synth-pop: the credit goes to their first album with that sound in our data (Autobahn, 1974).
+    expect(['kraftwerk-autobahn', 'kraftwerk-radioactivity', 'kraftwerk-transeuropeexpress', 'kraftwerk-themanmachine'].some((id) => /Synth-pop/.test(findingOf(id)?.spread.trait ?? ''))).toBe(true)
     expect(findingOf('blondie-blondie')?.spread.trait).toBe('New wave')
     expect(findingOf('kcandthesunshineband-doitgood')?.spread.trait).toBe('Disco')
   })

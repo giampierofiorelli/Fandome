@@ -7,7 +7,7 @@ import { albums } from '../data/seed'
 import { sceneOf } from '../data/scenes'
 import { instrumentLabel } from '../data/instruments'
 import { productionLabel } from '../data/production'
-import { albumProfile, compareProfiles } from './similar'
+import { albumProfile, compareProfiles, foldName } from './similar'
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { parseCsv } from './csv'
 
@@ -45,7 +45,7 @@ export interface Trace {
   // The later albums of the area that took up the spreading traits, and how many of them are documented as linked to
   // this artist: a critic's comparison, an influence they name, or one of this album's producers.
   followers: { linked: number; total: number }
-  first: number // share of the area's albums with the album's spreading traits in the 3 years around it that came no earlier
+  first: number // share of the area's albums with the album's strongest new sound in the 3 years around it that came no earlier
   closer: number // how much more the later adopters resemble this album than its contemporaries with the same traits (0 when the other pioneer tests fail)
   spread: Spread[] // the album's new traits that spread, most first
   lift: number // how far the new sound spread: the gains of the traits that spread, added up
@@ -57,6 +57,7 @@ export interface Trace {
 const BEFORE = 6
 const RARE = 0.15 // a trait in fewer than 15% of the field's albums of the previous years is new
 const MIN_FIELD = 10 // windows with fewer albums say too little
+const NEW_ANYWHERE = 0.03 // a sound new to the whole catalogue: at most 3% of all earlier albums had it
 // Wilson score interval for a share k/n (z = 1.645: 90% two-sided).
 const Z = 1.645
 const wilson = (p: number, n: number, sign: 1 | -1) => {
@@ -138,7 +139,15 @@ function computeTrace(albumId: string): Trace | null {
   const keys = [...fresh, ...pairs].filter((t) => spread.some((x) => x.key === t))
   const has = (x: Descriptor) => keys.some((t) => hasAll(x, t))
   const around = inYears(d.year - 1, d.year + 1).filter(has)
-  const first = around.length ? around.filter((x) => x.year! >= d.year!).length / around.length : 1
+  // Who came first is judged on the very sound we would credit the album with: its strongest new spread. At least 80%
+  // of the area's albums that had it in the year before, the same year and the year after must be from its year on.
+  // An album that names this artist as its influence, or that critics compare to it, drew on it: it cannot have
+  // been ahead of it.
+  const meName = foldName(d.artist)
+  const drewOnMe = (x: Descriptor) => [...x.influencedBy, ...x.soundsLike].some((n) => foldName(n) === meName)
+  const head = spread.find((x) => x.earlier <= NEW_ANYWHERE * earlierAll.length)
+  const withHead = head ? inYears(d.year - 1, d.year + 1).filter((x) => hasAll(x, head.key) && !drewOnMe(x)) : []
+  const first = withHead.length ? withHead.filter((x) => x.year! >= d.year!).length / withHead.length : head ? 1 : 0
   const peersThen = around.filter((x) => x.year === d.year)
   const adopters = inYears(d.year + 1, d.year + 10).filter(has)
   const sim = (x: Descriptor, y: Descriptor) => compareProfiles(albumProfile(x), albumProfile(y)).base
@@ -169,7 +178,6 @@ function computeTrace(albumId: string): Trace | null {
 // - a sound new to the whole catalogue, not only to its area (at most 3% of all earlier albums had it), that spread
 //   by at least 12 points even after the margin of error (Spread.sure).
 const COVERAGE = 0.3
-const NEW_ANYWHERE = 0.03
 const MIN_SURE_GAIN = 0.12
 const years = own.map((d) => d.year!)
 let busiest = 0

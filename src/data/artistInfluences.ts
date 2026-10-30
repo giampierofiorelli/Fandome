@@ -2,6 +2,58 @@
 // Album-specific influences stay in the descriptor column `influenced_by`. Used by "If you like this artist":
 // a named artist that is described on Fandome gets one of the reserved places. Keep the source.
 export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string }> = {
+  kingcrimson: {
+    names: ['Jimi Hendrix', 'Béla Bartók', 'Igor Stravinsky', 'The Beatles'],
+    source: 'Robert Fripp interviews (wave 8 notes, docs/descriptors/research)',
+  },
+  moodyblues: {
+    names: ['Mantovani', 'The Beatles'],
+    source: 'Mike Pinder and Justin Hayward, Prog (2022)',
+  },
+  elp: {
+    names: ['Frank Zappa', 'Alberto Ginastera', 'Johann Sebastian Bach'],
+    source: 'Keith Emerson interviews (wave 8 notes)',
+  },
+  ettajames: {
+    names: ['Johnny "Guitar" Watson', 'Ray Charles'],
+    source: 'Etta James, Rolling Stone (1997)',
+  },
+  luthervandross: {
+    names: ['Dionne Warwick'],
+    source: 'Luther Vandross, quoted in the press kit of Luther: Never Too Much (2024)',
+  },
+  chakakhan: {
+    names: ['Joni Mitchell', 'Miles Davis', 'Billie Holiday'],
+    source: 'Chaka Khan, PopMatters (2007) and LA Magazine (2023)',
+  },
+  steelydan: {
+    names: ['Thelonious Monk', 'Ray Charles', 'Bobby Bland', 'Igor Stravinsky', 'Mose Allison'],
+    source: 'Donald Fagen, Wax Poetics',
+  },
+  tencc: {
+    names: ['The Beatles', 'The Beach Boys', 'Steely Dan'],
+    source: 'Graham Gouldman interview (wave 8 notes)',
+  },
+  aerosmith: {
+    names: ['Led Zeppelin', 'Jeff Beck', 'The Yardbirds', 'John Mayall & the Bluesbreakers'],
+    source: 'Joe Perry interviews (wave 8 notes)',
+  },
+  rodstewart: {
+    names: ['Sam Cooke', 'Bob Dylan'],
+    source: 'Rod Stewart: Sam Cooke "the only guy I wanted to sound like"',
+  },
+  pjharvey: {
+    names: ["Howlin' Wolf", 'Bob Dylan', 'The Rolling Stones', 'John Lee Hooker', 'Nina Simone', 'Captain Beefheart'],
+    source: 'PJ Harvey, NPR',
+  },
+  xtc: {
+    names: ['The Kinks', 'The Beatles', 'Small Faces', 'Captain Beefheart'],
+    source: 'Andy Partridge, Rolling Stone',
+  },
+  temptations: {
+    names: ['Sly & the Family Stone', 'The Beatles', 'Jimi Hendrix'],
+    source: 'Otis Williams and Motown (wave 8 notes)',
+  },
   miamartini: {
     names: ['Joni Mitchell', 'Rickie Lee Jones', 'Paul Simon', 'Keith Jarrett', 'Gabriella Ferri'],
     source: 'Interview with Maurizio Gregorini (her last), reproduced by Telecorriere: "i classici della nostra generazione", Jarrett "che sento a manetta", "la passione viscerale che nutro per Gabriella Ferri"',
