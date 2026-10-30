@@ -21,7 +21,8 @@ import { isLocalArtist } from './local'
 // millions of times, so each is folded once.
 // Other credited names fold to the artist's main one (Marina and the Diamonds is MARINA).
 const folded = new Map<string, string>()
-const plainFold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9$]+/g, '').replace(/\$/g, 's')
+// "&" and "and" are the same name (Sly & the Family Stone = Sly and the Family Stone).
+const plainFold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s*[&+]\s*/g, ' and ').replace(/[^a-z0-9$]+/g, '').replace(/\$/g, 's')
 const ALIAS = new Map(ARTIST_ALIASES.flatMap(([main, ...others]) => others.map((o) => [plainFold(o), plainFold(main)] as const)))
 const fold = (s: string) => {
   let f = folded.get(s)
