@@ -1,5 +1,5 @@
 {
- "described": 1715,
+ "described": 1718,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -164,7 +164,7 @@
    "year": 1983,
    "trait": "Programming",
    "before": 0.0449438202247191,
-   "after": 0.5121951219512195,
+   "after": 0.5238095238095238,
    "when": 1993,
    "field": [
     "Synth-pop",
@@ -176,7 +176,7 @@
    "year": 1984,
    "trait": "Programming",
    "before": 0.013888888888888888,
-   "after": 0.3870967741935484,
+   "after": 0.40625,
    "when": 1994,
    "field": [
     "Pop"
@@ -203,18 +203,6 @@
    "when": 1995,
    "field": [
     "Alternative",
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "roxette-joyride",
-   "year": 1991,
-   "trait": "Programming + String arrangements",
-   "before": 0.058823529411764705,
-   "after": 0.3793103448275862,
-   "when": 1998,
-   "field": [
-    "Pop",
     "Rock"
    ]
   },
@@ -250,18 +238,6 @@
    "field": [
     "Electronic",
     "Alternative"
-   ]
-  },
-  {
-   "albumId": "rickymartin-vuelve",
-   "year": 1998,
-   "trait": "Dance-pop + Electric guitar",
-   "before": 0.04285714285714286,
-   "after": 0.35294117647058826,
-   "when": 2008,
-   "field": [
-    "Latin",
-    "Pop"
    ]
   },
   {
@@ -561,7 +537,7 @@
    "label": "Dance",
    "peak": [
     1989,
-    0.09
+    0.0891089108910891
    ],
    "low": [
     2016,
@@ -763,7 +739,7 @@
    ],
    "low": [
     1989,
-    0.06
+    0.0594059405940594
    ],
    "back": [
     2004,
@@ -799,7 +775,7 @@
    ],
    "low": [
     1992,
-    0.038834951456310676
+    0.0380952380952381
    ],
    "back": [
     2007,
@@ -831,7 +807,7 @@
    "label": "Techno",
    "peak": [
     1992,
-    0.1262135922330097
+    0.12380952380952381
    ],
    "low": [
     2016,
@@ -871,7 +847,7 @@
    ],
    "low": [
     1989,
-    0.03
+    0.0297029702970297
    ],
    "back": [
     2001,
@@ -929,7 +905,7 @@
    ],
    "back": [
     1989,
-    0.09
+    0.0891089108910891
    ],
    "gap": 15,
    "newArtists": 0.8888888888888888
