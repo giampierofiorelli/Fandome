@@ -1,6 +1,18 @@
 {
- "described": 1733,
+ "described": 1737,
  "findings": [
+  {
+   "albumId": "nickdrake-fiveleavesleft",
+   "year": 1969,
+   "trait": "Singer-songwriter + Bass guitar",
+   "before": 0,
+   "after": 0.5384615384615384,
+   "when": 1979,
+   "field": [
+    "Folk",
+    "Singer-songwriter"
+   ]
+  },
   {
    "albumId": "bowie-hunkydory",
    "year": 1971,
@@ -127,7 +139,7 @@
    "albumId": "buggles-theageofplastic",
    "year": 1980,
    "trait": "Synth-pop + Keyboards",
-   "before": 0.013513513513513514,
+   "before": 0.012987012987012988,
    "after": 0.5111111111111111,
    "when": 1984,
    "field": [
@@ -163,22 +175,11 @@
    "albumId": "tff-thehurting",
    "year": 1983,
    "trait": "Programming",
-   "before": 0.0449438202247191,
+   "before": 0.043478260869565216,
    "after": 0.5238095238095238,
    "when": 1993,
    "field": [
     "Synth-pop",
-    "Pop"
-   ]
-  },
-  {
-   "albumId": "tozzi-hurrah",
-   "year": 1984,
-   "trait": "Programming",
-   "before": 0.013888888888888888,
-   "after": 0.40625,
-   "when": 1994,
-   "field": [
     "Pop"
    ]
   },
@@ -440,7 +441,7 @@
    "label": "R&B",
    "peak": [
     1974,
-    0.2875
+    0.2839506172839506
    ],
    "low": [
     1986,
@@ -458,7 +459,7 @@
    "label": "Synth-pop",
    "peak": [
     1980,
-    0.325
+    0.32231404958677684
    ],
    "low": [
     1995,
@@ -494,7 +495,7 @@
    "label": "Disco",
    "peak": [
     1974,
-    0.275
+    0.2716049382716049
    ],
    "low": [
     1998,
@@ -512,7 +513,7 @@
    "label": "Soul",
    "peak": [
     1974,
-    0.2875
+    0.2839506172839506
    ],
    "low": [
     1995,
@@ -584,7 +585,7 @@
    "label": "New wave",
    "peak": [
     1977,
-    0.16363636363636364
+    0.16071428571428573
    ],
    "low": [
     2001,
@@ -606,7 +607,7 @@
    ],
    "low": [
     1974,
-    0.0375
+    0.037037037037037035
    ],
    "back": [
     2007,
@@ -728,7 +729,7 @@
    "label": "Ballad",
    "peak": [
     1974,
-    0.175
+    0.1728395061728395
    ],
    "low": [
     1986,
@@ -746,7 +747,7 @@
    "label": "Dance-rock",
    "peak": [
     1977,
-    0.12727272727272726
+    0.125
    ],
    "low": [
     2001,
@@ -764,7 +765,7 @@
    "label": "Italian pop",
    "peak": [
     1974,
-    0.125
+    0.12345679012345678
    ],
    "low": [
     1989,
@@ -800,7 +801,7 @@
    "label": "Soft rock",
    "peak": [
     1974,
-    0.0875
+    0.09876543209876543
    ],
    "low": [
     1992,
@@ -890,7 +891,7 @@
    "label": "Contemporary pop/rock",
    "peak": [
     1980,
-    0.15
+    0.1487603305785124
    ],
    "low": [
     2001,
@@ -926,11 +927,11 @@
    "label": "Heavy metal",
    "peak": [
     1974,
-    0.1
+    0.09876543209876543
    ],
    "low": [
     1980,
-    0.03333333333333333
+    0.03305785123966942
    ],
    "back": [
     1989,
