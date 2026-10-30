@@ -15,7 +15,7 @@ describe('scenes', () => {
       expect(COUNTRY_NAMES[s.country], `${id} country ${s.country}`).toBeTruthy()
       expect(s.lang, id).toMatch(/^[a-z]{2,3}$/) // ISO 639-1, or 639-3 when there is no 2-letter code (pcm: Nigerian Pidgin)
       expect(s.since % 10, id).toBe(0)
-      expect(s.since >= 1920 && s.since <= 2020, id).toBe(true)
+      expect(s.since >= 1500 && s.since <= 2020, id).toBe(true) // composers' works start centuries back
       expect(s.genres.length, id).toBeGreaterThan(0)
       for (const g of s.genres) expect(GENRES, `${id} ${g}`).toContain(g)
     }

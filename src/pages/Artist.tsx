@@ -51,7 +51,9 @@ export default function ArtistPage() {
   const myAlbums = albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year)
   // Artists known for singles (Italo disco, early pop): their key singles are described like albums and listed apart.
   const singles = myAlbums.filter((a) => descriptorOf(a.id)?.type === 'single')
-  const records = myAlbums.filter((a) => descriptorOf(a.id)?.type !== 'single')
+  // Composers (classical, avant-garde): their key works, by the year they were written, no recording needed.
+  const works = myAlbums.filter((a) => descriptorOf(a.id)?.type === 'work')
+  const records = myAlbums.filter((a) => !['single', 'work'].includes(descriptorOf(a.id)?.type ?? ''))
   // Start here: the records that made the artist, for someone who doesn't know them yet.
   const essentials = essentialAlbums(myAlbums.map((a) => a.id))
   const essentialKinds = new Map(essentials.map((e) => [e.id, e.kind]))
@@ -198,40 +200,63 @@ export default function ArtistPage() {
               </div>
             </section>
           )}
-          <div className="start-here-head">
-            <h2>{essentials.length > 0 ? 'All albums' : 'Albums'}</h2>
-            <span className="muted small">The whole discography, oldest first.</span>
-          </div>
-          <div className="album-grid">
-            {records.map((al) => {
-              const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))
-              const avg = others.length ? others.reduce((x, y) => x + y, 0) / others.length : 0
-              const mine = me?.ratings[al.id]
-              const fav = me?.top4.includes(al.id)
-              return (
-                <Link key={al.id} to={`/album/${al.id}`} className="album-tile">
-                  <span className="album-art">
-                    <AlbumCover album={al} size={150} />
-                    {fav && (
-                      <span className="album-fav" aria-label="Favourite">
-                        <IconHeart size={13} filled />
+          {records.length > 0 && (
+            <>
+              <div className="start-here-head">
+                <h2>{essentials.length > 0 ? 'All albums' : 'Albums'}</h2>
+                <span className="muted small">The whole discography, oldest first.</span>
+              </div>
+              <div className="album-grid">
+                {records.map((al) => {
+                  const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))
+                  const avg = others.length ? others.reduce((x, y) => x + y, 0) / others.length : 0
+                  const mine = me?.ratings[al.id]
+                  const fav = me?.top4.includes(al.id)
+                  return (
+                    <Link key={al.id} to={`/album/${al.id}`} className="album-tile">
+                      <span className="album-art">
+                        <AlbumCover album={al} size={150} />
+                        {fav && (
+                          <span className="album-fav" aria-label="Favourite">
+                            <IconHeart size={13} filled />
+                          </span>
+                        )}
+                        <span className={mine ? 'album-score mine' : 'album-score'}>{mine ? fmtScore(toScore(mine)) : 'Rate'}</span>
                       </span>
-                    )}
-                    <span className={mine ? 'album-score mine' : 'album-score'}>{mine ? fmtScore(toScore(mine)) : 'Rate'}</span>
-                  </span>
-                  {essentialKinds.has(al.id) && (
-                    <span className={`essential-pill small ${essentialKinds.get(al.id)}`} title="One of the records to start with">
-                      {ESSENTIAL_LABEL[essentialKinds.get(al.id)!]}
+                      {essentialKinds.has(al.id) && (
+                        <span className={`essential-pill small ${essentialKinds.get(al.id)}`} title="One of the records to start with">
+                          {ESSENTIAL_LABEL[essentialKinds.get(al.id)!]}
+                        </span>
+                      )}
+                      <span className="album-title">{al.title}</span>
+                      <span className="muted small">
+                        {al.year} · {avg ? `fans ${fmtScore(Math.round(avg * 10) / 10)}` : 'no ratings yet'}
+                      </span>
+                    </Link>
+                  )
+                })}
+              </div>
+            </>
+          )}
+          {works.length > 0 && (
+            <>
+              <div className="start-here-head">
+                <h2>Works</h2>
+                <span className="muted small">The pieces this composer is known for, in the order they were written.</span>
+              </div>
+              <div className="album-grid">
+                {works.map((al) => (
+                  <Link key={al.id} to={`/album/${al.id}`} className="album-tile">
+                    <span className="album-art">
+                      <AlbumCover album={al} size={150} />
                     </span>
-                  )}
-                  <span className="album-title">{al.title}</span>
-                  <span className="muted small">
-                    {al.year} · {avg ? `fans ${fmtScore(Math.round(avg * 10) / 10)}` : 'no ratings yet'}
-                  </span>
-                </Link>
-              )
-            })}
-          </div>
+                    <span className="album-title">{al.title}</span>
+                    <span className="muted small">{al.year} · work</span>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
           {singles.length > 0 && (
             <>
               <div className="start-here-head">

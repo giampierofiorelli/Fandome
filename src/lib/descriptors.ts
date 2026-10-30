@@ -121,5 +121,5 @@ export const descriptorOf = (albumId?: string): Descriptor | undefined => (album
 
 export const genreLabel = (g: string) => GENRE_LABELS[g as Genre] ?? g
 
-const TYPE_LABELS: Record<string, string> = { studio: 'Album', ep: 'EP', mixtape: 'Mixtape', soundtrack: 'Soundtrack', live: 'Live album', compilation: 'Compilation', remix: 'Remix album', single: 'Single' }
+const TYPE_LABELS: Record<string, string> = { studio: 'Album', ep: 'EP', mixtape: 'Mixtape', soundtrack: 'Soundtrack', live: 'Live album', compilation: 'Compilation', remix: 'Remix album', single: 'Single', work: 'Work' }
 export const releaseLabel = (albumId?: string) => TYPE_LABELS[descriptorOf(albumId)?.type ?? 'studio'] ?? 'Album'
