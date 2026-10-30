@@ -418,6 +418,10 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['ABBA'],
     source: 'Pete Waterman, who formed and first produced Steps, Official Charts: "To me, it was ABBA on speed" https://officialcharts.com/chart-news/pete-waterman-interview-i-want-bananarama-played-at-my-funeral__20922',
   },
+  tyla: {
+    names: ['Rihanna', 'Aaliyah', 'Michael Jackson'],
+    source: 'Tyla, Official Charts interview, June 2023: "Definitely then and still now, Rihanna and Aaliyah. And I really loved Michael Jackson."',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
