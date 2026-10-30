@@ -98,6 +98,7 @@ export interface Profile {
   importance?: number // 0-5, career weight (albums only)
   acclaim?: number // 0-5, critical standing today (albums only)
   mainstream?: number // 0-5, how commercial the record is (albums only)
+  work?: { form: Map<string, number>; forces: Map<string, number>; harmony: Map<string, number>; texture: Map<string, number>; voices: Map<string, number> }
 }
 
 const CONFIDENCE = { high: 1, medium: 0.9, low: 0.8 }
@@ -105,6 +106,8 @@ const STOP = new Set(['the', 'and', 'of', 'pop', 'music', 's', 'era'])
 const sceneTokens = (s: string) => new Set(s.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !STOP.has(w)))
 
 // Descriptors never change while the app runs: profiles and comparisons are computed once and kept.
+// Ordered list → weights (main first).
+const ordered = (xs: string[]) => new Map(xs.map((x, i) => [x, 1 / (i + 1)]))
 const albumProfiles = new WeakMap<Descriptor, Profile>()
 export function albumProfile(d: Descriptor): Profile {
   let p = albumProfiles.get(d)
@@ -137,6 +140,7 @@ function buildAlbumProfile(d: Descriptor): Profile {
     importance: d.importance,
     acclaim: d.acclaim,
     mainstream: d.mainstream,
+    work: d.work ? { form: ordered(d.work.form), forces: ordered(d.work.forces), harmony: ordered(d.work.harmony), texture: ordered(d.work.texture), voices: ordered(d.work.voices) } : undefined,
   })
 }
 
@@ -391,8 +395,32 @@ function listSim(field: 'instruments' | 'production', a: Map<string, number>, b:
   return weightedJaccard(new Map([...a].map(([x, w]) => [x, w * r(x)])), new Map([...b].map(([x, w]) => [x, w * r(x)])))
 }
 
+// Two works (classical and avant-garde pieces, operas: research in docs/research/classical-research.md): what the work
+// is (form), who performs it (forces), its harmony and its voices weigh like instruments; styles change over
+// generations, so the era counts over 80 years, not 30.
+const mapSim = (a?: Map<string, number>, b?: Map<string, number>) => (a?.size && b?.size ? weightedJaccard(a, b) : null)
+function workExtras(a: Profile, b: Profile) {
+  const parts: [number | null, number][] = [
+    [listSim('instruments', a.instruments, b.instruments), 0.16],
+    [mapSim(a.work!.form, b.work!.form), 0.16],
+    [mapSim(a.work!.forces, b.work!.forces), 0.14],
+    [mapSim(a.work!.harmony, b.work!.harmony), 0.12],
+    [mapSim(a.work!.voices, b.work!.voices), 0.08],
+    [themeSim(a.lyrics, b.lyrics), 0.08],
+    [listSim('production', a.production, b.production), 0.06],
+    [a.year && b.year ? 1 - Math.min(1, Math.abs(a.year - b.year) / 80) : null, 0.1],
+    [jaccard(a.scene, b.scene), 0.06],
+    [mapSim(a.work!.texture, b.work!.texture), 0.03],
+    [a.language.size && b.language.size ? ([...a.language].some((l) => b.language.has(l)) ? 1 : 0) : null, 0.01],
+  ]
+  const known = parts.filter(([v]) => v !== null) as [number, number][]
+  const w = known.reduce((n, [, x]) => n + x, 0)
+  return w ? known.reduce((n, [v, x]) => n + v * x, 0) / w : null
+}
+
 // Instruments and production weigh more than era (owner, Oct 2026: they create affinity); language almost nothing.
 function extrasSimilarity(a: Profile, b: Profile) {
+  if (a.work && b.work) return workExtras(a, b)
   const parts: [number | null, number][] = [
     [themeSim(a.lyrics, b.lyrics), 0.26],
     [listSim('instruments', a.instruments, b.instruments), 0.22],

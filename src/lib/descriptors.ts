@@ -31,6 +31,7 @@ export interface Descriptor {
   importance?: number // 0-5: how much the album counts in the artist's career (reception file)
   acclaim?: number // 0-5: how highly critics rate it today, at release or later (reception file)
   mainstream?: number // 0-5: how commercial the record is in conception and positioning (reception file)
+  work?: WorkFields // works only (docs/descriptors/works): form, forces, harmony, voices and metadata
   confidence: 'high' | 'medium' | 'low'
   status: 'draft' | 'reviewed'
   notes: string
@@ -96,6 +97,18 @@ export function parseDescriptors(text: string): Descriptor[] {
   })
 }
 
+// Works (docs/descriptors/works/<artist-id>.csv, fields in src/data/workFields.ts): form, forces, harmony, texture,
+// voices weigh in similarity; catalogue, key, text_by and premiere are shown only.
+export interface WorkFields { form: string[]; forces: string[]; harmony: string[]; texture: string[]; voices: string[]; catalogue: string; key: string; textBy: string; premiere: string }
+const workFiles = import.meta.glob('../../docs/descriptors/works/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
+const WORKS = new Map<string, WorkFields>()
+for (const text of Object.values(workFiles)) {
+  const [head, ...rows] = parseCsv(text)
+  if (!head) continue
+  const at = (r: string[], k: string) => r[head.indexOf(k)]?.trim() ?? ''
+  for (const r of rows) if (at(r, 'album_id')) WORKS.set(at(r, 'album_id'), { form: list(at(r, 'form')), forces: list(at(r, 'forces')), harmony: list(at(r, 'harmony')), texture: list(at(r, 'texture')), voices: list(at(r, 'voices')), catalogue: at(r, 'catalogue'), key: at(r, 'key'), textBy: at(r, 'text_by'), premiere: at(r, 'premiere') })
+}
+
 const files = import.meta.glob('../../docs/descriptors/*.csv', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
 
 // Reception (docs/descriptors/reception/<artist-id>.csv): album_id,importance,acclaim,mainstream,sources.
@@ -114,7 +127,7 @@ for (const text of Object.values(receptionFiles)) {
 export const DESCRIPTORS: Record<string, Descriptor> = Object.fromEntries(
   Object.values(files)
     .flatMap(parseDescriptors)
-    .map((d) => [d.albumId, { ...d, ...RECEPTION.get(d.albumId) }]),
+    .map((d) => [d.albumId, { ...d, ...RECEPTION.get(d.albumId), work: WORKS.get(d.albumId) }]),
 )
 
 export const descriptorOf = (albumId?: string): Descriptor | undefined => (albumId ? DESCRIPTORS[albumId] : undefined)

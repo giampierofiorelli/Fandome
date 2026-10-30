@@ -21,6 +21,7 @@ import { albums } from '../data/seed'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
+import { FORCES_LABELS, FORM_LABELS, HARMONY_LABELS, VOICE_TYPE_LABELS } from '../data/workFields'
 import { borrowedAlbum, borrowedBy, borrowingsOf } from '../lib/borrowings'
 import { legacyOf, traceOf } from '../lib/legacy'
 import { DESCRIBED_ALBUMS, storedFinding, storedInfluence, storedLate } from '../lib/findings'
@@ -323,6 +324,17 @@ export default function AlbumPage() {
               {sound.instruments.length > 0 && <SoundRow label="Instruments">{sound.instruments.map(instrumentLabel).join(' · ')}</SoundRow>}
               {sound.production.length > 0 && <SoundRow label="Production">{sound.production.map(productionLabel).join(' · ')}</SoundRow>}
               {sound.producers.length > 0 && <SoundRow label="Produced by">{sound.producers.join(' · ')}</SoundRow>}
+              {sound.work && (
+                <>
+                  {sound.work.form.length > 0 && <SoundRow label="Form">{sound.work.form.map((x) => FORM_LABELS[x] ?? x).join(' · ')}</SoundRow>}
+                  {sound.work.forces.length > 0 && <SoundRow label="Scored for">{sound.work.forces.map((x) => FORCES_LABELS[x] ?? x).join(' · ')}</SoundRow>}
+                  {sound.work.voices.length > 0 && <SoundRow label="Voices">{sound.work.voices.map((x) => VOICE_TYPE_LABELS[x] ?? x).join(' · ')}</SoundRow>}
+                  {sound.work.harmony.length > 0 && <SoundRow label="Harmony">{sound.work.harmony.map((x) => HARMONY_LABELS[x] ?? x).join(' · ')}</SoundRow>}
+                  {(sound.work.catalogue || sound.work.key) && <SoundRow label="Catalogue">{[sound.work.catalogue, sound.work.key].filter(Boolean).join(' · ')}</SoundRow>}
+                  {sound.work.textBy && <SoundRow label="Text by">{sound.work.textBy}</SoundRow>}
+                  {sound.work.premiere && <SoundRow label="First performed">{sound.work.premiere}</SoundRow>}
+                </>
+              )}
               <CoverLines albumId={album.id} />
               <BorrowLines albumId={album.id} />
             </div>

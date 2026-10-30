@@ -126,3 +126,14 @@ comparison: it goes in `docs/descriptors/borrowings/<artist-id>.csv`, header `al
 quotation, cover, arrangement, adaptation, variations; `songs` = "1/13" when it is on 1 song of 13 (empty: the whole
 album is built on it); `sources` = credits, WhoSampled-style databases, reviews (never Wikipedia). In the influence
 network it weighs half an influence, times the share of songs. Shown on the album page ("Borrows from", "Borrowed by").
+
+## Works: extra fields (owner, Oct 2026)
+
+Composers' works (type `work`) keep the 27 columns (polish and producers empty; production = techniques written into
+the work; scene = school or circle; experimental = how unusual it sounds today) and add a row in
+`docs/descriptors/works/<artist-id>.csv`, header `album_id,form,forces,harmony,texture,voices,catalogue,key,text_by,premiere,sources`.
+form, forces, harmony, texture and voices are `|` lists of the tokens in `src/data/workFields.ts` (Library of Congress
+genre/form and medium-of-performance terms, MusicBrainz, Wikidata); they weigh in similarity between two works, the
+era over 80 years instead of 30. catalogue (BWV 988), key, text_by (librettist or poet) and premiere are shown only.
+Style periods (latebaroque, classicalera, impressionism, serialism, minimalism…) go in `genres`. Research:
+`docs/research/classical-research.md`.

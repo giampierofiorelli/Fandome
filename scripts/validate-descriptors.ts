@@ -3,6 +3,7 @@
 // Run: npx vite-node scripts/validate-descriptors.ts
 import { INSTRUMENTS } from '../src/data/instruments'
 import { PRODUCTION } from '../src/data/production'
+import { WORK_HEADER, WORK_LISTS } from '../src/data/workFields'
 import { readdirSync, readFileSync } from 'node:fs'
 import { albums, artists } from '../src/data/seed'
 import { parseCsv as parse } from '../src/lib/csv'
@@ -120,6 +121,32 @@ for (const file of legacyFiles) {
     if (Number(legacy) >= 3 && /wikipedia/i.test(sources ?? '')) say(`row ${n + 2}`, 'cite the original source, not Wikipedia')
   })
   console.log(`legacy/${file}: ${body.length} rows`)
+}
+// Work files (docs/descriptors/works/<artist-id>.csv, fields in src/data/workFields.ts).
+let workFiles: string[] = []
+try {
+  workFiles = readdirSync('docs/descriptors/works').filter((f) => f.endsWith('.csv'))
+} catch {
+  workFiles = []
+}
+for (const file of workFiles) {
+  const [head, ...body] = parse(readFileSync(`docs/descriptors/works/${file}`, 'utf8'))
+  const say = (where: string, msg: string) => (problems++, console.log(`works/${file} ${where}: ${msg}`))
+  if (!head || head.join(',') !== WORK_HEADER) {
+    say('header', `expected ${WORK_HEADER}`)
+    continue
+  }
+  body.forEach((cells, n) => {
+    const r = Object.fromEntries(head.map((h, i) => [h, (cells[i] ?? '').trim()]))
+    if (!albumIds.has(r.album_id)) say(`row ${n + 2}`, `album "${r.album_id}" is not in the catalogue`)
+    for (const [col, labels] of Object.entries(WORK_LISTS)) {
+      const bad = (r[col] ?? '').split('|').map((x) => x.trim()).filter((x) => x && !(x in labels))
+      if (bad.length) say(`row ${n + 2}`, `${col} "${r[col]}" (unknown: ${bad.join(', ')})`)
+    }
+    if (!r.sources) say(`row ${n + 2}`, 'sources are required')
+    if (/wikipedia/i.test(r.sources ?? '')) say(`row ${n + 2}`, 'cite the original source, not Wikipedia')
+  })
+  console.log(`works/${file}: ${body.length} rows`)
 }
 // Borrowing files (docs/descriptors/borrowings/<artist-id>.csv): what an album samples, quotes, covers or adapts.
 let borrowFiles: string[] = []
