@@ -24,7 +24,7 @@ export const SCENE_DEFS: SceneDef[] = [
   { id: 'brazil', name: 'Brazil', countries: ['BR'], language: 'Portuguese', ready: false, intro: 'Sertanejo, Brazilian funk, pagode, forró and MPB.' },
   { id: 'latin', name: 'Spain and Latin America', countries: ['ES', 'MX', 'CO', 'AR', 'PR', 'CL', 'PE', 'VE', 'CU', 'DO', 'UY', 'EC', 'PA', 'GT'], language: 'Spanish', ready: false, intro: 'Reggaeton, Latin pop and new Spanish pop.' },
   { id: 'france', name: 'France', countries: ['FR', 'BE', 'CH'], language: 'French', ready: false, intro: 'Chanson, French touch and one of Europe’s biggest rap scenes.' },
-  { id: 'afro', name: 'Afro', countries: ['NG', 'ZA', 'GH', 'ML', 'NE', 'SN', 'CI', 'CM', 'BJ', 'CD', 'KE', 'TZ'], language: 'English, Pidgin, Yoruba, Zulu, Bambara, Tamasheq, Lingala, Swahili…', ready: false, intro: 'Afrobeats, amapiano and the sounds of West, Central, East and South Africa.' },
+  { id: 'afro', name: 'Afro', countries: ['NG', 'ZA', 'GH', 'ML', 'NE', 'SN', 'CI', 'CM', 'BJ', 'CD', 'KE', 'TZ'], language: 'English, Pidgin, Yoruba, Zulu, Bambara, Tamasheq, Lingala, Swahili…', ready: true, intro: 'Afrobeats, amapiano and the sounds of West, Central, East and South Africa.' },
   { id: 'korea', name: 'Korea', countries: ['KR'], language: 'Korean', ready: false, intro: 'K-pop and beyond: Korean R&B, indie and hip-hop.' },
 ]
 export const sceneDef = (id?: string) => SCENE_DEFS.find((s) => s.id === id)

@@ -10,7 +10,7 @@ const ctx = (me: User | null) => ({ me, users: seedUsers, posts: [], artists, al
 describe('scenes', () => {
   it('starts with the plan scenes; only Italy is ready today', () => {
     expect(SCENE_DEFS.map((s) => s.id)).toEqual(['italy', 'brazil', 'latin', 'france', 'afro', 'korea'])
-    expect(SCENE_DEFS.filter((s) => s.ready).map((s) => s.id)).toEqual(['italy'])
+    expect(SCENE_DEFS.filter((s) => s.ready).map((s) => s.id)).toEqual(['italy', 'afro'])
   })
 
   it('builds the Italy path: start here, now, eras, sub-scenes, deep cuts', () => {
