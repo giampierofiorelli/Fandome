@@ -1,5 +1,5 @@
 {
- "described": 1685,
+ "described": 1689,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -479,7 +479,7 @@
    ],
    "low": [
     1986,
-    0.13445378151260504
+    0.1322314049586777
    ],
    "back": [
     2016,
@@ -583,7 +583,7 @@
    "label": "Dance",
    "peak": [
     1989,
-    0.09278350515463918
+    0.09090909090909091
    ],
    "low": [
     2016,
@@ -849,24 +849,6 @@
    "newArtists": 1
   },
   {
-   "genre": "italianpop",
-   "label": "Italian pop",
-   "peak": [
-    1974,
-    0.1
-   ],
-   "low": [
-    1989,
-    0.041237113402061855
-   ],
-   "back": [
-    2004,
-    0.125
-   ],
-   "gap": 30,
-   "newArtists": 1
-  },
-  {
    "genre": "techno",
    "label": "Techno",
    "peak": [
@@ -880,6 +862,24 @@
    "back": [
     2022,
     0.08333333333333333
+   ],
+   "gap": 30,
+   "newArtists": 1
+  },
+  {
+   "genre": "italianpop",
+   "label": "Italian pop",
+   "peak": [
+    1974,
+    0.1
+   ],
+   "low": [
+    1995,
+    0.05
+   ],
+   "back": [
+    2004,
+    0.125
    ],
    "gap": 30,
    "newArtists": 1
@@ -903,6 +903,24 @@
    "newArtists": 0.8333333333333334
   },
   {
+   "genre": "artrock",
+   "label": "Art rock",
+   "peak": [
+    1965,
+    0.08163265306122448
+   ],
+   "low": [
+    1989,
+    0.030303030303030304
+   ],
+   "back": [
+    2001,
+    0.09615384615384616
+   ],
+   "gap": 36,
+   "newArtists": 1
+  },
+  {
    "genre": "electro",
    "label": "Electro",
    "peak": [
@@ -919,24 +937,6 @@
    ],
    "gap": 18,
    "newArtists": 0.6666666666666666
-  },
-  {
-   "genre": "artrock",
-   "label": "Art rock",
-   "peak": [
-    1965,
-    0.08163265306122448
-   ],
-   "low": [
-    1989,
-    0.030927835051546393
-   ],
-   "back": [
-    2001,
-    0.09615384615384616
-   ],
-   "gap": 36,
-   "newArtists": 1
   },
   {
    "genre": "adultalternativepoprock",
@@ -969,7 +969,7 @@
    ],
    "back": [
     1989,
-    0.09278350515463918
+    0.09090909090909091
    ],
    "gap": 15,
    "newArtists": 0.8888888888888888
