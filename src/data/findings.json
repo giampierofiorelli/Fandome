@@ -1,11 +1,24 @@
 {
- "described": 1621,
+ "described": 1673,
  "findings": [
+  {
+   "albumId": "koolandthegang-koolandthegang",
+   "year": 1969,
+   "trait": "Funk",
+   "before": 0,
+   "after": 0.8333333333333334,
+   "when": 1979,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
+   ]
+  },
   {
    "albumId": "bowie-hunkydory",
    "year": 1971,
    "trait": "Pop rock + Electric guitar",
-   "before": 0.07317073170731707,
+   "before": 0.07547169811320754,
    "after": 0.4423076923076923,
    "when": 1981,
    "field": [
@@ -14,27 +27,29 @@
    ]
   },
   {
-   "albumId": "pinkfloyd-meddle",
-   "year": 1971,
-   "trait": "Bass guitar + Synthesizers",
-   "before": 0.05128205128205128,
-   "after": 0.6086956521739131,
-   "when": 1981,
+   "albumId": "koolandthegang-goodtimes",
+   "year": 1972,
+   "trait": "Funk + Synthesizers",
+   "before": 0.1,
+   "after": 0.7272727272727273,
+   "when": 1982,
    "field": [
-    "Prog",
-    "Rock"
+    "Funk",
+    "Soul",
+    "Jazz"
    ]
   },
   {
-   "albumId": "pinkfloyd-obscuredbyclouds",
+   "albumId": "koolandthegang-musicisthemessage",
    "year": 1972,
-   "trait": "Synthesizers + Percussion",
-   "before": 0.023255813953488372,
-   "after": 0.5294117647058824,
-   "when": 1976,
+   "trait": "Funk + Percussion",
+   "before": 0,
+   "after": 0.7777777777777778,
+   "when": 1979,
    "field": [
-    "Prog",
-    "Rock"
+    "Funk",
+    "Soul",
+    "Jazz"
    ]
   },
   {
@@ -59,19 +74,6 @@
    "field": [
     "Rock",
     "Punk"
-   ]
-  },
-  {
-   "albumId": "koolandthegang-loveunderstanding",
-   "year": 1976,
-   "trait": "Funk + Synthesizers",
-   "before": 0.11764705882352941,
-   "after": 0.8421052631578947,
-   "when": 1980,
-   "field": [
-    "Funk",
-    "Soul",
-    "Jazz"
    ]
   },
   {
@@ -100,9 +102,9 @@
   {
    "albumId": "tozzi-enellariatiamo",
    "year": 1977,
-   "trait": "Pop rock + Keyboards",
+   "trait": "Pop + Keyboards",
    "before": 0.09523809523809523,
-   "after": 0.45901639344262296,
+   "after": 0.6065573770491803,
    "when": 1984,
    "field": [
     "Pop"
@@ -121,6 +123,18 @@
    ]
   },
   {
+   "albumId": "blondie-eattothebeat",
+   "year": 1979,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.10526315789473684,
+   "after": 0.5769230769230769,
+   "when": 1983,
+   "field": [
+    "Rock",
+    "Punk"
+   ]
+  },
+  {
    "albumId": "rettore-brividodivino",
    "year": 1979,
    "trait": "Synth-pop",
@@ -130,6 +144,17 @@
    "field": [
     "Pop",
     "Rock"
+   ]
+  },
+  {
+   "albumId": "tozzi-gloria",
+   "year": 1979,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.12195121951219512,
+   "after": 0.5357142857142857,
+   "when": 1986,
+   "field": [
+    "Pop"
    ]
   },
   {
@@ -252,9 +277,9 @@
   {
    "albumId": "gwenstefani-loveangelmusicbaby",
    "year": 2004,
-   "trait": "Electropop + Synthesizers",
-   "before": 0.07894736842105263,
-   "after": 0.3888888888888889,
+   "trait": "Electropop",
+   "before": 0.09210526315789473,
+   "after": 0.4722222222222222,
    "when": 2008,
    "field": [
     "Pop",
@@ -312,6 +337,12 @@
    "medianLag": 23
   },
   {
+   "albumId": "byrds-fifthdimension",
+   "n": 11,
+   "early": 0,
+   "medianLag": 22
+  },
+  {
    "albumId": "jameslast-classicsuptodate",
    "n": 13,
    "early": 0,
@@ -328,6 +359,12 @@
    "n": 10,
    "early": 0,
    "medianLag": 30
+  },
+  {
+   "albumId": "dusty-dustyinmemphis",
+   "n": 6,
+   "early": 1,
+   "medianLag": 42
   },
   {
    "albumId": "neilyoung-everybodyknowsthisisnowhere",
@@ -462,7 +499,7 @@
    "label": "Funk",
    "peak": [
     1968,
-    0.1111111111111111
+    0.09523809523809523
    ],
    "low": [
     2010,
@@ -551,8 +588,8 @@
    "genre": "rock",
    "label": "Rock",
    "peak": [
-    1965,
-    0.2631578947368421
+    1968,
+    0.2698412698412698
    ],
    "low": [
     2004,
@@ -562,7 +599,7 @@
     2007,
     0.2727272727272727
    ],
-   "gap": 42,
+   "gap": 39,
    "newArtists": 1
   },
   {
@@ -588,7 +625,7 @@
    "label": "Blues",
    "peak": [
     1965,
-    0.23684210526315788
+    0.20408163265306123
    ],
    "low": [
     1983,
@@ -606,7 +643,7 @@
    "label": "Jazz",
    "peak": [
     1965,
-    0.21052631578947367
+    0.16326530612244897
    ],
    "low": [
     1983,
@@ -624,7 +661,7 @@
    "label": "Folk",
    "peak": [
     1965,
-    0.21052631578947367
+    0.2653061224489796
    ],
    "low": [
     1980,
@@ -714,7 +751,7 @@
    "label": "Country",
    "peak": [
     1968,
-    0.18518518518518517
+    0.15873015873015872
    ],
    "low": [
     1980,
@@ -786,7 +823,7 @@
    "label": "Blues rock",
    "peak": [
     1965,
-    0.10526315789473684
+    0.08163265306122448
    ],
    "low": [
     1998,
@@ -876,7 +913,7 @@
    "label": "Art rock",
    "peak": [
     1965,
-    0.10526315789473684
+    0.08163265306122448
    ],
    "low": [
     1989,
@@ -986,6 +1023,13 @@
    "niche": 1968,
    "mainstream": 1980,
    "lag": 12
+  },
+  {
+   "genre": "songwriter",
+   "label": "Singer-songwriter",
+   "niche": 1968,
+   "mainstream": 2016,
+   "lag": 48
   },
   {
    "genre": "albumrock",

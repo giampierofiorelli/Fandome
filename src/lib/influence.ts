@@ -94,7 +94,8 @@ function computeNetwork() {
     if (!citedBy.has(c.albumId)) citedBy.set(c.albumId, [])
     citedBy.get(c.albumId)!.push({ ...c, albumId: later })
   }
-  // PageRank: an album's score flows to the albums it draws on, in proportion to the links' weights.
+  // PageRank: an album's score flows to the albums it draws on, in proportion to the links' weights (at most their
+// weight: see below).
   const ids = own.map((d) => d.albumId)
   const N = ids.length, D = 0.85
   let score = new Map(ids.map((id) => [id, 1 / N]))
@@ -103,9 +104,13 @@ function computeNetwork() {
     let dangling = 0
     for (const id of ids) {
       const m = out.get(id)
+      // A link passes at most its own weight: an album whose only link is weak (a critic's comparison on one song)
+      // does not hand all of its score to that record; what it does not pass is spread over every album.
       const total = m ? [...m.values()].reduce((n, c) => n + c.weight, 0) : 0
       if (!total) { dangling += score.get(id)!; continue }
-      for (const c of m!.values()) next.set(c.albumId, next.get(c.albumId)! + (D * score.get(id)! * c.weight) / total)
+      const norm = Math.max(1, total)
+      dangling += score.get(id)! * (1 - total / norm)
+      for (const c of m!.values()) next.set(c.albumId, next.get(c.albumId)! + (D * score.get(id)! * c.weight) / norm)
     }
     for (const id of ids) next.set(id, next.get(id)! + (D * dangling) / N)
     score = next
