@@ -22,7 +22,7 @@ import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
 import { legacyOf, traceOf } from '../lib/legacy'
-import { DESCRIBED_ALBUMS, storedFinding } from '../lib/findings'
+import { DESCRIBED_ALBUMS, storedFinding, storedInfluence } from '../lib/findings'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -75,11 +75,18 @@ const shownSources = (text: string) =>
 // describe from its area afterwards (a trace in the data, not a proof of cause).
 // "Fandome's data shows" (owner, Oct 2026): when our own analysis finds a pioneer (findingOf), the page says so by
 // itself, labelled as ours, even where no critic has said it.
+// Why a later album is counted as drawing on this one.
+const howLabel = (how: string, artist?: string) =>
+  ({ 'influence-album': 'names this album as an influence', influence: `names ${artist} as an influence`, 'critic-album': 'a critic compares it to this album', critic: `a critic compares it to ${artist}`, producer: 'same producer', artist: `${artist} is among its artist’s influences` })[how] ?? how
 function LegacyBox({ albumId }: { albumId: string }) {
   const legacy = legacyOf(albumId)
   const finding = storedFinding(albumId)
   const sourced = legacy && legacy.legacy >= 3 ? legacy : undefined
-  if (!sourced && !finding) return null
+  // Influence network: shown when at least 5 later albums we describe draw on it and it stands in the top tenth of
+  // the albums of its time.
+  const inf = storedInfluence(albumId)
+  const drawnOn = inf && inf.n >= 5 && inf.pct >= 0.9 ? inf : undefined
+  if (!sourced && !finding && !drawnOn) return null
   const trace = traceOf(albumId)
   const head = (finding && trace?.spread.find((s) => s.trait === finding.trait)) || trace?.spread[0]
   const others = (trace?.spread ?? []).filter((s) => s.trait !== head?.trait).slice(0, 3)
@@ -111,6 +118,29 @@ function LegacyBox({ albumId }: { albumId: string }) {
                 ))}
               </span>
               {shownSources(sourced.sources) && <span className="muted small legacy-source">{shownSources(sourced.sources)}</span>}
+            </div>
+          </div>
+        )}
+        {drawnOn && (
+          <div className="sound-row">
+            <div className="sound-label">Drawn on by later albums</div>
+            <div className="legacy-jump">
+              <span className="bignum">{drawnOn.n}</span>
+            </div>
+            <div className="muted small">
+              later albums we describe draw on it, more than on {Math.min(99, Math.round(drawnOn.pct * 100))}% of the albums released within five years of it.
+              {drawnOn.dis !== undefined && drawnOn.dis >= 0.5 && ' Most of them do not draw on what it drew on: it opened a path.'}
+              {drawnOn.dis !== undefined && drawnOn.dis <= -0.2 && ' Most of them also draw on its own sources: it carried a line forward.'}
+            </div>
+            <div className="sound-value legacy-followers">
+              {drawnOn.top.map(([id, how]) => {
+                const a = albumById(id)
+                return a ? (
+                  <Link key={id} to={`/album/${id}`} className="sound-cover">
+                    <b>{a.title}</b> <span className="muted">{artistById(a.artistId)?.name} · {howLabel(how, artistName)}</span>
+                  </Link>
+                ) : null
+              })}
             </div>
           </div>
         )}

@@ -31,6 +31,8 @@ const fold = (s: string) => {
   }
   return f
 }
+// The same folding for other modules (the influence network).
+export const foldName = (s: string) => fold(s)
 const and = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`)
 const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1)
 const nameSets = new WeakMap<string[], Set<string>>()
