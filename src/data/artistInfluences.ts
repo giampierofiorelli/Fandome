@@ -2,6 +2,10 @@
 // Album-specific influences stay in the descriptor column `influenced_by`. Used by "If you like this artist":
 // a named artist that is described on Fandome gets one of the reserved places. Keep the source.
 export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string }> = {
+  pinodaniele: {
+    names: ['Cream', 'Jimi Hendrix', 'Weather Report', 'Luigi Tenco', 'King Crimson', 'Miles Davis', 'B.B. King', 'Led Zeppelin'],
+    source: 'pinodaniele.com (official site), 1975–1976 retrospective: what he listened to, heard in his early demos',
+  },
   katyperry: {
     names: ['Freddie Mercury', 'Queen', 'Madonna', 'Alanis Morissette', 'Gwen Stefani', 'Cyndi Lauper', 'Björk', 'The Beach Boys', 'Amy Grant', 'Stevie Nicks', 'ABBA', 'Whitney Houston', 'Mariah Carey', 'Joni Mitchell', 'Paul Simon', 'P!nk'],
     source: 'Wikipedia, Katy Perry, Artistry/Influences (NME 2008; MTV "I want to evolve like Madonna"; Billboard Q&A; NPR; ContactMusic)',

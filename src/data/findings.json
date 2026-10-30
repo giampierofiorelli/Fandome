@@ -1,19 +1,6 @@
 {
- "described": 1673,
+ "described": 1677,
  "findings": [
-  {
-   "albumId": "koolandthegang-koolandthegang",
-   "year": 1969,
-   "trait": "Funk",
-   "before": 0,
-   "after": 0.8333333333333334,
-   "when": 1979,
-   "field": [
-    "Funk",
-    "Soul",
-    "Jazz"
-   ]
-  },
   {
    "albumId": "bowie-hunkydory",
    "year": 1971,
@@ -27,24 +14,11 @@
    ]
   },
   {
-   "albumId": "koolandthegang-goodtimes",
-   "year": 1972,
-   "trait": "Funk + Synthesizers",
-   "before": 0.1,
-   "after": 0.7272727272727273,
-   "when": 1982,
-   "field": [
-    "Funk",
-    "Soul",
-    "Jazz"
-   ]
-  },
-  {
    "albumId": "koolandthegang-musicisthemessage",
    "year": 1972,
    "trait": "Funk + Percussion",
    "before": 0,
-   "after": 0.7777777777777778,
+   "after": 0.8095238095238095,
    "when": 1979,
    "field": [
     "Funk",
@@ -57,7 +31,7 @@
    "year": 1974,
    "trait": "Disco",
    "before": 0,
-   "after": 0.8333333333333334,
+   "after": 0.7894736842105263,
    "when": 1978,
    "field": [
     "Disco",
@@ -77,6 +51,19 @@
    ]
   },
   {
+   "albumId": "koolandthegang-loveunderstanding",
+   "year": 1976,
+   "trait": "Funk + Synthesizers",
+   "before": 0.11764705882352941,
+   "after": 0.7619047619047619,
+   "when": 1980,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
+   ]
+  },
+  {
    "albumId": "cerrone-cerronesparadise",
    "year": 1977,
    "trait": "Disco + Synthesizers",
@@ -85,6 +72,19 @@
    "when": 1981,
    "field": [
     "Disco"
+   ]
+  },
+  {
+   "albumId": "koolandthegang-theforce",
+   "year": 1977,
+   "trait": "R&B + Synthesizers",
+   "before": 0.09090909090909091,
+   "after": 0.5909090909090909,
+   "when": 1981,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
    ]
   },
   {
@@ -481,7 +481,7 @@
    "label": "Synth-pop",
    "peak": [
     1980,
-    0.34513274336283184
+    0.3391304347826087
    ],
    "low": [
     1995,
@@ -607,7 +607,7 @@
    "label": "New wave",
    "peak": [
     1977,
-    0.17647058823529413
+    0.17307692307692307
    ],
    "low": [
     2001,
@@ -657,24 +657,6 @@
    "newArtists": 1
   },
   {
-   "genre": "folk",
-   "label": "Folk",
-   "peak": [
-    1965,
-    0.2653061224489796
-   ],
-   "low": [
-    1980,
-    0.008849557522123894
-   ],
-   "back": [
-    2007,
-    0.13636363636363635
-   ],
-   "gap": 42,
-   "newArtists": 1
-  },
-  {
    "genre": "gospel",
    "label": "Gospel",
    "peak": [
@@ -701,13 +683,31 @@
    ],
    "low": [
     1980,
-    0.02654867256637168
+    0.02608695652173913
    ],
    "back": [
     2010,
     0.1509433962264151
    ],
    "gap": 36,
+   "newArtists": 1
+  },
+  {
+   "genre": "folk",
+   "label": "Folk",
+   "peak": [
+    1965,
+    0.2653061224489796
+   ],
+   "low": [
+    1983,
+    0.015625
+   ],
+   "back": [
+    2007,
+    0.13636363636363635
+   ],
+   "gap": 42,
    "newArtists": 1
   },
   {
@@ -733,7 +733,7 @@
    "label": "Dance-rock",
    "peak": [
     1977,
-    0.13725490196078433
+    0.1346153846153846
    ],
    "low": [
     2001,
@@ -877,7 +877,7 @@
    "label": "Contemporary pop/rock",
    "peak": [
     1980,
-    0.1592920353982301
+    0.1565217391304348
    ],
    "low": [
     2001,
@@ -927,6 +927,24 @@
    "newArtists": 1
   },
   {
+   "genre": "heavymetal",
+   "label": "Heavy metal",
+   "peak": [
+    1974,
+    0.11428571428571428
+   ],
+   "low": [
+    1980,
+    0.034782608695652174
+   ],
+   "back": [
+    1989,
+    0.09375
+   ],
+   "gap": 15,
+   "newArtists": 0.8888888888888888
+  },
+  {
    "genre": "adultalternativepoprock",
    "label": "Adult alternative pop/rock",
    "peak": [
@@ -943,24 +961,6 @@
    ],
    "gap": 18,
    "newArtists": 0.75
-  },
-  {
-   "genre": "heavymetal",
-   "label": "Heavy metal",
-   "peak": [
-    1974,
-    0.11428571428571428
-   ],
-   "low": [
-    1980,
-    0.035398230088495575
-   ],
-   "back": [
-    1989,
-    0.09375
-   ],
-   "gap": 15,
-   "newArtists": 0.8888888888888888
   },
   {
    "genre": "electronica",
