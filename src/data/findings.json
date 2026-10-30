@@ -1,5 +1,5 @@
 {
- "described": 1722,
+ "described": 1726,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -429,7 +429,7 @@
    "label": "R&B",
    "peak": [
     1974,
-    0.3026315789473684
+    0.2948717948717949
    ],
    "low": [
     1986,
@@ -483,7 +483,7 @@
    "label": "Disco",
    "peak": [
     1974,
-    0.2894736842105263
+    0.28205128205128205
    ],
    "low": [
     1998,
@@ -501,7 +501,7 @@
    "label": "Soul",
    "peak": [
     1974,
-    0.3026315789473684
+    0.2948717948717949
    ],
    "low": [
     1995,
@@ -645,7 +645,7 @@
    "label": "Singer-songwriter",
    "peak": [
     1971,
-    0.09195402298850575
+    0.0898876404494382
    ],
    "low": [
     2001,
@@ -713,6 +713,24 @@
    "newArtists": 0.8333333333333334
   },
   {
+   "genre": "ballad",
+   "label": "Ballad",
+   "peak": [
+    1974,
+    0.15384615384615385
+   ],
+   "low": [
+    1986,
+    0.0743801652892562
+   ],
+   "back": [
+    2007,
+    0.17777777777777778
+   ],
+   "gap": 33,
+   "newArtists": 1
+  },
+  {
    "genre": "dancerock",
    "label": "Dance-rock",
    "peak": [
@@ -735,7 +753,7 @@
    "label": "Italian pop",
    "peak": [
     1974,
-    0.13157894736842105
+    0.1282051282051282
    ],
    "low": [
     1989,
@@ -771,7 +789,7 @@
    "label": "Soft rock",
    "peak": [
     1974,
-    0.09210526315789473
+    0.08974358974358974
    ],
    "low": [
     1992,
@@ -897,7 +915,7 @@
    "label": "Heavy metal",
    "peak": [
     1974,
-    0.10526315789473684
+    0.10256410256410256
    ],
    "low": [
     1980,
@@ -934,8 +952,8 @@
    "genre": "folk",
    "label": "Folk",
    "niche": 1968,
-   "mainstream": 2013,
-   "lag": 45
+   "mainstream": 1971,
+   "lag": 3
   },
   {
    "genre": "blues",
@@ -948,15 +966,22 @@
    "genre": "pop",
    "label": "Pop",
    "niche": 1968,
-   "mainstream": 1977,
-   "lag": 9
+   "mainstream": 1971,
+   "lag": 3
+  },
+  {
+   "genre": "countryrock",
+   "label": "Country rock",
+   "niche": 1968,
+   "mainstream": 1971,
+   "lag": 3
   },
   {
    "genre": "funk",
    "label": "Funk",
    "niche": 1968,
-   "mainstream": 1977,
-   "lag": 9
+   "mainstream": 1971,
+   "lag": 3
   },
   {
    "genre": "jazz",
@@ -983,8 +1008,8 @@
    "genre": "songwriter",
    "label": "Singer-songwriter",
    "niche": 1968,
-   "mainstream": 2016,
-   "lag": 48
+   "mainstream": 1971,
+   "lag": 3
   },
   {
    "genre": "albumrock",
@@ -1008,39 +1033,11 @@
    "lag": 6
   },
   {
-   "genre": "poprock",
-   "label": "Pop rock",
-   "niche": 1974,
-   "mainstream": 1977,
-   "lag": 3
-  },
-  {
-   "genre": "rnb",
-   "label": "R&B",
-   "niche": 1974,
-   "mainstream": 1977,
-   "lag": 3
-  },
-  {
    "genre": "disco",
    "label": "Disco",
    "niche": 1974,
-   "mainstream": 1977,
-   "lag": 3
-  },
-  {
-   "genre": "soul",
-   "label": "Soul",
-   "niche": 1974,
-   "mainstream": 1977,
-   "lag": 3
-  },
-  {
-   "genre": "ballad",
-   "label": "Ballad",
-   "niche": 1974,
-   "mainstream": 1977,
-   "lag": 3
+   "mainstream": 1974,
+   "lag": 0
   },
   {
    "genre": "heavymetal",
@@ -1111,13 +1108,6 @@
    "niche": 1983,
    "mainstream": 1992,
    "lag": 9
-  },
-  {
-   "genre": "reggae",
-   "label": "Reggae",
-   "niche": 1989,
-   "mainstream": 2001,
-   "lag": 12
   },
   {
    "genre": "hiphop",
