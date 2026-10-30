@@ -6,7 +6,7 @@ import { albums, artists, concerts, parties } from '../data/seed'
 import { artistGenres, similarArtistsStable } from '../lib/similar'
 import { artistEras, eraYears } from '../lib/eras'
 import { avoidAlbums } from '../lib/suggest'
-import { genreLabel } from '../lib/descriptors'
+import { descriptorOf, genreLabel } from '../lib/descriptors'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { SuggestedArtist } from '../components/SuggestedArtist'
 import { SceneBack } from '../components/SceneBack'
@@ -49,6 +49,9 @@ export default function ArtistPage() {
   const joined = Boolean(me?.fanSince[artist.id])
   const fans = state.users.filter((u) => u.fanSince[artist.id])
   const myAlbums = albums.filter((a) => albumHasArtist(a, artist.id)).sort((a, b) => a.year - b.year)
+  // Artists known for singles (Italo disco, early pop): their key singles are described like albums and listed apart.
+  const singles = myAlbums.filter((a) => descriptorOf(a.id)?.type === 'single')
+  const records = myAlbums.filter((a) => descriptorOf(a.id)?.type !== 'single')
   // Start here: the records that made the artist, for someone who doesn't know them yet.
   const essentials = essentialAlbums(myAlbums.map((a) => a.id))
   const essentialKinds = new Map(essentials.map((e) => [e.id, e.kind]))
@@ -200,7 +203,7 @@ export default function ArtistPage() {
             <span className="muted small">The whole discography, oldest first.</span>
           </div>
           <div className="album-grid">
-            {myAlbums.map((al) => {
+            {records.map((al) => {
               const others = state.users.filter((u) => typeof u.ratings[al.id] === 'number').map((u) => toScore(u.ratings[al.id]))
               const avg = others.length ? others.reduce((x, y) => x + y, 0) / others.length : 0
               const mine = me?.ratings[al.id]
@@ -229,6 +232,25 @@ export default function ArtistPage() {
               )
             })}
           </div>
+          {singles.length > 0 && (
+            <>
+              <div className="start-here-head">
+                <h2>Singles</h2>
+                <span className="muted small">The songs this artist is known for, oldest first.</span>
+              </div>
+              <div className="album-grid">
+                {singles.map((al) => (
+                  <Link key={al.id} to={`/album/${al.id}`} className="album-tile">
+                    <span className="album-art">
+                      <AlbumCover album={al} size={150} />
+                    </span>
+                    <span className="album-title">{al.title}</span>
+                    <span className="muted small">{al.year} · single</span>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
       {suggest && <SuggestArtistSheet artistId={artist.id} onClose={() => setSuggest(false)} />}
