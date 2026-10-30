@@ -15,6 +15,8 @@ export const CO_BILLED: Record<string, { with?: string[]; credit: string }> = {
   'weathergirls-twotonsofun': { credit: 'Two Tons o’ Fun' },
   'weathergirls-backatcha': { credit: 'Two Tons o’ Fun' },
   'brunomars-aneveningwithsilksonic': { credit: 'Silk Sonic (Bruno Mars & Anderson .Paak)' },
+  'alifarkatoure-aliandtoumani': { with: ['toumanidiabate'], credit: 'Ali Farka Touré & Toumani Diabaté' },
+  'alifarkatoure-intheheartofthemoon': { with: ['toumanidiabate'], credit: 'Ali Farka Touré & Toumani Diabaté' },
   'robyn-doitagain': { with: ['royksopp'], credit: 'Röyksopp & Robyn' },
   'robyn-loveisfree': { credit: 'Robyn & La Bagatelle Magique' },
   'gaga-cheektocheek': { credit: 'Tony Bennett & Lady Gaga' },

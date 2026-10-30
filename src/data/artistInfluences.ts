@@ -422,6 +422,58 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Rihanna', 'Aaliyah', 'Michael Jackson'],
     source: 'Tyla, Official Charts interview, June 2023: "Definitely then and still now, Rihanna and Aaliyah. And I really loved Michael Jackson."',
   },
+  burnaboy: {
+    names: ['Fela Kuti'],
+    source: 'Burna Boy, The FADER 2015: "number one is Fela Kuti"',
+  },
+  wizkid: {
+    names: ['Fela Kuti', 'Bob Marley'],
+    source: 'Wizkid in interviews: "Fela … very big inspiration to my music, Bob Marley as well"',
+  },
+  davido: {
+    names: ['50 Cent', 'Nelly', 'Ludacris', 'Usher'],
+    source: 'Davido in interviews (quotes in docs/descriptors/research/davido-claude-wave4.md)',
+  },
+  twobaba: {
+    names: ['Bob Marley', 'Majek Fashek'],
+    source: '2Baba, Afropop Worldwide 2017: "Bob Marley was my favorite … the basis of most of my music, reggae"',
+  },
+  asake: {
+    names: ['Ayinde Barrister', 'Fela Kuti'],
+    source: 'Asake, CNN: "I grew up listening to Fuji"; Interview Magazine',
+  },
+  olamide: {
+    names: ['Wasiu Ayinde', 'King Sunny Adé', 'Pasuma', 'Orits Wiliki', 'Majek Fashek', 'Blakky', 'Eedris Abdulkareem'],
+    source: 'Olamide, BellaNaija 2015',
+  },
+  tiwasavage: {
+    names: ['Fela Kuti'],
+    source: 'Tiwa Savage, France 24 via OkayAfrica',
+  },
+  asa: {
+    names: ['Bob Marley', 'Marvin Gaye', 'Michael Jackson', 'Fela Kuti', 'Angélique Kidjo'],
+    source: 'Aṣa, NPR interview (Marley, Gaye); her official bio via PopMatters (Jackson, Fela, Kidjo)',
+  },
+  blacksherif: {
+    names: ['Travis Scott', 'Kanye West', '070 Shake', 'Dave', 'Burna Boy', 'Pop Smoke'],
+    source: 'Black Sherif, Rolling Stone: "I love Travis Scott, Kanye, 070 Shake, Dave, Burna Boy"',
+  },
+  mdoumoctar: {
+    names: ['Jimi Hendrix', 'Van Halen'],
+    source: 'Mdou Moctar, Boston Globe',
+  },
+  angeliquekidjo: {
+    names: ['Bella Bellow', 'Miriam Makeba', 'Celia Cruz'],
+    source: 'Angélique Kidjo, Songlines 2021',
+  },
+  fallyipupa: {
+    names: ['Papa Wemba', 'Koffi Olomidé', 'Wenge Musica'],
+    source: 'Fally Ipupa, Business Daily 2016',
+  },
+  diamondplatnumz: {
+    names: ['Ne-Yo', 'Usher'],
+    source: 'Diamond Platnumz, Music In Africa; GRAMMY.com 2020',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',

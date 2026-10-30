@@ -1,0 +1,119 @@
+# Claude research notes (Oct 2026, wave 4)
+
+# Wave 4 F: Kidjo, Fally Ipupa, Sauti Sol, Diamond Platnumz, Youssou N'Dour (Egypt)
+
+Not opened (blocked or down): NPR (503, Banning Eyre's Eve review and First Listen), Metacritic (403), AllMusic (403), Le Monde, RFI Musique, Paris Match, Jeune Afrique (blocked), Capital FM and Nairobi News (403), Nonesuch (403), bbc.co.uk (blocked: the BBC review of Egypt was read on a mirror, bbcbreakingnews.pages.dev/music/reviews/45gb, which gives bbc.co.uk/music/reviews/45gb as canonical). Wikipedia was used only to find sources.
+
+## angeliquekidjo-eve (Eve, 2014)
+Sources: Songlines (Nigel Williamson, 5/5) https://songlines.co.uk/review/eve ; PopMatters (Brent Faulkner, 28 Feb 2014, 7/10) https://popmatters.com/179336-angelique-kidjo-eve-2495685592.html ; Music In Africa (Kagiso Mnisi) https://www.musicinafrica.net/node/13260 ; AllMusic/TiVo review by Thom Jurek, credits, on Qobuz https://www.qobuz.com/au-en/album/eve-angelique-kidjo/r4jgh39m40qqa ; World Music Central https://worldmusiccentral.org/?p=28440 ; Irish Times (Nigel Wood) https://www.irishtimes.com/culture/music/angelique-kidjo-eve-1.1670714 ; Afropop Worldwide interview https://afropop.org/articles/angelique-kidjo-discusses-her-new-cd-eve-and-book-spirit-rising ; Grammy win https://afropop.org/articles/congratulations-angelique-kidjo-wins-grammy-for-eve
+- genres: Jurek (Qobuz): a modern pop record; "Afro-funk", organ-driven arrangements (afrofunk, pop). Songlines: "funky as hell", "bubbling electro beats", "jazz-rock rhythm section", Afro-American grooves with soul (funk, soul, electro, jazzrock). PopMatters: "a genuine soul-driven cut" (Orisha), "switches gears to reggae" (Kamoushou, one track: tail), "a delicious blend of classical (Kronos Quartet)" (Ebile, one track: tail). Irish Times files it under World Music (worldmusic).
+- energy 4 / groove 4: PopMatters "Incredibly percussive and chocked full of exuberance", "incredibly funky"; Irish Times "rhythmic propulsion", "you'd better dance". Not 5: Blewu is guitar and voice, Bana "Easygoing and relaxed".
+- electronic 2: live band (Loueke, Jordan, McBride, Worrell), Jean Hébrail programming, electronic beats on Eva (Songlines).
+- mood 4: PopMatters "exuberance", "rhythmic, enthusiastic"; "cheerfully upbeat" is only quoted via a promo listing (not counted).
+- theatrical 4: ten choirs, Kronos Quartet, Orchestre Philharmonique du Luxembourg; Irish Times: her voice "a colossal instrument", power "can sometimes become strident".
+- polish 4: Jurek praises Dillett's polished pop production with organic textures. experimental 2: choirs/field recordings inside a pop frame. tempo 3: mixed.
+- voice powerful: PopMatters "Kidjo's powerhouse pipes".
+- instruments: World Music Central (Loueke guitar, Steve Jordan drums, Christian McBride bass, Magatte Sow percussion); PopMatters (Bernie Worrell organ; Blewu acoustic guitar; Orisha "saxophone, trombone, and trumpet"); Dr John piano (PopMatters "tickles the ivories"); Kronos Quartet strings, Luxembourg orchestra.
+- production: Jurek: choirs recorded in Africa on a portable recorder (fieldrecordings; Kidjo to Afropop: "we brought a boombox that would work with batteries"); Qobuz credits Jean Hébrail programming.
+- lyrics: Music In Africa "she champions the cause of women" (social); Shango Wa / Orisha evoke Yoruba deities, PopMatters on Kamoushou "referencing Oro, the God of wind" (spiritual).
+- language: Kidjo (Afropop interview): "I sing in Fon, Goun, Yoruba, Mina"; "Hello" is "a Hausa song". Codes fon, guw (Gun), yo, gej (Gen/Mina), ha.
+- producers: Patrick Dillett (World Music Central, Qobuz credits).
+- sounds_like: Songlines "In places the record gloriously evokes an African equivalent of the Staple Singers during their majestic 1970s Stax period." Left OUT: "in places" with no songs named, so the [songs/total] share cannot be given. Owner/coordinator may add "The Staple Singers [n/16]" if a share is decided. Rokia Traoré mention is about the Kronos Quartet's earlier collaboration (guest), not a comparison.
+- influenced_by: empty. Kidjo praises Vampire Weekend's way of playing, but Rostam Batmanglij is a guest on Bomba (excluded).
+- landmark 1: Songlines considers it one of the peaks of her career; Jurek: one of several milestones; Grammy winner.
+
+## fallyipupa-tokooos (Tokooos, 2017)
+Sources: Afropop Worldwide (Nkumu Isaac Katalay Diallo, 20 Sep 2017) https://afropop.org/articles/tokooos ; Le Petit Nègre (MastaP, 8 Jul 2017) https://lepetitnegre.com/2017/07/08/revue-tokooos-par-fally-ipupa/ ; Music In Africa (Yvon Edoumou, 14 Jul 2017) https://www.musicinafrica.net/fr/magazine/fally-ipupa-tokoss ; Mbote.cd (2025) https://mbote.cd/buzz/tokooos-de-fally-ipupa-lalbum-qui-a-redefini-la-musique-congolaise-il-y-a-8-ans/187818/ ; Discogs credits https://api.discogs.com/releases/10726599 ; SNEP https://snepmusique.com/les-certifications/?titre=Tokooos
+- genres: Afropop page tags "soukous", "Afrobeats", "Afro-trap", "Congolese rumba"; "Kiname" "has the right mixture of Afrobeats, Afro-trap, rap and urban mannerisms"; album "fully decorated with current urban European sounds, a real departure from Fally's Congolese rumba background". Mbote: "la rumba congolaise, le R&B, le trap, l'afropop et le hip-hop". Le Petit Nègre: "du R&B français des années 90" (Boulé), "un afrobeat bien de chez lui" (Yakuza), "Encore un beat trance/house/electro" (Posa: tail). Music In Africa: "ni hip-hop, ni afrotrap, ni afropop, ni rumba" (experimental urban mix).
+- electronic 4: urban European production, "une fusion ambiant/electro/soukouss" (Le Petit Nègre); acoustic guitar only on Siamois ("Enfin un son posé à la guitare sêche").
+- mood 4: Afropop "Tokooos music, then, is good-vibes music". groove 4: dance-oriented (Tout le monde danse, Juste une danse); Music In Africa on sebene "rythmé de façon dansante". polish 4: "a very clever international production touch", tunes "could fit certain mainstream radio formatting in France". experimental 2: Music In Africa calls it "expérimental" but Afropop stresses mainstream radio fit.
+- voice soft: Le Monde headline (URL) "l'élégant de Kinshasa à la voix suave" (article not opened: low weight). Le Petit Nègre praises the "étendue des capacités vocales" on Siamois.
+- instruments: Discogs credits guitar (Iso Diop on Kiname; Auguy Solo, High P on Bad Boy); acoustic guitar on Siamois (Le Petit Nègre); Mbote: kept "les guitares traditionnelles de la RDC".
+- lyrics party: dance tracks and "good-vibes music" (weak; no source analyses lyrics).
+- language: Afropop "Fally sings in French, English and Lingala".
+- producers (Discogs per-track credits): Julio Masidi (1,3,5,6,12,16), Le Motif (2,7,8,9,10,11,13,14), DSK On The Beat (4,8), Double X (10,13), Fally Ipupa (15,18), The Bionix (17).
+- sounds_like: Le Petit Nègre on "Tout le monde danse": "on dirait un son de Maître Gims" (1/18). Rejected: "On dirait un texte de Christophe Mae" (lyrics only); Music In Africa's Papa Wemba "Emotion" mention compares running time, not sound.
+- landmark 1: Mbote "l'album qui a redéfini la musique congolaise"; Afropop "most ambitious work in years".
+- legacy 3: Mbote: "une référence qui a profondément marqué l'évolution de la musique congolaise et africaine francophone". Mbote is a Congolese entertainment outlet (unsigned editorial): flag as medium strength. Fally's own "almost every artist is following in my footsteps" (OkayAfrica) is the artist himself, not counted.
+- reception: SNEP gold (constat 06/10/2022). Booska-P 4.5/5 and Rhhm 3/5 are only in Wikipedia, not opened, not used.
+
+## sautisol-liveanddieinafrika (Live and Die in Afrika, 2015)
+Sources: Music In Africa https://www.musicinafrica.net/node/14466 ; Bottomline Kenya (29 Nov 2015) https://www.bottomline.co.ke/sauti-sol-live-and-die-in-afrika-album-review/ and samples piece https://www.bottomline.co.ke/sample-sunday-sauti-sols-live-and-die-in-afrika/ ; Africori (8/10) https://africori.com/sauti-sol-live-and-die-in-afrika-album-review/ ; HapaKenya (Kevin Mbuthia) https://hapakenya.com/2015/11/24/album-review-of-sauti-sols-live-and-die-in-afrika ; Dami Ajayi (9 Mar 2018) https://damiajayi.com/?p=2224 ; OkayAfrica https://www.okayafrica.com/sauti-sol-release-their-latest-album-live-and-die-in-afrika/220451 ; Afropop Worldwide interview https://afropop.org/articles/4-tracks-sauti-sol-exclusive-interview
+- genres: OkayAfrica "a string of infectious afro-pop tunes including dance hits"; Bottomline "It breezes through afro-pop, zouk, lingala, rumba, soukus" (lingala music = soukous/Congolese rumba, so mapped to those); Music In Africa "from Lingala to salsa beats, Afro-zouk to dancehall beats" (zouk, salsa, dancehall; salsa rhythm on It's Okay); Polycarp Otieno (Afropop) calls Sura Yako, the opener and lead hit, chakacha, "very deep in the roots of Kenyan music" (chakacha, within the first three); Bottomline samples piece: Shake Yo Bam Bam built on the dancehall Diwali Riddim; Africori: "a soul and R&B- inspired track", "major gospel element" (one track each: tail).
+- energy 3 / groove 4: Africori: drumming "that you can't help but dance to"; HapaKenya "A certified feel good track" (Sambo Party), "A chilled out song" (Relax). mood 4: Music In Africa "For fans, the fun is endless". experimental 2: Bottomline "more accessible pop-oriented sounds", but genre-hopping ("For listeners it might take a while before one can understand their direction"). polish 4: HapaKenya "the mixing and mastering would pass anywhere in the world"; Bottomline production 8.5. electronic 2: guitar band, Ajayi notes "electronic tendencies" on Nipe Nikupe only.
+- voice powerful: HapaKenya on Dollar Dollar "carried mainly by the groups powerful voices" (one song: medium).
+- instruments: HapaKenya guitar (Polycarp), "The acoustic guitar" (Kiss Me); Africori "guitar riffs and drumming".
+- production sampling: Bottomline samples piece: title track samples Dorival Caymmi's "Retirantes"; It's Okay samples Franco's "12'600 Lettres".
+- lyrics: Chimano (Afropop): "Live and Die in Afrika is Africans telling our own story" (identity); Nerea, a plea against abortion (Standard/Nairobi News search results, not opened: social is weakly supported).
+- language: Lingala on It's Okay (Music In Africa); Swahili: Ajayi writes of the "non-Swahili speaker" response and most titles are Swahili (Sura Yako, Nishike, Kuliko Jana, Nipe Nikupe); English: English titles (It's Okay, Say Yeah, Kiss Me, Still the One). sw/en from titles: medium.
+- producers: Music In Africa "the group's first self-produced effort", "with expert co-production from renowned Kenyan producers like Kagwe Mungai, Cedric Kadenyi and Ulopa Ngoma" (no per-track credits found).
+- sounds_like: empty. Franco & TPOK Jazz rejected: Music In Africa's "12 600 Letters" link is the sampled song (Bottomline). Bottomline's Nneka line is a negative ("look elsewhere"). Ajayi's "DruHill's Sisqo octaves" is a vague range of influences, not a sound comparison.
+- landmark 0: no source calls it defining (the canon file lists it first).
+
+## diamondplatnumz-aboyfromtandale (A Boy from Tandale, 2018)
+Sources: OkayAfrica (Camille Storm, 20 Mar 2018) https://www.okayafrica.com/diamond-platnumz-cements-his-place-as-east-africas-biggest-music-star-with-his-new-album/104436 ; African Folder (Philemon Jacob) https://africanfolder.com/diamond-platnumz-albums-from-worst-to-best/ ; Apple Music editorial https://music.apple.com/album/1689573345 ; The Citizen (TZ) https://www.thecitizen.co.tz/tanzania/magazines/diamond-s-a-boy-from-tandale-to-hit-stores-today-2615178 ; Music In Africa https://www.musicinafrica.net/node/31652 ; MusicBrainz release 7fafdd91-8e38-4f20-ab7f-254ae4011aaa (2018-02-16, Warner Music South Africa)
+- year: kept 2018 as given (MusicBrainz 2018-02-16; launch 14 March 2018). The Citizen announced it "today" on 1 Dec 2017, so a first issue in late 2017 is possible.
+- genres: OkayAfrica "this album blends various music genres such as hip-hop, R&B, reggae, dancehall, as well as his native bongo flava and dansi sounds"; "globally recognized afro-pop heavyweight"; African Folder "The album cuts across Bongo Flava, hip-hop, R&B, reggae, dancehall, Afropop, and Pon Pon"; Apple: bongo flava, Afrobeats and R&B; African Beauty: Krizbeatz's style "blending afrobeats with electronic music".
+- energy 3 / groove 4: OkayAfrica "packed to the brim with bouncy club bangers", but also "mid-tempo love ballads" (Eneka, Far Away, Marry You); "fiery energy". polish 4 / experimental 1: "it carries all the elements of a manufactured hit single"; "begins to sound more like a greatest hits album". mood 3: club bangers against regret songs (Citizen: Niache, Sikomi "slow tempo highlighting some of his latest struggles and regrets"). electronic 3: no instrumentation detail beyond "reggae instrumentation" (Hallelujah) and electronic afrobeats (African Beauty).
+- voice empty: OkayAfrica "his vocal performance is truly captivating" names no type. instruments empty: no source names them.
+- lyrics: love ballads (OkayAfrica); regrets, "look like a diss" to past partners (Citizen: heartbreak); African Folder "Diamond's signature intimate storytelling".
+- language: OkayAfrica "Diamond goes ahead and sings in English for a large portion of the project", "a few songs which are fully-sung in Swahili".
+- producers: OkayAfrica "he enlists his famed in-house producer, Lizer Classic" (Apple: executive producer); Krizbeatz produced African Beauty (OkayAfrica). Nahreel, Sheddy Clever, Abby Daddy, S2Kizzy appear only in Wikipedia without sources: not included.
+- reception: mixed reviews. Apple Music says it won a SAMA (Rest of Africa) award; Music In Africa: "the first African artist to hit six-time platinum sales under Universal Music South Africa" (artist-level).
+
+## youssoundour-egypt (Egypt, 2004)
+Egypt IS in his catalogue list (catalog.ts: ['Egypt', 2004]), so only the row is delivered. Artist name written as in catalog.ts (Youssou N’Dour, curly apostrophe); his existing descriptor file uses a straight apostrophe "Youssou N'Dour": align on merge.
+Sources: Village Voice (Robert Christgau, "Facing Mecca", 25 May 2004) https://www.villagevoice.com/2004/05/25/facing-mecca/ ; BBC (Jon Lusk, 2004) via mirror https://bbcbreakingnews.pages.dev/music/reviews/45gb ; Austin Chronicle (3 stars, 30 Jul 2004) https://www.austinchronicle.com/music/2004-07-30/222069 ; NPR summary (Banning Eyre, 27 Dec 2004) https://www.wvxu.org/2004-12-27/latest-cd-from-ndour-is-an-impressive-departure ; Fiona McLaughlin, Popular Music https://www.cambridge.org/core/journals/popular-music/article/youssou-ndours-sant-yallaegypt-a-musical-experiment-in-sufi-modernity1/F173653811BD5BE1DE47D518AC9E7C0E ; Cal Performances programme notes (2005) https://calperformances.org/learn/program_notes/2005/pn_NDour.pdf ; The Progressive interview https://progressive.org/latest/voice-senegal-youssou-n-dour-pascarella-100226/ ; Discogs credits https://api.discogs.com/releases/1837850 ; World Music Central https://worldmusiccentral.org/?p=404
+- genres: Christgau: it simulates "the semi-classical Cairo Pops sound of Middle Eastern hegemony" (middleeasternmusic); Cal Performances: Senegalese elements married "with arrangements from the repertoire of Egyptian and Arab orchestral music" (arabicmusic); Grammy Best Contemporary World Music Album (worldmusic). No source calls it mbalax (BBC contrasts it with his mbalax).
+- energy 2 / tempo 2 / groove 2: Christgau "The new record is even quieter", from "a rubato intro" to "belly-dance beats"; Austin Chronicle "isn't the powerhouse heard at N'Dour's famed concerts"; BBC "loping North African grooves", mood of "reverent but restrained ecstasy".
+- electronic 0: every instrument named is acoustic (Egyptian orchestra, kora, balafon, oud, flutes).
+- mood 3: devotional, "restrained ecstasy"; Christgau "captivating in its sweetness, precision, and delicacy". theatrical 3: big orchestra ("big sweeping string arrangements", BBC) against a subdued voice. experimental 3: Christgau "its sound is Egyptian, and hence a lot stranger"; BBC "a surprise". polish 4: "precision", sweeping arrangements.
+- voice soft: BBC "Youssou's distinctive tenor is unusually subdued in most places"; Christgau "delicacy".
+- instruments: Christgau "there's kora, Sahel percussion", orchestra "long on folk- identified instruments like oud and oblique flute", "Salama's strings"; BBC "the woody tones of the balafon xylophone" (xylophone), "buzzing drones of various Egyptian reed instruments" (woodwinds), trilling flutes.
+- production: stringarrangements (Austin Chronicle "Salama's string arrangement on 'Mahdiyu Laye' is simply divine").
+- lyrics spiritual: "a thematic work in praise of West African Sufis" (Austin Chronicle); language wo: McLaughlin "Sung in Wolof to the accompaniment of an Egyptian orchestra".
+- producers: Discogs: Fathy Salama (Producer), Youssou N'Dour (Producer); Birame Ndiaye is executive producer (dropped).
+- sounds_like: Christgau "If Um Kulthum has always sounded weird to you, so will this" (Umm Kulthum); BBC on the opener "Allah": "with its echoes of (I kid you not!) Led Zeppelin's 'The Battle of Evermore'" (Led Zeppelin IV, 1/8). Rejected: Austin Chronicle's U2 and Johnny Cash lines (spirituality and personal songs, not sound); Christgau's Bob Marley/Bono line (career ambition).
+- influenced_by: N'Dour (The Progressive): "The Egypt album was my homage to Umm's legacy, as well as my way of celebrating the Sufi guides of Senegal." Umm Kulthum is both influence and sound comparison (allowed, they add up).
+- landmark 1: Grammy winner; NPR "a work of grandeur and conviction"; Christgau "more than just beautiful—it's a persuasive political act"; McLaughlin's academic study of it.
+- note: first released in Dakar in 2003 as Sant Yàlla (McLaughlin); kept 2004 as in the catalogue.
+
+## New tokens
+- genres: `afrofunk` (Afro-funk, Jurek on Eve), `afrotrap` (Afro-trap, Afropop on Tokooos), `congoleserumba` (Congolese rumba: not the existing `rumba`, which the catalogue uses for Latin/Italian rumba), `zouk` (zouk / Afro-zouk), `chakacha` (Kenyan coastal style, Sauti Sol on Sura Yako), `bongoflava` (Tanzanian bongo flava), `dansi` (Tanzanian muziki wa dansi), `ponpon` (Pon Pon, African Folder).
+- instruments, production: none.
+- scenes.ts COUNTRY_NAMES lacks BJ (Benin), CD (DR Congo), KE (Kenya), TZ (Tanzania): add them.
+- language codes in rows: fon, guw, gej, ha, ln, sw (3-letter where no 2-letter code exists).
+
+
+# Artist research (catalogue row, scene, influences)
+
+# New artists (wave 4 F)
+
+## Catalogue rows (src/data/catalog.ts)
+```ts
+  ['angeliquekidjo', 'Angélique Kidjo', '#d9722e', 'Benin’s voice, choirs and global funk', [['Parakou', 1990], ['Logozo', 1991], ['Ayé', 1994], ['Fifa', 1996], ['Oremi', 1998], ['Black Ivory Soul', 2002], ['Oyaya!', 2004], ['Djin Djin', 2007], ['Õÿö', 2010], ['Eve', 2014], ['Sings', 2015], ['Remain in Light', 2018], ['Celia', 2019], ['Afro Bolero', 2020], ['Mother Nature', 2021], ['Queen of Sheba', 2022], ['HOPE!!', 2026]]],
+  ['fallyipupa', 'Fally Ipupa', '#7a4fb0', 'Congolese rumba heir turned afro-urban star', [['Droit Chemin', 2006], ['Arsenal de Belles Mélodies', 2009], ['Power Kosa Leka', 2013], ['Tokooos', 2017], ['Control', 2018], ['Tokooos II', 2020], ['Formule 7', 2022], ['XX', 2026]]],
+  ['sautisol', 'Sauti Sol', '#2f9a8a', 'Nairobi’s four-voice Afropop band', [['Mwanzo', 2009], ['Sol Filosofia', 2011], ['Sauti Sol', 2012], ['Live and Die in Afrika', 2015], ['Afrikan Sauce', 2019], ['Midnight Train', 2020]]],
+  ['diamondplatnumz', 'Diamond Platnumz', '#3a7fd0', 'Bongo flava’s biggest star from Tandale', [['Kamwambie', 2010], ['Lala Salama', 2012], ['A Boy from Tandale', 2018], ['First of All', 2022]]],
+```
+Years and types:
+- Kidjo: MusicBrainz release groups (artist 80fe34d0-6b4f-4ccd-81c3-281ab37f0451): Parakou 1990, Logozo 1991, Ayé 1994-02-02, Fifa 1996-03-18, Oremi 1998-06-16, Black Ivory Soul 2002-04-08, Oyaya! 2004-05-03, Djin Djin 2007-04-30, Õÿö 2010-01-18, Eve 2014-01-28, Sings 2015-03-31 (with the Orchestre Philharmonique du Luxembourg), Remain in Light 2018-06-08, Celia 2019-04-19, Afro Bolero EP 2020-06-12, Mother Nature 2021-06-18, Queen of Sheba 2022-06-24 (with Ibrahim Maalouf), HOPE!! 2026-04-24 (Discogs too). Left out: Spirit Rising, iTunes Live from SoHo, Jazz Fest 2023 (live); Keep On Moving, 20th Century Masters, Africa Fete '94 (compilations); Batonga (1991, a single EP), Salala (EP, no date), Africa Sings (2022, type unclear). Her early albums Pretty (1981) and Ewa Ka Djo (1985) are not in MusicBrainz: not listed, no source opened for them.
+- Fally Ipupa: MusicBrainz (455a23c4-…) and Discogs masters: Droit Chemin 2006, Arsenal de Belles Mélodies 2009-04-08, Power Kosa Leka 2013 (Discogs; often styled Power "Kosa Leka"), Tokooos 2017-07-07, Control 2018-11-02, Tokooos II 2020-12-18, Formule 7 2022-12-16, XX 2026-04-17. Left out: Concert au Zénith de Paris (live, 2010), Tokooos II Gold (reissue).
+- Sauti Sol: MusicBrainz (a8457fc0-…): Mwanzo 2009-08-04, Sol Filosofia 2011-02-25, Sauti Sol EP 2012-06-18, Live and Die in Afrika 2015-11-22, Afrikan Sauce 2019-01-31 (MusicBrainz says compilation, but it is a new collaborative album that OkayAfrica's readers' poll and the canon file treat as an album: kept, check), Midnight Train 2020-06-05.
+- Diamond Platnumz: African Folder ranks four albums: Kamwambie 2010, Lala Salama 2012, A Boy from Tandale 2018, First of All 2022 (usually called an EP, FOA). MusicBrainz dates for Kamwambie and Lala Salama (2013-11-28) look like digital re-uploads. Ongeza (2020) left out: type unclear.
+
+## Scenes (src/data/scenes.ts)
+```ts
+angeliquekidjo: 'BJ fon 1980 afro,pop', fallyipupa: 'CD ln 1990 afro,pop', sautisol: 'KE sw 2000 afro,pop', diamondplatnumz: 'TZ sw 2000 afro,pop',
+```
+- COUNTRY_NAMES needs BJ: 'Benin', CD: 'DR Congo', KE: 'Kenya', TZ: 'Tanzania'.
+- Kidjo: Fon is her first language and the main one on Eve ("I sing in Fon, Goun, Yoruba, Mina", Afropop Worldwide), but she also sings in English and French over her career: no source says one dominates. 1980: canon file "1980s–".
+- Fally: Lingala is his usual language (Tokooos is the exception, much French); 1990: canon "1999–" (Quartier Latin); solo from 2006.
+- Sauti Sol: 2005 start (canon "2005–"), Swahili and English.
+- Diamond: 2009 start (canon "2009–"). Note: A Boy from Tandale is sung in English "for a large portion" (OkayAfrica), so under the local-discovery rule it may not count as sung mainly in its scene's language; his other albums are mainly Swahili.
+
+## Artist-level influences (their own words)
+- Angélique Kidjo (Songlines, "My World", 13 Oct 2021, https://www.songlines.co.uk/features/angelique-kidjo-my-world): "I grew up listening to Bella Bellow"; on Miriam Makeba's album cover: "It was love at first sight!"; on Celia Cruz: she "gave me wings bigger than an eagle's". → Bella Bellow, Miriam Makeba, Celia Cruz.
+- Fally Ipupa (Business Daily, 4 Aug 2016, https://www.businessdailyafrica.com/bd/lifestyle/fally-ipupa-s-penchant-for-super-cars--2122790): "As a young person I admired musicians like Papa Wemba, Koffi, and Wenge Musica because we come from the same area." → Papa Wemba, Koffi Olomidé, Wenge Musica.
+- Diamond Platnumz (Music In Africa, https://musicinafrica.net/node/16432): "I grew up listening to Ne-Yo songs and most of my style is inspired by him"; GRAMMY.com (Christopher A. Daniel, 7 Oct 2020, https://www.grammy.com/news/diamond-platnumz-talks-growing-tanzania-breaking-american-popular-music): on Usher, "That's been my role model since I started music." → Ne-Yo, Usher (Ne-Yo is a guest on A Boy from Tandale, so not an album-level influence).
+- Sauti Sol: none verified (NPR 2012 profile down; members' influence list only in Wikipedia).
