@@ -67,7 +67,8 @@ group('scene step extras', () => {
     const facts = didYouKnow('annalisa', albums)
     expect(facts[0]).toMatch(/^E poi siamo finiti nel vortice was produced by Davide Simonetta/)
     expect(didYouKnow('mina', albums).length).toBeGreaterThan(0) // facts from her descriptors
-    expect(didYouKnow('battisti', albums)).toEqual([]) // no descriptors yet
+    expect(didYouKnow('battisti', albums).length).toBeGreaterThan(0) // described in Oct 2026
+    expect(didYouKnow('jannacci', albums)).toEqual([]) // in the catalogue, no descriptors yet
   })
 })
 

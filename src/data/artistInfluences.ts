@@ -474,6 +474,34 @@ export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string
     names: ['Ne-Yo', 'Usher'],
     source: 'Diamond Platnumz, Music In Africa; GRAMMY.com 2020',
   },
+  guccini: {
+    names: ['Bob Dylan', 'Georges Brassens', 'Jacques Brel'],
+    source: 'Francesco Guccini, L’Espresso: "il primo Dylan ha esercitato la seconda grande influenza ... La prima era stata quella dei francesi: Brassens, Brel"',
+  },
+  banco: {
+    names: ['Huey Smith', 'Brian Auger', 'Keith Emerson'],
+    source: 'Vittorio Nocenzi (Banco) in interviews (quotes in docs/descriptors/research/banco-claude-wave5.md)',
+  },
+  leorme: {
+    names: ['Quatermass', 'Atomic Rooster', 'The Nice', 'Emerson, Lake & Palmer'],
+    source: 'Aldo Tagliapietra (Le Orme): trio models; "Collage nacque anche ispirandosi a loro" (ELP)',
+  },
+  bennato: {
+    names: ['John Hammond', 'Fabrizio De André'],
+    source: 'Edoardo Bennato: "John Hammond, che è stato il mio maestro"; "Fabrizio De André, mio grande amico e maestro"',
+  },
+  littlerichard: {
+    names: ['Mahalia Jackson', 'Roy Brown', 'Clara Ward', 'Marion Williams', 'Ruth Brown', 'Sister Rosetta Tharpe'],
+    source: 'Little Richard, Rolling Stone 1990 interview',
+  },
+  raycharles: {
+    names: ['Nat King Cole'],
+    source: 'Ray Charles official site: he began as a "Nat \'King\' Cole-style crooner"',
+  },
+  johncoltrane: {
+    names: ['Lester Young', 'Johnny Hodges', 'Charlie Parker', 'Coleman Hawkins', 'Ben Webster', 'Dizzy Gillespie'],
+    source: 'John Coltrane, "Coltrane on Coltrane", DownBeat 1960',
+  },
   aha: {
     names: ['Soft Cell', 'Led Zeppelin', 'The Doors', 'The Beatles', 'Bob Dylan', 'Leonard Cohen', 'Jimi Hendrix', 'Janis Joplin', 'Nick Drake', 'Uriah Heep'],
     source: 'The Guardian 2009, band interview (Soft Cell, Led Zeppelin, The Doors, Hendrix); Magne Furuholmen, Cryptic Rock (Beatles, Dylan, Cohen, Joplin, Nick Drake); Morten Harket, The Guardian 2016 (Uriah Heep). Strauss left out: a borrowed melodic idea in Take On Me, not an influence',
