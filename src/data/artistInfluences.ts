@@ -2,6 +2,10 @@
 // Album-specific influences stay in the descriptor column `influenced_by`. Used by "If you like this artist":
 // a named artist that is described on Fandome gets one of the reserved places. Keep the source.
 export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string }> = {
+  rinogaetano: {
+    names: ['Enzo Jannacci', 'Fabrizio De André', 'Ricky Gianco', 'I Gufi', 'Bob Dylan', 'The Beatles'],
+    source: 'rinogaetano.it (official biography): his inspirations in the formative years',
+  },
   rickymartin: {
     names: ['Led Zeppelin', 'Bon Jovi'],
     source: 'Numéro Netherlands (2024), In Conversation with Ricky Martin: both "influenced me greatly"',

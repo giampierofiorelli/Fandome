@@ -472,7 +472,7 @@ const ROWS: Row[] = [
   ['nickcave', 'Nick Cave & The Bad Seeds', '#3f3f4a', 'Dark ballads and red right hands', [['Tender Prey', 1988], ['The Boatman’s Call', 1997], ['Abattoir Blues / The Lyre of Orpheus', 2004], ['Push the Sky Away', 2013], ['Skeleton Tree', 2016], ['Ghosteen', 2019], ['Wild God', 2024]]],
   ['noemi', 'Noemi', '#d94a4a', 'Red hair, soulful Italian voice', [['Sulla mia pelle', 2009], ['RossoNoemi', 2011], ['Metamorfosi', 2021]]],
   ['paolachiara', 'Paola & Chiara', '#e0a3d9', 'Vamos a bailar, sisters of pop', [['Ci chiamano bambine', 1997], ['Giornata storica', 1998], ['Television', 2000], ['Festival', 2002], ['Blu', 2004], ['Win the Game', 2007], ['Milleluci', 2010], ['Giungla', 2013]]],
-  ['rinogaetano', 'Rino Gaetano', '#c9a33f', 'Ironic songs, still sung today', [['Mio fratello è figlio unico', 1976], ['Aida', 1977], ['Nuntereggae più', 1978]]],
+  ['rinogaetano', 'Rino Gaetano', '#c9a33f', 'Ironic songs, still sung today', [['Ingresso libero', 1974], ['Mio fratello è figlio unico', 1976], ['Aida', 1977], ['Nuntereggae più', 1978], ['Resta vile maschio, dove vai?', 1979], ['E io ci sto', 1980]]],
   ['robertmiles', 'Robert Miles', '#5ab5d9', 'Children, the dream house anthem', [['Dreamland', 1996], ['23am', 1997], ['Organik', 2001]]],
   ['gala', 'Gala', '#e05f9a', 'Freed from desire, still on the dance floor', [['Come into My Life', 1997], ['Tough Love', 2009]]],
   ['bersani', 'Samuele Bersani', '#7a9a8f', 'Clever, gentle Italian songwriting', [['C’hanno preso tutto', 1992], ['Freak', 1995], ['Samuele Bersani', 1997], ['L’aldiquà', 2006]]],
