@@ -14,6 +14,19 @@
    ]
   },
   {
+   "albumId": "koolandthegang-spiritoftheboogie",
+   "year": 1975,
+   "trait": "Funk + Synthesizers",
+   "before": 0.09090909090909091,
+   "after": 0.7272727272727273,
+   "when": 1982,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
+   ]
+  },
+  {
    "albumId": "blondie-blondie",
    "year": 1976,
    "trait": "New wave",
@@ -26,6 +39,30 @@
    ]
   },
   {
+   "albumId": "koolandthegang-loveunderstanding",
+   "year": 1976,
+   "trait": "R&B + Synthesizers",
+   "before": 0.0625,
+   "after": 0.631578947368421,
+   "when": 1980,
+   "field": [
+    "Funk",
+    "Soul",
+    "Jazz"
+   ]
+  },
+  {
+   "albumId": "cerrone-cerronesparadise",
+   "year": 1977,
+   "trait": "Electronic + Drums",
+   "before": 0,
+   "after": 0.47058823529411764,
+   "when": 1981,
+   "field": [
+    "Disco"
+   ]
+  },
+  {
    "albumId": "tozzi-enellariatiamo",
    "year": 1977,
    "trait": "Pop + Saxophone",
@@ -34,6 +71,18 @@
    "when": 1984,
    "field": [
     "Pop"
+   ]
+  },
+  {
+   "albumId": "blondie-parallellines",
+   "year": 1978,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.057692307692307696,
+   "after": 0.6222222222222222,
+   "when": 1985,
+   "field": [
+    "Rock",
+    "Punk"
    ]
   },
   {
@@ -73,6 +122,17 @@
    ]
   },
   {
+   "albumId": "tozzi-gloria",
+   "year": 1979,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.1282051282051282,
+   "after": 0.5357142857142857,
+   "when": 1986,
+   "field": [
+    "Pop"
+   ]
+  },
+  {
    "albumId": "ultravox-vienna",
    "year": 1980,
    "trait": "Synth-pop + Synthesizers",
@@ -96,38 +156,14 @@
    ]
   },
   {
-   "albumId": "yazoo-youandmeboth",
-   "year": 1983,
-   "trait": "Drum programming + Keyboards",
-   "before": 0.10714285714285714,
-   "after": 0.45454545454545453,
-   "when": 1984,
+   "albumId": "tozzi-hurrah",
+   "year": 1984,
+   "trait": "Programming",
+   "before": 0.014705882352941176,
+   "after": 0.36666666666666664,
+   "when": 1994,
    "field": [
-    "Synth-pop"
-   ]
-  },
-  {
-   "albumId": "depeche-101",
-   "year": 1989,
-   "trait": "Alternative pop/rock + Keyboards",
-   "before": 0.06153846153846154,
-   "after": 0.3333333333333333,
-   "when": 1996,
-   "field": [
-    "Synth-pop",
-    "Alternative"
-   ]
-  },
-  {
-   "albumId": "kylie-rhythmoflove",
-   "year": 1990,
-   "trait": "House",
-   "before": 0.05,
-   "after": 0.3023255813953488,
-   "when": 1997,
-   "field": [
-    "Pop",
-    "Dance"
+    "Pop"
    ]
   },
   {
@@ -143,42 +179,6 @@
    ]
   },
   {
-   "albumId": "pearljam-ten",
-   "year": 1991,
-   "trait": "Alternative rock + Electric guitar",
-   "before": 0.11764705882352941,
-   "after": 0.45,
-   "when": 1995,
-   "field": [
-    "Rock",
-    "Alternative"
-   ]
-  },
-  {
-   "albumId": "pumpkins-gish",
-   "year": 1991,
-   "trait": "Alternative rock + Electric guitar",
-   "before": 0.11764705882352941,
-   "after": 0.45,
-   "when": 1995,
-   "field": [
-    "Alternative",
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "roxette-joyride",
-   "year": 1991,
-   "trait": "Programming + String arrangements",
-   "before": 0.05921052631578947,
-   "after": 0.38181818181818183,
-   "when": 1998,
-   "field": [
-    "Pop",
-    "Rock"
-   ]
-  },
-  {
    "albumId": "u2-achtungbaby",
    "year": 1991,
    "trait": "Alternative/indie rock + Electric guitar",
@@ -190,74 +190,38 @@
    ]
   },
   {
-   "albumId": "d-sofad",
-   "year": 1993,
-   "trait": "Alternative/indie rock + Programming",
-   "before": 0,
-   "after": 0.3125,
-   "when": 1997,
+   "albumId": "moby-moby",
+   "year": 1992,
+   "trait": "Electronica",
+   "before": 0.0625,
+   "after": 0.6666666666666666,
+   "when": 1996,
    "field": [
-    "Synth-pop",
+    "Electronic"
+   ]
+  },
+  {
+   "albumId": "portishead-dummy",
+   "year": 1994,
+   "trait": "Trip-hop",
+   "before": 0.03571428571428571,
+   "after": 0.4375,
+   "when": 2001,
+   "field": [
+    "Electronic",
     "Alternative"
    ]
   },
   {
-   "albumId": "psb-bilingual",
-   "year": 1996,
-   "trait": "Disco + Sampling",
-   "before": 0.045454545454545456,
-   "after": 0.3,
-   "when": 2003,
+   "albumId": "madonna-rebelheart",
+   "year": 2015,
+   "trait": "Trap",
+   "before": 0.06349206349206349,
+   "after": 0.3870967741935484,
+   "when": 2019,
    "field": [
-    "Synth-pop",
+    "Pop",
     "Dance"
-   ]
-  },
-  {
-   "albumId": "subsonica-amorematico",
-   "year": 2002,
-   "trait": "Electropop",
-   "before": 0.011764705882352941,
-   "after": 0.2857142857142857,
-   "when": 2012,
-   "field": [
-    "Electronic",
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "mariah-theemancipationofmimi",
-   "year": 2005,
-   "trait": "Contemporary R&B + Sampling",
-   "before": 0.11320754716981132,
-   "after": 0.4,
-   "when": 2006,
-   "field": [
-    "Pop",
-    "R&B"
-   ]
-  },
-  {
-   "albumId": "robyn-robyn",
-   "year": 2005,
-   "trait": "Electropop + Synthesizers",
-   "before": 0.08536585365853659,
-   "after": 0.35,
-   "when": 2015,
-   "field": [
-    "Pop",
-    "Electronic"
-   ]
-  },
-  {
-   "albumId": "royksopp-theunderstanding",
-   "year": 2005,
-   "trait": "Electropop + Synthesizers",
-   "before": 0.034482758620689655,
-   "after": 0.3,
-   "when": 2012,
-   "field": [
-    "Electronic"
    ]
   }
  ]

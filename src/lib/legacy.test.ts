@@ -16,6 +16,12 @@ describe("Fandome's data shows", () => {
   it('says nothing where too few earlier albums are described to tell what was new', () => {
     expect(findingOf('kimcarnes-restonme')).toBeNull()
     expect(findingOf('bowie-davidbowie1969')).toBeNull()
+    expect(findingOf('bowie-theriseandfallofziggystardustandthespidersfrommars')).toBeNull()
+  })
+
+  it('needs the years before described as well as a share of our best-described years, not a fixed count', () => {
+    expect(findingOf('portishead-dummy')?.spread.trait).toBe('Trip-hop')
+    expect(findingOf('humanleague-dare')).not.toBeNull()
   })
 })
 

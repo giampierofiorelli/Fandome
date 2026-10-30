@@ -31,6 +31,10 @@ export interface Spread {
   when: number // first year of that window
   anywhere: number // share of all other albums with it in the 6 years before, whatever their area
   earlier: number // albums by other artists that had it at any time before, whatever their area
+  // The gain with its margin of error: the lowest share after minus the highest share before that the albums we
+  // describe allow (Wilson interval, 90%). Few albums, wide margins: the gain shrinks or vanishes; it nears the
+  // plain gain as the catalogue grows, so the same rule holds at 1,500 albums and at 15,000.
+  sure: number
 }
 export interface Trace {
   field: string[] // the area compared (the artist's base genres: Pop, Dance)
@@ -53,6 +57,15 @@ export interface Trace {
 const BEFORE = 6
 const RARE = 0.15 // a trait in fewer than 15% of the field's albums of the previous years is new
 const MIN_FIELD = 10 // windows with fewer albums say too little
+// Wilson score interval for a share k/n (z = 1.645: 90% two-sided).
+const Z = 1.645
+const wilson = (p: number, n: number, sign: 1 | -1) => {
+  if (!n) return sign < 0 ? 0 : 1
+  const z2 = Z * Z
+  const mid = p + z2 / (2 * n)
+  const half = Z * Math.sqrt((p * (1 - p)) / n + z2 / (4 * n * n))
+  return Math.min(1, Math.max(0, (mid + sign * half) / (1 + z2 / n)))
+}
 
 const artistOf = new Map(albums.map((a) => [a.id, a.artistId]))
 const fieldOf = (d: Descriptor) => new Set(sceneOf(artistOf.get(d.albumId) ?? '')?.genres ?? [])
@@ -114,8 +127,9 @@ function computeTrace(albumId: string): Trace | null {
   const spread = [...fresh, ...pairs].map((t) => {
     const shares = windows.map((w) => share2(w.xs, t))
     const k = shares.indexOf(Math.max(...shares))
-    return { key: t, trait: labelOf(t), before: share2(before, t), after: shares[k], when: windows[k].from, anywhere: 0, earlier: 0 }
-  }).filter((x) => x.after - x.before >= 0.1).sort((x, y) => y.after - y.before - (x.after - x.before))
+    const b = share2(before, t)
+    return { key: t, trait: labelOf(t), before: b, after: shares[k], when: windows[k].from, anywhere: 0, earlier: 0, sure: wilson(shares[k], windows[k].xs.length, -1) - wilson(b, before.length, 1) }
+  }).filter((x) => x.after - x.before >= 0.1 && x.sure > 0).sort((x, y) => y.after - y.before - (x.after - x.before))
   // How new each spreading trait was across the whole catalogue (counted only for the traits that spread).
   for (const x of spread) (x.anywhere = share2(everywhere, x.key)), (x.earlier = earlierAll.filter((y) => hasAll(y, x.key)).length)
   // The five strongest spreads make the score, so many small pairs cannot inflate it.
@@ -149,13 +163,17 @@ function computeTrace(albumId: string): Trace | null {
 // "Fandome's data shows" (owner, Oct 2026): what our own analysis finds, said by itself and labelled as ours, even
 // where no critic has said it. Only where the data can carry it:
 // - a pioneer (see Trace);
-// - enough albums described before it: at least 100 in the 6 years before, whatever their area (fewer, and a sound
-//   can look new only because its earlier records are not described yet);
+// - the years before it described well enough: at least 30% as many albums in the 6 years before as in our
+//   best-described 6 years (fewer, and a sound can look new only because its earlier records are not described
+//   yet). Relative, so it follows the catalogue as it grows;
 // - a sound new to the whole catalogue, not only to its area (at most 3% of all earlier albums had it), that spread
-//   by at least 25 points in its area.
-const MIN_CATALOGUE = 100
+//   by at least 12 points even after the margin of error (Spread.sure).
+const COVERAGE = 0.3
 const NEW_ANYWHERE = 0.03
-const MIN_GAIN = 0.25
+const MIN_SURE_GAIN = 0.12
+const years = own.map((d) => d.year!)
+let busiest = 0
+for (let y = Math.min(...years); y <= Math.max(...years) + 1; y++) busiest = Math.max(busiest, years.filter((x) => x >= y - BEFORE && x < y).length)
 export interface Finding { trace: Trace; spread: Spread }
 // The same sound already brought by an earlier album of the artist: that album is the pioneer, not this one.
 const findingCache = new Map<string, Finding | null>()
@@ -166,8 +184,9 @@ export function findingOf(albumId: string): Finding | null {
 function computeFinding(albumId: string): Finding | null {
   const t = traceOf(albumId)
   const d = DESCRIPTORS[albumId]
-  if (!t?.pioneer || !d?.year || t.catalogueBefore < MIN_CATALOGUE) return null
-  const s = t.spread.find((x) => x.after - x.before >= MIN_GAIN && x.earlier <= NEW_ANYWHERE * t.earlierAll)
+  // A remix album reworks songs already out: it cannot be the first to bring a sound.
+  if (!t?.pioneer || !d?.year || d.type === 'remix' || t.catalogueBefore < COVERAGE * busiest) return null
+  const s = t.spread.find((x) => x.sure >= MIN_SURE_GAIN && x.earlier <= NEW_ANYWHERE * t.earlierAll)
   if (!s) return null
   const artist = artistOf.get(albumId)
   const earlierOwn = own.filter((x) => artistOf.get(x.albumId) === artist && x.year! < d.year!)
