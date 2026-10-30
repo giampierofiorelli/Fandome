@@ -24,7 +24,11 @@ const influence: Record<string, { n: number; top: [string, string][]; pct: numbe
 for (const id of Object.keys(DESCRIPTORS)) {
   const i = influenceOf(id)
   if (!i?.citedBy.length) continue
-  influence[id] = { n: i.citedBy.length, top: i.citedBy.slice(0, 6).map((c) => [c.albumId, c.how]), pct: Math.round(i.percentile * 100) / 100, ...(i.disruption !== undefined ? { dis: Math.round(i.disruption * 100) / 100 } : {}) }
+  // n counts the albums that clearly lead to it (a link of weight 0.25 or more: not a small share of a link to its
+  // artist in general).
+  const clear = i.citedBy.filter((c) => c.weight >= 0.25)
+  if (!clear.length) continue
+  influence[id] = { n: clear.length, top: clear.slice(0, 6).map((c) => [c.albumId, c.how]), pct: Math.round(i.percentile * 100) / 100, ...(i.disruption !== undefined ? { dis: Math.round(i.disruption * 100) / 100 } : {}) }
 }
 writeFileSync('src/data/influence.json', JSON.stringify(influence) + '\n')
 console.log(`${Object.keys(influence).length} albums drawn on, written to src/data/influence.json`)

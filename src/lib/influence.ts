@@ -4,14 +4,16 @@
 // - sounds_like: a critic hears it, weight 0.5 (critics' comparisons already reflect reputation);
 // - a producer of the earlier album produced the later one too, weight 0.5;
 // - an influence the artist names for their whole career (artistInfluences.ts), weight 0.25.
-// A link that names a record leads to it; a link to an artist leads to that artist's earlier album that sounds
-// most like the later one. A link on some songs only ("Pink Floyd [1/10]") weighs that share.
+// A link that names a record leads to it; a link to an artist is shared among that artist's three earlier albums
+// that sound most like the later one, by likeness and by weight in the career (key albums weigh more: owner), so
+// one record does not take every link to its artist. A link on some songs only ("Pink Floyd [1/10]") weighs that
+// share.
 // Influence (how much later music draws on an album) is kept apart from innovation (the trace in legacy.ts):
 // the research finds they are different things.
 import { albums } from '../data/seed'
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
 import { DESCRIPTORS, type Descriptor } from './descriptors'
-import { albumProfile, compareProfiles, foldName } from './similar'
+import { albumProfile, careerWeight, compareProfiles, foldName } from './similar'
 
 // how: an influence the artist names, a critic's comparison, a shared producer, a career-wide influence; "-album" when
 // the source names this very record, not only its artist.
@@ -52,17 +54,17 @@ function computeNetwork() {
     const prev = m.get(earlier.albumId)
     if (!prev || prev.weight < weight) m.set(earlier.albumId, { albumId: earlier.albumId, weight, how })
   }
-  // The earlier album a link to an artist leads to: the named record, else the one that sounds most like it.
-  const target = (later: Descriptor, artistId: string, title?: string) => {
+  // The earlier albums a link to an artist leads to, with their share: the named record, else the three that sound
+  // most like it, weighted by likeness (squared) and career weight.
+  const targets = (later: Descriptor, artistId: string, title?: string): [Descriptor, number][] => {
     const before = (byArtist.get(artistId) ?? []).filter((x) => x.year! < later.year!)
-    if (!before.length) return undefined
-    if (title) return before.find((x) => foldTitle(x.title) === foldTitle(title))
-    let best = before[0], top = -1
-    for (const x of before) {
-      const v = sim(later, x)
-      if (v > top) (top = v), (best = x)
+    if (title) {
+      const t = before.find((x) => foldTitle(x.title) === foldTitle(title))
+      return t ? [[t, 1]] : []
     }
-    return best
+    const scored = before.map((x) => [x, Math.max(0, sim(later, x)) ** 2 * careerWeight(x)] as [Descriptor, number]).sort((a, b) => b[1] - a[1]).slice(0, 3)
+    const total = scored.reduce((n, [, v]) => n + v, 0)
+    return total ? scored.map(([x, v]) => [x, v / total]) : before.slice(-1).map((x) => [x, 1])
   }
   for (const d of own) {
     const me = artistOf.get(d.albumId)!
@@ -73,8 +75,7 @@ function computeNetwork() {
         if (!a || a === me) continue
         const part = parts[n]
         const title = part ? undefined : named.get(foldName(n))
-        const t = target(d, a, title)
-        if (t) add(d, t, weight * (part ? part.songs / part.of : 1), title ? `${how}-album` : how)
+        for (const [t, share] of targets(d, a, title)) add(d, t, weight * share * (part ? part.songs / part.of : 1), title ? `${how}-album` : how)
       }
     }
     cite(d.influencedBy, d.parts.influencedBy, 1, 'influence')
@@ -84,8 +85,7 @@ function computeNetwork() {
     for (const n of ARTIST_INFLUENCES[me]?.names ?? []) {
       const a = nameOfArtist.get(foldName(n))
       if (!a || a === me) continue
-      const t = target(d, a)
-      if (t) add(d, t, 0.25, 'artist')
+      for (const [t, share] of targets(d, a)) add(d, t, 0.25 * share, 'artist')
     }
   }
   // Who draws on each album.

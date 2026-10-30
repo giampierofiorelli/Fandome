@@ -3,7 +3,7 @@
 // instrument not listed here, the researcher uses it anyway (lowercase, letters only) and Claude adds it.
 export const INSTRUMENT_LABELS: Record<string, string> = {
   // keys
-  piano: 'Piano', electricpiano: 'Electric piano', clavinet: 'Clavinet', organ: 'Organ', harpsichord: 'Harpsichord', spinet: 'Spinet', accordion: 'Accordion', bandoneon: 'Bandoneon', keyboards: 'Keyboards', keytar: 'Keytar', harmonium: 'Harmonium', melodica: 'Melodica', variophon: 'Variophon', mellotron: 'Mellotron', chamberlin: 'Chamberlin', celesta: 'Celesta', clavioline: 'Clavioline', pumporgan: 'Pump organ', clavichord: 'Clavichord', glassharmonica: 'Glass harmonica', glassharp: 'Glass harp', musicbox: 'Music box',
+  piano: 'Piano', electricpiano: 'Electric piano', clavinet: 'Clavinet', organ: 'Organ', harpsichord: 'Harpsichord', electricharpsichord: 'Electric harpsichord', ondesmartenot: 'Ondes Martenot', dilruba: 'Dilruba', spinet: 'Spinet', accordion: 'Accordion', bandoneon: 'Bandoneon', keyboards: 'Keyboards', keytar: 'Keytar', harmonium: 'Harmonium', melodica: 'Melodica', variophon: 'Variophon', mellotron: 'Mellotron', chamberlin: 'Chamberlin', celesta: 'Celesta', clavioline: 'Clavioline', pumporgan: 'Pump organ', clavichord: 'Clavichord', glassharmonica: 'Glass harmonica', glassharp: 'Glass harp', musicbox: 'Music box',
   // electronic
   synth: 'Synthesizers', drummachine: 'Drum machine', sequencer: 'Sequencer', sampler: 'Samples', vocoder: 'Vocoder', turntables: 'Turntables', theremin: 'Theremin', stylophone: 'Stylophone',
   // guitars and strings

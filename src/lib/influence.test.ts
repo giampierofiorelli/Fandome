@@ -25,6 +25,6 @@ describe('influence network', () => {
   })
 
   it('is stored up to date in src/data/influence.json (npm run findings)', () => {
-    for (const id of ['m-confessions', 'm-ray', 'beatles-revolver']) expect(storedInfluence(id)?.n).toBe(influenceOf(id)!.citedBy.length)
+    for (const id of ['m-confessions', 'm-ray', 'beatles-revolver']) expect(storedInfluence(id)?.n).toBe(influenceOf(id)!.citedBy.filter((c) => c.weight >= 0.25).length)
   })
 })
