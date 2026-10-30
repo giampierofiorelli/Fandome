@@ -1,5 +1,5 @@
 {
- "described": 1707,
+ "described": 1711,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -100,17 +100,6 @@
    ]
   },
   {
-   "albumId": "tozzi-enellariatiamo",
-   "year": 1977,
-   "trait": "Pop rock + Keyboards",
-   "before": 0.08695652173913043,
-   "after": 0.45901639344262296,
-   "when": 1984,
-   "field": [
-    "Pop"
-   ]
-  },
-  {
    "albumId": "kraftwerk-themanmachine",
    "year": 1978,
    "trait": "Synth-pop + Synthesizers",
@@ -132,6 +121,30 @@
    "field": [
     "Pop",
     "Rock"
+   ]
+  },
+  {
+   "albumId": "tozzi-gloria",
+   "year": 1979,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.10638297872340426,
+   "after": 0.5357142857142857,
+   "when": 1986,
+   "field": [
+    "Pop"
+   ]
+  },
+  {
+   "albumId": "buggles-theageofplastic",
+   "year": 1980,
+   "trait": "Synth-pop + Keyboards",
+   "before": 0.014084507042253521,
+   "after": 0.5111111111111111,
+   "when": 1984,
+   "field": [
+    "Synth-pop",
+    "Pop",
+    "Prog"
    ]
   },
   {
@@ -439,7 +452,7 @@
    "label": "R&B",
    "peak": [
     1974,
-    0.3150684931506849
+    0.3026315789473684
    ],
    "low": [
     1986,
@@ -493,7 +506,7 @@
    "label": "Disco",
    "peak": [
     1974,
-    0.2876712328767123
+    0.2894736842105263
    ],
    "low": [
     1998,
@@ -511,7 +524,7 @@
    "label": "Soul",
    "peak": [
     1974,
-    0.3013698630136986
+    0.3026315789473684
    ],
    "low": [
     1995,
@@ -583,7 +596,7 @@
    "label": "New wave",
    "peak": [
     1977,
-    0.16822429906542055
+    0.16666666666666666
    ],
    "low": [
     2001,
@@ -630,24 +643,6 @@
     0.14285714285714285
    ],
    "gap": 48,
-   "newArtists": 1
-  },
-  {
-   "genre": "europop",
-   "label": "Europop",
-   "peak": [
-    1974,
-    0.0821917808219178
-   ],
-   "low": [
-    1980,
-    0.02564102564102564
-   ],
-   "back": [
-    2010,
-    0.1509433962264151
-   ],
-   "gap": 36,
    "newArtists": 1
   },
   {
@@ -745,7 +740,7 @@
    "label": "Dance-rock",
    "peak": [
     1977,
-    0.1308411214953271
+    0.12962962962962962
    ],
    "low": [
     2001,
@@ -756,6 +751,24 @@
     0.12
    ],
    "gap": 27,
+   "newArtists": 1
+  },
+  {
+   "genre": "italianpop",
+   "label": "Italian pop",
+   "peak": [
+    1974,
+    0.13157894736842105
+   ],
+   "low": [
+    1989,
+    0.06060606060606061
+   ],
+   "back": [
+    2004,
+    0.16
+   ],
+   "gap": 30,
    "newArtists": 1
   },
   {
@@ -781,7 +794,7 @@
    "label": "Soft rock",
    "peak": [
     1974,
-    0.0958904109589041
+    0.09210526315789473
    ],
    "low": [
     1992,
@@ -792,24 +805,6 @@
     0.13333333333333333
    ],
    "gap": 33,
-   "newArtists": 1
-  },
-  {
-   "genre": "arenarock",
-   "label": "Arena rock",
-   "peak": [
-    1974,
-    0.0821917808219178
-   ],
-   "low": [
-    1998,
-    0
-   ],
-   "back": [
-    2001,
-    0.09433962264150944
-   ],
-   "gap": 27,
    "newArtists": 1
   },
   {
@@ -925,7 +920,7 @@
    "label": "Heavy metal",
    "peak": [
     1974,
-    0.1095890410958904
+    0.10526315789473684
    ],
    "low": [
     1980,
@@ -1050,8 +1045,22 @@
    "lag": 3
   },
   {
+   "genre": "disco",
+   "label": "Disco",
+   "niche": 1974,
+   "mainstream": 1977,
+   "lag": 3
+  },
+  {
    "genre": "soul",
    "label": "Soul",
+   "niche": 1974,
+   "mainstream": 1977,
+   "lag": 3
+  },
+  {
+   "genre": "ballad",
+   "label": "Ballad",
    "niche": 1974,
    "mainstream": 1977,
    "lag": 3
@@ -1069,13 +1078,6 @@
    "niche": 1974,
    "mainstream": 1992,
    "lag": 18
-  },
-  {
-   "genre": "disco",
-   "label": "Disco",
-   "niche": 1977,
-   "mainstream": 1977,
-   "lag": 0
   },
   {
    "genre": "dancerock",

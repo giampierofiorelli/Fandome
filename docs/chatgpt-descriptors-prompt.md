@@ -39,7 +39,7 @@ album_id,artist,title,year,type,genres,energy,electronic,mood,theatrical,experim
 - A thin row is a wrong row: if an album ends up with fewer than 4 genres or no instruments, research more before delivering (Discogs genres and styles of every pressing, Rate Your Music, AllMusic styles, reviews in the artist's language). A re-recording or a version in another language keeps the sound of the songs it re-records: find out which songs and how they are arranged, and describe that sound; a label's shelving genre (e.g. "latin" for a Spanish-language release) goes last.
 - landmark 1 only if an independent source says the album defined or changed something (a genre, a sound, the artist's whole career): "masterpiece", "best album" or a place in a best-of list is NOT enough; otherwise 0. confidence high/medium/low; status always draft.
 - SOURCES: never cite Wikipedia (use it only to find the original sources, then open and cite those). If no source you can open describes an album's music, do not deliver a row for it: list it in CLAUDE_IMPORT.md as "no source" (the album stays in the catalogue without a descriptor). Never invent a value to fill a cell.
-- notes: your own words, MAX 15 WORDS (the only column with a limit). Never copy sentences from reviews or Wikipedia.
+- notes: IN ENGLISH, whatever the artist's language, your own words, MAX 15 WORDS (the only column with a limit). Never copy sentences from reviews or Wikipedia.
 
 DELIVERABLES: one ZIP per phase, as in earlier batches
 Name: <artist-id>_fandome_phase0N.zip, containing:
