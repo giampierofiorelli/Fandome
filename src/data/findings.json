@@ -1,5 +1,5 @@
 {
- "described": 1693,
+ "described": 1697,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -259,18 +259,6 @@
    "field": [
     "Electronic",
     "Alternative"
-   ]
-  },
-  {
-   "albumId": "carmenconsoli-mediamenteisterica",
-   "year": 1998,
-   "trait": "Pro Tools",
-   "before": 0,
-   "after": 0.3333333333333333,
-   "when": 2002,
-   "field": [
-    "Rock",
-    "Singer-songwriter"
    ]
   },
   {
@@ -564,7 +552,7 @@
    "label": "Contemporary R&B",
    "peak": [
     2001,
-    0.23076923076923078
+    0.22641509433962265
    ],
    "low": [
     2010,
@@ -604,11 +592,11 @@
    ],
    "low": [
     2004,
-    0.125
+    0.12
    ],
    "back": [
     2007,
-    0.2727272727272727
+    0.26666666666666666
    ],
    "gap": 39,
    "newArtists": 1
@@ -625,10 +613,28 @@
     0
    ],
    "back": [
-    2004,
-    0.14583333333333334
+    2013,
+    0.14285714285714285
    ],
-   "gap": 27,
+   "gap": 36,
+   "newArtists": 1
+  },
+  {
+   "genre": "blues",
+   "label": "Blues",
+   "peak": [
+    1965,
+    0.20408163265306123
+   ],
+   "low": [
+    2001,
+    0.03773584905660377
+   ],
+   "back": [
+    2007,
+    0.17777777777777778
+   ],
+   "gap": 42,
    "newArtists": 1
   },
   {
@@ -686,24 +692,6 @@
    "newArtists": 1
   },
   {
-   "genre": "blues",
-   "label": "Blues",
-   "peak": [
-    1965,
-    0.20408163265306123
-   ],
-   "low": [
-    1983,
-    0.038461538461538464
-   ],
-   "back": [
-    2007,
-    0.1590909090909091
-   ],
-   "gap": 42,
-   "newArtists": 1
-  },
-  {
    "genre": "folk",
    "label": "Folk",
    "peak": [
@@ -716,7 +704,7 @@
    ],
    "back": [
     2007,
-    0.13636363636363635
+    0.13333333333333333
    ],
    "gap": 42,
    "newArtists": 1
@@ -740,24 +728,6 @@
    "newArtists": 1
   },
   {
-   "genre": "dancerock",
-   "label": "Dance-rock",
-   "peak": [
-    1977,
-    0.1346153846153846
-   ],
-   "low": [
-    2001,
-    0.019230769230769232
-   ],
-   "back": [
-    2004,
-    0.125
-   ],
-   "gap": 27,
-   "newArtists": 1
-  },
-  {
    "genre": "country",
    "label": "Country",
    "peak": [
@@ -776,6 +746,42 @@
    "newArtists": 0.8333333333333334
   },
   {
+   "genre": "dancerock",
+   "label": "Dance-rock",
+   "peak": [
+    1977,
+    0.1346153846153846
+   ],
+   "low": [
+    2001,
+    0.018867924528301886
+   ],
+   "back": [
+    2004,
+    0.12
+   ],
+   "gap": 27,
+   "newArtists": 1
+  },
+  {
+   "genre": "indiepop",
+   "label": "Indie pop",
+   "peak": [
+    2007,
+    0.1111111111111111
+   ],
+   "low": [
+    2016,
+    0
+   ],
+   "back": [
+    2022,
+    0.09722222222222222
+   ],
+   "gap": 15,
+   "newArtists": 0.8571428571428571
+  },
+  {
    "genre": "softrock",
    "label": "Soft rock",
    "peak": [
@@ -788,28 +794,10 @@
    ],
    "back": [
     2007,
-    0.13636363636363635
+    0.13333333333333333
    ],
    "gap": 33,
    "newArtists": 1
-  },
-  {
-   "genre": "indiepop",
-   "label": "Indie pop",
-   "peak": [
-    2007,
-    0.11363636363636363
-   ],
-   "low": [
-    2016,
-    0
-   ],
-   "back": [
-    2022,
-    0.09722222222222222
-   ],
-   "gap": 15,
-   "newArtists": 0.8571428571428571
   },
   {
    "genre": "arenarock",
@@ -824,7 +812,7 @@
    ],
    "back": [
     2001,
-    0.09615384615384616
+    0.09433962264150944
    ],
    "gap": 27,
    "newArtists": 1
@@ -842,7 +830,7 @@
    ],
    "back": [
     2007,
-    0.09090909090909091
+    0.08888888888888889
    ],
    "gap": 42,
    "newArtists": 1
@@ -866,22 +854,22 @@
    "newArtists": 1
   },
   {
-   "genre": "contemporarypoprock",
-   "label": "Contemporary pop/rock",
+   "genre": "electro",
+   "label": "Electro",
    "peak": [
-    1980,
-    0.15517241379310345
+    2004,
+    0.14
    ],
    "low": [
-    2001,
-    0.057692307692307696
+    2019,
+    0.017543859649122806
    ],
    "back": [
-    2004,
-    0.125
+    2022,
+    0.08333333333333333
    ],
-   "gap": 24,
-   "newArtists": 0.8333333333333334
+   "gap": 18,
+   "newArtists": 0.6666666666666666
   },
   {
    "genre": "artrock",
@@ -896,46 +884,46 @@
    ],
    "back": [
     2001,
-    0.09615384615384616
+    0.09433962264150944
    ],
    "gap": 36,
    "newArtists": 1
   },
   {
-   "genre": "electro",
-   "label": "Electro",
+   "genre": "contemporarypoprock",
+   "label": "Contemporary pop/rock",
    "peak": [
-    2004,
-    0.14583333333333334
+    1980,
+    0.15517241379310345
    ],
    "low": [
-    2019,
-    0.017543859649122806
+    2001,
+    0.05660377358490566
+   ],
+   "back": [
+    2004,
+    0.12
+   ],
+   "gap": 24,
+   "newArtists": 0.8333333333333334
+  },
+  {
+   "genre": "latin",
+   "label": "Latin",
+   "peak": [
+    2004,
+    0.08
+   ],
+   "low": [
+    2013,
+    0.02040816326530612
    ],
    "back": [
     2022,
     0.08333333333333333
    ],
    "gap": 18,
-   "newArtists": 0.6666666666666666
-  },
-  {
-   "genre": "adultalternativepoprock",
-   "label": "Adult alternative pop/rock",
-   "peak": [
-    1995,
-    0.10784313725490197
-   ],
-   "low": [
-    2007,
-    0.022727272727272728
-   ],
-   "back": [
-    2013,
-    0.08163265306122448
-   ],
-   "gap": 18,
-   "newArtists": 0.75
+   "newArtists": 0.8333333333333334
   },
   {
    "genre": "heavymetal",
