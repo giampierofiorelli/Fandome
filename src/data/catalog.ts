@@ -288,7 +288,7 @@ const ROWS: Row[] = [
   ['elodie', 'Elodie', '#c9506f', 'Voice, style and huge stages', [['Un\'altra vita', 2016], ['Tutta colpa mia', 2017], ['This Is Elodie', 2020], ['OK. Respira', 2023], ['Red Light', 2023], ['Mi Ami Mi Odi', 2025]]],
   ['blanco', 'Blanco', '#5a9ae0', 'Sky blue and hearts on fire', [['Blu celeste', 2021], ['Innamorato', 2023], ['Ma’', 2026]]],
   ['mahmood', 'Mahmood', '#8a5ac9', 'Soldi, Brividi and new roads', [['Gioventù bruciata', 2019], ['Ghettolimpo', 2021], ['Nei letti degli altri', 2024]]],
-  ['rickymartin', 'Ricky Martin', '#e05a3f', 'Livin’ la vida loca', [['Vuelve', 1998], ['Ricky Martin', 1999], ['Sound Loaded', 2000], ['Life', 2005], ['Música + Alma + Sexo', 2011]]],
+  ['rickymartin', 'Ricky Martin', '#e05a3f', 'Livin’ la vida loca', [['Ricky Martin', 1991], ['Me amarás', 1993], ['A medio vivir', 1995], ['Vuelve', 1998], ['Ricky Martin', 1999], ['Sound Loaded', 2000], ['Almas del silencio', 2003], ['Life', 2005], ['Música + Alma + Sexo', 2011], ['A quien quiera escuchar', 2015], ['Pausa', 2020], ['Play', 2022]]],
   ['ritaora', 'Rita Ora', '#d94a7a', 'Pop with London attitude', [['Ora', 2012], ['Phoenix', 2018], ['You & I', 2023]]],
   ['robbie', 'Robbie Williams', '#c9a03f', 'Let me entertain you', [['Life thru a Lens', 1997], ['I’ve Been Expecting You', 1998], ['Sing When You’re Winning', 2000], ['Swing When You’re Winning', 2001], ['Escapology', 2002], ['Intensive Care', 2005]]],
   ['roxymusic', 'Roxy Music', '#b53f6f', 'Art rock, more than this', [['Roxy Music', 1972], ['For Your Pleasure', 1973], ['Stranded', 1973], ['Country Life', 1974], ['Siren', 1975], ['Avalon', 1982]]],
