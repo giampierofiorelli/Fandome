@@ -7,7 +7,9 @@ import { spring } from '../lib/motion'
 import { artists } from '../data/seed'
 import { PhotoCredit, artistPhoto } from '../components/ui'
 
-const owner = OWNER_NAME || '[site owner’s name, to be added]'
+// A non-commercial fan site for now (owner, Oct 2026): no personal name or address is published until Fandome
+// becomes an economic activity; only a dedicated contact email.
+const owner = OWNER_NAME || 'the Fandome project, a non-commercial fan site'
 const email = CONTACT_EMAIL || '[contact email, to be added]'
 
 // First visit: ask before anything from other companies loads. Both choices are
@@ -112,10 +114,14 @@ export function LegalNotice() {
 
       <h2>Service provider</h2>
       <p>
-        {owner}
+        {owner.charAt(0).toUpperCase() + owner.slice(1)}
         <br />
-        {OWNER_ADDRESS || '[address, to be added]'}
-        <br />
+        {OWNER_ADDRESS && (
+          <>
+            {OWNER_ADDRESS}
+            <br />
+          </>
+        )}
         Email: {email}
         {OWNER_VAT && (
           <>

@@ -4,11 +4,10 @@
 // visitor then just taps "Connect Spotify" and logs in with their own account.
 export const SPOTIFY_CLIENT_ID = ''
 
-// Who runs Fandome (shown in the privacy policy and terms: required by GDPR and the EU DSA).
-// Fill these in before opening the site to the public.
+// Who runs Fandome (privacy policy, terms, legal notice). Owner's decision (Oct 2026): while Fandome is a
+// non-commercial fan site, no personal name or address is published; only a dedicated contact email
+// (an address made for Fandome, not a personal one). Name, address and VAT if it becomes an economic activity.
 export const OWNER_NAME = ''
 export const CONTACT_EMAIL = ''
-// Optional but recommended for the legal notice (EU e-commerce rules ask for a geographic address;
-// a VAT number only if Fandome becomes an economic activity).
 export const OWNER_ADDRESS = ''
 export const OWNER_VAT = ''
