@@ -121,6 +121,32 @@ for (const file of legacyFiles) {
   })
   console.log(`legacy/${file}: ${body.length} rows`)
 }
+// Borrowing files (docs/descriptors/borrowings/<artist-id>.csv): what an album samples, quotes, covers or adapts.
+let borrowFiles: string[] = []
+try {
+  borrowFiles = readdirSync('docs/descriptors/borrowings').filter((f) => f.endsWith('.csv'))
+} catch {
+  borrowFiles = []
+}
+const KINDS = new Set(['sample', 'interpolation', 'quotation', 'cover', 'arrangement', 'adaptation', 'variations'])
+for (const file of borrowFiles) {
+  const [head, ...body] = parse(readFileSync(`docs/descriptors/borrowings/${file}`, 'utf8'))
+  const say = (where: string, msg: string) => (problems++, console.log(`borrowings/${file} ${where}: ${msg}`))
+  if (!head || head.join(',') !== 'album_id,source,kind,songs,sources') {
+    say('header', 'expected album_id,source,kind,songs,sources')
+    continue
+  }
+  body.forEach((cells, n) => {
+    const [id, source, kind, songs, sources] = cells.map((c) => c.trim())
+    if (!albumIds.has(id)) say(`row ${n + 2}`, `album "${id}" is not in the catalogue`)
+    if (!source) say(`row ${n + 2}`, 'source is required ("Artist (Work)" or "Artist")')
+    if (!KINDS.has(kind ?? '')) say(`row ${n + 2}`, `kind "${kind}" (${[...KINDS].join(', ')})`)
+    if (songs && !/^\d+\/\d+$/.test(songs)) say(`row ${n + 2}`, `songs "${songs}" (e.g. 1/12, or empty)`)
+    if (!sources) say(`row ${n + 2}`, 'sources are required')
+    if (/wikipedia/i.test(sources ?? '')) say(`row ${n + 2}`, 'cite the original source, not Wikipedia')
+  })
+  console.log(`borrowings/${file}: ${body.length} rows`)
+}
 // Connection files (docs/connections/*.csv, format in docs/connections-guide.md).
 const CONN_HEADER = 'from_artist,to_artist,type,work,year,source,url,confidence,notes'.split(',')
 const CONN_TYPES = new Set(['influenced', 'soundslike', 'sampled', 'covered', 'collaborated', 'produced'])

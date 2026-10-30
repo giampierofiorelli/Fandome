@@ -118,3 +118,11 @@ One file per artist, `docs/descriptors/reception/<artist-id>.csv`, header `album
 
 How they're used: when a documented link names an artist (not a record), the place goes to that artist's close album that best stands for them, and a career-defining album breaks near ties. A well-regarded album never leads to one critics panned: 2 points lower pushes the suggestion down, 3 or more removes it. An album never leads to a packaged product (`mainstream` 5 and acclaim below 5) that is 2 or more points more `mainstream` (another world, owner): only a documented influence of the album can lift that; acclaimed chart records (Thriller) and artist-led chart records stay; the other way round is fine. Missing values change nothing.
 
+## Borrowings ("riprende", owner, Oct 2026)
+
+A piece an album samples, quotes (interpolates), covers, arranges or adapts is not an influence and not a critic's
+comparison: it goes in `docs/descriptors/borrowings/<artist-id>.csv`, header `album_id,source,kind,songs,sources`.
+`source` = "Artist (Work)" when the record or work is known, else "Artist"; `kind` = sample, interpolation,
+quotation, cover, arrangement, adaptation, variations; `songs` = "1/13" when it is on 1 song of 13 (empty: the whole
+album is built on it); `sources` = credits, WhoSampled-style databases, reviews (never Wikipedia). In the influence
+network it weighs half an influence, times the share of songs. Shown on the album page ("Borrows from", "Borrowed by").

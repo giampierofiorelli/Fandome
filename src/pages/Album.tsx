@@ -21,6 +21,7 @@ import { albums } from '../data/seed'
 import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
+import { borrowedAlbum, borrowedBy, borrowingsOf } from '../lib/borrowings'
 import { legacyOf, traceOf } from '../lib/legacy'
 import { DESCRIBED_ALBUMS, storedFinding, storedInfluence, storedLate } from '../lib/findings'
 
@@ -35,6 +36,45 @@ function SoundRow({ label, children }: { label: string; children: ReactNode }) {
 }
 
 // Covers credited on the record, in both directions: what this album covers, and who covered its songs.
+// Borrowings ("riprende", owner, Oct 2026): what the album samples, quotes, covers or adapts, and who borrows from it.
+const KIND_LABEL: Record<string, string> = { sample: 'samples', interpolation: 'interpolates', quotation: 'quotes', cover: 'covers', arrangement: 'arranges', adaptation: 'adapts', variations: 'writes variations on' }
+function BorrowLines({ albumId }: { albumId: string }) {
+  const mine = borrowingsOf(albumId)
+  const by = borrowedBy(albumId)
+  const share = (p?: { songs: number; of: number }) => (p ? ` (${p.songs} of ${p.of} songs)` : '')
+  return (
+    <>
+      {mine.length > 0 && (
+        <SoundRow label="Borrows from">
+          {mine.map((b) => {
+            const a = borrowedAlbum(b)
+            return (
+              <span key={`${b.artist}-${b.title}-${b.kind}`} className="sound-cover">
+                <span className="muted">{KIND_LABEL[b.kind] ?? b.kind}</span>{' '}
+                {a ? <Link to={`/album/${a.id}`}>{b.artist}, {b.title}</Link> : <b>{b.title ? `${b.artist}, ${b.title}` : b.artist}</b>}
+                <span className="muted">{share(b.part)}</span>
+              </span>
+            )
+          })}
+        </SoundRow>
+      )}
+      {by.length > 0 && (
+        <SoundRow label="Borrowed by">
+          {by.map((b) => {
+            const a = albumById(b.albumId)
+            return (
+              <span key={`${b.albumId}-${b.kind}`} className="sound-cover">
+                {a ? <Link to={`/album/${a.id}`}>{artistById(a.artistId)?.name}, {a.title} ({a.year})</Link> : b.albumId}{' '}
+                <span className="muted">{KIND_LABEL[b.kind] ?? b.kind} it{share(b.part)}</span>
+              </span>
+            )
+          })}
+        </SoundRow>
+      )}
+    </>
+  )
+}
+
 function CoverLines({ albumId }: { albumId: string }) {
   const { covers, coveredBy } = coversOf(albumId)
   const link = (id: string) => {
@@ -77,7 +117,7 @@ const shownSources = (text: string) =>
 // itself, labelled as ours, even where no critic has said it.
 // Why a later album is counted as drawing on this one.
 const howLabel = (how: string, artist?: string) =>
-  ({ 'influence-album': 'names this album as an influence', influence: `names ${artist} as an influence`, 'critic-album': 'a critic compares it to this album', critic: `a critic compares it to ${artist}`, producer: 'same producer', artist: `${artist} is among its artist’s influences` })[how] ?? how
+  ({ 'influence-album': 'names this album as an influence', influence: `names ${artist} as an influence`, 'critic-album': 'a critic compares it to this album', critic: `a critic compares it to ${artist}`, producer: 'same producer', artist: `${artist} is among its artist’s influences`, 'borrows-album': 'it samples, quotes or covers this', borrows: `it samples, quotes or covers ${artist}` })[how] ?? how
 function LegacyBox({ albumId }: { albumId: string }) {
   const legacy = legacyOf(albumId)
   const finding = storedFinding(albumId)
@@ -284,6 +324,7 @@ export default function AlbumPage() {
               {sound.production.length > 0 && <SoundRow label="Production">{sound.production.map(productionLabel).join(' · ')}</SoundRow>}
               {sound.producers.length > 0 && <SoundRow label="Produced by">{sound.producers.join(' · ')}</SoundRow>}
               <CoverLines albumId={album.id} />
+              <BorrowLines albumId={album.id} />
             </div>
           </div>
         </>

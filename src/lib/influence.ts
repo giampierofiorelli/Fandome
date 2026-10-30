@@ -3,7 +3,8 @@
 // - influenced_by: the artist (or a producer, or someone speaking for them) names it, weight 1;
 // - sounds_like: a critic hears it, weight 0.5 (critics' comparisons already reflect reputation);
 // - a producer of the earlier album produced the later one too, weight 0.5;
-// - an influence the artist names for their whole career (artistInfluences.ts), weight 0.25.
+// - an influence the artist names for their whole career (artistInfluences.ts), weight 0.25;
+// - a piece the album samples, quotes, covers or adapts (borrowings.ts, "riprende"), weight 0.5.
 // A link that names a record leads to it; a link to an artist is shared among that artist's three earlier albums
 // that sound most like the later one, by likeness and by weight in the career (key albums weigh more: owner), so
 // one record does not take every link to its artist. A link on some songs only ("Pink Floyd [1/10]") weighs that
@@ -12,12 +13,14 @@
 // the research finds they are different things.
 import { albums } from '../data/seed'
 import { ARTIST_INFLUENCES } from '../data/artistInfluences'
+import { borrowingsOf } from './borrowings'
+import { COVERS } from '../data/covers'
 import { DESCRIPTORS, type Descriptor } from './descriptors'
 import { albumProfile, careerWeight, compareProfiles, foldName } from './similar'
 
 // how: an influence the artist names, a critic's comparison, a shared producer, a career-wide influence; "-album" when
 // the source names this very record, not only its artist.
-export type How = 'influence' | 'influence-album' | 'critic' | 'critic-album' | 'producer' | 'artist'
+export type How = 'influence' | 'influence-album' | 'critic' | 'critic-album' | 'producer' | 'artist' | 'borrows' | 'borrows-album'
 export interface Citation { albumId: string; weight: number; how: How }
 export interface Influence {
   citedBy: Citation[] // the later albums that draw on it, strongest first
@@ -64,7 +67,11 @@ function computeNetwork() {
     }
     const scored = before.map((x) => [x, Math.max(0, sim(later, x)) ** 2 * careerWeight(x)] as [Descriptor, number]).sort((a, b) => b[1] - a[1]).slice(0, 3)
     const total = scored.reduce((n, [, v]) => n + v, 0)
-    return total ? scored.map(([x, v]) => [x, v / total]) : before.slice(-1).map((x) => [x, 1])
+    if (total) return scored.map(([x, v]) => [x, v / total])
+    // Nothing alike (e.g. a pop album naming a composer): the artist's key records, by weight in the career.
+    const key = before.map((x) => [x, careerWeight(x)] as [Descriptor, number]).sort((a, b) => b[1] - a[1]).slice(0, 3)
+    const sum = key.reduce((n, [, v]) => n + v, 0)
+    return sum ? key.map(([x, v]) => [x, v / sum]) : before.slice(-1).map((x) => [x, 1])
   }
   for (const d of own) {
     const me = artistOf.get(d.albumId)!
@@ -82,6 +89,14 @@ function computeNetwork() {
     cite(d.soundsLike, d.parts.soundsLike, 0.5, 'critic')
     const mine = new Set(d.producers.map(foldName).filter((p) => p !== foldName(d.artist)))
     if (mine.size) for (const x of own) if (x.year! < d.year! && x.producers.some((p) => mine.has(foldName(p)) && p !== x.artist)) add(d, x, 0.5, 'producer')
+    // A piece the album samples, quotes, covers or adapts (borrowings.ts): a documented link, half an influence.
+    for (const b of borrowingsOf(d.albumId)) {
+      const a = nameOfArtist.get(foldName(b.artist))
+      if (!a || a === me) continue
+      for (const [t, share] of targets(d, a, b.title)) add(d, t, 0.5 * share * (b.part ? b.part.songs / b.part.of : 1), b.title ? 'borrows-album' : 'borrows')
+    }
+    // Covers credited between two albums we describe (covers.ts) are borrowings too.
+    for (const c of COVERS) if (c.cover === d.albumId && DESCRIPTORS[c.original]) add(d, DESCRIPTORS[c.original], 0.5, 'borrows-album')
     for (const n of ARTIST_INFLUENCES[me]?.names ?? []) {
       const a = nameOfArtist.get(foldName(n))
       if (!a || a === me) continue
