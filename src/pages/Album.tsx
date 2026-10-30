@@ -22,7 +22,7 @@ import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
 import { legacyOf, traceOf } from '../lib/legacy'
-import { DESCRIBED_ALBUMS, storedFinding, storedInfluence } from '../lib/findings'
+import { DESCRIBED_ALBUMS, storedFinding, storedInfluence, storedLate } from '../lib/findings'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -85,7 +85,8 @@ function LegacyBox({ albumId }: { albumId: string }) {
   // Influence network: shown when at least 5 later albums we describe draw on it and it stands in the top tenth of
   // the albums of its time.
   const inf = storedInfluence(albumId)
-  const drawnOn = inf && inf.n >= 5 && inf.pct >= 0.9 ? inf : undefined
+  const late = storedLate(albumId)
+  const drawnOn = inf && ((inf.n >= 5 && inf.pct >= 0.9) || late) ? inf : undefined
   if (!sourced && !finding && !drawnOn) return null
   const trace = traceOf(albumId)
   const head = (finding && trace?.spread.find((s) => s.trait === finding.trait)) || trace?.spread[0]
@@ -131,6 +132,7 @@ function LegacyBox({ albumId }: { albumId: string }) {
               later albums we describe draw on it, more than on {Math.min(99, Math.round(drawnOn.pct * 100))}% of the albums released within five years of it.
               {drawnOn.dis !== undefined && drawnOn.dis >= 0.5 && ' Most of them do not draw on what it drew on: it opened a path.'}
               {drawnOn.dis !== undefined && drawnOn.dis <= -0.2 && ' Most of them also draw on its own sources: it carried a line forward.'}
+              {late && ` Recognised late: ${late.n - late.early} of the ${late.n} later albums whose artists or critics name it came 15 or more years after it.`}
             </div>
             <div className="sound-value legacy-followers">
               {drawnOn.top.map(([id, how]) => {

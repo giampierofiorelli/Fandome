@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { legacyOf } from '../lib/legacy'
-import { DESCRIBED_ALBUMS, FINDINGS } from '../lib/findings'
+import { DESCRIBED_ALBUMS, FINDINGS, LATE, NICHE, REVIVALS, medianOf } from '../lib/findings'
 import { albumById, artistById } from '../lib/util'
 import { AlbumCover } from '../components/ui'
 
@@ -43,6 +43,83 @@ export default function FindingsPage() {
           )
         })}
       </div>
+
+      {LATE.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>Recognised late</h2>
+          </div>
+          <p className="muted small findings-intro">Albums few drew on in their first ten years, and many did fifteen or more years later: the artists and critics who name them came a generation after.</p>
+          <div className="glass-card list">
+            {LATE.map((l) => {
+              const album = albumById(l.albumId)
+              if (!album) return null
+              return (
+                <Link key={l.albumId} to={`/album/${l.albumId}`} className="row-item">
+                  <AlbumCover album={album} size={48} />
+                  <span className="grow">
+                    <strong>{album.title}</strong>
+                    <span className="muted small block">{artistById(album.artistId)?.name}</span>
+                    <span className="small block">
+                      <b>{l.n - l.early} of {l.n}</b> <span className="muted">drew on it 15+ years later; half came {l.medianLag} or more years after</span>
+                    </span>
+                  </span>
+                </Link>
+              )
+            })}
+          </div>
+        </>
+      )}
+
+      {REVIVALS.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>Sounds that came back</h2>
+          </div>
+          <div className="glass-card findings-head">
+            <div className="bignum">{medianOf(REVIVALS.map((r) => r.gap))} years</div>
+            <div className="muted small">is the typical gap (the median of {REVIVALS.length} revivals in our data) between a sound’s first peak and its return, carried mostly by artists who started after the first peak. Critics speak of a 20–30-year cycle: our data measures it.</div>
+          </div>
+          <div className="glass-card list">
+            {REVIVALS.slice(0, 12).map((r) => (
+              <div key={r.genre} className="row-item">
+                <span className="grow">
+                  <strong>{r.label}</strong>
+                  <span className="small block">
+                    {r.peak[0]} <b>{pct(r.peak[1])}</b> → {r.low[0]} <b>{pct(r.low[1])}</b> → {r.back[0]} <b>{pct(r.back[1])}</b>
+                  </span>
+                  <span className="muted small block">of the albums we describe, back after {r.gap} years</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {NICHE.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>From niche to mainstream</h2>
+          </div>
+          <div className="glass-card findings-head">
+            <div className="bignum">{medianOf(NICHE.map((n) => n.lag))} years</div>
+            <div className="muted small">is the typical time (the median of {NICHE.length} genres) from 10% of the less commercial albums we describe to 10% of the most commercial ones.</div>
+          </div>
+          <div className="glass-card list">
+            {NICHE.map((n) => (
+              <div key={n.genre} className="row-item">
+                <span className="grow">
+                  <strong>{n.label}</strong>
+                  <span className="muted small block">
+                    niche {n.niche} → mainstream {n.mainstream} · {n.lag ? `${n.lag} years` : 'the same years'}
+                  </span>
+                </span>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+      <p className="muted small findings-intro">Read from the albums described so far: the shares follow which artists we have described, and grow surer as the catalogue grows.</p>
     </>
   )
 }

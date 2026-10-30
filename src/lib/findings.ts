@@ -6,6 +6,15 @@ import influence from '../data/influence.json'
 export interface StoredFinding { albumId: string; year: number; trait: string; before: number; after: number; when: number; field: string[] }
 export const FINDINGS: StoredFinding[] = data.findings
 export const DESCRIBED_ALBUMS: number = data.described
+export interface StoredLate { albumId: string; n: number; early: number; medianLag: number }
+export interface StoredRevival { genre: string; label: string; peak: number[]; low: number[]; back: number[]; gap: number; newArtists: number }
+export interface StoredNiche { genre: string; label: string; niche: number; mainstream: number; lag: number }
+export const LATE: StoredLate[] = data.late
+export const REVIVALS: StoredRevival[] = data.revivals
+export const NICHE: StoredNiche[] = data.niche
+const lateByAlbum = new Map(LATE.map((l) => [l.albumId, l]))
+export const storedLate = (albumId: string) => lateByAlbum.get(albumId)
+export const medianOf = (xs: number[]) => [...xs].sort((a, b) => a - b)[Math.floor(xs.length / 2)]
 const byAlbum = new Map(FINDINGS.map((f) => [f.albumId, f]))
 export const storedFinding = (albumId: string) => byAlbum.get(albumId)
 

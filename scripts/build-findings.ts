@@ -5,6 +5,7 @@ import { albums } from '../src/data/seed'
 import { findingOf } from '../src/lib/legacy'
 import { DESCRIPTORS } from '../src/lib/descriptors'
 import { influenceOf } from '../src/lib/influence'
+import { lateRecognition, nicheToMainstream, revivals } from '../src/lib/patterns'
 
 const list = albums.flatMap((a) => {
   const f = findingOf(a.id)
@@ -12,7 +13,9 @@ const list = albums.flatMap((a) => {
   const { trait, before, after, when } = f.spread
   return [{ albumId: a.id, year: DESCRIPTORS[a.id]?.year ?? 0, trait, before, after, when, field: f.trace.field }]
 }).sort((x, y) => x.year - y.year || x.albumId.localeCompare(y.albumId))
-writeFileSync('src/data/findings.json', JSON.stringify({ described: Object.keys(DESCRIPTORS).length, findings: list }, null, 1) + '\n')
+const late = albums.flatMap((a) => lateRecognition(a.id) ?? []).sort((x, y) => (DESCRIPTORS[x.albumId].year ?? 0) - (DESCRIPTORS[y.albumId].year ?? 0))
+writeFileSync('src/data/findings.json', JSON.stringify({ described: Object.keys(DESCRIPTORS).length, findings: list, late, revivals: revivals(), niche: nicheToMainstream() }, null, 1) + '\n')
+console.log(`${late.length} recognised late, ${revivals().length} revivals, ${nicheToMainstream().length} niche-to-mainstream genres`)
 console.log(`${list.length} findings written to src/data/findings.json`)
 
 // The influence network: who draws on each album (the strongest six shown on its page), its standing among the
