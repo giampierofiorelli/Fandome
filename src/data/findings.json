@@ -1,5 +1,5 @@
 {
- "described": 1711,
+ "described": 1715,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -124,21 +124,10 @@
    ]
   },
   {
-   "albumId": "tozzi-gloria",
-   "year": 1979,
-   "trait": "Pop rock + Keyboards",
-   "before": 0.10638297872340426,
-   "after": 0.5357142857142857,
-   "when": 1986,
-   "field": [
-    "Pop"
-   ]
-  },
-  {
    "albumId": "buggles-theageofplastic",
    "year": 1980,
    "trait": "Synth-pop + Keyboards",
-   "before": 0.014084507042253521,
+   "before": 0.013888888888888888,
    "after": 0.5111111111111111,
    "when": 1984,
    "field": [
@@ -171,10 +160,22 @@
    ]
   },
   {
+   "albumId": "tff-thehurting",
+   "year": 1983,
+   "trait": "Programming",
+   "before": 0.0449438202247191,
+   "after": 0.5121951219512195,
+   "when": 1993,
+   "field": [
+    "Synth-pop",
+    "Pop"
+   ]
+  },
+  {
    "albumId": "tozzi-hurrah",
    "year": 1984,
    "trait": "Programming",
-   "before": 0.014492753623188406,
+   "before": 0.013888888888888888,
    "after": 0.3870967741935484,
    "when": 1994,
    "field": [
@@ -209,7 +210,7 @@
    "albumId": "roxette-joyride",
    "year": 1991,
    "trait": "Programming + String arrangements",
-   "before": 0.05921052631578947,
+   "before": 0.058823529411764705,
    "after": 0.3793103448275862,
    "when": 1998,
    "field": [
@@ -470,7 +471,7 @@
    "label": "Synth-pop",
    "peak": [
     1980,
-    0.3333333333333333
+    0.3277310924369748
    ],
    "low": [
     1995,
@@ -560,7 +561,7 @@
    "label": "Dance",
    "peak": [
     1989,
-    0.09090909090909091
+    0.09
    ],
    "low": [
     2016,
@@ -596,7 +597,7 @@
    "label": "New wave",
    "peak": [
     1977,
-    0.16666666666666666
+    0.1651376146788991
    ],
    "low": [
     2001,
@@ -740,7 +741,7 @@
    "label": "Dance-rock",
    "peak": [
     1977,
-    0.12962962962962962
+    0.12844036697247707
    ],
    "low": [
     2001,
@@ -762,7 +763,7 @@
    ],
    "low": [
     1989,
-    0.06060606060606061
+    0.06
    ],
    "back": [
     2004,
@@ -870,7 +871,7 @@
    ],
    "low": [
     1989,
-    0.030303030303030304
+    0.03
    ],
    "back": [
     2001,
@@ -884,7 +885,7 @@
    "label": "Contemporary pop/rock",
    "peak": [
     1980,
-    0.15384615384615385
+    0.15126050420168066
    ],
    "low": [
     2001,
@@ -924,11 +925,11 @@
    ],
    "low": [
     1980,
-    0.03418803418803419
+    0.03361344537815126
    ],
    "back": [
     1989,
-    0.09090909090909091
+    0.09
    ],
    "gap": 15,
    "newArtists": 0.8888888888888888
