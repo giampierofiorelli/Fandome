@@ -1,6 +1,18 @@
 {
- "described": 1490,
+ "described": 1524,
  "findings": [
+  {
+   "albumId": "battiato-fetus",
+   "year": 1972,
+   "trait": "Electronic + Synthesizers",
+   "before": 0.07692307692307693,
+   "after": 0.625,
+   "when": 1976,
+   "field": [
+    "Singer-songwriter",
+    "Electronic"
+   ]
+  },
   {
    "albumId": "kcandthesunshineband-doitgood",
    "year": 1974,
@@ -17,7 +29,7 @@
    "albumId": "koolandthegang-spiritoftheboogie",
    "year": 1975,
    "trait": "Funk + Synthesizers",
-   "before": 0.08333333333333333,
+   "before": 0.07692307692307693,
    "after": 0.7272727272727273,
    "when": 1982,
    "field": [
@@ -54,9 +66,9 @@
   {
    "albumId": "cerrone-cerronesparadise",
    "year": 1977,
-   "trait": "Electronic + Drums",
+   "trait": "Electronic + Bass guitar",
    "before": 0,
-   "after": 0.47058823529411764,
+   "after": 0.5294117647058824,
    "when": 1981,
    "field": [
     "Disco"
@@ -168,6 +180,18 @@
    ]
   },
   {
+   "albumId": "pumpkins-gish",
+   "year": 1991,
+   "trait": "Alternative rock + Electric guitar",
+   "before": 0.11764705882352941,
+   "after": 0.45,
+   "when": 1995,
+   "field": [
+    "Alternative",
+    "Rock"
+   ]
+  },
+  {
    "albumId": "u2-achtungbaby",
    "year": 1991,
    "trait": "Alternative/indie rock + Electric guitar",
@@ -194,11 +218,35 @@
    "year": 1994,
    "trait": "Trip-hop",
    "before": 0.03571428571428571,
-   "after": 0.45454545454545453,
+   "after": 0.46153846153846156,
    "when": 2004,
    "field": [
     "Electronic",
     "Alternative"
+   ]
+  },
+  {
+   "albumId": "britney-britney",
+   "year": 2001,
+   "trait": "Electropop",
+   "before": 0.03409090909090909,
+   "after": 0.4722222222222222,
+   "when": 2008,
+   "field": [
+    "Pop",
+    "Dance"
+   ]
+  },
+  {
+   "albumId": "gwenstefani-loveangelmusicbaby",
+   "year": 2004,
+   "trait": "Electropop + Synthesizers",
+   "before": 0.07894736842105263,
+   "after": 0.3888888888888889,
+   "when": 2008,
+   "field": [
+    "Pop",
+    "Dance"
    ]
   }
  ],
@@ -208,12 +256,6 @@
    "n": 6,
    "early": 1,
    "medianLag": 58
-  },
-  {
-   "albumId": "ella-ellafitzgeraldsingsthedukeellingtonsongbook",
-   "n": 6,
-   "early": 1,
-   "medianLag": 57
   },
   {
    "albumId": "billieholiday-ladyinsatin",
@@ -252,14 +294,26 @@
    "medianLag": 22
   },
   {
-   "albumId": "neilyoung-everybodyknowsthisisnowhere",
-   "n": 6,
+   "albumId": "byrds-sweetheartoftherodeo",
+   "n": 11,
+   "early": 1,
+   "medianLag": 20
+  },
+  {
+   "albumId": "scottwalker-scott2",
+   "n": 9,
    "early": 0,
    "medianLag": 27
   },
   {
-   "albumId": "scottwalker-scott4",
+   "albumId": "neilyoung-everybodyknowsthisisnowhere",
    "n": 8,
+   "early": 0,
+   "medianLag": 31
+  },
+  {
+   "albumId": "scottwalker-scott4",
+   "n": 9,
    "early": 0,
    "medianLag": 26
   },
@@ -277,15 +331,15 @@
   },
   {
    "albumId": "stevie-songsinthekeyoflife",
-   "n": 12,
+   "n": 13,
    "early": 0,
    "medianLag": 22
   },
   {
    "albumId": "fleetwood-rumours",
-   "n": 8,
+   "n": 9,
    "early": 0,
-   "medianLag": 46
+   "medianLag": 42
   },
   {
    "albumId": "suicide-suicide",
@@ -298,6 +352,12 @@
    "n": 7,
    "early": 0,
    "medianLag": 17
+  },
+  {
+   "albumId": "gangoffour-entertainment",
+   "n": 6,
+   "early": 1,
+   "medianLag": 27
   },
   {
    "albumId": "d-masses",
@@ -319,29 +379,29 @@
     0.13559322033898305
    ],
    "back": [
-    2016,
-    0.46153846153846156
+    2019,
+    0.4186046511627907
    ],
-   "gap": 42,
+   "gap": 45,
    "newArtists": 1
   },
   {
-   "genre": "hiphop",
-   "label": "Hip-hop",
+   "genre": "disco",
+   "label": "Disco",
    "peak": [
-    2001,
-    0.36
+    1974,
+    0.31343283582089554
    ],
    "low": [
-    2013,
-    0.17073170731707318
+    1998,
+    0.08333333333333333
    ],
    "back": [
-    2016,
-    0.4423076923076923
+    2022,
+    0.35294117647058826
    ],
-   "gap": 15,
-   "newArtists": 0.7391304347826086
+   "gap": 48,
+   "newArtists": 1
   },
   {
    "genre": "synthpop",
@@ -355,28 +415,28 @@
     0.0707070707070707
    ],
    "back": [
-    2013,
-    0.34146341463414637
+    2022,
+    0.3333333333333333
    ],
-   "gap": 33,
-   "newArtists": 0.8571428571428571
+   "gap": 42,
+   "newArtists": 1
   },
   {
-   "genre": "disco",
-   "label": "Disco",
+   "genre": "adultcontemporary",
+   "label": "Adult contemporary",
    "peak": [
-    1974,
-    0.31343283582089554
+    1965,
+    0.0967741935483871
    ],
    "low": [
-    1998,
-    0.08433734939759036
+    1977,
+    0.03
    ],
    "back": [
-    2022,
-    0.35294117647058826
+    2001,
+    0.25
    ],
-   "gap": 48,
+   "gap": 36,
    "newArtists": 1
   },
   {
@@ -384,35 +444,17 @@
    "label": "Funk",
    "peak": [
     1968,
-    0.10526315789473684
+    0.1111111111111111
    ],
    "low": [
     2010,
-    0.04081632653061224
+    0.038461538461538464
    ],
    "back": [
     2022,
     0.2549019607843137
    ],
    "gap": 54,
-   "newArtists": 1
-  },
-  {
-   "genre": "soul",
-   "label": "Soul",
-   "peak": [
-    1971,
-    0.2054794520547945
-   ],
-   "low": [
-    2013,
-    0.0975609756097561
-   ],
-   "back": [
-    2016,
-    0.3076923076923077
-   ],
-   "gap": 45,
    "newArtists": 1
   },
   {
@@ -424,7 +466,7 @@
    ],
    "low": [
     2016,
-    0.038461538461538464
+    0.034482758620689655
    ],
    "back": [
     2022,
@@ -434,22 +476,40 @@
    "newArtists": 1
   },
   {
+   "genre": "soul",
+   "label": "Soul",
+   "peak": [
+    1974,
+    0.3283582089552239
+   ],
+   "low": [
+    1995,
+    0.1111111111111111
+   ],
+   "back": [
+    2016,
+    0.29310344827586204
+   ],
+   "gap": 42,
+   "newArtists": 1
+  },
+  {
    "genre": "contemporaryrnb",
    "label": "Contemporary R&B",
    "peak": [
     2001,
-    0.24
+    0.23076923076923078
    ],
    "low": [
     2010,
-    0.10204081632653061
+    0.09615384615384616
    ],
    "back": [
     2016,
-    0.28846153846153844
+    0.27586206896551724
    ],
    "gap": 15,
-   "newArtists": 0.6666666666666666
+   "newArtists": 0.6875
   },
   {
    "genre": "ambient",
@@ -470,24 +530,6 @@
    "newArtists": 1
   },
   {
-   "genre": "rock",
-   "label": "Rock",
-   "peak": [
-    1968,
-    0.3157894736842105
-   ],
-   "low": [
-    2004,
-    0.125
-   ],
-   "back": [
-    2007,
-    0.2777777777777778
-   ],
-   "gap": 39,
-   "newArtists": 1
-  },
-  {
    "genre": "newwave",
    "label": "New wave",
    "peak": [
@@ -500,17 +542,53 @@
    ],
    "back": [
     2004,
-    0.15
+    0.15555555555555556
    ],
    "gap": 27,
+   "newArtists": 1
+  },
+  {
+   "genre": "rock",
+   "label": "Rock",
+   "peak": [
+    1968,
+    0.28888888888888886
+   ],
+   "low": [
+    2004,
+    0.13333333333333333
+   ],
+   "back": [
+    2007,
+    0.28205128205128205
+   ],
+   "gap": 39,
+   "newArtists": 1
+  },
+  {
+   "genre": "jazz",
+   "label": "Jazz",
+   "peak": [
+    1965,
+    0.1935483870967742
+   ],
+   "low": [
+    1983,
+    0.0078125
+   ],
+   "back": [
+    2013,
+    0.15217391304347827
+   ],
+   "gap": 48,
    "newArtists": 1
   },
   {
    "genre": "blues",
    "label": "Blues",
    "peak": [
-    1968,
-    0.15789473684210525
+    1965,
+    0.12903225806451613
    ],
    "low": [
     1983,
@@ -518,17 +596,17 @@
    ],
    "back": [
     2007,
-    0.16666666666666666
+    0.15384615384615385
    ],
-   "gap": 39,
+   "gap": 42,
    "newArtists": 1
   },
   {
    "genre": "europop",
    "label": "Europop",
    "peak": [
-    1974,
-    0.08955223880597014
+    1965,
+    0.0967741935483871
    ],
    "low": [
     1980,
@@ -536,28 +614,64 @@
    ],
    "back": [
     2010,
-    0.16326530612244897
+    0.15384615384615385
    ],
-   "gap": 36,
+   "gap": 45,
    "newArtists": 1
   },
   {
-   "genre": "jazz",
-   "label": "Jazz",
+   "genre": "folk",
+   "label": "Folk",
    "peak": [
-    1968,
-    0.15789473684210525
+    1965,
+    0.1935483870967742
    ],
    "low": [
-    1983,
-    0.0078125
+    1980,
+    0.008849557522123894
    ],
    "back": [
-    2001,
-    0.14
+    2007,
+    0.1282051282051282
    ],
-   "gap": 33,
-   "newArtists": 0.8571428571428571
+   "gap": 42,
+   "newArtists": 1
+  },
+  {
+   "genre": "gospel",
+   "label": "Gospel",
+   "peak": [
+    1968,
+    0.08888888888888889
+   ],
+   "low": [
+    1977,
+    0
+   ],
+   "back": [
+    2022,
+    0.11764705882352941
+   ],
+   "gap": 54,
+   "newArtists": 1
+  },
+  {
+   "genre": "softrock",
+   "label": "Soft rock",
+   "peak": [
+    1968,
+    0.08888888888888889
+   ],
+   "low": [
+    1992,
+    0.039603960396039604
+   ],
+   "back": [
+    2007,
+    0.15384615384615385
+   ],
+   "gap": 39,
+   "newArtists": 1
   },
   {
    "genre": "dancerock",
@@ -568,31 +682,31 @@
    ],
    "low": [
     2001,
-    0.02
+    0.019230769230769232
    ],
    "back": [
     2004,
-    0.15
+    0.13333333333333333
    ],
    "gap": 27,
    "newArtists": 1
   },
   {
-   "genre": "softrock",
-   "label": "Soft rock",
+   "genre": "country",
+   "label": "Country",
    "peak": [
     1968,
-    0.10526315789473684
+    0.15555555555555556
    ],
    "low": [
-    1992,
-    0.039603960396039604
+    1980,
+    0
    ],
    "back": [
-    2007,
-    0.16666666666666666
+    2013,
+    0.10869565217391304
    ],
-   "gap": 39,
+   "gap": 45,
    "newArtists": 1
   },
   {
@@ -600,7 +714,7 @@
    "label": "Blues rock",
    "peak": [
     1968,
-    0.10526315789473684
+    0.08888888888888889
    ],
    "low": [
     1998,
@@ -608,43 +722,7 @@
    ],
    "back": [
     2007,
-    0.1111111111111111
-   ],
-   "gap": 39,
-   "newArtists": 1
-  },
-  {
-   "genre": "italianpop",
-   "label": "Italian pop",
-   "peak": [
-    1974,
-    0.1044776119402985
-   ],
-   "low": [
-    1989,
-    0.041666666666666664
-   ],
-   "back": [
-    2004,
-    0.15
-   ],
-   "gap": 30,
-   "newArtists": 1
-  },
-  {
-   "genre": "folk",
-   "label": "Folk",
-   "peak": [
-    1968,
-    0.18421052631578946
-   ],
-   "low": [
-    1980,
-    0.008849557522123894
-   ],
-   "back": [
-    2007,
-    0.1111111111111111
+    0.10256410256410256
    ],
    "gap": 39,
    "newArtists": 1
@@ -668,55 +746,37 @@
    "newArtists": 1
   },
   {
-   "genre": "country",
-   "label": "Country",
+   "genre": "arenarock",
+   "label": "Arena rock",
    "peak": [
-    1968,
-    0.13157894736842105
+    1974,
+    0.08955223880597014
    ],
    "low": [
-    1980,
+    1998,
     0
    ],
    "back": [
-    2022,
-    0.09803921568627451
+    2001,
+    0.09615384615384616
    ],
-   "gap": 54,
+   "gap": 27,
    "newArtists": 1
   },
   {
-   "genre": "contemporarypoprock",
-   "label": "Contemporary pop/rock",
+   "genre": "italianpop",
+   "label": "Italian pop",
    "peak": [
-    1980,
-    0.1592920353982301
+    1965,
+    0.0967741935483871
    ],
    "low": [
-    2001,
-    0.06
+    1989,
+    0.041666666666666664
    ],
    "back": [
     2004,
-    0.15
-   ],
-   "gap": 24,
-   "newArtists": 0.8333333333333334
-  },
-  {
-   "genre": "psychedelicrock",
-   "label": "Psychedelic rock",
-   "peak": [
-    1968,
-    0.23684210526315788
-   ],
-   "low": [
-    1977,
-    0
-   ],
-   "back": [
-    2007,
-    0.08333333333333333
+    0.13333333333333333
    ],
    "gap": 39,
    "newArtists": 1
@@ -730,32 +790,32 @@
    ],
    "low": [
     2001,
-    0.04
+    0.038461538461538464
    ],
    "back": [
-    2013,
-    0.12195121951219512
+    2007,
+    0.1282051282051282
    ],
-   "gap": 21,
+   "gap": 15,
    "newArtists": 0.8
   },
   {
-   "genre": "arenarock",
-   "label": "Arena rock",
+   "genre": "contemporarypoprock",
+   "label": "Contemporary pop/rock",
    "peak": [
-    1974,
-    0.08955223880597014
+    1980,
+    0.1592920353982301
    ],
    "low": [
-    1998,
-    0
+    2001,
+    0.057692307692307696
    ],
    "back": [
-    2001,
-    0.08
+    2004,
+    0.13333333333333333
    ],
-   "gap": 27,
-   "newArtists": 1
+   "gap": 24,
+   "newArtists": 0.8333333333333334
   },
   {
    "genre": "triphop",
@@ -776,24 +836,6 @@
    "newArtists": 1
   },
   {
-   "genre": "adultalternativepoprock",
-   "label": "Adult alternative pop/rock",
-   "peak": [
-    1995,
-    0.10101010101010101
-   ],
-   "low": [
-    2007,
-    0.027777777777777776
-   ],
-   "back": [
-    2013,
-    0.0975609756097561
-   ],
-   "gap": 18,
-   "newArtists": 0.75
-  },
-  {
    "genre": "indierock",
    "label": "Indie rock",
    "peak": [
@@ -801,8 +843,8 @@
     0.1111111111111111
    ],
    "low": [
-    2013,
-    0.04878048780487805
+    2016,
+    0.05172413793103448
    ],
    "back": [
     2022,
@@ -815,8 +857,8 @@
    "genre": "artrock",
    "label": "Art rock",
    "peak": [
-    1968,
-    0.23684210526315788
+    1965,
+    0.12903225806451613
    ],
    "low": [
     1989,
@@ -824,10 +866,28 @@
    ],
    "back": [
     2001,
-    0.1
+    0.09615384615384616
    ],
-   "gap": 33,
+   "gap": 36,
    "newArtists": 1
+  },
+  {
+   "genre": "adultalternativepoprock",
+   "label": "Adult alternative pop/rock",
+   "peak": [
+    1995,
+    0.10101010101010101
+   ],
+   "low": [
+    2007,
+    0.02564102564102564
+   ],
+   "back": [
+    2013,
+    0.08695652173913043
+   ],
+   "gap": 18,
+   "newArtists": 0.75
   },
   {
    "genre": "heavymetal",
@@ -849,6 +909,62 @@
   }
  ],
  "niche": [
+  {
+   "genre": "folk",
+   "label": "Folk",
+   "niche": 1968,
+   "mainstream": 2013,
+   "lag": 45
+  },
+  {
+   "genre": "pop",
+   "label": "Pop",
+   "niche": 1968,
+   "mainstream": 1977,
+   "lag": 9
+  },
+  {
+   "genre": "funk",
+   "label": "Funk",
+   "niche": 1968,
+   "mainstream": 1977,
+   "lag": 9
+  },
+  {
+   "genre": "jazz",
+   "label": "Jazz",
+   "niche": 1968,
+   "mainstream": 2013,
+   "lag": 45
+  },
+  {
+   "genre": "country",
+   "label": "Country",
+   "niche": 1968,
+   "mainstream": 2013,
+   "lag": 45
+  },
+  {
+   "genre": "electronic",
+   "label": "Electronic",
+   "niche": 1968,
+   "mainstream": 1977,
+   "lag": 9
+  },
+  {
+   "genre": "rock",
+   "label": "Rock",
+   "niche": 1968,
+   "mainstream": 1980,
+   "lag": 12
+  },
+  {
+   "genre": "albumrock",
+   "label": "Album rock",
+   "niche": 1968,
+   "mainstream": 1980,
+   "lag": 12
+  },
   {
    "genre": "rnb",
    "label": "R&B",
