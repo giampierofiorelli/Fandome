@@ -2,6 +2,10 @@
 // Album-specific influences stay in the descriptor column `influenced_by`. Used by "If you like this artist":
 // a named artist that is described on Fandome gets one of the reserved places. Keep the source.
 export const ARTIST_INFLUENCES: Record<string, { names: string[]; source: string }> = {
+  miamartini: {
+    names: ['Joni Mitchell', 'Rickie Lee Jones', 'Paul Simon', 'Keith Jarrett', 'Gabriella Ferri'],
+    source: 'Interview with Maurizio Gregorini (her last), reproduced by Telecorriere: "i classici della nostra generazione", Jarrett "che sento a manetta", "la passione viscerale che nutro per Gabriella Ferri"',
+  },
   rinogaetano: {
     names: ['Enzo Jannacci', 'Fabrizio De André', 'Ricky Gianco', 'I Gufi', 'Bob Dylan', 'The Beatles'],
     source: 'rinogaetano.it (official biography): his inspirations in the formative years',

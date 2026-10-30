@@ -1,5 +1,5 @@
 {
- "described": 1703,
+ "described": 1707,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -102,9 +102,9 @@
   {
    "albumId": "tozzi-enellariatiamo",
    "year": 1977,
-   "trait": "Pop + Keyboards",
-   "before": 0.09523809523809523,
-   "after": 0.6065573770491803,
+   "trait": "Pop rock + Keyboards",
+   "before": 0.08695652173913043,
+   "after": 0.45901639344262296,
    "when": 1984,
    "field": [
     "Pop"
@@ -132,30 +132,6 @@
    "field": [
     "Pop",
     "Rock"
-   ]
-  },
-  {
-   "albumId": "tozzi-gloria",
-   "year": 1979,
-   "trait": "Pop rock + Keyboards",
-   "before": 0.12195121951219512,
-   "after": 0.5357142857142857,
-   "when": 1986,
-   "field": [
-    "Pop"
-   ]
-  },
-  {
-   "albumId": "buggles-theageofplastic",
-   "year": 1980,
-   "trait": "Synth-pop + Keyboards",
-   "before": 0.015151515151515152,
-   "after": 0.5111111111111111,
-   "when": 1984,
-   "field": [
-    "Synth-pop",
-    "Pop",
-    "Prog"
    ]
   },
   {
@@ -463,7 +439,7 @@
    "label": "R&B",
    "peak": [
     1974,
-    0.3194444444444444
+    0.3150684931506849
    ],
    "low": [
     1986,
@@ -517,7 +493,7 @@
    "label": "Disco",
    "peak": [
     1974,
-    0.2916666666666667
+    0.2876712328767123
    ],
    "low": [
     1998,
@@ -535,7 +511,7 @@
    "label": "Soul",
    "peak": [
     1974,
-    0.3055555555555556
+    0.3013698630136986
    ],
    "low": [
     1995,
@@ -661,7 +637,7 @@
    "label": "Europop",
    "peak": [
     1974,
-    0.08333333333333333
+    0.0821917808219178
    ],
    "low": [
     1980,
@@ -690,6 +666,24 @@
     0.125
    ],
    "gap": 54,
+   "newArtists": 1
+  },
+  {
+   "genre": "songwriter",
+   "label": "Singer-songwriter",
+   "peak": [
+    1971,
+    0.09302325581395349
+   ],
+   "low": [
+    2001,
+    0
+   ],
+   "back": [
+    2022,
+    0.125
+   ],
+   "gap": 51,
    "newArtists": 1
   },
   {
@@ -787,7 +781,7 @@
    "label": "Soft rock",
    "peak": [
     1974,
-    0.09722222222222222
+    0.0958904109589041
    ],
    "low": [
     1992,
@@ -805,7 +799,7 @@
    "label": "Arena rock",
    "peak": [
     1974,
-    0.08333333333333333
+    0.0821917808219178
    ],
    "low": [
     1998,
@@ -931,7 +925,7 @@
    "label": "Heavy metal",
    "peak": [
     1974,
-    0.1111111111111111
+    0.1095890410958904
    ],
    "low": [
     1980,

@@ -468,7 +468,7 @@ const ROWS: Row[] = [
   ['lrdl', 'La Rappresentante di Lista', '#d97a3f', 'Theatrical, joyful Italian pop', [['Go Go Diva', 2018], ['My Mamma', 2022]]],
   ['madame', 'Madame', '#7a7a9a', 'Rap, poetry and a unique voice', [['Madame', 2021], ['L’amore', 2023], ['Disincanto', 2026]]],
   ['maluma', 'Maluma', '#3fa36f', 'Reggaeton from Medellín', [['F.A.M.E.', 2018], ['11:11', 2019], ['Papi Juancho', 2020], ['The Love & Sex Tape', 2022], ['Don Juan', 2023]]],
-  ['miamartini', 'Mia Martini', '#a35a6f', 'Almeno tu nell’universo, forever', []],
+  ['miamartini', 'Mia Martini', '#a35a6f', 'Almeno tu nell’universo, forever', [['Oltre la collina', 1971], ['Nel mondo, una cosa', 1972], ['Il giorno dopo', 1973], ['È proprio come vivere', 1974], ['Sensi e controsensi', 1975], ['Un altro giorno con me', 1975], ['Che vuoi che sia... se t’ho aspettato tanto', 1976], ['Per amarti', 1977], ['Danza', 1978], ['Mimì', 1981], ['Quante volte... ho contato le stelle', 1982], ['Martini Mia...', 1989], ['La mia razza', 1990], ['Lacrime', 1992], ['La musica che mi gira intorno', 1994]]],
   ['nickcave', 'Nick Cave & The Bad Seeds', '#3f3f4a', 'Dark ballads and red right hands', [['Tender Prey', 1988], ['The Boatman’s Call', 1997], ['Abattoir Blues / The Lyre of Orpheus', 2004], ['Push the Sky Away', 2013], ['Skeleton Tree', 2016], ['Ghosteen', 2019], ['Wild God', 2024]]],
   ['noemi', 'Noemi', '#d94a4a', 'Red hair, soulful Italian voice', [['Sulla mia pelle', 2009], ['RossoNoemi', 2011], ['Metamorfosi', 2021]]],
   ['paolachiara', 'Paola & Chiara', '#e0a3d9', 'Vamos a bailar, sisters of pop', [['Ci chiamano bambine', 1997], ['Giornata storica', 1998], ['Television', 2000], ['Festival', 2002], ['Blu', 2004], ['Win the Game', 2007], ['Milleluci', 2010], ['Giungla', 2013]]],
