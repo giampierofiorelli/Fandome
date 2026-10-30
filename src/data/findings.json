@@ -1,5 +1,5 @@
 {
- "described": 1689,
+ "described": 1693,
  "findings": [
   {
    "albumId": "bowie-hunkydory",
@@ -72,19 +72,6 @@
    "when": 1981,
    "field": [
     "Disco"
-   ]
-  },
-  {
-   "albumId": "koolandthegang-theforce",
-   "year": 1977,
-   "trait": "Disco + Synthesizers",
-   "before": 0.045454545454545456,
-   "after": 0.5217391304347826,
-   "when": 1981,
-   "field": [
-    "Funk",
-    "Soul",
-    "Jazz"
    ]
   },
   {
@@ -272,6 +259,18 @@
    "field": [
     "Electronic",
     "Alternative"
+   ]
+  },
+  {
+   "albumId": "carmenconsoli-mediamenteisterica",
+   "year": 1998,
+   "trait": "Pro Tools",
+   "before": 0,
+   "after": 0.3333333333333333,
+   "when": 2002,
+   "field": [
+    "Rock",
+    "Singer-songwriter"
    ]
   },
   {
@@ -497,7 +496,7 @@
    ],
    "low": [
     1995,
-    0.07
+    0.06862745098039216
    ],
    "back": [
     2022,
@@ -533,7 +532,7 @@
    ],
    "low": [
     1998,
-    0.08235294117647059
+    0.08139534883720931
    ],
    "back": [
     2022,
@@ -551,7 +550,7 @@
    ],
    "low": [
     1995,
-    0.11
+    0.10784313725490197
    ],
    "back": [
     2016,
@@ -633,24 +632,6 @@
    "newArtists": 1
   },
   {
-   "genre": "blues",
-   "label": "Blues",
-   "peak": [
-    1965,
-    0.20408163265306123
-   ],
-   "low": [
-    1992,
-    0.029411764705882353
-   ],
-   "back": [
-    2007,
-    0.1590909090909091
-   ],
-   "gap": 42,
-   "newArtists": 1
-  },
-  {
    "genre": "jazz",
    "label": "Jazz",
    "peak": [
@@ -705,6 +686,24 @@
    "newArtists": 1
   },
   {
+   "genre": "blues",
+   "label": "Blues",
+   "peak": [
+    1965,
+    0.20408163265306123
+   ],
+   "low": [
+    1983,
+    0.038461538461538464
+   ],
+   "back": [
+    2007,
+    0.1590909090909091
+   ],
+   "gap": 42,
+   "newArtists": 1
+  },
+  {
    "genre": "folk",
    "label": "Folk",
    "peak": [
@@ -727,7 +726,7 @@
    "label": "Ambient",
    "peak": [
     1995,
-    0.13
+    0.12745098039215685
    ],
    "low": [
     2007,
@@ -777,6 +776,24 @@
    "newArtists": 0.8333333333333334
   },
   {
+   "genre": "softrock",
+   "label": "Soft rock",
+   "peak": [
+    1974,
+    0.1
+   ],
+   "low": [
+    1992,
+    0.038834951456310676
+   ],
+   "back": [
+    2007,
+    0.13636363636363635
+   ],
+   "gap": 33,
+   "newArtists": 1
+  },
+  {
    "genre": "indiepop",
    "label": "Indie pop",
    "peak": [
@@ -793,24 +810,6 @@
    ],
    "gap": 15,
    "newArtists": 0.8571428571428571
-  },
-  {
-   "genre": "softrock",
-   "label": "Soft rock",
-   "peak": [
-    1974,
-    0.1
-   ],
-   "low": [
-    1992,
-    0.0392156862745098
-   ],
-   "back": [
-    2007,
-    0.13636363636363635
-   ],
-   "gap": 33,
-   "newArtists": 1
   },
   {
    "genre": "arenarock",
@@ -853,7 +852,7 @@
    "label": "Techno",
    "peak": [
     1992,
-    0.12745098039215685
+    0.1262135922330097
    ],
    "low": [
     2016,
@@ -862,24 +861,6 @@
    "back": [
     2022,
     0.08333333333333333
-   ],
-   "gap": 30,
-   "newArtists": 1
-  },
-  {
-   "genre": "italianpop",
-   "label": "Italian pop",
-   "peak": [
-    1974,
-    0.1
-   ],
-   "low": [
-    1995,
-    0.05
-   ],
-   "back": [
-    2004,
-    0.125
    ],
    "gap": 30,
    "newArtists": 1
@@ -943,7 +924,7 @@
    "label": "Adult alternative pop/rock",
    "peak": [
     1995,
-    0.1
+    0.10784313725490197
    ],
    "low": [
     2007,
@@ -979,7 +960,7 @@
    "label": "Electronica",
    "peak": [
     1995,
-    0.17
+    0.16666666666666666
    ],
    "low": [
     2016,
@@ -1000,6 +981,13 @@
    "niche": 1968,
    "mainstream": 2013,
    "lag": 45
+  },
+  {
+   "genre": "blues",
+   "label": "Blues",
+   "niche": 1968,
+   "mainstream": 1995,
+   "lag": 27
   },
   {
    "genre": "pop",
@@ -1140,6 +1128,13 @@
    "niche": 1983,
    "mainstream": 2007,
    "lag": 24
+  },
+  {
+   "genre": "worldmusic",
+   "label": "World music",
+   "niche": 1983,
+   "mainstream": 1995,
+   "lag": 12
   },
   {
    "genre": "alternativepoprock",
