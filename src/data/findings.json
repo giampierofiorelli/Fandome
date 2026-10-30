@@ -1,0 +1,264 @@
+{
+ "described": 1455,
+ "findings": [
+  {
+   "albumId": "kcandthesunshineband-doitgood",
+   "year": 1974,
+   "trait": "Disco",
+   "before": 0,
+   "after": 0.8333333333333334,
+   "when": 1978,
+   "field": [
+    "Disco",
+    "Funk"
+   ]
+  },
+  {
+   "albumId": "blondie-blondie",
+   "year": 1976,
+   "trait": "New wave",
+   "before": 0,
+   "after": 0.5,
+   "when": 1980,
+   "field": [
+    "Rock",
+    "Punk"
+   ]
+  },
+  {
+   "albumId": "tozzi-enellariatiamo",
+   "year": 1977,
+   "trait": "Pop + Saxophone",
+   "before": 0.025,
+   "after": 0.4262295081967213,
+   "when": 1984,
+   "field": [
+    "Pop"
+   ]
+  },
+  {
+   "albumId": "kraftwerk-themanmachine",
+   "year": 1978,
+   "trait": "Synth-pop + Synthesizers",
+   "before": 0,
+   "after": 0.8787878787878788,
+   "when": 1982,
+   "field": [
+    "Electronic",
+    "Synth-pop"
+   ]
+  },
+  {
+   "albumId": "talkingheads-moresongsaboutbuildingsandfood",
+   "year": 1978,
+   "trait": "New wave",
+   "before": 0.0196078431372549,
+   "after": 0.47368421052631576,
+   "when": 1979,
+   "field": [
+    "Alternative",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "rettore-brividodivino",
+   "year": 1979,
+   "trait": "Synth-pop",
+   "before": 0,
+   "after": 0.37209302325581395,
+   "when": 1986,
+   "field": [
+    "Pop",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "ultravox-vienna",
+   "year": 1980,
+   "trait": "Synth-pop + Synthesizers",
+   "before": 0.10144927536231885,
+   "after": 0.4411764705882353,
+   "when": 1981,
+   "field": [
+    "Synth-pop",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "humanleague-dare",
+   "year": 1981,
+   "trait": "Synth programming",
+   "before": 0,
+   "after": 0.4782608695652174,
+   "when": 1985,
+   "field": [
+    "Synth-pop"
+   ]
+  },
+  {
+   "albumId": "yazoo-youandmeboth",
+   "year": 1983,
+   "trait": "Drum programming + Keyboards",
+   "before": 0.10714285714285714,
+   "after": 0.45454545454545453,
+   "when": 1984,
+   "field": [
+    "Synth-pop"
+   ]
+  },
+  {
+   "albumId": "depeche-101",
+   "year": 1989,
+   "trait": "Alternative pop/rock + Keyboards",
+   "before": 0.06153846153846154,
+   "after": 0.3333333333333333,
+   "when": 1996,
+   "field": [
+    "Synth-pop",
+    "Alternative"
+   ]
+  },
+  {
+   "albumId": "kylie-rhythmoflove",
+   "year": 1990,
+   "trait": "House",
+   "before": 0.05,
+   "after": 0.3023255813953488,
+   "when": 1997,
+   "field": [
+    "Pop",
+    "Dance"
+   ]
+  },
+  {
+   "albumId": "nirvana-nevermind",
+   "year": 1991,
+   "trait": "Alternative/indie rock + Electric guitar",
+   "before": 0.10714285714285714,
+   "after": 0.43902439024390244,
+   "when": 1995,
+   "field": [
+    "Alternative",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "pearljam-ten",
+   "year": 1991,
+   "trait": "Alternative rock + Electric guitar",
+   "before": 0.11764705882352941,
+   "after": 0.45,
+   "when": 1995,
+   "field": [
+    "Rock",
+    "Alternative"
+   ]
+  },
+  {
+   "albumId": "pumpkins-gish",
+   "year": 1991,
+   "trait": "Alternative rock + Electric guitar",
+   "before": 0.11764705882352941,
+   "after": 0.45,
+   "when": 1995,
+   "field": [
+    "Alternative",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "roxette-joyride",
+   "year": 1991,
+   "trait": "Programming + String arrangements",
+   "before": 0.05921052631578947,
+   "after": 0.38181818181818183,
+   "when": 1998,
+   "field": [
+    "Pop",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "u2-achtungbaby",
+   "year": 1991,
+   "trait": "Alternative/indie rock + Electric guitar",
+   "before": 0.08571428571428572,
+   "after": 0.5161290322580645,
+   "when": 1995,
+   "field": [
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "d-sofad",
+   "year": 1993,
+   "trait": "Alternative/indie rock + Programming",
+   "before": 0,
+   "after": 0.3125,
+   "when": 1997,
+   "field": [
+    "Synth-pop",
+    "Alternative"
+   ]
+  },
+  {
+   "albumId": "psb-bilingual",
+   "year": 1996,
+   "trait": "Disco + Sampling",
+   "before": 0.045454545454545456,
+   "after": 0.3,
+   "when": 2003,
+   "field": [
+    "Synth-pop",
+    "Dance"
+   ]
+  },
+  {
+   "albumId": "subsonica-amorematico",
+   "year": 2002,
+   "trait": "Electropop",
+   "before": 0.011764705882352941,
+   "after": 0.2857142857142857,
+   "when": 2012,
+   "field": [
+    "Electronic",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "mariah-theemancipationofmimi",
+   "year": 2005,
+   "trait": "Contemporary R&B + Sampling",
+   "before": 0.11320754716981132,
+   "after": 0.4,
+   "when": 2006,
+   "field": [
+    "Pop",
+    "R&B"
+   ]
+  },
+  {
+   "albumId": "robyn-robyn",
+   "year": 2005,
+   "trait": "Electropop + Synthesizers",
+   "before": 0.08536585365853659,
+   "after": 0.35,
+   "when": 2015,
+   "field": [
+    "Pop",
+    "Electronic"
+   ]
+  },
+  {
+   "albumId": "royksopp-theunderstanding",
+   "year": 2005,
+   "trait": "Electropop + Synthesizers",
+   "before": 0.034482758620689655,
+   "after": 0.3,
+   "when": 2012,
+   "field": [
+    "Electronic"
+   ]
+  }
+ ]
+}

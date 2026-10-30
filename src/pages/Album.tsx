@@ -22,6 +22,7 @@ import { ESSENTIAL_LABEL, essentialAlbums } from '../lib/essentials'
 import { sceneOf } from '../data/scenes'
 import { coversOf } from '../data/covers'
 import { legacyOf, traceOf } from '../lib/legacy'
+import { DESCRIBED_ALBUMS, storedFinding } from '../lib/findings'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -70,57 +71,81 @@ function CoverLines({ albumId }: { albumId: string }) {
 const shownSources = (text: string) =>
   text.split(/\s+\|\s+/).filter((x) => !/wikipedia/i.test(x)).map((x) => x.replace(/\s*https?:\/\/\S+/g, '').trim()).filter(Boolean).join(' | ')
 
-// What the album left behind: the legacy score from sources, and, next to it, how its new traits spread in the
-// albums we describe from its area afterwards (a trace in the data, not a proof of cause).
+// What the album left behind: the legacy score from sources, and how its new traits spread in the albums we
+// describe from its area afterwards (a trace in the data, not a proof of cause).
+// "Fandome's data shows" (owner, Oct 2026): when our own analysis finds a pioneer (findingOf), the page says so by
+// itself, labelled as ours, even where no critic has said it.
 function LegacyBox({ albumId }: { albumId: string }) {
   const legacy = legacyOf(albumId)
-  if (!legacy || legacy.legacy < 3) return null
+  const finding = storedFinding(albumId)
+  const sourced = legacy && legacy.legacy >= 3 ? legacy : undefined
+  if (!sourced && !finding) return null
   const trace = traceOf(albumId)
-  const spread = trace?.spread.slice(0, 4) ?? []
+  const head = (finding && trace?.spread.find((s) => s.trait === finding.trait)) || trace?.spread[0]
+  const others = (trace?.spread ?? []).filter((s) => s.trait !== head?.trait).slice(0, 3)
+  const field = trace?.field.join(' and ').toLowerCase()
   const pct = (x: number) => `${Math.round(100 * x)}%`
+  const album = albumById(albumId)!
+  const artistName = artistById(album.artistId)?.name
   return (
     <>
       <div className="section-head">
         <h2>What it left behind</h2>
       </div>
       <div className="sound-facts glass-card">
-        <div className="sound-row">
-          <div className="sound-label">Legacy</div>
-          <div className="sound-value">
-            <span className="legacy-dots" aria-label={`${legacy.legacy} out of 5`}>
-              {[1, 2, 3, 4, 5].map((i) => (
-                <span key={i} className={i <= legacy.legacy ? 'on' : ''} />
-              ))}
-            </span>
-            {shownSources(legacy.sources) && <span className="muted small legacy-source">{shownSources(legacy.sources)}</span>}
-          </div>
-        </div>
-        {spread.length > 0 && (
-          <div className="sound-row legacy-headline">
-            <div className="sound-label">{spread[0].trait} in {trace!.field.join(' and ').toLowerCase()}, before it and after</div>
-            <div className="legacy-jump">
-              <span className="bignum">{pct(spread[0].before)}</span>
-              <span className="legacy-arrow" aria-hidden="true">→</span>
-              <span className="bignum">{pct(spread[0].after)}</span>
+        {finding && (
+          <div className="sound-row data-finding">
+            <div className="sound-label data-label">Fandome’s data shows</div>
+            <div className="sound-value">
+              <b>{album.title}</b> brought {finding.trait.toLowerCase()} to {finding.field.join(' and ').toLowerCase()} before most albums of its time, and the albums that took it up sound more like it than like its contemporaries.
             </div>
-            <div className="muted small">of the albums we describe, from the 6 years before to {spread[0].when}–{String(spread[0].when + 2).slice(-2)}</div>
-            {trace!.followers.total > 0 && (
+          </div>
+        )}
+        {sourced && (
+          <div className="sound-row">
+            <div className="sound-label">Legacy, from the sources</div>
+            <div className="sound-value">
+              <span className="legacy-dots" aria-label={`${sourced.legacy} out of 5`}>
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <span key={i} className={i <= sourced.legacy ? 'on' : ''} />
+                ))}
+              </span>
+              {shownSources(sourced.sources) && <span className="muted small legacy-source">{shownSources(sourced.sources)}</span>}
+            </div>
+          </div>
+        )}
+        {head && trace && (
+          <div className="sound-row legacy-headline">
+            <div className="sound-label">{head.trait} in {field}, before it and after</div>
+            <div className="legacy-jump">
+              <span className="bignum">{pct(head.before)}</span>
+              <span className="legacy-arrow" aria-hidden="true">→</span>
+              <span className="bignum">{pct(head.after)}</span>
+            </div>
+            <div className="muted small">of the albums we describe, from the 6 years before to {head.when}–{String(head.when + 2).slice(-2)}</div>
+            {trace.followers.total > 0 && (
               <div className="small legacy-followers">
-                <b>{trace!.followers.linked} of {trace!.followers.total}</b> albums that took up its new sound are documented as linked to {artistById(albumById(albumId)!.artistId)?.name}: a critic's comparison, an influence they name, or the same producers.
+                <b>{trace.followers.linked} of {trace.followers.total}</b> albums that took up its new sound are documented as linked to {artistName}: a critic's comparison, an influence they name, or the same producers.
               </div>
             )}
           </div>
         )}
-        {spread.length > 1 && (
+        {others.length > 0 && (
           <div className="sound-row">
-            <div className="sound-label">Also spread after it, in {trace!.field.join(' and ').toLowerCase()}</div>
+            <div className="sound-label">Also spread after it, in {field}</div>
             <div className="sound-value">
-              {spread.slice(1).map((s) => (
+              {others.map((s) => (
                 <span key={s.trait} className="sound-cover">
                   <b>{s.trait}</b> <span className="muted">from {pct(s.before)} to {pct(s.after)} of the albums we describe, by {s.when + 2}</span>
                 </span>
               ))}
             </div>
+          </div>
+        )}
+        {finding && (
+          <div className="muted small data-method">
+            {sourced ? 'The critics agree it left a mark. ' : legacy ? 'The critics we found credit it with less: this is our finding. ' : 'No critic we found has said this yet: it is our finding. '}
+            Measured on {DESCRIBED_ALBUMS.toLocaleString('en')} albums described one by one from sources, with Fandome’s own analysis of when each sound appeared and how far it spread. A trend in the data, not proof of cause.
           </div>
         )}
       </div>

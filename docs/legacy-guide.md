@@ -13,6 +13,9 @@ m-ray,4,"The New York Observer (Daryl Deino, 2017): ""a risk-taking album that h
 
 ## Trace (from our data): `src/lib/legacy.ts`
 
+"Fandome's data shows" (`findingOf`): the pioneers the data can stand behind, said on the album page and listed at `/findings`, labelled as our analysis. Thresholds and reasons in ROADMAP. After importing descriptors run `npm run findings` (it rewrites `src/data/findings.json`; the build does it too).
+
+
 The album's new traits (genres, production, instruments that fewer than 15% of the albums of its area had in the 6 years before, and pairs of traits that were rare together, like strings with electronic programming) and how common each became in the area's later albums (3-year windows over the next 12 years). It shows a trend in the albums we describe, not a cause, and it grows with the catalogue.
 
 ## Where it shows

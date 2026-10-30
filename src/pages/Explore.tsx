@@ -252,6 +252,9 @@ export default function Explore() {
           <Link to="/artists" className="btn rooms-more">
             All {sortedRooms.length} artist rooms
           </Link>
+          <Link to="/findings" className="btn rooms-more">
+            Fandome’s data shows: albums that got there first
+          </Link>
         </>
       )}
     </>

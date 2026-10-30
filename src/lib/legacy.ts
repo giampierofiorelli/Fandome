@@ -24,10 +24,13 @@ for (const text of Object.values(legacyFiles)) {
 export const legacyOf = (albumId: string) => LEGACY.get(albumId)
 
 export interface Spread {
+  key: string // the trait's id ("g:disco", "i:strings+p:programming")
   trait: string // label
   before: number // share of the field's albums with it, in the 6 years before
   after: number // highest share in a 3-year window within the next 12 years
   when: number // first year of that window
+  anywhere: number // share of all other albums with it in the 6 years before, whatever their area
+  earlier: number // albums by other artists that had it at any time before, whatever their area
 }
 export interface Trace {
   field: string[] // the area compared (the artist's base genres: Pop, Dance)
@@ -39,9 +42,12 @@ export interface Trace {
   // this artist: a critic's comparison, an influence they name, or one of this album's producers.
   followers: { linked: number; total: number }
   first: number // share of the area's albums with the album's spreading traits in the 3 years around it that came no earlier
-  closer: number // how much more the later adopters resemble this album than its contemporaries with the same traits
+  closer: number // how much more the later adopters resemble this album than its contemporaries with the same traits (0 when the other pioneer tests fail)
   spread: Spread[] // the album's new traits that spread, most first
   lift: number // how far the new sound spread: the gains of the traits that spread, added up
+  fieldBefore: number // albums of the area described in the 6 years before (few: the trace says little)
+  catalogueBefore: number // albums by other artists described in the 6 years before, whatever their area
+  earlierAll: number // albums by other artists described before it, whatever their year and area
 }
 
 const BEFORE = 6
@@ -50,7 +56,12 @@ const MIN_FIELD = 10 // windows with fewer albums say too little
 
 const artistOf = new Map(albums.map((a) => [a.id, a.artistId]))
 const fieldOf = (d: Descriptor) => new Set(sceneOf(artistOf.get(d.albumId) ?? '')?.genres ?? [])
-const traitsOf = (d: Descriptor) => new Set([...d.genres.map((g) => `g:${g}`), ...d.production.map((p) => `p:${p}`), ...d.instruments.map((i) => `i:${i}`)])
+const traitCache = new Map<string, Set<string>>()
+const traitsOf = (d: Descriptor) => {
+  let t = traitCache.get(d.albumId)
+  if (!t) traitCache.set(d.albumId, (t = new Set([...d.genres.map((g) => `g:${g}`), ...d.production.map((p) => `p:${p}`), ...d.instruments.map((i) => `i:${i}`)])))
+  return t
+}
 const label = (t: string) => {
   const [k, v] = [t.slice(0, 1), t.slice(2)]
   return k === 'g' ? genreLabel(v) : k === 'p' ? productionLabel(v) : instrumentLabel(v)
@@ -74,6 +85,9 @@ function computeTrace(albumId: string): Trace | null {
   const peers = own.filter((x) => artistOf.get(x.albumId) !== artist && [...fieldOf(x)].some((g) => field.has(g)))
   const inYears = (from: number, to: number) => peers.filter((x) => x.year! >= from && x.year! <= to)
   const before = inYears(d.year - BEFORE, d.year - 1)
+  // Every other artist's albums of those years, whatever their area: a sound new in pop but common in rock was not new.
+  const earlierAll = own.filter((x) => artistOf.get(x.albumId) !== artist && x.year! < d.year!)
+  const everywhere = earlierAll.filter((x) => x.year! >= d.year! - BEFORE)
   if (before.length < MIN_FIELD) return null
   const mine = traitsOf(d)
   const count = (xs: Descriptor[], t: string) => (xs.length ? xs.filter((x) => traitsOf(x).has(t)).length / xs.length : 0)
@@ -100,12 +114,14 @@ function computeTrace(albumId: string): Trace | null {
   const spread = [...fresh, ...pairs].map((t) => {
     const shares = windows.map((w) => share2(w.xs, t))
     const k = shares.indexOf(Math.max(...shares))
-    return { trait: labelOf(t), before: share2(before, t), after: shares[k], when: windows[k].from }
+    return { key: t, trait: labelOf(t), before: share2(before, t), after: shares[k], when: windows[k].from, anywhere: 0, earlier: 0 }
   }).filter((x) => x.after - x.before >= 0.1).sort((x, y) => y.after - y.before - (x.after - x.before))
+  // How new each spreading trait was across the whole catalogue (counted only for the traits that spread).
+  for (const x of spread) (x.anywhere = share2(everywhere, x.key)), (x.earlier = earlierAll.filter((y) => hasAll(y, x.key)).length)
   // The five strongest spreads make the score, so many small pairs cannot inflate it.
   const lift = spread.slice(0, 5).reduce((n, x) => n + x.after - x.before, 0)
   // Pioneer test, on the traits that spread.
-  const keys = [...fresh, ...pairs].filter((t) => spread.some((x) => x.trait === labelOf(t)))
+  const keys = [...fresh, ...pairs].filter((t) => spread.some((x) => x.key === t))
   const has = (x: Descriptor) => keys.some((t) => hasAll(x, t))
   const around = inYears(d.year - 1, d.year + 1).filter(has)
   const first = around.length ? around.filter((x) => x.year! >= d.year!).length / around.length : 1
@@ -113,10 +129,12 @@ function computeTrace(albumId: string): Trace | null {
   const adopters = inYears(d.year + 1, d.year + 10).filter(has)
   const sim = (x: Descriptor, y: Descriptor) => compareProfiles(albumProfile(x), albumProfile(y)).base
   const mean = (xs: number[]) => (xs.length ? xs.reduce((n, v) => n + v, 0) / xs.length : 0)
-  const toMe = mean(adopters.map((x) => sim(x, d)))
-  const toThem = peersThen.length ? mean(adopters.map((x) => mean(peersThen.map((y) => sim(x, y))))) : toMe
+  // The likeness test is the costly part: run it only when the album passes the other tests.
+  const candidate = keys.length > 0 && lift >= 0.3 && first >= 0.8 && adopters.length >= MIN_FIELD
+  const toMe = candidate ? mean(adopters.map((x) => sim(x, d))) : 0
+  const toThem = candidate && peersThen.length ? mean(adopters.map((x) => mean(peersThen.map((y) => sim(x, y))))) : toMe
   const closer = toMe - toThem
-  const pioneer = keys.length > 0 && lift >= 0.3 && first >= 0.8 && closer >= 0.05 && adopters.length >= MIN_FIELD
+  const pioneer = candidate && closer >= 0.05
   const fold = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '')
   const me = fold(d.artist)
   const mine2 = new Set(d.producers.map(fold).filter((p) => p !== me))
@@ -125,5 +143,34 @@ function computeTrace(albumId: string): Trace | null {
     x.producers.some((p) => mine2.has(fold(p))) ||
     (ARTIST_INFLUENCES[artistOf.get(x.albumId) ?? '']?.names ?? []).some((n) => fold(n) === me)
   const followers = { linked: adopters.filter(linked).length, total: adopters.length }
-  return { field: [...field].map((g) => genreLabel(g)), spread, lift, pioneer, first, closer, followers }
+  return { field: [...field].map((g) => genreLabel(g)), spread, lift, pioneer, first, closer, followers, fieldBefore: before.length, catalogueBefore: everywhere.length, earlierAll: earlierAll.length }
+}
+
+// "Fandome's data shows" (owner, Oct 2026): what our own analysis finds, said by itself and labelled as ours, even
+// where no critic has said it. Only where the data can carry it:
+// - a pioneer (see Trace);
+// - enough albums described before it: at least 100 in the 6 years before, whatever their area (fewer, and a sound
+//   can look new only because its earlier records are not described yet);
+// - a sound new to the whole catalogue, not only to its area (at most 3% of all earlier albums had it), that spread
+//   by at least 25 points in its area.
+const MIN_CATALOGUE = 100
+const NEW_ANYWHERE = 0.03
+const MIN_GAIN = 0.25
+export interface Finding { trace: Trace; spread: Spread }
+// The same sound already brought by an earlier album of the artist: that album is the pioneer, not this one.
+const findingCache = new Map<string, Finding | null>()
+export function findingOf(albumId: string): Finding | null {
+  if (!findingCache.has(albumId)) findingCache.set(albumId, computeFinding(albumId))
+  return findingCache.get(albumId)!
+}
+function computeFinding(albumId: string): Finding | null {
+  const t = traceOf(albumId)
+  const d = DESCRIPTORS[albumId]
+  if (!t?.pioneer || !d?.year || t.catalogueBefore < MIN_CATALOGUE) return null
+  const s = t.spread.find((x) => x.after - x.before >= MIN_GAIN && x.earlier <= NEW_ANYWHERE * t.earlierAll)
+  if (!s) return null
+  const artist = artistOf.get(albumId)
+  const earlierOwn = own.filter((x) => artistOf.get(x.albumId) === artist && x.year! < d.year!)
+  if (earlierOwn.some((x) => findingOf(x.albumId)?.spread.trait === s.trait)) return null
+  return { trace: t, spread: s }
 }

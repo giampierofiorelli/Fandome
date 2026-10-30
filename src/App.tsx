@@ -26,6 +26,7 @@ import Onboarding from './pages/Onboarding'
 import ScenesPage from './pages/Scenes'
 import ArtistsPage from './pages/Artists'
 import ScenePage from './pages/Scene'
+import FindingsPage from './pages/Findings'
 import PageNew from './pages/PageNew'
 import PageManage from './pages/PageManage'
 import Invite from './pages/Invite'
@@ -207,6 +208,7 @@ export default function App() {
             <Route path="/p/:postId" element={<Thread />} />
             <Route path="/party/:partyId" element={<Party />} />
             <Route path="/album/:albumId" element={<AlbumPage />} />
+            <Route path="/findings" element={<FindingsPage />} />
             <Route path="/starter/:packId" element={<StarterPackPage />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/pages/new" element={<PageNew />} />

@@ -1,0 +1,29 @@
+import { describe, expect, it } from 'vitest'
+import { findingOf } from './legacy'
+
+describe("Fandome's data shows", () => {
+  it('finds the pioneers the press also credits, from our data alone', () => {
+    expect(findingOf('kraftwerk-themanmachine')?.spread.trait).toMatch(/Synth-pop/)
+    expect(findingOf('blondie-blondie')?.spread.trait).toBe('New wave')
+    expect(findingOf('kcandthesunshineband-doitgood')?.spread.trait).toBe('Disco')
+  })
+
+  it('credits the first album of an artist that brought the sound, not the ones after', () => {
+    expect(findingOf('kcandthesunshineband-kcandthesunshineband')).toBeNull()
+    expect(findingOf('blondie-plasticletters')).toBeNull()
+  })
+
+  it('says nothing where too few earlier albums are described to tell what was new', () => {
+    expect(findingOf('kimcarnes-restonme')).toBeNull()
+    expect(findingOf('bowie-davidbowie1969')).toBeNull()
+  })
+})
+
+describe('stored findings (src/data/findings.json)', () => {
+  it('match the data: run `npm run findings` after importing descriptors', async () => {
+    const { FINDINGS } = await import('./findings')
+    const { albums } = await import('../data/seed')
+    const now = albums.filter((a) => findingOf(a.id)).map((a) => a.id).sort()
+    expect(FINDINGS.map((f) => f.albumId).sort()).toEqual(now)
+  }, 120_000)
+})

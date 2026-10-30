@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite-node scripts/build-findings.ts && tsc -b && vite build",
+    "findings": "vite-node scripts/build-findings.ts",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "test": "vitest run"
