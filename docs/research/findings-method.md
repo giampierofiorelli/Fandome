@@ -55,3 +55,45 @@ is "it appears with Kraftwerk's Ralf und Florian (1973, a minor genre), becomes 
 2. Build the three outputs (first appearance, becomes main, spreads from) and show them as one story on the album page.
 3. Sensitivity analysis: show how the results move when each remaining number moves, and publish it.
 4. Compare with the press only at the end, and report the agreement as it is.
+
+## Method v1: rules fixed before running (pre-registered, Oct 31 2026)
+
+Written and committed before the code runs, from `findings-method-research.md`. Not to be changed after seeing which
+albums come out; a change needs a musical or statistical reason written here first, and applies to every album.
+
+**Data.** Traits are single: a genre, an instrument, a production technique (pairs dropped in v1: most were the rise of
+one part, see research §3). An album carries a trait *in full* when it is an instrument, a technique or one of its first
+three genres (the guide's main sound), *partly* when it is a genre from 4th place on. A field is a base genre of the
+artist's scene (as today); an album belongs to every field of its artist.
+
+**Output 1, first appearance (descriptive, no test).** The earliest album in the catalogue that carries the trait at
+all; between albums of the same year, a full presence comes before a partial one, then the higher position. Shown as
+"earliest in Fandome's catalogue" with its presence (main sound or minor). Said to be new at the time only when at
+least 76 albums of any area are described in the 6 years before (the number needed to see a 3% sound with 90%
+confidence: ln 0.10 / ln 0.97); otherwise "earlier records are thin".
+
+**Output 2, becomes a main sound (one test per field and trait).** For each field × trait, the yearly share of the
+field's albums carrying it in full. Change point: the split year that best separates a lower share before from a higher
+share after (binomial likelihood, at least 10 albums on each side). Significance: the same best-split statistic on 200
+catalogues with release years shuffled among the field's albums gives an empirical p-value; false discovery rate
+controlled with Benjamini–Hochberg at q = 0.10 across all field × trait series that have at least 5 full carriers.
+The rise must also reach critical mass: the lower 90% Wilson bound of the share after is at least 16% (Rogers' share of
+innovators and early adopters). Partial presence is reported as a second curve, never mixed with weights.
+
+**Output 3, the album it spread from (attribution).** For a rise that passed Output 2, candidates are the field's
+albums carrying the trait in full, released no later than the split year. A pioneer must: be among the first 16% of
+the series' full carriers by year (ties by year all qualify); have at least 76 albums described in the 6 years before;
+not name as an influence, or be compared by critics to, an artist with an earlier full carrier in the series (it drew
+on them); and be closer to the albums that carried it in the 10 years after than its contemporaries are: its mean
+likeness to them ranks in the top 10% of the field's albums of the same year ±1 (permutation rank). Several pioneers
+may pass. An earlier minor appearance is shown as an earlier trace; it does not block the credit. The same artist's
+later albums are not credited again for the same trait.
+
+**Reporting.** Every run writes: series tested, q, the false discovery rate estimated on shuffled catalogues, and for
+each finding the share of a parameter grid (q 0.05/0.10/0.20; window 4/6/8/10 years before; 16% floor 10/16/25%;
+priority 10/16/25%) in which it appears: "robust" from 80%, otherwise "fragile". Agreement with the press is measured
+on a sealed benchmark written before the run (see below) and reported as it is.
+
+**Benchmark (to write before the run).** Innovations credited by experts, from sources independent of our
+descriptors: album, sound, year, source. Split by a fixed rule (alternate rows by year) into a development half (used
+only to find bugs, never to choose numbers) and a sealed half (read once per method version).
