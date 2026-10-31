@@ -32,7 +32,10 @@ describe('influence network', () => {
 
   it('walks back to the roots, never through the same album twice, stored up to date (npm run findings)', () => {
     for (const id of ['m-confessions', 'beatles-revolver', 'madonna-madamex']) {
-      expect(storedRoots(id).map(([a]) => a)).toEqual(drawsOnOf(id).filter((c) => c.weight >= 0.15 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3).map((c) => c.albumId))
+      // Every kind of link, a shared producer weighing half as much as in the network (owner: weaker, not left out).
+      const w = (c: { weight: number; how: string }) => c.weight * (c.how === 'producer' ? 0.5 : 1)
+      const expected = drawsOnOf(id).filter((c) => w(c) >= 0.06).sort((a, b) => w(b) - w(a)).slice(0, 3).map((c) => c.albumId)
+      expect(storedRoots(id).map(([a]) => a)).toEqual(expected)
       const path = rootsPath(id)
       expect(new Set([id, ...path.map((s) => s.to)]).size).toBe(path.length + 1)
     }

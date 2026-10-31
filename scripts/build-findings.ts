@@ -33,14 +33,20 @@ for (const id of Object.keys(DESCRIPTORS)) {
 writeFileSync('src/data/influence.json', JSON.stringify(influence) + '\n')
 console.log(`${Object.keys(influence).length} albums drawn on, written to src/data/influence.json`)
 
-// Roots (owner, Oct 2026): what each album clearly draws on (links of weight 0.25 or more), strongest three, so its
-// page can walk back step by step: a modern record, the older one it drew on, and so on to jazz or the classics.
+// Roots (owner, Oct 2026): what each album draws on, so its page can walk back step by step: a modern record, the
+// older one it drew on, and so on to jazz or the classics. Every kind of link counts, by how much it says about where
+// the sound comes from (owner: a shared producer is a real link, but a weaker one, not to be left out): an influence
+// the artist names counts in full, a critic's comparison or a borrowing half, a shared producer or a career-wide
+// influence a quarter. The strongest three steps are kept, so a producer appears when nothing stronger is there.
+const ROOT_WEIGHT: Record<string, number> = { 'influence-album': 1, influence: 1, 'critic-album': 1, critic: 1, 'borrows-album': 1, borrows: 1, producer: 0.5, artist: 1 }
 const roots: Record<string, [string, string][]> = {}
 for (const id of Object.keys(DESCRIPTORS)) {
-  // A shared producer or an artist's career-wide influence says little about where this record's sound comes from.
-  // A link to an artist in general is shared among its key records: a share from 0.15 still shows the way back.
-  const on = drawsOnOf(id).filter((c) => c.weight >= 0.15 && c.how !== 'producer' && c.how !== 'artist').slice(0, 3)
-  if (on.length) roots[id] = on.map((c) => [c.albumId, c.how])
+  const on = drawsOnOf(id)
+    .map((c) => ({ c, w: c.weight * (ROOT_WEIGHT[c.how] ?? 1) }))
+    .filter((x) => x.w >= 0.06)
+    .sort((a, b) => b.w - a.w)
+    .slice(0, 3)
+  if (on.length) roots[id] = on.map((x) => [x.c.albumId, x.c.how])
 }
 writeFileSync('src/data/roots.json', JSON.stringify(roots) + '\n')
 console.log(`${Object.keys(roots).length} albums with roots, written to src/data/roots.json`)

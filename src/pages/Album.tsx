@@ -156,7 +156,7 @@ function RootsBox({ albumId }: { albumId: string }) {
             </div>
           )
         })}
-        <p className="muted small data-method">Each step is the strongest documented link of the record above it: an influence its artist named, a critic's comparison, or a piece it sampled, quoted or covered.</p>
+        <p className="muted small data-method">Each step is the strongest documented link of the record above it. An influence its artist named counts most, then a critic's comparison or a piece it sampled, quoted or covered, then a shared producer.</p>
       </div>
     </>
   )
