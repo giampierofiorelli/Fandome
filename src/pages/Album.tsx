@@ -24,7 +24,7 @@ import { coversOf } from '../data/covers'
 import { FORCES_LABELS, FORM_LABELS, HARMONY_LABELS, VOICE_TYPE_LABELS } from '../data/workFields'
 import { borrowedAlbum, borrowedBy, borrowingsOf } from '../lib/borrowings'
 import { legacyOf, traceOf } from '../lib/legacy'
-import { DESCRIBED_ALBUMS, rootsPath, storedFinding, storedInfluence, storedLate } from '../lib/findings'
+import { DESCRIBED_ALBUMS, rootsPath, storedFinding, storedInfluence, storedLate, storyOf, type SoundStory } from '../lib/findings'
 
 // One fact of the sound section: a small dot-matrix label, then the value.
 function SoundRow({ label, children }: { label: string; children: ReactNode }) {
@@ -162,7 +162,54 @@ function RootsBox({ albumId }: { albumId: string }) {
   )
 }
 
+const soundLabel = (t: string) => {
+  const v = t.slice(2)
+  return t.startsWith('g:') ? genreLabel(v) : t.startsWith('p:') ? productionLabel(v) : instrumentLabel(v)
+}
+function StoryAlbum({ id }: { id: string }) {
+  const a = albumById(id)
+  if (!a) return <>{id}</>
+  return (
+    <Link to={`/album/${a.id}`}>
+      <b>{a.title}</b> <span className="muted">{artistById(a.artistId)?.name} · {a.year}</span>
+    </Link>
+  )
+}
+// The story of a sound: where it first appears, when it becomes a main sound, and the rise that spread from here.
+function StoryRow({ albumId, s }: { albumId: string; s: SoundStory }) {
+  const label = soundLabel(s.trait)
+  const pct = (x: number) => `${Math.round(100 * x)}%`
+  const isGenre = s.trait.startsWith('g:')
+  return (
+    <div className="sound-row data-finding story-row">
+      <div className="sound-label data-label">
+        The story of {isGenre ? label.toLowerCase() : label}, in Fandome’s data{!s.robust && ' · tentative'}
+      </div>
+      <ol className="story-steps">
+        {s.first && (
+          <li>
+            <span className="muted small">First appears{s.first[2] === 'partial' ? ' (a minor sound)' : ''}</span>
+            {s.first[0] === albumId ? <b>here</b> : <StoryAlbum id={s.first[0]} />}
+            {s.first[3] && <span className="muted small"> · earlier records are thin in our catalogue</span>}
+          </li>
+        )}
+        {s.main && s.main[0] !== s.first?.[0] && (
+          <li>
+            <span className="muted small">First a main sound</span>
+            {s.main[0] === albumId ? <b>here</b> : <StoryAlbum id={s.main[0]} />}
+          </li>
+        )}
+        <li>
+          <span className="muted small">Spreads from here</span>
+          in {s.fields.map((f) => genreLabel(f).toLowerCase()).join(' and ')} it goes from {pct(s.before)} of albums to {pct(s.after)} from {s.split}, and the albums that took it up sound more like this one than like its contemporaries.
+        </li>
+      </ol>
+    </div>
+  )
+}
+
 function LegacyBox({ albumId }: { albumId: string }) {
+  const stories = storyOf(albumId).slice(0, 3)
   const legacy = legacyOf(albumId)
   const finding = storedFinding(albumId)
   const sourced = legacy && legacy.legacy >= 3 ? legacy : undefined
@@ -171,7 +218,7 @@ function LegacyBox({ albumId }: { albumId: string }) {
   const inf = storedInfluence(albumId)
   const late = storedLate(albumId)
   const drawnOn = inf && ((inf.n >= 5 && inf.pct >= 0.9) || late) ? inf : undefined
-  if (!sourced && !finding && !drawnOn) return null
+  if (!sourced && !finding && !drawnOn && !stories.length) return null
   const trace = traceOf(albumId)
   const head = (finding && trace?.spread.find((s) => s.trait === finding.trait)) || trace?.spread[0]
   const others = (trace?.spread ?? []).filter((s) => s.trait !== head?.trait).slice(0, 3)
@@ -185,6 +232,9 @@ function LegacyBox({ albumId }: { albumId: string }) {
         <h2>What it left behind</h2>
       </div>
       <div className="sound-facts glass-card">
+        {stories.map((s) => (
+          <StoryRow key={s.trait} albumId={albumId} s={s} />
+        ))}
         {finding && (
           <div className="sound-row data-finding">
             <div className="sound-label data-label">Fandome’s data shows</div>

@@ -3,6 +3,7 @@
 import data from '../data/findings.json'
 import influence from '../data/influence.json'
 import roots from '../data/roots.json'
+import story from '../data/story.json'
 
 export interface StoredFinding { albumId: string; year: number; trait: string; before: number; after: number; when: number; field: string[] }
 export const FINDINGS: StoredFinding[] = data.findings
@@ -40,3 +41,29 @@ export function rootsPath(albumId: string, steps = 4): { from: string; to: strin
   }
   return path
 }
+
+// The story of a sound (method v3, docs/research/findings-method.md): for an album credited as a pioneer, each sound
+// it spread, with where the sound first appears in the catalogue, when it first becomes a main sound, and the rise
+// in the area. A credit is "robust" when it survives 80% of the parameter grid, otherwise it is shown as tentative.
+type First = [string, number, 'full' | 'partial', boolean]
+type Main = [string, number, boolean]
+interface StoredStory { tested: number; fdr: number; first: Record<string, First>; main: Record<string, Main>; list: { field: string; trait: string; split: number; before: number; after: number; pioneers: [string, number][] }[] }
+const STORY = story as unknown as StoredStory
+export const STORY_ROBUST = 0.8
+export interface SoundStory { trait: string; fields: string[]; split: number; before: number; after: number; robust: boolean; first: First; main: Main }
+export function storyOf(albumId: string): SoundStory[] {
+  const byTrait = new Map<string, SoundStory>()
+  for (const r of STORY.list) for (const [id, share] of r.pioneers) {
+    if (id !== albumId) continue
+    const cur = byTrait.get(r.trait)
+    const robust = share >= STORY_ROBUST
+    if (cur) {
+      cur.fields.push(r.field)
+      if (robust && !cur.robust) Object.assign(cur, { split: r.split, before: r.before, after: r.after, robust })
+    } else byTrait.set(r.trait, { trait: r.trait, fields: [r.field], split: r.split, before: r.before, after: r.after, robust, first: STORY.first[r.trait], main: STORY.main[r.trait] })
+  }
+  // Robust credits first, then genres before instruments and techniques.
+  return [...byTrait.values()].sort((a, b) => Number(b.robust) - Number(a.robust) || Number(b.trait.startsWith('g:')) - Number(a.trait.startsWith('g:')))
+}
+export const STORY_TESTED = STORY.tested
+export const STORY_FDR = STORY.fdr

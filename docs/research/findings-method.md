@@ -115,3 +115,40 @@ The first run of v1 (1,302 series tested, 164 rises, 66 with pioneers) showed tw
    the one before it, not of all time.
 
 Everything else in v1 stays as written.
+
+## Method v3 (Oct 31 2026): one correction found on the v2 run, written before applying it
+
+1. **A pioneer decades before its rise.** v2 counts priority among the carriers of the segment before the rise, and that
+   segment can span decades: Meddle (1971) came out as a pioneer of a 2022 rise. By the method's own definition an album
+   spreads a sound to the albums of the 10 years after it (`followYears`), so a rise that starts more than 10 years
+   after an album cannot have spread from it. v3: a pioneer must be released at most 10 years before the rise's first
+   year. No new number: the same 10-year window already used for followers.
+2. **Reporting fix (not a rule):** the robustness share counted a credit twice when one series had two rises in the
+   same grid run; each credit now counts once per run.
+
+## Benchmark and scoring (written Oct 31 2026, before scoring)
+
+`docs/research/benchmark/innovations.csv`: 62 innovations credited by experts (sources outside our descriptors, quote
+and URL per row, no Wikipedia), built by a separate research pass that never opened our results. Sorted by year, then
+album id, then sound; even rows are the development half, odd rows the sealed half (31 each).
+
+Scoring, fixed now: the sound is matched to our token (genre, instrument or technique of the same name). A **first**
+row agrees when the album is our first appearance or our first main sound of that token; a **spread** row agrees when
+the album is credited as a pioneer of a rise of that token in any field (robust credits counted separately). Same
+artist, other album, is reported as a near miss, not as agreement. A row whose token we never use, or whose album has
+no descriptor, is "not scorable". Rows the experts dispute (several albums credited) are scored as they are. The
+agreement is reported as it is; it never changes a rule (owner: trust the data, look for errors first).
+
+## Results of method v3 (Oct 31 2026), as they are
+
+- 1,463 series tested, 483 pass Benjamini–Hochberg at q = 0.10, 194 rises reach critical mass, 65 have at least one
+  pioneer (104 credits, 57 robust: present in 80%+ of the parameter grid).
+- False discoveries estimated on 5 catalogues with shuffled years: 0 rises in each, so the estimated rate is ≈ 0.
+- Benchmark (`npx vite-node scripts/score-benchmark.ts`):
+  - **first appearance:** 4 of 13 scorable rows agree in the development half, 4 of 11 in the sealed half (1 near miss
+    each: same artist, other album). Most disagreements are an earlier album in our catalogue (e.g. My Generation
+    before The Stooges for proto-punk), which is what the data says; none was traced to a bug.
+  - **spread from:** 0 of 12 (development) and 0 of 13 (sealed). In nearly every case we name no pioneer at all: the
+    rise is not detected in any field (few full carriers per field) or no candidate passes the closer test. The method
+    is silent rather than contradicting the experts; how to make it see these rises is the next question, to be
+    answered by a written rule, not by these rows.

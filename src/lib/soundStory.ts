@@ -1,4 +1,4 @@
-// The story of a sound (owner, Oct 31 2026), method v1 in docs/research/findings-method.md, written before running:
+// The story of a sound (owner, Oct 31 2026), method v3 in docs/research/findings-method.md, written before running:
 // 1. first appearance: the earliest album in the catalogue that has a sound at all;
 // 2. becomes a main sound: when a field's albums start carrying it in full (one test per field and sound, false
 //    discovery rate controlled with Benjamini–Hochberg on shuffle-based p-values);
@@ -48,7 +48,7 @@ const position = (d: Descriptor, t: string) => (t.startsWith('g:') ? d.genres.in
 
 const years = own.map((d) => d.year!)
 const describedBetween = (from: number, to: number) => years.filter((y) => y >= from && y <= to).length
-export const thinBefore = (year: number) => describedBetween(year - METHOD.beforeYears, year - 1) < METHOD.detectBefore
+export const thinBefore = (year: number, beforeYears = METHOD.beforeYears) => describedBetween(year - beforeYears, year - 1) < METHOD.detectBefore
 
 // 1. First appearance: by date; in the same year a full presence before a partial one, then the higher position.
 export function firstAppearances(): FirstAppearance[] {
@@ -74,26 +74,37 @@ function rng(seed: number) {
   }
 }
 const ll = (k: number, n: number) => (k > 0 ? k * Math.log(k / n) : 0) + (n - k > 0 ? (n - k) * Math.log((n - k) / n) : 0)
-// The split year that best separates a lower share before from a higher one after (binomial log-likelihood gain),
-// with at least minSide albums on each side. carriers[i] is 1 when album i (sorted by year) carries the trait in full.
-function bestSplit(carriers: Uint8Array, yearsSorted: number[]): { gain: number; at: number } {
+// Method v2: the series is cut into segments of steady share (several change points, so a sound that appears,
+// fades and comes back keeps its phases apart). Greedy binary segmentation with a BIC penalty: a cut is kept while it
+// improves the binomial log-likelihood by more than ln(n) (two parameters: the place and the new share), with at
+// least minSide albums per segment and cuts only between years. carriers[i] is 1 when album i (by year) carries the
+// trait in full. Returns the cut positions and the total gain over a single share.
+function segment(carriers: Uint8Array, yearsSorted: number[]): { cuts: number[]; gain: number } {
   const n = carriers.length
-  let k = 0
-  for (let i = 0; i < n; i++) k += carriers[i]
-  const whole = ll(k, n)
-  let best = { gain: 0, at: -1 }
-  let k1 = 0
-  for (let i = 0; i < n - 1; i++) {
-    k1 += carriers[i]
-    if (yearsSorted[i] === yearsSorted[i + 1]) continue // split only between years
-    const n1 = i + 1, n2 = n - n1
-    if (n1 < METHOD.minSide || n2 < METHOD.minSide) continue
-    const k2 = k - k1
-    if (k2 / n2 <= k1 / n1) continue // a rise, not a fall
-    const gain = ll(k1, n1) + ll(k2, n2) - whole
-    if (gain > best.gain) best = { gain, at: i + 1 }
+  const prefix = new Int32Array(n + 1)
+  for (let i = 0; i < n; i++) prefix[i + 1] = prefix[i] + carriers[i]
+  const seg = (a: number, b: number) => ll(prefix[b] - prefix[a], b - a)
+  const penalty = Math.log(n)
+  const cuts: number[] = []
+  let gain = 0
+  for (;;) {
+    const bounds = [0, ...cuts, n]
+    let best = { g: penalty, at: -1 }
+    for (let s = 0; s < bounds.length - 1; s++) {
+      const [a, b] = [bounds[s], bounds[s + 1]]
+      const whole = seg(a, b)
+      for (let i = a + METHOD.minSide; i <= b - METHOD.minSide; i++) {
+        if (yearsSorted[i - 1] === yearsSorted[i]) continue // cut only between years
+        const g = seg(a, i) + seg(i, b) - whole
+        if (g > best.g) best = { g, at: i }
+      }
+    }
+    if (best.at < 0) break
+    cuts.push(best.at)
+    cuts.sort((x, y) => x - y)
+    gain += best.g
   }
-  return best
+  return { cuts, gain }
 }
 
 const wilsonLow = (k: number, n: number) => {
@@ -102,23 +113,40 @@ const wilsonLow = (k: number, n: number) => {
   return Math.max(0, (p + z2 / (2 * n) - METHOD.z * Math.sqrt((p * (1 - p)) / n + z2 / (4 * n * n))) / (1 + z2 / n))
 }
 
-// 2 and 3. Rises (a sound becoming a field's main sound) and the albums they spread from.
-export function rises(seed = 1): Rise[] {
+// The decision parameters, for the robustness grid (the tests themselves do not change with them).
+export interface Params { q: number; criticalMass: number; priority: number; beforeYears: number }
+export const DEFAULT_PARAMS: Params = { q: METHOD.q, criticalMass: METHOD.criticalMass, priority: METHOD.priority, beforeYears: METHOD.beforeYears }
+export interface Series { field: string; trait: string; xs: Descriptor[]; carriers: Uint8Array; cuts: number[]; p: number }
+
+// 2. One test per field and sound (the costly part, run once). With nullSeed, the field's albums are first shuffled
+// among the release years (a catalogue where years carry no information), to estimate how many rises appear by chance.
+export function testSeries(seed = 1, nullSeed?: number): Series[] {
   const random = rng(seed)
+  const shuffle = nullSeed === undefined ? undefined : rng(nullSeed)
   const fields = new Map<string, Descriptor[]>()
   for (const d of own) for (const f of fieldsOf(d)) fields.set(f, [...(fields.get(f) ?? []), d])
-  const tested: { field: string; trait: string; xs: Descriptor[]; carriers: Uint8Array; split: number; p: number }[] = []
+  const tested: Series[] = []
   for (const [field, list] of fields) {
-    const xs = [...list].sort((a, b) => a.year! - b.year!)
-    const ys = xs.map((d) => d.year!)
+    const sorted = [...list].sort((a, b) => a.year! - b.year!)
+    const ys = sorted.map((d) => d.year!)
+    const xs = sorted.slice()
+    if (shuffle) for (let i = xs.length - 1; i > 0; i--) {
+      const j = Math.floor(shuffle() * (i + 1))
+      ;[xs[i], xs[j]] = [xs[j], xs[i]]
+    }
     const traits = new Set(xs.flatMap(traitsOf))
     for (const trait of traits) {
       const carriers = Uint8Array.from(xs.map((d) => (presenceOf(d, trait) === 'full' ? 1 : 0)))
       const k = carriers.reduce((n, v) => n + v, 0)
       if (k < METHOD.minCarriers) continue
-      const obs = bestSplit(carriers, ys)
-      if (obs.at < 0) continue
-      // The same best-split statistic with the carriers shuffled among the field's albums (years kept).
+      const obs = segment(carriers, ys)
+      // A series with no change point still counts among the tests (p = 1), so the false discovery rate is controlled
+      // over every series with enough carriers, as the method says.
+      if (!obs.cuts.length) {
+        tested.push({ field, trait, xs, carriers, cuts: [], p: 1 })
+        continue
+      }
+      // The same segmentation gain with the carriers shuffled among the field's albums (years kept).
       let atLeast = 0
       const perm = carriers.slice()
       for (let r = 0; r < METHOD.permutations; r++) {
@@ -128,39 +156,56 @@ export function rises(seed = 1): Rise[] {
           perm[i] = perm[j]
           perm[j] = tmp
         }
-        if (bestSplit(perm, ys).gain >= obs.gain) atLeast++
+        if (segment(perm, ys).gain >= obs.gain) atLeast++
       }
-      tested.push({ field, trait, xs, carriers, split: obs.at, p: (atLeast + 1) / (METHOD.permutations + 1) })
+      tested.push({ field, trait, xs, carriers, cuts: obs.cuts, p: (atLeast + 1) / (METHOD.permutations + 1) })
     }
   }
-  // Benjamini–Hochberg at q across all tested series.
+  return tested
+}
+
+// 2 and 3. The rises that pass (Benjamini–Hochberg at q, critical mass) and the albums they spread from.
+// Benjamini–Hochberg: the series that pass at false discovery rate q.
+export function passing(tested: Series[], q: number): Series[] {
   const order = [...tested].sort((a, b) => a.p - b.p)
   let cut = -1
   order.forEach((s, i) => {
-    if (s.p <= (METHOD.q * (i + 1)) / order.length) cut = i
+    if (s.p <= (q * (i + 1)) / order.length) cut = i
   })
-  testedCount = order.length
+  return order.slice(0, cut + 1)
+}
+export function decide(tested: Series[], P: Params = DEFAULT_PARAMS, withPioneers = true): Rise[] {
   const out: Rise[] = []
-  for (const s of order.slice(0, cut + 1)) {
-    const nBefore = s.split, nAfter = s.xs.length - s.split
-    let kBefore = 0
-    for (let i = 0; i < s.split; i++) kBefore += s.carriers[i]
-    const kAfter = s.carriers.reduce((n, v) => n + v, 0) - kBefore
-    if (wilsonLow(kAfter, nAfter) < METHOD.criticalMass) continue // critical mass
-    const split = s.xs[s.split].year!
-    out.push({ field: s.field, trait: s.trait, split, before: kBefore / nBefore, after: kAfter / nAfter, nBefore, nAfter, p: s.p, pioneers: pioneersOf(s.xs, s.carriers, split) })
+  for (const s of passing(tested, P.q)) {
+    const bounds = [0, ...s.cuts, s.xs.length]
+    const count = (a: number, b: number) => {
+      let k = 0
+      for (let i = a; i < b; i++) k += s.carriers[i]
+      return k
+    }
+    // Each rising segment (a higher share than the segment before) that reaches critical mass is a rise.
+    for (let g = 1; g < bounds.length - 1; g++) {
+      const [a, m, b] = [bounds[g - 1], bounds[g], bounds[g + 1]]
+      const kBefore = count(a, m), kAfter = count(m, b)
+      const nBefore = m - a, nAfter = b - m
+      if (kAfter / nAfter <= kBefore / nBefore) continue
+      if (wilsonLow(kAfter, nAfter) < P.criticalMass) continue // critical mass
+      const split = s.xs[m].year!
+      out.push({ field: s.field, trait: s.trait, split, before: kBefore / nBefore, after: kAfter / nAfter, nBefore, nAfter, p: s.p, pioneers: withPioneers ? pioneersOf(s.xs.slice(a, b), s.carriers.slice(a, b), split, s.xs, P) : [] })
+    }
   }
   return out
 }
-// How many series the last run tested (reported with the results).
-export let testedCount = 0
 
-// 3. The albums a rise spread from.
-function pioneersOf(xs: Descriptor[], carriers: Uint8Array, split: number): string[] {
+// 3. The albums a rise spread from. v2: xs and carriers cover the rising segment and the one before it, so the
+// candidates and the first 16% are counted within this rise, not over all time; contemporaries come from the field.
+function pioneersOf(xs: Descriptor[], carriers: Uint8Array, split: number, field: Descriptor[], P: Params): string[] {
   const full = xs.filter((_, i) => carriers[i])
-  const cutoffRank = Math.max(1, Math.ceil(METHOD.priority * full.length))
+  if (!full.length) return []
+  const cutoffRank = Math.max(1, Math.ceil(P.priority * full.length))
   const lastYear = full[cutoffRank - 1].year!
-  const early = full.filter((d) => d.year! <= Math.min(lastYear, split))
+  // v3: at most followYears before the rise, the window in which the method says an album spreads a sound.
+  const early = full.filter((d) => d.year! <= Math.min(lastYear, split) && d.year! >= split - METHOD.followYears)
   const sim = (a: Descriptor, b: Descriptor) => compareProfiles(albumProfile(a), albumProfile(b)).base
   const mean = (v: number[]) => (v.length ? v.reduce((n, x) => n + x, 0) / v.length : 0)
   const seenArtists = new Set<string>()
@@ -168,18 +213,69 @@ function pioneersOf(xs: Descriptor[], carriers: Uint8Array, split: number): stri
   for (const c of early) {
     const artist = artistOf.get(c.albumId) ?? ''
     if (seenArtists.has(artist)) continue // the same artist's later albums are not credited again
-    if (thinBefore(c.year!)) continue
+    if (thinBefore(c.year!, P.beforeYears)) continue
     // It drew on an artist that already carried the sound: it names them as an influence, or critics compare them.
     const earlierArtists = new Set(full.filter((d) => d.year! < c.year!).map((d) => foldName(d.artist)))
     if ([...c.influencedBy, ...c.soundsLike].some((n) => earlierArtists.has(foldName(n)))) continue
     const followers = full.filter((d) => d.year! > c.year! && d.year! <= c.year! + METHOD.followYears && artistOf.get(d.albumId) !== artist)
     if (!followers.length) continue
     const mine = mean(followers.map((f) => sim(f, c)))
-    const peers = xs.filter((d) => d.albumId !== c.albumId && artistOf.get(d.albumId) !== artist && Math.abs(d.year! - c.year!) <= 1)
+    const peers = field.filter((d) => d.albumId !== c.albumId && artistOf.get(d.albumId) !== artist && Math.abs(d.year! - c.year!) <= 1)
     const ahead = peers.filter((p) => mean(followers.map((f) => sim(f, p))) >= mine).length
     if (peers.length && ahead / peers.length > METHOD.closerTop) continue
     out.push(c.albumId)
     seenArtists.add(artist)
   }
   return out
+}
+
+// Robustness (method v1 reporting): the share of a parameter grid in which each pioneer credit appears.
+export const GRID = { q: [0.05, 0.1, 0.2], beforeYears: [4, 6, 8, 10], criticalMass: [0.1, 0.16, 0.25], priority: [0.1, 0.16, 0.25] }
+export function robustness(tested: Series[]): Map<string, number> {
+  const seen = new Map<string, number>()
+  let runs = 0
+  for (const q of GRID.q) for (const beforeYears of GRID.beforeYears) for (const criticalMass of GRID.criticalMass) for (const priority of GRID.priority) {
+    runs++
+    const keys = new Set(decide(tested, { q, beforeYears, criticalMass, priority }).flatMap((r) => r.pioneers.map((p) => `${r.field}|${r.trait}|${p}`)))
+    for (const key of keys) seen.set(key, (seen.get(key) ?? 0) + 1)
+  }
+  return new Map([...seen].map(([k, n]) => [k, n / runs]))
+}
+
+// 1b. Becomes a main sound in the catalogue: the earliest album carrying it in full (a main genre, an instrument or a
+// technique). Same tie rule as the first appearance.
+export function firstMains(): FirstAppearance[] {
+  const best = new Map<string, Descriptor>()
+  for (const d of own) for (const t of traitsOf(d)) {
+    if (presenceOf(d, t) !== 'full') continue
+    const cur = best.get(t)
+    if (!cur || d.year! - cur.year! < 0 || (d.year === cur.year && position(d, t) < position(cur, t))) best.set(t, d)
+  }
+  return [...best].map(([trait, d]) => ({ trait, albumId: d.albumId, year: d.year!, presence: 'full' as Presence, thin: thinBefore(d.year!) }))
+}
+
+// Everything the site stores (src/data/story.json, written by scripts/build-findings.ts).
+export const ROBUST = 0.8 // the method's threshold: a pioneer credit present in 80% of the grid is "robust"
+export const NULL_RUNS = 5
+export interface StoredRise { field: string; trait: string; split: number; before: number; after: number; p: number; pioneers: [string, number][] }
+export interface Story {
+  tested: number; passed: number; q: number; rises: number; withPioneers: number; nullRises: number[]; fdr: number
+  first: Record<string, [string, number, Presence, boolean]>; main: Record<string, [string, number, boolean]>; list: StoredRise[]
+}
+export function buildStory(): Story {
+  const tested = testSeries()
+  const rises = decide(tested)
+  const robust = robustness(tested)
+  // Rises found when release years carry no information: an estimate of how many of ours are chance.
+  const nullRises = Array.from({ length: NULL_RUNS }, (_, i) => decide(testSeries(1, 100 + i), DEFAULT_PARAMS, false).length)
+  const meanNull = nullRises.reduce((a, b) => a + b, 0) / NULL_RUNS
+  const round = (x: number) => Math.round(x * 1000) / 1000
+  return {
+    tested: tested.length, passed: passing(tested, METHOD.q).length, q: METHOD.q, rises: rises.length, withPioneers: rises.filter((r) => r.pioneers.length).length,
+    nullRises, fdr: rises.length ? round(Math.min(1, meanNull / rises.length)) : 0,
+    first: Object.fromEntries(firstAppearances().map((f) => [f.trait, [f.albumId, f.year, f.presence, f.thin]])),
+    main: Object.fromEntries(firstMains().map((f) => [f.trait, [f.albumId, f.year, f.thin]])),
+    list: rises.map((r) => ({ field: r.field, trait: r.trait, split: r.split, before: round(r.before), after: round(r.after), p: round(r.p),
+      pioneers: r.pioneers.map((a) => [a, round(robust.get(`${r.field}|${r.trait}|${a}`) ?? 0)] as [string, number]) })),
+  }
 }

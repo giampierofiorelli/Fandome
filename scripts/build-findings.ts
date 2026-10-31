@@ -5,6 +5,7 @@ import { albums } from '../src/data/seed'
 import { findingOf } from '../src/lib/legacy'
 import { DESCRIPTORS } from '../src/lib/descriptors'
 import { drawsOnOf, influenceOf } from '../src/lib/influence'
+import { buildStory } from '../src/lib/soundStory'
 import { lateRecognition, nicheToMainstream, revivals } from '../src/lib/patterns'
 
 const list = albums.flatMap((a) => {
@@ -50,3 +51,8 @@ for (const id of Object.keys(DESCRIPTORS)) {
 }
 writeFileSync('src/data/roots.json', JSON.stringify(roots) + '\n')
 console.log(`${Object.keys(roots).length} albums with roots, written to src/data/roots.json`)
+
+// The story of a sound (method v2, docs/research/findings-method.md).
+const story = buildStory()
+writeFileSync('src/data/story.json', JSON.stringify(story) + '\n')
+console.log(`story: ${story.tested} series tested, ${story.rises} rises (${story.withPioneers} with pioneers), chance rises ${story.nullRises.join('/')} → FDR ≈ ${story.fdr}`)
