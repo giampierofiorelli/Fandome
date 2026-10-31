@@ -1,4 +1,4 @@
-// The story of a sound (owner, Oct 31 2026), method v3 in docs/research/findings-method.md, written before running:
+// The story of a sound (owner, Oct 31 2026), method v4 in docs/research/findings-method.md, written before running:
 // 1. first appearance: the earliest album in the catalogue that has a sound at all;
 // 2. becomes a main sound: when a field's albums start carrying it in full (one test per field and sound, false
 //    discovery rate controlled with Benjamini–Hochberg on shuffle-based p-values);
@@ -205,7 +205,8 @@ function pioneersOf(xs: Descriptor[], carriers: Uint8Array, split: number, field
   const cutoffRank = Math.max(1, Math.ceil(P.priority * full.length))
   const lastYear = full[cutoffRank - 1].year!
   // v3: at most followYears before the rise, the window in which the method says an album spreads a sound.
-  const early = full.filter((d) => d.year! <= Math.min(lastYear, split) && d.year! >= split - METHOD.followYears)
+  // v4: no cutoff at the split year (an estimate); earliness is the first 16% of the rise's carriers.
+  const early = full.filter((d) => d.year! <= lastYear && d.year! >= split - METHOD.followYears)
   const sim = (a: Descriptor, b: Descriptor) => compareProfiles(albumProfile(a), albumProfile(b)).base
   const mean = (v: number[]) => (v.length ? v.reduce((n, x) => n + x, 0) / v.length : 0)
   const seenArtists = new Set<string>()

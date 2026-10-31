@@ -23,11 +23,10 @@ describe('story of a sound (src/data/story.json)', () => {
     for (const r of S.list) expect(r.after).toBeGreaterThan(r.before)
   })
 
-  it('pioneers carry the sound in full, come before the rise and within its 10 years, and on a documented base', () => {
+  it('pioneers carry the sound in full, start no more than 10 years before the rise, and on a documented base', () => {
     for (const r of S.list) for (const [id, share] of r.pioneers) {
       const d = DESCRIPTORS[id]
       expect(presenceOf(d, r.trait)).toBe('full')
-      expect(d.year!).toBeLessThanOrEqual(r.split)
       expect(d.year!).toBeGreaterThanOrEqual(r.split - METHOD.followYears)
       expect(thinBefore(d.year!)).toBe(false)
       expect(share).toBeGreaterThan(0)

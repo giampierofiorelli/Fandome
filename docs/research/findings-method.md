@@ -155,3 +155,27 @@ agreement is reported as it is; it never changes a rule (owner: trust the data, 
 
 **Owner (Oct 31 2026):** the old "Fandome's data shows" box stays next to the story of a sound until we are fully sure
 the new method is right.
+
+## Why "spread from" names no pioneer (diagnosis on the development half only, Oct 31 2026)
+
+1. **The 1960s are below the detection floor.** The 6 years before 1967 hold 55 described albums, fewer than the 76
+   needed to see a 3% sound; every year up to 1968 is "thin", so no 1960s album can be credited (mellotron in rock and
+   pop does rise in 1967, with no admissible pioneer). Not a rule to relax: the catalogue needs more 1955–67 albums.
+2. **Too few carriers per field.** Salsa, jùjú, morna, French house, amapiano have fewer than 5 full carriers in their
+   artist's fields, so they are not tested; big beat (9) shows no change point. Same answer: more data.
+3. **A false precision in the candidates (a rule problem).** Candidates must be released no later than the split year,
+   but the split year is an estimate: with 10 carriers its position is uncertain by several years. Grunge rises in rock
+   from 1989, and Nevermind (1991) is excluded by the cutoff, not by the method's own earliness test.
+
+## Method v4 (Oct 31 2026), written before applying it
+
+- The cutoff "no later than the split year" is dropped. Earliness is decided by the rule already written for it:
+  a pioneer is among the first 16% of the full carriers of the rise (the rising segment and the one before it), and
+  at most 10 years before the rise starts (v3). Everything else stays.
+
+**v4 result:** 194 rises, 83 with pioneers (65 in v3), false discoveries ≈ 0; benchmark unchanged (first appearance
+4/13 and 4/11; spread 0/12 and 0/13). Traced on grunge (development half): it reaches 10 of 79 rock albums in
+1989–95 (13%), below critical mass in the broad rock field, so no rise; and where it would pass, priority picks
+Bleach (1989), and Nevermind is excluded as the same artist's later album. The experts' "spread" rows name the album
+that **made a sound popular**, our pioneer is the **earliest** album others follow: two different questions. Whether
+to add "made it popular" as its own output is for the owner to decide.
