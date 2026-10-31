@@ -3,9 +3,12 @@
 import { describe, expect, it } from 'vitest'
 import story from '../data/story.json'
 import { DESCRIPTORS } from './descriptors'
+import { drawsOnOf } from './influence'
+import { albums } from '../data/seed'
 import { firstAppearances, firstMains, METHOD, presenceOf, thinBefore, type Story } from './soundStory'
 
 const S = story as unknown as Story
+const artistOf = new Map(albums.map((a) => [a.id, a.artistId]))
 
 describe('story of a sound (src/data/story.json)', () => {
   it('first appearances and main sounds are stored up to date (npm run findings)', () => {
@@ -31,6 +34,17 @@ describe('story of a sound (src/data/story.json)', () => {
       expect(thinBefore(d.year!)).toBe(false)
       expect(share).toBeGreaterThan(0)
       expect(share).toBeLessThanOrEqual(1)
+    }
+  })
+
+  it('the album that made a rise popular carries the sound, is early, and later albums of the rise draw on it', () => {
+    for (const r of S.list) if (r.popular) {
+      const d = DESCRIPTORS[r.popular]
+      expect(presenceOf(d, r.trait)).toBe('full')
+      expect(d.year!).toBeGreaterThanOrEqual(r.split - METHOD.followYears)
+      const artist = artistOf.get(r.popular)
+      const drawn = Object.values(DESCRIPTORS).some((f) => f.year! > d.year! && f.year! <= d.year! + METHOD.followYears && artistOf.get(f.albumId) !== artist && presenceOf(f, r.trait) === 'full' && drawsOnOf(f.albumId).some((x) => x.albumId === r.popular))
+      expect(drawn).toBe(true)
     }
   })
 

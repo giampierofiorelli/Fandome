@@ -47,20 +47,25 @@ export function rootsPath(albumId: string, steps = 4): { from: string; to: strin
 // in the area. A credit is "robust" when it survives 80% of the parameter grid, otherwise it is shown as tentative.
 type First = [string, number, 'full' | 'partial', boolean]
 type Main = [string, number, boolean]
-interface StoredStory { tested: number; fdr: number; first: Record<string, First>; main: Record<string, Main>; list: { field: string; trait: string; split: number; before: number; after: number; pioneers: [string, number][] }[] }
+interface StoredStory { tested: number; fdr: number; first: Record<string, First>; main: Record<string, Main>; list: { field: string; trait: string; split: number; before: number; after: number; pioneers: [string, number][]; popular?: string }[] }
 const STORY = story as unknown as StoredStory
 export const STORY_ROBUST = 0.8
-export interface SoundStory { trait: string; fields: string[]; split: number; before: number; after: number; robust: boolean; first: First; main: Main }
+export interface SoundStory { trait: string; fields: string[]; split: number; before: number; after: number; robust: boolean; first: First; main: Main; pioneer: boolean; pioneers: string[]; popular?: string }
 export function storyOf(albumId: string): SoundStory[] {
   const byTrait = new Map<string, SoundStory>()
-  for (const r of STORY.list) for (const [id, share] of r.pioneers) {
-    if (id !== albumId) continue
+  for (const r of STORY.list) {
+    const mine = r.pioneers.find(([id]) => id === albumId)
+    if (!mine && r.popular !== albumId) continue
+    // A popularity credit is not tested on the parameter grid, so it is shown as tentative unless it is also a
+    // robust pioneer credit.
+    const robust = !!mine && mine[1] >= STORY_ROBUST
+    const step: SoundStory = { trait: r.trait, fields: [r.field], split: r.split, before: r.before, after: r.after, robust, first: STORY.first[r.trait], main: STORY.main[r.trait], pioneer: !!mine, pioneers: r.pioneers.map(([id]) => id), popular: r.popular }
     const cur = byTrait.get(r.trait)
-    const robust = share >= STORY_ROBUST
-    if (cur) {
+    if (!cur) byTrait.set(r.trait, step)
+    else {
       cur.fields.push(r.field)
-      if (robust && !cur.robust) Object.assign(cur, { split: r.split, before: r.before, after: r.after, robust })
-    } else byTrait.set(r.trait, { trait: r.trait, fields: [r.field], split: r.split, before: r.before, after: r.after, robust, first: STORY.first[r.trait], main: STORY.main[r.trait] })
+      if (Number(step.robust) + Number(step.pioneer) > Number(cur.robust) + Number(cur.pioneer)) Object.assign(cur, { ...step, fields: cur.fields })
+    }
   }
   // Robust credits first, then genres before instruments and techniques.
   return [...byTrait.values()].sort((a, b) => Number(b.robust) - Number(a.robust) || Number(b.trait.startsWith('g:')) - Number(a.trait.startsWith('g:')))

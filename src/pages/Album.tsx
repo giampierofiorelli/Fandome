@@ -199,10 +199,24 @@ function StoryRow({ albumId, s }: { albumId: string; s: SoundStory }) {
             {s.main[0] === albumId ? <b>here</b> : <StoryAlbum id={s.main[0]} />}
           </li>
         )}
-        <li>
-          <span className="muted small">Spreads from here</span>
-          in {s.fields.map((f) => genreLabel(f).toLowerCase()).join(' and ')} it goes from {pct(s.before)} of albums to {pct(s.after)} from {s.split}, and the albums that took it up sound more like this one than like its contemporaries.
-        </li>
+        {s.pioneer ? (
+          <li>
+            <span className="muted small">Spreads from here</span>
+            in {s.fields.map((f) => genreLabel(f).toLowerCase()).join(' and ')} it goes from {pct(s.before)} of albums to {pct(s.after)} from {s.split}, and the albums that took it up sound more like this one than like its contemporaries.
+          </li>
+        ) : (
+          <li>
+            <span className="muted small">Spreads</span>
+            in {s.fields.map((f) => genreLabel(f).toLowerCase()).join(' and ')} it goes from {pct(s.before)} of albums to {pct(s.after)} from {s.split}
+            {s.pioneers.length > 0 && <>, first from <StoryAlbum id={s.pioneers[0]} /></>}
+          </li>
+        )}
+        {s.popular && (
+          <li>
+            <span className="muted small">Made it popular</span>
+            {s.popular === albumId ? <b>here: of the early albums with this sound, it is the one later albums draw on most</b> : <StoryAlbum id={s.popular} />}
+          </li>
+        )}
       </ol>
     </div>
   )

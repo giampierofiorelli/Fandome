@@ -1,4 +1,4 @@
-// The story of a sound (owner, Oct 31 2026), method v4 in docs/research/findings-method.md, written before running:
+// The story of a sound (owner, Oct 31 2026), method v5 in docs/research/findings-method.md, written before running:
 // 1. first appearance: the earliest album in the catalogue that has a sound at all;
 // 2. becomes a main sound: when a field's albums start carrying it in full (one test per field and sound, false
 //    discovery rate controlled with Benjamini–Hochberg on shuffle-based p-values);
@@ -9,6 +9,7 @@ import { DESCRIPTORS, type Descriptor } from './descriptors'
 import { albums } from '../data/seed'
 import { sceneOf } from '../data/scenes'
 import { albumProfile, compareProfiles, foldName } from './similar'
+import { drawsOnOf, influenceOf } from './influence'
 
 export const METHOD = {
   mainGenres: 3, // the guide's main sound: a genre from 4th place on is the long tail
@@ -27,7 +28,7 @@ export const METHOD = {
 
 export type Presence = 'full' | 'partial'
 export interface FirstAppearance { trait: string; albumId: string; year: number; presence: Presence; thin: boolean }
-export interface Rise { field: string; trait: string; split: number; before: number; after: number; nBefore: number; nAfter: number; p: number; pioneers: string[] }
+export interface Rise { field: string; trait: string; split: number; before: number; after: number; nBefore: number; nAfter: number; p: number; pioneers: string[]; popular?: string }
 
 const own = Object.values(DESCRIPTORS).filter((d) => d.year && !['compilation', 'live'].includes(d.type) && d.genres[0] !== 'christmas')
 const artistOf = new Map(albums.map((a) => [a.id, a.artistId]))
@@ -191,7 +192,7 @@ export function decide(tested: Series[], P: Params = DEFAULT_PARAMS, withPioneer
       if (kAfter / nAfter <= kBefore / nBefore) continue
       if (wilsonLow(kAfter, nAfter) < P.criticalMass) continue // critical mass
       const split = s.xs[m].year!
-      out.push({ field: s.field, trait: s.trait, split, before: kBefore / nBefore, after: kAfter / nAfter, nBefore, nAfter, p: s.p, pioneers: withPioneers ? pioneersOf(s.xs.slice(a, b), s.carriers.slice(a, b), split, s.xs, P) : [] })
+      out.push({ field: s.field, trait: s.trait, split, before: kBefore / nBefore, after: kAfter / nAfter, nBefore, nAfter, p: s.p, pioneers: withPioneers ? pioneersOf(s.xs.slice(a, b), s.carriers.slice(a, b), split, s.xs, P) : [], popular: withPioneers ? popularOf(s.xs.slice(a, b), s.carriers.slice(a, b), split, P) : undefined })
     }
   }
   return out
@@ -230,6 +231,24 @@ function pioneersOf(xs: Descriptor[], carriers: Uint8Array, split: number, field
   return out
 }
 
+// v5. The album that made a rise popular: among its early adopters (first 16% of the full carriers, ties by year),
+// the one drawn on by the most later carriers of other artists within 10 years (documented links).
+function popularOf(xs: Descriptor[], carriers: Uint8Array, split: number, P: Params): string | undefined {
+  const full = xs.filter((_, i) => carriers[i])
+  if (!full.length) return undefined
+  const lastYear = full[Math.max(1, Math.ceil(P.priority * full.length)) - 1].year!
+  let best: { id: string; n: number; all: number; year: number } | undefined
+  // The same pool as pioneers: also at most 10 years before the rise starts (v3).
+  for (const c of full.filter((d) => d.year! <= lastYear && d.year! >= split - METHOD.followYears)) {
+    const artist = artistOf.get(c.albumId)
+    const n = full.filter((f) => f.year! > c.year! && f.year! <= c.year! + METHOD.followYears && artistOf.get(f.albumId) !== artist && drawsOnOf(f.albumId).some((x) => x.albumId === c.albumId)).length
+    if (!n) continue
+    const all = influenceOf(c.albumId)?.citedBy.length ?? 0
+    if (!best || n > best.n || (n === best.n && (all > best.all || (all === best.all && c.year! < best.year)))) best = { id: c.albumId, n, all, year: c.year! }
+  }
+  return best?.id
+}
+
 // Robustness (method v1 reporting): the share of a parameter grid in which each pioneer credit appears.
 export const GRID = { q: [0.05, 0.1, 0.2], beforeYears: [4, 6, 8, 10], criticalMass: [0.1, 0.16, 0.25], priority: [0.1, 0.16, 0.25] }
 export function robustness(tested: Series[]): Map<string, number> {
@@ -258,7 +277,7 @@ export function firstMains(): FirstAppearance[] {
 // Everything the site stores (src/data/story.json, written by scripts/build-findings.ts).
 export const ROBUST = 0.8 // the method's threshold: a pioneer credit present in 80% of the grid is "robust"
 export const NULL_RUNS = 5
-export interface StoredRise { field: string; trait: string; split: number; before: number; after: number; p: number; pioneers: [string, number][] }
+export interface StoredRise { field: string; trait: string; split: number; before: number; after: number; p: number; pioneers: [string, number][]; popular?: string }
 export interface Story {
   tested: number; passed: number; q: number; rises: number; withPioneers: number; nullRises: number[]; fdr: number
   first: Record<string, [string, number, Presence, boolean]>; main: Record<string, [string, number, boolean]>; list: StoredRise[]
@@ -277,6 +296,6 @@ export function buildStory(): Story {
     first: Object.fromEntries(firstAppearances().map((f) => [f.trait, [f.albumId, f.year, f.presence, f.thin]])),
     main: Object.fromEntries(firstMains().map((f) => [f.trait, [f.albumId, f.year, f.thin]])),
     list: rises.map((r) => ({ field: r.field, trait: r.trait, split: r.split, before: round(r.before), after: round(r.after), p: round(r.p),
-      pioneers: r.pioneers.map((a) => [a, round(robust.get(`${r.field}|${r.trait}|${a}`) ?? 0)] as [string, number]) })),
+      pioneers: r.pioneers.map((a) => [a, round(robust.get(`${r.field}|${r.trait}|${a}`) ?? 0)] as [string, number]), ...(r.popular ? { popular: r.popular } : {}) })),
   }
 }

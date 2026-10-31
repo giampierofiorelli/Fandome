@@ -179,3 +179,26 @@ the new method is right.
 Bleach (1989), and Nevermind is excluded as the same artist's later album. The experts' "spread" rows name the album
 that **made a sound popular**, our pioneer is the **earliest** album others follow: two different questions. Whether
 to add "made it popular" as its own output is for the owner to decide.
+
+## Method v5 (Oct 31 2026): "made it popular", written before applying it (owner approved the output)
+
+A fourth output, separate from the pioneer: the album that **made a sound popular**. Reception's `mainstream` is not
+used (it measures how commercial a record is in its making, not its reach). Reach is measured by documented links.
+
+- Only for rises that passed (Benjamini–Hochberg and critical mass, as for pioneers).
+- Candidates: the rise's early adopters, Rogers' first 16% of its full carriers by year, ties by year all in (the
+  same pool as pioneers, without the novelty conditions: no "thin" check, no "drew on" check, and an artist's later
+  album may be chosen).
+- The album chosen is the candidate drawn on (influence named by an artist, critic comparison, sample/quote/cover,
+  shared producer: the documented network) by the most later carriers of the rise, other artists, within 10 years
+  after it; at least one is needed. Ties: the one drawn on by more later albums overall, then the earlier one.
+- Benchmark scoring for v5, fixed before scoring: a **spread** row also agrees when the album is the "made it popular"
+  album of a rise of that token in any field. Implementation note: the candidates also respect the v3 window (at most
+  10 years before the rise), as the pioneers' pool does; the first build had left it out (Sgt. Pepper came out for a
+  2011 rise).
+
+**v5 result:** 106 rises name an album that made the sound popular (e.g. In the Court of the Crimson King for prog in
+rock, Tommy for art rock, Stand! for funk in soul, Bringing It All Back Home for folk). Benchmark "spread" rows: 1 of
+12 (development) and 1 of 13 (sealed). First appearance unchanged (4/13 and 4/11). Popularity credits are not tested
+on the parameter grid, so the page shows them as tentative unless the album is also a robust pioneer. To see the
+1960s, 1955–67 albums are being added (`docs/next-artists-1955-1967.md`).
