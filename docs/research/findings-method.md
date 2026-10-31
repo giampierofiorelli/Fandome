@@ -152,3 +152,6 @@ agreement is reported as it is; it never changes a rule (owner: trust the data, 
     rise is not detected in any field (few full carriers per field) or no candidate passes the closer test. The method
     is silent rather than contradicting the experts; how to make it see these rises is the next question, to be
     answered by a written rule, not by these rows.
+
+**Owner (Oct 31 2026):** the old "Fandome's data shows" box stays next to the story of a sound until we are fully sure
+the new method is right.
