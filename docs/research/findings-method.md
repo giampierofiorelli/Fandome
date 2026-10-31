@@ -2,7 +2,7 @@
 
 The owner asked whether we are building an algorithm or tuning by trial and error. This audit lists every number the
 trace and the findings use (`src/lib/legacy.ts`), where it came from and whether it is justified. Verdicts wait for the
-research on methods (`docs/research/findings-method-research.md`, in progress) and are then applied as rules chosen
+research on methods (`docs/research/findings-method-research.md`, done Oct 31) and are then applied as rules chosen
 for a reason, before looking at which albums come out. The press stays a comparison (Findings page: "Critics agree"
 or "Our finding"), never a target.
 
