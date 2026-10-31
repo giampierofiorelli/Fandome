@@ -6,7 +6,7 @@
    "year": 1969,
    "trait": "Funk",
    "before": 0,
-   "after": 0.8260869565217391,
+   "after": 0.717391304347826,
    "when": 1979,
    "field": [
     "Funk",
@@ -15,27 +15,15 @@
    ]
   },
   {
-   "albumId": "nickdrake-fiveleavesleft",
-   "year": 1969,
-   "trait": "Singer-songwriter + Bass guitar",
-   "before": 0,
-   "after": 0.5384615384615384,
-   "when": 1979,
+   "albumId": "bowie-themanwhosoldtheworld",
+   "year": 1970,
+   "trait": "Bass guitar + Synthesizers",
+   "before": 0.037037037037037035,
+   "after": 0.5614035087719298,
+   "when": 1980,
    "field": [
-    "Folk",
-    "Singer-songwriter"
-   ]
-  },
-  {
-   "albumId": "pinkfloyd-more",
-   "year": 1969,
-   "trait": "Prog",
-   "before": 0.05,
-   "after": 0.5151515151515151,
-   "when": 1973,
-   "field": [
-    "Prog",
-    "Rock"
+    "Rock",
+    "Alternative"
    ]
   },
   {
@@ -45,6 +33,18 @@
    "before": 0.03508771929824561,
    "after": 0.5925925925925926,
    "when": 1980,
+   "field": [
+    "Prog",
+    "Rock"
+   ]
+  },
+  {
+   "albumId": "pinkfloyd-atomheartmother",
+   "year": 1970,
+   "trait": "Prog + Electric guitar",
+   "before": 0,
+   "after": 0.375,
+   "when": 1971,
    "field": [
     "Prog",
     "Rock"
@@ -65,10 +65,10 @@
   {
    "albumId": "koolandthegang-musicisthemessage",
    "year": 1972,
-   "trait": "Funk + Percussion",
-   "before": 0.06666666666666667,
-   "after": 0.782608695652174,
-   "when": 1979,
+   "trait": "Synthesizers + Percussion",
+   "before": 0,
+   "after": 0.64,
+   "when": 1982,
    "field": [
     "Funk",
     "Soul",
@@ -80,7 +80,7 @@
    "year": 1974,
    "trait": "Disco",
    "before": 0.017857142857142856,
-   "after": 0.6326530612244898,
+   "after": 0.5918367346938775,
    "when": 1978,
    "field": [
     "Pop",
@@ -92,7 +92,7 @@
    "year": 1974,
    "trait": "Disco",
    "before": 0.027777777777777776,
-   "after": 0.8,
+   "after": 0.7375,
    "when": 1978,
    "field": [
     "Disco",
@@ -100,23 +100,11 @@
    ]
   },
   {
-   "albumId": "kraftwerk-autobahn",
-   "year": 1974,
-   "trait": "Synth-pop + Synthesizers",
-   "before": 0,
-   "after": 0.9032258064516129,
-   "when": 1981,
-   "field": [
-    "Electronic",
-    "Synth-pop"
-   ]
-  },
-  {
    "albumId": "abba-abba",
    "year": 1975,
-   "trait": "Pop + Synthesizers",
+   "trait": "Pop rock + Synthesizers",
    "before": 0.03333333333333333,
-   "after": 0.5,
+   "after": 0.36428571428571427,
    "when": 1985,
    "field": [
     "Pop",
@@ -127,8 +115,8 @@
    "albumId": "nada-1930ildomatoredellescimmie",
    "year": 1975,
    "trait": "Pop rock + Keyboards",
-   "before": 0.046875,
-   "after": 0.4852941176470588,
+   "before": 0.03125,
+   "after": 0.4411764705882353,
    "when": 1985,
    "field": [
     "Pop",
@@ -136,24 +124,11 @@
    ]
   },
   {
-   "albumId": "springsteen-borntorun",
-   "year": 1975,
-   "trait": "Pop rock + Synthesizers",
-   "before": 0.052083333333333336,
-   "after": 0.4576271186440678,
-   "when": 1982,
-   "field": [
-    "Rock",
-    "Singer-songwriter",
-    "Folk"
-   ]
-  },
-  {
    "albumId": "blondie-blondie",
    "year": 1976,
    "trait": "New wave",
    "before": 0,
-   "after": 0.5094339622641509,
+   "after": 0.39622641509433965,
    "when": 1980,
    "field": [
     "Rock",
@@ -161,22 +136,11 @@
    ]
   },
   {
-   "albumId": "cerrone-cerronesparadise",
-   "year": 1977,
-   "trait": "Disco + Synthesizers",
-   "before": 0.11764705882352941,
-   "after": 0.7058823529411765,
-   "when": 1981,
-   "field": [
-    "Disco"
-   ]
-  },
-  {
    "albumId": "koolandthegang-theforce",
    "year": 1977,
-   "trait": "Soul + Synthesizers",
+   "trait": "Funk + Synthesizers",
    "before": 0.07407407407407407,
-   "after": 0.5416666666666666,
+   "after": 0.5833333333333334,
    "when": 1981,
    "field": [
     "Funk",
@@ -189,7 +153,7 @@
    "year": 1977,
    "trait": "New wave",
    "before": 0.015384615384615385,
-   "after": 0.5185185185185185,
+   "after": 0.4537037037037037,
    "when": 1981,
    "field": [
     "Alternative",
@@ -197,23 +161,11 @@
    ]
   },
   {
-   "albumId": "battisti-unadonnaperamico",
-   "year": 1978,
-   "trait": "New wave",
-   "before": 0,
-   "after": 0.47619047619047616,
-   "when": 1982,
-   "field": [
-    "Singer-songwriter",
-    "Pop"
-   ]
-  },
-  {
    "albumId": "blondie-parallellines",
    "year": 1978,
    "trait": "Pop rock + Keyboards",
-   "before": 0.05555555555555555,
-   "after": 0.6086956521739131,
+   "before": 0.041666666666666664,
+   "after": 0.5869565217391305,
    "when": 1985,
    "field": [
     "Rock",
@@ -221,23 +173,23 @@
    ]
   },
   {
-   "albumId": "rettore-brividodivino",
-   "year": 1979,
-   "trait": "Synth-pop",
-   "before": 0.00909090909090909,
-   "after": 0.375,
-   "when": 1986,
+   "albumId": "kraftwerk-themanmachine",
+   "year": 1978,
+   "trait": "Synth-pop + Synthesizers",
+   "before": 0,
+   "after": 0.8181818181818182,
+   "when": 1982,
    "field": [
-    "Pop",
-    "Rock"
+    "Electronic",
+    "Synth-pop"
    ]
   },
   {
    "albumId": "tozzi-gloria",
    "year": 1979,
    "trait": "Pop rock + Keyboards",
-   "before": 0.10526315789473684,
-   "after": 0.5344827586206896,
+   "before": 0.08771929824561403,
+   "after": 0.46551724137931033,
    "when": 1986,
    "field": [
     "Pop"
@@ -246,26 +198,14 @@
   {
    "albumId": "buggles-theageofplastic",
    "year": 1980,
-   "trait": "Synth-pop",
-   "before": 0.08641975308641975,
-   "after": 0.5760869565217391,
+   "trait": "Drum machine",
+   "before": 0,
+   "after": 0.44565217391304346,
    "when": 1984,
    "field": [
     "Synth-pop",
     "Pop",
     "Prog"
-   ]
-  },
-  {
-   "albumId": "inxs-inxs",
-   "year": 1980,
-   "trait": "Alternative/indie rock",
-   "before": 0.01904761904761905,
-   "after": 0.29411764705882354,
-   "when": 1990,
-   "field": [
-    "Rock",
-    "Funk"
    ]
   },
   {
@@ -287,17 +227,6 @@
    "before": 0,
    "after": 0.4782608695652174,
    "when": 1985,
-   "field": [
-    "Synth-pop"
-   ]
-  },
-  {
-   "albumId": "yazoo-upstairsaterics",
-   "year": 1982,
-   "trait": "Dance-pop + Keyboards",
-   "before": 0,
-   "after": 0.42857142857142855,
-   "when": 1986,
    "field": [
     "Synth-pop"
    ]
@@ -326,46 +255,11 @@
    ]
   },
   {
-   "albumId": "smiths-thequeenisdead",
-   "year": 1986,
-   "trait": "Indie rock",
-   "before": 0.009708737864077669,
-   "after": 0.3235294117647059,
-   "when": 1996,
-   "field": [
-    "Indie",
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "u2-thejoshuatree",
-   "year": 1987,
-   "trait": "Alternative rock",
-   "before": 0.041666666666666664,
-   "after": 0.5517241379310345,
-   "when": 1997,
-   "field": [
-    "Rock"
-   ]
-  },
-  {
-   "albumId": "samanthafox-iwannahavesomefun",
-   "year": 1988,
-   "trait": "House",
-   "before": 0.007633587786259542,
-   "after": 0.2549019607843137,
-   "when": 1995,
-   "field": [
-    "Pop",
-    "Dance"
-   ]
-  },
-  {
    "albumId": "lisastansfield-affection",
    "year": 1989,
-   "trait": "Dance-pop + Strings",
-   "before": 0.09722222222222222,
-   "after": 0.4444444444444444,
+   "trait": "Programming + String arrangements",
+   "before": 0.05555555555555555,
+   "after": 0.3611111111111111,
    "when": 1999,
    "field": [
     "Soul",
@@ -374,73 +268,37 @@
    ]
   },
   {
-   "albumId": "inxs-x",
-   "year": 1990,
-   "trait": "Sampling + Drums",
-   "before": 0.1111111111111111,
-   "after": 0.47368421052631576,
-   "when": 2000,
-   "field": [
-    "Rock",
-    "Funk"
-   ]
-  },
-  {
-   "albumId": "massiveattack-bluelines",
-   "year": 1991,
-   "trait": "Trip-hop",
-   "before": 0,
-   "after": 0.47368421052631576,
-   "when": 2001,
-   "field": [
-    "Electronic",
-    "Alternative"
-   ]
-  },
-  {
-   "albumId": "nirvana-nevermind",
-   "year": 1991,
-   "trait": "Alternative/indie rock + Electric guitar",
-   "before": 0.10588235294117647,
-   "after": 0.43902439024390244,
-   "when": 1995,
-   "field": [
-    "Alternative",
-    "Rock"
-   ]
-  },
-  {
    "albumId": "u2-achtungbaby",
    "year": 1991,
-   "trait": "Alternative/indie rock + Electric guitar",
-   "before": 0.08450704225352113,
-   "after": 0.5161290322580645,
+   "trait": "Alternative rock",
+   "before": 0.1267605633802817,
+   "after": 0.5483870967741935,
    "when": 1995,
    "field": [
     "Rock"
    ]
   },
   {
-   "albumId": "portishead-dummy",
-   "year": 1994,
-   "trait": "Trip-hop",
-   "before": 0.03508771929824561,
-   "after": 0.47368421052631576,
-   "when": 2001,
+   "albumId": "u2-zooropa",
+   "year": 1993,
+   "trait": "Sampling + Programming",
+   "before": 0.015384615384615385,
+   "after": 0.4375,
+   "when": 2000,
    "field": [
-    "Electronic",
-    "Alternative"
+    "Rock"
    ]
   },
   {
-   "albumId": "moby-everythingiswrong",
-   "year": 1995,
-   "trait": "Electronica + Synthesizers",
-   "before": 0.06666666666666667,
-   "after": 0.5555555555555556,
-   "when": 1996,
+   "albumId": "carmenconsoli-mediamenteisterica",
+   "year": 1998,
+   "trait": "Pro Tools",
+   "before": 0,
+   "after": 0.35294117647058826,
+   "when": 2002,
    "field": [
-    "Electronic"
+    "Rock",
+    "Singer-songwriter"
    ]
   }
  ],

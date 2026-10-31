@@ -57,7 +57,7 @@ export interface Trace {
 const BEFORE = 6
 const RARE = 0.15 // a trait in fewer than 15% of the field's albums of the previous years is new
 const MIN_FIELD = 10 // windows with fewer albums say too little
-const NEW_ANYWHERE = 0.03 // a sound new to the whole catalogue: at most 3% of all earlier albums had it
+export const NEW_ANYWHERE = 0.03 // a sound new to the whole catalogue: at most 3% of all earlier albums had it
 // Wilson score interval for a share k/n (z = 1.645: 90% two-sided).
 const Z = 1.645
 const wilson = (p: number, n: number, sign: 1 | -1) => {
@@ -70,12 +70,23 @@ const wilson = (p: number, n: number, sign: 1 | -1) => {
 
 const artistOf = new Map(albums.map((a) => [a.id, a.artistId]))
 const fieldOf = (d: Descriptor) => new Set(sceneOf(artistOf.get(d.albumId) ?? '')?.genres ?? [])
-const traitCache = new Map<string, Set<string>>()
-const traitsOf = (d: Descriptor) => {
-  let t = traitCache.get(d.albumId)
-  if (!t) traitCache.set(d.albumId, (t = new Set([...d.genres.map((g) => `g:${g}`), ...d.production.map((p) => `p:${p}`), ...d.instruments.map((i) => `i:${i}`)])))
-  return t
+// How much an album carries a trait: its main genres (the first three) in full; a genre from 4th place on is the long
+// tail, often one track (album-descriptors-guide), so it counts half; instruments and production in full.
+const weightCache = new Map<string, Map<string, number>>()
+const MAIN_GENRES = 3
+const weightsOf = (d: Descriptor) => {
+  let w = weightCache.get(d.albumId)
+  if (!w) {
+    w = new Map()
+    d.genres.forEach((g, i) => w!.set(`g:${g}`, i < MAIN_GENRES ? 1 : 0.5))
+    for (const p of d.production) w.set(`p:${p}`, 1)
+    for (const i of d.instruments) w.set(`i:${i}`, 1)
+    weightCache.set(d.albumId, w)
+  }
+  return w
 }
+// A combined trait "a+b" is carried as much as its weaker part.
+const carries = (x: Descriptor, t: string) => Math.min(...t.split('+').map((u) => weightsOf(x).get(u) ?? 0))
 const label = (t: string) => {
   const [k, v] = [t.slice(0, 1), t.slice(2)]
   return k === 'g' ? genreLabel(v) : k === 'p' ? productionLabel(v) : instrumentLabel(v)
@@ -103,8 +114,10 @@ function computeTrace(albumId: string): Trace | null {
   const earlierAll = own.filter((x) => artistOf.get(x.albumId) !== artist && x.year! < d.year!)
   const everywhere = earlierAll.filter((x) => x.year! >= d.year! - BEFORE)
   if (before.length < MIN_FIELD) return null
-  const mine = traitsOf(d)
-  const count = (xs: Descriptor[], t: string) => (xs.length ? xs.filter((x) => traitsOf(x).has(t)).length / xs.length : 0)
+  // An album can only bring a sound it carries in full (a main genre, an instrument, a technique), not one it touches.
+  const mine = new Set([...weightsOf(d)].filter(([, w]) => w === 1).map(([t]) => t))
+  const sum = (xs: Descriptor[], t: string) => xs.reduce((n, x) => n + carries(x, t), 0)
+  const count = (xs: Descriptor[], t: string) => (xs.length ? sum(xs, t) / xs.length : 0)
   const fresh = [...mine].filter((t) => count(before, t) < RARE)
   const windows = [1, 4, 7, 10].map((k) => ({ from: d.year! + k, xs: inYears(d.year! + k, d.year! + k + 2) })).filter((w) => w.xs.length >= MIN_FIELD)
   if (!fresh.length || !windows.length) return null
@@ -119,11 +132,10 @@ function computeTrace(albumId: string): Trace | null {
     const [a, b] = [list[i], list[j]]
     if (fresh.includes(a) && fresh.includes(b)) continue
     if (a.startsWith('g:') && b.startsWith('g:')) continue // two genres together say little
-    const both = (x: Descriptor) => traitsOf(x).has(a) && traitsOf(x).has(b)
-    if (before.filter(both).length / before.length < RARE) pairs.push(`${a}+${b}`)
+    if (sum(before, `${a}+${b}`) / before.length < RARE) pairs.push(`${a}+${b}`)
   }
-  const hasAll = (x: Descriptor, t: string) => t.split('+').every((u) => traitsOf(x).has(u))
-  const share2 = (xs: Descriptor[], t: string) => (xs.length ? xs.filter((x) => hasAll(x, t)).length / xs.length : 0)
+  const hasAll = (x: Descriptor, t: string) => carries(x, t) > 0
+  const share2 = count
   const labelOf = (t: string) => t.split('+').map(label).join(' + ')
   const spread = [...fresh, ...pairs].map((t) => {
     const shares = windows.map((w) => share2(w.xs, t))
@@ -132,7 +144,7 @@ function computeTrace(albumId: string): Trace | null {
     return { key: t, trait: labelOf(t), before: b, after: shares[k], when: windows[k].from, anywhere: 0, earlier: 0, sure: wilson(shares[k], windows[k].xs.length, -1) - wilson(b, before.length, 1) }
   }).filter((x) => x.after - x.before >= 0.1 && x.sure > 0).sort((x, y) => y.after - y.before - (x.after - x.before))
   // How new each spreading trait was across the whole catalogue (counted only for the traits that spread).
-  for (const x of spread) (x.anywhere = share2(everywhere, x.key)), (x.earlier = earlierAll.filter((y) => hasAll(y, x.key)).length)
+  for (const x of spread) (x.anywhere = share2(everywhere, x.key)), (x.earlier = sum(earlierAll, x.key))
   // The five strongest spreads make the score, so many small pairs cannot inflate it.
   const lift = spread.slice(0, 5).reduce((n, x) => n + x.after - x.before, 0)
   // Pioneer test, on the traits that spread.
@@ -147,7 +159,7 @@ function computeTrace(albumId: string): Trace | null {
   const drewOnMe = (x: Descriptor) => [...x.influencedBy, ...x.soundsLike].some((n) => foldName(n) === meName)
   const head = spread.find((x) => x.earlier <= NEW_ANYWHERE * earlierAll.length)
   const withHead = head ? inYears(d.year - 1, d.year + 1).filter((x) => hasAll(x, head.key) && !drewOnMe(x)) : []
-  const first = withHead.length ? withHead.filter((x) => x.year! >= d.year!).length / withHead.length : head ? 1 : 0
+  const first = withHead.length ? sum(withHead.filter((x) => x.year! >= d.year!), head!.key) / sum(withHead, head!.key) : head ? 1 : 0
   const peersThen = around.filter((x) => x.year === d.year)
   const adopters = inYears(d.year + 1, d.year + 10).filter(has)
   const sim = (x: Descriptor, y: Descriptor) => compareProfiles(albumProfile(x), albumProfile(y)).base
@@ -176,12 +188,17 @@ function computeTrace(albumId: string): Trace | null {
 //   best-described 6 years (fewer, and a sound can look new only because its earlier records are not described
 //   yet). Relative, so it follows the catalogue as it grows;
 // - a sound new to the whole catalogue, not only to its area (at most 3% of all earlier albums had it), that spread
-//   by at least 12 points even after the margin of error (Spread.sure).
-const COVERAGE = 0.3
-const MIN_SURE_GAIN = 0.12
+//   by at least 12 points even after the margin of error (Spread.sure);
+// - a sound the album carries in full (a main genre, an instrument, a technique); later albums that only touch it
+//   (a genre in their long tail) count half towards how far it spread.
+// Rules are chosen for a musical reason before looking at which albums come out; the press is a comparison, never a
+// target (owner, Oct 2026). Tests check the rules over the whole catalogue (legacy.test.ts).
+export const COVERAGE = 0.3
+export const MIN_SURE_GAIN = 0.12
 const years = own.map((d) => d.year!)
 let busiest = 0
 for (let y = Math.min(...years); y <= Math.max(...years) + 1; y++) busiest = Math.max(busiest, years.filter((x) => x >= y - BEFORE && x < y).length)
+export const busiestWindow = () => busiest
 export interface Finding { trace: Trace; spread: Spread }
 // The same sound already brought by an earlier album of the artist: that album is the pioneer, not this one.
 const findingCache = new Map<string, Finding | null>()
