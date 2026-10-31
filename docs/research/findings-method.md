@@ -97,3 +97,21 @@ on a sealed benchmark written before the run (see below) and reported as it is.
 **Benchmark (to write before the run).** Innovations credited by experts, from sources independent of our
 descriptors: album, sound, year, source. Split by a fixed rule (alternate rows by year) into a development half (used
 only to find bugs, never to choose numbers) and a sealed half (read once per method version).
+
+## Method v2 (Oct 31 2026): two corrections found on the first run, written before applying them
+
+The first run of v1 (1,302 series tested, 164 rises, 66 with pioneers) showed two flaws in the rules, not in the data:
+
+1. **One change point over 70 years mixes phases.** A sound can appear, fade and come back (synth-pop in the 1980s and
+   again in the 2000s). With a single split, the electronic field's synth-pop rise came out in 2005 and averaged
+   decades. v2 uses several change points, as the research recommends (PELT-style segmentation with a BIC penalty,
+   Killick et al. 2012): segments are added while each new split improves the log-likelihood by more than
+   ½·ln(n) per added parameter (BIC), with at least 10 albums per segment. Each rising segment (a higher share than
+   the segment before) is a candidate rise, tested as in v1: the gain of the segmentation over a single share,
+   compared with 200 shuffled catalogues, Benjamini–Hochberg at q = 0.10, and critical mass on the rising segment.
+2. **Pioneers were picked among the earliest carriers of all time**, so The Man-Machine (1978) was credited for a
+   2005 rise. In v2 the candidates for a rise are the full carriers from the start of the segment before it to the
+   first year of the rising segment, and priority (first 16%) is counted among the carriers of the rising segment and
+   the one before it, not of all time.
+
+Everything else in v1 stays as written.
